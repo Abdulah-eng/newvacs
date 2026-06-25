@@ -31,137 +31,214 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
 
   // Voice state
   const [voiceMode, setVoiceMode] = useState(true)
-  const [isListening, setIsListening] = useState(false)
+  const [isListening, setIsListening] = useState(false)  // session active
+  const [isRecording, setIsRecording] = useState(false)  // actively capturing speech
   const [isSpeaking, setIsSpeaking] = useState(false)
   const [speechError, setSpeechError] = useState(null)
+  const [audioLevel, setAudioLevel] = useState(0)        // 0–1 for waveform
+  // VAD refs
+  const streamRef = useRef(null)
   const mediaRecorderRef = useRef(null)
   const audioChunksRef = useRef([])
+  const audioCtxRef = useRef(null)
+  const analyserRef = useRef(null)
+  const silenceTimerRef = useRef(null)
+  const vadRafRef = useRef(null)
+  const isProcessingRef = useRef(false)  // prevent double-submit
 
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight
   }, [chat])
 
-  // Check microphone support on mount
+  // Cleanup on unmount
   useEffect(() => {
-    if (typeof window !== 'undefined' && !navigator.mediaDevices?.getUserMedia) {
-      setSpeechError('Microphone not supported in this browser. Please use Text Mode.')
-      setVoiceMode(false)
-    }
     return () => {
+      _stopVadSession()
       if (window.speechSynthesis) window.speechSynthesis.cancel()
-      if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
-        try { mediaRecorderRef.current.stop() } catch (_) {}
-      }
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const toggleListening = async () => {
-    // ── Stop if already recording ──
-    if (isListening) {
-      if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
-        mediaRecorderRef.current.stop()
+  // ── VAD helpers ──────────────────────────────────────────────────────────
+  function _stopVadSession() {
+    cancelAnimationFrame(vadRafRef.current)
+    clearTimeout(silenceTimerRef.current)
+    if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
+      try { mediaRecorderRef.current.stop() } catch (_) {}
+    }
+    if (streamRef.current) {
+      streamRef.current.getTracks().forEach(t => t.stop())
+      streamRef.current = null
+    }
+    if (audioCtxRef.current) {
+      try { audioCtxRef.current.close() } catch (_) {}
+      audioCtxRef.current = null
+    }
+    audioChunksRef.current = []
+    isProcessingRef.current = false
+    setAudioLevel(0)
+    setIsRecording(false)
+    setIsListening(false)
+  }
+
+  async function _startVadSession() {
+    setSpeechError(null)
+    audioChunksRef.current = []
+    isProcessingRef.current = false
+
+    let stream
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+    } catch (err) {
+      if (err.name === 'NotAllowedError') {
+        setSpeechError('Microphone access denied. Allow microphone in browser settings.')
+      } else {
+        setSpeechError('Could not access microphone. Use Text Mode instead.')
       }
       setIsListening(false)
       return
     }
+    streamRef.current = stream
 
-    // ── Start recording ──
-    if (window.speechSynthesis) window.speechSynthesis.cancel()
-    setIsSpeaking(false)
-    setSpeechError(null)
-    audioChunksRef.current = []
+    // Audio context for VAD
+    const audioCtx = new AudioContext()
+    audioCtxRef.current = audioCtx
+    const source = audioCtx.createMediaStreamSource(stream)
+    const analyser = audioCtx.createAnalyser()
+    analyser.fftSize = 512
+    analyser.smoothingTimeConstant = 0.3
+    source.connect(analyser)
+    analyserRef.current = analyser
+    const dataArray = new Uint8Array(analyser.frequencyBinCount)
 
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+    // MediaRecorder
+    const mimeType = MediaRecorder.isTypeSupported('audio/webm;codecs=opus')
+      ? 'audio/webm;codecs=opus'
+      : MediaRecorder.isTypeSupported('audio/webm') ? 'audio/webm' : 'audio/mp4'
+    const recorder = new MediaRecorder(stream, { mimeType })
+    mediaRecorderRef.current = recorder
 
-      // Pick the best supported audio format
-      const mimeType = MediaRecorder.isTypeSupported('audio/webm;codecs=opus')
-        ? 'audio/webm;codecs=opus'
-        : MediaRecorder.isTypeSupported('audio/webm')
-        ? 'audio/webm'
-        : 'audio/mp4'
+    recorder.ondataavailable = (e) => {
+      if (e.data.size > 0) audioChunksRef.current.push(e.data)
+    }
 
-      const recorder = new MediaRecorder(stream, { mimeType })
-      mediaRecorderRef.current = recorder
+    recorder.onstop = async () => {
+      if (isProcessingRef.current) return
+      const chunks = [...audioChunksRef.current]
+      audioChunksRef.current = []
+      if (chunks.length === 0) return
 
-      recorder.ondataavailable = (e) => {
-        if (e.data.size > 0) audioChunksRef.current.push(e.data)
-      }
+      const blob = new Blob(chunks, { type: mimeType })
+      if (blob.size < 3000) return  // too short — noise, skip
 
-      recorder.onstop = async () => {
-        // Stop all tracks to release mic
-        stream.getTracks().forEach(t => t.stop())
-        setIsListening(false)
-
-        const audioBlob = new Blob(audioChunksRef.current, { type: mimeType })
-        if (audioBlob.size < 1000) {
-          setSpeechError('No speech detected. Tap the mic and speak clearly.')
-          return
+      isProcessingRef.current = true
+      setIsRecording(false)
+      // Don't stop session — keep listening indicator but mark not-recording
+      try {
+        const ext = mimeType.includes('mp4') ? 'mp4' : 'webm'
+        const fd = new FormData()
+        fd.append('audio', blob, `rec.${ext}`)
+        const res = await fetch('/api/stt', { method: 'POST', body: fd })
+        const data = await res.json()
+        if (data.text && data.text.trim()) {
+          await send(data.text.trim())
         }
+      } catch (err) {
+        console.error('STT error:', err)
+        setSpeechError('Transcription failed — please try again.')
+      } finally {
+        isProcessingRef.current = false
+      }
+    }
 
-        // Send to Groq Whisper via our server route
-        try {
-          const ext = mimeType.includes('mp4') ? 'mp4' : 'webm'
-          const formData = new FormData()
-          formData.append('audio', audioBlob, `recording.${ext}`)
+    // VAD loop — monitor silence
+    const SILENCE_THRESHOLD = 8   // RMS below this = silence
+    const SILENCE_MS = 2500       // wait 2.5s of silence before submitting
+    let lastSpeechAt = Date.now()
+    let speaking = false
 
-          const res = await fetch('/api/stt', { method: 'POST', body: formData })
-          const data = await res.json()
+    function vadLoop() {
+      analyser.getByteFrequencyData(dataArray)
+      // RMS of frequency data
+      let sum = 0
+      for (let i = 0; i < dataArray.length; i++) sum += dataArray[i] * dataArray[i]
+      const rms = Math.sqrt(sum / dataArray.length)
+      setAudioLevel(Math.min(1, rms / 80))
 
-          if (data.error || !data.text) {
-            setSpeechError('Could not understand audio. Please try again.')
-          } else {
-            send(data.text)
+      if (rms > SILENCE_THRESHOLD) {
+        lastSpeechAt = Date.now()
+        if (!speaking) {
+          speaking = true
+          setIsRecording(true)
+          // Start (or restart) recording
+          if (mediaRecorderRef.current.state === 'inactive') {
+            audioChunksRef.current = []
+            mediaRecorderRef.current.start()
           }
-        } catch (err) {
-          console.error('STT error:', err)
-          setSpeechError('Transcription failed. Please try again or use Text Mode.')
+        }
+      } else if (speaking && Date.now() - lastSpeechAt > SILENCE_MS) {
+        // 2.5s of silence after speech — submit
+        speaking = false
+        if (mediaRecorderRef.current.state === 'recording') {
+          mediaRecorderRef.current.stop()
         }
       }
 
-      recorder.start()
+      vadRafRef.current = requestAnimationFrame(vadLoop)
+    }
+    vadRafRef.current = requestAnimationFrame(vadLoop)
+  }
+
+  const toggleListening = async () => {
+    if (isListening) {
+      _stopVadSession()
+    } else {
       setIsListening(true)
-    } catch (err) {
-      console.error('Mic access error:', err)
-      if (err.name === 'NotAllowedError') {
-        setSpeechError('Microphone access denied. Please allow microphone in your browser settings.')
-      } else {
-        setSpeechError('Could not access microphone. Please use Text Mode.')
-      }
+      await _startVadSession()
     }
   }
 
   const speakText = useCallback(async (text) => {
     if (!voiceMode) return
+    setIsSpeaking(true)
 
-    // ── Route through Simli (real-time avatar video + audio) ──
-    if (simliRef.current) {
-      setIsSpeaking(true)
-      try {
+    // Pause VAD while patient speaks to avoid picking up avatar audio
+    cancelAnimationFrame(vadRafRef.current)
+    clearTimeout(silenceTimerRef.current)
+
+    try {
+      // Try Simli avatar TTS first
+      if (simliRef.current) {
         await simliRef.current.speakText(text)
-      } catch (e) {
-        console.warn('Simli speak failed, falling back to Web Speech:', e)
-        // Fallback to Web Speech
-        _webSpeechFallback(text)
-      } finally {
-        setIsSpeaking(false)
+      } else {
+        await _webSpeechFallback(text)
       }
-      return
+    } catch (e) {
+      console.warn('Avatar TTS failed, falling back:', e)
+      await _webSpeechFallback(text)
+    } finally {
+      setIsSpeaking(false)
+      // Auto-restart VAD after patient finishes speaking
+      if (isListening && streamRef.current) {
+        audioChunksRef.current = []
+        isProcessingRef.current = false
+        // Restart VAD loop
+        _startVadSession()
+      }
     }
-
-    // ── Fallback: browser Web Speech API ──
-    _webSpeechFallback(text)
-  }, [voiceMode])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [voiceMode, isListening])
 
   function _webSpeechFallback(text) {
-    if (!('speechSynthesis' in window)) return
-    window.speechSynthesis.cancel()
-    const utterance = new SpeechSynthesisUtterance(text)
-    utterance.lang = 'en-US'
-    utterance.onstart = () => setIsSpeaking(true)
-    utterance.onend = () => setIsSpeaking(false)
-    utterance.onerror = () => setIsSpeaking(false)
-    window.speechSynthesis.speak(utterance)
+    return new Promise((resolve) => {
+      if (!('speechSynthesis' in window)) { resolve(); return }
+      window.speechSynthesis.cancel()
+      const utterance = new SpeechSynthesisUtterance(text)
+      utterance.lang = 'en-US'
+      utterance.onend = resolve
+      utterance.onerror = resolve
+      window.speechSynthesis.speak(utterance)
+    })
   }
 
   const [loading, setLoading] = useState(false)
@@ -255,22 +332,54 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
                   
                   {speechError && <p className="text-red-500 text-xs mt-2">{speechError}</p>}
                   
-                  <div className="mt-8 mb-4">
-                    <button 
+                  <div className="mt-6 mb-4 flex flex-col items-center gap-3">
+                    {/* Waveform bars — only shown while actively capturing voice */}
+                    {isListening && (
+                      <div className="flex items-end gap-0.5 h-8">
+                        {Array.from({ length: 16 }).map((_, i) => {
+                          const h = isRecording
+                            ? Math.max(4, Math.round(audioLevel * 32 * (0.4 + 0.6 * Math.abs(Math.sin(i * 0.7)))))
+                            : 4
+                          return (
+                            <div
+                              key={i}
+                              className={`w-1.5 rounded-full transition-all duration-75 ${
+                                isRecording ? 'bg-teal' : 'bg-slate-300'
+                              }`}
+                              style={{ height: h }}
+                            />
+                          )
+                        })}
+                      </div>
+                    )}
+
+                    <button
                       onClick={toggleListening}
-                      disabled={loading || isSpeaking}
+                      disabled={loading}
+                      title={isListening ? 'Stop voice session' : 'Start voice session'}
                       className={`grid place-items-center w-16 h-16 rounded-full text-white transition-all duration-300 shadow-lg ${
-                        isListening 
-                          ? 'bg-red-500 hover:bg-red-600 animate-pulse shadow-red-500/40 scale-110' 
-                          : loading || isSpeaking 
-                            ? 'bg-slate-300 cursor-not-allowed'
-                            : 'bg-navy hover:bg-navydark hover:scale-105 shadow-navy/30'
+                        isListening && isRecording
+                          ? 'bg-red-500 shadow-red-500/40 scale-110'
+                          : isListening
+                          ? 'bg-teal hover:bg-teal/90 shadow-teal/30 scale-105'
+                          : loading || isSpeaking
+                          ? 'bg-slate-300 cursor-not-allowed'
+                          : 'bg-navy hover:bg-navydark hover:scale-105 shadow-navy/30'
                       }`}
                     >
                       {isListening ? <MicOff size={24} /> : <Mic size={24} />}
                     </button>
-                    <p className="text-center text-[11px] font-semibold text-slate-500 mt-3 uppercase tracking-wider">
-                      {isListening ? '🔴 Recording… Tap to Stop' : loading ? 'Transcribing…' : isSpeaking ? 'Patient Speaking' : 'Tap to Speak'}
+
+                    <p className="text-center text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                      {isSpeaking
+                        ? '🔊 Patient Speaking…'
+                        : isListening && isRecording
+                        ? '🔴 Speaking — pause to send'
+                        : isListening
+                        ? '🎙 Listening… speak now'
+                        : loading
+                        ? '⏳ Processing…'
+                        : 'Tap to Start Voice'}
                     </p>
                   </div>
                 </div>
