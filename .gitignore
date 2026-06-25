@@ -1,0 +1,15 @@
+node_modules
+dist
+*.log
+
+# Next.js
+.next
+out
+
+# Environment variables — NEVER commit secrets
+.env
+.env.local
+.env.*.local
+
+# Temp files
+prd_text.txt
