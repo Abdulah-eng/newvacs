@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect, useCallback, forwardRef } from 'react'
+import React, { useState, useRef, useEffect, useCallback } from 'react'
 import dynamic from 'next/dynamic'
 import { Card, AutoTextarea, SectionTitle } from './ui'
-import { Send, Sparkles, Stethoscope, MessageSquare, Mic, MicOff, Volume2, Type } from 'lucide-react'
+import { Send, Sparkles, User, Stethoscope, MessageSquare, Mic, MicOff, Volume2, Type } from 'lucide-react'
 
 // SimliAvatar uses WebRTC (browser-only) — must NOT be server-side rendered
 const SimliAvatar = dynamic(
