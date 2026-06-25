@@ -1,20 +1,16 @@
 'use client'
 
-import React, { useEffect, useRef, useState, useCallback } from 'react'
-// SimliClient will be dynamically imported inside useEffect to avoid SSR crash
+import React, { useEffect, useRef, useState } from 'react'
 
-// ─── Simli preset face IDs matched to patient demographics ──────────────────
-// Get full list from: https://app.simli.com → Faces
-// These are example IDs; replace with IDs from your Simli dashboard.
+// ─── Face IDs from https://app.simli.com → Faces ─────────────────────────────
 const FACE_MAP = {
-  'maria gonzalez':   'tmp9i8bbq7', // Hispanic woman
-  'linda martinez':   'tmp9i8bbq7', // Hispanic woman
-  'angela rodriguez': 'tmp9i8bbq7', // Hispanic woman
-  'james wilson':     'CXdAXLzlJX', // older white man
-  'michael turner':   'CXdAXLzlJX', // white man
-  'david chen':       'CXdAXLzlJX', // Asian man (closest preset)
+  'maria gonzalez':   'tmp9i8bbq7',
+  'linda martinez':   'tmp9i8bbq7',
+  'angela rodriguez': 'tmp9i8bbq7',
+  'james wilson':     'CXdAXLzlJX',
+  'michael turner':   'CXdAXLzlJX',
+  'david chen':       'CXdAXLzlJX',
 }
-
 const DEFAULT_FACE = 'tmp9i8bbq7'
 
 function getFaceId(patientName) {
@@ -22,33 +18,23 @@ function getFaceId(patientName) {
   return FACE_MAP[patientName.toLowerCase()] ?? DEFAULT_FACE
 }
 
-// ─── Decode MP3 → mono 16-bit PCM at 16 kHz ─────────────────────────────────
+// ─── Decode MP3 ArrayBuffer → mono Uint8Array of Int16 PCM at 16 kHz ─────────
 async function mp3ToPcm16(mp3ArrayBuffer) {
   const audioCtx = new AudioContext({ sampleRate: 16000 })
   const decoded = await audioCtx.decodeAudioData(mp3ArrayBuffer)
-
-  // Mixdown to mono
-  const monoData = decoded.numberOfChannels > 1
-    ? (() => {
-        const left = decoded.getChannelData(0)
-        const right = decoded.getChannelData(1)
-        return left.map((l, i) => (l + right[i]) / 2)
-      })()
+  const raw = decoded.numberOfChannels > 1
+    ? decoded.getChannelData(0).map((l, i) => (l + decoded.getChannelData(1)[i]) / 2)
     : decoded.getChannelData(0)
-
-  // Resample if needed (AudioContext with sampleRate=16000 should handle it)
-  const pcm16 = new Int16Array(monoData.length)
-  for (let i = 0; i < monoData.length; i++) {
-    const clamped = Math.max(-1, Math.min(1, monoData[i]))
-    pcm16[i] = Math.round(clamped * 32767)
+  const pcm16 = new Int16Array(raw.length)
+  for (let i = 0; i < raw.length; i++) {
+    pcm16[i] = Math.round(Math.max(-1, Math.min(1, raw[i])) * 32767)
   }
-
   await audioCtx.close()
   return new Uint8Array(pcm16.buffer)
 }
 
-// ─── SimliAvatar ─────────────────────────────────────────────────────────────
-// onMount(api) is called with { speakText, stop } once the component mounts.
+// ─── SimliAvatar ──────────────────────────────────────────────────────────────
+// Uses onMount(api) callback to expose { speakText, stop } to the parent.
 // This avoids forwardRef issues with next/dynamic.
 export function SimliAvatar({ patientName, isSpeaking, onReady, onError, onMount }) {
   const videoRef = useRef(null)
@@ -56,15 +42,19 @@ export function SimliAvatar({ patientName, isSpeaking, onReady, onError, onMount
   const clientRef = useRef(null)
   const [status, setStatus] = useState('idle') // idle | connecting | ready | error
   const [errorMsg, setErrorMsg] = useState('')
+
   const faceId = getFaceId(patientName)
   const apiKey = process.env.NEXT_PUBLIC_SIMLI_API_KEY
 
-  // ── Expose speakText/stop to parent via onMount callback ──
+  // ── Expose api to parent ──
   useEffect(() => {
     if (!onMount) return
     onMount({
       speakText: async (text) => {
-        if (!clientRef.current || status !== 'ready') return
+        if (!clientRef.current || status !== 'ready') {
+          // Fallback: just return, parent will use Web Speech
+          return
+        }
         try {
           const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}&voice=Joanna`)
           if (!res.ok) throw new Error('TTS fetch failed')
@@ -76,92 +66,117 @@ export function SimliAvatar({ patientName, isSpeaking, onReady, onError, onMount
           }
         } catch (e) {
           console.error('Simli speakText error:', e)
-          onError?.('Avatar speech error: ' + e.message)
+          throw e // Let parent fall back to Web Speech
         }
       },
-      stop: () => { try { clientRef.current?.close() } catch (_) {} }
+      stop: () => { try { clientRef.current?.stop() } catch (_) {} }
     })
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [status])
 
-  // ── Initialize Simli once on mount ──
+  // ── Initialize Simli ──
   useEffect(() => {
+    if (!videoRef.current || !audioRef.current) return
+    if (!apiKey) {
+      setStatus('error')
+      setErrorMsg('Simli API key not set')
+      return
+    }
+
     let client = null
+    let stopped = false
 
-    async function initSimli() {
-      if (!apiKey) {
-        setStatus('error')
-        setErrorMsg('NEXT_PUBLIC_SIMLI_API_KEY not set')
-        return
-      }
-      if (!videoRef.current || !audioRef.current) return
-
+    async function init() {
       setStatus('connecting')
-
       try {
-        // Dynamically import SimliClient to avoid SSR crash with WebRTC
-        const { SimliClient } = await import('simli-client')
-        
-        client = new SimliClient()
+        // Dynamic import to avoid SSR crash
+        const { SimliClient, generateSimliSessionToken, generateIceServers } = await import('simli-client')
+        if (stopped) return
+
+        // 1. Get a session token from Simli
+        const tokenResponse = await generateSimliSessionToken({
+          apiKey,
+          config: {
+            faceId,
+            handleSilence: true,
+            maxSessionLength: 600,
+            maxIdleTime: 120,
+            model: 'fasttalk',
+          },
+        })
+        if (stopped) return
+
+        // 2. Get ICE servers (required for P2P mode)
+        const iceServers = await generateIceServers(apiKey)
+        if (stopped) return
+
+        // 3. Create client — pass actual DOM elements (not refs)
+        client = new SimliClient(
+          tokenResponse.session_token,
+          videoRef.current,
+          audioRef.current,
+          iceServers
+        )
         clientRef.current = client
 
-        const config = {
-          apiKey,
-          faceId,
-          videoRef,
-          audioRef,
-          handleSilence: true,
-        }
-
-        client.Initialize(config)
-
+        // 4. Register events
         client.on('connected', () => {
+          if (stopped) return
           setStatus('ready')
           onReady?.()
         })
-
         client.on('disconnected', () => {
+          if (stopped) return
           setStatus('idle')
         })
-
-        client.on('failed', (e) => {
-          console.error('Simli failed:', e)
+        client.on('failed', (reason) => {
+          if (stopped) return
+          console.error('Simli failed:', reason)
           setStatus('error')
           setErrorMsg('Avatar connection failed')
           onError?.('Avatar connection failed')
         })
 
-        client.start()
+        // 5. Start
+        await client.start()
       } catch (err) {
+        if (stopped) return
         console.error('Failed to initialize SimliClient:', err)
         setStatus('error')
-        setErrorMsg('Failed to load avatar client')
+        setErrorMsg('Failed to connect avatar')
       }
     }
 
-    initSimli()
+    init()
 
     return () => {
-      try { client?.close() } catch (_) {}
+      stopped = true
+      try { client?.stop() } catch (_) {}
+      clientRef.current = null
     }
-  }, [faceId, apiKey]) // eslint-disable-line react-hooks/exhaustive-deps
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [faceId, apiKey])
 
   return (
     <div className="flex flex-col items-center justify-center p-6">
-      {/* Video call frame */}
       <div className="relative">
-        {/* Animated aura when speaking */}
-        {isSpeaking && (
+        {/* Speaking aura */}
+        {isSpeaking && status === 'ready' && (
           <>
             <div className="absolute inset-0 rounded-2xl bg-teal/30 animate-ping" style={{ animationDuration: '1.4s' }} />
             <div className="absolute -inset-2 rounded-2xl bg-teal/15 animate-pulse" style={{ animationDuration: '2s' }} />
           </>
         )}
 
-        {/* Simli video element — 16:9 video call style */}
-        <div className={`relative z-10 rounded-2xl overflow-hidden border-4 shadow-2xl transition-all duration-500 ${
-          isSpeaking ? 'border-teal shadow-teal/40' : 'border-slate-200/60 shadow-slate-300'
-        }`} style={{ width: 280, height: 280 }}>
+        {/* Video call frame */}
+        <div
+          className={`relative z-10 rounded-2xl overflow-hidden border-4 shadow-2xl transition-all duration-500 ${
+            isSpeaking && status === 'ready'
+              ? 'border-teal shadow-teal/40'
+              : 'border-slate-200/60 shadow-slate-300'
+          }`}
+          style={{ width: 280, height: 280 }}
+        >
           <video
             ref={videoRef}
             autoPlay
@@ -171,20 +186,25 @@ export function SimliAvatar({ patientName, isSpeaking, onReady, onError, onMount
           />
           <audio ref={audioRef} autoPlay playsInline className="hidden" />
 
-          {/* Status overlay */}
+          {/* Connecting overlay */}
           {status === 'connecting' && (
             <div className="absolute inset-0 bg-navy/80 flex flex-col items-center justify-center gap-3">
               <div className="w-8 h-8 rounded-full border-4 border-white/20 border-t-teal animate-spin" />
               <p className="text-white text-xs font-medium">Connecting avatar…</p>
             </div>
           )}
+
+          {/* Error overlay — shows static photo fallback */}
           {status === 'error' && (
-            <div className="absolute inset-0 bg-red-900/80 flex flex-col items-center justify-center gap-2 p-4">
-              <p className="text-white text-xs font-medium text-center">{errorMsg || 'Avatar unavailable'}</p>
+            <div className="absolute inset-0 bg-slate-800 flex flex-col items-center justify-center gap-2 p-4">
+              <div className="w-20 h-20 rounded-full bg-slate-600 flex items-center justify-center text-4xl">
+                👩‍⚕️
+              </div>
+              <p className="text-white/70 text-xs text-center">{errorMsg}</p>
             </div>
           )}
 
-          {/* Live indicator */}
+          {/* Live badge */}
           {status === 'ready' && (
             <div className="absolute top-2 left-2 flex items-center gap-1.5 bg-black/50 rounded-full px-2 py-0.5">
               <div className={`w-2 h-2 rounded-full ${isSpeaking ? 'bg-teal animate-pulse' : 'bg-green-400'}`} />
@@ -193,7 +213,7 @@ export function SimliAvatar({ patientName, isSpeaking, onReady, onError, onMount
           )}
         </div>
 
-        {/* Speaking indicator dot */}
+        {/* Speaking dot */}
         {isSpeaking && status === 'ready' && (
           <span className="absolute -bottom-1 -right-1 z-20 w-5 h-5 rounded-full bg-teal border-2 border-white animate-pulse" />
         )}
@@ -202,12 +222,12 @@ export function SimliAvatar({ patientName, isSpeaking, onReady, onError, onMount
       <h3 className="mt-5 font-head text-xl text-navy font-semibold">{patientName}</h3>
       <p className={`mt-1 text-sm font-medium transition-colors duration-300 ${
         status === 'connecting' ? 'text-amber-500' :
-        status === 'error' ? 'text-red-500' :
-        isSpeaking ? 'text-teal animate-pulse' : 'text-slate-400'
+        status === 'error'     ? 'text-red-500'    :
+        isSpeaking             ? 'text-teal animate-pulse' : 'text-slate-400'
       }`}>
-        {status === 'connecting' ? 'Connecting…' :
-         status === 'error' ? 'Avatar offline — voice only' :
-         isSpeaking ? '● Speaking…' : 'Listening…'}
+        {status === 'connecting' ? 'Connecting…'             :
+         status === 'error'      ? 'Avatar offline — voice only' :
+         isSpeaking              ? '● Speaking…'             : 'Listening…'}
       </p>
     </div>
   )
