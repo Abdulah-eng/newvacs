@@ -44,10 +44,14 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   const analyserRef = useRef(null)
   const silenceTimerRef = useRef(null)
   const vadRafRef = useRef(null)
-  const isProcessingRef = useRef(false)  // prevent double-submit
+  const isProcessingRef = useRef(false)
+  const isListeningRef = useRef(false)   // mirror of isListening for closures
+  const mimeTypeRef = useRef('')         // keep mimeType across recorder restarts
+  const voiceScrollRef = useRef(null)   // separate scroll for voice transcript
 
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight
+    if (voiceScrollRef.current) voiceScrollRef.current.scrollTop = voiceScrollRef.current.scrollHeight
   }, [chat])
 
   // Cleanup on unmount
@@ -76,6 +80,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     }
     audioChunksRef.current = []
     isProcessingRef.current = false
+    isListeningRef.current = false
     setAudioLevel(0)
     setIsRecording(false)
     setIsListening(false)
@@ -99,6 +104,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
       return
     }
     streamRef.current = stream
+    isListeningRef.current = true
 
     // Audio context for VAD
     const audioCtx = new AudioContext()
@@ -115,6 +121,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     const mimeType = MediaRecorder.isTypeSupported('audio/webm;codecs=opus')
       ? 'audio/webm;codecs=opus'
       : MediaRecorder.isTypeSupported('audio/webm') ? 'audio/webm' : 'audio/mp4'
+    mimeTypeRef.current = mimeType
     const recorder = new MediaRecorder(stream, { mimeType })
     mediaRecorderRef.current = recorder
 
@@ -133,9 +140,8 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
 
       isProcessingRef.current = true
       setIsRecording(false)
-      // Don't stop session — keep listening indicator but mark not-recording
       try {
-        const ext = mimeType.includes('mp4') ? 'mp4' : 'webm'
+        const ext = mimeTypeRef.current.includes('mp4') ? 'mp4' : 'webm'
         const fd = new FormData()
         fd.append('audio', blob, `rec.${ext}`)
         const res = await fetch('/api/stt', { method: 'POST', body: fd })
@@ -148,6 +154,11 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
         setSpeechError('Transcription failed — please try again.')
       } finally {
         isProcessingRef.current = false
+        // Restart the VAD rAF loop (stream stays alive — just restart the loop)
+        if (isListeningRef.current && analyserRef.current) {
+          audioChunksRef.current = []
+          _restartVadLoop()
+        }
       }
     }
 
@@ -189,6 +200,70 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     vadRafRef.current = requestAnimationFrame(vadLoop)
   }
 
+  // Only restarts the rAF loop — keeps existing stream/analyser/recorder alive
+  function _restartVadLoop() {
+    cancelAnimationFrame(vadRafRef.current)
+    const analyser = analyserRef.current
+    if (!analyser) return
+    const dataArray = new Uint8Array(analyser.frequencyBinCount)
+    const SILENCE_THRESHOLD = 8
+    const SILENCE_MS = 2500
+    let lastSpeechAt = Date.now()
+    let speaking = false
+
+    // Fresh MediaRecorder on the existing stream
+    const mt = mimeTypeRef.current
+    const newRec = new MediaRecorder(streamRef.current, { mimeType: mt })
+    mediaRecorderRef.current = newRec
+    newRec.ondataavailable = (e) => { if (e.data.size > 0) audioChunksRef.current.push(e.data) }
+    newRec.onstop = mediaRecorderRef.current.onstop  // wire same handler — handled separately below
+
+    // Re-attach onstop from the closure captures — simpler: inline it
+    newRec.onstop = async () => {
+      if (isProcessingRef.current) return
+      const chunks = [...audioChunksRef.current]
+      audioChunksRef.current = []
+      if (chunks.length === 0) return
+      const blob = new Blob(chunks, { type: mt })
+      if (blob.size < 3000) { isProcessingRef.current = false; if (isListeningRef.current && analyserRef.current) _restartVadLoop(); return }
+      isProcessingRef.current = true
+      setIsRecording(false)
+      try {
+        const ext = mt.includes('mp4') ? 'mp4' : 'webm'
+        const fd = new FormData()
+        fd.append('audio', blob, `rec.${ext}`)
+        const res = await fetch('/api/stt', { method: 'POST', body: fd })
+        const data = await res.json()
+        if (data.text?.trim()) await send(data.text.trim())
+      } catch (err) { setSpeechError('Transcription failed — try again.') }
+      finally {
+        isProcessingRef.current = false
+        if (isListeningRef.current && analyserRef.current) { audioChunksRef.current = []; _restartVadLoop() }
+      }
+    }
+
+    function loop() {
+      if (!isListeningRef.current) return
+      analyser.getByteFrequencyData(dataArray)
+      let sum = 0
+      for (let i = 0; i < dataArray.length; i++) sum += dataArray[i] * dataArray[i]
+      const rms = Math.sqrt(sum / dataArray.length)
+      setAudioLevel(Math.min(1, rms / 80))
+      if (rms > SILENCE_THRESHOLD) {
+        lastSpeechAt = Date.now()
+        if (!speaking) {
+          speaking = true; setIsRecording(true)
+          if (mediaRecorderRef.current.state === 'inactive') { audioChunksRef.current = []; mediaRecorderRef.current.start() }
+        }
+      } else if (speaking && Date.now() - lastSpeechAt > SILENCE_MS) {
+        speaking = false
+        if (mediaRecorderRef.current.state === 'recording') mediaRecorderRef.current.stop()
+      }
+      vadRafRef.current = requestAnimationFrame(loop)
+    }
+    vadRafRef.current = requestAnimationFrame(loop)
+  }
+
   const toggleListening = async () => {
     if (isListening) {
       _stopVadSession()
@@ -218,12 +293,11 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
       await _webSpeechFallback(text)
     } finally {
       setIsSpeaking(false)
-      // Auto-restart VAD after patient finishes speaking
-      if (isListening && streamRef.current) {
+      // After patient speaks, just restart the VAD rAF loop — DON'T create a new session
+      if (isListeningRef.current && analyserRef.current) {
         audioChunksRef.current = []
         isProcessingRef.current = false
-        // Restart VAD loop
-        _startVadSession()
+        _restartVadLoop()
       }
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -385,11 +459,11 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
                 </div>
                 
                 {/* Mini Transcript for Voice Mode */}
-                <div className="h-48 flex flex-col bg-white">
+                <div className="h-56 flex flex-col bg-white border-t border-slate-100">
                   <div className="px-4 py-2 border-b border-slate-100 bg-slate-50 flex justify-between items-center">
                     <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wide">Live Transcript</span>
                   </div>
-                  <div ref={scrollRef} className="flex-1 overflow-y-auto thin-scroll px-4 py-3 space-y-3">
+                  <div ref={voiceScrollRef} className="flex-1 overflow-y-auto thin-scroll px-4 py-3 space-y-3">
                     {chat.length === 0 ? (
                       <p className="text-[12px] text-slate-400 text-center mt-6">Transcript will appear here.</p>
                     ) : (
