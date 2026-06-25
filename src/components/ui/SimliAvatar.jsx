@@ -3,15 +3,18 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 // ─── Face IDs from https://app.simli.com → Faces ─────────────────────────────
+// User's face ID from Simli dashboard
+const VALID_FACE_ID = 'cace3ef7-a4c4-425d-a8cf-a5358eb0c427'
+
 const FACE_MAP = {
-  'maria gonzalez':   'tmp9i8bbq7',
-  'linda martinez':   'tmp9i8bbq7',
-  'angela rodriguez': 'tmp9i8bbq7',
-  'james wilson':     'CXdAXLzlJX',
-  'michael turner':   'CXdAXLzlJX',
-  'david chen':       'CXdAXLzlJX',
+  'maria gonzalez':   VALID_FACE_ID,
+  'linda martinez':   VALID_FACE_ID,
+  'angela rodriguez': VALID_FACE_ID,
+  'james wilson':     VALID_FACE_ID,
+  'michael turner':   VALID_FACE_ID,
+  'david chen':       VALID_FACE_ID,
 }
-const DEFAULT_FACE = 'tmp9i8bbq7'
+const DEFAULT_FACE = VALID_FACE_ID
 
 function getFaceId(patientName) {
   if (!patientName) return DEFAULT_FACE
