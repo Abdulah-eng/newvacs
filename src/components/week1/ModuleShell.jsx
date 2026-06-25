@@ -54,13 +54,13 @@ export default function ModuleShell({ week, demo, onToggleDemo, onExit }) {
     <div className="min-h-screen bg-slate-100">
       <header className="text-white" style={{ background: 'linear-gradient(135deg,#13314f,#0d2138)' }}>
         <div className="max-w-5xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between gap-3">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
               <p className="text-[11px] font-semibold tracking-wide text-teal-300 uppercase">Week {week.index}</p>
               <h1 className="font-head text-xl">{module.title}</h1>
               <p className="text-[12px] text-slate-300">{module.subtitle}</p>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <button onClick={onToggleDemo} title="Demo bypass: unlock all days and patients without completing gates"
                 className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-[12px] font-semibold transition ring-1 ${
                   demo ? 'bg-teal text-white ring-teal/40' : 'bg-white/10 text-slate-200 ring-white/15 hover:bg-white/20'}`}>

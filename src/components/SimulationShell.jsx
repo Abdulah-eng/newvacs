@@ -166,21 +166,22 @@ export default function SimulationShell({ caseData, onExit }) {
           ))}
         </nav>
 
-        {/* Mobile tab strip */}
-        <div className="sm:hidden w-full">
-          <div className="flex overflow-x-auto thin-scroll bg-white border-b border-slate-200">
-            {TABS.map(t => (
-              <button key={t.id} onClick={() => openTab(t.id)}
-                className={`px-3 py-2.5 text-[12px] whitespace-nowrap ${active === t.id ? 'text-teal font-semibold border-b-2 border-teal' : 'text-slate-500'}`}>
-                {t.label}
-              </button>
-            ))}
+        <div className="flex-1 flex flex-col min-w-0">
+          {/* Mobile tab strip */}
+          <div className="sm:hidden w-full shrink-0">
+            <div className="flex overflow-x-auto thin-scroll bg-white border-b border-slate-200">
+              {TABS.map(t => (
+                <button key={t.id} onClick={() => openTab(t.id)}
+                  className={`px-3 py-2.5 text-[12px] whitespace-nowrap ${active === t.id ? 'text-teal font-semibold border-b-2 border-teal' : 'text-slate-500'}`}>
+                  {t.label}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* Main content */}
-        <main className="flex-1 min-w-0 overflow-y-auto thin-scroll">
-          <div className="max-w-5xl mx-auto px-5 py-6 fade-up" key={active}>
+          {/* Main content */}
+          <main className="flex-1 min-h-0 overflow-y-auto thin-scroll">
+            <div className="max-w-5xl mx-auto px-4 sm:px-5 py-6 fade-up" key={active}>
             {active === 'snapshot' && <SnapshotTab c={caseData} />}
             {active === 'subjective' && <SubjectiveTab c={caseData} interview={state.interview} discovered={state.discovered} onField={setInterview} />}
             {active === 'objective' && <ObjectiveTab c={caseData} />}
@@ -198,6 +199,7 @@ export default function SimulationShell({ caseData, onExit }) {
             {active === 'preceptor' && <PreceptorView c={caseData} unlocked={state.preceptorUnlocked} onUnlock={unlockPreceptor} />}
           </div>
         </main>
+        </div>
       </div>
     </div>
   )
