@@ -1,28 +1,53 @@
 import { NextResponse } from 'next/server'
 
 /**
- * GET /api/tts?text=Hello+world&voice=en-US-JennyNeural
- * TTS proxy — tries multiple providers in order:
- * 1. Microsoft Edge TTS (free, high quality, no key)
- * 2. StreamElements fallback
- * Returns: audio/mpeg (MP3) or audio/wav
+ * GET /api/tts?text=Hello+world
+ * TTS proxy — tries multiple providers in order until one succeeds.
+ * All requests are made server-side so CORS is not an issue.
  */
 export async function GET(request) {
   const { searchParams } = new URL(request.url)
-  const text = searchParams.get('text') || ''
+  const text = (searchParams.get('text') || '').slice(0, 500).trim()
 
-  if (!text.trim()) {
+  if (!text) {
     return NextResponse.json({ error: 'text is required' }, { status: 400 })
   }
 
-  const truncated = text.slice(0, 500) // safety limit
-
-  // ── Provider 1: StreamElements ─────────────────────────────────────────────
+  // ── Provider 1: Google Translate TTS (free, no key, very reliable) ──────────
   try {
-    const url1 = `https://api.streamelements.com/kappa/v2/speech?voice=Joanna&text=${encodeURIComponent(truncated)}`
-    const r1 = await fetch(url1, { headers: { Accept: 'audio/mpeg' }, signal: AbortSignal.timeout(4000) })
-    if (r1.ok) {
-      const buf = await r1.arrayBuffer()
+    const encoded = encodeURIComponent(text)
+    const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encoded}&tl=en-US&client=tw-ob&ttsspeed=0.9`
+    const r = await fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (compatible; VoiceBot/1.0)',
+        'Referer': 'https://translate.google.com/',
+        'Accept': 'audio/mpeg,audio/*;q=0.9,*/*;q=0.8',
+      },
+      signal: AbortSignal.timeout(5000),
+    })
+    if (r.ok) {
+      const buf = await r.arrayBuffer()
+      if (buf.byteLength > 500) {
+        return new NextResponse(buf, {
+          status: 200,
+          headers: {
+            'Content-Type': 'audio/mpeg',
+            'Cache-Control': 'no-store',
+          },
+        })
+      }
+    }
+  } catch (_) { /* fall through */ }
+
+  // ── Provider 2: StreamElements ─────────────────────────────────────────────
+  try {
+    const url = `https://api.streamelements.com/kappa/v2/speech?voice=Joanna&text=${encodeURIComponent(text)}`
+    const r = await fetch(url, {
+      headers: { Accept: 'audio/mpeg' },
+      signal: AbortSignal.timeout(4000),
+    })
+    if (r.ok) {
+      const buf = await r.arrayBuffer()
       if (buf.byteLength > 500) {
         return new NextResponse(buf, {
           status: 200,
@@ -32,28 +57,12 @@ export async function GET(request) {
     }
   } catch (_) { /* fall through */ }
 
-  // ── Provider 2: TTS.monster (free, no key) ────────────────────────────────
+  // ── Provider 3: VoiceRSS free tier ────────────────────────────────────────
   try {
-    const url2 = `https://tts.mp3.monster/v1?voice=en-US-EmmaMultilingualNeural&text=${encodeURIComponent(truncated)}`
-    const r2 = await fetch(url2, { signal: AbortSignal.timeout(5000) })
-    if (r2.ok) {
-      const buf = await r2.arrayBuffer()
-      if (buf.byteLength > 500) {
-        const ct = r2.headers.get('content-type') || 'audio/mpeg'
-        return new NextResponse(buf, {
-          status: 200,
-          headers: { 'Content-Type': ct, 'Cache-Control': 'no-store' },
-        })
-      }
-    }
-  } catch (_) { /* fall through */ }
-
-  // ── Provider 3: VoiceRSS free tier ───────────────────────────────────────
-  try {
-    const url3 = `https://api.voicerss.org/?key=9c36cffdb04a4d21a2a06d95e1e8ea79&hl=en-us&src=${encodeURIComponent(truncated)}&c=MP3&f=16khz_16bit_mono`
-    const r3 = await fetch(url3, { signal: AbortSignal.timeout(5000) })
-    if (r3.ok) {
-      const buf = await r3.arrayBuffer()
+    const url = `https://api.voicerss.org/?key=9c36cffdb04a4d21a2a06d95e1e8ea79&hl=en-us&src=${encodeURIComponent(text)}&c=MP3&f=16khz_16bit_mono`
+    const r = await fetch(url, { signal: AbortSignal.timeout(5000) })
+    if (r.ok) {
+      const buf = await r.arrayBuffer()
       if (buf.byteLength > 500) {
         return new NextResponse(buf, {
           status: 200,
@@ -63,6 +72,6 @@ export async function GET(request) {
     }
   } catch (_) { /* fall through */ }
 
-  // ── All providers failed ──────────────────────────────────────────────────
+  // ── All providers failed: return 503 so client falls back to Web Speech ─────
   return NextResponse.json({ error: 'All TTS providers unavailable' }, { status: 503 })
 }

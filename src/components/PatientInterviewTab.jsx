@@ -343,12 +343,13 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
       <div className="grid lg:grid-cols-3 gap-4">
         {/* Interaction column */}
         <div className="lg:col-span-2">
-          <div className="bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col" style={{ height: '36rem' }}>
+          <div className="bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col" style={{ height: '42rem' }}>
             
             {voiceMode ? (
               // Voice Mode UI
               <div className="flex-1 flex flex-col overflow-hidden">
-                <div className="flex-1 flex flex-col items-center justify-center border-b border-slate-100 bg-slate-50/50">
+              <div className="flex flex-col" style={{ height: '28rem' }}>
+                  <div className="flex-1 flex flex-col items-center justify-center border-b border-slate-100 bg-slate-50/50">  
                   <SimliAvatar
                     onMount={(api) => { simliRef.current = api }}
                     isSpeaking={isSpeaking}
@@ -411,8 +412,8 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
                   </div>
                 </div>
                 
-                {/* Mini Transcript for Voice Mode */}
-                <div className="h-56 flex flex-col bg-white border-t border-slate-100">
+                {/* Mini Transcript for Voice Mode — fixed height always visible */}
+                <div className="flex flex-col bg-white border-t border-slate-100" style={{ height: '14rem' }}>
                   <div className="px-4 py-2 border-b border-slate-100 bg-slate-50 flex justify-between items-center">
                     <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wide">Live Transcript</span>
                   </div>
