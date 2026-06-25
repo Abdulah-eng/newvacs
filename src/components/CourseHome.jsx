@@ -1,7 +1,7 @@
 import React from 'react'
 import { WEEKS, WEEK1 } from '../data/weeks'
 import { isDemoMode } from '../lib/moduleState'
-import { Activity, Home, Unlock, Lock, ArrowRight, CheckCircle2, GraduationCap, Stethoscope, FlaskConical, Users } from 'lucide-react'
+import { Activity, LogOut, Unlock, Lock, ArrowRight, CheckCircle2, GraduationCap, Stethoscope, FlaskConical, Users } from 'lucide-react'
 
 function WeekCard({ week, locked, onOpen }) {
   const snap = week.state.snapshot()
@@ -86,8 +86,8 @@ export default function CourseHome({ demo, onToggleDemo, onOpenWeek, onExit }) {
                   demo ? 'bg-teal text-white ring-teal/40' : 'bg-white/10 text-slate-200 ring-white/15 hover:bg-white/20'}`}>
                 {demo ? <Unlock size={14} /> : <Lock size={14} />} Demo bypass: {demo ? 'On' : 'Off'}
               </button>
-              <button onClick={onExit} className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2 text-[12px] font-semibold hover:bg-white/20 transition">
-                <Home size={14} /> Home
+              <button onClick={onExit} className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2 text-[12px] font-semibold hover:bg-red-500/80 transition">
+                <LogOut size={14} /> Log out
               </button>
             </div>
           </div>
