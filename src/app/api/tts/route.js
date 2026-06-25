@@ -1,77 +1,53 @@
 import { NextResponse } from 'next/server'
 
-/**
- * GET /api/tts?text=Hello+world
- * TTS proxy — tries multiple providers in order until one succeeds.
- * All requests are made server-side so CORS is not an issue.
- */
 export async function GET(request) {
   const { searchParams } = new URL(request.url)
-  const text = (searchParams.get('text') || '').slice(0, 500).trim()
+  // Google Translate TTS strictly limits to ~200 characters.
+  // We only use this audio for lip-sync animation (the browser uses Web Speech API for the actual voice).
+  // So we just truncate safely to ensure we get an audio waveform for the lips.
+  const rawText = searchParams.get('text') || ''
+  const text = rawText.slice(0, 190).trim()
 
   if (!text) {
     return NextResponse.json({ error: 'text is required' }, { status: 400 })
   }
 
-  // ── Provider 1: Google Translate TTS (free, no key, very reliable) ──────────
+  const errors = []
+
+  // ── Provider: Google Translate (Free, Reliable) ───────────────────────────
   try {
     const encoded = encodeURIComponent(text)
     const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encoded}&tl=en-US&client=tw-ob&ttsspeed=0.9`
+    console.log('[TTS] Fetching Google Translate TTS:', text.slice(0, 50) + '...')
+    
+    // No AbortSignal timeout here to avoid Node.js/Next.js fetch polyfill bugs on Windows
     const r = await fetch(url, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; VoiceBot/1.0)',
-        'Referer': 'https://translate.google.com/',
-        'Accept': 'audio/mpeg,audio/*;q=0.9,*/*;q=0.8',
-      },
-      signal: AbortSignal.timeout(5000),
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+      }
     })
+
     if (r.ok) {
       const buf = await r.arrayBuffer()
-      if (buf.byteLength > 500) {
+      if (buf.byteLength > 1000) {
+        console.log('[TTS] Google success, byteLength:', buf.byteLength)
         return new NextResponse(buf, {
           status: 200,
           headers: {
             'Content-Type': 'audio/mpeg',
-            'Cache-Control': 'no-store',
-          },
+            'Cache-Control': 'no-store'
+          }
         })
+      } else {
+        errors.push(`Google response too small: ${buf.byteLength} bytes`)
       }
+    } else {
+      errors.push(`Google returned ${r.status}: ${r.statusText}`)
     }
-  } catch (_) { /* fall through */ }
+  } catch (err) {
+    errors.push(`Google error: ${err.message}`)
+  }
 
-  // ── Provider 2: StreamElements ─────────────────────────────────────────────
-  try {
-    const url = `https://api.streamelements.com/kappa/v2/speech?voice=Joanna&text=${encodeURIComponent(text)}`
-    const r = await fetch(url, {
-      headers: { Accept: 'audio/mpeg' },
-      signal: AbortSignal.timeout(4000),
-    })
-    if (r.ok) {
-      const buf = await r.arrayBuffer()
-      if (buf.byteLength > 500) {
-        return new NextResponse(buf, {
-          status: 200,
-          headers: { 'Content-Type': 'audio/mpeg', 'Cache-Control': 'no-store' },
-        })
-      }
-    }
-  } catch (_) { /* fall through */ }
-
-  // ── Provider 3: VoiceRSS free tier ────────────────────────────────────────
-  try {
-    const url = `https://api.voicerss.org/?key=9c36cffdb04a4d21a2a06d95e1e8ea79&hl=en-us&src=${encodeURIComponent(text)}&c=MP3&f=16khz_16bit_mono`
-    const r = await fetch(url, { signal: AbortSignal.timeout(5000) })
-    if (r.ok) {
-      const buf = await r.arrayBuffer()
-      if (buf.byteLength > 500) {
-        return new NextResponse(buf, {
-          status: 200,
-          headers: { 'Content-Type': 'audio/mpeg', 'Cache-Control': 'no-store' },
-        })
-      }
-    }
-  } catch (_) { /* fall through */ }
-
-  // ── All providers failed: return 503 so client falls back to Web Speech ─────
-  return NextResponse.json({ error: 'All TTS providers unavailable' }, { status: 503 })
+  console.error('[TTS] Provider failed:', errors)
+  return NextResponse.json({ error: 'TTS provider failed', details: errors }, { status: 503 })
 }
