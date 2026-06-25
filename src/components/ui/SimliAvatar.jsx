@@ -122,26 +122,45 @@ export function SimliAvatar({ patientName, isSpeaking, onReady, onError, onMount
         )
         clientRef.current = client
 
-        // 4. Register events
-        client.on('connected', () => {
+        // 4. Register events (Simli v3 event names)
+        client.on('start', () => {
           if (stopped) return
           setStatus('ready')
           onReady?.()
         })
-        client.on('disconnected', () => {
+        client.on('stop', () => {
           if (stopped) return
           setStatus('idle')
         })
-        client.on('failed', (reason) => {
+        client.on('startup_error', (reason) => {
           if (stopped) return
-          console.error('Simli failed:', reason)
+          console.error('Simli startup_error:', reason)
           setStatus('error')
-          setErrorMsg('Avatar connection failed')
-          onError?.('Avatar connection failed')
+          setErrorMsg('Avatar startup failed')
+          onError?.('Avatar startup failed')
+        })
+        client.on('error', (reason) => {
+          if (stopped) return
+          console.error('Simli error:', reason)
+          setStatus('error')
+          setErrorMsg('Avatar connection error')
+          onError?.('Avatar connection error')
         })
 
-        // 5. Start
+        // 5. Start — also set ready here as fallback since 'start' event
+        //    may fire before we register the listener
         await client.start()
+        if (!stopped && status !== 'ready') {
+          setStatus('ready')
+          onReady?.()
+        }
+
+        // Extra fallback: watch for the video element to start playing
+        if (videoRef.current) {
+          videoRef.current.addEventListener('playing', () => {
+            if (!stopped) { setStatus('ready'); onReady?.() }
+          }, { once: true })
+        }
       } catch (err) {
         if (stopped) return
         console.error('Failed to initialize SimliClient:', err)

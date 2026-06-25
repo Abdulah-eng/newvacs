@@ -34,98 +34,99 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   const [isListening, setIsListening] = useState(false)
   const [isSpeaking, setIsSpeaking] = useState(false)
   const [speechError, setSpeechError] = useState(null)
-  const recognitionRef = useRef(null)
-  const networkErrorCountRef = useRef(0)
+  const mediaRecorderRef = useRef(null)
+  const audioChunksRef = useRef([])
 
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight
   }, [chat])
 
-  // Initialize Speech Recognition
+  // Check microphone support on mount
   useEffect(() => {
-    if (typeof window !== 'undefined' && ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window)) {
-      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
-      const recognition = new SpeechRecognition()
-      recognition.continuous = false
-      recognition.interimResults = false
-      recognition.lang = 'en-US' // Must be set explicitly to avoid network errors
-      recognition.maxAlternatives = 1
-      recognitionRef.current = recognition
-      
-      recognition.onresult = (event) => {
-        const transcript = event.results[0][0].transcript
-        networkErrorCountRef.current = 0 // reset on success
-        send(transcript)
-        setIsListening(false)
-      }
-      
-      recognition.onerror = (event) => {
-        console.error('Speech recognition error', event.error)
-        setIsListening(false)
-
-        if (event.error === 'network') {
-          networkErrorCountRef.current += 1
-          if (networkErrorCountRef.current >= 2) {
-            // Auto-fallback to text mode after 2 network failures
-            setSpeechError(null)
-            setVoiceMode(false)
-            return
-          }
-          setSpeechError('Voice recognition requires internet access. Retrying… or switch to Text Mode.')
-        } else if (event.error === 'not-allowed') {
-          setSpeechError('Microphone access denied. Please allow microphone permission in your browser.')
-        } else if (event.error === 'no-speech') {
-          setSpeechError('No speech detected. Please try again.')
-        } else {
-          setSpeechError(`Voice error: ${event.error}. Try Text Mode instead.`)
-        }
-      }
-      
-      recognition.onend = () => {
-        setIsListening(false)
-      }
-    } else {
-      setSpeechError('Speech recognition not supported in this browser. Please use Text Mode.')
+    if (typeof window !== 'undefined' && !navigator.mediaDevices?.getUserMedia) {
+      setSpeechError('Microphone not supported in this browser. Please use Text Mode.')
       setVoiceMode(false)
     }
-
-    // Cleanup TTS if component unmounts
     return () => {
       if (window.speechSynthesis) window.speechSynthesis.cancel()
-      if (recognitionRef.current) {
-        try { recognitionRef.current.stop() } catch (_) {}
+      if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
+        try { mediaRecorderRef.current.stop() } catch (_) {}
       }
     }
   }, [])
 
-  const toggleListening = () => {
-    if (!recognitionRef.current) return
-    
+  const toggleListening = async () => {
+    // ── Stop if already recording ──
     if (isListening) {
-      recognitionRef.current.stop()
+      if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
+        mediaRecorderRef.current.stop()
+      }
       setIsListening(false)
-    } else {
-      // Cancel any ongoing speech before listening
-      if (window.speechSynthesis) window.speechSynthesis.cancel()
-      setIsSpeaking(false)
-      setSpeechError(null)
-      // Re-create recognition instance on each attempt to avoid stale state
-      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
-      const recognition = new SpeechRecognition()
-      recognition.continuous = false
-      recognition.interimResults = false
-      recognition.lang = 'en-US'
-      recognition.maxAlternatives = 1
-      recognition.onresult = recognitionRef.current.onresult
-      recognition.onerror = recognitionRef.current.onerror
-      recognition.onend = recognitionRef.current.onend
-      recognitionRef.current = recognition
-      try {
-        recognition.start()
-        setIsListening(true)
-      } catch (e) {
-        console.error(e)
-        setSpeechError('Could not start microphone. Please try Text Mode.')
+      return
+    }
+
+    // ── Start recording ──
+    if (window.speechSynthesis) window.speechSynthesis.cancel()
+    setIsSpeaking(false)
+    setSpeechError(null)
+    audioChunksRef.current = []
+
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+
+      // Pick the best supported audio format
+      const mimeType = MediaRecorder.isTypeSupported('audio/webm;codecs=opus')
+        ? 'audio/webm;codecs=opus'
+        : MediaRecorder.isTypeSupported('audio/webm')
+        ? 'audio/webm'
+        : 'audio/mp4'
+
+      const recorder = new MediaRecorder(stream, { mimeType })
+      mediaRecorderRef.current = recorder
+
+      recorder.ondataavailable = (e) => {
+        if (e.data.size > 0) audioChunksRef.current.push(e.data)
+      }
+
+      recorder.onstop = async () => {
+        // Stop all tracks to release mic
+        stream.getTracks().forEach(t => t.stop())
+        setIsListening(false)
+
+        const audioBlob = new Blob(audioChunksRef.current, { type: mimeType })
+        if (audioBlob.size < 1000) {
+          setSpeechError('No speech detected. Tap the mic and speak clearly.')
+          return
+        }
+
+        // Send to Groq Whisper via our server route
+        try {
+          const ext = mimeType.includes('mp4') ? 'mp4' : 'webm'
+          const formData = new FormData()
+          formData.append('audio', audioBlob, `recording.${ext}`)
+
+          const res = await fetch('/api/stt', { method: 'POST', body: formData })
+          const data = await res.json()
+
+          if (data.error || !data.text) {
+            setSpeechError('Could not understand audio. Please try again.')
+          } else {
+            send(data.text)
+          }
+        } catch (err) {
+          console.error('STT error:', err)
+          setSpeechError('Transcription failed. Please try again or use Text Mode.')
+        }
+      }
+
+      recorder.start()
+      setIsListening(true)
+    } catch (err) {
+      console.error('Mic access error:', err)
+      if (err.name === 'NotAllowedError') {
+        setSpeechError('Microphone access denied. Please allow microphone in your browser settings.')
+      } else {
+        setSpeechError('Could not access microphone. Please use Text Mode.')
       }
     }
   }
@@ -269,7 +270,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
                       {isListening ? <MicOff size={24} /> : <Mic size={24} />}
                     </button>
                     <p className="text-center text-[11px] font-semibold text-slate-500 mt-3 uppercase tracking-wider">
-                      {isListening ? 'Tap to Stop' : loading ? 'Thinking...' : isSpeaking ? 'Patient Speaking' : 'Tap to Speak'}
+                      {isListening ? '🔴 Recording… Tap to Stop' : loading ? 'Transcribing…' : isSpeaking ? 'Patient Speaking' : 'Tap to Speak'}
                     </p>
                   </div>
                 </div>
