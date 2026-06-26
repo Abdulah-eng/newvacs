@@ -1,0 +1,2026 @@
+﻿__Week 4 VACS Monday 40\-Question Clinical Question Bank__ __Heart Failure \+ Atrial Fibrillation \+ Anticoagulation/VTE__
+
+┬á
+
+__HEART FAILURE QUESTIONS__
+
+__Question ID: HF\-001__
+
+Disease State: Heart Failure
+
+Topic: Heart failure classification
+
+Difficulty: Foundational
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+A 58\-year\-old patient has an echocardiogram showing LVEF 35%\. Based on the Week 4 heart failure framework, how should this patientΓÇÖs heart failure be classified?
+
+Answer Choices:
+
+A\. Heart failure with preserved ejection fraction
+
+B\. Heart failure with mildly reduced ejection fraction
+
+C\. Heart failure with reduced ejection fraction
+
+D\. Stage A heart failure
+
+Correct Answer:
+
+C\. Heart failure with reduced ejection fraction
+
+Rationale:
+
+Heart failure with reduced ejection fraction is defined as LVEF Γëñ40%\. This patientΓÇÖs LVEF of 35% meets the definition of HFrEF\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. HFpEF is defined as LVEF ΓëÑ50%, which does not apply here\.
+
+B\. HFmrEF is defined as LVEF 41ΓÇô49%, which does not apply here\.
+
+D\. Stage A refers to patients at risk for heart failure without structural heart disease or symptoms; this patient already has reduced LVEF\.
+
+Source Support:
+
+Heart Failure Guideline Teaching Summary; 2022 AHA/ACC/HFSA Heart Failure Guideline
+
+Clinical Skill Tested:
+
+Classifying heart failure by ejection fraction\.
+
+┬á
+
+__Question ID: HF\-002__
+
+Disease State: Heart Failure
+
+Topic: NYHA functional classification
+
+Difficulty: Foundational
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+A patient with heart failure reports being comfortable at rest but develops shortness of breath when climbing stairs or doing ordinary activity\. Which NYHA functional class best describes this patient?
+
+Answer Choices:
+
+A\. NYHA Class I
+
+B\. NYHA Class II
+
+C\. NYHA Class III
+
+D\. NYHA Class IV
+
+Correct Answer:
+
+B\. NYHA Class II
+
+Rationale:
+
+NYHA Class II describes slight limitation of physical activity\. Patients are comfortable at rest, but ordinary activity causes symptoms\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. Class I indicates no limitation of physical activity\.
+
+C\. Class III involves symptoms with less\-than\-ordinary activity\.
+
+D\. Class IV involves symptoms at rest\.
+
+Source Support:
+
+Heart Failure Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Assessing symptom burden and functional status in heart failure\.
+
+┬á
+
+__Question ID: HF\-003__
+
+Disease State: Heart Failure
+
+Topic: ACC/AHA heart failure staging
+
+Difficulty: Foundational
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+A patient has structural heart disease and current symptoms of heart failure\. Which ACC/AHA heart failure stage best applies?
+
+Answer Choices:
+
+A\. Stage A
+
+B\. Stage B
+
+C\. Stage C
+
+D\. Stage D
+
+Correct Answer:
+
+C\. Stage C
+
+Rationale:
+
+Stage C heart failure describes structural heart disease with current or prior symptoms of heart failure\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. Stage A describes patients at risk for heart failure without structural heart disease or symptoms\.
+
+B\. Stage B describes structural heart disease without signs or symptoms of heart failure\.
+
+D\. Stage D describes advanced heart failure requiring specialized interventions\.
+
+Source Support:
+
+Heart Failure Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Applying ACC/AHA staging to ambulatory heart failure patients\.
+
+┬á
+
+__Question ID: HF\-004__
+
+Disease State: Heart Failure
+
+Topic: Foundational HFrEF therapy
+
+Difficulty: Foundational
+
+Question Type: Select\-all\-that\-apply
+
+Question Stem:
+
+Which medication classes are considered foundational therapy for HFrEF in the Week 4 heart failure materials? Select all that apply\.
+
+Answer Choices:
+
+A\. ARNI
+
+B\. Evidence\-based beta blocker
+
+C\. Mineralocorticoid receptor antagonist
+
+D\. SGLT2 inhibitor
+
+E\. Routine nondihydropyridine calcium channel blocker therapy
+
+Correct Answer:
+
+A, B, C, D
+
+Rationale:
+
+Modern HFrEF management centers on four foundational medication classes: ARNI, evidence\-based beta blocker, MRA, and SGLT2 inhibitor\.
+
+Why the Incorrect Options Are Wrong:
+
+E\. Nondihydropyridine calcium channel blockers are not foundational HFrEF therapy and may be problematic in HFrEF because of negative inotropic effects\.
+
+Source Support:
+
+Heart Failure Guideline Teaching Summary; 2022 AHA/ACC/HFSA Heart Failure Guideline
+
+Clinical Skill Tested:
+
+Recognizing core guideline\-directed medical therapy for HFrEF\.
+
+┬á
+
+__Question ID: HF\-005__
+
+Disease State: Heart Failure
+
+Topic: Evidence\-based beta blockers
+
+Difficulty: Foundational
+
+Question Type: Select\-all\-that\-apply
+
+Question Stem:
+
+Which beta blockers are identified as evidence\-based options for HFrEF? Select all that apply\.
+
+Answer Choices:
+
+A\. Metoprolol succinate
+
+B\. Carvedilol
+
+C\. Bisoprolol
+
+D\. Atenolol
+
+E\. Propranolol
+
+Correct Answer:
+
+A, B, C
+
+Rationale:
+
+The Week 4 heart failure materials identify metoprolol succinate, carvedilol, and bisoprolol as the beta blockers with demonstrated mortality benefit in HFrEF\.
+
+Why the Incorrect Options Are Wrong:
+
+D\. Atenolol is not listed as one of the evidence\-based HFrEF beta blockers\.
+
+E\. Propranolol is not listed as one of the evidence\-based HFrEF beta blockers\.
+
+Source Support:
+
+Heart Failure Guideline Teaching Summary; 2022 AHA/ACC/HFSA Heart Failure Guideline
+
+Clinical Skill Tested:
+
+Selecting evidence\-based beta blocker therapy in HFrEF\.
+
+┬á
+
+__Question ID: HF\-006__
+
+Disease State: Heart Failure
+
+Topic: ARNI transition from ACE inhibitor
+
+Difficulty: Intermediate
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+Patient A is newly diagnosed with symptomatic HFrEF and is currently taking lisinopril 20 mg daily\. The pharmacist is considering sacubitril/valsartan\. Which recommendation is most appropriate?
+
+Answer Choices:
+
+A\. Start sacubitril/valsartan immediately while continuing lisinopril
+
+B\. Stop lisinopril and allow an appropriate washout period before starting sacubitril/valsartan
+
+C\. Avoid ARNI therapy because the patient has HFrEF
+
+D\. Continue lisinopril indefinitely and avoid GDMT optimization
+
+Correct Answer:
+
+B\. Stop lisinopril and allow an appropriate washout period before starting sacubitril/valsartan
+
+Rationale:
+
+When transitioning from an ACE inhibitor to an ARNI, the ACE inhibitor should be stopped and an appropriate washout period should occur before starting sacubitril/valsartan\. This helps reduce the risk of angioedema\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. ACE inhibitors and ARNIs should not be overlapped\.
+
+C\. HFrEF is an appropriate setting to evaluate ARNI therapy when patient\-specific factors allow\.
+
+D\. Continuing lisinopril without evaluating contemporary GDMT would miss an important optimization opportunity\.
+
+Source Support:
+
+Heart Failure Guideline Teaching Summary; 2022 AHA/ACC/HFSA Heart Failure Guideline; Patient A Tuesday
+
+Clinical Skill Tested:
+
+Safely transitioning from ACE inhibitor therapy to ARNI therapy\.
+
+┬á
+
+__Question ID: HF\-007__
+
+Disease State: Heart Failure
+
+Topic: MRA initiation and monitoring
+
+Difficulty: Intermediate
+
+Question Type: Select\-all\-that\-apply
+
+Question Stem:
+
+Which parameters should be assessed when considering spironolactone therapy for a patient with HFrEF? Select all that apply\.
+
+Answer Choices:
+
+A\. Potassium
+
+B\. Serum creatinine
+
+C\. eGFR
+
+D\. Blood pressure and symptoms
+
+E\. Routine INR
+
+Correct Answer:
+
+A, B, C, D
+
+Rationale:
+
+MRA therapy requires assessment of potassium, renal function, eGFR, blood pressure, and clinical tolerability\. These are important because MRAs can increase potassium and require careful renal monitoring\.
+
+Why the Incorrect Options Are Wrong:
+
+E\. Routine INR monitoring is not required for spironolactone therapy\.
+
+Source Support:
+
+Heart Failure Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Assessing safety and monitoring needs before adding MRA therapy\.
+
+┬á
+
+__Question ID: HF\-008__
+
+Disease State: Heart Failure
+
+Topic: SGLT2 inhibitors in HFrEF
+
+Difficulty: Foundational
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+Which statement about SGLT2 inhibitors in HFrEF is most consistent with the Week 4 materials?
+
+Answer Choices:
+
+A\. They only provide benefit in patients with diabetes
+
+B\. They may reduce hospitalization and cardiovascular mortality, and benefits occur regardless of diabetes status
+
+C\. They replace the need for beta blocker therapy
+
+D\. They require routine coagulation monitoring
+
+Correct Answer:
+
+B\. They may reduce hospitalization and cardiovascular mortality, and benefits occur regardless of diabetes status
+
+Rationale:
+
+The Week 4 heart failure materials state that SGLT2 inhibitors have benefits in HFrEF regardless of diabetes status\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. Their benefit is not limited to patients with diabetes\.
+
+C\. SGLT2 inhibitors do not replace other foundational HFrEF therapies\.
+
+D\. Routine coagulation monitoring is not required for SGLT2 inhibitors\.
+
+Source Support:
+
+Heart Failure Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Understanding the role of SGLT2 inhibitors in HFrEF\.
+
+┬á
+
+__Question ID: HF\-009__
+
+Disease State: Heart Failure
+
+Topic: GDMT sequencing
+
+Difficulty: Intermediate
+
+Question Type: NAPLEX\-inspired K\-type\-style
+
+Question Stem:
+
+Which statements about practical GDMT sequencing in HFrEF are consistent with the Week 4 materials?
+
+I\. All four foundational HFrEF medication classes should be evaluated when feasible\.
+
+II\. Therapy should generally be implemented early and titrated as tolerated\.
+
+III\. Clinicians must always fully titrate one medication to target before adding another class\.
+
+IV\. Monitoring should occur after initiation and titration\.
+
+Answer Choices:
+
+A\. I and II only
+
+B\. I, II, and IV only
+
+C\. II and III only
+
+D\. I, III, and IV only
+
+Correct Answer:
+
+B\. I, II, and IV only
+
+Rationale:
+
+The Week 4 heart failure materials emphasize early initiation of foundational therapy, titration as tolerated, and monitoring after initiation and dose changes\. They specifically discourage delaying initiation of one therapy while waiting to optimize another\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. This omits monitoring after initiation and titration\.
+
+C\. Statement III is incorrect because full titration of one class is not required before adding another\.
+
+D\. Statement III is incorrect\.
+
+Source Support:
+
+Heart Failure Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Applying modern HFrEF GDMT sequencing principles\.
+
+┬á
+
+__Question ID: HF\-010__
+
+Disease State: Heart Failure
+
+Topic: Home monitoring and patient education
+
+Difficulty: Foundational
+
+Question Type: Select\-all\-that\-apply
+
+Question Stem:
+
+Which counseling and monitoring topics are appropriate for a patient newly diagnosed with HFrEF? Select all that apply\.
+
+Answer Choices:
+
+A\. Daily weight monitoring
+
+B\. Blood pressure and heart rate monitoring
+
+C\. Sodium reduction counseling
+
+D\. Medication adherence counseling
+
+E\. Education on when to report worsening symptoms
+
+Correct Answer:
+
+A, B, C, D, E
+
+Rationale:
+
+Newly diagnosed HFrEF patients need education on self\-monitoring, lifestyle changes, medication adherence, and symptom recognition\. Daily weights, BP, HR, sodium intake, adherence, and symptom reporting are all relevant\.
+
+Why the Incorrect Options Are Wrong:
+
+There are no incorrect options in this question\.
+
+Source Support:
+
+Heart Failure Guideline Teaching Summary; Patient A Tuesday
+
+Clinical Skill Tested:
+
+Developing a patient\-centered heart failure monitoring and education plan\.
+
+┬á
+
+__Question ID: HF\-011__
+
+Disease State: Heart Failure
+
+Topic: Heart failure with improved ejection fraction
+
+Difficulty: Intermediate
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+Patient AΓÇÖs LVEF improves from 35% to 45% after several months of guideline\-directed therapy\. He asks if he can stop his heart failure medications because his ejection fraction improved\. What is the best response?
+
+Answer Choices:
+
+A\. Stop all HFrEF medications because the heart failure is cured
+
+B\. Continue HFrEF therapy because improved EF does not mean therapy should be stopped
+
+C\. Stop the beta blocker but continue the other medications
+
+D\. Stop sacubitril/valsartan because EF is now above 40%
+
+Correct Answer:
+
+B\. Continue HFrEF therapy because improved EF does not mean therapy should be stopped
+
+Rationale:
+
+Patients with improved EF after prior HFrEF should continue HFrEF therapy\. Improvement reflects treatment response and does not mean the underlying condition is cured\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. EF improvement is not the same as cure\.
+
+C\. The beta blocker should not be stopped solely because EF improved\.
+
+D\. ARNI therapy should not be stopped solely because EF improved\.
+
+Source Support:
+
+2022 AHA/ACC/HFSA Heart Failure Guideline; Patient A Thursday
+
+Clinical Skill Tested:
+
+Recognizing the need for long\-term GDMT continuation in HFimpEF\.
+
+┬á
+
+__Question ID: HF\-012__
+
+Disease State: Heart Failure
+
+Topic: Medication therapy problems in HFrEF
+
+Difficulty: Intermediate
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+Patient B has HFrEF and reports persistent mild fatigue and exertional dyspnea\. She is prescribed sacubitril/valsartan, metoprolol succinate, and empagliflozin, but she misses evening doses several times per week because of cost concerns\. What is the most appropriate next step?
+
+Answer Choices:
+
+A\. Immediately intensify HFrEF therapy without addressing adherence
+
+B\. Stop all HFrEF medications because symptoms persist
+
+C\. Address adherence and medication access barriers before interpreting symptoms as treatment failure
+
+D\. Switch metoprolol succinate to atenolol
+
+Correct Answer:
+
+C\. Address adherence and medication access barriers before interpreting symptoms as treatment failure
+
+Rationale:
+
+Persistent symptoms cannot be interpreted as treatment failure if the patient is not consistently taking prescribed therapy\. The immediate priority is to address adherence, cost, and access barriers\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. Intensifying therapy without addressing adherence may worsen medication burden and does not solve the root issue\.
+
+B\. Stopping therapy would be unsafe and unsupported\.
+
+D\. Atenolol is not one of the evidence\-based beta blockers for HFrEF\.
+
+Source Support:
+
+Patient B Tuesday; Heart Failure Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Prioritizing adherence and access barriers before therapy escalation\.
+
+┬á
+
+__ATRIAL FIBRILLATION QUESTIONS__
+
+__Question ID: AF\-001__
+
+Disease State: Atrial Fibrillation
+
+Topic: AFib classification
+
+Difficulty: Foundational
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+A patient has atrial fibrillation that continues for more than 7 days\. How should this AFib pattern be classified?
+
+Answer Choices:
+
+A\. Paroxysmal AFib
+
+B\. Persistent AFib
+
+C\. Long\-standing persistent AFib
+
+D\. Permanent AFib
+
+Correct Answer:
+
+B\. Persistent AFib
+
+Rationale:
+
+Persistent AFib is AFib that continues for more than 7 days\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. Paroxysmal AFib terminates spontaneously or with intervention within 7 days\.
+
+C\. Long\-standing persistent AFib is continuous AFib lasting longer than 12 months\.
+
+D\. Permanent AFib means the patient and care team have decided to discontinue rhythm\-control attempts\.
+
+Source Support:
+
+Atrial Fibrillation Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Classifying atrial fibrillation patterns\.
+
+┬á
+
+__Question ID: AF\-002__
+
+Disease State: Atrial Fibrillation
+
+Topic: CHAΓééDSΓéé\-VASc score components
+
+Difficulty: Foundational
+
+Question Type: Select\-all\-that\-apply
+
+Question Stem:
+
+Which factors are components of the CHAΓééDSΓéé\-VASc score? Select all that apply\.
+
+Answer Choices:
+
+A\. Congestive heart failure
+
+B\. Hypertension
+
+C\. Age ΓëÑ75 years
+
+D\. Diabetes mellitus
+
+E\. Prior stroke/TIA/systemic embolism
+
+Correct Answer:
+
+A, B, C, D, E
+
+Rationale:
+
+The CHAΓééDSΓéé\-VASc score includes congestive heart failure, hypertension, age ΓëÑ75 years, diabetes, prior stroke/TIA/systemic embolism, vascular disease, age 65ΓÇô74 years, and female sex\.
+
+Why the Incorrect Options Are Wrong:
+
+There are no incorrect options in this question\.
+
+Source Support:
+
+Atrial Fibrillation Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Identifying stroke\-risk factors in AFib\.
+
+┬á
+
+__Question ID: AF\-003__
+
+Disease State: Atrial Fibrillation
+
+Topic: Anticoagulation threshold
+
+Difficulty: Foundational
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+According to the Week 4 AFib materials, which CHAΓééDSΓéé\-VASc category generally supports oral anticoagulation unless contraindicated?
+
+Answer Choices:
+
+A\. Men 0; women 1
+
+B\. Men 1; women 2
+
+C\. Men ΓëÑ2; women ΓëÑ3
+
+D\. Any patient with palpitations, regardless of risk factors
+
+Correct Answer:
+
+C\. Men ΓëÑ2; women ΓëÑ3
+
+Rationale:
+
+The Week 4 AFib summary identifies men with CHAΓééDSΓéé\-VASc ΓëÑ2 and women with CHAΓééDSΓéé\-VASc ΓëÑ3 as elevated risk, where oral anticoagulation is generally recommended unless contraindicated\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. This is considered low risk\.
+
+B\. This is an intermediate\-risk category where individualized decision\-making is appropriate\.
+
+D\. Anticoagulation decisions are based on thromboembolic risk, not palpitations alone\.
+
+Source Support:
+
+Atrial Fibrillation Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Applying CHAΓééDSΓéé\-VASc interpretation to anticoagulation decisions\.
+
+┬á
+
+__Question ID: AF\-004__
+
+Disease State: Atrial Fibrillation
+
+Topic: Stroke prevention and symptom burden
+
+Difficulty: Foundational
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+A patient with AFib says, ΓÇ£I hardly ever feel my heart racing, so I probably do not need a blood thinner\.ΓÇ¥ What is the best response?
+
+Answer Choices:
+
+A\. Anticoagulation is only needed when AFib symptoms are severe
+
+B\. Stroke prevention is based on thromboembolic risk, not symptom burden alone
+
+C\. Blood thinners are only used for rhythm control
+
+D\. Aspirin is always enough if the patient has no palpitations
+
+Correct Answer:
+
+B\. Stroke prevention is based on thromboembolic risk, not symptom burden alone
+
+Rationale:
+
+Patients with AFib may remain at risk for thromboembolic events even when symptoms are minimal or absent\. Anticoagulation decisions should be driven by stroke risk assessment\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. Symptom burden alone does not determine anticoagulation need\.
+
+C\. Anticoagulants are used for stroke prevention, not rhythm control\.
+
+D\. The Week 4 materials do not support using aspirin as a default substitute for anticoagulation in this scenario\.
+
+Source Support:
+
+Atrial Fibrillation Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Explaining the purpose of anticoagulation in AFib\.
+
+┬á
+
+__Question ID: AF\-005__
+
+Disease State: Atrial Fibrillation
+
+Topic: DOAC versus warfarin considerations
+
+Difficulty: Foundational
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+Which statement best reflects the Week 4 AFib materials regarding DOACs?
+
+Answer Choices:
+
+A\. DOACs are generally preferred over warfarin in eligible patients
+
+B\. DOACs require routine INR monitoring
+
+C\. DOACs have more food interactions than warfarin
+
+D\. DOACs are used only for patients with no stroke risk factors
+
+Correct Answer:
+
+A\. DOACs are generally preferred over warfarin in eligible patients
+
+Rationale:
+
+The Week 4 AFib materials describe DOACs as generally preferred over warfarin in eligible patients because of predictable pharmacokinetics, reduced monitoring requirements, fewer food and drug interactions, and lower intracranial bleeding risk\.
+
+Why the Incorrect Options Are Wrong:
+
+B\. DOACs do not require routine INR monitoring\.
+
+C\. DOACs generally have fewer food interactions than warfarin\.
+
+D\. DOACs are commonly used for stroke prevention in patients with elevated thromboembolic risk\.
+
+Source Support:
+
+Atrial Fibrillation Guideline Teaching Summary; Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Comparing DOACs and warfarin for AFib stroke prevention\.
+
+┬á
+
+__Question ID: AF\-006__
+
+Disease State: Atrial Fibrillation
+
+Topic: Rate control in HFrEF
+
+Difficulty: Intermediate
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+A patient has persistent AFib and HFrEF\. Which rate\-control medication class is most appropriate to prioritize based on the Week 4 materials?
+
+Answer Choices:
+
+A\. Evidence\-based beta blocker
+
+B\. Diltiazem
+
+C\. Verapamil
+
+D\. Immediate discontinuation of all rate\-control therapy
+
+Correct Answer:
+
+A\. Evidence\-based beta blocker
+
+Rationale:
+
+Beta blockers are commonly used for rate control and are particularly important in patients with HFrEF\. Nondihydropyridine calcium channel blockers such as diltiazem and verapamil should generally be avoided in HFrEF because of negative inotropic effects\.
+
+Why the Incorrect Options Are Wrong:
+
+B\. Diltiazem should generally be avoided in HFrEF\.
+
+C\. Verapamil should generally be avoided in HFrEF\.
+
+D\. Rate control remains clinically relevant in AFib management\.
+
+Source Support:
+
+Atrial Fibrillation Guideline Teaching Summary; 2022 AHA/ACC/HFSA Heart Failure Guideline
+
+Clinical Skill Tested:
+
+Selecting rate\-control therapy in AFib with HFrEF\.
+
+┬á
+
+__Question ID: AF\-007__
+
+Disease State: Atrial Fibrillation
+
+Topic: Rhythm\-control referral awareness
+
+Difficulty: Intermediate
+
+Question Type: Select\-all\-that\-apply
+
+Question Stem:
+
+Which findings may prompt consideration of referral for rhythm\-control evaluation? Select all that apply\.
+
+Answer Choices:
+
+A\. Persistent symptoms despite rate control
+
+B\. Recurrent hospitalizations
+
+C\. Failure of initial management strategies
+
+D\. Patient preference after shared decision\-making
+
+E\. Stable AFib with no symptoms, no concerns, and no management problems
+
+Correct Answer:
+
+A, B, C, D
+
+Rationale:
+
+Pharmacists should recognize situations where rhythm\-control referral may be appropriate, including persistent symptoms despite rate control, recurrent hospitalizations, failure of initial strategies, and patient\-specific preferences\.
+
+Why the Incorrect Options Are Wrong:
+
+E\. Stable AFib without symptoms, concerns, or management issues does not automatically require rhythm\-control referral\.
+
+Source Support:
+
+Atrial Fibrillation Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Recognizing when AFib rhythm\-control referral may be appropriate\.
+
+┬á
+
+__Question ID: AF\-008__
+
+Disease State: Atrial Fibrillation
+
+Topic: AFib monitoring
+
+Difficulty: Foundational
+
+Question Type: Select\-all\-that\-apply
+
+Question Stem:
+
+Which items are appropriate to monitor in a patient with AFib receiving anticoagulation? Select all that apply\.
+
+Answer Choices:
+
+A\. Heart rate
+
+B\. Blood pressure
+
+C\. Bleeding symptoms
+
+D\. Medication adherence
+
+E\. Stroke or TIA symptoms
+
+Correct Answer:
+
+A, B, C, D, E
+
+Rationale:
+
+AFib management includes symptom and rate assessment, blood pressure control, anticoagulation safety monitoring, medication adherence assessment, and monitoring for signs of thromboembolic events\.
+
+Why the Incorrect Options Are Wrong:
+
+There are no incorrect options in this question\.
+
+Source Support:
+
+Atrial Fibrillation Guideline Teaching Summary; Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Identifying monitoring priorities in AFib and anticoagulation\.
+
+┬á
+
+__Question ID: AF\-009__
+
+Disease State: Atrial Fibrillation
+
+Topic: Patient education and health literacy
+
+Difficulty: Intermediate
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+Patient B says, ΓÇ£I know apixaban is a blood thinner, but I am not sure what it is preventing\.ΓÇ¥ What is the best pharmacist response?
+
+Answer Choices:
+
+A\. Ignore the knowledge gap because she is already prescribed the medication
+
+B\. Explain in patient\-friendly language that apixaban helps reduce stroke risk from AFib
+
+C\. Tell her to stop apixaban until she understands it better
+
+D\. Focus only on cholesterol counseling
+
+Correct Answer:
+
+B\. Explain in patient\-friendly language that apixaban helps reduce stroke risk from AFib
+
+Rationale:
+
+Patient B has limited understanding of AFib, stroke risk, and the purpose of anticoagulation\. Education using patient\-friendly language and teach\-back is appropriate\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. Knowledge gaps can worsen adherence and should be addressed\.
+
+C\. Stopping anticoagulation without indication may increase stroke risk\.
+
+D\. Cholesterol counseling does not address the immediate anticoagulation knowledge gap\.
+
+Source Support:
+
+Patient B Tuesday; Atrial Fibrillation Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Providing patient\-centered anticoagulation education\.
+
+┬á
+
+__Question ID: AF\-010__
+
+Disease State: Atrial Fibrillation
+
+Topic: Anticoagulation nonadherence
+
+Difficulty: Intermediate
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+Patient B has persistent AFib and elevated stroke risk\. She admits missing evening apixaban doses approximately 2ΓÇô3 times per week because of cost\. What is the most important clinical concern?
+
+Answer Choices:
+
+A\. Missed apixaban doses may reduce stroke protection
+
+B\. Missed doses improve safety and have no clinical downside
+
+C\. Missed doses mean anticoagulation is no longer indicated
+
+D\. Missed doses mean the patient should automatically be switched to aspirin
+
+Correct Answer:
+
+A\. Missed apixaban doses may reduce stroke protection
+
+Rationale:
+
+Consistent anticoagulant use is essential for stroke prevention\. Missing apixaban doses several times per week reduces the effectiveness of therapy and should prompt adherence and access interventions\.
+
+Why the Incorrect Options Are Wrong:
+
+B\. Missed doses may increase thromboembolic risk\.
+
+C\. Nonadherence does not remove the indication for anticoagulation\.
+
+D\. Aspirin is not an automatic substitute for anticoagulation in this scenario\.
+
+Source Support:
+
+Patient B Tuesday; Atrial Fibrillation Guideline Teaching Summary; Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Recognizing the clinical significance of DOAC nonadherence\.
+
+┬á
+
+__Question ID: AF\-011__
+
+Disease State: Atrial Fibrillation
+
+Topic: Minor bruising and anticoagulation fear
+
+Difficulty: Intermediate
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+Patient B reports minor bruising on her arms and legs but denies hematuria, melena, hematochezia, epistaxis, falls, trauma, or major bleeding\. Her hemoglobin is stable\. Because of fear, she has skipped several apixaban doses\. What is the most appropriate interpretation?
+
+Answer Choices:
+
+A\. Minor bruising automatically requires permanent apixaban discontinuation
+
+B\. Minor bruising should be assessed and counseled on, but does not automatically justify stopping anticoagulation
+
+C\. Bruising means stroke risk no longer matters
+
+D\. Bruising requires LMWH bridging
+
+Correct Answer:
+
+B\. Minor bruising should be assessed and counseled on, but does not automatically justify stopping anticoagulation
+
+Rationale:
+
+The student should distinguish minor bruising from major bleeding\. In this case, the more urgent issue is fear\-driven anticoagulation nonadherence in a patient with elevated stroke risk\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. Minor bruising alone does not automatically require stopping apixaban\.
+
+C\. Stroke risk remains clinically important\.
+
+D\. LMWH bridging is not indicated for minor bruising\.
+
+Source Support:
+
+Patient B Wednesday; Atrial Fibrillation Guideline Teaching Summary; Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Differentiating minor bleeding concerns from major bleeding and addressing adherence risk\.
+
+┬á
+
+__Question ID: AF\-012__
+
+Disease State: Atrial Fibrillation
+
+Topic: AFib goals of therapy
+
+Difficulty: Foundational
+
+Question Type: NAPLEX\-inspired K\-type\-style
+
+Question Stem:
+
+Which statements correctly describe major goals of AFib management in ambulatory care?
+
+I\. Reduce thromboembolic risk\.
+
+II\. Manage symptoms and rate/rhythm issues when appropriate\.
+
+III\. Ignore anticoagulation if the patient does not feel palpitations\.
+
+IV\. Address lifestyle and risk factors such as blood pressure, weight, and physical activity\.
+
+Answer Choices:
+
+A\. I and II only
+
+B\. I, II, and IV only
+
+C\. II and III only
+
+D\. I, II, III, and IV
+
+Correct Answer:
+
+B\. I, II, and IV only
+
+Rationale:
+
+AFib management includes reducing thromboembolic risk, managing symptoms and rate/rhythm issues, and addressing risk factors\. Anticoagulation should not be ignored simply because the patient is minimally symptomatic\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. This omits lifestyle and risk\-factor modification\.
+
+C\. Statement III is incorrect because stroke risk remains important even without symptoms\.
+
+D\. Statement III is incorrect\.
+
+Source Support:
+
+Atrial Fibrillation Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Recognizing the core goals of AFib management\.
+
+┬á
+
+__ANTICOAGULATION / VTE QUESTIONS__
+
+__Question ID: AC\-001__
+
+Disease State: Anticoagulation/VTE
+
+Topic: VTE definitions
+
+Difficulty: Foundational
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+Which statement best describes a pulmonary embolism?
+
+Answer Choices:
+
+A\. A clot that forms only in superficial veins
+
+B\. A thrombus that embolizes to the pulmonary vasculature
+
+C\. A rhythm disorder caused by abnormal atrial electrical activity
+
+D\. A heart failure classification based on ejection fraction
+
+Correct Answer:
+
+B\. A thrombus that embolizes to the pulmonary vasculature
+
+Rationale:
+
+Pulmonary embolism occurs when a thrombus embolizes to the pulmonary vasculature\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. This describes superficial venous thrombosis, not PE\.
+
+C\. This describes atrial fibrillation\.
+
+D\. This describes heart failure classification, not PE\.
+
+Source Support:
+
+Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Distinguishing VTE terminology\.
+
+┬á
+
+__Question ID: AC\-002__
+
+Disease State: Anticoagulation/VTE
+
+Topic: Provoked versus unprovoked VTE
+
+Difficulty: Foundational
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+A patient develops a DVT after major surgery and temporary immobilization\. How should this event be categorized?
+
+Answer Choices:
+
+A\. Unprovoked VTE
+
+B\. Provoked VTE
+
+C\. Permanent atrial fibrillation
+
+D\. HFimpEF
+
+Correct Answer:
+
+B\. Provoked VTE
+
+Rationale:
+
+Provoked VTE occurs in the setting of a transient risk factor such as major surgery, trauma, immobilization, hospitalization, or temporary estrogen therapy\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. Unprovoked VTE occurs without an identifiable transient provoking factor\.
+
+C\. Permanent AFib is an arrhythmia classification, not a VTE category\.
+
+D\. HFimpEF is a heart failure category, not a VTE category\.
+
+Source Support:
+
+Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Classifying VTE based on provoking factors\.
+
+┬á
+
+__Question ID: AC\-003__
+
+Disease State: Anticoagulation/VTE
+
+Topic: Extended anticoagulation
+
+Difficulty: Intermediate
+
+Question Type: Select\-all\-that\-apply
+
+Question Stem:
+
+Which factors may support consideration of extended anticoagulation after the initial treatment period? Select all that apply\.
+
+Answer Choices:
+
+A\. Unprovoked VTE
+
+B\. Recurrent VTE
+
+C\. Persistent risk factors
+
+D\. Acceptable bleeding risk
+
+E\. Resolved major transient provoking factor with high bleeding risk
+
+Correct Answer:
+
+A, B, C, D
+
+Rationale:
+
+Factors supporting extended anticoagulation include unprovoked VTE, recurrent VTE, persistent risk factors, and acceptable bleeding risk\.
+
+Why the Incorrect Options Are Wrong:
+
+E\. A resolved major transient provoking factor and high bleeding risk generally weigh against extended anticoagulation\.
+
+Source Support:
+
+Anticoagulation/VTE Guideline Teaching Summary; 2021 CHEST VTE Guideline
+
+Clinical Skill Tested:
+
+Evaluating recurrence\-risk factors that support extended anticoagulation\.
+
+┬á
+
+__Question ID: AC\-004__
+
+Disease State: Anticoagulation/VTE
+
+Topic: Bleeding risk assessment
+
+Difficulty: Foundational
+
+Question Type: Select\-all\-that\-apply
+
+Question Stem:
+
+Which factors can increase bleeding risk in patients receiving anticoagulation? Select all that apply\.
+
+Answer Choices:
+
+A\. Advanced age
+
+B\. Chronic kidney disease
+
+C\. Prior bleeding events
+
+D\. Concurrent antiplatelet therapy
+
+E\. Excessive alcohol use
+
+Correct Answer:
+
+A, B, C, D, E
+
+Rationale:
+
+The Week 4 anticoagulation materials list advanced age, CKD, prior bleeding events, concurrent antiplatelet therapy, excessive alcohol use, and poor medication adherence as bleeding\-risk factors\.
+
+Why the Incorrect Options Are Wrong:
+
+There are no incorrect options in this question\.
+
+Source Support:
+
+Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Identifying bleeding\-risk factors during anticoagulation assessment\.
+
+┬á
+
+__Question ID: AC\-005__
+
+Disease State: Anticoagulation/VTE
+
+Topic: Bleeding risk versus anticoagulation benefit
+
+Difficulty: Intermediate
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+A patient receiving anticoagulation has CKD and advanced age, increasing bleeding risk\. Which statement best reflects the Week 4 anticoagulation framework?
+
+Answer Choices:
+
+A\. Increased bleeding risk automatically means anticoagulation must be stopped
+
+B\. Bleeding risk should be ignored when thrombotic risk is high
+
+C\. Increased bleeding risk should prompt careful monitoring and patient\-specific decision\-making
+
+D\. Bleeding risk only matters for patients taking warfarin
+
+Correct Answer:
+
+C\. Increased bleeding risk should prompt careful monitoring and patient\-specific decision\-making
+
+Rationale:
+
+The Week 4 materials state that increased bleeding risk does not automatically preclude anticoagulation\. Instead, it should prompt careful monitoring and individualized decision\-making\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. Increased bleeding risk does not automatically require stopping therapy\.
+
+B\. Bleeding risk should not be ignored\.
+
+D\. Bleeding risk applies to anticoagulation broadly, not only warfarin\.
+
+Source Support:
+
+Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Balancing thrombotic and bleeding risk\.
+
+┬á
+
+__Question ID: AC\-006__
+
+Disease State: Anticoagulation/VTE
+
+Topic: DOAC advantages
+
+Difficulty: Foundational
+
+Question Type: Select\-all\-that\-apply
+
+Question Stem:
+
+Which are general advantages of DOAC therapy listed in the Week 4 materials? Select all that apply\.
+
+Answer Choices:
+
+A\. Predictable anticoagulation
+
+B\. Limited routine laboratory monitoring
+
+C\. Fewer food interactions
+
+D\. Improved convenience
+
+E\. Required weekly INR monitoring
+
+Correct Answer:
+
+A, B, C, D
+
+Rationale:
+
+The Week 4 materials describe DOAC advantages as predictable anticoagulation, limited routine laboratory monitoring, fewer food interactions, and improved convenience\.
+
+Why the Incorrect Options Are Wrong:
+
+E\. Weekly INR monitoring is not required for DOAC therapy\.
+
+Source Support:
+
+Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Recognizing practical advantages of DOAC therapy\.
+
+┬á
+
+__Question ID: AC\-007__
+
+Disease State: Anticoagulation/VTE
+
+Topic: Apixaban considerations
+
+Difficulty: Foundational
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+Which statement best reflects the Week 4 materials regarding apixaban?
+
+Answer Choices:
+
+A\. Apixaban is never used for AFib
+
+B\. Apixaban is commonly used for AFib, DVT treatment, PE treatment, and extended VTE prevention
+
+C\. Apixaban requires routine INR monitoring
+
+D\. Apixaban must always be taken with food at therapeutic doses
+
+Correct Answer:
+
+B\. Apixaban is commonly used for AFib, DVT treatment, PE treatment, and extended VTE prevention
+
+Rationale:
+
+The Week 4 anticoagulation materials list apixaban as commonly used for atrial fibrillation, DVT treatment, PE treatment, and extended VTE prevention\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. Apixaban is commonly used for AFib stroke prevention\.
+
+C\. Routine INR monitoring is not required for apixaban\.
+
+D\. The therapeutic\-dose food requirement is highlighted for rivaroxaban, not apixaban\.
+
+Source Support:
+
+Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Identifying common indications and counseling considerations for apixaban\.
+
+┬á
+
+__Question ID: AC\-008__
+
+Disease State: Anticoagulation/VTE
+
+Topic: Rivaroxaban counseling
+
+Difficulty: Foundational
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+Which counseling point is specifically highlighted for rivaroxaban at therapeutic doses?
+
+Answer Choices:
+
+A\. Take with food
+
+B\. Inject monthly
+
+C\. Check INR weekly
+
+D\. Avoid use for VTE
+
+Correct Answer:
+
+A\. Take with food
+
+Rationale:
+
+The Week 4 materials state that rivaroxaban requires food with therapeutic doses\.
+
+Why the Incorrect Options Are Wrong:
+
+B\. Rivaroxaban is not a monthly injection\.
+
+C\. Rivaroxaban does not require weekly INR monitoring\.
+
+D\. Rivaroxaban is used for AFib, DVT treatment, PE treatment, and extended VTE prevention\.
+
+Source Support:
+
+Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Providing medication\-specific DOAC counseling\.
+
+┬á
+
+__Question ID: AC\-009__
+
+Disease State: Anticoagulation/VTE
+
+Topic: CKD and anticoagulation
+
+Difficulty: Intermediate
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+Why should renal function be evaluated before and during anticoagulation therapy?
+
+Answer Choices:
+
+A\. Declining renal function may alter drug exposure and CKD increases both thrombotic and bleeding risk
+
+B\. Renal function is only relevant for warfarin
+
+C\. CKD eliminates the need for anticoagulation
+
+D\. CKD means routine coagulation monitoring is required for every DOAC
+
+Correct Answer:
+
+A\. Declining renal function may alter drug exposure and CKD increases both thrombotic and bleeding risk
+
+Rationale:
+
+The Week 4 materials emphasize that renal function should be evaluated before anticoagulation and monitored periodically because declining renal function can alter drug exposure\. CKD also increases both thrombotic and bleeding risk\.
+
+Why the Incorrect Options Are Wrong:
+
+B\. Renal function is relevant to DOAC selection and safety\.
+
+C\. CKD does not automatically remove the indication for anticoagulation\.
+
+D\. Routine coagulation monitoring is generally not required with DOAC therapy\.
+
+Source Support:
+
+Anticoagulation/VTE Guideline Teaching Summary; 2026 ACC/AHA/CHEST VTE Guideline
+
+Clinical Skill Tested:
+
+Applying renal function considerations to anticoagulation safety\.
+
+┬á
+
+__Question ID: AC\-010__
+
+Disease State: Anticoagulation/VTE
+
+Topic: Anticoagulation monitoring
+
+Difficulty: Foundational
+
+Question Type: Select\-all\-that\-apply
+
+Question Stem:
+
+Which monitoring items are appropriate for a patient receiving anticoagulation? Select all that apply\.
+
+Answer Choices:
+
+A\. Signs of bleeding
+
+B\. Bruising
+
+C\. Falls
+
+D\. Medication adherence
+
+E\. Serum creatinine and eGFR
+
+Correct Answer:
+
+A, B, C, D, E
+
+Rationale:
+
+Anticoagulation monitoring should include signs of bleeding, bruising, falls, adherence, renal function, and laboratory monitoring such as CBC when clinically appropriate\.
+
+Why the Incorrect Options Are Wrong:
+
+There are no incorrect options in this question\.
+
+Source Support:
+
+Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Creating a practical anticoagulation monitoring plan\.
+
+┬á
+
+__Question ID: AC\-011__
+
+Disease State: Anticoagulation/VTE
+
+Topic: Routine coagulation monitoring with DOACs
+
+Difficulty: Foundational
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+Which statement about routine coagulation monitoring with DOAC therapy is most accurate?
+
+Answer Choices:
+
+A\. Routine coagulation monitoring is generally not required
+
+B\. INR should be checked weekly for all DOACs
+
+C\. aPTT should be checked before every DOAC dose
+
+D\. Anti\-Xa levels are required daily for all DOAC patients
+
+Correct Answer:
+
+A\. Routine coagulation monitoring is generally not required
+
+Rationale:
+
+The Week 4 anticoagulation materials state that routine coagulation monitoring is generally not required with DOAC therapy\.
+
+Why the Incorrect Options Are Wrong:
+
+B\. INR monitoring is not routinely required for DOACs\.
+
+C\. aPTT monitoring before every dose is not required\.
+
+D\. Daily anti\-Xa monitoring is not required for all DOAC patients\.
+
+Source Support:
+
+Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Distinguishing DOAC monitoring from warfarin monitoring\.
+
+┬á
+
+__Question ID: AC\-012__
+
+Disease State: Anticoagulation/VTE
+
+Topic: Shared decision\-making
+
+Difficulty: Intermediate
+
+Question Type: NAPLEX\-inspired K\-type\-style
+
+Question Stem:
+
+Which statements about anticoagulation shared decision\-making are consistent with the Week 4 materials?
+
+I\. Patients should understand expected benefits\.
+
+II\. Patients should understand potential risks\.
+
+III\. Patient values and preferences should be considered\.
+
+IV\. Monitoring requirements and alternatives should be discussed when available\.
+
+Answer Choices:
+
+A\. I and II only
+
+B\. I, II, and III only
+
+C\. II and IV only
+
+D\. I, II, III, and IV
+
+Correct Answer:
+
+D\. I, II, III, and IV
+
+Rationale:
+
+The Week 4 materials emphasize shared decision\-making in anticoagulation\. Patients should understand benefits, risks, monitoring needs, alternatives when available, and how the decision aligns with their values and preferences\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. This omits patient preferences, monitoring, and alternatives\.
+
+B\. This omits monitoring and alternatives\.
+
+C\. This omits benefits and patient preferences\.
+
+Source Support:
+
+Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Applying shared decision\-making to anticoagulation management\.
+
+┬á
+
+__INTEGRATED CROSS\-DISEASE QUESTIONS__
+
+__Question ID: INT\-001__
+
+Disease State: Integrated Heart Failure \+ Atrial Fibrillation
+
+Topic: AFib rate control in HFrEF
+
+Difficulty: Intermediate
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+A patient has persistent nonvalvular AFib and HFrEF with LVEF 35%\. Which rate\-control strategy is most consistent with the Week 4 materials?
+
+Answer Choices:
+
+A\. Prioritize an evidence\-based beta blocker when clinically appropriate
+
+B\. Use diltiazem as preferred first\-line therapy for HFrEF
+
+C\. Use verapamil as preferred first\-line therapy for HFrEF
+
+D\. Avoid all rate\-control assessment because anticoagulation is the only goal in AFib
+
+Correct Answer:
+
+A\. Prioritize an evidence\-based beta blocker when clinically appropriate
+
+Rationale:
+
+In patients with AFib and HFrEF, beta blockers are clinically important because they support rate control and are part of HFrEF management\. Nondihydropyridine calcium channel blockers should generally be avoided in HFrEF because of negative inotropic effects\.
+
+Why the Incorrect Options Are Wrong:
+
+B\. Diltiazem is generally avoided in HFrEF\.
+
+C\. Verapamil is generally avoided in HFrEF\.
+
+D\. AFib care includes stroke prevention, symptom assessment, and rate/rhythm considerations\.
+
+Source Support:
+
+Atrial Fibrillation Guideline Teaching Summary; Heart Failure Guideline Teaching Summary; 2022 AHA/ACC/HFSA Heart Failure Guideline
+
+Clinical Skill Tested:
+
+Integrating AFib rate control with HFrEF medication safety\.
+
+┬á
+
+__Question ID: INT\-002__
+
+Disease State: Integrated Atrial Fibrillation \+ Anticoagulation
+
+Topic: Stroke prevention and bleeding risk
+
+Difficulty: Intermediate
+
+Question Type: Single\-best\-answer
+
+Question Stem:
+
+Patient B has persistent nonvalvular AFib and elevated stroke risk\. She reports minor bruising but no major bleeding symptoms, stable hemoglobin, and admits skipping apixaban doses because she is afraid the medication is ΓÇ£too strong\.ΓÇ¥ What is the best next step?
+
+Answer Choices:
+
+A\. Stop apixaban permanently
+
+B\. Reduce apixaban solely because bruising occurred
+
+C\. Assess bleeding severity, continue appropriate anticoagulation, counsel on minor versus major bleeding, and address fear\-driven nonadherence
+
+D\. Ignore the missed doses because bruising is more important than stroke prevention
+
+Correct Answer:
+
+C\. Assess bleeding severity, continue appropriate anticoagulation, counsel on minor versus major bleeding, and address fear\-driven nonadherence
+
+Rationale:
+
+This case requires balancing stroke prevention and bleeding concerns\. Minor bruising with stable hemoglobin and no major bleeding symptoms does not automatically justify stopping anticoagulation\. The student should address missed doses, bleeding education, and the patientΓÇÖs fear\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. Stopping anticoagulation may increase stroke risk and is unsupported by the case\.
+
+B\. Dose reduction solely due to minor bruising is unsupported\.
+
+D\. Missed anticoagulant doses are clinically important because they reduce stroke protection\.
+
+Source Support:
+
+Patient B Wednesday; Atrial Fibrillation Guideline Teaching Summary; Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Balancing AFib stroke prevention, bleeding concerns, and medication adherence\.
+
+┬á
+
+__Question ID: INT\-003__
+
+Disease State: Integrated Heart Failure \+ CKD \+ Anticoagulation
+
+Topic: Renal function, potassium, and anticoagulation safety
+
+Difficulty: Advanced
+
+Question Type: Select\-all\-that\-apply
+
+Question Stem:
+
+Patient C has HFrEF, persistent nonvalvular AFib, CKD stage 3b, borderline hyperkalemia, and long\-term apixaban therapy\. Which monitoring items should be prioritized? Select all that apply\.
+
+Answer Choices:
+
+A\. Serum creatinine and eGFR
+
+B\. Potassium
+
+C\. Bleeding symptoms
+
+D\. Anticoagulant adherence
+
+E\. Heart failure symptoms and weight trends
+
+Correct Answer:
+
+A, B, C, D, E
+
+Rationale:
+
+Patient C requires integrated monitoring because his HFrEF therapies, CKD, potassium level, and anticoagulation therapy all affect safety and outcomes\. Renal function, potassium, bleeding symptoms, adherence, HF symptoms, and weight trends are all clinically relevant\.
+
+Why the Incorrect Options Are Wrong:
+
+There are no incorrect options in this question\.
+
+Source Support:
+
+Patient C Tuesday; Patient C Master Profile; Heart Failure Guideline Teaching Summary; Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Integrating cardiorenal and anticoagulation monitoring in a complex ambulatory care patient\.
+
+┬á
+
+__Question ID: INT\-004__
+
+Disease State: Integrated Atrial Fibrillation \+ Anticoagulation \+ Periprocedural Management
+
+Topic: Periprocedural anticoagulation planning
+
+Difficulty: Advanced
+
+Question Type: NAPLEX\-inspired K\-type\-style
+
+Question Stem:
+
+Patient C has persistent nonvalvular AFib, CKD stage 3b, and takes apixaban\. He is scheduled for an elective colonoscopy with possible polypectomy and asks if he needs ΓÇ£bridging shots\.ΓÇ¥ Which statements are appropriate?
+
+I\. His ongoing stroke risk should be considered before interrupting anticoagulation\.
+
+II\. Procedural bleeding risk should be considered when planning interruption and resumption\.
+
+III\. LMWH bridging should be used automatically for every DOAC interruption\.
+
+IV\. The medication plan should be coordinated with the procedural team and communicated clearly to the patient\.
+
+Answer Choices:
+
+A\. I and II only
+
+B\. I, II, and IV only
+
+C\. II and III only
+
+D\. I, II, III, and IV
+
+Correct Answer:
+
+B\. I, II, and IV only
+
+Rationale:
+
+Periprocedural anticoagulation planning should account for stroke risk, procedural bleeding risk, renal function, timing of interruption/resumption, and coordination with the procedural team\. The Week 4 Patient C materials do not support automatic LMWH bridging for this case\.
+
+Why the Incorrect Options Are Wrong:
+
+A\. This omits the need for coordination and clear patient instructions\.
+
+C\. This includes automatic bridging, which is not appropriate here, and omits stroke risk\.
+
+D\. This includes automatic bridging, which is not supported\.
+
+Source Support:
+
+Patient C Wednesday; Atrial Fibrillation Guideline Teaching Summary; Anticoagulation/VTE Guideline Teaching Summary
+
+Clinical Skill Tested:
+
+Developing a periprocedural anticoagulation plan that balances stroke risk and bleeding risk\.
+
+┬á
+
+*From <*[*https://chatgpt\.com/g/g\-p\-6a2c407492188191a62e11e351d6f546\-week\-4\-hf\-afib\-anticoagulation/c/6a2c432c\-f808\-83ea\-862f\-7b3fa4f1fba2?tab=chats*](https://chatgpt.com/g/g-p-6a2c407492188191a62e11e351d6f546-week-4-hf-afib-anticoagulation/c/6a2c432c-f808-83ea-862f-7b3fa4f1fba2?tab=chats)*> *
+
+┬á
+

@@ -1,0 +1,263 @@
+﻿Week 3 Journal Club Assignment
+
+Asthma \+ Chronic Obstructive Pulmonary Disease \(COPD\)
+
+Targeting Eosinophilic Inflammation Beyond Optimized Inhaled Therapy:
+
+__The MATINEE Trial__
+
+__Article__
+
+Pavord ID, Rabe KF, Martinez FJ, et al\.
+
+Mepolizumab to Prevent Exacerbations in COPD with an Eosinophilic Phenotype\.
+
+N Engl J Med\. 2025\.
+
+__Assignment Overview__
+
+Students will critically evaluate the MATINEE Trial and discuss how biologic therapy fits into contemporary management of:
+
+- Chronic obstructive pulmonary disease \(COPD\)
+- Eosinophilic airway disease
+- Recurrent exacerbations
+- Type 2 inflammation
+- Severe respiratory disease
+- Exacerbation prevention
+
+Students should focus on how pharmacists use evidence from this trial to identify appropriate candidates for biologic therapy and reduce exacerbation burden rather than simply escalating inhaled therapy\.
+
+__Journal Club Key__
+
+MATINEE Trial: Mepolizumab to Prevent Exacerbations in COPD with an Eosinophilic Phenotype
+
+Pavord ID, Rabe KF, Martinez FJ, et al\. Mepolizumab to Prevent Exacerbations in COPD with an Eosinophilic Phenotype\. N Engl J Med\. 2025\.
+
+__Background__
+
+- COPD remains a leading cause of morbidity and mortality worldwide\.
+- Many patients continue to experience exacerbations despite optimized inhaled therapy, including LABA/LAMA and triple therapy regimens\.
+- Recurrent exacerbations contribute to:
+	- Hospitalizations
+	- Accelerated lung function decline
+	- Reduced quality of life
+	- Increased healthcare utilization
+	- Increased mortality
+- Blood eosinophil counts have emerged as an important biomarker associated with Type 2 inflammation and increased responsiveness to anti\-inflammatory therapies\.
+- Mepolizumab is an antiΓÇôIL\-5 monoclonal antibody previously approved for severe eosinophilic asthma\.
+- Prior to MATINEE, evidence supporting biologic therapy in COPD remained limited and inconsistent\.
+- The MATINEE trial was designed to determine whether mepolizumab could reduce exacerbations among patients with COPD characterized by an eosinophilic phenotype despite optimized inhaled therapy\.
+
+__Study Objective__
+
+To determine whether mepolizumab reduces the annualized rate of moderate or severe COPD exacerbations among patients with eosinophilic COPD receiving optimized inhaled maintenance therapy\.
+
+__Methods__
+
+Study Design
+
+- International
+- Multicenter
+- Randomized
+- Double\-blind
+- Placebo\-controlled trial
+
+Funding Source
+
+- GSK
+
+Patient Population
+
+- Approximately 800 patients enrolled
+
+Major Inclusion Criteria
+
+- Age ΓëÑ40 years
+- Established COPD diagnosis
+- Blood eosinophil count ΓëÑ300 cells/┬╡L
+- History of frequent exacerbations
+- Receiving optimized inhaled maintenance therapy
+- Current or former smokers
+
+Major Exclusion Criteria
+
+- Clinically significant uncontrolled asthma
+- Other major pulmonary diseases
+- Recent respiratory infection
+- Significant uncontrolled medical illness
+
+__Drug Treatment__
+
+Mepolizumab Group
+
+- Mepolizumab 100 mg subcutaneously every 4 weeks
+
+Placebo Group
+
+- Matching placebo every 4 weeks
+
+Background Therapy
+
+- Patients continued optimized inhaled therapy including:
+	- LABA/LAMA therapy
+	- Triple therapy when indicated
+	- Rescue inhalers as needed
+
+__Primary Endpoint__
+
+Annualized rate of moderate or severe COPD exacerbations\.
+
+__Secondary Endpoints__
+
+- Time to first exacerbation
+- Health\-related quality of life outcomes
+- Symptom burden
+- Lung function outcomes
+- Safety outcomes
+
+__Safety Outcomes__
+
+- Adverse events
+- Serious adverse events
+- Injection\-related reactions
+- Infection\-related events
+
+__Statistics__
+
+- Intention\-to\-treat analysis
+- Superiority design
+- Two\-sided alpha = 0\.05
+
+__Data Collection / Frequency / Assessment Tools__
+
+- Scheduled study visits
+- Exacerbation tracking
+- Symptom assessment
+- Blood eosinophil monitoring
+- Safety monitoring
+- Follow\-up through study completion
+
+__Results__
+
+Follow\-Up
+
+- Approximately 52\-week treatment period
+
+Baseline Subject Characteristics
+
+- Mean age approximately 65 years
+- Majority were former smokers
+- All patients had elevated eosinophil counts
+- Frequent exacerbation history at baseline
+- Most patients receiving triple therapy
+- Baseline characteristics balanced between groups
+
+Primary Endpoint
+
+- Mepolizumab significantly reduced the annualized rate of moderate or severe exacerbations compared with placebo\.
+
+Secondary Outcomes
+
+- Exacerbations
+	- Longer time to first exacerbation observed with mepolizumab
+- Quality of Life
+	- Improvements observed in patient\-reported outcomes
+- Lung Function
+	- No major differences in lung function outcomes
+
+Safety Outcomes
+
+- Overall Safety
+	- Mepolizumab was generally well tolerated
+	- Adverse event rates were similar between groups
+	- No major unexpected safety concerns identified
+
+__Author's Conclusion__
+
+Among patients with COPD characterized by an eosinophilic phenotype who continued to experience exacerbations despite optimized inhaled therapy, mepolizumab reduced the annualized rate of moderate or severe exacerbations compared with placebo\.
+
+__Strengths__
+
+ΓÇó Contemporary COPD population
+
+ΓÇó Biomarker\-driven patient selection
+
+ΓÇó Clinically meaningful endpoint
+
+ΓÇó Optimized background inhaled therapy
+
+ΓÇó Randomized, double\-blind design
+
+ΓÇó Strong applicability to modern pulmonary practice
+
+__Limitations__
+
+ΓÇó Results apply primarily to eosinophilic COPD
+
+ΓÇó Injectable biologic therapy may limit generalizability
+
+ΓÇó Cost and access barriers not fully addressed
+
+ΓÇó Long\-term outcomes remain under investigation
+
+ΓÇó Industry funded
+
+__Presenter's Conclusion / Clinical Application__
+
+MATINEE is one of the most clinically relevant pulmonary studies published in recent years because it evaluates a question pharmacists increasingly encounter in practice:
+
+"What should we do when a patient continues to exacerbate despite optimized inhaled therapy?"
+
+The trial demonstrated that mepolizumab reduced exacerbation burden among patients with eosinophilic COPD who remained symptomatic despite guideline\-directed maintenance therapy\. For pharmacists, MATINEE reinforces the importance of evaluating:
+
+- Exacerbation frequency
+- Blood eosinophil counts
+- Inhaler adherence
+- Inhaler technique
+- Corticosteroid burden
+- Patient\-specific treatment goals
+
+rather than assuming all uncontrolled COPD can be managed by adding additional inhalers\.
+
+Patients most likely to benefit include those with:
+
+- Elevated eosinophils
+- Recurrent exacerbations
+- Optimized inhaled therapy
+- Significant corticosteroid exposure
+- Persistent disease burden despite guideline\-directed management
+
+__References__
+
+1. Pavord ID, Rabe KF, Martinez FJ, et al\. Mepolizumab to Prevent Exacerbations in COPD with an Eosinophilic Phenotype\. N Engl J Med\. 2025\.
+2. Global Initiative for Chronic Obstructive Lung Disease \(GOLD\)\. Global Strategy for the Diagnosis, Management, and Prevention of Chronic Obstructive Pulmonary Disease\. 2026 Report\.
+3. Global Initiative for Asthma \(GINA\)\. Global Strategy for Asthma Management and Prevention\. 2025 Update\.
+4. Rabe KF, Martinez FJ, Ferguson GT, et al\. Mepolizumab for Eosinophilic Chronic Obstructive Pulmonary Disease\. N Engl J Med\. 2021;385\(13\):1197\-1207\.
+
+  
+__Five Clinical Application Questions__
+
+1. A 68\-year\-old patient with COPD is receiving Trelegy Ellipta, demonstrates excellent adherence, has an eosinophil count of 420 cells/┬╡L, and has experienced four prednisone\-treated exacerbations during the past year\. Would MATINEE support consideration of mepolizumab?
+
+Answer: Yes\. MATINEE demonstrated reduced exacerbation rates among patients with eosinophilic COPD who continued to exacerbate despite optimized inhaled therapy\. This patient closely resembles the study population\.
+
+1. A patient asks why another medication is being considered when they are already using triple therapy\. How would you explain this?
+
+Answer: Triple therapy improves symptoms and reduces exacerbations, but some patients continue to experience significant residual disease activity\. MATINEE suggests that targeting eosinophilic inflammation may provide additional benefit in selected patients\.
+
+1. Why is it important to assess inhaler adherence before considering biologic therapy?
+
+Answer: Poor adherence can mimic treatment failure\. Advanced therapies should generally be considered only after confirming that foundational therapies are being used appropriately\.
+
+1. A patient has an eosinophil count of 520 cells/┬╡L but has not experienced any exacerbations during the past year\. Would MATINEE support biologic initiation?
+
+Answer: Not necessarily\. MATINEE focused on patients with elevated eosinophils and recurrent exacerbations despite optimized therapy\. Eosinophilia alone does not automatically justify biologic treatment\.
+
+1. Which patient would likely derive greater benefit from mepolizumab?
+
+Patient A: Eosinophils 110 cells/┬╡L, No exacerbations in past year, Trelegy Ellipta, Stable symptoms
+
+Patient B: Eosinophils 480 cells/┬╡L, Five prednisone\-treated exacerbations, Triple therapy optimized, Excellent adherence
+
+Answer: Patient B\. MATINEE supports selecting biologic therapy based on persistent exacerbation burden and eosinophilic inflammation despite optimized inhaled therapy\.
+

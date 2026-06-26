@@ -1,0 +1,2134 @@
+﻿Below is the __complete Week 3 Monday 40\-question clinical question bank__ in your requested format\. It includes __20 asthma\-focused questions__ and __20 COPD\-focused questions__, with a mix of single\-best\-answer, select\-all\-that\-apply, and NAPLEX\-inspired K\-type\-style questions, consistent with your Week 3 QA prompt requirements\.
+
+┬á
+
+__Week 3 Monday Clinical Question Bank__
+
+__Asthma \+ COPD__
+
+┬á
+
+__Asthma Questions ΓÇö 20 Questions__
+
+┬á
+
+__Question ID: ASTHMA\-001__
+
+__Disease State:__ Asthma
+
+__Topic:__ Asthma diagnosis
+
+__Difficulty:__ Foundational
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+A 34\-year\-old patient reports recurrent wheezing, shortness of breath, and chest tightness that vary over time and worsen during allergy season and physical activity\. Spirometry shows an FEV1 increase of 14% and 280 mL after bronchodilator administration\. Which interpretation is most appropriate?
+
+__Answer Choices:__
+
+A\. The findings support asthma because symptoms are compatible and bronchodilator reversibility is present
+
+B\. The findings rule out asthma because symptoms are not constant every day
+
+C\. The findings support COPD because any bronchodilator response confirms COPD
+
+D\. The findings are insufficient because asthma is diagnosed by symptoms alone
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+Asthma is supported by variable respiratory symptoms plus objective evidence of variable airflow limitation\. A bronchodilator response meeting both ΓëÑ12% and ΓëÑ200 mL supports asthma\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. The patient has compatible symptoms and objective bronchodilator response\.
+
+B\. Incorrect\. Asthma symptoms often vary over time and intensity\.
+
+C\. Incorrect\. COPD requires persistent post\-bronchodilator airflow obstruction in the appropriate clinical context, not simply bronchodilator response\.
+
+D\. Incorrect\. Symptoms alone are not sufficient when objective confirmation is available\.
+
+__Source Support:__
+
+Asthma teaching summary lists variable symptoms and bronchodilator response criteria of ΓëÑ12% and ΓëÑ200 mL\.
+
+__Clinical Skill Tested:__
+
+Interpreting asthma diagnostic criteria using symptoms and spirometry\.
+
+┬á
+
+__Question ID: ASTHMA\-002__
+
+__Disease State:__ Asthma
+
+__Topic:__ Asthma symptom control
+
+__Difficulty:__ Foundational
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+A patient reports asthma symptoms 5 days per week, nighttime awakenings twice weekly, reliever inhaler use daily, and limitation with exercise\. How should this patientΓÇÖs asthma control be classified?
+
+__Answer Choices:__
+
+A\. Well controlled
+
+B\. Partly controlled
+
+C\. Uncontrolled
+
+D\. Controlled because there were no hospitalizations
+
+__Correct Answer:__
+
+C
+
+__Rationale:__
+
+Uncontrolled asthma is present when three or four symptom\-control criteria are not met\. This patient has frequent symptoms, nighttime awakenings, frequent reliever use, and activity limitation\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Incorrect\. Well\-controlled asthma requires symptoms and reliever use Γëñ2 days/week, no nighttime awakening, and no activity limitation\.
+
+B\. Incorrect\. Partly controlled asthma has only one to two criteria not met\.
+
+C\. Correct\. This patient has multiple uncontrolled features\.
+
+D\. Incorrect\. Lack of hospitalization does not mean asthma is controlled\.
+
+__Source Support:__
+
+Asthma teaching summary defines well\-controlled, partly controlled, and uncontrolled asthma using symptom frequency, nighttime awakening, reliever use, and activity limitation\.
+
+__Clinical Skill Tested:__
+
+Classifying asthma control from patient\-reported symptoms\.
+
+┬á
+
+__Question ID: ASTHMA\-003__
+
+__Disease State:__ Asthma
+
+__Topic:__ Asthma control assessment
+
+__Difficulty:__ Foundational
+
+__Question Type:__ NAPLEX\-inspired K\-type\-style
+
+__Question Stem:__
+
+Which elements are part of asthma symptom\-control assessment?
+
+I\. Daytime symptom frequency
+
+II\. Nighttime awakenings
+
+III\. Reliever medication use
+
+IV\. Activity limitation
+
+__Answer Choices:__
+
+A\. I only
+
+B\. I and II only
+
+C\. II and III only
+
+D\. I, II, III, and IV
+
+__Correct Answer:__
+
+D
+
+__Rationale:__
+
+Asthma control assessment includes daytime symptoms, nighttime awakening, reliever use, and activity limitation\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Incorrect\. Daytime symptoms alone are incomplete\.
+
+B\. Incorrect\. Reliever use and activity limitation are also required\.
+
+C\. Incorrect\. Daytime symptoms and activity limitation are also required\.
+
+D\. Correct\. All four are part of asthma control assessment\.
+
+__Source Support:__
+
+Asthma teaching summary lists all four domains in its asthma control framework\.
+
+__Clinical Skill Tested:__
+
+Recognizing the full asthma\-control assessment framework\.
+
+┬á
+
+__Question ID: ASTHMA\-004__
+
+__Disease State:__ Asthma
+
+__Topic:__ ICS\-containing therapy
+
+__Difficulty:__ Foundational
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+A patient with asthma currently uses only albuterol as needed and reports symptoms several days per week\. What is the most important medication\-related issue?
+
+__Answer Choices:__
+
+A\. The patient lacks ICS\-containing therapy
+
+B\. The patient should use albuterol on a fixed daily schedule
+
+C\. The patient should stop all reliever therapy
+
+D\. The patient should be treated with LAMA monotherapy
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+Modern asthma management emphasizes ICS\-containing therapy because asthma is an inflammatory airway disease and SABA\-only therapy does not address airway inflammation or future exacerbation risk\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. The absence of ICS\-containing therapy is the key issue\.
+
+B\. Incorrect\. Scheduled albuterol does not provide anti\-inflammatory control\.
+
+C\. Incorrect\. Reliever therapy may still be needed\.
+
+D\. Incorrect\. LAMA monotherapy is not appropriate asthma controller therapy\.
+
+__Source Support:__
+
+Asthma teaching summary states that GINA recommends ICS\-containing therapy for all asthma patients rather than SABA\-only treatment\.
+
+__Clinical Skill Tested:__
+
+Identifying unsafe reliance on SABA\-only asthma treatment\.
+
+┬á
+
+__Question ID: ASTHMA\-005__
+
+__Disease State:__ Asthma
+
+__Topic:__ SMART/MART therapy
+
+__Difficulty:__ Foundational
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+Which statement best describes SMART/MART therapy?
+
+__Answer Choices:__
+
+A\. ICS\-formoterol is used for both daily maintenance and symptom relief
+
+B\. Albuterol is used daily to prevent airway inflammation
+
+C\. Oral corticosteroids are used monthly to prevent asthma symptoms
+
+D\. Tiotropium is used alone as both controller and reliever therapy
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+SMART/MART uses an ICS\-formoterol inhaler for both maintenance treatment and symptom relief\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. This accurately describes SMART/MART\.
+
+B\. Incorrect\. Albuterol does not treat airway inflammation\.
+
+C\. Incorrect\. Routine systemic corticosteroids are not used as monthly prevention\.
+
+D\. Incorrect\. Tiotropium alone is not a reliever and does not replace ICS\-containing therapy\.
+
+__Source Support:__
+
+GINA Track 1 describes ICS\-formoterol as the preferred reliever approach and MART as maintenance\-and\-reliever therapy using ICS\-formoterol\.
+
+__Clinical Skill Tested:__
+
+Understanding SMART/MART pharmacotherapy and patient counseling\.
+
+┬á
+
+__Question ID: ASTHMA\-006__
+
+__Disease State:__ Asthma
+
+__Topic:__ Future exacerbation risk
+
+__Difficulty:__ Intermediate
+
+__Question Type:__ Select\-all\-that\-apply
+
+__Question Stem:__
+
+Which factors increase a patientΓÇÖs future risk of asthma exacerbations?
+
+__Answer Choices:__
+
+A\. Previous severe exacerbation
+
+B\. Excessive SABA use
+
+C\. Poor adherence
+
+D\. Incorrect inhaler technique
+
+__Correct Answer:__
+
+A, B, C, D
+
+__Rationale:__
+
+Prior exacerbations, excessive SABA use, poor adherence, and incorrect inhaler technique are all risk factors for future asthma exacerbations\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Prior severe exacerbation increases future risk\.
+
+B\. Correct\. Excessive SABA use is a risk factor\.
+
+C\. Correct\. Poor adherence increases risk\.
+
+D\. Correct\. Incorrect technique can mimic treatment failure and increase risk\.
+
+__Source Support:__
+
+Asthma teaching summary lists previous severe exacerbation, excessive SABA use, poor adherence, and incorrect inhaler technique as risk factors\.
+
+__Clinical Skill Tested:__
+
+Identifying modifiable and historical asthma exacerbation risk factors\.
+
+┬á
+
+__Question ID: ASTHMA\-007__
+
+__Disease State:__ Asthma
+
+__Topic:__ Inhaler technique and adherence
+
+__Difficulty:__ Intermediate
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+A patient remains symptomatic after starting ICS\-formoterol therapy\. Before escalating asthma therapy, what should the pharmacist assess first?
+
+__Answer Choices:__
+
+A\. Adherence and inhaler technique
+
+B\. Family history only
+
+C\. Whether the patient needs scheduled albuterol
+
+D\. Whether ICS\-containing therapy should be stopped
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+Poor control is often due to implementation issues such as missed doses, incorrect technique, cost barriers, or misunderstanding of the regimen\. These should be assessed before labeling therapy as ineffective\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Adherence and technique must be assessed before escalation\.
+
+B\. Incorrect\. Family history does not determine whether current therapy is being used correctly\.
+
+C\. Incorrect\. Scheduled SABA does not fix poor controller use\.
+
+D\. Incorrect\. Stopping ICS\-containing therapy may worsen asthma control and risk\.
+
+__Source Support:__
+
+Asthma teaching summary states that adherence and technique should be evaluated before escalating therapy\.
+
+__Clinical Skill Tested:__
+
+Distinguishing treatment failure from poor implementation\.
+
+┬á
+
+__Question ID: ASTHMA\-008__
+
+__Disease State:__ Asthma
+
+__Topic:__ Patient A Tuesday initial visit
+
+__Difficulty:__ Application
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+Sarah Thompson is a 34\-year\-old patient with asthma and allergic rhinitis\. At her initial visit, she has ACT 16, frequent rescue inhaler use, activity limitation, and no controller therapy\. What is the most appropriate therapeutic direction?
+
+__Answer Choices:__
+
+A\. Initiate ICS\-containing therapy, such as low\-dose ICS\-formoterol SMART/MART
+
+B\. Continue albuterol alone because she has no recent hospitalization
+
+C\. Start LABA/LAMA without ICS
+
+D\. Start biologic therapy immediately
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+Sarah has poorly controlled asthma and is not receiving controller therapy\. An ICS\-containing regimen is indicated, and SMART/MART is an appropriate preferred strategy when available\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. This addresses airway inflammation and symptom control\.
+
+B\. Incorrect\. SABA\-only therapy is not appropriate ongoing asthma care\.
+
+C\. Incorrect\. LABA/LAMA without ICS is inappropriate for asthma\.
+
+D\. Incorrect\. Biologic therapy is not appropriate before optimizing controller therapy\.
+
+__Source Support:__
+
+Patient A Tuesday documents poorly controlled asthma, ACT 16, frequent rescue inhaler use, and absence of controller therapy\.
+
+__Clinical Skill Tested:__
+
+Applying guideline\-based asthma therapy to an initial ambulatory care visit\.
+
+┬á
+
+__Question ID: ASTHMA\-009__
+
+__Disease State:__ Asthma
+
+__Topic:__ Patient A Wednesday follow\-up
+
+__Difficulty:__ Intermediate
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+At SarahΓÇÖs 3\-month follow\-up, her ACT score has improved to 21 and she reports symptoms only once or twice weekly\. However, possible inhaler technique deficiencies are identified\. What is the best next step?
+
+__Answer Choices:__
+
+A\. Continue current SMART therapy and correct inhaler technique
+
+B\. Stop ICS\-formoterol because asthma is improved
+
+C\. Escalate directly to biologic therapy
+
+D\. Switch to albuterol\-only therapy
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+SarahΓÇÖs asthma is improved and well controlled by ACT\. Remaining symptoms should prompt inhaler technique reassessment and education rather than unnecessary escalation\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Continue effective therapy and fix technique\.
+
+B\. Incorrect\. Improvement does not justify stopping ICS\-containing therapy\.
+
+C\. Incorrect\. Biologic therapy is not indicated in this scenario\.
+
+D\. Incorrect\. SABA\-only therapy is not guideline\-concordant asthma care\.
+
+__Source Support:__
+
+Patient A Wednesday emphasizes response to SMART therapy, ACT 21, and the need to assess inhaler technique before escalation\.
+
+__Clinical Skill Tested:__
+
+Reassessing asthma response and avoiding premature escalation\.
+
+┬á
+
+__Question ID: ASTHMA\-010__
+
+__Disease State:__ Asthma
+
+__Topic:__ Patient A Thursday follow\-up
+
+__Difficulty:__ Advanced
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+At SarahΓÇÖs 6\-month follow\-up, her ACT score is 22 and day\-to\-day symptoms remain well controlled\. She had one viral\-triggered exacerbation 6 weeks ago that resolved after a 5\-day prednisone course\. What is the best assessment?
+
+__Answer Choices:__
+
+A\. Well\-controlled day\-to\-day asthma with one isolated viral\-triggered exacerbation
+
+B\. Persistent uncontrolled asthma requiring biologic therapy
+
+C\. COPD exacerbation requiring LABA/LAMA therapy
+
+D\. Treatment failure requiring discontinuation of ICS\-formoterol
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+SarahΓÇÖs daily asthma control remains strong\. A single viral\-triggered exacerbation should prompt action\-plan reinforcement and monitoring, but it does not automatically mean persistent uncontrolled asthma\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. This distinguishes an isolated exacerbation from persistent poor control\.
+
+B\. Incorrect\. Biologic therapy is not justified based on this case\.
+
+C\. Incorrect\. SarahΓÇÖs case is asthma, not COPD\.
+
+D\. Incorrect\. ICS\-formoterol should not be stopped\.
+
+__Source Support:__
+
+Patient A Thursday documents ACT 22, well\-controlled asthma, and one viral\-triggered exacerbation that resolved after prednisone\.
+
+__Clinical Skill Tested:__
+
+Differentiating isolated exacerbation from persistent uncontrolled asthma\.
+
+┬á
+
+__Question ID: ASTHMA\-011__
+
+__Disease State:__ Asthma
+
+__Topic:__ Allergic rhinitis and asthma control
+
+__Difficulty:__ Intermediate
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+A patient with asthma reports worsening nasal congestion, sneezing, and postnasal drainage after stopping fluticasone nasal spray\. She notices her breathing worsens when allergies flare\. What is the best interpretation?
+
+__Answer Choices:__
+
+A\. Allergic rhinitis may be contributing to lower airway symptoms
+
+B\. Asthma therapy must automatically be escalated to biologic therapy
+
+C\. Allergic rhinitis is unrelated to asthma symptoms
+
+D\. The patient should stop all nasal therapy
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+Upper airway disease can worsen asthma symptoms\. Before escalating pulmonary therapy, comorbid contributors such as allergic rhinitis should be assessed and optimized\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Allergic rhinitis can contribute to respiratory symptoms\.
+
+B\. Incorrect\. Biologic therapy should not be used before addressing modifiable contributors\.
+
+C\. Incorrect\. Rhinitis can affect asthma control\.
+
+D\. Incorrect\. Stopping nasal therapy may worsen symptoms\.
+
+__Source Support:__
+
+Patient C Wednesday emphasizes persistent allergic rhinitis as a contributor to respiratory symptoms and the need to avoid inappropriate pulmonary escalation\.
+
+__Clinical Skill Tested:__
+
+Recognizing comorbid contributors to asthma control\.
+
+┬á
+
+__Question ID: ASTHMA\-012__
+
+__Disease State:__ Asthma
+
+__Topic:__ ICS safety counseling
+
+__Difficulty:__ Foundational
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+A patient starting an inhaled corticosteroid\-containing inhaler asks about common local adverse effects\. Which counseling point is most appropriate?
+
+__Answer Choices:__
+
+A\. Oral candidiasis and dysphonia may occur, so proper technique and mouth rinsing are important
+
+B\. Inhaled corticosteroids commonly cause immediate severe hypoglycemia
+
+C\. Inhaled corticosteroids eliminate the need for monitoring symptoms
+
+D\. Inhaled corticosteroids should be stopped as soon as symptoms improve
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+ICS adverse effects include local effects such as oral candidiasis and dysphonia\. Counseling should include proper inhaler technique and mouth rinsing when appropriate\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. This is appropriate ICS safety counseling\.
+
+B\. Incorrect\. Severe immediate hypoglycemia is not a typical ICS counseling point\.
+
+C\. Incorrect\. Symptom and exacerbation monitoring remain necessary\.
+
+D\. Incorrect\. Stopping ICS when symptoms improve can increase risk\.
+
+__Source Support:__
+
+Asthma teaching summary lists ICS safety concerns including oral candidiasis and dysphonia\.
+
+__Clinical Skill Tested:__
+
+Providing practical ICS safety counseling\.
+
+┬á
+
+__Question ID: ASTHMA\-013__
+
+__Disease State:__ Asthma
+
+__Topic:__ Systemic corticosteroid stewardship
+
+__Difficulty:__ Intermediate
+
+__Question Type:__ Select\-all\-that\-apply
+
+__Question Stem:__
+
+Which adverse effects are associated with systemic corticosteroid exposure in the Week 3 asthma materials?
+
+__Answer Choices:__
+
+A\. Hyperglycemia
+
+B\. Hypertension
+
+C\. Osteoporosis
+
+D\. Weight gain
+
+__Correct Answer:__
+
+A, B, C, D
+
+__Rationale:__
+
+Systemic corticosteroids can contribute to hyperglycemia, hypertension, osteoporosis, and weight gain\. Repeated steroid bursts should prompt efforts to reduce future exacerbation and steroid exposure\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Hyperglycemia is a systemic corticosteroid risk\.
+
+B\. Correct\. Hypertension is a systemic corticosteroid risk\.
+
+C\. Correct\. Osteoporosis is a systemic corticosteroid risk\.
+
+D\. Correct\. Weight gain is a systemic corticosteroid risk\.
+
+__Source Support:__
+
+Asthma teaching summary lists systemic corticosteroid adverse effects including hyperglycemia, hypertension, osteoporosis, and weight gain\.
+
+__Clinical Skill Tested:__
+
+Recognizing steroid\-related safety risks and stewardship priorities\.
+
+┬á
+
+__Question ID: ASTHMA\-014__
+
+__Disease State:__ Asthma
+
+__Topic:__ Severe asthma referral concepts
+
+__Difficulty:__ Intermediate
+
+__Question Type:__ Select\-all\-that\-apply
+
+__Question Stem:__
+
+Which findings should prompt consideration of referral for severe asthma or biologic evaluation?
+
+__Answer Choices:__
+
+A\. Persistent uncontrolled asthma despite optimized inhaled therapy
+
+B\. Recurrent exacerbations
+
+C\. High systemic corticosteroid burden
+
+D\. Evidence of Type 2 inflammation
+
+__Correct Answer:__
+
+A, B, C, D
+
+__Rationale:__
+
+Students are not expected to independently select every biologic, but they should recognize referral candidates with persistent uncontrolled disease, recurrent exacerbations, high steroid burden, and Type 2 inflammation\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Persistent uncontrolled disease after optimization supports referral\.
+
+B\. Correct\. Recurrent exacerbations are a key signal\.
+
+C\. Correct\. High corticosteroid burden supports escalation/referral\.
+
+D\. Correct\. Type 2 inflammation supports biologic evaluation\.
+
+__Source Support:__
+
+Asthma teaching summary lists biologic referral concepts and criteria\.
+
+__Clinical Skill Tested:__
+
+Identifying candidates for advanced asthma evaluation\.
+
+┬á
+
+__Question ID: ASTHMA\-015__
+
+__Disease State:__ Asthma
+
+__Topic:__ Asthma\-COPD overlap safety
+
+__Difficulty:__ Advanced
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+Maria has childhood asthma, COPD, persistent post\-bronchodilator obstruction, bronchodilator reversibility, elevated eosinophils, and recurrent exacerbations\. Which treatment principle is most important?
+
+__Answer Choices:__
+
+A\. Use ICS\-containing therapy because asthma features are present
+
+B\. Avoid ICS because any COPD diagnosis makes ICS unsafe
+
+C\. Use LABA/LAMA without ICS because COPD features override asthma features
+
+D\. Treat with albuterol only because overlap disease cannot be managed with maintenance inhalers
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+Patients with asthma\-COPD overlap or asthma features should not be treated with LABA and/or LAMA without ICS\. ICS\-containing therapy is essential for asthma safety\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Asthma features require ICS\-containing therapy\.
+
+B\. Incorrect\. ICS may be appropriate when asthma features or eosinophilic inflammation are present\.
+
+C\. Incorrect\. LABA/LAMA without ICS is unsafe when asthma features are present\.
+
+D\. Incorrect\. Maintenance therapy is needed for uncontrolled disease\.
+
+__Source Support:__
+
+GINA states that patients with any asthma features should not be treated with LABA and/or LAMA alone without ICS\.
+
+__Clinical Skill Tested:__
+
+Applying asthma safety principles to asthma\-COPD overlap\.
+
+┬á
+
+__Question ID: ASTHMA\-016__
+
+__Disease State:__ Asthma
+
+__Topic:__ Asthma monitoring
+
+__Difficulty:__ Foundational
+
+__Question Type:__ Select\-all\-that\-apply
+
+__Question Stem:__
+
+Which monitoring parameters are appropriate for asthma follow\-up?
+
+__Answer Choices:__
+
+A\. Asthma Control Test score
+
+B\. Symptom frequency
+
+C\. Reliever use
+
+D\. Exacerbation history
+
+__Correct Answer:__
+
+A, B, C, D
+
+__Rationale:__
+
+Asthma follow\-up should monitor symptom control, reliever use, exacerbations, and validated control tools such as ACT when available\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. ACT is an appropriate monitoring tool\.
+
+B\. Correct\. Symptom frequency is central to control\.
+
+C\. Correct\. Reliever use reflects control and risk\.
+
+D\. Correct\. Exacerbations are a key future\-risk marker\.
+
+__Source Support:__
+
+Asthma teaching summary lists ACT, symptom frequency, reliever use, exacerbations, and lung function as monitoring parameters\.
+
+__Clinical Skill Tested:__
+
+Building a complete asthma monitoring plan\.
+
+┬á
+
+__Question ID: ASTHMA\-017__
+
+__Disease State:__ Asthma
+
+__Topic:__ GINA Track 1
+
+__Difficulty:__ Intermediate
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+Which statement best reflects the GINA Track 1 preferred approach for adults and adolescents?
+
+__Answer Choices:__
+
+A\. Low\-dose ICS\-formoterol is used as the reliever, with or without maintenance ICS\-formoterol depending on treatment step
+
+B\. SABA is preferred as the only reliever for all adults with asthma
+
+C\. Oral prednisone is preferred as the reliever for persistent symptoms
+
+D\. ICS\-formoterol should never be used for symptom relief
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+GINA Track 1 uses low\-dose ICS\-formoterol as the reliever\. This approach reduces severe exacerbations and oral corticosteroid exposure compared with SABA\-based regimens\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. This accurately describes Track 1\.
+
+B\. Incorrect\. SABA\-only treatment is not preferred\.
+
+C\. Incorrect\. Prednisone is not a reliever inhaler strategy\.
+
+D\. Incorrect\. ICS\-formoterol is specifically used as reliever therapy in Track 1\.
+
+__Source Support:__
+
+GINA 2026 describes Track 1 as the preferred approach using low\-dose ICS\-formoterol as reliever therapy\.
+
+__Clinical Skill Tested:__
+
+Understanding GINA Track 1 treatment logic\.
+
+┬á
+
+__Question ID: ASTHMA\-018__
+
+__Disease State:__ Asthma
+
+__Topic:__ Asthma exacerbation follow\-up
+
+__Difficulty:__ Intermediate
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+After an asthma exacerbation treated in urgent care, which follow\-up action is most appropriate?
+
+__Answer Choices:__
+
+A\. Review the cause of the exacerbation, inhaler technique, adherence, and the asthma action plan
+
+B\. Stop ICS\-containing therapy because the exacerbation resolved
+
+C\. Schedule albuterol every 4 hours indefinitely
+
+D\. Avoid asking about triggers because they do not affect future risk
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+After an exacerbation, follow\-up should evaluate recovery, identify triggers and risk factors, review adherence and technique, and reinforce or provide an asthma action plan\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. This addresses future risk reduction\.
+
+B\. Incorrect\. ICS\-containing therapy should generally be continued or optimized\.
+
+C\. Incorrect\. Reliever therapy should be used as needed, not indefinitely scheduled\.
+
+D\. Incorrect\. Trigger identification is important\.
+
+__Source Support:__
+
+GINA exacerbation guidance emphasizes follow\-up, trigger assessment, inhaler technique, adherence, and action\-plan review\.
+
+__Clinical Skill Tested:__
+
+Developing a post\-exacerbation asthma follow\-up plan\.
+
+┬á
+
+__Question ID: ASTHMA\-019__
+
+__Disease State:__ Asthma
+
+__Topic:__ Patient counseling
+
+__Difficulty:__ Intermediate
+
+__Question Type:__ NAPLEX\-inspired K\-type\-style
+
+__Question Stem:__
+
+Which counseling points are appropriate for a patient starting ICS\-formoterol SMART/MART?
+
+I\. Explain which inhaler is used for daily maintenance
+
+II\. Explain that the same inhaler may be used for symptom relief when prescribed as SMART/MART
+
+III\. Review inhaler technique
+
+IV\. Review when to seek medical care for worsening symptoms
+
+__Answer Choices:__
+
+A\. I only
+
+B\. I and II only
+
+C\. II and III only
+
+D\. I, II, III, and IV
+
+__Correct Answer:__
+
+D
+
+__Rationale:__
+
+SMART/MART counseling should include maintenance use, reliever use, technique, and guidance on worsening symptoms or excessive reliever use\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Incorrect\. Maintenance counseling alone is incomplete\.
+
+B\. Incorrect\. Technique and worsening\-symptom planning are also needed\.
+
+C\. Incorrect\. Daily maintenance use and action planning are also needed\.
+
+D\. Correct\. All statements are appropriate\.
+
+__Source Support:__
+
+GINA Track 1 notes that ICS\-formoterol can be used for both maintenance and reliever therapy and emphasizes action\-plan and symptom\-relief instructions\.
+
+__Clinical Skill Tested:__
+
+Providing patient\-centered SMART/MART counseling\.
+
+┬á
+
+__Question ID: ASTHMA\-020__
+
+__Disease State:__ Asthma
+
+__Topic:__ Patient C Thursday severe eosinophilic disease
+
+__Difficulty:__ Advanced
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+MariaΓÇÖs Thursday follow\-up shows optimized inhaled therapy, excellent adherence, appropriate inhaler technique, controlled rhinitis, eosinophils 520 cells/┬╡L, and five corticosteroid\-treated exacerbations in the past year\. What is the most appropriate clinical interpretation?
+
+__Answer Choices:__
+
+A\. Severe eosinophilic asthma\-COPD overlap requiring biologic evaluation or initiation
+
+B\. Controlled disease requiring no therapy modification
+
+C\. Poor inhaler adherence as the most likely cause of exacerbations
+
+D\. Rhinitis\-driven symptoms requiring only nasal spray adjustment
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+Maria has recurrent steroid\-treated exacerbations despite optimized inhaled therapy and persistent eosinophilic inflammation\. This supports biologic evaluation or initiation and a steroid\-sparing strategy\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. The case is designed to identify severe eosinophilic disease and biologic candidacy\.
+
+B\. Incorrect\. Recurrent corticosteroid\-treated exacerbations indicate ongoing uncontrolled disease risk\.
+
+C\. Incorrect\. The case states adherence and technique are optimized\.
+
+D\. Incorrect\. Rhinitis has been controlled, but exacerbations persist\.
+
+__Source Support:__
+
+Patient C Thursday identifies severe eosinophilic airway disease, recurrent steroid\-treated exacerbations, eosinophils 520 cells/┬╡L, optimized therapy, biologic eligibility, and MATINEE application\.
+
+__Clinical Skill Tested:__
+
+Recognizing when persistent exacerbations require escalation beyond inhaled therapy\.
+
+┬á
+
+__COPD Questions ΓÇö 20 Questions__
+
+┬á
+
+__Question ID: COPD\-001__
+
+__Disease State:__ COPD
+
+__Topic:__ COPD diagnosis
+
+__Difficulty:__ Foundational
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+Which finding is required to confirm COPD in the appropriate clinical context?
+
+__Answer Choices:__
+
+A\. Post\-bronchodilator FEV1/FVC <0\.70
+
+B\. ACT score <20
+
+C\. Elevated eosinophils alone
+
+D\. Dyspnea without spirometry
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+COPD diagnosis requires spirometric confirmation\. Symptoms alone are insufficient\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Post\-bronchodilator FEV1/FVC <0\.70 confirms airflow obstruction consistent with COPD in the appropriate context\.
+
+B\. Incorrect\. ACT is used for asthma control, not COPD diagnosis\.
+
+C\. Incorrect\. Eosinophils do not diagnose COPD\.
+
+D\. Incorrect\. Symptoms alone do not confirm COPD\.
+
+__Source Support:__
+
+COPD teaching summary states that spirometry is required and diagnostic criterion is post\-bronchodilator FEV1/FVC <0\.70\.
+
+__Clinical Skill Tested:__
+
+Identifying objective diagnostic criteria for COPD\.
+
+┬á
+
+__Question ID: COPD\-002__
+
+__Disease State:__ COPD
+
+__Topic:__ GOLD grouping
+
+__Difficulty:__ Foundational
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+A COPD patient has high symptom burden but low exacerbation risk\. Which GOLD group best fits this patient?
+
+__Answer Choices:__
+
+A\. Group A
+
+B\. Group B
+
+C\. Group E
+
+D\. Cannot classify without eosinophils
+
+__Correct Answer:__
+
+B
+
+__Rationale:__
+
+GOLD Group B represents high symptoms with low exacerbation risk\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Incorrect\. Group A is low symptoms and low exacerbation risk\.
+
+B\. Correct\. Group B is high symptoms and low exacerbation risk\.
+
+C\. Incorrect\. Group E is driven by frequent exacerbations\.
+
+D\. Incorrect\. Eosinophils may guide ICS benefit but are not required to assign A/B/E grouping\.
+
+__Source Support:__
+
+COPD teaching summary describes GOLD groups A, B, and E using symptom burden and exacerbation history\.
+
+__Clinical Skill Tested:__
+
+Classifying COPD using symptom burden and exacerbation risk\.
+
+┬á
+
+__Question ID: COPD\-003__
+
+__Disease State:__ COPD
+
+__Topic:__ Initial COPD pharmacotherapy
+
+__Difficulty:__ Foundational
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+Which initial maintenance therapy is recommended for a symptomatic GOLD Group B COPD patient?
+
+__Answer Choices:__
+
+A\. LABA \+ LAMA
+
+B\. ICS monotherapy
+
+C\. Scheduled albuterol only
+
+D\. Chronic oral prednisone
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+GOLD Group B initial therapy is LABA \+ LAMA\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. LABA/LAMA is appropriate for Group B\.
+
+B\. Incorrect\. ICS monotherapy is not the recommended initial COPD regimen\.
+
+C\. Incorrect\. Albuterol is rescue therapy and does not replace maintenance treatment\.
+
+D\. Incorrect\. Chronic oral prednisone is not appropriate maintenance COPD therapy\.
+
+__Source Support:__
+
+COPD teaching summary lists LABA \+ LAMA as initial therapy for Group B\.
+
+__Clinical Skill Tested:__
+
+Selecting initial COPD maintenance therapy\.
+
+┬á
+
+__Question ID: COPD\-004__
+
+__Disease State:__ COPD
+
+__Topic:__ GOLD Group E
+
+__Difficulty:__ Foundational
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+Which factor most strongly supports classification as GOLD Group E?
+
+__Answer Choices:__
+
+A\. Frequent exacerbations
+
+B\. No rescue inhaler use
+
+C\. Low symptom burden without exacerbations
+
+D\. Normal post\-bronchodilator FEV1/FVC
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+Group E identifies patients with frequent exacerbations and higher exacerbation risk\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Exacerbation history drives Group E\.
+
+B\. Incorrect\. Low rescue use does not identify Group E\.
+
+C\. Incorrect\. Low symptoms without exacerbations is more consistent with Group A\.
+
+D\. Incorrect\. Normal post\-bronchodilator FEV1/FVC would not support COPD\.
+
+__Source Support:__
+
+COPD teaching summary defines Group E as frequent exacerbations\.
+
+__Clinical Skill Tested:__
+
+Recognizing exacerbation risk as a key COPD treatment driver\.
+
+┬á
+
+__Question ID: COPD\-005__
+
+__Disease State:__ COPD
+
+__Topic:__ Blood eosinophils
+
+__Difficulty:__ Intermediate
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+What is the role of blood eosinophils in COPD pharmacotherapy decisions?
+
+__Answer Choices:__
+
+A\. They help estimate likelihood of benefit from ICS\-containing regimens
+
+B\. They independently diagnose COPD
+
+C\. They replace symptom assessment tools such as CAT
+
+D\. They determine whether all inhalers should be stopped
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+Blood eosinophils help estimate the likelihood that a patient may benefit from ICS\-containing COPD therapy\. They are one factor within the broader clinical assessment\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Higher eosinophils suggest greater expected ICS benefit\.
+
+B\. Incorrect\. COPD diagnosis requires spirometry\.
+
+C\. Incorrect\. CAT or mMRC still assess symptom burden\.
+
+D\. Incorrect\. Eosinophils do not justify stopping all inhalers\.
+
+__Source Support:__
+
+COPD teaching summary states that blood eosinophils help estimate likelihood of ICS benefit\.
+
+__Clinical Skill Tested:__
+
+Using eosinophils to inform COPD escalation decisions\.
+
+┬á
+
+__Question ID: COPD\-006__
+
+__Disease State:__ COPD
+
+__Topic:__ Triple therapy
+
+__Difficulty:__ Foundational
+
+__Question Type:__ Select\-all\-that\-apply
+
+__Question Stem:__
+
+Which medication classes are included in COPD triple therapy?
+
+__Answer Choices:__
+
+A\. LABA
+
+B\. LAMA
+
+C\. ICS
+
+D\. Chronic oral corticosteroid
+
+__Correct Answer:__
+
+A, B, C
+
+__Rationale:__
+
+COPD triple therapy consists of LABA \+ LAMA \+ ICS\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. LABA is part of triple therapy\.
+
+B\. Correct\. LAMA is part of triple therapy\.
+
+C\. Correct\. ICS is part of triple therapy\.
+
+D\. Incorrect\. Chronic oral corticosteroid is not part of standard inhaled triple therapy\.
+
+__Source Support:__
+
+COPD teaching summary defines triple therapy as LABA \+ LAMA \+ ICS\.
+
+__Clinical Skill Tested:__
+
+Identifying components of COPD combination therapy\.
+
+┬á
+
+__Question ID: COPD\-007__
+
+__Disease State:__ COPD
+
+__Topic:__ Non\-pharmacologic management
+
+__Difficulty:__ Foundational
+
+__Question Type:__ Select\-all\-that\-apply
+
+__Question Stem:__
+
+Which interventions are essential non\-pharmacologic components of COPD management?
+
+__Answer Choices:__
+
+A\. Smoking cessation
+
+B\. Vaccination assessment
+
+C\. Pulmonary rehabilitation when appropriate
+
+D\. Avoiding all physical activity
+
+__Correct Answer:__
+
+A, B, C
+
+__Rationale:__
+
+COPD management includes smoking cessation, vaccinations, and pulmonary rehabilitation to improve dyspnea, exercise capacity, and quality of life\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Smoking cessation is highly impactful\.
+
+B\. Correct\. Vaccination assessment is important in COPD\.
+
+C\. Correct\. Pulmonary rehabilitation improves dyspnea and functional outcomes\.
+
+D\. Incorrect\. Avoiding all physical activity is not appropriate\.
+
+__Source Support:__
+
+COPD teaching summary lists smoking cessation, vaccinations, and pulmonary rehabilitation as essential interventions\.
+
+__Clinical Skill Tested:__
+
+Building a comprehensive COPD care plan beyond medications\.
+
+┬á
+
+__Question ID: COPD\-008__
+
+__Disease State:__ COPD
+
+__Topic:__ COPD monitoring
+
+__Difficulty:__ Foundational
+
+__Question Type:__ NAPLEX\-inspired K\-type\-style
+
+__Question Stem:__
+
+Which monitoring parameters are appropriate for COPD follow\-up?
+
+I\. CAT score
+
+II\. Exacerbation history
+
+III\. Rescue inhaler use
+
+IV\. Activity tolerance
+
+__Answer Choices:__
+
+A\. I only
+
+B\. I and II only
+
+C\. II and III only
+
+D\. I, II, III, and IV
+
+__Correct Answer:__
+
+D
+
+__Rationale:__
+
+COPD follow\-up should include symptom burden, exacerbations, rescue medication use, and activity tolerance\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Incorrect\. CAT alone is incomplete\.
+
+B\. Incorrect\. Rescue use and activity tolerance are also important\.
+
+C\. Incorrect\. CAT score and activity tolerance are also important\.
+
+D\. Correct\. All four should be monitored\.
+
+__Source Support:__
+
+COPD teaching summary lists CAT score, exacerbations, rescue inhaler use, and activity tolerance as monitoring parameters\.
+
+__Clinical Skill Tested:__
+
+Constructing COPD monitoring plans\.
+
+┬á
+
+__Question ID: COPD\-009__
+
+__Disease State:__ COPD
+
+__Topic:__ Patient B Tuesday initial visit
+
+__Difficulty:__ Application
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+Bob Jenkins has post\-bronchodilator FEV1/FVC 0\.58, CAT score 18, activity limitation, frequent rescue inhaler use, and one moderate exacerbation in the past year\. He is not using maintenance therapy\. What is the most appropriate initial pharmacotherapy direction?
+
+__Answer Choices:__
+
+A\. Start LABA/LAMA maintenance therapy and address access or affordability barriers
+
+B\. Continue albuterol only because he has not been hospitalized
+
+C\. Start biologic therapy immediately
+
+D\. Diagnose asthma only and ignore COPD treatment
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+Bob has symptomatic COPD consistent with a need for maintenance LABA/LAMA therapy\. His case also requires assessing barriers to medication initiation and adherence\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. LABA/LAMA addresses symptomatic COPD and should be paired with access support\.
+
+B\. Incorrect\. Lack of hospitalization does not justify rescue\-only therapy\.
+
+C\. Incorrect\. Biologic therapy is not initial COPD therapy for this case\.
+
+D\. Incorrect\. His spirometry and clinical history support COPD management\.
+
+__Source Support:__
+
+Patient B Tuesday documents FEV1/FVC 0\.58, CAT 18, activity limitation, frequent rescue inhaler use, no maintenance therapy, and affordability/adherence concerns\.
+
+__Clinical Skill Tested:__
+
+Applying GOLD\-based initial therapy to a symptomatic COPD patient\.
+
+┬á
+
+__Question ID: COPD\-010__
+
+__Disease State:__ COPD
+
+__Topic:__ Patient B Wednesday follow\-up
+
+__Difficulty:__ Intermediate
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+At BobΓÇÖs 3\-month follow\-up, he reports only mild improvement after starting umeclidinium/vilanterol\. Further questioning reveals he uses the inhaler only ΓÇ£most daysΓÇ¥ rather than daily\. What should the student do next?
+
+__Answer Choices:__
+
+A\. Optimize adherence before escalating therapy
+
+B\. Immediately escalate to triple therapy
+
+C\. Stop maintenance therapy because it did not work
+
+D\. Add chronic prednisone for persistent dyspnea
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+BobΓÇÖs symptoms cannot be interpreted as true treatment failure until adherence is optimized\. The correct next step is to address missed doses and reinforce maintenance inhaler expectations\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Adherence must be optimized first\.
+
+B\. Incorrect\. Escalation before addressing nonadherence is premature\.
+
+C\. Incorrect\. Stopping maintenance therapy worsens long\-term control\.
+
+D\. Incorrect\. Chronic prednisone is not appropriate for persistent dyspnea\.
+
+__Source Support:__
+
+Patient B Wednesday focuses on differentiating medication failure from nonadherence and optimizing adherence before escalation\.
+
+__Clinical Skill Tested:__
+
+Distinguishing medication failure from nonadherence in COPD follow\-up\.
+
+┬á
+
+__Question ID: COPD\-011__
+
+__Disease State:__ COPD
+
+__Topic:__ Patient B Thursday follow\-up
+
+__Difficulty:__ Advanced
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+At BobΓÇÖs 6\-month follow\-up, adherence to LABA/LAMA has improved, but he has had two moderate COPD exacerbations in the past three months and eosinophils are 310 cells/┬╡L\. What is the key therapeutic consideration?
+
+__Answer Choices:__
+
+A\. Escalation to triple therapy
+
+B\. Stopping LABA/LAMA and using albuterol only
+
+C\. Ignoring exacerbations because CAT score remains elevated
+
+D\. Starting biologic therapy as first\-line COPD escalation
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+Bob now has persistent exacerbation risk despite improved adherence to LABA/LAMA and elevated eosinophils\. Triple therapy should be considered\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Exacerbations plus eosinophils support considering ICS\-containing escalation\.
+
+B\. Incorrect\. Rescue\-only treatment is inappropriate\.
+
+C\. Incorrect\. Exacerbation burden is clinically important and should not be ignored\.
+
+D\. Incorrect\. Biologic therapy is not the first escalation step in this Bob case\.
+
+__Source Support:__
+
+Patient B Thursday documents improved adherence, two moderate exacerbations, eosinophils 310 cells/┬╡L, and need to evaluate triple therapy\.
+
+__Clinical Skill Tested:__
+
+Applying COPD escalation logic after adherence optimization\.
+
+┬á
+
+__Question ID: COPD\-012__
+
+__Disease State:__ COPD
+
+__Topic:__ Rescue versus maintenance therapy
+
+__Difficulty:__ Foundational
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+A COPD patient says, ΓÇ£I stopped my daily inhaler because it didnΓÇÖt make me breathe better right away like albuterol does\.ΓÇ¥ What is the best counseling response?
+
+__Answer Choices:__
+
+A\. Maintenance inhalers work best when used consistently to improve symptoms and reduce risk over time
+
+B\. Maintenance inhalers should only be used during flare\-ups
+
+C\. Albuterol should replace maintenance therapy
+
+D\. Missing maintenance inhaler doses does not affect COPD control
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+Patients may misunderstand the difference between rescue and maintenance inhalers\. Maintenance therapy should be used consistently, not only for immediate relief\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. This explains long\-term purpose and adherence importance\.
+
+B\. Incorrect\. Maintenance inhalers are not flare\-only medications\.
+
+C\. Incorrect\. Rescue therapy does not replace maintenance therapy\.
+
+D\. Incorrect\. Missed doses can reduce treatment effectiveness\.
+
+__Source Support:__
+
+Patient B materials emphasize limited understanding of maintenance therapy and the need to differentiate rescue versus maintenance inhalers\.
+
+__Clinical Skill Tested:__
+
+Counseling patients on COPD maintenance inhaler expectations\.
+
+┬á
+
+__Question ID: COPD\-013__
+
+__Disease State:__ COPD
+
+__Topic:__ Preventive care
+
+__Difficulty:__ Intermediate
+
+__Question Type:__ Select\-all\-that\-apply
+
+__Question Stem:__
+
+Which preventive care gaps are relevant for Bob in the Week 3 COPD cases?
+
+__Answer Choices:__
+
+A\. PCV20 not documented
+
+B\. RSV vaccine not documented
+
+C\. Tdap overdue
+
+D\. Influenza received this season
+
+__Correct Answer:__
+
+A, B, C
+
+__Rationale:__
+
+BobΓÇÖs cases document influenza and COVID vaccination as current, while PCV20, RSV, and Tdap remain gaps\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. PCV20 is not documented\.
+
+B\. Correct\. RSV vaccine is not documented\.
+
+C\. Correct\. Tdap is overdue\.
+
+D\. Incorrect\. Influenza was received this season and is not a gap\.
+
+__Source Support:__
+
+Patient B Thursday documents PCV20 not documented, RSV not documented, Tdap last documented 13 years ago, and influenza received this season\.
+
+__Clinical Skill Tested:__
+
+Identifying COPD preventive care gaps from chart data\.
+
+┬á
+
+__Question ID: COPD\-014__
+
+__Disease State:__ COPD
+
+__Topic:__ COPD medication safety
+
+__Difficulty:__ Intermediate
+
+__Question Type:__ Select\-all\-that\-apply
+
+__Question Stem:__
+
+Which adverse effects are correctly matched with COPD inhaler classes?
+
+__Answer Choices:__
+
+A\. LAMA ΓÇö dry mouth or urinary retention
+
+B\. LABA ΓÇö tremor or palpitations
+
+C\. ICS ΓÇö pneumonia risk or oral candidiasis
+
+D\. SABA ΓÇö permanent cure of COPD
+
+__Correct Answer:__
+
+A, B, C
+
+__Rationale:__
+
+COPD therapy monitoring includes class\-specific safety concerns\. LAMA may cause dry mouth or urinary retention, LABA may cause tremor or palpitations, and ICS may increase pneumonia risk or oral candidiasis\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. LAMA adverse effects include dry mouth and urinary retention\.
+
+B\. Correct\. LABA adverse effects include tremor and palpitations\.
+
+C\. Correct\. ICS safety concerns include pneumonia risk and oral candidiasis\.
+
+D\. Incorrect\. SABA provides symptom relief but does not cure COPD\.
+
+__Source Support:__
+
+COPD teaching summary lists safety monitoring for LAMA, LABA, and ICS\.
+
+__Clinical Skill Tested:__
+
+Monitoring COPD pharmacotherapy safety\.
+
+┬á
+
+__Question ID: COPD\-015__
+
+__Disease State:__ COPD
+
+__Topic:__ Pulmonary rehabilitation
+
+__Difficulty:__ Foundational
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+A COPD patient has persistent dyspnea and reduced activity tolerance despite inhaler therapy\. Which non\-pharmacologic intervention should be considered to improve dyspnea, exercise capacity, and quality of life?
+
+__Answer Choices:__
+
+A\. Pulmonary rehabilitation
+
+B\. Long\-term bed rest
+
+C\. Stopping all inhalers
+
+D\. Chronic antibiotics without exacerbation history
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+Pulmonary rehabilitation improves dyspnea, exercise capacity, and quality of life in COPD patients\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Pulmonary rehabilitation is appropriate for persistent functional limitation\.
+
+B\. Incorrect\. Bed rest may worsen deconditioning\.
+
+C\. Incorrect\. Inhaler therapy should not be stopped without a clinical reason\.
+
+D\. Incorrect\. Chronic antibiotics are not indicated solely for dyspnea\.
+
+__Source Support:__
+
+COPD teaching summary describes pulmonary rehabilitation benefits\.
+
+__Clinical Skill Tested:__
+
+Selecting non\-pharmacologic interventions for COPD symptom burden\.
+
+┬á
+
+__Question ID: COPD\-016__
+
+__Disease State:__ COPD
+
+__Topic:__ Patient C Tuesday asthma\-COPD overlap
+
+__Difficulty:__ Advanced
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+MariaΓÇÖs initial visit shows childhood asthma, COPD diagnosis, former smoking history, post\-bronchodilator FEV1/FVC 0\.55, bronchodilator response of 15% and 260 mL, eosinophils 420 cells/┬╡L, ACT 15, CAT 19, and two steroid\-treated exacerbations in the past year\. She is taking tiotropium and albuterol but no ICS\-containing inhaler\. What is the key therapeutic concern?
+
+__Answer Choices:__
+
+A\. Asthma\-COPD overlap with need for ICS\-containing therapy
+
+B\. Controlled COPD requiring no therapy change
+
+C\. Pure allergic rhinitis without lower airway disease
+
+D\. COPD that should be treated with LABA/LAMA without ICS because asthma history is irrelevant
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+Maria has overlapping asthma and COPD features, elevated eosinophils, and recurrent exacerbations without ICS\-containing therapy\. Asthma features require ICS\-containing treatment\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Her history and objective data support asthma\-COPD overlap and need for ICS\-containing therapy\.
+
+B\. Incorrect\. ACT 15, CAT 19, and exacerbations indicate uncontrolled disease burden\.
+
+C\. Incorrect\. She has lower airway disease with obstructive spirometry\.
+
+D\. Incorrect\. Asthma history is clinically relevant and LABA/LAMA without ICS is unsafe when asthma features are present\.
+
+__Source Support:__
+
+Patient C Tuesday documents asthma\-COPD overlap features, elevated eosinophils, recurrent exacerbations, and absence of ICS\-containing therapy\.
+
+__Clinical Skill Tested:__
+
+Identifying asthma\-COPD overlap and ICS safety requirements\.
+
+┬á
+
+__Question ID: COPD\-017__
+
+__Disease State:__ COPD
+
+__Topic:__ Patient C Wednesday follow\-up
+
+__Difficulty:__ Advanced
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+At MariaΓÇÖs 3\-month follow\-up, breathing has improved after Symbicort was added to Spiriva\. ACT and CAT scores improved, and she has had no steroid\-treated exacerbations\. She reports nasal congestion and stopped fluticasone nasal spray\. What is the best next step?
+
+__Answer Choices:__
+
+A\. Continue current inhaled pulmonary regimen and optimize allergic rhinitis management
+
+B\. Escalate immediately to biologic therapy
+
+C\. Discontinue ICS\-containing therapy
+
+D\. Treat with repeated prednisone bursts as maintenance therapy
+
+__Correct Answer:__
+
+A
+
+__Rationale:__
+
+MariaΓÇÖs lower airway symptoms improved with ICS\-containing therapy\. Persistent symptoms appear related to uncontrolled allergic rhinitis, so rhinitis should be optimized before pulmonary escalation\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. This avoids inappropriate escalation and addresses the likely contributor\.
+
+B\. Incorrect\. Biologic therapy is premature before confirming optimized therapy and addressing rhinitis\.
+
+C\. Incorrect\. Discontinuing ICS\-containing therapy is unsafe given asthma features\.
+
+D\. Incorrect\. Repeated prednisone bursts increase corticosteroid burden and do not address the root issue\.
+
+__Source Support:__
+
+Patient C Wednesday emphasizes improved respiratory control with persistent allergic rhinitis and avoiding inappropriate escalation\.
+
+__Clinical Skill Tested:__
+
+Differentiating persistent pulmonary disease from comorbid upper\-airway contributors\.
+
+┬á
+
+__Question ID: COPD\-018__
+
+__Disease State:__ COPD
+
+__Topic:__ MATINEE trial population
+
+__Difficulty:__ Advanced
+
+__Question Type:__ Select\-all\-that\-apply
+
+__Question Stem:__
+
+Which characteristics align with the MATINEE trial concept for mepolizumab use in COPD?
+
+__Answer Choices:__
+
+A\. Eosinophilic COPD phenotype
+
+B\. Frequent exacerbations despite optimized inhaled maintenance therapy
+
+C\. Blood eosinophils ΓëÑ300 cells/┬╡L
+
+D\. Newly diagnosed mild asthma controlled on low\-dose therapy
+
+__Correct Answer:__
+
+A, B, C
+
+__Rationale:__
+
+MATINEE evaluated mepolizumab in patients with COPD characterized by an eosinophilic phenotype and persistent exacerbations despite optimized inhaled therapy\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Correct\. Eosinophilic COPD phenotype is central\.
+
+B\. Correct\. Persistent exacerbations despite optimized inhaled therapy are central\.
+
+C\. Correct\. The Week 3 journal club document identifies eosinophils ΓëÑ300 cells/┬╡L as a major criterion\.
+
+D\. Incorrect\. Controlled mild asthma does not reflect the MATINEE population\.
+
+__Source Support:__
+
+Journal Club Week 3 describes MATINEE as evaluating mepolizumab for eosinophilic COPD with frequent exacerbations despite optimized inhaled therapy\.
+
+__Clinical Skill Tested:__
+
+Identifying appropriate biologic trial population and avoiding overgeneralization\.
+
+┬á
+
+__Question ID: COPD\-019__
+
+__Disease State:__ COPD
+
+__Topic:__ MATINEE application to Patient C
+
+__Difficulty:__ Advanced
+
+__Question Type:__ Single\-best\-answer
+
+__Question Stem:__
+
+Which Week 3 patient is the strongest fit for applying MATINEE trial evidence?
+
+__Answer Choices:__
+
+A\. Sarah Tuesday, because she has newly recognized uncontrolled asthma without controller therapy
+
+B\. Bob Wednesday, because he has persistent symptoms but poor adherence to LABA/LAMA
+
+C\. Maria Thursday, because she has eosinophilic airway disease and recurrent exacerbations despite optimized inhaled therapy
+
+D\. Sarah Wednesday, because her ACT improved to 21
+
+__Correct Answer:__
+
+C
+
+__Rationale:__
+
+Maria Thursday best matches the MATINEE application because she has elevated eosinophils, recurrent corticosteroid\-treated exacerbations, optimized inhaled therapy, confirmed adherence, and persistent exacerbation burden\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Incorrect\. Sarah Tuesday needs foundational controller therapy, not biologic trial application\.
+
+B\. Incorrect\. Bob Wednesday requires adherence optimization before escalation\.
+
+C\. Correct\. Maria Thursday is the strongest fit\.
+
+D\. Incorrect\. Sarah Wednesday is improving and does not need biologic therapy\.
+
+__Source Support:__
+
+Patient C Thursday requires applying MATINEE evidence and evaluating mepolizumab candidacy after optimized therapy\.
+
+__Clinical Skill Tested:__
+
+Applying clinical trial evidence to the right patient\.
+
+┬á
+
+__Question ID: COPD\-020__
+
+__Disease State:__ COPD
+
+__Topic:__ COPD biologic therapy and escalation logic
+
+__Difficulty:__ Advanced
+
+__Question Type:__ NAPLEX\-inspired K\-type\-style
+
+__Question Stem:__
+
+Which statements reflect appropriate COPD biologic/escalation reasoning in Week 3?
+
+I\. Biologic therapy should be considered only after confirming optimized inhaled therapy, adherence, technique, and appropriate patient phenotype\.
+
+II\. MATINEE evidence should be applied primarily to eosinophilic COPD with recurrent exacerbations despite optimized therapy\.
+
+III\. Bob Wednesday should be escalated to triple therapy before assessing adherence\.
+
+IV\. Maria Thursday is a stronger biologic candidate than Maria Wednesday because she continues to exacerbate despite optimized therapy and controlled rhinitis\.
+
+__Answer Choices:__
+
+A\. I only
+
+B\. I and II only
+
+C\. I, II, and IV only
+
+D\. I, II, III, and IV
+
+__Correct Answer:__
+
+C
+
+__Rationale:__
+
+Biologic therapy should follow optimization of foundational therapy and should be phenotype\-specific\. MATINEE applies to eosinophilic COPD with recurrent exacerbations despite optimized therapy\. Maria Thursday is appropriate for biologic consideration; Bob Wednesday should not be escalated before adherence is addressed\.
+
+__Why the Incorrect Options Are Wrong:__
+
+A\. Incorrect\. II and IV are also correct\.
+
+B\. Incorrect\. IV is also correct\.
+
+C\. Correct\. I, II, and IV are accurate\.
+
+D\. Incorrect\. III is unsafe because Bob Wednesday requires adherence optimization before escalation\.
+
+__Source Support:__
+
+The Week 3 QA prompt flags escalation before adherence/technique assessment as unsafe and limits MATINEE use to eosinophilic COPD with recurrent exacerbations despite optimized inhaled therapy\.
+
+__Clinical Skill Tested:__
+
+Integrating escalation safety, adherence assessment, phenotype selection, and MATINEE evidence\.
+
+┬á
+
+*From <*[*https://chatgpt\.com/g/g\-p\-6a2c4016e23081918c2946bb6565644a\-vacs\-week\-3\-asthma\-copd/c/6a2c4356\-44d8\-83ea\-b2c3\-29f2b3a4c374?tab=chats*](https://chatgpt.com/g/g-p-6a2c4016e23081918c2946bb6565644a-vacs-week-3-asthma-copd/c/6a2c4356-44d8-83ea-b2c3-29f2b3a4c374?tab=chats)*> *
+
+┬á
+

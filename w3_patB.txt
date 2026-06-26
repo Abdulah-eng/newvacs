@@ -1,0 +1,146 @@
+﻿# Patient B Master Profile
+
+## Patient Name
+
+Robert "Bob" Jenkins
+
+## Age
+
+67 years old
+
+## Sex
+
+Male
+
+## Visit Setting
+
+Ambulatory Care Pharmacotherapy Clinic
+
+## Main Medical Conditions
+
+- Chronic Obstructive Pulmonary Disease \(COPD\) 
+- Hypertension 
+- Hyperlipidemia 
+
+## Personality
+
+Bob is practical, independent, and somewhat skeptical of medications\.
+
+He believes medications should produce noticeable benefits and may become discouraged when he does not immediately feel improvement\.
+
+He generally follows medical advice but does not always fully understand the purpose of long\-term maintenance therapies\.
+
+He dislikes being perceived as dependent on medications and often minimizes symptoms when discussing his health\.
+
+## Health Literacy Level
+
+Moderate\-Low
+
+Bob understands:
+
+- COPD affects his breathing 
+- Smoking contributed to his lung disease 
+- Rescue inhalers help him breathe better 
+
+Bob has limited understanding of:
+
+- Maintenance inhaler therapy 
+- COPD progression 
+- Exacerbation prevention 
+- Long\-term benefits of adherence 
+- Differences between rescue and maintenance medications 
+
+## Past Medical History
+
+COPD
+
+- Diagnosed 4 years ago 
+
+Hypertension
+
+- Diagnosed 12 years ago 
+
+Hyperlipidemia
+
+- Diagnosed 10 years ago 
+
+## Medication List
+
+Albuterol HFA
+
+- 2 puffs every 4ΓÇô6 hours as needed 
+
+Lisinopril 20 mg daily
+
+Atorvastatin 20 mg daily
+
+## Allergies
+
+Drug Allergies
+
+- NKDA 
+
+Food Allergies
+
+- None 
+
+## Social History
+
+Occupation
+
+- Retired automotive mechanic 
+
+Tobacco
+
+- Former smoker 
+- 45 pack\-year history 
+- Quit 5 years ago 
+
+Alcohol
+
+- Occasional beer consumption 
+
+Recreational Drugs
+
+- Denies 
+
+Living Situation
+
+- Lives with spouse 
+
+Exercise
+
+- Limited due to shortness of breath 
+- Walks occasionally 
+
+## Family History
+
+Father
+
+- COPD 
+- Coronary artery disease 
+
+Mother
+
+- Hypertension 
+
+Brother
+
+- COPD 
+
+## Patient Goals
+
+- Breathe easier during daily activities 
+- Stay independent 
+- Avoid hospitalizations 
+- Continue working on projects around the house 
+- Maintain quality of life 
+
+## Patient Fears or Concerns
+
+- Becoming dependent on oxygen 
+- Progressive loss of independence 
+- COPD worsening over time 
+- Medication costs 
+- Taking medications that do not seem to help
+

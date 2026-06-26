@@ -1,0 +1,193 @@
+﻿# PATIENT C MASTER PROFILE
+
+## Patient Name
+
+Robert Jenkins
+
+## Age
+
+76 years old
+
+## Sex
+
+Male
+
+## Visit Setting
+
+Ambulatory Care Cardiology Clinic
+
+## Main Medical Conditions
+
+Heart Failure with Reduced Ejection Fraction \(HFrEF\)
+
+Persistent Nonvalvular Atrial Fibrillation
+
+Chronic Kidney Disease Stage 3b
+
+Coronary Artery Disease
+
+Prior NSTEMI
+
+Type 2 Diabetes Mellitus
+
+Hypertension
+
+Hyperlipidemia
+
+## Educational Purpose
+
+Patient C serves as the advanced, high\-risk patient for Week 4\.
+
+Students must simultaneously manage:
+
+- Heart failure 
+- Atrial fibrillation 
+- Anticoagulation 
+- Chronic kidney disease 
+- ASCVD secondary prevention 
+- Polypharmacy 
+- Monitoring burden 
+
+Unlike Patients A and B, there is not one obvious medication therapy problem\.
+
+Students must identify and prioritize multiple competing clinical concerns\.
+
+## Personality
+
+Highly engaged\.
+
+Very detail\-oriented\.
+
+Frequently reviews laboratory values before appointments\.
+
+Brings written questions to clinic\.
+
+Respectfully challenges recommendations\.
+
+Often asks:
+
+"What evidence supports that?"
+
+and
+
+"How do the benefits compare to the risks?"
+
+## Health Literacy
+
+High\.
+
+Retired engineer\.
+
+Excellent understanding of chronic disease management\.
+
+Frequently researches medical information independently\.
+
+Sometimes becomes overly focused on laboratory changes\.
+
+## Past Medical History
+
+Heart Failure with Reduced Ejection Fraction
+
+- Diagnosed 4 years ago 
+- LVEF 30% 
+
+Persistent Nonvalvular Atrial Fibrillation
+
+Coronary Artery Disease
+
+- NSTEMI 3 years ago 
+
+Chronic Kidney Disease Stage 3b
+
+Type 2 Diabetes Mellitus
+
+Hypertension
+
+Hyperlipidemia
+
+## Past Surgical History
+
+PCI with drug\-eluting stent placement following NSTEMI
+
+## Current Medications
+
+Sacubitril/Valsartan 97/103 mg PO BID
+
+Metoprolol Succinate 100 mg PO daily
+
+Spironolactone 25 mg PO daily
+
+Empagliflozin 10 mg PO daily
+
+Apixaban 5 mg PO BID
+
+Rosuvastatin 40 mg PO daily
+
+## Allergies
+
+No known drug allergies
+
+## Family History
+
+Father
+
+- Myocardial infarction age 58 
+
+Mother
+
+- Ischemic stroke age 72 
+
+Brother
+
+- Coronary artery disease 
+
+## Social History
+
+Lives with spouse
+
+Retired engineer
+
+Former smoker
+
+- Quit 20 years ago 
+
+Rare alcohol use
+
+No illicit drug use
+
+Excellent medication adherence
+
+Monitors:
+
+- Blood pressure 
+- Weight 
+- Heart rate 
+
+at home regularly
+
+## Patient Goals
+
+Remain independent
+
+Avoid hospitalization
+
+Avoid stroke
+
+Maintain kidney function
+
+Remain physically active
+
+Continue traveling with spouse
+
+## Patient Fears
+
+Progressive kidney disease
+
+Medication adverse effects
+
+Risk of stroke
+
+Long\-term prognosis
+
+Potential future dialysis
+

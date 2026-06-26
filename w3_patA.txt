@@ -1,0 +1,121 @@
+﻿# Patient A Master Profile
+
+## Patient Name
+
+Sarah Thompson
+
+## Age
+
+34 years old
+
+## Sex
+
+Female
+
+## Visit Setting
+
+Ambulatory Care Pharmacotherapy Clinic
+
+## Main Medical Conditions
+
+- Moderate persistent asthma
+- Allergic rhinitis
+
+## Personality
+
+Sarah is friendly, cooperative, and motivated to improve her health\. She has lived with asthma since childhood and tends to normalize symptoms that should be considered signs of poor control\.
+
+She is generally receptive to recommendations and enjoys learning about her health but often assumes that her current symptoms are simply part of living with asthma\.
+
+## Health Literacy Level
+
+Moderate
+
+Sarah understands that asthma affects breathing and knows how to use a rescue inhaler\.
+
+She does not fully understand:
+
+- The difference between controller and rescue medications
+- The role of airway inflammation in asthma
+- Why inhaled corticosteroids are used regularly
+- How asthma control is assessed
+
+## Past Medical History
+
+- Asthma \(diagnosed at age 8\)
+- Allergic rhinitis
+- Seasonal allergies
+
+## Medication List
+
+### Albuterol HFA
+
+- 2 puffs every 4ΓÇô6 hours as needed
+
+### Cetirizine 10 mg
+
+- Take 1 tablet by mouth daily
+
+### Fluticasone Nasal Spray
+
+- 1 spray in each nostril daily
+
+## Allergies
+
+- No known drug allergies
+
+## Social History
+
+Occupation:
+
+- Elementary school teacher
+
+Tobacco:
+
+- Never smoker
+
+Alcohol:
+
+- Occasional wine consumption
+
+Recreational Drug Use:
+
+- Denies
+
+Living Situation:
+
+- Lives with husband and two children
+
+Physical Activity:
+
+- Enjoys outdoor activities and spending time with family
+
+## Family History
+
+Mother:
+
+- Asthma
+
+Father:
+
+- Hypertension
+
+Brother:
+
+- Seasonal allergies
+
+## Patient Goals
+
+- Improve breathing during daily activities
+- Reduce reliance on rescue inhaler
+- Keep up with her children without becoming short of breath
+- Avoid future asthma\-related urgent care or emergency visits
+- Better understand how to manage her asthma
+
+## Patient Fears or Concerns
+
+- Concerned about medication side effects
+- Worried about long\-term steroid exposure
+- Hesitant about needing additional medications
+- Wants to avoid asthma worsening over time
+

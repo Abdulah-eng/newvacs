@@ -1,0 +1,174 @@
+﻿# Patient C Master Profile
+
+## Patient Name
+
+Maria Thompson
+
+## Age
+
+69 years old
+
+## Sex
+
+Female
+
+## Visit Setting
+
+Ambulatory Care Pharmacotherapy Clinic
+
+## Main Medical Conditions
+
+- Asthma\-COPD Overlap \(ACO\) 
+- Allergic Rhinitis 
+- Hypertension 
+- Osteopenia 
+
+## Personality
+
+Maria is highly engaged in her healthcare and wants to understand the reasoning behind treatment decisions\.
+
+She is generally adherent to medications and values recommendations supported by evidence\.
+
+She asks thoughtful questions and is willing to make lifestyle changes when she understands the expected benefits\.
+
+She is occasionally frustrated by recurrent respiratory symptoms despite doing what providers recommend\.
+
+## Health Literacy Level
+
+Moderate\-High
+
+Maria understands:
+
+- Asthma and COPD both affect breathing 
+- Smoking contributed to her lung disease 
+- Medications help control symptoms 
+- Exacerbations can worsen lung health 
+
+She has a basic understanding of inhaler therapy but does not fully understand:
+
+- Eosinophilic inflammation 
+- Biologic therapies 
+- Differences between asthma and COPD pathophysiology 
+- Long\-term implications of recurrent exacerbations 
+
+## Past Medical History
+
+Asthma
+
+- Diagnosed during childhood 
+
+COPD
+
+- Diagnosed 8 years ago 
+
+Allergic Rhinitis
+
+- Diagnosed during early adulthood 
+
+Hypertension
+
+- Diagnosed 15 years ago 
+
+Osteopenia
+
+- Diagnosed 3 years ago 
+
+## Medication List
+
+Tiotropium \(Spiriva Respimat\)
+
+- 2 inhalations daily 
+
+Albuterol HFA
+
+- 2 puffs every 4ΓÇô6 hours as needed 
+
+Fluticasone Nasal Spray
+
+- 1 spray each nostril daily 
+
+Lisinopril 20 mg daily
+
+Calcium Carbonate/Vitamin D
+
+- 1 tablet twice daily 
+
+## Allergies
+
+### Drug Allergies
+
+Sulfonamide antibiotics
+
+- Rash 
+
+### Food Allergies
+
+None
+
+## Social History
+
+### Occupation
+
+Retired elementary school principal
+
+### Tobacco
+
+Former smoker
+
+- 30 pack\-year history 
+- Quit 12 years ago 
+
+### Alcohol
+
+Rare alcohol use
+
+### Recreational Drugs
+
+Denies
+
+### Living Situation
+
+Lives with spouse
+
+### Exercise
+
+Walks several times weekly
+
+Activity limited by respiratory symptoms
+
+## Family History
+
+### Father
+
+COPD
+
+Coronary artery disease
+
+### Mother
+
+Asthma
+
+Allergic rhinitis
+
+### Sister
+
+Asthma
+
+## Patient Goals
+
+- Improve breathing 
+- Remain physically active 
+- Avoid future exacerbations 
+- Avoid hospitalizations 
+- Maintain independence 
+- Continue traveling with spouse 
+
+## Patient Fears or Concerns
+
+- Progressive loss of lung function 
+- Frequent steroid use 
+- Future hospitalizations 
+- Becoming dependent on oxygen 
+- Loss of independence 
+- Respiratory symptoms interfering with travel plans
+

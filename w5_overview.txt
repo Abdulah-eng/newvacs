@@ -1,0 +1,270 @@
+﻿# Week 5 Overview: Depression \+ Anxiety \+ Tobacco Cessation
+
+## Why These Disease States Are Paired
+
+Depression, anxiety, and tobacco use disorder are among the most common behavioral health conditions managed in ambulatory care and frequently coexist in the same patient\.
+
+Depression and anxiety often occur together and can worsen symptom severity, impair daily functioning, reduce medication adherence, and negatively impact quality of life\.
+
+Patients with behavioral health conditions also use tobacco products at significantly higher rates than the general population\. Many patients report smoking to manage stress, anxiety, or depressive symptoms, creating a cycle that can worsen both physical and mental health outcomes\.
+
+Together these conditions significantly increase the risk of:
+
+ΓÇó Functional impairment
+
+ΓÇó Poor medication adherence
+
+ΓÇó Reduced quality of life
+
+ΓÇó Substance use disorders
+
+ΓÇó Cardiovascular disease
+
+ΓÇó Chronic disease complications
+
+ΓÇó Healthcare utilization
+
+ΓÇó Premature mortality
+
+Students must learn to manage all three conditions simultaneously rather than in isolation\.
+
+## Learning Objectives
+
+By the end of Week 5 students should be able to:
+
+ΓÇó Apply depression guidelines to patient\-specific scenarios\.
+
+ΓÇó Apply anxiety guidelines to patient\-specific scenarios\.
+
+ΓÇó Apply tobacco cessation guidelines to patient\-specific scenarios\.
+
+ΓÇó Interpret PHQ\-9 scores\.
+
+ΓÇó Interpret GAD\-7 scores\.
+
+ΓÇó Develop evidence\-based treatment plans\.
+
+ΓÇó Select appropriate antidepressant therapy\.
+
+ΓÇó Assess medication adherence and treatment response\.
+
+ΓÇó Identify treatment\-resistant depression\.
+
+ΓÇó Assess readiness to quit tobacco use\.
+
+ΓÇó Recommend evidence\-based smoking cessation therapies\.
+
+ΓÇó Perform patient\-centered counseling\.
+
+ΓÇó Create complete SOAP notes\.
+
+ΓÇó Develop monitoring and follow\-up plans\.
+
+## Guidelines Used
+
+### Depression
+
+American College of Physicians \(ACP\) Living Clinical Guideline \(2023\)
+
+Department of Veterans Affairs / Department of Defense \(VA/DoD\) Clinical Practice Guideline for the Management of Major Depressive Disorder \(2022\)
+
+### Anxiety
+
+Department of Veterans Affairs / Department of Defense \(VA/DoD\) Clinical Practice Guideline for the Management of Anxiety Disorders \(2023\)
+
+U\.S\. Preventive Services Task Force \(USPSTF\) Anxiety Screening Evidence Review \(2023\)
+
+### Tobacco Cessation
+
+Department of Veterans Affairs / Department of Defense \(VA/DoD\) Clinical Practice Guideline for Tobacco Use Treatment \(2025\)
+
+U\.S\. Preventive Services Task Force \(USPSTF\) Recommendation Statement: Interventions for Tobacco Smoking Cessation in Adults \(2021\)
+
+## Clinical Skills Practiced
+
+ΓÇó Behavioral health assessment
+
+ΓÇó PHQ\-9 interpretation
+
+ΓÇó GAD\-7 interpretation
+
+ΓÇó Patient interviewing
+
+ΓÇó Medication reconciliation
+
+ΓÇó Antidepressant selection
+
+ΓÇó Tobacco cessation counseling
+
+ΓÇó Problem identification
+
+ΓÇó Guideline application
+
+ΓÇó Documentation
+
+ΓÇó Monitoring plan development
+
+ΓÇó Longitudinal patient management
+
+## Longitudinal Patients
+
+### Patient A
+
+Foundational case focused on uncomplicated depression, anxiety, and tobacco use disorder management\.
+
+### Patient B
+
+Adherence and access case focused on medication barriers, missed doses, limited counseling access, and practical problem solving\.
+
+### Patient C
+
+Higher\-risk patient requiring management of persistent symptoms, treatment optimization, treatment\-resistant depression concepts, and tobacco dependence\.
+
+## Progression of Complexity
+
+### Patient A
+
+Focus on foundational diagnosis and treatment\.
+
+Students will learn:
+
+ΓÇó Initial antidepressant selection
+
+ΓÇó PHQ\-9 interpretation
+
+ΓÇó GAD\-7 interpretation
+
+ΓÇó CBT referral
+
+ΓÇó Tobacco use assessment
+
+### Patient B
+
+Focus on adherence and barriers\.
+
+Students will learn:
+
+ΓÇó Medication adherence assessment
+
+ΓÇó Cost barriers
+
+ΓÇó Transportation barriers
+
+ΓÇó Missed appointments
+
+ΓÇó Behavioral health access challenges
+
+ΓÇó Tobacco cessation obstacles
+
+### Patient C
+
+Focus on advanced clinical decision making\.
+
+Students will learn:
+
+ΓÇó Partial response management
+
+ΓÇó Treatment optimization
+
+ΓÇó Escalation strategies
+
+ΓÇó Treatment\-resistant depression concepts
+
+ΓÇó Persistent tobacco use
+
+ΓÇó Long\-term management planning
+
+The goal is not simply to know the guidelines\.
+
+The goal is to apply the guidelines to realistic ambulatory care patient encounters\.
+
+## Weekly Workflow
+
+### Monday: Guideline Foundation Day
+
+Students will review:
+
+ΓÇó Depression guideline summary
+
+ΓÇó Anxiety guideline summary
+
+ΓÇó Tobacco cessation guideline summary
+
+ΓÇó Required readings and resources
+
+The purpose of Monday is to establish the evidence base that will be applied throughout the week\.
+
+### Tuesday: Initial Patient Assessment
+
+Students will:
+
+ΓÇó Conduct patient interviews
+
+ΓÇó Review chart information
+
+ΓÇó Interpret PHQ\-9 and GAD\-7 scores
+
+ΓÇó Identify medication therapy problems
+
+ΓÇó Assess tobacco use
+
+ΓÇó Develop initial treatment plans
+
+ΓÇó Complete SOAP note documentation
+
+### Wednesday: Follow\-Up Assessment
+
+Students will:
+
+ΓÇó Evaluate treatment response
+
+ΓÇó Reassess PHQ\-9 and GAD\-7 scores
+
+ΓÇó Assess adherence
+
+ΓÇó Assess adverse effects
+
+ΓÇó Evaluate smoking cessation progress
+
+ΓÇó Modify treatment plans as needed
+
+ΓÇó Complete SOAP note documentation
+
+### Thursday: Advanced Clinical Decision\-Making
+
+Students will:
+
+ΓÇó Manage complex medication therapy problems
+
+ΓÇó Address patient\-specific barriers
+
+ΓÇó Optimize antidepressant therapy
+
+ΓÇó Evaluate persistent symptoms
+
+ΓÇó Apply guideline recommendations to challenging scenarios
+
+ΓÇó Complete SOAP note documentation
+
+### Friday: Reflection and Journal Club
+
+Students will:
+
+ΓÇó Reflect on patient care experiences
+
+ΓÇó Apply literature to clinical practice
+
+ΓÇó Participate in journal club discussion
+
+ΓÇó Defend evidence\-based treatment recommendations
+
+### Journal Club
+
+__Escalating Therapy After Antidepressant Failure: The ESCAPE\-TRD Trial__
+
+Daly EJ, Singh JB, Fedgchin M, et al\.
+
+*Esketamine Nasal Spray versus Quetiapine Extended Release for Treatment\-Resistant Depression\.*
+
+N Engl J Med\. 2023;388:227\-239\.
+

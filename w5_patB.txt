@@ -1,0 +1,220 @@
+﻿# SECTION 8: PATIENT MASTER PROFILE
+
+# Patient B Master Profile
+
+## Patient Name
+
+Jessica Ramirez
+
+## Age
+
+42 years old
+
+## Sex
+
+Female
+
+## Visit Setting
+
+Ambulatory Care Behavioral Health Clinic
+
+Referral from Primary Care Provider
+
+## Main Medical Conditions
+
+Major Depressive Disorder
+
+Generalized Anxiety Disorder
+
+Tobacco Use Disorder
+
+Medication Nonadherence
+
+Financial Barriers to Care
+
+## Educational Purpose
+
+Patient B serves as the adherence and access patient for Week 5\.
+
+Students will focus on:
+
+ΓÇó Identifying medication adherence barriers
+
+ΓÇó Distinguishing nonadherence from treatment failure
+
+ΓÇó Assessing social determinants of health
+
+ΓÇó Addressing cost and access limitations
+
+ΓÇó Managing medication\-related concerns
+
+ΓÇó Improving treatment engagement
+
+ΓÇó Addressing inconsistent psychotherapy participation
+
+ΓÇó Utilizing motivational interviewing techniques
+
+ΓÇó Developing realistic, patient\-centered treatment plans
+
+This patient is intentionally designed to demonstrate that poor behavioral health outcomes are frequently driven by barriers to treatment rather than ineffective medications\.
+
+## Personality
+
+Jessica is friendly and cooperative but appears overwhelmed and frustrated\.
+
+She feels discouraged by her lack of improvement and believes she is failing treatment\.
+
+She often feels guilty about forgetting medications and missing appointments\.
+
+She wants to feel better but struggles to balance her own healthcare needs with work and family responsibilities\.
+
+She appreciates empathy, practical solutions, and nonjudgmental communication\.
+
+## Health Literacy
+
+Moderate
+
+Jessica understands basic medical concepts but has several misconceptions regarding behavioral health treatment\.
+
+She believes:
+
+ΓÇó Antidepressants should work quickly
+
+ΓÇó Missing medication occasionally should not significantly affect treatment
+
+ΓÇó Therapy is only necessary for severe mental illness
+
+ΓÇó Feeling somewhat better means medication can be stopped
+
+She benefits from clear explanations, practical recommendations, and shared decision\-making\.
+
+## Past Medical History
+
+Major Depressive Disorder \(2 years\)
+
+Generalized Anxiety Disorder \(2 years\)
+
+Tobacco Use Disorder
+
+Migraine Headaches
+
+## Past Surgical History
+
+Cesarean section
+
+## Current Medications
+
+Sertraline 100 mg by mouth daily
+
+Hydroxyzine 25 mg by mouth every 8 hours as needed for anxiety
+
+Sumatriptan 50 mg by mouth as needed for migraine
+
+## Allergies
+
+No known drug allergies
+
+## Family History
+
+Mother
+
+Major Depressive Disorder
+
+Father
+
+Alcohol Use Disorder
+
+Sister
+
+Generalized Anxiety Disorder
+
+## Social History
+
+Divorced
+
+Lives with two children
+
+Works full\-time as a medical receptionist
+
+Reports significant financial stress
+
+Current smoker
+
+Approximately 10 cigarettes daily
+
+Smoking history approximately 20 years
+
+Occasional alcohol use
+
+Denies illicit drug use
+
+Minimal exercise
+
+Frequently misses appointments because of childcare responsibilities
+
+Reports difficulty prioritizing her own healthcare needs
+
+## Baseline Clinical Information
+
+Depression Assessment
+
+PHQ\-9: 16
+
+Interpretation:
+
+Moderately Severe Depression
+
+Anxiety Assessment
+
+GAD\-7: 14
+
+Interpretation:
+
+Moderate Anxiety
+
+## Functional Status
+
+Persistent fatigue
+
+Difficulty concentrating
+
+Poor sleep quality
+
+Reduced motivation
+
+Anxiety interferes with work performance
+
+Frequently feels emotionally overwhelmed
+
+Difficulty managing daily responsibilities
+
+## Patient Goals
+
+Feel like herself again
+
+Have more energy
+
+Sleep better
+
+Reduce stress
+
+Be more emotionally present for her children
+
+Feel more in control of her mental health
+
+Quit smoking someday
+
+## Patient Fears and Concerns
+
+"I don't think these medications are working\."
+
+"I keep forgetting to take my medicine\."
+
+"I can't afford therapy every week\."
+
+"I feel like I'm failing at this\."
+
+"What if I'm always going to feel this way?"
+
+"I don't know how people manage all of this\."
+

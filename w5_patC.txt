@@ -1,0 +1,246 @@
+﻿# SECTION 8: PATIENT MASTER PROFILE
+
+# Patient C Master Profile
+
+## Patient Name
+
+David Carter
+
+## Age
+
+51 years old
+
+## Sex
+
+Male
+
+## Visit Setting
+
+Ambulatory Care Behavioral Health Clinic
+
+Referral from Psychiatry and Primary Care Provider
+
+## Main Medical Conditions
+
+Major Depressive Disorder, Recurrent, Severe
+
+Generalized Anxiety Disorder
+
+Tobacco Use Disorder
+
+Possible Treatment\-Resistant Depression
+
+Hypertension
+
+Obstructive Sleep Apnea
+
+## Educational Purpose
+
+Patient C serves as the advanced, high\-risk patient for Week 5\.
+
+Students will focus on:
+
+ΓÇó Identifying treatment\-resistant depression
+
+ΓÇó Evaluating adequacy of previous antidepressant trials
+
+ΓÇó Assessing severe depression and anxiety symptoms
+
+ΓÇó Performing suicide risk assessment
+
+ΓÇó Distinguishing passive versus active suicidal ideation
+
+ΓÇó Evaluating augmentation strategies
+
+ΓÇó Applying guideline recommendations for inadequate response
+
+ΓÇó Developing collaborative safety plans
+
+ΓÇó Integrating behavioral and pharmacologic interventions
+
+ΓÇó Managing tobacco use in severe mental illness
+
+This patient is intentionally designed to require advanced clinical reasoning and integration of multiple behavioral health concepts\.
+
+## Personality
+
+David is pleasant but emotionally exhausted\.
+
+He is quiet and somewhat withdrawn\.
+
+He has become skeptical that treatment can help because he has already tried multiple therapies\.
+
+He answers questions honestly but usually gives short responses initially\.
+
+He appreciates empathy and direct communication\.
+
+He is frustrated and discouraged but remains willing to continue treatment if he believes there is a reasonable chance of improvement\.
+
+## Health Literacy
+
+High
+
+David understands medical terminology and has researched depression extensively\.
+
+He understands that he has already tried several medications and worries that he is running out of options\.
+
+He asks thoughtful questions and values evidence\-based explanations\.
+
+## Past Medical History
+
+Major Depressive Disorder, recurrent
+
+Generalized Anxiety Disorder
+
+Hypertension
+
+Obstructive Sleep Apnea on CPAP
+
+## Past Surgical History
+
+Cholecystectomy
+
+## Current Medications
+
+Venlafaxine XR 150 mg by mouth daily
+
+Hydroxyzine 25 mg by mouth every 8 hours as needed for anxiety
+
+Lisinopril 20 mg by mouth daily
+
+## Allergies
+
+No known drug allergies
+
+## Family History
+
+Mother
+
+Major Depressive Disorder
+
+Father
+
+Alcohol Use Disorder
+
+Brother
+
+Major Depressive Disorder
+
+## Social History
+
+Married
+
+Lives with spouse
+
+Works full\-time as an information technology manager
+
+Current smoker
+
+Approximately one pack per day
+
+Smoking history approximately 25 years
+
+Occasional alcohol use
+
+Denies illicit drug use
+
+Previously enjoyed hiking and woodworking but rarely participates in these activities
+
+Reports significant social withdrawal
+
+## Baseline Clinical Information
+
+### Depression Assessment
+
+PHQ\-9: 21
+
+Interpretation:
+
+Severe Depression
+
+### Anxiety Assessment
+
+GAD\-7: 18
+
+Interpretation:
+
+Severe Anxiety
+
+## Functional Status
+
+Significant fatigue
+
+Difficulty concentrating
+
+Poor motivation
+
+Social withdrawal
+
+Decreased enjoyment in activities
+
+Difficulty completing work responsibilities
+
+Relationship strain
+
+Persistent emotional exhaustion
+
+## Previous Psychiatric Treatment History
+
+Escitalopram 20 mg daily
+
+ΓÇó Approximately 16 weeks
+
+ΓÇó Partial response
+
+Sertraline 150 mg daily
+
+ΓÇó Approximately 6 months
+
+ΓÇó Minimal improvement
+
+Current therapy:
+
+Venlafaxine XR 150 mg daily
+
+ΓÇó Approximately 12 weeks
+
+ΓÇó Partial response
+
+Previous CBT:
+
+ΓÇó Completed approximately 10 sessions
+
+ΓÇó Helpful for coping skills but symptoms remained severe
+
+## Patient Goals
+
+Feel like himself again
+
+Enjoy activities again
+
+Improve concentration
+
+Reduce emotional exhaustion
+
+Improve relationships
+
+Feel hopeful again
+
+Sleep better
+
+Eventually quit smoking
+
+## Patient Fears and Concerns
+
+"I don't know if anything is going to work\."
+
+"I've already tried several medications\."
+
+"I feel like I'm running out of options\."
+
+"What if I never get better?"
+
+"I don't want to keep feeling like this\."
+
+"Am I going to feel this way forever?"
+

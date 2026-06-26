@@ -1,0 +1,181 @@
+﻿# Week 4 Overview: Heart Failure \+ Atrial Fibrillation \+ Anticoagulation/Venous Thromboembolism
+
+## Why These Disease States Are Paired
+
+Heart failure, atrial fibrillation, and venous thromboembolism are among the most common cardiovascular conditions managed in ambulatory care and frequently coexist in the same patient\.
+
+Together they significantly increase the risk of:
+
+- Stroke
+- Systemic embolism
+- Heart failure hospitalization
+- Recurrent venous thromboembolism
+- Major bleeding complications
+- Cardiovascular mortality
+- All\-cause mortality
+
+Students must learn to manage these conditions simultaneously rather than in isolation\.
+
+Successful management requires balancing mortality reduction, symptom control, stroke prevention, bleeding risk, medication burden, and patient preferences\.
+
+## Learning Objectives
+
+By the end of Week 4 students should be able to:
+
+- Apply heart failure guidelines to patient\-specific scenarios\.
+- Apply atrial fibrillation guidelines to patient\-specific scenarios\.
+- Apply anticoagulation and VTE guidelines to patient\-specific scenarios\.
+- Develop evidence\-based treatment plans\.
+- Identify medication therapy problems\.
+- Assess stroke and thromboembolic risk\.
+- Assess bleeding risk\.
+- Identify medication adherence and access barriers\.
+- Perform patient\-centered counseling\.
+- Create complete SOAP notes\.
+- Develop monitoring and follow\-up plans\.
+- Utilize shared decision\-making when benefits and risks must be balanced\.
+
+## Guidelines Used
+
+### Heart Failure
+
+2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure
+
+### Atrial Fibrillation
+
+2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation
+
+### Venous Thromboembolism
+
+2026 ACC/AHA/CHEST VTE Guideline
+
+2021 CHEST Guideline and Expert Panel Report: Antithrombotic Therapy for VTE Disease
+
+## Clinical Skills Practiced
+
+- Chart review
+- Patient interviewing
+- Medication reconciliation
+- Problem identification
+- Guideline application
+- Anticoagulation assessment
+- Risk\-benefit evaluation
+- Shared decision\-making
+- Documentation
+- Monitoring plan development
+
+## Longitudinal Patients
+
+### Patient A
+
+Foundational case focused on diagnosis and optimization of guideline\-directed medical therapy for heart failure with reduced ejection fraction \(HFrEF\)\.
+
+### Patient B
+
+Adherence and access case focused on atrial fibrillation management, anticoagulation adherence, medication affordability, health literacy, and practical problem solving\.
+
+### Patient C
+
+Higher\-risk patient requiring integration of HFpEF, atrial fibrillation, chronic kidney disease, prior venous thromboembolism, anticoagulation management, and individualized risk\-benefit assessment\.
+
+## Progression of Complexity
+
+### Patient A
+
+Guideline Application
+
+Students focus on identifying evidence\-based therapies and optimizing heart failure treatment\.
+
+### Patient B
+
+Implementation of Therapy
+
+Students focus on overcoming medication access barriers, adherence challenges, and patient concerns\.
+
+### Patient C
+
+Clinical Judgment
+
+Students focus on individualized decision\-making when multiple disease states and competing risks coexist\.
+
+The goal is not simply to know the guidelines\.
+
+The goal is to apply the guidelines to realistic ambulatory care patient encounters\.
+
+## Weekly Workflow
+
+### Monday: Guideline Foundation Day
+
+Students will review:
+
+- Heart failure guideline summary
+- Atrial fibrillation guideline summary
+- Anticoagulation/VTE guideline summary
+- Required readings and resources
+
+The purpose of Monday is to establish the evidence base that will be applied throughout the week\.
+
+### Tuesday: Initial Patient Assessment
+
+Students will:
+
+- Conduct patient interviews
+- Review chart information
+- Identify medication therapy problems
+- Develop initial treatment plans
+- Complete SOAP note documentation
+
+Patient focus:
+
+- Patient A: New HFrEF diagnosis
+- Patient B: New atrial fibrillation diagnosis
+- Patient C: Initial complex cardiovascular assessment
+
+### Wednesday: Follow\-Up Assessment
+
+Students will:
+
+- Evaluate treatment response
+- Interpret follow\-up laboratory results
+- Assess adherence and adverse effects
+- Modify treatment plans as needed
+- Complete SOAP note documentation
+
+Patient focus:
+
+- Patient A: GDMT titration and monitoring
+- Patient B: Medication access and adherence barriers
+- Patient C: Reassessment of anticoagulation and renal function
+
+### Thursday: Advanced Clinical Decision\-Making
+
+Students will:
+
+- Manage complex medication therapy problems
+- Address patient\-specific barriers
+- Apply guideline recommendations to challenging scenarios
+- Complete SOAP note documentation
+
+Patient focus:
+
+- Patient A: Long\-term optimization of HFrEF therapy
+- Patient B: Persistent adherence challenges and stroke prevention
+- Patient C: Shared decision\-making regarding long\-term anticoagulation
+
+### Friday: Reflection and Journal Club
+
+Students will:
+
+- Reflect on patient care experiences
+- Apply literature to clinical practice
+- Participate in journal club discussion
+- Defend evidence\-based treatment recommendations
+
+### Journal Club
+
+__Atrial Fibrillation \+ Anticoagulation__
+
+__Bleeding Reduction Beyond Factor Xa Inhibition: The AZALEA\-TIMI 71 Trial__
+
+Students will evaluate emerging anticoagulation therapies and discuss how future therapies may influence stroke prevention, bleeding risk, and ambulatory care decision\-making\.
+

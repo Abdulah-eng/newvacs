@@ -1,0 +1,246 @@
+﻿# Patient A Master Profile
+
+## Patient Name
+
+Sarah Mitchell
+
+## Age
+
+29 years old
+
+## Sex
+
+Female
+
+## Visit Setting
+
+Ambulatory Care Behavioral Health Clinic
+
+Referral from Primary Care Provider
+
+## Main Medical Conditions
+
+Major Depressive Disorder \(new diagnosis\)
+
+Generalized Anxiety Disorder \(new diagnosis\)
+
+Tobacco Use Disorder
+
+## Educational Purpose
+
+Patient A serves as the foundational patient for Week 5\.
+
+Students will focus on:
+
+ΓÇó Identifying and assessing depression
+
+ΓÇó Identifying and assessing anxiety
+
+ΓÇó Interpreting PHQ\-9 scores
+
+ΓÇó Interpreting GAD\-7 scores
+
+ΓÇó Applying depression treatment guidelines
+
+ΓÇó Applying anxiety treatment guidelines
+
+ΓÇó Selecting initial antidepressant therapy
+
+ΓÇó Assessing tobacco use and readiness to quit
+
+ΓÇó Developing monitoring plans
+
+ΓÇó Managing behavioral health conditions longitudinally
+
+This patient is intentionally designed with minimal barriers so students can focus on mastering evidence\-based behavioral health management\.
+
+## Personality
+
+Sarah is friendly, cooperative, and motivated\.
+
+She is concerned about how she has been feeling over the past several months and wants to understand why she no longer feels like herself\.
+
+She asks thoughtful questions and is open to treatment recommendations\.
+
+She values clear explanations, reassurance, and practical advice\.
+
+## Health Literacy
+
+Moderate
+
+Sarah understands basic medical concepts but has limited knowledge regarding depression, anxiety, and available treatment options\.
+
+She benefits from patient\-friendly explanations and counseling\.
+
+She is capable of participating in treatment decisions when information is explained clearly\.
+
+## Past Medical History
+
+Major Depressive Disorder \(new diagnosis\)
+
+Generalized Anxiety Disorder \(new diagnosis\)
+
+Tobacco Use Disorder
+
+## Surgical History
+
+None
+
+## Current Medications
+
+None
+
+## Allergies
+
+No known drug allergies
+
+## Family History
+
+Mother
+
+Major Depressive Disorder
+
+Successfully treated with sertraline
+
+Father
+
+Hypertension
+
+Maternal Grandmother
+
+Generalized Anxiety Disorder
+
+## Social History
+
+Married
+
+Lives with spouse
+
+Works full\-time as an elementary school teacher
+
+Current smoker \(approximately 5 cigarettes daily\)
+
+Smoking history approximately 8 years
+
+Previous quit attempt 2 years ago
+
+Longest abstinence approximately 3 months
+
+Drinks 1ΓÇô2 alcoholic beverages per week
+
+Denies illicit drug use
+
+## Baseline Clinical Information
+
+### Depression Symptoms
+
+Reports symptoms for approximately 4ΓÇô5 months:
+
+ΓÇó Persistent low mood
+
+ΓÇó Decreased motivation
+
+ΓÇó Fatigue
+
+ΓÇó Difficulty concentrating
+
+ΓÇó Decreased interest in hobbies
+
+ΓÇó Mild insomnia
+
+ΓÇó Increased irritability
+
+### Anxiety Symptoms
+
+Reports:
+
+ΓÇó Frequent worrying
+
+ΓÇó Feeling overwhelmed
+
+ΓÇó Difficulty relaxing
+
+ΓÇó Work\-related stress
+
+No history of:
+
+ΓÇó Panic disorder
+
+ΓÇó Bipolar disorder
+
+ΓÇó Psychosis
+
+### PHQ\-9
+
+Score: 13
+
+Interpretation:
+
+Moderate Depression
+
+### GAD\-7
+
+Score: 8
+
+Interpretation:
+
+Mild Anxiety
+
+### Suicide Risk Assessment
+
+Denies:
+
+ΓÇó Suicidal ideation
+
+ΓÇó Suicide attempts
+
+ΓÇó Self\-harm behaviors
+
+Patient is considered low risk\.
+
+## Functional Status
+
+Symptoms are beginning to interfere with daily functioning\.
+
+Patient reports:
+
+ΓÇó Reduced productivity at work
+
+ΓÇó Increased fatigue throughout the day
+
+ΓÇó Less enjoyment of social activities
+
+ΓÇó Difficulty maintaining previous activity level
+
+Despite symptoms, she continues to work full\-time and remains independent in activities of daily living\.
+
+## Patient Goals
+
+Feel happier and more like herself
+
+Improve energy and motivation
+
+Improve sleep quality
+
+Improve concentration
+
+Reduce anxiety and worrying
+
+Continue performing well at work
+
+Eventually quit smoking
+
+Learn how to manage her mental health successfully
+
+## Patient Fears and Concerns
+
+ΓÇ£Why do I feel like this all the time?ΓÇ¥
+
+ΓÇ£Am I going to need medication forever?ΓÇ¥
+
+ΓÇ£Will antidepressants change my personality?ΓÇ¥
+
+ΓÇ£Can I get better without becoming dependent on medication?ΓÇ¥
+
+ΓÇ£Will I ever be able to quit smoking?ΓÇ¥
+

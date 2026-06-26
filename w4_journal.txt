@@ -1,0 +1,352 @@
+﻿Week 4 Journal Club Assignment
+
+Heart Failure \+ Atrial Fibrillation \+ Anticoagulation/VTE
+
+Can We Prevent Stroke Without Increasing Bleeding?
+
+__The AZALEA\-TIMI 71 Trial__
+
+__Article__
+
+Piccini JP, Patel MR, Mahaffey KW, et al\.
+
+Abelacimab versus Rivaroxaban in Patients with Atrial Fibrillation\.
+
+N Engl J Med\. 2024;391:105\-116\.
+
+__Assignment Overview__
+
+Students will critically evaluate the AZALEA\-TIMI 71 Trial and discuss how emerging Factor XI inhibition may fit into contemporary management of:
+
+ΓÇó Atrial fibrillation
+
+ΓÇó Stroke prevention
+
+ΓÇó Anticoagulation
+
+ΓÇó Bleeding risk reduction
+
+ΓÇó Shared decision\-making
+
+Students should focus on how pharmacists evaluate the balance between thromboembolic prevention and bleeding risk when selecting anticoagulation strategies\.
+
+__Journal Club Key__
+
+AZALEA\-TIMI 71 Trial: Abelacimab versus Rivaroxaban in Patients with Atrial Fibrillation
+
+Piccini JP, Patel MR, Mahaffey KW, et al\. Abelacimab versus Rivaroxaban in Patients with Atrial Fibrillation\. N Engl J Med\. 2024;391:105\-116\.
+
+Background
+
+ΓÇó Atrial fibrillation \(AF\) is the most common sustained cardiac arrhythmia encountered in ambulatory care practice\.
+
+ΓÇó AF significantly increases the risk of ischemic stroke, systemic embolism, heart failure progression, hospitalization, and mortality\.
+
+ΓÇó Direct oral anticoagulants \(DOACs\) have largely replaced warfarin because of improved safety, fewer drug interactions, and reduced monitoring requirements\.
+
+ΓÇó Despite these advantages, bleeding remains the major limitation of current anticoagulation therapy\.
+
+ΓÇó Many patients discontinue anticoagulation because of bleeding concerns, resulting in increased stroke risk\.
+
+ΓÇó Factor XI has emerged as a promising therapeutic target because it appears to contribute substantially to thrombosis while playing a smaller role in normal hemostasis\.
+
+ΓÇó Abelacimab is a monoclonal antibody that inhibits Factor XI and Factor XIa activity\.
+
+ΓÇó The AZALEA\-TIMI 71 Trial was designed to evaluate whether Factor XI inhibition could reduce bleeding compared with standard DOAC therapy in patients with atrial fibrillation\.
+
+Study Objective
+
+To compare bleeding outcomes between abelacimab and rivaroxaban in patients with atrial fibrillation who require long\-term anticoagulation for stroke prevention\.
+
+Methods
+
+Study Design
+
+ΓÇó International
+
+ΓÇó Multicenter
+
+ΓÇó Randomized
+
+ΓÇó Parallel\-group trial
+
+Funding Source
+
+ΓÇó Anthos Therapeutics
+
+Patient Population
+
+ΓÇó Adults with atrial fibrillation
+
+ΓÇó Elevated thromboembolic risk requiring chronic anticoagulation
+
+Major Inclusion Criteria
+
+ΓÇó Age ΓëÑ55 years
+
+ΓÇó Documented atrial fibrillation
+
+ΓÇó CHAΓééDSΓéé\-VASc score requiring anticoagulation
+
+ΓÇó Appropriate candidate for DOAC therapy
+
+Major Exclusion Criteria
+
+ΓÇó Mechanical heart valve
+
+ΓÇó Moderate\-to\-severe mitral stenosis
+
+ΓÇó Active bleeding
+
+ΓÇó Significant contraindication to anticoagulation
+
+ΓÇó Severe renal impairment
+
+Drug Treatment
+
+Treatment Group 1
+
+ΓÇó Abelacimab 150 mg subcutaneous monthly
+
+Treatment Group 2
+
+ΓÇó Abelacimab 90 mg subcutaneous monthly
+
+Control Group
+
+ΓÇó Rivaroxaban 20 mg daily
+
+ΓÇó Dose\-adjusted when appropriate
+
+Primary Endpoint
+
+Composite of:
+
+ΓÇó Major bleeding
+
+OR
+
+ΓÇó Clinically relevant nonmajor bleeding
+
+Secondary Endpoints
+
+ΓÇó Ischemic stroke
+
+ΓÇó Systemic embolism
+
+ΓÇó Death
+
+ΓÇó Composite cardiovascular outcomes
+
+Safety Outcomes
+
+ΓÇó Major bleeding
+
+ΓÇó Clinically relevant nonmajor bleeding
+
+ΓÇó Serious adverse events
+
+ΓÇó Injection\-site reactions
+
+Statistics
+
+ΓÇó Intention\-to\-treat analysis
+
+ΓÇó Event\-driven trial
+
+ΓÇó Independent event adjudication
+
+ΓÇó Prespecified interim monitoring
+
+Data Collection / Frequency / Assessment Tools
+
+ΓÇó Scheduled clinic visits
+
+ΓÇó Adverse event monitoring
+
+ΓÇó Bleeding assessments
+
+ΓÇó Stroke and systemic embolism monitoring
+
+ΓÇó Independent endpoint adjudication
+
+Results
+
+Follow\-Up
+
+ΓÇó Trial stopped early following recommendation from the independent data monitoring committee because of overwhelming reductions in bleeding events\.
+
+Baseline Subject Characteristics
+
+ΓÇó Mean age approximately 74 years
+
+ΓÇó High\-risk atrial fibrillation population
+
+ΓÇó Elevated CHAΓééDSΓéé\-VASc scores
+
+ΓÇó Baseline characteristics balanced between groups
+
+Primary Endpoint
+
+Major bleeding or clinically relevant nonmajor bleeding occurred significantly less frequently with abelacimab than with rivaroxaban\.
+
+Compared with rivaroxaban:
+
+ΓÇó Abelacimab 150 mg reduced bleeding by approximately 67%
+
+ΓÇó Abelacimab 90 mg reduced bleeding by approximately 62%
+
+Secondary Outcomes
+
+Stroke and Systemic Embolism
+
+ΓÇó Event rates were low across all groups\.
+
+ΓÇó Trial was not powered to establish superiority or noninferiority for stroke prevention outcomes\.
+
+Mortality
+
+ΓÇó No major differences observed\.
+
+Safety Outcomes
+
+Major Bleeding
+
+ΓÇó Significantly lower with abelacimab\.
+
+Clinically Relevant Nonmajor Bleeding
+
+ΓÇó Significantly lower with abelacimab\.
+
+Serious Adverse Events
+
+ΓÇó Similar between groups\.
+
+Overall Safety
+
+ΓÇó Favorable safety profile observed\.
+
+Author's Conclusion
+
+Among patients with atrial fibrillation, abelacimab resulted in substantially less bleeding than rivaroxaban\.
+
+Strengths
+
+ΓÇó Novel anticoagulation mechanism
+
+ΓÇó Randomized controlled design
+
+ΓÇó Clinically meaningful bleeding outcomes
+
+ΓÇó Contemporary DOAC comparator
+
+ΓÇó High\-risk AF population
+
+ΓÇó Strong ambulatory care relevance
+
+ΓÇó Potential paradigm\-shifting anticoagulation strategy
+
+Limitations
+
+ΓÇó Trial stopped early
+
+ΓÇó Not powered to establish superiority for stroke prevention
+
+ΓÇó Long\-term efficacy remains uncertain
+
+ΓÇó Novel therapy not currently available for routine clinical use
+
+ΓÇó Industry funded
+
+ΓÇó Limited long\-term outcome data
+
+Presenter's Conclusion / Clinical Application
+
+AZALEA\-TIMI 71 represents one of the most important anticoagulation trials published in recent years\.
+
+The study suggests that Factor XI inhibition may substantially reduce bleeding compared with currently available DOAC therapy while maintaining promising antithrombotic activity\.
+
+For pharmacists, this trial reinforces the importance of evaluating:
+
+ΓÇó Stroke risk
+
+ΓÇó Bleeding risk
+
+ΓÇó Patient preferences
+
+ΓÇó Medication adherence
+
+ΓÇó Long\-term safety
+
+when making anticoagulation recommendations\.
+
+Although abelacimab is not currently guideline\-directed therapy, AZALEA\-TIMI 71 provides insight into the future direction of anticoagulation management and highlights ongoing efforts to separate thrombosis prevention from bleeding risk\.
+
+Patients who may potentially benefit from future Factor XI inhibitor therapies include those with:
+
+ΓÇó Atrial fibrillation
+
+ΓÇó Elevated stroke risk
+
+ΓÇó Prior bleeding events
+
+ΓÇó High bleeding risk
+
+ΓÇó Difficulty maintaining long\-term anticoagulation because of bleeding concerns
+
+References
+
+Piccini JP, Patel MR, Mahaffey KW, et al\. Abelacimab versus Rivaroxaban in Patients with Atrial Fibrillation\. N Engl J Med\. 2024;391:105\-116\.
+
+January CT, Wann LS, Calkins H, et al\. 2026 AHA/ACC/HRS Guideline for the Management of Patients With Atrial Fibrillation\.
+
+Kearon C, Albers GW, Barnes GD, et al\. 2026 ACC Expert Consensus Decision Pathway on Anticoagulation Management\.
+
+McDonagh TA, Metra M, Adamo M, et al\. 2025 ACC/AHA/HFSA Heart Failure Guideline Update\.
+
+Five Clinical Application Questions
+
+1. A 78\-year\-old patient with atrial fibrillation has experienced multiple episodes of epistaxis while taking apixaban and is considering stopping anticoagulation altogether\. How does AZALEA\-TIMI 71 influence future anticoagulation discussions?
+
+Answer:
+
+The trial suggests that future Factor XI inhibitors may provide stroke prevention with substantially less bleeding than current anticoagulants\. Although these therapies are not yet standard of care, the study highlights a potential future option for patients whose primary concern is bleeding risk\.
+
+1. Why was rivaroxaban a more clinically relevant comparator than warfarin?
+
+Answer:
+
+DOACs are current first\-line therapy for most patients with nonvalvular atrial fibrillation\. Comparing abelacimab against rivaroxaban provides information that is more applicable to contemporary practice than comparison with warfarin\.
+
+1. A patient asks whether abelacimab should replace apixaban today\. How would you respond?
+
+Answer:
+
+No\. Although AZALEA\-TIMI 71 demonstrated impressive reductions in bleeding, additional efficacy data, regulatory approval, and guideline incorporation are still needed before routine clinical use\.
+
+1. Which patient would potentially derive greater benefit from future Factor XI inhibitor therapy?
+
+Patient A
+
+ΓÇó CHAΓééDSΓéé\-VASc = 3
+
+ΓÇó No history of bleeding
+
+Patient B
+
+ΓÇó CHAΓééDSΓéé\-VASc = 4
+
+ΓÇó Prior gastrointestinal bleed
+
+ΓÇó Recurrent epistaxis
+
+Answer:
+
+Patient B\. The major potential advantage of Factor XI inhibition is maintaining thromboembolic protection while reducing bleeding risk\.
+
+1. How does AZALEA\-TIMI 71 support shared decision\-making in anticoagulation management?
+
+Answer:
+
+The trial highlights that patients value both stroke prevention and bleeding avoidance\. Future anticoagulation strategies may allow more individualized discussions that better balance these competing risks\.
+

@@ -1,0 +1,130 @@
+﻿# Patient A Master Profile
+
+## Patient Name
+
+Michael Thompson
+
+## Age
+
+58 years old
+
+## Sex
+
+Male
+
+## Visit Setting
+
+Ambulatory Care Cardiology Clinic
+
+Referral from Primary Care Provider
+
+## Main Medical Conditions
+
+- Newly diagnosed Heart Failure with Reduced Ejection Fraction \(HFrEF\)
+- Hypertension
+- Hyperlipidemia
+- Obesity
+
+## Educational Purpose
+
+Patient A serves as the foundational patient for Week 4\.
+
+Students will focus on:
+
+- Identifying and classifying heart failure
+- Applying heart failure guidelines
+- Initiating guideline\-directed medical therapy \(GDMT\)
+- Developing monitoring plans
+- Titrating therapy longitudinally
+
+This patient is intentionally designed with minimal barriers so students can focus on mastering evidence\-based heart failure management\.
+
+## Personality
+
+Michael is friendly, cooperative, and motivated\.
+
+He is concerned about his recent diagnosis and wants to understand what is happening to his health\.
+
+He asks thoughtful questions and is generally willing to follow medical recommendations\.
+
+He values clear explanations and practical advice\.
+
+## Health Literacy
+
+Moderate
+
+Michael understands basic medical concepts but has limited knowledge regarding heart failure\.
+
+He benefits from patient\-friendly explanations and counseling\.
+
+He is capable of participating in treatment decisions when information is explained clearly\.
+
+## Past Medical History
+
+- Hypertension \(10 years\)
+- Hyperlipidemia \(8 years\)
+- Obesity
+- Nonischemic cardiomyopathy \(new diagnosis\)
+
+## Surgical History
+
+- Appendectomy at age 24
+
+## Current Medications
+
+- Lisinopril 20 mg by mouth daily
+- Hydrochlorothiazide 25 mg by mouth daily
+- Atorvastatin 40 mg by mouth daily
+
+## Allergies
+
+- No known drug allergies
+
+## Family History
+
+### Father
+
+- Hypertension
+- Myocardial infarction at age 62
+
+### Mother
+
+- Type 2 diabetes mellitus
+
+## Social History
+
+- Married
+- Lives with spouse
+- Works full\-time as an accountant
+- Former smoker \(20 pack\-year history\)
+- Quit smoking 5 years ago
+- Drinks 1ΓÇô2 alcoholic beverages on weekends
+- Denies illicit drug use
+
+## Baseline Clinical Information
+
+### Echocardiogram
+
+- LVEF: 35%
+- Mild left ventricular dilation
+- No significant valvular abnormalities
+
+### Functional Status
+
+Symptoms consistent with NYHA Class II heart failure\.
+
+## Patient Goals
+
+- Improve breathing and stamina
+- Increase daily activity level
+- Continue working full\-time
+- Avoid hospitalization
+- Learn how to manage heart failure successfully
+
+## Patient Fears and Concerns
+
+- ΓÇ£Does this mean my heart is failing?ΓÇ¥
+- ΓÇ£Will I need surgery?ΓÇ¥
+- ΓÇ£Am I going to have a heart attack?ΓÇ¥
+- ΓÇ£Will I be able to keep working?ΓÇ¥
+
