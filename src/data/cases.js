@@ -1,5 +1,8 @@
 import { BC_CASES, BC_RUBRICS } from './patientsBC.js'
 import { W2_CASES, W2_RUBRICS } from './patientsW2.js'
+import { W3_CASES, W3_RUBRICS } from './patientsW3.js'
+import { W4_CASES, W4_RUBRICS } from './patientsW4.js'
+import { W5_CASES, W5_RUBRICS } from './patientsW5.js'
 // ============================================================================
 // VACS case data — Maria Gonzalez, Week 1 (Tuesday / Wednesday / Thursday)
 // ----------------------------------------------------------------------------
@@ -1074,7 +1077,7 @@ const caseThu = {
 // ----------------------------------------------------------------------------
 // Exports
 // ----------------------------------------------------------------------------
-export const CASES = [caseTue, caseWed, caseThu, ...BC_CASES, ...W2_CASES]
+export const CASES = [caseTue, caseWed, caseThu, ...BC_CASES, ...W2_CASES, ...W3_CASES, ...W4_CASES, ...W5_CASES]
 export const CASE_BY_ID = Object.fromEntries(CASES.map(c => [c.id, c]))
 
 // Workflow areas counted for the "Case Progress" bar.
@@ -1227,3 +1230,7 @@ Object.assign(GRADING_RUBRICS, BC_RUBRICS)
 
 // Merge in Week 2 (CKD + HLD) grading rubrics.
 Object.assign(GRADING_RUBRICS, W2_RUBRICS)
+
+Object.assign(GRADING_RUBRICS, W3_RUBRICS)
+Object.assign(GRADING_RUBRICS, W4_RUBRICS)
+Object.assign(GRADING_RUBRICS, W5_RUBRICS)
