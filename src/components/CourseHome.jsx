@@ -6,7 +6,12 @@ import { Activity, LogOut, Unlock, Lock, ArrowRight, CheckCircle2, GraduationCap
 function WeekCard({ week, locked, onOpen }) {
   const snap = week.state.snapshot()
   const accent = week.index === 1 ? '#0d9488' : '#0891b2'
-  const stats = [
+  const isCapstone = week.type === 'capstone'
+  const stats = isCapstone ? [
+    { icon: GraduationCap, label: 'Manuscript', value: snap.complete ? 'Graded' : 'Not submitted' },
+    { icon: Stethoscope, label: 'Topic', value: 'MASH' },
+    { icon: FlaskConical, label: 'Presentation', value: snap.complete ? 'Complete' : 'Pending' },
+  ] : [
     { icon: GraduationCap, label: 'Monday quiz', value: snap.quizPassed ? `Passed · ${snap.quizBest}%` : (snap.quizBest ? `Best ${snap.quizBest}%` : 'Not started') },
     { icon: Stethoscope, label: 'Clinic cases graded', value: `${snap.casesGraded} / ${snap.totalCases}` },
     { icon: FlaskConical, label: 'Journal club', value: snap.journalDone ? 'Complete' : 'Pending' },
@@ -35,11 +40,16 @@ function WeekCard({ week, locked, onOpen }) {
         <p className="text-[13px] text-slate-600 leading-relaxed">{week.blurb}</p>
 
         <div className="mt-4 flex flex-wrap gap-1.5">
-          {week.patients.map(p => (
+          {week.patients?.map(p => (
             <span key={p.key} className="inline-flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-slate-100 text-slate-600 ring-1 ring-slate-200">
               <Users size={11} /> {p.name.split(' ')[0]} · {p.tag}
             </span>
           ))}
+          {isCapstone && (
+            <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-semibold bg-slate-100 text-slate-600 ring-1 ring-slate-200">
+              <Users size={11} /> Grand Rounds · Document Submission
+            </span>
+          )}
         </div>
 
         <div className="mt-4 grid grid-cols-3 gap-2">
