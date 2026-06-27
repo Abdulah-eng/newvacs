@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { createClient } from '../../lib/supabase/client'
 import QuizEngine from './QuizEngine'
 import { FileText, GraduationCap, CheckCircle2, ChevronRight, BookOpen } from 'lucide-react'
 
@@ -7,6 +8,23 @@ export default function MondayPage({ week, onPassed }) {
   const [quizOpen, setQuizOpen] = useState(false)
   const best = state.quizBest()
   const passed = state.quizPassed()
+  const [dynamicGuidelines, setDynamicGuidelines] = useState([])
+
+  useEffect(() => {
+    async function loadGuidelines() {
+      const supabase = createClient()
+      const { data } = await supabase
+        .from('weeks')
+        .select('guideline_links')
+        .eq('week_number', week.index)
+        .single()
+        
+      if (data?.guideline_links) {
+        setDynamicGuidelines(data.guideline_links)
+      }
+    }
+    loadGuidelines()
+  }, [week.index])
 
   if (quizOpen) {
     return (
@@ -52,6 +70,20 @@ export default function MondayPage({ week, onPassed }) {
           </div>
         ))}
       </div>
+
+      {dynamicGuidelines.length > 0 && (
+        <div className="mb-6 bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden p-5">
+          <h3 className="font-head text-[15px] text-navy mb-3">Supplementary Uploaded Guidelines</h3>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {dynamicGuidelines.map(g => (
+              <a key={g.id} href={g.url} target="_blank" rel="noreferrer" className="flex items-center gap-2 p-3 rounded-lg border border-slate-100 bg-slate-50 hover:border-teal-300 hover:bg-teal-50 transition">
+                <FileText size={18} className="text-teal-600 shrink-0" />
+                <span className="text-[13px] font-medium text-slate-700 truncate">{g.title}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Quiz launcher */}
       <div className={`rounded-2xl border shadow-sm p-5 ${passed ? 'border-teal/30 bg-teal/5' : 'border-slate-200 bg-white'}`}>

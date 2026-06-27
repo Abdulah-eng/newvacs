@@ -3,6 +3,7 @@ import { createClient } from '../../../lib/supabase/server'
 import { BookOpen, AlertCircle, CheckCircle2, Circle, Eye, UploadCloud } from 'lucide-react'
 import { AdminCurriculumClient } from '../../../components/admin/AdminCurriculumClient'
 import { ContentPackUploader } from '../../../components/admin/ContentPackUploader'
+import { GuidelineUploader } from '../../../components/admin/GuidelineUploader'
 
 export const metadata = {
   title: 'Manage Curriculum | VACS Admin',
@@ -79,6 +80,9 @@ export default async function AdminCurriculumPage() {
 
                 {/* Content Pack Column */}
                 <ContentPackUploader weekId={week.id} latestPack={latestPack} />
+
+                {/* Guidelines Column */}
+                <GuidelineUploader weekId={week.id} existingGuidelines={week.guideline_links || []} />
               </div>
             )
           })

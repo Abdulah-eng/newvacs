@@ -76,7 +76,7 @@ function WeekCard({ week, locked, onOpen }) {
 
 export default function CourseHome({ demo, onToggleDemo, onOpenWeek, onExit }) {
   const week1Done = WEEK1.state.weekComplete()
-  const lockedFor = (week) => week.index > 1 && !week1Done && !isDemoMode()
+  const lockedFor = (week) => week.index > 1 && !week1Done && !demo
 
   return (
     <div className="min-h-screen bg-slate-100">

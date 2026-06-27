@@ -10,7 +10,7 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 -- =============================================================================
 -- 1. SCHOOLS (institutional customers / tenants)
 -- =============================================================================
-CREATE TABLE schools (
+CREATE TABLE IF NOT EXISTS schools (
   id            UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   name          TEXT NOT NULL,
   status        TEXT NOT NULL DEFAULT 'active' CHECK (status IN ('active', 'inactive')),
@@ -22,7 +22,7 @@ CREATE TABLE schools (
 -- 2. PROFILES (extends Supabase auth.users)
 -- Supabase auth handles password/email. This table stores role + school info.
 -- =============================================================================
-CREATE TABLE profiles (
+CREATE TABLE IF NOT EXISTS profiles (
   id            UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
   full_name     TEXT,
   email         TEXT NOT NULL,
@@ -48,6 +48,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
 
+DROP TRIGGER IF EXISTS on_auth_user_created ON auth.users;
 CREATE TRIGGER on_auth_user_created
   AFTER INSERT ON auth.users
   FOR EACH ROW EXECUTE PROCEDURE public.handle_new_user();
@@ -55,7 +56,7 @@ CREATE TRIGGER on_auth_user_created
 -- =============================================================================
 -- 3. COHORTS (groups of students assigned to a VACS run)
 -- =============================================================================
-CREATE TABLE cohorts (
+CREATE TABLE IF NOT EXISTS cohorts (
   id            UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   school_id     UUID REFERENCES schools(id) ON DELETE CASCADE,
   cohort_name   TEXT NOT NULL,
@@ -67,7 +68,7 @@ CREATE TABLE cohorts (
 );
 
 -- Many-to-many: students belong to cohorts
-CREATE TABLE cohort_members (
+CREATE TABLE IF NOT EXISTS cohort_members (
   cohort_id     UUID NOT NULL REFERENCES cohorts(id) ON DELETE CASCADE,
   user_id       UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
   enrolled_at   TIMESTAMPTZ NOT NULL DEFAULT NOW(),
@@ -77,7 +78,7 @@ CREATE TABLE cohort_members (
 -- =============================================================================
 -- 4. WEEKS (the 5 weekly disease-state modules)
 -- =============================================================================
-CREATE TABLE weeks (
+CREATE TABLE IF NOT EXISTS weeks (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   week_number     INT NOT NULL CHECK (week_number BETWEEN 1 AND 5),
   title           TEXT NOT NULL,
@@ -85,15 +86,19 @@ CREATE TABLE weeks (
   publish_status  TEXT NOT NULL DEFAULT 'draft' CHECK (publish_status IN ('draft', 'validated', 'published', 'archived')),
   cohort_id       UUID REFERENCES cohorts(id) ON DELETE SET NULL,  -- NULL = available to all cohorts
   available_from  TIMESTAMPTZ,  -- when the week becomes accessible to students
+  guideline_links JSONB NOT NULL DEFAULT '[]'::jsonb, -- Array of { title, url, path, created_at }
   created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   UNIQUE (week_number, cohort_id)
 );
 
+-- Note: We also require a storage bucket named 'guidelines' for PDF uploads.
+-- INSERT INTO storage.buckets (id, name, public) VALUES ('guidelines', 'guidelines', true);
+
 -- =============================================================================
 -- 5. CONTENT PACKS (metadata for each week's uploaded clinical content)
 -- =============================================================================
-CREATE TABLE content_packs (
+CREATE TABLE IF NOT EXISTS content_packs (
   id                  UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   week_id             UUID NOT NULL REFERENCES weeks(id) ON DELETE CASCADE,
   version             TEXT NOT NULL DEFAULT '1.0',
@@ -111,7 +116,7 @@ CREATE TABLE content_packs (
 -- =============================================================================
 -- 6. STUDENT WEEK PROGRESS (tracks per-student, per-week unlock state)
 -- =============================================================================
-CREATE TABLE student_week_progress (
+CREATE TABLE IF NOT EXISTS student_week_progress (
   id                    UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id               UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
   week_id               UUID NOT NULL REFERENCES weeks(id) ON DELETE CASCADE,
@@ -130,7 +135,7 @@ CREATE TABLE student_week_progress (
 -- =============================================================================
 -- 7. QUIZ ATTEMPTS (Monday quiz — stores each attempt)
 -- =============================================================================
-CREATE TABLE quiz_attempts (
+CREATE TABLE IF NOT EXISTS quiz_attempts (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id         UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
   week_id         UUID NOT NULL REFERENCES weeks(id) ON DELETE CASCADE,
@@ -144,7 +149,7 @@ CREATE TABLE quiz_attempts (
 -- =============================================================================
 -- 8. QUIZ QUESTION RESULTS (per-question breakdown for each attempt)
 -- =============================================================================
-CREATE TABLE quiz_question_results (
+CREATE TABLE IF NOT EXISTS quiz_question_results (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   attempt_id      UUID NOT NULL REFERENCES quiz_attempts(id) ON DELETE CASCADE,
   question_id     TEXT NOT NULL,   -- matches question_id in content pack JSON
@@ -160,7 +165,7 @@ CREATE TABLE quiz_question_results (
 -- =============================================================================
 -- 9. PATIENT INTERVIEWS (AI interview sessions)
 -- =============================================================================
-CREATE TABLE patient_interviews (
+CREATE TABLE IF NOT EXISTS patient_interviews (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id         UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
   week_id         UUID NOT NULL REFERENCES weeks(id) ON DELETE CASCADE,
@@ -176,7 +181,7 @@ CREATE TABLE patient_interviews (
 -- =============================================================================
 -- 10. HIDDEN INFO LOGS (tracks hidden information triggered or missed)
 -- =============================================================================
-CREATE TABLE hidden_info_logs (
+CREATE TABLE IF NOT EXISTS hidden_info_logs (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   interview_id    UUID NOT NULL REFERENCES patient_interviews(id) ON DELETE CASCADE,
   hidden_info_id  TEXT NOT NULL,   -- matches id in Patient_*_Hidden_Info_Map.json
@@ -190,7 +195,7 @@ CREATE TABLE hidden_info_logs (
 -- =============================================================================
 -- 11. SOAP SUBMISSIONS (structured SOAP note per patient per day)
 -- =============================================================================
-CREATE TABLE soap_submissions (
+CREATE TABLE IF NOT EXISTS soap_submissions (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id         UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
   week_id         UUID NOT NULL REFERENCES weeks(id) ON DELETE CASCADE,
@@ -216,7 +221,7 @@ CREATE TABLE soap_submissions (
 -- =============================================================================
 -- 12. SOAP GRADES (AI-generated scores and feedback per submission)
 -- =============================================================================
-CREATE TABLE soap_grades (
+CREATE TABLE IF NOT EXISTS soap_grades (
   id                UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   soap_id           UUID NOT NULL REFERENCES soap_submissions(id) ON DELETE CASCADE UNIQUE,
   total_score       NUMERIC(5,2),           -- 0–100
@@ -237,7 +242,7 @@ CREATE TABLE soap_grades (
 -- =============================================================================
 -- 13. JOURNAL CLUB SUBMISSIONS (Friday responses)
 -- =============================================================================
-CREATE TABLE journal_club_submissions (
+CREATE TABLE IF NOT EXISTS journal_club_submissions (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id         UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
   week_id         UUID NOT NULL REFERENCES weeks(id) ON DELETE CASCADE,
@@ -249,7 +254,7 @@ CREATE TABLE journal_club_submissions (
 -- =============================================================================
 -- 14. JOURNAL CLUB GRADES (AI-generated scores and feedback)
 -- =============================================================================
-CREATE TABLE journal_club_grades (
+CREATE TABLE IF NOT EXISTS journal_club_grades (
   id                          UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   submission_id               UUID NOT NULL REFERENCES journal_club_submissions(id) ON DELETE CASCADE UNIQUE,
   total_score                 NUMERIC(5,2),   -- 0–100
@@ -268,7 +273,7 @@ CREATE TABLE journal_club_grades (
 -- =============================================================================
 -- 15. WEEKLY SUMMARIES (AI-generated after Friday completion)
 -- =============================================================================
-CREATE TABLE weekly_summaries (
+CREATE TABLE IF NOT EXISTS weekly_summaries (
   id                UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id           UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
   week_id           UUID NOT NULL REFERENCES weeks(id) ON DELETE CASCADE,
@@ -289,7 +294,7 @@ CREATE TABLE weekly_summaries (
 -- =============================================================================
 -- 16. CUMULATIVE SUMMARIES (AI-generated after Week 5)
 -- =============================================================================
-CREATE TABLE cumulative_summaries (
+CREATE TABLE IF NOT EXISTS cumulative_summaries (
   id                    UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id               UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE UNIQUE,
   all_week_scores       JSONB,   -- array of weekly score rollups
@@ -309,7 +314,7 @@ CREATE TABLE cumulative_summaries (
 -- =============================================================================
 -- 17. AI JOBS (tracks all AI requests for reliability and error review)
 -- =============================================================================
-CREATE TABLE ai_jobs (
+CREATE TABLE IF NOT EXISTS ai_jobs (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   job_type        TEXT NOT NULL CHECK (job_type IN (
                     'soap_grading', 'journal_grading', 'weekly_summary',
@@ -329,7 +334,7 @@ CREATE TABLE ai_jobs (
 -- =============================================================================
 -- 18. SCORE OVERRIDES (Internal Admin only — audit trail)
 -- =============================================================================
-CREATE TABLE score_overrides (
+CREATE TABLE IF NOT EXISTS score_overrides (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   override_type   TEXT NOT NULL CHECK (override_type IN ('soap', 'journal_club', 'quiz')),
   reference_id    UUID NOT NULL,  -- ID of soap_grades / journal_club_grades / quiz_attempts
@@ -369,11 +374,17 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+DROP TRIGGER IF EXISTS on_auth_user_created ON auth.users;
 CREATE TRIGGER trg_schools_updated_at BEFORE UPDATE ON schools FOR EACH ROW EXECUTE PROCEDURE update_updated_at();
+DROP TRIGGER IF EXISTS on_auth_user_created ON auth.users;
 CREATE TRIGGER trg_profiles_updated_at BEFORE UPDATE ON profiles FOR EACH ROW EXECUTE PROCEDURE update_updated_at();
+DROP TRIGGER IF EXISTS on_auth_user_created ON auth.users;
 CREATE TRIGGER trg_cohorts_updated_at BEFORE UPDATE ON cohorts FOR EACH ROW EXECUTE PROCEDURE update_updated_at();
+DROP TRIGGER IF EXISTS on_auth_user_created ON auth.users;
 CREATE TRIGGER trg_weeks_updated_at BEFORE UPDATE ON weeks FOR EACH ROW EXECUTE PROCEDURE update_updated_at();
+DROP TRIGGER IF EXISTS on_auth_user_created ON auth.users;
 CREATE TRIGGER trg_content_packs_updated_at BEFORE UPDATE ON content_packs FOR EACH ROW EXECUTE PROCEDURE update_updated_at();
+DROP TRIGGER IF EXISTS on_auth_user_created ON auth.users;
 CREATE TRIGGER trg_swp_updated_at BEFORE UPDATE ON student_week_progress FOR EACH ROW EXECUTE PROCEDURE update_updated_at();
 
 -- =============================================================================
