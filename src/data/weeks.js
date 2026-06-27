@@ -134,5 +134,23 @@ export const WEEK5 = {
   }),
 }
 
-export const WEEKS = [WEEK1, WEEK2, WEEK3, WEEK4, WEEK5]
+import { CAPSTONE_TOPIC_MASH } from './week6_capstone'
+
+export const WEEK6 = {
+  id: 'week6', index: 6,
+  type: 'capstone', // Specialized module type
+  topic: CAPSTONE_TOPIC_MASH,
+  module: {
+    title: 'Week 6 — Grand Rounds Capstone',
+    subtitle: 'Evaluate clinical evidence and defend your formulary recommendation.',
+  },
+  blurb: 'The final test. Write a long-form clinical drug review, then defend your reasoning to the AI preceptor in a live Q&A.',
+  state: {
+    // Mock state interface to satisfy CourseHome checks
+    snapshot: () => ({ pct: 0, complete: false, quizPassed: false, casesGraded: 0, totalCases: 1 }),
+    weekComplete: () => false
+  }
+}
+
+export const WEEKS = [WEEK1, WEEK2, WEEK3, WEEK4, WEEK5, WEEK6]
 export const getWeek = (id) => WEEKS.find(w => w.id === id) || WEEK1

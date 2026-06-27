@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import CourseHome from '../../components/CourseHome'
 import ModuleShell from '../../components/week1/ModuleShell'
+import CapstoneShell from '../../components/capstone/CapstoneShell'
 import { getWeek } from '../../data/weeks'
 import { saveCaseState } from '../../lib/storage'
 import { hydrateFromSupabase } from '../../lib/storage-sync'
@@ -48,9 +49,19 @@ export default function AppShell() {
   }
 
   if (view === 'module') {
+    const currentWeek = getWeek(weekId)
+    if (currentWeek.type === 'capstone') {
+      return (
+        <CapstoneShell
+          week={currentWeek}
+          onExit={() => setView('course')}
+        />
+      )
+    }
+
     return (
       <ModuleShell
-        week={getWeek(weekId)}
+        week={currentWeek}
         demo={demo}
         onToggleDemo={toggleDemo}
         onExit={() => setView('course')}
