@@ -67,6 +67,11 @@ export function SimliAvatar({ patientName, isSpeaking, onReady, onError, onMount
           for (let i = 0; i < pcmBytes.length; i += CHUNK) {
             clientRef.current.sendAudioData(pcmBytes.slice(i, i + CHUNK))
           }
+          
+          // Wait for the audio to finish playing before resolving
+          // 16kHz, 16-bit mono = 32000 bytes per second
+          const durationMs = (pcmBytes.length / 32000) * 1000
+          await new Promise(resolve => setTimeout(resolve, durationMs + 200)) // Add 200ms padding
         } catch (e) {
           console.error('Simli speakText error:', e)
           throw e // Let parent fall back to Web Speech

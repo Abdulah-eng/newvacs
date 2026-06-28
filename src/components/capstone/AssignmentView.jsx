@@ -67,7 +67,7 @@ export default function AssignmentView({ topic, onUpload }) {
               <h3 className="font-semibold text-navy mb-2 uppercase tracking-wider text-xs">Required Articles</h3>
               <ul className="list-disc pl-5 space-y-1">
                 {topic.assignmentGuide.requiredArticles.map((art, i) => (
-                  <li key={i}><a href={art.link} className="text-teal-600 hover:underline">{art.citation}</a></li>
+                  <li key={i}><a href={art.link} className="text-teal hover:underline">{art.citation}</a></li>
                 ))}
               </ul>
             </div>
@@ -95,14 +95,14 @@ export default function AssignmentView({ topic, onUpload }) {
           
           <div className="border-2 border-dashed border-slate-300 rounded-xl p-8 bg-slate-50 hover:bg-slate-100 transition-colors cursor-pointer" onClick={() => fileInputRef.current?.click()}>
             <input type="file" accept=".docx" ref={fileInputRef} onChange={handleFileChange} className="hidden" />
-            <UploadCloud size={32} className="mx-auto text-teal-500 mb-2" />
-            <span className="text-teal-600 font-semibold">{file ? file.name : 'Click to select .docx file'}</span>
+            <UploadCloud size={32} className="mx-auto text-teal mb-2" />
+            <span className="text-teal font-semibold">{file ? file.name : 'Click to select .docx file'}</span>
           </div>
 
           <button 
             onClick={handleSubmit} 
             disabled={!file || extracting}
-            className={`mt-6 w-full py-3 rounded-lg font-semibold text-white transition-all ${(!file || extracting) ? 'bg-slate-300 cursor-not-allowed' : 'bg-teal-600 hover:bg-teal-700 shadow-md'}`}
+            className={`mt-6 w-full py-3 rounded-lg font-semibold text-white transition-all ${(!file || extracting) ? 'bg-slate-300 cursor-not-allowed' : 'bg-teal hover:bg-teal/90 shadow-md'}`}
           >
             {extracting ? 'Extracting text...' : 'Submit to AI Preceptor'}
           </button>

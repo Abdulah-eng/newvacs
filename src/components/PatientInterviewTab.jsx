@@ -175,7 +175,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     for (let i = 0; i < dataArray.length; i++) bSum += dataArray[i]
     baseline = (bSum / dataArray.length) + 12  // 12-unit buffer above ambient
     const SPEECH_THRESHOLD = Math.max(20, baseline)  // at least 20
-    const SILENCE_MS = 1200       // dropped from 2500ms for much faster response
+    const SILENCE_MS = 600       // dropped from 1200ms for much faster response
 
     let lastSpeechAt = 0
     let speaking = false
