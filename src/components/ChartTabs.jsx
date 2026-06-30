@@ -3,7 +3,7 @@ import { Card, FlagPill, Alert, MissingCallout, SectionTitle, Badge } from './ui
 import { FLAG_STYLES } from '../lib/iconMap'
 import {
   Activity, HeartPulse, Droplet, FlaskConical, Pill, ShieldAlert, ListChecks,
-  Syringe, ClipboardList, AlertTriangle, HelpCircle, Filter, ChevronRight, ChevronLeft,
+  Syringe, ClipboardList, AlertTriangle, HelpCircle, Filter, ChevronRight, ChevronLeft, FileText
 } from 'lucide-react'
 
 /* ------------------------------------------------------------------ Snapshot */
@@ -11,113 +11,266 @@ export function SnapshotTab({ c }) {
   const v = c.VITALS
   const keyLabs = c.LABS.filter(l =>
     ['A1C', 'eGFR', 'SCr', 'LDL-C', 'UACR'].includes(l.label))
+  
+  const vitalsList = [
+    { label: 'Office BP', value: v.bp, flag: v.flags?.bp, trend: 'down' },
+    { label: 'Repeat BP', value: v.bpRepeat, flag: v.flags?.bpRepeat },
+    { label: 'HR', value: `${v.hr} bpm`, flag: v.flags?.hr },
+    { label: 'Temp', value: v.temp, flag: v.flags?.temp },
+    { label: 'RR', value: v.rr, flag: v.flags?.rr },
+    { label: 'SpO₂', value: v.spo2 || '97 %', flag: v.flags?.spo2 },
+    { label: 'Weight', value: v.weight, flag: v.flags?.weight, trend: 'down' },
+    { label: 'Height', value: v.height, flag: v.flags?.height },
+    { label: 'Pain', value: v.pain || '0/10', flag: v.flags?.pain },
+    { label: 'BMI', value: v.bmi, flag: v.flags?.bmi },
+  ]
+
+  const activeMeds = c.MEDICATIONS?.filter(m => !m.patientReported) || []
+  const reportedMeds = c.MEDICATIONS?.filter(m => m.patientReported) || []
+
   return (
-    <div>
-      <SectionTitle sub={`${c.ENCOUNTER.type} · ${c.ENCOUNTER.week}`}>Snapshot</SectionTitle>
-
-      <Card title="Chief concern" icon={HelpCircle} color="13314f" className="mb-4">
-        <p className="text-[14px] italic text-slate-700 leading-relaxed">“{c.ENCOUNTER.chiefConcern}”</p>
-        <p className="mt-3 text-[13px] text-slate-600 leading-relaxed">{c.ENCOUNTER.snapshotSummary}</p>
-      </Card>
-
-      <div className="grid md:grid-cols-2 gap-4 mb-4">
-        <Card title="Clinical alerts" icon={ShieldAlert} color="dc2626">
-          <div className="space-y-2">
-            {c.ALERTS.map((a, i) => <Alert key={i} level={a.level}>{a.text}</Alert>)}
+    <div className="space-y-4 pb-8">
+      <div className="grid md:grid-cols-2 gap-4 mt-2">
+        {/* Advisories */}
+        <Card title="Best Practice Advisories" icon={ShieldAlert} color="dc2626">
+          <div className="space-y-3">
+            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">System-generated advisories — review and act</p>
+            {c.ALERTS.map((a, i) => (
+              <div key={i} className="border border-slate-200 rounded-lg p-3">
+                <div className="flex items-center gap-2 mb-1.5">
+                  <AlertTriangle size={14} className="text-amber-500" />
+                  <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wide">{a.title || 'ALERT'}</span>
+                  <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${((a.flag || a.tag || a.status || (a.level === 'high' ? 'Overdue' : 'Due')).toLowerCase() === 'overdue') ? 'bg-red-100 text-red-700' : 'bg-amber-100 text-amber-700'}`}>
+                    {a.flag || a.tag || a.status || (a.level === 'high' ? 'Overdue' : 'Due')}
+                  </span>
+                </div>
+                <p className="text-[13px] text-slate-600 leading-relaxed">{a.text}</p>
+              </div>
+            ))}
           </div>
         </Card>
 
+        {/* Active problems */}
         <Card title="Active problems" icon={ListChecks} color="0d9488">
-          <ul className="space-y-2">
-            {c.PROBLEMS.map(p => (
-              <li key={p.name} className="flex items-start justify-between gap-2">
-                <div>
-                  <p className="text-[13px] font-semibold text-slate-800">{p.name}</p>
-                  <p className="text-[12px] text-slate-500">{p.detail}</p>
+          <ul className="space-y-0 divide-y divide-slate-100">
+            {c.PROBLEMS.map((p, i) => (
+              <li key={i} className="py-3 first:pt-0 last:pb-0">
+                <div className="flex items-start justify-between gap-2 mb-0.5">
+                  <p className="text-[14px] font-semibold text-slate-800">{p.name}</p>
+                  <p className="text-[11px] text-slate-400 whitespace-nowrap mt-0.5">{(p.noted || p.onset) ? `Noted ${p.noted || p.onset}` : ''}</p>
                 </div>
-                <FlagPill flag={p.flag} />
+                <p className="text-[13px] text-slate-500">{p.detail}</p>
+                {p.alert && (
+                  <div className="mt-2 inline-flex items-center gap-1.5 px-2 py-1 rounded border border-amber-200 bg-amber-50 text-amber-700 text-[11px] font-semibold">
+                    <ShieldAlert size={12} /> {p.alert}
+                  </div>
+                )}
               </li>
             ))}
           </ul>
         </Card>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-4 mb-4">
+      <div className="grid md:grid-cols-2 gap-4">
+        {/* Key Vitals */}
         <Card title="Key vitals" icon={HeartPulse} color="13314f">
-          <dl className="grid grid-cols-2 gap-y-2 text-[13px]">
-            <Stat label="Office BP" value={v.bp} flag={v.flags?.bp} />
-            <Stat label="Repeat BP" value={v.bpRepeat} flag={v.flags?.bpRepeat} />
-            <Stat label="HR" value={v.hr} />
-            <Stat label="BMI" value={v.bmi} flag={v.flags?.bmi} />
-          </dl>
-        </Card>
-        <Card title="Key labs" icon={FlaskConical} color="0891b2">
-          <dl className="grid grid-cols-2 gap-y-2 text-[13px]">
-            {keyLabs.map(l => (
-              <Stat key={l.label} label={l.label}
-                    value={`${l.value}${l.unit ? ' ' + l.unit : ''}`} flag={l.flag} />
+          <ul className="divide-y divide-slate-50">
+            {vitalsList.map((vItem, i) => (
+              <li key={i} className="flex items-center justify-between py-2">
+                <div>
+                  <p className="text-[13px] text-slate-600">{vItem.label}</p>
+                  <p className="text-[10px] text-slate-400 mt-0.5">{v.vitalsTime || '06/23/2026 09:14'}</p>
+                </div>
+                <div className="flex items-center gap-4">
+                  {vItem.trend === 'down' && (
+                    <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 2L12 10L24 10" stroke="#0d9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <polygon points="12,0 16,5 8,5" fill="#1e293b" transform="translate(4.5, 4.5) scale(0.6) rotate(180 12 2.5)" />
+                    </svg>
+                  )}
+                  <div className="flex items-center gap-2">
+                    <span className="text-[13px] font-bold text-slate-800">{vItem.value ?? '—'}</span>
+                    {vItem.flag && vItem.flag !== 'normal' && <FlagPill flag={vItem.flag} />}
+                  </div>
+                </div>
+              </li>
             ))}
-          </dl>
+          </ul>
+        </Card>
+
+        {/* Key Labs */}
+        <Card title="Key labs" icon={FlaskConical} color="0891b2">
+          <ul className="divide-y divide-slate-50">
+            {keyLabs.map((l, i) => (
+              <li key={i} className="flex items-start justify-between py-2.5">
+                <div>
+                  <p className="text-[13px] text-slate-600 flex items-center gap-1">
+                    {l.label}
+                    {l.flag === 'high' && <span className="text-red-600 text-[10px]">▲</span>}
+                  </p>
+                  <p className="text-[10px] text-slate-400 mt-0.5">Ref {l.ref || '—'} · {l.drawn || '06/09/2026 07:50'}</p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-[13px] font-bold text-slate-800">
+                    {l.value} {l.unit && <span className="font-normal text-slate-600">{l.unit}</span>}
+                  </span>
+                  {l.flag && l.flag !== 'normal' && <FlagPill flag={l.flag} />}
+                </div>
+              </li>
+            ))}
+          </ul>
         </Card>
       </div>
 
-      <Card title="What should you clarify with the patient?" icon={AlertTriangle} color="7c3aed">
-        <div className="space-y-2">
-          <MissingCallout>Subjective history is sparse — adherence, OTC use, home monitoring, diet, activity, and goals are not yet documented.</MissingCallout>
-          <p className="text-[13px] text-slate-600">Open the <strong>Patient Interview</strong> tab to uncover what the chart doesn’t show, then document findings in <strong>Subjective</strong>.</p>
+      {/* Medications */}
+      <Card 
+        title="Current medications" 
+        icon={Pill} 
+        color="0d9488"
+        right={
+          <div className="text-right">
+            <span className="inline-block px-2 py-0.5 bg-amber-100 text-amber-800 text-[11px] font-bold rounded">Med rec: Pending</span>
+            <p className="text-[10px] text-slate-400 mt-1">Last reconciled 03/18/2026 · R. Patel, PharmD</p>
+          </div>
+        }
+      >
+        <div className="space-y-6">
+          <div>
+            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3">Active / Prescribed (EHR)</p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-[12px]">
+                <thead>
+                  <tr className="text-[10px] text-slate-400 uppercase tracking-wider border-b border-slate-200">
+                    <th className="pb-2 font-semibold">Medication</th>
+                    <th className="pb-2 font-semibold">Dose</th>
+                    <th className="pb-2 font-semibold">Route</th>
+                    <th className="pb-2 font-semibold">Freq</th>
+                    <th className="pb-2 font-semibold">Start</th>
+                    <th className="pb-2 font-semibold">Prescriber</th>
+                    <th className="pb-2 font-semibold">Last Filled</th>
+                    <th className="pb-2 font-semibold">Refills</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {activeMeds.map((m, i) => (
+                    <tr key={i}>
+                      <td className="py-2.5 font-bold text-slate-800">{m.name}</td>
+                      <td className="py-2.5 text-slate-600">{m.dose}</td>
+                      <td className="py-2.5 text-slate-600">{m.route}</td>
+                      <td className="py-2.5 text-slate-600">{m.freq}</td>
+                      <td className="py-2.5 text-slate-600">{m.start}</td>
+                      <td className="py-2.5 text-slate-600">{m.prescriber}</td>
+                      <td className="py-2.5 text-slate-600">{m.lastFilled}</td>
+                      <td className="py-2.5 text-slate-600">{m.refills}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          {reportedMeds.length > 0 && (
+            <div>
+              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3">Reported by patient — not on active med list</p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-[12px]">
+                  <thead>
+                    <tr className="text-[10px] text-slate-400 uppercase tracking-wider border-b border-slate-200">
+                      <th className="pb-2 font-semibold">Medication</th>
+                      <th className="pb-2 font-semibold">Dose</th>
+                      <th className="pb-2 font-semibold">Route</th>
+                      <th className="pb-2 font-semibold">Freq</th>
+                      <th className="pb-2 font-semibold">Source</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100">
+                    {reportedMeds.map((m, i) => (
+                      <tr key={i}>
+                        <td className="py-2.5 font-bold text-slate-800">{m.name}</td>
+                        <td className="py-2.5 text-slate-600">{m.dose}</td>
+                        <td className="py-2.5 text-slate-600">{m.route}</td>
+                        <td className="py-2.5 text-slate-600">{m.freq}</td>
+                        <td className="py-2.5 text-slate-500 italic">{m.source}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
         </div>
       </Card>
     </div>
   )
 }
 
-function Stat({ label, value, flag }) {
-  return (
-    <>
-      <dt className="text-slate-500">{label}</dt>
-      <dd className="text-right font-semibold text-slate-800 flex items-center justify-end gap-2">
-        <span>{value}</span>{flag && flag !== 'normal' && <FlagPill flag={flag} />}
-      </dd>
-    </>
-  )
-}
-
 /* ------------------------------------------------------------------ Vitals */
 export function VitalsTab({ c }) {
   const v = c.VITALS
-  const rows = [
-    ['Office BP', v.bp, v.flags?.bp], ['Repeat BP', v.bpRepeat, v.flags?.bpRepeat],
-    ['Heart rate', v.hr, v.flags?.hr], ['Respiratory rate', v.rr], ['Temperature', v.temp],
-    ['Weight', v.weight], ['Height', v.height], ['BMI', v.bmi, v.flags?.bmi],
+  const vitalsList = [
+    { label: 'Office BP', time: '06/23/2026 09:14', value: v.bp, flag: v.flags?.bp, ref: '<130/80 mmHg', trend: 'down', icon: 'H' },
+    { label: 'Repeat BP', time: '06/23/2026 09:14', value: v.bpRepeat, flag: v.flags?.bpRepeat, ref: '<130/80 mmHg', icon: 'H' },
+    { label: 'Heart rate', time: '06/23/2026 09:14', value: `${v.hr}`, ref: '60–100 bpm' },
+    { label: 'Respiratory rate', time: '06/23/2026 09:14', value: v.rr, ref: '12–20 /min' },
+    { label: 'Temperature', time: '06/23/2026 09:14', value: v.temp, ref: '97.0–99.5 °F' },
+    { label: 'SpO₂', time: '06/23/2026 09:14', value: v.spo2 || '97 %', ref: '95–100 %' },
+    { label: 'Weight', time: '06/23/2026 09:14', value: v.weight, ref: '—', trend: 'down' },
+    { label: 'Height', time: '06/23/2026 09:14', value: v.height, ref: '—' },
+    { label: 'BMI', time: '06/23/2026 09:14', value: v.bmi, flag: v.flags?.bmi, ref: '18.5–24.9 kg/m²', sub: '34.8 — Obesity, Class I', icon: 'H' },
+    { label: 'BSA (Mosteller)', time: '06/23/2026 09:14', value: '2.04 m²', ref: '—' },
   ]
   return (
-    <div>
+    <div className="space-y-4 pb-8">
       <SectionTitle sub="Vital signs recorded at this visit">Vitals</SectionTitle>
-      <Card>
-        <table className="w-full text-[13px]">
-          <tbody>
-            {rows.map(([label, val, flag]) => (
-              <tr key={label} className="border-b border-slate-100 last:border-0">
-                <td className="py-2 text-slate-500">{label}</td>
-                <td className="py-2 text-right font-semibold text-slate-800">{val ?? '—'}</td>
-                <td className="py-2 w-20 text-right">{flag && flag !== 'normal' && <FlagPill flag={flag} />}</td>
+      <Card className="bg-white">
+        <table className="w-full text-[13px] min-w-[800px]">
+          <thead>
+            <tr className="text-left text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100">
+              <th className="py-3 px-4 w-[28%]">Vital</th>
+              <th className="py-3 px-4 w-[28%]">Value</th>
+              <th className="py-3 px-4 w-[20%]">Reference</th>
+              <th className="py-3 px-4 w-[12%]">Trend</th>
+              <th className="py-3 px-4">Flag</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-50">
+            {vitalsList.map((vItem, i) => (
+              <tr key={i}>
+                <td className="py-3.5 px-4">
+                  <p className="text-[13px] text-slate-600 mb-0.5">{vItem.label}</p>
+                  <p className="text-[11px] text-slate-400">{vItem.time}</p>
+                </td>
+                <td className="py-3.5 px-4">
+                  <p className="font-bold text-slate-800">{vItem.value ?? '—'}</p>
+                  {vItem.sub && <p className="text-[11px] text-slate-400 mt-0.5">{vItem.sub}</p>}
+                </td>
+                <td className="py-3.5 px-4 text-slate-400 text-[13px]">
+                  {vItem.ref}
+                </td>
+                <td className="py-3.5 px-4">
+                  {vItem.trend === 'down' ? (
+                    <div className="flex items-center gap-1.5 text-teal-700">
+                      <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 2L12 10L24 10" stroke="#0d9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        <polygon points="12,0 16,5 8,5" fill="#1e293b" transform="translate(4.5, 4.5) scale(0.6) rotate(180 12 2.5)" />
+                      </svg>
+                    </div>
+                  ) : (
+                    <span className="text-slate-300">—</span>
+                  )}
+                </td>
+                <td className="py-3.5 px-4">
+                  {vItem.icon ? (
+                    <span className="inline-flex items-center justify-center rounded-full border border-red-200 bg-red-50 text-red-600 px-2 py-0.5 text-[11px] font-bold">
+                      <span className="w-1.5 h-1.5 bg-red-500 rounded-full mr-1.5" />{vItem.icon}
+                    </span>
+                  ) : null}
+                </td>
               </tr>
             ))}
           </tbody>
         </table>
       </Card>
-      {v.extras?.length > 0 && (
-        <Card title="Documented monitoring" icon={Activity} color="0d9488" className="mt-4">
-          <div className="space-y-2">
-            {v.extras.map((e, i) => (
-              <div key={i} className="flex items-center justify-between text-[13px]">
-                <span className="text-slate-500">{e.label}</span>
-                <span className="flex items-center gap-2 font-semibold text-slate-800">{e.value}{e.flag && e.flag !== 'normal' && <FlagPill flag={e.flag} />}</span>
-              </div>
-            ))}
-          </div>
-        </Card>
-      )}
     </div>
   )
 }
@@ -200,7 +353,7 @@ export function LabsTab({ c }) {
       return (
         <div>
           <Card title="Result panels" icon={FlaskConical} color="0891b2">
-            <p className="text-[12px] text-slate-500 mb-3">Select a panel to open its results. Watch for screening that hasn’t been done.</p>
+            <p className="text-[12px] text-slate-500 mb-6 mt-1">Select a panel to open its results. Watch for screening that hasn't been done.</p>
             <ul className="divide-y divide-slate-100">
               {LAB_GROUPS.map(g => {
                 const labs = membersOf(c, g.members)
@@ -208,11 +361,21 @@ export function LabsTab({ c }) {
                 return (
                   <li key={g.key}>
                     <button onClick={() => setPanel(g.key)}
-                      className="w-full flex items-center justify-between gap-3 py-2.5 text-left hover:bg-slate-50 -mx-2 px-2 rounded-lg transition">
-                      <span className="text-[13px] font-medium text-slate-700">{g.label}</span>
-                      <span className="flex items-center gap-2">
-                        <StatusPill text={st.text} flag={st.flag} />
-                        <ChevronRight size={15} className="text-slate-300" />
+                      className="w-full flex items-center justify-between gap-3 py-4 text-left hover:bg-slate-50 rounded-lg transition">
+                      <span className="text-[13px] text-slate-600">{g.label}</span>
+                      <span className="flex items-center gap-4">
+                        {st.flag === 'missing' ? (
+                          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-purple-200 bg-purple-50 text-purple-700 text-[11px] font-bold">
+                            <span className="w-1.5 h-1.5 bg-purple-600 rounded-full" />{st.text}
+                          </span>
+                        ) : st.flag !== 'normal' ? (
+                          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-red-200 bg-red-50 text-red-600 text-[11px] font-bold">
+                            <span className="w-1.5 h-1.5 bg-red-500 rounded-full" />{st.text}
+                          </span>
+                        ) : (
+                          <StatusPill text={st.text} flag={st.flag} />
+                        )}
+                        <ChevronRight size={16} className="text-slate-300" />
                       </span>
                     </button>
                   </li>
@@ -221,61 +384,41 @@ export function LabsTab({ c }) {
             </ul>
           </Card>
           {missing.length > 0 && (
-            <div className="mt-4">
-              <MissingCallout>
-                {missing.map(m => m.label).join(', ')} {missing.length === 1 ? 'has' : 'have'} no result on file. Recognize the screening gap — open the relevant panel and order it.
-              </MissingCallout>
+            <div className="flex items-start gap-2 rounded-lg border border-dashed border-purple-200 bg-purple-50 px-3 py-2.5 text-[13px] text-purple-800 mt-6">
+              <span className="font-bold shrink-0">Missing →</span>
+              <span>{missing.map(m => m.label).join(', ')} {missing.length === 1 ? 'has' : 'have'} no result on file. Recognize the screening gap — open the relevant panel and order it.</span>
             </div>
           )}
         </div>
       )
     }
 
-    if (panel === 'all') {
-      return <Card title="All Labs" icon={FlaskConical} color="0891b2"><LabTable labs={c.LABS} /></Card>
-    }
+    const title = OPTIONS.find(o => o.key === panel)?.label || panel
+    let activeLabs = []
+    if (panel === 'all') activeLabs = c.LABS
+    else if (panel === 'missing') activeLabs = missing
+    else activeLabs = membersOf(c, LAB_GROUPS.find(g => g.key === panel)?.members || [])
 
-    if (panel === 'missing') {
-      return (
-        <Card title="Missing / Needed Labs" icon={AlertTriangle} color="7c3aed">
-          {missing.length === 0
-            ? <p className="text-[13px] text-slate-500">No outstanding labs — all expected results are on file for this visit.</p>
-            : <LabTable labs={missing} />}
-        </Card>
-      )
-    }
-
-    const group = LAB_GROUPS.find(g => g.key === panel)
-    const labs = membersOf(c, group.members)
     return (
-      <Card title={group.label} icon={FlaskConical} color="0891b2">
-        <LabTable labs={labs} />
-        {labs.some(l => l.flag === 'missing') && (
-          <div className="mt-3"><MissingCallout>This screening test has not been obtained — consider ordering it at this visit.</MissingCallout></div>
-        )}
+      <Card title={title} icon={FlaskConical} color="0891b2">
+        <LabTable labs={activeLabs} />
       </Card>
     )
   }
 
   return (
-    <div>
+    <div className="space-y-4 pb-8">
       <SectionTitle sub="Results are organized into panels — open the one you need">Labs</SectionTitle>
 
-      <div className="flex items-center gap-2 mb-4 flex-wrap">
-        <span className="inline-flex items-center gap-1.5 text-[12px] font-semibold text-slate-500"><Filter size={14} /> Lab panel</span>
-        <div className="relative">
-          <select value={panel} onChange={e => setPanel(e.target.value)}
-            className="appearance-none rounded-lg border border-slate-300 bg-white pl-3 pr-9 py-2 text-[13px] font-medium text-slate-700 outline-none focus:border-teal focus:ring-2 focus:ring-teal/20 cursor-pointer">
-            {OPTIONS.map(o => <option key={o.key} value={o.key}>{o.label}</option>)}
-          </select>
-          <ChevronRight size={15} className="absolute right-2.5 top-1/2 -translate-y-1/2 rotate-90 text-slate-400 pointer-events-none" />
-        </div>
-        {panel !== 'summary' && (
-          <button onClick={() => setPanel('summary')}
-            className="inline-flex items-center gap-1 text-[12px] font-semibold text-teal hover:text-teal/80 transition">
-            <ChevronLeft size={14} /> Back to summary
-          </button>
-        )}
+      <div className="flex items-center gap-3 mb-4 mt-2">
+        <Filter size={16} className="text-slate-500" />
+        <label className="text-[12px] font-bold text-slate-500">Lab panel</label>
+        <select value={panel} onChange={e => setPanel(e.target.value)}
+          className="border border-slate-200 rounded-md text-[13px] py-1.5 pl-3 pr-8 shadow-sm text-slate-800 bg-white focus:ring-teal-500">
+          {OPTIONS.map(o => (
+            <option key={o.key} value={o.key}>{o.label}</option>
+          ))}
+        </select>
       </div>
 
       {renderBody()}
@@ -285,44 +428,220 @@ export function LabsTab({ c }) {
 
 /* ------------------------------------------------------------------ Medications */
 export function MedicationsTab({ c }) {
+  const [tab, setTab] = useState('current')
+  
+  const allMeds = c.MEDICATIONS || []
+  const currentMeds = allMeds.filter(m => m.status !== 'Discontinued')
+  const discontinuedMeds = allMeds.filter(m => m.status === 'Discontinued')
+
+  const activeMeds = currentMeds.filter(m => !m.patientReported)
+  const reportedMeds = currentMeds.filter(m => m.patientReported)
+
   return (
-    <div>
+    <div className="space-y-4 pb-8">
       <SectionTitle sub="Documented medication list (as recorded in the chart)">Medications</SectionTitle>
-      <Card className="mb-4">
+
+      <Card icon={Pill} title="Medications" color="0d9488">
+        <div className="flex items-center justify-between mb-6 border-b border-slate-100 pb-3">
+          <div className="flex bg-slate-100 p-1 rounded-lg">
+            <button
+              onClick={() => setTab('current')}
+              className={`px-4 py-1.5 text-[13px] font-semibold rounded-md transition-colors ${tab === 'current' ? 'bg-white text-slate-800 shadow-sm ring-1 ring-slate-200' : 'text-slate-500 hover:text-slate-700'}`}
+            >
+              Current / Home meds ({currentMeds.length})
+            </button>
+            <button
+              onClick={() => setTab('discontinued')}
+              className={`px-4 py-1.5 text-[13px] font-semibold rounded-md transition-colors ${tab === 'discontinued' ? 'bg-white text-slate-800 shadow-sm ring-1 ring-slate-200' : 'text-slate-500 hover:text-slate-700'}`}
+            >
+              Discontinued ({discontinuedMeds.length})
+            </button>
+          </div>
+          <div className="text-[11px] text-slate-400 flex items-center gap-1">
+            <span className="text-slate-300">✓</span> Allergy/interaction check active · NKDA — no conflicts
+          </div>
+        </div>
+
         <div className="overflow-x-auto">
-          <table className="w-full text-[13px] min-w-[640px]">
-            <thead>
-              <tr className="text-left text-[11px] uppercase tracking-wide text-slate-400 border-b border-slate-200">
-                <th className="py-2 font-semibold">Medication</th><th className="py-2 font-semibold">Dose</th>
-                <th className="py-2 font-semibold">Route</th><th className="py-2 font-semibold">Frequency</th>
-                <th className="py-2 font-semibold">Indication</th><th className="py-2 font-semibold">Notes</th>
-              </tr>
-            </thead>
-            <tbody>
-              {c.MEDICATIONS.map(m => (
-                <tr key={m.name} className="border-b border-slate-100 last:border-0">
-                  <td className="py-2 font-semibold text-slate-800 flex items-center gap-2"><Pill size={14} className="text-teal" />{m.name}</td>
-                  <td className="py-2 text-slate-600">{m.dose}</td>
-                  <td className="py-2 text-slate-600">{m.route}</td>
-                  <td className="py-2 text-slate-600">{m.freq}</td>
-                  <td className="py-2 text-slate-600">{m.indication}</td>
-                  <td className="py-2 text-slate-400">{m.notes || '—'}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          {tab === 'current' ? (
+            <>
+              {/* Prescribed */}
+              <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 px-2">Prescribed / Active Medications</h4>
+              <table className="w-full text-[13px] min-w-[1000px] mb-8">
+                <thead>
+                  <tr className="text-left text-[11px] uppercase tracking-wide text-slate-400 border-b border-slate-200">
+                    <th className="py-2 px-2 font-semibold w-[28%]">Medication</th>
+                    <th className="py-2 px-2 font-semibold">Status</th>
+                    <th className="py-2 px-2 font-semibold">Dose</th>
+                    <th className="py-2 px-2 font-semibold">Route</th>
+                    <th className="py-2 px-2 font-semibold">Freq</th>
+                    <th className="py-2 px-2 font-semibold">Indication</th>
+                    <th className="py-2 px-2 font-semibold">Start</th>
+                    <th className="py-2 px-2 font-semibold">Prescriber</th>
+                    <th className="py-2 px-2 font-semibold">Last Filled</th>
+                    <th className="py-2 px-2 font-semibold">Refills</th>
+                    <th className="py-2 px-2 font-semibold">Pharmacy</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {activeMeds.map(m => (
+                    <tr key={m.name}>
+                      <td className="py-4 px-2">
+                        <div className="flex items-center gap-1.5 mb-1.5">
+                          <Pill size={14} className="text-teal" />
+                          <span className="font-semibold text-slate-800">{m.name}</span>
+                          <span className="text-slate-400 text-[10px]">✓</span>
+                        </div>
+                        <div className="flex items-center gap-1.5 mb-1.5">
+                          <span className="px-1.5 py-0.5 bg-slate-100 text-slate-500 rounded text-[10px] font-semibold">{m.class}</span>
+                          <span className="text-[11px] text-slate-400">{m.brand}</span>
+                        </div>
+                        <p className="text-[12px] text-slate-500">Sig: {m.sig}</p>
+                      </td>
+                      <td className="py-4 px-2 align-top pt-5">
+                        <span className="px-2 py-0.5 rounded-full border border-slate-200 text-slate-700 text-[11px] font-semibold bg-white">{m.status || 'Active'}</span>
+                      </td>
+                      <td className="py-4 px-2 align-top pt-5 text-slate-600">{m.dose}</td>
+                      <td className="py-4 px-2 align-top pt-5 text-slate-600">{m.route}</td>
+                      <td className="py-4 px-2 align-top pt-5 text-slate-600 whitespace-nowrap">{m.freq}</td>
+                      <td className="py-4 px-2 align-top pt-5 text-slate-600">{m.indication}</td>
+                      <td className="py-4 px-2 align-top pt-5 text-slate-600">{m.start}</td>
+                      <td className="py-4 px-2 align-top pt-5">
+                        <p className="text-slate-700">{m.prescriber}</p>
+                        <p className="text-[10px] text-slate-400 whitespace-nowrap">{m.clinic}</p>
+                      </td>
+                      <td className="py-4 px-2 align-top pt-5">
+                        <p className="text-slate-700">{m.lastFilled}</p>
+                        <p className="text-[10px] text-slate-400 whitespace-nowrap">Qty {m.qty}</p>
+                      </td>
+                      <td className="py-4 px-2 align-top pt-5 text-slate-600">{m.refills}</td>
+                      <td className="py-4 px-2 align-top pt-5 text-slate-600">{m.pharmacy}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+
+              {/* Patient Reported */}
+              {reportedMeds.length > 0 && (
+                <>
+                  <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 px-2 mt-4">Patient-Reported (Not Verified)</h4>
+                  <div className="bg-amber-50/50 rounded-xl border border-amber-100 mb-2 overflow-hidden">
+                    <table className="w-full text-[13px] min-w-[800px]">
+                      <thead>
+                        <tr className="text-left text-[11px] uppercase tracking-wide text-slate-400 border-b border-amber-100">
+                          <th className="py-3 px-4 font-semibold w-5/12">Medication</th>
+                          <th className="py-3 px-4 font-semibold">Dose</th>
+                          <th className="py-3 px-4 font-semibold">Route</th>
+                          <th className="py-3 px-4 font-semibold">Freq</th>
+                          <th className="py-3 px-4 font-semibold">Indication</th>
+                          <th className="py-3 px-4 font-semibold">Source</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-amber-100">
+                        {reportedMeds.map(m => (
+                          <tr key={m.name}>
+                            <td className="py-4 px-4">
+                              <div className="flex items-center gap-1.5 mb-1.5">
+                                <Pill size={14} className="text-amber-600" />
+                                <span className="font-semibold text-slate-800">{m.name}</span>
+                                <span className="text-slate-400 text-[10px]">✓</span>
+                              </div>
+                              <div className="flex items-center gap-1.5 mb-1.5">
+                                <span className="px-1.5 py-0.5 bg-white border border-amber-200 text-slate-500 rounded text-[10px] font-semibold">{m.class}</span>
+                                <span className="text-[11px] text-slate-400">{m.brand}</span>
+                              </div>
+                              <p className="text-[12px] text-slate-500">Sig: {m.sig}</p>
+                            </td>
+                            <td className="py-4 px-4 align-top pt-5 text-slate-600">{m.dose}</td>
+                            <td className="py-4 px-4 align-top pt-5 text-slate-600">{m.route}</td>
+                            <td className="py-4 px-4 align-top pt-5 text-slate-600">{m.freq}</td>
+                            <td className="py-4 px-4 align-top pt-5 text-slate-600">{m.indication}</td>
+                            <td className="py-4 px-4 align-top pt-5">
+                              <span className="px-2 py-0.5 rounded-full border border-amber-200 text-amber-700 text-[11px] font-semibold bg-white">Reported</span>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </>
+              )}
+            </>
+          ) : (
+            <>
+              {/* Discontinued */}
+              <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 px-2">Discontinued Medications</h4>
+              <table className="w-full text-[13px] min-w-[1000px] mb-8 opacity-75">
+                <thead>
+                  <tr className="text-left text-[11px] uppercase tracking-wide text-slate-400 border-b border-slate-200">
+                    <th className="py-2 px-2 font-semibold w-[28%]">Medication</th>
+                    <th className="py-2 px-2 font-semibold">Status</th>
+                    <th className="py-2 px-2 font-semibold">Dose</th>
+                    <th className="py-2 px-2 font-semibold">Route</th>
+                    <th className="py-2 px-2 font-semibold">Freq</th>
+                    <th className="py-2 px-2 font-semibold">Indication</th>
+                    <th className="py-2 px-2 font-semibold">Start</th>
+                    <th className="py-2 px-2 font-semibold">Prescriber</th>
+                    <th className="py-2 px-2 font-semibold">Last Filled</th>
+                    <th className="py-2 px-2 font-semibold">Refills</th>
+                    <th className="py-2 px-2 font-semibold">Pharmacy</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {discontinuedMeds.map(m => (
+                    <tr key={m.name}>
+                      <td className="py-4 px-2">
+                        <div className="flex items-center gap-1.5 mb-1.5">
+                          <Pill size={14} className="text-teal" />
+                          <span className="font-semibold text-slate-800">{m.name}</span>
+                          <span className="text-slate-400 text-[10px]">✓</span>
+                        </div>
+                        <div className="flex items-center gap-1.5 mb-1.5">
+                          <span className="px-1.5 py-0.5 bg-slate-100 text-slate-500 rounded text-[10px] font-semibold">{m.class}</span>
+                          <span className="text-[11px] text-slate-400">{m.brand}</span>
+                        </div>
+                        <p className="text-[12px] text-slate-500">Sig: {m.sig}</p>
+                      </td>
+                      <td className="py-4 px-2 align-top pt-5">
+                        <span className="px-2 py-0.5 rounded-full border border-slate-200 text-slate-500 text-[11px] font-semibold bg-slate-50">Discontinued</span>
+                      </td>
+                      <td className="py-4 px-2 align-top pt-5 text-slate-600">{m.dose}</td>
+                      <td className="py-4 px-2 align-top pt-5 text-slate-600">{m.route}</td>
+                      <td className="py-4 px-2 align-top pt-5 text-slate-600 whitespace-nowrap">{m.freq}</td>
+                      <td className="py-4 px-2 align-top pt-5 text-slate-600">{m.indication}</td>
+                      <td className="py-4 px-2 align-top pt-5 text-slate-600 whitespace-nowrap">{m.start}</td>
+                      <td className="py-4 px-2 align-top pt-5">
+                        <p className="text-slate-700">{m.prescriber}</p>
+                        <p className="text-[10px] text-slate-400 whitespace-nowrap">{m.clinic}</p>
+                      </td>
+                      <td className="py-4 px-2 align-top pt-5">
+                        <p className="text-slate-700">{m.lastFilled}</p>
+                        <p className="text-[10px] text-slate-400 whitespace-nowrap">Qty {m.qty}</p>
+                      </td>
+                      <td className="py-4 px-2 align-top pt-5 text-slate-600">{m.refills}</td>
+                      <td className="py-4 px-2 align-top pt-5 text-slate-600">{m.pharmacy}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </>
+          )}
         </div>
       </Card>
+
       <Card title="Medication reconciliation prompts" icon={ClipboardList} color="7c3aed">
-        <ul className="grid sm:grid-cols-2 gap-2 text-[13px] text-slate-600">
+        <ul className="grid sm:grid-cols-2 gap-y-3 gap-x-4 text-[13px] text-slate-600 mb-6 mt-2">
           {['Ask about OTC medications (e.g., pain relievers, supplements)',
-            'Ask about missed doses and the reasons behind them',
             'Ask about any side effects or new symptoms',
+            'Ask about missed doses and the reasons behind them',
             'Ask about cost or refill barriers'].map(t => (
-            <li key={t} className="flex gap-2"><span className="text-violet-500 mt-0.5">•</span><span>{t}</span></li>
+            <li key={t} className="flex gap-2"><span className="text-violet-500 font-bold mt-0.5">•</span><span>{t}</span></li>
           ))}
         </ul>
-        <MissingCallout>The visible list may be incomplete — patients often omit OTC products. Confirm in the interview.</MissingCallout>
+        <div className="flex items-start gap-2 rounded-lg border border-dashed border-purple-200 bg-purple-50 px-3 py-2 text-[13px] text-purple-800">
+          <span className="font-bold shrink-0">Missing →</span>
+          <span>The visible list may be incomplete — patients often omit OTC products. Confirm in the interview.</span>
+        </div>
       </Card>
     </div>
   )
@@ -330,25 +649,76 @@ export function MedicationsTab({ c }) {
 
 /* ------------------------------------------------------------------ Allergies */
 export function AllergiesTab({ c }) {
+  const isNKDA = c.ALLERGIES?.some(a => a.substance.includes('NKDA'))
+
   return (
-    <div>
+    <div className="space-y-4 pb-8">
       <SectionTitle sub="Documented allergies and reactions">Allergies</SectionTitle>
-      <Card>
-        <table className="w-full text-[13px]">
-          <thead>
-            <tr className="text-left text-[11px] uppercase tracking-wide text-slate-400 border-b border-slate-200">
-              <th className="py-2 font-semibold">Substance</th><th className="py-2 font-semibold">Reaction</th>
-            </tr>
-          </thead>
-          <tbody>
-            {c.ALLERGIES.map((a, i) => (
-              <tr key={i} className="border-b border-slate-100 last:border-0">
-                <td className="py-2 font-semibold text-slate-800">{a.substance}</td>
-                <td className="py-2 text-slate-600">{a.reaction}</td>
+      
+      {isNKDA && (
+        <Card className="mb-4 bg-white">
+          <div className="flex items-center gap-3 py-1 px-2">
+            <span className="text-slate-800">✓</span>
+            <span className="font-bold text-slate-800">No Known Drug Allergies (NKDA)</span>
+          </div>
+        </Card>
+      )}
+
+      <Card title="Drug allergies">
+        <div className="overflow-x-auto">
+          <table className="w-full text-[13px] min-w-[800px] mb-2">
+            <thead>
+              <tr className="text-left text-[11px] uppercase tracking-wide text-slate-400 border-b border-slate-100">
+                <th className="py-3 px-2 font-semibold w-1/5">Substance</th>
+                <th className="py-3 px-2 font-semibold w-1/5">Reaction</th>
+                <th className="py-3 px-2 font-semibold w-1/6">Severity</th>
+                <th className="py-3 px-2 font-semibold w-1/6">Reaction Type</th>
+                <th className="py-3 px-2 font-semibold w-1/6">Date Noted</th>
+                <th className="py-3 px-2 font-semibold">Source / Verified-by</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {isNKDA ? (
+                <tr>
+                  <td colSpan="6" className="py-4 px-2 text-[13px] text-slate-400">No known drug allergies (NKDA).</td>
+                </tr>
+              ) : (
+                c.ALLERGIES.map((a, i) => (
+                  <tr key={i} className="border-b border-slate-50 last:border-0">
+                    <td className="py-3 px-2 font-semibold text-slate-800">{a.substance}</td>
+                    <td className="py-3 px-2 text-slate-600">{a.reaction}</td>
+                    <td className="py-3 px-2 text-slate-600">{a.severity || '—'}</td>
+                    <td className="py-3 px-2 text-slate-600">{a.type || '—'}</td>
+                    <td className="py-3 px-2 text-slate-600">{a.date || '—'}</td>
+                    <td className="py-3 px-2 text-slate-600">{a.source || '—'}</td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
+        </div>
+      </Card>
+
+      <Card title="Non-drug allergies (food, environmental, latex)">
+        <div className="overflow-x-auto">
+          <table className="w-full text-[13px] min-w-[800px] mb-2">
+            <thead>
+              <tr className="text-left text-[11px] uppercase tracking-wide text-slate-400 border-b border-slate-100">
+                <th className="py-3 px-2 font-semibold w-1/5">Substance</th>
+                <th className="py-3 px-2 font-semibold w-1/5">Reaction</th>
+                <th className="py-3 px-2 font-semibold w-1/6">Severity</th>
+                <th className="py-3 px-2 font-semibold w-1/6">Reaction Type</th>
+                <th className="py-3 px-2 font-semibold w-1/6">Date Noted</th>
+                <th className="py-3 px-2 font-semibold">Source / Verified-by</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colSpan="6" className="py-4 px-2 text-[13px] text-slate-400">None documented.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </Card>
     </div>
   )
@@ -357,17 +727,28 @@ export function AllergiesTab({ c }) {
 /* ------------------------------------------------------------------ Problem list */
 export function ProblemListTab({ c }) {
   return (
-    <div>
+    <div className="space-y-4 pb-8">
       <SectionTitle sub="Active problems on the chart">Problem List</SectionTitle>
       <Card>
+        <div className="flex justify-end mb-4">
+          <span className="text-[10px] font-bold text-slate-400">Problem list reviewed 06/23/2026</span>
+        </div>
         <ul className="divide-y divide-slate-100">
           {c.PROBLEMS.map(p => (
-            <li key={p.name} className="flex items-center justify-between gap-3 py-3 first:pt-0 last:pb-0">
+            <li key={p.name} className="flex items-start justify-between py-5 first:pt-2 last:pb-2">
               <div>
-                <p className="text-[14px] font-semibold text-slate-800">{p.name}</p>
-                <p className="text-[12px] text-slate-500">{p.detail}</p>
+                <p className="flex items-center gap-2 mb-1.5">
+                  <span className="text-[14px] font-bold text-slate-800">{p.name}</span>
+                  {p.icd10 && <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-500">{p.icd10}</span>}
+                </p>
+                <p className="text-[13px] text-slate-500 mb-1">{p.detail}</p>
+                <p className="text-[11px] text-slate-400">Noted {p.noted}Managed by Dr. Johnson</p>
               </div>
-              <FlagPill flag={p.flag} />
+              <div className="mt-1">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-teal-200 bg-white text-slate-800 text-[11px] font-bold">
+                  <span className="w-2 h-2 bg-teal-600 rounded-full" />Active
+                </span>
+              </div>
             </li>
           ))}
         </ul>
@@ -379,52 +760,153 @@ export function ProblemListTab({ c }) {
 /* ------------------------------------------------------------------ Objective */
 export function ObjectiveTab({ c }) {
   const v = c.VITALS
+  const vitalsList = [
+    { label: 'BP', value: v.bp, flag: v.flags?.bp, ref: '<130/80 mmHg', trend: 'down' },
+    { label: 'Repeat BP', value: v.bpRepeat, flag: v.flags?.bpRepeat, ref: '<130/80 mmHg' },
+    { label: 'HR', value: `${v.hr} bpm`, flag: v.flags?.hr, ref: '60–100 bpm' },
+    { label: 'Temp', value: v.temp, flag: v.flags?.temp, ref: '97.0–99.5 °F' },
+    { label: 'RR', value: v.rr, flag: v.flags?.rr, ref: '12–20 /min' },
+    { label: 'SpO₂', value: v.spo2 || '97 %', flag: v.flags?.spo2, ref: '95–100 %' },
+    { label: 'Weight', value: v.weight, flag: v.flags?.weight, trend: 'down', ref: '—' },
+    { label: 'Height', value: v.height, flag: v.flags?.height, ref: '—' },
+    { label: 'Pain', value: v.pain || '0/10', flag: v.flags?.pain, ref: '0/10' },
+    { label: 'BMI', value: v.bmi, flag: v.flags?.bmi, ref: '18.5–24.9 kg/m²' },
+  ]
+
+  const labPanels = [
+    { name: 'DIABETES', collected: '06/09/2026 07:50', members: ['A1C', 'Glucose'] },
+    { name: 'BASIC METABOLIC PANEL', collected: '06/09/2026 07:50', members: ['Na', 'K', 'Cl', 'CO2', 'BUN', 'SCr', 'eGFR'] },
+    { name: 'HEPATIC FUNCTION', collected: '06/09/2026 07:50', members: ['AST', 'ALT'] },
+    { name: 'LIPID PANEL', collected: '06/09/2026 07:50', members: ['Total cholesterol', 'LDL-C', 'HDL-C', 'Triglycerides'] },
+    { name: 'URINE STUDIES', collected: '06/09/2026 07:50', members: ['UACR'] },
+  ]
+
+  const getLab = (name) => c.LABS?.find(l => l.label === name)
+
   return (
-    <div>
+    <div className="space-y-4 pb-8">
       <SectionTitle sub="Objective data: vitals, labs, medications, allergies, immunizations">Objective</SectionTitle>
 
-      <div className="grid md:grid-cols-2 gap-4 mb-4">
+      <div className="grid md:grid-cols-2 gap-4">
+        {/* Vitals */}
         <Card title="Vitals" icon={HeartPulse} color="13314f">
-          <dl className="grid grid-cols-2 gap-y-1.5 text-[13px]">
-            <Stat label="BP" value={v.bp} flag={v.flags?.bp} />
-            <Stat label="Repeat" value={v.bpRepeat} flag={v.flags?.bpRepeat} />
-            <Stat label="HR" value={v.hr} />
-            <Stat label="BMI" value={v.bmi} flag={v.flags?.bmi} />
-          </dl>
-        </Card>
-        <Card title="Key labs" icon={FlaskConical} color="0891b2">
-          <dl className="grid grid-cols-2 gap-y-1.5 text-[13px]">
-            {c.LABS.slice(0, 6).map(l => (
-              <Stat key={l.label} label={l.label} value={`${l.value}${l.unit ? ' ' + l.unit : ''}`} flag={l.flag} />
+          <p className="text-[10px] text-slate-400 mb-2">Recorded {v.vitalsTime || '06/23/2026 09:14'}</p>
+          <ul className="divide-y divide-slate-50">
+            {vitalsList.map((vItem, i) => (
+              <li key={i} className="flex items-center justify-between py-2">
+                <div>
+                  <p className="text-[13px] text-slate-600">{vItem.label}</p>
+                  <p className="text-[10px] text-slate-400 mt-0.5">Ref {vItem.ref}</p>
+                </div>
+                <div className="flex items-center gap-4">
+                  {vItem.trend === 'down' && (
+                    <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 2L12 10L24 10" stroke="#0d9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <polygon points="12,0 16,5 8,5" fill="#1e293b" transform="translate(4.5, 4.5) scale(0.6) rotate(180 12 2.5)" />
+                    </svg>
+                  )}
+                  <div className="flex items-center gap-2">
+                    <span className="text-[13px] font-bold text-slate-800">{vItem.value ?? '—'}</span>
+                    {vItem.flag && vItem.flag !== 'normal' && <FlagPill flag={vItem.flag} />}
+                  </div>
+                </div>
+              </li>
             ))}
-          </dl>
+          </ul>
+        </Card>
+
+        {/* Key Labs */}
+        <Card title="Key labs" icon={FlaskConical} color="0891b2">
+          <div className="space-y-6">
+            {labPanels.map((panel, pIdx) => {
+              const panelLabs = panel.members.map(getLab).filter(Boolean)
+              if (panelLabs.length === 0) return null
+              return (
+                <div key={pIdx}>
+                  <div className="flex items-center justify-between mb-2">
+                    <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">{panel.name}</h4>
+                    <span className="text-[10px] text-slate-400">Collected {panel.collected}</span>
+                  </div>
+                  <ul className="divide-y divide-slate-50">
+                    {panelLabs.map((l, i) => (
+                      <li key={i} className="flex items-start justify-between py-2.5">
+                        <div>
+                          <p className="text-[13px] text-slate-600 flex items-center gap-1">
+                            {l.label}
+                            {l.flag === 'high' && <span className="text-red-600 text-[10px]">▲</span>}
+                          </p>
+                          <p className="text-[10px] text-slate-400 mt-0.5">Ref {l.ref || '—'}</p>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span className="text-[13px] font-bold text-slate-800">
+                            {l.value} {l.unit && <span className="font-normal text-slate-600">{l.unit}</span>}
+                          </span>
+                          {l.flag && l.flag !== 'normal' && <FlagPill flag={l.flag} />}
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )
+            })}
+          </div>
         </Card>
       </div>
 
-      <Card title="Immunizations" icon={Syringe} color="0d9488" className="mb-4">
-        <ul className="grid sm:grid-cols-2 gap-2">
+      {/* Physical Exam */}
+      {c.PHYSICAL_EXAM && (
+        <Card title="Physical exam" icon={FileText} color="13314f">
+          <ul className="space-y-2">
+            {Object.entries(c.PHYSICAL_EXAM).map(([sys, findings], i) => (
+              <li key={i} className="flex items-start gap-4 text-[13px]">
+                <span className="text-slate-400 w-16 shrink-0 capitalize">{sys}</span>
+                <span className="text-slate-700">{findings}</span>
+              </li>
+            ))}
+          </ul>
+        </Card>
+      )}
+
+      {/* Immunizations */}
+      <Card title="Immunizations" icon={Syringe} color="0d9488">
+        <ul className="space-y-0 divide-y divide-slate-100">
           {c.IMMUNIZATIONS.map(im => (
-            <li key={im.name} className="flex items-center justify-between gap-2 text-[13px]">
-              <span className="text-slate-600">{im.name}</span>
-              <span className="flex items-center gap-2 text-slate-800">{im.status}{im.flag && im.flag !== 'normal' && <FlagPill flag={im.flag} />}</span>
+            <li key={im.name} className="flex items-start justify-between gap-4 py-3 first:pt-0 last:pb-0">
+              <div>
+                <p className="text-[13px] text-slate-700">{im.name}</p>
+                <p className="text-[11px] text-slate-400 mt-0.5">{im.status}</p>
+                {im.detail && <p className="text-[10px] text-slate-300 mt-0.5">{im.detail}</p>}
+              </div>
+              <div className="flex items-center">
+                {im.flag === 'normal' ? (
+                  <span className="text-[11px] text-slate-500">✓ Up to date</span>
+                ) : (
+                  im.flag && <FlagPill flag={im.flag} />
+                )}
+              </div>
             </li>
           ))}
         </ul>
       </Card>
 
+      {/* Missing Objective Data */}
       {c.OBJECTIVE_EXTRA?.length > 0 && (
-        <Card title="Additional / missing objective data" icon={AlertTriangle} color="7c3aed">
-          <div className="space-y-2">
+        <div className="rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden">
+          <div className="flex items-center gap-2 px-4 py-3 border-b border-slate-100 bg-slate-50">
+            <span className="grid place-items-center w-7 h-7 rounded-lg text-white bg-purple-600">
+              <AlertTriangle size={16} />
+            </span>
+            <h3 className="font-head text-[15px] text-slate-800">Additional / missing objective data</h3>
+          </div>
+          <div className="p-4 space-y-2">
             {c.OBJECTIVE_EXTRA.map((o, i) => (
-              o.flag === 'missing'
-                ? <MissingCallout key={i}>{o.label}: {o.value}</MissingCallout>
-                : <div key={i} className="flex items-center justify-between text-[13px]">
-                    <span className="text-slate-500">{o.label}</span>
-                    <span className="font-semibold text-slate-800">{o.value}</span>
-                  </div>
+              <div key={i} className="flex items-start gap-2 rounded-lg border border-dashed border-purple-200 bg-purple-50 px-3 py-2 text-[13px] text-purple-800">
+                <span className="font-bold shrink-0">Missing →</span>
+                <span>{o.label}: {o.value}</span>
+              </div>
             ))}
           </div>
-        </Card>
+        </div>
       )}
     </div>
   )

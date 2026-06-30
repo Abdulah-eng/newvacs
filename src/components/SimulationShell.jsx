@@ -108,38 +108,99 @@ export default function SimulationShell({ caseData, onExit }) {
   return (
     <div className="min-h-screen bg-slate-100 flex flex-col">
       {/* Patient banner */}
-      <header className="text-white" style={{ background: 'linear-gradient(135deg,#13314f,#0d2138)' }}>
-        <div className="px-5 py-3 flex items-center gap-4 flex-wrap">
-          <button onClick={onExit} className="grid place-items-center w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 transition shrink-0">
-            <ChevronLeft size={18} />
-          </button>
-          <div className="flex items-center gap-3">
-            <span className="grid place-items-center w-11 h-11 rounded-full bg-white/15 font-head text-lg">MG</span>
-            <div>
-              <h1 className="font-head text-lg leading-tight">{P.name}</h1>
-              <p className="text-[12px] text-slate-300">{P.age} yo {P.sex} · {P.ethnicity} · MRN {P.mrn}</p>
+      <header className="text-white bg-slate-900 border-b border-slate-800">
+        <div className="px-6 pt-5 pb-4 flex flex-col gap-5">
+          {/* Top Row: Name and Encounter */}
+          <div className="flex items-start justify-between gap-6">
+            {/* Left side: Back, Avatar, Name */}
+            <div className="flex items-start gap-4">
+              <button onClick={onExit} className="grid place-items-center w-10 h-10 rounded-lg bg-white/10 hover:bg-white/20 transition shrink-0">
+                <ChevronLeft size={20} />
+              </button>
+              <div className="flex items-center gap-4">
+                <span className="grid place-items-center w-[52px] h-[52px] rounded-full border border-white/20 bg-white/10 font-head text-[22px] font-medium tracking-wide">
+                  {P.name.split(' ').map(n=>n[0]).join('')}
+                </span>
+                <div className="flex flex-col">
+                  <h1 className="font-serif text-[26px] leading-tight font-medium tracking-wide">{P.name}</h1>
+                  <p className="text-[13px] text-slate-300 mt-1.5 font-medium">
+                    {P.age} yo {P.sex} · {P.ethnicity} · MRN {P.mrn} · DOB {P.dob || '03/12/1972'}
+                  </p>
+                  <p className="text-[13px] text-slate-300 mt-0.5 font-medium">
+                    PCP: {P.pcp || 'Dr. Johnson'} · Pharmacy: {P.pharmacy || 'Walgreens'} · Language: {P.language || 'English'} · Allergies: {P.allergiesSummary || 'No known drug allergies (NKDA)'}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right side: Encounter Info + Buttons */}
+            <div className="flex items-start gap-6">
+              <div className="flex flex-col border-l border-white/15 pl-6 py-1">
+                <p className="text-[13px] text-white font-bold tracking-wide">{caseData.ENCOUNTER.day} · {caseData.ENCOUNTER.type}</p>
+                <p className="text-[12px] text-slate-300 mt-1">{P.setting || 'Collaborative Practice Ambulatory Care Clinic (within Primary Care)'}</p>
+              </div>
+              <div className="flex items-center gap-2 py-1">
+                 <button onClick={reset} className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 hover:bg-white/20 px-3.5 py-2 text-[12px] font-semibold transition tracking-wide">
+                   <RotateCcw size={14} /> Reset
+                 </button>
+                 <button onClick={onExit} className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 hover:bg-white/20 px-3.5 py-2 text-[12px] font-semibold transition tracking-wide">
+                   <LogOut size={14} /> Exit
+                 </button>
+              </div>
             </div>
           </div>
-          <div className="hidden md:block h-9 w-px bg-white/15" />
-          <div className="hidden md:block">
-            <p className="text-[12px] text-teal-200 font-semibold">{caseData.ENCOUNTER.day} · {caseData.ENCOUNTER.type}</p>
-            <p className="text-[11px] text-slate-300">{P.setting}</p>
+
+          {/* Middle Row: Columns */}
+          <div className="flex gap-6 overflow-x-auto thin-scroll">
+            <div className="flex-1 flex min-w-max border-l border-transparent">
+              <div className="border-r border-white/15 pr-6">
+                 <p className="text-[11px] text-slate-400 font-bold tracking-wider uppercase">CODE STATUS</p>
+                 <p className="text-[13px] text-white mt-1 font-medium">{P.codeStatus || 'Full Code'}</p>
+              </div>
+              <div className="border-r border-white/15 px-6">
+                 <p className="text-[11px] text-slate-400 font-bold tracking-wider uppercase">ISOLATION</p>
+                 <p className="text-[13px] text-white mt-1 font-medium">{P.isolation || 'None'}</p>
+              </div>
+              <div className="border-r border-white/15 px-6">
+                 <p className="text-[11px] text-slate-400 font-bold tracking-wider uppercase">COVERAGE</p>
+                 <p className="text-[13px] text-white mt-1 font-medium">{P.coverage || 'Aetna — Choice POS II (PPO)'}</p>
+              </div>
+              <div className="border-r border-white/15 px-6">
+                 <p className="text-[11px] text-slate-400 font-bold tracking-wider uppercase">PHARMACIST OF RECORD</p>
+                 <p className="text-[13px] text-white mt-1 font-medium">{P.pharmacist || 'R. Patel, PharmD (Ambulatory Care)'}</p>
+              </div>
+              <div className="border-r border-white/15 px-6">
+                 <p className="text-[11px] text-slate-400 font-bold tracking-wider uppercase">CARE MANAGER</p>
+                 <p className="text-[13px] text-white mt-1 font-medium">{P.careManager || 'S. Nguyen, RN (Chronic Care Mgmt)'}</p>
+              </div>
+              <div className="border-r border-white/15 px-6">
+                 <p className="text-[11px] text-slate-400 font-bold tracking-wider uppercase">LAST SEEN</p>
+                 <p className="text-[13px] text-white mt-1 font-medium">{P.lastSeen || '03/18/2026'}</p>
+              </div>
+              <div className="px-6">
+                 <p className="text-[11px] text-slate-400 font-bold tracking-wider uppercase">NEXT APPT</p>
+                 <p className="text-[13px] text-white mt-1 font-medium">{P.nextAppt || '06/30/2026 10:30'}</p>
+              </div>
+            </div>
           </div>
-          <div className="ml-auto flex items-center gap-2">
-            <button onClick={reset} className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 hover:bg-white/20 px-3 py-2 text-[12px] font-semibold transition">
-              <RotateCcw size={14} /> Reset
-            </button>
-            <button onClick={onExit} className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 hover:bg-white/20 px-3 py-2 text-[12px] font-semibold transition">
-              <LogOut size={14} /> Exit
-            </button>
-          </div>
-        </div>
-        {/* Progress bar */}
-        <div className="px-5 pb-3">
-          <div className="flex items-center gap-3">
-            <span className="text-[11px] text-slate-300 shrink-0">Case Progress: <strong className="text-white">{progressPct}%</strong></span>
-            <div className="flex-1 h-1.5 rounded-full bg-white/15 overflow-hidden">
-              <div className="h-full bg-teal transition-all" style={{ width: `${progressPct}%` }} />
+
+          {/* Bottom Row: Flags & Progress */}
+          <div className="flex flex-col gap-3">
+            <div>
+              <p className="text-[11px] text-slate-400 font-bold tracking-wider uppercase mb-2">FLAGS</p>
+              <div className="flex gap-2">
+                {(P.flags || ['Fall risk', 'Advance directive', 'FYI']).map((flag, i) => (
+                   <span key={i} className="text-[11px] font-bold tracking-wide bg-white/10 px-2 py-0.5 rounded text-white">
+                     {flag}
+                   </span>
+                ))}
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="text-[12px] text-slate-300 shrink-0 font-medium">Case Progress: <strong className="text-white">{progressPct}%</strong></span>
+              <div className="flex-1 h-2 rounded-full bg-slate-800 overflow-hidden ring-1 ring-white/10">
+                <div className="h-full bg-slate-400 transition-all" style={{ width: `${progressPct}%` }} />
+              </div>
             </div>
           </div>
         </div>
