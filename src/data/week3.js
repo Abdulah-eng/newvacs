@@ -102,27 +102,27 @@ export const MATINEE_JOURNAL = {
     {
       id: "q1", title: "Patient Selection",
       prompt: "A 68-year-old patient with COPD is on Trelegy Ellipta with excellent adherence, eosinophil count of 420 cells/µL, and four prednisone-treated exacerbations in the past year. Does MATINEE support consideration of mepolizumab?",
-      answer: "Yes. MATINEE enrolled COPD patients with eosinophils ≥300 cells/µL and recurrent exacerbations despite optimized inhaled maintenance therapy — this patient closely fits. The trial demonstrated meaningful reductions in moderate/severe exacerbation rates. Triple therapy confirms foundational inhaled therapy is already optimized, making biologic escalation a reasonable conversation.",
+      
     },
     {
       id: "q2", title: "Adding a Biologic to Triple Therapy",
       prompt: "A patient already on triple inhaled therapy asks why you want to add yet another medication. How do you explain the rationale?",
-      answer: "Triple therapy (LABA + LAMA + ICS) controls symptoms and reduces exacerbations, but some patients with elevated eosinophils continue to experience significant residual disease. MATINEE shows that targeting eosinophilic (Type 2) airway inflammation with an anti-IL-5 agent provides a mechanistically distinct layer of protection beyond inhalers. In plain terms: your inhalers manage your breathing day-to-day, but your immune system is still triggering flare-ups through a separate inflammatory pathway. This monthly injection targets that specific pathway.",
+      
     },
     {
       id: "q3", title: "Adherence Before Biologics",
       prompt: "Why is it critical to confirm inhaler adherence and technique before considering biologic therapy for COPD?",
-      answer: "Poor adherence and poor inhaler technique are the most common correctable causes of apparent treatment failure. MATINEE enrolled patients with truly optimized maintenance therapy — biologics are only justified when foundational therapy is confirmed adequate. Escalating to expensive biologic therapy in a patient who is not using their inhalers correctly would expose them to unnecessary cost and risk without addressing the root cause.",
+      
     },
     {
       id: "q4", title: "Eosinophilia Alone Is Not Sufficient",
       prompt: "A patient has a blood eosinophil count of 520 cells/µL but has not had any COPD exacerbations in the past year. Does MATINEE support initiating biologic therapy?",
-      answer: "Not based on MATINEE alone. The trial enrolled patients with both elevated eosinophils AND a history of frequent exacerbations despite optimized inhaled therapy. Eosinophilia predicts ICS responsiveness and biologic eligibility, but it is not sufficient alone — clinical burden (exacerbation frequency) must also be present. A stable, non-exacerbating patient with elevated eosinophils is better managed by continued optimization and observation.",
+      
     },
     {
       id: "q5", title: "Best-Fit Patient",
       prompt: "Which of this week's three patients is the best candidate for biologic therapy discussion? Connect your answer to MATINEE eligibility criteria.",
-      answer: "Maria Thompson (Patient C) with Asthma-COPD Overlap is the best candidate. She has persistent airflow limitation, eosinophilic airway inflammation, recurrent exacerbations despite inhaled therapy, and significant symptom burden — closely mirroring the MATINEE population. Sarah Thompson (Patient A) has asthma alone, not eosinophilic COPD. Bob Jenkins (Patient B) needs foundational LABA/LAMA therapy first; his eligibility should be re-evaluated after his maintenance regimen is optimized. Maria's combination of eosinophilic phenotype, ACO overlap, and persistent exacerbations makes her the appropriate biologic candidate.",
+      
     },
   ],
 }

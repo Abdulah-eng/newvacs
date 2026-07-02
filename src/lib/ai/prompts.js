@@ -46,7 +46,7 @@ INPUTS:
 - Active week source hierarchy: ${sourceHierarchy}
 
 SCORING RUBRIC:
-- Subjective: 20 points — chief concern, symptoms, pertinent negatives, adherence, barriers, OTC use, side effects, lifestyle, patient goals/fears/preferences, hidden information discovered
+- Subjective: 20 points — chief complaint (CC), symptoms, pertinent negatives, adherence, barriers, OTC use, side effects, lifestyle, patient goals/fears/preferences, hidden information discovered
 - Objective: 20 points — vitals, labs, medication list, allergies, immunizations, trend data, disease-specific markers
 - Assessment: 25 points — active problems, control/severity, risk markers, residual risk, appropriateness of therapy, adherence assessment, safety, prioritization, guideline reasoning
 - Plan: 30 points — pharmacologic plan, non-pharmacologic plan, medication optimization, monitoring, follow-up, counseling, safety, adherence, cost/access, shared decision-making, referrals
@@ -76,42 +76,41 @@ Respond ONLY with a JSON object in this exact format:
 }`
 }
 
-export function buildJournalGradingPrompt({ studentResponses, articleInterpretation, rubric, patientCases, weekTitle }) {
+export function buildJournalGradingPrompt({ summaryResponses, studentResponses, articleInterpretation, modelSummary, patientCases, weekTitle }) {
   return `You are the VACS journal club grader. Grade the student's evidence interpretation and patient-specific application using the active week's journal club source, expected interpretation, patient cases, and rubric.
 
 WEEK: ${weekTitle}
-EXPECTED ARTICLE INTERPRETATION: ${JSON.stringify(articleInterpretation)}
+EXPECTED ARTICLE INTERPRETATION (Questions): ${JSON.stringify(articleInterpretation)}
+MODEL SUMMARY (Presentation): ${JSON.stringify(modelSummary)}
 PATIENT CASES FROM THIS WEEK: ${JSON.stringify(patientCases)}
-JOURNAL CLUB RUBRIC: ${JSON.stringify(rubric)}
 
-STUDENT RESPONSES:
+STUDENT RESPONSES (Questions):
 ${JSON.stringify(studentResponses)}
 
-SCORING RUBRIC:
-- Evidence understanding: 20 points
-- Patient-specific application: 25 points
-- Therapy/intervention decision-making: 20 points
-- Monitoring, safety, counseling, and access: 20 points
-- Organization and clarity: 15 points
+STUDENT SUMMARY (Presentation):
+${JSON.stringify(summaryResponses)}
+
+SCORING RUBRIC (4-point scale: Exemplary, Proficient, Developing, Inadequate):
+- Accuracy: facts and numbers correct.
+- Critical reasoning: appraises rather than restates; weighs validity and limitations.
+- Clinical application: translates evidence to practice with sound pharmacist judgment.
+- Communication: organized, concise, presentation-ready.
 
 RULES:
-1. Reward accurate interpretation of the evidence.
-2. Reward application to a specific patient from the week.
-3. Penalize overstating the evidence.
-4. Penalize unsupported or unsafe patient-specific recommendations.
-5. Include practical monitoring, counseling, safety, and access considerations.
+1. Grade the student's work strictly against the expected interpretation and model summary provided. Do not invent facts or grade against outside knowledge.
+2. Empty or off-topic submissions should be handled gracefully (e.g., scored as Inadequate or Developing, not Proficient).
+3. Provide conceptual feedback without copy-pasting the answer key or model summary.
 
 Respond ONLY with a JSON object in this exact format:
 {
-  "total_score": <0-100>,
-  "evidence_understanding_score": <0-20>,
-  "patient_application_score": <0-25>,
-  "therapy_decision_score": <0-20>,
-  "monitoring_safety_score": <0-20>,
-  "organization_score": <0-15>,
-  "strengths": "<what student did well>",
-  "gaps": "<what was missed>",
-  "improvement_guidance": "<how to improve clinical application of evidence>"
+  "total_score": <0-100 overall score based on the rubric levels>,
+  "accuracy_level": "Exemplary" | "Proficient" | "Developing" | "Inadequate",
+  "critical_reasoning_level": "Exemplary" | "Proficient" | "Developing" | "Inadequate",
+  "clinical_application_level": "Exemplary" | "Proficient" | "Developing" | "Inadequate",
+  "communication_level": "Exemplary" | "Proficient" | "Developing" | "Inadequate",
+  "strengths": "<paragraph of what student did well>",
+  "gaps": "<missed key concepts, conceptual gaps>",
+  "improvement_guidance": "<how to improve>"
 }`
 }
 
@@ -164,5 +163,81 @@ Generate a final cumulative summary. Respond ONLY with a JSON object:
   "improvement_statement": "<statement about growth and improvement over 5 weeks>",
   "readiness_assessment": "<assessment of readiness for ambulatory care pharmacy practice>",
   "final_recommendations": "<5 specific, prioritized recommendations for continued growth>"
+}`
+}
+
+export function buildCapstoneGradingPrompt({ manuscript, modelAnswer, granularRubric, rubricSections }) {
+  return `You are the VACS Capstone grader. Grade the student's Grand Rounds Capstone manuscript using ONLY the provided model answer document, the granular 100-point rubric, and the section structure.
+
+═══ GRANULAR RUBRIC (280 discrete inputs, 100.0 total points) ═══
+${granularRubric}
+
+═══ MODEL ANSWER / GRADING KEY ═══
+${modelAnswer}
+
+═══ STUDENT MANUSCRIPT ═══
+${manuscript}
+
+═══ SECTION STRUCTURE ═══
+${JSON.stringify(rubricSections)}
+
+═══ GRADING INSTRUCTIONS ═══
+STEP 1 — INTERNAL SCORING (do NOT include in output):
+For each of the 280 discrete inputs in the granular rubric, assign FULL, HALF, or ZERO credit based on the scoring rules:
+- FULL: Input present, accurate, demonstrates understanding (not just keyword mention)
+- HALF: Partially present — directionally correct but imprecise, or present without clinical context
+- ZERO: Absent, or a factually incorrect statement is made about that input
+Sum all input scores within each subsection, section, and to a grand total out of 100.0.
+
+STEP 2 — MAP NUMERIC SCORE TO QUALITATIVE LEVELS:
+Use this grading scale for the overall and per-section levels:
+- 90.0–100.0 → "Exemplary"
+- 80.0–89.9 → "Proficient"
+- 70.0–79.9 → "Developing"
+- Below 70.0 → "Inadequate"
+
+For each of the four domains (Accuracy, Critical Reasoning, Clinical Application, Communication):
+- Accuracy: proportion of discrete factual inputs scored FULL vs HALF/ZERO
+- Critical Reasoning: quality of Section 3C (Critical Appraisal) and synthesis depth across all sections
+- Clinical Application: quality of Sections 5, 6, and 7 (clinical implementation, formulary, counseling)
+- Communication: quality of Section 8 (organization, citations, professional tone)
+
+STEP 3 — GENERATE OUTPUT:
+1. Grade strictly against the model answer and granular rubric. Do not invent facts or grade against outside knowledge.
+2. For each required section, determine if the student addressed the nested subsections.
+3. Provide targeted feedback for each section and general feedback overall.
+4. Feedback must NEVER reproduce or paste answer-key or model-summary text verbatim.
+5. If a submission is far too brief or misses most subsections, score as Inadequate or Developing.
+
+Respond ONLY with a JSON object in this exact format:
+{
+  "numeric_score": <0.0-100.0>,
+  "letter_grade": "A" | "B" | "C" | "D" | "F",
+  "overall_accuracy_level": "Exemplary" | "Proficient" | "Developing" | "Inadequate",
+  "overall_critical_reasoning_level": "Exemplary" | "Proficient" | "Developing" | "Inadequate",
+  "overall_clinical_application_level": "Exemplary" | "Proficient" | "Developing" | "Inadequate",
+  "overall_communication_level": "Exemplary" | "Proficient" | "Developing" | "Inadequate",
+  "sections": [
+    {
+      "sectionId": "<number as string>",
+      "title": "<section title>",
+      "numeric_score": <subsection total>,
+      "max_score": <subsection max>,
+      "accuracy_level": "Exemplary" | "Proficient" | "Developing" | "Inadequate",
+      "critical_reasoning_level": "Exemplary" | "Proficient" | "Developing" | "Inadequate",
+      "subsections": [
+        {
+          "title": "<subsection title>",
+          "addressed": true | false
+        }
+      ],
+      "feedback": "<1-2 sentences of specific feedback for this section>"
+    }
+  ],
+  "general_feedback": {
+    "strengths": "<paragraph of what the student did well>",
+    "weaknesses": "<paragraph of gaps or missed concepts>",
+    "improvement_guidance": "<how to improve>"
+  }
 }`
 }

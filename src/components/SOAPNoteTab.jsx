@@ -9,9 +9,9 @@ import {
 } from 'lucide-react'
 
 const SECTIONS = [
-  { key: 'subjective', label: 'Subjective', placeholder: 'Summarize HPI, adherence, symptoms, lifestyle, patient goals, and interview findings…' },
-  { key: 'objective', label: 'Objective', placeholder: 'Include vitals, labs, medications, allergies, and objective monitoring…' },
-  { key: 'assessment', label: 'Assessment', placeholder: 'Prioritize active clinical problems and explain guideline-based reasoning…' },
+  { key: 'subjective', label: 'Subjective', placeholder: 'HPI, Medication History, Social History, Family History, Self-Management.' },
+  { key: 'objective', label: 'Objective', placeholder: 'panel-grouped labs, H/L flags, and the Physical Exam section.' },
+  { key: 'assessment', label: 'Assessment', placeholder: 'per-problem reasoning + clinical-impression.' },
   { key: 'plan', label: 'Plan', placeholder: 'Include medication changes, monitoring, counseling, follow-up, and referrals…' },
 ]
 
@@ -27,7 +27,7 @@ export function SOAPNoteTab({ c, state, soap, onChange, onGraded }) {
   const [copied, setCopied] = useState(false)
 
   function generate() {
-    const draft = generateSoapDraft(state, c)
+    const draft = generateSoapDraft(c, state)
     if (draft) {
       Object.entries(draft).forEach(([k, v]) => onChange(k, v))
     }

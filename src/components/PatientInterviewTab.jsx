@@ -495,15 +495,71 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
           </Card>
 
           <Card title="Quick documentation" icon={Stethoscope} color="13314f">
-            <p className="text-[12px] text-slate-500 mb-3">Jot findings here or in the Subjective tab — both autosave to the same record.</p>
-            <div className="space-y-3 max-h-[19rem] overflow-y-auto thin-scroll pr-1">
-              {c.INTERVIEW_FIELDS.map(f => (
-                <div key={f.key}>
-                  <label className="flex items-center gap-1.5 text-[11px] font-semibold text-slate-600 mb-1">
-                    {f.label}
-                    {discovered[f.key] && <Sparkles size={11} className="text-teal" />}
-                  </label>
-                  <AutoTextarea value={interview[f.key]} onChange={v => onField(f.key, v)} placeholder={f.placeholder} rows={2} />
+            <p className="text-[12px] text-slate-500 mb-3">Document findings obtained during the patient interview. Fields automatically save. Topics discussed are marked as ✓ Discovered.</p>
+            <div className="space-y-6 max-h-[19rem] overflow-y-auto thin-scroll pr-1">
+              {[
+                {
+                  id: 'hpi', label: 'HPI', title: 'History of Present Illness',
+                  fields: [{ key: 'hpiNarrative', label: 'HPI narrative', placeholder: 'Brief narrative of the present illness...' }]
+                },
+                {
+                  id: 'meds', label: 'MEDS', title: 'Medication History / Reconciliation',
+                  fields: ['currentMeds', 'adherence', 'otc', 'sideEffects'].map(k => c.INTERVIEW_FIELDS?.find(f => f.key === k) || { key: k, label: k })
+                },
+                {
+                  id: 'sh', label: 'SH', title: 'Social History',
+                  fields: [
+                    c.INTERVIEW_FIELDS?.find(f => f.key === 'diet') || { key: 'diet', label: 'diet' },
+                    c.INTERVIEW_FIELDS?.find(f => f.key === 'exercise') || { key: 'exercise', label: 'exercise' },
+                    { key: 'tobacco', label: 'Tobacco use', type: 'select', options: ['None', 'Occasional', 'Moderate', 'Heavy'] },
+                    { key: 'alcohol', label: 'Alcohol use', type: 'select', options: ['None', 'Occasional', 'Moderate', 'Heavy'] },
+                    { key: 'caffeine', label: 'Caffeine', placeholder: 'e.g., 2 cups coffee/day' }
+                  ]
+                },
+                {
+                  id: 'fh', label: 'FH', title: 'Family History',
+                  fields: [c.INTERVIEW_FIELDS?.find(f => f.key === 'familyHistory') || { key: 'familyHistory', label: 'familyHistory' }]
+                },
+                {
+                  id: 'reported', label: '', title: 'Patient-Reported / Self-Management',
+                  fields: ['homeBp', 'bpTechnique', 'glucoseMonitoring', 'weightGoals', 'diseaseUnderstanding', 'concerns', 'cost'].map(k => c.INTERVIEW_FIELDS?.find(f => f.key === k) || { key: k, label: k })
+                }
+              ].map(g => (
+                <div key={g.title}>
+                  <div className="flex items-center gap-2 mb-2">
+                    {g.label && <span className="inline-block px-1.5 py-0.5 bg-slate-100 text-slate-500 text-[9px] font-bold rounded tracking-wide">{g.label}</span>}
+                    <h3 className="text-[12px] font-bold text-slate-700">{g.title}</h3>
+                  </div>
+                  <div className="space-y-3 pl-1 border-l-2 border-slate-100 ml-1">
+                    {g.fields.map(f => {
+                      if (!f || !f.label) return null
+                      const isDiscovered = discovered[f.key]
+                      return (
+                        <div key={f.key} className="pl-2">
+                          <label className="flex items-center gap-1.5 text-[11px] font-semibold text-slate-600 mb-1">
+                            {f.label}
+                            {isDiscovered && (
+                              <span className="inline-flex items-center gap-1 px-1 py-0.5 rounded bg-teal/10 text-teal text-[9px] font-semibold">
+                                ✓ Discovered
+                              </span>
+                            )}
+                          </label>
+                          {f.type === 'select' ? (
+                            <select
+                              value={interview[f.key] || ''}
+                              onChange={e => onField(f.key, e.target.value)}
+                              className="w-full rounded-md border border-slate-300 bg-white px-2 py-1.5 text-[12px] text-slate-800 outline-none focus:border-teal"
+                            >
+                              <option value="">—</option>
+                              {f.options.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+                            </select>
+                          ) : (
+                            <AutoTextarea value={interview[f.key]} onChange={v => onField(f.key, v)} placeholder={f.placeholder} rows={1} />
+                          )}
+                        </div>
+                      )
+                    })}
+                  </div>
                 </div>
               ))}
             </div>

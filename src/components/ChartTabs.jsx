@@ -315,8 +315,9 @@ function LabTable({ labs }) {
     <table className="w-full text-[13px]">
       <thead>
         <tr className="text-left text-[11px] uppercase tracking-wide text-slate-400 border-b border-slate-200">
-          <th className="py-2 font-semibold">Test</th>
+          <th className="py-2 font-semibold w-1/3">Test</th>
           <th className="py-2 font-semibold">Result</th>
+          <th className="py-2 font-semibold">Reference Range</th>
           <th className="py-2 font-semibold text-right">Flag</th>
         </tr>
       </thead>
@@ -329,6 +330,7 @@ function LabTable({ labs }) {
               {l.unit && <span className="text-slate-400"> {l.unit}</span>}
               {l.note && <span className="block text-[11px] text-slate-400">{l.note}</span>}
             </td>
+            <td className="py-2 text-slate-400">{l.ref || '—'}</td>
             <td className="py-2 text-right">{l.flag && l.flag !== 'normal' && <FlagPill flag={l.flag} />}</td>
           </tr>
         ))}
@@ -399,8 +401,15 @@ export function LabsTab({ c }) {
     else if (panel === 'missing') activeLabs = missing
     else activeLabs = membersOf(c, LAB_GROUPS.find(g => g.key === panel)?.members || [])
 
+    const collectionTime = activeLabs.find(l => l.drawn)?.drawn || '06/09/2026 07:50'
+
     return (
-      <Card title={title} icon={FlaskConical} color="0891b2">
+      <Card 
+        title={title} 
+        icon={FlaskConical} 
+        color="0891b2"
+        right={activeLabs.length > 0 && <span className="text-[11px] font-medium text-slate-400">Collected: {collectionTime}</span>}
+      >
         <LabTable labs={activeLabs} />
       </Card>
     )

@@ -1,82 +1,112 @@
 import React from 'react'
-import { CheckCircle2, XCircle, ChevronRight, MessageSquare } from 'lucide-react'
+import { CheckCircle2, XCircle, ChevronRight, AlertCircle, ArrowRight } from 'lucide-react'
 
 export default function FeedbackView({ evaluation, onContinue }) {
   if (!evaluation) return null
   
-  const getScoreColor = (score) => {
-    if (score >= 90) return 'text-teal-500'
-    if (score >= 70) return 'text-amber-500'
-    return 'text-red-500'
+  const getLevelColor = (level) => {
+    switch (level?.toLowerCase()) {
+      case 'exemplary': return 'text-teal-600 bg-teal-50 border-teal-200'
+      case 'proficient': return 'text-blue-600 bg-blue-50 border-blue-200'
+      case 'developing': return 'text-amber-600 bg-amber-50 border-amber-200'
+      case 'inadequate': return 'text-red-600 bg-red-50 border-red-200'
+      default: return 'text-slate-600 bg-slate-50 border-slate-200'
+    }
   }
 
   return (
     <div className="max-w-4xl mx-auto p-6 py-10 space-y-8">
-      {/* Top Banner: Score */}
+      {/* Top Banner */}
       <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row items-center p-8 gap-8">
-        <div className="relative w-32 h-32 shrink-0">
-          <svg className="w-full h-full -rotate-90" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="45" fill="none" stroke="#f1f5f9" strokeWidth="10" />
-            <circle cx="50" cy="50" r="45" fill="none" stroke={evaluation.totalScore >= 90 ? '#14b8a6' : evaluation.totalScore >= 70 ? '#f59e0b' : '#ef4444'} strokeWidth="10" strokeDasharray={`${evaluation.totalScore * 2.827} 282.7`} strokeLinecap="round" className="transition-all duration-1000" />
-          </svg>
-          <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className={`text-4xl font-bold font-head ${getScoreColor(evaluation.totalScore)}`}>{evaluation.totalScore}</span>
-            <span className="text-xs text-slate-400 font-semibold uppercase tracking-widest">/ 100</span>
-          </div>
-        </div>
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-2xl font-bold text-navy mb-2">Evaluation Complete</h2>
-          <p className="text-slate-600 mb-6">The AI Preceptor has reviewed your manuscript against the rubric.</p>
+          <p className="text-slate-600 mb-6">The AI Preceptor has reviewed your manuscript against the grading calibration key.</p>
+          
+          {evaluation.numeric_score !== undefined && evaluation.letter_grade && (
+            <div className="flex items-center gap-4 mb-6 bg-slate-50 p-4 rounded-xl border border-slate-200">
+              <div className="text-4xl font-black text-navy">{evaluation.numeric_score.toFixed(1)}</div>
+              <div className="flex flex-col">
+                <span className="text-sm font-bold text-slate-500 uppercase tracking-wider">Final Score</span>
+                <span className="text-lg font-bold text-teal-600">Grade: {evaluation.letter_grade}</span>
+              </div>
+            </div>
+          )}
+          <div className="flex flex-wrap gap-3 mb-6">
+            <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${getLevelColor(evaluation.overall_accuracy_level)}`}>
+              Accuracy: {evaluation.overall_accuracy_level}
+            </span>
+            <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${getLevelColor(evaluation.overall_critical_reasoning_level)}`}>
+              Critical Reasoning: {evaluation.overall_critical_reasoning_level}
+            </span>
+            <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${getLevelColor(evaluation.overall_clinical_application_level)}`}>
+              Clinical App: {evaluation.overall_clinical_application_level}
+            </span>
+            <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${getLevelColor(evaluation.overall_communication_level)}`}>
+              Communication: {evaluation.overall_communication_level}
+            </span>
+          </div>
           <button onClick={onContinue} className="inline-flex items-center gap-2 bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy-800 transition-colors shadow-md">
             Start Live Q&A <ChevronRight size={18} />
           </button>
         </div>
       </div>
 
-      {/* Narrative Feedback (4 parts) */}
+      {/* General Narrative Feedback */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
           <h3 className="font-semibold text-teal-600 flex items-center gap-2 mb-3">
-            <CheckCircle2 size={18} /> What Was Done Well
+            <CheckCircle2 size={18} /> Strengths
           </h3>
-          <p className="text-sm text-slate-700 leading-relaxed whitespace-pre-wrap">{evaluation.feedback.doneWell}</p>
+          <p className="text-sm text-slate-700 leading-relaxed whitespace-pre-wrap">{evaluation.general_feedback.strengths}</p>
         </div>
         <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
           <h3 className="font-semibold text-amber-600 flex items-center gap-2 mb-3">
-            <AlertCircle size={18} /> Opportunities for Improvement
+            <AlertCircle size={18} /> Weaknesses
           </h3>
-          <p className="text-sm text-slate-700 leading-relaxed whitespace-pre-wrap">{evaluation.feedback.improvements}</p>
+          <p className="text-sm text-slate-700 leading-relaxed whitespace-pre-wrap">{evaluation.general_feedback.weaknesses}</p>
         </div>
-        <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
-          <h3 className="font-semibold text-red-600 flex items-center gap-2 mb-3">
-            <XCircle size={18} /> Critical Omissions
+        <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:col-span-2 bg-slate-50">
+          <h3 className="font-semibold text-indigo-600 flex items-center gap-2 mb-3">
+            <ArrowRight size={18} /> Guidance for Improvement
           </h3>
-          <p className="text-sm text-slate-700 leading-relaxed whitespace-pre-wrap">{evaluation.feedback.criticalOmissions}</p>
-        </div>
-        <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 bg-blue-50/50">
-          <h3 className="font-semibold text-blue-600 flex items-center gap-2 mb-3">
-            <MessageSquare size={18} /> Clinical Pearls
-          </h3>
-          <p className="text-sm text-slate-700 leading-relaxed whitespace-pre-wrap">{evaluation.feedback.clinicalPearls}</p>
+          <p className="text-sm text-slate-700 leading-relaxed whitespace-pre-wrap">{evaluation.general_feedback.improvement_guidance}</p>
         </div>
       </div>
 
       {/* Section breakdown */}
       <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
         <div className="bg-slate-50 border-b border-slate-200 px-6 py-4">
-          <h3 className="font-semibold text-navy">Section Scores</h3>
+          <h3 className="font-semibold text-navy">Section Breakdown</h3>
         </div>
         <div className="divide-y divide-slate-100">
-          {evaluation.sectionScores.map(sec => (
-            <div key={sec.sectionId} className="px-6 py-4 flex items-center justify-between">
-              <div>
-                <p className="font-medium text-slate-700 text-sm">Section {sec.sectionId}</p>
-              </div>
-              <div className="flex items-center gap-4">
-                <div className="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
-                  <div className="h-full bg-teal-500" style={{ width: `${(sec.earned / sec.possible) * 100}%` }}></div>
+          {evaluation.sections.map(sec => (
+            <div key={sec.sectionId} className="px-6 py-5">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                <h4 className="font-semibold text-navy">Section {sec.sectionId}: {sec.title}</h4>
+                <div className="flex gap-2 text-[11px] uppercase tracking-wider font-bold">
+                  <span className={`px-2 py-1 rounded border ${getLevelColor(sec.accuracy_level)}`}>Acc: {sec.accuracy_level}</span>
+                  <span className={`px-2 py-1 rounded border ${getLevelColor(sec.critical_reasoning_level)}`}>Crit: {sec.critical_reasoning_level}</span>
                 </div>
-                <span className="text-sm font-semibold text-slate-600 w-12 text-right">{sec.earned} / {sec.possible}</span>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h5 className="text-xs font-semibold text-slate-500 uppercase mb-2">Subsection Completeness</h5>
+                  <ul className="space-y-2">
+                    {sec.subsections.map((sub, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+                        {sub.addressed ? <CheckCircle2 size={16} className="text-teal-500 mt-0.5 shrink-0" /> : <XCircle size={16} className="text-red-500 mt-0.5 shrink-0" />}
+                        <span className={sub.addressed ? '' : 'text-slate-400 line-through'}>{sub.title}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="text-xs font-semibold text-slate-500 uppercase mb-2">Section Feedback</h5>
+                  <p className="text-sm text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-100 leading-relaxed">
+                    {sec.feedback}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
@@ -85,6 +115,3 @@ export default function FeedbackView({ evaluation, onContinue }) {
     </div>
   )
 }
-
-// Needed to silence React warning about missing AlertCircle (I used it above but forgot to import, actually let's just use XCircle or define it)
-import { AlertCircle } from 'lucide-react'

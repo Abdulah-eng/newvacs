@@ -102,27 +102,27 @@ export const AZALEA_JOURNAL = {
     {
       id: "q1", title: "Future Implications for High-Bleeding-Risk Patients",
       prompt: "A 78-year-old patient with AF has had multiple epistaxis episodes on apixaban and is considering stopping anticoagulation. How does AZALEA-TIMI 71 influence future anticoagulation discussions for patients like this?",
-      answer: "The trial suggests that Factor XI inhibitors may provide stroke prevention with substantially less bleeding than current DOACs. Although abelacimab is not yet standard of care, AZALEA-TIMI 71 highlights a potential future option for patients whose primary concern is bleeding risk — offering a path between the unacceptable alternatives of accepting recurrent bleeding or abandoning stroke prevention entirely. For Angela Brooks (Patient B), who has multiple bleeding risk factors and hesitancy about medication complexity, this trial illustrates the emerging therapeutic landscape.",
+      
     },
     {
       id: "q2", title: "Why Rivaroxaban Is a Clinically Relevant Comparator",
       prompt: "Why was rivaroxaban a more clinically informative comparator than warfarin in this trial?",
-      answer: "DOACs are now the first-line standard of care for most patients with non-valvular AF. Comparing a novel agent against rivaroxaban — a representative DOAC — provides information directly applicable to contemporary practice. A warfarin comparator would have answered a less relevant question in today's clinical environment and would not reflect the actual decision pharmacists and prescribers face when selecting anticoagulation.",
+      
     },
     {
       id: "q3", title: "When NOT to Replace Current Therapy",
       prompt: "A patient with AF asks whether abelacimab should replace apixaban today. How would you respond?",
-      answer: "No. Although AZALEA-TIMI 71 demonstrated impressive reductions in bleeding, abelacimab is not currently guideline-directed therapy. Additional efficacy data confirming stroke non-inferiority, regulatory approval, and guideline incorporation are all still needed before routine clinical use. The trial is promising and clinically meaningful but should not lead to changing a patient's established anticoagulation regimen today.",
+      
     },
     {
       id: "q4", title: "Identifying Candidates for Future Factor XI Inhibition",
       prompt: "Which patient would potentially derive greater benefit from a future Factor XI inhibitor: Patient A (CHA₂DS₂-VASc=3, no prior bleeding) vs. Patient B (CHA₂DS₂-VASc=4, prior GI bleed, recurrent epistaxis)?",
-      answer: "Patient B. The primary potential advantage of Factor XI inhibition is maintaining thromboembolic protection while substantially reducing bleeding risk. This is most beneficial for patients who have a strong indication for anticoagulation (high stroke risk) combined with a significant bleeding history or concern — exactly the scenario where clinicians currently face an uncomfortable tradeoff. For Patient A with no bleeding history, existing DOACs are appropriate and well-tolerated.",
+      
     },
     {
       id: "q5", title: "Supporting Shared Decision-Making",
       prompt: "How does AZALEA-TIMI 71 inform shared decision-making conversations about anticoagulation in patients with AF?",
-      answer: "The trial highlights that the bleeding-thrombosis tradeoff — long a central tension in anticoagulation management — may be substantially narrowed by future therapeutic options. For current conversations, AZALEA-TIMI 71 validates patient concerns about bleeding as legitimate and clinically important, and reinforces the need to assess and modify reversible bleeding risk factors. It also provides an evidence-based context for discussing emerging options with engaged patients like Robert Jenkins (Patient C), who carefully evaluates the evidence behind every therapeutic decision.",
+      
     },
   ],
 }

@@ -105,27 +105,27 @@ export const CONFIDENCE_JOURNAL = {
     {
       id: 'q1', title: 'Trial Application',
       prompt: 'A patient with T2DM, eGFR 45 mL/min/1.73m², UACR 700 mg/g, and potassium 4.5 mEq/L is on losartan and empagliflozin. Does CONFIDENCE support adding finerenone? Explain using the trial’s design and findings.',
-      answer: 'Yes. CONFIDENCE enrolled patients with T2DM and CKD with elevated albuminuria on a maximally tolerated ACEi/ARB (eGFR ≥30) — this patient fits. It showed that adding finerenone to empagliflozin produced roughly 29–32% greater UACR reduction than either agent alone. With a potassium of 4.5 and eGFR 45, there is room to add finerenone with a monitoring plan, targeting the residual albuminuria that foundational therapy has not resolved.',
+      
     },
     {
       id: 'q2', title: 'Explaining "Another Medication"',
       prompt: 'A patient already on an SGLT2 inhibitor asks why you want to add yet another kidney medication. How do you explain it?',
-      answer: 'SGLT2 inhibitors meaningfully reduce kidney and cardiovascular risk, but they do not eliminate it — substantial residual risk remains, especially when albuminuria stays elevated. Finerenone works through a different (mineralocorticoid) pathway, and CONFIDENCE showed the combination lowers urine protein substantially more than either alone. In plain terms: “Your current medicine is helping, but there’s still protein leaking, which means risk remains. This adds protection through a different mechanism.”',
+      
     },
     {
       id: 'q3', title: 'Interpreting a Potassium Rise',
       prompt: 'After starting finerenone, a patient’s potassium rises from 4.6 to 5.0 mEq/L. Does this automatically require discontinuation? How do you reason through it?',
-      answer: 'No. A potassium of 5.0 is not an automatic stop. Hyperkalemia must be interpreted in clinical context — the magnitude, trajectory, symptoms, diet, other potassium-raising drugs, and the overall benefit-versus-risk of a kidney-protective therapy. The appropriate response is to recheck potassium, give dietary guidance, review contributors, and weigh continuing finerenone (which is reducing albuminuria) against the manageable, monitored potassium rise — not reflexive discontinuation.',
+      
     },
     {
       id: 'q4', title: 'Why Albuminuria Matters',
       prompt: 'CONFIDENCE used percent change in UACR as its primary endpoint. Why is reducing albuminuria considered clinically meaningful, and what is the key limitation of this endpoint?',
-      answer: 'Albuminuria is both a marker of ongoing kidney damage and a strong predictor of CKD progression and cardiovascular risk; reductions in albuminuria are associated with improved long-term kidney and cardiovascular outcomes. The key limitation is that UACR is a surrogate endpoint, not a hard outcome like kidney failure or death — combined with the short (180-day) follow-up and industry funding, the trial supports the strategy but leaves long-term clinical-outcome confirmation to ongoing studies.',
+      
     },
     {
       id: 'q5', title: 'Best-Fit Patient',
       prompt: 'Which patient is more likely to benefit from combination cardiorenal therapy? Patient A: A1C 7.8%, eGFR 90, UACR 15, no ASCVD. Patient B: A1C 7.1%, eGFR 42, UACR 850, prior MI. Justify your choice — and connect it to one of this week’s patients.',
-      answer: 'Patient B. CONFIDENCE supports selecting therapy by cardiorenal risk and albuminuria burden, not glycemic control — and Patient B has markedly reduced eGFR, severe albuminuria, and established ASCVD, while Patient A has normal eGFR and minimal albuminuria. This mirrors David Chen (Patient C) this week: CKD G3bA3 with UACR 520 despite ACEi + SGLT2i, exactly the residual-risk phenotype CONFIDENCE targets with finerenone.',
+      
     },
   ],
 }

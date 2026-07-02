@@ -3,18 +3,44 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 // ─── Face IDs from https://app.simli.com → Faces ─────────────────────────────
-// User's face ID from Simli dashboard
-const VALID_FACE_ID = 'cace3ef7-a4c4-425d-a8cf-a5358eb0c427'
+// Assign each patient a face that matches their age/sex/ethnicity.
+// Add new Simli face IDs here as they are created.
+
+const FACE_OLD_LADY    = '0c2b8b04-5274-41f1-a21c-d5c98322efa9'
+const FACE_OLD_MAN     = '6ebf0aa7-6fed-443d-a4c6-fd1e3080b215'
+const FACE_MID_MAN     = 'dd10cb5a-d31d-4f12-b69f-6db3383c006e'  // middle-aged white man
+const FACE_ASIAN_MAN   = '7e74d6e7-d559-4394-bd56-4923a3ab75ad'  // older Asian man
+const FACE_WHITE_WOMAN = '5fc23ea5-8175-4a82-aaaf-cdd8c88543dc'  // white woman
+const FACE_HISP_WOMAN  = 'd2a5c7c6-fed9-4f55-bcb3-062f7cd20103'  // Hispanic woman
+const FACE_BLACK_WOMAN = 'b9e5fba3-071a-4e35-896e-211c4d6eaa7b'  // older Black woman
+const FACE_DEFAULT     = 'cace3ef7-a4c4-425d-a8cf-a5358eb0c427'  // fallback
 
 const FACE_MAP = {
-  'maria gonzalez':   VALID_FACE_ID,
-  'linda martinez':   VALID_FACE_ID,
-  'angela rodriguez': VALID_FACE_ID,
-  'james wilson':     VALID_FACE_ID,
-  'michael turner':   VALID_FACE_ID,
-  'david chen':       VALID_FACE_ID,
+  // Week 1
+  'james wilson':       FACE_OLD_MAN,       // 62 M White
+  'linda martinez':     FACE_OLD_LADY,       // 68 F Hispanic/Latina
+
+  // Week 2
+  'michael turner':     FACE_MID_MAN,        // 58 M White
+  'angela rodriguez':   FACE_OLD_LADY,       // 66 F Hispanic
+  'david chen':         FACE_ASIAN_MAN,      // 62 M Asian
+
+  // Week 3
+  'sarah thompson':     FACE_WHITE_WOMAN,    // 34 F White
+  'robert "bob" jenkins': FACE_OLD_MAN,      // 67 M White
+  'robert jenkins':     FACE_OLD_MAN,        // 76 M White (W4)
+  'maria thompson':     FACE_OLD_LADY,       // 69 F Hispanic
+
+  // Week 4
+  'michael thompson':   FACE_MID_MAN,        // 58 M White
+  'angela brooks':      FACE_BLACK_WOMAN,    // 64 F Black
+
+  // Week 5
+  'sarah mitchell':     FACE_WHITE_WOMAN,    // 29 F White
+  'jessica ramirez':    FACE_HISP_WOMAN,     // 42 F Hispanic
+  'david carter':       FACE_MID_MAN,        // 51 M White
 }
-const DEFAULT_FACE = VALID_FACE_ID
+const DEFAULT_FACE = FACE_DEFAULT
 
 function getFaceId(patientName) {
   if (!patientName) return DEFAULT_FACE

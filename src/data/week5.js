@@ -104,27 +104,27 @@ export const ESCAPE_TRD_JOURNAL = {
     {
       id: "q1", title: "Defining Treatment-Resistant Depression",
       prompt: "A patient has been taking sertraline 200 mg daily for 12 weeks with perfect adherence and continues to have significant depressive symptoms. How do you determine whether this patient meets criteria for treatment-resistant depression?",
-      answer: "TRD is generally defined as failure to achieve adequate response following at least two antidepressant treatment trials of adequate dose and duration. This patient has had one adequate trial (sertraline at adequate dose for ≥8 weeks). Before classifying as TRD, confirm: (1) adequate dose, (2) adequate duration, (3) actual adherence (not just reported), (4) correct diagnosis (rule out bipolar, substance use, untreated anxiety), and (5) psychosocial contributors. A second adequate trial failure would support a TRD classification and consideration of escalation per ESCAPE-TRD.",
+      
     },
     {
       id: "q2", title: "Nonadherence vs. Treatment Failure",
       prompt: "A patient reports persistent depression after several antidepressant trials but admits to taking medication only 3–4 days per week. How does this influence interpretation of treatment failure?",
-      answer: "This patient does not meet criteria for true treatment-resistant depression. Inadequate adherence likely explains the lack of response — the medications were not given an adequate trial. The appropriate intervention is to address the adherence barrier (identify reasons, simplify regimen, motivational interviewing) and optimize the current regimen before considering escalation to advanced therapies. Labeling this as TRD and escalating to esketamine would be premature and inappropriate. This mirrors Jessica Ramirez (Patient B) this week.",
+      
     },
     {
       id: "q3", title: "Why Quetiapine XR Was an Appropriate Comparator",
       prompt: "Why was quetiapine extended-release a clinically meaningful comparator in ESCAPE-TRD?",
-      answer: "Quetiapine XR is one of the most commonly used augmentation agents for patients with inadequate antidepressant response in clinical practice. Comparing esketamine against an established augmentation strategy — rather than placebo — provides information directly applicable to real-world treatment decisions. The trial answers the question clinicians actually face: if a patient with TRD needs escalation, is esketamine meaningfully better than the augmentation option I would typically reach for?",
+      
     },
     {
       id: "q4", title: "Factors to Consider Before Esketamine Referral",
       prompt: "A patient with depression and significant anxiety has failed two adequate antidepressant trials. What factors should be considered before referring for esketamine treatment?",
-      answer: "Before referring, evaluate: (1) prior medication history with confirmed adequate dose and duration, (2) actual adherence at each trial, (3) severity of current depressive symptoms and functional impairment, (4) comorbid psychiatric conditions (anxiety, substance use — which may affect eligibility), (5) access to treatment centers with supervised administration, (6) transportation and monitoring requirements, (7) adverse effect burden and patient preferences, and (8) safety considerations including suicide risk. Esketamine is appropriate only after confirming that the patient truly has TRD rather than undertreated or poorly adherent depression.",
+      
     },
     {
       id: "q5", title: "Best-Fit Patient",
       prompt: "Which of this week's three patients most closely matches the ESCAPE-TRD population, and why? What role does the pharmacist play in identifying and facilitating appropriate referral?",
-      answer: "David Carter (Patient C) most closely matches the ESCAPE-TRD population. He has MDD with multiple prior failed antidepressant trials (escitalopram, sertraline, venlafaxine), persistent severe symptoms despite adequate treatment, significant functional impairment, and meets criteria for treatment-resistant depression. His PHQ-9 of 21 and GAD-7 of 18 indicate severe disease burden. The pharmacist's role includes: confirming that prior trials were truly adequate (dose, duration, adherence), performing a structured suicide risk assessment, assessing for augmentation eligibility, communicating the clinical picture to the treating team, and facilitating referral to a specialty behavioral health center where esketamine can be administered under supervision.",
+      
     },
   ],
 }

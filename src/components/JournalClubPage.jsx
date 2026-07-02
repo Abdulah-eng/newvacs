@@ -7,17 +7,31 @@ import {
   CheckCircle2, Eye, EyeOff, Award, ListChecks,
 } from 'lucide-react'
 
+const SUMMARY_FIELDS = [
+  { id: 'background', label: 'Background / rationale' },
+  { id: 'methods', label: 'Methods / design' },
+  { id: 'results', label: 'Results' },
+  { id: 'appraisal', label: 'Critical appraisal' },
+  { id: 'clinical', label: 'Clinical application / bottom line' },
+]
+
 function progressOf(config, state) {
   const responses = state?.responses || {}
-  const answered = config.questions.filter(q => (responses[q.id] || '').trim().length > 0).length
-  return { answered, total: config.questions.length, complete: answered === config.questions.length }
+  const summary = state?.summaryResponses || {}
+  const answeredQ = config.questions.filter(q => (responses[q.id] || '').trim().length > 0).length
+  const answeredS = SUMMARY_FIELDS.filter(f => (summary[f.id] || '').trim().length > 0).length
+  
+  const answered = answeredQ + answeredS
+  const total = config.questions.length + SUMMARY_FIELDS.length
+  
+  return { answered, total, complete: answered === total }
 }
 
 export default function JournalClubPage({ onBack, config = JOURNAL_CLUB }) {
   const STATE_ID = config.id
   const [state, setState] = useState(() => {
     const s = loadCaseState(STATE_ID)
-    return { responses: {}, revealed: {}, ratings: {}, ...s }
+    return { responses: {}, summaryResponses: {}, ratings: {}, ...s }
   })
 
   const update = useCallback((mutate) => {
@@ -29,7 +43,7 @@ export default function JournalClubPage({ onBack, config = JOURNAL_CLUB }) {
   }, [STATE_ID])
 
   const setResponse = (id, val) => update(s => ({ ...s, responses: { ...s.responses, [id]: val } }))
-  const toggleAnswer = (id) => update(s => ({ ...s, revealed: { ...s.revealed, [id]: !s.revealed[id] } }))
+  const setSummaryResponse = (id, val) => update(s => ({ ...s, summaryResponses: { ...s.summaryResponses, [id]: val } }))
   const setRating = (id, val) => update(s => ({ ...s, ratings: { ...s.ratings, [id]: val } }))
 
   const { answered, total, complete } = progressOf(config, state)
@@ -121,13 +135,32 @@ export default function JournalClubPage({ onBack, config = JOURNAL_CLUB }) {
           </div>
         </Card>
 
+        {/* Structured Presentation Summary */}
+        <h2 className="font-head text-xl text-navy mb-1 mt-8">Structured Presentation Summary</h2>
+        <p className="text-[13px] text-slate-500 mb-4">Synthesize the trial findings for your presentation. Responses autosave.</p>
+        
+        <div className="space-y-5 mb-8">
+          {SUMMARY_FIELDS.map((f, i) => {
+            const answeredThis = (state.summaryResponses[f.id] || '').trim().length > 0
+            return (
+              <div key={f.id} className="rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden p-5">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="font-head text-[15px] text-navy">{f.label}</h3>
+                  {answeredThis && <CheckCircle2 size={16} className="text-teal" />}
+                </div>
+                <AutoTextarea value={state.summaryResponses[f.id] || ''} onChange={v => setSummaryResponse(f.id, v)}
+                              placeholder={`Draft your ${f.label.toLowerCase()} summary...`} rows={4} saved />
+              </div>
+            )
+          })}
+        </div>
+
         {/* Questions */}
         <h2 className="font-head text-xl text-navy mb-1">Clinical Application Questions</h2>
-        <p className="text-[13px] text-slate-500 mb-4">Open-ended and applied — work through each before revealing the answer key. Responses autosave.</p>
+        <p className="text-[13px] text-slate-500 mb-4">Open-ended and applied — work through each question. Responses autosave.</p>
 
         <div className="space-y-5">
           {JC.questions.map((q, i) => {
-            const revealed = !!state.revealed[q.id]
             const answeredThis = (state.responses[q.id] || '').trim().length > 0
             return (
               <div key={q.id} className="rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden">
@@ -140,38 +173,8 @@ export default function JournalClubPage({ onBack, config = JOURNAL_CLUB }) {
                   <p className="text-[13px] text-slate-700 leading-relaxed mb-3">{q.prompt}</p>
 
                   <label className="block text-[12px] font-semibold text-slate-600 mb-1">Your response</label>
-                  <AutoTextarea value={state.responses[q.id]} onChange={v => setResponse(q.id, v)}
+                  <AutoTextarea value={state.responses[q.id] || ''} onChange={v => setResponse(q.id, v)}
                                 placeholder="Work through the trial data, patient-specific factors, and pharmacist judgment…" rows={6} saved />
-
-                  <div className="mt-3 flex items-center justify-between flex-wrap gap-2">
-                    <button onClick={() => toggleAnswer(q.id)}
-                      className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 px-3 py-1.5 text-[12px] font-semibold text-slate-700 hover:bg-slate-50 transition">
-                      {revealed ? <><EyeOff size={14} /> Hide Answer Key</> : <><Eye size={14} /> Show Answer Key</>}
-                    </button>
-                  </div>
-
-                  {revealed && (
-                    <div className="mt-3 rounded-lg border border-teal/30 bg-teal/5 p-4 fade-up">
-                      <p className="text-[11px] font-bold uppercase tracking-wide text-teal mb-1.5">Answer key</p>
-                      <p className="text-[13px] text-slate-700 leading-relaxed">{q.answer}</p>
-
-                      <div className="mt-4 pt-3 border-t border-teal/20">
-                        <p className="text-[12px] font-semibold text-slate-600 mb-2">Self-rating (optional): how does your response compare?</p>
-                        <div className="flex flex-wrap gap-1.5">
-                          {SELF_RATINGS.map(r => {
-                            const on = state.ratings[q.id] === r.key
-                            return (
-                              <button key={r.key} onClick={() => setRating(q.id, r.key)}
-                                className={`text-[12px] px-3 py-1.5 rounded-lg font-semibold transition ${
-                                  on ? 'bg-teal text-white' : 'bg-white border border-slate-300 text-slate-600 hover:bg-slate-50'}`}>
-                                {r.label}
-                              </button>
-                            )
-                          })}
-                        </div>
-                      </div>
-                    </div>
-                  )}
                 </div>
               </div>
             )
@@ -191,10 +194,9 @@ export default function JournalClubPage({ onBack, config = JOURNAL_CLUB }) {
                   method: 'POST',
                   headers: { 'Content-Type': 'application/json' },
                   body: JSON.stringify({
-                    studentResponses: Object.entries(state.responses).map(([id, text]) => ({ questionId: id, prompt: JC.questions.find(q=>q.id===id).prompt, answer: text })),
-                    articleInterpretation: JC.questions.map(q => ({ questionId: q.id, expectedAnswer: q.answer })),
-                    rubric: 'Assess understanding of trial data, patient-specific application, and monitoring/safety counseling.',
-                    patientCases: 'Maria Gonzalez (T2DM, Hypertension, Obesity, Hyperlipidemia) - Case 1.',
+                    studentResponses: Object.entries(state.responses).map(([id, text]) => ({ questionId: id, prompt: JC.questions.find(q=>q.id===id)?.prompt, answer: text })),
+                    summaryResponses: state.summaryResponses,
+                    weekId: JC.id,
                     weekTitle: JC.title
                   })
                 })
@@ -249,20 +251,20 @@ export default function JournalClubPage({ onBack, config = JOURNAL_CLUB }) {
               
               <div className="pt-4 grid sm:grid-cols-2 gap-4">
                 <div className="bg-slate-50 p-3 rounded-lg border border-slate-100">
-                  <p className="text-[12px] font-bold text-slate-500 mb-1">Evidence Understanding</p>
-                  <p className="text-lg font-head text-navy">{state.aiGrade.evidence_understanding_score}/20</p>
+                  <p className="text-[12px] font-bold text-slate-500 mb-1">Accuracy</p>
+                  <p className="text-lg font-head text-navy">{state.aiGrade.accuracy_level || 'Proficient'}</p>
                 </div>
                 <div className="bg-slate-50 p-3 rounded-lg border border-slate-100">
-                  <p className="text-[12px] font-bold text-slate-500 mb-1">Patient Application</p>
-                  <p className="text-lg font-head text-navy">{state.aiGrade.patient_application_score}/25</p>
+                  <p className="text-[12px] font-bold text-slate-500 mb-1">Critical reasoning</p>
+                  <p className="text-lg font-head text-navy">{state.aiGrade.critical_reasoning_level || 'Proficient'}</p>
                 </div>
                 <div className="bg-slate-50 p-3 rounded-lg border border-slate-100">
-                  <p className="text-[12px] font-bold text-slate-500 mb-1">Therapy Decisions</p>
-                  <p className="text-lg font-head text-navy">{state.aiGrade.therapy_decision_score}/20</p>
+                  <p className="text-[12px] font-bold text-slate-500 mb-1">Clinical application</p>
+                  <p className="text-lg font-head text-navy">{state.aiGrade.clinical_application_level || 'Proficient'}</p>
                 </div>
                 <div className="bg-slate-50 p-3 rounded-lg border border-slate-100">
-                  <p className="text-[12px] font-bold text-slate-500 mb-1">Monitoring & Safety</p>
-                  <p className="text-lg font-head text-navy">{state.aiGrade.monitoring_safety_score}/20</p>
+                  <p className="text-[12px] font-bold text-slate-500 mb-1">Communication</p>
+                  <p className="text-lg font-head text-navy">{state.aiGrade.communication_level || 'Proficient'}</p>
                 </div>
               </div>
             </div>

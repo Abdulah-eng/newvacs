@@ -15,8 +15,7 @@ function extractDocx(filePath) {
     }
     
     const text = matches.map(m => m.replace(/<[^>]+>/g, '')).join(' ');
-    fs.writeFileSync('prd_extracted_text.txt', text, 'utf8');
-    console.log('Extraction complete. Saved to prd_extracted_text.txt');
+    console.log(text);
   } catch (err) {
     console.error('Error:', err);
   }

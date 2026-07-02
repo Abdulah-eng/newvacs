@@ -97,10 +97,12 @@ const caseTue = {
 
   // VISIBLE med list — ibuprofen intentionally absent (hidden OTC use).
   MEDICATIONS: [
-    { name: 'Metformin XR', dose: '1000 mg', route: 'PO', freq: 'once daily', indication: 'Type 2 diabetes', notes: 'Tolerating' },
-    { name: 'Lisinopril', dose: '10 mg', route: 'PO', freq: 'once daily', indication: 'Hypertension', notes: '' },
-    { name: 'Hydrochlorothiazide', dose: '12.5 mg', route: 'PO', freq: 'once daily', indication: 'Hypertension', notes: '' },
-    { name: 'Acetaminophen', dose: '500 mg', route: 'PO', freq: 'PRN pain', indication: 'Knee osteoarthritis', notes: 'As needed' },
+    { name: 'Metformin XR', dose: '1000 mg', route: 'PO', freq: 'Take 1 tablet by mouth once daily', indication: 'Type 2 diabetes', notes: 'Tolerating', start: '07/15/2018', prescriber: 'Dr. A. Whitfield', lastFilled: '05/20/2026', refills: '2' },
+    { name: 'Lisinopril', dose: '10 mg', route: 'PO', freq: 'Take 1 tablet by mouth once daily', indication: 'Hypertension', notes: '', start: '03/10/2016', prescriber: 'Dr. A. Whitfield', lastFilled: '05/20/2026', refills: '2' },
+    { name: 'Hydrochlorothiazide', dose: '12.5 mg', route: 'PO', freq: 'Take 1 tablet by mouth once daily', indication: 'Hypertension', notes: '', start: '03/10/2016', prescriber: 'Dr. A. Whitfield', lastFilled: '05/20/2026', refills: '2' },
+    { name: 'Acetaminophen', dose: '500 mg', route: 'PO', freq: 'Take 1 tablet by mouth every 6 hours as needed for pain', indication: 'Knee osteoarthritis', notes: 'As needed', start: '11/05/2020', prescriber: 'Dr. A. Whitfield', lastFilled: '04/10/2026', refills: '1' },
+    { name: 'Ibuprofen (OTC)', dose: '200 mg', route: 'PO', freq: 'Take 2 tablets by mouth occasionally for pain', patientReported: true, source: 'Patient Interview' },
+    { name: 'Multivitamin (OTC)', dose: '1 tablet', route: 'PO', freq: 'Take 1 tablet by mouth daily', patientReported: true, source: 'Patient Interview' }
   ],
 
   IMMUNIZATIONS: [
@@ -113,7 +115,7 @@ const caseTue = {
 
   SUBJECTIVE_DOCUMENTED: [
     { label: 'Reason for referral', value: 'PCP referral for persistently elevated office BP and worsening glycemic control.' },
-    { label: 'Chief concern', value: 'Reports doctor noted BP and diabetes "numbers creeping up."' },
+    { label: 'Chief Complaint (CC)', value: 'Reports doctor noted BP and diabetes "numbers creeping up."' },
     { label: 'PMH', value: 'HTN, T2DM, hyperlipidemia, obesity, bilateral knee OA.' },
     { label: 'Documented symptoms', value: 'No acute complaints documented at intake.' },
   ],
@@ -214,27 +216,27 @@ const caseTue = {
   ],
 
   ASSESSMENT_CARDS: [
-    { id: 'htn', title: 'Hypertension', icon: 'HeartPulse', color: '13314f', questions: [
+    { id: 'htn', title: 'Essential hypertension', icon: 'HeartPulse', color: '13314f', questions: [
       { key: 'htn_class', q: 'How is her office BP classified, and what is her target given diabetes?' },
       { key: 'htn_adhere', q: 'What should you assess about adherence and technique before intensifying therapy?' },
       { key: 'htn_contrib', q: 'What contributors (lifestyle, OTC) might be raising her BP?' },
       { key: 'htn_reg', q: 'Is her current 2-drug regimen optimized? What are the options?' },
       { key: 'htn_monitor', q: 'What monitoring is needed if you change ACEi/diuretic dosing?' },
     ]},
-    { id: 't2dm', title: 'Type 2 Diabetes', icon: 'Droplet', color: '0d9488', questions: [
+    { id: 't2dm', title: 'Type 2 diabetes mellitus', icon: 'Droplet', color: '0d9488', questions: [
       { key: 'dm_goal', q: 'Is her A1C at an appropriate individualized goal? What is the trend?' },
       { key: 'dm_metf', q: 'Can metformin be optimized given her dose and renal function?' },
       { key: 'dm_uacr', q: 'What key piece of data is missing for diabetes monitoring?' },
       { key: 'dm_lifestyle', q: 'How are diet, activity, and monitoring affecting glycemic control?' },
       { key: 'dm_next', q: 'What would you reassess before adding another glucose-lowering agent?' },
     ]},
-    { id: 'lipid', title: 'Hyperlipidemia / ASCVD Prevention', icon: 'Activity', color: 'dc2626', questions: [
+    { id: 'lipid', title: 'Hyperlipidemia', icon: 'Activity', color: 'dc2626', questions: [
       { key: 'lip_statin', q: 'Does a 54-year-old with diabetes have a statin indication? Why?' },
       { key: 'lip_values', q: 'How do you interpret her LDL and triglycerides?' },
       { key: 'lip_intensity', q: 'What statin intensity would you consider and why?' },
       { key: 'lip_monitor', q: 'What baseline/monitoring labs are relevant for statin therapy?' },
     ]},
-    { id: 'obesity', title: 'Obesity / Lifestyle', icon: 'Scale', color: 'ca8a04', questions: [
+    { id: 'obesity', title: 'Obesity', icon: 'Scale', color: 'ca8a04', questions: [
       { key: 'ob_bmi', q: 'How does her BMI affect BP, glucose, and overall risk?' },
       { key: 'ob_motivation', q: 'What did the interview reveal about her motivation and barriers?' },
       { key: 'ob_plan', q: 'What realistic lifestyle targets would you set with her?' },
