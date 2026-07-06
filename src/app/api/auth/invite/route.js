@@ -48,11 +48,28 @@ export async function POST(request) {
 
   } else {
     // ── Normal invite (sends email) ───────────────────────────────────────
+    // Priority: NEXT_PUBLIC_APP_URL → VERCEL_URL (auto-set by Vercel, no protocol)
+    // → hardcoded production URL as final fallback.
+    // Always ensures the URL starts with https:// so Supabase never treats it
+    // as a relative path and appends it to its own domain.
     let appUrl = process.env.NEXT_PUBLIC_APP_URL || ''
+
+    // If NEXT_PUBLIC_APP_URL is not set or still points to localhost, 
+    // use Vercel's auto-provided VERCEL_URL (format: "newvacs.vercel.app", no protocol)
+    if (!appUrl || appUrl.startsWith('http://localhost')) {
+      const vercelUrl = process.env.VERCEL_URL  // e.g. "newvacs.vercel.app"
+      if (vercelUrl) {
+        appUrl = `https://${vercelUrl}`
+      }
+    }
+
+    // Final safety: ensure protocol is present
     if (appUrl && !appUrl.startsWith('http://') && !appUrl.startsWith('https://')) {
       appUrl = `https://${appUrl}`
     }
-    
+
+    console.log('[invite] redirectTo:', `${appUrl}/auth/callback`)
+
     const { data, error } = await supabase.auth.admin.inviteUserByEmail(email, {
       data: { full_name, role },
       redirectTo: `${appUrl}/auth/callback`,
