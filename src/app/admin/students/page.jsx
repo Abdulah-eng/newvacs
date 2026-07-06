@@ -1,7 +1,7 @@
 import React from 'react'
 import { createClient } from '../../../lib/supabase/server'
-import { UserPlus, MoreVertical, Search, Filter } from 'lucide-react'
-import { AdminStudentsClient } from '../../../components/admin/AdminStudentsClient'
+import { UserPlus, Search, Filter } from 'lucide-react'
+import { AdminStudentsClient, StudentRowActions } from '../../../components/admin/AdminStudentsClient'
 
 export const metadata = {
   title: 'Manage Students | VACS Admin',
@@ -15,6 +15,7 @@ export default async function AdminStudentsPage() {
     .select(`
       *,
       cohort_members(
+        cohort_id,
         cohort:cohorts(cohort_name)
       )
     `)
@@ -33,18 +34,18 @@ export default async function AdminStudentsPage() {
           <h1 className="font-head text-3xl text-navy">Students</h1>
           <p className="text-slate-500 mt-1">Manage user accounts and enrollment</p>
         </div>
-        <AdminStudentsClient cohorts={cohorts || []} />
+        <AdminStudentsClient cohorts={cohorts || []} students={students || []} />
       </div>
 
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-        
+      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-visible">
+
         {/* Toolbar */}
         <div className="p-4 border-b border-slate-100 flex gap-4">
           <div className="relative flex-1 max-w-md">
             <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
-            <input 
-              type="text" 
-              placeholder="Search by name or email..." 
+            <input
+              type="text"
+              placeholder="Search by name or email..."
               className="w-full pl-9 pr-4 py-2 rounded-lg bg-slate-50 border border-slate-200 text-[13px] outline-none focus:border-teal focus:ring-2 focus:ring-teal/20"
             />
           </div>
@@ -64,7 +65,7 @@ export default async function AdminStudentsPage() {
             <p className="text-slate-500 text-sm mt-1">Invite students to join the platform.</p>
           </div>
         ) : (
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto overflow-y-visible">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-slate-50 border-b border-slate-200">
@@ -77,7 +78,7 @@ export default async function AdminStudentsPage() {
               </thead>
               <tbody className="divide-y divide-slate-100">
                 {students.map((student) => {
-                  const cohorts = student.cohort_members.map(m => m.cohort?.cohort_name).filter(Boolean)
+                  const studentCohorts = student.cohort_members.map(m => m.cohort?.cohort_name).filter(Boolean)
                   return (
                     <tr key={student.id} className="hover:bg-slate-50/50 transition">
                       <td className="px-6 py-4">
@@ -86,16 +87,16 @@ export default async function AdminStudentsPage() {
                       </td>
                       <td className="px-6 py-4">
                         <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-semibold
-                          ${student.status === 'active' ? 'bg-emerald-100 text-emerald-800' : 
-                            student.status === 'invited' ? 'bg-amber-100 text-amber-800' : 
+                          ${student.status === 'active' ? 'bg-emerald-100 text-emerald-800' :
+                            student.status === 'invited' ? 'bg-amber-100 text-amber-800' :
                             'bg-slate-100 text-slate-600'}`}>
-                          {student.status}
+                          {student.status || 'pending'}
                         </span>
                       </td>
                       <td className="px-6 py-4">
-                        {cohorts.length > 0 ? (
+                        {studentCohorts.length > 0 ? (
                           <div className="flex flex-wrap gap-1">
-                            {cohorts.map((c, i) => (
+                            {studentCohorts.map((c, i) => (
                               <span key={i} className="inline-block px-2 py-0.5 rounded border border-slate-200 bg-white text-[12px] text-slate-600">
                                 {c}
                               </span>
@@ -109,9 +110,7 @@ export default async function AdminStudentsPage() {
                         {new Date(student.created_at).toLocaleDateString()}
                       </td>
                       <td className="px-6 py-4 text-right">
-                        <button className="p-2 rounded-lg text-slate-400 hover:text-navy hover:bg-slate-100 transition">
-                          <MoreVertical size={18} />
-                        </button>
+                        <StudentRowActions student={student} cohorts={cohorts || []} />
                       </td>
                     </tr>
                   )

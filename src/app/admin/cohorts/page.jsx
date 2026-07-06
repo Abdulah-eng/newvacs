@@ -1,7 +1,7 @@
 import React from 'react'
 import { createClient } from '../../../lib/supabase/server'
-import { Users, Calendar, Settings, MoreVertical } from 'lucide-react'
-import { AdminCohortsClient } from '../../../components/admin/AdminCohortsClient'
+import { Users, Calendar } from 'lucide-react'
+import { AdminCohortsClient, CohortRowActions } from '../../../components/admin/AdminCohortsClient'
 
 export const metadata = {
   title: 'Manage Cohorts | VACS Admin',
@@ -10,7 +10,6 @@ export const metadata = {
 export default async function AdminCohortsPage() {
   const supabase = await createClient()
 
-  // Fetch cohorts with their member counts
   const { data: cohorts, error } = await supabase
     .from('cohorts')
     .select(`
@@ -26,10 +25,10 @@ export default async function AdminCohortsPage() {
           <h1 className="font-head text-3xl text-navy">Cohorts</h1>
           <p className="text-slate-500 mt-1">Manage student groups and enrollment</p>
         </div>
-        <AdminCohortsClient />
+        <AdminCohortsClient cohorts={cohorts || []} />
       </div>
 
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-visible">
         {error ? (
           <div className="p-8 text-center text-red-500">Failed to load cohorts: {error.message}</div>
         ) : cohorts?.length === 0 ? (
@@ -41,7 +40,7 @@ export default async function AdminCohortsPage() {
             <p className="text-slate-500 text-sm mt-1">Create your first cohort to start adding students.</p>
           </div>
         ) : (
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto overflow-y-visible">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-slate-50 border-b border-slate-200">
@@ -61,29 +60,29 @@ export default async function AdminCohortsPage() {
                     </td>
                     <td className="px-6 py-4">
                       <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-semibold
-                        ${cohort.status === 'active' ? 'bg-teal/10 text-teal' : 
-                          cohort.status === 'completed' ? 'bg-indigo-100 text-indigo-700' : 
+                        ${cohort.status === 'active' ? 'bg-teal/10 text-teal' :
+                          cohort.status === 'completed' ? 'bg-indigo-100 text-indigo-700' :
                           'bg-slate-100 text-slate-600'}`}>
-                        {cohort.status}
+                        {cohort.status || 'draft'}
                       </span>
                     </td>
                     <td className="px-6 py-4">
                       <div className="flex items-center gap-2">
                         <Users size={15} className="text-slate-400" />
-                        <span className="text-[14px] font-medium text-slate-700">{cohort.members[0].count}</span>
+                        <span className="text-[14px] font-medium text-slate-700">
+                          {cohort.members?.[0]?.count ?? 0}
+                        </span>
                       </div>
                     </td>
                     <td className="px-6 py-4">
                       <div className="flex items-center gap-2 text-[13px] text-slate-600">
                         <Calendar size={14} className="text-slate-400" />
-                        {cohort.start_date ? new Date(cohort.start_date).toLocaleDateString() : 'TBD'} - 
+                        {cohort.start_date ? new Date(cohort.start_date).toLocaleDateString() : 'TBD'} –{' '}
                         {cohort.end_date ? new Date(cohort.end_date).toLocaleDateString() : 'TBD'}
                       </div>
                     </td>
                     <td className="px-6 py-4 text-right">
-                      <button className="p-2 rounded-lg text-slate-400 hover:text-navy hover:bg-slate-100 transition">
-                        <MoreVertical size={18} />
-                      </button>
+                      <CohortRowActions cohort={cohort} />
                     </td>
                   </tr>
                 ))}

@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { Modal } from './Modal'
-import { Mail, User, AlertCircle, CheckCircle2 } from 'lucide-react'
+import { Mail, User, AlertCircle, CheckCircle2, MailX } from 'lucide-react'
 
 export function InviteStudentModal({ isOpen, onClose, onSuccess, cohorts = [] }) {
   const [email, setEmail] = useState('')
@@ -9,11 +9,13 @@ export function InviteStudentModal({ isOpen, onClose, onSuccess, cohorts = [] })
   const [selectedCohort, setSelectedCohort] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const [isRateLimit, setIsRateLimit] = useState(false)
   const [success, setSuccess] = useState(false)
 
   async function handleSubmit(e) {
     e.preventDefault()
     setError('')
+    setIsRateLimit(false)
     setLoading(true)
 
     try {
@@ -23,24 +25,33 @@ export function InviteStudentModal({ isOpen, onClose, onSuccess, cohorts = [] })
         body: JSON.stringify({
           email,
           full_name: fullName,
-          role: 'student'
+          role: 'student',
+          cohort_id: selectedCohort || null,
         })
       })
 
       const data = await res.json()
 
       if (!res.ok) {
-        throw new Error(data.error || 'Failed to send invite')
+        const msg = data.error || 'Failed to send invite'
+        // Detect Supabase email rate limit
+        if (msg.toLowerCase().includes('rate limit') || msg.toLowerCase().includes('email rate')) {
+          setIsRateLimit(true)
+          setError('Supabase has a limit of 2–4 invite emails per hour on the free plan. You can either wait an hour, or create the account without sending an email — the student can use "Forgot Password" to set their password.')
+        } else {
+          setError(msg)
+        }
+        return
       }
 
-      // Assign to cohort if selected
+      // Assign to cohort if selected and not already done server-side
       if (selectedCohort && data.user_id) {
         const { createClient } = await import('../../lib/supabase/client')
         const supabase = createClient()
-        await supabase.from('cohort_members').insert({
+        await supabase.from('cohort_members').upsert({
           user_id: data.user_id,
           cohort_id: selectedCohort
-        })
+        }, { onConflict: 'user_id,cohort_id' })
       }
 
       setSuccess(true)
@@ -56,11 +67,39 @@ export function InviteStudentModal({ isOpen, onClose, onSuccess, cohorts = [] })
     }
   }
 
+  // Fallback: create profile row directly, no email sent
+  async function handleCreateWithoutEmail() {
+    setLoading(true)
+    setError('')
+    try {
+      const res = await fetch('/api/auth/invite', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          full_name: fullName,
+          role: 'student',
+          cohort_id: selectedCohort || null,
+          skip_email: true,
+        })
+      })
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error || 'Failed to create account')
+      setSuccess(true)
+      setTimeout(() => { handleClose(); if (onSuccess) onSuccess() }, 1500)
+    } catch (err) {
+      setError(err.message)
+    } finally {
+      setLoading(false)
+    }
+  }
+
   function handleClose() {
     setEmail('')
     setFullName('')
     setSelectedCohort('')
     setError('')
+    setIsRateLimit(false)
     setSuccess(false)
     onClose()
   }
@@ -83,9 +122,21 @@ export function InviteStudentModal({ isOpen, onClose, onSuccess, cohorts = [] })
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">
           {error && (
-            <div className="flex items-center gap-2 rounded-lg border border-red-200 bg-red-50 p-3">
-              <AlertCircle size={16} className="text-red-500 shrink-0" />
-              <p className="text-[13px] text-red-700">{error}</p>
+            <div className="rounded-lg border border-red-200 bg-red-50 p-3 space-y-2">
+              <div className="flex items-start gap-2">
+                <AlertCircle size={16} className="text-red-500 shrink-0 mt-0.5" />
+                <p className="text-[13px] text-red-700">{error}</p>
+              </div>
+              {isRateLimit && (
+                <button
+                  type="button"
+                  onClick={handleCreateWithoutEmail}
+                  disabled={loading}
+                  className="w-full flex items-center justify-center gap-2 mt-1 py-2 rounded-lg bg-amber-100 border border-amber-300 text-amber-800 text-[13px] font-semibold hover:bg-amber-200 transition disabled:opacity-60"
+                >
+                  <MailX size={15} /> Create Account Without Sending Email
+                </button>
+              )}
             </div>
           )}
 
