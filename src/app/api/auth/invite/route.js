@@ -48,9 +48,14 @@ export async function POST(request) {
 
   } else {
     // ── Normal invite (sends email) ───────────────────────────────────────
+    let appUrl = process.env.NEXT_PUBLIC_APP_URL || ''
+    if (appUrl && !appUrl.startsWith('http://') && !appUrl.startsWith('https://')) {
+      appUrl = `https://${appUrl}`
+    }
+    
     const { data, error } = await supabase.auth.admin.inviteUserByEmail(email, {
       data: { full_name, role },
-      redirectTo: `${process.env.NEXT_PUBLIC_APP_URL}/auth/callback`,
+      redirectTo: `${appUrl}/auth/callback`,
     })
 
     if (error) {
