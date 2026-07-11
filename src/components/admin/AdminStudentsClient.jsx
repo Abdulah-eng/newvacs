@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useRef, useEffect } from 'react'
-import { UserPlus, MoreVertical, UserCheck, Trash2, Users } from 'lucide-react'
+import { UserPlus, MoreVertical, UserCheck, Trash2, Users, LineChart } from 'lucide-react'
+import Link from 'next/link'
 import { InviteStudentModal } from './InviteStudentModal'
 import { useRouter } from 'next/navigation'
 import { createClient } from '../../lib/supabase/client'
@@ -88,6 +89,14 @@ function StudentMenu({ student, cohorts, onRefresh }) {
               ))}
             </div>
           </div>
+
+          {/* View Progress */}
+          <Link
+            href={`/admin/students/${student.id}`}
+            className="w-full text-left px-4 py-2.5 text-[13px] text-slate-700 hover:bg-slate-50 transition flex items-center gap-2 border-b border-slate-100"
+          >
+            <LineChart size={14} className="text-teal" /> View Progress
+          </Link>
 
           {/* Remove */}
           <button
