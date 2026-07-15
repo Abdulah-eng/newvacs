@@ -242,24 +242,35 @@ export default function SimulationShell({ caseData, onExit }) {
 
           {/* Main content */}
           <main className="flex-1 min-h-0 overflow-y-auto thin-scroll">
-            <div className="max-w-5xl mx-auto px-4 sm:px-5 py-6 fade-up" key={active}>
-            {active === 'snapshot' && <SnapshotTab c={caseData} />}
-            {active === 'subjective' && <SubjectiveTab c={caseData} interview={state.interview} discovered={state.discovered} onField={setInterview} />}
-            {active === 'objective' && <ObjectiveTab c={caseData} />}
-            {active === 'medications' && <MedicationsTab c={caseData} />}
-            {active === 'allergies' && <AllergiesTab c={caseData} />}
-            {active === 'vitals' && <VitalsTab c={caseData} />}
-            {active === 'labs' && <LabsTab c={caseData} />}
-            {active === 'problems' && <ProblemListTab c={caseData} />}
-            {active === 'interview' && <PatientInterviewTab c={caseData} chat={state.chat} interview={state.interview} discovered={state.discovered} onAsk={ask} onField={setInterview} />}
-            {active === 'assessment' && <AssessmentTab c={caseData} assessment={state.assessment} confidence={state.confidence} onAnswer={setAssessment} onConfidence={setConfidence} />}
-            {active === 'plan' && <PlanTab c={caseData} selections={state.planSelections} freetext={state.planFreetext} onToggle={togglePlan} onText={setPlanText} />}
-            {active === 'guiding' && <GuidingQuestionsTab c={caseData} />}
-            {active === 'counseling' && <CounselingTab c={caseData} onView={markCounseling} />}
-            {active === 'soap' && <SOAPNoteTab c={caseData} state={state} soap={state.soap} onChange={setSoap} onGraded={markGraded} />}
-            {active === 'preceptor' && <PreceptorView c={caseData} unlocked={state.preceptorUnlocked} onUnlock={unlockPreceptor} />}
-          </div>
-        </main>
+            <div className="max-w-5xl mx-auto px-4 sm:px-5 py-6">
+              
+              {/* Standard tabs mount/unmount to keep DOM light and trigger fade-up */}
+              {active !== 'interview' && (
+                <div key={active} className="fade-up">
+                  {active === 'snapshot' && <SnapshotTab c={caseData} />}
+                  {active === 'subjective' && <SubjectiveTab c={caseData} interview={state.interview} discovered={state.discovered} onField={setInterview} />}
+                  {active === 'objective' && <ObjectiveTab c={caseData} />}
+                  {active === 'medications' && <MedicationsTab c={caseData} />}
+                  {active === 'allergies' && <AllergiesTab c={caseData} />}
+                  {active === 'vitals' && <VitalsTab c={caseData} />}
+                  {active === 'labs' && <LabsTab c={caseData} />}
+                  {active === 'problems' && <ProblemListTab c={caseData} />}
+                  {active === 'assessment' && <AssessmentTab c={caseData} assessment={state.assessment} confidence={state.confidence} onAnswer={setAssessment} onConfidence={setConfidence} />}
+                  {active === 'plan' && <PlanTab c={caseData} selections={state.planSelections} freetext={state.planFreetext} onToggle={togglePlan} onText={setPlanText} />}
+                  {active === 'guiding' && <GuidingQuestionsTab c={caseData} />}
+                  {active === 'counseling' && <CounselingTab c={caseData} onView={markCounseling} />}
+                  {active === 'soap' && <SOAPNoteTab c={caseData} state={state} soap={state.soap} onChange={setSoap} onGraded={markGraded} />}
+                  {active === 'preceptor' && <PreceptorView c={caseData} unlocked={state.preceptorUnlocked} onUnlock={unlockPreceptor} />}
+                </div>
+              )}
+
+              {/* Patient Interview Tab stays permanently mounted so the Avatar WebRTC connection doesn't drop when switching tabs to take notes! */}
+              <div className={active === 'interview' ? 'block fade-up' : 'hidden'}>
+                <PatientInterviewTab c={caseData} chat={state.chat} interview={state.interview} discovered={state.discovered} onAsk={ask} onField={setInterview} />
+              </div>
+              
+            </div>
+          </main>
         </div>
       </div>
     </div>
