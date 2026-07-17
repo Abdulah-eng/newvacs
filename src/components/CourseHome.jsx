@@ -1,7 +1,7 @@
 import React from 'react'
 import { WEEKS, WEEK1 } from '../data/weeks'
 import { isDemoMode } from '../lib/moduleState'
-import { Activity, LogOut, Unlock, Lock, ArrowRight, CheckCircle2, GraduationCap, Stethoscope, FlaskConical, Users } from 'lucide-react'
+import { Activity, LogOut, Unlock, Lock, ArrowRight, CheckCircle2, GraduationCap, Stethoscope, FlaskConical, Users, RefreshCw } from 'lucide-react'
 
 function WeekCard({ week, locked, onOpen }) {
   const snap = week.state.snapshot()
@@ -95,6 +95,10 @@ export default function CourseHome({ demo, onToggleDemo, onOpenWeek, onExit }) {
                 className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-[12px] font-semibold transition ring-1 ${
                   demo ? 'bg-teal text-white ring-teal/40' : 'bg-white/10 text-slate-200 ring-white/15 hover:bg-white/20'}`}>
                 {demo ? <Unlock size={14} /> : <Lock size={14} />} Demo bypass: {demo ? 'On' : 'Off'}
+              </button>
+              <button onClick={() => window.location.reload(true)} title="Force the app to pull the latest updates from the server"
+                className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2 text-[12px] font-semibold hover:bg-white/20 transition">
+                <RefreshCw size={14} /> Hard Refresh
               </button>
               <button onClick={onExit} className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2 text-[12px] font-semibold hover:bg-red-500/80 transition">
                 <LogOut size={14} /> Log out

@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import { createClient } from '../../lib/supabase/server'
-import { Activity, LayoutDashboard, Users, UserPlus, BookOpen, LogOut } from 'lucide-react'
+import { Activity, LayoutDashboard, Users, UserPlus, BookOpen, LogOut, RefreshCw } from 'lucide-react'
+import { AdminRefreshButton } from '../../components/admin/AdminRefreshButton'
 
 export const metadata = {
   title: 'VACS Admin Portal',
@@ -48,7 +49,8 @@ export default async function AdminLayout({ children }) {
 
         <div className="p-4 border-t border-white/10 text-sm">
           <p className="px-2 mb-3 text-slate-400">Logged in as {user.email}</p>
-          <form action="/auth/signout" method="post">
+          <AdminRefreshButton />
+          <form action="/auth/signout" method="post" className="mt-1">
             <button className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition">
               <LogOut size={16} /> Sign out
             </button>
