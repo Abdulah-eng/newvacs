@@ -9,6 +9,13 @@ export async function getOrCreateInterview(weekId, patientId, visitDay) {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) return null
 
+  // UUID validation check to prevent 400 bad request (22P02 invalid input syntax for type uuid)
+  const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(weekId);
+  if (!isUuid) {
+    console.warn(`getOrCreateInterview: invalid weekId UUID: ${weekId}. Curriculum weeks table may not be populated.`);
+    return null;
+  }
+
   let { data, error } = await supabase
     .from('patient_interviews')
     .select('*')

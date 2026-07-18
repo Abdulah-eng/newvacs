@@ -12,7 +12,7 @@ async function resolveWeekId(weekStr) {
   if (weekUuidCache[weekStr]) return weekUuidCache[weekStr]
   const num = parseInt(weekStr.replace('week', ''), 10) || 1
   const supabase = createClient()
-  const { data } = await supabase.from('weeks').select('id').eq('week_number', num).single()
+  const { data } = await supabase.from('weeks').select('id').eq('week_number', num).maybeSingle()
   if (data?.id) {
     weekUuidCache[weekStr] = data.id
     return data.id

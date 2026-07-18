@@ -38,9 +38,15 @@ export async function callJsonLlm(messages, modelOverride = null) {
 
     // Convert OpenAI-style message array to Gemini format
     const systemMsg = messages.find(m => m.role === 'system')?.content || ''
-    const userMsg = messages.find(m => m.role === 'user')?.content || ''
+    
+    let promptText = systemMsg + '\n\n'
+    for (const msg of messages) {
+      if (msg.role === 'system') continue
+      promptText += `${msg.role === 'assistant' ? 'AI' : 'User'}: ${msg.content}\n\n`
+    }
+    promptText += 'AI: '
 
-    const result = await model.generateContent(`${systemMsg}\n\n${userMsg}`)
+    const result = await model.generateContent(promptText)
     const text = result.response.text()
     return JSON.parse(text)
 
@@ -74,9 +80,15 @@ export async function callLlm(messages, modelOverride = null) {
     })
 
     const systemMsg = messages.find(m => m.role === 'system')?.content || ''
-    const userMsg = messages.find(m => m.role === 'user')?.content || ''
+    
+    let promptText = systemMsg + '\n\n'
+    for (const msg of messages) {
+      if (msg.role === 'system') continue
+      promptText += `${msg.role === 'assistant' ? 'AI' : 'User'}: ${msg.content}\n\n`
+    }
+    promptText += 'AI: '
 
-    const result = await model.generateContent(`${systemMsg}\n\n${userMsg}`)
+    const result = await model.generateContent(promptText)
     return result.response.text()
 
   } else if (provider === 'groq') {
