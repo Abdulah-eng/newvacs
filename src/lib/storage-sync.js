@@ -17,7 +17,7 @@ async function resolveWeekId(weekStr) {
     weekUuidCache[weekStr] = data.id
     return data.id
   }
-  return weekStr // fallback
+  return null // fallback to null instead of invalid UUID string
 }
 
 // Fire and forget sync from localStorage to Supabase
@@ -31,6 +31,7 @@ export async function syncToSupabase(caseId, state) {
     if (caseId.startsWith('summary-')) {
       const weekStr = caseId.split('-')[1] || 'week1'
       const dbWeekId = await resolveWeekId(weekStr)
+      if (!dbWeekId) return
       if (state.overall_weekly_score !== undefined) {
         await saveWeeklySummary(dbWeekId, {
           quiz_first_score: state._meta?.quizFirstScore || 0,
@@ -47,6 +48,7 @@ export async function syncToSupabase(caseId, state) {
     if (caseId.startsWith('journal-')) {
       const weekStr = caseId.split('-')[1] || 'week1'
       const dbWeekId = await resolveWeekId(weekStr)
+      if (!dbWeekId) return
       const submission = await saveJournalResponses(dbWeekId, {
         responses: state.responses || {},
         revealed_keys: state.revealed || {},
@@ -67,6 +69,7 @@ export async function syncToSupabase(caseId, state) {
       // Just save the most recent attempt
       if (attempts.length > 0) {
         const dbWeekId = await resolveWeekId('week1')
+        if (!dbWeekId) return
         const lastAttempt = attempts[attempts.length - 1]
         const attempt = await startQuizAttempt(dbWeekId)
         if (attempt) {
@@ -83,6 +86,7 @@ export async function syncToSupabase(caseId, state) {
     const [patientId, day] = caseId.split('-')
     if (!patientId || !day) return
     const dbWeekId = await resolveWeekId('week1')
+    if (!dbWeekId) return
 
     // Interview
     if (state.chat && state.chat.length > 0) {
@@ -144,6 +148,7 @@ export async function hydrateFromSupabase(weekStr = 'week1') {
     if (!user) return
 
     const dbWeekId = await resolveWeekId(weekStr)
+    if (!dbWeekId) return
 
     // 1. Quizzes
     const { data: quizzes } = await supabase

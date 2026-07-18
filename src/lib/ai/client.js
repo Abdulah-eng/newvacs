@@ -47,8 +47,17 @@ export async function callJsonLlm(messages, modelOverride = null) {
     promptText += 'AI: '
 
     const result = await model.generateContent(promptText)
-    const text = result.response.text()
-    return JSON.parse(text)
+    let text = result.response.text()
+    
+    // Clean markdown code blocks if the model wrapped the JSON
+    text = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim()
+    
+    try {
+      return JSON.parse(text)
+    } catch (e) {
+      console.error('Gemini JSON parse error. Raw text:', text)
+      throw new Error('Failed to parse AI response as JSON')
+    }
 
   } else if (provider === 'groq') {
     const groq = getGroqClient()
