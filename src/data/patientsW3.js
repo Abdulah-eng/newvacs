@@ -131,6 +131,14 @@ const sarahThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'control', label: 'Asthma Control', placeholder: 'Any symptoms or rescue use?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What evidence suggests the current regimen is working?',
+    'Why should inhaler technique be assessed before escalation?',
+    'What inhaler technique errors were identified?',
+    'Why is escalation not appropriate at this time?',
+    'What monitoring is needed moving forward?',
+    'How has allergic rhinitis affected this case?'
+  ],
   INTERVIEW_KNOWLEDGE: [
     { id: 'w3a3_ctrl', topic: 'Controlled', field: 'control', keywords: ['symptoms', 'rescue', 'use', 'feel'], response: "I use the Symbicort twice a day. I haven't needed to take any extra puffs in weeks, even when I exercise." },
   ],
@@ -253,6 +261,11 @@ const bobThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'symptoms', label: 'Symptom check', placeholder: 'Any exacerbations or rescue use?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What evidence suggests adherence is contributing to persistent symptoms?',
+    'Why is escalation not appropriate today?',
+    'What interventions could improve adherence?'
+  ],
   INTERVIEW_KNOWLEDGE: [
     { id: 'w3b3_sym', topic: 'Symptoms', field: 'symptoms', keywords: ['exacerbation', 'rescue', 'albuterol', 'feel', 'breathing'], response: "I hardly touch the albuterol now. I can walk to the mailbox and back without stopping. No flare-ups." },
   ],
@@ -374,6 +387,13 @@ const mariaThu = makeCase({
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'update', label: 'Clinical Update', placeholder: 'How has she been feeling?' },
+  ],
+  GUIDING_QUESTIONS: [
+    'What evidence suggests the current inhaler regimen is working?',
+    'Why is escalation not appropriate today?',
+    'How does allergic rhinitis affect respiratory disease control?',
+    'Why is biologic therapy not indicated?',
+    'What should be monitored before the next visit?'
   ],
   INTERVIEW_KNOWLEDGE: [
     { id: 'w3c3_upd', topic: 'Update', field: 'update', keywords: ['feel', 'breathing', 'exacerbation', 'flare'], response: "I haven't had a single flare-up. I'm breathing better, sleeping better, and I feel like I have my life back." },

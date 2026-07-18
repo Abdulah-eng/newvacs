@@ -303,16 +303,14 @@ const caseTue = {
   ],
 
   GUIDING_QUESTIONS: [
-    'What is Maria’s BP classification, and what target applies given her diabetes?',
-    'Before increasing any dose, what should you confirm about how she takes and measures things at home?',
-    'What OTC product might she be taking that affects both BP and kidneys — and would she even mention it unprompted?',
-    'Her A1C is 8.2% and rising. Is that "uncontrolled," and what is her trend telling you?',
-    'What single diabetes monitoring test is missing from her chart entirely?',
-    'Does a 54-year-old with diabetes meet a statin indication regardless of LDL?',
-    'How might her knee pain be driving a hidden risk to her kidneys and BP?',
-    'What lifestyle factors surfaced only when you interviewed her?',
-    'How soon should she return after a medication change, and why?',
-    'What does she actually understand about her A1C, and how would you explain it simply?',
+    'What factors contributed to this patient\'s uncontrolled blood pressure?',
+    'Why did you choose medication intensification rather than adherence intervention alone?',
+    'What additional information is needed before fully evaluating kidney risk?',
+    'Why does diabetes change your blood pressure goal?',
+    'Why is statin therapy indicated even though this patient has never had a heart attack or stroke?',
+    'What would make your treatment plan difficult for this patient to follow?',
+    'How would you explain A1C to this patient in plain language?',
+    'What would you monitor after increasing lisinopril?'
   ],
 
   COUNSELING: [
@@ -657,16 +655,14 @@ const caseWed = {
   ],
 
   GUIDING_QUESTIONS: [
-    'Her A1C went from 8.2% to 7.5%. Is that failure — or meaningful progress that just isn’t finished?',
-    'What is brand-new on this lab panel that wasn’t there before, and why does it matter?',
-    'How does a UACR of 45 mg/g change your priorities even though her eGFR is normal?',
-    'Which is more compelling here for kidney protection: an SGLT2 inhibitor or another BP pill?',
-    'She wants to lose weight and would accept a weekly injection — how does that shape options?',
-    'Is the ACE inhibitor helping or hurting her kidneys? What do you monitor on it?',
-    'BP is 134/82. Is she at goal? What does the home average confirm?',
-    'Her LDL is 78 on a statin — continue, stop, or intensify?',
-    'How do you talk about −2.5 kg so she feels encouraged, not defeated?',
-    'What does she actually understand about "protein in the urine," and how would you explain it?',
+    'Why did you choose to intensify therapy or not intensify therapy today?',
+    'What does a UACR of 45 mg/g tell you about this patient\'s future risk?',
+    'How does albuminuria change your treatment priorities?',
+    'Why isn\'t a normal creatinine enough to rule out diabetic kidney disease?',
+    'What therapies may become appropriate if albuminuria persists?',
+    'What evidence suggests the current treatment plan is working?',
+    'What additional goals remain unmet?',
+    'If you only looked at today\'s numbers and ignored the trends, what mistake might you make?'
   ],
 
   COUNSELING: [

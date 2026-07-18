@@ -129,6 +129,14 @@ const michaelThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'titration', label: 'Medication Education', placeholder: 'Explain why doses need to increase' },
   ],
+  GUIDING_QUESTIONS: [
+    'What findings demonstrate treatment success?',
+    'Why is MRA therapy appropriate today?',
+    'Should mild orthostatic symptoms change management?',
+    'What monitoring is required after spironolactone initiation?',
+    'Why is BNP trending useful?',
+    'What is the next long-term goal?'
+  ],
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4a3_titrate', topic: 'Titration', field: 'titration', keywords: ['why', 'increase', 'feel fine', 'dose'], response: "If I feel good, why do we need to mess with the doses? Can't we just leave it here?" },
   ],
@@ -245,6 +253,14 @@ const angelaThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Adherence Check', placeholder: 'Check on her daily routine' },
   ],
+  GUIDING_QUESTIONS: [
+    'Why is minor bruising managed differently than major bleeding?',
+    'Why is continuation of apixaban appropriate?',
+    'What factors contributed to nonadherence?',
+    'What counseling points should be provided?',
+    'How does shared decision-making improve outcomes?',
+    'What is the major teaching pearl of this encounter?'
+  ],
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4b3_adh', topic: 'Adherence', field: 'adherence', keywords: ['take', 'miss', 'every day', 'routine'], response: "I set a pillbox like you suggested. I take the Eliquis every morning and night. No problems at all." },
   ],
@@ -293,6 +309,14 @@ const robertTue = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'questions', label: 'Patient Questions', placeholder: 'What does he want to know?' },
   ],
+  GUIDING_QUESTIONS: [
+    'Why is continuation of GDMT appropriate despite declining eGFR?',
+    'What factors may contribute to CKD progression?',
+    'Why is potassium monitoring important?',
+    'What is the significance of the BNP trend?',
+    'How should dialysis concerns be addressed?',
+    'What is the major teaching pearl of this encounter?'
+  ],
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4c_q', topic: 'Evidence question', field: 'questions', keywords: ['labs', 'kidney', 'creatinine', 'dose', 'apixaban'], response: "My creatinine is 1.4 and I weigh 58 kg. Shouldn't my Apixaban dose be lowered? I read online that older, lighter people need a lower dose." },
   ],
@@ -327,6 +351,14 @@ const robertWed = makeCase({
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'nosebleeds', label: 'Bleeding details', placeholder: 'How severe are the bleeds?' },
+  ],
+  GUIDING_QUESTIONS: [
+    'Why is bridging generally unnecessary in this patient?',
+    'What factors influence interruption timing?',
+    'What are the risks of unnecessary bridging?',
+    'Why does this patient prefer written instructions?',
+    'How does CKD influence anticoagulation management?',
+    'What is the major teaching pearl of this encounter?'
   ],
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4c2_bleed', topic: 'Epistaxis', field: 'nosebleeds', keywords: ['nose', 'bleed', 'epistaxis', 'severe', 'stop'], response: "They aren't huge gushers, they stop if I pinch my nose for a few minutes. But it makes me nervous. Is there a safer drug that won't make me bleed?" },

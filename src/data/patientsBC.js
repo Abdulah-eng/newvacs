@@ -106,8 +106,14 @@ const jamesTue = makeCase({
     ] },
   ],
   GUIDING_QUESTIONS: [
-    'Why might a medication be active on the chart yet never have been taken?',
-    'How does medication stretching impact both diabetes and hypertension?',
+    'What was the primary cause of uncontrolled diabetes in this patient?',
+    'Why would adding another medication potentially be inappropriate today?',
+    'What strategies can pharmacists use to address medication affordability?',
+    'How did medication stretching affect your interpretation of blood pressure and A1C?',
+    'Why is medication reconciliation critical in ambulatory care?',
+    'What clues suggested a health literacy deficit?',
+    'How would you explain A1C to this patient?',
+    'What is the difference between medication nonadherence and medication non-initiation?'
   ],
   COUNSELING: [
     { id: 'b_c1', title: 'Addressing Cost', body: [
@@ -177,7 +183,16 @@ const jamesWed = makeCase({
       { key: 'bw_o4', label: 'Stop empagliflozin', correct: false },
     ] },
   ],
-  GUIDING_QUESTIONS: ['When is observation preferred over immediate intensification?'],
+  GUIDING_QUESTIONS: [
+    'What evidence suggests the affordability intervention was successful?',
+    'Why is it important to reassess medication affordability even after improvement?',
+    'Would you intensify diabetes therapy today? Why or why not?',
+    'Would you intensify hypertension therapy today? Why or why not?',
+    'How can pharmacists improve long-term medication access?',
+    'What evidence suggests adherence improved?',
+    'What remaining barriers exist?',
+    'How would you explain the relationship between medication access and clinical outcomes?'
+  ],
   PRECEPTOR: {
     keyIssues: ['Clinical improvement on current therapy', 'Persistent affordability concerns', 'A1C and BP nearing goal'],
     assessment: ['Improvement suggests therapy is working', 'Observation is reasonable before further intensification', 'Must assess long-term access sustainability'],
@@ -233,7 +248,16 @@ const jamesThu = makeCase({
       { key: 'bth_o3', label: 'Discontinue empagliflozin because he is near goal', correct: false },
     ] },
   ],
-  GUIDING_QUESTIONS: ['How does prior access difficulty inform future contingency planning?'],
+  GUIDING_QUESTIONS: [
+    'What was the primary intervention that improved this patient\'s outcomes?',
+    'Why did this patient\'s A1C improve?',
+    'Would you intensify diabetes therapy today? Why or why not?',
+    'Would you intensify hypertension therapy today? Why or why not?',
+    'How should affordability be monitored in future visits?',
+    'What evidence supports improved adherence?',
+    'What remaining opportunities for optimization exist?',
+    'What lessons from this case can be applied to future ambulatory care patients?'
+  ],
   PRECEPTOR: {
     keyIssues: ['BP controlled, A1C near goal', 'Sustained access to medication', 'Ongoing affordability anxiety'],
     assessment: ['Significant longitudinal improvement', 'Current therapy is safe, effective, and well tolerated'],
@@ -340,8 +364,22 @@ const lindaTue = makeCase({
     ] },
   ],
   GUIDING_QUESTIONS: [
-    'How do KDIGO and ADA guidelines guide prioritization for patients with CKD G3aA3?',
-    'Why is the highest A1C not always the highest therapeutic priority?'
+    'How would you classify this patient\'s CKD stage?',
+    'How would you classify this patient\'s albuminuria?',
+    'What is this patient\'s KDIGO risk category?',
+    'What intervention would you prioritize first?',
+    'Why might reducing albuminuria be important?',
+    'How does prior STEMI influence treatment decisions?',
+    'Would you prioritize A1C reduction, BP reduction, LDL reduction, or albuminuria reduction?',
+    'How would you explain cardiorenal protection to this patient?',
+    'How should you interpret the reduction in UACR?',
+    'Would you classify this patient as low risk now?',
+    'What is the next highest-priority intervention?',
+    'Why is LDL-C still important despite improving kidney outcomes?',
+    'Would you consider finerenone in this patient?',
+    'What evidence suggests the original intervention worked?',
+    'How would you explain residual risk to this patient?',
+    'What long-term complications remain most concerning?'
   ],
   COUNSELING: [
     { id: 'c_c1', title: 'Cardiorenal Protection', body: [
@@ -408,7 +446,16 @@ const lindaWed = makeCase({
       { key: 'cw_o4', label: 'Assume risk has resolved because UACR improved', correct: false },
     ] },
   ],
-  GUIDING_QUESTIONS: ['How do you choose between finerenone and lipid optimization at this stage?'],
+  GUIDING_QUESTIONS: [
+    'How should you interpret the reduction in UACR?',
+    'Would you classify this patient as low risk now?',
+    'What should become the next therapeutic priority?',
+    'Why does LDL-C remain important despite improving kidney outcomes?',
+    'Would you consider finerenone in this patient?',
+    'What evidence suggests the initial intervention strategy was successful?',
+    'How would you explain residual risk to this patient?',
+    'What long-term complications remain most concerning?'
+  ],
   PRECEPTOR: {
     keyIssues: ['Improvement in UACR and BP', 'Persistent A3 albuminuria', 'Residual ASCVD risk (LDL 86)'],
     assessment: ['Improvement is meaningful but risk remains elevated', 'Secondary prevention patients require sequential intervention prioritization'],
@@ -467,7 +514,16 @@ const lindaThu = makeCase({
       { key: 'cth_o3', label: 'Discontinue medications because she is doing well', correct: false },
     ] },
   ],
-  GUIDING_QUESTIONS: ['What information is critical during a transition of care handoff?'],
+  GUIDING_QUESTIONS: [
+    'How would you describe this patient\'s overall progress?',
+    'Has this patient\'s risk been eliminated?',
+    'Why should ACE inhibitor and SGLT2 inhibitor therapy be continued?',
+    'Why should high-intensity statin therapy be continued?',
+    'What monitoring should occur moving forward?',
+    'How would you explain residual risk to this patient?',
+    'What evidence suggests the current treatment strategy has been successful?',
+    'What is the most important lesson from this case?'
+  ],
   PRECEPTOR: {
     keyIssues: ['Cumulative success of sequential interventions', 'Need for long-term monitoring plan', 'Safe transition of care'],
     assessment: ['Patient achieved major risk reduction across multiple domains', 'Regimen is complex and requires clear documentation for PCP'],

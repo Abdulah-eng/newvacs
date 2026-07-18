@@ -112,6 +112,14 @@ const sarahThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'tobacco', label: 'Tobacco Plan', placeholder: 'How does she want to quit?' },
   ],
+  GUIDING_QUESTIONS: [
+    'Has this patient responded to treatment?',
+    'Has this patient achieved remission?',
+    'Why is increasing sertraline reasonable?',
+    'What factors should be assessed before increasing the dose?',
+    'Why should CBT continue?',
+    'How should tobacco use be addressed today?'
+  ],
   INTERVIEW_KNOWLEDGE: [
     { id: 'w5a3_tob', topic: 'Tobacco plan', field: 'tobacco', keywords: ['quit', 'smoke', 'how', 'medicine', 'patch'], response: "I'd like to try whatever is most effective. I've heard there are pills or patches?" },
   ],
@@ -228,6 +236,13 @@ const jessicaThu = makeCase({
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'maintenance', label: 'Maintenance Education', placeholder: 'What is her plan for the medication?' },
+  ],
+  GUIDING_QUESTIONS: [
+    'Has this patient achieved remission?',
+    'Should sertraline be changed today?',
+    'What intervention may have contributed most to improvement?',
+    'What stage of change is the patient demonstrating regarding smoking?',
+    'What should be the major goals before the next visit?'
   ],
   INTERVIEW_KNOWLEDGE: [
     { id: 'w5b3_maint', topic: 'Stopping meds', field: 'maintenance', keywords: ['stop', 'plan', 'continue', 'long', 'better'], response: "Since I feel 100% better, can I stop taking the Sertraline now?" },
@@ -352,6 +367,13 @@ const davidThu = makeCase({
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'update', label: 'Clinical Update', placeholder: 'How is he doing?' },
+  ],
+  GUIDING_QUESTIONS: [
+    'Has this patient responded to treatment?',
+    'Has remission been achieved?',
+    'Should medications be changed today?',
+    'What are the most important improvements?',
+    'What remains concerning?'
   ],
   INTERVIEW_KNOWLEDGE: [
     { id: 'w5c3_upd', topic: 'Update', field: 'update', keywords: ['feel', 'hope', 'better', 'life'], response: "I have my life back. I'm engaging with my family again, enjoying my hobbies. I thought I was a lost cause." },

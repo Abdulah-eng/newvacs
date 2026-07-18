@@ -108,9 +108,14 @@ const michaelTue = makeCase({
     ] },
   ],
   GUIDING_QUESTIONS: [
-    'Why does persistent albuminuria establish CKD even with a normal eGFR?',
-    'Which questions surface an OTC the patient does not consider a "medication"?',
-    'What statin intensity matches his risk, and how does adherence factor in?',
+    'Why does this patient meet criteria for CKD despite having an eGFR of 79 mL/min/1.73m²?',
+    'What is the significance of a UACR of 118 mg/g?',
+    'Why is CKD considered an ASCVD risk-enhancing condition?',
+    'Why did you choose statin intensification rather than adherence intervention alone?',
+    'What additional factors may contribute to future CKD progression in this patient?',
+    'Why is chronic NSAID use concerning in a patient with CKD?',
+    'How would you explain albuminuria to this patient in plain language?',
+    'What should be monitored after today\'s interventions?'
   ],
   COUNSELING: [
     { id: 'a_c1', title: 'Albuminuria & NSAIDs in plain language', body: [
@@ -180,7 +185,16 @@ const michaelWed = makeCase({
       { key: 'aw_o4', label: 'Educate that albuminuria still signals ongoing kidney risk', correct: true },
     ] },
   ],
-  GUIDING_QUESTIONS: ['Is improving albuminuria a reason to relax kidney-protective therapy?', 'How do you explain CKD with a normal eGFR?'],
+  GUIDING_QUESTIONS: [
+    'How would you explain to this patient that he still has CKD despite having a normal eGFR?',
+    'Why is albuminuria still important if it improved?',
+    'What likely contributed to the LDL-C improvement?',
+    'What should be reinforced during today\'s visit?',
+    'What are the remaining modifiable risk factors?',
+    'Would you make additional medication changes today?',
+    'What monitoring should occur before the next visit?',
+    'What is the biggest unresolved issue today?'
+  ],
   PRECEPTOR: {
     keyIssues: ['Good LDL/UACR response', 'Persistent NSAID use', 'eGFR misconception'],
     assessment: ['Response confirms the plan is working', 'Albuminuria improving but still present — kidneys are not "cured"'],
@@ -348,9 +362,12 @@ const angelaTue = makeCase({
     ] },
   ],
   GUIDING_QUESTIONS: [
-    'How do you uncover a cost barrier without shaming the patient?',
-    'Why is "treatment failure" the wrong label for a never-started drug?',
-    'What lipid intensity fits CKD G3a with LDL 148?',
+    'What is the difference between nonadherence and noninitiation?',
+    'What barriers prevented rosuvastatin initiation?',
+    'Why is CKD considered a risk-enhancing condition?',
+    'How would you address concerns about statin adverse effects?',
+    'How would you determine whether cost is a barrier?',
+    'What follow-up would be necessary after therapy initiation?'
   ],
   COUNSELING: [
     { id: 'b_c1', title: 'Affordable, reassuring statin start', body: [
@@ -421,7 +438,14 @@ const angelaWed = makeCase({
       { key: 'bw_o4', label: 'Recheck lipids/UACR in ~3 months', correct: true },
     ] },
   ],
-  GUIDING_QUESTIONS: ['Does the response confirm the original problem was access?', 'Is her LDL at goal for her CKD risk?'],
+  GUIDING_QUESTIONS: [
+    'What factors suggest this may not represent clinically significant SAMS?',
+    'What likely caused the LDL-C improvement?',
+    'Why should affordability be reassessed even after initiation?',
+    'What did this encounter teach about therapeutic inertia?',
+    'Would you stop rosuvastatin today?',
+    'What monitoring should occur before the next visit?'
+  ],
   PRECEPTOR: {
     keyIssues: ['Large LDL drop after starting therapy', 'Confirms access was the issue', 'BP still slightly above goal'],
     assessment: ['The response proves the original barrier was access, not pharmacology', 'Continue and keep optimizing'],
@@ -481,7 +505,14 @@ const angelaThu = makeCase({
       { key: 'bt_o4', label: 'Reinforce lifestyle, adherence, and routine monitoring', correct: true },
     ] },
   ],
-  GUIDING_QUESTIONS: ['What is her individualized LDL goal given CKD?', 'When would you add ezetimibe?'],
+  GUIDING_QUESTIONS: [
+    'Why should rosuvastatin be continued despite LDL-C improvement?',
+    'Does this patient still have CKD?',
+    'What evidence supports continued cardiovascular risk?',
+    'Would you intensify therapy today?',
+    'What counseling should be provided regarding long-term medication use?',
+    'What should be monitored moving forward?'
+  ],
   PRECEPTOR: {
     keyIssues: ['LDL near goal', 'Durable adherence + confidence', 'Decision: add nonstatin or maintain'],
     assessment: ['Strong response; judge against an individualized goal', 'Maintain protective therapy'],
@@ -593,9 +624,12 @@ const davidTue = makeCase({
     ] },
   ],
   GUIDING_QUESTIONS: [
-    'What does persistent A3 albuminuria despite foundational therapy tell you?',
-    'How does CONFIDENCE change the conversation about finerenone + SGLT2i?',
-    'How do you turn a hyperkalemia fear into a monitoring plan?',
+    'Why is this patient considered high risk despite reasonable A1C and LDL-C values?',
+    'What does UACR 520 mg/g tell you?',
+    'Why might finerenone have been recommended previously?',
+    'What barriers prevented therapy initiation?',
+    'What additional information is needed before recommending therapy?',
+    'What should be monitored moving forward?'
   ],
   COUNSELING: [
     { id: 'c_c1', title: 'The "why" behind finerenone', body: [
@@ -669,7 +703,14 @@ const davidWed = makeCase({
       { key: 'cw_o4', label: 'Continue SGLT2i/ACEi; recognize the eGFR dip as expected', correct: true },
     ] },
   ],
-  GUIDING_QUESTIONS: ['Is 5.1 mEq/L an automatic stop?', 'What does the falling UACR tell you about benefit?'],
+  GUIDING_QUESTIONS: [
+    'What findings suggest finerenone is providing benefit?',
+    'Why should potassium be monitored?',
+    'Would you discontinue therapy today?',
+    'How would you counsel this patient regarding the eGFR change?',
+    'What residual risks remain?',
+    'What monitoring should occur before the next visit?'
+  ],
   PRECEPTOR: {
     keyIssues: ['Albuminuria improving on finerenone', 'Potassium 5.1 + expected eGFR dip', 'Anxious analytical patient'],
     assessment: ['Falling UACR shows the drug is working', 'Potassium 5.1 is interpreted in context — monitor, counsel diet, don’t reflexively stop', 'eGFR dip is expected'],
@@ -728,7 +769,14 @@ const davidThu = makeCase({
       { key: 'ct_o4', label: 'Reinforce adherence and long-term self-management', correct: true },
     ] },
   ],
-  GUIDING_QUESTIONS: ['Why is improving albuminuria a reason to continue, not stop?', 'How does his case map onto the CONFIDENCE trial?'],
+  GUIDING_QUESTIONS: [
+    'Why should finerenone be continued despite improvement?',
+    'Does this patient still have CKD?',
+    'What evidence suggests treatment is working?',
+    'What residual risks remain?',
+    'What monitoring should continue long-term?',
+    'How would you explain continued therapy to this patient?'
+  ],
   PRECEPTOR: {
     keyIssues: ['Strong cardiorenal trajectory on combination therapy', 'Potassium normalized', 'Highest-risk patient — sustained protection is the goal'],
     assessment: ['Continue the full regimen; benefit is ongoing risk reduction', 'His case is the real-world CONFIDENCE scenario (finerenone + SGLT2i)'],
