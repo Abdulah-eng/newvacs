@@ -4,7 +4,7 @@ import { PROGRESS_AREAS } from '../data/cases'
 import {
   LayoutDashboard, FileText, Activity, Pill, ShieldAlert, HeartPulse, FlaskConical,
   ListChecks, MessageSquare, Stethoscope, ClipboardList, HelpCircle, MessageCircle,
-  FileSignature, Lock, RotateCcw, LogOut, ChevronLeft,
+  FileSignature, Lock, RotateCcw, LogOut, ChevronLeft, RefreshCw,
 } from 'lucide-react'
 
 import { SnapshotTab, ObjectiveTab, MedicationsTab, AllergiesTab, VitalsTab, LabsTab, ProblemListTab } from './ChartTabs'
@@ -140,6 +140,9 @@ export default function SimulationShell({ caseData, onExit }) {
                 <p className="text-[12px] text-slate-300 mt-1">{P.setting || 'Collaborative Practice Ambulatory Care Clinic (within Primary Care)'}</p>
               </div>
               <div className="flex items-center gap-2 py-1">
+                 <button onClick={() => window.location.reload(true)} className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 hover:bg-white/20 px-3.5 py-2 text-[12px] font-semibold transition tracking-wide">
+                   <RefreshCw size={14} /> Hard Refresh
+                 </button>
                  <button onClick={reset} className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 hover:bg-white/20 px-3.5 py-2 text-[12px] font-semibold transition tracking-wide">
                    <RotateCcw size={14} /> Reset
                  </button>
