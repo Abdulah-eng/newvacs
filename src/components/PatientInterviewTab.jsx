@@ -53,22 +53,34 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   const [sessionStarted, setSessionStarted] = useState(false)
   const timerRef = useRef(null)
 
-  // Timer logic
+  // Initialize timer from localStorage
+  useEffect(() => {
+    const endTime = localStorage.getItem(`vacs::timer_end::${c.id}`)
+    if (endTime) {
+      setSessionStarted(true)
+      const remaining = Math.max(0, Math.floor((parseInt(endTime, 10) - Date.now()) / 1000))
+      setTimeLeft(remaining)
+    }
+  }, [c.id])
+
+  // Timer countdown logic
   useEffect(() => {
     if (sessionStarted && timeLeft > 0) {
+      if (!localStorage.getItem(`vacs::timer_end::${c.id}`)) {
+        localStorage.setItem(`vacs::timer_end::${c.id}`, (Date.now() + timeLeft * 1000).toString())
+      }
       timerRef.current = setInterval(() => {
-        setTimeLeft(prev => {
-          if (prev <= 1) {
-            clearInterval(timerRef.current)
-            _stopVadSession()
-            return 0
-          }
-          return prev - 1
-        })
+        const endTime = parseInt(localStorage.getItem(`vacs::timer_end::${c.id}`), 10)
+        const remaining = Math.max(0, Math.floor((endTime - Date.now()) / 1000))
+        setTimeLeft(remaining)
+        if (remaining <= 0) {
+          clearInterval(timerRef.current)
+          _stopVadSession()
+        }
       }, 1000)
     }
     return () => clearInterval(timerRef.current)
-  }, [sessionStarted, timeLeft])
+  }, [sessionStarted, c.id])
 
   // Helper to start session
   const triggerSessionStart = () => {

@@ -5,6 +5,21 @@ import { startQuizAttempt, submitQuizAttempt } from './db/quiz'
 import { saveJournalResponses, saveJournalGrade } from './db/journal'
 import { saveWeeklySummary } from './db/summary'
 
+
+let weekUuidCache = {}
+
+async function resolveWeekId(weekStr) {
+  if (weekUuidCache[weekStr]) return weekUuidCache[weekStr]
+  const num = parseInt(weekStr.replace('week', ''), 10) || 1
+  const supabase = createClient()
+  const { data } = await supabase.from('weeks').select('id').eq('week_number', num).single()
+  if (data?.id) {
+    weekUuidCache[weekStr] = data.id
+    return data.id
+  }
+  return weekStr // fallback
+}
+
 // Fire and forget sync from localStorage to Supabase
 export async function syncToSupabase(caseId, state) {
   try {
@@ -14,9 +29,10 @@ export async function syncToSupabase(caseId, state) {
 
     // 0. Weekly Summary
     if (caseId.startsWith('summary-')) {
-      const weekId = caseId.split('-')[1] || 'week1'
+      const weekStr = caseId.split('-')[1] || 'week1'
+      const dbWeekId = await resolveWeekId(weekStr)
       if (state.overall_weekly_score !== undefined) {
-        await saveWeeklySummary(weekId, {
+        await saveWeeklySummary(dbWeekId, {
           quiz_first_score: state._meta?.quizFirstScore || 0,
           quiz_final_score: state._meta?.quizFinalScore || 0,
           journal_score: state._meta?.journalScore || 0,
@@ -29,8 +45,9 @@ export async function syncToSupabase(caseId, state) {
 
     // 1. Check if this is a journal club
     if (caseId.startsWith('journal-')) {
-      const weekId = caseId.split('-')[1] || 'week1'
-      const submission = await saveJournalResponses(weekId, {
+      const weekStr = caseId.split('-')[1] || 'week1'
+      const dbWeekId = await resolveWeekId(weekStr)
+      const submission = await saveJournalResponses(dbWeekId, {
         responses: state.responses || {},
         revealed_keys: state.revealed || {},
         self_ratings: state.ratings || {}
@@ -49,8 +66,9 @@ export async function syncToSupabase(caseId, state) {
       const attempts = state.attempts || []
       // Just save the most recent attempt
       if (attempts.length > 0) {
+        const dbWeekId = await resolveWeekId('week1')
         const lastAttempt = attempts[attempts.length - 1]
-        const attempt = await startQuizAttempt('week1')
+        const attempt = await startQuizAttempt(dbWeekId)
         if (attempt) {
           await submitQuizAttempt(attempt.id, {
             score: lastAttempt.score,
@@ -64,11 +82,11 @@ export async function syncToSupabase(caseId, state) {
     // 3. Otherwise, it is a patient encounter (e.g. maria-tue)
     const [patientId, day] = caseId.split('-')
     if (!patientId || !day) return
-    const weekId = 'week1'
+    const dbWeekId = await resolveWeekId('week1')
 
     // Interview
     if (state.chat && state.chat.length > 0) {
-      const interview = await getOrCreateInterview(weekId, patientId, day)
+      const interview = await getOrCreateInterview(dbWeekId, patientId, day)
       if (interview) {
         // We just append the latest message to avoid fetching the whole thing, but since localStorage stores the whole array, 
         // it's easier to just update the whole array
@@ -81,7 +99,7 @@ export async function syncToSupabase(caseId, state) {
 
     // Hidden Info
     if (state.discovered) {
-      const interview = await getOrCreateInterview(weekId, patientId, day)
+      const interview = await getOrCreateInterview(dbWeekId, patientId, day)
       if (interview) {
         for (const [field, discovered] of Object.entries(state.discovered)) {
           if (discovered) {
@@ -96,7 +114,7 @@ export async function syncToSupabase(caseId, state) {
 
     // SOAP Submission
     if (state.soap) {
-      const sub = await saveSoapSubmission(weekId, patientId, day, {
+      const sub = await saveSoapSubmission(dbWeekId, patientId, day, {
         subjective: state.soap.subjective || '',
         objective: state.soap.objective || '',
         assessment: state.soap.assessment || '',
@@ -119,23 +137,25 @@ export async function syncToSupabase(caseId, state) {
 }
 
 // Fetch all DB state and hydrate localStorage so the SPA unlocks properly
-export async function hydrateFromSupabase(weekId = 'week1') {
+export async function hydrateFromSupabase(weekStr = 'week1') {
   try {
     const supabase = createClient()
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) return
+
+    const dbWeekId = await resolveWeekId(weekStr)
 
     // 1. Quizzes
     const { data: quizzes } = await supabase
       .from('quiz_attempts')
       .select('*')
       .eq('user_id', user.id)
-      .eq('week_id', weekId)
+      .eq('week_id', dbWeekId)
 
     if (quizzes && quizzes.length > 0) {
       const bestScore = Math.max(...quizzes.map(q => q.score))
       const passed = quizzes.some(q => q.passed)
-      localStorage.setItem(`vacs::${weekId}-quiz`, JSON.stringify({
+      localStorage.setItem(`vacs::${weekStr}-quiz`, JSON.stringify({
         attempts: quizzes.map(q => ({ score: q.score, passing: q.passed })),
         bestScore
       }))
@@ -146,14 +166,14 @@ export async function hydrateFromSupabase(weekId = 'week1') {
       .from('patient_interviews')
       .select('*, hidden_info_logs(*)')
       .eq('user_id', user.id)
-      .eq('week_id', weekId)
+      .eq('week_id', dbWeekId)
 
     // 3. SOAP Submissions
     const { data: soaps } = await supabase
       .from('soap_submissions')
       .select('*, soap_grades(*)')
       .eq('user_id', user.id)
-      .eq('week_id', weekId)
+      .eq('week_id', dbWeekId)
 
     // We need to merge interview + SOAP by patient/day
     const cases = {}
@@ -204,7 +224,7 @@ export async function hydrateFromSupabase(weekId = 'week1') {
       .from('journal_club_submissions')
       .select('*, journal_club_grades(*)')
       .eq('user_id', user.id)
-      .eq('week_id', weekId)
+      .eq('week_id', dbWeekId)
 
     if (journals && journals.length > 0) {
       const journal = journals[0]
@@ -216,7 +236,7 @@ export async function hydrateFromSupabase(weekId = 'week1') {
       if (journal.journal_club_grades && journal.journal_club_grades.length > 0) {
         stateObj.aiGrade = journal.journal_club_grades[0].feedback_json
       }
-      localStorage.setItem(`vacs::journal-${weekId}`, JSON.stringify(stateObj))
+      localStorage.setItem(`vacs::journal-${weekStr}`, JSON.stringify(stateObj))
     }
 
     // 5. Weekly Summary
@@ -224,10 +244,10 @@ export async function hydrateFromSupabase(weekId = 'week1') {
       .from('weekly_summaries')
       .select('*')
       .eq('user_id', user.id)
-      .eq('week_id', weekId)
+      .eq('week_id', dbWeekId)
 
     if (summaries && summaries.length > 0) {
-      localStorage.setItem(`vacs::summary-${weekId}`, JSON.stringify(summaries[0].summary_json))
+      localStorage.setItem(`vacs::summary-${weekStr}`, JSON.stringify(summaries[0].summary_json))
     }
 
   } catch (err) {

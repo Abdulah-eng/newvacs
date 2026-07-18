@@ -47,8 +47,8 @@ export async function POST(request) {
       { role: 'user', content: question }
     ]
 
-    // Use the 8B instant model for conversational interviews to drastically reduce latency
-    const result = await callJsonLlm(messages, 'llama-3.1-8b-instant')
+    // Use the default model configured in the environment to avoid hardcoded rate limits
+    const result = await callJsonLlm(messages)
 
     return NextResponse.json(result)
   } catch (error) {
