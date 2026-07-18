@@ -305,7 +305,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   // --- AI request ---
   async function _sendMessage(text) {
     if (timeLeft === 0 || !text || loading) return
-    _startTimer(); setDraft(''); setLoading(true)
+    _resumeTimer(); setDraft(''); setLoading(true)
     try {
       const res = await fetch('/api/ai/interview', {
         method: 'POST',
