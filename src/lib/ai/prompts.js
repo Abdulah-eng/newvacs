@@ -32,47 +32,39 @@ Respond ONLY with a JSON object in this exact format:
 }`
 }
 
-export function buildSoapGradingPrompt({ studentSoap, goldSoap, transcript, hiddenInfoLog, gradingCriteria, sourceHierarchy, patientName, visitDay }) {
-  return `You are the VACS SOAP note grader. Grade the student's structured SOAP note using ONLY the active week source set, gold-standard SOAP note, hidden-information log, interview transcript, and rubric.
+export function buildSoapGradingPrompt({ studentSoap, goldSoap, transcript, hiddenInfoLog, granularRubric, patientName, visitDay }) {
+  return `You are the VACS SOAP note grader. Grade the student's structured SOAP note strictly against the provided granular rubric.
 
 INPUTS:
 - Patient: ${patientName}
 - Visit day: ${visitDay}
 - Student SOAP note: ${JSON.stringify(studentSoap)}
-- Gold-standard SOAP note: ${JSON.stringify(goldSoap)}
+- Gold-standard SOAP note (for context): ${JSON.stringify(goldSoap)}
 - Interview transcript: ${JSON.stringify(transcript)}
-- Hidden information discovered/missed: ${JSON.stringify(hiddenInfoLog)}
-- Disease-specific grading criteria: ${JSON.stringify(gradingCriteria)}
-- Active week source hierarchy: ${sourceHierarchy}
+- Hidden information discovered: ${JSON.stringify(hiddenInfoLog)}
 
-SCORING RUBRIC:
-- Subjective: 20 points — chief complaint (CC), symptoms, pertinent negatives, adherence, barriers, OTC use, side effects, lifestyle, patient goals/fears/preferences, hidden information discovered
-- Objective: 20 points — vitals, labs, medication list, allergies, immunizations, trend data, disease-specific markers
-- Assessment: 25 points — active problems, control/severity, risk markers, residual risk, appropriateness of therapy, adherence assessment, safety, prioritization, guideline reasoning
-- Plan: 30 points — pharmacologic plan, non-pharmacologic plan, medication optimization, monitoring, follow-up, counseling, safety, adherence, cost/access, shared decision-making, referrals
-- Documentation Quality and Clinical Prioritization: 5 points — organization, clarity, completeness, ambulatory care pharmacist style, no major contradictions
+═══ GRANULAR RUBRIC (Discrete Inputs) ═══
+${JSON.stringify(granularRubric)}
 
 RULES:
-1. Grade patient-specific and guideline-concordant reasoning.
-2. Award partial credit when clinically appropriate.
-3. Do NOT require exact wording if the clinical meaning is correct.
-4. Penalize unsupported, unsafe, or internally contradictory recommendations.
-5. If the student missed hidden information because they did not ask an appropriate question, account for that in the relevant section.
-6. If the student recommends content not supported by the source set, mark it as "needs_verification" or "unsafe" if clinically risky.
+1. You MUST evaluate the student's submission against EVERY SINGLE discrete input in the granular rubric.
+2. Assign FULL, HALF, or ZERO points based strictly on the 'fullCredit', 'halfCredit', and 'zeroCredit' rules for each input.
+3. If an input is "Omits" or "Absent", give it 0 points.
+4. Output an array of itemized deductions. You do NOT need to output items where the student earned FULL credit. ONLY output items where the student lost points (HALF or ZERO credit).
 
 Respond ONLY with a JSON object in this exact format:
 {
-  "total_score": <0-100>,
-  "subjective_score": <0-20>,
-  "objective_score": <0-20>,
-  "assessment_score": <0-25>,
-  "plan_score": <0-30>,
-  "doc_quality_score": <0-5>,
+  "itemized_deductions": [
+    {
+      "id": "<Discrete Input ID, e.g. '4B.1'>",
+      "awarded_points": <number>,
+      "max_points": <number>,
+      "reason": "<Brief 1-sentence explanation of why they lost points based on the rubric rules>"
+    }
+  ],
   "strengths": "<paragraph of what student did well>",
-  "missed_items": [{"item": "<item name>", "clinical_importance": "<why it matters>"}],
-  "unsafe_flags": [{"recommendation": "<what student wrote>", "severity": "minor|moderate|major", "explanation": "<why unsafe>"}],
-  "gold_standard_comparison": "<paragraph comparing to gold standard>",
-  "improvement_guidance": "<specific, actionable improvement suggestions>"
+  "improvement_guidance": "<specific, actionable improvement suggestions>",
+  "unsafe_flags": [{"recommendation": "<what student wrote>", "severity": "minor|moderate|major", "explanation": "<why unsafe>"}]
 }`
 }
 

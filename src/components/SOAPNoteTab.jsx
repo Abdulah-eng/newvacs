@@ -52,8 +52,7 @@ export function SOAPNoteTab({ c, state, soap, onChange, onGraded }) {
           goldSoap: c.PRECEPTOR.plan, // using preceptor plan as gold standard
           transcript: state.chat || [],
           hiddenInfoLog: state.discovered || {},
-          gradingCriteria: GRADING_RUBRICS[c.id],
-          sourceHierarchy: 'Week 1', // Simplified for MVP
+          weekId: c.ENCOUNTER.week.split(' ')[1], // e.g. "Week 1 — Tuesday" -> "1"
           patientName: c.PATIENT.name,
           visitDay: c.ENCOUNTER.day
         })
