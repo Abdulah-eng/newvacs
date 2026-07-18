@@ -49,6 +49,32 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   const mimeTypeRef = useRef('')         // keep mimeType across recorder restarts
   const voiceScrollRef = useRef(null)   // separate scroll for voice transcript
 
+  const [timeLeft, setTimeLeft] = useState(30 * 60) // 30 minutes in seconds
+  const [sessionStarted, setSessionStarted] = useState(false)
+  const timerRef = useRef(null)
+
+  // Timer logic
+  useEffect(() => {
+    if (sessionStarted && timeLeft > 0) {
+      timerRef.current = setInterval(() => {
+        setTimeLeft(prev => {
+          if (prev <= 1) {
+            clearInterval(timerRef.current)
+            _stopVadSession()
+            return 0
+          }
+          return prev - 1
+        })
+      }, 1000)
+    }
+    return () => clearInterval(timerRef.current)
+  }, [sessionStarted, timeLeft])
+
+  // Helper to start session
+  const triggerSessionStart = () => {
+    if (!sessionStarted) setSessionStarted(true)
+  }
+
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight
     if (voiceScrollRef.current) voiceScrollRef.current.scrollTop = voiceScrollRef.current.scrollHeight
@@ -175,7 +201,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     for (let i = 0; i < dataArray.length; i++) bSum += dataArray[i]
     baseline = (bSum / dataArray.length) + 12  // 12-unit buffer above ambient
     const SPEECH_THRESHOLD = Math.max(20, baseline)  // at least 20
-    const SILENCE_MS = 600       // dropped from 1200ms for much faster response
+    const SILENCE_MS = 400       // dropped from 600ms to 400ms for even faster response
 
     let lastSpeechAt = 0
     let speaking = false
@@ -216,9 +242,12 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
 
 
   const toggleListening = async () => {
+    if (timeLeft === 0) return // Cannot start if session expired
+
     if (isListening) {
       _stopVadSession()
     } else {
+      triggerSessionStart()
       setIsListening(true)
       await _startVadSession()
     }
@@ -271,9 +300,12 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   const [loading, setLoading] = useState(false)
 
   async function send(text) {
+    if (timeLeft === 0) return // Cannot send if session expired
+
     const q = (text ?? draft).trim()
     if (!q || loading) return
     
+    triggerSessionStart()
     setDraft('')
     setLoading(true)
     
@@ -328,15 +360,27 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     <div>
       <div className="flex items-center justify-between mb-4">
         <SectionTitle sub="Interview the standardized patient — she won’t volunteer hidden facts unless you ask">Patient Interview</SectionTitle>
-        <div className="flex bg-slate-200 rounded-lg p-1">
-          <button onClick={() => { setVoiceMode(true); window.speechSynthesis?.cancel(); setIsSpeaking(false) }} 
-            className={`flex items-center gap-1.5 px-3 py-1.5 text-[12px] font-semibold rounded-md transition ${voiceMode ? 'bg-white shadow-sm text-navy' : 'text-slate-500 hover:text-slate-700'}`}>
-            <Volume2 size={14} /> Voice
-          </button>
-          <button onClick={() => { setVoiceMode(false); window.speechSynthesis?.cancel(); setIsSpeaking(false) }} 
-            className={`flex items-center gap-1.5 px-3 py-1.5 text-[12px] font-semibold rounded-md transition ${!voiceMode ? 'bg-white shadow-sm text-navy' : 'text-slate-500 hover:text-slate-700'}`}>
-            <Type size={14} /> Text
-          </button>
+        
+        <div className="flex items-center gap-4">
+          {/* 30-Minute Timer UI */}
+          <div className={`px-3 py-1.5 rounded-md text-[12px] font-bold ${
+            timeLeft === 0 ? 'bg-red-100 text-red-700' : 
+            timeLeft < 300 ? 'bg-amber-100 text-amber-700 animate-pulse' : 
+            'bg-slate-100 text-slate-600'
+          }`}>
+            ⏱ {Math.floor(timeLeft / 60)}:{(timeLeft % 60).toString().padStart(2, '0')}
+          </div>
+
+          <div className="flex bg-slate-200 rounded-lg p-1">
+            <button onClick={() => { setVoiceMode(true); window.speechSynthesis?.cancel(); setIsSpeaking(false) }} 
+              className={`flex items-center gap-1.5 px-3 py-1.5 text-[12px] font-semibold rounded-md transition ${voiceMode ? 'bg-white shadow-sm text-navy' : 'text-slate-500 hover:text-slate-700'}`}>
+              <Volume2 size={14} /> Voice
+            </button>
+            <button onClick={() => { setVoiceMode(false); window.speechSynthesis?.cancel(); setIsSpeaking(false) }} 
+              className={`flex items-center gap-1.5 px-3 py-1.5 text-[12px] font-semibold rounded-md transition ${!voiceMode ? 'bg-white shadow-sm text-navy' : 'text-slate-500 hover:text-slate-700'}`}>
+              <Type size={14} /> Text
+            </button>
+          </div>
         </div>
       </div>
 
@@ -398,7 +442,9 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
                     </button>
 
                     <p className="text-center text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
-                      {isSpeaking
+                      {timeLeft === 0 
+                        ? 'Session Expired'
+                        : isSpeaking
                         ? '🔊 Patient Speaking…'
                         : isListening && isRecording
                         ? '🔴 Speaking — pause to send'
@@ -437,10 +483,15 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
                 </div>
 
                 <div ref={scrollRef} className="flex-1 overflow-y-auto thin-scroll px-4 py-4 space-y-3 bg-slate-50/60">
-                  {chat.length === 0 && (
+                  {chat.length === 0 && timeLeft > 0 && (
                     <div className="text-center text-[13px] text-slate-400 mt-10">
                       <MessageSquare size={28} className="mx-auto mb-2 opacity-40" />
                       Start the conversation. Try a suggested question below.
+                    </div>
+                  )}
+                  {timeLeft === 0 && (
+                    <div className="text-center text-[13px] text-red-500 font-bold mt-4 p-3 bg-red-50 rounded-lg">
+                      Your 30-minute interview session has expired. Please document your findings.
                     </div>
                   )}
                   {chat.map((m, i) => (
@@ -462,12 +513,14 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
                       value={draft}
                       onChange={e => setDraft(e.target.value)}
                       onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send() } }}
-                      placeholder="Ask the patient a question…"
+                      placeholder={timeLeft === 0 ? "Session expired" : "Ask the patient a question…"}
+                      disabled={timeLeft === 0}
                       rows={1}
-                      className="flex-1 resize-none rounded-lg border border-slate-300 px-3 py-2 text-[13px] outline-none focus:border-teal focus:ring-2 focus:ring-teal/20"
+                      className="flex-1 resize-none rounded-lg border border-slate-300 px-3 py-2 text-[13px] outline-none focus:border-teal focus:ring-2 focus:ring-teal/20 disabled:bg-slate-100 disabled:text-slate-400"
                     />
                     <button onClick={() => send()}
-                      className="grid place-items-center w-10 h-10 rounded-lg bg-teal text-white hover:bg-teal/90 transition shrink-0">
+                      disabled={timeLeft === 0}
+                      className="grid place-items-center w-10 h-10 rounded-lg bg-teal text-white hover:bg-teal/90 transition shrink-0 disabled:opacity-50 disabled:cursor-not-allowed">
                       <Send size={16} />
                     </button>
                   </div>
