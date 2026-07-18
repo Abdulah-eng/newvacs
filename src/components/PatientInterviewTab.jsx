@@ -27,7 +27,7 @@ const CHIPS = [
 // Voice state machine
 const VS = { IDLE: 'IDLE', LISTENING: 'LISTENING', SPEAKING: 'SPEAKING', PROCESSING: 'PROCESSING', PATIENT: 'PATIENT', DISABLED: 'DISABLED' }
 
-export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onField }) {
+export function PatientInterviewTab({ c, chat, interview, discovered, onUserSpeak, onPatientReply, onField }) {
   const [draft, setDraft] = useState('')
   const scrollRef = useRef(null)
   const voiceScrollRef = useRef(null)
@@ -188,7 +188,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     const analyser = analyserRef.current
     if (!analyser) return
     const buf = new Uint8Array(analyser.frequencyBinCount)
-    const SILENCE_MS = 700       // ms of silence to end an utterance
+    const SILENCE_MS = 500       // ms of silence to end an utterance
     const MIN_SPEECH_MS = 800    // minimum speaking time before we submit (blocks noise bursts)
     const DELTA = 18             // how far above baseline = speech (higher = less sensitive to bg noise)
 
@@ -334,6 +334,10 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   async function _sendMessage(text) {
     if (timeLeft === 0 || !text || loading) return
     _resumeTimer(); setDraft(''); setLoading(true)
+    
+    // Add user's message to the UI transcript immediately
+    if (onUserSpeak) onUserSpeak(text)
+
     try {
       const res = await fetch('/api/ai/interview', {
         method: 'POST',
@@ -349,14 +353,14 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
       const reply = await res.json()
       if (reply.error) {
         const errText = "I'm sorry, I didn't catch that. Could you repeat?"
-        onAsk(text, { text: errText }); await speakText(errText)
+        if (onPatientReply) onPatientReply({ text: errText }); await speakText(errText)
       } else {
         const field = reply.hidden_info_triggered ? c.INTERVIEW_KNOWLEDGE.find(k => k.id === reply.hidden_info_triggered)?.field : null
-        onAsk(text, { text: reply.response, field }); await speakText(reply.response)
+        if (onPatientReply) onPatientReply({ text: reply.response, field }); await speakText(reply.response)
       }
     } catch (_) {
       const errText = "I'm having a little trouble. Could you ask again?"
-      onAsk(text, { text: errText }); await speakText(errText)
+      if (onPatientReply) onPatientReply({ text: errText }); await speakText(errText)
     } finally {
       setLoading(false)
       if (vsRef.current === VS.PROCESSING) _backToListening()
