@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 import React, { useState, useRef, useEffect, useCallback } from 'react'
 import dynamic from 'next/dynamic'
 import { Card, AutoTextarea, SectionTitle } from './ui'
@@ -56,38 +56,65 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   const timerRef = useRef(null)
   const [loading, setLoading] = useState(false)
 
-  // --- Timer setup from localStorage ---
+  // --- Pauseable timer via localStorage ---
+  // Two keys: 'timer_end' (absolute epoch when session is RUNNING)
+  //            'timer_rem' (seconds remaining when session is PAUSED)
   useEffect(() => {
-    const stored = localStorage.getItem('vacs::timer_end::' + c.id)
-    if (stored) {
-      const rem = Math.max(0, Math.floor((parseInt(stored) - Date.now()) / 1000))
+    const endStr = localStorage.getItem('vacs::timer_end::' + c.id)
+    const remStr = localStorage.getItem('vacs::timer_rem::' + c.id)
+    if (endStr) {
+      // Was running — compute remaining from absolute end time
+      const rem = Math.max(0, Math.floor((parseInt(endStr) - Date.now()) / 1000))
+      setTimeLeft(rem)
+      setSessionStarted(true)
+      if (rem === 0) setVS(VS.DISABLED)
+    } else if (remStr) {
+      // Was paused
+      const rem = Math.max(0, parseInt(remStr))
       setTimeLeft(rem)
       setSessionStarted(true)
       if (rem === 0) setVS(VS.DISABLED)
     }
-  }, [c.id, setVS])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [c.id])
 
+  // Tick only while timer_end key exists (mic is running)
   useEffect(() => {
     if (!sessionStarted) return
     clearInterval(timerRef.current)
     timerRef.current = setInterval(() => {
-      const stored = localStorage.getItem('vacs::timer_end::' + c.id)
-      if (!stored) return
-      const rem = Math.max(0, Math.floor((parseInt(stored) - Date.now()) / 1000))
+      const endStr = localStorage.getItem('vacs::timer_end::' + c.id)
+      if (!endStr) return  // paused — don't tick
+      const rem = Math.max(0, Math.floor((parseInt(endStr) - Date.now()) / 1000))
       setTimeLeft(rem)
       if (rem <= 0) {
         clearInterval(timerRef.current)
         _endSession()
         setVS(VS.DISABLED)
+        localStorage.removeItem('vacs::timer_end::' + c.id)
+        localStorage.setItem('vacs::timer_rem::' + c.id, '0')
       }
-    }, 1000)
+    }, 500)
     return () => clearInterval(timerRef.current)
-  }, [sessionStarted, c.id, setVS])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sessionStarted, c.id])
 
-  function _startTimer() {
-    if (sessionStarted) return
-    localStorage.setItem('vacs::timer_end::' + c.id, String(Date.now() + 30 * 60 * 1000))
+  // Called when mic SESSION STARTS — resume from remaining seconds
+  function _resumeTimer() {
+    const remStr = localStorage.getItem('vacs::timer_rem::' + c.id)
+    const rem = remStr ? Math.max(0, parseInt(remStr)) : 30 * 60
+    localStorage.removeItem('vacs::timer_rem::' + c.id)
+    localStorage.setItem('vacs::timer_end::' + c.id, String(Date.now() + rem * 1000))
     setSessionStarted(true)
+  }
+
+  // Called when mic SESSION STOPS — freeze remaining seconds
+  function _pauseTimer() {
+    const endStr = localStorage.getItem('vacs::timer_end::' + c.id)
+    const rem = endStr ? Math.max(0, Math.floor((parseInt(endStr) - Date.now()) / 1000)) : timeLeft
+    localStorage.removeItem('vacs::timer_end::' + c.id)
+    localStorage.setItem('vacs::timer_rem::' + c.id, String(rem))
+    setTimeLeft(rem)
   }
 
   useEffect(() => {
@@ -147,17 +174,21 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   }
 
   function _runVad() {
+    // Cancel any existing loop before starting a new one — prevents parallel loops
+    cancelAnimationFrame(vadRafRef.current)
+
     const analyser = analyserRef.current
     if (!analyser) return
     const buf = new Uint8Array(analyser.frequencyBinCount)
-    const SILENCE_MS = 500
+    const SILENCE_MS = 700   // 700ms silence ends an utterance — long enough to not cut off mid-sentence
     const DELTA = 10
 
     const tick = () => {
       const vs = vsRef.current
-      if (vs === VS.IDLE || vs === VS.DISABLED || vs === VS.PATIENT) {
-        vadRafRef.current = requestAnimationFrame(tick)
-        return
+
+      // Hard stop — don't reschedule during these states
+      if (vs === VS.IDLE || vs === VS.DISABLED || vs === VS.PROCESSING || vs === VS.PATIENT) {
+        return  // loop exits — will be restarted explicitly when needed
       }
 
       analyser.getByteFrequencyData(buf)
@@ -170,6 +201,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
         if (isSpeech) {
           lastSpeechRef.current = Date.now()
           if (vs === VS.LISTENING) {
+            // Start recording the utterance
             if (recorderRef.current?.state === 'inactive') {
               chunksRef.current = []
               recorderRef.current.start()
@@ -177,10 +209,13 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
             setVS(VS.SPEAKING)
           }
         } else if (vs === VS.SPEAKING && Date.now() - lastSpeechRef.current > SILENCE_MS) {
+          // User stopped talking — submit utterance
           if (recorderRef.current?.state === 'recording') recorderRef.current.stop()
           setVS(VS.PROCESSING)
+          return  // loop exits — restarted in _backToListening after STT completes
         }
       }
+
       vadRafRef.current = requestAnimationFrame(tick)
     }
     vadRafRef.current = requestAnimationFrame(tick)
@@ -210,6 +245,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     if (!streamRef.current?.active) return
     _makeRecorder()
     setVS(VS.LISTENING)
+    _runVad()  // restart the rAF loop (it stopped during PROCESSING)
   }
 
   function _endSession() {
@@ -220,19 +256,26 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     try { audioCtxRef.current?.close() } catch (_) {}
     audioCtxRef.current = null; analyserRef.current = null
     setAudioLevel(0); setVS(VS.IDLE)
+    _pauseTimer()  // freeze timer when mic is stopped
   }
 
   async function toggleSession() {
     if (vsRef.current === VS.DISABLED) return
-    if (vsRef.current === VS.IDLE) { _startTimer(); await _startSession() }
-    else _endSession()
+    if (vsRef.current === VS.IDLE) {
+      _resumeTimer()  // resume (or start) countdown
+      await _startSession()
+    } else {
+      _endSession()  // also pauses timer
+    }
   }
 
   // --- Patient speaking via avatar ---
   const speakText = useCallback(async (text) => {
     if (!voiceMode) return
+    // Halt VAD and recording while patient speaks
     cancelAnimationFrame(vadRafRef.current)
     try { recorderRef.current?.state === 'recording' && recorderRef.current?.stop() } catch (_) {}
+    // Pre-create a fresh recorder so it's ready the moment patient finishes
     if (streamRef.current?.active) _makeRecorder()
     setVS(VS.PATIENT)
     try {
