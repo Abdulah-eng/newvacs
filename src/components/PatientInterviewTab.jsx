@@ -50,6 +50,8 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   const vadRafRef = useRef(null)
   const baselineRef = useRef(20)
   const lastSpeechRef = useRef(0)
+  const speechStartRef = useRef(0)   // when did current utterance start (ms)
+  const vadReadyRef = useRef(false)  // true only after startup guard delay
 
   const [timeLeft, setTimeLeft] = useState(30 * 60)
   const [sessionStarted, setSessionStarted] = useState(false)
@@ -152,15 +154,21 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     const mime = ['audio/webm;codecs=opus','audio/webm','audio/mp4'].find(t => MediaRecorder.isTypeSupported(t)) || ''
     mimeRef.current = mime
 
-    // Calibrate baseline
+    // Calibrate ambient noise for 800ms (longer = more accurate baseline)
     const buf = new Uint8Array(analyser.frequencyBinCount)
-    await new Promise(r => setTimeout(r, 400))
+    await new Promise(r => setTimeout(r, 800))
     analyser.getByteFrequencyData(buf)
     let s = 0; for (const v of buf) s += v
-    baselineRef.current = Math.max(14, (s / buf.length) + 7)
+    // Add +15 buffer above ambient so speech needs to be clearly louder
+    baselineRef.current = Math.max(18, (s / buf.length) + 15)
 
     _makeRecorder()
     setVS(VS.LISTENING)
+
+    // Startup guard: don't activate VAD for 500ms after session starts
+    // This prevents the button-click sound from triggering a recording
+    vadReadyRef.current = false
+    setTimeout(() => { vadReadyRef.current = true }, 500)
     _runVad()
   }
 
@@ -180,15 +188,22 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     const analyser = analyserRef.current
     if (!analyser) return
     const buf = new Uint8Array(analyser.frequencyBinCount)
-    const SILENCE_MS = 700   // 700ms silence ends an utterance — long enough to not cut off mid-sentence
-    const DELTA = 10
+    const SILENCE_MS = 700       // ms of silence to end an utterance
+    const MIN_SPEECH_MS = 800    // minimum speaking time before we submit (blocks noise bursts)
+    const DELTA = 18             // how far above baseline = speech (higher = less sensitive to bg noise)
 
     const tick = () => {
       const vs = vsRef.current
 
       // Hard stop — don't reschedule during these states
       if (vs === VS.IDLE || vs === VS.DISABLED || vs === VS.PROCESSING || vs === VS.PATIENT) {
-        return  // loop exits — will be restarted explicitly when needed
+        return  // loop exits — restarted explicitly when needed
+      }
+
+      // Startup guard: don't process audio until VAD is ready
+      if (!vadReadyRef.current) {
+        vadRafRef.current = requestAnimationFrame(tick)
+        return
       }
 
       analyser.getByteFrequencyData(buf)
@@ -198,10 +213,12 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
 
       if (vs === VS.LISTENING || vs === VS.SPEAKING) {
         const isSpeech = avg > baselineRef.current + DELTA
+
         if (isSpeech) {
           lastSpeechRef.current = Date.now()
           if (vs === VS.LISTENING) {
-            // Start recording the utterance
+            // Speech just started — begin recording
+            speechStartRef.current = Date.now()
             if (recorderRef.current?.state === 'inactive') {
               chunksRef.current = []
               recorderRef.current.start()
@@ -209,10 +226,18 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
             setVS(VS.SPEAKING)
           }
         } else if (vs === VS.SPEAKING && Date.now() - lastSpeechRef.current > SILENCE_MS) {
-          // User stopped talking — submit utterance
+          // Silence after speech — check minimum duration before submitting
+          const spokenMs = lastSpeechRef.current - speechStartRef.current
           if (recorderRef.current?.state === 'recording') recorderRef.current.stop()
-          setVS(VS.PROCESSING)
-          return  // loop exits — restarted in _backToListening after STT completes
+
+          if (spokenMs < MIN_SPEECH_MS) {
+            // Too short — likely noise or accidental sound. Discard and resume listening.
+            setVS(VS.PROCESSING)  // onstop will fire but _onUtteranceEnd will see tiny blob
+          } else {
+            setVS(VS.PROCESSING)  // normal utterance end
+          }
+          speechStartRef.current = 0
+          return  // loop exits — restarted in _backToListening
         }
       }
 
@@ -225,7 +250,8 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     const chunks = [...chunksRef.current]; chunksRef.current = []
     if (!chunks.length || !streamRef.current?.active) { _backToListening(); return }
     const blob = new Blob(chunks, { type: mimeRef.current || 'audio/webm' })
-    if (blob.size < 800) { _backToListening(); return }
+    // Threshold: 3KB minimum. Anything smaller is silence/noise — Whisper hallucinates on these.
+    if (blob.size < 3000) { _backToListening(); return }
     try {
       const ext = mimeRef.current?.includes('mp4') ? 'mp4' : 'webm'
       const fd = new FormData(); fd.append('audio', blob, 'rec.' + ext)
@@ -243,6 +269,8 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   function _backToListening() {
     if (vsRef.current === VS.IDLE || vsRef.current === VS.DISABLED) return
     if (!streamRef.current?.active) return
+    speechStartRef.current = 0   // reset speech start tracker
+    vadReadyRef.current = true   // immediately ready (only delayed on full session start)
     _makeRecorder()
     setVS(VS.LISTENING)
     _runVad()  // restart the rAF loop (it stopped during PROCESSING)
