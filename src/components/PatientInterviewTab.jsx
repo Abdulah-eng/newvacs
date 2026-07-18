@@ -57,7 +57,6 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   const [sessionStarted, setSessionStarted] = useState(false)
   const timerRef = useRef(null)
   const [loading, setLoading] = useState(false)
-  const [pendingUserText, setPendingUserText] = useState(null)
 
   // --- Pauseable timer via localStorage ---
   // Two keys: 'timer_end' (absolute epoch when session is RUNNING)
@@ -334,7 +333,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   // --- AI request ---
   async function _sendMessage(text) {
     if (timeLeft === 0 || !text || loading) return
-    _resumeTimer(); setDraft(''); setLoading(true); setPendingUserText(text);
+    _resumeTimer(); setDraft(''); setLoading(true)
     try {
       const res = await fetch('/api/ai/interview', {
         method: 'POST',
@@ -355,9 +354,8 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
         const field = reply.hidden_info_triggered ? c.INTERVIEW_KNOWLEDGE.find(k => k.id === reply.hidden_info_triggered)?.field : null
         onAsk(text, { text: reply.response, field }); await speakText(reply.response)
       }
-    } catch (err) {
-      console.error(err)
-      const errText = "I'm sorry, I didn't catch that. Could you repeat?"
+    } catch (_) {
+      const errText = "I'm having a little trouble. Could you ask again?"
       onAsk(text, { text: errText }); await speakText(errText)
     } finally {
       setLoading(false)
@@ -436,10 +434,8 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
                     )}
                   </div>
                   <div ref={voiceScrollRef} className="flex-1 overflow-y-auto thin-scroll px-4 py-3 space-y-3">
-                    {chat.length === 0 && !pendingUserText ? <p className="text-[12px] text-slate-400 text-center mt-6">Start talking — your conversation will appear here.</p>
+                    {chat.length === 0 ? <p className="text-[12px] text-slate-400 text-center mt-6">Start talking — your conversation will appear here.</p>
                       : chat.map((m, i) => <Bubble key={i} role={m.role} text={m.text} discovered={m.discovered} compact />)}
-                    {pendingUserText && <Bubble role="user" text={pendingUserText} compact />}
-                    {pendingUserText && <Bubble role="patient" text="..." compact loading />}
                     {timeLeft === 0 && <div className="rounded-lg bg-red-50 border border-red-200 px-3 py-2 text-[12px] text-red-700 font-semibold text-center">30-minute session expired. Document your findings.</div>}
                   </div>
                 </div>
@@ -451,11 +447,9 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
                   <div><p className="text-[13px] font-semibold text-slate-800">{c.PATIENT.name}</p><p className="text-[11px] text-slate-400">Standardized patient · {c.ENCOUNTER.type}</p></div>
                 </div>
                 <div ref={scrollRef} className="flex-1 overflow-y-auto thin-scroll px-4 py-4 space-y-3 bg-slate-50/60">
-                  {chat.length === 0 && timeLeft > 0 && !pendingUserText && <div className="text-center text-[13px] text-slate-400 mt-10"><MessageSquare size={28} className="mx-auto mb-2 opacity-40" />Start the conversation. Try a suggested question below.</div>}
+                  {chat.length === 0 && timeLeft > 0 && <div className="text-center text-[13px] text-slate-400 mt-10"><MessageSquare size={28} className="mx-auto mb-2 opacity-40" />Start the conversation. Try a suggested question below.</div>}
                   {timeLeft === 0 && <div className="text-center text-[13px] text-red-500 font-bold mt-4 p-3 bg-red-50 rounded-lg">Your 30-minute interview session has expired. Please document your findings.</div>}
                   {chat.map((m, i) => <Bubble key={i} role={m.role} text={m.text} discovered={m.discovered} />)}
-                  {pendingUserText && <Bubble role="user" text={pendingUserText} />}
-                  {pendingUserText && <Bubble role="patient" text="..." loading />}
                 </div>
                 <div className="px-3 py-3 border-t border-slate-100">
                   <div className="flex flex-wrap gap-1.5 mb-2">
@@ -520,18 +514,12 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   )
 }
 
-function Bubble({ role, text, discovered, compact, loading }) {
+function Bubble({ role, text, discovered, compact }) {
   const isPatient = role === 'patient'
   return (
     <div className={'flex ' + (isPatient ? 'justify-start' : 'justify-end')}>
       <div className={'max-w-[85%] rounded-2xl ' + (compact ? 'px-3 py-1.5 text-[12px]' : 'px-3.5 py-2 text-[13px]') + ' leading-relaxed ' + (isPatient ? 'bg-white border border-slate-200 text-slate-700 rounded-tl-sm' : 'bg-navy text-white rounded-tr-sm')}>
-        {loading ? (
-          <span className="flex items-center gap-1 h-5 px-1">
-            <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
-            <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
-            <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
-          </span>
-        ) : text}
+        {text}
         {isPatient && discovered && <span className="mt-1 flex items-center gap-1 text-[10px] text-teal font-semibold"><Sparkles size={10} /> new info uncovered</span>}
       </div>
     </div>

@@ -10,7 +10,7 @@ import PreceptorDebrief from './PreceptorDebrief'
 import SimulationShell from '../SimulationShell'
 import JournalClubPage from '../JournalClubPage'
 import { PRECEPTOR } from '../../data/preceptorCore'
-import { Home, FlaskConical, Award, ChevronRight, ArrowRight, BookOpen, Unlock, Lock, MessageSquare, CheckCircle2, RefreshCw } from 'lucide-react'
+import { Home, FlaskConical, Award, ChevronRight, ArrowRight, BookOpen, Unlock, Lock, MessageSquare, CheckCircle2 } from 'lucide-react'
 
 function initialDay(week) {
   const unlocked = week.days.filter(d => week.state.dayUnlocked(d.key))
@@ -72,10 +72,6 @@ export default function ModuleShell({ week, demo, onToggleDemo, onExit }) {
                   <Award size={14} /> Weekly Summary
                 </button>
               )}
-              <button onClick={() => window.location.reload(true)} title="Force the app to pull the latest updates from the server"
-                className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2 text-[12px] font-semibold hover:bg-white/20 transition">
-                <RefreshCw size={14} /> Hard Refresh
-              </button>
               <button onClick={onExit} className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2 text-[12px] font-semibold hover:bg-white/20 transition">
                 <Home size={14} /> Course
               </button>
