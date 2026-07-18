@@ -70,6 +70,17 @@ const jamesTue = makeCase({
     { key: 'adherence', label: 'Medication Stretching', placeholder: 'Taking meds differently to save money?' },
     { key: 'knowledge', label: 'Disease Understanding', placeholder: 'Does he understand A1C?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What was the primary cause of uncontrolled diabetes in this patient?',
+    'Why would adding another medication potentially be inappropriate today?',
+    'What strategies can pharmacists use to address medication affordability?',
+    'How did medication stretching affect your interpretation of blood pressure and A1C?',
+    'Why is medication reconciliation critical in ambulatory care?',
+    'What clues suggested a health literacy deficit?',
+    'How would you explain A1C to this patient?',
+    'What is the difference between medication nonadherence and medication non-initiation?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'b_cost', topic: 'Affordability Barrier', field: 'cost',
       keywords: ['cost', 'afford', 'expensive', 'pay', 'money', 'copay', 'insurance', 'price'],
@@ -163,6 +174,17 @@ const jamesWed = makeCase({
     { key: 'cost', label: 'Cost sustainability', placeholder: 'Can he still afford everything?' },
     { key: 'adherence', label: 'Adherence updates', placeholder: 'Any missed doses?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What evidence suggests the affordability intervention was successful?',
+    'Why is it important to reassess medication affordability even after improvement?',
+    'Would you intensify diabetes therapy today? Why or why not?',
+    'Would you intensify hypertension therapy today? Why or why not?',
+    'How can pharmacists improve long-term medication access?',
+    'What evidence suggests adherence improved?',
+    'What remaining barriers exist?',
+    'How would you explain the relationship between medication access and clinical outcomes?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'bw_cost', topic: 'Affordability Anxiety', field: 'cost', keywords: ['cost', 'afford', 'worry', 'insurance', 'future'],
       response: "Right now I can afford it, but I worry about what happens if my insurance changes again. I'd hate to have to stop something that's helping." },
@@ -232,6 +254,17 @@ const jamesThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'cost', label: 'Long-term Access', placeholder: 'Insurance or coverage worries?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What was the primary intervention that improved this patient\'s outcomes?',
+    'Why did this patient\'s A1C improve?',
+    'Would you intensify diabetes therapy today? Why or why not?',
+    'Would you intensify hypertension therapy today? Why or why not?',
+    'How should affordability be monitored in future visits?',
+    'What evidence supports improved adherence?',
+    'What remaining opportunities for optimization exist?',
+    'What lessons from this case can be applied to future ambulatory care patients?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'bth_cost', topic: 'Fear of Losing Access', field: 'cost', keywords: ['worry', 'insurance', 'future', 'change'],
       response: "Things are okay right now, but I still worry about what happens if my insurance changes again. I'd hate to finally get things under control and then have to stop." },
@@ -341,6 +374,25 @@ const lindaTue = makeCase({
     { key: 'fears', label: 'Patient Fears', placeholder: 'What worries her most?' },
     { key: 'priorities', label: 'Priorities', placeholder: 'How does she prioritize her health?' },
   ],
+  GUIDING_QUESTIONS: [
+    'How would you classify this patient\'s CKD stage?',
+    'How would you classify this patient\'s albuminuria?',
+    'What is this patient\'s KDIGO risk category?',
+    'What intervention would you prioritize first?',
+    'Why might reducing albuminuria be important?',
+    'How does prior STEMI influence treatment decisions?',
+    'Would you prioritize A1C reduction, BP reduction, LDL reduction, or albuminuria reduction?',
+    'How would you explain cardiorenal protection to this patient?',
+    'How should you interpret the reduction in UACR?',
+    'Would you classify this patient as low risk now?',
+    'What is the next highest-priority intervention?',
+    'Why is LDL-C still important despite improving kidney outcomes?',
+    'Would you consider finerenone in this patient?',
+    'What evidence suggests the original intervention worked?',
+    'How would you explain residual risk to this patient?',
+    'What long-term complications remain most concerning?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'c_ckd', topic: 'Lack of CKD Understanding', field: 'knowledge', keywords: ['stage', 'albuminuria', 'understand', 'kidney'],
       response: "I know they told me I have kidney disease, but I don't really know what Stage 3 means, or what albuminuria is. I thought my blood sugar was the most important thing." },
@@ -429,6 +481,17 @@ const lindaWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'understanding', label: 'Understanding of Progress', placeholder: 'Does she know she is improving but still at risk?' },
   ],
+  GUIDING_QUESTIONS: [
+    'How should you interpret the reduction in UACR?',
+    'Would you classify this patient as low risk now?',
+    'What should become the next therapeutic priority?',
+    'Why does LDL-C remain important despite improving kidney outcomes?',
+    'Would you consider finerenone in this patient?',
+    'What evidence suggests the initial intervention strategy was successful?',
+    'How would you explain residual risk to this patient?',
+    'What long-term complications remain most concerning?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'cw_understanding', topic: 'Understanding Progress', field: 'understanding', keywords: ['progress', 'better', 'kidneys', 'risk'],
       response: "I know my numbers are a little better, which is great, but I know I'm still at high risk. What should we focus on next?" },
@@ -498,6 +561,17 @@ const lindaThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'confidence', label: 'Self-Management Confidence', placeholder: 'How does she feel about her regimen now?' },
   ],
+  GUIDING_QUESTIONS: [
+    'How would you describe this patient\'s overall progress?',
+    'Has this patient\'s risk been eliminated?',
+    'Why should ACE inhibitor and SGLT2 inhibitor therapy be continued?',
+    'Why should high-intensity statin therapy be continued?',
+    'What monitoring should occur moving forward?',
+    'How would you explain residual risk to this patient?',
+    'What evidence suggests the current treatment strategy has been successful?',
+    'What is the most important lesson from this case?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'cth_conf', topic: 'Increased Confidence', field: 'confidence', keywords: ['confident', 'handle', 'understand', 'better'],
       response: "I feel so much better now. I finally understand why I'm taking all these pills and what we're trying to prevent." },

@@ -36,6 +36,14 @@ const sarahTue = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'tobacco', label: 'Tobacco Cessation', placeholder: 'Is she ready to quit smoking?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What findings support a diagnosis of Major Depressive Disorder?',
+    'Why was sertraline selected over bupropion?',
+    'What role does CBT play in treatment?',
+    'How should treatment response be assessed?',
+    'How should tobacco use be addressed when a patient is not ready to quit?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w5a_tobacco', topic: 'Readiness to quit', field: 'tobacco', keywords: ['quit', 'smoke', 'ready', 'tobacco'], response: "I know I need to quit eventually, but right now I'm just so stressed and overwhelmed. I don't think I can handle quitting smoking on top of everything else." },
   ],
@@ -74,6 +82,15 @@ const sarahWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'tolerability', label: 'Side Effects / Tolerability', placeholder: 'Any issues with the medication?' },
   ],
+  GUIDING_QUESTIONS: [
+    'Has this patient responded to treatment?',
+    'Has this patient achieved remission?',
+    'Why is increasing sertraline reasonable?',
+    'What factors should be assessed before increasing the dose?',
+    'Why should CBT continue?',
+    'How should tobacco use be addressed today?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w5a2_tol', topic: 'Tolerability', field: 'tolerability', keywords: ['side effects', 'tolerate', 'stomach', 'sleep'], response: "I had a little bit of an upset stomach the first few days, but it went away. No other problems." },
   ],
@@ -113,14 +130,14 @@ const sarahThu = makeCase({
     { key: 'tobacco', label: 'Tobacco Plan', placeholder: 'How does she want to quit?' },
   ],
   GUIDING_QUESTIONS: [
-    'Has this patient responded to treatment?',
-    'Has this patient achieved remission?',
-    'Why is increasing sertraline reasonable?',
-    'What factors should be assessed before increasing the dose?',
-    'Why should CBT continue?',
-    'How should tobacco use be addressed today?'
+    'How do you know this patient has achieved remission?',
+    'Should sertraline be discontinued today?',
+    'Why is relapse prevention important?',
+    'What counseling should be provided regarding smoking?',
+    'What should long-term monitoring include?'
   ],
-  INTERVIEW_KNOWLEDGE: [
+
+    INTERVIEW_KNOWLEDGE: [
     { id: 'w5a3_tob', topic: 'Tobacco plan', field: 'tobacco', keywords: ['quit', 'smoke', 'how', 'medicine', 'patch'], response: "I'd like to try whatever is most effective. I've heard there are pills or patches?" },
   ],
   ASSESSMENT_CARDS: [
@@ -165,6 +182,14 @@ const jessicaTue = makeCase({
     { key: 'adherence', label: 'Medication Adherence', placeholder: 'How many days a week does she take the Sertraline?' },
     { key: 'barriers', label: 'Barriers to Care', placeholder: 'Why is she struggling with her medications?' },
   ],
+  GUIDING_QUESTIONS: [
+    'Has this patient failed sertraline?',
+    'What information changed your treatment plan?',
+    'What barriers are affecting outcomes?',
+    'What interventions would likely have the greatest impact?',
+    'Why is switching antidepressants not preferred today?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w5b_adh', topic: 'Nonadherence', field: 'adherence', keywords: ['take', 'every day', 'miss', 'forget', 'how often'], response: "I try to take it, but honestly I probably miss it three or four days a week. It's just hard to remember when things are chaotic." },
     { id: 'w5b_bar', topic: 'Barriers', field: 'barriers', keywords: ['why', 'hard', 'chaos', 'children', 'barriers'], response: "Between getting the kids to school, working full time, and financial stress, my own health just falls to the bottom of the list." },
@@ -202,6 +227,14 @@ const jessicaWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'expectations', label: 'Expectations', placeholder: 'What are her expectations for the medication?' },
   ],
+  GUIDING_QUESTIONS: [
+    'Has this patient achieved remission?',
+    'Should sertraline be changed today?',
+    'What intervention may have contributed most to improvement?',
+    'What stage of change is the patient demonstrating regarding smoking?',
+    'What should be the major goals before the next visit?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w5b2_exp', topic: 'Expectations', field: 'expectations', keywords: ['expect', 'fast', 'slow', 'work'], response: "I've been taking it perfectly for 3 weeks now, shouldn't I feel completely better by now? I feel like it's not working fast enough." },
   ],
@@ -238,13 +271,14 @@ const jessicaThu = makeCase({
     { key: 'maintenance', label: 'Maintenance Education', placeholder: 'What is her plan for the medication?' },
   ],
   GUIDING_QUESTIONS: [
-    'Has this patient achieved remission?',
-    'Should sertraline be changed today?',
-    'What intervention may have contributed most to improvement?',
-    'What stage of change is the patient demonstrating regarding smoking?',
-    'What should be the major goals before the next visit?'
+    'How do you know this patient has achieved remission?',
+    'What intervention may have had the greatest impact on this patient\'s outcome?',
+    'Should sertraline be discontinued today?',
+    'What behaviors should be reinforced?',
+    'Why is self-efficacy important?'
   ],
-  INTERVIEW_KNOWLEDGE: [
+
+    INTERVIEW_KNOWLEDGE: [
     { id: 'w5b3_maint', topic: 'Stopping meds', field: 'maintenance', keywords: ['stop', 'plan', 'continue', 'long', 'better'], response: "Since I feel 100% better, can I stop taking the Sertraline now?" },
   ],
   ASSESSMENT_CARDS: [
@@ -291,6 +325,14 @@ const davidTue = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'suicide', label: 'Suicide Risk Assessment', placeholder: 'Assess for suicidal ideation' },
   ],
+  GUIDING_QUESTIONS: [
+    'Does this patient meet criteria for emergency psychiatric hospitalization?',
+    'Why is treatment-resistant depression being considered?',
+    'Why is augmentation reasonable?',
+    'What are the patient\'s major protective factors?',
+    'What should be the major goals before the next visit?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w5c_si', topic: 'Suicide risk', field: 'suicide', keywords: ['suicide', 'harm', 'kill', 'end', 'ideation'], response: "I don't have a plan to hurt myself. But sometimes I wish I just wouldn't wake up. It's so exhausting fighting this every day." },
   ],
@@ -330,6 +372,14 @@ const davidWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'sideeffects', label: 'Esketamine Side Effects', placeholder: 'Ask about the dissociation and BP' },
   ],
+  GUIDING_QUESTIONS: [
+    'Has this patient responded to treatment?',
+    'Has remission been achieved?',
+    'Should medications be changed today?',
+    'What are the most important improvements?',
+    'What remains concerning?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w5c2_se', topic: 'Side effects', field: 'sideeffects', keywords: ['dissociation', 'dizzy', 'intense', 'blood pressure'], response: "During the treatment I feel very detached and dizzy, and my blood pressure spikes. The clinic watches me for 2 hours, and it goes away. It's worth it if it keeps working." },
   ],
@@ -369,13 +419,14 @@ const davidThu = makeCase({
     { key: 'update', label: 'Clinical Update', placeholder: 'How is he doing?' },
   ],
   GUIDING_QUESTIONS: [
-    'Has this patient responded to treatment?',
-    'Has remission been achieved?',
-    'Should medications be changed today?',
-    'What are the most important improvements?',
-    'What remains concerning?'
+    'How do you know this patient is in remission?',
+    'What demonstrates successful augmentation therapy?',
+    'Should medications be stopped today?',
+    'What outcomes are most meaningful?',
+    'What are the major goals moving forward?'
   ],
-  INTERVIEW_KNOWLEDGE: [
+
+    INTERVIEW_KNOWLEDGE: [
     { id: 'w5c3_upd', topic: 'Update', field: 'update', keywords: ['feel', 'hope', 'better', 'life'], response: "I have my life back. I'm engaging with my family again, enjoying my hobbies. I thought I was a lost cause." },
   ],
   ASSESSMENT_CARDS: [

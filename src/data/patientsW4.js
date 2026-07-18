@@ -45,6 +45,15 @@ const michaelTue = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'symptoms', label: 'Heart Failure Symptoms', placeholder: 'Any swelling or shortness of breath?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What findings support a diagnosis of HFrEF?',
+    'What are the four foundational medication classes for HFrEF?',
+    'Why is sacubitril/valsartan preferred over ACE inhibitor therapy in many patients?',
+    'What monitoring is required after initiation of heart failure therapy?',
+    'Why are daily weights important?',
+    'What counseling points should be provided during a new heart failure diagnosis?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4a_sym', topic: 'Symptoms', field: 'symptoms', keywords: ['swelling', 'breathe', 'shortness', 'stairs', 'edema'], response: "My ankles get a little puffy by the end of the day, and I get winded if I walk up a flight of stairs quickly." },
   ],
@@ -88,6 +97,15 @@ const michaelWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'dizziness', label: 'Dizziness Assessment', placeholder: 'When does he feel dizzy?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What findings demonstrate treatment success?',
+    'Why is MRA therapy appropriate today?',
+    'Should mild orthostatic symptoms change management?',
+    'What monitoring is required after spironolactone initiation?',
+    'Why is BNP trending useful?',
+    'What is the next long-term goal?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4a2_dizzy', topic: 'Orthostasis', field: 'dizziness', keywords: ['stand', 'dizzy', 'lightheaded', 'when'], response: "It's mostly when I get out of bed in the morning or stand up quickly from my desk. It passes after a few seconds." },
   ],
@@ -130,14 +148,15 @@ const michaelThu = makeCase({
     { key: 'titration', label: 'Medication Education', placeholder: 'Explain why doses need to increase' },
   ],
   GUIDING_QUESTIONS: [
-    'What findings demonstrate treatment success?',
-    'Why is MRA therapy appropriate today?',
-    'Should mild orthostatic symptoms change management?',
-    'What monitoring is required after spironolactone initiation?',
-    'Why is BNP trending useful?',
-    'What is the next long-term goal?'
+    'What findings support a diagnosis of HFimpEF?',
+    'Should GDMT be continued after EF improves?',
+    'Why is discontinuation of therapy potentially harmful?',
+    'What monitoring remains important?',
+    'What counseling should be provided regarding medication duration?',
+    'What is the major educational pearl of this encounter?'
   ],
-  INTERVIEW_KNOWLEDGE: [
+
+    INTERVIEW_KNOWLEDGE: [
     { id: 'w4a3_titrate', topic: 'Titration', field: 'titration', keywords: ['why', 'increase', 'feel fine', 'dose'], response: "If I feel good, why do we need to mess with the doses? Can't we just leave it here?" },
   ],
   ASSESSMENT_CARDS: [
@@ -183,6 +202,15 @@ const angelaTue = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'apixaban', label: 'Apixaban Adherence', placeholder: 'Why did she stop the Eliquis?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What was the most important medication therapy problem in this encounter?',
+    'Why is intermittent apixaban nonadherence concerning?',
+    'Why should adherence be addressed before intensifying heart failure therapy?',
+    'What social determinants of health affect this patient?',
+    'What interventions could improve adherence?',
+    'What is the major teaching pearl of this encounter?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4b_apix', topic: 'Cost Barrier', field: 'apixaban', keywords: ['apixaban', 'eliquis', 'cost', 'afford', 'stop', 'fill'], response: "That Eliquis is way too expensive. I'm on a fixed income, I can't pay $50 a month for it. So I just stopped taking it." },
   ],
@@ -218,6 +246,15 @@ const angelaWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'fear', label: 'Bleeding Fear', placeholder: 'What exactly is she afraid of?' },
   ],
+  GUIDING_QUESTIONS: [
+    'Why is minor bruising managed differently than major bleeding?',
+    'Why is continuation of apixaban appropriate?',
+    'What factors contributed to nonadherence?',
+    'What counseling points should be provided?',
+    'How does shared decision-making improve outcomes?',
+    'What is the major teaching pearl of this encounter?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4b2_fear', topic: 'Fear of bleeding', field: 'fear', keywords: ['afraid', 'scared', 'bleed', 'why', 'worry'], response: "My neighbor was on blood thinners and bled into his brain. I don't want that to happen to me. I already take so many meds, is this one really worth the risk?" },
   ],
@@ -254,14 +291,15 @@ const angelaThu = makeCase({
     { key: 'adherence', label: 'Adherence Check', placeholder: 'Check on her daily routine' },
   ],
   GUIDING_QUESTIONS: [
-    'Why is minor bruising managed differently than major bleeding?',
-    'Why is continuation of apixaban appropriate?',
-    'What factors contributed to nonadherence?',
-    'What counseling points should be provided?',
-    'How does shared decision-making improve outcomes?',
-    'What is the major teaching pearl of this encounter?'
+    'What was the primary success demonstrated during this encounter?',
+    'Why was continuation of anticoagulation appropriate?',
+    'What barriers were successfully addressed?',
+    'Why is reinforcement important even when a patient is doing well?',
+    'What pharmacist interventions contributed most to success?',
+    'What is the major teaching pearl of Patient B?'
   ],
-  INTERVIEW_KNOWLEDGE: [
+
+    INTERVIEW_KNOWLEDGE: [
     { id: 'w4b3_adh', topic: 'Adherence', field: 'adherence', keywords: ['take', 'miss', 'every day', 'routine'], response: "I set a pillbox like you suggested. I take the Eliquis every morning and night. No problems at all." },
   ],
   ASSESSMENT_CARDS: [
@@ -317,7 +355,8 @@ const robertTue = makeCase({
     'How should dialysis concerns be addressed?',
     'What is the major teaching pearl of this encounter?'
   ],
-  INTERVIEW_KNOWLEDGE: [
+
+    INTERVIEW_KNOWLEDGE: [
     { id: 'w4c_q', topic: 'Evidence question', field: 'questions', keywords: ['labs', 'kidney', 'creatinine', 'dose', 'apixaban'], response: "My creatinine is 1.4 and I weigh 58 kg. Shouldn't my Apixaban dose be lowered? I read online that older, lighter people need a lower dose." },
   ],
   ASSESSMENT_CARDS: [
@@ -360,7 +399,8 @@ const robertWed = makeCase({
     'How does CKD influence anticoagulation management?',
     'What is the major teaching pearl of this encounter?'
   ],
-  INTERVIEW_KNOWLEDGE: [
+
+    INTERVIEW_KNOWLEDGE: [
     { id: 'w4c2_bleed', topic: 'Epistaxis', field: 'nosebleeds', keywords: ['nose', 'bleed', 'epistaxis', 'severe', 'stop'], response: "They aren't huge gushers, they stop if I pinch my nose for a few minutes. But it makes me nervous. Is there a safer drug that won't make me bleed?" },
   ],
   ASSESSMENT_CARDS: [

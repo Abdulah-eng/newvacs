@@ -151,6 +151,17 @@ const caseTue = {
     { key: 'concerns', label: 'Patient concerns & goals', placeholder: 'What worries her most?' },
     { key: 'cost', label: 'Cost / access', placeholder: 'Any cost or refill barriers?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What factors contributed to this patient\'s uncontrolled blood pressure?',
+    'Why did you choose medication intensification rather than adherence intervention alone?',
+    'What additional information is needed before fully evaluating kidney risk?',
+    'Why does diabetes change your blood pressure goal?',
+    'Why is statin therapy indicated even though this patient has never had a heart attack or stroke?',
+    'What would make your treatment plan difficult for this patient to follow?',
+    'How would you explain A1C to this patient in plain language?',
+    'What would you monitor after increasing lisinopril?'
+  ],
+
 
   INTERVIEW_KNOWLEDGE: [
     { id: 'reason', topic: 'Reason for visit', field: null,
@@ -525,6 +536,17 @@ const caseWed = {
     { key: 'concerns', label: 'Concerns & goals', placeholder: 'Kidney worries, weight, etc.' },
     { key: 'cost', label: 'Cost / access', placeholder: 'Any refill or cost barriers?' },
   ],
+  GUIDING_QUESTIONS: [
+    'Why did you choose to intensify therapy or not intensify therapy today?',
+    'What does a UACR of 45 mg/g tell you about this patient\'s future risk?',
+    'How does albuminuria change your treatment priorities?',
+    'Why isn\'t a normal creatinine enough to rule out diabetic kidney disease?',
+    'What therapies may become appropriate if albuminuria persists?',
+    'What evidence suggests the current treatment plan is working?',
+    'What additional goals remain unmet?',
+    'If you only looked at today\'s numbers and ignored the trends, what mistake might you make?'
+  ],
+
 
   INTERVIEW_KNOWLEDGE: [
     { id: 'reason', topic: 'Reason for visit', field: null,

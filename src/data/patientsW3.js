@@ -49,6 +49,15 @@ const sarahTue = makeCase({
     { key: 'budesonide', label: 'Controller Adherence', placeholder: 'Is she taking the budesonide?' },
     { key: 'nighttime', label: 'Nighttime Symptoms', placeholder: 'Waking up at night?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What findings indicate uncontrolled asthma?',
+    'Why is SABA-only therapy no longer preferred?',
+    'What are the advantages of SMART therapy?',
+    'Why should allergic rhinitis be addressed?',
+    'What monitoring is necessary after therapy initiation?',
+    'What counseling points are important for inhaled corticosteroids?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w3a_albuterol', topic: 'Albuterol Overuse', field: 'albuterol', keywords: ['rescue', 'albuterol', 'how often', 'frequent'], response: "I've been using my albuterol about 4 or 5 times a week lately. It helps me breathe better." },
     { id: 'w3a_bud', topic: 'ICS Nonadherence', field: 'budesonide', keywords: ['budesonide', 'daily', 'controller', 'steroid'], response: "I only use the budesonide when I feel like a cold is coming on. I didn't think I needed it every day if my asthma wasn't bothering me." },
@@ -92,6 +101,15 @@ const sarahWed = makeCase({
     { key: 'symptoms', label: 'Current Symptoms', placeholder: 'How are the symptoms now?' },
     { key: 'adherence', label: 'ICS Adherence', placeholder: 'Still taking the daily inhaler?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What evidence suggests the current regimen is working?',
+    'Why should inhaler technique be assessed before escalation?',
+    'What inhaler technique errors were identified?',
+    'Why is escalation not appropriate at this time?',
+    'What monitoring is needed moving forward?',
+    'How has allergic rhinitis affected this case?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w3a2_sym', topic: 'Exercise symptoms', field: 'symptoms', keywords: ['symptoms', 'breathe', 'exercise', 'run'], response: "I'm much better during the day, but when I try to run or play with the kids, I get tight and need the rescue inhaler." },
     { id: 'w3a2_adh', topic: 'Adherence', field: 'adherence', keywords: ['budesonide', 'every day', 'daily', 'take'], response: "Yes, I've been taking the budesonide every morning and night like you said." },
@@ -132,14 +150,15 @@ const sarahThu = makeCase({
     { key: 'control', label: 'Asthma Control', placeholder: 'Any symptoms or rescue use?' },
   ],
   GUIDING_QUESTIONS: [
-    'What evidence suggests the current regimen is working?',
-    'Why should inhaler technique be assessed before escalation?',
-    'What inhaler technique errors were identified?',
-    'Why is escalation not appropriate at this time?',
-    'What monitoring is needed moving forward?',
-    'How has allergic rhinitis affected this case?'
+    'What evidence suggests asthma remains controlled?',
+    'Why is escalation not required?',
+    'What role did the viral illness play?',
+    'What factors should be assessed before escalating therapy?',
+    'What monitoring should continue moving forward?',
+    'How can future exacerbation risk be reduced?'
   ],
-  INTERVIEW_KNOWLEDGE: [
+
+    INTERVIEW_KNOWLEDGE: [
     { id: 'w3a3_ctrl', topic: 'Controlled', field: 'control', keywords: ['symptoms', 'rescue', 'use', 'feel'], response: "I use the Symbicort twice a day. I haven't needed to take any extra puffs in weeks, even when I exercise." },
   ],
   ASSESSMENT_CARDS: [
@@ -186,6 +205,15 @@ const bobTue = makeCase({
     { key: 'maintenance', label: 'Maintenance Inhaler', placeholder: 'Was he prescribed a daily inhaler?' },
     { key: 'cost', label: 'Cost/Affordability', placeholder: 'Can he afford his meds?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What findings support GOLD Group B classification?',
+    'Why is this case treatment non-initiation rather than treatment failure?',
+    'What barriers prevented therapy initiation?',
+    'Why is LABA/LAMA therapy appropriate?',
+    'What education is most important?',
+    'What should be monitored after therapy initiation?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w3b_maint', topic: 'Maintenance therapy', field: 'maintenance', keywords: ['daily', 'inhaler', 'prescribed', 'tiotropium', 'spiriva', 'laba', 'lama'], response: "The doctor gave me a script for some combination inhaler a while back, but when I went to the pharmacy, it was $300. I left it there. I just use the albuterol." },
     { id: 'w3b_cost', topic: 'Cost barrier', field: 'cost', keywords: ['cost', 'afford', 'expensive', 'money', 'pay'], response: "Yeah, I can't afford hundreds of dollars for an inhaler on a fixed income. The albuterol is cheap, so I stick with that." },
@@ -226,6 +254,12 @@ const bobWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'technique', label: 'Inhaler Technique', placeholder: 'Ask him to demonstrate how he uses the HandiHaler' },
   ],
+  GUIDING_QUESTIONS: [
+    'What evidence suggests adherence is contributing to persistent symptoms?',
+    'Why is escalation not appropriate today?',
+    'What interventions could improve adherence?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w3b2_tech', topic: 'Inhaler technique', field: 'technique', keywords: ['show', 'demonstrate', 'how', 'use', 'technique', 'capsule'], response: "I put the pill in the device, press the button, and then breathe out into the mouthpiece really hard to blow the medicine into my lungs." },
   ],
@@ -262,11 +296,14 @@ const bobThu = makeCase({
     { key: 'symptoms', label: 'Symptom check', placeholder: 'Any exacerbations or rescue use?' },
   ],
   GUIDING_QUESTIONS: [
-    'What evidence suggests adherence is contributing to persistent symptoms?',
-    'Why is escalation not appropriate today?',
-    'What interventions could improve adherence?'
+    'Why is escalation appropriate today but was inappropriate at the previous visit?',
+    'How do eosinophils influence COPD management?',
+    'Why was Trelegy Ellipta selected?',
+    'What counseling should accompany Trelegy initiation?',
+    'What monitoring is required after escalation?'
   ],
-  INTERVIEW_KNOWLEDGE: [
+
+    INTERVIEW_KNOWLEDGE: [
     { id: 'w3b3_sym', topic: 'Symptoms', field: 'symptoms', keywords: ['exacerbation', 'rescue', 'albuterol', 'feel', 'breathing'], response: "I hardly touch the albuterol now. I can walk to the mailbox and back without stopping. No flare-ups." },
   ],
   ASSESSMENT_CARDS: [
@@ -311,6 +348,14 @@ const mariaTue = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'exacerbations', label: 'Exacerbation History', placeholder: 'Tell me about the flare-ups' },
   ],
+  GUIDING_QUESTIONS: [
+    'What findings support asthma-COPD overlap rather than isolated COPD?',
+    'Why is ICS therapy indicated?',
+    'What role do eosinophils play in this case?',
+    'How might allergic rhinitis affect respiratory control?',
+    'What outcomes should be monitored after Symbicort initiation?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w3c_exac', topic: 'Exacerbations', field: 'exacerbations', keywords: ['flare', 'infection', 'prednisone', 'hospital'], response: "I've had to go to urgent care three times in the last year for steroids and antibiotics. My breathing just gets so tight." },
   ],
@@ -349,6 +394,14 @@ const mariaWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Adherence / Technique', placeholder: 'Are you sure she is taking it?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What evidence suggests the current inhaler regimen is working?',
+    'Why is escalation not appropriate today?',
+    'How does allergic rhinitis affect respiratory disease control?',
+    'Why is biologic therapy not indicated?',
+    'What should be monitored before the next visit?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'w3c2_adh', topic: 'Adherence verified', field: 'adherence', keywords: ['take', 'every day', 'daily', 'miss'], response: "I never miss a dose. I use it every morning exactly like you showed me. I even rinse my mouth after." },
   ],
@@ -389,13 +442,14 @@ const mariaThu = makeCase({
     { key: 'update', label: 'Clinical Update', placeholder: 'How has she been feeling?' },
   ],
   GUIDING_QUESTIONS: [
-    'What evidence suggests the current inhaler regimen is working?',
-    'Why is escalation not appropriate today?',
-    'How does allergic rhinitis affect respiratory disease control?',
-    'Why is biologic therapy not indicated?',
-    'What should be monitored before the next visit?'
+    'Why is biologic therapy appropriate today but would not have been appropriate at the Wednesday visit?',
+    'What findings suggest severe eosinophilic disease?',
+    'How does MATINEE influence management?',
+    'Why is corticosteroid stewardship important in this patient?',
+    'What should be monitored after Nucala initiation?'
   ],
-  INTERVIEW_KNOWLEDGE: [
+
+    INTERVIEW_KNOWLEDGE: [
     { id: 'w3c3_upd', topic: 'Update', field: 'update', keywords: ['feel', 'breathing', 'exacerbation', 'flare'], response: "I haven't had a single flare-up. I'm breathing better, sleeping better, and I feel like I have my life back." },
   ],
   ASSESSMENT_CARDS: [

@@ -64,6 +64,17 @@ const michaelTue = makeCase({
     { key: 'albumin', label: 'Understanding of albuminuria', placeholder: 'What he grasps about protein in the urine…' },
     { key: 'weight', label: 'Weight / lifestyle goals', placeholder: 'Motivation, diet, activity…' },
   ],
+  GUIDING_QUESTIONS: [
+    'Why does this patient meet criteria for CKD despite having an eGFR of 79 mL/min/1.73m²?',
+    'What is the significance of a UACR of 118 mg/g?',
+    'Why is CKD considered an ASCVD risk-enhancing condition?',
+    'Why did you choose statin intensification rather than adherence intervention alone?',
+    'What additional factors may contribute to future CKD progression in this patient?',
+    'Why is chronic NSAID use concerning in a patient with CKD?',
+    'How would you explain albuminuria to this patient in plain language?',
+    'What should be monitored after today\'s interventions?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'a_nsaid', topic: 'OTC ibuprofen (nephrotoxic)', field: 'nsaid',
       keywords: ['ibuprofen', 'advil', 'motrin', 'nsaid', 'pain', 'knee', 'arthritis', 'otc', 'over the counter', 'supplement'],
@@ -165,6 +176,17 @@ const michaelWed = makeCase({
     { key: 'nsaid', label: 'NSAID use now', placeholder: 'How much ibuprofen remains…' },
     { key: 'albumin', label: 'Kidney understanding', placeholder: 'His belief about eGFR vs albuminuria…' },
   ],
+  GUIDING_QUESTIONS: [
+    'How would you explain to this patient that he still has CKD despite having a normal eGFR?',
+    'Why is albuminuria still important if it improved?',
+    'What likely contributed to the LDL-C improvement?',
+    'What should be reinforced during today\'s visit?',
+    'What are the remaining modifiable risk factors?',
+    'Would you make additional medication changes today?',
+    'What monitoring should occur before the next visit?',
+    'What is the biggest unresolved issue today?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'aw_nsaid', topic: 'Residual NSAID use', field: 'nsaid', keywords: ['ibuprofen', 'nsaid', 'advil', 'pain', 'knee', 'still'],
       response: "I still take ibuprofen sometimes — maybe once a week now, a lot less than before." },
@@ -322,6 +344,15 @@ const angelaTue = makeCase({
     { key: 'cost', label: 'Cost / access barrier', placeholder: 'Affordability, embarrassment, insurance…' },
     { key: 'fear', label: 'Statin concerns / fears', placeholder: 'Side-effect worries…' },
   ],
+  GUIDING_QUESTIONS: [
+    'What is the difference between nonadherence and noninitiation?',
+    'What barriers prevented rosuvastatin initiation?',
+    'Why is CKD considered a risk-enhancing condition?',
+    'How would you address concerns about statin adverse effects?',
+    'How would you determine whether cost is a barrier?',
+    'What follow-up would be necessary after therapy initiation?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'b_statin', topic: 'Rosuvastatin never started', field: 'statin',
       keywords: ['rosuvastatin', 'prescribed', 'never started', 'new', 'cholesterol medication', 'unfilled', 'previous', 'change', 'pick up'],
@@ -418,6 +449,15 @@ const angelaWed = makeCase({
     { key: 'start', label: 'Did she start it / tolerability', placeholder: 'Initiation, side effects…' },
     { key: 'cost', label: 'Affordability now', placeholder: 'Is it sustainable?' },
   ],
+  GUIDING_QUESTIONS: [
+    'What factors suggest this may not represent clinically significant SAMS?',
+    'What likely caused the LDL-C improvement?',
+    'Why should affordability be reassessed even after initiation?',
+    'What did this encounter teach about therapeutic inertia?',
+    'Would you stop rosuvastatin today?',
+    'What monitoring should occur before the next visit?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'bw_start', topic: 'Rosuvastatin started & tolerated', field: 'start', keywords: ['start', 'rosuvastatin', 'muscle', 'side effect', 'tolerate', 'ache', 'how'],
       response: "Yes — I started it and I've been taking it. No muscle aches or problems at all, which was a relief." },
@@ -485,6 +525,15 @@ const angelaThu = makeCase({
     { key: 'confidence', label: 'Confidence / adherence', placeholder: 'How she feels about the regimen…' },
     { key: 'goals', label: 'Goals & lifestyle', placeholder: 'Weight, activity, prevention…' },
   ],
+  GUIDING_QUESTIONS: [
+    'Why should rosuvastatin be continued despite LDL-C improvement?',
+    'Does this patient still have CKD?',
+    'What evidence supports continued cardiovascular risk?',
+    'Would you intensify therapy today?',
+    'What counseling should be provided regarding long-term medication use?',
+    'What should be monitored moving forward?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'bt_conf', topic: 'Confidence in statin', field: 'confidence', keywords: ['confiden', 'rosuvastatin', 'trust', 'helping', 'good', 'routine'],
       response: "I feel much more confident now — the rosuvastatin's been easy and I trust it's helping." },
@@ -584,6 +633,15 @@ const davidTue = makeCase({
     { key: 'potassium', label: 'Hyperkalemia concern', placeholder: 'Worries about potassium…' },
     { key: 'why', label: 'Understanding / wants evidence', placeholder: 'What rationale he needs…' },
   ],
+  GUIDING_QUESTIONS: [
+    'Why is this patient considered high risk despite reasonable A1C and LDL-C values?',
+    'What does UACR 520 mg/g tell you?',
+    'Why might finerenone have been recommended previously?',
+    'What barriers prevented therapy initiation?',
+    'What additional information is needed before recommending therapy?',
+    'What should be monitored moving forward?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'c_fin', topic: 'Declined finerenone', field: 'finerenone',
       keywords: ['finerenone', 'kidney medication', 'previous', 'recommend', 'declined', 'never started', 'another', 'mra'],
@@ -683,6 +741,15 @@ const davidWed = makeCase({
     { key: 'potassium', label: 'Potassium worry / symptoms', placeholder: 'Concerns, symptoms…' },
     { key: 'adherence', label: 'Finerenone adherence/tolerability', placeholder: 'How it’s going…' },
   ],
+  GUIDING_QUESTIONS: [
+    'What findings suggest finerenone is providing benefit?',
+    'Why should potassium be monitored?',
+    'Would you discontinue therapy today?',
+    'How would you counsel this patient regarding the eGFR change?',
+    'What residual risks remain?',
+    'What monitoring should occur before the next visit?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'cw_k', topic: 'Potassium concern', field: 'potassium', keywords: ['potassium', 'hyperkalem', 'worried', 'number', 'went up', 'symptom', 'cramp', 'weak'],
       response: "I noticed my potassium went up to 5.1 and my kidney number dipped. I don't feel any cramps or weakness, but it makes me nervous." },
@@ -749,6 +816,15 @@ const davidThu = makeCase({
     { key: 'understanding', label: 'Understanding / endorsement', placeholder: 'His grasp of the strategy…' },
     { key: 'barriers', label: 'Any barriers to sustaining', placeholder: 'Cost, pill burden, monitoring…' },
   ],
+  GUIDING_QUESTIONS: [
+    'Why should finerenone be continued despite improvement?',
+    'Does this patient still have CKD?',
+    'What evidence suggests treatment is working?',
+    'What residual risks remain?',
+    'What monitoring should continue long-term?',
+    'How would you explain continued therapy to this patient?'
+  ],
+
   INTERVIEW_KNOWLEDGE: [
     { id: 'ct_und', topic: 'Endorses strategy', field: 'understanding', keywords: ['understand', 'makes sense', 'protein', 'kidney', 'why', 'evidence', 'working'],
       response: "Now that I see the protein dropping from 520 to 290, it makes sense. The data convinced me — I'm committed to staying on it." },
