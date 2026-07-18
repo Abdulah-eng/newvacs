@@ -74,13 +74,8 @@ export default function SimulationShell({ caseData, onExit }) {
     return { ...s, interview: { ...s.interview, [key]: val }, __progress: { ...s.__progress, interview: true } }
   })
 
-  const onUserSpeak = (q) => update(s => {
-    const chat = [...s.chat, { role: 'student', text: q }]
-    return { ...s, chat, __progress: { ...s.__progress, interview: true } }
-  })
-
-  const onPatientReply = (reply) => update(s => {
-    const chat = [...s.chat, { role: 'patient', text: reply.text, discovered: !!reply.field }]
+  const ask = (q, reply) => update(s => {
+    const chat = [...s.chat, { role: 'student', text: q }, { role: 'patient', text: reply.text, discovered: !!reply.field }]
     const discovered = { ...s.discovered }
     if (reply.field) discovered[reply.field] = true
     return { ...s, chat, discovered, __progress: { ...s.__progress, interview: true } }
@@ -271,7 +266,7 @@ export default function SimulationShell({ caseData, onExit }) {
 
               {/* Patient Interview Tab stays permanently mounted so the Avatar WebRTC connection doesn't drop when switching tabs to take notes! */}
               <div className={active === 'interview' ? 'block fade-up' : 'hidden'}>
-                <PatientInterviewTab c={caseData} chat={state.chat} interview={state.interview} discovered={state.discovered} onUserSpeak={onUserSpeak} onPatientReply={onPatientReply} onField={setInterview} />
+                <PatientInterviewTab c={caseData} chat={state.chat} interview={state.interview} discovered={state.discovered} onAsk={ask} onField={setInterview} />
               </div>
               
             </div>
