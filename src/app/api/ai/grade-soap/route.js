@@ -52,7 +52,6 @@ export async function POST(request) {
 
     const systemPrompt = buildSoapGradingPrompt({
       studentSoap,
-      goldSoap,
       hiddenInfoLog,
       granularRubric,
       patientName,
