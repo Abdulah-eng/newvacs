@@ -62,7 +62,10 @@ export async function POST(request) {
 
     return NextResponse.json(result)
   } catch (error) {
-    console.error('Journal grading AI error:', error)
-    return NextResponse.json({ error: error.message || 'Failed to grade journal club responses' }, { status: 500 })
+    console.error('Error grading journal:', error)
+    return NextResponse.json(
+      { error: error.message || 'Internal Server Error', details: error.error || error },
+      { status: error.status === 413 ? 413 : 500 }
+    )
   }
 }

@@ -38,7 +38,11 @@ export async function POST(req) {
     return NextResponse.json(result)
   } catch (error) {
     console.error('Error grading manuscript:', error)
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
+    // Forward the actual error message to the client for easier debugging
+    return NextResponse.json(
+      { error: error.message || 'Internal Server Error', details: error.error || error },
+      { status: error.status === 413 ? 413 : 500 }
+    )
   }
 }
 
