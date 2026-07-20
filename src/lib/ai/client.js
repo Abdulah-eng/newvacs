@@ -70,7 +70,13 @@ export async function callJsonLlm(messages, modelOverride = null) {
       response_format: { type: 'json_object' },
       temperature: 0.2,
     })
-    return JSON.parse(response.choices[0].message.content)
+    let text = response.choices[0].message.content
+    try {
+      return JSON.parse(text)
+    } catch (e) {
+      console.error('Groq JSON parse error. Raw text:', text)
+      throw new Error('Failed to parse Groq AI response as JSON')
+    }
 
   } else {
     throw new Error(`Unknown AI_PROVIDER: "${provider}". Use 'gemini' or 'groq'.`)
