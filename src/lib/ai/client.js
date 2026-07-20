@@ -5,7 +5,10 @@ import Groq from 'groq-sdk'
  * Determines which provider and model to use based on env config.
  * AI_PROVIDER = 'gemini' | 'groq'  (defaults to 'gemini')
  */
-function getProvider() {
+function getProvider(isGrading = false) {
+  if (isGrading && process.env.GRADING_AI_PROVIDER) {
+    return process.env.GRADING_AI_PROVIDER
+  }
   return process.env.AI_PROVIDER || 'gemini'
 }
 
@@ -24,7 +27,7 @@ function getGroqClient() {
  * Used by: SOAP grader, Journal Club grader, Weekly Summary, Cumulative Summary
  */
 export async function callJsonLlm(messages, modelOverride = null) {
-  const provider = getProvider()
+  const provider = getProvider(true) // Pass true to use GRADING_AI_PROVIDER if set
 
   if (provider === 'gemini') {
     const genAI = getGeminiClient()
