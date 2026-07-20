@@ -65,7 +65,7 @@ export async function callJsonLlm(messages, modelOverride = null) {
   } else if (provider === 'groq') {
     const groq = getGroqClient()
     const response = await groq.chat.completions.create({
-      model: modelOverride || process.env.GROQ_MODEL || 'llama-3.1-70b-versatile',
+      model: modelOverride || process.env.GRADING_GROQ_MODEL || 'llama-3.1-8b-instant',
       messages,
       response_format: { type: 'json_object' },
       temperature: 0.2,
