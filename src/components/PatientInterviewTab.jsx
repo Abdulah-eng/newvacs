@@ -188,8 +188,8 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     const analyser = analyserRef.current
     if (!analyser) return
     const buf = new Uint8Array(analyser.frequencyBinCount)
-    const SILENCE_MS = 700       // ms of silence to end an utterance
-    const MIN_SPEECH_MS = 800    // minimum speaking time before we submit (blocks noise bursts)
+    const SILENCE_MS = 1500      // 1.5s of silence to end an utterance (allows natural pauses when speaking)
+    const MIN_SPEECH_MS = 300    // minimum speaking time (300ms allows short answers like 'Yes' or 'No')
     const DELTA = 18             // how far above baseline = speech (higher = less sensitive to bg noise)
 
     const tick = () => {
