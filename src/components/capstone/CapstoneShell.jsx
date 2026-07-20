@@ -32,12 +32,15 @@ export default function CapstoneShell({ week, onExit }) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ manuscript: text, topicId: week.topic.id })
       })
-      if (!res.ok) throw new Error('Failed to grade manuscript')
+      if (!res.ok) {
+        const errData = await res.json().catch(() => ({}))
+        throw new Error(errData.error || errData.message || 'Failed to grade manuscript')
+      }
       const data = await res.json()
       updateState('feedback', data)
     } catch (err) {
       console.error(err)
-      alert('Error evaluating manuscript. Please try again.')
+      alert(`Error evaluating manuscript: ${err.message}`)
       updateState('assignment')
     }
   }
