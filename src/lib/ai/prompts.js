@@ -32,7 +32,7 @@ Respond ONLY with a JSON object in this exact format:
 }`
 }
 
-export function buildSoapGradingPrompt({ studentSoap, goldSoap, transcript, hiddenInfoLog, granularRubric, patientName, visitDay }) {
+export function buildSoapGradingPrompt({ studentSoap, goldSoap, hiddenInfoLog, granularRubric, patientName, visitDay }) {
   return `You are the VACS SOAP note grader. Grade the student's structured SOAP note strictly against the provided granular rubric.
 
 INPUTS:
@@ -40,7 +40,6 @@ INPUTS:
 - Visit day: ${visitDay}
 - Student SOAP note: ${JSON.stringify(studentSoap)}
 - Gold-standard SOAP note (for context): ${JSON.stringify(goldSoap)}
-- Interview transcript: ${JSON.stringify(transcript)}
 - Hidden information discovered: ${JSON.stringify(hiddenInfoLog)}
 
 ═══ GRANULAR RUBRIC (Discrete Inputs) ═══
