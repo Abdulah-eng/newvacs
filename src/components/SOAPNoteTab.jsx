@@ -78,7 +78,7 @@ export function SOAPNoteTab({ c, state, soap, onChange, onGraded }) {
           className="inline-flex items-center gap-2 rounded-lg bg-navy px-4 py-2 text-[13px] font-semibold text-white hover:bg-navydark transition">
           <Wand2 size={15} /> Generate Draft from Inputs
         </button>
-        <button onClick={grade} disabled={loading}
+        <button onClick={grade} disabled={loading || state.graded}
           className="inline-flex items-center gap-2 rounded-lg bg-teal px-4 py-2 text-[13px] font-semibold text-white hover:bg-teal/90 disabled:opacity-60 disabled:cursor-not-allowed transition">
           {loading ? (
             <span className="flex items-center gap-2">
@@ -86,7 +86,7 @@ export function SOAPNoteTab({ c, state, soap, onChange, onGraded }) {
               Grading…
             </span>
           ) : (
-            <><GraduationCap size={15} /> Grade Against Model SOAP</>
+            <><GraduationCap size={15} /> {state.graded ? 'Already Graded' : 'Grade Against Model SOAP'}</>
           )}
         </button>
         <button onClick={copyAll}

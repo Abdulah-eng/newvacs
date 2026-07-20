@@ -4,14 +4,28 @@ import EvaluationLoading from './EvaluationLoading'
 import FeedbackView from './FeedbackView'
 import DiscussionChat from './DiscussionChat'
 import { ArrowLeft, BookOpen, Upload, BrainCircuit, MessageSquare, CheckCircle } from 'lucide-react'
+import { loadCaseState, saveCaseState } from '../../lib/storage'
 
 export default function CapstoneShell({ week, onExit }) {
-  // Steps: 'assignment', 'evaluating', 'feedback', 'discussion', 'complete'
-  const [step, setStep] = useState('assignment')
-  const [evaluation, setEvaluation] = useState(null)
+  const STATE_ID = `capstone_${week.topic.id}`
+  const [step, setStep] = useState(() => {
+    const s = loadCaseState(STATE_ID)
+    return s.step || 'assignment'
+  })
+  const [evaluation, setEvaluation] = useState(() => {
+    const s = loadCaseState(STATE_ID)
+    return s.evaluation || null
+  })
+
+  const updateState = (newStep, newEval) => {
+    setStep(newStep)
+    if (newEval !== undefined) setEvaluation(newEval)
+    const nextEval = newEval !== undefined ? newEval : evaluation
+    saveCaseState(STATE_ID, { step: newStep, evaluation: nextEval })
+  }
   
   const handleUploadComplete = async (text) => {
-    setStep('evaluating')
+    updateState('evaluating')
     try {
       const res = await fetch('/api/ai/grade-manuscript', {
         method: 'POST',
@@ -20,12 +34,11 @@ export default function CapstoneShell({ week, onExit }) {
       })
       if (!res.ok) throw new Error('Failed to grade manuscript')
       const data = await res.json()
-      setEvaluation(data)
-      setStep('feedback')
+      updateState('feedback', data)
     } catch (err) {
       console.error(err)
       alert('Error evaluating manuscript. Please try again.')
-      setStep('assignment')
+      updateState('assignment')
     }
   }
 
@@ -71,7 +84,7 @@ export default function CapstoneShell({ week, onExit }) {
       <main className="flex-1 overflow-auto">
         {step === 'assignment' && <AssignmentView topic={week.topic} onUpload={handleUploadComplete} />}
         {step === 'evaluating' && <EvaluationLoading />}
-        {step === 'feedback' && <FeedbackView evaluation={evaluation} onContinue={() => setStep('discussion')} />}
+        {step === 'feedback' && <FeedbackView evaluation={evaluation} onContinue={() => updateState('discussion')} />}
         {step === 'discussion' && <DiscussionChat topic={week.topic} evaluation={evaluation} onFinish={onExit} />}
       </main>
     </div>
