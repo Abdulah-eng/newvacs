@@ -71,6 +71,8 @@ export function SimliAvatar({ patientName, isSpeaking, onReady, onError, onMount
   const clientRef = useRef(null)
   const [status, setStatus] = useState('idle') // idle | connecting | ready | error
   const [errorMsg, setErrorMsg] = useState('')
+  const [retryKey, setRetryKey] = useState(0)
+  const [hasConnected, setHasConnected] = useState(false)
 
   const faceId = getFaceId(patientName)
   const apiKey = process.env.NEXT_PUBLIC_SIMLI_API_KEY
@@ -133,8 +135,8 @@ export function SimliAvatar({ patientName, isSpeaking, onReady, onError, onMount
           config: {
             faceId,
             handleSilence: true,
-            maxSessionLength: 600,
-            maxIdleTime: 120,
+            maxSessionLength: 3600,
+            maxIdleTime: 600,
             model: 'fasttalk',
           },
         })
@@ -157,6 +159,7 @@ export function SimliAvatar({ patientName, isSpeaking, onReady, onError, onMount
         client.on('start', () => {
           if (stopped) return
           setStatus('ready')
+          setHasConnected(true)
           onReady?.()
         })
         client.on('stop', () => {
@@ -208,7 +211,7 @@ export function SimliAvatar({ patientName, isSpeaking, onReady, onError, onMount
       clientRef.current = null
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [faceId, apiKey])
+  }, [faceId, apiKey, retryKey])
 
   return (
     <div className="flex flex-col items-center justify-center p-6">
@@ -241,9 +244,30 @@ export function SimliAvatar({ patientName, isSpeaking, onReady, onError, onMount
 
           {/* Connecting overlay */}
           {status === 'connecting' && (
-            <div className="absolute inset-0 bg-navy/80 flex flex-col items-center justify-center gap-3">
-              <div className="w-8 h-8 rounded-full border-4 border-white/20 border-t-teal animate-spin" />
-              <p className="text-white text-xs font-medium">Connecting avatar…</p>
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-900/40 backdrop-blur-sm z-20">
+              <div className="w-10 h-10 border-4 border-white/20 border-t-white rounded-full animate-spin mb-3"></div>
+              <p className="text-white font-medium drop-shadow-md tracking-wide">Connecting...</p>
+            </div>
+          )}
+
+          {status === 'idle' && hasConnected && (
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-900/70 backdrop-blur-sm z-20">
+              <p className="text-white mb-3 font-medium">Avatar Paused</p>
+              <button 
+                onClick={() => {
+                  setStatus('connecting')
+                  setRetryKey(k => k + 1)
+                }}
+                className="bg-teal text-white px-4 py-2 rounded-lg font-medium shadow-lg hover:bg-teal-600 transition-colors"
+              >
+                Reconnect
+              </button>
+            </div>
+          )}
+
+          {status === 'idle' && !hasConnected && (
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-900/40 backdrop-blur-sm z-20">
+              <p className="text-white/80 font-medium">Initializing...</p>
             </div>
           )}
 
