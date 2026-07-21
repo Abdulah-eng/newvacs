@@ -27,27 +27,23 @@ async function test() {
       visitDay
     });
 
-    console.log("Sending to Anthropic... (this may take a while for Thinking models)");
+    console.log("Sending to Anthropic...");
     const response = await client.messages.create({
       model: 'claude-sonnet-5',
-      max_tokens: 8192,
+      // Increase max_tokens drastically for Thinking models
+      max_tokens: 64000,
       system: systemPrompt + '\n\nIMPORTANT: You must respond ONLY with a valid JSON object. Do not include markdown code blocks, conversational text, or explanations before or after the JSON.',
       messages: [{ role: 'user', content: 'Grade the provided SOAP note based on the rubric and source set.' }],
-    }, {
-      headers: {
-        'anthropic-beta': 'max-tokens-3-5-sonnet-2024-07-15'
-      }
     });
 
     let text = response.content.find(b => b.type === 'text')?.text || '';
     
-    // check if truncated
     console.log("Response stop_reason:", response.stop_reason);
     console.log("Text length:", text.length);
     console.log("Ends with:", text.slice(-20));
 
   } catch (e) {
-    console.error('ERROR:', e.message, e);
+    console.error('ERROR:', e.message);
   }
 }
 test();
