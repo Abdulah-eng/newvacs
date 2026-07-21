@@ -18,7 +18,7 @@ export async function callJsonLlm(messages, modelOverride = null) {
 
   const response = await anthropic.messages.create({
     model: modelOverride || process.env.ANTHROPIC_MODEL || 'claude-sonnet-5',
-    max_tokens: 8192,
+    max_tokens: 64000,
     system: systemMsg + '\n\nIMPORTANT: You must respond ONLY with a valid JSON object. Do not include markdown code blocks, conversational text, or explanations before or after the JSON.',
     messages: userMessages,
   })
