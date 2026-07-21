@@ -23,7 +23,7 @@ export async function callJsonLlm(messages, modelOverride = null) {
     messages: userMessages,
   })
 
-  let text = response.content[0].text
+  let text = response.content.find(b => b.type === 'text')?.text || ''
   
   // Clean markdown code blocks just in case Claude wraps it in ```json
   text = text.replace(/```json\n?/gi, '').replace(/```\n?/g, '').trim()
@@ -53,6 +53,6 @@ export async function callLlm(messages, modelOverride = null) {
     messages: userMessages,
   })
 
-  return response.content[0].text
+  return response.content.find(b => b.type === 'text')?.text || ''
 }
 
