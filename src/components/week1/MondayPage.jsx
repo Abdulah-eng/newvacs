@@ -62,9 +62,9 @@ export default function MondayPage({ week, onPassed }) {
                 ))}
               </dl>
               <div className="mt-4 pt-3 border-t border-slate-100">
-                <span className="inline-flex items-center gap-1.5 text-[12px] font-semibold text-slate-400">
+                <a href={`/guidelines/${sec.pdf}`} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-[12px] font-semibold text-slate-400 hover:text-teal-600 hover:underline transition">
                   <FileText size={14} /> Full guideline: {sec.pdf}
-                </span>
+                </a>
               </div>
             </div>
           </div>
