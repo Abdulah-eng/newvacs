@@ -29,10 +29,23 @@ export async function callJsonLlm(messages, modelOverride = null) {
   text = text.replace(/```json\n?/gi, '').replace(/```\n?/g, '').trim()
   
   try {
+    // Attempt direct parse first
     return JSON.parse(text)
   } catch (e) {
+    // If it fails, try to extract JSON from conversational padding (common with Thinking models)
+    try {
+      const startIndex = text.indexOf('{')
+      const endIndex = text.lastIndexOf('}')
+      if (startIndex !== -1 && endIndex !== -1 && endIndex > startIndex) {
+        const jsonStr = text.substring(startIndex, endIndex + 1)
+        return JSON.parse(jsonStr)
+      }
+    } catch (e2) {
+      // Fall through to the error throw
+    }
+    
     console.error('Anthropic JSON parse error. Raw text:', text)
-    throw new Error('Failed to parse AI response as JSON')
+    throw new Error('Failed to parse AI response as JSON. See server logs for raw text.')
   }
 }
 
