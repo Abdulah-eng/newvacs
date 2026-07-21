@@ -348,6 +348,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
       })
       const reply = await res.json()
       if (reply.error) {
+        console.error('--- ANTHROPIC LIVE ERROR ---', reply)
         const errText = "I'm sorry, I didn't catch that. Could you repeat?"
         onAsk(text, { text: errText }); await speakText(errText)
       } else {
