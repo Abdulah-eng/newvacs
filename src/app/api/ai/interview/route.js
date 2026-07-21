@@ -85,8 +85,16 @@ export async function POST(request) {
 
     return NextResponse.json(result)
   } catch (error) {
-    console.error('Interview AI error:', error)
-    return NextResponse.json({ error: error.message || 'Failed to process interview question' }, { status: 500 })
+    console.error('Interview AI error:', JSON.stringify({
+      message: error.message,
+      status: error.status,
+      error: error.error,
+      anthropicModel: process.env.ANTHROPIC_MODEL
+    }))
+    return NextResponse.json(
+      { error: error.message || 'Failed to process interview question', details: error.error },
+      { status: 500 }
+    )
   }
 }
 
