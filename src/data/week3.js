@@ -1,4 +1,4 @@
-﻿// WEEK 3 module content — Asthma + Chronic Obstructive Pulmonary Disease
+// WEEK 3 module content — Asthma + Chronic Obstructive Pulmonary Disease
 // Grounded in 2025 GINA and 2026 GOLD guideline summaries and patient master profiles.
 
 export const MODULE3 = {
@@ -19,8 +19,8 @@ export const GUIDELINE_REVIEW3 = {
   intro: "Week 3 covers the two most common chronic respiratory diseases in ambulatory care. Read the GINA 2025 and GOLD 2026 summaries, then pass the 40-item quiz at ≥90% to unlock Tuesday.",
   sections: [
     {
-      id: "asthma", title: "Asthma — GINA 2025", color: "0891b2",
-      pdf: "GINA-2025-Asthma-Guideline.pdf",
+      id: 'asthma', title: 'Asthma — 2026 GINA', color: '1e3a8a',
+      pdf: "Asthma-GINA-2026-Guidelines.pdf",
       points: [
         { label: "Control classification", text: "Well-controlled: symptoms ≤2 days/wk, no nighttime awakenings, reliever ≤2 days/wk, no activity limitation. Partly controlled: 1–2 criteria not met. Uncontrolled: 3–4 criteria not met." },
         { label: "SMART therapy", text: "Single Maintenance And Reliever Therapy (SMART): low-dose ICS/formoterol used both as controller and reliever. Reduces exacerbation risk even with infrequent use." },
@@ -32,8 +32,8 @@ export const GUIDELINE_REVIEW3 = {
       ],
     },
     {
-      id: "copd", title: "COPD — GOLD 2026", color: "13314f",
-      pdf: "GOLD-2026-COPD-Guideline.pdf",
+      id: 'copd', title: 'COPD — 2026 GOLD', color: 'c2410c',
+      pdf: "COPD-GOLD-2026-Guidelines.pdf",
       points: [
         { label: "Diagnosis", text: "Post-bronchodilator FEV1/FVC <0.70 confirms persistent airflow limitation. COPD is not diagnosed by symptoms alone." },
         { label: "Symptom assessment", text: "CAT score ≥10 or mMRC ≥2 = more symptoms. Primary driver of initial therapy selection alongside exacerbation history." },

@@ -1,4 +1,4 @@
-﻿// WEEK 5 module content — Depression + Anxiety + Tobacco Cessation
+// WEEK 5 module content — Depression + Anxiety + Tobacco Cessation
 // Grounded in ACP Living Clinical Guideline 2023, VA/DoD MDD 2022, VA/DoD Anxiety 2023,
 // USPSTF Tobacco 2021, and the ESCAPE-TRD journal club.
 
@@ -20,8 +20,8 @@ export const GUIDELINE_REVIEW5 = {
   intro: "Week 5 covers three behavioral health conditions that frequently coexist. Read the depression, anxiety, and tobacco cessation guideline summaries, then pass the 40-item quiz at ≥90% to unlock Tuesday.",
   sections: [
     {
-      id: "depression", title: "Depression — ACP 2023 / VA/DoD 2022", color: "13314f",
-      pdf: "ACP-VA-DoD-Depression-Guidelines.pdf",
+      id: 'depression', title: 'Depression — ACP & VA/DoD', color: '13314f',
+      pdf: "Depression-VA-DoD-2022-Guidelines.pdf",
       points: [
         { label: "PHQ-9 interpretation", text: "0–4: Minimal. 5–9: Mild. 10–14: Moderate. 15–19: Moderately severe. 20–27: Severe. Score ≥10 suggests clinically significant depression requiring treatment." },
         { label: "First-line agents", text: "SSRIs (sertraline, escitalopram, fluoxetine) and SNRIs (venlafaxine, duloxetine) are first-line. Select based on side-effect profile, comorbidities, prior response, and cost." },
@@ -33,8 +33,8 @@ export const GUIDELINE_REVIEW5 = {
       ],
     },
     {
-      id: "anxiety", title: "Anxiety — VA/DoD 2023 / USPSTF 2023", color: "0891b2",
-      pdf: "VA-DoD-Anxiety-Guideline.pdf",
+      id: 'anxiety', title: 'Anxiety — GAD Guidelines', color: '0891b2',
+      pdf: "Anxiety-USPSTF-Guideline.pdf",
       points: [
         { label: "GAD-7 interpretation", text: "0–4: Minimal. 5–9: Mild. 10–14: Moderate. 15–21: Severe. Score ≥10 suggests clinically significant GAD requiring treatment." },
         { label: "First-line pharmacotherapy", text: "SSRIs and SNRIs are first-line for GAD. Buspirone is second-line. Benzodiazepines should be used cautiously and short-term (avoid chronic use)." },
@@ -45,8 +45,8 @@ export const GUIDELINE_REVIEW5 = {
       ],
     },
     {
-      id: "tobacco", title: "Tobacco Cessation — VA/DoD 2025 / USPSTF 2021", color: "7c3aed",
-      pdf: "VA-DoD-Tobacco-Cessation-2025.pdf",
+      id: 'tobacco', title: 'Tobacco Cessation — VA/DoD', color: '7c3aed',
+      pdf: "Tobacco-Cessation-VA-DoD-CPG_2026-Guideline.pdf",
       points: [
         { label: "5As framework", text: "Ask (identify users), Advise (clear quit message), Assess (readiness to quit), Assist (counseling + medication), Arrange (follow-up). Apply at every clinical encounter." },
         { label: "First-line pharmacotherapy", text: "Varenicline (Chantix/Champix) is most effective. Nicotine replacement therapy (patch, gum, lozenge — combinations increase success). Bupropion is an option (dual benefit in depression)." },

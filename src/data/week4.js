@@ -1,4 +1,4 @@
-﻿// WEEK 4 module content — Heart Failure + Atrial Fibrillation + Anticoagulation/VTE
+// WEEK 4 module content — Heart Failure + Atrial Fibrillation + Anticoagulation/VTE
 // Grounded in 2022 AHA/ACC/HFSA HF guideline, 2023 ACC/AHA/ACCP/HRS AFib guideline,
 // 2026 ACC/AHA/CHEST VTE guideline, and the AZALEA-TIMI 71 journal club.
 
@@ -20,8 +20,8 @@ export const GUIDELINE_REVIEW4 = {
   intro: "Week 4 integrates three cardiovascular disease states that frequently coexist. Read the heart failure, atrial fibrillation, and anticoagulation/VTE guideline summaries, then pass the 40-item quiz at ≥90% to unlock Tuesday.",
   sections: [
     {
-      id: "hf", title: "Heart Failure — 2022 AHA/ACC/HFSA", color: "13314f",
-      pdf: "AHA-ACC-HFSA-2022-HF-Guideline.pdf",
+      id: 'hf', title: 'Heart Failure — 2022 AHA/ACC/HFSA', color: '991b1b',
+      pdf: "HF-2022-ACC-AHA.pdf",
       points: [
         { label: "Classification by EF", text: "HFrEF: LVEF ≤40%. HFmrEF: LVEF 41–49%. HFpEF: LVEF ≥50%. EF drives GDMT selection." },
         { label: "ACC/AHA Staging", text: "Stage A: at risk, no structural disease. Stage B: structural disease, no symptoms. Stage C: structural disease with current/prior symptoms. Stage D: advanced, refractory." },
@@ -33,8 +33,8 @@ export const GUIDELINE_REVIEW4 = {
       ],
     },
     {
-      id: "afib", title: "Atrial Fibrillation — 2023 ACC/AHA/ACCP/HRS", color: "0891b2",
-      pdf: "ACC-AHA-ACCP-HRS-2023-AFib-Guideline.pdf",
+      id: 'afib', title: 'Atrial Fibrillation — 2023 ACC/AHA/ACCP/HRS', color: '3730a3',
+      pdf: "Afib-2023-ACC-AHA.pdf",
       points: [
         { label: "CHA₂DS₂-VASc scoring", text: "Score ≥2 in males, ≥3 in females: anticoagulation recommended. Score 0 (male) or ≤1 (female): anticoagulation not indicated. Higher scores = higher annual stroke risk." },
         { label: "CHA₂DS₂-VASc components", text: "C: CHF (1pt). H: Hypertension (1pt). A₂: Age ≥75 (2pts). D: Diabetes (1pt). S₂: Prior stroke/TIA (2pts). V: Vascular disease (1pt). A: Age 65–74 (1pt). Sc: Female sex (1pt)." },
@@ -45,8 +45,8 @@ export const GUIDELINE_REVIEW4 = {
       ],
     },
     {
-      id: "vte", title: "Anticoagulation/VTE — 2026 ACC/AHA/CHEST", color: "7c3aed",
-      pdf: "ACC-AHA-CHEST-2026-VTE-Guideline.pdf",
+      id: 'anticoagulation', title: 'Anticoagulation / VTE — 2026 ACC/AHA/CHEST', color: '0f766e',
+      pdf: "VTE-2026-ACC-AHA-CHEST-Guideline.pdf",
       points: [
         { label: "Treatment of acute VTE (DVT/PE)", text: "DOACs (rivaroxaban, apixaban, edoxaban) are preferred. Duration: provoked (reversible cause) ≥3 months; unprovoked ≥3–6 months with reassessment; cancer-associated VTE: LMWH or DOAC (rivaroxaban/apixaban)." },
         { label: "HAS-BLED bleeding risk", text: "Hypertension, abnormal renal/liver function, stroke, bleeding history, labile INR, elderly, drugs/alcohol. Score ≥3 = high bleeding risk. Modify reversible risk factors; high bleeding risk does not automatically contraindicate anticoagulation." },
