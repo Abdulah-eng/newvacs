@@ -24,8 +24,8 @@ export function SubjectiveTab({ c, interview, discovered, onField }) {
       fields: [
         getField('diet'),
         getField('exercise'),
-        { key: 'tobacco', label: 'Tobacco use', type: 'select', options: ['None', 'Occasional', 'Moderate', 'Heavy'] },
-        { key: 'alcohol', label: 'Alcohol use', type: 'select', options: ['None', 'Occasional', 'Moderate', 'Heavy'] },
+        { key: 'tobacco', label: 'Tobacco use', placeholder: 'e.g., none, former, heavy...' },
+        { key: 'alcohol', label: 'Alcohol use', placeholder: 'e.g., none, former, heavy...' },
         { key: 'caffeine', label: 'Caffeine', placeholder: 'e.g., 2 cups coffee/day' }
       ]
     },
