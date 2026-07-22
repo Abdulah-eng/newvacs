@@ -12,7 +12,9 @@ function sanitizeForAnthropic(chatHistory, newQuestion) {
   const raw = [
     ...chatHistory.map(msg => ({
       role: msg.role === 'patient' ? 'assistant' : 'user',
-      content: msg.text || ''
+      content: msg.role === 'patient'
+        ? JSON.stringify({ response: msg.text || '', hidden_info_triggered: null, hidden_info_topic: null })
+        : (msg.text || '')
     })),
     { role: 'user', content: newQuestion }
   ].filter(m => m.content.trim() !== '')
