@@ -36,7 +36,8 @@ const sarahTue = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'tobacco', label: 'Tobacco Cessation', placeholder: 'Is she ready to quit smoking?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Antidepressant Expectations', body: ["Medications like SSRIs can take 4 to 6 weeks to start fully working for your depression. In the first week, you might feel some mild nausea or jitteriness, but that usually passes."] }], GUIDING_QUESTIONS:
+   [
     'What findings support a diagnosis of Major Depressive Disorder?',
     'Why was sertraline selected over bupropion?',
     'What role does CBT play in treatment?',
@@ -82,7 +83,8 @@ const sarahWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'tolerability', label: 'Side Effects / Tolerability', placeholder: 'Any issues with the medication?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Evaluating Response', body: ["It sounds like you're starting to have more good days than bad days. We'll increase the dose slightly to get you the rest of the way there."] }], GUIDING_QUESTIONS:
+   [
     'Has this patient responded to treatment?',
     'Has this patient achieved remission?',
     'Why is increasing sertraline reasonable?',
@@ -129,7 +131,8 @@ const sarahThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'tobacco', label: 'Tobacco Plan', placeholder: 'How does she want to quit?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Long-term Maintenance', body: ["Even though you feel completely better, it's recommended to stay on the medication for at least 6 to 9 months to prevent a relapse."] }], GUIDING_QUESTIONS:
+   [
     'How do you know this patient has achieved remission?',
     'Should sertraline be discontinued today?',
     'Why is relapse prevention important?',
@@ -182,7 +185,8 @@ const jessicaTue = makeCase({
     { key: 'adherence', label: 'Medication Adherence', placeholder: 'How many days a week does she take the Sertraline?' },
     { key: 'barriers', label: 'Barriers to Care', placeholder: 'Why is she struggling with her medications?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Anxiety Management', body: ["For anxiety, we start at a very low dose because sometimes the medication can temporarily make you feel more anxious before it helps. We'll go slow."] }], GUIDING_QUESTIONS:
+   [
     'Has this patient failed sertraline?',
     'What information changed your treatment plan?',
     'What barriers are affecting outcomes?',
@@ -227,7 +231,8 @@ const jessicaWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'expectations', label: 'Expectations', placeholder: 'What are her expectations for the medication?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Managing Side Effects', body: ["If the medication is causing sleep issues, we can switch you to taking it in the morning. Let's not give up on it just yet."] }], GUIDING_QUESTIONS:
+   [
     'Has this patient achieved remission?',
     'Should sertraline be changed today?',
     'What intervention may have contributed most to improvement?',
@@ -270,7 +275,8 @@ const jessicaThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'maintenance', label: 'Maintenance Education', placeholder: 'What is her plan for the medication?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Tapering Off', body: ["If you ever decide you want to stop this medication, please let us know so we can give you a schedule to taper off slowly. Stopping abruptly can cause withdrawal symptoms."] }], GUIDING_QUESTIONS:
+   [
     'How do you know this patient has achieved remission?',
     'What intervention may have had the greatest impact on this patient\'s outcome?',
     'Should sertraline be discontinued today?',
@@ -325,7 +331,8 @@ const davidTue = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'suicide', label: 'Suicide Risk Assessment', placeholder: 'Assess for suicidal ideation' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Tobacco Cessation Options', body: ["Quitting smoking is a journey. We can use nicotine patches to give you a steady baseline and gum for cravings, which doubles your chances of success."] }], GUIDING_QUESTIONS:
+   [
     'Does this patient meet criteria for emergency psychiatric hospitalization?',
     'Why is treatment-resistant depression being considered?',
     'Why is augmentation reasonable?',
@@ -372,7 +379,8 @@ const davidWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'sideeffects', label: 'Esketamine Side Effects', placeholder: 'Ask about the dissociation and BP' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Handling Relapse', body: ["A slip-up doesn't mean you've failed. Many people try multiple times before quitting for good. Let's adjust your nicotine replacement therapy to help with those cravings."] }], GUIDING_QUESTIONS:
+   [
     'Has this patient responded to treatment?',
     'Has remission been achieved?',
     'Should medications be changed today?',
@@ -418,7 +426,8 @@ const davidThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'update', label: 'Clinical Update', placeholder: 'How is he doing?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Celebrating Success', body: ["You've been smoke-free for weeks! Your heart and lungs are already healing. Keep using the lozenges when you face high-stress triggers."] }], GUIDING_QUESTIONS:
+   [
     'How do you know this patient is in remission?',
     'What demonstrates successful augmentation therapy?',
     'Should medications be stopped today?',

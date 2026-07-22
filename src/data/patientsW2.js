@@ -207,6 +207,16 @@ const michaelWed = makeCase({
       { key: 'aw_o4', label: 'Educate that albuminuria still signals ongoing kidney risk', correct: true },
     ] },
   ],
+    COUNSELING: [
+    { id: 'a_wed_c1', title: 'Addressing the "normal eGFR" misconception', body: [
+      "It is great that your kidney filtering number (eGFR) is normal, but your urine protein indicates kidney strain.",
+      "Think of it like high blood pressure — you might feel fine, but we treat it to prevent damage down the road.",
+      "The medications we added are working to protect your kidneys, so we need to keep them on board." ] },
+    { id: 'a_wed_c2', title: 'Lifestyle & NSAID feedback', body: [
+      "You've made great progress with your diet, exercise, and weight loss — that's lowering your risks significantly.",
+      "Your use of ibuprofen is down, but we want to get that to zero if possible to fully protect your kidneys.",
+      "Let's make sure you have enough acetaminophen on hand for when the knee pain acts up." ] }
+  ],
   GUIDING_QUESTIONS: [
     'How would you explain to this patient that he still has CKD despite having a normal eGFR?',
     'Why is albuminuria still important if it improved?',
@@ -274,6 +284,12 @@ const michaelThu = makeCase({
       { key: 'at_o3', label: 'Stop therapy because numbers look good', correct: false },
       { key: 'at_o4', label: 'Continue lifestyle/weight support and routine monitoring', correct: true },
     ] },
+  ],
+    COUNSELING: [
+    { id: 'a_thu_c1', title: 'Managing albuminuria expectations', body: [
+      "Reducing the protein in your urine by this much is a huge win, even if it doesn't go to zero.",
+      "Our goal is to protect your kidneys from further damage, and the trend shows the medication is doing exactly that.",
+      "You're doing everything right. We just need to keep this protective therapy going long-term." ] }
   ],
   GUIDING_QUESTIONS: ['Is "albuminuria gone" a realistic goal?', 'Why continue therapy when numbers are good?'],
   PRECEPTOR: {
@@ -478,6 +494,12 @@ const angelaWed = makeCase({
       { key: 'bw_o4', label: 'Recheck lipids/UACR in ~3 months', correct: true },
     ] },
   ],
+    COUNSELING: [
+    { id: 'b_wed_c1', title: 'Affordable statin maintenance', body: [
+      "Your cholesterol has dropped beautifully on this new medication, which significantly protects your heart.",
+      "I'm glad we found a price that works for you. Let me know immediately if the cost ever becomes an issue again.",
+      "Keep up the great work with the walking and dietary changes — they are making a real difference." ] }
+  ],
   GUIDING_QUESTIONS: [
     'What factors suggest this may not represent clinically significant SAMS?',
     'What likely caused the LDL-C improvement?',
@@ -553,6 +575,12 @@ const angelaThu = makeCase({
       { key: 'bt_o3', label: 'Discontinue the statin because she feels well', correct: false },
       { key: 'bt_o4', label: 'Reinforce lifestyle, adherence, and routine monitoring', correct: true },
     ] },
+  ],
+    COUNSELING: [
+    { id: 'b_thu_c1', title: 'Long-term medication necessity', body: [
+      "Your numbers look fantastic, but remember that the medication is what's keeping them there.",
+      "High cholesterol and kidney disease don't 'cure' themselves — they require ongoing maintenance just like changing oil in a car.",
+      "Let's stick with this successful routine so we can keep you healthy and out of the hospital." ] }
   ],
   GUIDING_QUESTIONS: [
     'Why should rosuvastatin be continued despite LDL-C improvement?',
@@ -770,6 +798,12 @@ const davidWed = makeCase({
       { key: 'cw_o4', label: 'Continue SGLT2i/ACEi; recognize the eGFR dip as expected', correct: true },
     ] },
   ],
+    COUNSELING: [
+    { id: 'c_wed_c1', title: 'Addressing potassium anxiety', body: [
+      "Your potassium went up slightly, which is completely expected with this medication — but it is still safe.",
+      "We will always monitor your labs closely so you don't have to worry about it creeping up unnoticed.",
+      "The benefit to your kidneys from lowering that protein in your urine far outweighs this mild potassium change." ] }
+  ],
   GUIDING_QUESTIONS: [
     'What findings suggest finerenone is providing benefit?',
     'Why should potassium be monitored?',
@@ -844,6 +878,12 @@ const davidThu = makeCase({
       { key: 'ct_o3', label: 'De-escalate cardiorenal therapy now that albuminuria improved', correct: false },
       { key: 'ct_o4', label: 'Reinforce adherence and long-term self-management', correct: true },
     ] },
+  ],
+    COUNSELING: [
+    { id: 'c_thu_c1', title: 'Chronic disease maintenance', body: [
+      "You've done an incredible job bringing your numbers down and taking control of your health.",
+      "These improvements mean our treatment plan is successful, not that the underlying conditions have disappeared.",
+      "We need to continue these medications long-term to keep your kidneys protected and your heart safe." ] }
   ],
   GUIDING_QUESTIONS: [
     'Why should finerenone be continued despite improvement?',

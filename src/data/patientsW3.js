@@ -49,7 +49,13 @@ const sarahTue = makeCase({
     { key: 'budesonide', label: 'Controller Adherence', placeholder: 'Is she taking the budesonide?' },
     { key: 'nighttime', label: 'Nighttime Symptoms', placeholder: 'Waking up at night?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [
+    { id: 'c1', title: 'Controller vs Rescue Inhaler', body: [
+      "Your albuterol is like a fire extinguisher—it helps during an emergency, but it doesn't put out the smoldering fire in your lungs.",
+      "The budesonide is your daily fire prevention. You need to use it every single day to stop the asthma attacks before they start." ] }
+  ],
+  GUIDING_QUESTIONS:
+   [
     'What findings indicate uncontrolled asthma?',
     'Why is SABA-only therapy no longer preferred?',
     'What are the advantages of SMART therapy?',
@@ -101,7 +107,13 @@ const sarahWed = makeCase({
     { key: 'symptoms', label: 'Current Symptoms', placeholder: 'How are the symptoms now?' },
     { key: 'adherence', label: 'ICS Adherence', placeholder: 'Still taking the daily inhaler?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [
+    { id: 'c1', title: 'Escalating Therapy', body: [
+      "You've done a great job taking your daily inhaler. Since you're still having symptoms when you exercise, we need to add a long-acting medication.",
+      "This combination will keep your airways open longer and reduce the inflammation." ] }
+  ],
+  GUIDING_QUESTIONS:
+   [
     'What evidence suggests the current regimen is working?',
     'Why should inhaler technique be assessed before escalation?',
     'What inhaler technique errors were identified?',
@@ -149,7 +161,12 @@ const sarahThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'control', label: 'Asthma Control', placeholder: 'Any symptoms or rescue use?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [
+    { id: 'c1', title: 'Maintaining Control', body: [
+      "Your asthma is much better controlled now. It's really important to stick with this current inhaler regimen so you don't have another flare-up." ] }
+  ],
+  GUIDING_QUESTIONS:
+   [
     'What evidence suggests asthma remains controlled?',
     'Why is escalation not required?',
     'What role did the viral illness play?',
@@ -205,7 +222,13 @@ const bobTue = makeCase({
     { key: 'maintenance', label: 'Maintenance Inhaler', placeholder: 'Was he prescribed a daily inhaler?' },
     { key: 'cost', label: 'Cost/Affordability', placeholder: 'Can he afford his meds?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [
+    { id: 'c1', title: 'Proper Inhaler Technique', body: [
+      "With COPD, getting the medication deep into your lungs is the hardest part. Let's practice using your inhaler together.",
+      "Remember to breathe out completely before taking a slow, deep breath in." ] }
+  ],
+  GUIDING_QUESTIONS:
+   [
     'What findings support GOLD Group B classification?',
     'Why is this case treatment non-initiation rather than treatment failure?',
     'What barriers prevented therapy initiation?',
@@ -254,7 +277,13 @@ const bobWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'technique', label: 'Inhaler Technique', placeholder: 'Ask him to demonstrate how he uses the HandiHaler' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [
+    { id: 'c1', title: 'Smoking Cessation & Maintenance', body: [
+      "Quitting smoking is the single best thing you can do to slow down your COPD. We have patches and medications that can help when you're ready.",
+      "Keep using your maintenance inhaler every day, even when you feel good." ] }
+  ],
+  GUIDING_QUESTIONS:
+   [
     'What evidence suggests adherence is contributing to persistent symptoms?',
     'Why is escalation not appropriate today?',
     'What interventions could improve adherence?'
@@ -295,7 +324,13 @@ const bobThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'symptoms', label: 'Symptom check', placeholder: 'Any exacerbations or rescue use?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [
+    { id: 'c1', title: 'COPD Action Plan', body: [
+      "If you notice your sputum changing color or you're suddenly much more short of breath, don't wait—start your emergency action plan.",
+      "Call the clinic early so we can keep you out of the hospital." ] }
+  ],
+  GUIDING_QUESTIONS:
+   [
     'Why is escalation appropriate today but was inappropriate at the previous visit?',
     'How do eosinophils influence COPD management?',
     'Why was Trelegy Ellipta selected?',
@@ -348,7 +383,12 @@ const mariaTue = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'exacerbations', label: 'Exacerbation History', placeholder: 'Tell me about the flare-ups' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [
+    { id: 'c1', title: 'Understanding Overlap Syndrome', body: [
+      "You have features of both asthma and COPD. This means we have to treat the inflammation and keep the airways open with a combination of medications." ] }
+  ],
+  GUIDING_QUESTIONS:
+   [
     'What findings support asthma-COPD overlap rather than isolated COPD?',
     'Why is ICS therapy indicated?',
     'What role do eosinophils play in this case?',
@@ -394,7 +434,12 @@ const mariaWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Adherence / Technique', placeholder: 'Are you sure she is taking it?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [
+    { id: 'c1', title: 'Managing Severe Symptoms', body: [
+      "Your breathing tests show we need to step up your treatment. Let's discuss adding a specialized medication to target the specific type of inflammation you have." ] }
+  ],
+  GUIDING_QUESTIONS:
+   [
     'What evidence suggests the current inhaler regimen is working?',
     'Why is escalation not appropriate today?',
     'How does allergic rhinitis affect respiratory disease control?',
@@ -441,7 +486,12 @@ const mariaThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'update', label: 'Clinical Update', placeholder: 'How has she been feeling?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [
+    { id: 'c1', title: 'Biologic Therapy Adherence', body: [
+      "This new injectable medication works differently—it targets the eosinophils causing your flare-ups. It takes time to see the full effect, so please don't miss any appointments for your injections." ] }
+  ],
+  GUIDING_QUESTIONS:
+   [
     'Why is biologic therapy appropriate today but would not have been appropriate at the Wednesday visit?',
     'What findings suggest severe eosinophilic disease?',
     'How does MATINEE influence management?',

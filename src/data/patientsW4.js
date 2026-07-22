@@ -45,7 +45,8 @@ const michaelTue = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'symptoms', label: 'Heart Failure Symptoms', placeholder: 'Any swelling or shortness of breath?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Heart Failure Basics', body: ["Heart failure means your heart isn't pumping as strongly as it should. The medications we prescribe are designed to help your heart work smarter, not harder."] }], GUIDING_QUESTIONS:
+   [
     'What findings support a diagnosis of HFrEF?',
     'What are the four foundational medication classes for HFrEF?',
     'Why is sacubitril/valsartan preferred over ACE inhibitor therapy in many patients?',
@@ -97,7 +98,8 @@ const michaelWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'dizziness', label: 'Dizziness Assessment', placeholder: 'When does he feel dizzy?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Fluid Management', body: ["Monitoring your daily weight is critical. If you gain 3 pounds in a day or 5 pounds in a week, call the clinic right away so we can adjust your water pill."] }], GUIDING_QUESTIONS:
+   [
     'What findings demonstrate treatment success?',
     'Why is MRA therapy appropriate today?',
     'Should mild orthostatic symptoms change management?',
@@ -147,7 +149,8 @@ const michaelThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'titration', label: 'Medication Education', placeholder: 'Explain why doses need to increase' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Beta Blocker Titration', body: ["We are slowly increasing your beta blocker. You might feel a little more tired for a few days, but this medication is proven to strengthen your heart over the long term."] }], GUIDING_QUESTIONS:
+   [
     'What findings support a diagnosis of HFimpEF?',
     'Should GDMT be continued after EF improves?',
     'Why is discontinuation of therapy potentially harmful?',
@@ -202,7 +205,8 @@ const angelaTue = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'apixaban', label: 'Apixaban Adherence', placeholder: 'Why did she stop the Eliquis?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'AFib and Stroke Risk', body: ["With Atrial Fibrillation, blood can pool in your heart and form a clot. We strongly recommend a blood thinner to protect you from having a stroke."] }], GUIDING_QUESTIONS:
+   [
     'What was the most important medication therapy problem in this encounter?',
     'Why is intermittent apixaban nonadherence concerning?',
     'Why should adherence be addressed before intensifying heart failure therapy?',
@@ -246,7 +250,8 @@ const angelaWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'fear', label: 'Bleeding Fear', placeholder: 'What exactly is she afraid of?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Starting DOACs', body: ["This blood thinner doesn't require routine blood checks like warfarin, but you must take it exactly as prescribed. Missing doses leaves you unprotected."] }], GUIDING_QUESTIONS:
+   [
     'Why is minor bruising managed differently than major bleeding?',
     'Why is continuation of apixaban appropriate?',
     'What factors contributed to nonadherence?',
@@ -290,7 +295,8 @@ const angelaThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Adherence Check', placeholder: 'Check on her daily routine' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Bleeding Precautions', body: ["You may bruise more easily on this medication. If you experience severe headaches, blood in your urine or stool, or bleeding that won't stop, go to the emergency room."] }], GUIDING_QUESTIONS:
+   [
     'What was the primary success demonstrated during this encounter?',
     'Why was continuation of anticoagulation appropriate?',
     'What barriers were successfully addressed?',
@@ -347,7 +353,8 @@ const robertTue = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'questions', label: 'Patient Questions', placeholder: 'What does he want to know?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Warfarin Monitoring', body: ["Warfarin requires regular INR checks to make sure your blood isn't too thick or too thin. Keep your diet consistent, especially with leafy greens like spinach."] }], GUIDING_QUESTIONS:
+   [
     'Why is continuation of GDMT appropriate despite declining eGFR?',
     'What factors may contribute to CKD progression?',
     'Why is potassium monitoring important?',
@@ -391,7 +398,8 @@ const robertWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'nosebleeds', label: 'Bleeding details', placeholder: 'How severe are the bleeds?' },
   ],
-  GUIDING_QUESTIONS: [
+    COUNSELING: [{ id: 'c1', title: 'Interactions and Diet', body: ["Many antibiotics and over-the-counter pain relievers can drastically change your INR. Always ask the pharmacist before starting any new medication or supplement."] }], GUIDING_QUESTIONS:
+   [
     'Why is bridging generally unnecessary in this patient?',
     'What factors influence interruption timing?',
     'What are the risks of unnecessary bridging?',
@@ -446,6 +454,7 @@ const robertThu = makeCase({
       { key: 'o1', label: 'Continue current GDMT and anticoagulation regimens', correct: true },
     ] },
   ],
+  COUNSELING: [{ id: 'c1', title: 'Bridging Therapy', body: ["Because you have an upcoming procedure, we need to carefully pause your warfarin and use a short-acting injection to keep you safe from clots in the meantime."] }],
 })
 
 export const W4_CASES = [michaelTue, michaelWed, michaelThu, angelaTue, angelaWed, angelaThu, robertTue, robertWed, robertThu]
