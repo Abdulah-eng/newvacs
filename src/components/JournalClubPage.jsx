@@ -49,8 +49,6 @@ export default function JournalClubPage({ onBack, config = JOURNAL_CLUB, weekId 
 
   const { answered, total, complete } = progressOf(config, state)
   const t = config.trial
-  const JC = config
-
   return (
     <div className="min-h-screen bg-slate-100">
       {/* Header */}
