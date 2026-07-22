@@ -58,6 +58,12 @@ export function SubjectiveTab({ c, interview, discovered, onField }) {
         </div>
         
         <dl className="space-y-4">
+          {c.ENCOUNTER?.chiefConcern && (
+            <div className="text-[13px]">
+              <dt className="font-semibold text-slate-700 mb-0.5">Chief Concern</dt>
+              <dd className="text-slate-600">"{c.ENCOUNTER.chiefConcern}"</dd>
+            </div>
+          )}
           {c.SUBJECTIVE_DOCUMENTED.map(s => {
             if (s.label === 'PMH' || s.label.includes('PMH')) {
               return (

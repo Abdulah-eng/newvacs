@@ -284,6 +284,7 @@ const LAB_GROUPS = [
   { key: 'cmp', label: 'Comprehensive Metabolic Panel (CMP)', members: ['Glucose', 'Na', 'K', 'Cl', 'CO2', 'BUN', 'SCr', 'eGFR', 'AST', 'ALT'] },
   { key: 'renal', label: 'Renal / Kidney Function', members: ['BUN', 'SCr', 'eGFR', 'K', 'UACR'] },
   { key: 'lipid', label: 'Lipid Panel', members: ['Total cholesterol', 'LDL-C', 'HDL-C', 'Triglycerides'] },
+  { key: 'cardiac', label: 'Cardiac Biomarkers', members: ['NT-proBNP', 'BNP', 'Troponin I', 'hs-cTnI'] },
   { key: 'urine', label: 'Urine Studies', members: ['UACR'] },
 ]
 
@@ -401,7 +402,7 @@ export function LabsTab({ c }) {
     else if (panel === 'missing') activeLabs = missing
     else activeLabs = membersOf(c, LAB_GROUPS.find(g => g.key === panel)?.members || [])
 
-    const collectionTime = activeLabs.find(l => l.drawn)?.drawn || '06/09/2026 07:50'
+    const collectionTime = activeLabs.find(l => l.drawn)?.drawn || c.ENCOUNTER?.labsTime || '06/09/2026 07:50'
 
     return (
       <Card 
@@ -783,11 +784,12 @@ export function ObjectiveTab({ c }) {
   ]
 
   const labPanels = [
-    { name: 'DIABETES', collected: '06/09/2026 07:50', members: ['A1C', 'Glucose'] },
-    { name: 'BASIC METABOLIC PANEL', collected: '06/09/2026 07:50', members: ['Na', 'K', 'Cl', 'CO2', 'BUN', 'SCr', 'eGFR'] },
-    { name: 'HEPATIC FUNCTION', collected: '06/09/2026 07:50', members: ['AST', 'ALT'] },
-    { name: 'LIPID PANEL', collected: '06/09/2026 07:50', members: ['Total cholesterol', 'LDL-C', 'HDL-C', 'Triglycerides'] },
-    { name: 'URINE STUDIES', collected: '06/09/2026 07:50', members: ['UACR'] },
+    { name: 'DIABETES', collected: c.ENCOUNTER?.labsTime || '06/09/2026 07:50', members: ['A1C', 'Glucose'] },
+    { name: 'BASIC METABOLIC PANEL', collected: c.ENCOUNTER?.labsTime || '06/09/2026 07:50', members: ['Na', 'K', 'Cl', 'CO2', 'BUN', 'SCr', 'eGFR'] },
+    { name: 'HEPATIC FUNCTION', collected: c.ENCOUNTER?.labsTime || '06/09/2026 07:50', members: ['AST', 'ALT'] },
+    { name: 'LIPID PANEL', collected: c.ENCOUNTER?.labsTime || '06/09/2026 07:50', members: ['Total cholesterol', 'LDL-C', 'HDL-C', 'Triglycerides'] },
+    { name: 'CARDIAC BIOMARKERS', collected: c.ENCOUNTER?.labsTime || '06/09/2026 07:50', members: ['NT-proBNP', 'BNP', 'Troponin I', 'hs-cTnI'] },
+    { name: 'URINE STUDIES', collected: c.ENCOUNTER?.labsTime || '06/09/2026 07:50', members: ['UACR'] },
   ]
 
   const getLab = (name) => c.LABS?.find(l => l.label === name)
