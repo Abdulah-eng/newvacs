@@ -1,0 +1,736 @@
+Week 5 Monday Quiz Question Bank
+
+Depression + Anxiety + Tobacco Cessation
+
+Guideline-Based Version
+
+
+
+1. Depression Question 1
+
+Disease State: DepressionTopic: MDD diagnostic featuresDifficulty: FoundationalQuestion Type: Single-best-answer
+
+Question Stem:According to the depression guideline framework, which symptom pattern best supports a diagnosis of major depressive disorder?
+
+Answer Choices:A. One day of sadness after a stressful event without functional impairmentB. Depressed mood or loss of interest/pleasure with additional depressive symptoms for at least 2 weeks causing clinically significant impairmentC. Excessive worry for 6 months without depressive symptomsD. Nicotine cravings that occur only after meals
+
+Correct Answer:B. Depressed mood or loss of interest/pleasure with additional depressive symptoms for at least 2 weeks causing clinically significant impairment
+
+Rationale:Major depressive disorder requires depressed mood or loss of interest/pleasure along with additional symptoms for at least 2 weeks and clinically significant distress or impairment.
+
+Why the Incorrect Options Are Wrong:A is too brief and lacks clinically significant impairment.C describes generalized anxiety features, not MDD.D describes nicotine dependence behavior, not MDD.
+
+Source Support:ACP MDD GuidelineClinical Skill Tested:Recognizing diagnostic features of MDD.
+
+
+
+2. Depression Question 2
+
+Disease State: DepressionTopic: Treatment goalDifficulty: FoundationalQuestion Type: Single-best-answer
+
+Question Stem:What is the preferred treatment goal for major depressive disorder?
+
+Answer Choices:A. Mild symptom improvement onlyB. Remission with resolution or near-resolution of symptoms and restoration of functioningC. Temporary sedationD. Avoiding all pharmacotherapy regardless of severity
+
+Correct Answer:B. Remission with resolution or near-resolution of symptoms and restoration of functioning
+
+Rationale:Depression treatment should aim for remission, not merely partial symptom improvement. Response is meaningful improvement, but remission is the preferred endpoint.
+
+Why the Incorrect Options Are Wrong:A is incomplete because residual symptoms increase relapse risk.C is not a treatment goal for MDD.D is not guideline-concordant because pharmacotherapy may be appropriate depending on severity and patient preference.
+
+Source Support:ACP MDD GuidelineClinical Skill Tested:Distinguishing treatment goal from partial response.
+
+
+
+3. Depression Question 3
+
+Disease State: DepressionTopic: Response versus remissionDifficulty: IntermediateQuestion Type: Single-best-answer
+
+Question Stem:A patient’s depressive symptoms improve substantially after treatment, but residual fatigue, low motivation, and incomplete functional recovery remain. Which term best describes this outcome?
+
+Answer Choices:A. RemissionB. Response without remissionC. Treatment-resistant depressionD. Medication intolerance
+
+Correct Answer:B. Response without remission
+
+Rationale:Response refers to substantial clinical improvement. Remission requires resolution or near-resolution of symptoms and return toward baseline functioning.
+
+Why the Incorrect Options Are Wrong:A is incorrect because residual symptoms remain.C requires failure to respond adequately after adequate treatment trials and cannot be concluded from partial improvement alone.D is unsupported unless adverse effects are present.
+
+Source Support:ACP MDD GuidelineClinical Skill Tested:Classifying depression treatment outcomes.
+
+
+
+4. Depression Question 4
+
+Disease State: DepressionTopic: First-line therapy for moderate-to-severe MDDDifficulty: FoundationalQuestion Type: Select-all-that-apply
+
+Question Stem:Which options are guideline-supported initial treatments for adults in the acute phase of moderate-to-severe major depressive disorder?
+
+Answer Choices:A. Cognitive behavioral therapyB. Second-generation antidepressant monotherapyC. CBT plus a second-generation antidepressantD. Benzodiazepine monotherapyE. No active treatment unless symptoms persist for 12 months
+
+Correct Answer:A, B, C
+
+Rationale:ACP recommends CBT or a second-generation antidepressant as initial treatment for moderate-to-severe MDD and suggests combination therapy may be considered.
+
+Why the Incorrect Options Are Wrong:D is not a guideline-supported depression treatment strategy.E delays appropriate treatment.
+
+Source Support:ACP MDD GuidelineClinical Skill Tested:Identifying first-line MDD treatment options.
+
+
+
+5. Depression Question 5
+
+Disease State: DepressionTopic: Mild MDD treatmentDifficulty: FoundationalQuestion Type: Single-best-answer
+
+Question Stem:For an adult with mild major depressive disorder, which initial treatment option is specifically suggested by the ACP guideline?
+
+Answer Choices:A. CBT monotherapyB. Chronic benzodiazepine therapyC. Immediate antipsychotic augmentationD. No follow-up monitoring
+
+Correct Answer:A. CBT monotherapy
+
+Rationale:ACP suggests CBT monotherapy as an initial treatment option for mild MDD.
+
+Why the Incorrect Options Are Wrong:B is not an MDD treatment strategy.C is inappropriate as initial treatment for mild MDD.D ignores the need for longitudinal reassessment.
+
+Source Support:ACP MDD GuidelineClinical Skill Tested:Matching depression severity to guideline-supported treatment.
+
+
+
+6. Depression Question 6
+
+Disease State: DepressionTopic: Shared decision-makingDifficulty: IntermediateQuestion Type: Single-best-answer
+
+Question Stem:When choosing between CBT, antidepressant therapy, or combination therapy for MDD, which factor should guide treatment selection?
+
+Answer Choices:A. Patient preference, symptom profile, adverse effects, cost, feasibility, comorbidities, and medication useB. The lowest-cost medication only, regardless of patient preferenceC. Avoidance of psychotherapy in all patientsD. Automatic use of antipsychotic augmentation first
+
+Correct Answer:A. Patient preference, symptom profile, adverse effects, cost, feasibility, comorbidities, and medication use
+
+Rationale:The ACP guideline emphasizes individualized treatment selection using shared decision-making and consideration of benefits, harms, feasibility, cost, symptoms, comorbidities, medication use, and patient preferences.
+
+Why the Incorrect Options Are Wrong:B ignores clinical fit and patient preference.C incorrectly excludes CBT.D is not appropriate as initial therapy.
+
+Source Support:ACP MDD GuidelineClinical Skill Tested:Applying shared decision-making to depression treatment.
+
+
+
+7. Depression Question 7
+
+Disease State: DepressionTopic: Second-generation antidepressantsDifficulty: FoundationalQuestion Type: Select-all-that-apply
+
+Question Stem:Which medication classes or agents fall within the second-generation antidepressant category discussed in the ACP guideline?
+
+Answer Choices:A. SSRIsB. SNRIsC. BupropionD. MirtazapineE. Warfarin
+
+Correct Answer:A, B, C, D
+
+Rationale:Second-generation antidepressants include SSRIs, SNRIs, and other agents such as bupropion and mirtazapine.
+
+Why the Incorrect Options Are Wrong:E is an anticoagulant and is not used to treat depression.
+
+Source Support:ACP MDD GuidelineClinical Skill Tested:Recognizing antidepressant classes.
+
+
+
+8. Depression Question 8
+
+Disease State: DepressionTopic: Starting antidepressant therapyDifficulty: FoundationalQuestion Type: Single-best-answer
+
+Question Stem:When initiating a second-generation antidepressant, which approach is most consistent with ACP clinical considerations?
+
+Answer Choices:A. Start at a low or minimum dose to improve tolerability and adherenceB. Start above the maximum recommended doseC. Use the medication only as needed for sadnessD. Avoid counseling about adverse effects
+
+Correct Answer:A. Start at a low or minimum dose to improve tolerability and adherence
+
+Rationale:The ACP guideline notes that clinicians should start treatment with a low or minimum dose to reduce adverse effects and improve adherence.
+
+Why the Incorrect Options Are Wrong:B increases safety risk.C is inappropriate because antidepressants require consistent use.D is inappropriate because counseling supports adherence and safety.
+
+Source Support:ACP MDD GuidelineClinical Skill Tested:Safe antidepressant initiation.
+
+
+
+9. Depression Question 9
+
+Disease State: DepressionTopic: Antidepressant monitoringDifficulty: FoundationalQuestion Type: Select-all-that-apply
+
+Question Stem:Which items should be monitored after initiating a second-generation antidepressant?
+
+Answer Choices:A. Worsening depressive symptomsB. New or increased suicidal or self-harming thoughtsC. AdherenceD. Adverse effectsE. Tobacco pack-years only
+
+Correct Answer:A, B, C, D
+
+Rationale:Monitoring should include symptom response, suicidality/self-harm risk, adherence, and adverse effects. Tobacco history may be relevant when present, but it is not sufficient as the only monitoring parameter.
+
+Why the Incorrect Options Are Wrong:E is incomplete and does not monitor depression treatment safety or effectiveness.
+
+Source Support:ACP MDD GuidelineClinical Skill Tested:Developing a depression medication monitoring plan.
+
+
+
+10. Depression Question 10
+
+Disease State: DepressionTopic: Inadequate response to antidepressant therapyDifficulty: IntermediateQuestion Type: Single-best-answer
+
+Question Stem:A patient with moderate-to-severe MDD does not improve after initial second-generation antidepressant therapy. Before switching therapy, what should be assessed?
+
+Answer Choices:A. Whether the patient had adequate adherence and an optimal tolerated doseB. Whether the patient prefers the color of the tabletC. Whether all antidepressants should be permanently avoidedD. Whether CBT is contraindicated in all patients
+
+Correct Answer:A. Whether the patient had adequate adherence and an optimal tolerated dose
+
+Rationale:The ACP guideline emphasizes assessing adherence and optimizing the tolerated dose before moving to second-line strategies.
+
+Why the Incorrect Options Are Wrong:B is not clinically meaningful.C is unsupported.D is false because CBT is guideline-supported.
+
+Source Support:ACP MDD GuidelineClinical Skill Tested:Evaluating inadequate antidepressant response.
+
+
+
+11. Depression Question 11
+
+Disease State: DepressionTopic: Second-line therapyDifficulty: IntermediateQuestion Type: Select-all-that-apply
+
+Question Stem:For adults with moderate-to-severe MDD who do not respond to an adequate dose of a second-generation antidepressant, which second-line strategies are guideline-supported?
+
+Answer Choices:A. Switch to or augment with CBTB. Switch to a different second-generation antidepressantC. Augment with a second pharmacologic treatmentD. Stop all treatment and avoid follow-upE. Tell the patient there are no remaining options
+
+Correct Answer:A, B, C
+
+Rationale:ACP suggests switching to or augmenting with CBT, switching to another second-generation antidepressant, or augmenting with another pharmacologic treatment.
+
+Why the Incorrect Options Are Wrong:D is unsafe and unsupported.E is harmful and inaccurate.
+
+Source Support:ACP MDD GuidelineClinical Skill Tested:Selecting second-line MDD treatment strategies.
+
+
+
+12. Depression Question 12
+
+Disease State: DepressionTopic: Continuation after remissionDifficulty: IntermediateQuestion Type: Single-best-answer
+
+Question Stem:After a patient achieves remission with a second-generation antidepressant, what does the ACP guideline recommend regarding ongoing therapy?
+
+Answer Choices:A. Continue the treatment strategy for at least an additional 4 to 9 monthsB. Stop the antidepressant immediately without taperingC. Switch automatically to antipsychotic monotherapyD. Stop monitoring because relapse is no longer possible
+
+Correct Answer:A. Continue the treatment strategy for at least an additional 4 to 9 months
+
+Rationale:The ACP guideline recommends continuing the treatment strategy for at least an additional 4 to 9 months after remission. If treatment is discontinued, gradual tapering is recommended to minimize withdrawal symptoms.
+
+Why the Incorrect Options Are Wrong:B increases withdrawal and relapse risk.C is not routinely indicated after remission.D is wrong because relapse prevention and monitoring remain important.
+
+Source Support:ACP MDD GuidelineClinical Skill Tested:Applying continuation-phase depression management.
+
+
+
+Anxiety Questions
+
+13. Anxiety Question 1
+
+Disease State: AnxietyTopic: GAD diagnostic featuresDifficulty: FoundationalQuestion Type: Single-best-answer
+
+Question Stem:Which symptom pattern best aligns with generalized anxiety disorder?
+
+Answer Choices:A. Excessive anxiety and worry occurring more days than not for at least 6 months, with difficulty controlling the worryB. Depressed mood for one day after poor sleepC. Nicotine craving only after mealsD. Elevated blood glucose without worry or functional impairment
+
+Correct Answer:A. Excessive anxiety and worry occurring more days than not for at least 6 months, with difficulty controlling the worry
+
+Rationale:GAD is characterized by excessive anxiety and worry occurring more days than not for at least 6 months, with difficulty controlling the worry.
+
+Why the Incorrect Options Are Wrong:B is too brief and describes mood rather than GAD.C describes tobacco craving.D is unrelated to anxiety diagnosis.
+
+Source Support:Anxiety Guideline SummaryClinical Skill Tested:Recognizing GAD diagnostic features.
+
+
+
+14. Anxiety Question 2
+
+Disease State: AnxietyTopic: Associated GAD symptomsDifficulty: FoundationalQuestion Type: Select-all-that-apply
+
+Question Stem:Which symptoms may be associated with generalized anxiety disorder?
+
+Answer Choices:A. Restlessness or feeling keyed upB. FatigueC. Difficulty concentratingD. Sleep disturbanceE. Complete absence of distress or impairment
+
+Correct Answer:A, B, C, D
+
+Rationale:Common GAD-associated symptoms include restlessness, fatigue, impaired concentration, irritability, muscle tension, and sleep disturbance.
+
+Why the Incorrect Options Are Wrong:E is incorrect because symptoms must cause clinically significant distress or impairment.
+
+Source Support:Anxiety Guideline SummaryClinical Skill Tested:Identifying GAD symptom clusters.
+
+
+
+15. Anxiety Question 3
+
+Disease State: AnxietyTopic: GAD-7 interpretationDifficulty: FoundationalQuestion Type: Single-best-answer
+
+Question Stem:Which GAD-7 score range is consistent with severe anxiety?
+
+Answer Choices:A. 0–4B. 5–9C. 10–14D. 15–21
+
+Correct Answer:D. 15–21
+
+Rationale:GAD-7 severity categories are minimal anxiety 0–4, mild anxiety 5–9, moderate anxiety 10–14, and severe anxiety 15–21.
+
+Why the Incorrect Options Are Wrong:A is minimal anxiety.B is mild anxiety.C is moderate anxiety.
+
+Source Support:Anxiety Guideline SummaryClinical Skill Tested:Interpreting GAD-7 severity.
+
+
+
+16. Anxiety Question 4
+
+Disease State: AnxietyTopic: Screening accuracyDifficulty: IntermediateQuestion Type: Single-best-answer
+
+Question Stem:According to the USPSTF anxiety evidence review, which screening tools had acceptable accuracy for detecting generalized anxiety disorder?
+
+Answer Choices:A. GAD-2 and GAD-7B. PHQ-9 onlyC. AUDIT-C onlyD. CHA₂DS₂-VASc
+
+Correct Answer:A. GAD-2 and GAD-7
+
+Rationale:The USPSTF evidence review found that GAD-2 and GAD-7 had acceptable accuracy for identifying generalized anxiety disorder.
+
+Why the Incorrect Options Are Wrong:B is a depression tool, not the primary GAD screening tool.C screens for alcohol use.D estimates stroke risk in atrial fibrillation.
+
+Source Support:USPSTF Anxiety Evidence ReviewClinical Skill Tested:Selecting validated anxiety screening tools.
+
+
+
+17. Anxiety Question 5
+
+Disease State: AnxietyTopic: Evidence for anxiety treatmentDifficulty: IntermediateQuestion Type: Single-best-answer
+
+Question Stem:Which statement best reflects the USPSTF evidence review on anxiety screening and treatment?
+
+Answer Choices:A. Evidence was insufficient to determine benefits or harms of anxiety screening programs, but treatment for anxiety has demonstrated benefitB. Anxiety treatment has no evidence of benefitC. GAD-7 has no role in anxiety assessmentD. CBT consistently worsens anxiety symptoms
+
+Correct Answer:A. Evidence was insufficient to determine benefits or harms of anxiety screening programs, but treatment for anxiety has demonstrated benefit
+
+Rationale:The evidence review found insufficient evidence to determine the benefit or harm of screening programs alone, but clear evidence that anxiety treatment is beneficial.
+
+Why the Incorrect Options Are Wrong:B contradicts the evidence review.C contradicts the evidence supporting GAD-7 accuracy.D is incorrect because psychological treatments, including CBT, improve anxiety outcomes.
+
+Source Support:USPSTF Anxiety Evidence ReviewClinical Skill Tested:Interpreting evidence behind anxiety screening and treatment.
+
+
+
+18. Anxiety Question 6
+
+Disease State: AnxietyTopic: First-line nonpharmacologic therapyDifficulty: FoundationalQuestion Type: Single-best-answer
+
+Question Stem:Which nonpharmacologic treatment is considered a first-line option for anxiety disorders?
+
+Answer Choices:A. Cognitive behavioral therapyB. Long-term avoidance of all anxiety triggersC. Chronic sedative-hypnotic therapyD. No treatment unless symptoms become severe
+
+Correct Answer:A. Cognitive behavioral therapy
+
+Rationale:CBT is a first-line behavioral treatment option for anxiety disorders and may be used alone or with pharmacotherapy.
+
+Why the Incorrect Options Are Wrong:B reinforces avoidance and does not build coping skills.C is not preferred as chronic anxiety management.D delays treatment despite impairment.
+
+Source Support:Anxiety Guideline Summary; USPSTF Anxiety Evidence ReviewClinical Skill Tested:Selecting evidence-based nonpharmacologic anxiety treatment.
+
+
+
+19. Anxiety Question 7
+
+Disease State: AnxietyTopic: Pharmacologic treatmentDifficulty: FoundationalQuestion Type: Select-all-that-apply
+
+Question Stem:Which medication classes are commonly used as first-line pharmacologic options for anxiety disorders, especially when depression coexists?
+
+Answer Choices:A. SSRIsB. SNRIsC. WarfarinD. InsulinE. Statins
+
+Correct Answer:A, B
+
+Rationale:SSRIs and SNRIs are commonly used first-line pharmacologic options for anxiety and may also treat coexisting depression.
+
+Why the Incorrect Options Are Wrong:C is an anticoagulant.D treats diabetes.E treats hyperlipidemia.
+
+Source Support:Anxiety Guideline SummaryClinical Skill Tested:Identifying medication classes for anxiety treatment.
+
+
+
+20. Anxiety Question 8
+
+Disease State: AnxietyTopic: Depression-anxiety overlapDifficulty: IntermediateQuestion Type: Single-best-answer
+
+Question Stem:Why are SSRIs or SNRIs often useful when anxiety and depression coexist?
+
+Answer Choices:A. They may treat both anxiety and depressive symptoms with one medication strategyB. They eliminate the need for monitoringC. They work only when taken as neededD. They are tobacco cessation medications only
+
+Correct Answer:A. They may treat both anxiety and depressive symptoms with one medication strategy
+
+Rationale:SSRIs and SNRIs can address both depression and anxiety, making them useful when the conditions coexist.
+
+Why the Incorrect Options Are Wrong:B is incorrect because monitoring remains necessary.C is incorrect because these medications are taken consistently, not PRN.D is incorrect because their primary role here is behavioral health treatment.
+
+Source Support:Anxiety Guideline Summary; Depression Guideline SummaryClinical Skill Tested:Integrating treatment selection for comorbid depression and anxiety.
+
+
+
+21. Anxiety Question 9
+
+Disease State: AnxietyTopic: Bupropion cautionDifficulty: IntermediateQuestion Type: Single-best-answer
+
+Question Stem:Why may bupropion be less preferred as an initial antidepressant when prominent anxiety symptoms are present?
+
+Answer Choices:A. It may worsen anxiety in some patientsB. It has no possible role in depression treatmentC. It is an anticoagulantD. It is only used for hypertension
+
+Correct Answer:A. It may worsen anxiety in some patients
+
+Rationale:Although bupropion can be useful for depression and tobacco cessation, it may worsen anxiety in some patients and may be less preferred when anxiety symptoms are prominent.
+
+Why the Incorrect Options Are Wrong:B is incorrect because bupropion is a second-generation antidepressant.C and D are factually incorrect.
+
+Source Support:Anxiety Guideline Summary; Tobacco Cessation Guideline SummaryClinical Skill Tested:Balancing medication selection across comorbid conditions.
+
+
+
+22. Anxiety Question 10
+
+Disease State: AnxietyTopic: Benzodiazepine safetyDifficulty: IntermediateQuestion Type: Single-best-answer
+
+Question Stem:Why are benzodiazepines generally not preferred for long-term anxiety management?
+
+Answer Choices:A. Risks include dependence, withdrawal, misuse, overdose, and other safety concernsB. They cure anxiety permanently after one doseC. They are first-line for all anxiety patients indefinitelyD. They also treat tobacco dependence
+
+Correct Answer:A. Risks include dependence, withdrawal, misuse, overdose, and other safety concerns
+
+Rationale:Benzodiazepines carry important safety concerns, especially with long-term use.
+
+Why the Incorrect Options Are Wrong:B is false.C is not guideline-concordant.D is incorrect because benzodiazepines are not tobacco cessation therapy.
+
+Source Support:Anxiety treatment evidence reviewClinical Skill Tested:Identifying risks of benzodiazepine therapy.
+
+
+
+23. Anxiety Question 11
+
+Disease State: AnxietyTopic: Anxiety monitoringDifficulty: FoundationalQuestion Type: Select-all-that-apply
+
+Question Stem:Which parameters should be monitored when treating generalized anxiety disorder?
+
+Answer Choices:A. GAD-7 scoreB. Anxiety symptom burdenC. Sleep qualityD. Functional impairmentE. Medication adherence and adverse effects
+
+Correct Answer:A, B, C, D, E
+
+Rationale:Longitudinal anxiety management should include validated symptom scales, clinical symptoms, function, sleep, adherence, and tolerability.
+
+Why the Incorrect Options Are Wrong:All listed items are appropriate monitoring elements.
+
+Source Support:Anxiety Guideline SummaryClinical Skill Tested:Creating an anxiety monitoring plan.
+
+
+
+24. Anxiety Question 12
+
+Disease State: AnxietyTopic: When to reassessDifficulty: FoundationalQuestion Type: Single-best-answer
+
+Question Stem:After initiating treatment for anxiety, which follow-up approach is most appropriate?
+
+Answer Choices:A. Reassess symptoms, function, adherence, adverse effects, and GAD-7 longitudinallyB. Avoid follow-up unless the patient callsC. Monitor only weightD. Stop therapy once the prescription is written
+
+Correct Answer:A. Reassess symptoms, function, adherence, adverse effects, and GAD-7 longitudinally
+
+Rationale:Anxiety treatment requires longitudinal reassessment of symptom response, function, adherence, and medication safety.
+
+Why the Incorrect Options Are Wrong:B is too passive.C is incomplete.D ignores the need for follow-up and treatment optimization.
+
+Source Support:Anxiety Guideline SummaryClinical Skill Tested:Planning longitudinal anxiety care.
+
+
+
+Tobacco Cessation Questions
+
+25. Tobacco Question 1
+
+Disease State: Tobacco CessationTopic: USPSTF adult tobacco recommendationDifficulty: FoundationalQuestion Type: Single-best-answer
+
+Question Stem:What does the USPSTF recommend clinicians do for adults who use tobacco?
+
+Answer Choices:A. Ask about tobacco use, advise them to quit, and provide behavioral interventions and FDA-approved pharmacotherapy for nonpregnant adults who smokeB. Avoid asking about tobacco use unless the patient has COPDC. Recommend e-cigarettes as first-line therapy for every patientD. Delay tobacco counseling until the patient has already quit
+
+Correct Answer:A. Ask about tobacco use, advise them to quit, and provide behavioral interventions and FDA-approved pharmacotherapy for nonpregnant adults who smoke
+
+Rationale:USPSTF recommends asking all adults about tobacco use, advising them to stop, and providing behavioral interventions and FDA-approved pharmacotherapy for cessation to nonpregnant adults who smoke.
+
+Why the Incorrect Options Are Wrong:B misses routine tobacco assessment.C is incorrect because evidence for e-cigarettes is insufficient.D misses the opportunity to support cessation.
+
+Source Support:USPSTF Tobacco Cessation GuidelineClinical Skill Tested:Applying adult tobacco cessation recommendations.
+
+
+
+26. Tobacco Question 2
+
+Disease State: Tobacco CessationTopic: 5 A’s frameworkDifficulty: FoundationalQuestion Type: Select-all-that-apply
+
+Question Stem:Which steps are included in the 5 A’s framework for tobacco cessation?
+
+Answer Choices:A. AskB. AdviseC. AssessD. AssistE. Arrange
+
+Correct Answer:A, B, C, D, E
+
+Rationale:The 5 A’s are Ask, Advise, Assess, Assist, and Arrange.
+
+Why the Incorrect Options Are Wrong:All listed options are part of the 5 A’s framework.
+
+Source Support:Tobacco Cessation Guideline SummaryClinical Skill Tested:Recognizing the tobacco cessation counseling framework.
+
+
+
+27. Tobacco Question 3
+
+Disease State: Tobacco CessationTopic: Ask stepDifficulty: FoundationalQuestion Type: Single-best-answer
+
+Question Stem:Which action best represents the “Ask” step of the 5 A’s?
+
+Answer Choices:A. Identify tobacco use at every encounterB. Start medication without asking about tobacco useC. Avoid tobacco history if the patient has anxietyD. Recommend hospitalization for all tobacco users
+
+Correct Answer:A. Identify tobacco use at every encounter
+
+Rationale:The Ask step involves identifying tobacco use routinely, including cigarettes, cigars, smokeless tobacco, and electronic nicotine products.
+
+Why the Incorrect Options Are Wrong:B skips assessment.C is inappropriate because anxiety does not eliminate the need for tobacco assessment.D is not a tobacco cessation guideline recommendation.
+
+Source Support:Tobacco Cessation Guideline SummaryClinical Skill Tested:Applying the Ask step.
+
+
+
+28. Tobacco Question 4
+
+Disease State: Tobacco CessationTopic: Advise stepDifficulty: FoundationalQuestion Type: Single-best-answer
+
+Question Stem:Which statement best reflects the “Advise” step of tobacco cessation counseling?
+
+Answer Choices:A. Provide clear, personalized advice to quit tobacco useB. Avoid discussing cessation benefitsC. Tell the patient quitting is impossibleD. Recommend e-cigarettes as the only option
+
+Correct Answer:A. Provide clear, personalized advice to quit tobacco use
+
+Rationale:The Advise step involves providing clear, personalized advice that quitting tobacco is important for health.
+
+Why the Incorrect Options Are Wrong:B misses counseling.C is discouraging and false.D is unsupported by USPSTF evidence.
+
+Source Support:Tobacco Cessation Guideline SummaryClinical Skill Tested:Applying the Advise step.
+
+
+
+29. Tobacco Question 5
+
+Disease State: Tobacco CessationTopic: Assess readinessDifficulty: FoundationalQuestion Type: Single-best-answer
+
+Question Stem:Which question best assesses readiness to quit tobacco use?
+
+Answer Choices:A. “Have you considered quitting, and what concerns do you have about quitting?”B. “What is your favorite flavor of gum?”C. “Do you want to stop all medications?”D. “Do you have atrial fibrillation?”
+
+Correct Answer:A. “Have you considered quitting, and what concerns do you have about quitting?”
+
+Rationale:Assessing readiness involves understanding whether the patient has considered quitting, prior quit attempts, barriers, and concerns.
+
+Why the Incorrect Options Are Wrong:B is not readiness assessment.C is unrelated.D is unrelated to tobacco readiness.
+
+Source Support:Tobacco Cessation Guideline SummaryClinical Skill Tested:Assessing readiness to quit.
+
+
+
+30. Tobacco Question 6
+
+Disease State: Tobacco CessationTopic: Not ready to quitDifficulty: FoundationalQuestion Type: Single-best-answer
+
+Question Stem:For a patient who uses tobacco but is not ready to quit, what is the most appropriate counseling approach?
+
+Answer Choices:A. Provide education, motivational interviewing, and address barriersB. Refuse to discuss tobacco until the patient is readyC. Force pharmacotherapy immediatelyD. Tell the patient tobacco use is harmless
+
+Correct Answer:A. Provide education, motivational interviewing, and address barriers
+
+Rationale:For patients not ready to quit, counseling should focus on education, motivational interviewing, and addressing barriers.
+
+Why the Incorrect Options Are Wrong:B misses an opportunity to increase readiness.C ignores patient readiness.D is false and unsafe.
+
+Source Support:Tobacco Cessation Guideline SummaryClinical Skill Tested:Matching intervention to readiness stage.
+
+
+
+31. Tobacco Question 7
+
+Disease State: Tobacco CessationTopic: Ready to quitDifficulty: FoundationalQuestion Type: Select-all-that-apply
+
+Question Stem:For a patient who is ready to quit tobacco use, which interventions are appropriate?
+
+Answer Choices:A. Set a quit dateB. Select pharmacotherapy when appropriateC. Create a cessation planD. Arrange follow-upE. Tell the patient no treatment options exist
+
+Correct Answer:A, B, C, D
+
+Rationale:Patients ready to quit should receive practical support, which may include pharmacotherapy, a quit date, a cessation plan, and follow-up.
+
+Why the Incorrect Options Are Wrong:E is false and discouraging.
+
+Source Support:Tobacco Cessation Guideline SummaryClinical Skill Tested:Creating a quit plan.
+
+
+
+32. Tobacco Question 8
+
+Disease State: Tobacco CessationTopic: FDA-approved pharmacotherapyDifficulty: FoundationalQuestion Type: Select-all-that-apply
+
+Question Stem:Which pharmacotherapy options are FDA-approved for tobacco smoking cessation in adults?
+
+Answer Choices:A. Nicotine replacement therapyB. Bupropion SRC. VareniclineD. WarfarinE. Hydroxyzine
+
+Correct Answer:A, B, C
+
+Rationale:FDA-approved tobacco cessation pharmacotherapies include NRT, bupropion SR, and varenicline.
+
+Why the Incorrect Options Are Wrong:D is an anticoagulant.E may be used for anxiety symptoms but is not tobacco cessation pharmacotherapy.
+
+Source Support:USPSTF Tobacco Cessation GuidelineClinical Skill Tested:Identifying FDA-approved tobacco cessation medications.
+
+
+
+33. Tobacco Question 9
+
+Disease State: Tobacco CessationTopic: Combination NRTDifficulty: IntermediateQuestion Type: Single-best-answer
+
+Question Stem:Which nicotine replacement therapy strategy has been found more effective than using a single form of NRT?
+
+Answer Choices:A. Combining long-acting NRT, such as the patch, with short-acting NRT, such as gum or lozengeB. Using only nicotine gum once monthlyC. Combining NRT with warfarinD. Avoiding all behavioral counseling
+
+Correct Answer:A. Combining long-acting NRT, such as the patch, with short-acting NRT, such as gum or lozenge
+
+Rationale:Combination NRT, particularly a long-acting plus short-acting form, is more effective than single-form NRT.
+
+Why the Incorrect Options Are Wrong:B is not an evidence-based regimen.C is unrelated and potentially unsafe.D removes an important cessation support.
+
+Source Support:USPSTF Tobacco Cessation GuidelineClinical Skill Tested:Selecting effective NRT strategies.
+
+
+
+34. Tobacco Question 10
+
+Disease State: Tobacco CessationTopic: VareniclineDifficulty: IntermediateQuestion Type: Single-best-answer
+
+Question Stem:Which statement best describes varenicline’s role in tobacco cessation?
+
+Answer Choices:A. Varenicline is an FDA-approved cessation medication and appears more effective than NRT or bupropion SR in available evidenceB. Varenicline is an anticoagulantC. Varenicline is only used for insomniaD. Varenicline should be used only as an antidepressant
+
+Correct Answer:A. Varenicline is an FDA-approved cessation medication and appears more effective than NRT or bupropion SR in available evidence
+
+Rationale:USPSTF notes varenicline is FDA-approved for cessation and appears more effective than NRT or bupropion SR based on available studies.
+
+Why the Incorrect Options Are Wrong:B, C, and D are incorrect descriptions of varenicline.
+
+Source Support:USPSTF Tobacco Cessation GuidelineClinical Skill Tested:Understanding tobacco cessation medication selection.
+
+
+
+35. Tobacco Question 11
+
+Disease State: Tobacco CessationTopic: E-cigarettesDifficulty: IntermediateQuestion Type: Single-best-answer
+
+Question Stem:What does USPSTF conclude about e-cigarettes for tobacco cessation?
+
+Answer Choices:A. Evidence is insufficient to assess the balance of benefits and harmsB. E-cigarettes are first-line cessation therapy for all adultsC. E-cigarettes are preferred over all FDA-approved pharmacotherapyD. E-cigarettes are required before varenicline can be used
+
+Correct Answer:A. Evidence is insufficient to assess the balance of benefits and harms
+
+Rationale:USPSTF concludes evidence is insufficient to assess the benefits and harms of e-cigarettes for tobacco cessation.
+
+Why the Incorrect Options Are Wrong:B and C overstate the evidence.D is not a guideline requirement.
+
+Source Support:USPSTF Tobacco Cessation GuidelineClinical Skill Tested:Avoiding unsupported cessation recommendations.
+
+
+
+36. Tobacco Question 12
+
+Disease State: Tobacco CessationTopic: Behavioral health overlapDifficulty: IntermediateQuestion Type: NAPLEX-inspired K-type-style
+
+Question Stem:Which statements are consistent with guideline-based tobacco cessation counseling?
+
+I. Tobacco use should be assessed routinely.II. Readiness to quit should guide the intervention.III. Follow-up should be arranged to support ongoing cessation efforts.
+
+Answer Choices:A. I onlyB. I and II onlyC. II and III onlyD. I, II, and III
+
+Correct Answer:D. I, II, and III
+
+Rationale:Guideline-based tobacco care includes routine assessment, readiness assessment, appropriate assistance, and arranged follow-up.
+
+Why the Incorrect Options Are Wrong:A omits readiness and follow-up.B omits follow-up.C omits routine assessment.
+
+Source Support:Tobacco Cessation Guideline SummaryClinical Skill Tested:Applying tobacco cessation workflow logic.
+
+
+
+Integrated Cross-Disease Questions
+
+37. Integrated Question 1
+
+Disease State: Integrated — Depression + Anxiety + Tobacco CessationTopic: Medication selection across comorbid conditionsDifficulty: IntermediateQuestion Type: Single-best-answer
+
+Question Stem:A patient has moderate MDD, clinically significant generalized anxiety symptoms, and tobacco use disorder. Which principle best supports antidepressant selection?
+
+Answer Choices:A. Choose a medication strategy that addresses both depression and anxiety while also considering tobacco cessation goals and patient-specific risksB. Choose bupropion automatically for every patient who smokes, regardless of anxiety severityC. Avoid CBT because multiple conditions are presentD. Treat tobacco use only after depression and anxiety are permanently cured
+
+Correct Answer:A. Choose a medication strategy that addresses both depression and anxiety while also considering tobacco cessation goals and patient-specific risks
+
+Rationale:Depression, anxiety, and tobacco use frequently overlap. Treatment selection should consider all active conditions, symptom burden, medication benefits and risks, and patient readiness.
+
+Why the Incorrect Options Are Wrong:B ignores the possibility that bupropion may worsen anxiety in some patients.C incorrectly excludes CBT.D delays tobacco counseling unnecessarily.
+
+Source Support:Depression Guideline Summary; Anxiety Guideline Summary; Tobacco Cessation Guideline SummaryClinical Skill Tested:Integrating medication selection across comorbid disease states.
+
+
+
+38. Integrated Question 2
+
+Disease State: Integrated — Depression + Anxiety + Tobacco CessationTopic: Measurement-based behavioral health careDifficulty: FoundationalQuestion Type: Select-all-that-apply
+
+Question Stem:Which measures or clinical domains should be reassessed longitudinally when managing depression and anxiety with coexisting tobacco use?
+
+Answer Choices:A. PHQ-9B. GAD-7C. Medication adherence and adverse effectsD. Tobacco use and readiness to quitE. Functional improvement
+
+Correct Answer:A, B, C, D, E
+
+Rationale:Longitudinal care should include depression and anxiety symptom scales, adherence, adverse effects, tobacco status, readiness to quit, and functional improvement.
+
+Why the Incorrect Options Are Wrong:All listed items are appropriate.
+
+Source Support:Depression Guideline Summary; Anxiety Guideline Summary; Tobacco Cessation Guideline SummaryClinical Skill Tested:Building an integrated monitoring plan.
+
+
+
+39. Integrated Question 3
+
+Disease State: Integrated — Depression + Anxiety + Tobacco CessationTopic: Adherence before escalationDifficulty: IntermediateQuestion Type: Single-best-answer
+
+Question Stem:Before concluding that depression or anxiety therapy has failed, what should the pharmacist assess?
+
+Answer Choices:A. Medication adherence, dose adequacy, treatment duration, adverse effects, access barriers, and psychotherapy engagementB. Tablet color onlyC. Whether the patient has ever smoked a cigaretteD. Whether the patient should stop all therapy immediately
+
+Correct Answer:A. Medication adherence, dose adequacy, treatment duration, adverse effects, access barriers, and psychotherapy engagement
+
+Rationale:Inadequate adherence, limited access, adverse effects, and insufficient treatment exposure can mimic treatment failure. These should be evaluated before escalation.
+
+Why the Incorrect Options Are Wrong:B is not clinically meaningful.C may be relevant to tobacco assessment but does not establish behavioral health treatment failure.D is unsafe.
+
+Source Support:ACP MDD Guideline; Anxiety Guideline SummaryClinical Skill Tested:Distinguishing treatment failure from inadequate treatment exposure.
+
+
+
+40. Integrated Question 4
+
+Disease State: Integrated — Depression + Anxiety + Tobacco CessationTopic: Guideline-concordant patient educationDifficulty: FoundationalQuestion Type: NAPLEX-inspired K-type-style
+
+Question Stem:Which counseling points are appropriate for a patient receiving guideline-based care for depression, anxiety, and tobacco use disorder?
+
+I. Explain that remission, not just partial symptom improvement, is the goal of depression treatment.II. Explain that CBT may be used alone or with medication depending on severity and patient preference.III. Explain that tobacco cessation support can include behavioral counseling, readiness assessment, follow-up, and pharmacotherapy when appropriate.
+
+Answer Choices:A. I onlyB. I and II onlyC. II and III onlyD. I, II, and III
+
+Correct Answer:D. I, II, and III
+
+Rationale:All three statements align with guideline-based behavioral health and tobacco cessation care. Depression treatment targets remission, CBT is a guideline-supported option, and tobacco cessation should include counseling, readiness assessment, follow-up, and pharmacotherapy when appropriate.
+
+Why the Incorrect Options Are Wrong:A omits CBT and tobacco counseling.B omits tobacco cessation support.C omits remission as the depression treatment goal.
+
+Source Support:ACP MDD Guideline; Anxiety Guideline Summary; USPSTF Tobacco Cessation GuidelineClinical Skill Tested:Providing integrated guideline-based patient education.
+
