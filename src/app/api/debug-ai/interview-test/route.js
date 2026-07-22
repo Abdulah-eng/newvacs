@@ -35,3 +35,6 @@ export async function GET() {
     }, { status: 200 }) // Return 200 so we can read the body
   }
 }
+
+
+export const maxDuration = 60;

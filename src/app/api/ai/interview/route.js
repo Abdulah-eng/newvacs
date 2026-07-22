@@ -100,3 +100,6 @@ export async function POST(request) {
   }
 }
 
+
+
+export const maxDuration = 60;

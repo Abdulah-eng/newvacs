@@ -51,3 +51,6 @@ export async function GET(request) {
   console.error('[TTS] Provider failed:', errors)
   return NextResponse.json({ error: 'TTS provider failed', details: errors }, { status: 503 })
 }
+
+
+export const maxDuration = 60;

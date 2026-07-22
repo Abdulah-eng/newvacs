@@ -38,3 +38,6 @@ export async function GET() {
 
   return NextResponse.json({ config, apiTest })
 }
+
+
+export const maxDuration = 60;

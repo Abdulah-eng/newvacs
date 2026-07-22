@@ -29,3 +29,6 @@ export async function POST(request) {
     return NextResponse.json({ error: err.message || 'Transcription failed' }, { status: 500 })
   }
 }
+
+
+export const maxDuration = 60;

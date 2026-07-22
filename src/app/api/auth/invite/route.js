@@ -101,3 +101,6 @@ export async function POST(request) {
 
   return NextResponse.json({ success: true, user_id: userId })
 }
+
+
+export const maxDuration = 60;

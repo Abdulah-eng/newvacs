@@ -36,3 +36,6 @@ export async function POST(request) {
     return NextResponse.json({ error: error.message || 'Failed to generate cumulative summary' }, { status: 500 })
   }
 }
+
+
+export const maxDuration = 60;
