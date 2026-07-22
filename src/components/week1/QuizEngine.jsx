@@ -115,17 +115,31 @@ export default function QuizEngine({ items, passThreshold, onRecord, onExit, onP
         <div className="space-y-2">
           {item.options.map(o => {
             const on = selected.includes(o.key)
-            const correct = item.correct.includes(o.key)
+            const correct = item.type === 'sba' ? item.correct[0] === o.key : item.correct.includes(o.key)
+            
             let cls = 'border-slate-200 hover:border-teal/40'
+            let iconCls = on ? 'border-teal bg-teal text-white' : 'border-slate-300'
+            
             if (isChecked) {
-              if (correct) cls = 'border-teal bg-teal/5'
-              else if (on) cls = 'border-red-300 bg-red-50'
-              else cls = 'border-slate-200 opacity-70'
-            } else if (on) cls = 'border-teal bg-teal/5'
+              if (correct) {
+                cls = 'border-teal bg-teal/5'
+                iconCls = on ? 'border-teal bg-teal text-white' : 'border-teal bg-white text-teal'
+              }
+              else if (on) {
+                cls = 'border-red-300 bg-red-50'
+                iconCls = 'border-red-500 bg-red-500 text-white'
+              }
+              else {
+                cls = 'border-slate-200 opacity-70'
+              }
+            } else if (on) {
+              cls = 'border-teal bg-teal/5'
+            }
+            
             return (
               <button key={o.key} onClick={() => toggle(o.key)} disabled={isChecked}
                 className={`w-full text-left flex items-start gap-3 rounded-lg border px-3.5 py-2.5 transition ${cls}`}>
-                <span className={`mt-0.5 grid place-items-center w-5 h-5 shrink-0 ${multi ? 'rounded' : 'rounded-full'} border-2 ${on ? 'border-teal bg-teal text-white' : 'border-slate-300'}`}>
+                <span className={`mt-0.5 grid place-items-center w-5 h-5 shrink-0 ${multi ? 'rounded' : 'rounded-full'} border-2 ${iconCls}`}>
                   {on && <CheckCircle2 size={12} />}
                 </span>
                 <span className="text-[14px] text-slate-700 flex-1">{o.text}</span>

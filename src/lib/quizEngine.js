@@ -13,6 +13,10 @@ export function buildAttempt(items) {
 }
 
 export function isCorrect(item, selectedKeys) {
+  if (item.type === 'sba') {
+    return selectedKeys.length === 1 && selectedKeys[0] === item.correct[0]
+  }
+
   const a = new Set(selectedKeys)
   const b = new Set(item.correct)
   if (a.size !== b.size) return false
