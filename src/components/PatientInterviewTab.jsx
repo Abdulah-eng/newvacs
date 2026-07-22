@@ -364,7 +364,14 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     }
   }
 
-  async function send(text) { const q = (text ?? draft).trim(); if (q) { setDraft(''); await _sendMessage(q) } }
+  async function send(text) { 
+    if (loading || timeLeft === 0) return;
+    const q = (text ?? draft).trim(); 
+    if (q) { 
+      // _sendMessage will handle clearing the draft
+      await _sendMessage(q) 
+    } 
+  }
 
   const discoveredTopics = c.INTERVIEW_KNOWLEDGE.filter(k => k.field && discovered[k.field])
   const timerColor = timeLeft === 0 ? 'bg-red-100 text-red-700' : timeLeft < 300 ? 'bg-amber-100 text-amber-700 animate-pulse' : 'bg-slate-100 text-slate-600'
@@ -383,7 +390,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
               className={'flex items-center gap-1.5 px-3 py-1.5 text-[12px] font-semibold rounded-md transition ' + (voiceMode ? 'bg-white shadow-sm text-navy' : 'text-slate-500 hover:text-slate-700')}>
               <Volume2 size={14} /> Voice
             </button>
-            <button onClick={() => { setVoiceMode(false); window.speechSynthesis?.cancel() }}
+            <button onClick={() => { setVoiceMode(false); window.speechSynthesis?.cancel(); _endSession() }}
               className={'flex items-center gap-1.5 px-3 py-1.5 text-[12px] font-semibold rounded-md transition ' + (!voiceMode ? 'bg-white shadow-sm text-navy' : 'text-slate-500 hover:text-slate-700')}>
               <Type size={14} /> Text
             </button>
