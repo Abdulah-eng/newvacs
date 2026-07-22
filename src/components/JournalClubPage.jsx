@@ -27,8 +27,9 @@ function progressOf(config, state) {
   return { answered, total, complete: answered === total }
 }
 
-export default function JournalClubPage({ onBack, config = JOURNAL_CLUB }) {
+export default function JournalClubPage({ onBack, config = JOURNAL_CLUB, weekId }) {
   const STATE_ID = config.id
+  const JC = config
   const [state, setState] = useState(() => {
     const s = loadCaseState(STATE_ID)
     return { responses: {}, summaryResponses: {}, ratings: {}, ...s }
@@ -196,7 +197,7 @@ export default function JournalClubPage({ onBack, config = JOURNAL_CLUB }) {
                   body: JSON.stringify({
                     studentResponses: Object.entries(state.responses).map(([id, text]) => ({ questionId: id, prompt: JC.questions.find(q=>q.id===id)?.prompt, answer: text })),
                     summaryResponses: state.summaryResponses,
-                    weekId: JC.id,
+                    weekId: weekId || JC.id,
                     weekTitle: JC.title
                   })
                 })

@@ -36,7 +36,7 @@ export default function ModuleShell({ week, demo, onToggleDemo, onExit }) {
     return <WeeklySummary week={week} onBack={() => { setShowSummary(false); bump() }} />
   }
   if (journalOpen) {
-    return <JournalClubPage config={week.journal} onBack={() => { setJournalOpen(false); bump() }} />
+    return <JournalClubPage config={week.journal} weekId={week.id} onBack={() => { setJournalOpen(false); bump() }} />
   }
   if (debriefOpen) {
     return <PreceptorDebrief week={week} onBack={() => { setDebriefOpen(false); bump() }} />
