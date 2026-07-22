@@ -18,14 +18,18 @@ export async function callJsonLlm(messages, modelOverride = null) {
 
   const response = await anthropic.messages.create({
     model: modelOverride || process.env.ANTHROPIC_MODEL || 'claude-sonnet-5',
-    max_tokens: 64000,
+    max_tokens: 8192,
     system: systemMsg + '\n\nIMPORTANT: You must respond ONLY with a valid JSON object. Do not include markdown code blocks, conversational text, or explanations before or after the JSON.',
-    messages: userMessages,
+    messages: [
+      ...userMessages,
+      { role: 'assistant', content: '{' }
+    ],
   })
 
   let text = response.content.find(b => b.type === 'text')?.text || ''
+  text = '{' + text // re-attach the prefilled brace
   
-  // Clean markdown code blocks just in case Claude wraps it in ```json
+  // Clean markdown code blocks just in case
   text = text.replace(/```json\n?/gi, '').replace(/```\n?/g, '').trim()
   
   try {
@@ -45,7 +49,9 @@ export async function callJsonLlm(messages, modelOverride = null) {
     }
     
     console.error('Anthropic JSON parse error. Raw text:', text)
-    throw new Error('Failed to parse AI response as JSON. See server logs for raw text.')
+    const err = new Error('Failed to parse AI response as JSON. See server logs for raw text.')
+    err.rawText = text
+    throw err
   }
 }
 

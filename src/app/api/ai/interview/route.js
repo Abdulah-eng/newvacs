@@ -94,7 +94,7 @@ export async function POST(request) {
       anthropicModel: process.env.ANTHROPIC_MODEL
     }))
     return NextResponse.json(
-      { error: error.message || 'Failed to process interview question', details: error.error },
+      { error: error.message || 'Failed to process interview question', details: error.error, rawText: error.rawText },
       { status: 500 }
     )
   }
