@@ -214,7 +214,7 @@ export const QUIZ_ITEMS = [
     "disease": "Asthma",
     "concept_tag": "patient_a_tuesday_initial_visit",
     "type": "sba",
-    "stem": "Sarah Thompson is a 34-year-old patient with asthma and allergic rhinitis. At her initial visit, she has ACT 16, frequent rescue inhaler use, activity limitation, and no controller therapy. What is the most appropriate therapeutic direction?",
+    "stem": "A 34-year-old patient with asthma and allergic rhinitis. At her initial visit, she has ACT 16, frequent rescue inhaler use, activity limitation, and no controller therapy. What is the most appropriate therapeutic direction?",
     "options": [
       {
         "key": "a",
@@ -236,14 +236,14 @@ export const QUIZ_ITEMS = [
     "correct": [
       "a"
     ],
-    "rationale": "Correct Answer: A\n\nSarah has poorly controlled asthma and is not receiving controller therapy. An ICS-containing regimen is indicated, and SMART/MART is an appropriate preferred strategy when available."
+    "rationale": "Correct Answer: A\n\nThe patient has poorly controlled asthma and is not receiving controller therapy. An ICS-containing regimen is indicated, and SMART/MART is an appropriate preferred strategy when available."
   },
   {
     "id": "ASTHMA-009",
     "disease": "Asthma",
     "concept_tag": "patient_a_wednesday_follow_up",
     "type": "sba",
-    "stem": "At Sarah’s 3-month follow-up, her ACT score has improved to 21 and she reports symptoms only once or twice weekly. However, possible inhaler technique deficiencies are identified. What is the best next step?",
+    "stem": "At a 3-month follow-up, her ACT score has improved to 21 and she reports symptoms only once or twice weekly. However, possible inhaler technique deficiencies are identified. What is the best next step?",
     "options": [
       {
         "key": "a",
@@ -265,14 +265,14 @@ export const QUIZ_ITEMS = [
     "correct": [
       "a"
     ],
-    "rationale": "Correct Answer: A\n\nSarah’s asthma is improved and well controlled by ACT. Remaining symptoms should prompt inhaler technique reassessment and education rather than unnecessary escalation."
+    "rationale": "Correct Answer: A\n\nThe patient’s asthma is improved and well controlled by ACT. Remaining symptoms should prompt inhaler technique reassessment and education rather than unnecessary escalation."
   },
   {
     "id": "ASTHMA-010",
     "disease": "Asthma",
     "concept_tag": "patient_a_thursday_follow_up",
     "type": "sba",
-    "stem": "At Sarah’s 6-month follow-up, her ACT score is 22 and day-to-day symptoms remain well controlled. She had one viral-triggered exacerbation 6 weeks ago that resolved after a 5-day prednisone course. What is the best assessment?",
+    "stem": "At a 6-month follow-up, her ACT score is 22 and day-to-day symptoms remain well controlled. She had one viral-triggered exacerbation 6 weeks ago that resolved after a 5-day prednisone course. What is the best assessment?",
     "options": [
       {
         "key": "a",
@@ -294,7 +294,7 @@ export const QUIZ_ITEMS = [
     "correct": [
       "a"
     ],
-    "rationale": "Correct Answer: A\n\nSarah’s daily asthma control remains strong. A single viral-triggered exacerbation should prompt action-plan reinforcement and monitoring, but it does not automatically mean persistent uncontrolled asthma."
+    "rationale": "Correct Answer: A\n\nThe patient’s daily asthma control remains strong. A single viral-triggered exacerbation should prompt action-plan reinforcement and monitoring, but it does not automatically mean persistent uncontrolled asthma."
   },
   {
     "id": "ASTHMA-011",
@@ -423,7 +423,7 @@ export const QUIZ_ITEMS = [
     "disease": "Asthma",
     "concept_tag": "asthma_copd_overlap_safety",
     "type": "sba",
-    "stem": "Maria has childhood asthma, COPD, persistent post-bronchodilator obstruction, bronchodilator reversibility, elevated eosinophils, and recurrent exacerbations. Which treatment principle is most important?",
+    "stem": "A 55-year-old patient has childhood asthma, COPD, persistent post-bronchodilator obstruction, bronchodilator reversibility, elevated eosinophils, and recurrent exacerbations. Which treatment principle is most important?",
     "options": [
       {
         "key": "a",
@@ -571,7 +571,7 @@ export const QUIZ_ITEMS = [
     "disease": "Asthma",
     "concept_tag": "patient_c_thursday_severe_eosinophilic_disease",
     "type": "sba",
-    "stem": "Maria’s Thursday follow-up shows optimized inhaled therapy, excellent adherence, appropriate inhaler technique, controlled rhinitis, eosinophils 520 cells/µL, and five corticosteroid-treated exacerbations in the past year. What is the most appropriate clinical interpretation?",
+    "stem": "A follow-up visit for a patient with Asthma-COPD overlap shows optimized inhaled therapy, excellent adherence, appropriate inhaler technique, controlled rhinitis, eosinophils 520 cells/µL, and five corticosteroid-treated exacerbations in the past year. What is the most appropriate clinical interpretation?",
     "options": [
       {
         "key": "a",
@@ -593,7 +593,7 @@ export const QUIZ_ITEMS = [
     "correct": [
       "a"
     ],
-    "rationale": "Correct Answer: A\n\nMaria has recurrent steroid-treated exacerbations despite optimized inhaled therapy and persistent eosinophilic inflammation. This supports biologic evaluation or initiation and a steroid-sparing strategy."
+    "rationale": "Correct Answer: A\n\nThe patient has recurrent steroid-treated exacerbations despite optimized inhaled therapy and persistent eosinophilic inflammation. This supports biologic evaluation or initiation and a steroid-sparing strategy."
   },
   {
     "id": "COPD-001",
@@ -836,7 +836,7 @@ export const QUIZ_ITEMS = [
     "disease": "COPD",
     "concept_tag": "patient_b_tuesday_initial_visit",
     "type": "sba",
-    "stem": "Bob Jenkins has post-bronchodilator FEV1/FVC 0.58, CAT score 18, activity limitation, frequent rescue inhaler use, and one moderate exacerbation in the past year. He is not using maintenance therapy. What is the most appropriate initial pharmacotherapy direction?",
+    "stem": "A 68-year-old patient has post-bronchodilator FEV1/FVC 0.58, CAT score 18, activity limitation, frequent rescue inhaler use, and one moderate exacerbation in the past year. He is not using maintenance therapy. What is the most appropriate initial pharmacotherapy direction?",
     "options": [
       {
         "key": "a",
@@ -858,14 +858,14 @@ export const QUIZ_ITEMS = [
     "correct": [
       "a"
     ],
-    "rationale": "Correct Answer: A\n\nBob has symptomatic COPD consistent with a need for maintenance LABA/LAMA therapy. His case also requires assessing barriers to medication initiation and adherence."
+    "rationale": "Correct Answer: A\n\nThe patient has symptomatic COPD consistent with a need for maintenance LABA/LAMA therapy. His case also requires assessing barriers to medication initiation and adherence."
   },
   {
     "id": "COPD-010",
     "disease": "COPD",
     "concept_tag": "patient_b_wednesday_follow_up",
     "type": "sba",
-    "stem": "At Bob’s 3-month follow-up, he reports only mild improvement after starting umeclidinium/vilanterol. Further questioning reveals he uses the inhaler only “most days” rather than daily. What should the student do next?",
+    "stem": "At a 3-month follow-up, a patient reports only mild improvement after starting umeclidinium/vilanterol. Further questioning reveals he uses the inhaler only “most days” rather than daily. What should the student do next?",
     "options": [
       {
         "key": "a",
@@ -887,14 +887,14 @@ export const QUIZ_ITEMS = [
     "correct": [
       "a"
     ],
-    "rationale": "Correct Answer: A\n\nBob’s symptoms cannot be interpreted as true treatment failure until adherence is optimized. The correct next step is to address missed doses and reinforce maintenance inhaler expectations."
+    "rationale": "Correct Answer: A\n\nThe symptoms cannot be interpreted as true treatment failure until adherence is optimized. The correct next step is to address missed doses and reinforce maintenance inhaler expectations."
   },
   {
     "id": "COPD-011",
     "disease": "COPD",
     "concept_tag": "patient_b_thursday_follow_up",
     "type": "sba",
-    "stem": "At Bob’s 6-month follow-up, adherence to LABA/LAMA has improved, but he has had two moderate COPD exacerbations in the past three months and eosinophils are 310 cells/µL. What is the key therapeutic consideration?",
+    "stem": "At a 6-month follow-up, a patient's adherence to LABA/LAMA has improved, but he has had two moderate COPD exacerbations in the past three months and eosinophils are 310 cells/µL. What is the key therapeutic consideration?",
     "options": [
       {
         "key": "a",
@@ -916,7 +916,7 @@ export const QUIZ_ITEMS = [
     "correct": [
       "a"
     ],
-    "rationale": "Correct Answer: A\n\nBob now has persistent exacerbation risk despite improved adherence to LABA/LAMA and elevated eosinophils. Triple therapy should be considered."
+    "rationale": "Correct Answer: A\n\nThe patient now has persistent exacerbation risk despite improved adherence to LABA/LAMA and elevated eosinophils. Triple therapy should be considered."
   },
   {
     "id": "COPD-012",
@@ -952,7 +952,7 @@ export const QUIZ_ITEMS = [
     "disease": "COPD",
     "concept_tag": "preventive_care",
     "type": "sata",
-    "stem": "Which preventive care gaps are relevant for Bob in the Week 3 COPD cases?",
+    "stem": "Which preventive care gaps are relevant for a 68-year-old COPD patient with a smoking history?",
     "options": [
       {
         "key": "a",
@@ -976,7 +976,7 @@ export const QUIZ_ITEMS = [
       "b",
       "c"
     ],
-    "rationale": "Correct Answer: A, B, C\n\nBob’s cases document influenza and COVID vaccination as current, while PCV20, RSV, and Tdap remain gaps."
+    "rationale": "Correct Answer: A, B, C\n\nThe patient's record documents influenza and COVID vaccination as current, while PCV20, RSV, and Tdap remain gaps."
   },
   {
     "id": "COPD-014",
@@ -1043,7 +1043,7 @@ export const QUIZ_ITEMS = [
     "disease": "COPD",
     "concept_tag": "patient_c_tuesday_asthma_copd_overlap",
     "type": "sba",
-    "stem": "Maria’s initial visit shows childhood asthma, COPD diagnosis, former smoking history, post-bronchodilator FEV1/FVC 0.55, bronchodilator response of 15% and 260 mL, eosinophils 420 cells/µL, ACT 15, CAT 19, and two steroid-treated exacerbations in the past year. She is taking tiotropium and albuterol but no ICS-containing inhaler. What is the key therapeutic concern?",
+    "stem": "A patient presents with childhood asthma, COPD diagnosis, former smoking history, post-bronchodilator FEV1/FVC 0.55, bronchodilator response of 15% and 260 mL, eosinophils 420 cells/µL, ACT 15, CAT 19, and two steroid-treated exacerbations in the past year. She is taking tiotropium and albuterol but no ICS-containing inhaler. What is the key therapeutic concern?",
     "options": [
       {
         "key": "a",
@@ -1065,14 +1065,14 @@ export const QUIZ_ITEMS = [
     "correct": [
       "a"
     ],
-    "rationale": "Correct Answer: A\n\nMaria has overlapping asthma and COPD features, elevated eosinophils, and recurrent exacerbations without ICS-containing therapy. Asthma features require ICS-containing treatment."
+    "rationale": "Correct Answer: A\n\nThe patient has overlapping asthma and COPD features, elevated eosinophils, and recurrent exacerbations without ICS-containing therapy. Asthma features require ICS-containing treatment."
   },
   {
     "id": "COPD-017",
     "disease": "COPD",
     "concept_tag": "patient_c_wednesday_follow_up",
     "type": "sba",
-    "stem": "At Maria’s 3-month follow-up, breathing has improved after Symbicort was added to Spiriva. ACT and CAT scores improved, and she has had no steroid-treated exacerbations. She reports nasal congestion and stopped fluticasone nasal spray. What is the best next step?",
+    "stem": "At a 3-month follow-up, a patient's breathing has improved after Symbicort was added to Spiriva. ACT and CAT scores improved, and she has had no steroid-treated exacerbations. She reports nasal congestion and stopped fluticasone nasal spray. What is the best next step?",
     "options": [
       {
         "key": "a",
@@ -1094,7 +1094,7 @@ export const QUIZ_ITEMS = [
     "correct": [
       "a"
     ],
-    "rationale": "Correct Answer: A\n\nMaria’s lower airway symptoms improved with ICS-containing therapy. Persistent symptoms appear related to uncontrolled allergic rhinitis, so rhinitis should be optimized before pulmonary escalation."
+    "rationale": "Correct Answer: A\n\nThe patient's lower airway symptoms improved with ICS-containing therapy. Persistent symptoms appear related to uncontrolled allergic rhinitis, so rhinitis should be optimized before pulmonary escalation."
   },
   {
     "id": "COPD-018",
@@ -1132,36 +1132,36 @@ export const QUIZ_ITEMS = [
     "disease": "COPD",
     "concept_tag": "matinee_application_to_patient_c",
     "type": "sba",
-    "stem": "Which Week 3 patient is the strongest fit for applying MATINEE trial evidence?",
+    "stem": "Which of the following patient profiles is the strongest fit for applying MATINEE trial evidence?",
     "options": [
       {
         "key": "a",
-        "text": "Sarah Tuesday, because she has newly recognized uncontrolled asthma without controller therapy"
+        "text": "A patient with newly recognized uncontrolled asthma without controller therapy"
       },
       {
         "key": "b",
-        "text": "Bob Wednesday, because he has persistent symptoms but poor adherence to LABA/LAMA"
+        "text": "A patient with persistent symptoms but poor adherence to LABA/LAMA"
       },
       {
         "key": "c",
-        "text": "Maria Thursday, because she has eosinophilic airway disease and recurrent exacerbations despite optimized inhaled therapy"
+        "text": "A patient with eosinophilic airway disease and recurrent exacerbations despite optimized inhaled therapy"
       },
       {
         "key": "d",
-        "text": "Sarah Wednesday, because her ACT improved to 21"
+        "text": "A patient whose ACT improved to 21"
       }
     ],
     "correct": [
       "c"
     ],
-    "rationale": "Correct Answer: C\n\nMaria Thursday best matches the MATINEE application because she has elevated eosinophils, recurrent corticosteroid-treated exacerbations, optimized inhaled therapy, confirmed adherence, and persistent exacerbation burden."
+    "rationale": "Correct Answer: C\n\nThe patient with eosinophilic airway disease best matches the MATINEE application because they has elevated eosinophils, recurrent corticosteroid-treated exacerbations, optimized inhaled therapy, confirmed adherence, and persistent exacerbation burden."
   },
   {
     "id": "COPD-020",
     "disease": "COPD",
     "concept_tag": "copd_biologic_therapy_and_escalation_logic",
     "type": "ktype",
-    "stem": "Which statements reflect appropriate COPD biologic/escalation reasoning in Week 3?\n\nI. Biologic therapy should be considered only after confirming optimized inhaled therapy, adherence, technique, and appropriate patient phenotype.\n\nII. MATINEE evidence should be applied primarily to eosinophilic COPD with recurrent exacerbations despite optimized therapy.\n\nIII. Bob Wednesday should be escalated to triple therapy before assessing adherence.\n\nIV. Maria Thursday is a stronger biologic candidate than Maria Wednesday because she continues to exacerbate despite optimized therapy and controlled rhinitis.",
+    "stem": "Which statements reflect appropriate COPD biologic/escalation reasoning?\n\nI. Biologic therapy should be considered only after confirming optimized inhaled therapy, adherence, technique, and appropriate patient phenotype.\n\nII. MATINEE evidence should be applied primarily to eosinophilic COPD with recurrent exacerbations despite optimized therapy.\n\nIII. A patient with poor adherence to LABA/LAMA should be escalated to triple therapy before assessing adherence.\n\nIV. A patient who continues to exacerbate despite optimized therapy and controlled rhinitis is a strong biologic candidate.",
     "options": [
       {
         "key": "a",
@@ -1183,6 +1183,6 @@ export const QUIZ_ITEMS = [
     "correct": [
       "c"
     ],
-    "rationale": "Correct Answer: C\n\nBiologic therapy should follow optimization of foundational therapy and should be phenotype-specific. MATINEE applies to eosinophilic COPD with recurrent exacerbations despite optimized therapy. Maria Thursday is appropriate for biologic consideration; Bob Wednesday should not be escalated before adherence is addressed."
+    "rationale": "Correct Answer: C\n\nBiologic therapy should follow optimization of foundational therapy and should be phenotype-specific. MATINEE applies to eosinophilic COPD with recurrent exacerbations despite optimized therapy. The patient with optimized therapy is appropriate for biologic consideration; a patient with poor adherence should not be escalated before adherence is addressed."
   }
 ];

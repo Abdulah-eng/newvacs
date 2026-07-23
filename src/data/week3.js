@@ -1,5 +1,9 @@
 // WEEK 3 module content — Asthma + Chronic Obstructive Pulmonary Disease
-// Grounded in 2025 GINA and 2026 GOLD guideline summaries and patient master profiles.
+// Grounded in GINA 2025 and GOLD 2026 guideline summaries and patient master profiles.
+// Key Abbreviations:
+// ICS: Inhaled Corticosteroid
+// GINA: Global Initiative for Asthma
+// GOLD: Global Initiative for Chronic Obstructive Lung Disease
 
 export const MODULE3 = {
   code: "WEEK3_ASTHMA_COPD",
@@ -16,14 +20,14 @@ export const PATIENTS3 = [
 export const caseIdFor3 = (patientId, dayKey) => `w3-${patientId}-${dayKey}`
 
 export const GUIDELINE_REVIEW3 = {
-  intro: "Week 3 covers the two most common chronic respiratory diseases in ambulatory care. Read the GINA 2025 and GOLD 2026 summaries, then pass the 40-item quiz at ≥90% to unlock Tuesday.",
+  intro: "Week 3 covers the two most common chronic respiratory diseases in ambulatory care. Read the GINA 2025 and GOLD 2026 summaries, then pass the 40-item quiz at ≥90% to unlock Tuesday. Note: ICS = Inhaled Corticosteroid, GINA = Global Initiative for Asthma, GOLD = Global Initiative for Chronic Obstructive Lung Disease.",
   sections: [
     {
-      id: 'asthma', title: 'Asthma — 2026 GINA', color: '1e3a8a',
+      id: 'asthma', title: 'Asthma — GINA 2025', color: '1e3a8a',
       pdf: "Asthma-GINA-2026-Guidelines.pdf",
       points: [
         { label: "Control classification", text: "Well-controlled: symptoms ≤2 days/wk, no nighttime awakenings, reliever ≤2 days/wk, no activity limitation. Partly controlled: 1–2 criteria not met. Uncontrolled: 3–4 criteria not met." },
-        { label: "SMART therapy", text: "Single Maintenance And Reliever Therapy (SMART): low-dose ICS/formoterol used both as controller and reliever. Reduces exacerbation risk even with infrequent use." },
+        { label: "SMART therapy", text: "Single Maintenance And Reliever Therapy (SMART): low-dose ICS/formoterol used both as controller and reliever. Using it as a reliever ensures the patient receives anti-inflammatory therapy whenever they have symptoms, improving control and reducing exacerbation risk compared to using a SABA alone. Daily adherence to maintenance dosing remains critical for optimal control." },
         { label: "ICS are controller medications", text: "ICS reduce airway inflammation — they do not work like rescue inhalers. Patients must use them daily regardless of symptoms." },
         { label: "Bronchodilator reversibility", text: "Asthma is supported by FEV1 increase ≥12% AND ≥200 mL after bronchodilator. Variable symptoms over time also support the diagnosis." },
         { label: "Rescue overuse is a red flag", text: "Using a rescue inhaler ≥2 days/week indicates uncontrolled asthma and an opportunity for therapy escalation." },
@@ -32,7 +36,7 @@ export const GUIDELINE_REVIEW3 = {
       ],
     },
     {
-      id: 'copd', title: 'COPD — 2026 GOLD', color: 'c2410c',
+      id: 'copd', title: 'COPD — GOLD 2026', color: 'c2410c',
       pdf: "COPD-GOLD-2026-Guidelines.pdf",
       points: [
         { label: "Diagnosis", text: "Post-bronchodilator FEV1/FVC <0.70 confirms persistent airflow limitation. COPD is not diagnosed by symptoms alone." },
@@ -46,7 +50,7 @@ export const GUIDELINE_REVIEW3 = {
     },
     {
       id: "overlap", title: "Asthma-COPD Overlap (ACO) & Biologics", color: "7c3aed",
-      pdf: "ACO_Integration_Summary.pdf",
+      pdf: null,
       points: [
         { label: "ACO features", text: "Persistent airflow limitation (as in COPD) PLUS features of asthma: significant bronchodilator reversibility, eosinophilia, early onset, or atopy." },
         { label: "Treat the dominant phenotype", text: "If asthma features are prominent, ICS are mandatory. Treat underlying eosinophilic inflammation alongside bronchodilator therapy." },
