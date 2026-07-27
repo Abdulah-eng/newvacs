@@ -53,7 +53,9 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   const speechStartRef = useRef(0)   // when did current utterance start (ms)
   const vadReadyRef = useRef(false)  // true only after startup guard delay
 
-  const [timeLeft, setTimeLeft] = useState(30 * 60)
+  const isWeek1 = c?.id?.startsWith('w1-')
+  const baseTime = isWeek1 ? 30 * 60 : 20 * 60
+  const [timeLeft, setTimeLeft] = useState(baseTime)
   const [sessionStarted, setSessionStarted] = useState(false)
   const timerRef = useRef(null)
   const [loading, setLoading] = useState(false)
@@ -104,7 +106,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   // Called when mic SESSION STARTS — resume from remaining seconds
   function _resumeTimer() {
     const remStr = localStorage.getItem('vacs::timer_rem::' + c.id)
-    const rem = remStr ? Math.max(0, parseInt(remStr)) : 30 * 60
+    const rem = remStr ? Math.max(0, parseInt(remStr)) : baseTime
     localStorage.removeItem('vacs::timer_rem::' + c.id)
     localStorage.setItem('vacs::timer_end::' + c.id, String(Date.now() + rem * 1000))
     setSessionStarted(true)
