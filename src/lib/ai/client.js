@@ -20,14 +20,10 @@ export async function callJsonLlm(messages, modelOverride = null) {
     model: modelOverride || process.env.ANTHROPIC_MODEL || 'claude-sonnet-5',
     max_tokens: 8192,
     system: systemMsg + '\n\nIMPORTANT: You must respond ONLY with a valid JSON object. Do not include markdown code blocks, conversational text, or explanations before or after the JSON.',
-    messages: [
-      ...userMessages,
-      { role: 'assistant', content: '{' }
-    ],
+    messages: userMessages,
   })
 
   let text = response.content.find(b => b.type === 'text')?.text || ''
-  text = '{' + text // re-attach the prefilled brace
   
   // Clean markdown code blocks just in case
   text = text.replace(/```json\n?/gi, '').replace(/```\n?/g, '').trim()
