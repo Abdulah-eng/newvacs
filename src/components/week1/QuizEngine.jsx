@@ -15,9 +15,18 @@ export default function QuizEngine({ items, passThreshold, onRecord, onExit, onP
 
   const item = attempt[idx]
   const multi = item?.type === 'sata'
+  const isSingle = item?.type === 'sba' || item?.type === 'ktype'
   const selected = answers[item?.id] || []
   const isChecked = !!checked[item?.id]
   const last = idx === attempt.length - 1
+
+  let cleanStem = item?.stem || ''
+  if (multi && !cleanStem.toLowerCase().includes('select all that apply')) {
+    cleanStem += ' (Select all that apply)'
+  }
+
+  let cleanRationale = item?.rationale || ''
+  cleanRationale = cleanRationale.replace(/^Correct\s+Answers?:\s*(?:[A-Z](?:,\s*[A-Z])*(?:,?\s+and\s+[A-Z])?\.?\s*)?(?:[IVX]+(?:,\s*[IVX]+)*(?:,?\s+and\s+[IVX]+)?\.?\s*)?/i, '').trim()
 
   function toggle(key) {
     if (isChecked) return
@@ -110,12 +119,12 @@ export default function QuizEngine({ items, passThreshold, onRecord, onExit, onP
           <Badge tone="teal">{item.disease}</Badge>
           <span className="text-[11px] font-semibold text-slate-400">{TYPE_LABEL[item.type]}</span>
         </div>
-        <p className="text-[15px] text-slate-800 leading-relaxed whitespace-pre-line mb-4">{item.stem}</p>
+        <p className="text-[15px] text-slate-800 leading-relaxed whitespace-pre-line mb-4">{cleanStem}</p>
 
         <div className="space-y-2">
           {item.options.map(o => {
             const on = selected.includes(o.key)
-            const correct = item.type === 'sba' ? item.correct[0] === o.key : item.correct.includes(o.key)
+            const correct = isSingle ? item.correct[0] === o.key : item.correct.includes(o.key)
             
             let cls = 'border-slate-200 hover:border-teal/40'
             let iconCls = on ? 'border-teal bg-teal text-white' : 'border-slate-300'
@@ -155,7 +164,7 @@ export default function QuizEngine({ items, passThreshold, onRecord, onExit, onP
             <p className={`text-[12px] font-bold mb-1 ${isCorrect(item, selected) ? 'text-teal' : 'text-amber-600'}`}>
               {isCorrect(item, selected) ? 'Correct' : 'Not quite'}
             </p>
-            <p className="text-[13px] text-slate-700 leading-relaxed">{item.rationale}</p>
+            <p className="text-[13px] text-slate-700 leading-relaxed whitespace-pre-line">{cleanRationale}</p>
           </div>
         )}
 

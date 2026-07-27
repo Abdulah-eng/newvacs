@@ -13,7 +13,7 @@ export function buildAttempt(items) {
 }
 
 export function isCorrect(item, selectedKeys) {
-  if (item.type === 'sba') {
+  if (item.type === 'sba' || item.type === 'ktype') {
     return selectedKeys.length === 1 && selectedKeys[0] === item.correct[0]
   }
 
