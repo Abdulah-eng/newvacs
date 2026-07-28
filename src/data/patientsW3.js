@@ -22,7 +22,11 @@ const sarahTue = makeCase({
     ],
   },
   VITALS: { bp: '118/76', bpRepeat: '116/74', hr: '88', rr: '18', temp: '98.6°F', weight: '65 kg', height: "5'5\"", bmi: '23.9', flags: {} },
-  LABS: [],
+  LABS: [
+    { label: 'FEV1', value: '2.5', unit: 'L (74% pred)', flag: 'warn', note: 'Reversible post-bronchodilator (+15%)' },
+    { label: 'FEV1/FVC', value: '0.78', flag: 'normal' },
+    { label: 'FVC', value: '3.2', unit: 'L', flag: 'normal' }
+  ],
   ALERTS: [
     { level: 'warn', text: 'Patient reports increased albuterol use — assess for uncontrolled asthma.' },
   ],
@@ -89,7 +93,7 @@ const sarahWed = makeCase({
   id: 'w3-sarah_t-wed',
   PATIENT: { ...sarahTue.PATIENT },
   ENCOUNTER: {
-    day: 'Wednesday', type: '1-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
+    day: 'Wednesday', type: '3-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I'm using the daily inhaler, but I still need my rescue inhaler when I exercise.",
     snapshotSummary: 'Follow-up visit. Sarah is now taking her ICS daily, but still has symptoms with activity. Time to step up therapy.',
     diseaseStates: ['Asthma'],
@@ -142,15 +146,18 @@ const sarahThu = makeCase({
   id: 'w3-sarah_t-thu',
   PATIENT: { ...sarahTue.PATIENT },
   ENCOUNTER: {
-    day: 'Thursday', type: '3-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
+    day: 'Thursday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I switched to the Symbicort, and things are great.",
     snapshotSummary: 'Sarah was switched to SMART therapy (Symbicort). Asthma is now well controlled.',
     diseaseStates: ['Asthma'],
     learningObjectives: ['Assess asthma control on SMART therapy', 'Reinforce maintenance and reliever concept'],
   },
   VITALS: { ...sarahTue.VITALS },
-  LABS: [],
-  ALERTS: [],
+  LABS: [
+    { label: 'FEV1', value: '2.9', unit: 'L (85% pred)', flag: 'normal' },
+    { label: 'FEV1/FVC', value: '0.80', flag: 'normal' }
+  ],
+  ALERTS: [{ level: 'info', text: 'Patient is due for routine vaccination review.' }],
   PROBLEMS: [{ name: 'Asthma', detail: 'Well controlled on SMART', flag: 'normal' }],
   MEDICATIONS: [
     { name: 'Budesonide/Formoterol (Symbicort)', dose: '160/4.5 mcg', route: 'Inhaled', freq: 'BID and PRN', indication: 'Asthma SMART therapy', notes: '' },
@@ -203,7 +210,12 @@ const bobTue = makeCase({
     learningObjectives: ['Identify missing maintenance therapy in symptomatic COPD', 'Assess cost and technique barriers'],
   },
   VITALS: { bp: '132/82', bpRepeat: '130/80', hr: '76', rr: '20', temp: '98.4°F', weight: '80 kg', height: "5'9\"", bmi: '26.0', flags: {} },
-  LABS: [{ label: 'Eosinophils', value: '150', unit: 'cells/µL', flag: 'normal' }],
+  LABS: [
+    { label: 'Eosinophils', value: '150', unit: 'cells/µL', flag: 'normal' },
+    { label: 'FEV1', value: '1.8', unit: 'L (58% pred)', flag: 'warn' },
+    { label: 'FEV1/FVC', value: '0.62', flag: 'warn' },
+    { label: 'FVC', value: '2.9', unit: 'L', flag: 'warn' }
+  ],
   ALERTS: [{ level: 'warn', text: 'Patient is highly symptomatic (mMRC 3) but not on a maintenance long-acting bronchodilator.' }],
   PROBLEMS: [
     { name: 'COPD', detail: 'GOLD Group E', flag: 'high' },
@@ -243,12 +255,18 @@ const bobTue = makeCase({
   ],
   ASSESSMENT_CARDS: [
     { id: 'w3b_a1', title: 'COPD Maintenance', icon: 'Lungs', color: '13314f', questions: [{ key: 'q1', q: 'What is the appropriate initial therapy for this highly symptomatic patient per GOLD?' }, { key: 'q2', q: 'How does cost affect the plan?' }] },
+    { id: 'w3b_a2', title: 'Hypertension', icon: 'HeartPulse', color: 'dc2626', questions: [{ key: 'q3', q: 'Is his blood pressure currently at goal?' }] },
+    { id: 'w3b_a3', title: 'Hyperlipidemia', icon: 'Activity', color: 'f59e0b', questions: [{ key: 'q4', q: 'Is he on appropriate statin therapy?' }] },
   ],
   PLAN_SECTIONS: [
     { id: 'w3b_p1', title: 'Therapy Plan', options: [
       { key: 'o1', label: 'Find an affordable LABA/LAMA combination or single agent and teach proper inhaler technique', correct: true },
       { key: 'o2', label: 'Prescribe triple therapy (LABA/LAMA/ICS)', correct: false },
       { key: 'o3', label: 'Prescribe daily oral prednisone', correct: false },
+    ] },
+    { id: 'w3b_p2', title: 'Hypertension & Hyperlipidemia', options: [
+      { key: 'o4', label: 'Continue current Lisinopril and Atorvastatin', correct: true },
+      { key: 'o5', label: 'Increase dose of Atorvastatin', correct: false },
     ] },
   ],
 })
@@ -257,7 +275,7 @@ const bobWed = makeCase({
   id: 'w3-bob_j-wed',
   PATIENT: { ...bobTue.PATIENT },
   ENCOUNTER: {
-    day: 'Wednesday', type: '1-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
+    day: 'Wednesday', type: '3-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "The new inhaler is cheaper, but I don't feel any different.",
     snapshotSummary: 'Bob was started on a LAMA (Tiotropium HandiHaler) that was affordable, but he feels no improvement.',
     diseaseStates: ['COPD'],
@@ -278,8 +296,8 @@ const bobWed = makeCase({
     { key: 'technique', label: 'Inhaler Technique', placeholder: 'Ask him to demonstrate how he uses the HandiHaler' },
   ],
     COUNSELING: [
-    { id: 'c1', title: 'Smoking Cessation & Maintenance', body: [
-      "Quitting smoking is the single best thing you can do to slow down your COPD. We have patches and medications that can help when you're ready.",
+    { id: 'c1', title: 'Pulmonary Rehabilitation & Maintenance', body: [
+      "Since you've already quit smoking, the next best step is staying active. Pulmonary rehabilitation can significantly improve your symptoms.",
       "Keep using your maintenance inhaler every day, even when you feel good." ] }
   ],
   GUIDING_QUESTIONS:
@@ -307,7 +325,7 @@ const bobThu = makeCase({
   id: 'w3-bob_j-thu',
   PATIENT: { ...bobTue.PATIENT },
   ENCOUNTER: {
-    day: 'Thursday', type: '3-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
+    day: 'Thursday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "Breathing is much better since I learned how to use that gadget.",
     snapshotSummary: 'Bob is using his LAMA correctly and his symptoms have improved significantly.',
     diseaseStates: ['COPD'],
@@ -315,7 +333,7 @@ const bobThu = makeCase({
   },
   VITALS: { ...bobTue.VITALS },
   LABS: bobTue.LABS,
-  ALERTS: [],
+  ALERTS: [{ level: 'info', text: 'Patient is due for routine vaccination review.' }],
   PROBLEMS: [{ name: 'COPD', detail: 'Well controlled on LAMA', flag: 'normal' }],
   MEDICATIONS: bobWed.MEDICATIONS,
   IMMUNIZATIONS: bobTue.IMMUNIZATIONS,
@@ -331,11 +349,9 @@ const bobThu = makeCase({
   ],
   GUIDING_QUESTIONS:
    [
-    'Why is escalation appropriate today but was inappropriate at the previous visit?',
-    'How do eosinophils influence COPD management?',
-    'Why was Trelegy Ellipta selected?',
-    'What counseling should accompany Trelegy initiation?',
-    'What monitoring is required after escalation?'
+    'Why is it appropriate to maintain current therapy instead of escalating?',
+    'What evidence suggests COPD remains controlled?',
+    'What is the appropriate follow-up interval for this patient?'
   ],
 
     INTERVIEW_KNOWLEDGE: [
@@ -367,7 +383,13 @@ const mariaTue = makeCase({
     learningObjectives: ['Recognize ACO phenotype', 'Identify the mandatory role of ICS in patients with an asthma component'],
   },
   VITALS: { bp: '128/80', bpRepeat: '126/78', hr: '72', rr: '18', temp: '98.6°F', weight: '70 kg', height: "5'4\"", bmi: '26.5', flags: {} },
-  LABS: [{ label: 'Eosinophils', value: '450', unit: 'cells/µL', flag: 'high', note: 'Elevated (eosinophilic phenotype)' }],
+  LABS: [
+    { label: 'Eosinophils', value: '420', unit: 'cells/µL', flag: 'high', note: 'Elevated (eosinophilic phenotype)' },
+    { label: 'Absolute Eosinophils', value: '420', unit: 'cells/µL', flag: 'high' },
+    { label: 'FEV1', value: '1.45', unit: 'L (58% pred)', flag: 'warn', note: 'Post-bronchodilator' },
+    { label: 'FEV1/FVC', value: '0.55', flag: 'warn', note: 'Post-bronchodilator (Pre-BD was 0.54)' },
+    { label: 'FVC', value: '2.63', unit: 'L', flag: 'warn' }
+  ],
   ALERTS: [{ level: 'high', text: 'Patient has ACO and frequent exacerbations but is NOT on an inhaled corticosteroid.' }],
   PROBLEMS: [
     { name: 'Asthma-COPD Overlap (ACO)', detail: 'Frequent exacerbations (3 in past year)', flag: 'high' },
@@ -414,7 +436,7 @@ const mariaWed = makeCase({
   id: 'w3-maria_t-wed',
   PATIENT: { ...mariaTue.PATIENT },
   ENCOUNTER: {
-    day: 'Wednesday', type: '3-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
+    day: 'Wednesday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I'm using the new triple inhaler every day perfectly, but I still had another flare-up last month.",
     snapshotSummary: 'Maria was escalated to triple therapy (Trelegy). She is perfectly adherent with great technique, but she is still exacerbating. Eosinophils remain high.',
     diseaseStates: ['ACO'],

@@ -10,7 +10,7 @@ import {
 export function SnapshotTab({ c }) {
   const v = c.VITALS
   const keyLabs = c.LABS.filter(l =>
-    ['A1C', 'eGFR', 'SCr', 'LDL-C', 'UACR'].includes(l.label))
+    ['A1C', 'eGFR', 'SCr', 'LDL-C', 'UACR', 'Eosinophils', 'Absolute Eosinophils', 'FEV1', 'FVC', 'FEV1/FVC'].includes(l.label))
   
   const vitalsList = [
     { label: 'Office BP', value: v.bp, flag: v.flags?.bp, trend: 'down' },
@@ -208,15 +208,15 @@ export function SnapshotTab({ c }) {
 export function VitalsTab({ c }) {
   const v = c.VITALS
   const vitalsList = [
-    { label: 'Office BP', time: '06/23/2026 09:14', value: v.bp, flag: v.flags?.bp, ref: '<130/80 mmHg', trend: 'down', icon: 'H' },
-    { label: 'Repeat BP', time: '06/23/2026 09:14', value: v.bpRepeat, flag: v.flags?.bpRepeat, ref: '<130/80 mmHg', icon: 'H' },
+    { label: 'Office BP', time: '06/23/2026 09:14', value: v.bp, flag: v.flags?.bp, ref: '<130/80 mmHg', trend: 'down', icon: v.flags?.bp === 'high' ? 'H' : undefined },
+    { label: 'Repeat BP', time: '06/23/2026 09:14', value: v.bpRepeat, flag: v.flags?.bpRepeat, ref: '<130/80 mmHg', icon: v.flags?.bpRepeat === 'high' ? 'H' : undefined },
     { label: 'Heart rate', time: '06/23/2026 09:14', value: `${v.hr}`, ref: '60–100 bpm' },
     { label: 'Respiratory rate', time: '06/23/2026 09:14', value: v.rr, ref: '12–20 /min' },
     { label: 'Temperature', time: '06/23/2026 09:14', value: v.temp, ref: '97.0–99.5 °F' },
     { label: 'SpO₂', time: '06/23/2026 09:14', value: v.spo2 || '97 %', ref: '95–100 %' },
     { label: 'Weight', time: '06/23/2026 09:14', value: v.weight, ref: '—', trend: 'down' },
     { label: 'Height', time: '06/23/2026 09:14', value: v.height, ref: '—' },
-    { label: 'BMI', time: '06/23/2026 09:14', value: v.bmi, flag: v.flags?.bmi, ref: '18.5–24.9 kg/m²', sub: '34.8 — Obesity, Class I', icon: 'H' },
+    { label: 'BMI', time: '06/23/2026 09:14', value: v.bmi, flag: v.flags?.bmi, ref: '18.5–24.9 kg/m²', sub: v.flags?.bmi === 'high' ? 'Obesity' : undefined, icon: v.flags?.bmi === 'high' ? 'H' : undefined },
     { label: 'BSA (Mosteller)', time: '06/23/2026 09:14', value: '2.04 m²', ref: '—' },
   ]
   return (
@@ -285,6 +285,8 @@ const LAB_GROUPS = [
   { key: 'renal', label: 'Renal / Kidney Function', members: ['BUN', 'SCr', 'eGFR', 'K', 'UACR'] },
   { key: 'lipid', label: 'Lipid Panel', members: ['Total cholesterol', 'LDL-C', 'HDL-C', 'Triglycerides'] },
   { key: 'cardiac', label: 'Cardiac Biomarkers', members: ['NT-proBNP', 'BNP', 'Troponin I', 'hs-cTnI'] },
+  { key: 'pulmonary', label: 'Pulmonary Studies', members: ['FEV1', 'FVC', 'FEV1/FVC', 'FeNO'] },
+  { key: 'cbc', label: 'Complete Blood Count & Immunology', members: ['WBC', 'Hemoglobin', 'Hematocrit', 'Platelets', 'Eosinophils', 'Absolute Eosinophils', 'IgE'] },
   { key: 'urine', label: 'Urine Studies', members: ['UACR'] },
 ]
 
@@ -789,6 +791,8 @@ export function ObjectiveTab({ c }) {
     { name: 'HEPATIC FUNCTION', collected: c.ENCOUNTER?.labsTime || '06/09/2026 07:50', members: ['AST', 'ALT'] },
     { name: 'LIPID PANEL', collected: c.ENCOUNTER?.labsTime || '06/09/2026 07:50', members: ['Total cholesterol', 'LDL-C', 'HDL-C', 'Triglycerides'] },
     { name: 'CARDIAC BIOMARKERS', collected: c.ENCOUNTER?.labsTime || '06/09/2026 07:50', members: ['NT-proBNP', 'BNP', 'Troponin I', 'hs-cTnI'] },
+    { name: 'PULMONARY STUDIES', collected: c.ENCOUNTER?.labsTime || '06/09/2026 07:50', members: ['FEV1', 'FVC', 'FEV1/FVC', 'FeNO'] },
+    { name: 'COMPLETE BLOOD COUNT', collected: c.ENCOUNTER?.labsTime || '06/09/2026 07:50', members: ['WBC', 'Hemoglobin', 'Hematocrit', 'Platelets', 'Eosinophils', 'Absolute Eosinophils', 'IgE'] },
     { name: 'URINE STUDIES', collected: c.ENCOUNTER?.labsTime || '06/09/2026 07:50', members: ['UACR'] },
   ]
 

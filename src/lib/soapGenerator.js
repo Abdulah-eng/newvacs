@@ -30,7 +30,7 @@ export function generateSoapDraft(caseData, state) {
   const objLines = []
   objLines.push(`Vitals: BP ${v.bp} (repeat ${v.bpRepeat}), HR ${v.hr}, RR ${v.rr ?? '—'}, Temp ${v.temp ?? '—'}, Wt ${v.weight}, Ht ${v.height}, BMI ${v.bmi}.`)
   objLines.push('Labs: ' + labs.map(l => `${l.label} ${l.value}${l.unit ? ' ' + l.unit : ''}`).join('; ') + '.')
-  objLines.push('Medications: ' + caseData.MEDICATIONS.map(m => `${m.name} ${m.dose} ${m.freq}`).join('; ') + '.')
+  objLines.push('Medications: ' + caseData.MEDICATIONS.map(m => `${m.name} ${m.dose} ${m.route} ${m.freq}`).join('; ') + '.')
   objLines.push('Allergies: ' + (caseData.ALLERGIES.map(a => a.substance).join(', ') || 'NKDA') + '.')
 
   // ---------- Assessment ----------

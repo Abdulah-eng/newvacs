@@ -32,7 +32,7 @@ export function CounselingTab({ c, onView }) {
             <ul className="space-y-2">
               {mod.body.map((line, i) => (
                 <li key={i} className="flex gap-2 text-[13px] text-slate-600 leading-relaxed">
-                  <span className="text-teal mt-0.5">“</span><span>{line}</span>
+                  <span className="text-teal mt-0.5">“</span><span>{line}</span><span className="text-teal mt-0.5">”</span>
                 </li>
               ))}
             </ul>
