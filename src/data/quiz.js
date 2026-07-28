@@ -28,9 +28,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "s",
-      "h"
+      "c"
     ],
     "rationale": "Correct Answer: C. Stage 1 hypertension\n\nStage 1 hypertension is defined as systolic blood pressure 130–139 mmHg or diastolic blood pressure 80–89 mmHg. This patient’s average blood pressure of 136/84 mmHg meets both systolic and diastolic criteria for stage 1 hypertension."
   },
@@ -59,8 +57,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "m"
+      "c"
     ],
     "rationale": "Correct Answer: C. <130/80 mmHg\n\nThe Week 1 hypertension summary and 2025 AHA/ACC guideline emphasize a blood pressure goal of <130/80 mmHg for most adults with hypertension, with patient-specific considerations for special populations."
   },
@@ -125,20 +122,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "m",
-      "t",
-      "s",
-      "b",
-      "c",
-      "b",
-      "s",
-      "h",
-      "d",
-      "a",
-      "a",
-      "b",
-      "m"
+      "b"
     ],
     "rationale": "Correct Answer: B. Medication therapy should be considered because she has diabetes and average BP ≥130/80 mmHg.\n\nThe 2025 AHA/ACC guideline recommends initiation of BP-lowering medication for adults with hypertension and diabetes when average SBP is ≥130 mmHg or DBP is ≥80 mmHg, in addition to lifestyle intervention."
   },
@@ -167,17 +151,6 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "t",
-      "f",
-      "a",
-      "f",
-      "d",
-      "c",
-      "i",
-      "a",
-      "a",
-      "s",
       "c"
     ],
     "rationale": "Correct Answer: C. Two first-line agents from different classes, ideally as a single-pill combination\n\nThis patient has stage 2 hypertension. The Week 1 summary and 2025 AHA/ACC guideline support combination therapy for stage 2 hypertension, ideally using two first-line agents from different classes and using single-pill combinations when possible to support adherence."
@@ -207,9 +180,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "a",
-      "m"
+      "b"
     ],
     "rationale": "Correct Answer: B. Approximately 1 month\n\nThe Week 1 hypertension summary recommends follow-up approximately 1 month after medication initiation or adjustment. A 3–6 month interval is more appropriate when lifestyle modification alone is being used."
   },
@@ -274,23 +245,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "a",
-      "h",
-      "t",
-      "p",
-      "m",
-      "b",
-      "a",
-      "h",
-      "i",
-      "t",
-      "c",
-      "p",
-      "p",
-      "a",
-      "r",
-      "p"
+      "b"
     ],
     "rationale": "Correct Answer: B. Ask how the patient measures BP at home, including timing, cuff position, posture, and rest period\n\nStudents should assess BP technique before interpreting home readings. Common errors include taking readings immediately after activity, crossing legs, incorrect cuff positioning, and talking during measurement. Home BP monitoring is useful only when performed with appropriate technique and validated devices."
   },
@@ -355,25 +310,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "t",
-      "a",
-      "s",
-      "h",
-      "w",
-      "a",
-      "t",
-      "o",
-      "d",
-      "a",
-      "a",
-      "t",
-      "o",
-      "m",
-      "i",
-      "r",
-      "o",
-      "i"
+      "a"
     ],
     "rationale": "Correct Answer: A. Treat as severe hypertension without acute target organ damage and arrange timely oral medication initiation, reinstitution, or intensification\n\nThe 2025 AHA/ACC guideline uses the term severe hypertension for BP >180/120 mmHg without evidence of acute target organ damage. These patients should be evaluated and treated in the outpatient setting with timely oral medication initiation, reinstitution, or intensification when appropriate."
   },
@@ -476,14 +413,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "m",
-      "b",
-      "r",
-      "s",
-      "c",
-      "a",
-      "p"
+      "a"
     ],
     "rationale": "Correct Answer: A. Monitor BP response, serum creatinine/eGFR, and potassium\n\nAfter ACE inhibitor therapy is initiated or adjusted, the pharmacist should monitor BP response, renal function, potassium, adverse effects, and adherence. Feeling well does not ensure safety or effectiveness."
   },
@@ -507,38 +437,12 @@ export const QUIZ_ITEMS = [
         "text": "Beta blockers should always be combined with an ACE inhibitor and AR"
       },
       {
-        "key": "b",
-        "text": ""
-      },
-      {
         "key": "d",
         "text": "Beta blockers should be used instead of lifestyle modification."
       }
     ],
     "correct": [
-      "b",
-      "b",
-      "b",
-      "a",
-      "n",
-      "r",
-      "a",
-      "f",
-      "a",
-      "u",
-      "a",
-      "c",
-      "i",
-      "s",
-      "a",
-      "c",
-      "h",
-      "d",
-      "o",
-      "h",
-      "f",
-      "i",
-      "p"
+      "b"
     ],
     "rationale": "Correct Answer: B. Beta blockers are not recommended as first-line agents unless a compelling indication such as coronary heart disease or heart failure is present.\n\nThe 2025 AHA/ACC guideline notes that beta blockers are not recommended as first-line agents unless the patient has coronary heart disease or heart failure. Preferred first-line agents for primary hypertension include ACE inhibitors, ARBs, thiazide-type diuretics, and dihydropyridine calcium channel blockers."
   },
@@ -605,23 +509,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "h",
-      "b",
-      "i",
-      "l",
-      "m",
-      "w",
-      "a",
-      "t",
-      "l",
-      "s",
-      "i",
-      "o",
-      "a",
-      "n",
-      "u",
-      "c"
+      "b"
     ],
     "rationale": "Correct Answer: B. Her BP is likely multifactorial, with adherence, technique, lifestyle sodium intake, obesity, and NSAID use contributing.\n\nThe Patient A Tuesday case identifies multiple contributors to uncontrolled BP, including nonadherence, incorrect home BP technique, obesity, high sodium intake from restaurant meals, and NSAID use. Students should avoid assuming treatment failure without evaluating these factors."
   },
@@ -650,27 +538,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "t",
-      "s",
-      "s",
-      "c",
-      "a",
-      "m",
-      "r",
-      "r",
-      "a",
-      "h",
-      "r",
-      "a",
-      "a",
-      "a",
-      "e",
-      "c",
-      "f",
-      "b",
-      "e",
-      "t"
+      "b"
     ],
     "rationale": "Correct Answer: B. The student should confirm accurate measurement, review repeat and home readings, assess adherence, and evaluate contributing factors before escalating therapy.\n\nA common student mistake is treating one elevated reading as definitive hypertension or treatment failure. The pharmacist should assess measurement accuracy, home BP readings, adherence, lifestyle factors, and interfering medications."
   },
@@ -807,12 +675,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "i",
-      "b",
-      "o",
-      "p",
-      "f"
+      "c"
     ],
     "rationale": "Correct Answer: C. <7.0%, individualized based on patient-specific factors\n\nThe Week 1 T2DM teaching summary lists a general A1c goal of <7%, while emphasizing that goals should be individualized based on age, comorbidities, life expectancy, hypoglycemia risk, and patient preferences."
   },
@@ -883,27 +746,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "m",
-      "p",
-      "l",
-      "m",
-      "i",
-      "a",
-      "f",
-      "m",
-      "p",
-      "b",
-      "a",
-      "c",
-      "h",
-      "f",
-      "a",
-      "o",
-      "m",
-      "s",
-      "m",
-      "p"
+      "a"
     ],
     "rationale": "Correct Answer: A. Metformin plus lifestyle modification is appropriate for many patients, but ASCVD, CKD, heart failure, and obesity may shift medication priorities.\n\nThe Week 1 summary states that most patients start with metformin plus lifestyle modification, but exceptions occur when ASCVD, CKD, heart failure, or significant obesity predominates. Medication selection should not be based only on A1c."
   },
@@ -932,24 +775,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "m",
-      "s",
-      "n",
-      "b",
-      "i",
-      "i",
-      "e",
-      "i",
-      "m",
-      "a",
-      "s",
-      "b",
-      "d",
-      "i",
-      "e",
-      "i",
-      "m"
+      "b"
     ],
     "rationale": "Correct Answer: B. Metformin should not be initiated if eGFR is <45 mL/min/1.73m² and should be discontinued if eGFR is <30 mL/min/1.73m².\n\nThe ADA 2026 source material notes that metformin can be used with caution but should not be initiated if eGFR is <45 mL/min/1.73m² and should be discontinued with eGFR <30 mL/min/1.73m²."
   },
@@ -1048,21 +874,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "i",
-      "c",
-      "a",
-      "a",
-      "h",
-      "f",
-      "r",
-      "c",
-      "i",
-      "t",
-      "s",
-      "i",
-      "o",
-      "a"
+      "b"
     ],
     "rationale": "Correct Answer: B. Incorrect; CKD, ASCVD, and heart failure risk can influence therapy selection independent of A1c.\n\nThe Week 1 T2DM teaching summary emphasizes that CKD, ASCVD, or heart failure should influence therapy selection independent of A1c goals. This is one of the central modern diabetes management principles."
   },
@@ -1078,10 +890,6 @@ export const QUIZ_ITEMS = [
         "text": "Statin therapy is generally not considered unless LDL-C is >190 mg/d"
       },
       {
-        "key": "l",
-        "text": ""
-      },
-      {
         "key": "b",
         "text": "Most adults age 40–75 years with diabetes should receive statin therapy."
       },
@@ -1095,17 +903,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "m",
-      "a",
-      "a",
-      "y",
-      "w",
-      "d",
-      "s",
-      "r",
-      "s",
-      "t"
+      "b"
     ],
     "rationale": "Correct Answer: B. Most adults age 40–75 years with diabetes should receive statin therapy.\n\nThe Week 1 T2DM summary states that most adults age 40–75 years with diabetes should receive statin therapy. The Patient A teaching materials reinforce that statins are preventive medications and should not be delayed until LDL becomes “very high.”"
   },
@@ -1134,9 +932,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "e",
-      "m"
+      "b"
     ],
     "rationale": "Correct Answer: B. Every 3 months\n\nThe Week 1 T2DM teaching summary recommends A1c monitoring every 3 months until controlled."
   },
@@ -1165,18 +961,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "u",
-      "m",
-      "s",
-      "m",
-      "i",
-      "a",
-      "a",
-      "s",
-      "i",
-      "k",
-      "p"
+      "b"
     ],
     "rationale": "Correct Answer: B. UACR 45 mg/g suggests moderately increased albuminuria and should influence kidney-protection planning.\n\nPatient A’s Wednesday case identifies UACR 45 mg/g as moderately increased albuminuria. The teaching guide emphasizes that albuminuria can be an early marker of diabetic kidney injury and that normal creatinine does not rule out kidney risk."
   },
@@ -1205,9 +990,6 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "g",
-      "r",
       "a"
     ],
     "rationale": "Correct Answer: A. GLP-1 receptor agonist\n\nGLP-1 receptor agonists provide A1c reduction, weight loss, and ASCVD benefit. In the Week 1 cases, obesity and patient interest in weight loss are important factors when considering therapy intensification."
@@ -1275,26 +1057,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "t",
-      "p",
-      "i",
-      "i",
-      "l",
-      "m",
-      "a",
-      "a",
-      "n",
-      "s",
-      "a",
-      "a",
-      "m",
-      "w",
-      "a",
-      "a",
-      "m",
-      "b",
-      "i"
+      "b"
     ],
     "rationale": "Correct Answer: B. The primary issue is likely medication access and non-initiation, so adding another medication without addressing affordability may be inappropriate.\n\nPatient B is designed to test whether students uncover access and affordability barriers rather than reflexively escalating therapy. A medication cannot be judged ineffective if the patient never obtained or started it."
   },
@@ -1397,20 +1160,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "t",
-      "p",
-      "h",
-      "c",
-      "s",
-      "w",
-      "s",
-      "i",
-      "a",
-      "a",
-      "h",
-      "c",
-      "r"
+      "b"
     ],
     "rationale": "Correct Answer: B. The patient has CKD stage 3a with severely increased albuminuria and high cardiorenal risk.\n\nPatient C’s case identifies CKD stage 3a and severe albuminuria. The teaching guide emphasizes that students should not focus only on eGFR and should recognize UACR >300 mg/g as high risk."
   },
@@ -1481,23 +1231,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "r",
-      "i",
-      "b",
-      "r",
-      "a",
-      "a",
-      "s",
-      "h",
-      "m",
-      "l",
-      "a",
-      "w",
-      "f",
-      "i",
-      "i",
-      "n"
+      "c"
     ],
     "rationale": "Correct Answer: C. Recognize improvement but reassess adherence, access sustainability, home monitoring, lifestyle, and whether further intensification is needed.\n\nPatient B’s follow-up teaching guide emphasizes that improvement and goal attainment are not the same. The pharmacist must reassess affordability sustainability, adherence, monitoring, and residual barriers before deciding whether to intensify therapy."
   },

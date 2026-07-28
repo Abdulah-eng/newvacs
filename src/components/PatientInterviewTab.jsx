@@ -24,6 +24,23 @@ const CHIPS = [
   'What are your health goals?',
 ]
 
+const FIELD_LABELS = {
+  currentMeds: 'Current Medications',
+  adherence: 'Medication Adherence',
+  otc: 'OTC / Supplements',
+  sideEffects: 'Side Effects / ADRs',
+  diet: 'Diet / Nutrition',
+  exercise: 'Physical Activity',
+  familyHistory: 'Family History',
+  homeBp: 'Home BP Readings',
+  bpTechnique: 'BP Measurement Technique',
+  glucoseMonitoring: 'Glucose Monitoring (SMBG)',
+  weightGoals: 'Weight / Goals',
+  diseaseUnderstanding: 'Disease Understanding',
+  concerns: 'Patient Concerns',
+  cost: 'Cost / Affordability'
+}
+
 // Voice state machine
 const VS = { IDLE: 'IDLE', LISTENING: 'LISTENING', SPEAKING: 'SPEAKING', PROCESSING: 'PROCESSING', PATIENT: 'PATIENT', DISABLED: 'DISABLED' }
 
@@ -484,13 +501,13 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
           </Card>
           <Card title="Quick documentation" icon={Stethoscope} color="13314f">
             <p className="text-[12px] text-slate-500 mb-3">Document findings obtained during the patient interview. Fields automatically save.</p>
-            <div className="space-y-6 max-h-[19rem] overflow-y-auto thin-scroll pr-1">
+            <div className="space-y-6 max-h-[28rem] overflow-y-auto thin-scroll pr-1">
               {[
                 { id: 'hpi', label: 'HPI', title: 'History of Present Illness', fields: [{ key: 'hpiNarrative', label: 'HPI narrative', placeholder: 'Brief narrative of the present illness...' }] },
-                { id: 'meds', label: 'MEDS', title: 'Medication History / Reconciliation', fields: ['currentMeds','adherence','otc','sideEffects'].map(k => c.INTERVIEW_FIELDS?.find(f => f.key === k) || { key: k, label: k }) },
-                { id: 'sh', label: 'SH', title: 'Social History', fields: [c.INTERVIEW_FIELDS?.find(f => f.key === 'diet') || { key: 'diet', label: 'diet' }, c.INTERVIEW_FIELDS?.find(f => f.key === 'exercise') || { key: 'exercise', label: 'exercise' }, { key: 'tobacco', label: 'Tobacco use', type: 'select', options: ['None','Occasional','Moderate','Heavy','previous tobacco user'] }, { key: 'alcohol', label: 'Alcohol use', type: 'select', options: ['None','Occasional','Moderate','Heavy','previous heavy/occasional drinker'] }, { key: 'caffeine', label: 'Caffeine', placeholder: 'e.g., 2 cups coffee/day' }] },
-                { id: 'fh', label: 'FH', title: 'Family History', fields: [c.INTERVIEW_FIELDS?.find(f => f.key === 'familyHistory') || { key: 'familyHistory', label: 'familyHistory' }] },
-                { id: 'reported', label: '', title: 'Patient-Reported / Self-Management', fields: ['homeBp','bpTechnique','glucoseMonitoring','weightGoals','diseaseUnderstanding','concerns','cost'].map(k => c.INTERVIEW_FIELDS?.find(f => f.key === k) || { key: k, label: k }) }
+                { id: 'meds', label: 'MEDS', title: 'Medication History / Reconciliation', fields: ['currentMeds','adherence','otc','sideEffects'].map(k => c.INTERVIEW_FIELDS?.find(f => f.key === k) || { key: k, label: FIELD_LABELS[k] || k }) },
+                { id: 'sh', label: 'SH', title: 'Social History', fields: [c.INTERVIEW_FIELDS?.find(f => f.key === 'diet') || { key: 'diet', label: FIELD_LABELS.diet }, c.INTERVIEW_FIELDS?.find(f => f.key === 'exercise') || { key: 'exercise', label: FIELD_LABELS.exercise }, { key: 'tobacco', label: 'Tobacco use', type: 'select', options: ['None','Occasional','Moderate','Heavy','previous tobacco user'] }, { key: 'alcohol', label: 'Alcohol use', type: 'select', options: ['None','Occasional','Moderate','Heavy','previous heavy/occasional drinker'] }, { key: 'caffeine', label: 'Caffeine', placeholder: 'e.g., 2 cups coffee/day' }] },
+                { id: 'fh', label: 'FH', title: 'Family History', fields: [c.INTERVIEW_FIELDS?.find(f => f.key === 'familyHistory') || { key: 'familyHistory', label: FIELD_LABELS.familyHistory }] },
+                { id: 'reported', label: '', title: 'Patient-Reported / Self-Management', fields: ['homeBp','bpTechnique','glucoseMonitoring','weightGoals','diseaseUnderstanding','concerns','cost'].map(k => c.INTERVIEW_FIELDS?.find(f => f.key === k) || { key: k, label: FIELD_LABELS[k] || k }) }
               ].map(g => (
                 <div key={g.title}>
                   <div className="flex items-center gap-2 mb-2">

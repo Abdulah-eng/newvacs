@@ -28,18 +28,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "t",
-      "r",
-      "a",
-      "r",
-      "t",
-      "e",
-      "l",
-      "l",
-      "a",
-      "l",
-      "m"
+      "b"
     ],
     "rationale": "Correct Answer: B. To reduce ASCVD risk through evidence-based LDL-C lowering and lifestyle modification\n\nThe primary goal of hyperlipidemia management is to reduce ASCVD risk through evidence-based LDL-C lowering and lifestyle modification. Patients may feel well but still have significant long-term cardiovascular risk."
   },
@@ -110,10 +99,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "a",
-      "m",
-      "d"
+      "c"
     ],
     "rationale": "Correct Answer: C. Atorvastatin 40 mg daily\n\nHigh-intensity statin therapy includes atorvastatin 40–80 mg daily or rosuvastatin 20–40 mg daily."
   },
@@ -142,10 +128,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "a",
-      "m",
-      "d"
+      "a"
     ],
     "rationale": "Correct Answer: A. Atorvastatin 10 mg daily\n\nModerate-intensity statin therapy includes atorvastatin 10–20 mg daily, rosuvastatin 5–10 mg daily, simvastatin 20–40 mg daily, and pravastatin 40–80 mg daily."
   },
@@ -174,16 +157,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "i",
-      "a",
-      "t",
-      "m",
-      "d",
-      "a",
-      "a",
-      "a",
-      "b"
+      "c"
     ],
     "rationale": "Correct Answer: C. Increase atorvastatin to 20 mg daily and address adherence barriers\n\nMichael has elevated ASCVD risk, CKD as a cardiovascular risk-enhancing condition, and persistent LDL-C elevation. Statin optimization is appropriate, but adherence must also be addressed because missed doses may contribute to inadequate LDL-C reduction."
   },
@@ -246,20 +220,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "a",
-      "a",
-      "p",
-      "p",
-      "m",
-      "a",
-      "c",
-      "a",
-      "m",
-      "c",
-      "b",
-      "c",
-      "t"
+      "b"
     ],
     "rationale": "Correct Answer: B. Ask about prior prescriptions, medication access, cost, and medication concerns before changing therapy\n\nAngela did not fail rosuvastatin therapy because she never started it. The pharmacist must distinguish non-initiation from true treatment failure and address access, affordability, and medication beliefs using shared decision-making."
   },
@@ -288,18 +249,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "c",
-      "r",
-      "w",
-      "a",
-      "s",
-      "p",
-      "s",
-      "t",
-      "a",
-      "f",
-      "i"
+      "b"
     ],
     "rationale": "Correct Answer: B. Continue rosuvastatin while assessing symptom pattern, severity, timing, and functional impact\n\nAngela’s LDL-C response is strong, and her soreness is mild, bilateral, occasional, and possibly related to increased walking. The pharmacist should assess the symptoms rather than immediately discontinuing effective therapy."
   },
@@ -328,18 +278,6 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "c",
-      "r",
-      "a",
-      "e",
-      "t",
-      "i",
-      "r",
-      "s",
-      "r",
-      "r",
-      "n",
       "c"
     ],
     "rationale": "Correct Answer: C. Continue rosuvastatin and explain that improvement reflects successful risk reduction, not cure\n\nImproved LDL-C indicates the therapy is working. Angela still has CKD and elevated cardiovascular risk, so continued therapy and monitoring remain appropriate."
@@ -369,16 +307,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "l",
-      "r",
-      "a",
-      "g",
-      "d",
-      "m",
-      "t",
-      "s",
-      "t"
+      "b"
     ],
     "rationale": "Correct Answer: B. LDL-C remains above goal despite maximally tolerated statin therapy\n\nEzetimibe may be used when LDL-C remains above goal despite maximally tolerated statin therapy or when statin intolerance limits therapy."
   },
@@ -407,20 +336,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "i",
-      "m",
-      "b",
-      "c",
-      "w",
-      "a",
-      "l",
-      "l",
-      "i",
-      "n",
-      "d",
-      "o",
-      "t"
+      "b"
     ],
     "rationale": "Correct Answer: B. It may be considered when additional LDL-C lowering is needed despite optimized therapy\n\nPCSK9-directed therapies can provide substantial LDL-C lowering and may be considered when additional LDL-C lowering is needed despite optimized therapy."
   },
@@ -523,19 +439,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "c",
-      "i",
-      "c",
-      "r",
-      "a",
-      "s",
-      "b",
-      "i",
-      "i",
-      "l",
-      "m",
-      "d"
+      "b"
     ],
     "rationale": "Correct Answer: B. CKD increases cardiovascular risk and should be incorporated into lipid management decisions\n\nCKD is a cardiovascular risk multiplier. Many patients with CKD experience cardiovascular events before kidney failure, so cardiovascular risk reduction should occur alongside kidney protection."
   },
@@ -564,14 +468,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "c",
-      "r",
-      "a",
-      "r",
-      "a",
-      "r",
-      "s"
+      "b"
     ],
     "rationale": "Correct Answer: B. Continue rosuvastatin and reinforce ASCVD risk-reduction strategies\n\nDavid remains at high ASCVD risk due to CKD, diabetes, hypertension, and family history. His current statin therapy is appropriate and should be continued with ongoing risk-reduction counseling and monitoring."
   },
@@ -600,21 +497,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "l",
-      "s",
-      "b",
-      "m",
-      "a",
-      "l",
-      "o",
-      "t",
-      "i",
-      "i",
-      "a",
-      "h",
-      "a",
-      "r"
+      "b"
     ],
     "rationale": "Correct Answer: B. Lp(a) should be measured at least once to identify individuals at higher ASCVD risk\n\nThe dyslipidemia guideline identifies Lp(a) measurement as useful at least once for ASCVD risk assessment. It helps identify patients with higher ASCVD risk but does not replace LDL-C-based treatment decisions."
   },
@@ -643,17 +526,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "a",
-      "p",
-      "o",
-      "l",
-      "t",
-      "w",
-      "d",
-      "a",
-      "e",
-      "t"
+      "b"
     ],
     "rationale": "Correct Answer: B. A patient on lipid-lowering therapy with diabetes and elevated triglycerides\n\nApoB measurement may be useful to assess residual atherogenic particle burden, particularly in patients with diabetes, elevated triglycerides, ASCVD, CKM syndrome, or low achieved LDL-C where LDL-C alone may underestimate risk."
   },
@@ -719,23 +592,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "i",
-      "t",
-      "o",
-      "t",
-      "t",
-      "m",
-      "s",
-      "i",
-      "d",
-      "n",
-      "n",
-      "t",
-      "a",
-      "o",
-      "a",
-      "r"
+      "c"
     ],
     "rationale": "Correct Answer: C. “LDL-C is the only thing that matters, so I do not need to assess overall ASCVD risk.”\n\nA common student mistake is focusing only on LDL-C and ignoring overall ASCVD risk, CKD status, adherence, tolerability, and patient-specific barriers."
   },
@@ -764,18 +621,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "a",
-      "a",
-      "p",
-      "m",
-      "h",
-      "c",
-      "b",
-      "a",
-      "o",
-      "s",
-      "t"
+      "a"
     ],
     "rationale": "Correct Answer: A. Assess adherence, prior medication history, cost/access barriers, and optimize statin therapy\n\nThis patient has uncontrolled hyperlipidemia, CKD, and elevated ASCVD risk. The pharmacist should assess barriers and optimize lipid-lowering therapy while continuing CKD risk management."
   },
@@ -804,9 +650,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "p",
-      "a"
+      "b"
     ],
     "rationale": "Correct Answer: B. Persistent albuminuria\n\nCKD is defined by abnormalities of kidney structure or function present for at least 3 months with implications for health. Persistent albuminuria is evidence of kidney damage even when eGFR is preserved."
   },
@@ -835,8 +679,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "g"
+      "c"
     ],
     "rationale": "Correct Answer: C. G3a\n\nG3a corresponds to eGFR 45–59 mL/min/1.73m²."
   },
@@ -865,8 +708,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "a"
+      "b"
     ],
     "rationale": "Correct Answer: B. A2\n\nA2 albuminuria corresponds to UACR 30–300 mg/g."
   },
@@ -895,9 +737,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "c",
-      "g"
+      "c"
     ],
     "rationale": "Correct Answer: C. CKD G2A2\n\nAn eGFR of 79 mL/min/1.73m² corresponds to G2. A UACR of 118 mg/g corresponds to A2. Persistent albuminuria supports CKD even when eGFR is preserved."
   },
@@ -926,9 +766,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "c",
-      "g"
+      "b"
     ],
     "rationale": "Correct Answer: B. CKD G3aA2\n\nAn eGFR of 54 mL/min/1.73m² corresponds to G3a. A UACR of 165 mg/g corresponds to A2. Both eGFR and albuminuria should be used when staging CKD."
   },
@@ -957,9 +795,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "c",
-      "g"
+      "c"
     ],
     "rationale": "Correct Answer: C. CKD G3bA3\n\nAn eGFR of 42 mL/min/1.73m² corresponds to G3b. A UACR of 520 mg/g corresponds to A3. This indicates advanced CKD risk with severely increased albuminuria."
   },
@@ -1097,18 +933,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "p",
-      "w",
-      "t",
-      "d",
-      "c",
-      "a",
-      "p",
-      "a",
-      "d",
-      "o",
-      "t"
+      "b"
     ],
     "rationale": "Correct Answer: B. Patient with type 2 diabetes, CKD, and persistent albuminuria despite optimized therapy\n\nFinerenone may be considered in appropriate patients with type 2 diabetes, CKD, and persistent albuminuria despite optimized therapy. Potassium and renal function monitoring are required."
   },
@@ -1137,23 +962,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "d",
-      "p",
-      "a",
-      "a",
-      "r",
-      "c",
-      "r",
-      "e",
-      "p",
-      "c",
-      "a",
-      "u",
-      "s",
-      "d",
-      "a",
-      "f"
+      "b"
     ],
     "rationale": "Correct Answer: B. Discuss persistent albuminuria and residual cardiorenal risk, explore prior concerns, and use shared decision-making about finerenone\n\nDavid remains at high residual cardiorenal risk due to CKD G3bA3 and severe persistent albuminuria despite foundational therapy. The pharmacist should address his concerns about pill burden, potassium, and cost while using shared decision-making."
   },
@@ -1182,19 +991,6 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "c",
-      "t",
-      "w",
-      "m",
-      "a",
-      "i",
-      "p",
-      "e",
-      "a",
-      "u",
-      "i",
-      "c",
       "c"
     ],
     "rationale": "Correct Answer: C. Continue therapy with monitoring and interpret potassium, eGFR, and UACR in clinical context\n\nFinerenone requires potassium and renal function monitoring. In this case, UACR improved, eGFR changed slightly, and potassium requires continued monitoring. The pharmacist should interpret the trend in context rather than automatically stopping therapy."
@@ -1224,19 +1020,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "n",
-      "i",
-      "s",
-      "r",
-      "r",
-      "b",
-      "c",
-      "a",
-      "r",
-      "c",
-      "r",
-      "r"
+      "b"
     ],
     "rationale": "Correct Answer: B. No, improvement suggests risk reduction, but CKD and residual cardiorenal risk remain\n\nImproved albuminuria is clinically meaningful, but it does not mean CKD is cured. David still has CKD and residual cardiorenal risk, requiring ongoing therapy, monitoring, and counseling."
   },
@@ -1302,21 +1086,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "a",
-      "a",
-      "o",
-      "p",
-      "m",
-      "a",
-      "c",
-      "o",
-      "k",
-      "r",
-      "o",
-      "c",
-      "n",
-      "e"
+      "b"
     ],
     "rationale": "Correct Answer: B. Ask about OTC pain medications and counsel on kidney-related risks of chronic NSAID exposure\n\nOTC and NSAID use should be assessed in CKD. Chronic NSAID exposure may contribute to kidney-related risk, and the pharmacist should identify use through patient questioning and provide counseling."
   },
@@ -1387,21 +1157,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "a",
-      "a",
-      "c",
-      "p",
-      "r",
-      "m",
-      "r",
-      "t",
-      "i",
-      "e",
-      "w",
-      "a",
-      "i",
-      "c"
+      "b"
     ],
     "rationale": "Correct Answer: B. Albuminuria and CKD progression risk may require treatment intensification even when A1C is controlled\n\nModern cardiorenal management prioritizes kidney protection, cardiovascular protection, heart failure prevention, and albuminuria reduction, not only glycemic control. A patient can have A1C near goal and still require treatment intensification for CKD risk reduction."
   },
@@ -1430,19 +1186,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "p",
-      "u",
-      "b",
-      "p",
-      "a",
-      "k",
-      "d",
-      "p",
-      "a",
-      "i",
-      "c",
-      "r"
+      "b"
     ],
     "rationale": "Correct Answer: B. Persistent uncontrolled blood pressure accelerates kidney disease progression and increases cardiovascular risk\n\nBlood pressure control is one of the most important interventions for slowing CKD progression and reducing cardiovascular risk."
   },

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { buildAttempt, isCorrect, scoreAttempt } from '../../lib/quizEngine'
 import { Badge } from '../ui'
-import { CheckCircle2, XCircle, ChevronRight, ChevronLeft, RotateCw, Award, AlertTriangle, Unlock } from 'lucide-react'
+import { CheckCircle2, XCircle, ChevronRight, ChevronLeft, RotateCw, Award, AlertTriangle, Unlock, EyeOff } from 'lucide-react'
 
 const TYPE_LABEL = { sba: 'Single best answer', sata: 'Select all that apply', ktype: 'Combination (K-type)' }
 
@@ -10,6 +10,7 @@ export default function QuizEngine({ items, passThreshold, onRecord, onExit, onP
   const [idx, setIdx] = useState(0)
   const [answers, setAnswers] = useState({})
   const [checked, setChecked] = useState({})
+  const [crossed, setCrossed] = useState({})
   const [finished, setFinished] = useState(false)
   const [score, setScore] = useState(0)
 
@@ -26,7 +27,20 @@ export default function QuizEngine({ items, passThreshold, onRecord, onExit, onP
   }
 
   let cleanRationale = item?.rationale || ''
-  cleanRationale = cleanRationale.replace(/^Correct\s+Answers?:\s*(?:[A-Z](?:,\s*[A-Z])*(?:,?\s+and\s+[A-Z])?\.?\s*)?(?:[IVX]+(?:,\s*[IVX]+)*(?:,?\s+and\s+[IVX]+)?\.?\s*)?/i, '').trim()
+  cleanRationale = cleanRationale.replace(/^Correct\s+Answers?:\s*/i, '')
+  cleanRationale = cleanRationale.replace(/^([A-Z](?:,\s*[A-Z])*(?:,?\s+and\s+[A-Z])?|[IVX]+(?:,\s*[IVX]+)*(?:,?\s+and\s+[IVX]+)?)\.\s*/i, '').trim()
+
+  function toggleCross(e, key) {
+    e.stopPropagation()
+    if (isChecked) return
+    setCrossed(c => ({
+      ...c,
+      [item.id]: {
+        ...(c[item.id] || {}),
+        [key]: !c[item.id]?.[key]
+      }
+    }))
+  }
 
   function toggle(key) {
     if (isChecked) return
@@ -51,7 +65,7 @@ export default function QuizEngine({ items, passThreshold, onRecord, onExit, onP
   }
 
   function retry() {
-    setAttempt(buildAttempt(items)); setIdx(0); setAnswers({}); setChecked({}); setFinished(false); setScore(0)
+    setAttempt(buildAttempt(items)); setIdx(0); setAnswers({}); setChecked({}); setCrossed({}); setFinished(false); setScore(0)
   }
 
   // ---------------- Result screen ----------------
@@ -124,6 +138,7 @@ export default function QuizEngine({ items, passThreshold, onRecord, onExit, onP
         <div className="space-y-2">
           {item.options.map(o => {
             const on = selected.includes(o.key)
+            const isCrossed = crossed[item.id]?.[o.key]
             const correct = isSingle ? item.correct[0] === o.key : item.correct.includes(o.key)
             
             let cls = 'border-slate-200 hover:border-teal/40'
@@ -143,18 +158,29 @@ export default function QuizEngine({ items, passThreshold, onRecord, onExit, onP
               }
             } else if (on) {
               cls = 'border-teal bg-teal/5'
+            } else if (isCrossed) {
+              cls = 'border-slate-200 opacity-50 bg-slate-50'
             }
             
             return (
-              <button key={o.key} onClick={() => toggle(o.key)} disabled={isChecked}
-                className={`w-full text-left flex items-start gap-3 rounded-lg border px-3.5 py-2.5 transition ${cls}`}>
-                <span className={`mt-0.5 grid place-items-center w-5 h-5 shrink-0 ${multi ? 'rounded' : 'rounded-full'} border-2 ${iconCls}`}>
-                  {on && <CheckCircle2 size={12} />}
-                </span>
-                <span className="text-[14px] text-slate-700 flex-1">{o.text}</span>
-                {isChecked && correct && <CheckCircle2 size={16} className="text-teal shrink-0 mt-0.5" />}
-                {isChecked && on && !correct && <XCircle size={16} className="text-red-400 shrink-0 mt-0.5" />}
-              </button>
+              <div key={o.key} className="relative flex items-center group">
+                <button onClick={() => toggle(o.key)} disabled={isChecked}
+                  className={`w-full text-left flex items-start gap-3 rounded-lg border px-3.5 py-2.5 transition pr-10 ${cls}`}>
+                  <span className={`mt-0.5 grid place-items-center w-5 h-5 shrink-0 ${multi ? 'rounded' : 'rounded-full'} border-2 ${iconCls}`}>
+                    {on && <CheckCircle2 size={12} />}
+                  </span>
+                  <span className={`text-[14px] text-slate-700 flex-1 ${isCrossed ? 'line-through' : ''}`}>{o.text}</span>
+                  {isChecked && correct && <CheckCircle2 size={16} className="text-teal shrink-0 mt-0.5" />}
+                  {isChecked && on && !correct && <XCircle size={16} className="text-red-400 shrink-0 mt-0.5" />}
+                </button>
+                
+                {!isChecked && (
+                  <button onClick={(e) => toggleCross(e, o.key)} title="Eliminate answer choice"
+                    className={`absolute right-3 p-1.5 rounded-md transition ${isCrossed ? 'text-slate-500 bg-slate-200 hover:bg-slate-300' : 'text-slate-300 hover:text-slate-500 hover:bg-slate-100 opacity-0 group-hover:opacity-100'}`}>
+                    <EyeOff size={14} />
+                  </button>
+                )}
+              </div>
             )
           })}
         </div>

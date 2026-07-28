@@ -28,25 +28,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "d",
-      "m",
-      "o",
-      "l",
-      "o",
-      "i",
-      "w",
-      "a",
-      "d",
-      "s",
-      "f",
-      "a",
-      "l",
-      "w",
-      "c",
-      "c",
-      "s",
-      "i"
+      "b"
     ],
     "rationale": "Correct Answer: B. Depressed mood or loss of interest/pleasure with additional depressive symptoms for at least 2 weeks causing clinically significant impairment\n\nMajor depressive disorder requires depressed mood or loss of interest/pleasure along with additional symptoms for at least 2 weeks and clinically significant distress or impairment."
   },
@@ -75,18 +57,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "r",
-      "w",
-      "r",
-      "o",
-      "n",
-      "o",
-      "s",
-      "a",
-      "r",
-      "o",
-      "f"
+      "b"
     ],
     "rationale": "Correct Answer: B. Remission with resolution or near-resolution of symptoms and restoration of functioning\n\nDepression treatment should aim for remission, not merely partial symptom improvement. Response is meaningful improvement, but remission is the preferred endpoint."
   },
@@ -115,10 +86,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "r",
-      "w",
-      "r"
+      "b"
     ],
     "rationale": "Correct Answer: B. Response without remission\n\nResponse refers to substantial clinical improvement. Remission requires resolution or near-resolution of symptoms and return toward baseline functioning."
   },
@@ -182,9 +150,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "c",
-      "m"
+      "a"
     ],
     "rationale": "Correct Answer: A. CBT monotherapy\n\nACP suggests CBT monotherapy as an initial treatment option for mild MDD."
   },
@@ -213,19 +179,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "p",
-      "p",
-      "s",
-      "p",
-      "a",
-      "e",
-      "c",
-      "f",
-      "c",
-      "a",
-      "m",
-      "u"
+      "a"
     ],
     "rationale": "Correct Answer: A. Patient preference, symptom profile, adverse effects, cost, feasibility, comorbidities, and medication use\n\nThe ACP guideline emphasizes individualized treatment selection using shared decision-making and consideration of benefits, harms, feasibility, cost, symptoms, comorbidities, medication use, and patient preferences."
   },
@@ -290,18 +244,6 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "s",
-      "a",
-      "a",
-      "l",
-      "o",
-      "m",
-      "d",
-      "t",
-      "i",
-      "t",
-      "a",
       "a"
     ],
     "rationale": "Correct Answer: A. Start at a low or minimum dose to improve tolerability and adherence\n\nThe ACP guideline notes that clinicians should start treatment with a low or minimum dose to reduce adverse effects and improve adherence."
@@ -367,18 +309,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "w",
-      "t",
-      "p",
-      "h",
-      "a",
-      "a",
-      "a",
-      "a",
-      "o",
-      "t",
-      "d"
+      "a"
     ],
     "rationale": "Correct Answer: A. Whether the patient had adequate adherence and an optimal tolerated dose\n\nThe ACP guideline emphasizes assessing adherence and optimizing the tolerated dose before moving to second-line strategies."
   },
@@ -442,18 +373,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "c",
-      "t",
-      "t",
-      "s",
-      "f",
-      "a",
-      "l",
-      "a",
-      "a",
-      "t",
-      "m"
+      "a"
     ],
     "rationale": "Correct Answer: A. Continue the treatment strategy for at least an additional 4 to 9 months\n\nThe ACP guideline recommends continuing the treatment strategy for at least an additional 4 to 9 months after remission. If treatment is discontinued, gradual tapering is recommended to minimize withdrawal symptoms."
   },
@@ -482,25 +402,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "e",
-      "a",
-      "a",
-      "w",
-      "o",
-      "m",
-      "d",
-      "t",
-      "n",
-      "f",
-      "a",
-      "l",
-      "m",
-      "w",
-      "d",
-      "c",
-      "t",
-      "w"
+      "a"
     ],
     "rationale": "Correct Answer: A. Excessive anxiety and worry occurring more days than not for at least 6 months, with difficulty controlling the worry\n\nGAD is characterized by excessive anxiety and worry occurring more days than not for at least 6 months, with difficulty controlling the worry."
   },
@@ -594,10 +496,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "g",
-      "a",
-      "g"
+      "a"
     ],
     "rationale": "Correct Answer: A. GAD-2 and GAD-7\n\nThe USPSTF evidence review found that GAD-2 and GAD-7 had acceptable accuracy for identifying generalized anxiety disorder."
   },
@@ -626,26 +525,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "e",
-      "w",
-      "i",
-      "t",
-      "d",
-      "b",
-      "o",
-      "h",
-      "o",
-      "a",
-      "s",
-      "p",
-      "b",
-      "t",
-      "f",
-      "a",
-      "h",
-      "d",
-      "b"
+      "a"
     ],
     "rationale": "Correct Answer: A. Evidence was insufficient to determine benefits or harms of anxiety screening programs, but treatment for anxiety has demonstrated benefit\n\nThe evidence review found insufficient evidence to determine the benefit or harm of screening programs alone, but clear evidence that anxiety treatment is beneficial."
   },
@@ -674,10 +554,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "c",
-      "b",
-      "t"
+      "a"
     ],
     "rationale": "Correct Answer: A. Cognitive behavioral therapy\n\nCBT is a first-line behavioral treatment option for anxiety disorders and may be used alone or with pharmacotherapy."
   },
@@ -740,19 +617,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "t",
-      "m",
-      "t",
-      "b",
-      "a",
-      "a",
-      "d",
-      "s",
-      "w",
-      "o",
-      "m",
-      "s"
+      "a"
     ],
     "rationale": "Correct Answer: A. They may treat both anxiety and depressive symptoms with one medication strategy\n\nSSRIs and SNRIs can address both depression and anxiety, making them useful when the conditions coexist."
   },
@@ -781,14 +646,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "i",
-      "m",
-      "w",
-      "a",
-      "i",
-      "s",
-      "p"
+      "a"
     ],
     "rationale": "Correct Answer: A. It may worsen anxiety in some patients\n\nAlthough bupropion can be useful for depression and tobacco cessation, it may worsen anxiety in some patients and may be less preferred when anxiety symptoms are prominent."
   },
@@ -817,17 +675,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "r",
-      "i",
-      "d",
-      "w",
-      "m",
-      "o",
-      "a",
-      "o",
-      "s",
-      "c"
+      "a"
     ],
     "rationale": "Correct Answer: A. Risks include dependence, withdrawal, misuse, overdose, and other safety concerns\n\nBenzodiazepines carry important safety concerns, especially with long-term use."
   },
@@ -893,16 +741,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "r",
-      "s",
-      "f",
-      "a",
-      "a",
-      "e",
-      "a",
-      "g",
-      "l"
+      "a"
     ],
     "rationale": "Correct Answer: A. Reassess symptoms, function, adherence, adverse effects, and GAD-7 longitudinally\n\nAnxiety treatment requires longitudinal reassessment of symptom response, function, adherence, and medication safety."
   },
@@ -931,27 +770,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "a",
-      "a",
-      "t",
-      "u",
-      "a",
-      "t",
-      "t",
-      "q",
-      "a",
-      "p",
-      "b",
-      "i",
-      "a",
-      "f",
-      "p",
-      "f",
-      "n",
-      "a",
-      "w",
-      "s"
+      "a"
     ],
     "rationale": "Correct Answer: A. Ask about tobacco use, advise them to quit, and provide behavioral interventions and FDA-approved pharmacotherapy for nonpregnant adults who smoke\n\nUSPSTF recommends asking all adults about tobacco use, advising them to stop, and providing behavioral interventions and FDA-approved pharmacotherapy for cessation to nonpregnant adults who smoke."
   },
@@ -1017,13 +836,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "i",
-      "t",
-      "u",
-      "a",
-      "e",
-      "e"
+      "a"
     ],
     "rationale": "Correct Answer: A. Identify tobacco use at every encounter\n\nThe Ask step involves identifying tobacco use routinely, including cigarettes, cigars, smokeless tobacco, and electronic nicotine products."
   },
@@ -1052,15 +865,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "p",
-      "c",
-      "p",
-      "a",
-      "t",
-      "q",
-      "t",
-      "u"
+      "a"
     ],
     "rationale": "Correct Answer: A. Provide clear, personalized advice to quit tobacco use\n\nThe Advise step involves providing clear, personalized advice that quitting tobacco is important for health."
   },
@@ -1089,18 +894,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "y",
-      "c",
-      "q",
-      "a",
-      "w",
-      "c",
-      "d",
-      "y",
-      "h",
-      "a",
-      "q"
+      "a"
     ],
     "rationale": "Correct Answer: A. “Have you considered quitting, and what concerns do you have about quitting?”\n\nAssessing readiness involves understanding whether the patient has considered quitting, prior quit attempts, barriers, and concerns."
   },
@@ -1129,14 +923,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "p",
-      "e",
-      "m",
-      "i",
-      "a",
-      "a",
-      "b"
+      "a"
     ],
     "rationale": "Correct Answer: A. Provide education, motivational interviewing, and address barriers\n\nFor patients not ready to quit, counseling should focus on education, motivational interviewing, and addressing barriers."
   },
@@ -1236,22 +1023,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "c",
-      "l",
-      "n",
-      "s",
-      "a",
-      "t",
-      "p",
-      "w",
-      "s",
-      "n",
-      "s",
-      "a",
-      "g",
-      "o",
-      "l"
+      "a"
     ],
     "rationale": "Correct Answer: A. Combining long-acting NRT, such as the patch, with short-acting NRT, such as gum or lozenge\n\nCombination NRT, particularly a long-acting plus short-acting form, is more effective than single-form NRT."
   },
@@ -1280,25 +1052,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "v",
-      "i",
-      "a",
-      "f",
-      "c",
-      "m",
-      "a",
-      "a",
-      "m",
-      "e",
-      "t",
-      "n",
-      "o",
-      "b",
-      "s",
-      "i",
-      "a",
-      "e"
+      "a"
     ],
     "rationale": "Correct Answer: A. Varenicline is an FDA-approved cessation medication and appears more effective than NRT or bupropion SR in available evidence\n\nUSPSTF notes varenicline is FDA-approved for cessation and appears more effective than NRT or bupropion SR based on available studies."
   },
@@ -1327,18 +1081,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "e",
-      "i",
-      "i",
-      "t",
-      "a",
-      "t",
-      "b",
-      "o",
-      "b",
-      "a",
-      "h"
+      "a"
     ],
     "rationale": "Correct Answer: A. Evidence is insufficient to assess the balance of benefits and harms\n\nUSPSTF concludes evidence is insufficient to assess the benefits and harms of e-cigarettes for tobacco cessation."
   },
@@ -1400,26 +1143,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "c",
-      "a",
-      "m",
-      "s",
-      "t",
-      "a",
-      "b",
-      "d",
-      "a",
-      "a",
-      "w",
-      "a",
-      "c",
-      "t",
-      "c",
-      "g",
-      "a",
-      "p",
-      "r"
+      "a"
     ],
     "rationale": "Correct Answer: A. Choose a medication strategy that addresses both depression and anxiety while also considering tobacco cessation goals and patient-specific risks\n\nDepression, anxiety, and tobacco use frequently overlap. Treatment selection should consider all active conditions, symptom burden, medication benefits and risks, and patient readiness."
   },
@@ -1485,20 +1209,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "m",
-      "a",
-      "d",
-      "a",
-      "t",
-      "d",
-      "a",
-      "e",
-      "a",
-      "b",
-      "a",
-      "p",
-      "e"
+      "a"
     ],
     "rationale": "Correct Answer: A. Medication adherence, dose adequacy, treatment duration, adverse effects, access barriers, and psychotherapy engagement\n\nInadequate adherence, limited access, adverse effects, and insufficient treatment exposure can mimic treatment failure. These should be evaluated before escalation."
   },

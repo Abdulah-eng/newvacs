@@ -28,13 +28,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "h",
-      "f",
-      "w",
-      "r",
-      "e",
-      "f"
+      "c"
     ],
     "rationale": "Correct Answer: C. Heart failure with reduced ejection fraction\n\nHeart failure with reduced ejection fraction is defined as LVEF ≤40%. This patient’s LVEF of 35% meets the definition of HFrEF."
   },
@@ -63,10 +57,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "n",
-      "c",
-      "i"
+      "b"
     ],
     "rationale": "Correct Answer: B. NYHA Class II\n\nNYHA Class II describes slight limitation of physical activity. Patients are comfortable at rest, but ordinary activity causes symptoms."
   },
@@ -95,8 +86,6 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "s",
       "c"
     ],
     "rationale": "Correct Answer: C. Stage C\n\nStage C heart failure describes structural heart disease with current or prior symptoms of heart failure."
@@ -197,18 +186,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "s",
-      "l",
-      "a",
-      "a",
-      "a",
-      "a",
-      "w",
-      "p",
-      "b",
-      "s",
-      "s"
+      "b"
     ],
     "rationale": "Correct Answer: B. Stop lisinopril and allow an appropriate washout period before starting sacubitril/valsartan\n\nWhen transitioning from an ACE inhibitor to an ARNI, the ACE inhibitor should be stopped and an appropriate washout period should occur before starting sacubitril/valsartan. This helps reduce the risk of angioedema."
   },
@@ -273,21 +251,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "t",
-      "m",
-      "r",
-      "h",
-      "a",
-      "c",
-      "m",
-      "a",
-      "b",
-      "o",
-      "r",
-      "o",
-      "d",
-      "s"
+      "b"
     ],
     "rationale": "Correct Answer: B. They may reduce hospitalization and cardiovascular mortality, and benefits occur regardless of diabetes status\n\nThe Week 4 heart failure materials state that SGLT2 inhibitors have benefits in HFrEF regardless of diabetes status."
   },
@@ -387,20 +351,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "c",
-      "h",
-      "t",
-      "b",
-      "i",
-      "e",
-      "d",
-      "n",
-      "m",
-      "t",
-      "s",
-      "b",
-      "s"
+      "b"
     ],
     "rationale": "Correct Answer: B. Continue HFrEF therapy because improved EF does not mean therapy should be stopped\n\nPatients with improved EF after prior HFrEF should continue HFrEF therapy. Improvement reflects treatment response and does not mean the underlying condition is cured."
   },
@@ -429,19 +380,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "a",
-      "a",
-      "a",
-      "m",
-      "a",
-      "b",
-      "b",
-      "i",
-      "s",
-      "a",
-      "t",
-      "f"
+      "c"
     ],
     "rationale": "Correct Answer: C. Address adherence and medication access barriers before interpreting symptoms as treatment failure\n\nPersistent symptoms cannot be interpreted as treatment failure if the patient is not consistently taking prescribed therapy. The immediate priority is to address adherence, cost, and access barriers."
   },
@@ -470,9 +409,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "p",
-      "a"
+      "b"
     ],
     "rationale": "Correct Answer: B. Persistent AFib\n\nPersistent AFib is AFib that continues for more than 7 days."
   },
@@ -538,9 +475,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "m",
-      "w"
+      "c"
     ],
     "rationale": "Correct Answer: C. Men ≥2; women ≥3\n\nThe Week 4 AFib summary identifies men with CHA₂DS₂-VASc ≥2 and women with CHA₂DS₂-VASc ≥3 as elevated risk, where oral anticoagulation is generally recommended unless contraindicated."
   },
@@ -569,18 +504,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "s",
-      "p",
-      "i",
-      "b",
-      "o",
-      "t",
-      "r",
-      "n",
-      "s",
-      "b",
-      "a"
+      "b"
     ],
     "rationale": "Correct Answer: B. Stroke prevention is based on thromboembolic risk, not symptom burden alone\n\nPatients with AFib may remain at risk for thromboembolic events even when symptoms are minimal or absent. Anticoagulation decisions should be driven by stroke risk assessment."
   },
@@ -609,16 +533,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "d",
-      "a",
-      "g",
-      "p",
-      "o",
-      "w",
-      "i",
-      "e",
-      "p"
+      "a"
     ],
     "rationale": "Correct Answer: A. DOACs are generally preferred over warfarin in eligible patients\n\nThe Week 4 AFib materials describe DOACs as generally preferred over warfarin in eligible patients because of predictable pharmacokinetics, reduced monitoring requirements, fewer food and drug interactions, and lower intracranial bleeding risk."
   },
@@ -647,10 +562,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "e",
-      "b",
-      "b"
+      "a"
     ],
     "rationale": "Correct Answer: A. Evidence-based beta blocker\n\nBeta blockers are commonly used for rate control and are particularly important in patients with HFrEF. Nondihydropyridine calcium channel blockers such as diltiazem and verapamil should generally be avoided in HFrEF because of negative inotropic effects."
   },
@@ -752,19 +664,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "e",
-      "i",
-      "p",
-      "l",
-      "t",
-      "a",
-      "h",
-      "r",
-      "s",
-      "r",
-      "f",
-      "a"
+      "b"
     ],
     "rationale": "Correct Answer: B. Explain in patient-friendly language that apixaban helps reduce stroke risk from AFib\n\nPatient B has limited understanding of AFib, stroke risk, and the purpose of anticoagulation. Education using patient-friendly language and teach-back is appropriate."
   },
@@ -793,14 +693,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "m",
-      "a",
-      "d",
-      "m",
-      "r",
-      "s",
-      "p"
+      "a"
     ],
     "rationale": "Correct Answer: A. Missed apixaban doses may reduce stroke protection\n\nConsistent anticoagulant use is essential for stroke prevention. Missing apixaban doses several times per week reduces the effectiveness of therapy and should prompt adherence and access interventions."
   },
@@ -829,22 +722,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "m",
-      "b",
-      "s",
-      "b",
-      "a",
-      "a",
-      "c",
-      "o",
-      "b",
-      "d",
-      "n",
-      "a",
-      "j",
-      "s",
-      "a"
+      "b"
     ],
     "rationale": "Correct Answer: B. Minor bruising should be assessed and counseled on, but does not automatically justify stopping anticoagulation\n\nThe student should distinguish minor bruising from major bleeding. In this case, the more urgent issue is fear-driven anticoagulation nonadherence in a patient with elevated stroke risk."
   },
@@ -907,15 +785,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "a",
-      "t",
-      "t",
-      "e",
-      "t",
-      "t",
-      "p",
-      "v"
+      "b"
     ],
     "rationale": "Correct Answer: B. A thrombus that embolizes to the pulmonary vasculature\n\nPulmonary embolism occurs when a thrombus embolizes to the pulmonary vasculature."
   },
@@ -944,9 +814,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "p",
-      "v"
+      "b"
     ],
     "rationale": "Correct Answer: B. Provoked VTE\n\nProvoked VTE occurs in the setting of a transient risk factor such as major surgery, trauma, immobilization, hospitalization, or temporary estrogen therapy."
   },
@@ -1048,17 +916,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "i",
-      "b",
-      "r",
-      "s",
-      "p",
-      "c",
-      "m",
-      "a",
-      "p",
-      "d"
+      "c"
     ],
     "rationale": "Correct Answer: C. Increased bleeding risk should prompt careful monitoring and patient-specific decision-making\n\nThe Week 4 materials state that increased bleeding risk does not automatically preclude anticoagulation. Instead, it should prompt careful monitoring and individualized decision-making."
   },
@@ -1123,21 +981,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "b",
-      "a",
-      "i",
-      "c",
-      "u",
-      "f",
-      "a",
-      "d",
-      "t",
-      "p",
-      "t",
-      "a",
-      "e",
-      "v",
-      "p"
+      "b"
     ],
     "rationale": "Correct Answer: B. Apixaban is commonly used for AFib, DVT treatment, PE treatment, and extended VTE prevention\n\nThe Week 4 anticoagulation materials list apixaban as commonly used for atrial fibrillation, DVT treatment, PE treatment, and extended VTE prevention."
   },
@@ -1166,10 +1010,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "t",
-      "w",
-      "f"
+      "a"
     ],
     "rationale": "Correct Answer: A. Take with food\n\nThe Week 4 materials state that rivaroxaban requires food with therapeutic doses."
   },
@@ -1198,22 +1039,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "d",
-      "r",
-      "f",
-      "m",
-      "a",
-      "d",
-      "e",
-      "a",
-      "c",
-      "i",
-      "b",
-      "t",
-      "a",
-      "b",
-      "r"
+      "a"
     ],
     "rationale": "Correct Answer: A. Declining renal function may alter drug exposure and CKD increases both thrombotic and bleeding risk\n\nThe Week 4 materials emphasize that renal function should be evaluated before anticoagulation and monitored periodically because declining renal function can alter drug exposure. CKD also increases both thrombotic and bleeding risk."
   },
@@ -1279,14 +1105,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "r",
-      "c",
-      "m",
-      "i",
-      "g",
-      "n",
-      "r"
+      "a"
     ],
     "rationale": "Correct Answer: A. Routine coagulation monitoring is generally not required\n\nThe Week 4 anticoagulation materials state that routine coagulation monitoring is generally not required with DOAC therapy."
   },
@@ -1349,14 +1168,6 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "a",
-      "p",
-      "a",
-      "e",
-      "b",
-      "b",
-      "w",
-      "c",
       "a"
     ],
     "rationale": "Correct Answer: A. Prioritize an evidence-based beta blocker when clinically appropriate\n\nIn patients with AFib and HFrEF, beta blockers are clinically important because they support rate control and are part of HFrEF management. Nondihydropyridine calcium channel blockers should generally be avoided in HFrEF because of negative inotropic effects."
@@ -1386,23 +1197,7 @@ export const QUIZ_ITEMS = [
       }
     ],
     "correct": [
-      "c",
-      "a",
-      "b",
-      "s",
-      "c",
-      "a",
-      "a",
-      "c",
-      "o",
-      "m",
-      "v",
-      "m",
-      "b",
-      "a",
-      "a",
-      "f",
-      "n"
+      "c"
     ],
     "rationale": "Correct Answer: C. Assess bleeding severity, continue appropriate anticoagulation, counsel on minor versus major bleeding, and address fear-driven nonadherence\n\nThis case requires balancing stroke prevention and bleeding concerns. Minor bruising with stable hemoglobin and no major bleeding symptoms does not automatically justify stopping anticoagulation. The student should address missed doses, bleeding education, and the patient’s fear."
   },
