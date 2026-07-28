@@ -40,6 +40,7 @@ const michaelTue = makeCase({
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Referred for GDMT optimization following new nonischemic cardiomyopathy diagnosis. NYHA Class II symptoms.' },
     { label: 'Echocardiogram', value: 'LVEF 35%, mild LV dilation.' },
+    { label: 'Social history', value: 'Former smoker (quit 5 years ago). Occasional alcohol.' },
   ],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
@@ -200,7 +201,7 @@ const angelaTue = makeCase({
     { name: 'Apixaban', dose: '5 mg', route: 'by mouth', freq: 'BID', indication: 'AFib stroke prevention', notes: 'No recent fills' },
   ],
   IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Referred for medication adherence and cost review.' }],
+  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Referred for medication adherence and cost review.' }, { label: 'Social history', value: 'Former smoker. Occasional alcohol.' }],
   OBJECTIVE_EXTRA: [{ label: 'Pharmacy Claims', value: 'Apixaban last filled 4 months ago.', flag: 'missing' }],
   INTERVIEW_FIELDS: [
     { key: 'apixaban', label: 'Apixaban Adherence', placeholder: 'Why did she stop the Eliquis?' },
@@ -348,7 +349,7 @@ const robertTue = makeCase({
     { name: 'Rosuvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'CAD', notes: '' },
   ],
   IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Highly engaged patient. Reviews all labs. Excellent adherence.' }],
+  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Highly engaged patient. Reviews all labs. Excellent adherence.' }, { label: 'Social history', value: 'Former smoker. Occasional alcohol.' }],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'questions', label: 'Patient Questions', placeholder: 'What does he want to know?' },

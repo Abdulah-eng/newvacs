@@ -351,7 +351,7 @@ const angelaTue = makeCase({
   IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }, { name: 'Pneumococcal', status: 'Up to date', flag: 'normal' }],
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Referred for persistently elevated LDL-C despite prior recommendation to intensify therapy. Pleasant, engaged; avoids volunteering concerns.' },
-    { label: 'Social history', value: 'Retired teacher, widowed, lives alone. Medicare Part D. Convenience/high-sodium diet. Walks <1×/week.' },
+    { label: 'Social history', value: 'Retired teacher, widowed, lives alone. Medicare Part D. Convenience/high-sodium diet. Walks <1×/week. Never smoker. Occasional alcohol.' },
     { label: 'Family history', value: 'Father MI at 63; mother CKD; sister HLD/HTN.' },
   ],
   OBJECTIVE_EXTRA: [{ label: 'Rosuvastatin fill history', value: 'Prescribed ~6 months ago — no claims on record', flag: 'missing' }],

@@ -31,6 +31,7 @@ const sarahTue = makeCase({
     { label: 'HPI', value: 'Reports persistent low mood, decreased motivation, fatigue, and frequent worrying for 4-5 months.' },
     { label: 'Scores', value: 'PHQ-9: 13 (Moderate). GAD-7: 8 (Mild).' },
     { label: 'Suicide Risk', value: 'Low risk. Denies suicidal ideation or self-harm.' },
+    { label: 'Social history', value: 'Never smoker. Occasional alcohol.' },
   ],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
@@ -179,7 +180,7 @@ const jessicaTue = makeCase({
     { name: 'Hydroxyzine', dose: '25 mg', route: 'PO', freq: 'q8h PRN', indication: 'Anxiety', notes: '' },
   ],
   IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Referred for treatment optimization due to lack of efficacy of Sertraline 100 mg over the last 3 months.' }, { label: 'Social', value: 'Divorced, single mother of two. Medical receptionist.' }],
+  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Referred for treatment optimization due to lack of efficacy of Sertraline 100 mg over the last 3 months.' }, { label: 'Social', value: 'Divorced, single mother of two. Medical receptionist. Never smoker. Occasional alcohol.' }],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Medication Adherence', placeholder: 'How many days a week does she take the Sertraline?' },
@@ -326,6 +327,7 @@ const davidTue = makeCase({
   IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Patient reports severe emotional exhaustion, social withdrawal, and anhedonia. Prior failed trials: Escitalopram 20mg (16wks), Sertraline 150mg (6mos). Adherence confirmed.' },
+    { label: 'Social history', value: 'Current smoker (~half pack per day). Prior tobacco use (~1 pack per day). Occasional alcohol.' },
   ],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
