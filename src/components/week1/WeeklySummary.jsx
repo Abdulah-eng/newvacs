@@ -22,6 +22,11 @@ export default function WeeklySummary({ week, onBack }) {
   const avg = scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : null
   const gradedCount = rows.flatMap(r => r.cells).filter(c => c.graded).length
   const journalDone = state.journalComplete()
+  
+  const discoveredHiddenCount = rows.flatMap(r => r.cells).reduce((acc, c) => {
+    const st = loadCaseState(caseId(r.patient.id, c.day))
+    return acc + Object.keys(st.discovered || {}).length
+  }, 0)
 
   const jc = loadCaseState(journal.id)
   const jcAnswered = journal.questions.filter(q => (jc.responses?.[q.id] || '').trim().length > 0).length
@@ -60,13 +65,13 @@ export default function WeeklySummary({ week, onBack }) {
           studentName: 'Demo Student', // In real app, fetch from Supabase auth
           weekNumber: week.index,
           weekTitle: module.title,
-          diseaseStates: ['Hypertension', 'Type 2 Diabetes', 'Hyperlipidemia', 'Obesity', 'CKD Risk'],
+          diseaseStates: module.subtitle.split(' + '),
           quizFirstScore: quiz.firstScore || quiz.attempts[0]?.score || 0,
           quizFinalScore: quiz.bestScore || 0,
           quizAttempts: quiz.attempts.length,
           soapScores: rows.flatMap(r => r.cells).filter(c => c.score != null).map(c => c.score),
           journalScore: journalDone ? (jc.aiGrade?.total_score || 100) : 0,
-          hiddenInfoStats: { discovered: 10, total: 15 } // Simplified
+          hiddenInfoStats: { discovered: discoveredHiddenCount, total: clinicDays.length * patients.length * 3 } // Approx 3 hidden facts per case
         })
       })
       const data = await res.json()

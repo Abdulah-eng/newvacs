@@ -67,7 +67,7 @@ function WeekCard({ week, locked, onOpen }) {
             locked ? 'bg-slate-200 text-slate-400 cursor-not-allowed' : 'bg-navy text-white hover:bg-navydark'}`}>
           {locked
             ? <><Lock size={14} /> Finish Week 1 to unlock</>
-            : <>{snap.pct > 0 ? 'Continue' : 'Start'} Week {week.index} <ArrowRight size={15} /></>}
+            : <>{snap.complete ? 'Review' : snap.pct > 0 ? 'Continue' : 'Start'} Week {week.index} <ArrowRight size={15} /></>}
         </button>
       </div>
     </div>
