@@ -190,6 +190,9 @@ const jamesWed = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'tylenol', 'multivitamin'], response: "I take a daily multivitamin and occasional acetaminophen for joint aches, but no other herbal supplements." },
+    { id: 'b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink 1 to 2 beers on weekends when watching sports, but never during the week." },
+    { id: 'b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'sister', 'brother', 'stroke', 'diabetes'], response: "My father had high blood pressure, type 2 diabetes, and had a stroke at age 71. My mother had high blood pressure and high cholesterol. My sister has type 2 diabetes." },
     { id: 'bw_cost', topic: 'Affordability Anxiety', field: 'cost', keywords: ['cost', 'afford', 'worry', 'insurance', 'future'],
       response: "Right now I can afford it, but I worry about what happens if my insurance changes again. I'd hate to have to stop something that's helping." },
     { id: 'bw_adh', topic: 'Adherence Improvement', field: 'adherence', keywords: ['miss', 'adherence', 'every day'],
@@ -270,6 +273,9 @@ const jamesThu = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'tylenol', 'multivitamin'], response: "I take a daily multivitamin and occasional acetaminophen for joint aches, but no other herbal supplements." },
+    { id: 'b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink 1 to 2 beers on weekends when watching sports, but never during the week." },
+    { id: 'b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'sister', 'brother', 'stroke', 'diabetes'], response: "My father had high blood pressure, type 2 diabetes, and had a stroke at age 71. My mother had high blood pressure and high cholesterol. My sister has type 2 diabetes." },
     { id: 'bth_cost', topic: 'Fear of Losing Access', field: 'cost', keywords: ['worry', 'insurance', 'future', 'change'],
       response: "Things are okay right now, but I still worry about what happens if my insurance changes again. I'd hate to finally get things under control and then have to stop." },
   ],
@@ -503,6 +509,10 @@ const lindaWed = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'c_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'penicillin', 'reaction', 'rash'], response: "I get a skin rash from Penicillin—I developed hives/rash when I was given it as a child." },
+    { id: 'c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'calcium', 'vitamin d', 'tylenol', 'herb'], response: "I take a Calcium 600 mg plus Vitamin D3 supplement every morning for bone health, and occasional Tylenol for headaches." },
+    { id: 'c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I rarely drink alcohol—maybe a small glass of wine on special occasions or holidays." },
+    { id: 'c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'heart attack', 'kidney'], response: "My father had high blood pressure and a heart attack at age 62. My mother had type 2 diabetes and chronic kidney disease. My brother had a heart attack at age 58, and my sister has high blood pressure and diabetes." },
     { id: 'cw_understanding', topic: 'Understanding Progress', field: 'understanding', keywords: ['progress', 'better', 'kidneys', 'risk'],
       response: "I know my numbers are a little better, which is great, but I know I'm still at high risk. What should we focus on next?" },
   ],
@@ -583,6 +593,10 @@ const lindaThu = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'c_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'penicillin', 'reaction', 'rash'], response: "I get a skin rash from Penicillin—I developed hives/rash when I was given it as a child." },
+    { id: 'c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'calcium', 'vitamin d', 'tylenol', 'herb'], response: "I take a Calcium 600 mg plus Vitamin D3 supplement every morning for bone health, and occasional Tylenol for headaches." },
+    { id: 'c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I rarely drink alcohol—maybe a small glass of wine on special occasions or holidays." },
+    { id: 'c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'heart attack', 'kidney'], response: "My father had high blood pressure and a heart attack at age 62. My mother had type 2 diabetes and chronic kidney disease. My brother had a heart attack at age 58, and my sister has high blood pressure and diabetes." },
     { id: 'cth_conf', topic: 'Increased Confidence', field: 'confidence', keywords: ['confident', 'handle', 'understand', 'better'],
       response: "I feel so much better now. I finally understand why I'm taking all these pills and what we're trying to prevent." },
   ],

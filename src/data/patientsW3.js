@@ -69,6 +69,9 @@ const sarahTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w3a_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'loratadine', 'claritin', 'vitamin', 'multivitamin'], response: "I take loratadine 10 mg PRN for seasonal allergies and a daily multivitamin." },
+    { id: 'w3a_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
+    { id: 'w3a_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'asthma', 'rhinitis'], response: "My mother has asthma and allergic rhinitis. My father has high blood pressure." },
     { id: 'w3a_albuterol', topic: 'Albuterol Overuse', field: 'albuterol', keywords: ['rescue', 'albuterol', 'how often', 'frequent'], response: "I've been using my albuterol about 4 or 5 times a week lately. It helps me breathe better." },
     { id: 'w3a_bud', topic: 'ICS Nonadherence', field: 'budesonide', keywords: ['budesonide', 'daily', 'controller', 'steroid'], response: "I only use the budesonide when I feel like a cold is coming on. I didn't think I needed it every day if my asthma wasn't bothering me." },
     { id: 'w3a_night', topic: 'Nighttime symptoms', field: 'nighttime', keywords: ['night', 'sleep', 'wake', 'waking'], response: "I wake up coughing maybe once a week. I usually take a puff of albuterol and go back to sleep." },
@@ -127,6 +130,9 @@ const sarahWed = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w3a_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'loratadine', 'claritin', 'vitamin', 'multivitamin'], response: "I take loratadine 10 mg PRN for seasonal allergies and a daily multivitamin." },
+    { id: 'w3a_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
+    { id: 'w3a_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'asthma', 'rhinitis'], response: "My mother has asthma and allergic rhinitis. My father has high blood pressure." },
     { id: 'w3a2_sym', topic: 'Exercise symptoms', field: 'symptoms', keywords: ['symptoms', 'breathe', 'exercise', 'run'], response: "I'm much better during the day, but when I try to run or play with the kids, I get tight and need the rescue inhaler." },
     { id: 'w3a2_adh', topic: 'Adherence', field: 'adherence', keywords: ['budesonide', 'every day', 'daily', 'take'], response: "Yes, I've been taking the budesonide every morning and night like you said." },
   ],
@@ -183,6 +189,9 @@ const sarahThu = makeCase({
   ],
 
     INTERVIEW_KNOWLEDGE: [
+    { id: 'w3a_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'loratadine', 'claritin', 'vitamin', 'multivitamin'], response: "I take loratadine 10 mg PRN for seasonal allergies and a daily multivitamin." },
+    { id: 'w3a_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
+    { id: 'w3a_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'asthma', 'rhinitis'], response: "My mother has asthma and allergic rhinitis. My father has high blood pressure." },
     { id: 'w3a3_ctrl', topic: 'Controlled', field: 'control', keywords: ['symptoms', 'rescue', 'use', 'feel'], response: "I use the Symbicort twice a day. I haven't needed to take any extra puffs in weeks, even when I exercise." },
   ],
   ASSESSMENT_CARDS: [
@@ -250,6 +259,9 @@ const bobTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w3b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'tylenol', 'acetaminophen', 'herb', 'vitamin'], response: "I take occasional acetaminophen for joint aches, but no herbal supplements." },
+    { id: 'w3b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink 1 to 2 beers on weekends while watching sports, but nothing during the week." },
+    { id: 'w3b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'copd', 'emphysema', 'smoker'], response: "My father had severe emphysema/COPD and was a heavy smoker. My mother had high blood pressure." },
     { id: 'w3b_maint', topic: 'Maintenance therapy', field: 'maintenance', keywords: ['daily', 'inhaler', 'prescribed', 'tiotropium', 'spiriva', 'laba', 'lama'], response: "The doctor gave me a script for some combination inhaler a while back, but when I went to the pharmacy, it was $300. I left it there. I just use the albuterol." },
     { id: 'w3b_cost', topic: 'Cost barrier', field: 'cost', keywords: ['cost', 'afford', 'expensive', 'money', 'pay'], response: "Yeah, I can't afford hundreds of dollars for an inhaler on a fixed income. The albuterol is cheap, so I stick with that." },
   ],
@@ -308,6 +320,9 @@ const bobWed = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w3b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'tylenol', 'acetaminophen', 'herb', 'vitamin'], response: "I take occasional acetaminophen for joint aches, but no herbal supplements." },
+    { id: 'w3b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink 1 to 2 beers on weekends while watching sports, but nothing during the week." },
+    { id: 'w3b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'copd', 'emphysema', 'smoker'], response: "My father had severe emphysema/COPD and was a heavy smoker. My mother had high blood pressure." },
     { id: 'w3b2_tech', topic: 'Inhaler technique', field: 'technique', keywords: ['show', 'demonstrate', 'how', 'use', 'technique', 'capsule'], response: "I put the pill in the device, press the button, and then breathe out into the mouthpiece really hard to blow the medicine into my lungs." },
   ],
   ASSESSMENT_CARDS: [
@@ -355,6 +370,9 @@ const bobThu = makeCase({
   ],
 
     INTERVIEW_KNOWLEDGE: [
+    { id: 'w3b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'tylenol', 'acetaminophen', 'herb', 'vitamin'], response: "I take occasional acetaminophen for joint aches, but no herbal supplements." },
+    { id: 'w3b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink 1 to 2 beers on weekends while watching sports, but nothing during the week." },
+    { id: 'w3b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'copd', 'emphysema', 'smoker'], response: "My father had severe emphysema/COPD and was a heavy smoker. My mother had high blood pressure." },
     { id: 'w3b3_sym', topic: 'Symptoms', field: 'symptoms', keywords: ['exacerbation', 'rescue', 'albuterol', 'feel', 'breathing'], response: "I hardly touch the albuterol now. I can walk to the mailbox and back without stopping. No flare-ups." },
   ],
   ASSESSMENT_CARDS: [
@@ -419,6 +437,9 @@ const mariaTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w3c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'cetirizine', 'zyrtec', 'saline', 'vitamin'], response: "I take cetirizine 10 mg PRN for sinus/allergic symptoms and use saline nasal spray." },
+    { id: 'w3c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I don't drink alcohol." },
+    { id: 'w3c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'asthma', 'copd'], response: "My mother had asthma and my father suffered from chronic bronchitis/COPD." },
     { id: 'w3c_exac', topic: 'Exacerbations', field: 'exacerbations', keywords: ['flare', 'infection', 'prednisone', 'hospital'], response: "I've had to go to urgent care three times in the last year for steroids and antibiotics. My breathing just gets so tight." },
   ],
   ASSESSMENT_CARDS: [
@@ -470,6 +491,9 @@ const mariaWed = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w3c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'cetirizine', 'zyrtec', 'saline', 'vitamin'], response: "I take cetirizine 10 mg PRN for sinus/allergic symptoms and use saline nasal spray." },
+    { id: 'w3c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I don't drink alcohol." },
+    { id: 'w3c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'asthma', 'copd'], response: "My mother had asthma and my father suffered from chronic bronchitis/COPD." },
     { id: 'w3c2_adh', topic: 'Adherence verified', field: 'adherence', keywords: ['take', 'every day', 'daily', 'miss'], response: "I never miss a dose. I use it every morning exactly like you showed me. I even rinse my mouth after." },
   ],
   ASSESSMENT_CARDS: [
@@ -522,6 +546,9 @@ const mariaThu = makeCase({
   ],
 
     INTERVIEW_KNOWLEDGE: [
+    { id: 'w3c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'cetirizine', 'zyrtec', 'saline', 'vitamin'], response: "I take cetirizine 10 mg PRN for sinus/allergic symptoms and use saline nasal spray." },
+    { id: 'w3c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I don't drink alcohol." },
+    { id: 'w3c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'asthma', 'copd'], response: "My mother had asthma and my father suffered from chronic bronchitis/COPD." },
     { id: 'w3c3_upd', topic: 'Update', field: 'update', keywords: ['feel', 'breathing', 'exacerbation', 'flare'], response: "I haven't had a single flare-up. I'm breathing better, sleeping better, and I feel like I have my life back." },
   ],
   ASSESSMENT_CARDS: [

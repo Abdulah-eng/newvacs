@@ -76,6 +76,9 @@ const michaelTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w2a_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take an occasional ibuprofen or acetaminophen for knee stiffness, plus a daily multivitamin." },
+    { id: 'w2a_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink occasionally—maybe 1 to 2 drinks per month at family gatherings or social dinners." },
+    { id: 'w2a_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'stroke', 'diabetes'], response: "My father had type 2 diabetes, high blood pressure, and passed away from a stroke at age 68. My mother has high blood pressure and high cholesterol. My brother also has type 2 diabetes." },
     { id: 'a_nsaid', topic: 'OTC ibuprofen (nephrotoxic)', field: 'nsaid',
       keywords: ['ibuprofen', 'advil', 'motrin', 'nsaid', 'pain', 'knee', 'arthritis', 'otc', 'over the counter', 'supplement'],
       response: "Oh — I take ibuprofen for my knees, a few times a week. It's just over-the-counter, so I didn't think it counted as a medication." },
@@ -188,6 +191,9 @@ const michaelWed = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w2a_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take an occasional ibuprofen or acetaminophen for knee stiffness, plus a daily multivitamin." },
+    { id: 'w2a_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink occasionally—maybe 1 to 2 drinks per month at family gatherings or social dinners." },
+    { id: 'w2a_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'stroke', 'diabetes'], response: "My father had type 2 diabetes, high blood pressure, and passed away from a stroke at age 68. My mother has high blood pressure and high cholesterol. My brother also has type 2 diabetes." },
     { id: 'aw_nsaid', topic: 'Residual NSAID use', field: 'nsaid', keywords: ['ibuprofen', 'nsaid', 'advil', 'pain', 'knee', 'still'],
       response: "I still take ibuprofen sometimes — maybe once a week now, a lot less than before." },
     { id: 'aw_alb', topic: 'Kidney misconception', field: 'albumin', keywords: ['kidney', 'egfr', 'normal', 'albumin', 'protein', 'understand', 'healthy'],
@@ -266,6 +272,9 @@ const michaelThu = makeCase({
     { key: 'weight', label: 'Ongoing goals', placeholder: 'Weight, lifestyle, prevention…' },
   ],
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w2a_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take an occasional ibuprofen or acetaminophen for knee stiffness, plus a daily multivitamin." },
+    { id: 'w2a_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink occasionally—maybe 1 to 2 drinks per month at family gatherings or social dinners." },
+    { id: 'w2a_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'stroke', 'diabetes'], response: "My father had type 2 diabetes, high blood pressure, and passed away from a stroke at age 68. My mother has high blood pressure and high cholesterol. My brother also has type 2 diabetes." },
     { id: 'at_exp', topic: 'Albuminuria expectations', field: 'expect', keywords: ['protein', 'albumin', 'urine', 'gone', 'disappear', 'expect', 'still there', 'why'],
       response: "I figured the protein would be gone by now. It's still showing up — does that mean the treatment isn't working?" },
     { id: 'at_wt', topic: 'Weight goal', field: 'weight', keywords: ['weight', 'lose', 'goal', 'exercise', 'diet'],
@@ -370,6 +379,10 @@ const angelaTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w2b_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'penicillin', 'reaction', 'rash'], response: "I get a skin rash from Penicillin—I was told I broke out in a rash when given it as a child." },
+    { id: 'w2b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'calcium', 'vitamin d', 'tylenol', 'herb'], response: "I take Calcium 600 mg plus Vitamin D3 daily for bone health, and Tylenol occasionally for mild pain." },
+    { id: 'w2b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
+    { id: 'w2b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'stroke', 'kidney'], response: "My father had high blood pressure and Stage 4 chronic kidney disease. My mother had high blood pressure and suffered a stroke at age 72." },
     { id: 'b_statin', topic: 'Rosuvastatin never started', field: 'statin',
       keywords: ['rosuvastatin', 'prescribed', 'never started', 'new', 'cholesterol medication', 'unfilled', 'previous', 'change', 'pick up'],
       response: "My doctor prescribed rosuvastatin about six months ago… but I never started it. I'm sorry — I felt embarrassed to bring it up." },
@@ -475,6 +488,10 @@ const angelaWed = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w2b_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'penicillin', 'reaction', 'rash'], response: "I get a skin rash from Penicillin—I was told I broke out in a rash when given it as a child." },
+    { id: 'w2b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'calcium', 'vitamin d', 'tylenol', 'herb'], response: "I take Calcium 600 mg plus Vitamin D3 daily for bone health, and Tylenol occasionally for mild pain." },
+    { id: 'w2b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
+    { id: 'w2b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'stroke', 'kidney'], response: "My father had high blood pressure and Stage 4 chronic kidney disease. My mother had high blood pressure and suffered a stroke at age 72." },
     { id: 'bw_start', topic: 'Rosuvastatin started & tolerated', field: 'start', keywords: ['start', 'rosuvastatin', 'muscle', 'side effect', 'tolerate', 'ache', 'how'],
       response: "Yes — I started it and I've been taking it. No muscle aches or problems at all, which was a relief." },
     { id: 'bw_cost', topic: 'Affordability', field: 'cost', keywords: ['cost', 'afford', 'pay', 'cheaper', 'price', 'sustain'],
@@ -557,6 +574,10 @@ const angelaThu = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w2b_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'penicillin', 'reaction', 'rash'], response: "I get a skin rash from Penicillin—I was told I broke out in a rash when given it as a child." },
+    { id: 'w2b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'calcium', 'vitamin d', 'tylenol', 'herb'], response: "I take Calcium 600 mg plus Vitamin D3 daily for bone health, and Tylenol occasionally for mild pain." },
+    { id: 'w2b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
+    { id: 'w2b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'stroke', 'kidney'], response: "My father had high blood pressure and Stage 4 chronic kidney disease. My mother had high blood pressure and suffered a stroke at age 72." },
     { id: 'bt_conf', topic: 'Confidence in statin', field: 'confidence', keywords: ['confiden', 'rosuvastatin', 'trust', 'helping', 'good', 'routine'],
       response: "I feel much more confident now — the rosuvastatin's been easy and I trust it's helping." },
     { id: 'bt_goal', topic: 'Lifestyle goals', field: 'goals', keywords: ['weight', 'walk', 'diet', 'exercise', 'goal', 'lose'],
@@ -671,6 +692,9 @@ const davidTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w2c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'coq10', 'fish oil', 'vitamin', 'herb'], response: "I take CoQ10 100 mg daily, Fish Oil 1000 mg daily, and a daily multivitamin." },
+    { id: 'w2c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I drink moderately—about 1 to 2 glasses of red wine per week with dinner." },
+    { id: 'w2c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'heart attack', 'cabg'], response: "My father had high blood pressure and a heart attack at age 54. My mother has high blood pressure and type 2 diabetes. My brother had bypass surgery (CABG) at age 58." },
     { id: 'c_fin', topic: 'Declined finerenone', field: 'finerenone',
       keywords: ['finerenone', 'kidney medication', 'previous', 'recommend', 'declined', 'never started', 'another', 'mra'],
       response: "A doctor mentioned finerenone before, but I never started it. I didn't really understand why I needed it on top of everything else." },
@@ -779,6 +803,9 @@ const davidWed = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w2c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'coq10', 'fish oil', 'vitamin', 'herb'], response: "I take CoQ10 100 mg daily, Fish Oil 1000 mg daily, and a daily multivitamin." },
+    { id: 'w2c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I drink moderately—about 1 to 2 glasses of red wine per week with dinner." },
+    { id: 'w2c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'heart attack', 'cabg'], response: "My father had high blood pressure and a heart attack at age 54. My mother has high blood pressure and type 2 diabetes. My brother had bypass surgery (CABG) at age 58." },
     { id: 'cw_k', topic: 'Potassium concern', field: 'potassium', keywords: ['potassium', 'hyperkalem', 'worried', 'number', 'went up', 'symptom', 'cramp', 'weak'],
       response: "I noticed my potassium went up to 5.1 and my kidney number dipped. I don't feel any cramps or weakness, but it makes me nervous." },
     { id: 'cw_adh', topic: 'Finerenone adherence', field: 'adherence', keywords: ['finerenone', 'start', 'adherence', 'miss', 'taking', 'tolerate'],
@@ -860,6 +887,9 @@ const davidThu = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w2c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'coq10', 'fish oil', 'vitamin', 'herb'], response: "I take CoQ10 100 mg daily, Fish Oil 1000 mg daily, and a daily multivitamin." },
+    { id: 'w2c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I drink moderately—about 1 to 2 glasses of red wine per week with dinner." },
+    { id: 'w2c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'heart attack', 'cabg'], response: "My father had high blood pressure and a heart attack at age 54. My mother has high blood pressure and type 2 diabetes. My brother had bypass surgery (CABG) at age 58." },
     { id: 'ct_und', topic: 'Endorses strategy', field: 'understanding', keywords: ['understand', 'makes sense', 'protein', 'kidney', 'why', 'evidence', 'working'],
       response: "Now that I see the protein dropping from 520 to 290, it makes sense. The data convinced me — I'm committed to staying on it." },
     { id: 'ct_bar', topic: 'Barriers', field: 'barriers', keywords: ['cost', 'afford', 'pill', 'burden', 'barrier', 'monitor', 'hard'],

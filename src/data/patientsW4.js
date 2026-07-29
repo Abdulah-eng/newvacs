@@ -57,6 +57,9 @@ const michaelTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w4a_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin, but no over the counter herbal supplements." },
+    { id: 'w4a_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine or beer on special occasions." },
+    { id: 'w4a_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'heart failure', 'cad', 'mi'], response: "My father had coronary artery disease and heart failure, and suffered an MI at age 64. My mother has high blood pressure." },
     { id: 'w4a_sym', topic: 'Symptoms', field: 'symptoms', keywords: ['swelling', 'breathe', 'shortness', 'stairs', 'edema'], response: "My ankles get a little puffy by the end of the day, and I get winded if I walk up a flight of stairs quickly." },
   ],
   ASSESSMENT_CARDS: [
@@ -110,6 +113,9 @@ const michaelWed = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w4a_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin, but no over the counter herbal supplements." },
+    { id: 'w4a_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine or beer on special occasions." },
+    { id: 'w4a_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'heart failure', 'cad', 'mi'], response: "My father had coronary artery disease and heart failure, and suffered an MI at age 64. My mother has high blood pressure." },
     { id: 'w4a2_dizzy', topic: 'Orthostasis', field: 'dizziness', keywords: ['stand', 'dizzy', 'lightheaded', 'when'], response: "It's mostly when I get out of bed in the morning or stand up quickly from my desk. It passes after a few seconds." },
   ],
   ASSESSMENT_CARDS: [
@@ -161,6 +167,9 @@ const michaelThu = makeCase({
   ],
 
     INTERVIEW_KNOWLEDGE: [
+    { id: 'w4a_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin, but no over the counter herbal supplements." },
+    { id: 'w4a_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine or beer on special occasions." },
+    { id: 'w4a_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'heart failure', 'cad', 'mi'], response: "My father had coronary artery disease and heart failure, and suffered an MI at age 64. My mother has high blood pressure." },
     { id: 'w4a3_titrate', topic: 'Titration', field: 'titration', keywords: ['why', 'increase', 'feel fine', 'dose'], response: "If I feel good, why do we need to mess with the doses? Can't we just leave it here?" },
   ],
   ASSESSMENT_CARDS: [
@@ -217,6 +226,9 @@ const angelaTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w4b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'tylenol', 'acetaminophen', 'herb', 'vitamin'], response: "I take Tylenol PRN for occasional headaches or body aches, but avoid aspirin and NSAIDs." },
+    { id: 'w4b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I drink about 1 glass of wine per week." },
+    { id: 'w4b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'mother', 'father', 'parents', 'afib', 'stroke'], response: "My mother had atrial fibrillation and suffered an ischemic stroke at age 74. My father had high blood pressure and type 2 diabetes." },
     { id: 'w4b_apix', topic: 'Cost Barrier', field: 'apixaban', keywords: ['apixaban', 'eliquis', 'cost', 'afford', 'stop', 'fill'], response: "That Eliquis is way too expensive. I'm on a fixed income, I can't pay $50 a month for it. So I just stopped taking it." },
   ],
   ASSESSMENT_CARDS: [
@@ -262,6 +274,9 @@ const angelaWed = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w4b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'tylenol', 'acetaminophen', 'herb', 'vitamin'], response: "I take Tylenol PRN for occasional headaches or body aches, but avoid aspirin and NSAIDs." },
+    { id: 'w4b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I drink about 1 glass of wine per week." },
+    { id: 'w4b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'mother', 'father', 'parents', 'afib', 'stroke'], response: "My mother had atrial fibrillation and suffered an ischemic stroke at age 74. My father had high blood pressure and type 2 diabetes." },
     { id: 'w4b2_fear', topic: 'Fear of bleeding', field: 'fear', keywords: ['afraid', 'scared', 'bleed', 'why', 'worry'], response: "My neighbor was on blood thinners and bled into his brain. I don't want that to happen to me. I already take so many meds, is this one really worth the risk?" },
   ],
   ASSESSMENT_CARDS: [
@@ -307,6 +322,9 @@ const angelaThu = makeCase({
   ],
 
     INTERVIEW_KNOWLEDGE: [
+    { id: 'w4b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'tylenol', 'acetaminophen', 'herb', 'vitamin'], response: "I take Tylenol PRN for occasional headaches or body aches, but avoid aspirin and NSAIDs." },
+    { id: 'w4b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I drink about 1 glass of wine per week." },
+    { id: 'w4b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'mother', 'father', 'parents', 'afib', 'stroke'], response: "My mother had atrial fibrillation and suffered an ischemic stroke at age 74. My father had high blood pressure and type 2 diabetes." },
     { id: 'w4b3_adh', topic: 'Adherence', field: 'adherence', keywords: ['take', 'miss', 'every day', 'routine'], response: "I set a pillbox like you suggested. I take the Eliquis every morning and night. No problems at all." },
   ],
   ASSESSMENT_CARDS: [
@@ -365,6 +383,9 @@ const robertTue = makeCase({
   ],
 
     INTERVIEW_KNOWLEDGE: [
+    { id: 'w4c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'coq10', 'fish oil', 'vitamin'], response: "I take a daily multivitamin, but avoid OTC pain relievers unless my doctor approves." },
+    { id: 'w4c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I rarely drink alcohol." },
+    { id: 'w4c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'mi', 'stroke', 'cad'], response: "My father had a heart attack (MI) at age 58. My mother had an ischemic stroke at age 72. My brother has coronary artery disease." },
     { id: 'w4c_q', topic: 'Evidence question', field: 'questions', keywords: ['labs', 'kidney', 'creatinine', 'dose', 'apixaban'], response: "My creatinine is 1.4 and I weigh 58 kg. Shouldn't my Apixaban dose be lowered? I read online that older, lighter people need a lower dose." },
   ],
   ASSESSMENT_CARDS: [
@@ -410,6 +431,9 @@ const robertWed = makeCase({
   ],
 
     INTERVIEW_KNOWLEDGE: [
+    { id: 'w4c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'coq10', 'fish oil', 'vitamin'], response: "I take a daily multivitamin, but avoid OTC pain relievers unless my doctor approves." },
+    { id: 'w4c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I rarely drink alcohol." },
+    { id: 'w4c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'mi', 'stroke', 'cad'], response: "My father had a heart attack (MI) at age 58. My mother had an ischemic stroke at age 72. My brother has coronary artery disease." },
     { id: 'w4c2_bleed', topic: 'Epistaxis', field: 'nosebleeds', keywords: ['nose', 'bleed', 'epistaxis', 'severe', 'stop'], response: "They aren't huge gushers, they stop if I pinch my nose for a few minutes. But it makes me nervous. Is there a safer drug that won't make me bleed?" },
   ],
   ASSESSMENT_CARDS: [
@@ -445,6 +469,9 @@ const robertThu = makeCase({
     { key: 'satisfaction', label: 'Patient Satisfaction', placeholder: 'How is he feeling overall?' },
   ],
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w4c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'coq10', 'fish oil', 'vitamin'], response: "I take a daily multivitamin, but avoid OTC pain relievers unless my doctor approves." },
+    { id: 'w4c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I rarely drink alcohol." },
+    { id: 'w4c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'mi', 'stroke', 'cad'], response: "My father had a heart attack (MI) at age 58. My mother had an ischemic stroke at age 72. My brother has coronary artery disease." },
     { id: 'w4c3_sat', topic: 'Satisfaction', field: 'satisfaction', keywords: ['feel', 'labs', 'stable', 'happy'], response: "I feel great. Thank you for explaining the dosing rules to me. It makes sense, and I feel confident in the plan." },
   ],
   ASSESSMENT_CARDS: [

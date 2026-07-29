@@ -164,6 +164,7 @@ const caseTue = {
 
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w1a_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on special occasions." },
     { id: 'reason', topic: 'Reason for visit', field: null,
       keywords: ['why are you here', 'reason for', 'bring you in', 'what brings', 'referred', 'doctor send', 'visit today'],
       response: 'My doctor said my blood pressure and my diabetes numbers have been creeping up, so he wanted me to come talk with the pharmacist.' },

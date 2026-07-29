@@ -47,6 +47,9 @@ const sarahTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w5a_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'melatonin', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin and occasional melatonin 3 mg at bedtime if I have trouble sleeping." },
+    { id: 'w5a_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 to 2 alcoholic beverages weekly when socializing with friends." },
+    { id: 'w5a_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'mother', 'father', 'parents', 'mdd', 'depression', 'sertraline', 'anxiety', 'grandmother'], response: "My mother has Major Depressive Disorder and was successfully treated with sertraline. My father has high blood pressure, and my maternal grandmother has Generalized Anxiety Disorder." },
     { id: 'w5a_tobacco', topic: 'Readiness to quit', field: 'tobacco', keywords: ['quit', 'smoke', 'ready', 'tobacco'], response: "I know I need to quit eventually, but right now I'm just so stressed and overwhelmed. I don't think I can handle quitting smoking on top of everything else." },
   ],
   ASSESSMENT_CARDS: [
@@ -95,6 +98,9 @@ const sarahWed = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w5a_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'melatonin', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin and occasional melatonin 3 mg at bedtime if I have trouble sleeping." },
+    { id: 'w5a_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 to 2 alcoholic beverages weekly when socializing with friends." },
+    { id: 'w5a_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'mother', 'father', 'parents', 'mdd', 'depression', 'sertraline', 'anxiety', 'grandmother'], response: "My mother has Major Depressive Disorder and was successfully treated with sertraline. My father has high blood pressure, and my maternal grandmother has Generalized Anxiety Disorder." },
     { id: 'w5a2_tol', topic: 'Tolerability', field: 'tolerability', keywords: ['side effects', 'tolerate', 'stomach', 'sleep'], response: "I had a little bit of an upset stomach the first few days, but it went away. No other problems." },
   ],
   ASSESSMENT_CARDS: [
@@ -142,6 +148,9 @@ const sarahThu = makeCase({
   ],
 
     INTERVIEW_KNOWLEDGE: [
+    { id: 'w5a_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'melatonin', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin and occasional melatonin 3 mg at bedtime if I have trouble sleeping." },
+    { id: 'w5a_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 to 2 alcoholic beverages weekly when socializing with friends." },
+    { id: 'w5a_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'mother', 'father', 'parents', 'mdd', 'depression', 'sertraline', 'anxiety', 'grandmother'], response: "My mother has Major Depressive Disorder and was successfully treated with sertraline. My father has high blood pressure, and my maternal grandmother has Generalized Anxiety Disorder." },
     { id: 'w5a3_tob', topic: 'Tobacco plan', field: 'tobacco', keywords: ['quit', 'smoke', 'how', 'medicine', 'patch'], response: "I'd like to try whatever is most effective. I've heard there are pills or patches?" },
   ],
   ASSESSMENT_CARDS: [
@@ -196,6 +205,9 @@ const jessicaTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w5b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'chamomile', 'tea', 'herb', 'vitamin', 'multivitamin'], response: "I drink chamomile tea for relaxation and take a daily multivitamin." },
+    { id: 'w5b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I drink occasionally—about 1 drink every few weeks." },
+    { id: 'w5b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'mother', 'father', 'parents', 'sister', 'depression', 'alcohol', 'aud', 'anxiety'], response: "My mother has Major Depressive Disorder, my father has Alcohol Use Disorder, and my sister has Generalized Anxiety Disorder." },
     { id: 'w5b_adh', topic: 'Nonadherence', field: 'adherence', keywords: ['take', 'every day', 'miss', 'forget', 'how often'], response: "I try to take it, but honestly I probably miss it three or four days a week. It's just hard to remember when things are chaotic." },
     { id: 'w5b_bar', topic: 'Barriers', field: 'barriers', keywords: ['why', 'hard', 'chaos', 'children', 'barriers'], response: "Between getting the kids to school, working full time, and financial stress, my own health just falls to the bottom of the list." },
   ],
@@ -242,6 +254,9 @@ const jessicaWed = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w5b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'chamomile', 'tea', 'herb', 'vitamin', 'multivitamin'], response: "I drink chamomile tea for relaxation and take a daily multivitamin." },
+    { id: 'w5b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I drink occasionally—about 1 drink every few weeks." },
+    { id: 'w5b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'mother', 'father', 'parents', 'sister', 'depression', 'alcohol', 'aud', 'anxiety'], response: "My mother has Major Depressive Disorder, my father has Alcohol Use Disorder, and my sister has Generalized Anxiety Disorder." },
     { id: 'w5b2_exp', topic: 'Expectations', field: 'expectations', keywords: ['expect', 'fast', 'slow', 'work'], response: "I've been taking it perfectly for 3 weeks now, shouldn't I feel completely better by now? I feel like it's not working fast enough." },
   ],
   ASSESSMENT_CARDS: [
@@ -286,6 +301,9 @@ const jessicaThu = makeCase({
   ],
 
     INTERVIEW_KNOWLEDGE: [
+    { id: 'w5b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'chamomile', 'tea', 'herb', 'vitamin', 'multivitamin'], response: "I drink chamomile tea for relaxation and take a daily multivitamin." },
+    { id: 'w5b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I drink occasionally—about 1 drink every few weeks." },
+    { id: 'w5b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'mother', 'father', 'parents', 'sister', 'depression', 'alcohol', 'aud', 'anxiety'], response: "My mother has Major Depressive Disorder, my father has Alcohol Use Disorder, and my sister has Generalized Anxiety Disorder." },
     { id: 'w5b3_maint', topic: 'Stopping meds', field: 'maintenance', keywords: ['stop', 'plan', 'continue', 'long', 'better'], response: "Since I feel 100% better, can I stop taking the Sertraline now?" },
   ],
   ASSESSMENT_CARDS: [
@@ -343,6 +361,9 @@ const davidTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w5c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'melatonin', 'herb', 'vitamin'], response: "I take melatonin 3 mg nightly for sleep, but no other herbal supplements." },
+    { id: 'w5c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I drink occasionally—maybe 1 drink a month." },
+    { id: 'w5c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'mother', 'father', 'parents', 'brother', 'mdd', 'depression', 'alcohol', 'aud'], response: "My mother has Major Depressive Disorder, my father has Alcohol Use Disorder, and my brother has Major Depressive Disorder." },
     { id: 'w5c_si', topic: 'Suicide risk', field: 'suicide', keywords: ['suicide', 'harm', 'kill', 'end', 'ideation'], response: "I don't have a plan to hurt myself. But sometimes I wish I just wouldn't wake up. It's so exhausting fighting this every day." },
   ],
   ASSESSMENT_CARDS: [
@@ -391,6 +412,9 @@ const davidWed = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'w5c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'melatonin', 'herb', 'vitamin'], response: "I take melatonin 3 mg nightly for sleep, but no other herbal supplements." },
+    { id: 'w5c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I drink occasionally—maybe 1 drink a month." },
+    { id: 'w5c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'mother', 'father', 'parents', 'brother', 'mdd', 'depression', 'alcohol', 'aud'], response: "My mother has Major Depressive Disorder, my father has Alcohol Use Disorder, and my brother has Major Depressive Disorder." },
     { id: 'w5c2_se', topic: 'Side effects', field: 'sideeffects', keywords: ['dissociation', 'dizzy', 'intense', 'blood pressure'], response: "During the treatment I feel very detached and dizzy, and my blood pressure spikes. The clinic watches me for 2 hours, and it goes away. It's worth it if it keeps working." },
   ],
   ASSESSMENT_CARDS: [
@@ -438,6 +462,9 @@ const davidThu = makeCase({
   ],
 
     INTERVIEW_KNOWLEDGE: [
+    { id: 'w5c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'melatonin', 'herb', 'vitamin'], response: "I take melatonin 3 mg nightly for sleep, but no other herbal supplements." },
+    { id: 'w5c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I drink occasionally—maybe 1 drink a month." },
+    { id: 'w5c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'mother', 'father', 'parents', 'brother', 'mdd', 'depression', 'alcohol', 'aud'], response: "My mother has Major Depressive Disorder, my father has Alcohol Use Disorder, and my brother has Major Depressive Disorder." },
     { id: 'w5c3_upd', topic: 'Update', field: 'update', keywords: ['feel', 'hope', 'better', 'life'], response: "I have my life back. I'm engaging with my family again, enjoying my hobbies. I thought I was a lost cause." },
   ],
   ASSESSMENT_CARDS: [
