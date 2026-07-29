@@ -84,28 +84,37 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     const endStr = localStorage.getItem('vacs::timer_end::' + c.id)
     const remStr = localStorage.getItem('vacs::timer_rem::' + c.id)
     if (endStr) {
-      // Was running — compute remaining from absolute end time
       const rem = Math.max(0, Math.floor((parseInt(endStr) - Date.now()) / 1000))
       setTimeLeft(rem)
       setSessionStarted(true)
       if (rem === 0) setVS(VS.DISABLED)
     } else if (remStr) {
-      // Was paused
       const rem = Math.max(0, parseInt(remStr))
       setTimeLeft(rem)
       setSessionStarted(true)
-      if (rem === 0) setVS(VS.DISABLED)
+      if (rem > 0) {
+        // Auto-resume running timer while user is on the interview tab
+        localStorage.setItem('vacs::timer_end::' + c.id, String(Date.now() + rem * 1000))
+        localStorage.removeItem('vacs::timer_rem::' + c.id)
+      } else {
+        setVS(VS.DISABLED)
+      }
+    } else {
+      // Start fresh 30-min timer on first visit to interview tab
+      localStorage.setItem('vacs::timer_end::' + c.id, String(Date.now() + baseTime * 1000))
+      setTimeLeft(baseTime)
+      setSessionStarted(true)
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [c.id])
 
-  // Tick only while timer_end key exists (mic is running)
+  // Tick continuously while on interview tab
   useEffect(() => {
     if (!sessionStarted) return
     clearInterval(timerRef.current)
     timerRef.current = setInterval(() => {
-      const endStr = localStorage.getItem('vacs::timer_end::' + c.id)
-      if (!endStr) return  // paused — don't tick
+      let endStr = localStorage.getItem('vacs::timer_end::' + c.id)
+      if (!endStr) return
       const rem = Math.max(0, Math.floor((parseInt(endStr) - Date.now()) / 1000))
       setTimeLeft(rem)
       if (rem <= 0) {
@@ -371,7 +380,15 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
         const errText = "I'm sorry, I didn't catch that. Could you repeat?"
         onAsk(text, { text: errText }); await speakText(errText)
       } else {
-        const field = reply.hidden_info_triggered ? c.INTERVIEW_KNOWLEDGE.find(k => k.id === reply.hidden_info_triggered)?.field : null
+        let field = reply.hidden_info_triggered ? c.INTERVIEW_KNOWLEDGE.find(k => k.id === reply.hidden_info_triggered)?.field : null
+        
+        // Client-side discovery fallback: if LLM didn't return trigger ID, check if text/reply matches keywords
+        if (!field && c.INTERVIEW_KNOWLEDGE) {
+          const combined = (text + ' ' + (reply.response || '')).toLowerCase()
+          const matched = c.INTERVIEW_KNOWLEDGE.find(k => k.field && k.keywords?.some(kw => combined.includes(kw.toLowerCase())))
+          if (matched) field = matched.field
+        }
+
         onAsk(text, { text: reply.response, field }); await speakText(reply.response)
       }
     } catch (_) {
@@ -501,7 +518,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
           </Card>
           <Card title="Quick documentation" icon={Stethoscope} color="13314f">
             <p className="text-[12px] text-slate-500 mb-3">Document findings obtained during the patient interview. Fields automatically save.</p>
-            <div className="space-y-6 max-h-[28rem] overflow-y-auto thin-scroll pr-1">
+            <div className="space-y-6 max-h-[36rem] overflow-y-auto thin-scroll pr-1 pb-16">
               {[
                 { id: 'hpi', label: 'HPI', title: 'History of Present Illness', fields: [{ key: 'hpiNarrative', label: 'HPI narrative', placeholder: 'Brief narrative of the present illness...' }] },
                 { id: 'meds', label: 'MEDS', title: 'Medication History / Reconciliation', fields: ['currentMeds','adherence','otc','sideEffects'].map(k => c.INTERVIEW_FIELDS?.find(f => f.key === k) || { key: k, label: FIELD_LABELS[k] || k }) },

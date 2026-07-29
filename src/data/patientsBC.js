@@ -57,9 +57,10 @@ const jamesTue = makeCase({
     { name: 'Pneumococcal', status: 'Not documented', flag: 'warn' },
     { name: 'Tdap', status: 'Last documented 12 years ago', flag: 'warn' },
   ],
-  SUBJECTIVE_DOCUMENTED: [
+    SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Referred by PCP for diabetes and blood pressure management. Reports overall feeling well but acknowledges some fatigue.' },
-    { label: 'Social history', value: 'Recently retired truck driver. Lives with wife. Fixed income.' },
+    { label: 'Social history', value: 'Recently retired truck driver. Lives with wife. Fixed income. Drinks 1-2 beers on weekends.' },
+    { label: 'Family history', value: 'Father: HTN, T2DM, stroke at age 71. Mother: HTN, hyperlipidemia. Sister: T2DM.' },
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Empagliflozin fill history', value: 'No claims found in 4 months since prescribed', flag: 'missing' },
@@ -82,6 +83,9 @@ const jamesTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'b_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'tylenol', 'multivitamin'], response: "I take a daily multivitamin and occasional acetaminophen for joint aches, but no other herbal supplements." },
+    { id: 'b_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink 1 to 2 beers on weekends when watching sports, but never during the week." },
+    { id: 'b_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'sister', 'brother', 'stroke', 'diabetes'], response: "My father had high blood pressure, type 2 diabetes, and had a stroke at age 71. My mother had high blood pressure and high cholesterol. My sister has type 2 diabetes." },
     { id: 'b_cost', topic: 'Affordability Barrier', field: 'cost',
       keywords: ['cost', 'afford', 'expensive', 'pay', 'money', 'copay', 'insurance', 'price'],
       response: "Honestly, the new one they prescribed (Jardiance) was too expensive. I just couldn't afford it on a fixed income, so I never picked it up." },
@@ -362,9 +366,11 @@ const lindaTue = makeCase({
     { name: 'Shingrix', status: 'Series complete', flag: 'normal' },
     { name: 'Tdap', status: 'Last received 11 years ago', flag: 'warn' },
   ],
-  SUBJECTIVE_DOCUMENTED: [
+    SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Referred for cardiorenal risk reduction. Feels overwhelmed by multiple conditions.' },
-    { label: 'Social history', value: 'Retired teacher. Walks occasionally. Rare alcohol use.' },
+    { label: 'Allergies', value: 'Penicillin (Rash as a child)' },
+    { label: 'Social history', value: 'Retired teacher. Walks occasionally. Rare alcohol use (glass of wine on holidays).' },
+    { label: 'Family history', value: 'Father: MI at age 62, HTN. Mother: T2DM, CKD. Brother: MI at age 58. Sister: HTN, T2DM.' },
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Cardiovascular history', value: 'STEMI 3 years ago with PCI and DES placement.', flag: 'warn' },
@@ -394,6 +400,10 @@ const lindaTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+    { id: 'c_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'penicillin', 'reaction', 'rash'], response: "I get a skin rash from Penicillin—I developed hives/rash when I was given it as a child." },
+    { id: 'c_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'calcium', 'vitamin d', 'tylenol', 'herb'], response: "I take a Calcium 600 mg plus Vitamin D3 supplement every morning for bone health, and occasional Tylenol for headaches." },
+    { id: 'c_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I rarely drink alcohol—maybe a small glass of wine on special occasions or holidays." },
+    { id: 'c_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'heart attack', 'kidney'], response: "My father had high blood pressure and a heart attack at age 62. My mother had type 2 diabetes and chronic kidney disease. My brother had a heart attack at age 58, and my sister has high blood pressure and diabetes." },
     { id: 'c_ckd', topic: 'Lack of CKD Understanding', field: 'knowledge', keywords: ['stage', 'albuminuria', 'understand', 'kidney'],
       response: "I know they told me I have kidney disease, but I don't really know what Stage 3 means, or what albuminuria is. I thought my blood sugar was the most important thing." },
     { id: 'c_fears', topic: 'Fear of Dialysis & Heart Attack', field: 'fears', keywords: ['fear', 'worry', 'scared', 'dialysis', 'heart attack'],
