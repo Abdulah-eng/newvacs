@@ -304,24 +304,28 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     _runVad()  // restart the rAF loop (it stopped during PROCESSING)
   }
 
-  function _endSession() {
+  function _endVoiceSession() {
     cancelAnimationFrame(vadRafRef.current)
     try { recorderRef.current?.state !== 'inactive' && recorderRef.current?.stop() } catch (_) {}
     streamRef.current?.getTracks().forEach(t => t.stop())
     streamRef.current = null
     try { audioCtxRef.current?.close() } catch (_) {}
     audioCtxRef.current = null; analyserRef.current = null
-    setAudioLevel(0); setVS(VS.IDLE)
-    _pauseTimer()  // freeze timer when mic is stopped
+    setAudioLevel(0)
+    if (vsRef.current !== VS.DISABLED) setVS(VS.IDLE)
+  }
+
+  function _endSession() {
+    _endVoiceSession()
+    _pauseTimer()
   }
 
   async function toggleSession() {
     if (vsRef.current === VS.DISABLED) return
     if (vsRef.current === VS.IDLE) {
-      _resumeTimer()  // resume (or start) countdown
       await _startSession()
     } else {
-      _endSession()  // also pauses timer
+      _endVoiceSession()
     }
   }
 
@@ -426,7 +430,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
               className={'flex items-center gap-1.5 px-3 py-1.5 text-[12px] font-semibold rounded-md transition ' + (voiceMode ? 'bg-white shadow-sm text-navy' : 'text-slate-500 hover:text-slate-700')}>
               <Volume2 size={14} /> Voice
             </button>
-            <button onClick={() => { setVoiceMode(false); window.speechSynthesis?.cancel(); _endSession() }}
+            <button onClick={() => { setVoiceMode(false); window.speechSynthesis?.cancel(); _endVoiceSession() }}
               className={'flex items-center gap-1.5 px-3 py-1.5 text-[12px] font-semibold rounded-md transition ' + (!voiceMode ? 'bg-white shadow-sm text-navy' : 'text-slate-500 hover:text-slate-700')}>
               <Type size={14} /> Text
             </button>
