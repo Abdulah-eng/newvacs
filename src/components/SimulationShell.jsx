@@ -266,7 +266,7 @@ export default function SimulationShell({ caseData, onExit }) {
 
               {/* Patient Interview Tab stays permanently mounted so the Avatar WebRTC connection doesn't drop when switching tabs to take notes! */}
               <div className={active === 'interview' ? 'block fade-up' : 'hidden'}>
-                <PatientInterviewTab c={caseData} chat={state.chat} interview={state.interview} discovered={state.discovered} onAsk={ask} onField={setInterview} />
+                <PatientInterviewTab c={caseData} chat={state.chat} interview={state.interview} discovered={state.discovered} onAsk={ask} onField={setInterview} isActive={active === 'interview'} />
               </div>
               
             </div>

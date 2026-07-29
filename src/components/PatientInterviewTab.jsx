@@ -44,7 +44,7 @@ const FIELD_LABELS = {
 // Voice state machine
 const VS = { IDLE: 'IDLE', LISTENING: 'LISTENING', SPEAKING: 'SPEAKING', PROCESSING: 'PROCESSING', PATIENT: 'PATIENT', DISABLED: 'DISABLED' }
 
-export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onField }) {
+export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onField, isActive }) {
   const [draft, setDraft] = useState('')
   const scrollRef = useRef(null)
   const voiceScrollRef = useRef(null)
@@ -70,47 +70,49 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   const speechStartRef = useRef(0)   // when did current utterance start (ms)
   const vadReadyRef = useRef(false)  // true only after startup guard delay
 
-  const isWeek1 = c?.id?.startsWith('w1-')
+  const isWeek1 = c?.ENCOUNTER?.week?.includes('1') || c?.id?.startsWith('w1') || c?.id?.startsWith('james') || c?.id?.startsWith('linda') || c?.id?.startsWith('maria')
   const baseTime = isWeek1 ? 30 * 60 : 20 * 60
   const [timeLeft, setTimeLeft] = useState(baseTime)
   const [sessionStarted, setSessionStarted] = useState(false)
   const timerRef = useRef(null)
   const [loading, setLoading] = useState(false)
 
-  // --- Pauseable timer via localStorage ---
-  // Two keys: 'timer_end' (absolute epoch when session is RUNNING)
-  //            'timer_rem' (seconds remaining when session is PAUSED)
+  // --- Auto-start/resume timer on Interview tab, auto-pause when leaving tab ---
   useEffect(() => {
-    const endStr = localStorage.getItem('vacs::timer_end::' + c.id)
-    const remStr = localStorage.getItem('vacs::timer_rem::' + c.id)
-    if (endStr) {
-      const rem = Math.max(0, Math.floor((parseInt(endStr) - Date.now()) / 1000))
-      setTimeLeft(rem)
-      setSessionStarted(true)
-      if (rem === 0) setVS(VS.DISABLED)
-    } else if (remStr) {
-      const rem = Math.max(0, parseInt(remStr))
-      setTimeLeft(rem)
-      setSessionStarted(true)
-      if (rem > 0) {
-        // Auto-resume running timer while user is on the interview tab
-        localStorage.setItem('vacs::timer_end::' + c.id, String(Date.now() + rem * 1000))
-        localStorage.removeItem('vacs::timer_rem::' + c.id)
+    if (isActive) {
+      const endStr = localStorage.getItem('vacs::timer_end::' + c.id)
+      const remStr = localStorage.getItem('vacs::timer_rem::' + c.id)
+      if (endStr) {
+        const rem = Math.max(0, Math.floor((parseInt(endStr) - Date.now()) / 1000))
+        setTimeLeft(rem)
+        setSessionStarted(true)
+        if (rem === 0) setVS(VS.DISABLED)
+      } else if (remStr) {
+        const rem = Math.max(0, parseInt(remStr))
+        setTimeLeft(rem)
+        setSessionStarted(true)
+        if (rem > 0) {
+          localStorage.setItem('vacs::timer_end::' + c.id, String(Date.now() + rem * 1000))
+          localStorage.removeItem('vacs::timer_rem::' + c.id)
+        } else {
+          setVS(VS.DISABLED)
+        }
       } else {
-        setVS(VS.DISABLED)
+        localStorage.setItem('vacs::timer_end::' + c.id, String(Date.now() + baseTime * 1000))
+        setTimeLeft(baseTime)
+        setSessionStarted(true)
       }
     } else {
-      // Start fresh 30-min timer on first visit to interview tab
-      localStorage.setItem('vacs::timer_end::' + c.id, String(Date.now() + baseTime * 1000))
-      setTimeLeft(baseTime)
-      setSessionStarted(true)
+      if (sessionStarted) {
+        _endSession() // freeze timer and release mic when switching tabs
+      }
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [c.id])
+  }, [isActive, c.id])
 
-  // Tick continuously while on interview tab
+  // Tick continuously while on active interview tab
   useEffect(() => {
-    if (!sessionStarted) return
+    if (!sessionStarted || !isActive) return
     clearInterval(timerRef.current)
     timerRef.current = setInterval(() => {
       let endStr = localStorage.getItem('vacs::timer_end::' + c.id)
@@ -127,9 +129,8 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     }, 500)
     return () => clearInterval(timerRef.current)
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sessionStarted, c.id])
+  }, [sessionStarted, isActive, c.id])
 
-  // Called when mic SESSION STARTS — resume from remaining seconds
   function _resumeTimer() {
     const remStr = localStorage.getItem('vacs::timer_rem::' + c.id)
     const rem = remStr ? Math.max(0, parseInt(remStr)) : baseTime
@@ -138,7 +139,6 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     setSessionStarted(true)
   }
 
-  // Called when mic SESSION STOPS — freeze remaining seconds
   function _pauseTimer() {
     const endStr = localStorage.getItem('vacs::timer_end::' + c.id)
     const rem = endStr ? Math.max(0, Math.floor((parseInt(endStr) - Date.now()) / 1000)) : timeLeft
