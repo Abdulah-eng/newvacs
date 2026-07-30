@@ -50,6 +50,7 @@ RULES:
 2. Assign FULL, HALF, or ZERO points based strictly on the 'fullCredit', 'halfCredit', and 'zeroCredit' rules for each input.
 3. If an input is "Omits" or "Absent", give it 0 points.
 4. Output an array of itemized deductions. You do NOT need to output items where the student earned FULL credit. ONLY output items where the student lost points (HALF or ZERO credit).
+5. Do NOT apply duplicate penalties for the same omission across equivalent rubric items. If the student documented the clinical information anywhere in their note, award them credit for the matching rubric item even if it is not in the exact expected section. Be generous and do not double-penalize.
 
 Respond ONLY with a JSON object in this exact format:
 {

@@ -13,7 +13,7 @@ import { makeCase } from './caseFactory.js'
 const michaelTue = makeCase({
   id: 'w2-michael-tue',
   PATIENT: { name: 'Michael Turner', age: 58, sex: 'male', ethnicity: 'Non-Hispanic White', mrn: 'A2-510042' },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 2', 
     day: 'Tuesday', type: 'Initial ambulatory visit', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "My doctor sent me over about my cholesterol and some protein in my urine.",
     snapshotSummary: 'CKD G2A2 with preserved eGFR but persistent albuminuria, above-goal LDL on a low-dose statin, and HTN. The chart looks mild — but a nephrotoxic OTC and missed statin doses are hiding in plain sight.',
@@ -153,7 +153,7 @@ const michaelTue = makeCase({
 const michaelWed = makeCase({
   id: 'w2-michael-wed',
   PATIENT: michaelTue.PATIENT,
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 2', 
     day: 'Wednesday', type: '3-month follow-up', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "The higher cholesterol pill seems fine. I cut back on the ibuprofen.",
     snapshotSummary: 'Three months after intensifying the statin and counseling on NSAID avoidance. LDL and albuminuria improving — but he still believes a normal eGFR means healthy kidneys.',
@@ -251,7 +251,7 @@ const michaelWed = makeCase({
 const michaelThu = makeCase({
   id: 'w2-michael-thu',
   PATIENT: michaelTue.PATIENT,
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 2', 
     day: 'Thursday', type: '2nd 3-month follow-up', difficulty: 'Advanced', difficultyTone: 'amber',
     chiefConcern: "Everything's better, but there's still protein in my urine — I thought it would be gone.",
     snapshotSummary: 'Six months in. LDL, BP, and weight improved and albuminuria is trending down — but he expects the proteinuria to disappear entirely. Manage expectations and sustain protection.',
@@ -326,7 +326,7 @@ const michaelThu = makeCase({
 const angelaTue = makeCase({
   id: 'w2-angela-tue',
   PATIENT: { name: 'Angela Rodriguez', age: 66, sex: 'female', ethnicity: 'Hispanic', mrn: 'B2-447120' },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 2', 
     day: 'Tuesday', type: 'Initial ambulatory visit', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "My cholesterol is still high and they wanted me to come in about my kidneys.",
     snapshotSummary: 'CKD G3aA2 with markedly elevated LDL on a weak statin. A high-intensity statin was prescribed months ago — but the fill history is empty, and she hasn’t volunteered why.',
@@ -456,7 +456,7 @@ const angelaTue = makeCase({
 const angelaWed = makeCase({
   id: 'w2-angela-wed',
   PATIENT: angelaTue.PATIENT,
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 2', 
     day: 'Wednesday', type: '3-month follow-up', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I started the rosuvastatin — it was cheaper than I feared.",
     snapshotSummary: 'Three months after starting an affordable high-intensity statin. Big LDL drop and good tolerability; confirm the win and keep optimizing BP.',
@@ -547,7 +547,7 @@ const angelaWed = makeCase({
 const angelaThu = makeCase({
   id: 'w2-angela-thu',
   PATIENT: angelaTue.PATIENT,
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 2', 
     day: 'Thursday', type: '2nd 3-month follow-up', difficulty: 'Advanced', difficultyTone: 'amber',
     chiefConcern: "I feel good about my medicines now. What else should I be doing?",
     snapshotSummary: 'Six months in. LDL near goal, BP improving, confident and adherent. Decide whether further LDL lowering is warranted and consolidate gains.',
@@ -640,7 +640,7 @@ const angelaThu = makeCase({
 const davidTue = makeCase({
   id: 'w2-david-tue',
   PATIENT: { name: 'David Chen', age: 62, sex: 'male', ethnicity: 'Asian', mrn: 'C2-336071' },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 2', 
     day: 'Tuesday', type: 'Initial ambulatory visit', difficulty: 'Advanced', difficultyTone: 'amber',
     chiefConcern: "My kidney numbers aren't improving and I want to understand why.",
     snapshotSummary: 'T2DM with CKD G3bA3 — severe albuminuria persisting despite ACEi, SGLT2i, and a high-intensity statin. The missing lever is finerenone, which he previously declined. He wants the evidence before agreeing.',
@@ -772,7 +772,7 @@ const davidTue = makeCase({
 const davidWed = makeCase({
   id: 'w2-david-wed',
   PATIENT: davidTue.PATIENT,
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 2', 
     day: 'Wednesday', type: '3-month follow-up', difficulty: 'Advanced', difficultyTone: 'amber',
     chiefConcern: "I started the finerenone. My potassium went up a little and my kidney number dipped — should I be worried?",
     snapshotSummary: 'Three months after adding finerenone. Albuminuria improving markedly; expected small eGFR dip and a potassium rise to 5.1 — interpret in context rather than reflexively stopping therapy.',
@@ -866,7 +866,7 @@ const davidWed = makeCase({
 const davidThu = makeCase({
   id: 'w2-david-thu',
   PATIENT: davidTue.PATIENT,
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 2', 
     day: 'Thursday', type: '2nd 3-month follow-up', difficulty: 'Advanced', difficultyTone: 'amber',
     chiefConcern: "My potassium settled and the protein keeps dropping. This makes sense now.",
     snapshotSummary: 'Six months in. Albuminuria down from 520 to 290, potassium normalized, kidney function stable — the combination cardiorenal strategy is working. Consolidate and set long-term monitoring.',

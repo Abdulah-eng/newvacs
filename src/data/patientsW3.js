@@ -10,7 +10,7 @@ import { makeCase } from './caseFactory.js'
 const sarahTue = makeCase({
   id: 'w3-sarah_t-tue',
   PATIENT: { name: 'Sarah Thompson', age: 34, sex: 'female', ethnicity: 'White', mrn: 'W3-10022' },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 3', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Foundational', difficultyTone: 'teal',
     chiefConcern: "I've been needing my rescue inhaler a lot more lately.",
     snapshotSummary: 'Sarah is a 34-year-old with asthma who reports needing her albuterol frequently. She was prescribed an ICS but the chart lacks detail on her adherence and technique.',
@@ -97,7 +97,7 @@ const sarahTue = makeCase({
 const sarahWed = makeCase({
   id: 'w3-sarah_t-wed',
   PATIENT: { ...sarahTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 3', 
     day: 'Wednesday', type: '3-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I'm using the daily inhaler, but I still need my rescue inhaler when I exercise.",
     snapshotSummary: 'Follow-up visit. Sarah is now taking her ICS daily, but still has symptoms with activity. Time to step up therapy.',
@@ -155,7 +155,7 @@ const sarahWed = makeCase({
 const sarahThu = makeCase({
   id: 'w3-sarah_t-thu',
   PATIENT: { ...sarahTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 3', 
     day: 'Thursday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I switched to the Symbicort, and things are great.",
     snapshotSummary: 'Sarah was switched to SMART therapy (Symbicort). Asthma is now well controlled.',
@@ -217,7 +217,7 @@ const sarahThu = makeCase({
 const bobTue = makeCase({
   id: 'w3-bob_j-tue',
   PATIENT: { name: 'Robert "Bob" Jenkins', age: 67, sex: 'male', ethnicity: 'White', mrn: 'W3-30044' },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 3', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I get winded walking to the mailbox.",
     snapshotSummary: 'Bob has COPD but is only taking lisinopril and atorvastatin. He has an albuterol inhaler. A maintenance COPD inhaler was prescribed but he is not on it.',
@@ -294,7 +294,7 @@ const bobTue = makeCase({
 const bobWed = makeCase({
   id: 'w3-bob_j-wed',
   PATIENT: { ...bobTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 3', 
     day: 'Wednesday', type: '3-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "The new inhaler is cheaper, but I don't feel any different.",
     snapshotSummary: 'Bob was started on a LAMA (Tiotropium HandiHaler) that was affordable, but he feels no improvement.',
@@ -349,7 +349,7 @@ const bobWed = makeCase({
 const bobThu = makeCase({
   id: 'w3-bob_j-thu',
   PATIENT: { ...bobTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 3', 
     day: 'Thursday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "Breathing is much better since I learned how to use that gadget.",
     snapshotSummary: 'Bob is using his LAMA correctly and his symptoms have improved significantly.',
@@ -405,7 +405,7 @@ const bobThu = makeCase({
 const mariaTue = makeCase({
   id: 'w3-maria_t-tue',
   PATIENT: { name: 'Maria Thompson', age: 69, sex: 'female', ethnicity: 'Hispanic', mrn: 'W3-99211' },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 3', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I keep getting these chest infections and flare-ups.",
     snapshotSummary: 'Maria has Asthma-COPD Overlap. She is on LAMA and PRN albuterol, but is having frequent exacerbations. She needs ICS therapy due to her asthma component.',
@@ -470,7 +470,7 @@ const mariaTue = makeCase({
 const mariaWed = makeCase({
   id: 'w3-maria_t-wed',
   PATIENT: { ...mariaTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 3', 
     day: 'Wednesday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I'm using the new triple inhaler every day perfectly, but I still had another flare-up last month.",
     snapshotSummary: 'Maria was escalated to triple therapy (Trelegy). She is perfectly adherent with great technique, but she is still exacerbating. Eosinophils remain high.',
@@ -527,7 +527,7 @@ const mariaWed = makeCase({
 const mariaThu = makeCase({
   id: 'w3-maria_t-thu',
   PATIENT: { ...mariaTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 3', 
     day: 'Thursday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "The injections have changed my life.",
     snapshotSummary: 'Maria was started on mepolizumab. Exacerbations have stopped.',

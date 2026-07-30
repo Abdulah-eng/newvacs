@@ -11814,33 +11814,33 @@
     },
     {
       "id": "2B.5",
-      "description": "Sodium (138 mEq/L)",
+      "description": "Sodium (140 mEq/L)",
       "points": 0.3,
-      "fullCredit": "States 138 mEq/L",
+      "fullCredit": "States 140 mEq/L",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.6",
-      "description": "Potassium (4.8 mEq/L)",
+      "description": "Potassium (4.7 mEq/L)",
       "points": 0.6,
-      "fullCredit": "States 4.8 mEq/L",
+      "fullCredit": "States 4.7 mEq/L",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.7",
-      "description": "Serum creatinine (1.25 mg/dL)",
+      "description": "Serum creatinine (1.28 mg/dL)",
       "points": 0.5,
-      "fullCredit": "States 1.25 mg/dL",
+      "fullCredit": "States 1.28 mg/dL",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.8",
-      "description": "eGFR (51 mL/min/1.73m2)",
+      "description": "eGFR (49 mL/min/1.73m2)",
       "points": 0.9,
-      "fullCredit": "States 51 mL/min/1.73m2",
+      "fullCredit": "States 49 mL/min/1.73m2",
       "halfCredit": "eGFR stated, value imprecise",
       "zeroCredit": "Omits"
     },
@@ -11942,9 +11942,9 @@
     },
     {
       "id": "2C.4",
-      "description": "eGFR stable; potassium stable at 4.8 on therapy",
+      "description": "eGFR (49 mL/min/1.73m2)",
       "points": 0.5,
-      "fullCredit": "States both stable",
+      "fullCredit": "States 49 mL/min/1.73m2",
       "halfCredit": "States one",
       "zeroCredit": "Omits"
     },
@@ -11974,9 +11974,9 @@
     },
     {
       "id": "3A.3",
-      "description": "eGFR 51 corresponds to CKD Stage G3a",
+      "description": "eGFR (49 mL/min/1.73m2)",
       "points": 0.5,
-      "fullCredit": "States G3a",
+      "fullCredit": "States 49 mL/min/1.73m2",
       "halfCredit": "States CKD, no stage",
       "zeroCredit": "Incorrect"
     },

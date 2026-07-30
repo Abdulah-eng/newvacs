@@ -10,7 +10,7 @@ import { makeCase } from './caseFactory.js'
 const michaelTue = makeCase({
   id: 'w4-michael_t4-tue',
   PATIENT: { name: 'Michael Thompson', age: 58, sex: 'male', ethnicity: 'White', mrn: 'W4-51004' },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 4', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Foundational', difficultyTone: 'teal',
     chiefConcern: "The cardiologist said my heart muscle is weak and I need to start new medications.",
     snapshotSummary: 'Newly diagnosed HFrEF (LVEF 35%). Currently only on lisinopril and HCTZ for hypertension. Needs initiation of GDMT.',
@@ -79,7 +79,7 @@ const michaelTue = makeCase({
 const michaelWed = makeCase({
   id: 'w4-michael_t4-wed',
   PATIENT: { ...michaelTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 4', 
     day: 'Wednesday', type: '1-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I'm taking all the new pills, but I feel a bit dizzy when I stand up.",
     snapshotSummary: 'Michael was started on the 4 pillars. He is experiencing orthostatic hypotension.',
@@ -136,7 +136,7 @@ const michaelWed = makeCase({
 const michaelThu = makeCase({
   id: 'w4-michael_t4-thu',
   PATIENT: { ...michaelTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 4', 
     day: 'Thursday', type: '3-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I feel great. Do I still need to increase the doses?",
     snapshotSummary: 'Michael is doing well but is on starting doses of GDMT. Needs up-titration.',
@@ -195,7 +195,7 @@ const michaelThu = makeCase({
 const angelaTue = makeCase({
   id: 'w4-angela_b-tue',
   PATIENT: { name: 'Angela Brooks', age: 64, sex: 'female', ethnicity: 'Black', mrn: 'W4-22091' },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 4', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I have so many pills, and they cost too much.",
     snapshotSummary: 'Angela has HFrEF and Persistent AFib. She was prescribed Apixaban for stroke prevention but is not taking it due to cost.',
@@ -253,7 +253,7 @@ const angelaTue = makeCase({
 const angelaWed = makeCase({
   id: 'w4-angela_b-wed',
   PATIENT: { ...angelaTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 4', 
     day: 'Wednesday', type: '1-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I got the Eliquis approved through the foundation, but I'm scared to take it.",
     snapshotSummary: 'Cost barrier resolved, but Angela is now expressing fear of bleeding from the anticoagulant.',
@@ -303,7 +303,7 @@ const angelaWed = makeCase({
 const angelaThu = makeCase({
   id: 'w4-angela_b-thu',
   PATIENT: { ...angelaTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 4', 
     day: 'Thursday', type: '3-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I've been taking the blood thinner, and I haven't had any bleeding.",
     snapshotSummary: 'Angela successfully started Apixaban and is tolerating it well. Her HFrEF remains stable.',
@@ -356,7 +356,7 @@ const angelaThu = makeCase({
 const robertTue = makeCase({
   id: 'w4-robert_j4-tue',
   PATIENT: { name: 'Robert Jenkins', age: 76, sex: 'male', ethnicity: 'White', mrn: 'W4-90088' },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 4', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I like to review my labs. My kidney numbers seem worse.",
     snapshotSummary: 'Robert has complex multi-morbidity. He is 76, weighs 58 kg, and has a SCr of 1.4 mg/dL. He is on Apixaban 5 mg BID, which is inappropriately dosed for his renal/age/weight profile.',
@@ -416,7 +416,7 @@ const robertTue = makeCase({
 const robertWed = makeCase({
   id: 'w4-robert_j4-wed',
   PATIENT: { ...robertTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 4', 
     day: 'Wednesday', type: '3-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I've had a few nosebleeds recently. I'm worried about this blood thinner.",
     snapshotSummary: 'Robert is experiencing minor epistaxis on Apixaban. He is questioning the risk-benefit tradeoff.',
@@ -466,7 +466,7 @@ const robertWed = makeCase({
 const robertThu = makeCase({
   id: 'w4-robert_j4-thu',
   PATIENT: { ...robertTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 4', 
     day: 'Thursday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "The nosebleeds stopped, and my heart failure feels very stable.",
     snapshotSummary: 'Robert is stable on all GDMT and anticoagulation. Minor bleeding resolved.',

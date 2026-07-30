@@ -1,6 +1,22 @@
-// Deterministic SOAP draft builder. Pulls from documented interview fields,
-// assessment answers, selected plan options, and free-text plan blocks.
-// Intentionally template-based for the MVP (no AI call).
+const FIELD_LABELS = {
+  currentMeds: 'Current Medications',
+  adherence: 'Medication Adherence',
+  otc: 'OTC / Supplements',
+  sideEffects: 'Side Effects / ADRs',
+  diet: 'Diet / Nutrition',
+  exercise: 'Physical Activity',
+  tobacco: 'Tobacco Use',
+  alcohol: 'Alcohol Use',
+  caffeine: 'Caffeine Intake',
+  familyHistory: 'Family History',
+  homeBp: 'Home BP Monitoring',
+  bpTechnique: 'Home BP Technique',
+  glucoseMonitoring: 'Home Glucose Monitoring',
+  weightGoals: 'Weight / Lifestyle Goals',
+  diseaseUnderstanding: 'Disease Understanding',
+  concerns: 'Patient Concerns',
+  cost: 'Cost / Financial Barriers'
+}
 
 export function generateSoapDraft(caseData, state) {
   const interview = state.interview || {}
@@ -16,9 +32,41 @@ export function generateSoapDraft(caseData, state) {
   subLines.push(`${caseData.PATIENT.name}, ${caseData.PATIENT.age}yo ${caseData.PATIENT.sex}, presents for ${caseData.ENCOUNTER.type}.`)
   subLines.push(`Chief concern: "${caseData.ENCOUNTER.chiefConcern}"`)
   caseData.SUBJECTIVE_DOCUMENTED.forEach(s => subLines.push(`- ${s.label}: ${s.value}`))
-  const interviewLines = caseData.INTERVIEW_FIELDS
-    .filter(f => (interview[f.key] || '').trim().length > 0)
-    .map(f => `- ${f.label}: ${interview[f.key].trim()}`)
+
+  // Compile all non-empty interview fields from state
+  const interviewLines = []
+  const outputtedKeys = new Set()
+
+  // First, check case-specific interview fields
+  if (caseData.INTERVIEW_FIELDS) {
+    caseData.INTERVIEW_FIELDS.forEach(f => {
+      const val = interview[f.key]
+      if (val && val.trim().length > 0) {
+        interviewLines.push(`- ${f.label}: ${val.trim()}`)
+        outputtedKeys.add(f.key)
+      }
+    })
+  }
+
+  // Next, check generic clinical subjective fields
+  Object.entries(FIELD_LABELS).forEach(([key, label]) => {
+    if (outputtedKeys.has(key)) return
+    const val = interview[key]
+    if (val && val.trim().length > 0) {
+      interviewLines.push(`- ${label}: ${val.trim()}`)
+      outputtedKeys.add(key)
+    }
+  })
+
+  // Finally, catch-all for any other custom keys in state.interview
+  Object.entries(interview).forEach(([key, val]) => {
+    if (outputtedKeys.has(key)) return
+    if (val && val.trim().length > 0) {
+      interviewLines.push(`- ${prettyKey(key)}: ${val.trim()}`)
+      outputtedKeys.add(key)
+    }
+  })
+
   if (interviewLines.length) {
     subLines.push('Interview findings (student-documented):')
     interviewLines.forEach(l => subLines.push(l))

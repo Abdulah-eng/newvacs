@@ -10,7 +10,7 @@ import { makeCase } from './caseFactory.js'
 const sarahTue = makeCase({
   id: 'w5-sarah_m-tue',
   PATIENT: { name: 'Sarah Mitchell', age: 29, sex: 'female', ethnicity: 'White', mrn: 'W5-10222' },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 5', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Foundational', difficultyTone: 'teal',
     chiefConcern: "I haven't felt like myself in months.",
     snapshotSummary: 'Newly diagnosed with Major Depressive Disorder (MDD) and Generalized Anxiety Disorder (GAD). Also uses tobacco. Needs initial pharmacotherapy.',
@@ -69,7 +69,7 @@ const sarahTue = makeCase({
 const sarahWed = makeCase({
   id: 'w5-sarah_m-wed',
   PATIENT: { ...sarahTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 5', 
     day: 'Wednesday', type: '4-Week Follow-up', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I feel a little better, but I'm still not 100%.",
     snapshotSummary: 'Sarah was started on Sertraline 50 mg. She is tolerating it and has partial response.',
@@ -122,7 +122,7 @@ const sarahWed = makeCase({
 const sarahThu = makeCase({
   id: 'w5-sarah_m-thu',
   PATIENT: { ...sarahTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 5', 
     day: 'Thursday', type: '12-Week Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I feel like myself again. And I'm ready to tackle the smoking.",
     snapshotSummary: 'Sarah achieved remission on Sertraline 100 mg. She is now ready to quit smoking.',
@@ -176,7 +176,7 @@ const sarahThu = makeCase({
 const jessicaTue = makeCase({
   id: 'w5-jessica_r-tue',
   PATIENT: { name: 'Jessica Ramirez', age: 42, sex: 'female', ethnicity: 'Hispanic', mrn: 'W5-30041' },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 5', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "These medications aren't working.",
     snapshotSummary: 'Jessica has MDD/GAD and is prescribed Sertraline 100 mg. Her symptoms are moderately severe. On paper, it looks like a treatment failure.',
@@ -234,7 +234,7 @@ const jessicaTue = makeCase({
 const jessicaWed = makeCase({
   id: 'w5-jessica_r-wed',
   PATIENT: { ...jessicaTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 5', 
     day: 'Wednesday', type: '1-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I've been taking it every day now. It's helping, but slowly.",
     snapshotSummary: 'Jessica has improved her adherence. Her symptoms are improving but she expects faster results.',
@@ -283,7 +283,7 @@ const jessicaWed = makeCase({
 const jessicaThu = makeCase({
   id: 'w5-jessica_r-thu',
   PATIENT: { ...jessicaTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 5', 
     day: 'Thursday', type: '3-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I feel so much better. I'm finally able to manage things.",
     snapshotSummary: 'Jessica is adherent and has achieved remission.',
@@ -335,7 +335,7 @@ const jessicaThu = makeCase({
 const davidTue = makeCase({
   id: 'w5-david_c-tue',
   PATIENT: { name: 'David Carter', age: 51, sex: 'male', ethnicity: 'White', mrn: 'W5-99881' },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 5', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "Nothing works. I'm running out of options.",
     snapshotSummary: 'David has severe MDD and GAD. He has failed Escitalopram and Sertraline, and is currently failing Venlafaxine despite adequate dose and duration. He has true Treatment-Resistant Depression.',
@@ -395,7 +395,7 @@ const davidTue = makeCase({
 const davidWed = makeCase({
   id: 'w5-david_c-wed',
   PATIENT: { ...davidTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 5', 
     day: 'Wednesday', type: '1-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "The nasal spray is intense, but the fog is starting to lift.",
     snapshotSummary: 'David was referred and started on Esketamine nasal spray at a specialized center while continuing Venlafaxine. He is experiencing dissociation but improving mood.',
@@ -447,7 +447,7 @@ const davidWed = makeCase({
 const davidThu = makeCase({
   id: 'w5-david_c-thu',
   PATIENT: { ...davidTue.PATIENT },
-  ENCOUNTER: {
+  ENCOUNTER: { week: 'Week 5', 
     day: 'Thursday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I never thought I'd feel this good again.",
     snapshotSummary: 'David achieved and sustained remission on Esketamine maintenance therapy + Venlafaxine.',

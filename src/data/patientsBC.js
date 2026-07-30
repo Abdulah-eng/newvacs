@@ -59,8 +59,8 @@ const jamesTue = makeCase({
   ],
     SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Referred by PCP for diabetes and blood pressure management. Reports overall feeling well but acknowledges some fatigue.' },
-    { label: 'Social history', value: 'Recently retired truck driver. Lives with wife. Fixed income. Drinks 1-2 beers on weekends.' },
-    { label: 'Family history', value: 'Father: HTN, T2DM, stroke at age 71. Mother: HTN, hyperlipidemia. Sister: T2DM.' },
+    { label: 'Social History', value: 'Recently retired truck driver. Lives with wife. Fixed income. Drinks 1-2 beers on weekends.' },
+    { label: 'Family History', value: 'Father: HTN, T2DM, stroke at age 71. Mother: HTN, hyperlipidemia. Sister: T2DM.' },
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Empagliflozin fill history', value: 'No claims found in 4 months since prescribed', flag: 'missing' },
@@ -381,8 +381,8 @@ const lindaTue = makeCase({
     SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Referred for cardiorenal risk reduction. Feels overwhelmed by multiple conditions.' },
     { label: 'Allergies', value: 'Penicillin (Rash as a child)' },
-    { label: 'Social history', value: 'Retired teacher. Walks occasionally. Rare alcohol use (glass of wine on holidays).' },
-    { label: 'Family history', value: 'Father: MI at age 62, HTN. Mother: T2DM, CKD. Brother: MI at age 58. Sister: HTN, T2DM.' },
+    { label: 'Social History', value: 'Retired teacher. Walks occasionally. Rare alcohol use (glass of wine on holidays).' },
+    { label: 'Family History', value: 'Father: MI at age 62, HTN. Mother: T2DM, CKD. Brother: MI at age 58. Sister: HTN, T2DM.' },
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Cardiovascular history', value: 'STEMI 3 years ago with PCI and DES placement.', flag: 'warn' },
