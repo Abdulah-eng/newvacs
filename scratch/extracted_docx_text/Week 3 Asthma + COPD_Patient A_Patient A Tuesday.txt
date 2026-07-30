@@ -1,0 +1,2606 @@
+﻿SECTION 9: PATIENT A – TUESDAY INITIAL VISIT
+Encounter Overview
+Encounter Type
+Initial Ambulatory Care Pharmacist Visit
+Visit Length
+30-minute collaborative practice visit
+Week
+Week 3 – Tuesday
+Difficulty Level
+Foundational APPE Student
+Primary Learning Objectives
+Students should be able to:
+Recognize uncontrolled asthma using GINA symptom control criteria
+Interpret spirometry findings consistent with asthma
+Assess asthma symptom burden
+Differentiate controller and reliever medications
+Identify excessive SABA use
+Recommend guideline-directed asthma therapy
+Assess medication adherence
+Assess inhaler technique
+Identify allergic rhinitis as a contributor to asthma symptoms
+Develop an initial asthma management plan
+Construct a complete SOAP note
+Create an appropriate monitoring and follow-up strategy
+1. Patient Snapshot
+Sarah Thompson is a 34-year-old White female presenting for an initial ambulatory care pharmacy visit for asthma management.
+Her primary care provider referred her after increasing asthma symptoms and frequent rescue inhaler use despite longstanding asthma.
+This is the first time she has met with an ambulatory care pharmacist.
+2. Chief Concern
+"My asthma seems to be getting worse lately and I'm using my inhaler more than I used to."
+3. History of Present Illness
+Sarah is a 34-year-old female with asthma and allergic rhinitis presenting for medication management.
+She reports increasing shortness of breath and wheezing over the past several months.
+She states symptoms seem worse during allergy season and when participating in physical activity.
+She denies:
+Chest pain
+Syncope
+Palpitations
+Hemoptysis
+Fever
+Recent hospitalizations
+Recent emergency room visits
+Recent oral corticosteroid use
+She reports:
+Intermittent wheezing
+Shortness of breath
+Occasional chest tightness
+Seasonal allergy symptoms
+Difficulty keeping up with physical activity
+Increasing reliance on her rescue inhaler
+She states she would like better symptom control and wants to understand whether there are treatment options beyond her rescue inhaler.
+4. Past Medical History
+Asthma
+Diagnosed age 8
+Allergic Rhinitis
+Seasonal Allergies
+5. Medication List
+Albuterol HFA
+2 puffs every 4–6 hours as needed
+Cetirizine 10 mg daily
+Fluticasone Nasal Spray
+1 spray each nostril daily
+
+6. Allergies
+Drug Allergies
+NKDA
+Food Allergies
+None
+7. Vitals
+Today's Vitals
+BP: 122/78 mmHg
+HR: 82 bpm
+RR: 18
+Temp: 98.2°F
+SpO₂: 98% on room air
+Weight: 76 kg
+Height: 5'5"
+BMI: 27.9 kg/m²
+8. Laboratory Data
+Pulmonary Function Testing
+Pre-Bronchodilator FEV1/FVC
+0.69
+Post-Bronchodilator Response
+FEV1 increase: 14%
+Absolute increase: 280 mL
+Asthma Control Test (ACT)
+Score: 16
+Interpretation: Poorly controlled asthma
+9. Immunizations
+Influenza
+Received this season
+COVID
+Completed primary series and most recent booster
+PCV20
+Not documented
+Tdap
+Last documented 11 years ago
+10. Social History
+Tobacco
+Never smoker
+Alcohol
+Occasional wine consumption
+Exercise
+Previously enjoyed hiking and outdoor activities
+Reports decreased activity tolerance due to breathing symptoms
+Occupation
+Elementary school teacher
+Living Situation
+Lives with husband and two children
+11. Family History
+Mother
+Asthma
+Father
+Hypertension
+Brother
+Seasonal allergies
+12. Problem List
+Active Problems
+Poorly controlled asthma
+Frequent rescue inhaler use
+Absence of controller therapy
+Allergic rhinitis
+Possible medication knowledge deficit
+Possible inhaler technique deficiencies
+Preventive care gaps
+13. Pharmacist Visit Notes
+Referral Reason: Increasing asthma symptoms and frequent rescue inhaler use.
+Key Concerns
+Need to assess asthma control
+Need to evaluate symptom burden
+Need to assess rescue inhaler frequency
+Need to determine appropriate controller therapy
+Need to evaluate inhaler technique
+Need to assess medication adherence
+Need to address allergic rhinitis
+Need to provide asthma self-management education
+Need to assess immunization status
+14. Follow-Up Tasks Expected From Student
+Students should consider:
+Asthma
+Assess symptom frequency
+Assess nighttime symptoms
+Assess activity limitation
+Assess rescue inhaler use
+Interpret spirometry findings
+Determine asthma control status
+Recommend appropriate controller therapy
+Evaluate need for SMART therapy
+Medication Education
+Differentiate controller versus reliever medications
+Provide inhaler counseling
+Address concerns regarding inhaled corticosteroids
+Assess medication adherence
+Assess inhaler technique
+Allergic Rhinitis
+Assess symptom burden
+Evaluate current therapy
+Recommend adherence strategies
+Address potential impact on asthma control
+Preventive Care
+Assess vaccine eligibility
+Identify immunization gaps
+Monitoring
+ACT monitoring
+Symptom monitoring
+Exacerbation monitoring
+Rescue inhaler use monitoring
+Inhaler adherence
+Inhaler technique
+Follow-Up
+Develop an appropriate follow-up plan
+Determine monitoring parameters following therapy initiation
+
+SECTION 10: AI PATIENT Q&A GUIDE
+Patient A – Tuesday Initial Visit
+Purpose
+This document serves as the AI patient behavior guide.
+Responses should sound like a real patient, not a clinician.
+The patient should not volunteer hidden information unless appropriately prompted.
+Reason for Visit
+Student:
+"What brings you in today?"
+Patient:
+"My doctor wanted me to talk with you about my asthma."
+Student:
+"What are you hoping to get out of today's visit?"
+Patient:
+"I'd like to breathe a little better and stop needing my inhaler so much."
+Symptoms
+Student:
+"How have you been feeling lately?"
+Patient:
+"Okay overall, but my breathing hasn't been as good lately."
+Student:
+"What symptoms are you having?"
+Patient:
+"Mostly wheezing and feeling short of breath sometimes."
+Student:
+"Any chest pain?"
+Patient:
+"No."
+Student:
+"Any dizziness or fainting?"
+Patient:
+"No."
+Student:
+"Any fever or recent illness?"
+Patient:
+"No."
+Student:
+"Anything else bothering you?"
+Patient:
+"My allergies have been acting up too."
+Asthma Symptoms (Partial Hidden Information)
+Student:
+"How often are you having asthma symptoms?"
+Patient:
+"Several days a week."
+Student:
+"How often do you use your inhaler?"
+Patient:
+"I use it whenever I feel like I need it."
+Student:
+"Can you be more specific?"
+Patient:
+"Probably once or twice a day most days."
+Student:
+"Do symptoms ever wake you up at night?"
+Patient:
+"Sometimes."
+Student:
+"How often?"
+Patient:
+"Maybe two or three nights a week."
+Student:
+"Do your symptoms limit activities?"
+Patient:
+"A little."
+Student:
+"Can you tell me more?"
+Patient:
+"I don't hike as much as I used to because I get short of breath."
+Student:
+"Anything else?"
+Patient:
+"I notice it when I'm playing outside with my kids too."
+Medication Use
+Student:
+"What medications are you currently taking?"
+Patient:
+"My albuterol inhaler, cetirizine, and a nasal spray."
+Student:
+"How do you use your albuterol inhaler?"
+Patient:
+"Whenever I feel like I need it."
+Student:
+"Do you take your allergy medications regularly?"
+Patient:
+"For the most part."
+Allergic Rhinitis (Hidden Information)
+DO NOT volunteer unless specifically explored.
+Student:
+"How are your allergies?"
+Patient:
+"They've been pretty bad lately."
+Student:
+"What symptoms are you having?"
+Patient:
+"Congestion, sneezing, and postnasal drip."
+Student:
+"Do you use your nasal spray every day?"
+Patient:
+"Not really."
+Student:
+"How often?"
+Patient:
+"I usually only use it when my allergies get really bad."
+Student:
+"Why?"
+Patient:
+"I didn't realize it was supposed to be something I used every day."
+Asthma Medication Knowledge (Hidden Information)
+DO NOT volunteer.
+Student:
+"Do you know the difference between a controller inhaler and a rescue inhaler?"
+Patient:
+"Not really."
+Student:
+"Has anyone ever explained that to you?"
+Patient:
+"No."
+Student:
+"What have you used for asthma in the past?"
+Patient:
+"Mostly just my rescue inhaler."
+Inhaler Technique
+Student:
+"Has anyone checked how you use your inhaler recently?"
+Patient:
+"No, not that I remember."
+Student:
+"Have you ever received inhaler training?"
+Patient:
+"I don't think so."
+Hospitalizations and Exacerbations
+Student:
+"Have you been hospitalized for asthma?"
+Patient:
+"No."
+Student:
+"Any emergency room visits recently?"
+Patient:
+"No."
+Student:
+"Have you needed oral steroids recently?"
+Patient:
+"No."
+Concerns About Treatment (Hidden Information)
+DO NOT volunteer.
+Student:
+"Do you have any concerns about asthma medications?"
+Patient:
+"A little."
+Student:
+"What concerns do you have?"
+Patient:
+"I've heard steroids can be bad for you."
+Student:
+"What worries you about them?"
+Patient:
+"I don't really want to be on strong medications."
+Lifestyle and Triggers
+Student:
+"Have you noticed anything that makes your asthma worse?"
+Patient:
+"My allergies definitely make it worse."
+Student:
+"Anything else?"
+Patient:
+"Being outside during allergy season and exercising sometimes."
+Patient Goals
+Student:
+"What health goal is most important to you?"
+Patient:
+"I'd like to breathe better."
+Student:
+"Anything else?"
+Patient:
+"I'd like to stop needing my inhaler so much."
+Student:
+"Anything else?"
+Patient:
+"I'd like to keep up with my kids without getting winded."
+Patient Concerns
+Student:
+"What concerns you most?"
+Patient:
+"I don't want my asthma to keep getting worse."
+Student:
+"What specifically worries you?"
+Patient:
+"I don't want it to start limiting what I can do."
+Understanding of Asthma
+Student:
+"What do you know about asthma?"
+Patient:
+"I know I've had it for a long time."
+Student:
+"What do you know about asthma control?"
+Patient:
+"Not much."
+Student:
+"Why do you think your doctor referred you?"
+Patient:
+"Probably because I'm using my inhaler more than I should."
+Readiness to Change
+Student:
+"How motivated are you to improve your asthma control?"
+Patient:
+"Pretty motivated."
+Student:
+"What changes do you think you could realistically make?"
+Patient:
+"If it would help me breathe better, I'd be willing to try."
+Follow-Up Preferences
+Student:
+"How do you prefer follow-up appointments?"
+Patient:
+"I don't mind phone visits."
+Hidden Information Summary for AI
+The AI should NEVER volunteer these without prompting:
+Uses albuterol 1–2 times daily most days.
+Experiences nighttime symptoms 2–3 nights per week.
+Avoids hiking because of shortness of breath.
+Experiences symptoms while playing with her children.
+Uses fluticasone nasal spray inconsistently.
+Does not understand controller versus rescue therapy.
+Has never received formal inhaler education.
+Has concerns about inhaled corticosteroids.
+Poor allergy control contributes to asthma symptoms.
+
+SECTION 10A: HIDDEN INFORMATION TRIGGER MAP
+Patient A – Tuesday Initial Visit
+Hidden Fact #1: Frequent Rescue Inhaler Use
+Information to Reveal
+Uses albuterol approximately 1–2 times daily most days of the week.
+Trigger Keywords
+rescue inhaler use, albuterol frequency, symptom frequency, reliever use, how often, inhaler use
+Appropriate AI Response
+"Honestly, probably once or twice a day most days."
+Information Not Volunteered
+Patient initially states she uses it "when needed."
+Hidden Fact #2: Nighttime Symptoms
+Information to Reveal
+Asthma symptoms awaken patient approximately 2–3 nights per week.
+Trigger Keywords
+nighttime symptoms, awakenings, waking up, sleep, asthma at night
+Appropriate AI Response
+"Maybe two or three nights a week."
+Information Not Volunteered
+Patient does not mention nighttime symptoms unless directly asked.
+Hidden Fact #3: Activity Limitation
+Information to Reveal
+Patient has stopped hiking regularly because of asthma symptoms.
+Trigger Keywords
+exercise, activity, physical activity, limitations, shortness of breath, exercise tolerance
+Appropriate AI Response
+"I don't hike as much as I used to because I get short of breath."
+Information Not Volunteered
+Patient minimizes activity limitations unless explored.
+Hidden Fact #4: Poor Allergic Rhinitis Control
+Information to Reveal
+Patient experiences daily congestion, sneezing, and postnasal drip.
+Trigger Keywords
+allergies, congestion, rhinitis, nasal symptoms, triggers
+Appropriate AI Response
+"My allergies have been pretty bad lately."
+Information Not Volunteered
+Patient does not initially connect allergy symptoms with asthma control.
+Hidden Fact #5: Inconsistent Fluticasone Use
+Information to Reveal
+Patient only uses fluticasone nasal spray when symptoms become severe.
+Trigger Keywords
+nasal spray, adherence, allergy medications, fluticasone, medication use
+Appropriate AI Response
+"I usually only use it when my allergies get really bad."
+Information Not Volunteered
+Patient assumes this is the correct way to use the medication.
+Hidden Fact #6: Knowledge Deficit Regarding Asthma Therapy
+Information to Reveal
+Patient does not understand controller versus rescue medications.
+Trigger Keywords
+controller inhaler, rescue inhaler, asthma medications, education, inhaled corticosteroid
+Appropriate AI Response
+"I don't really know the difference."
+Information Not Volunteered
+Patient does not recognize this as a knowledge gap.
+Hidden Fact #7: Concern About Steroids
+Information to Reveal
+Patient worries inhaled corticosteroids may have significant long-term adverse effects.
+Trigger Keywords
+steroids, inhaled corticosteroids, concerns, fears, side effects
+Appropriate AI Response
+"I've heard steroids can be bad for you."
+Information Not Volunteered
+Patient only discloses concerns if treatment options are discussed.
+
+
+PATIENT A – TUESDAY INITIAL VISIT
+GOLD-STANDARD AMBULATORY CARE PHARMACIST SOAP NOTE
+SUBJECTIVE
+CC:
+Sarah Thompson is a 34-year-old female presenting to the ambulatory care pharmacy clinic for initial collaborative practice management of asthma after referral from her primary care provider due to increasing symptoms and frequent rescue inhaler use.
+HPI:
+The patient reports worsening asthma symptoms over the past several months. She reports intermittent wheezing, shortness of breath, and occasional chest tightness that occur throughout the week and have become more noticeable during allergy season.
+She reports increasing reliance on her albuterol inhaler and feels that she is using it significantly more often than she did previously.
+Upon further questioning, the patient reports using albuterol approximately one to two times daily on most days of the week. She also reports nighttime awakenings due to asthma symptoms approximately two to three nights per week.
+The patient acknowledges activity limitation related to asthma. She reports avoiding hiking and other outdoor activities because of shortness of breath and notes difficulty keeping up with her children during physical activity.
+She denies recent emergency department visits, hospitalizations, or oral corticosteroid use.
+The patient reports seasonal allergy symptoms including congestion, sneezing, and postnasal drip. Upon further discussion, she admits using her fluticasone nasal spray only intermittently despite the medication being prescribed for daily use.
+The patient demonstrates limited understanding of asthma management and reports she has primarily relied on a rescue inhaler throughout her life. She does not understand the difference between controller and rescue medications.
+The patient expresses concern regarding steroid use and reports uncertainty regarding the safety of inhaled corticosteroids.
+No recent hospitalizations.
+No recent emergency department visits.
+Past Medical History
+Asthma diagnosed age 8
+Allergic rhinitis
+Seasonal allergies
+Past Surgical History
+None reported
+Family History
+Mother: asthma
+Father: hypertension
+Brother: seasonal allergies
+Social History
+Married
+Elementary school teacher
+Lives with husband and two children
+Never smoker
+Occasional alcohol use
+Denies recreational drug use
+Reports decreased physical activity secondary to asthma symptoms
+Current Medications
+Albuterol HFA 2 puffs every 4–6 hours as needed
+Cetirizine 10 mg PO daily
+Fluticasone nasal spray 1 spray in each nostril daily
+Allergies
+No known drug allergies
+Immunization History
+Influenza vaccine up to date
+COVID vaccination up to date
+No documented pneumococcal vaccination
+Tdap overdue
+OBJECTIVE
+Vitals
+BP: 122/78 mmHg
+HR: 82 bpm
+RR: 18 bpm
+Temp: 98.2°F
+SpO₂: 98% on room air
+Weight: 76 kg
+Height: 65 inches
+BMI: 27.9 kg/m²
+Pulmonary Function Testing
+Pre-Bronchodilator FEV1/FVC: 0.69
+Post-Bronchodilator FEV1 Improvement: 14%
+Absolute FEV1 Improvement: 280 mL
+Asthma Control Test (ACT) Score: 16
+Interpretation: Poorly controlled asthma
+ASSESSMENT
+Asthma – Uncontrolled
+The patient has uncontrolled asthma as evidenced by frequent daytime symptoms, albuterol use approximately one to two times daily, nighttime awakenings two to three times weekly, activity limitation, and an ACT score of 16. Pulmonary function testing demonstrates reversible airflow obstruction with a post-bronchodilator FEV1 increase of 14% and 280 mL, supporting the diagnosis of asthma.
+According to GINA 2026, patients with asthma should receive inhaled corticosteroid-containing therapy because SABA-only treatment is associated with increased risk of exacerbations and poorer long-term outcomes. The patient's current reliance on albuterol alone is inconsistent with contemporary guideline-directed management.
+Given her symptom burden and frequency of reliever use, initiation of low-dose ICS-formoterol maintenance-and-reliever therapy (SMART/MART) is appropriate.
+Absence of Controller Therapy
+The patient currently relies exclusively on short-acting beta-agonist therapy despite symptoms consistent with persistent asthma.
+This represents undertreatment rather than treatment failure. The patient has never received controller therapy and therefore has not received guideline-directed anti-inflammatory treatment.
+Initiation of controller therapy is warranted before considering any future treatment escalation.
+Allergic Rhinitis – Poorly Controlled
+The patient reports persistent allergic rhinitis symptoms including congestion, sneezing, and postnasal drip.
+She reports inconsistent use of prescribed intranasal corticosteroid therapy and was unaware that the medication should be used routinely.
+Poorly controlled allergic rhinitis may contribute to worsening asthma symptoms and reduced overall respiratory control. Optimization of rhinitis management may improve both upper and lower airway symptoms.
+Asthma Knowledge Deficit
+The patient demonstrates limited understanding of asthma management and does not understand the distinction between controller and rescue medications.
+She also expresses concern regarding inhaled corticosteroid safety and has not previously received formal asthma education.
+Patient education is necessary to improve adherence, optimize inhaler use, and support long-term disease control.
+Preventive Care Gaps
+Potential preventive care gaps include:
+Pneumococcal vaccination
+Tdap booster
+Preventive care optimization remains appropriate.
+PLAN
+Asthma
+Initiate budesonide/formoterol 160/4.5 mcg inhaler.
+Use 1 inhalation twice daily for maintenance therapy.
+Use 1 additional inhalation as needed for symptom relief.
+Discontinue reliance on albuterol as primary therapy.
+Provide individualized asthma education.
+Review controller versus reliever medications.
+Provide asthma action plan.
+Review proper inhaler technique.
+Allergic Rhinitis
+Continue cetirizine 10 mg PO daily.
+Continue fluticasone nasal spray.
+Counsel patient regarding daily use rather than intermittent use.
+Review proper nasal spray administration technique.
+Encourage allergen avoidance strategies.
+Patient Education
+Discuss role of airway inflammation in asthma.
+Discuss benefits of inhaled corticosteroid therapy.
+Address concerns regarding steroid safety.
+Review expected treatment goals.
+Monitoring
+Monitor ACT score.
+Monitor symptom frequency.
+Monitor nighttime awakenings.
+Monitor reliever inhaler use.
+Monitor asthma exacerbations.
+Assess inhaler technique.
+Assess medication adherence.
+Monitor allergic rhinitis symptoms.
+Preventive Care
+Review vaccination history.
+Recommend pneumococcal vaccination if indicated.
+Recommend Tdap booster.
+Follow-Up
+Follow up in approximately 3 months.
+Reassess asthma control, inhaler technique, adherence, symptom burden, and response to SMART therapy.
+
+SECTION 12: ACCEPTABLE ALTERNATIVE ANSWERS
+Patient A – Tuesday Initial Visit
+The purpose of this section is to help the AI grader distinguish between:
+Preferred recommendations
+Guideline-supported alternatives
+Patient-centered approaches
+Unsafe recommendations
+Students should not be penalized for selecting a different treatment strategy if their approach appropriately addresses the patient's asthma control and remains guideline supported.
+Asthma Management
+Preferred Answer
+Identify uncontrolled asthma
+Recognize excessive SABA use
+Identify nighttime symptoms
+Identify activity limitation
+Recognize absence of controller therapy
+Initiate budesonide/formoterol SMART therapy
+Provide inhaler education
+Provide asthma action plan
+Rationale
+The patient has:
+ACT score 16
+Daily SABA use
+Nighttime awakenings
+Activity limitation
+No controller therapy
+According to GINA 2026:
+ICS-containing therapy is recommended for all patients with asthma
+Track 1 ICS-formoterol therapy is preferred because of reduced severe exacerbation risk
+Acceptable Alternative #1
+Initiate low-dose ICS/LABA maintenance therapy
+Continue separate reliever inhaler
+Provide asthma education
+Acceptable Because
+Provides appropriate controller therapy
+Addresses airway inflammation
+Remains guideline supported
+Student Must
+Explain rationale
+Provide monitoring plan
+Educate on controller versus reliever therapy
+Acceptable Alternative #2
+Initiate daily low-dose ICS
+Continue SABA as reliever
+Acceptable Because
+Provides anti-inflammatory therapy
+Addresses persistent symptoms
+Remains guideline supported
+Less Preferred Because
+Does not align with preferred Track 1 strategy
+May provide less exacerbation protection
+Acceptable Alternative #3
+Delay medication initiation briefly while verifying insurance coverage
+Confirm inhaler affordability
+Schedule prompt follow-up
+Acceptable Because
+Addresses implementation barriers
+Supports long-term adherence
+Student Must
+Establish clear follow-up plan
+Avoid indefinite treatment delay
+Unacceptable Answers
+Unsafe
+Continue SABA-only therapy
+Rationale
+Does not address airway inflammation
+Increases future exacerbation risk
+Unsafe
+Recommend lifestyle modification alone
+Rationale
+Symptoms warrant controller therapy
+Unsafe
+Fail to initiate controller therapy
+Rationale
+Persistent uncontrolled asthma is present
+Unsafe
+Ignore ACT score and symptom burden
+Rationale
+Results in inaccurate assessment of asthma control
+Asthma Control Assessment
+Preferred Answer
+Student identifies:
+Frequent daytime symptoms
+Daily reliever use
+Nighttime awakenings
+Activity limitation
+Poor ACT score
+Rationale
+These findings indicate uncontrolled asthma and warrant treatment modification.
+Acceptable Alternative
+Use ACT score as primary assessment tool
+Supplement with symptom assessment
+Acceptable Because
+ACT is validated
+Consistent with guideline recommendations
+Unacceptable Answers
+Unsafe
+Classify asthma as controlled
+Unsafe
+Fail to assess reliever use
+Unsafe
+Fail to assess nighttime symptoms
+Unsafe
+Fail to assess activity limitation
+Allergic Rhinitis Management
+Preferred Answer
+Identify allergic rhinitis symptoms
+Recognize inconsistent fluticasone use
+Reinforce daily intranasal corticosteroid use
+Continue current allergy medications
+Rationale
+Poorly controlled allergic rhinitis may worsen asthma control.
+Acceptable Alternative
+Emphasize allergen avoidance strategies
+Provide environmental trigger counseling
+Acceptable Because
+Addresses symptom contributors
+Supports asthma control
+Unacceptable Answers
+Unsafe
+Ignore allergic rhinitis
+Unsafe
+Discontinue allergy therapy without reason
+Patient Education
+Preferred Answer
+Explain:
+Controller versus reliever therapy
+Airway inflammation
+SMART therapy
+Inhaled corticosteroid safety
+Proper inhaler use
+Rationale
+Knowledge deficits contribute to poor disease control and future nonadherence.
+Acceptable Alternative
+Utilize teach-back methods
+Provide written asthma education materials
+Acceptable Because
+Improves retention
+Reinforces counseling
+Unacceptable Answers
+Unsafe
+Dismiss steroid concerns
+Unsafe
+Provide inaccurate information regarding inhaled corticosteroids
+Preventive Care
+Preferred Answer
+Identify:
+Pneumococcal vaccine gap
+Tdap booster gap
+Acceptable Alternative
+Recommend review of vaccine records with PCP
+
+SECTION 13: CRITICAL MISSES
+Patient A – Tuesday Initial Visit
+These errors should result in major point deductions.
+Critical Miss #1
+Error
+Failed to recognize uncontrolled asthma
+Rationale
+The patient has:
+ACT score 16
+Daily SABA use
+Nighttime symptoms
+Activity limitation
+Critical Miss #2
+Error
+Failed to assess rescue inhaler frequency
+Rationale
+Reliever use is a major marker of asthma control
+Reliever use predicts future exacerbation risk
+Critical Miss #3
+Error
+Failed to assess nighttime symptoms
+Rationale
+Nighttime awakenings are a key component of asthma control assessment
+Critical Miss #4
+Error
+Failed to assess activity limitation
+Rationale
+Activity limitation is a major indicator of poor asthma control
+Critical Miss #5
+Error
+Recommended continuation of SABA-only therapy
+Rationale
+Inconsistent with current GINA recommendations
+Critical Miss #6
+Error
+Failed to initiate or recommend controller therapy
+Rationale
+Patient has persistent uncontrolled asthma
+Critical Miss #7
+Error
+Failed to identify allergic rhinitis as a contributing factor
+Rationale
+Upper airway disease may worsen asthma control
+Critical Miss #8
+Error
+Failed to assess medication adherence
+Rationale
+Adherence must be evaluated before future escalation decisions
+Critical Miss #9
+Error
+Failed to provide inhaler education
+Rationale
+Patient demonstrates significant asthma knowledge deficits
+Critical Miss #10
+Error
+Failed to address steroid concerns
+Rationale
+Unaddressed concerns may become adherence barriers
+Critical Miss #11
+Error
+Failed to provide monitoring plan
+Rationale
+Students should monitor:
+ACT score
+Symptom frequency
+Rescue inhaler use
+Exacerbations
+Adherence
+Inhaler technique
+Critical Miss #12
+Error
+Failed to provide follow-up plan
+Rationale
+Response to therapy must be reassessed
+Critical Miss #13
+Error
+Failed to identify preventive care gaps
+Rationale
+Potential gaps include:
+Pneumococcal vaccination
+Tdap booster
+High-Priority Patient A Learning Objectives
+Asthma control must be assessed systematically
+SABA overuse is a marker of poor control and future risk
+Controller therapy is foundational to asthma management
+Comorbid conditions may contribute to asthma symptoms
+Patient education is a core pharmacist responsibility
+Appropriate therapy requires both medication selection and patient understanding
+
+SECTION 14: TEACHING GUIDE
+Patient A – Tuesday Initial Visit
+What The Student Should Have Done Well
+The student should have:
+Identified uncontrolled asthma
+Assessed symptom burden
+Quantified reliever use
+Assessed nighttime symptoms
+Assessed activity limitation
+Interpreted spirometry findings
+Recognized absence of controller therapy
+Recommended SMART therapy
+Addressed allergic rhinitis
+Provided inhaler education
+Developed a monitoring strategy
+Common Student Mistakes
+Mistake #1
+Assuming asthma is controlled because the patient has not been hospitalized.
+Teaching Point
+Asthma control is determined by:
+Symptom burden
+Reliever use
+Nighttime symptoms
+Activity limitation
+Exacerbation risk
+Not hospitalization history alone.
+Mistake #2
+Failing to quantify rescue inhaler use.
+Teaching Point
+Patients often normalize symptoms and underestimate inhaler use.
+Mistake #3
+Escalating therapy without assessing contributing factors.
+Teaching Point
+Allergic rhinitis, adherence issues, and knowledge deficits should be addressed alongside medication changes.
+Mistake #4
+Using guideline language without patient education.
+Example
+"You need an ICS-formoterol inhaler."
+Teaching Point
+Patients need understandable explanations regarding why treatment is changing.
+Mistake #5
+Ignoring concerns about steroids.
+Teaching Point
+Unaddressed concerns may become future adherence barriers.
+Teaching Pearls
+Pearl #1
+Asthma symptom normalization is common.
+Expected Discussion
+Patients who have lived with asthma for years often underestimate symptom severity.
+Frequent symptoms may be viewed as "normal."
+Pearl #2
+Reliever use is one of the most useful indicators of asthma control.
+Expected Discussion
+Frequent reliever use predicts future exacerbation risk.
+Rescue inhaler frequency should be assessed at every visit.
+Pearl #3
+Not every asthma patient understands controller therapy.
+Expected Discussion
+Many patients only understand symptom relief.
+Formal asthma education may never have occurred.
+Pearl #4
+Upper airway disease and lower airway disease are closely linked.
+Expected Discussion
+Allergic rhinitis may worsen asthma symptoms.
+Treating rhinitis may improve overall respiratory control.
+Pearl #5
+Pharmacists play a major role in inhaler education.
+Expected Discussion
+Medication effectiveness depends on proper use.
+Counseling improves adherence and outcomes.
+Follow-Up Questions
+Question 1
+"What findings indicate uncontrolled asthma?"
+Expected Discussion
+ACT score 16
+Frequent reliever use
+Nighttime symptoms
+Activity limitation
+Question 2
+"Why is SABA-only therapy no longer preferred?"
+Expected Discussion
+Does not address airway inflammation
+Associated with increased exacerbation risk
+ICS-containing therapy is recommended
+Question 3
+"What are the advantages of SMART therapy?"
+Expected Discussion
+Simplified regimen
+Improved adherence
+Reduced exacerbation risk
+Combines maintenance and reliever therapy
+Question 4
+"Why should allergic rhinitis be addressed?"
+Expected Discussion
+May contribute to asthma symptoms
+Can worsen overall asthma control
+Question 5
+"What monitoring is necessary after therapy initiation?"
+Expected Discussion
+ACT score
+Symptom frequency
+Reliever use
+Exacerbations
+Adherence
+Inhaler technique
+Question 6
+"What counseling points are important for inhaled corticosteroids?"
+Expected Discussion
+Purpose of therapy
+Benefits
+Safety
+Proper administration
+Importance of adherence
+How The Student Can Improve Before Wednesday
+Before the next encounter, students should be able to:
+Evaluate response to SMART therapy
+Assess medication adherence
+Assess inhaler technique
+Interpret changes in asthma control
+Determine whether additional treatment escalation is necessary
+Continue patient-centered asthma education
+Apply longitudinal monitoring principles
+
+
+
+Granular Rubric and Answer Key -- Asthma Ambulatory Care SOAP Note -- Patient: Sarah Thompson
+[FOR AI PRECEPTOR CALIBRATION ONLY -- NOT FOR STUDENT DISTRIBUTION]
+PURPOSE
+This is the single, authoritative rubric for the Sarah Thompson Initial-Visit Asthma Ambulatory Care SOAP Note. Every subsection's discrete input point values sum exactly to the subsection header, and all subsection headers sum exactly to 100.0. The model answer scores 100.0 / 100.0 against this rubric. The primary guideline source for all therapeutic content and acceptable medication choices is GINA 2025 (Global Strategy for Asthma Management and Prevention, updated 2025).
+SCORING RULES
+* FULL: Input present, accurate, and clinically contextualized (not merely a keyword).
+* HALF: Partially present -- directionally correct but imprecise, or present without clinical context. Half-credit values are rounded to the nearest 0.05.
+* ZERO: Absent, or a factually incorrect statement is made about that input.
+* Additivity: Points are additive within each subsection -> subsections additive within sections -> sections additive to 100.0.
+* Acceptable-alternative inputs (e.g., therapeutic choices) list every guideline-supported answer in parentheses; any listed answer earns full credit.
+SECTION 1: SUBJECTIVE (25.0 points)
+1A. CHIEF COMPLAINT AND REASON FOR REFERRAL (2.5 points) -- 9 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1A.1
+	Patient age stated (34 years)
+	0.30
+	States 34 years
+	Age stated, imprecise
+	Omits
+	1A.2
+	Patient sex stated (female)
+	0.20
+	States female
+	—
+	Omits
+	1A.3
+	Encounter setting: ambulatory care pharmacy clinic
+	0.30
+	Names ambulatory care pharmacy clinic
+	Names clinic, not pharmacy-specific
+	Omits
+	1A.4
+	Visit type: initial visit
+	0.20
+	States initial or new visit
+	—
+	Omits
+	1A.5
+	Referral source: primary care provider
+	0.30
+	States PCP referral
+	Mentions referral, no source named
+	Omits
+	1A.6
+	Encounter purpose: collaborative practice management of asthma
+	0.30
+	States collaborative practice management of asthma
+	States management, no collaborative framing
+	Omits
+	1A.7
+	Referral trigger: increasing asthma symptoms
+	0.30
+	States increasing symptoms as trigger
+	Mentions symptoms, no worsening qualifier
+	Omits
+	1A.8
+	Referral trigger: frequent rescue inhaler use
+	0.30
+	States frequent rescue inhaler use as trigger
+	Mentions inhaler, no frequency context
+	Omits
+	1A.9
+	Primary diagnosis: asthma
+	0.30
+	Names asthma as primary diagnosis
+	—
+	Omits
+	1A sum check: 0.30+0.20+0.30+0.20+0.30+0.30+0.30+0.30+0.30 = 2.50
+	 
+1B. HISTORY OF PRESENT ILLNESS (HPI) (5.0 points) -- 16 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1B.1
+	Duration of worsening (past several months)
+	0.25
+	States past several months
+	States worsening, no duration
+	Omits
+	1B.2
+	Symptom: intermittent wheezing
+	0.25
+	States wheezing
+	—
+	Omits
+	1B.3
+	Symptom: shortness of breath
+	0.25
+	States shortness of breath
+	—
+	Omits
+	1B.4
+	Symptom: occasional chest tightness
+	0.25
+	States chest tightness
+	States tightness, no qualifier
+	Omits
+	1B.5
+	Symptom trigger: more noticeable during allergy season
+	0.25
+	States worse during allergy season
+	Mentions allergies, no seasonal trigger
+	Omits
+	1B.6
+	Albuterol use frequency (approximately 1-2 times daily)
+	0.50
+	States 1-2 times daily
+	States daily use, no quantity
+	Omits
+	1B.7
+	Albuterol use pattern (most days of the week)
+	0.30
+	States most days of the week
+	States frequent, no pattern
+	Omits
+	1B.8
+	Nighttime awakenings due to asthma: frequency (2-3 nights per week)
+	0.50
+	States 2-3 nights per week
+	States nighttime awakenings, no frequency
+	Omits
+	1B.9
+	Activity limitation: avoids hiking/outdoor activities due to shortness of breath
+	0.25
+	States avoids hiking/outdoor activities
+	States activity limitation, no specifics
+	Omits
+	1B.10
+	Activity limitation: difficulty keeping up with children during physical activity
+	0.25
+	States difficulty keeping up with children
+	—
+	Omits
+	1B.11
+	Denies recent emergency department visits
+	0.20
+	States denies recent ED visits
+	—
+	Omits
+	1B.12
+	Denies recent hospitalizations
+	0.20
+	States denies recent hospitalizations
+	—
+	Omits
+	1B.13
+	Denies recent oral corticosteroid use
+	0.20
+	States denies recent OCS use
+	—
+	Omits
+	1B.14
+	Seasonal allergy symptoms: congestion, sneezing, and postnasal drip
+	0.35
+	States all three: congestion, sneezing, postnasal drip
+	States 1-2 of three symptoms
+	Omits
+	1B.15
+	Fluticasone nasal spray: intermittent use despite prescribed daily use
+	0.50
+	States intermittent vs. prescribed daily use
+	States inconsistent, no prescribing context
+	Omits
+	1B.16
+	Lifelong reliance on rescue inhaler as primary asthma management
+	0.50
+	States lifelong reliance on rescue inhaler
+	States rescue-only use, no lifelong framing
+	Omits
+	1B sum check: 0.25+0.25+0.25+0.25+0.25+0.50+0.30+0.50+0.25+0.25+0.20+0.20+0.20+0.35+0.50+0.50 = 5.00
+	 
+1C. PAST MEDICAL, SURGICAL, AND FAMILY HISTORY (3.5 points) -- 11 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1C.1
+	PMH: asthma
+	0.25
+	Lists asthma
+	—
+	Omits
+	1C.2
+	Asthma diagnosis age (age 8)
+	0.35
+	States diagnosed age 8
+	States childhood diagnosis, no age
+	Omits
+	1C.3
+	PMH: allergic rhinitis
+	0.25
+	Lists allergic rhinitis
+	—
+	Omits
+	1C.4
+	PMH: seasonal allergies
+	0.25
+	Lists seasonal allergies
+	—
+	Omits
+	1C.5
+	PSH: none reported
+	0.20
+	States no surgical history
+	—
+	Omits
+	1C.6
+	Family history: mother with asthma
+	0.40
+	States mother has asthma
+	States family history asthma, no relation
+	Omits
+	1C.7
+	Family history: father with hypertension
+	0.30
+	States father has hypertension
+	—
+	Omits
+	1C.8
+	Family history: brother with seasonal allergies
+	0.30
+	States brother has seasonal allergies
+	—
+	Omits
+	1C.9
+	Patient knowledge deficit: does not understand controller vs. rescue distinction
+	0.40
+	States no understanding of controller vs. rescue
+	States limited knowledge, not medication-specific
+	Omits
+	1C.10
+	Patient concern: inhaled corticosteroid safety
+	0.40
+	States ICS safety concern
+	States steroid concern, not ICS-specific
+	Omits
+	1C.11
+	No prior formal asthma education received
+	0.40
+	States no prior formal asthma education
+	—
+	Omits
+	1C sum check: 0.25+0.35+0.25+0.25+0.20+0.40+0.30+0.30+0.40+0.40+0.40 = 3.50
+	 
+1D. SOCIAL HISTORY (3.0 points) -- 10 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1D.1
+	Marital status: married
+	0.20
+	States married
+	—
+	Omits
+	1D.2
+	Occupation: elementary school teacher
+	0.35
+	States elementary school teacher
+	States teacher, no grade level
+	Omits
+	1D.3
+	Lives with husband and two children
+	0.25
+	States husband and two children
+	States family, no composition
+	Omits
+	1D.4
+	Tobacco use status: never smoker
+	0.40
+	States never smoker
+	States nonsmoker, no never/former qualifier
+	Omits
+	1D.5
+	Alcohol use: occasional
+	0.25
+	States occasional alcohol use
+	States alcohol use, no frequency
+	Omits
+	1D.6
+	Recreational drug use: denies
+	0.25
+	States denies recreational drug use
+	—
+	Omits
+	1D.7
+	Physical activity: decreased secondary to asthma symptoms
+	0.40
+	States decreased activity due to asthma symptoms
+	States less active, no asthma link
+	Omits
+	1D.8
+	Specific activity avoidance: hiking and outdoor activities
+	0.30
+	States avoids hiking/outdoors due to asthma
+	States activity avoidance, no specifics
+	Omits
+	1D.9
+	Occupation as potential allergen/trigger exposure context (school environment)
+	0.30
+	Notes teacher occupation relevant to allergen exposure
+	Notes occupation, no asthma trigger link
+	Omits
+	1D.10
+	Home environment: husband and two children (relevant to allergen exposure and action plan)
+	0.30
+	Notes home with family context relevant to management
+	States home situation, no relevance link
+	Omits
+	1D sum check: 0.20+0.35+0.25+0.40+0.25+0.25+0.40+0.30+0.30+0.30 = 3.00
+	 
+1E. MEDICATIONS, ALLERGIES, AND IMMUNIZATIONS (6.0 points) -- 19 inputs, sum = 6.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1E.1
+	Albuterol HFA listed
+	0.30
+	Names albuterol HFA
+	Names albuterol, no HFA/formulation
+	Omits
+	1E.2
+	Albuterol dose: 2 puffs
+	0.25
+	States 2 puffs
+	—
+	Incorrect
+	1E.3
+	Albuterol regimen: every 4-6 hours as needed
+	0.25
+	States every 4-6 hours as needed
+	States PRN, no interval
+	Omits
+	1E.4
+	Cetirizine listed
+	0.25
+	Names cetirizine
+	—
+	Omits
+	1E.5
+	Cetirizine dose: 10 mg
+	0.20
+	States 10 mg
+	—
+	Incorrect
+	1E.6
+	Cetirizine regimen: PO daily
+	0.20
+	States PO daily
+	States daily, no route
+	Omits
+	1E.7
+	Fluticasone nasal spray listed
+	0.30
+	Names fluticasone nasal spray
+	Names fluticasone, no route/formulation
+	Omits
+	1E.8
+	Fluticasone nasal spray dose: 1 spray in each nostril
+	0.25
+	States 1 spray each nostril
+	States 1 spray, no bilateral qualifier
+	Incorrect
+	1E.9
+	Fluticasone nasal spray regimen: daily
+	0.20
+	States daily
+	—
+	Omits
+	1E.10
+	No ICS-containing controller in current medication list (treatment gap)
+	0.45
+	States no ICS/controller in current regimen
+	Notes rescue-only, no controller-absence framing
+	Omits
+	1E.11
+	No known drug allergies documented
+	0.50
+	States NKDA
+	—
+	Omits
+	1E.12
+	Influenza vaccine: up to date
+	0.30
+	States influenza vaccine up to date
+	States influenza vaccine, no current status
+	Omits
+	1E.13
+	COVID-19 vaccination: up to date
+	0.25
+	States COVID vaccination up to date
+	States COVID vaccine, no current status
+	Omits
+	1E.14
+	Pneumococcal vaccination: not documented
+	0.50
+	States no documented pneumococcal vaccination
+	Mentions pneumococcal, no gap status
+	Omits
+	1E.15
+	Tdap: overdue
+	0.50
+	States Tdap overdue
+	Mentions Tdap, no overdue status
+	Omits
+	1E.16
+	Fluticasone nasal spray adherence documented as intermittent
+	0.30
+	Documents intermittent nasal spray use
+	Notes nonadherence, no specific agent
+	Omits
+	1E.17
+	Immunization history incomplete (two gaps identified: pneumococcal and Tdap)
+	0.30
+	States immunization history incomplete with 2 gaps
+	Notes immunization gap, no count
+	Omits
+	1E.18
+	Albuterol identified as patient's sole therapy (no controller co-prescribed)
+	0.50
+	States albuterol only, no controller
+	States rescue-only, no controller framing
+	Omits
+	1E.19
+	Cetirizine linked to allergy symptom management context
+	0.20
+	Links cetirizine to allergy management
+	—
+	Omits
+	1E sum check: 0.30+0.25+0.25+0.25+0.20+0.20+0.30+0.25+0.20+0.45+0.50+0.30+0.25+0.50+0.50+0.30+0.30+0.50+0.20 = 6.00
+	 
+1F. REVIEW OF SYSTEMS / RELEVANT NEGATIVES (1.5 points) -- 6 inputs, sum = 1.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1F.1
+	Denies recent emergency department visits (relevant negative)
+	0.25
+	States denies recent ED visits
+	—
+	Omits
+	1F.2
+	Denies recent hospitalizations (relevant negative)
+	0.25
+	States denies recent hospitalizations
+	—
+	Omits
+	1F.3
+	Denies recent oral corticosteroid use (relevant negative)
+	0.25
+	States denies recent OCS use
+	—
+	Omits
+	1F.4
+	Activity limitation documented as positive system finding
+	0.25
+	States activity limitation present
+	—
+	Omits
+	1F.5
+	Rhinitis symptoms documented as active positive system finding
+	0.25
+	States rhinitis symptoms active
+	—
+	Omits
+	1F.6
+	Nighttime awakenings documented as active positive system finding
+	0.25
+	States nighttime awakenings present
+	—
+	Omits
+	1F sum check: 0.25+0.25+0.25+0.25+0.25+0.25 = 1.50
+	 
+1G. PATIENT GOALS AND CONCERNS (3.5 points) -- 8 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1G.1
+	Patient concern: inhaled corticosteroid safety
+	0.50
+	States patient expressed ICS safety concern
+	States concern, not ICS-specific
+	Omits
+	1G.2
+	Patient expresses uncertainty about steroid use / ICS necessity
+	0.40
+	States uncertainty about need for ICS
+	States uncertainty, not medication-specific
+	Omits
+	1G.3
+	Patient does not understand controller vs. rescue distinction
+	0.50
+	States no understanding of controller vs. rescue
+	States limited knowledge, not medication-specific
+	Omits
+	1G.4
+	Patient has primarily relied on rescue inhaler throughout life
+	0.40
+	States lifelong rescue-only management
+	States rescue-only, no lifelong framing
+	Omits
+	1G.5
+	Patient goal: return to physical activity (hiking, keeping up with children)
+	0.50
+	States activity restoration as goal or barrier
+	States activity mentioned, not as goal
+	Omits
+	1G.6
+	Patient education need: role of controller therapy
+	0.40
+	States education need re controller therapy
+	States education need, not controller-specific
+	Omits
+	1G.7
+	Patient education need: ICS safety and benefit information
+	0.40
+	States education need re ICS safety/benefits
+	States education need, not ICS-specific
+	Omits
+	1G.8
+	Improved symptom control as implied treatment goal
+	0.40
+	States patient seeks symptom improvement
+	—
+	Omits
+	1G sum check: 0.50+0.40+0.50+0.40+0.50+0.40+0.40+0.40 = 3.50
+	 
+Section 1 check (1A, 1B, 1C, 1D, 1E, 1F, 1G): 2.5 + 5.0 + 3.5 + 3.0 + 6.0 + 1.5 + 3.5 = 25.0
+SECTION 2: OBJECTIVE (15.0 points)
+2A. VITAL SIGNS AND ANTHROPOMETRICS (5.0 points) -- 9 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2A.1
+	Blood pressure: 122/78 mmHg
+	0.60
+	States 122/78 mmHg
+	BP stated, value imprecise
+	Omits
+	2A.2
+	Heart rate: 82 bpm
+	0.50
+	States 82 bpm
+	—
+	Omits
+	2A.3
+	Respiratory rate: 18 bpm
+	0.50
+	States 18 bpm
+	—
+	Omits
+	2A.4
+	Temperature: 98.2 degrees F
+	0.40
+	States 98.2 F
+	—
+	Omits
+	2A.5
+	SpO2: 98% on room air
+	0.60
+	States 98% on room air
+	States SpO2, no room-air qualifier
+	Omits
+	2A.6
+	Weight: 76 kg
+	0.50
+	States 76 kg
+	—
+	Omits
+	2A.7
+	Height: 65 inches
+	0.40
+	States 65 inches
+	—
+	Omits
+	2A.8
+	BMI: 27.9 kg/m2
+	0.70
+	States 27.9 kg/m2
+	BMI stated, value imprecise
+	Omits
+	2A.9
+	BMI classification: overweight (25.0-29.9 kg/m2)
+	0.80
+	States overweight or BMI in 25.0-29.9 range
+	States overweight, no numeric range
+	Omits
+	2A sum check: 0.60+0.50+0.50+0.40+0.60+0.50+0.40+0.70+0.80 = 5.00
+	 
+2B. PULMONARY FUNCTION TESTING AND OBJECTIVE DATA (6.5 points) -- 9 inputs, sum = 6.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2B.1
+	Pre-bronchodilator FEV1/FVC ratio: 0.69
+	0.80
+	States FEV1/FVC 0.69
+	States FEV1/FVC, value imprecise
+	Omits
+	2B.2
+	FEV1/FVC <0.70 indicating airflow obstruction
+	0.70
+	States FEV1/FVC <0.70 confirms airflow obstruction
+	States obstructed, no threshold
+	Omits
+	2B.3
+	Post-bronchodilator FEV1 improvement: 14%
+	0.80
+	States 14% improvement
+	States improvement, no percentage
+	Omits
+	2B.4
+	Absolute FEV1 improvement: 280 mL
+	0.80
+	States 280 mL
+	States mL improvement, value imprecise
+	Omits
+	2B.5
+	GINA reversibility threshold met: >=12% AND >=200 mL
+	0.80
+	States meets >=12% AND >=200 mL threshold
+	States significant, one criterion only
+	Omits
+	2B.6
+	Interpretation: reversible airflow obstruction, confirming asthma diagnosis
+	0.70
+	States reversible obstruction confirms asthma
+	States reversibility, no diagnostic link
+	Omits
+	2B.7
+	Asthma Control Test (ACT) score: 16
+	0.70
+	States ACT score 16
+	States ACT score, value imprecise
+	Omits
+	2B.8
+	ACT score interpretation: poorly controlled asthma
+	0.70
+	States ACT 16 indicates poorly controlled
+	States uncontrolled, no ACT reference
+	Omits
+	2B.9
+	ACT score <20 threshold for poorly controlled status
+	0.50
+	States ACT <20 indicates poor control
+	States ACT threshold, no numeric value
+	Omits
+	2B sum check: 0.80+0.70+0.80+0.80+0.80+0.70+0.70+0.70+0.50 = 6.50
+	 
+2C. CALCULATED VALUES AND MISSING EXPECTED DATA (3.5 points) -- 5 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2C.1
+	BMI confirmed consistent with documented height (65 in) and weight (76 kg)
+	0.70
+	BMI consistent with ht/wt
+	BMI stated, not reconciled with ht/wt
+	Incorrect
+	2C.2
+	SpO2 within normal range; no supplemental oxygen clinically indicated
+	0.60
+	States SpO2 normal, no O2 indicated
+	States SpO2 ok, no clinical interpretation
+	Omits
+	2C.3
+	Absence of baseline spirometry prior to today's visit noted as contextual gap
+	0.70
+	Flags absence of prior spirometry baseline
+	Mentions testing, no prior-baseline gap
+	Omits
+	2C.4
+	Type 2 biomarkers (FeNO or blood eosinophils) not available at this visit
+	0.80
+	States FeNO/blood eosinophils not available
+	Mentions biomarkers, no specifics
+	Omits
+	2C.5
+	ACT score available as serial monitoring tool for future visits
+	0.70
+	States ACT as serial monitoring baseline
+	Mentions ACT, no monitoring framing
+	Omits
+	2C sum check: 0.70+0.60+0.70+0.80+0.70 = 3.50
+	 
+Section 2 check (2A, 2B, 2C): 5.0 + 6.5 + 3.5 = 15.0
+SECTION 3: ASSESSMENT (30.0 points)
+3A. PROBLEM 1 -- ASTHMA, UNCONTROLLED (9.0 points) -- 20 inputs, sum = 9.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3A.1
+	Problem identified: asthma
+	0.25
+	Names asthma
+	—
+	Omits
+	3A.2
+	Control status: uncontrolled
+	0.40
+	States uncontrolled
+	States partially controlled
+	States controlled
+	3A.3
+	Evidence: frequent daytime symptoms (most days of week)
+	0.40
+	States frequent daytime symptoms, most days
+	States daytime symptoms, no frequency
+	Omits
+	3A.4
+	Evidence: albuterol use approximately 1-2 times daily
+	0.50
+	States 1-2 times daily albuterol use
+	States high albuterol use, no frequency
+	Omits
+	3A.5
+	Evidence: nighttime awakenings approximately 2-3 times weekly
+	0.50
+	States 2-3 nighttime awakenings per week
+	States nocturnal symptoms, no frequency
+	Omits
+	3A.6
+	Evidence: activity limitation present
+	0.40
+	States activity limitation documented
+	—
+	Omits
+	3A.7
+	Evidence: ACT score 16 indicates poor control
+	0.55
+	States ACT 16 indicates poor control
+	States ACT score, no interpretation
+	Omits
+	3A.8
+	PFT evidence: post-bronchodilator FEV1 increase of 14%
+	0.40
+	States 14% post-bronchodilator improvement
+	States FEV1 improvement, no percentage
+	Omits
+	3A.9
+	PFT evidence: absolute FEV1 increase of 280 mL
+	0.40
+	States 280 mL absolute improvement
+	States absolute improvement, no value
+	Omits
+	3A.10
+	PFT interpretation: reversible airflow obstruction supporting asthma diagnosis
+	0.50
+	States PFT confirms reversible obstruction/asthma
+	States PFT positive, no diagnostic link
+	Omits
+	3A.11
+	Guideline cited: GINA 2025
+	0.40
+	Cites GINA 2025 (or GINA 2026)
+	Cites GINA, no year
+	Omits
+	3A.12
+	GINA states SABA-only treatment associated with increased exacerbation risk and poor long-term outcomes
+	0.50
+	States SABA-only risk per GINA
+	States SABA-only concern, no guideline
+	Omits
+	3A.13
+	Current SABA-only treatment inconsistent with guideline-directed management
+	0.40
+	States current Tx inconsistent with GINA
+	States undertreated, no guideline link
+	Omits
+	3A.14
+	Initiation of low-dose ICS-formoterol MART identified as appropriate (acceptable per GINA 2025: budesonide-formoterol 160/4.5 mcg DPI or pMDI, beclometasone-formoterol 100/6 mcg DPI or pMDI)
+	0.75
+	States initiation of ICS-formoterol MART as appropriate next step
+	States initiate ICS, no MART/formoterol specificity
+	Omits
+	3A.15
+	GINA Track 1 or AIR/MART therapy concept invoked
+	0.65
+	States GINA Track 1, AIR, or MART therapy
+	States ICS-formoterol reliever, no Track 1/AIR/MART name
+	Omits
+	3A.16
+	Four GINA symptom-control domains referenced for uncontrolled classification (daytime symptoms, nocturnal, activity, reliever use)
+	0.50
+	References all four GINA domains or >=3 domains as uncontrolled
+	References some domains, not all four
+	Omits
+	3A.17
+	Persistent airway inflammation present regardless of symptom frequency (GINA principle)
+	0.30
+	States persistent airway inflammation
+	Mentions inflammation, not confirmed as persistent
+	Omits
+	3A.18
+	SABA over-use associated with increased exacerbation and death risk (GINA)
+	0.40
+	States SABA over-use as exacerbation/mortality risk
+	States SABA over-use, no consequence cited
+	Omits
+	3A.19
+	FEV1/FVC <0.70 confirms airflow limitation at time of assessment
+	0.30
+	States FEV1/FVC <0.70 at this visit
+	States obstruction, no threshold referenced
+	Omits
+	3A.20
+	Concludes ICS-containing pharmacologic initiation is warranted
+	0.50
+	States ICS initiation warranted
+	—
+	Omits
+	3A sum check: 0.25+0.40+0.40+0.50+0.50+0.40+0.55+0.40+0.40+0.50+0.40+0.50+0.40+0.75+0.65+0.50+0.30+0.40+0.30+0.50 = 9.00
+	 
+3B. PROBLEM 2 -- ABSENCE OF CONTROLLER THERAPY (5.0 points) -- 10 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3B.1
+	Problem identified: absence of controller therapy
+	0.50
+	Names absence of controller therapy
+	States undertreated, no controller framing
+	Omits
+	3B.2
+	Distinguishes this as undertreatment rather than treatment failure
+	0.50
+	States undertreatment, not treatment failure
+	Notes distinction imprecisely
+	Omits
+	3B.3
+	States patient has never received controller therapy
+	0.50
+	States no prior controller therapy
+	—
+	Omits
+	3B.4
+	States patient has never received guideline-directed anti-inflammatory treatment
+	0.50
+	States no prior guideline-directed anti-inflammatory Tx
+	States no ICS, no anti-inflammatory framing
+	Omits
+	3B.5
+	Concludes initiation of controller therapy is warranted before future escalation
+	0.50
+	States initiate controller before escalation
+	States initiate controller, no escalation framing
+	Omits
+	3B.6
+	Identifies SABA-only reliance as creating exacerbation risk
+	0.50
+	States SABA-only increases exacerbation risk
+	States SABA-only concern, no risk framing
+	Omits
+	3B.7
+	GINA supports immediate ICS initiation after diagnosis
+	0.50
+	States GINA supports immediate ICS initiation
+	States ICS now, no GINA reference
+	Omits
+	3B.8
+	Low-dose ICS or ICS-formoterol reduces exacerbation risk by half to two-thirds vs. SABA alone (GINA)
+	0.50
+	States GINA reduction by half to two-thirds vs. SABA
+	States ICS-formoterol better, no magnitude cited
+	Omits
+	3B.9
+	SABA-only treatment associated with worse long-term lung function (GINA)
+	0.50
+	States SABA-only linked to worse lung function
+	—
+	Omits
+	3B.10
+	Confirms this is a modifiable, first-line treatment gap
+	0.50
+	States modifiable treatment gap requiring action
+	States gap, no modifiable framing
+	Omits
+	3B sum check: 0.50+0.50+0.50+0.50+0.50+0.50+0.50+0.50+0.50+0.50 = 5.00
+	 
+3C. PROBLEM 3 -- ALLERGIC RHINITIS, POORLY CONTROLLED (5.5 points) -- 12 inputs, sum = 5.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3C.1
+	Problem identified: allergic rhinitis
+	0.30
+	Names allergic rhinitis
+	—
+	Omits
+	3C.2
+	Control status: poorly controlled
+	0.40
+	States poorly controlled
+	States partially controlled
+	States controlled
+	3C.3
+	Active symptom: congestion
+	0.25
+	States congestion
+	—
+	Omits
+	3C.4
+	Active symptom: sneezing
+	0.25
+	States sneezing
+	—
+	Omits
+	3C.5
+	Active symptom: postnasal drip
+	0.25
+	States postnasal drip
+	—
+	Omits
+	3C.6
+	INCS use identified as inconsistent despite daily prescription
+	0.60
+	States inconsistent INCS vs. prescribed daily
+	States inconsistent use, no prescribed framing
+	Omits
+	3C.7
+	Patient unaware that INCS should be used daily (not PRN)
+	0.60
+	States patient unaware of daily INCS requirement
+	States adherence issue, no knowledge gap framing
+	Omits
+	3C.8
+	Upper-lower airway link: poorly controlled rhinitis may contribute to worsening asthma control
+	0.70
+	States rhinitis may worsen asthma control
+	States airway link, no asthma worsening framing
+	Omits
+	3C.9
+	Optimization of rhinitis management may improve both upper and lower airway symptoms
+	0.65
+	States optimizing rhinitis may improve asthma symptoms
+	States rhinitis Tx helps, no dual-airway framing
+	Omits
+	3C.10
+	Postnasal drip may act as an asthma trigger in this patient
+	0.50
+	Links postnasal drip to asthma trigger potential
+	States rhinitis linked to asthma, not specifically PND
+	Omits
+	3C.11
+	Concludes INCS adherence optimization is warranted
+	0.50
+	States INCS optimization indicated
+	States continue INCS, no optimization framing
+	Omits
+	3C.12
+	Allergic rhinitis is a recognized asthma comorbidity requiring concurrent management (GINA)
+	0.50
+	States rhinitis as asthma comorbidity requiring concurrent management
+	States comorbidity, no GINA link
+	Omits
+	3C sum check: 0.30+0.40+0.25+0.25+0.25+0.60+0.60+0.70+0.65+0.50+0.50+0.50 = 5.50
+	 
+3D. PROBLEM 4 -- ASTHMA KNOWLEDGE DEFICIT (4.5 points) -- 9 inputs, sum = 4.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3D.1
+	Problem identified: asthma knowledge deficit
+	0.40
+	Names asthma knowledge deficit
+	Notes education need, no deficit framing
+	Omits
+	3D.2
+	Specific gap: no understanding of controller vs. rescue medication distinction
+	0.60
+	States no understanding of controller vs. rescue
+	States limited understanding, no specific gap
+	Omits
+	3D.3
+	Specific gap: ICS safety concerns serve as barrier to controller acceptance
+	0.60
+	States ICS safety concern as knowledge barrier
+	States concern, no adherence barrier link
+	Omits
+	3D.4
+	No prior formal asthma education documented
+	0.50
+	States no prior formal asthma education
+	—
+	Omits
+	3D.5
+	Education is necessary to improve adherence and optimize inhaler use
+	0.50
+	States education needed to improve adherence and inhaler use
+	States education needed, one outcome only
+	Omits
+	3D.6
+	Education necessary to support long-term disease control
+	0.40
+	States education supports long-term control
+	States education important, no long-term framing
+	Omits
+	3D.7
+	Written asthma action plan identified as education deliverable
+	0.50
+	States written asthma action plan needed
+	States action plan, not written
+	Omits
+	3D.8
+	Inhaler technique education identified as required component
+	0.50
+	States inhaler technique education required
+	States technique check, no education framing
+	Omits
+	3D.9
+	ICS safety counseling identified as required component of education
+	0.50
+	States ICS safety counseling required
+	States ICS discussion, no counseling framing
+	Omits
+	3D sum check: 0.40+0.60+0.60+0.50+0.50+0.40+0.50+0.50+0.50 = 4.50
+	 
+3E. PROBLEM 5 -- PREVENTIVE CARE GAPS (6.0 points) -- 11 inputs, sum = 6.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3E.1
+	Problem identified: preventive care gaps
+	0.40
+	Names preventive care gaps
+	—
+	Omits
+	3E.2
+	Specific gap: pneumococcal vaccination not documented
+	0.80
+	States pneumococcal vaccination not documented
+	Mentions pneumococcal, no gap framing
+	Omits
+	3E.3
+	Specific gap: Tdap booster overdue
+	0.80
+	States Tdap booster overdue
+	Mentions Tdap, no overdue status
+	Omits
+	3E.4
+	Influenza vaccination: up to date (relevant to asthma per GINA)
+	0.60
+	States influenza vaccine current and asthma-relevant
+	States influenza current, no asthma link
+	Omits
+	3E.5
+	COVID-19 vaccination: up to date
+	0.30
+	States COVID vaccination current
+	—
+	Omits
+	3E.6
+	GINA recommends respiratory vaccinations (influenza, COVID-19, pneumococcal) in asthma patients
+	0.70
+	States GINA recommends respiratory vaccines for asthma
+	States vaccines recommended, no GINA link
+	Omits
+	3E.7
+	Immunization record review indicated as appropriate
+	0.40
+	States immunization review indicated
+	—
+	Omits
+	3E.8
+	Two documented gaps identified (pneumococcal and Tdap)
+	0.50
+	States two gaps: pneumococcal and Tdap
+	States gaps, names only one
+	Omits
+	3E.9
+	Preventive care optimization appropriate and actionable at this visit
+	0.70
+	States preventive care optimization appropriate and actionable
+	States optimization appropriate, not actionable
+	Omits
+	3E.10
+	Influenza vaccine relevant to asthma exacerbation risk reduction
+	0.50
+	Links influenza vaccine to asthma exacerbation risk
+	States influenza important, no exacerbation link
+	Omits
+	3E.11
+	Vaccination gaps may be addressable via referral back to PCP or pharmacy vaccination
+	0.30
+	States vaccination gap addressable via referral or pharmacy
+	States can vaccinate, no pathway
+	Omits
+	3E sum check: 0.40+0.80+0.80+0.60+0.30+0.70+0.40+0.50+0.70+0.50+0.30 = 6.00
+	 
+Section 3 check (3A, 3B, 3C, 3D, 3E): 9.0 + 5.0 + 5.5 + 4.5 + 6.0 = 30.0
+SECTION 4: PLAN (25.0 points)
+4A. ASTHMA (8.0 points) -- 14 inputs, sum = 8.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4A.1
+	Initiates ICS-formoterol combination inhaler
+	0.50
+	States initiate ICS-formoterol combination
+	States initiate ICS, no formoterol
+	Omits
+	4A.2
+	Specific agent and dose: budesonide/formoterol 160/4.5 mcg (acceptable per GINA 2025 Table 7: budesonide-formoterol 160/4.5 mcg DPI or pMDI; beclometasone-formoterol 100/6 mcg DPI or pMDI)
+	1.00
+	Names budesonide-formoterol 160/4.5 mcg (DPI or pMDI) or beclometasone-formoterol 100/6 mcg (DPI or pMDI)
+	Names ICS-formoterol, no specific agent or dose
+	Omits or names SABA-only
+	4A.3
+	Maintenance dosing: 1 inhalation twice daily
+	0.60
+	States 1 inhalation twice daily
+	States twice daily, no inhalation count
+	Incorrect
+	4A.4
+	Reliever dosing: 1 additional inhalation as needed for symptom relief
+	0.60
+	States 1 inhalation as needed for symptoms
+	States PRN dosing, no count or trigger
+	Omits
+	4A.5
+	Treatment regimen named: MART (maintenance-and-reliever therapy) / SMART
+	0.50
+	Names MART or SMART or maintenance-and-reliever therapy
+	Describes MART concept, not by name
+	Omits
+	4A.6
+	Counsel to discontinue reliance on albuterol as primary therapy
+	0.70
+	States discontinue albuterol as primary therapy
+	States reduce albuterol, not discontinue as primary
+	Omits
+	4A.7
+	Provides individualized asthma education
+	0.50
+	States provide individualized asthma education
+	States provide education, not individualized
+	Omits
+	4A.8
+	Reviews controller vs. reliever medication distinction with patient
+	0.50
+	States review controller vs. reliever distinction
+	States educate on meds, not distinction-specific
+	Omits
+	4A.9
+	Provides written asthma action plan
+	0.70
+	States provide written asthma action plan
+	States action plan, not written
+	Omits
+	4A.10
+	Reviews proper inhaler technique with patient
+	0.50
+	States review inhaler technique
+	—
+	Omits
+	4A.11
+	Addresses ICS safety concerns; discusses ICS benefits
+	0.50
+	States address ICS safety concerns and/or counsel on benefits
+	States educate on ICS, no concern-addressing
+	Omits
+	4A.12
+	Discusses role of airway inflammation in asthma pathophysiology
+	0.40
+	States discuss airway inflammation role
+	States mention inflammation, no educational framing
+	Omits
+	4A.13
+	Discusses expected treatment goals with patient
+	0.40
+	States review expected treatment goals
+	—
+	Omits
+	4A.14
+	Maximum daily inhalation limit to be discussed with patient (12 inhalations/day per GINA for budesonide-formoterol >=18 years)
+	0.60
+	States discuss max daily inhalation limit per GINA
+	States dosing limits, no max daily GINA reference
+	Omits
+	4A sum check: 0.50+1.00+0.60+0.60+0.50+0.70+0.50+0.50+0.70+0.50+0.50+0.40+0.40+0.60 = 8.00
+	 
+4B. ALLERGIC RHINITIS (4.0 points) -- 8 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4B.1
+	Continue cetirizine 10 mg PO daily
+	0.50
+	States continue cetirizine 10 mg PO daily
+	States continue cetirizine, no dose/route
+	Omits
+	4B.2
+	Continue fluticasone nasal spray
+	0.40
+	States continue fluticasone nasal spray
+	—
+	Omits
+	4B.3
+	Counsel patient regarding daily use rather than intermittent use
+	0.70
+	States counsel on daily vs. intermittent use
+	States counsel on adherence, not daily-specific
+	Omits
+	4B.4
+	Review proper nasal spray administration technique
+	0.50
+	States review nasal spray technique
+	—
+	Omits
+	4B.5
+	Encourage allergen avoidance strategies
+	0.50
+	States encourage allergen avoidance
+	States avoid triggers, not allergen-specific
+	Omits
+	4B.6
+	Link rhinitis management to asthma control improvement
+	0.50
+	States rhinitis control may improve asthma
+	States treat rhinitis, no asthma link
+	Omits
+	4B.7
+	Assess allergic rhinitis symptoms at follow-up visit
+	0.45
+	States monitor rhinitis symptoms at follow-up
+	States monitor, not rhinitis-specific
+	Omits
+	4B.8
+	Upper-lower airway concordance reinforced as treatment rationale
+	0.45
+	States managing rhinitis supports airway concordance
+	States upper-lower link, no treatment rationale
+	Omits
+	4B sum check: 0.50+0.40+0.70+0.50+0.50+0.50+0.45+0.45 = 4.00
+	 
+4C. PATIENT EDUCATION (3.5 points) -- 7 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4C.1
+	Discuss role of airway inflammation in asthma pathophysiology
+	0.50
+	States discuss airway inflammation
+	States discuss asthma, not inflammation-specific
+	Omits
+	4C.2
+	Discuss benefits of inhaled corticosteroid therapy
+	0.60
+	States discuss ICS benefits
+	States educate on ICS, not benefits-specific
+	Omits
+	4C.3
+	Address patient's specific concerns regarding steroid safety
+	0.60
+	States address steroid safety concerns
+	States discuss steroids, not concern-addressing
+	Omits
+	4C.4
+	Review expected treatment goals with patient
+	0.45
+	States review expected treatment goals
+	States discuss goals, not review-specific
+	Omits
+	4C.5
+	Review controller vs. rescue medication roles with patient
+	0.55
+	States review controller vs. rescue roles
+	States educate on meds, not role-specific
+	Omits
+	4C.6
+	Review written asthma action plan with patient
+	0.45
+	States review written asthma action plan
+	States review plan, not written qualifier
+	Omits
+	4C.7
+	Review proper inhaler technique at this visit
+	0.35
+	States review inhaler technique at this visit
+	States teach technique, no this-visit timing
+	Omits
+	4C sum check: 0.50+0.60+0.60+0.45+0.55+0.45+0.35 = 3.50
+	 
+4D. MONITORING (5.0 points) -- 10 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4D.1
+	Monitor ACT score (serial tracking to assess response)
+	0.60
+	States monitor ACT score serially
+	States monitor asthma, not ACT-specific
+	Omits
+	4D.2
+	Monitor daytime symptom frequency
+	0.50
+	States monitor daytime symptom frequency
+	—
+	Omits
+	4D.3
+	Monitor nighttime awakenings frequency
+	0.50
+	States monitor nighttime awakenings
+	—
+	Omits
+	4D.4
+	Monitor rescue inhaler (albuterol) use frequency
+	0.50
+	States monitor albuterol/reliever use frequency
+	States monitor use, not rescue-specific
+	Omits
+	4D.5
+	Monitor asthma exacerbations
+	0.50
+	States monitor exacerbations
+	—
+	Omits
+	4D.6
+	Assess inhaler technique at follow-up visit
+	0.50
+	States assess inhaler technique at follow-up
+	States check technique, no follow-up timing
+	Omits
+	4D.7
+	Assess medication adherence
+	0.50
+	States assess medication adherence
+	—
+	Omits
+	4D.8
+	Monitor allergic rhinitis symptoms
+	0.40
+	States monitor allergic rhinitis symptoms
+	States monitor symptoms, not rhinitis-specific
+	Omits
+	4D.9
+	Monitor overall response to MART therapy
+	0.50
+	States monitor response to MART/treatment
+	States monitor response, not MART-specific
+	Omits
+	4D.10
+	Note spirometry or lung function reassessment as future monitoring need
+	0.50
+	States reassess spirometry/lung function
+	States reassess breathing, not spirometry-specific
+	Omits
+	4D sum check: 0.60+0.50+0.50+0.50+0.50+0.50+0.50+0.40+0.50+0.50 = 5.00
+	 
+4E. PREVENTIVE CARE (2.5 points) -- 4 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4E.1
+	Review vaccination history
+	0.50
+	States review vaccination history
+	—
+	Omits
+	4E.2
+	Recommend pneumococcal vaccination if indicated
+	0.70
+	States recommend pneumococcal vaccination if indicated
+	States vaccinate, no conditional qualifier
+	Omits
+	4E.3
+	Recommend Tdap booster
+	0.70
+	States recommend Tdap booster
+	States vaccinate, not Tdap-specific
+	Omits
+	4E.4
+	GINA recommends annual influenza vaccination for asthma patients; current status up to date
+	0.60
+	States influenza vaccine current and GINA-recommended for asthma
+	States influenza current, no GINA link
+	Omits
+	4E sum check: 0.50+0.70+0.70+0.60 = 2.50
+	 
+4F. FOLLOW-UP (2.0 points) -- 5 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4F.1
+	Follow up in approximately 3 months
+	0.50
+	States follow-up in approximately 3 months
+	States follow-up, no timing
+	Omits
+	4F.2
+	Reassess asthma control at follow-up
+	0.35
+	States reassess asthma control
+	—
+	Omits
+	4F.3
+	Reassess inhaler technique at follow-up
+	0.35
+	States reassess inhaler technique
+	—
+	Omits
+	4F.4
+	Reassess medication adherence at follow-up
+	0.35
+	States reassess adherence
+	—
+	Omits
+	4F.5
+	Reassess symptom burden and response to SMART/MART therapy
+	0.45
+	States reassess symptom burden and SMART/MART response
+	States reassess symptoms, not SMART/MART-specific
+	Omits
+	4F sum check: 0.50+0.35+0.35+0.35+0.45 = 2.00
+	 
+Section 4 check (4A, 4B, 4C, 4D, 4E, 4F): 8.0 + 4.0 + 3.5 + 5.0 + 2.5 + 2.0 = 25.0
+SECTION 5: PRESENTATION QUALITY (5.0 points)
+5A. ORGANIZATION AND SOAP STRUCTURE (2.0 points) -- 4 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5A.1
+	Uses four-part SOAP structure (S / O / A / P)
+	0.50
+	All four sections present and labeled
+	Some sections present
+	Absent
+	5A.2
+	Subjective and objective data placed in correct sections
+	0.50
+	Correctly partitioned
+	Minor misplacement
+	Major misplacement
+	5A.3
+	Assessment presents a prioritized, numbered problem list
+	0.50
+	Numbered, prioritized list
+	Listed, not prioritized
+	Absent
+	5A.4
+	Each plan element maps to an assessed problem
+	0.50
+	All plan items mapped
+	Most mapped
+	Unmapped plan
+	5A sum check: 0.50+0.50+0.50+0.50 = 2.00
+	 
+5B. FORMATTING AND DOCUMENTATION (2.0 points) -- 4 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5B.1
+	Medications documented with drug, dose, route, and frequency
+	0.50
+	All four elements present
+	Missing one element
+	Largely incomplete
+	5B.2
+	Objective values (PFT, ACT, vitals) reported with appropriate units
+	0.50
+	Units present throughout
+	Some units missing
+	Units absent
+	5B.3
+	Goals and targets stated with numeric thresholds (ACT score, FEV1/FVC, reversibility)
+	0.50
+	Numeric goals or thresholds stated
+	Some numeric
+	Vague goals
+	5B.4
+	Plan items are specific and actionable
+	0.50
+	Specific, actionable
+	Partly vague
+	Vague
+	5B sum check: 0.50+0.50+0.50+0.50 = 2.00
+	 
+5C. PROFESSIONAL TONE AND SPECIFICITY (1.0 points) -- 3 inputs, sum = 1.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5C.1
+	Objective, professional clinical language used throughout
+	0.40
+	Professional throughout
+	Minor lapses
+	Unprofessional
+	5C.2
+	Recommendations tied to GINA 2025 guideline rationale
+	0.40
+	Rationale provided with GINA reference
+	Partial rationale
+	Absent
+	5C.3
+	Free of major factual or medication errors
+	0.20
+	No major errors
+	1 minor error
+	Major error
+	5C sum check: 0.40+0.40+0.20 = 1.00
+	 
+Section 5 check (5A, 5B, 5C): 2.0 + 2.0 + 1.0 = 5.0
+GRAND TOTAL VERIFICATION
+§
+	Section
+	Subsections
+	Points
+	1
+	SUBJECTIVE
+	1A(2.5) + 1B(5.0) + 1C(3.5) + 1D(3.0) + 1E(6.0) + 1F(1.5) + 1G(3.5)
+	25.0
+	2
+	OBJECTIVE
+	2A(5.0) + 2B(6.5) + 2C(3.5)
+	15.0
+	3
+	ASSESSMENT
+	3A(9.0) + 3B(5.0) + 3C(5.5) + 3D(4.5) + 3E(6.0)
+	30.0
+	4
+	PLAN
+	4A(8.0) + 4B(4.0) + 4C(3.5) + 4D(5.0) + 4E(2.5) + 4F(2.0)
+	25.0
+	5
+	PRESENTATION QUALITY
+	5A(2.0) + 5B(2.0) + 5C(1.0)
+	5.0
+	 
+	GRAND TOTAL
+	 
+	100.0
+	 
+GRADING SCALE
+Grade
+	Range
+	Description
+	A
+	90.0-100.0
+	Exceptional -- comprehensive, accurate, clinically actionable
+	B
+	80.0-89.9
+	Proficient -- solid coverage with minor gaps
+	C
+	70.0-79.9
+	Developing -- adequate but missing key elements
+	D
+	60.0-69.9
+	Below expectations -- significant gaps in content or analysis
+	F
+	Below 60.0
+	Unsatisfactory -- major deficiencies
+	 
+TOTAL DISCRETE INPUTS ACROSS ALL SECTIONS
+Section
+	Subsections
+	# Inputs
+	1. SUBJECTIVE
+	1A, 1B, 1C, 1D, 1E, 1F, 1G
+	79
+	2. OBJECTIVE
+	2A, 2B, 2C
+	23
+	3. ASSESSMENT
+	3A, 3B, 3C, 3D, 3E
+	62
+	4. PLAN
+	4A, 4B, 4C, 4D, 4E, 4F
+	48
+	5. PRESENTATION QUALITY
+	5A, 5B, 5C
+	11
+	TOTAL
+	 
+	223
+	 
+MODEL ANSWER SCORE: 100.0 / 100.0
+The model answer (Sarah Thompson -- Initial Visit Asthma Ambulatory Care SOAP note) earns full credit on every discrete input. Any student submission is scored against this rubric by evaluating each discrete input independently, awarding FULL, HALF, or ZERO credit per input, and summing to a final score out of 100.0.
+Source guideline for therapeutic alternatives: Global Initiative for Asthma (GINA) 2025 Report. ginasthma.org
+
+

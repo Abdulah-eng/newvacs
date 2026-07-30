@@ -1,0 +1,422 @@
+{
+  "w1_patA_master_profile": {
+    "allergies": "NKDA",
+    "tobacco": "None",
+    "alcohol": "None",
+    "familyHistory": "ASCVD · Hypertension · Type 2 diabetes · Patient Goals · When asked: · \"What are your health goals?\" · Patient responds: · \"I really want to lose some weight and avoid ending up with diabetes complications like my mom.\" · Additional goals:",
+    "otc": "OTC Medication (Hidden)"
+  },
+  "w1_patA_thursday": {
+    "allergies": "NKDA",
+    "tobacco": "Never smoker",
+    "alcohol": "States social alcohol use",
+    "familyHistory": "0.40 · Lists brother type 2 diabetes · — · Omits · 1C sum check: 0.20 + 0.20 + 0.20 + 0.20 + 0.50 + 0.30 + 0.20 + 0.20 + 0.20 + 0.50 + 0.20 + 0.20 + 0.50 + 0.40 = 4.00 · 1D. SOCIAL HISTORY (3.0 points) — 8 inputs, sum = 3.0 · # · Discrete Input · Pts",
+    "otc": "None"
+  },
+  "w1_patA_tuesday": {
+    "allergies": "NKDA",
+    "tobacco": "Never smoker",
+    "alcohol": "Alcohol frequency (weekends)",
+    "familyHistory": "0.30 · Names family CVD history · — · Omits · 3D.12 · Characterizes statin omission as an evidence-based care gap · 0.20 · States care gap · —",
+    "otc": "Notes patient-reported / OTC"
+  },
+  "w1_patA_wednesday": {
+    "allergies": "NKDA",
+    "tobacco": "Never smoker",
+    "alcohol": "Alcohol frequency (weekends)",
+    "familyHistory": "0.30 · Lists brother type 2 diabetes · — · Omits · 1C sum check: 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.40 + 0.20 + 0.20 + 0.50 + 0.30 = 4.00 · 1D. SOCIAL HISTORY (3.0 points) — 9 inputs, sum = 3.0 · # · Discrete Input · Pts",
+    "otc": "None"
+  },
+  "w1_patB_master_profile": {
+    "allergies": "NKDA",
+    "tobacco": "None",
+    "alcohol": "None",
+    "familyHistory": "Father · Hypertension · Type 2 Diabetes · Died from stroke at age 71 · Mother · Hypertension · Hyperlipidemia · Sister · Type 2 Diabetes",
+    "otc": "None"
+  },
+  "w1_patB_thursday": {
+    "allergies": "NKDA",
+    "tobacco": "Lists ASCVD risk enhancers (HTN/obesity/former tobacco/family stroke/long-standing DM)",
+    "alcohol": "Alcohol frequency (weekends)",
+    "familyHistory": "0.30 · Lists sister type 2 diabetes · — · Omits · 1C sum check: 0.30 + 0.20 + 0.30 + 0.20 + 0.20 + 0.20 + 0.30 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.60 + 0.20 + 0.20 + 0.30 = 4.00 · 1D. SOCIAL HISTORY (3.0 points) — 10 inputs, sum = 3.0 · # · Discrete Input · Pts",
+    "otc": "None"
+  },
+  "w1_patB_tuesday": {
+    "allergies": "NKDA",
+    "tobacco": "Lists elevated-risk factors (DM/HTN/obesity/former tobacco/family stroke)",
+    "alcohol": "Alcohol frequency (weekends)",
+    "familyHistory": "0.30 · Lists sister type 2 diabetes · — · Omits · 1C sum check: 0.30 + 0.20 + 0.30 + 0.20 + 0.20 + 0.20 + 0.30 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.60 + 0.20 + 0.20 + 0.30 = 4.00 · 1D. SOCIAL HISTORY (3.0 points) — 10 inputs, sum = 3.0 · # · Discrete Input · Pts",
+    "otc": "None"
+  },
+  "w1_patB_wednesday": {
+    "allergies": "NKDA",
+    "tobacco": "Lists cardiovascular risk factors (DM/HTN/obesity/former tobacco/family stroke)",
+    "alcohol": "Alcohol frequency (weekends)",
+    "familyHistory": "0.30 · Lists sister type 2 diabetes · — · Omits · 1C sum check: 0.30 + 0.20 + 0.30 + 0.20 + 0.20 + 0.20 + 0.30 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.60 + 0.20 + 0.20 + 0.30 = 4.00 · 1D. SOCIAL HISTORY (3.0 points) — 10 inputs, sum = 3.0 · # · Discrete Input · Pts",
+    "otc": "None"
+  },
+  "w1_patC_master_profile": {
+    "allergies": "Penicillin (Rash as a child)",
+    "tobacco": "None",
+    "alcohol": "Rare alcohol use",
+    "familyHistory": "Father · Myocardial infarction at age 62 · Hypertension · Mother · Type 2 Diabetes Mellitus · Chronic Kidney Disease · Brother · Myocardial infarction at age 58 · Sister",
+    "otc": "Aspirin 81 mg"
+  },
+  "w1_patC_thursday": {
+    "allergies": "Penicillin (Rash as a child)",
+    "tobacco": "Never smoker",
+    "alcohol": "States rare alcohol use",
+    "familyHistory": "0.30 · States sister HTN + T2DM · Names one condition · Omits · 1C sum check: 0.20 + 0.20 + 0.20 + 0.20 + 0.50 + 0.50 + 0.40 + 0.20 + 0.20 + 0.20 + 0.30 + 0.20 + 0.20 + 0.40 + 0.40 + 0.40 + 0.30 = 5.00 · 1D. SOCIAL HISTORY (2.5 points) — 8 inputs, sum = 2.5 · # · Discrete Input · Pts",
+    "otc": "States continue aspirin 81 mg"
+  },
+  "w1_patC_tuesday": {
+    "allergies": "Penicillin (Rash as a child)",
+    "tobacco": "Never smoker",
+    "alcohol": "States rare alcohol use",
+    "familyHistory": "0.30 · States sister HTN + T2DM · Names one condition · Omits · 1C sum check: 0.20 + 0.20 + 0.20 + 0.20 + 0.50 + 0.50 + 0.40 + 0.20 + 0.20 + 0.20 + 0.30 + 0.20 + 0.20 + 0.40 + 0.40 + 0.40 + 0.30 = 5.00 · 1D. SOCIAL HISTORY (2.5 points) — 8 inputs, sum = 2.5 · # · Discrete Input · Pts",
+    "otc": "States continue aspirin 81 mg"
+  },
+  "w1_patC_wednesday": {
+    "allergies": "Penicillin (Rash as a child)",
+    "tobacco": "Never smoker",
+    "alcohol": "States rare alcohol use",
+    "familyHistory": "0.30 · States sister HTN + T2DM · Names one condition · Omits · 1C sum check: 0.20 + 0.20 + 0.20 + 0.20 + 0.50 + 0.50 + 0.40 + 0.20 + 0.20 + 0.20 + 0.30 + 0.20 + 0.20 + 0.40 + 0.40 + 0.40 + 0.30 = 5.00 · 1D. SOCIAL HISTORY (2.5 points) — 8 inputs, sum = 2.5 · # · Discrete Input · Pts",
+    "otc": "States continue aspirin 81 mg"
+  },
+  "w2_patA_master_profile": {
+    "allergies": "NKDA",
+    "tobacco": "None",
+    "alcohol": "1–2 alcoholic beverages weekly",
+    "familyHistory": "Premature ASCVD · Hypertension · Hyperlipidemia · Patient Goals · When asked: · \"What are your health goals?\" · Patient responds: · \"I'd like to stay healthy enough to avoid heart problems and keep my kidneys working as long as possible.\" · Additional Goals",
+    "otc": "OTC Medication (Hidden)"
+  },
+  "w2_patA_thursday": {
+    "allergies": "NKDA",
+    "tobacco": "Notes residual CV risk factors (CKD/HTN/obesity/former tobacco/family ASCVD)",
+    "alcohol": "Alcohol use (1-2 drinks weekly)",
+    "familyHistory": "0.30 · Notes premature ASCVD history · — · Omits · 1C sum check: 0.30 + 0.30 + 0.60 + 0.30 + 0.30 + 0.60 + 0.20 + 0.20 + 0.20 + 0.20 + 0.50 + 0.30 = 4.00 · 1D. SOCIAL HISTORY (2.5 points) — 8 inputs, sum = 2.5 · # · Discrete Input · Pts",
+    "otc": "\"Just a multivitamin.\""
+  },
+  "w2_patA_tuesday": {
+    "allergies": "NKDA",
+    "tobacco": "Names former tobacco use",
+    "alcohol": "Alcohol frequency (weekly)",
+    "familyHistory": "0.40 · Names family ASCVD history · — · Omits · 3A.13 · LDL-C above desirable treatment thresholds · 0.40 · States LDL above threshold · —",
+    "otc": "Notes patient-reported / OTC"
+  },
+  "w2_patA_wednesday": {
+    "allergies": "NKDA",
+    "tobacco": "Notes residual CV risk factors (CKD/HTN/obesity/former tobacco/family ASCVD)",
+    "alcohol": "Alcohol use (1-2 drinks weekly)",
+    "familyHistory": "0.30 · Notes premature ASCVD history · — · Omits · 1C sum check: 0.30 + 0.30 + 0.60 + 0.30 + 0.30 + 0.60 + 0.20 + 0.20 + 0.20 + 0.20 + 0.30 = 3.50 · 1D. SOCIAL HISTORY (2.5 points) — 6 inputs, sum = 2.5 · # · Discrete Input · Pts",
+    "otc": "OTC, ibuprofen, Advil, NSAID, pain medication, arthritis, knee pain, supplements"
+  },
+  "w2_patB_master_profile": {
+    "allergies": "Penicillin (Rash as a child)",
+    "tobacco": "None",
+    "alcohol": "None",
+    "familyHistory": "ASCVD · Hypertension · Hyperlipidemia · Kidney disease · Patient Goals · When asked: · \"What are your health goals?\" · Patient responds: · \"I'd like to stay healthy enough to keep living independently.\"",
+    "otc": "None"
+  },
+  "w2_patB_thursday": {
+    "allergies": "Penicillin (Rash as a child)",
+    "tobacco": "Never smoker",
+    "alcohol": "States rare alcohol use",
+    "familyHistory": "0.20 · States sister HTN + HLD · Names one condition · Omits · 1C sum check: 0.20 + 0.20 + 0.60 + 0.30 + 0.20 + 0.20 + 0.60 + 0.20 + 0.20 + 0.40 + 0.20 + 0.20 = 3.50 · 1D. SOCIAL HISTORY (2.5 points) — 8 inputs, sum = 2.5 · # · Discrete Input · Pts",
+    "otc": "None"
+  },
+  "w2_patB_tuesday": {
+    "allergies": "Penicillin (Rash as a child)",
+    "tobacco": "Never smoker",
+    "alcohol": "States rare alcohol use",
+    "familyHistory": "0.30 · Names family ASCVD history · — · Omits · 3A.13 · Current statin regimen unlikely to provide adequate LDL reduction · 0.50 · States regimen inadequate for risk · —",
+    "otc": "\"A multivitamin.\""
+  },
+  "w2_patB_wednesday": {
+    "allergies": "Penicillin (Rash as a child)",
+    "tobacco": "Never smoker",
+    "alcohol": "States rare alcohol use",
+    "familyHistory": "0.20 · States sister HTN + HLD · Names one condition · Omits · 1C sum check: 0.20 + 0.20 + 0.60 + 0.30 + 0.20 + 0.20 + 0.60 + 0.20 + 0.20 + 0.40 + 0.20 + 0.20 = 3.50 · 1D. SOCIAL HISTORY (2.5 points) — 8 inputs, sum = 2.5 · # · Discrete Input · Pts",
+    "otc": "None"
+  },
+  "w2_patC_master_profile": {
+    "allergies": "NKDA",
+    "tobacco": "None",
+    "alcohol": "None",
+    "familyHistory": "Father · MI age 58 · Type 2 Diabetes · Mother · Type 2 Diabetes · CKD · Brother · Coronary artery disease · Social History",
+    "otc": "None"
+  },
+  "w2_patC_thursday": {
+    "allergies": "NKDA",
+    "tobacco": "Never smoker",
+    "alcohol": "States occasional alcohol use",
+    "familyHistory": "0.30 · States brother CAD · — · Omits · 1C sum check: 0.30 + 0.60 + 0.30 + 0.30 + 0.30 + 0.10 + 0.50 + 0.20 + 0.40 + 0.20 + 0.30 = 3.50 · 1D. SOCIAL HISTORY (2.5 points) — 7 inputs, sum = 2.5 · # · Discrete Input · Pts",
+    "otc": "None"
+  },
+  "w2_patC_tuesday": {
+    "allergies": "NKDA",
+    "tobacco": "Never smoker",
+    "alcohol": "States occasional alcohol use",
+    "familyHistory": "0.30 · States brother CAD · — · Omits · 1C sum check: 0.30 + 0.60 + 0.30 + 0.30 + 0.30 + 0.10 + 0.50 + 0.20 + 0.40 + 0.20 + 0.30 = 3.50 · 1D. SOCIAL HISTORY (2.5 points) — 7 inputs, sum = 2.5 · # · Discrete Input · Pts",
+    "otc": "None"
+  },
+  "w2_patC_wednesday": {
+    "allergies": "NKDA",
+    "tobacco": "Never smoker",
+    "alcohol": "States occasional alcohol use",
+    "familyHistory": "0.30 · States brother CAD · — · Omits · 1C sum check: 0.30 + 0.60 + 0.30 + 0.30 + 0.30 + 0.10 + 0.50 + 0.20 + 0.40 + 0.20 + 0.30 = 3.50 · 1D. SOCIAL HISTORY (2.5 points) — 7 inputs, sum = 2.5 · # · Discrete Input · Pts",
+    "otc": "None"
+  },
+  "w3_patA_master_profile": {
+    "allergies": "NKDA",
+    "tobacco": "None",
+    "alcohol": "None",
+    "familyHistory": "Mother: · Asthma · Father: · Hypertension · Brother: · Seasonal allergies · Patient Goals · Improve breathing during daily activities · Reduce reliance on rescue inhaler",
+    "otc": "None"
+  },
+  "w3_patA_thursday": {
+    "allergies": "NKDA",
+    "tobacco": "Never smoker",
+    "alcohol": "Alcohol use not documented",
+    "familyHistory": "Not documented · 1C.8 · Notes allergic rhinitis remains well controlled · 0.25 · States rhinitis is well controlled on current medications · States rhinitis is present without noting control status · Rhinitis control status absent · 1C.9 · Notes no prior asthma-related hospitalizations",
+    "otc": "None"
+  },
+  "w3_patA_tuesday": {
+    "allergies": "NKDA",
+    "tobacco": "Never smoker",
+    "alcohol": "States alcohol use, no frequency",
+    "familyHistory": "0.30 · States brother has seasonal allergies · — · Omits · 1C.9 · Patient knowledge deficit: does not understand controller vs. rescue distinction · 0.40 · States no understanding of controller vs. rescue · States limited knowledge, not medication-specific",
+    "otc": "SpO2 within normal range; no supplemental oxygen clinically indicated"
+  },
+  "w3_patA_wednesday": {
+    "allergies": "NKDA",
+    "tobacco": "Never smoker",
+    "alcohol": "States occasional alcohol use",
+    "familyHistory": "0.35 · States brother has seasonal allergies · — · Omits · 1C.9 · Documents all three family members (mother, father, brother) · 0.30 · Documents all three family members · Documents 2 of 3",
+    "otc": "None"
+  },
+  "w3_patB_master_profile": {
+    "allergies": "NKDA",
+    "tobacco": "None",
+    "alcohol": "None",
+    "familyHistory": "Father · COPD · Coronary artery disease · Mother · Hypertension · Brother · COPD · Patient Goals · Breathe easier during daily activities",
+    "otc": "None"
+  },
+  "w3_patB_thursday": {
+    "allergies": "NKDA",
+    "tobacco": "3D. PROBLEM 4 — FORMER TOBACCO USE: STABLE ABSTINENCE sum check: 0.85 + 0.85 + 0.85 + 0.85 + 0.80 + 0.80 = 5.00",
+    "alcohol": "States occasional alcohol use",
+    "familyHistory": "1D. SOCIAL HISTORY (3.0 points) — 10 inputs, sum = 3.0 · # · Discrete Input · Pts · Full Credit · Half Credit · Zero Credit · 1D.1 · Marital status: married",
+    "otc": "None"
+  },
+  "w3_patB_tuesday": {
+    "allergies": "NKDA",
+    "tobacco": "States patient quit smoking 5 years ago",
+    "alcohol": "States occasional alcohol",
+    "familyHistory": "0.40 · Lists brother COPD · — · Omits · 1C.12 · No recent hospitalizations documented · 0.30 · States no recent hospitalizations · —",
+    "otc": "SpO₂ 95% noted as adequate at rest (above 88% threshold for supplemental O₂)"
+  },
+  "w3_patB_wednesday": {
+    "allergies": "NKDA",
+    "tobacco": "Does not counsel on tobacco cessation (patient is currently abstinent)",
+    "alcohol": "States alcohol use pattern (occasional)",
+    "familyHistory": "0.50 · All elements of this criterion are present and match the model note. · Criterion partially present; one required element missing or imprecisely stated. · Criterion absent or contains information not in the model note. · Subsection 1.3 Sum · 4.00 · Social History  [3.5 pts] · 1D.1 · States marital status (married)",
+    "otc": "None"
+  },
+  "w3_patC_master_profile": {
+    "allergies": "NKDA",
+    "tobacco": "None",
+    "alcohol": "Rare alcohol use",
+    "familyHistory": "Father · COPD · Coronary artery disease · Mother · Asthma · Allergic rhinitis · Sister · Asthma · Patient Goals",
+    "otc": "Calcium Carbonate/Vitamin D"
+  },
+  "w3_patC_thursday": {
+    "allergies": "NKDA",
+    "tobacco": "Quit smoking noted without timeframe",
+    "alcohol": "Alcohol use absent",
+    "familyHistory": "5.0 pts · # · Discrete Input · Pts · Full Credit (1.0×) · Half Credit (0.5×) · Zero Credit (0×) · 1C.1 · Lists asthma as PMH",
+    "otc": "Supplementation continued without patient education element"
+  },
+  "w3_patC_tuesday": {
+    "allergies": "NKDA",
+    "tobacco": "States smoking history, no pack-year detail",
+    "alcohol": "States alcohol use, no frequency qualifier",
+    "familyHistory": "0.45 · Notes multiple first-degree relatives with asthma supporting atopic predisposition · Notes family asthma, no atopic/predisposition framing · Omits · 1C sum check: 0.40 + 0.40 + 0.25 + 0.40 + 0.40 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.45 = 3.80 · 1D. SOCIAL HISTORY (3.00 points) — 10 inputs, sum = 3.00 · # · Discrete Input · Pts",
+    "otc": "States continue calcium supplement, no vitamin D or specifics"
+  },
+  "w3_patC_wednesday": {
+    "allergies": "NKDA",
+    "tobacco": "Smoking cessation duration stated (quit 12 years ago)",
+    "alcohol": "States uses alcohol, no frequency qualifier",
+    "familyHistory": "0.25 · States sister with asthma · — · Omits · 1C.12 · Asthma onset specified as childhood (not merely 'history of asthma') · 0.25 · States childhood onset explicitly · States long-standing, no childhood specification",
+    "otc": "States continue bone supplements without naming agents"
+  },
+  "w4_patA_master_profile": {
+    "allergies": "NKDA",
+    "tobacco": "Quit smoking 5 years ago",
+    "alcohol": "Drinks 1–2 alcoholic beverages on weekends",
+    "familyHistory": "Father · Hypertension · Myocardial infarction at age 62 · Mother · Type 2 diabetes mellitus · Social History · Married · Lives with spouse · Works full-time as an accountant",
+    "otc": "None"
+  },
+  "w4_patA_thursday": {
+    "allergies": "NKDA",
+    "tobacco": "Smoking cessation: quit 5 years ago",
+    "alcohol": "All social history elements addressed (marital, living, occupation, tobacco, alcohol, illicit, activity)",
+    "familyHistory": "— · Adds unsupported FH · 1C sum check: 0.50 + 0.20 + 0.20 + 0.20 + 0.30 + 0.25 + 0.60 + 0.50 + 0.30 + 0.40 + 0.55 = 4.00 · 1D. SOCIAL HISTORY (3.0 points) — 11 inputs, sum = 3.0 · # · Discrete Input · Pts · Full Credit · Half Credit",
+    "otc": "None"
+  },
+  "w4_patA_tuesday": {
+    "allergies": "NKDA",
+    "tobacco": "States tobacco quit duration (5 years ago)",
+    "alcohol": "Omits alcohol use",
+    "familyHistory": "8 · 4.00 · S1.4 · 1.4  Social History · 9 · 3.50 · S1.5 · 1.5  Medications / Allergies / Immunizations · 13",
+    "otc": "None"
+  },
+  "w4_patA_wednesday": {
+    "allergies": "NKDA",
+    "tobacco": "States patient quit smoking 5 years ago",
+    "alcohol": "Documents all six social history elements (marital status, household, occupation, tobacco, alcohol, illicit drugs)",
+    "familyHistory": "3.5 pts · # · Discrete Input · Pts · Full Credit · Half Credit · Zero Credit · 1C.1.1 · Lists PMH: Heart Failure with Reduced Ejection Fraction",
+    "otc": "None"
+  },
+  "w4_patB_master_profile": {
+    "allergies": "NKDA",
+    "tobacco": "None",
+    "alcohol": "None",
+    "familyHistory": "Father · Ischemic stroke at age 70 · Mother · Heart failure · Sister · Hypertension · Social History · Lives alone · Retired administrative assistant",
+    "otc": "None"
+  },
+  "w4_patB_thursday": {
+    "allergies": "NKDA",
+    "tobacco": "Tobacco status: former smoker",
+    "alcohol": "States rare alcohol use",
+    "familyHistory": "Omits · 1C sum check:  0.25 + 0.50 + 0.25 + 0.20 + 0.20 + 0.25 + 0.60 + 0.40 + 0.35 + 0.50  =  3.50 · 1D.  SOCIAL HISTORY  (2.5 points) · # · Discrete Input · Pts · Full Credit · Half Credit · Zero Credit",
+    "otc": "None"
+  },
+  "w4_patB_tuesday": {
+    "allergies": "NKDA",
+    "tobacco": "Tobacco status: former smoker",
+    "alcohol": "States uses alcohol, no qualifier",
+    "familyHistory": "— · Omits · 3B sum check: 0.40 + 0.60 + 0.35 + 0.40 + 0.35 + 0.45 + 0.60 + 0.50 + 0.35 + 0.45 + 0.50 + 0.50 + 0.50 + 0.50 + 0.40 + 0.35 + 0.30 = 7.50 · 3C. PROBLEM 3 — COST-RELATED MEDICATION NONADHERENCE (5.5 points) — 14 inputs, sum = 5.5 · # · Discrete Input · Pts · Full Credit · Half Credit",
+    "otc": "None"
+  },
+  "w4_patB_wednesday": {
+    "allergies": "NKDA",
+    "tobacco": "Tobacco status: former smoker",
+    "alcohol": "States uses alcohol, no frequency",
+    "familyHistory": "10 · 3.5 · 1D. SOCIAL HISTORY · 7 · 2.5 · 1E. CURRENT MEDICATIONS, ALLERGIES, AND IMMUNIZATIONS · 21 · 6.5 · 1F. REVIEW OF SYSTEMS / RELEVANT NEGATIVES",
+    "otc": "Recommend aspirin instead of anticoagulation."
+  },
+  "w4_patC_master_profile": {
+    "allergies": "NKDA",
+    "tobacco": "None",
+    "alcohol": "Rare alcohol use",
+    "familyHistory": "Father · Myocardial infarction age 58 · Mother · Ischemic stroke age 72 · Brother · Coronary artery disease · Social History · Lives with spouse · Retired engineer",
+    "otc": "None"
+  },
+  "w4_patC_thursday": {
+    "allergies": "NKDA",
+    "tobacco": "Tobacco: former smoker",
+    "alcohol": "States uses alcohol, no frequency",
+    "familyHistory": "# · Discrete Input · Pts · Full Credit · Half Credit · Zero Credit · 1C.1 · PMH: Heart Failure with Reduced Ejection Fraction · 0.25",
+    "otc": "None"
+  },
+  "w4_patC_tuesday": {
+    "allergies": "NKDA",
+    "tobacco": "States history of tobacco without current vs former distinction",
+    "alcohol": "States alcohol use without frequency qualifier",
+    "familyHistory": "# · Discrete Input · Pts · Full Credit · Half Credit · Zero Credit · 1C.1 · Lists HFrEF as PMH with diagnosis date (4 years ago) · 0.32",
+    "otc": "None"
+  },
+  "w4_patC_wednesday": {
+    "allergies": "NKDA",
+    "tobacco": "Tobacco status: former smoker",
+    "alcohol": "States uses alcohol, no frequency qualifier",
+    "familyHistory": "0.25 · Lists brother CAD · — · Omits · 1C sum check: 0.30+0.40+0.30+0.25+0.35+0.30+0.30+0.25+0.20+0.20+0.20+0.35+0.35+0.25 = 4.00 · 1D. SOCIAL HISTORY (2.0 points) — 6 inputs, sum = 2.0 · # · Discrete Input · Pts",
+    "otc": "None"
+  },
+  "w5_patA_master_profile": {
+    "allergies": "NKDA",
+    "tobacco": "“Will I ever be able to quit smoking?”",
+    "alcohol": "Drinks 1–2 alcoholic beverages per week",
+    "familyHistory": "Mother · Major Depressive Disorder · Successfully treated with sertraline · Father · Hypertension · Maternal Grandmother · Generalized Anxiety Disorder · Social History · Married",
+    "otc": "None"
+  },
+  "w5_patA_thursday": {
+    "allergies": "NKDA",
+    "tobacco": "Six weeks of tobacco abstinence = early remission (sustained remission requires ≥12 months)",
+    "alcohol": "States drinks alcohol without quantity or frequency",
+    "familyHistory": "0.30 · States maternal (not paternal) grandmother · - · Omits · 1C.10 · No known drug allergies (NKDA) documented · 0.30 · States NKDA · -",
+    "otc": "Names daily multivitamin"
+  },
+  "w5_patA_tuesday": {
+    "allergies": "NKDA",
+    "tobacco": "Stage of change for tobacco: contemplative (acknowledges benefits but not ready to set quit date)",
+    "alcohol": "Alcohol: 1-2 beverages weekly",
+    "familyHistory": "0.45 · States positive family response history · — · Omits · 4A.6 · Cites favorable safety profile as rationale · 0.35 · States favorable safety profile · —",
+    "otc": "Names daily multivitamin"
+  },
+  "w5_patA_wednesday": {
+    "allergies": "NKDA",
+    "tobacco": "Future visit focus: achievement of symptom remission, long-term maintenance, tobacco cessation, and relapse prevention plan",
+    "alcohol": "States 1–2 alcoholic beverages weekly",
+    "familyHistory": "— · Omits · 1C sum check: 0.25 + 0.25 + 0.25 + 0.25 + 0.30 + 0.40 + 0.30 + 0.50 + 0.50 = 3.00 · 1D. SOCIAL HISTORY (3.5 points) — 10 inputs, sum = 3.5 · # · Discrete Input · Pts · Full Credit · Half Credit",
+    "otc": "Lists daily multivitamin"
+  },
+  "w5_patB_master_profile": {
+    "allergies": "NKDA",
+    "tobacco": "Quit smoking someday",
+    "alcohol": "Occasional alcohol use",
+    "familyHistory": "Mother · Major Depressive Disorder · Father · Alcohol Use Disorder · Sister · Generalized Anxiety Disorder · Social History · Divorced · Lives with two children",
+    "otc": "None"
+  },
+  "w5_patB_thursday": {
+    "allergies": "NKDA",
+    "tobacco": "Tobacco use: one to two cigarettes weekly",
+    "alcohol": "States occasional alcohol",
+    "familyHistory": "0.30 · All three relatives documented · Two documented · One or none · ✓ 1C sum check: 0.40 + 0.40 + 0.40 + 0.30 + 0.50 + 0.40 + 0.40 + 0.40 + 0.30 = 3.50 · 1D. SOCIAL HISTORY (3.5 points) — 11 inputs, sum = 3.5 · # · Discrete Input · Pts",
+    "otc": "None"
+  },
+  "w5_patB_tuesday": {
+    "allergies": "NKDA",
+    "tobacco": "At follow-up: reassess tobacco use and readiness to quit",
+    "alcohol": "States occasional alcohol use",
+    "familyHistory": "— · Absent · 1C sum check: 0.30 + 0.30 + 0.25 + 0.25 + 0.35 + 0.35 + 0.35 + 0.35 + 0.50 + 0.50 + 0.25 + 0.25 = 4.00 · 1D. SOCIAL HISTORY (3.0 points) — 11 inputs, sum = 3.0 · # · Discrete Input · Pts · Full Credit · Half Credit",
+    "otc": "None"
+  },
+  "w5_patB_wednesday": {
+    "allergies": "NKDA",
+    "tobacco": "Future visits focus: sustained treatment, remission, adherence behaviors, long-term BH and tobacco cessation plans",
+    "alcohol": "States occasional alcohol use",
+    "familyHistory": "1D. SOCIAL HISTORY / SDOH / IMMUNIZATIONS (3.0 points) — 9 inputs, sum = 3.0 · # · Discrete Input · Pts · Full Credit · Half Credit · Zero Credit · 1D.1 · Illicit drug use: denies",
+    "otc": "None"
+  },
+  "w5_patC_master_profile": {
+    "allergies": "NKDA",
+    "tobacco": "Eventually quit smoking",
+    "alcohol": "Occasional alcohol use",
+    "familyHistory": "Mother · Major Depressive Disorder · Father · Alcohol Use Disorder · Brother · Major Depressive Disorder · Social History · Married · Lives with spouse",
+    "otc": "None"
+  },
+  "w5_patC_thursday": {
+    "allergies": "NKDA",
+    "tobacco": "Tobacco: increased confidence in ability to quit completely",
+    "alcohol": "States occasional alcohol use",
+    "familyHistory": "0.40 · States brother MDD · — · Omits · 1C.9 · Notes pattern of psychiatric illness in family (MDD in multiple first-degree relatives) · 0.25 · States pattern of MDD across family members · —",
+    "otc": "None"
+  },
+  "w5_patC_tuesday": {
+    "allergies": "NKDA",
+    "tobacco": "Smoking quantity: approximately one pack per day",
+    "alcohol": "States occasional alcohol use",
+    "familyHistory": "0.35 · States brother MDD · States sibling depression · Omits · 1C.9 · Suicide risk negative: denies desire to die · 0.20 · States denies desire to die · —",
+    "otc": "None"
+  },
+  "w5_patC_wednesday": {
+    "allergies": "NKDA",
+    "tobacco": "Prior tobacco: approximately one pack per day",
+    "alcohol": "States occasional alcohol",
+    "familyHistory": "Omits · 1C sum check: 0.35 + 0.30 + 0.30 + 0.35 + 0.30 + 0.30 + 0.35 + 0.30 + 0.45 = 3.00 · 1D. SOCIAL HISTORY (3.0 points) · 1D — 11 inputs, sum = 3.0 · # · Discrete Input · Pts · Full Credit · Half Credit",
+    "otc": "None"
+  }
+}

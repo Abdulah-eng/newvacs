@@ -1,0 +1,2427 @@
+﻿SECTION 9: PATIENT B – THURSDAY 6-MONTH FOLLOW-UP
+Encounter Overview
+Encounter Type
+Ambulatory Care Pharmacist Follow-Up Visit
+Visit Length
+30-minute collaborative practice visit
+Week
+Week 3 – Thursday
+Difficulty Level
+Advanced APPE Student
+Primary Learning Objectives
+Students should be able to:
+Evaluate long-term COPD control 
+Assess COPD exacerbation history 
+Interpret blood eosinophil counts 
+Apply GOLD 2026 escalation recommendations 
+Differentiate symptom burden from exacerbation risk 
+Determine when escalation to triple therapy is appropriate 
+Assess adherence and inhaler technique 
+Evaluate preventive care opportunities 
+Construct a complete SOAP note 
+Develop an appropriate monitoring and follow-up strategy 
+1. Patient Snapshot
+Robert "Bob" Jenkins is a 67-year-old White male presenting for a 6-month ambulatory care pharmacy follow-up visit for COPD management.
+At his initial visit, he was identified as having symptomatic GOLD Group B COPD and had never initiated previously prescribed maintenance therapy due to cost concerns and limited understanding of treatment.
+At his 3-month follow-up, poor adherence to LABA/LAMA therapy was identified and addressed.
+Since his previous visit, adherence has improved significantly; however, he has experienced multiple COPD exacerbations.
+2. Chief Concern
+"My breathing is a little better overall, but I've had a couple flare-ups."
+3. History of Present Illness
+Bob is a 67-year-old male with COPD, hypertension, and hyperlipidemia presenting for a 6-month follow-up medication management visit.
+Since his previous visit, he reports improved consistency with his maintenance inhaler.
+He reports:
+Daily use of umeclidinium/vilanterol 
+Improved adherence 
+Mild improvement in breathing 
+Persistent exertional dyspnea 
+He reports two COPD exacerbations during the past three months.
+The first exacerbation required:
+Oral corticosteroids 
+Antibiotics 
+The second exacerbation required:
+Oral corticosteroids 
+Urgent care evaluation 
+He denies hospitalization for either event.
+He reports recovery following both exacerbations but feels his breathing remains limited.
+He denies:
+Chest pain 
+Hemoptysis 
+Syncope 
+Medication access issues 
+He reports continued smoke-free status.
+4. Past Medical History
+COPD
+Diagnosed 4 years ago 
+Hypertension
+Diagnosed 12 years ago 
+Hyperlipidemia
+Diagnosed 10 years ago 
+5. Medication List
+Umeclidinium/Vilanterol (Anoro Ellipta)
+1 inhalation daily 
+Albuterol HFA
+2 puffs every 4–6 hours as needed 
+Lisinopril 20 mg daily
+Atorvastatin 20 mg daily
+6. Allergies
+Drug Allergies
+NKDA
+Food Allergies
+None
+7. Vitals
+Today's Vitals
+BP: 128/76 mmHg
+HR: 82 bpm
+RR: 18
+Temp: 98.2°F
+SpO₂: 94% on room air
+Weight: 89 kg
+Height: 5'10"
+BMI: 28.1 kg/m²
+8. Laboratory Data
+Pulmonary Function Testing
+Post-Bronchodilator FEV1/FVC
+0.57
+Post-Bronchodilator FEV1
+60% predicted
+COPD Assessment Test (CAT)
+Score: 17
+Interpretation
+Persistent symptom burden
+CBC with Differential
+Absolute Eosinophil Count
+310 cells/µL
+Exacerbation History
+Past 3 Months
+Two moderate COPD exacerbations 
+Past 12 Months
+Three moderate COPD exacerbations 
+No hospitalizations
+9. Immunizations
+Influenza
+Received this season
+COVID
+Completed primary series and most recent booster
+PCV20
+Not documented
+RSV Vaccine
+Not documented
+Tdap
+Last documented 13 years ago
+10. Social History
+Tobacco
+Former smoker
+45 pack-year history
+Quit 5 years ago
+Alcohol
+Occasional beer consumption
+Exercise
+Limited by dyspnea
+Occupation
+Retired automotive mechanic
+Living Situation
+Lives with spouse
+11. Family History
+Father
+COPD
+Coronary artery disease
+Mother
+Hypertension
+Brother
+COPD
+12. Problem List
+Active Problems
+COPD with persistent symptoms 
+Frequent COPD exacerbations 
+Elevated blood eosinophil count 
+Persistent activity limitation 
+Preventive care gaps 
+13. Pharmacist Visit Notes
+Referral Reason
+Six-month COPD follow-up after adherence optimization.
+Key Concerns
+Assess exacerbation burden 
+Assess symptom burden 
+Evaluate adherence 
+Apply GOLD escalation recommendations 
+Evaluate eosinophil count 
+Determine need for triple therapy 
+Assess preventive care gaps 
+14. Follow-Up Tasks Expected From Student
+Students should consider:
+COPD
+Assess symptom burden 
+Assess activity limitation 
+Assess rescue inhaler use 
+Assess exacerbation frequency 
+Assess adherence 
+Escalation Assessment
+Interpret eosinophil count 
+Apply GOLD recommendations 
+Evaluate appropriateness of triple therapy 
+Medication Assessment
+Assess tolerability 
+Assess inhaler access 
+Assess inhaler technique 
+Preventive Care
+Assess vaccine eligibility 
+Evaluate preventive care gaps 
+Monitoring
+CAT score 
+Exacerbations 
+Rescue inhaler use 
+Adherence 
+Eosinophils 
+Symptom burden 
+Follow-Up
+Develop an appropriate monitoring plan 
+Establish follow-up after therapy escalation
+
+SECTION 10: AI PATIENT Q&A GUIDE
+Patient B – Thursday 6-Month Follow-Up
+Purpose
+This document serves as the AI patient behavior guide.
+Responses should sound like a real patient, not a clinician.
+The patient should not volunteer hidden information unless appropriately prompted.
+Reason for Visit
+Student:
+"What brings you in today?"
+Patient:
+"I'm here for my COPD follow-up."
+Student:
+"What are you hoping to get out of today's visit?"
+Patient:
+"I'd like to figure out why I've still had some flare-ups."
+Symptoms
+Student:
+"How has your breathing been since your last visit?"
+Patient:
+"A little better overall."
+Student:
+"Can you tell me more?"
+Patient:
+"I still get winded pretty easily."
+Student:
+"What activities cause symptoms?"
+Patient:
+"Walking uphill, carrying things, yard work."
+Exacerbation History
+Student:
+"Have you had any COPD flare-ups since your last visit?"
+Patient:
+"Yes."
+Student:
+"How many?"
+Patient:
+"Two."
+Student:
+"What happened during the first one?"
+Patient:
+"My breathing got worse and I needed antibiotics and steroids."
+Student:
+"What about the second one?"
+Patient:
+"I ended up going to urgent care and got steroids again."
+Student:
+"Were you hospitalized?"
+Patient:
+"No."
+Medication Use
+Student:
+"What medications are you taking now?"
+Patient:
+"My Anoro inhaler, albuterol, lisinopril, and atorvastatin."
+Student:
+"How often are you taking your Anoro?"
+Patient:
+"Every day."
+Adherence (Hidden Information)
+DO NOT volunteer unless assessed.
+Student:
+"Have you been missing doses?"
+Patient:
+"No."
+Student:
+"How often are you taking it?"
+Patient:
+"Every day."
+Student:
+"What changed?"
+Patient:
+"The reminders helped."
+Inhaler Technique
+Student:
+"Can you show me how you use your inhaler?"
+Patient:
+"Sure."
+If technique is assessed:
+Patient demonstrates appropriate inhaler technique.
+Rescue Inhaler Use
+Student:
+"How often are you using albuterol?"
+Patient:
+"Usually once a day."
+Student:
+"Has that improved?"
+Patient:
+"Some."
+Cost and Access
+Student:
+"Any trouble getting medications?"
+Patient:
+"No."
+Student:
+"Any affordability concerns?"
+Patient:
+"No."
+Smoking History
+Student:
+"Are you still smoke free?"
+Patient:
+"Yes."
+Patient Frustration (Hidden Information)
+DO NOT volunteer.
+Student:
+"How do you feel about your COPD treatment?"
+Patient:
+"I've been trying to do everything right."
+Student:
+"What do you mean by that?"
+Patient:
+"I'm taking the inhaler every day and still having flare-ups."
+Goals
+Student:
+"What health goal is most important to you?"
+Patient:
+"I want fewer flare-ups."
+Student:
+"Anything else?"
+Patient:
+"I want to stay out of the hospital."
+Concerns
+Student:
+"What concerns you most?"
+Patient:
+"My breathing getting worse."
+Student:
+"Anything else?"
+Patient:
+"I don't want to lose my independence."
+Understanding of COPD
+Student:
+"What do you understand about your COPD now?"
+Patient:
+"I understand a lot more than I used to."
+Student:
+"What do you think causes flare-ups?"
+Patient:
+"I'm not always sure."
+Hidden Information Summary for AI
+The AI should NEVER volunteer these without prompting:
+Adherence is now excellent 
+Technique is appropriate 
+Cost is no longer a barrier 
+Two moderate exacerbations occurred 
+Patient is frustrated because he has been adherent 
+Patient wants to avoid future exacerbations 
+Independence remains a major motivator 
+SECTION 10A: HIDDEN INFORMATION TRIGGER MAP
+Patient B – Thursday 6-Month Follow-Up
+Hidden Fact #1: Excellent Adherence
+Information to Reveal
+Patient uses Anoro daily.
+Trigger Keywords
+adherence 
+compliance 
+missed doses 
+medication use 
+Appropriate AI Response
+"I've been taking it every day."
+Information Not Volunteered
+Patient does not automatically discuss adherence.
+Hidden Fact #2: Correct Technique
+Information to Reveal
+Patient demonstrates proper inhaler technique.
+Trigger Keywords
+technique 
+inhaler demonstration 
+administration 
+Appropriate AI Response
+Patient demonstrates proper technique.
+Information Not Volunteered
+Technique must be assessed.
+Hidden Fact #3: Multiple Exacerbations
+Information to Reveal
+Patient experienced two moderate COPD exacerbations.
+Trigger Keywords
+flare-ups 
+exacerbations 
+steroids 
+antibiotics 
+urgent care 
+Appropriate AI Response
+"I've had two flare-ups since my last visit."
+Information Not Volunteered
+Patient does not initially provide details.
+Hidden Fact #4: Frustration Despite Adherence
+Information to Reveal
+Patient feels he has done everything asked of him.
+Trigger Keywords
+concerns 
+frustration 
+treatment 
+expectations 
+Appropriate AI Response
+"I've been trying to do everything right."
+Information Not Volunteered
+Patient only discusses this if explored.
+Hidden Fact #5: Cost Barrier Resolved
+Information to Reveal
+Cost no longer affects medication use.
+Trigger Keywords
+affordability 
+cost 
+insurance 
+Appropriate AI Response
+"Cost isn't really an issue anymore."
+Information Not Volunteered
+Patient only discusses this if asked.
+
+
+SECTION 11: GOLD-STANDARD AMBULATORY CARE PHARMACIST SOAP NOTE
+Patient B – Thursday 6-Month Follow-Up
+SUBJECTIVE
+CC:
+Robert "Bob" Jenkins is a 67-year-old male presenting to the ambulatory care pharmacy clinic for a 6-month follow-up visit for COPD management after initiation of LABA/LAMA therapy and subsequent adherence intervention.
+HPI:
+The patient reports mild overall improvement in respiratory symptoms compared with his initial visit but remains frustrated by recent COPD flare-ups.
+He reports continued exertional dyspnea during activities such as climbing stairs, carrying groceries, yard work, and household projects. While he believes his breathing is somewhat better than it was six months ago, he continues to experience meaningful limitations in daily activities.
+The patient reports two COPD exacerbations since his previous visit.
+The first exacerbation occurred approximately 10 weeks ago and required treatment with oral corticosteroids and antibiotics prescribed by his primary care provider.
+The second exacerbation occurred approximately 4 weeks ago and resulted in an urgent care visit where he received a short course of oral corticosteroids.
+He denies hospitalization for either exacerbation.
+The patient reports full recovery following both episodes but remains concerned about the frequency of flare-ups.
+Unlike previous visits, he reports excellent adherence to umeclidinium/vilanterol and states that he has been taking the medication every day as prescribed. He attributes improved adherence to medication reminders and incorporation of the inhaler into his daily routine.
+He denies difficulty obtaining medications and denies current affordability concerns.
+The patient reports using albuterol approximately once daily for symptom relief.
+He remains tobacco free and denies any desire to restart smoking.
+He expresses concern regarding future COPD progression and hopes to reduce future exacerbations and maintain his independence.
+No hospitalizations.
+No emergency department visits.
+Past Medical History
+COPD diagnosed 4 years ago
+Hypertension diagnosed 12 years ago
+Hyperlipidemia diagnosed 10 years ago
+Past Surgical History
+Appendectomy
+Family History
+Father: COPD, coronary artery disease
+Mother: hypertension
+Brother: COPD
+Social History
+Married
+Retired automotive mechanic
+Lives with spouse
+Former smoker
+45 pack-year smoking history
+Quit 5 years ago
+Occasional alcohol use
+Denies recreational drug use
+Physical activity limited by dyspnea
+Current Medications
+Umeclidinium/Vilanterol (Anoro Ellipta)
+1 inhalation daily 
+Albuterol HFA
+2 puffs every 4–6 hours as needed 
+Lisinopril 20 mg PO daily
+Atorvastatin 20 mg PO daily
+Allergies
+No known drug allergies
+Immunization History
+Influenza vaccine up to date
+COVID vaccination up to date
+No documented pneumococcal vaccination
+No documented RSV vaccination
+Tdap overdue
+OBJECTIVE
+Vitals
+BP: 128/76 mmHg
+HR: 82 bpm
+Weight: 89 kg
+Height: 70 inches
+BMI: 28.1 kg/m²
+RR: 18 breaths/min
+SpO₂: 94% on room air
+Pulmonary Function Testing
+Post-Bronchodilator FEV1/FVC: 0.57
+Post-Bronchodilator FEV1: 60% predicted
+COPD Assessment Test (CAT)
+CAT Score: 17
+Interpretation:
+Persistent symptom burden despite maintenance therapy.
+CBC with Differential
+Absolute Eosinophil Count:
+310 cells/µL
+Exacerbation History
+Past 3 Months:
+Two moderate COPD exacerbations 
+Past 12 Months:
+Three moderate COPD exacerbations 
+No COPD-related hospitalizations
+ASSESSMENT
+1. Chronic Obstructive Pulmonary Disease (COPD) – Persistent Symptoms and Frequent Exacerbations Despite Optimized LABA/LAMA Therapy
+The patient has established COPD with persistent symptom burden and recurrent moderate exacerbations despite optimized guideline-directed therapy.
+At the previous follow-up visit, ongoing symptoms were primarily attributed to poor adherence. Since that time, adherence barriers have been successfully addressed. The patient reports daily use of umeclidinium/vilanterol (Anoro Ellipta), demonstrates understanding of maintenance inhaler therapy, and denies medication affordability concerns.
+Despite optimized adherence, he has experienced two moderate COPD exacerbations during the previous three months and three moderate exacerbations during the past year. Both recent exacerbations required systemic corticosteroid therapy, and one additionally required antibiotic treatment.
+The patient continues to report activity-limiting dyspnea and has a CAT score of 17, indicating persistent symptom burden.
+According to the GOLD 2026 Report, patients who continue to experience exacerbations while receiving LABA/LAMA therapy should be evaluated for escalation to inhaled corticosteroid-containing therapy. Because adherence and inhaler technique have been optimized, persistent exacerbations now represent true treatment failure rather than implementation failure.
+Escalation to single-inhaler triple therapy is warranted.
+2. Elevated Blood Eosinophil Count Supporting Inhaled Corticosteroid Therapy
+The patient's absolute eosinophil count is 310 cells/µL.
+According to GOLD 2026, blood eosinophil counts may be used to estimate the likelihood of response to inhaled corticosteroid-containing therapy for prevention of future COPD exacerbations.
+Patients with eosinophil counts greater than 300 cells/µL derive the greatest reduction in exacerbation risk from ICS-containing regimens.
+Given this patient's recurrent exacerbations despite LABA/LAMA therapy and elevated eosinophil count, escalation to triple therapy is expected to provide clinically meaningful benefit.
+3. Medication Adherence – Improved
+At the previous follow-up visit, the patient reported using his maintenance inhaler only three to four days per week.
+Following adherence counseling and implementation of reminder strategies, he now reports consistent daily use of umeclidinium/vilanterol.
+Medication adherence no longer appears to be the primary contributor to ongoing symptoms or exacerbations.
+Continued reinforcement of adherence strategies remains appropriate.
+4. Former Tobacco Use – Stable
+The patient remains tobacco free after quitting smoking five years ago.
+Smoking cessation remains the most effective intervention for slowing COPD progression and reducing future respiratory complications.
+Continued abstinence should be reinforced.
+5. Preventive Care Gaps
+Potential preventive care gaps include:
+Pneumococcal vaccination 
+RSV vaccination 
+Tdap booster 
+Preventive care optimization remains appropriate.
+PLAN
+COPD
+Discontinue umeclidinium/vilanterol (Anoro Ellipta) 62.5 mcg/25 mcg inhalation powder.
+Initiate fluticasone furoate/umeclidinium/vilanterol (Trelegy Ellipta) 100 mcg/62.5 mcg/25 mcg.
+Inhale 1 puff by mouth once daily.
+Continue albuterol HFA
+Inhale 2 puffs every 4–6 hours as needed for shortness of breath or wheezing. 
+Provide inhaler-specific education regarding Trelegy Ellipta administration.
+Review proper inhaler technique.
+Counsel patient to rinse mouth and spit after each dose to reduce risk of oral candidiasis.
+Discuss expected benefits of triple therapy, including:
+Reduction in COPD exacerbations
+Improved symptom control 
+Reduced rescue inhaler use
+Improved quality of life 
+Exacerbation Prevention
+Review COPD action plan.
+Educate patient regarding early recognition of worsening respiratory symptoms.
+Encourage prompt evaluation for future COPD exacerbations.
+Discuss infection prevention strategies, including vaccination and avoidance of respiratory illness exposures when possible.
+Medication Adherence
+Continue current medication reminder system.
+Reinforce importance of daily Trelegy Ellipta use.
+Encourage patient to continue incorporating inhaler administration into his daily routine.
+Tobacco Abstinence
+Congratulate patient on continued smoking cessation.
+Encourage lifelong tobacco abstinence.
+Monitoring
+Monitor:
+CAT score 
+Dyspnea symptoms 
+Activity tolerance 
+Rescue inhaler use 
+COPD exacerbation frequency 
+Medication adherence 
+Inhaler technique 
+Oral candidiasis 
+Dysphonia 
+Pneumonia risk 
+Triple therapy tolerability 
+Preventive Care
+Recommend PCV20 vaccination if not previously received.
+Recommend RSV vaccination.
+Recommend Tdap booster.
+Review immunization history and update vaccinations as appropriate.
+Follow-Up
+Follow up in approximately 3 months.
+Assess response to Trelegy Ellipta.
+Reassess CAT score and symptom burden.
+Reassess COPD exacerbation frequency.
+Evaluate medication adherence and inhaler technique.
+Monitor for ICS-related adverse effects.
+Continue longitudinal COPD management and reassess need for future therapy adjustments.
+
+
+SECTION 12: ACCEPTABLE ALTERNATIVE ANSWERS
+Patient B – Thursday 6-Month Follow-Up
+The purpose of this section is to help the AI grader distinguish between:
+Preferred recommendations 
+Guideline-supported alternatives 
+Patient-centered approaches 
+Unsafe recommendations 
+Students should not be penalized for selecting a different treatment strategy if their approach remains evidence-based and appropriately addresses the patient's exacerbation burden.
+COPD Escalation
+Preferred Answer
+Student should:
+Recognize excellent adherence 
+Recognize appropriate inhaler technique 
+Identify persistent symptom burden 
+Identify recurrent moderate COPD exacerbations 
+Interpret eosinophil count appropriately 
+Escalate from Anoro Ellipta to Trelegy Ellipta 
+Continue rescue albuterol 
+Provide inhaler education 
+Develop monitoring plan 
+Rationale
+The patient has:
+Two moderate exacerbations since previous visit 
+Three moderate exacerbations in the previous year 
+Eosinophils 310 cells/µL 
+Persistent CAT score elevation 
+Optimized adherence 
+Correct inhaler technique 
+This represents appropriate escalation to single-inhaler triple therapy.
+Acceptable Alternative #1
+Escalate to another guideline-supported LABA/LAMA/ICS regimen.
+Examples:
+Budesonide/glycopyrrolate/formoterol (Breztri Aerosphere) 
+Acceptable Because
+Remains guideline directed 
+Provides triple therapy 
+Addresses recurrent exacerbations 
+Student Must
+Justify selection 
+Discuss adherence considerations 
+Provide inhaler education 
+Acceptable Alternative #2
+Verify eosinophil count and formulary coverage before selecting a specific triple therapy product.
+Acceptable Because
+Demonstrates evidence-based decision making 
+Considers patient affordability 
+Unacceptable Answers
+Unsafe
+Continue Anoro Ellipta without modification.
+Rationale
+The patient continues to experience frequent exacerbations despite optimized therapy.
+Unsafe
+Add ICS without considering eosinophils or exacerbation history.
+Rationale
+Escalation should be evidence based.
+Unsafe
+Escalate therapy without reassessing adherence.
+Rationale
+Adherence confirmation is necessary before labeling therapy ineffective.
+Blood Eosinophil Interpretation
+Preferred Answer
+Student identifies:
+Eosinophil count = 310 cells/µL 
+Increased likelihood of benefit from ICS-containing therapy 
+Supports escalation to triple therapy 
+Rationale
+GOLD 2026 supports use of eosinophils to estimate ICS responsiveness.
+Acceptable Alternative
+Student states:
+Elevated eosinophils increase expected benefit from ICS therapy. 
+Acceptable Because
+Demonstrates understanding of GOLD recommendations. 
+Unacceptable Answers
+Unsafe
+Ignore eosinophil count entirely.
+Unsafe
+Misinterpret eosinophils as evidence of infection.
+Exacerbation Assessment
+Preferred Answer
+Student identifies:
+Two moderate exacerbations since last visit 
+Three moderate exacerbations within previous year 
+No hospitalizations 
+Rationale
+Exacerbation history is a primary driver of escalation decisions.
+Key Grading Principle for Patient B
+Students should receive credit if they:
+Recognize true treatment failure 
+Confirm adherence and technique 
+Interpret eosinophils appropriately 
+Escalate from Anoro Ellipta to Trelegy Ellipta (or equivalent triple therapy) 
+Develop an appropriate monitoring plan 
+The primary educational objective is:
+Recognizing when escalation is appropriate after implementation barriers have been resolved. 
+SECTION 13: CRITICAL MISSES
+Patient B – Thursday 6-Month Follow-Up
+These errors should result in major point deductions.
+Critical Miss #1
+Error
+Failed to assess COPD exacerbation history.
+Rationale
+Exacerbation burden is the primary driver of today's therapeutic decision.
+Critical Miss #2
+Error
+Failed to confirm medication adherence.
+Rationale
+Previous visits demonstrated adherence issues.
+Students should confirm adherence before escalating therapy.
+Critical Miss #3
+Error
+Failed to assess inhaler technique.
+Rationale
+Technique should be reassessed prior to labeling therapy ineffective.
+Critical Miss #4
+Error
+Failed to interpret blood eosinophil count.
+Rationale
+Eosinophils support expected benefit from ICS-containing therapy.
+Critical Miss #5
+Error
+Continued Anoro Ellipta despite recurrent exacerbations.
+Rationale
+Current therapy is no longer adequately controlling disease.
+Critical Miss #6
+Error
+Failed to recommend escalation to triple therapy.
+Rationale
+Patient meets GOLD criteria for escalation.
+Critical Miss #7
+Error
+Ignored persistent symptom burden.
+Rationale
+CAT score remains elevated and dyspnea persists.
+Critical Miss #8
+Error
+Failed to provide inhaler counseling.
+Rationale
+Trelegy Ellipta requires patient education and ICS counseling.
+Critical Miss #9
+Error
+Failed to discuss mouth rinsing after ICS use.
+Rationale
+ICS increases risk of oral candidiasis.
+Critical Miss #10
+Error
+Failed to establish monitoring plan.
+Rationale
+Patients initiated on triple therapy require reassessment of:
+Symptoms 
+Exacerbations 
+Adherence 
+Tolerability 
+Critical Miss #11
+Error
+Failed to identify preventive care gaps.
+Rationale
+Vaccination remains an important component of COPD management.
+High-Priority Patient B Learning Objectives
+Confirm adherence before escalation. 
+Apply GOLD escalation pathways. 
+Utilize blood eosinophils in therapeutic decision-making. 
+Recognize when triple therapy is indicated. 
+Monitor for ICS-related adverse effects. 
+Develop longitudinal COPD management strategies. 
+SECTION 14: TEACHING GUIDE
+Patient B – Thursday 6-Month Follow-Up
+What The Student Should Have Done Well
+The student should have:
+Assessed exacerbation frequency 
+Confirmed adherence 
+Confirmed inhaler technique 
+Interpreted eosinophil count 
+Applied GOLD 2026 recommendations 
+Recommended Trelegy Ellipta 
+Discussed ICS-related counseling points 
+Developed a monitoring strategy 
+Common Student Mistakes
+Mistake #1
+Escalating therapy without reassessing adherence.
+Teaching Point
+Students should confirm that implementation barriers have been resolved before changing therapy.
+Mistake #2
+Ignoring blood eosinophils.
+Teaching Point
+Blood eosinophils help estimate the magnitude of benefit from ICS-containing therapy.
+Mistake #3
+Focusing only on CAT score.
+Teaching Point
+Exacerbation history remains a major determinant of COPD treatment decisions.
+Mistake #4
+Recommending triple therapy without patient counseling.
+Teaching Point
+Students should discuss:
+Mouth rinsing 
+Oral candidiasis risk 
+Dysphonia 
+Adherence expectations 
+Teaching Pearls
+Pearl #1
+COPD escalation decisions require assessment of both symptoms and exacerbations.
+Expected Discussion
+Persistent symptoms and recurrent exacerbations represent separate but equally important treatment targets.
+Pearl #2
+Blood eosinophils are a practical biomarker.
+Expected Discussion
+Higher eosinophil counts predict greater benefit from ICS-containing therapy.
+Pearl #3
+Treatment failure can only be diagnosed after implementation barriers are addressed.
+Expected Discussion
+The patient's Tuesday and Wednesday visits illustrate this principle.
+Pearl #4
+Trelegy Ellipta represents escalation from dual bronchodilator therapy to triple therapy.
+Expected Discussion
+Anoro Ellipta → Trelegy Ellipta is a common real-world COPD treatment progression.
+Pearl #5
+Pharmacists play a key role in preventing future exacerbations.
+Expected Discussion
+Appropriate escalation, education, monitoring, and vaccination all contribute to reducing COPD morbidity.
+Follow-Up Questions
+Question 1
+Why is escalation appropriate today but was inappropriate at the previous visit?
+Expected Discussion
+Adherence is now optimized 
+Technique is appropriate 
+Exacerbations occurred despite therapy 
+Persistent symptom burden remains 
+Question 2
+How do eosinophils influence COPD management?
+Expected Discussion
+Elevated eosinophils predict greater benefit from ICS-containing therapy 
+Supports escalation to triple therapy 
+Question 3
+Why was Trelegy Ellipta selected?
+Expected Discussion
+Provides LABA/LAMA/ICS therapy in a single inhaler 
+Addresses recurrent exacerbations 
+Supported by GOLD recommendations 
+Question 4
+What counseling should accompany Trelegy initiation?
+Expected Discussion
+Daily use 
+Mouth rinsing 
+Adherence 
+Expected benefits 
+Potential adverse effects 
+Question 5
+What monitoring is required after escalation?
+Expected Discussion
+CAT score 
+Dyspnea 
+Rescue inhaler use 
+Exacerbations 
+Adherence 
+Oral candidiasis 
+Pneumonia risk 
+How The Student Can Improve Before Patient C
+Before beginning the asthma-COPD overlap patient, students should be able to:
+Apply GOLD escalation pathways confidently 
+Utilize eosinophils in COPD decision-making 
+Distinguish implementation failure from treatment failure 
+Select specific inhaler products appropriately 
+Develop longitudinal pulmonary disease management plans
+Granular Rubric and Answer Key — Ambulatory Care SOAP Note (COPD Follow-Up) Patient B Thursday
+[FOR AI PRECEPTOR CALIBRATION ONLY — NOT FOR STUDENT DISTRIBUTION]
+ 
+PURPOSE: This is the single, authoritative rubric for the Patient B (Robert Jenkins) 6-Month Follow-Up Ambulatory Care SOAP Note. Every subsection's discrete input point values sum exactly to the subsection header, and all subsection headers sum exactly to 100.0. The model answer scores 100.0/100.0 against this rubric.
+ 
+SCORING RULES:
+• FULL: Input present, accurate, and clinically contextualized (not merely a keyword).
+• HALF: Partially present — directionally correct but imprecise, or present without clinical context. Half-credit values are rounded to the nearest 0.05.
+• ZERO: Absent, or a factually incorrect statement is made about that input.
+• Additivity: Points are additive within each subsection → subsections additive within sections → sections additive to 100.0.
+Acceptable-alternative inputs (e.g., therapeutic choices) list every guideline-supported answer in parentheses; any listed answer earns full credit.
+ 
+SECTION 1: SUBJECTIVE (25.0 points)
+ 
+1A. CHIEF COMPLAINT AND REASON FOR VISIT (2.5 points) — 9 inputs, sum = 2.5
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1A.1
+	Patient age stated (67 years)
+	0.25
+	States 67 years
+	Age stated, imprecise
+	Omits
+	1A.2
+	Patient sex stated (male)
+	0.20
+	States male
+	—
+	Omits
+	1A.3
+	Patient identifier stated (Robert Jenkins / Bob)
+	0.20
+	States patient name
+	—
+	Omits
+	1A.4
+	Encounter setting stated (ambulatory care pharmacy clinic)
+	0.25
+	Names ambulatory care pharmacy clinic
+	Names clinic, no type
+	Omits
+	1A.5
+	Visit type stated (6-month follow-up)
+	0.30
+	States 6-month follow-up
+	States follow-up, no interval
+	Omits
+	1A.6
+	Primary diagnosis stated: COPD
+	0.35
+	States COPD
+	—
+	Omits
+	1A.7
+	Visit context: following LABA/LAMA initiation and adherence intervention
+	0.30
+	States both LABA/LAMA initiation and adherence intervention
+	States one context only
+	Omits
+	1A.8
+	Overall symptom trajectory: mild improvement since initial visit
+	0.25
+	States mild improvement since initial visit
+	States improved, no qualifier
+	Omits
+	1A.9
+	Chief concern: persistent/recurrent COPD flare-ups despite therapy
+	0.40
+	States frustration with recurrent flare-ups
+	States concern, no specificity
+	Omits
+	1A. CHIEF COMPLAINT AND REASON FOR VISIT sum check: 0.25 + 0.20 + 0.20 + 0.25 + 0.30 + 0.35 + 0.30 + 0.25 + 0.40 = 2.50
+	 
+1B. HISTORY OF PRESENT ILLNESS (HPI) (5.5 points) — 18 inputs, sum = 5.5
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1B.1
+	Continued exertional dyspnea acknowledged despite therapy
+	0.25
+	States continued exertional dyspnea
+	States dyspnea, no qualifier
+	Omits
+	1B.2
+	Stair climbing identified as activity limited by dyspnea
+	0.20
+	States stair climbing
+	—
+	Omits
+	1B.3
+	Carrying groceries identified as activity limited by dyspnea
+	0.15
+	States carrying groceries
+	—
+	Omits
+	1B.4
+	Yard work identified as activity limited by dyspnea
+	0.15
+	States yard work
+	—
+	Omits
+	1B.5
+	Household projects identified as activity limited by dyspnea
+	0.15
+	States household projects
+	—
+	Omits
+	1B.6
+	Total number of COPD exacerbations since last visit: two
+	0.50
+	States two exacerbations
+	States exacerbations, no count
+	Omits
+	1B.7
+	First exacerbation timing: approximately 10 weeks ago
+	0.30
+	States ~10 weeks ago
+	States first exacerbation, no timing
+	Omits
+	1B.8
+	First exacerbation: treated with oral corticosteroids
+	0.35
+	States oral corticosteroids for first exacerbation
+	States steroids, no route
+	Omits
+	1B.9
+	First exacerbation: additionally required antibiotics
+	0.40
+	States antibiotics required for first exacerbation
+	States treatment, no antibiotic specificity
+	Omits
+	1B.10
+	Second exacerbation timing: approximately 4 weeks ago
+	0.30
+	States ~4 weeks ago
+	States second exacerbation, no timing
+	Omits
+	1B.11
+	Second exacerbation: resulted in urgent care visit
+	0.35
+	States urgent care visit
+	States visit, no setting
+	Omits
+	1B.12
+	Second exacerbation: treated with short course oral corticosteroids
+	0.30
+	States short course OCS for second exacerbation
+	States steroids, no duration
+	Omits
+	1B.13
+	Denies hospitalization for either exacerbation
+	0.30
+	States no hospitalization
+	—
+	Omits
+	1B.14
+	Denies emergency department visits for either exacerbation
+	0.40
+	States no ED visits
+	—
+	Omits
+	1B.15
+	Reports full recovery from both exacerbations
+	0.20
+	States full recovery from both
+	—
+	Omits
+	1B.16
+	Adherence to umeclidinium/vilanterol: excellent (every day as prescribed)
+	0.55
+	States daily use every day as prescribed
+	States adherence improved, no frequency
+	Omits
+	1B.17
+	Adherence improvement attributed to medication reminders and daily routine incorporation
+	0.30
+	States both reminders and routine incorporation
+	States one strategy only
+	Omits
+	1B.18
+	Albuterol use frequency: approximately once daily
+	0.35
+	States ~once daily albuterol use
+	States uses albuterol, no frequency
+	Omits
+	1B. HISTORY OF PRESENT ILLNESS (HPI) sum check: 0.25 + 0.20 + 0.15 + 0.15 + 0.15 + 0.50 + 0.30 + 0.35 + 0.40 + 0.30 + 0.35 + 0.30 + 0.30 + 0.40 + 0.20 + 0.55 + 0.30 + 0.35 = 5.50
+	 
+1C. PAST MEDICAL, SURGICAL, AND FAMILY HISTORY (3.0 points) — 13 inputs, sum = 3.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1C.1
+	PMH: COPD
+	0.20
+	Lists COPD
+	—
+	Omits
+	1C.2
+	COPD diagnosis duration (4 years)
+	0.25
+	States 4 years
+	States COPD, no duration
+	Omits
+	1C.3
+	PMH: hypertension
+	0.20
+	Lists hypertension
+	—
+	Omits
+	1C.4
+	Hypertension duration (12 years)
+	0.20
+	States 12 years
+	States HTN, no duration
+	Omits
+	1C.5
+	PMH: hyperlipidemia
+	0.20
+	Lists hyperlipidemia
+	—
+	Omits
+	1C.6
+	Hyperlipidemia duration (10 years)
+	0.20
+	States 10 years
+	States hyperlipidemia, no duration
+	Omits
+	1C.7
+	PSH: appendectomy
+	0.30
+	Lists appendectomy
+	—
+	Omits
+	1C.8
+	Family history — father: COPD
+	0.25
+	Lists father COPD
+	—
+	Omits
+	1C.9
+	Family history — father: coronary artery disease
+	0.25
+	Lists father CAD
+	—
+	Omits
+	1C.10
+	Family history — mother: hypertension
+	0.20
+	Lists mother hypertension
+	—
+	Omits
+	1C.11
+	Family history — brother: COPD
+	0.25
+	Lists brother COPD
+	—
+	Omits
+	1C.12
+	Patient concern: COPD progression noted
+	0.20
+	States concern about COPD progression
+	—
+	Omits
+	1C.13
+	Patient goal: reduce exacerbations AND maintain independence (both stated)
+	0.30
+	States reduce exacerbations and maintain independence
+	States one goal only
+	Omits
+	1C. PAST MEDICAL, SURGICAL, AND FAMILY HISTORY sum check: 0.20 + 0.25 + 0.20 + 0.20 + 0.20 + 0.20 + 0.30 + 0.25 + 0.25 + 0.20 + 0.25 + 0.20 + 0.30 = 3.00
+	 
+1D. SOCIAL HISTORY (3.0 points) — 10 inputs, sum = 3.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1D.1
+	Marital status: married
+	0.20
+	States married
+	—
+	Omits
+	1D.2
+	Living situation: lives with spouse
+	0.20
+	States lives with spouse
+	—
+	Omits
+	1D.3
+	Occupation: retired automotive mechanic
+	0.30
+	States retired automotive mechanic
+	States retired, no occupation
+	Omits
+	1D.4
+	Tobacco status: former smoker
+	0.30
+	States former smoker
+	States nonsmoker without former/never distinction
+	Omits
+	1D.5
+	Pack-year history: 45 pack-years
+	0.45
+	States 45 pack-years
+	States smoking history, no quantity
+	Omits
+	1D.6
+	Cessation timing: quit 5 years ago
+	0.40
+	States quit 5 years ago
+	States quit, no timing
+	Omits
+	1D.7
+	Alcohol use: occasional
+	0.25
+	States occasional alcohol use
+	—
+	Omits
+	1D.8
+	Recreational drug use: denies
+	0.25
+	States denies recreational drug use
+	—
+	Omits
+	1D.9
+	Physical activity: limited by dyspnea
+	0.45
+	States physical activity limited by dyspnea
+	States limited activity, no link to dyspnea
+	Omits
+	1D.10
+	Medication access/affordability: denies current concerns
+	0.20
+	States denies access or affordability concerns
+	—
+	Omits
+	1D. SOCIAL HISTORY sum check: 0.20 + 0.20 + 0.30 + 0.30 + 0.45 + 0.40 + 0.25 + 0.25 + 0.45 + 0.20 = 3.00
+	 
+1E. MEDICATIONS, ALLERGIES, AND IMMUNIZATIONS (6.5 points) — 18 inputs, sum = 6.5
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1E.1
+	Umeclidinium/vilanterol (Anoro Ellipta) listed by brand and generic name
+	0.40
+	States umeclidinium/vilanterol AND Anoro Ellipta
+	Names one component only
+	Omits
+	1E.2
+	Umeclidinium/vilanterol dose (62.5 mcg/25 mcg)
+	0.35
+	States 62.5 mcg/25 mcg
+	Dose stated, imprecise
+	Incorrect
+	1E.3
+	Umeclidinium/vilanterol regimen (1 inhalation daily)
+	0.25
+	States 1 inhalation daily
+	States daily, no inhalation count
+	Omits
+	1E.4
+	Albuterol HFA listed by name and formulation
+	0.35
+	States albuterol HFA
+	Names albuterol, no formulation
+	Omits
+	1E.5
+	Albuterol dose (2 puffs)
+	0.30
+	States 2 puffs
+	States puffs, no count
+	Incorrect
+	1E.6
+	Albuterol regimen (every 4–6 hours as needed)
+	0.30
+	States every 4–6 hours as needed
+	States PRN, no interval
+	Omits
+	1E.7
+	Lisinopril listed by name
+	0.30
+	Names lisinopril
+	—
+	Omits
+	1E.8
+	Lisinopril dose (20 mg)
+	0.35
+	States 20 mg
+	—
+	Incorrect
+	1E.9
+	Lisinopril regimen (PO daily)
+	0.25
+	States PO daily
+	States daily, no route
+	Omits
+	1E.10
+	Atorvastatin listed by name
+	0.30
+	Names atorvastatin
+	—
+	Omits
+	1E.11
+	Atorvastatin dose (20 mg)
+	0.30
+	States 20 mg
+	—
+	Incorrect
+	1E.12
+	Atorvastatin regimen (PO daily)
+	0.25
+	States PO daily
+	States daily, no route
+	Omits
+	1E.13
+	No known drug allergies documented
+	0.55
+	States NKDA
+	—
+	Omits
+	1E.14
+	Influenza vaccine: up to date
+	0.35
+	States influenza vaccine up to date
+	States influenza, no status
+	Omits
+	1E.15
+	COVID vaccination: up to date
+	0.35
+	States COVID vaccination up to date
+	States COVID vaccine, no status
+	Omits
+	1E.16
+	Pneumococcal vaccination: none documented
+	0.55
+	States no documented pneumococcal vaccination
+	—
+	Omits
+	1E.17
+	RSV vaccination: none documented
+	0.55
+	States no documented RSV vaccine
+	—
+	Omits
+	1E.18
+	Tdap status: overdue
+	0.45
+	States Tdap overdue
+	States Tdap, no status
+	Omits
+	1E. MEDICATIONS, ALLERGIES, AND IMMUNIZATIONS sum check: 0.40 + 0.35 + 0.25 + 0.35 + 0.30 + 0.30 + 0.30 + 0.35 + 0.25 + 0.30 + 0.30 + 0.25 + 0.55 + 0.35 + 0.35 + 0.55 + 0.55 + 0.45 = 6.50
+	 
+1F. REVIEW OF SYSTEMS / RELEVANT NEGATIVES (2.0 points) — 7 inputs, sum = 2.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1F.1
+	Tobacco free: denies desire to restart smoking
+	0.30
+	States no desire to restart smoking
+	—
+	Omits
+	1F.2
+	Denies medication affordability concerns (current visit)
+	0.25
+	States denies affordability concerns
+	—
+	Omits
+	1F.3
+	Denies difficulty obtaining medications
+	0.25
+	States denies access difficulty
+	—
+	Omits
+	1F.4
+	Denies hospitalization for recent exacerbations
+	0.30
+	States no hospitalization for either exacerbation
+	—
+	Omits
+	1F.5
+	Denies emergency department visits for recent exacerbations
+	0.30
+	States no ED visits
+	—
+	Omits
+	1F.6
+	Full recovery reported following both exacerbations
+	0.30
+	States full recovery from both
+	—
+	Omits
+	1F.7
+	No new medication adverse effects reported
+	0.30
+	States no new adverse effects
+	—
+	Omits
+	1F. REVIEW OF SYSTEMS / RELEVANT NEGATIVES sum check: 0.30 + 0.25 + 0.25 + 0.30 + 0.30 + 0.30 + 0.30 = 2.00
+	 
+1G. PATIENT GOALS AND CONCERNS (2.5 points) — 5 inputs, sum = 2.5
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1G.1
+	Patient expresses concern about future COPD progression
+	0.50
+	States concern re COPD progression
+	—
+	Omits
+	1G.2
+	Patient goal: reduce frequency of future exacerbations
+	0.50
+	States goal to reduce exacerbations
+	—
+	Omits
+	1G.3
+	Patient goal: maintain independence
+	0.50
+	States goal to maintain independence
+	—
+	Omits
+	1G.4
+	Patient values: hopes for improved quality of life
+	0.50
+	States improved quality of life goal
+	—
+	Omits
+	1G.5
+	Patient reports feeling somewhat better but remains concerned
+	0.50
+	States partial improvement with ongoing concern
+	—
+	Omits
+	1G. PATIENT GOALS AND CONCERNS sum check: 0.50 + 0.50 + 0.50 + 0.50 + 0.50 = 2.50
+	 
+Section 1 check: 2.5 + 5.5 + 3.0 + 3.0 + 6.5 + 2.0 + 2.5 = 25.0
+ 
+SECTION 2: OBJECTIVE (15.0 points)
+ 
+2A. VITAL SIGNS AND ANTHROPOMETRICS (4.0 points) — 8 inputs, sum = 4.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2A.1
+	Blood pressure value: 128/76 mmHg
+	0.55
+	States 128/76 mmHg
+	BP stated, value imprecise
+	Omits
+	2A.2
+	Heart rate value: 82 bpm
+	0.50
+	States 82 bpm
+	—
+	Omits
+	2A.3
+	Weight: 89 kg
+	0.45
+	States 89 kg
+	—
+	Omits
+	2A.4
+	Height: 70 inches
+	0.50
+	States 70 inches
+	—
+	Omits
+	2A.5
+	BMI: 28.1 kg/m²
+	0.45
+	States 28.1 kg/m²
+	BMI stated, value imprecise
+	Omits
+	2A.6
+	Respiratory rate: 18 breaths/min
+	0.50
+	States 18 breaths/min
+	—
+	Omits
+	2A.7
+	SpO₂: 94% on room air
+	0.55
+	States 94% on room air
+	States SpO2, no qualifier
+	Omits
+	2A.8
+	BMI interpretation: overweight (28.1 kg/m²)
+	0.50
+	States overweight or 28.1 kg/m²
+	BMI stated, no category
+	Omits
+	2A. VITAL SIGNS AND ANTHROPOMETRICS sum check: 0.55 + 0.50 + 0.45 + 0.50 + 0.45 + 0.50 + 0.55 + 0.50 = 4.00
+	 
+2B. PULMONARY FUNCTION, CAT SCORE, LABS, AND EXACERBATION HISTORY (6.5 points) — 6 inputs, sum = 6.5
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2B.1
+	Post-bronchodilator FEV1/FVC: 0.57 (confirms airflow obstruction)
+	1.10
+	States 0.57 FEV1/FVC
+	FEV1/FVC stated, no interpretation
+	Omits
+	2B.2
+	Post-bronchodilator FEV1: 60% predicted (GOLD spirometry classification)
+	1.10
+	States 60% predicted
+	FEV1 stated, no % predicted
+	Omits
+	2B.3
+	CAT score: 17
+	1.10
+	States CAT score of 17
+	CAT stated, no value
+	Omits
+	2B.4
+	CAT score interpretation: persistent symptom burden despite maintenance therapy
+	1.10
+	States persistent symptom burden
+	States score elevated, no interpretation
+	Omits
+	2B.5
+	Absolute eosinophil count: 310 cells/µL
+	1.10
+	States 310 cells/µL
+	Eosinophil count stated, no value
+	Omits
+	2B.6
+	Exacerbation history documented: 2 moderate exacerbations in past 3 months / 3 moderate in past 12 months
+	1.00
+	States both 3-month and 12-month exacerbation counts
+	States exacerbation history, incomplete count
+	Omits
+	2B. PULMONARY FUNCTION, CAT SCORE, LABS, AND EXACERBATION HISTORY sum check: 1.10 + 1.10 + 1.10 + 1.10 + 1.10 + 1.00 = 6.50
+	 
+2C. CALCULATED VALUES, THRESHOLDS, AND CLINICAL INTERPRETATION (4.5 points) — 6 inputs, sum = 4.5
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2C.1
+	FEV1/FVC < 0.70 confirms fixed airflow obstruction consistent with COPD
+	0.80
+	States FEV1/FVC < 0.70 confirms obstruction
+	States abnormal, no threshold
+	Omits
+	2C.2
+	FEV1 60% predicted classifies as GOLD spirometry Grade 2 (moderate)
+	0.70
+	States GOLD Grade 2 / moderate obstruction
+	States moderate, no GOLD classification
+	Omits
+	2C.3
+	CAT ≥ 10 confirms significant symptom burden (cut-point for treatment initiation)
+	0.80
+	States CAT ≥ 10 cut-point exceeded
+	States elevated CAT, no threshold
+	Omits
+	2C.4
+	Eosinophil count 310 cells/µL exceeds 300 cells/µL GOLD threshold for maximal ICS benefit
+	0.80
+	States ≥ 300 cells/µL threshold met
+	States eosinophils elevated, no threshold
+	Omits
+	2C.5
+	Two moderate exacerbations in 3 months constitutes frequent exacerbator pattern on LABA/LAMA
+	0.70
+	States frequent exacerbator despite LABA/LAMA
+	States exacerbations frequent, no regimen context
+	Omits
+	2C.6
+	No hospitalization for either recent exacerbation (moderate severity confirmed)
+	0.70
+	States no hospitalization, confirming moderate severity
+	States no hospitalization, no severity context
+	Omits
+	2C. CALCULATED VALUES, THRESHOLDS, AND CLINICAL INTERPRETATION sum check: 0.80 + 0.70 + 0.80 + 0.80 + 0.70 + 0.70 = 4.50
+	 
+Section 2 check: 4.0 + 6.5 + 4.5 = 15.0
+ 
+SECTION 3: ASSESSMENT (30.0 points)
+ 
+3A. PROBLEM 1 — COPD: PERSISTENT SYMPTOMS AND FREQUENT EXACERBATIONS DESPITE OPTIMIZED LABA/LAMA THERAPY (9.5 points) — 18 inputs, sum = 9.5
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3A.1
+	Problem identified: COPD with persistent symptoms and frequent exacerbations
+	0.50
+	Names COPD with persistent symptoms and frequent exacerbations
+	Names COPD only
+	Omits
+	3A.2
+	Qualifies as established COPD (4-year history)
+	0.55
+	States established COPD with 4-year history
+	States COPD, no duration
+	Omits
+	3A.3
+	States CAT score 17 as evidence of persistent symptom burden
+	0.55
+	States CAT 17 as evidence
+	States CAT elevated, no value
+	Omits
+	3A.4
+	States 2 moderate exacerbations in past 3 months as evidence of treatment failure
+	0.55
+	States 2 exacerbations in 3 months
+	States exacerbations, no timeframe
+	Omits
+	3A.5
+	States 3 moderate exacerbations in past 12 months
+	0.50
+	States 3 exacerbations in 12 months
+	States exacerbations, no annual count
+	Omits
+	3A.6
+	States first exacerbation required OCS and antibiotics
+	0.60
+	States OCS and antibiotics for first exacerbation
+	States treatment, one component only
+	Omits
+	3A.7
+	States second exacerbation required urgent care and OCS
+	0.60
+	States urgent care visit and OCS for second exacerbation
+	States one component only
+	Omits
+	3A.8
+	Prior adherence barrier has been successfully resolved
+	0.55
+	States adherence barriers previously addressed and resolved
+	States adherence improved, no context
+	Omits
+	3A.9
+	Current exacerbations represent true treatment failure, not implementation failure
+	0.60
+	States true treatment failure vs. implementation failure
+	States treatment failure, no distinction
+	Omits
+	3A.10
+	Cites GOLD 2026 Report as guideline source
+	0.55
+	Names GOLD 2026 Report
+	Cites GOLD, no year
+	Omits
+	3A.11
+	GOLD 2026 recommendation: escalate to ICS-containing therapy after exacerbations on LABA/LAMA
+	0.55
+	States GOLD 2026 recommendation to escalate to ICS on LABA/LAMA failure
+	States escalate, no guideline
+	Omits
+	3A.12
+	Adherence confirmed prior to escalation decision
+	0.60
+	States adherence confirmed before escalating
+	—
+	Omits
+	3A.13
+	Inhaler technique identified as optimized (not stated as barrier)
+	0.60
+	States inhaler technique optimized
+	—
+	Omits
+	3A.14
+	Conclusion: escalation to single-inhaler triple therapy is warranted
+	0.50
+	States escalation to triple therapy warranted
+	States escalate, no agent class
+	Omits
+	3A.15
+	Notes exertional dyspnea continues to limit meaningful daily activities
+	0.50
+	States meaningful activity limitation persists
+	—
+	Omits
+	3A.16
+	Both recent exacerbations required systemic corticosteroids
+	0.50
+	States both exacerbations required systemic corticosteroids
+	States steroids, one exacerbation only
+	Omits
+	3A.17
+	Notes no hospitalizations, confirming moderate (not severe) exacerbation classification
+	0.50
+	States no hospitalizations, confirming moderate severity
+	—
+	Omits
+	3A.18
+	Recurrent exacerbations increase future progression risk
+	0.20
+	States exacerbations increase progression risk
+	—
+	Omits
+	3A. PROBLEM 1 — COPD: PERSISTENT SYMPTOMS AND FREQUENT EXACERBATIONS DESPITE OPTIMIZED LABA/LAMA THERAPY sum check: 0.50 + 0.55 + 0.55 + 0.55 + 0.50 + 0.60 + 0.60 + 0.55 + 0.60 + 0.55 + 0.55 + 0.60 + 0.60 + 0.50 + 0.50 + 0.50 + 0.50 + 0.20 = 9.50
+	 
+3B. PROBLEM 2 — ELEVATED BLOOD EOSINOPHIL COUNT SUPPORTING ICS-CONTAINING THERAPY (6.5 points) — 10 inputs, sum = 6.5
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3B.1
+	Problem identified: elevated blood eosinophil count (310 cells/µL)
+	0.65
+	States 310 cells/µL as elevated eosinophil count
+	States eosinophils elevated, no value
+	Omits
+	3B.2
+	States eosinophil count exceeds GOLD 2026 threshold of 300 cells/µL
+	0.65
+	States exceeds 300 cells/µL GOLD threshold
+	States elevated, no threshold
+	Omits
+	3B.3
+	Eosinophil count used to estimate likelihood of ICS response
+	0.65
+	States eosinophil count guides ICS response prediction
+	—
+	Omits
+	3B.4
+	Cites GOLD 2026 as source for eosinophil-guided ICS therapy decision
+	0.75
+	Names GOLD 2026 for eosinophil guidance
+	Cites guideline, no year
+	Omits
+	3B.5
+	GOLD 2026 recommendation: patients with eosinophils > 300 cells/µL derive greatest benefit from ICS
+	0.65
+	States > 300 cells/µL associated with greatest ICS exacerbation reduction
+	States ICS benefit, no threshold
+	Omits
+	3B.6
+	Eosinophil count supports ICS-containing escalation in context of recurrent exacerbations
+	0.65
+	States eosinophil count supports ICS escalation given exacerbation history
+	—
+	Omits
+	3B.7
+	Combination of recurrent exacerbations AND elevated eosinophils strengthens ICS indication
+	0.65
+	States both factors together strengthen indication
+	States one factor only
+	Omits
+	3B.8
+	Elevated eosinophil count suggests Type 2 inflammatory pattern
+	0.65
+	States Type 2 inflammatory pattern
+	—
+	Omits
+	3B.9
+	Expected clinical benefit: reduction in exacerbation risk with ICS-containing regimen
+	0.60
+	States expected exacerbation risk reduction
+	—
+	Omits
+	3B.10
+	Conclusion: eosinophil count supports escalation to triple therapy
+	0.60
+	States eosinophil profile supports triple therapy escalation
+	—
+	Omits
+	3B. PROBLEM 2 — ELEVATED BLOOD EOSINOPHIL COUNT SUPPORTING ICS-CONTAINING THERAPY sum check: 0.65 + 0.65 + 0.65 + 0.75 + 0.65 + 0.65 + 0.65 + 0.65 + 0.60 + 0.60 = 6.50
+	 
+3C. PROBLEM 3 — MEDICATION ADHERENCE: IMPROVED (5.0 points) — 8 inputs, sum = 5.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3C.1
+	Problem identified: medication adherence — improved status
+	0.60
+	States adherence improved / improved status
+	States adherence addressed, no status
+	Omits
+	3C.2
+	Prior visit: adherence described as 3–4 days per week (non-daily)
+	0.65
+	States 3–4 days per week at prior visit
+	States adherence was poor, no frequency
+	Omits
+	3C.3
+	Current visit: patient reports daily adherence to umeclidinium/vilanterol
+	0.65
+	States daily adherence at current visit
+	States adherence improved, no frequency
+	Omits
+	3C.4
+	Adherence improvement strategies implemented: medication reminders
+	0.65
+	States medication reminders implemented
+	—
+	Omits
+	3C.5
+	Adherence improvement strategies implemented: incorporation into daily routine
+	0.65
+	States incorporation into daily routine
+	—
+	Omits
+	3C.6
+	Conclusion: adherence no longer primary contributor to symptoms or exacerbations
+	0.65
+	States adherence no longer primary contributor
+	—
+	Omits
+	3C.7
+	Continued reinforcement of adherence strategies remains appropriate
+	0.65
+	States continued reinforcement appropriate
+	—
+	Omits
+	3C.8
+	Adherence confirmation essential before attributing exacerbations to treatment failure
+	0.50
+	States adherence must be confirmed before declaring treatment failure
+	—
+	Omits
+	3C. PROBLEM 3 — MEDICATION ADHERENCE: IMPROVED sum check: 0.60 + 0.65 + 0.65 + 0.65 + 0.65 + 0.65 + 0.65 + 0.50 = 5.00
+	 
+3D. PROBLEM 4 — FORMER TOBACCO USE: STABLE ABSTINENCE (5.0 points) — 6 inputs, sum = 5.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3D.1
+	Problem identified: former tobacco use — stable abstinence
+	0.85
+	States former tobacco use, stable abstinence
+	States tobacco free only
+	Omits
+	3D.2
+	Patient remains tobacco free (5 years since cessation)
+	0.85
+	States tobacco free for 5 years
+	States tobacco free, no duration
+	Omits
+	3D.3
+	Smoking cessation identified as most effective intervention for slowing COPD progression
+	0.85
+	States cessation is most effective for slowing progression
+	States cessation beneficial, no superlative
+	Omits
+	3D.4
+	Cessation reduces future respiratory complications
+	0.85
+	States cessation reduces respiratory complications
+	—
+	Omits
+	3D.5
+	Continued abstinence should be reinforced
+	0.80
+	States reinforce continued abstinence
+	—
+	Omits
+	3D.6
+	Patient denies desire to restart smoking
+	0.80
+	States patient denies desire to restart
+	—
+	Omits
+	3D. PROBLEM 4 — FORMER TOBACCO USE: STABLE ABSTINENCE sum check: 0.85 + 0.85 + 0.85 + 0.85 + 0.80 + 0.80 = 5.00
+	 
+3E. PROBLEM 5 — PREVENTIVE CARE GAPS (4.0 points) — 8 inputs, sum = 4.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3E.1
+	Problem identified: preventive care gaps
+	0.50
+	Names preventive care gaps
+	—
+	Omits
+	3E.2
+	Pneumococcal vaccination gap identified
+	0.55
+	States pneumococcal vaccination not documented
+	—
+	Omits
+	3E.3
+	RSV vaccination gap identified
+	0.55
+	States RSV vaccination not documented
+	—
+	Omits
+	3E.4
+	Tdap booster gap identified (overdue)
+	0.55
+	States Tdap booster overdue
+	States Tdap gap, no overdue qualifier
+	Omits
+	3E.5
+	Influenza vaccine noted as up to date (not a gap)
+	0.55
+	States influenza up to date — not a gap
+	—
+	Omits
+	3E.6
+	COVID vaccine noted as up to date (not a gap)
+	0.55
+	States COVID up to date — not a gap
+	—
+	Omits
+	3E.7
+	Preventive care optimization remains appropriate given respiratory disease
+	0.45
+	States preventive care optimization appropriate for COPD patient
+	—
+	Omits
+	3E.8
+	GOLD 2026 supports vaccination as part of COPD management
+	0.30
+	States GOLD recommends vaccinations for COPD
+	—
+	Omits
+	3E. PROBLEM 5 — PREVENTIVE CARE GAPS sum check: 0.50 + 0.55 + 0.55 + 0.55 + 0.55 + 0.55 + 0.45 + 0.30 = 4.00
+	 
+Section 3 check: 9.5 + 6.5 + 5.0 + 5.0 + 4.0 = 30.0
+ 
+SECTION 4: PLAN (25.0 points)
+ 
+4A. COPD PHARMACOTHERAPY: TRIPLE THERAPY ESCALATION (7.0 points) — 12 inputs, sum = 7.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4A.1
+	Discontinues umeclidinium/vilanterol (Anoro Ellipta) 62.5 mcg/25 mcg
+	0.60
+	States discontinue umeclidinium/vilanterol (Anoro Ellipta)
+	States discontinue dual bronchodilator, no agent named
+	Omits
+	4A.2
+	Initiates fluticasone furoate/umeclidinium/vilanterol (Trelegy Ellipta) — agent name
+	0.60
+	States fluticasone furoate/umeclidinium/vilanterol or Trelegy Ellipta
+	Names one component only
+	Omits
+	4A.3
+	Trelegy Ellipta dose: 100 mcg/62.5 mcg/25 mcg
+	0.60
+	States 100 mcg/62.5 mcg/25 mcg
+	Dose stated, one component only
+	Incorrect
+	4A.4
+	Trelegy Ellipta regimen: 1 puff by mouth once daily
+	0.60
+	States 1 puff by mouth once daily
+	States once daily, no route/puff count
+	Omits
+	4A.5
+	Continue albuterol HFA (name stated)
+	0.55
+	States continue albuterol HFA
+	States continue rescue inhaler, no agent
+	Omits
+	4A.6
+	Continue albuterol HFA regimen: 2 puffs every 4–6 hours as needed
+	0.55
+	States 2 puffs every 4–6 hours as needed
+	States PRN, no interval or puff count
+	Omits
+	4A.7
+	Provide inhaler-specific education for Trelegy Ellipta administration
+	0.60
+	States inhaler-specific education for Trelegy Ellipta
+	States provide education, no device specificity
+	Omits
+	4A.8
+	Review proper inhaler technique
+	0.60
+	States review inhaler technique
+	—
+	Omits
+	4A.9
+	Counsel patient to rinse mouth and spit after each Trelegy Ellipta dose to reduce oral candidiasis risk
+	0.60
+	States rinse mouth and spit after each dose for candidiasis prevention
+	States rinse mouth, no spit instruction or rationale
+	Omits
+	4A.10
+	Discuss expected benefit: reduction in COPD exacerbations
+	0.60
+	States discuss exacerbation reduction
+	—
+	Omits
+	4A.11
+	Discuss expected benefit: improved symptom control and reduced rescue inhaler use
+	0.55
+	States discuss symptom control AND rescue inhaler reduction
+	States one benefit only
+	Omits
+	4A.12
+	Discuss expected benefit: improved quality of life
+	0.55
+	States discuss quality of life improvement
+	—
+	Omits
+	4A. COPD PHARMACOTHERAPY: TRIPLE THERAPY ESCALATION sum check: 0.60 + 0.60 + 0.60 + 0.60 + 0.55 + 0.55 + 0.60 + 0.60 + 0.60 + 0.60 + 0.55 + 0.55 = 7.00
+	 
+4B. EXACERBATION PREVENTION (3.0 points) — 5 inputs, sum = 3.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4B.1
+	Review COPD action plan with patient
+	0.60
+	States review COPD action plan
+	—
+	Omits
+	4B.2
+	Educate patient on early recognition of worsening respiratory symptoms
+	0.60
+	States educate on early recognition of worsening symptoms
+	States educate on symptoms, no early recognition framing
+	Omits
+	4B.3
+	Encourage prompt evaluation for future COPD exacerbations
+	0.60
+	States encourage prompt evaluation
+	—
+	Omits
+	4B.4
+	Discuss infection prevention: vaccination strategies
+	0.60
+	States discuss vaccination for infection prevention
+	—
+	Omits
+	4B.5
+	Discuss infection prevention: avoidance of respiratory illness exposures
+	0.60
+	States discuss avoidance of respiratory exposures
+	—
+	Omits
+	4B. EXACERBATION PREVENTION sum check: 0.60 + 0.60 + 0.60 + 0.60 + 0.60 = 3.00
+	 
+4C. MEDICATION ADHERENCE (2.5 points) — 4 inputs, sum = 2.5
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4C.1
+	Continue current medication reminder system
+	0.65
+	States continue medication reminder system
+	—
+	Omits
+	4C.2
+	Reinforce importance of daily Trelegy Ellipta use
+	0.65
+	States reinforce daily Trelegy Ellipta use
+	States daily use important, no specific agent
+	Omits
+	4C.3
+	Encourage patient to continue incorporating inhaler into daily routine
+	0.60
+	States continue incorporating inhaler into daily routine
+	—
+	Omits
+	4C.4
+	Note that adherence success strategies should be maintained with new inhaler
+	0.60
+	States maintain adherence strategies with new inhaler
+	—
+	Omits
+	4C. MEDICATION ADHERENCE sum check: 0.65 + 0.65 + 0.60 + 0.60 = 2.50
+	 
+4D. TOBACCO ABSTINENCE (2.0 points) — 3 inputs, sum = 2.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4D.1
+	Congratulate patient on continued smoking cessation
+	0.70
+	States congratulate patient on continued cessation
+	—
+	Omits
+	4D.2
+	Encourage lifelong tobacco abstinence
+	0.65
+	States encourage lifelong abstinence
+	States encourage cessation, no lifelong qualifier
+	Omits
+	4D.3
+	Link continued abstinence to COPD progression slowing
+	0.65
+	States abstinence slows COPD progression
+	—
+	Omits
+	4D. TOBACCO ABSTINENCE sum check: 0.70 + 0.65 + 0.65 = 2.00
+	 
+4E. MONITORING (5.0 points) — 12 inputs, sum = 5.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4E.1
+	Monitor: CAT score at follow-up
+	0.45
+	States monitor CAT score
+	—
+	Omits
+	4E.2
+	Monitor: dyspnea symptoms
+	0.40
+	States monitor dyspnea symptoms
+	—
+	Omits
+	4E.3
+	Monitor: activity tolerance
+	0.40
+	States monitor activity tolerance
+	—
+	Omits
+	4E.4
+	Monitor: rescue (albuterol) inhaler use frequency
+	0.45
+	States monitor rescue inhaler use
+	—
+	Omits
+	4E.5
+	Monitor: COPD exacerbation frequency
+	0.45
+	States monitor exacerbation frequency
+	—
+	Omits
+	4E.6
+	Monitor: medication adherence
+	0.40
+	States monitor adherence
+	—
+	Omits
+	4E.7
+	Monitor: inhaler technique
+	0.45
+	States monitor inhaler technique
+	—
+	Omits
+	4E.8
+	Monitor: oral candidiasis (ICS-related adverse effect)
+	0.45
+	States monitor oral candidiasis
+	—
+	Omits
+	4E.9
+	Monitor: dysphonia (ICS-related adverse effect)
+	0.45
+	States monitor dysphonia
+	—
+	Omits
+	4E.10
+	Monitor: pneumonia risk (ICS-related adverse effect)
+	0.45
+	States monitor pneumonia risk
+	—
+	Omits
+	4E.11
+	Monitor: overall triple therapy tolerability
+	0.45
+	States monitor triple therapy tolerability
+	—
+	Omits
+	4E.12
+	Rationale: ICS-containing therapy associated with increased oral candidiasis, hoarse voice, and pneumonia risk per GOLD 2026
+	0.20
+	States GOLD 2026 supports monitoring for ICS adverse effects
+	—
+	Omits
+	4E. MONITORING sum check: 0.45 + 0.40 + 0.40 + 0.45 + 0.45 + 0.40 + 0.45 + 0.45 + 0.45 + 0.45 + 0.45 + 0.20 = 5.00
+	 
+4F. PREVENTIVE CARE (2.5 points) — 4 inputs, sum = 2.5
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4F.1
+	Recommend PCV20 vaccination if not previously received
+	0.65
+	States recommend PCV20 if not received (acceptable: PCV20 or PCV21 per GOLD 2026)
+	States pneumococcal, no specific vaccine product
+	Omits
+	4F.2
+	Recommend RSV vaccination
+	0.65
+	States recommend RSV vaccination
+	—
+	Omits
+	4F.3
+	Recommend Tdap booster
+	0.65
+	States recommend Tdap booster
+	—
+	Omits
+	4F.4
+	Review immunization history and update vaccinations as appropriate
+	0.55
+	States review immunization history and update as appropriate
+	States review only, no update action
+	Omits
+	4F. PREVENTIVE CARE sum check: 0.65 + 0.65 + 0.65 + 0.55 = 2.50
+	 
+4G. FOLLOW-UP (3.0 points) — 7 inputs, sum = 3.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4G.1
+	Follow-up timing: approximately 3 months
+	0.50
+	States ~3 months
+	States follow-up, no timing
+	Omits
+	4G.2
+	Assess response to Trelegy Ellipta at follow-up
+	0.45
+	States assess response to Trelegy Ellipta
+	States assess medications, no agent
+	Omits
+	4G.3
+	Reassess CAT score and symptom burden at follow-up
+	0.45
+	States reassess CAT score AND symptom burden
+	States reassess symptoms, no CAT
+	Omits
+	4G.4
+	Reassess COPD exacerbation frequency at follow-up
+	0.45
+	States reassess exacerbation frequency
+	—
+	Omits
+	4G.5
+	Evaluate medication adherence and inhaler technique at follow-up
+	0.45
+	States evaluate adherence AND technique
+	States evaluate one only
+	Omits
+	4G.6
+	Monitor for ICS-related adverse effects at follow-up
+	0.45
+	States monitor for ICS-related adverse effects
+	—
+	Omits
+	4G.7
+	Continue longitudinal COPD management and reassess need for future therapy adjustments
+	0.25
+	States continue longitudinal COPD management
+	—
+	Omits
+	4G. FOLLOW-UP sum check: 0.50 + 0.45 + 0.45 + 0.45 + 0.45 + 0.45 + 0.25 = 3.00
+	 
+Section 4 check: 7.0 + 3.0 + 2.5 + 2.0 + 5.0 + 2.5 + 3.0 = 25.0
+ 
+SECTION 5: PRESENTATION QUALITY (5.0 points)
+ 
+5A. ORGANIZATION AND SOAP STRUCTURE (2.0 points) — 4 inputs, sum = 2.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5A.1
+	Uses four-part SOAP structure (S / O / A / P)
+	0.50
+	All four sections present and labeled
+	Some sections present
+	Absent
+	5A.2
+	Subjective and objective data placed in correct sections
+	0.50
+	Correctly partitioned
+	Minor misplacement
+	Major misplacement
+	5A.3
+	Assessment presents a prioritized, numbered problem list
+	0.50
+	Numbered, prioritized list
+	Listed, not prioritized
+	Absent
+	5A.4
+	Each plan element maps to an assessed problem
+	0.50
+	All plan items mapped to assessed problems
+	Most mapped
+	Unmapped plan
+	5A. ORGANIZATION AND SOAP STRUCTURE sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+	 
+5B. FORMATTING AND DOCUMENTATION (2.0 points) — 4 inputs, sum = 2.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5B.1
+	Medications documented with drug, dose, route, and frequency
+	0.50
+	All four elements present for each medication
+	Missing one element
+	Largely incomplete
+	5B.2
+	Laboratory and objective values reported with units
+	0.50
+	Units present throughout
+	Some units missing
+	Units absent
+	5B.3
+	Guideline sources cited (GOLD 2026) in assessment
+	0.50
+	GOLD 2026 cited
+	Guideline cited, no year
+	Absent
+	5B.4
+	Plan items are specific and actionable
+	0.50
+	Specific, actionable items throughout
+	Partly vague
+	Vague throughout
+	5B. FORMATTING AND DOCUMENTATION sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+	 
+5C. PROFESSIONAL TONE AND SPECIFICITY (1.0 points) — 3 inputs, sum = 1.0
+ 
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5C.1
+	Objective, professional clinical language throughout
+	0.40
+	Professional throughout
+	Minor lapses
+	Unprofessional
+	5C.2
+	Recommendations tied to guideline rationale
+	0.40
+	Rationale provided
+	Partial rationale
+	Absent
+	5C.3
+	Free of major factual or medication errors
+	0.20
+	No major errors
+	1 minor error
+	Major error present
+	5C. PROFESSIONAL TONE AND SPECIFICITY sum check: 0.40 + 0.40 + 0.20 = 1.00
+	 
+Section 5 check: 2.0 + 2.0 + 1.0 = 5.0
+ 
+GRAND TOTAL VERIFICATION
+ 
+§
+	Section
+	Subsections
+	Points
+	1
+	SUBJECTIVE
+	1A (2.5) + 1B (5.5) + 1C (3.0) + 1D (3.0) + 1E (6.5) + 1F (2.0) + 1G (2.5)
+	25.0
+	2
+	OBJECTIVE
+	2A (4.0) + 2B (6.5) + 2C (4.5)
+	15.0
+	3
+	ASSESSMENT
+	3A (9.5) + 3B (6.5) + 3C (5.0) + 3D (5.0) + 3E (4.0)
+	30.0
+	4
+	PLAN
+	4A (7.0) + 4B (3.0) + 4C (2.5) + 4D (2.0) + 4E (5.0) + 4F (2.5) + 4G (3.0)
+	25.0
+	5
+	PRESENTATION QUALITY
+	5A (2.0) + 5B (2.0) + 5C (1.0)
+	5.0
+	 
+	GRAND TOTAL
+	 
+	100.0
+	 
+GRADING SCALE
+ 
+Grade
+	Range
+	Description
+	A
+	90.0–100.0
+	Exceptional — comprehensive, accurate, clinically actionable
+	B
+	80.0–89.9
+	Proficient — solid coverage with minor gaps
+	C
+	70.0–79.9
+	Developing — adequate but missing key elements
+	D
+	60.0–69.9
+	Below expectations — significant gaps in content or analysis
+	F
+	Below 60.0
+	Unsatisfactory — major deficiencies
+	 
+TOTAL DISCRETE INPUTS ACROSS ALL SECTIONS
+ 
+Section
+	Subsections
+	# Inputs
+	1. SUBJECTIVE
+	1A–1G
+	80
+	2. OBJECTIVE
+	2A–2C
+	20
+	3. ASSESSMENT
+	3A–3E
+	50
+	4. PLAN
+	4A–4G
+	47
+	5. PRESENTATION QUALITY
+	5A–5C
+	11
+	TOTAL
+	 
+	208
+	 
+MODEL ANSWER SCORE: 100.0 / 100.0
+The model answer (Patient B — Thursday 6-Month Follow-Up gold-standard SOAP note) earns full credit on every one of the 208 discrete inputs. Any student submission is scored against this rubric by evaluating each discrete input independently, awarding FULL, HALF, or ZERO credit per input, and summing to a final score out of 100.0.
+ 
+Source guidelines for therapeutic alternatives and clinical content: GOLD 2026 Global Strategy for the Diagnosis, Management, and Prevention of COPD; ACIP Immunization Schedule 2025–2026.
+

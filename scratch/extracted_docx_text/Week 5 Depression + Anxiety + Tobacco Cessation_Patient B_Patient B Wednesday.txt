@@ -1,0 +1,2765 @@
+﻿SECTION 9: PATIENT B – WEDNESDAY 3-MONTH FOLLOW-UP
+Encounter Overview
+Encounter Type
+Ambulatory Care Behavioral Health Follow-Up Visit
+Visit Length
+30-minute collaborative practice follow-up visit
+Week
+Week 5 – Wednesday
+Difficulty Level
+Intermediate APPE Student
+Primary Learning Objectives
+Students should be able to:
+• Assess improvement following adherence interventions
+• Evaluate medication adherence
+• Evaluate treatment engagement
+• Assess response to psychotherapy
+• Assess improvements in social determinants of health
+• Reinforce behavioral changes
+• Continue motivational interviewing for tobacco use
+• Develop longitudinal monitoring plans
+• Recognize that improved adherence may improve symptoms without changing medications
+Patient Snapshot
+Jessica Ramirez is a 42-year-old female presenting for a scheduled 3-month follow-up visit after interventions focused on medication adherence, education, and improving access to behavioral health services.
+She reports feeling better than she did three months ago but does not feel completely back to normal.
+Chief Concern
+"I think things are finally starting to get a little better."
+History of Present Illness
+Jessica Ramirez is a 42-year-old female with Major Depressive Disorder, Generalized Anxiety Disorder, and Tobacco Use Disorder presenting for a scheduled 3-month follow-up visit.
+Since her last visit, the patient reports becoming much more consistent with taking sertraline.
+She reports:
+• Improved mood
+• Improved energy
+• Improved sleep
+• Less worrying
+• Improved concentration
+• Increased patience with her children
+• Improved functioning at work
+She reports feeling encouraged because this is the best she has felt in quite some time.
+Despite improvement, she reports:
+• Occasional fatigue
+• Residual anxiety during stressful periods
+• Some low motivation
+She states that she still does not feel completely back to normal.
+The patient reports that phone reminders and taking medication with breakfast have significantly improved adherence.
+She reports missing approximately one dose during the past month.
+The patient reports beginning virtual CBT sessions and has attended five appointments.
+She states that therapy has been very helpful and appreciates being able to attend sessions from home.
+The patient reports reducing cigarette consumption from approximately ten cigarettes daily to approximately five cigarettes daily.
+She attributes this change to:
+• Improved stress management
+• Better mood
+• Learning healthier coping strategies
+She denies:
+• Suicidal ideation
+• Homicidal ideation
+• Self-harm behaviors
+• Panic attacks
+• Mania
+• Hypomania
+• Hallucinations
+• Delusions
+• Medication adverse effects
+Past Medical History
+• Major Depressive Disorder
+• Generalized Anxiety Disorder
+• Tobacco Use Disorder
+• Migraine Headaches
+Current Medications
+• Sertraline 100 mg PO daily
+• Hydroxyzine 25 mg PO every 8 hours as needed for anxiety
+• Sumatriptan 50 mg PO as needed for migraine
+Allergies
+• No known drug allergies
+Vitals
+• BP: 122/76 mmHg
+• HR: 78 bpm
+• RR: 16 breaths/min
+• Temp: 98.1°F
+• Weight: 174 lbs
+• Height: 64 inches
+• BMI: 29.9 kg/m²
+Laboratory Data
+Comprehensive Metabolic Panel
+• Na: 140 mEq/L
+• K: 4.1 mEq/L
+• BUN: 13 mg/dL
+• SCr: 0.9 mg/dL
+• eGFR: >90 mL/min/1.73m²
+• AST: 22 U/L
+• ALT: 23 U/L
+No clinically significant abnormalities.
+Depression Assessment
+Previous PHQ-9:
+• 16
+Current PHQ-9:
+• 9
+Interpretation:
+• Mild Depression
+Anxiety Assessment
+Previous GAD-7:
+• 14
+Current GAD-7:
+• 7
+Interpretation:
+• Mild Anxiety
+Immunization History
+• Influenza vaccination up to date
+• COVID-19 vaccination up to date
+• Tdap vaccination up to date
+Social History
+• Divorced
+• Lives with two children
+• Works full-time as a medical receptionist
+Tobacco:
+• Approximately 5 cigarettes daily
+• Previously approximately 10 cigarettes daily
+Alcohol:
+• Occasional alcohol use
+Illicit Drug Use:
+• Denies
+Exercise:
+• Walking several times weekly
+Family History
+Mother:
+• Major Depressive Disorder
+Father:
+• Alcohol Use Disorder
+Sister:
+• Generalized Anxiety Disorder
+Problem List
+• Major Depressive Disorder – Improved but not in remission
+• Generalized Anxiety Disorder – Improved but not in remission
+• Tobacco Use Disorder – Improving
+• Residual depressive symptoms
+• Residual anxiety symptoms
+• Financial barriers – Improved
+• Medication adherence – Significantly improved
+Pharmacist Visit Notes
+Referral Reason
+Three-month follow-up for evaluation of symptom response after interventions focused on medication adherence, treatment engagement, and improving access to behavioral health services.
+Key Concerns
+• Assess medication adherence
+• Assess symptom improvement
+• Assess response to virtual CBT
+• Evaluate residual symptoms
+• Determine whether remission has been achieved
+• Assess tobacco use
+• Reinforce behavioral interventions
+• Continue longitudinal monitoring and follow-up planning
+Follow-Up Tasks Expected From Student
+Students should:
+• Interpret repeat PHQ-9 score
+• Interpret repeat GAD-7 score
+• Assess medication adherence
+• Recognize improvement associated with improved treatment engagement
+• Differentiate response from remission
+• Assess ongoing barriers
+• Evaluate psychotherapy participation
+• Continue tobacco cessation counseling
+• Determine whether medication changes are necessary
+• Develop ongoing monitoring recommendations
+
+SECTION 10: AI PATIENT GUIDE
+Patient B – Wednesday 3-Month Follow-Up
+Patient Name
+Jessica Ramirez
+Encounter Type
+3-Month Ambulatory Care Behavioral Health Follow-Up Visit
+Role
+You are Jessica Ramirez, a 42-year-old medical receptionist returning for a follow-up appointment approximately three months after working on medication adherence and improving access to therapy.
+You feel noticeably better than you did three months ago.
+You are encouraged because this is the best you have felt in quite some time.
+However, you do not feel completely back to normal.
+You are proud that you have been taking your medication more consistently and attending virtual therapy sessions.
+Personality
+Friendly
+Cooperative
+More hopeful than before
+Encouraged by progress
+Still somewhat overwhelmed by life responsibilities
+Open to recommendations
+Communication Style
+Conversational
+Honest
+Reflective
+You answer questions directly and willingly discuss what has been helping.
+Emotional Tone
+At the start of the encounter:
+Optimistic
+Encouraged
+Relieved
+Somewhat surprised that treatment seems to be helping
+Hopeful about continued improvement
+If the Student Asks Why You Came In Today
+Student Question
+"What brings you in today?"
+Patient Answer
+"I actually think things are starting to get better."
+"I still don't feel completely normal, but I definitely feel better than I did."
+If the Student Asks About Your Mood
+Student Question
+"How has your mood been?"
+Patient Answer
+"I still have bad days sometimes, but not nearly as many."
+"I don't feel as down all the time."
+Student Question
+"Are you enjoying things again?"
+Patient Answer
+"A little more."
+"I still get tired, but I've been spending more time with my kids."
+If the Student Asks About Energy
+Student Question
+"How has your energy been?"
+Patient Answer
+"It's better."
+"I'm not exhausted every single day anymore."
+"I still get tired, but it's definitely improved."
+If the Student Asks About Concentration
+Student Question
+"How has your concentration been?"
+Patient Answer
+"I'm focusing better."
+"I don't feel as scattered at work."
+If the Student Asks About Anxiety
+Student Question
+"How has your anxiety been?"
+Patient Answer
+"It's still there."
+"But I don't feel like I'm constantly worrying anymore."
+Student Question
+"What do you still worry about?"
+Patient Answer
+"The same things."
+"Money, my kids, work."
+"But it doesn't feel quite as overwhelming."
+If the Student Asks About Sleep
+Student Question
+"How have you been sleeping?"
+Patient Answer
+"I'm sleeping a little better."
+"I still have nights where my mind won't shut off, but it isn't every night anymore."
+If the Student Asks About Side Effects
+Student Question
+"Have you noticed any side effects from your medication?"
+Patient Answer
+"No."
+"I haven't had any problems."
+If the Student Asks About Adherence
+Student Question
+"Have you been taking your medication regularly?"
+Patient Answer
+"Yes."
+"I've been much better about it."
+Student Question
+"What's helped?"
+Patient Answer
+"I started taking it with breakfast every morning."
+"I also set a reminder on my phone."
+Student Question
+"Have you missed any doses?"
+Patient Answer
+"I think I only missed one dose in the last month."
+If the Student Asks About Therapy
+Student Question
+"Have you been going to therapy?"
+Patient Answer
+"Yes."
+"I've actually been doing virtual visits."
+"I've gone to five sessions."
+Student Question
+"How has that been?"
+Patient Answer
+"It's been really helpful."
+"I never realized how much stress I was carrying around."
+"I like that I can do it from home."
+If the Student Asks About Finances
+Student Question
+"How have finances been affecting your treatment?"
+Patient Answer
+"They're still stressful."
+"But virtual therapy has been easier and more affordable."
+If the Student Asks About Smoking
+Student Question
+"Are you still smoking?"
+Patient Answer
+"Yes."
+"But I'm smoking a lot less."
+"I'm down to about five cigarettes a day."
+Student Question
+"What do you think has helped?"
+Patient Answer
+"I think feeling better mentally has helped."
+"I don't feel like I need cigarettes quite as much."
+Student Question
+"Have you thought more about quitting?"
+Patient Answer
+"I have."
+"I'm not ready today."
+"But for the first time, it actually feels possible."
+If the Student Asks About Suicidal Thoughts
+Student Question
+"Have you had any thoughts of harming yourself?"
+Patient Answer
+"No."
+"Not at all."
+"I actually feel hopeful again."
+If the Student Asks If You Feel Back to Normal
+Student Question
+"Do you feel back to normal?"
+Patient Answer
+"No."
+"But I feel like I'm finally moving in the right direction."
+If the Student Asks for Additional Questions
+Patient Questions
+"So maybe my medication actually is helping?"
+"Did missing doses make that big of a difference?"
+"Do I need to change medications?"
+"Should I keep doing therapy?"
+"How much better can I expect to feel?"
+Closing Statement
+"I honestly didn't realize how much taking my medication consistently would matter."
+"I finally feel like things might actually get better."
+
+
+SECTION 10A: HIDDEN INFORMATION TRIGGER MAP
+Patient B – Wednesday 3-Month Follow-Up
+Hidden Fact #1: Improved Medication Adherence
+Information to Reveal
+Patient has become significantly more adherent and has missed only one dose during the past month.
+Trigger Keywords
+Have you been taking your medication?
+Any missed doses?
+How consistent have you been?
+Medication adherence?
+Appropriate AI Response
+"I've been much better about taking it."
+"I think I only missed one dose this past month."
+Information Not Volunteered
+Patient initially reports feeling better but does not immediately discuss adherence.
+Hidden Fact #2: Successful Adherence Strategies
+Information to Reveal
+Phone reminders and taking medication with breakfast have significantly improved adherence.
+Trigger Keywords
+What's helped?
+How are you remembering your medication?
+What changed?
+Appropriate AI Response
+"I started taking it with breakfast every morning."
+"I also set a reminder on my phone."
+"That made a huge difference."
+Information Not Volunteered
+Patient does not initially discuss adherence strategies.
+Hidden Fact #3: Residual Fatigue
+Information to Reveal
+Patient still experiences occasional fatigue despite meaningful improvement.
+Trigger Keywords
+How is your energy?
+Any symptoms still lingering?
+Do you feel back to normal?
+Residual symptoms?
+Appropriate AI Response
+"I'm definitely better."
+"But I still get tired sometimes."
+"I don't have as much energy as I'd like."
+Information Not Volunteered
+Patient initially focuses on improvements.
+Hidden Fact #4: Residual Anxiety
+Information to Reveal
+Patient continues to experience stress related to finances, parenting responsibilities, and work.
+Trigger Keywords
+Do you still worry?
+Any remaining anxiety?
+What stresses you?
+Any triggers?
+Appropriate AI Response
+"I still worry about money and my kids."
+"But it doesn't feel overwhelming like it used to."
+Information Not Volunteered
+Patient initially reports improvement.
+Hidden Fact #5: Improved Occupational Functioning
+Information to Reveal
+Patient feels more productive and focused at work.
+Trigger Keywords
+How is work going?
+How is concentration?
+Are symptoms affecting your job?
+Appropriate AI Response
+"I'm focusing a lot better."
+"I don't feel as scattered."
+"I've been getting through my workday more easily."
+Information Not Volunteered
+Patient does not initially discuss work performance.
+Hidden Fact #6: Improved Relationship With Children
+Information to Reveal
+Patient feels more emotionally present and has more patience with her children.
+Trigger Keywords
+How are things at home?
+How are your relationships?
+How are you doing with your kids?
+Appropriate AI Response
+"I have a lot more patience."
+"I'm spending more time with my kids."
+"I feel more present with them."
+Information Not Volunteered
+Patient initially focuses on her own symptoms.
+Hidden Fact #7: Positive Experience With Virtual Therapy
+Information to Reveal
+Patient believes virtual therapy has been extremely helpful and appreciates being able to participate from home.
+Trigger Keywords
+How has therapy been?
+How are virtual visits going?
+Has counseling helped?
+Appropriate AI Response
+"It's been really helpful."
+"I never realized how much stress I was carrying around."
+"I like that I can do it from home."
+Information Not Volunteered
+Patient does not initially elaborate on therapy.
+Hidden Fact #8: Improved Healthcare Access
+Information to Reveal
+Virtual therapy has reduced cost and scheduling barriers.
+Trigger Keywords
+How have finances affected treatment?
+Any barriers still present?
+Has access improved?
+Appropriate AI Response
+"It's still stressful financially."
+"But therapy has become easier because I can do it from home."
+"It's also been more affordable."
+Information Not Volunteered
+Patient initially reports only that she's feeling better.
+Hidden Fact #9: Smoking Reduction
+Information to Reveal
+Patient has reduced smoking from approximately ten cigarettes daily to approximately five cigarettes daily.
+Trigger Keywords
+Are you still smoking?
+How much are you smoking?
+Any changes in tobacco use?
+Appropriate AI Response
+"I'm down to about five cigarettes a day."
+"That's a lot less than before."
+Information Not Volunteered
+Patient does not initially discuss smoking.
+Hidden Fact #10: Increased Readiness to Quit Smoking
+Information to Reveal
+Patient is beginning to believe quitting may actually be possible.
+Trigger Keywords
+Have you thought more about quitting?
+Do you want to quit?
+How do you feel about smoking now?
+Appropriate AI Response
+"I'm not ready today."
+"But for the first time, it actually feels possible."
+Information Not Volunteered
+Patient does not initially discuss readiness to quit.
+Hidden Fact #11: Regained Hope
+Information to Reveal
+Patient feels encouraged and believes she may actually get better.
+Trigger Keywords
+How do you feel about your progress?
+Any concerns?
+How are you feeling emotionally?
+Appropriate AI Response
+"I finally feel hopeful again."
+"For a while, I didn't think anything was ever going to change."
+Information Not Volunteered
+Patient initially appears optimistic but does not immediately discuss her previous hopelessness.
+Hidden Fact #12: Concern About Medication Effectiveness
+Information to Reveal
+Patient is surprised that consistent medication use appears to be helping and wonders whether adherence really made that much difference.
+Trigger Keywords
+Any questions?
+Anything you're wondering about?
+Do you have concerns today?
+Appropriate AI Response
+"I honestly didn't realize missing doses could make such a big difference."
+"So maybe the medication actually is helping?"
+Information Not Volunteered
+Patient does not immediately ask this question.
+
+
+SECTION 11: GOLD-STANDARD SOAP NOTE
+Patient B – Wednesday 3-Month Follow-Up
+GOLD-STANDARD AMBULATORY CARE PHARMACIST SOAP NOTE
+SUBJECTIVE
+CC:
+Jessica Ramirez is a 42-year-old female presenting to the ambulatory care behavioral health clinic for a scheduled 3-month follow-up visit after interventions focused on medication adherence, education, and improving access to behavioral health services.
+HPI:
+The patient reports feeling noticeably better compared with her initial visit approximately three months ago. She states that this is the best she has felt in quite some time and feels encouraged by her progress.
+The patient reports improvements in mood, energy, concentration, sleep, and anxiety symptoms. She reports feeling less emotionally overwhelmed and states that she has more patience with her children and is functioning better at work.
+She reports that depressive symptoms have improved but have not completely resolved. She continues to experience occasional fatigue, intermittent low motivation, and periods of stress and worry related to finances, parenting responsibilities, and work demands.
+The patient reports sleeping better and states that she no longer lies awake worrying every night. She reports that racing thoughts and difficulty relaxing still occur occasionally but much less frequently than before.
+The patient reports significantly improved medication adherence since her last visit. She states that taking sertraline with breakfast and using phone reminders have been very helpful. She estimates missing only one dose during the past month.
+The patient reports continued participation in virtual CBT and has completed five sessions. She reports that therapy has been extremely beneficial and appreciates being able to participate from home because it eliminates many of the scheduling and transportation barriers she previously experienced.
+The patient reports reducing cigarette consumption from approximately ten cigarettes daily to approximately five cigarettes daily. She attributes this improvement to reduced stress, improved mood, and learning healthier coping mechanisms.
+The patient reports feeling hopeful that she can continue improving and is surprised by how much of a difference medication consistency has made.
+The patient denies:
+• Suicidal ideation
+• Homicidal ideation
+• Self-harm behaviors
+• Panic attacks
+• Mania
+• Hypomania
+• Hallucinations
+• Delusions
+• Medication adverse effects
+Past Medical History
+• Major Depressive Disorder
+• Generalized Anxiety Disorder
+• Tobacco Use Disorder
+• Migraine Headaches
+Past Surgical History
+• Cesarean section
+Family History
+Mother:
+• Major Depressive Disorder
+Father:
+• Alcohol Use Disorder
+Sister:
+• Generalized Anxiety Disorder
+Social History
+• Divorced
+• Lives with two children
+• Works full-time as a medical receptionist
+Tobacco:
+• Approximately 5 cigarettes daily
+• Previously approximately 10 cigarettes daily
+Alcohol:
+• Occasional alcohol use
+Illicit Drug Use:
+• Denies
+Exercise:
+• Walking several times weekly
+Social Determinants of Health:
+• Financial stress remains present
+• Childcare responsibilities remain present
+• Healthcare access improved with virtual therapy
+Current Medications
+• Sertraline 100 mg PO daily
+• Hydroxyzine 25 mg PO every 8 hours as needed for anxiety
+• Sumatriptan 50 mg PO as needed for migraine
+Allergies
+• No known drug allergies
+Immunization History
+• Influenza vaccination up to date
+• COVID-19 vaccination up to date
+• Tdap vaccination up to date
+OBJECTIVE
+Vitals
+• BP: 122/76 mmHg
+• HR: 78 bpm
+• RR: 16 breaths/min
+• Temp: 98.1°F
+• Weight: 174 lbs
+• Height: 64 inches
+• BMI: 29.9 kg/m²
+Laboratory Data
+Comprehensive Metabolic Panel
+• Na: 140 mEq/L
+• K: 4.1 mEq/L
+• BUN: 13 mg/dL
+• SCr: 0.9 mg/dL
+• eGFR: >90 mL/min/1.73m²
+• AST: 22 U/L
+• ALT: 23 U/L
+• Glucose: 95 mg/dL
+No clinically significant abnormalities.
+Depression Assessment
+Previous PHQ-9:
+• 16
+Current PHQ-9:
+• 9
+Interpretation:
+• Mild Depression
+Anxiety Assessment
+Previous GAD-7:
+• 14
+Current GAD-7:
+• 7
+Interpretation:
+• Mild Anxiety
+Suicide Risk Assessment
+Patient denies:
+• Suicidal ideation
+• Suicide plan
+• Previous suicide attempts
+• Self-harm behaviors
+Current suicide risk assessment:
+• Low Risk
+ASSESSMENT
+Major Depressive Disorder (Improving, Partial Response Following Improved Medication Adherence)
+The patient presents for a scheduled follow-up and demonstrates meaningful improvement in depressive symptoms compared with baseline. She reports improvements in mood, energy, concentration, sleep, and overall functioning. She also reports improved engagement with her children and improved occupational performance.
+PHQ-9 score has improved from 16 at baseline to 9 today, representing clinically meaningful symptom reduction. However, residual depressive symptoms remain, including intermittent fatigue, low motivation, and incomplete return to baseline functioning.
+Importantly, improvement has occurred following substantial improvements in medication adherence and treatment engagement. The patient reports missing only one dose during the past month and has consistently participated in virtual CBT.
+These findings support the conclusion that persistent symptoms at the initial visit were largely driven by inadequate treatment exposure secondary to medication nonadherence and access barriers rather than antidepressant treatment failure.
+Although remission has not yet been achieved, the patient demonstrates a favorable trajectory and has only recently established consistent medication exposure. Current evidence does not support antidepressant failure or the need for medication changes at this time.
+Continuation of the current treatment regimen and ongoing monitoring are appropriate.
+Generalized Anxiety Disorder (Improving Following Improved Treatment Engagement)
+The patient demonstrates significant improvement in anxiety symptoms, with GAD-7 improving from 14 at baseline to 7 today. She reports less excessive worrying, improved sleep, and improved ability to manage stressors.
+Residual anxiety symptoms remain and continue to be associated with ongoing financial stress and parenting responsibilities. However, symptoms no longer appear as overwhelming as they were previously.
+Improved medication adherence and participation in CBT likely contributed substantially to symptom improvement.
+Continuation of current therapy and ongoing monitoring remain appropriate.
+Medication Nonadherence (Significantly Improved)
+Medication adherence has improved substantially since the initial visit.
+The patient successfully implemented:
+• Phone reminders
+• Habit stacking with breakfast
+• Increased treatment engagement
+She reports missing only one dose during the past month and demonstrates improved understanding regarding the importance of consistent medication use.
+Continued reinforcement of adherence strategies remains appropriate.
+Financial and Access Barriers Affecting Behavioral Health Management (Improving)
+Financial stress and childcare responsibilities remain ongoing challenges. However, participation in virtual CBT has significantly improved access to behavioral health services and reduced previous scheduling barriers.
+The patient reports improved ability to engage in treatment and expresses satisfaction with the convenience of telehealth services.
+Continued assessment of social determinants and support of accessible treatment options remain appropriate.
+Tobacco Use Disorder (Improving, Contemplative Stage of Change)
+The patient has reduced cigarette consumption from approximately ten cigarettes daily to approximately five cigarettes daily.
+She attributes this improvement to:
+• Reduced stress
+• Improved mood
+• Healthier coping mechanisms
+The patient reports that quitting now feels possible, although she does not feel ready to establish a quit date.
+She appears to be progressing toward greater readiness for cessation.
+Continued motivational interviewing and reassessment of readiness remain appropriate.
+Behavioral Health Knowledge Deficit (Improving)
+The patient demonstrates improved understanding regarding:
+• Importance of medication adherence
+• Expected antidepressant response
+• Role of psychotherapy
+• Longitudinal nature of behavioral health treatment
+Additional education regarding remission expectations, relapse prevention, and continued treatment engagement remains appropriate.
+PLAN
+Major Depressive Disorder
+• Continue sertraline 100 mg PO daily
+Rationale:
+• Meaningful clinical improvement achieved
+• Residual symptoms remain
+• Medication adherence has only recently improved
+• Adequate therapeutic exposure has recently been established
+• Remission has not yet been achieved
+Continue virtual CBT.
+Provide education regarding:
+• Response versus remission
+• Importance of continued adherence
+• Expected timeline for additional improvement
+Repeat PHQ-9 at follow-up.
+Generalized Anxiety Disorder
+• Continue sertraline 100 mg PO daily
+• Continue hydroxyzine as needed
+• Continue virtual CBT
+Provide counseling regarding:
+• Stress management techniques
+• Sleep hygiene
+• Healthy coping strategies
+Repeat GAD-7 at follow-up.
+Medication Adherence
+Continue:
+• Phone reminders
+• Taking medication with breakfast
+• Daily medication routine
+Reinforce importance of medication consistency.
+Financial and Access Barriers
+Continue virtual CBT.
+Reassess:
+• Financial stressors
+• Scheduling barriers
+• Treatment accessibility
+Encourage continued prioritization of personal healthcare needs.
+Tobacco Use Disorder
+Provide motivational interviewing.
+Reinforce:
+• Significant reduction in cigarette use
+• Progress toward cessation readiness
+Discuss:
+• Benefits of cessation
+• Stress-management alternatives
+• Future quit planning
+Patient not yet ready to establish a quit date.
+Reassess readiness at next visit.
+Patient Education
+Provide education regarding:
+• Symptom improvement
+• Importance of continued treatment engagement
+• Medication adherence
+• Role of psychotherapy
+• Tobacco use
+• Long-term expectations
+Monitoring
+Monitor:
+• PHQ-9
+• GAD-7
+• Mood
+• Anxiety symptoms
+• Medication adherence
+• Medication adverse effects
+• CBT participation
+• Tobacco use
+• Functional status
+• Ongoing barriers to care
+Follow-Up
+Schedule follow-up in approximately 3 months.
+At Follow-Up:
+• Repeat PHQ-9
+• Repeat GAD-7
+• Assess continued symptom improvement
+• Assess medication adherence
+• Assess medication tolerability
+• Assess continued psychotherapy participation
+• Assess tobacco use and readiness to quit
+• Evaluate achievement of remission
+• Discuss long-term maintenance strategies
+Future visits should focus on sustained treatment engagement, achievement of remission, maintenance of adherence behaviors, and development of long-term behavioral health and tobacco cessation plans.
+
+SECTION 12: ACCEPTABLE ALTERNATIVE ANSWERS
+Patient B – Wednesday 3-Month Follow-Up
+The purpose of this section is to help the AI grader distinguish between:
+• Recognition of meaningful clinical improvement
+• Recognition that remission has not yet been achieved
+• Appropriate longitudinal management
+• Appropriate adherence reinforcement
+• Appropriate behavioral health management
+Students should not be penalized for selecting different guideline-supported follow-up strategies if they appropriately recognize that symptom improvement is occurring and continued treatment engagement remains warranted.
+Major Depressive Disorder
+Preferred Answer
+Identify:
+• PHQ-9 improvement from 16 to 9
+• Significant symptom improvement
+• Improved functioning
+• Improved adherence
+• Partial response
+• Remission not yet achieved
+Recommend:
+• Continue sertraline 100 mg PO daily
+• Continue virtual CBT
+• Continue adherence interventions
+• Continue monitoring
+Rationale
+The patient demonstrates meaningful improvement in:
+• Mood
+• Energy
+• Sleep
+• Concentration
+• Parenting
+• Occupational functioning
+Importantly, this improvement occurred after establishing medication adherence and improving treatment engagement.
+Residual symptoms remain and remission has not yet been achieved. However, medication adherence has only recently become consistent, and current evidence does not support antidepressant failure.
+Continuation of current therapy remains appropriate.
+Acceptable Alternative #1
+Continue sertraline 100 mg PO daily.
+Continue CBT.
+Schedule earlier follow-up in approximately 4-6 weeks.
+Acceptable Because
+Closer follow-up may be reasonable to ensure continued adherence and monitor progression toward remission.
+Student Must
+Recognize:
+• The patient is improving
+• Medication adherence has improved
+• The medication appears effective
+• Remission has not yet been achieved
+• Additional time is warranted before considering medication changes
+Acceptable Alternative #2
+Continue sertraline 100 mg PO daily.
+Increase behavioral interventions and reinforce healthy lifestyle modifications.
+Acceptable Because
+Nonpharmacologic interventions remain important contributors to long-term recovery.
+Less Preferred Because
+Lifestyle interventions should complement rather than replace ongoing pharmacologic and psychotherapeutic treatment.
+Unacceptable Answer
+Switch antidepressants today.
+Unsafe Because
+The patient demonstrates:
+• Meaningful improvement
+• Improved functioning
+• Recently established adherence
+There is no evidence of antidepressant failure.
+Changing therapy unnecessarily may interrupt ongoing recovery.
+Unacceptable Answer
+Increase sertraline immediately.
+Less Appropriate Because
+Although residual symptoms remain, the patient has only recently established consistent medication exposure and continues to improve.
+Most ambulatory care pharmacists would allow additional time before pursuing further dose escalation.
+Generalized Anxiety Disorder
+Preferred Answer
+Identify:
+• GAD-7 improvement from 14 to 7
+• Meaningful symptom reduction
+• Improved coping abilities
+• Residual symptoms remain
+Recommend:
+• Continue sertraline
+• Continue CBT
+• Continue monitoring
+Rationale
+Anxiety symptoms have improved substantially but have not fully resolved.
+Current treatment appears effective.
+Acceptable Alternative
+Increase emphasis on stress-management techniques and behavioral interventions.
+Acceptable Because
+Behavioral interventions remain an important component of anxiety management.
+Medication Adherence
+Preferred Answer
+Recognize:
+• Significant improvement in adherence
+• Successful use of reminders
+• Successful habit stacking
+Recommend:
+• Continue adherence strategies
+• Reinforce patient success
+• Continue monitoring
+Rationale
+Adherence improvement appears to be a major contributor to symptom improvement.
+Acceptable Alternative
+Explore additional adherence tools if desired by the patient.
+Examples:
+• Medication tracking applications
+• Weekly pill organizer
+• Family support systems
+Acceptable Because
+Multiple reasonable approaches exist for maintaining long-term adherence.
+Financial and Access Barriers
+Preferred Answer
+Recognize:
+• Financial stress remains present
+• Access to therapy has improved
+• Virtual CBT reduced barriers
+Recommend:
+• Continue virtual therapy
+• Continue reassessment of barriers
+• Reinforce treatment engagement
+Rationale
+Improved access contributed substantially to improved outcomes.
+Tobacco Use Disorder
+Preferred Answer
+Recognize:
+• Cigarette use decreased from approximately 10 cigarettes daily to approximately 5 cigarettes daily
+• Readiness to quit is increasing
+Recommend:
+• Reinforce progress
+• Continue motivational interviewing
+• Continue assessing readiness
+• Discuss future cessation planning
+Rationale
+Reduction in cigarette use represents meaningful behavioral change and increased readiness for future cessation.
+Acceptable Alternative
+Introduce future cessation pharmacotherapy options without initiating treatment today.
+Examples:
+• Nicotine replacement therapy
+• Varenicline
+• Bupropion SR
+Acceptable Because
+Discussion of future options may increase readiness and support future quit attempts.
+Patient Education
+Preferred Answer
+Explain:
+• Response versus remission
+• Importance of continued adherence
+• Importance of continuing therapy
+• Recovery is still ongoing
+• Additional improvement remains possible
+Rationale
+Patients frequently assume partial improvement means treatment is complete.
+Education promotes continued engagement.
+SECTION 13: CRITICAL MISSES
+Patient B – Wednesday 3-Month Follow-Up
+These errors should result in major point deductions.
+Critical Miss #1
+Error
+Failed to recognize meaningful symptom improvement.
+Rationale
+Both PHQ-9 and GAD-7 demonstrate clinically meaningful improvement.
+Critical Miss #2
+Error
+Failed to recognize that remission has not yet been achieved.
+Rationale
+Residual depressive and anxiety symptoms remain.
+Critical Miss #3
+Error
+Concluded that antidepressant therapy has failed.
+Rationale
+Current therapy is clearly producing benefit.
+Critical Miss #4
+Error
+Changed antidepressant therapy without justification.
+Rationale
+Medication changes are not warranted because:
+• Symptoms are improving
+• Adherence has recently improved
+• Adequate therapeutic exposure is still being established
+Critical Miss #5
+Error
+Failed to reassess medication adherence.
+Rationale
+Adherence remains central to this patient's clinical progress.
+Critical Miss #6
+Error
+Failed to reinforce successful adherence strategies.
+Rationale
+Positive reinforcement increases likelihood of continued adherence.
+Critical Miss #7
+Error
+Failed to assess psychotherapy participation.
+Rationale
+Virtual CBT has significantly improved treatment engagement.
+Critical Miss #8
+Error
+Failed to address tobacco use.
+Rationale
+Smoking reduction represents meaningful progress and an opportunity for continued motivational interviewing.
+Critical Miss #9
+Error
+Failed to assess ongoing social determinants of health.
+Rationale
+Financial stress and parenting responsibilities continue to affect behavioral health.
+Critical Miss #10
+Error
+Failed to establish longitudinal follow-up.
+Rationale
+The patient has improved but remains symptomatic and requires continued monitoring.
+High-Priority Learning Objectives
+• Recognize partial response.
+• Differentiate response from remission.
+• Recognize successful adherence interventions.
+• Reinforce positive behavior change.
+• Continue treatment despite residual symptoms.
+• Continue addressing social determinants.
+• Continue motivational interviewing for tobacco cessation.
+• Develop long-term management plans.
+SECTION 14: TEACHING GUIDE
+Patient B – Wednesday 3-Month Follow-Up
+What the Student Should Have Done Well
+The student should have:
+• Recognized meaningful improvement
+• Correctly interpreted PHQ-9 improvement
+• Correctly interpreted GAD-7 improvement
+• Recognized partial response
+• Recognized that remission has not been achieved
+• Reassessed medication adherence
+• Reinforced successful adherence strategies
+• Assessed CBT participation
+• Assessed tobacco use
+• Reinforced behavioral change
+• Developed an appropriate monitoring plan
+Common Student Mistakes
+Mistake #1
+Assuming residual symptoms mean treatment failure.
+Teaching Point
+Patients may continue improving after adherence is established.
+Mistake #2
+Escalating treatment too quickly.
+Teaching Point
+Clinical trajectories matter.
+This patient is improving and does not require immediate medication changes.
+Mistake #3
+Ignoring improved adherence.
+Teaching Point
+Adherence improvement is likely the primary reason symptoms improved.
+Mistake #4
+Overlooking progress in smoking behavior.
+Teaching Point
+Reduction in cigarette use often represents increasing readiness for cessation.
+Mistake #5
+Ignoring improved healthcare access.
+Teaching Point
+Virtual therapy significantly reduced barriers and improved treatment engagement.
+Teaching Pearls
+Pearl #1
+Removing barriers can dramatically improve outcomes.
+Expected Discussion
+Improving access and adherence may be more impactful than changing medications.
+Pearl #2
+Response and remission are not the same.
+Expected Discussion
+The patient has experienced response but continues to have residual symptoms.
+Pearl #3
+Behavioral health treatment requires longitudinal thinking.
+Expected Discussion
+This patient continues moving in the right direction and needs time rather than medication changes.
+Pearl #4
+Positive reinforcement is therapeutic.
+Expected Discussion
+Celebrating adherence successes improves confidence and future engagement.
+Pearl #5
+Motivational interviewing is a process.
+Expected Discussion
+Movement from precontemplation toward contemplation represents meaningful progress.
+Follow-Up Questions
+Question 1
+"Has this patient achieved remission?"
+Expected Discussion
+No.
+Residual symptoms remain despite significant improvement.
+Question 2
+"Should sertraline be changed today?"
+Expected Discussion
+No.
+Current therapy appears effective and additional time is warranted.
+Question 3
+"What intervention may have contributed most to improvement?"
+Expected Discussion
+Improved medication adherence and improved access to therapy.
+Question 4
+"What stage of change is the patient demonstrating regarding smoking?"
+Expected Discussion
+Contemplation.
+She is not ready to quit but believes cessation may be possible.
+Question 5
+"What should be the major goals before the next visit?"
+Expected Discussion
+• Maintain medication adherence
+• Continue CBT
+• Continue symptom improvement
+• Continue tobacco reduction efforts
+• Continue addressing barriers to care
+• Progress toward remission
+How the Student Can Improve Before Thursday
+Before the next encounter, students should be able to:
+• Differentiate response from remission
+• Reinforce adherence behaviors
+• Utilize motivational interviewing
+• Recognize improvements resulting from barrier reduction
+• Continue longitudinal behavioral health management
+• Develop sustainable treatment plans
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Granular Rubric and Answer Key — Ambulatory Care Behavioral Health SOAP Note
+Patient B — Wednesday 3-Month Follow-Up
+[FOR AI PRECEPTOR CALIBRATION ONLY — NOT FOR STUDENT DISTRIBUTION]
+PURPOSE: This is the single, authoritative rubric for Patient B (Jessica Ramirez) 3-Month Follow-Up Ambulatory Care Behavioral Health SOAP Note. Every subsection's discrete input point values sum exactly to the subsection header, and all subsection headers sum exactly to 100.0. The model answer scores 100.0/100.0 against this rubric.
+SCORING RULES:
+• FULL: Input present, accurate, and clinically contextualized (not merely a keyword).
+• HALF: Partially present — directionally correct but imprecise, or present without clinical context. Half-credit values are rounded to the nearest 0.05.
+• ZERO: Absent, or a factually incorrect statement is made about that input.
+• Additivity: Points are additive within each subsection → subsections additive within sections → sections additive to 100.0.
+Acceptable-alternative inputs (e.g., therapeutic choices per week's guidelines) list every guideline-supported answer in parentheses; any listed answer earns full credit.
+SECTION 1: SUBJECTIVE (25.0 points)
+1A. CHIEF COMPLAINT / REASON FOR VISIT (2.0 points) — 7 inputs, sum = 2.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1A.1
+	Patient age stated (42 years)
+	0.30
+	States 42 years
+	Age stated, imprecise
+	Omits
+	1A.2
+	Patient sex stated (female)
+	0.20
+	States female
+	—
+	Omits
+	1A.3
+	Encounter setting stated (ambulatory care behavioral health clinic)
+	0.30
+	Names behavioral health clinic
+	Names clinic, no behavioral health
+	Omits
+	1A.4
+	Visit type stated (3-month follow-up)
+	0.40
+	States 3-month follow-up
+	States follow-up, no interval
+	Omits
+	1A.5
+	Prior interventions named (medication adherence, education, access to behavioral health services)
+	0.40
+	Names all three prior interventions
+	Names one or two
+	Omits
+	1A.6
+	Overall improvement stated (patient reports feeling noticeably better)
+	0.20
+	States improved vs. initial visit
+	—
+	Omits
+	1A.7
+	States this is best patient has felt in some time
+	0.20
+	States patient reports best in some time
+	—
+	Omits
+	1A. CHIEF COMPLAINT / REASON FOR VISIT sum check: 0.30 + 0.20 + 0.30 + 0.40 + 0.40 + 0.20 + 0.20 = 2.00
+	 
+1B. HISTORY OF PRESENT ILLNESS (HPI) (5.0 points) — 16 inputs, sum = 5.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1B.1
+	Mood improvement reported
+	0.25
+	States improved mood
+	—
+	Omits
+	1B.2
+	Energy improvement reported
+	0.25
+	States improved energy
+	—
+	Omits
+	1B.3
+	Concentration improvement reported
+	0.25
+	States improved concentration
+	—
+	Omits
+	1B.4
+	Sleep improvement reported
+	0.25
+	States sleeping better
+	—
+	Omits
+	1B.5
+	Anxiety symptoms improvement reported
+	0.25
+	States improved anxiety
+	—
+	Omits
+	1B.6
+	Reports less emotional overwhelm
+	0.25
+	States less emotionally overwhelmed
+	—
+	Omits
+	1B.7
+	Reports improved patience with children
+	0.25
+	States improved patience with children
+	—
+	Omits
+	1B.8
+	Reports improved occupational functioning
+	0.25
+	States functioning better at work
+	—
+	Omits
+	1B.9
+	Residual depressive symptoms present (occasional fatigue, intermittent low motivation)
+	0.35
+	Names residual depressive symptoms with examples
+	Names residual symptoms, no examples
+	Omits
+	1B.10
+	Residual anxiety symptoms present (periods of stress/worry re finances, parenting, work)
+	0.35
+	Names residual anxiety symptoms with stressors
+	Names residual anxiety, no stressors
+	Omits
+	1B.11
+	Racing thoughts and difficulty relaxing still occur occasionally but less frequently
+	0.30
+	States racing thoughts less frequent
+	—
+	Omits
+	1B.12
+	Sertraline adherence strategy: takes with breakfast; uses phone reminders
+	0.35
+	Names both strategies
+	Names one strategy only
+	Omits
+	1B.13
+	Estimates missing only one dose in past month
+	0.35
+	States ~1 missed dose/month
+	States improved adherence, no estimate
+	Omits
+	1B.14
+	Reports 5 completed virtual CBT sessions
+	0.35
+	States 5 sessions completed
+	States CBT participation, no count
+	Omits
+	1B.15
+	Reports CBT beneficial; telehealth eliminates scheduling/transportation barriers
+	0.35
+	Names benefit and barrier elimination
+	Names benefit, no barrier
+	Omits
+	1B.16
+	Cigarette reduction: from ~10 to ~5 cigarettes daily; attributes to reduced stress, improved mood, healthier coping
+	0.60
+	States reduction with quantities and attribution
+	States reduction, no quantities
+	Omits
+	1B. HISTORY OF PRESENT ILLNESS (HPI) sum check: 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.35 + 0.35 + 0.30 + 0.35 + 0.35 + 0.35 + 0.35 + 0.60 = 5.00
+	 
+1C. PAST MEDICAL / SURGICAL / FAMILY HISTORY (3.5 points) — 14 inputs, sum = 3.5
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1C.1
+	PMH: Major Depressive Disorder
+	0.25
+	Lists MDD
+	—
+	Omits
+	1C.2
+	PMH: Generalized Anxiety Disorder
+	0.25
+	Lists GAD
+	—
+	Omits
+	1C.3
+	PMH: Tobacco Use Disorder
+	0.25
+	Lists Tobacco Use Disorder
+	—
+	Omits
+	1C.4
+	PMH: Migraine Headaches
+	0.25
+	Lists migraine headaches
+	—
+	Omits
+	1C.5
+	PSH: Cesarean section
+	0.25
+	Lists cesarean section
+	—
+	Omits
+	1C.6
+	Family history, mother: Major Depressive Disorder
+	0.30
+	States mother with MDD
+	—
+	Omits
+	1C.7
+	Family history, father: Alcohol Use Disorder
+	0.30
+	States father with Alcohol Use Disorder
+	States father with substance use, no specificity
+	Omits
+	1C.8
+	Family history, sister: Generalized Anxiety Disorder
+	0.30
+	States sister with GAD
+	—
+	Omits
+	1C.9
+	Marital status: divorced
+	0.20
+	States divorced
+	—
+	Omits
+	1C.10
+	Lives with two children
+	0.20
+	States lives with two children
+	States lives with children, no count
+	Omits
+	1C.11
+	Employment: works full-time as medical receptionist
+	0.25
+	States full-time medical receptionist
+	States employed, no specifics
+	Omits
+	1C.12
+	Tobacco use: approximately 5 cigarettes daily (current)
+	0.25
+	States ~5 cigarettes daily
+	States smokes, no quantity
+	Omits
+	1C.13
+	Alcohol: occasional use
+	0.20
+	States occasional alcohol use
+	—
+	Omits
+	1C.14
+	Exercise: walking several times weekly
+	0.25
+	States walks several times weekly
+	States exercises, no specifics
+	Omits
+	1C. PAST MEDICAL / SURGICAL / FAMILY HISTORY sum check: 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.30 + 0.30 + 0.30 + 0.20 + 0.20 + 0.25 + 0.25 + 0.20 + 0.25 = 3.50
+	 
+1D. SOCIAL HISTORY / SDOH / IMMUNIZATIONS (3.0 points) — 9 inputs, sum = 3.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1D.1
+	Illicit drug use: denies
+	0.30
+	States denies illicit drug use
+	—
+	Omits
+	1D.2
+	Financial stress identified as ongoing SDOH barrier
+	0.40
+	States financial stress ongoing
+	—
+	Omits
+	1D.3
+	Childcare responsibilities identified as ongoing SDOH barrier
+	0.30
+	States childcare responsibilities ongoing
+	—
+	Omits
+	1D.4
+	Healthcare access improved with virtual therapy
+	0.40
+	States improved access via telehealth
+	—
+	Omits
+	1D.5
+	Influenza vaccination up to date
+	0.30
+	States influenza vaccination current
+	—
+	Omits
+	1D.6
+	COVID-19 vaccination up to date
+	0.30
+	States COVID-19 vaccination current
+	—
+	Omits
+	1D.7
+	Tdap vaccination up to date
+	0.30
+	States Tdap vaccination current
+	—
+	Omits
+	1D.8
+	No known drug allergies
+	0.35
+	States NKDA
+	—
+	Omits
+	1D.9
+	Hopefulness about continued improvement noted
+	0.35
+	States patient feels hopeful
+	—
+	Omits
+	1D. SOCIAL HISTORY / SDOH / IMMUNIZATIONS sum check: 0.30 + 0.40 + 0.30 + 0.40 + 0.30 + 0.30 + 0.30 + 0.35 + 0.35 = 3.00
+	 
+1E. CURRENT MEDICATIONS AND ALLERGIES (6.0 points) — 10 inputs, sum = 6.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1E.1
+	Sertraline listed
+	0.55
+	Names sertraline
+	—
+	Omits
+	1E.2
+	Sertraline dose: 100 mg
+	0.75
+	States 100 mg
+	States sertraline, no dose
+	Incorrect dose
+	1E.3
+	Sertraline regimen: PO daily
+	0.45
+	States PO daily
+	States daily, no route
+	Omits
+	1E.4
+	Hydroxyzine listed
+	0.55
+	Names hydroxyzine
+	—
+	Omits
+	1E.5
+	Hydroxyzine dose: 25 mg
+	0.65
+	States 25 mg
+	States hydroxyzine, no dose
+	Incorrect dose
+	1E.6
+	Hydroxyzine regimen: PO every 8 hours as needed for anxiety
+	0.65
+	States PO q8h PRN anxiety
+	States PRN, missing frequency/route
+	Omits
+	1E.7
+	Sumatriptan listed
+	0.55
+	Names sumatriptan
+	—
+	Omits
+	1E.8
+	Sumatriptan dose: 50 mg
+	0.65
+	States 50 mg
+	States sumatriptan, no dose
+	Incorrect dose
+	1E.9
+	Sumatriptan regimen: PO as needed for migraine
+	0.55
+	States PO PRN migraine
+	States PRN, no route/indication
+	Omits
+	1E.10
+	No known drug allergies documented
+	0.65
+	States NKDA in medication section
+	—
+	Omits
+	1E. CURRENT MEDICATIONS AND ALLERGIES sum check: 0.55 + 0.75 + 0.45 + 0.55 + 0.65 + 0.65 + 0.55 + 0.65 + 0.55 + 0.65 = 6.00
+	 
+1F. REVIEW OF SYSTEMS / RELEVANT NEGATIVES (2.0 points) — 9 inputs, sum = 2.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1F.1
+	Denies suicidal ideation
+	0.35
+	States denies SI
+	—
+	Omits
+	1F.2
+	Denies homicidal ideation
+	0.20
+	States denies HI
+	—
+	Omits
+	1F.3
+	Denies self-harm behaviors
+	0.25
+	States denies self-harm
+	—
+	Omits
+	1F.4
+	Denies panic attacks
+	0.25
+	States denies panic attacks
+	—
+	Omits
+	1F.5
+	Denies mania / hypomania
+	0.25
+	States denies mania and hypomania
+	States denies mania, omits hypomania
+	Omits
+	1F.6
+	Denies hallucinations
+	0.20
+	States denies hallucinations
+	—
+	Omits
+	1F.7
+	Denies delusions
+	0.20
+	States denies delusions
+	—
+	Omits
+	1F.8
+	Denies medication adverse effects
+	0.15
+	States denies medication adverse effects
+	—
+	Omits
+	1F.9
+	Current suicide risk assessment stated as low risk
+	0.15
+	States low suicide risk
+	—
+	Omits
+	1F. REVIEW OF SYSTEMS / RELEVANT NEGATIVES sum check: 0.35 + 0.20 + 0.25 + 0.25 + 0.25 + 0.20 + 0.20 + 0.15 + 0.15 = 2.00
+	 
+1G. PATIENT GOALS / CONCERNS / EXPRESSED PREFERENCES (3.5 points) — 7 inputs, sum = 3.5
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1G.1
+	Patient expresses hope about continuing to improve
+	0.40
+	States patient hopeful/encouraged
+	—
+	Omits
+	1G.2
+	Patient notes medication consistency has made significant difference
+	0.50
+	States patient attributes improvement to medication consistency
+	—
+	Omits
+	1G.3
+	Financial stress remains a concern affecting management
+	0.50
+	States financial stress remains
+	—
+	Omits
+	1G.4
+	Parenting responsibilities remain a concern affecting management
+	0.50
+	States parenting responsibilities remain
+	—
+	Omits
+	1G.5
+	Patient values telehealth/virtual access due to scheduling/transportation barriers
+	0.50
+	States patient values virtual access, names barriers
+	Names virtual access, no barriers
+	Omits
+	1G.6
+	Patient attributes cigarette reduction to improved mood and coping
+	0.50
+	States patient attributes reduction to mood/coping
+	—
+	Omits
+	1G.7
+	Patient not yet ready to establish a quit date but reports quitting feels possible
+	0.60
+	States not ready for quit date AND quitting feels possible
+	States not ready, omits 'feels possible'
+	Omits
+	1G. PATIENT GOALS / CONCERNS / EXPRESSED PREFERENCES sum check: 0.40 + 0.50 + 0.50 + 0.50 + 0.50 + 0.50 + 0.60 = 3.50
+	Section 1 check: 2.0 + 5.0 + 3.5 + 3.0 + 6.0 + 2.0 + 3.5 = 25.0
+SECTION 2: OBJECTIVE (15.0 points)
+2A. VITAL SIGNS AND ANTHROPOMETRICS (4.0 points) — 8 inputs, sum = 4.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2A.1
+	Blood pressure: 122/76 mmHg
+	0.60
+	States 122/76 mmHg
+	BP stated, value imprecise
+	Omits
+	2A.2
+	Heart rate: 78 bpm
+	0.40
+	States 78 bpm
+	—
+	Omits
+	2A.3
+	Respiratory rate: 16 breaths/min
+	0.30
+	States 16 breaths/min
+	—
+	Omits
+	2A.4
+	Temperature: 98.1°F
+	0.30
+	States 98.1°F
+	—
+	Omits
+	2A.5
+	Weight: 174 lbs
+	0.40
+	States 174 lbs
+	—
+	Omits
+	2A.6
+	Height: 64 inches
+	0.30
+	States 64 inches
+	—
+	Omits
+	2A.7
+	BMI: 29.9 kg/m²
+	0.70
+	States 29.9 kg/m²
+	BMI stated, value imprecise
+	Omits
+	2A.8
+	No clinically significant abnormalities on CMP noted
+	1.00
+	States no clinically significant abnormalities
+	—
+	Omits
+	2A. VITAL SIGNS AND ANTHROPOMETRICS sum check: 0.60 + 0.40 + 0.30 + 0.30 + 0.40 + 0.30 + 0.70 + 1.00 = 4.00
+	 
+2B. LABORATORY DATA / ASSESSMENT SCORES (9.0 points) — 12 inputs, sum = 9.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2B.1
+	Sodium: 140 mEq/L
+	0.55
+	States 140 mEq/L
+	—
+	Omits
+	2B.2
+	Potassium: 4.1 mEq/L
+	0.65
+	States 4.1 mEq/L
+	—
+	Omits
+	2B.3
+	BUN: 13 mg/dL
+	0.55
+	States 13 mg/dL
+	—
+	Omits
+	2B.4
+	Serum creatinine: 0.9 mg/dL
+	0.75
+	States 0.9 mg/dL
+	—
+	Omits
+	2B.5
+	eGFR: >90 mL/min/1.73m²
+	0.85
+	States >90 mL/min/1.73m²
+	States eGFR elevated or normal, no value
+	Omits
+	2B.6
+	AST: 22 U/L
+	0.55
+	States 22 U/L
+	—
+	Omits
+	2B.7
+	ALT: 23 U/L
+	0.55
+	States 23 U/L
+	—
+	Omits
+	2B.8
+	Glucose: 95 mg/dL
+	0.65
+	States 95 mg/dL
+	—
+	Omits
+	2B.9
+	PHQ-9 previous score: 16
+	0.85
+	States previous PHQ-9 = 16
+	States prior PHQ-9, no value
+	Omits
+	2B.10
+	PHQ-9 current score: 9 (Mild Depression)
+	1.10
+	States current PHQ-9 = 9 AND interprets as Mild Depression
+	States PHQ-9 = 9 without interpretation
+	Omits
+	2B.11
+	GAD-7 previous score: 14
+	0.85
+	States previous GAD-7 = 14
+	States prior GAD-7, no value
+	Omits
+	2B.12
+	GAD-7 current score: 7 (Mild Anxiety)
+	1.10
+	States current GAD-7 = 7 AND interprets as Mild Anxiety
+	States GAD-7 = 7 without interpretation
+	Omits
+	2B. LABORATORY DATA / ASSESSMENT SCORES sum check: 0.55 + 0.65 + 0.55 + 0.75 + 0.85 + 0.55 + 0.55 + 0.65 + 0.85 + 1.10 + 0.85 + 1.10 = 9.00
+	 
+2C. CALCULATED VALUES / TRENDS / INTERPRETATION (2.0 points) — 5 inputs, sum = 2.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2C.1
+	PHQ-9 improvement trend: 16 → 9 (7-point decrease)
+	0.50
+	States both values and direction of change
+	Names improvement, no values
+	Omits
+	2C.2
+	GAD-7 improvement trend: 14 → 7 (7-point decrease)
+	0.50
+	States both values and direction of change
+	Names improvement, no values
+	Omits
+	2C.3
+	BMI consistent with documented height and weight (29.9 kg/m²)
+	0.30
+	BMI consistent with height and weight
+	BMI stated, not reconciled
+	Incorrect
+	2C.4
+	Suicide risk assessment: low risk, based on denials of SI/plan/attempts/self-harm
+	0.40
+	States low risk with supporting denials
+	States low risk, no supporting data
+	Omits
+	2C.5
+	Identifies PHQ-9 and GAD-7 as standardized monitoring tools
+	0.30
+	Names both validated scales
+	Names one
+	Omits
+	2C. CALCULATED VALUES / TRENDS / INTERPRETATION sum check: 0.50 + 0.50 + 0.30 + 0.40 + 0.30 = 2.00
+	Section 2 check: 4.0 + 9.0 + 2.0 = 15.0
+SECTION 3: ASSESSMENT (30.0 points)
+3A. PROBLEM 1 — MAJOR DEPRESSIVE DISORDER (Improving, Partial Response) (7.0 points) — 16 inputs, sum = 7.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3A.1
+	Problem identified: Major Depressive Disorder
+	0.30
+	Names Major Depressive Disorder
+	—
+	Omits
+	3A.2
+	Status: improving with partial response
+	0.40
+	States improving / partial response
+	States improving only
+	Omits
+	3A.3
+	Links improvement to improved medication adherence
+	0.55
+	Ties improvement explicitly to adherence
+	States improvement, no mechanism
+	Omits
+	3A.4
+	States PHQ-9 declined from 16 to 9 (clinically meaningful reduction)
+	0.65
+	States both PHQ-9 values and clinically meaningful
+	States improvement, no values
+	Omits
+	3A.5
+	Residual symptoms identified: intermittent fatigue and low motivation
+	0.45
+	Names fatigue and low motivation
+	Names one
+	Omits
+	3A.6
+	Residual symptom: incomplete return to baseline functioning
+	0.30
+	States incomplete return to baseline
+	—
+	Omits
+	3A.7
+	Concludes persistent symptoms at initial visit were due to inadequate treatment exposure (nonadherence + access barriers), not medication failure
+	0.65
+	States prior symptoms = treatment exposure deficit, not drug failure
+	States not drug failure, no mechanism
+	Omits
+	3A.8
+	States remission not yet achieved
+	0.45
+	States remission not yet achieved
+	—
+	Omits
+	3A.9
+	States medication adherence recently established; adequate exposure only recently achieved
+	0.45
+	States recent adherence/exposure established
+	—
+	Omits
+	3A.10
+	Concludes no evidence of antidepressant failure or indication for medication change
+	0.55
+	States no evidence of failure / no medication change warranted
+	—
+	Omits
+	3A.11
+	Supports continuation of sertraline 100 mg
+	0.45
+	Names continue sertraline 100 mg
+	Names sertraline, no dose
+	Incorrect dose or change
+	3A.12
+	Supports continuation of virtual CBT
+	0.30
+	States continue virtual CBT
+	States continue CBT, not virtual
+	Omits
+	3A.13
+	States favorable trajectory
+	0.20
+	States favorable trajectory
+	—
+	Omits
+	3A.14
+	States treatment per ACP guideline: second-generation antidepressant (sertraline is an SSRI) for moderate-severe MDD
+	0.55
+	Links sertraline to SGA/SSRI class recommendation for MDD
+	Mentions guideline support, no class
+	Omits
+	3A.15
+	Identifies CBT continuation as evidence-based (ACP guideline supports CBT + SGA combination)
+	0.45
+	Links CBT to ACP guideline for MDD treatment
+	Mentions CBT benefit, no guideline
+	Omits
+	3A.16
+	States continued monitoring appropriate
+	0.30
+	States ongoing monitoring appropriate
+	—
+	Omits
+	3A. PROBLEM 1 — MAJOR DEPRESSIVE DISORDER (Improving, Partial Response) sum check: 0.30 + 0.40 + 0.55 + 0.65 + 0.45 + 0.30 + 0.65 + 0.45 + 0.45 + 0.55 + 0.45 + 0.30 + 0.20 + 0.55 + 0.45 + 0.30 = 7.00
+	 
+3B. PROBLEM 2 — GENERALIZED ANXIETY DISORDER (Improving) (6.0 points) — 13 inputs, sum = 6.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3B.1
+	Problem identified: Generalized Anxiety Disorder
+	0.40
+	Names Generalized Anxiety Disorder
+	—
+	Omits
+	3B.2
+	Status: improving following improved treatment engagement
+	0.50
+	States improving / improved engagement
+	—
+	Omits
+	3B.3
+	States GAD-7 declined from 14 to 7 (significant improvement)
+	0.70
+	States both GAD-7 values
+	States improvement, no values
+	Omits
+	3B.4
+	Notes reduced excessive worrying
+	0.40
+	States reduced worrying
+	—
+	Omits
+	3B.5
+	Notes improved sleep
+	0.40
+	States improved sleep
+	—
+	Omits
+	3B.6
+	Notes improved ability to manage stressors
+	0.40
+	States improved stress management
+	—
+	Omits
+	3B.7
+	Residual anxiety associated with financial stress and parenting
+	0.50
+	Names financial stress and parenting as ongoing stressors
+	Names one only
+	Omits
+	3B.8
+	States symptoms no longer as overwhelming as before
+	0.40
+	States less overwhelming than before
+	—
+	Omits
+	3B.9
+	Links symptom improvement to improved medication adherence
+	0.50
+	Ties improvement to adherence
+	—
+	Omits
+	3B.10
+	Links symptom improvement to CBT participation
+	0.50
+	Ties improvement to CBT
+	—
+	Omits
+	3B.11
+	Supports continuation of sertraline 100 mg for GAD
+	0.40
+	Names continue sertraline 100 mg for GAD
+	Names sertraline, no dose
+	Incorrect dose
+	3B.12
+	Supports continuation of hydroxyzine 25 mg q8h PRN
+	0.50
+	Names continue hydroxyzine 25 mg q8h PRN
+	Names hydroxyzine, no dose/regimen
+	Omits
+	3B.13
+	Supports continuation of virtual CBT
+	0.40
+	States continue virtual CBT
+	States continue CBT, not virtual
+	Omits
+	3B. PROBLEM 2 — GENERALIZED ANXIETY DISORDER (Improving) sum check: 0.40 + 0.50 + 0.70 + 0.40 + 0.40 + 0.40 + 0.50 + 0.40 + 0.50 + 0.50 + 0.40 + 0.50 + 0.40 = 6.00
+	 
+3C. PROBLEM 3 — MEDICATION NONADHERENCE (Significantly Improved) (4.0 points) — 9 inputs, sum = 4.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3C.1
+	Problem identified: medication nonadherence (significantly improved)
+	0.45
+	Names nonadherence as a problem with improved status
+	Names nonadherence, no status
+	Omits
+	3C.2
+	Patient implemented phone reminders as adherence strategy
+	0.45
+	Names phone reminders
+	—
+	Omits
+	3C.3
+	Patient implemented habit stacking: takes medication with breakfast
+	0.45
+	Names habit stacking with breakfast
+	Names breakfast only, no habit stacking
+	Omits
+	3C.4
+	Patient estimates ~1 missed dose in past month
+	0.55
+	States approximately one missed dose/month
+	States rare missed doses, no estimate
+	Omits
+	3C.5
+	Patient demonstrates improved understanding of importance of medication consistency
+	0.45
+	States improved understanding of consistency
+	—
+	Omits
+	3C.6
+	States continued reinforcement of adherence strategies is appropriate
+	0.45
+	States reinforce strategies
+	—
+	Omits
+	3C.7
+	Links improved adherence to improved symptom outcomes
+	0.55
+	Ties adherence improvement to symptom improvement
+	States both but no causal link
+	Omits
+	3C.8
+	Increased treatment engagement noted as contributing factor
+	0.35
+	Names increased treatment engagement
+	—
+	Omits
+	3C.9
+	States continuation of daily medication routine appropriate
+	0.30
+	States continue daily routine
+	—
+	Omits
+	3C. PROBLEM 3 — MEDICATION NONADHERENCE (Significantly Improved) sum check: 0.45 + 0.45 + 0.45 + 0.55 + 0.45 + 0.45 + 0.55 + 0.35 + 0.30 = 4.00
+	 
+3D. PROBLEM 4 — FINANCIAL AND ACCESS BARRIERS (Improving) (4.0 points) — 8 inputs, sum = 4.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3D.1
+	Problem identified: financial and access barriers affecting behavioral health management
+	0.50
+	Names financial and access barriers as a problem
+	Names one type of barrier
+	Omits
+	3D.2
+	States financial stress remains an ongoing challenge
+	0.50
+	States financial stress ongoing
+	—
+	Omits
+	3D.3
+	States childcare responsibilities remain an ongoing challenge
+	0.50
+	States childcare ongoing
+	—
+	Omits
+	3D.4
+	Notes virtual CBT significantly improved access to behavioral health services
+	0.70
+	States virtual CBT improved access
+	States CBT access improved, not virtual
+	Omits
+	3D.5
+	States telehealth reduced previous scheduling barriers
+	0.60
+	States telehealth reduced scheduling barriers
+	States barriers reduced, not scheduling
+	Omits
+	3D.6
+	Patient reports improved ability to engage in treatment
+	0.50
+	States improved treatment engagement
+	—
+	Omits
+	3D.7
+	Patient expresses satisfaction with convenience of telehealth
+	0.30
+	States patient satisfied with telehealth
+	—
+	Omits
+	3D.8
+	States continued assessment of social determinants is appropriate
+	0.40
+	States reassess social determinants
+	—
+	Omits
+	3D. PROBLEM 4 — FINANCIAL AND ACCESS BARRIERS (Improving) sum check: 0.50 + 0.50 + 0.50 + 0.70 + 0.60 + 0.50 + 0.30 + 0.40 = 4.00
+	 
+3E. PROBLEM 5 — TOBACCO USE DISORDER (Improving, Contemplative Stage) (5.5 points) — 11 inputs, sum = 5.5
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3E.1
+	Problem identified: Tobacco Use Disorder
+	0.40
+	Names Tobacco Use Disorder
+	—
+	Omits
+	3E.2
+	Status: improving
+	0.25
+	States improving
+	—
+	Omits
+	3E.3
+	States current quantity: approximately 5 cigarettes daily
+	0.60
+	States ~5 cigarettes daily
+	States reduced, no current quantity
+	Omits
+	3E.4
+	States prior quantity: approximately 10 cigarettes daily
+	0.60
+	States ~10 cigarettes daily prior
+	States prior use, no quantity
+	Omits
+	3E.5
+	Stage of change identified: contemplative (not yet ready to quit)
+	0.70
+	Names contemplative stage or equivalent
+	States not ready, no stage name
+	Omits
+	3E.6
+	Patient attributes reduction to reduced stress
+	0.40
+	Names reduced stress as attribution
+	—
+	Omits
+	3E.7
+	Patient attributes reduction to improved mood
+	0.40
+	Names improved mood as attribution
+	—
+	Omits
+	3E.8
+	Patient attributes reduction to healthier coping mechanisms
+	0.40
+	Names healthier coping as attribution
+	—
+	Omits
+	3E.9
+	Patient reports quitting feels possible but not ready for quit date
+	0.70
+	States feels possible AND not ready for quit date
+	States not ready only
+	Omits
+	3E.10
+	States motivational interviewing and reassessment of readiness are appropriate
+	0.60
+	Names motivational interviewing and reassessment
+	Names one only
+	Omits
+	3E.11
+	Links tobacco use to behavioral health context (reduced stress/improved mood driving reduction)
+	0.45
+	Links tobacco reduction to BH improvement
+	—
+	Omits
+	3E. PROBLEM 5 — TOBACCO USE DISORDER (Improving, Contemplative Stage) sum check: 0.40 + 0.25 + 0.60 + 0.60 + 0.70 + 0.40 + 0.40 + 0.40 + 0.70 + 0.60 + 0.45 = 5.50
+	 
+3F. PROBLEM 6 — BEHAVIORAL HEALTH KNOWLEDGE DEFICIT (Improving) (3.5 points) — 8 inputs, sum = 3.5
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3F.1
+	Problem identified: behavioral health knowledge deficit (improving)
+	0.40
+	Names knowledge deficit with improving status
+	Names knowledge deficit only
+	Omits
+	3F.2
+	Improved understanding: importance of medication adherence
+	0.45
+	States improved adherence understanding
+	—
+	Omits
+	3F.3
+	Improved understanding: expected antidepressant response timeline
+	0.45
+	States improved understanding of expected response
+	—
+	Omits
+	3F.4
+	Improved understanding: role of psychotherapy
+	0.45
+	States improved understanding of psychotherapy role
+	—
+	Omits
+	3F.5
+	Improved understanding: longitudinal nature of behavioral health treatment
+	0.45
+	States improved understanding of long-term treatment
+	—
+	Omits
+	3F.6
+	Identifies remission expectations as ongoing education need
+	0.45
+	States education re: remission expectations needed
+	—
+	Omits
+	3F.7
+	Identifies relapse prevention as ongoing education need
+	0.40
+	States education re: relapse prevention needed
+	—
+	Omits
+	3F.8
+	States continued treatment engagement education appropriate
+	0.45
+	States continued engagement education needed
+	—
+	Omits
+	3F. PROBLEM 6 — BEHAVIORAL HEALTH KNOWLEDGE DEFICIT (Improving) sum check: 0.40 + 0.45 + 0.45 + 0.45 + 0.45 + 0.45 + 0.40 + 0.45 = 3.50
+	Section 3 check: 7.0 + 6.0 + 4.0 + 4.0 + 5.5 + 3.5 = 30.0
+SECTION 4: PLAN (25.0 points)
+4A. MAJOR DEPRESSIVE DISORDER (5.0 points) — 10 inputs, sum = 5.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4A.1
+	Continue sertraline 100 mg PO daily (acceptable per ACP guideline: any second-generation antidepressant [SSRI: sertraline, escitalopram, fluoxetine, paroxetine, fluvoxamine, citalopram; SNRI: venlafaxine, duloxetine, levomilnacipran, desvenlafaxine; other: bupropion, mirtazapine, trazodone, vilazodone, vortioxetine])
+	0.70
+	States continue sertraline 100 mg
+	Names sertraline, no dose
+	Incorrect/changes medication
+	4A.2
+	Rationale: meaningful improvement achieved; remission not yet reached
+	0.50
+	Names both: improvement achieved AND remission not yet reached
+	Names one rationale only
+	Omits
+	4A.3
+	Rationale: medication adherence only recently improved / adequate exposure recently established
+	0.50
+	States adequate exposure recently established
+	—
+	Omits
+	4A.4
+	Rationale: current evidence does not support antidepressant failure or medication change
+	0.50
+	States no evidence of failure / medication change not indicated
+	—
+	Omits
+	4A.5
+	Continue virtual CBT (acceptable: individual CBT, group CBT, telephone/mobile CBT — per ACP guideline Rec 1b and USPSTF evidence for combined CBT + SGA)
+	0.60
+	States continue virtual CBT
+	States continue CBT, not virtual
+	Omits
+	4A.6
+	Provide education re: response vs. remission distinction
+	0.40
+	Names response vs. remission education
+	—
+	Omits
+	4A.7
+	Provide education re: importance of continued adherence
+	0.30
+	States adherence education
+	—
+	Omits
+	4A.8
+	Provide education re: expected timeline for additional improvement
+	0.30
+	States timeline education
+	—
+	Omits
+	4A.9
+	Repeat PHQ-9 at follow-up
+	0.50
+	States repeat PHQ-9 at follow-up
+	States repeat, no instrument named
+	Omits
+	4A.10
+	Plan elements contextualized in rationale for not changing medication
+	0.70
+	States rationale (adherence exposure issue not drug failure) supporting continuation
+	Names plan without rationale
+	Omits
+	4A. MAJOR DEPRESSIVE DISORDER sum check: 0.70 + 0.50 + 0.50 + 0.50 + 0.60 + 0.40 + 0.30 + 0.30 + 0.50 + 0.70 = 5.00
+	 
+4B. GENERALIZED ANXIETY DISORDER (4.5 points) — 9 inputs, sum = 4.5
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4B.1
+	Continue sertraline 100 mg PO daily for GAD
+	0.55
+	States continue sertraline 100 mg for GAD
+	Names sertraline, no dose or indication
+	Incorrect dose
+	4B.2
+	Continue hydroxyzine 25 mg PO q8h PRN anxiety (acceptable: hydroxyzine as adjunctive short-acting anxiolytic — JAMA 2026 Review; USPSTF evidence)
+	0.70
+	States continue hydroxyzine 25 mg q8h PRN
+	Names hydroxyzine, no dose/regimen
+	Omits or changes
+	4B.3
+	Continue virtual CBT
+	0.55
+	States continue virtual CBT
+	States continue CBT, not virtual
+	Omits
+	4B.4
+	Counsel re: stress management techniques
+	0.45
+	Names stress management counseling
+	—
+	Omits
+	4B.5
+	Counsel re: sleep hygiene
+	0.45
+	Names sleep hygiene counseling
+	—
+	Omits
+	4B.6
+	Counsel re: healthy coping strategies
+	0.45
+	Names healthy coping counseling
+	—
+	Omits
+	4B.7
+	Repeat GAD-7 at follow-up
+	0.55
+	States repeat GAD-7 at follow-up
+	States repeat, no instrument named
+	Omits
+	4B.8
+	Reinforce continuation of walking/exercise as healthy coping
+	0.45
+	States reinforce walking or exercise
+	—
+	Omits
+	4B.9
+	Reassess residual anxiety linked to ongoing SDOH stressors (financial, parenting)
+	0.35
+	States reassess SDOH-linked anxiety
+	—
+	Omits
+	4B. GENERALIZED ANXIETY DISORDER sum check: 0.55 + 0.70 + 0.55 + 0.45 + 0.45 + 0.45 + 0.55 + 0.45 + 0.35 = 4.50
+	 
+4C. MEDICATION ADHERENCE (3.5 points) — 7 inputs, sum = 3.5
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4C.1
+	Continue phone reminders as adherence tool
+	0.55
+	States continue phone reminders
+	—
+	Omits
+	4C.2
+	Continue taking medication with breakfast (habit stacking)
+	0.60
+	States continue taking with breakfast
+	—
+	Omits
+	4C.3
+	Continue daily medication routine
+	0.45
+	States continue daily routine
+	—
+	Omits
+	4C.4
+	Reinforce importance of medication consistency at visit
+	0.55
+	States reinforce consistency
+	—
+	Omits
+	4C.5
+	Provide education re: adherence and clinical outcomes
+	0.60
+	States education on adherence-outcomes link
+	—
+	Omits
+	4C.6
+	Assess adherence at every follow-up
+	0.50
+	States assess adherence at follow-up
+	—
+	Omits
+	4C.7
+	Acknowledge patient's adherence success and positive progress
+	0.25
+	States acknowledge success
+	—
+	Omits
+	4C. MEDICATION ADHERENCE sum check: 0.55 + 0.60 + 0.45 + 0.55 + 0.60 + 0.50 + 0.25 = 3.50
+	 
+4D. FINANCIAL AND ACCESS BARRIERS (3.0 points) — 6 inputs, sum = 3.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4D.1
+	Continue virtual CBT to maintain improved access
+	0.60
+	States continue virtual CBT for access
+	States CBT only, not virtual
+	Omits
+	4D.2
+	Reassess financial stressors at follow-up
+	0.50
+	States reassess financial stressors
+	—
+	Omits
+	4D.3
+	Reassess scheduling barriers at follow-up
+	0.40
+	States reassess scheduling barriers
+	—
+	Omits
+	4D.4
+	Reassess treatment accessibility at follow-up
+	0.40
+	States reassess accessibility
+	—
+	Omits
+	4D.5
+	Encourage continued prioritization of personal healthcare
+	0.50
+	States encourage health prioritization
+	—
+	Omits
+	4D.6
+	Assess whether additional SDOH resources or referrals are needed
+	0.60
+	States assess need for SDOH resources
+	—
+	Omits
+	4D. FINANCIAL AND ACCESS BARRIERS sum check: 0.60 + 0.50 + 0.40 + 0.40 + 0.50 + 0.60 = 3.00
+	 
+4E. TOBACCO USE DISORDER (4.0 points) — 9 inputs, sum = 4.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4E.1
+	Provide motivational interviewing (per USPSTF Tobacco Cessation Guideline: behavioral counseling recommended for all adults who use tobacco)
+	0.60
+	Names motivational interviewing
+	—
+	Omits
+	4E.2
+	Reinforce significant reduction in cigarette use (10 → 5 daily)
+	0.40
+	States reinforce reduction with quantities
+	Names reinforcement, no quantities
+	Omits
+	4E.3
+	Reinforce progress toward cessation readiness
+	0.40
+	States reinforce progress toward readiness
+	—
+	Omits
+	4E.4
+	Discuss benefits of cessation
+	0.40
+	States discuss cessation benefits
+	—
+	Omits
+	4E.5
+	Discuss stress-management alternatives to smoking
+	0.40
+	States discuss alternatives to smoking
+	—
+	Omits
+	4E.6
+	Discuss future quit planning
+	0.40
+	States discuss future quit planning
+	—
+	Omits
+	4E.7
+	States patient not ready to establish quit date
+	0.40
+	States not ready for quit date
+	—
+	Omits
+	4E.8
+	Reassess readiness to quit at next visit
+	0.40
+	States reassess readiness at follow-up
+	—
+	Omits
+	4E.9
+	Note: pharmacotherapy not initiated; patient not at action stage (per USPSTF: provide pharmacotherapy when patient is ready — acceptable options: NRT [patch, gum, lozenge, inhaler, nasal spray], bupropion SR, varenicline)
+	0.60
+	States no pharmacotherapy initiated; patient not at action stage
+	Notes no pharmacotherapy, no rationale
+	Omits
+	4E. TOBACCO USE DISORDER sum check: 0.60 + 0.40 + 0.40 + 0.40 + 0.40 + 0.40 + 0.40 + 0.40 + 0.60 = 4.00
+	 
+4F. PATIENT EDUCATION (2.0 points) — 7 inputs, sum = 2.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4F.1
+	Provide education re: symptom improvement and progress
+	0.30
+	States educate on improvement/progress
+	—
+	Omits
+	4F.2
+	Provide education re: continued treatment engagement
+	0.30
+	States educate on treatment engagement
+	—
+	Omits
+	4F.3
+	Provide education re: medication adherence
+	0.25
+	States medication adherence education
+	—
+	Omits
+	4F.4
+	Provide education re: role of psychotherapy
+	0.25
+	States psychotherapy role education
+	—
+	Omits
+	4F.5
+	Provide education re: tobacco use and cessation
+	0.25
+	States tobacco education
+	—
+	Omits
+	4F.6
+	Provide education re: long-term behavioral health expectations
+	0.35
+	States long-term expectations education
+	—
+	Omits
+	4F.7
+	Provide education re: remission expectations and relapse prevention
+	0.30
+	States remission and relapse prevention education
+	Names one only
+	Omits
+	4F. PATIENT EDUCATION sum check: 0.30 + 0.30 + 0.25 + 0.25 + 0.25 + 0.35 + 0.30 = 2.00
+	 
+4G. FOLLOW-UP AND MONITORING (3.0 points) — 11 inputs, sum = 3.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4G.1
+	Schedule follow-up in approximately 3 months
+	0.50
+	States 3-month follow-up
+	States follow-up, no timing
+	Omits
+	4G.2
+	Repeat PHQ-9 at follow-up
+	0.25
+	States repeat PHQ-9
+	—
+	Omits
+	4G.3
+	Repeat GAD-7 at follow-up
+	0.25
+	States repeat GAD-7
+	—
+	Omits
+	4G.4
+	Assess continued symptom improvement at follow-up
+	0.25
+	States assess symptom improvement
+	—
+	Omits
+	4G.5
+	Assess medication adherence at follow-up
+	0.25
+	States assess adherence
+	—
+	Omits
+	4G.6
+	Assess medication tolerability / adverse effects at follow-up
+	0.25
+	States assess tolerability
+	—
+	Omits
+	4G.7
+	Assess continued CBT participation at follow-up
+	0.25
+	States assess CBT participation
+	—
+	Omits
+	4G.8
+	Assess tobacco use and readiness to quit at follow-up
+	0.25
+	States assess tobacco use and readiness
+	Names one only
+	Omits
+	4G.9
+	Evaluate achievement of remission at follow-up
+	0.25
+	States evaluate remission
+	—
+	Omits
+	4G.10
+	Discuss long-term maintenance strategies at follow-up
+	0.25
+	States discuss maintenance
+	—
+	Omits
+	4G.11
+	Future visits focus: sustained treatment, remission, adherence behaviors, long-term BH and tobacco cessation plans
+	0.25
+	States all four future focus areas
+	Names some
+	Omits
+	4G. FOLLOW-UP AND MONITORING sum check: 0.50 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 = 3.00
+	Section 4 check: 5.0 + 4.5 + 3.5 + 3.0 + 4.0 + 2.0 + 3.0 = 25.0
+SECTION 5: PRESENTATION QUALITY (5.0 points)
+5A. ORGANIZATION AND SOAP STRUCTURE (2.0 points) — 4 inputs, sum = 2.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5A.1
+	Uses four-part SOAP structure (S / O / A / P)
+	0.50
+	All four sections present and labeled
+	Some sections present
+	Absent
+	5A.2
+	Subjective and objective data placed in correct sections
+	0.50
+	Correctly partitioned
+	Minor misplacement
+	Major misplacement
+	5A.3
+	Assessment presents a prioritized problem list
+	0.50
+	Numbered, prioritized list
+	Listed, not prioritized
+	Absent
+	5A.4
+	Each plan element maps to an assessed problem
+	0.50
+	All plan items mapped
+	Most mapped
+	Unmapped plan
+	5A. ORGANIZATION AND SOAP STRUCTURE sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+	 
+5B. FORMATTING AND DOCUMENTATION (2.0 points) — 4 inputs, sum = 2.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5B.1
+	Medications documented with drug, dose, route, and frequency
+	0.50
+	All four elements present
+	Missing one element
+	Largely incomplete
+	5B.2
+	Laboratory values and assessment scores reported with units/scales
+	0.50
+	Units and scales present throughout
+	Some missing
+	Largely absent
+	5B.3
+	Goals and clinical status statements are specific
+	0.50
+	Specific throughout
+	Partly vague
+	Vague
+	5B.4
+	Plan items are specific and actionable
+	0.50
+	Specific, actionable throughout
+	Partly vague
+	Vague
+	5B. FORMATTING AND DOCUMENTATION sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+	 
+5C. PROFESSIONAL TONE AND SPECIFICITY (1.0 points) — 3 inputs, sum = 1.0
+	#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5C.1
+	Objective, professional clinical language throughout
+	0.40
+	Professional throughout
+	Minor lapses
+	Unprofessional
+	5C.2
+	Recommendations tied to guideline or clinical rationale
+	0.40
+	Rationale provided throughout
+	Partial rationale
+	Absent
+	5C.3
+	Free of major factual or medication errors
+	0.20
+	No major errors
+	1 minor error
+	Major error present
+	5C. PROFESSIONAL TONE AND SPECIFICITY sum check: 0.40 + 0.40 + 0.20 = 1.00
+	Section 5 check: 2.0 + 2.0 + 1.0 = 5.0
+ 
+GRAND TOTAL VERIFICATION
+	§
+	Section
+	Subsections
+	Points
+	1
+	SUBJECTIVE
+	1A(2.0)+1B(5.0)+1C(3.5)+1D(3.0)+1E(6.0)+1F(2.0)+1G(3.5)
+	25.0
+	2
+	OBJECTIVE
+	2A(4.0)+2B(9.0)+2C(2.0)
+	15.0
+	3
+	ASSESSMENT
+	3A(7.0)+3B(6.0)+3C(4.0)+3D(4.0)+3E(5.5)+3F(3.5)
+	30.0
+	4
+	PLAN
+	4A(5.0)+4B(4.5)+4C(3.5)+4D(3.0)+4E(4.0)+4F(2.0)+4G(3.0)
+	25.0
+	5
+	PRESENTATION QUALITY
+	5A(2.0)+5B(2.0)+5C(1.0)
+	5.0
+	 
+	  GRAND TOTAL
+	 
+	100.0
+	 
+GRADING SCALE
+	Grade
+	Range
+	Description
+	A
+	90.0–100.0
+	Exceptional — comprehensive, accurate, clinically actionable
+	B
+	80.0–89.9
+	Proficient — solid coverage with minor gaps
+	C
+	70.0–79.9
+	Developing — adequate but missing key elements
+	D
+	60.0–69.9
+	Below expectations — significant gaps
+	F
+	Below 60.0
+	Unsatisfactory — major deficiencies
+	 
+TOTAL DISCRETE INPUTS ACROSS ALL SECTIONS
+	Section
+	Subsections
+	# Inputs
+	1. SUBJECTIVE
+	1A–1G
+	72
+	2. OBJECTIVE
+	2A–2C
+	25
+	3. ASSESSMENT
+	3A–3F
+	65
+	4. PLAN
+	4A–4G
+	59
+	5. PRESENTATION QUALITY
+	5A–5C
+	11
+	TOTAL
+	 
+	232
+	 
+MODEL ANSWER SCORE: 100.0 / 100.0
+The model answer (Patient B — Wednesday 3-Month Follow-Up gold-standard SOAP note) earns full credit on every one of the 232 discrete inputs. Any student submission is scored against this rubric by evaluating each discrete input independently, awarding FULL, HALF, or ZERO credit per input, and summing to a final score out of 100.0.
+Source guidelines for therapeutic alternatives: ACP MDD Guideline (2023); USPSTF Anxiety Screening Evidence Report (2023); JAMA Internal Medicine Anxiety Review (2026); USPSTF Tobacco Cessation Guideline (2021); VA/DoD Tobacco Cessation CPG (2026).
+

@@ -1,0 +1,218 @@
+﻿Tobacco Cessation Guideline Summary
+Tobacco Use Disorder and Tobacco Cessation
+Primary Guideline References
+1. Department of Veterans Affairs / Department of Defense (VA/DoD) Clinical Practice Guideline for Tobacco Use Treatment (2025)
+Department of Veterans Affairs, Department of Defense.
+VA/DoD Clinical Practice Guideline for Tobacco Use Treatment.
+Version 3.0. 2025.
+2. U.S. Preventive Services Task Force (USPSTF) Recommendation Statement (2021)
+U.S. Preventive Services Task Force.
+Interventions for Tobacco Smoking Cessation in Adults, Including Pregnant Persons.
+JAMA. 2021;325(3):265-279.
+Why These Guidelines Matter
+Tobacco use remains the leading preventable cause of disease, disability, and death in the United States.
+Smoking contributes to:
+• Cardiovascular disease
+• Stroke
+• Chronic obstructive pulmonary disease (COPD)
+• Multiple cancers
+• Chronic kidney disease
+• Diabetes complications
+• Poor mental health outcomes
+• Increased mortality
+Many patients with depression and anxiety use tobacco at higher rates than the general population.
+Behavioral health conditions and tobacco use frequently reinforce one another, making cessation particularly challenging.
+Pharmacists play a critical role in:
+• Identifying tobacco use
+• Assessing readiness to quit
+• Recommending pharmacotherapy
+• Providing behavioral counseling
+• Managing withdrawal symptoms
+• Preventing relapse
+• Supporting long-term abstinence
+Tobacco Use Disorder
+Nicotine is highly addictive.
+Repeated nicotine exposure leads to:
+• Physical dependence
+• Psychological dependence
+• Withdrawal symptoms upon cessation
+Common withdrawal symptoms include:
+• Irritability
+• Anxiety
+• Restlessness
+• Difficulty concentrating
+• Increased appetite
+• Cravings
+• Sleep disturbances
+Many patients mistakenly believe smoking improves anxiety or stress.
+In reality, nicotine withdrawal often contributes to the anxiety symptoms that improve temporarily after smoking.
+The 5 A's Framework
+The USPSTF and VA/DoD guidelines support routine tobacco assessment using the 5 A's.
+Ask
+Identify tobacco use at every encounter.
+Examples:
+• Cigarettes
+• Cigars
+• Smokeless tobacco
+• Electronic nicotine products
+Advise
+Provide clear and personalized advice to quit.
+Example:
+"Quitting smoking is one of the most important things you can do to improve your health."
+Assess
+Determine readiness to quit.
+Questions may include:
+• Have you considered quitting?
+• What concerns do you have about quitting?
+• Have you tried to quit before?
+Assist
+Provide:
+• Pharmacotherapy
+• Counseling
+• Educational resources
+• Quit plans
+Arrange
+Schedule follow-up.
+Ongoing support significantly improves quit success.
+Readiness to Quit
+Patients generally fall into one of three categories:
+Not Ready to Quit
+Focus on:
+• Education
+• Motivational interviewing
+• Addressing barriers
+Ambivalent
+Focus on:
+• Exploring motivations
+• Discussing benefits
+• Identifying concerns
+Ready to Quit
+Focus on:
+• Selecting pharmacotherapy
+• Setting a quit date
+• Creating a cessation plan
+First-Line Pharmacotherapy
+VA/DoD Preferred Options
+Varenicline
+Combination Nicotine Replacement Therapy (NRT)
+These are generally considered the most effective first-line options.
+Varenicline
+Mechanism
+Partial agonist at the α4β2 nicotinic acetylcholine receptor.
+Benefits:
+• Reduces cravings
+• Reduces withdrawal symptoms
+• Reduces smoking satisfaction
+Dosing
+Days 1-3
+• 0.5 mg once daily
+Days 4-7
+• 0.5 mg twice daily
+Day 8 and beyond
+• 1 mg twice daily
+Typical duration:
+• 12 weeks
+Longer treatment may be appropriate for some patients.
+Common Adverse Effects
+• Nausea
+• Vivid dreams
+• Insomnia
+• Headache
+Clinical Pearl
+The VA/DoD guideline supports varenicline as one of the most effective pharmacologic options for tobacco cessation.
+Nicotine Replacement Therapy (NRT)
+NRT works by reducing withdrawal symptoms while eliminating exposure to combustible tobacco products.
+Long-Acting NRT
+Nicotine Patch
+Provides continuous nicotine delivery.
+Examples:
+• 21 mg daily
+• 14 mg daily
+• 7 mg daily
+Short-Acting NRT
+Examples:
+• Nicotine gum
+• Nicotine lozenge
+• Nicotine inhaler
+• Nicotine nasal spray
+Used for breakthrough cravings.
+Combination NRT
+Combination therapy generally includes:
+Nicotine Patch
+PLUS
+Gum or Lozenge
+Benefits:
+• Improved craving control
+• Improved quit rates
+• Recommended by VA/DoD for many patients
+Bupropion SR
+Mechanism
+Norepinephrine and dopamine reuptake inhibitor.
+Benefits:
+• Reduces nicotine cravings
+• Reduces withdrawal symptoms
+• Treats depression
+Dosing
+Days 1-3
+• 150 mg once daily
+Day 4 and beyond
+• 150 mg twice daily
+Begin treatment approximately one week before the quit date.
+Advantages
+• Depression treatment
+• Lower risk of weight gain
+• May be useful in patients with depression and tobacco use disorder
+Potential Concerns
+• Insomnia
+• Anxiety
+• Dry mouth
+• Seizure risk
+Clinical Pearl
+Because Week 5 focuses on depression and anxiety, bupropion creates an important clinical decision point.
+Bupropion may be attractive for patients with:
+• Depression
+• Tobacco use disorder
+• Sexual dysfunction concerns
+However, it may not be the best initial option when significant anxiety symptoms are present.
+Behavioral Counseling
+Both USPSTF and VA/DoD emphasize that counseling should accompany pharmacotherapy whenever possible.
+Examples include:
+• Individual counseling
+• Group counseling
+• Telephone quit lines
+• Cognitive behavioral therapy
+• Motivational interviewing
+Combining counseling with pharmacotherapy improves quit rates compared with either intervention alone.
+Tobacco Cessation in Patients with Depression and Anxiety
+This is one of the most important concepts for Week 5.
+Historically, clinicians worried that quitting smoking could worsen depression or anxiety.
+Current evidence suggests:
+• Tobacco cessation improves long-term mental health outcomes
+• Depression should not prevent quit attempts
+• Anxiety should not prevent quit attempts
+• Behavioral health patients benefit from cessation interventions
+Patients should be monitored closely during quit attempts for:
+• Mood changes
+• Anxiety changes
+• Withdrawal symptoms
+• Relapse risk
+Relapse Prevention
+Relapse is common.
+Many successful quitters require multiple quit attempts before achieving long-term abstinence.
+When relapse occurs:
+DO NOT label the attempt as a failure.
+Instead:
+• Identify triggers
+• Reassess motivation
+• Adjust pharmacotherapy
+• Reinforce future quit attempts
+Monitoring
+At follow-up visits assess:
+• Tobacco use status
+• Cravings
+• Withdrawal symptoms
+• Medication adherence
+• Adverse effects
+• Mood symptoms
+• Anxiety symptoms
+• Relapse triggers

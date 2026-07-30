@@ -1,0 +1,128 @@
+﻿Week 3 ASTHMA GUIDELINE TEACHING SUMMARY
+Key Guideline Sources
+GINA 2026 Full Report 
+GINA 2025 Summary Guide 
+Asthma Overview
+Asthma is a chronic inflammatory airway disease characterized by variable respiratory symptoms and variable expiratory airflow limitation. Common symptoms include wheezing, shortness of breath, chest tightness, and cough that vary over time and in intensity.
+The goals of therapy are to:
+Achieve symptom control 
+Prevent severe exacerbations 
+Preserve lung function 
+Minimize medication adverse effects 
+Improve quality of life 
+A major shift in modern asthma management is the recognition that even patients with infrequent symptoms remain at risk for severe exacerbations. Therefore, GINA recommends ICS-containing therapy for all patients with asthma rather than SABA-only treatment.
+Confirming the Diagnosis of Asthma
+Whenever possible, objective evidence should be obtained before initiating long-term controller therapy.
+Features Supporting Asthma
+Symptoms vary over time 
+Symptoms worsen at night or early morning 
+Symptoms triggered by allergens, exercise, viral infections, weather, smoke, or irritants 
+Family history of asthma or atopy 
+Spirometry Findings
+Diagnostic evidence includes:
+Reduced FEV1/FVC ratio 
+Bronchodilator response: 
+Increase in FEV1 ≥12% 
+AND increase ≥200 mL 
+Students should recognize that asthma diagnosis requires both:
+Compatible symptoms 
+Evidence of variable airflow limitation 
+Assessment of Asthma Control
+Control should be assessed over the previous four weeks.
+Well Controlled
+Symptoms ≤2 days/week 
+No nighttime awakening 
+Reliever use ≤2 days/week 
+No activity limitation 
+Partly Controlled
+One to two of the above criteria not met.
+Uncontrolled
+Three or four criteria not met.
+Students should recognize that symptom control and future risk are separate domains.
+A patient may have acceptable daily symptoms but remain at high risk for severe exacerbations.
+Risk Factors for Future Exacerbations
+Important factors include:
+Previous severe exacerbation 
+Excessive SABA use 
+Poor adherence 
+Incorrect inhaler technique 
+Smoking exposure 
+Low lung function 
+Elevated eosinophils 
+Comorbid conditions 
+GINA Track 1 (Preferred)
+Preferred Reliever
+Low-dose ICS-formoterol
+Benefits:
+Reduces severe exacerbations 
+Simplifies therapy 
+Provides anti-inflammatory treatment with symptom relief 
+Stepwise Therapy
+Step 1–2
+As-needed low-dose ICS-formoterol
+Step 3
+Low-dose ICS-formoterol MART/SMART
+Step 4
+Medium-dose ICS-formoterol MART/SMART
+Step 5
+Referral for specialist evaluation
+Consider:
+LAMA 
+Biologics 
+Additional investigations 
+SMART/MART Therapy
+Single Maintenance and Reliever Therapy uses ICS-formoterol for both:
+Daily maintenance treatment 
+Symptom relief 
+Advantages:
+Improved adherence 
+Reduced exacerbations 
+Lower systemic corticosteroid exposure 
+Preferred GINA strategy for many patients 
+Students should be able to explain SMART therapy to patients using practical counseling language.
+Inhaler Technique and Adherence
+Before escalating therapy always evaluate:
+Adherence
+Missed doses 
+Cost barriers 
+Misunderstanding of regimen 
+Technique
+Incorrect inhalation timing 
+Poor inspiratory effort 
+Failure to prime devices 
+Failure to rinse mouth when appropriate 
+Poor control is often related to adherence or technique rather than medication failure.
+Biologics: Introductory Concepts
+Students are not expected to select a biologic.
+Students should recognize referral criteria:
+Persistent uncontrolled asthma 
+Recurrent exacerbations 
+High corticosteroid burden 
+Evidence of Type 2 inflammation 
+Examples include:
+Omalizumab 
+Mepolizumab 
+Benralizumab 
+Dupilumab 
+Tezepelumab 
+Depemokimab 
+The pharmacist's role is recognizing appropriate referral rather than independently initiating therapy.
+Monitoring Parameters
+Efficacy
+Asthma Control Test (ACT) 
+Symptom frequency 
+Reliever use 
+Exacerbations 
+Lung function 
+Safety
+ICS:
+Oral candidiasis 
+Dysphonia 
+LABA:
+Tremor 
+Palpitations 
+Systemic corticosteroids:
+Hyperglycemia 
+Hypertension 
+Osteoporosis 
+Weight gain

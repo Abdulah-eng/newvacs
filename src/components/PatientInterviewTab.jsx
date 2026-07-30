@@ -386,11 +386,27 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
       } else {
         let field = reply.hidden_info_triggered ? c.INTERVIEW_KNOWLEDGE.find(k => k.id === reply.hidden_info_triggered)?.field : null
         
-        // Client-side discovery fallback: if LLM didn't return trigger ID, check if text/reply matches keywords
+        // Enhanced client-side fallback discovery logic
         if (!field && c.INTERVIEW_KNOWLEDGE) {
+          const q = text.toLowerCase()
           const combined = (text + ' ' + (reply.response || '')).toLowerCase()
-          const matched = c.INTERVIEW_KNOWLEDGE.find(k => k.field && k.keywords?.some(kw => combined.includes(kw.toLowerCase())))
-          if (matched) field = matched.field
+          
+          if (q.includes('otc') || q.includes('over the counter') || q.includes('over-the-counter') || q.includes('supplement') || q.includes('herbal') || q.includes('vitamin') || q.includes('melatonin') || q.includes('calcium') || q.includes('fish oil') || q.includes('coq10') || q.includes('multivitamin')) {
+            field = 'otc'
+          } else if (q.includes('alcohol') || q.includes('drink') || q.includes('beer') || q.includes('wine') || q.includes('liquor')) {
+            field = 'alcohol'
+          } else if (q.includes('family history') || q.includes('parents') || q.includes('father') || q.includes('mother') || q.includes('brother') || q.includes('sister') || q.includes('sibling') || q.includes('grandparents') || q.includes('grandmother') || q.includes('grandfather') || q.includes('dad') || q.includes('mom')) {
+            field = 'familyHistory'
+          } else if (q.includes('allergy') || q.includes('allergic') || q.includes('allergies') || q.includes('reaction') || q.includes('rash') || q.includes('hives') || q.includes('nkda')) {
+            field = 'allergies'
+          } else if (q.includes('tobacco') || q.includes('smoke') || q.includes('smoking') || q.includes('cigarette') || q.includes('cigar') || q.includes('vape') || q.includes('vaping') || q.includes('nicotine') || q.includes('pack-year') || q.includes('packs')) {
+            field = 'tobacco'
+          }
+          
+          if (!field) {
+            const matched = c.INTERVIEW_KNOWLEDGE.find(k => k.field && k.keywords?.some(kw => combined.includes(kw.toLowerCase())))
+            if (matched) field = matched.field
+          }
         }
 
         onAsk(text, { text: reply.response, field }); await speakText(reply.response)

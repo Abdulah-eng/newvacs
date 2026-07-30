@@ -1,0 +1,201 @@
+﻿Heart Failure Guideline Summary
+Based on:
+2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure
+Why Heart Failure Matters
+Heart failure affects millions of patients in the United States and is a leading cause of hospitalization, morbidity, mortality, and healthcare expenditures.
+Heart failure is not a single disease but a clinical syndrome resulting from structural or functional cardiac abnormalities that impair ventricular filling or ejection of blood.
+Patients with heart failure commonly experience:
+Dyspnea
+Fatigue
+Exercise intolerance
+Fluid retention
+Recurrent hospitalizations
+Reduced quality of life
+Ambulatory care pharmacists play a critical role in optimizing guideline-directed medical therapy (GDMT), improving medication adherence, monitoring for adverse effects, and reducing the risk of hospitalization and death.
+The primary goal of heart failure management is not only symptom improvement but also prevention of disease progression, hospitalization, and mortality.
+Heart Failure Classification
+Heart Failure with Reduced Ejection Fraction (HFrEF)
+Left ventricular ejection fraction (LVEF) ≤40%
+This population has the strongest evidence supporting guideline-directed medical therapy.
+Most mortality-reducing therapies were studied in patients with HFrEF.
+Heart Failure with Mildly Reduced Ejection Fraction (HFmrEF)
+LVEF 41–49%
+Patients may benefit from therapies similar to HFrEF, although evidence is less robust.
+Heart Failure with Preserved Ejection Fraction (HFpEF)
+LVEF ≥50%
+Management focuses on symptom reduction, prevention of hospitalization, management of comorbid conditions, and risk-factor modification.
+Therapeutic options have historically been limited but have expanded significantly with the introduction of SGLT2 inhibitors.
+Heart Failure Staging
+ACC/AHA Stage A
+At risk for heart failure but without structural heart disease or symptoms.
+Examples:
+Hypertension
+Diabetes
+Obesity
+Coronary artery disease
+Goal:
+Prevent development of symptomatic heart failure.
+ACC/AHA Stage B
+Structural heart disease without signs or symptoms of heart failure.
+Examples:
+Prior myocardial infarction
+Reduced ejection fraction without symptoms
+Goal:
+Prevent progression to symptomatic heart failure.
+ACC/AHA Stage C
+Structural heart disease with current or prior symptoms of heart failure.
+Most ambulatory heart failure patients fall into this category.
+ACC/AHA Stage D
+Advanced heart failure requiring specialized interventions.
+Examples:
+Refractory symptoms
+Frequent hospitalizations
+Consideration of advanced therapies
+NYHA Functional Classification
+Class I
+No limitation of physical activity.
+Class II
+Slight limitation of physical activity.
+Comfortable at rest.
+Ordinary activity causes symptoms.
+Class III
+Marked limitation of physical activity.
+Less-than-ordinary activity causes symptoms.
+Class IV
+Symptoms at rest.
+Unable to perform physical activity without discomfort.
+Foundational Therapy for HFrEF
+Modern HFrEF management centers on four foundational medication classes.
+These therapies should generally be initiated as early as possible and titrated to maximally tolerated doses.
+1. ARNI
+Sacubitril/Valsartan (Entresto)
+Preferred renin-angiotensin system inhibitor for most patients with symptomatic HFrEF.
+Benefits:
+Reduces mortality
+Reduces hospitalization
+Improves symptoms
+Monitoring:
+Blood pressure
+Renal function
+Potassium
+Common barriers:
+Cost
+Hypotension
+2. Evidence-Based Beta Blockers
+Only three beta blockers have demonstrated mortality benefit in HFrEF:
+Metoprolol succinate
+Carvedilol
+Bisoprolol
+Benefits:
+Reduced mortality
+Reduced hospitalization
+Improved ventricular remodeling
+Monitoring:
+Heart rate
+Blood pressure
+Symptoms of worsening heart failure
+Common barriers:
+Fatigue
+Bradycardia
+Patient concern regarding symptom worsening
+3. Mineralocorticoid Receptor Antagonists (MRAs)
+Examples:
+Spironolactone
+Eplerenone
+Benefits:
+Reduced mortality
+Reduced hospitalization
+Monitoring:
+Potassium
+Serum creatinine
+eGFR
+Common barriers:
+Hyperkalemia
+Gynecomastia (spironolactone)
+4. SGLT2 Inhibitors
+Examples:
+Dapagliflozin
+Empagliflozin
+Benefits:
+Reduced hospitalization
+Reduced cardiovascular mortality
+Renal protection
+Importantly, benefits occur regardless of diabetes status.
+Monitoring:
+Renal function
+Volume status
+Genitourinary adverse effects
+Common barriers:
+Cost
+Insurance coverage
+Practical GDMT Sequencing
+Historically, medications were added sequentially over many months.
+Current practice emphasizes rapid initiation of all four foundational therapies whenever feasible.
+A practical ambulatory care approach:
+Initiate beta blocker and ARNI (or ARB/ACEI if appropriate).
+Add SGLT2 inhibitor early.
+Add MRA when renal function and potassium allow.
+Titrate therapies every 2–4 weeks as tolerated.
+The goal is rapid implementation of life-saving therapies rather than waiting to achieve target doses before adding additional agents.
+Management of HFpEF
+Evidence-based options are more limited than for HFrEF.
+Important management strategies include:
+SGLT2 inhibitors
+Blood pressure control
+Diuretic therapy for congestion
+Management of atrial fibrillation
+Weight management
+Treatment of comorbid conditions
+Unlike HFrEF, the primary goals are symptom improvement and reduction in hospitalization risk.
+Monitoring Parameters
+Pharmacists should routinely monitor:
+Clinical Monitoring
+Weight
+Dyspnea
+Edema
+Exercise tolerance
+Blood pressure
+Heart rate
+Laboratory Monitoring
+Serum creatinine
+eGFR
+Potassium
+Sodium
+Monitoring should occur after initiation and titration of heart failure medications.
+Common Medication Therapy Problems
+Examples frequently encountered in ambulatory care include:
+Failure to initiate all four foundational therapies
+Subtherapeutic dosing
+Lack of medication titration
+Cost-related nonadherence
+Hyperkalemia concerns preventing MRA use
+Failure to monitor renal function
+Inadequate patient education
+Ambulatory Care Clinical Pearls
+Every patient with HFrEF should be evaluated for all four foundational medication classes.
+Start therapies early and titrate frequently.
+Do not delay initiation of one therapy while waiting to optimize another.
+SGLT2 inhibitors benefit patients regardless of diabetes status.
+Blood pressure reductions are often acceptable if the patient remains asymptomatic.
+Medication adherence often has a greater impact on outcomes than small differences in drug selection.
+Monitoring and follow-up are essential components of successful heart failure management.
+Application to This Week’s Patients
+Patient A
+Primary focus:
+HFrEF diagnosis
+GDMT initiation
+Medication titration
+Monitoring plans
+Students should become comfortable selecting and optimizing all four foundational therapies.
+Patient B
+Primary focus:
+Continued HFrEF management
+Medication access barriers
+Adherence challenges
+Students should recognize that evidence-based therapies are only effective if patients can obtain and take them consistently.
+Patient C
+Primary focus:
+HFpEF management
+Comorbidity management
+Individualized treatment decisions
+Students should understand that management priorities differ between HFrEF and HFpEF and often require integration of multiple disease-state guidelines.

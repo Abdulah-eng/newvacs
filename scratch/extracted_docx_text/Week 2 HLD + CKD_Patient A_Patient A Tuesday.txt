@@ -1,0 +1,2728 @@
+﻿SECTION 9: PATIENT A – TUESDAY INITIAL VISIT
+Encounter Overview
+Encounter Type
+Initial Ambulatory Care Pharmacist Visit
+Visit Length
+30-minute collaborative practice visit
+Week
+Week 2 – Tuesday
+Difficulty Level
+Foundational APPE Student
+Primary Learning Objectives
+Students should be able to:
+Recognize CKD despite preserved eGFR 
+Correctly stage CKD using eGFR and albuminuria 
+Assess cardiovascular risk factors 
+Evaluate statin therapy appropriateness 
+Assess medication adherence 
+Identify nephrotoxic medication use 
+Interpret UACR results 
+Develop an initial cardiorenal protection plan 
+Construct a complete SOAP note 
+Create an appropriate monitoring and follow-up strategy 
+1. Patient Snapshot
+Michael Turner is a 58-year-old White male presenting for an initial ambulatory care pharmacy visit for hyperlipidemia and chronic kidney disease management.
+His primary care provider referred him after persistent LDL-C elevation despite statin therapy and recent laboratory findings demonstrating persistent albuminuria.
+This is the first time he has met with an ambulatory care pharmacist.
+2. Chief Concern
+"My doctor said there was some protein showing up in my urine and wanted me to talk with you about my cholesterol and kidneys."
+3. History of Present Illness
+Michael is a 58-year-old male with hypertension, hyperlipidemia, CKD, and obesity presenting for medication management.
+He reports feeling generally well.
+He denies:
+Chest pain 
+Shortness of breath 
+Syncope 
+Palpitations 
+Lower extremity edema 
+Decreased urine output 
+Gross hematuria 
+He reports:
+Mild fatigue 
+Occasional knee pain 
+Difficulty losing weight 
+He states he checks his blood pressure "once in a while."
+He reports taking his medications "most of the time."
+He does not fully understand why his physician is concerned about his kidneys because he feels normal.
+No recent hospitalizations.
+No recent emergency room visits.
+4. Past Medical History
+Hypertension
+Diagnosed 8 years ago
+Hyperlipidemia
+Diagnosed 5 years ago
+Chronic Kidney Disease (G2A2)
+Diagnosed within past year
+Obesity
+5. Medication List
+Lisinopril 20 mg daily
+Hydrochlorothiazide 25 mg daily
+Atorvastatin 10 mg daily
+6. Allergies
+Drug Allergies
+NKDA
+Food Allergies
+None
+7. Vitals
+Today's Vitals
+BP: 136/84 mmHg
+Repeat BP: 134/82 mmHg
+HR: 72 bpm
+RR: 16
+Temp: 98.4°F
+Weight: 103 kg
+Height: 5'10"
+BMI: 32.6 kg/m²
+Home BP Log (Provided If Student Requests)
+Day 1 – 138/84
+Day 2 – 134/82
+Day 3 – 136/86
+Day 4 – 132/80
+Day 5 – 140/84
+Average ≈ 136/83 mmHg
+8. Laboratory Data
+CMP
+Na: 139 mEq/L
+K: 4.5 mEq/L
+Cl: 102 mEq/L
+CO₂: 25 mEq/L
+BUN: 19 mg/dL
+SCr: 1.08 mg/dL
+eGFR: 79 mL/min/1.73m²
+AST: 24 U/L
+ALT: 27 U/L
+Lipid Panel
+TC: 214 mg/dL
+LDL-C: 132 mg/dL
+HDL-C: 42 mg/dL
+TG: 196 mg/dL
+Urine Albumin-to-Creatinine Ratio (UACR)
+Current: 118 mg/g
+Repeat (3 months prior): 105 mg/g
+ASCVD Risk
+10-year ASCVD Risk Estimate: 11.8%
+9. Immunizations
+Influenza
+Received this season
+COVID
+Completed primary series and most recent booster
+PCV
+Not documented
+PPSV23
+Not documented
+Shingrix
+Not documented
+Tdap
+Last documented 12 years ago
+10. Social History
+Tobacco
+Former smoker
+20 pack-year history
+Quit 6 years ago
+Alcohol
+1–2 alcoholic beverages weekly
+Exercise
+Walks occasionally
+Approximately 20 minutes
+1–2 times weekly
+Diet
+Frequent restaurant meals
+Processed foods several times weekly
+Limited fruit and vegetable intake
+11. Family History
+Father
+MI age 61 
+Hyperlipidemia 
+Hypertension 
+Mother
+Hypertension 
+Hyperlipidemia 
+12. Problem List
+Active Problems
+Hyperlipidemia above guideline-recommended threshold 
+CKD G2A2 with persistent albuminuria 
+Elevated ASCVD risk 
+Obesity 
+Hypertension above CKD guideline target 
+Possible medication nonadherence 
+Possible chronic NSAID use 
+Multiple preventive care gaps 
+Poor lifestyle habits 
+13. Pharmacist Visit Notes
+Referral Reason
+Persistent LDL-C elevation and CKD management.
+Key Concerns
+LDL-C remains above desired treatment threshold 
+Persistent A2 albuminuria 
+Need for CKD risk assessment 
+Need for cardiovascular risk reduction 
+Need to assess adherence before intensification 
+Need to evaluate nephrotoxic medication exposure 
+14. Follow-Up Tasks Expected From Student
+Students should consider:
+Hyperlipidemia
+Assess adherence 
+Evaluate statin intensity 
+Determine need for therapy intensification 
+CKD
+Correctly stage CKD 
+Interpret albuminuria category 
+Assess CKD progression risk 
+Evaluate kidney-protective therapy 
+Cardiovascular Risk Reduction
+Evaluate ASCVD risk 
+Assess statin optimization opportunities 
+Address lifestyle contributors 
+Medication Safety
+Assess OTC medication use 
+Assess nephrotoxic medication exposure 
+Review medication tolerability 
+Lifestyle
+Weight management 
+Physical activity counseling 
+Nutrition counseling 
+Smoking relapse prevention 
+Monitoring
+Lipid monitoring 
+Renal monitoring 
+Albuminuria monitoring 
+Blood pressure monitoring
+
+SECTION 10: AI PATIENT Q&A GUIDE
+Patient A – Tuesday Initial Visit
+This must mirror Week 1 exactly because it directly drives AI patient behavior, grading consistency, and student questioning strategies.
+
+Purpose
+This document serves as the AI patient behavior guide.
+Responses should sound like a real patient, not a clinician.
+The patient should not volunteer hidden information unless appropriately prompted.
+
+Reason for Visit
+Student:
+"What brings you in today?"
+Patient:
+"My doctor said there was some protein showing up in my urine and wanted me to meet with you about my kidneys and cholesterol."
+
+Student:
+"What are you hoping to get out of today's visit?"
+Patient:
+"I'd like to understand what's going on and figure out what I can do to stay healthy."
+
+Symptoms
+Student:
+"How have you been feeling lately?"
+Patient:
+"Pretty normal overall."
+
+Student:
+"Any chest pain, shortness of breath, or swelling?"
+Patient:
+"No."
+
+Student:
+"Any dizziness or fainting?"
+Patient:
+"No."
+
+Student:
+"Any changes in urination?"
+Patient:
+"No, not that I've noticed."
+
+Student:
+"Any fatigue?"
+Patient:
+"Maybe a little, but nothing major."
+
+Medication Use
+Student:
+"Can you tell me how you're taking your medications?"
+Patient:
+"I take my blood pressure medicines in the morning and my cholesterol medicine at night."
+
+Student:
+"What medications are you currently taking?"
+Patient:
+"Lisinopril, hydrochlorothiazide, and atorvastatin."
+
+Medication Adherence (Hidden Information)
+Only reveal if asked directly.
+Student:
+"Do you ever miss doses of your medications?"
+Patient:
+"Yeah, sometimes."
+
+Student:
+"How often would you say you miss them?"
+Patient:
+"Maybe a couple times a week."
+
+Student:
+"What usually causes you to miss them?"
+Patient:
+"Mostly I just forget. The cholesterol pill is the one I miss the most."
+
+Student:
+"How many doses do you think you miss?"
+Patient:
+"Probably two or three doses a week."
+
+Side Effects
+Student:
+"Have you noticed any side effects from your medications?"
+Patient:
+"No."
+
+Student:
+"Any muscle aches from the atorvastatin?"
+Patient:
+"No."
+
+Student:
+"Any dizziness from your blood pressure medications?"
+Patient:
+"No."
+
+Diet
+Student:
+"Walk me through a typical day of eating."
+Patient:
+"Breakfast is usually something quick. Lunch is often takeout near work. Dinner depends on what's going on at home."
+
+Student:
+"How often do you eat out?"
+Patient:
+"Probably four or five times a week."
+
+Student:
+"What kinds of foods do you usually eat?"
+Patient:
+"A lot of sandwiches, burgers, stuff like that."
+
+Student:
+"Do you pay attention to sodium?"
+Patient:
+"Honestly, not really."
+
+Student:
+"How many fruits and vegetables do you eat?"
+Patient:
+"Probably not as many as I should."
+
+Exercise
+Student:
+"What does physical activity look like for you?"
+Patient:
+"I don't really have a workout routine."
+
+Student:
+"How many days a week do you exercise?"
+Patient:
+"Maybe once or twice."
+
+Student:
+"What's preventing you from exercising more?"
+Patient:
+"Mostly work and feeling tired by the end of the day."
+
+Home Blood Pressure Monitoring
+Student:
+"Do you check your blood pressure at home?"
+Patient:
+"Sometimes."
+
+Student:
+"How often?"
+Patient:
+"Maybe once every week or two."
+
+Student:
+"What numbers are you seeing?"
+Patient:
+"Usually somewhere in the 130s over 80s."
+
+Student:
+"Do you keep a log?"
+Patient:
+"No."
+
+Cost and Access
+Student:
+"Do you have any trouble paying for medications?"
+Patient:
+"No."
+
+Student:
+"Any issues getting refills?"
+Patient:
+"No."
+
+Student:
+"Have you ever skipped medications because of cost?"
+Patient:
+"No."
+
+Allergies
+Student:
+"Do you have any medication allergies?"
+Patient:
+"No."
+
+OTC Medications and Supplements (Hidden Information)
+Must ask directly.
+Student:
+"Do you take any over-the-counter medications?"
+Patient:
+"Sometimes."
+
+Student:
+"What kinds?"
+Patient:
+"I take ibuprofen for my knees."
+
+Student:
+"How often?"
+Patient:
+"A few times a week."
+
+Student:
+"How much do you take?"
+Patient:
+"Usually two or three tablets."
+
+Student:
+"Any vitamins or supplements?"
+Patient:
+"Just a multivitamin."
+
+Patient Goals
+Student:
+"What health goal is most important to you?"
+Patient:
+"I'd like to avoid heart problems and keep my kidneys healthy."
+
+Student:
+"Anything else?"
+Patient:
+"I'd like to lose some weight too."
+
+Patient Concerns
+Student:
+"What concerns you most about your health?"
+Patient:
+"Probably my kidneys."
+
+Student:
+"What worries you about them?"
+Patient:
+"A friend of mine ended up on dialysis and that's something I really don't want."
+
+Understanding of Disease States
+Student:
+"What do you know about kidney disease?"
+Patient:
+"Not much honestly."
+
+Student:
+"What do you know about the protein in your urine?"
+Patient:
+"I know my doctor mentioned it, but nobody really explained what it means."
+
+Student:
+"What do you know about cholesterol?"
+Patient:
+"I know high cholesterol is bad for your heart."
+
+Student:
+"Do you think your kidney disease is serious?"
+Patient:
+"I don't know. I feel okay."
+
+Readiness to Change
+Student:
+"How motivated are you to make changes right now?"
+Patient:
+"Pretty motivated."
+
+Student:
+"What changes do you think you could realistically make?"
+Patient:
+"I could probably eat out less and be more consistent with my medications."
+
+Follow-Up Preferences
+Student:
+"How do you prefer follow-up appointments?"
+Patient:
+"Whatever is easiest. Phone visits are usually pretty convenient."
+
+Hidden Information Summary for AI
+The AI should NEVER volunteer these without prompting:
+Misses atorvastatin approximately 2–3 times weekly 
+Uses ibuprofen several times weekly 
+Does not understand albuminuria 
+Does not understand CKD staging 
+Does not maintain a BP log 
+Strong concern regarding dialysis 
+Weight loss is a major motivator
+
+
+SECTION 10A: HIDDEN INFORMATION TRIGGER MAP
+Patient A – Tuesday Initial Visit
+Hidden Fact #1: Statin Nonadherence
+Information to Reveal
+Patient misses atorvastatin approximately 2–3 times weekly because he forgets evening doses.
+Trigger Keywords
+miss, missed, forget, forgot, adherence, compliance, consistency, routine, medications, statin, cholesterol medication, pill box, remember medications
+Appropriate AI Response
+"Honestly, I probably miss my cholesterol medicine two or three times a week."
+Information Not Volunteered
+Patient does not spontaneously disclose nonadherence.
+Hidden Fact #2: OTC NSAID Use
+Information to Reveal
+Uses ibuprofen 400–600 mg several times weekly for chronic knee pain.
+Trigger Keywords
+OTC, over-the-counter, ibuprofen, Advil, Aleve, arthritis, knee pain, pain medicine, supplements, medications not on list, nonprescription
+Appropriate AI Response
+"I take ibuprofen a few times a week for my knees."
+Information Not Volunteered
+Patient does not view ibuprofen as an important medication.
+Hidden Fact #3: Poor CKD Understanding
+Information to Reveal
+Patient does not understand albuminuria or CKD staging.
+Trigger Keywords
+kidney disease, CKD, albuminuria, protein in urine, kidney damage, kidney function, understanding, health literacy
+Appropriate AI Response
+"I know they said there was protein in my urine, but I don't really know what that means."
+Information Not Volunteered
+Patient does not openly admit knowledge gaps unless asked.
+Hidden Fact #4: Dialysis Concern
+Information to Reveal
+Friend recently started dialysis, creating fear about kidney disease.
+Trigger Keywords
+concerns, worries, dialysis, fears, kidney failure, goals, future health
+Appropriate AI Response
+"A friend of mine ended up on dialysis and that's something I really don't want to go through."
+Information Not Volunteered
+Patient does not initially discuss this concern.
+Hidden Fact #5: Weight-Loss Motivation
+Information to Reveal
+Weight loss is one of the strongest motivators for behavior change.
+Trigger Keywords
+goals, motivation, weight loss, priorities, health goals, lifestyle changes
+Appropriate AI Response
+"I'd really like to lose weight if I can."
+Information Not Volunteered
+Patient does not initially identify weight loss as a primary motivator.
+
+
+PATIENT A – TUESDAY INITIAL VISIT
+GOLD-STANDARD AMBULATORY CARE PHARMACIST SOAP NOTE
+SUBJECTIVE
+CC:
+Michael Turner is a 58-year-old male who presents to the ambulatory care pharmacy clinic for initial collaborative practice management of hyperlipidemia and chronic kidney disease after referral from his primary care provider due to persistent LDL-C elevation and recently identified albuminuria.
+HPI:
+The patient reports feeling generally well since his last primary care appointment and denies chest pain, shortness of breath, palpitations, dizziness, syncope, lower extremity edema, gross hematuria, or changes in urinary frequency. He reports mild fatigue, difficulty losing weight, and chronic intermittent knee pain.
+The patient states that he checks his blood pressure at home occasionally and reports most readings are in the 130s/80s. He does not maintain a written log.
+Upon further discussion, the patient reports missing his atorvastatin approximately two to three times weekly, primarily because he forgets to take it in the evening. He denies intentionally skipping medications and denies financial barriers to adherence.
+The patient reports eating restaurant meals multiple times per week and acknowledges that he does not routinely monitor sodium intake or nutrition labels. Physical activity is limited to occasional walking one to two times weekly.
+When discussing kidney disease, the patient reports limited understanding of albuminuria and states that he does not fully understand why protein in the urine is concerning. He expresses concern about future kidney failure after watching a friend require dialysis.
+The patient reports taking ibuprofen several times weekly for chronic knee pain and was unaware that this could affect kidney function or blood pressure.
+The patient would like to lose weight, reduce future cardiovascular risk, and avoid progression of kidney disease.
+Past Medical History:
+Hypertension diagnosed 8 years ago 
+Hyperlipidemia diagnosed 5 years ago 
+Chronic Kidney Disease (G2A2) 
+Obesity 
+Past Surgical History:
+Appendectomy at age 27 
+Family History:
+Father: myocardial infarction at age 61, hypertension, hyperlipidemia 
+Mother: hypertension, hyperlipidemia 
+No known family history of end-stage kidney disease 
+Social History:
+Married and lives with spouse 
+Works as an accountant 
+Former smoker (20 pack-year history, quit 6 years ago) 
+Consumes 1–2 alcoholic beverages weekly 
+Denies recreational drug use 
+Limited physical activity 
+Frequent restaurant meals and processed foods 
+Current Medications:
+Lisinopril 20 mg PO daily 
+Hydrochlorothiazide 25 mg PO daily 
+Atorvastatin 10 mg PO daily 
+Ibuprofen 400–600 mg several times weekly PRN knee pain (patient reported) 
+Allergies:
+No known drug allergies 
+No known food allergies 
+Immunization History:
+Influenza vaccine received this season 
+COVID booster received 
+No documented pneumococcal vaccination 
+No documented Shingrix vaccination 
+Tdap last documented 12 years ago 
+OBJECTIVE
+Vitals:
+BP: 136/84 mmHg
+Repeat BP: 134/82 mmHg
+HR: 72 bpm
+Weight: 103 kg
+Height: 70 inches
+BMI: 32.6 kg/m²
+Home BP Log:
+Average approximately 136/83 mmHg
+Laboratory Data:
+CMP
+Na: 139 mEq/L
+K: 4.5 mEq/L
+SCr: 1.08 mg/dL
+eGFR: 79 mL/min/1.73m²
+AST: 24 U/L
+ALT: 27 U/L
+Lipid Panel
+TC: 214 mg/dL
+LDL-C: 132 mg/dL
+HDL-C: 42 mg/dL
+TG: 196 mg/dL
+Albuminuria
+UACR: 118 mg/g
+Previous UACR: 105 mg/g
+ASCVD Risk
+10-year ASCVD Risk Estimate: 11.8%
+ASSESSMENT
+1. Hyperlipidemia / Elevated ASCVD Risk – Suboptimally Controlled
+The patient has hyperlipidemia with an LDL-C of 132 mg/dL despite atorvastatin 10 mg daily. He is a 58-year-old male with hypertension, CKD, obesity, former tobacco use, and a family history of premature ASCVD. His estimated 10-year ASCVD risk is 11.8%, placing him at elevated cardiovascular risk.
+According to the 2026 AHA/ACC Guideline for the Management of Blood Cholesterol, CKD is considered an ASCVD risk-enhancing condition and should be incorporated into treatment decisions for primary prevention. Patients with elevated cardiovascular risk should receive appropriately intensive LDL-C lowering therapy to reduce future ASCVD events. The patient's LDL-C remains above desirable treatment thresholds and he possesses multiple risk-enhancing factors that support statin intensification.
+Suboptimal LDL-C control is likely multifactorial and related to both inadequate statin intensity and medication nonadherence. The patient reports missing atorvastatin approximately two to three times weekly. Although adherence counseling is warranted, persistent LDL-C elevation and overall cardiovascular risk support escalation to a moderate-intensity statin regimen at this visit.
+2. Chronic Kidney Disease (G2A2) – Stable but At Increased Risk for Progression
+The patient has CKD stage G2A2 based on an eGFR of 79 mL/min/1.73m² and persistent moderately increased albuminuria with UACR values of 118 mg/g and 105 mg/g on repeat testing. Although kidney filtration remains preserved, persistent albuminuria confirms ongoing kidney damage.
+According to the KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease, CKD should be classified using both GFR and albuminuria categories because both independently predict kidney disease progression and cardiovascular risk. Persistent A2 albuminuria represents clinically significant kidney damage even in the setting of preserved eGFR.
+Current kidney function appears stable; however, persistent albuminuria, hypertension, obesity, and chronic NSAID exposure increase long-term risk for CKD progression. Continued ACE inhibitor therapy, cardiovascular risk reduction, avoidance of nephrotoxins, and ongoing monitoring remain important components of management.
+3. Hypertension – Near Goal
+The patient's blood pressure today was 136/84 mmHg with repeat measurement of 134/82 mmHg. Home blood pressure readings appear consistent with office measurements. Current therapy consists of lisinopril and hydrochlorothiazide, both of which are tolerated without adverse effects. Renal function and serum potassium remain stable.
+According to the KDIGO 2024 CKD Guideline, blood pressure control remains one of the most effective interventions for slowing CKD progression and reducing cardiovascular risk. Persistent elevations in blood pressure contribute to worsening albuminuria, accelerated kidney function decline, and increased ASCVD risk.
+Although blood pressure control is improved compared with many uncontrolled hypertensive patients, readings remain slightly above ideal treatment targets for patients with CKD. Given stable kidney function and the absence of severe hypertension, continued monitoring, lifestyle modification, and adherence reinforcement are appropriate before additional pharmacologic intensification is considered.
+4. Chronic NSAID Use – Potentially Harmful
+The patient reports using ibuprofen several times weekly for chronic knee pain. He was unaware that NSAIDs may negatively affect kidney health and blood pressure control.
+According to the KDIGO 2024 CKD Guideline, avoidance of potentially nephrotoxic medications is an important component of CKD management and progression prevention. Chronic NSAID exposure may contribute to worsening blood pressure control, kidney injury, and future CKD progression.
+Patient education regarding safer pain-management strategies and minimization of NSAID exposure is warranted.
+5. Obesity
+The patient's BMI of 32.6 kg/m² is consistent with obesity and contributes to elevated cardiovascular risk, hypertension, and future CKD progression risk. The patient identifies weight loss as one of his primary health goals and appears motivated to make lifestyle changes.
+Both the 2026 Hyperlipidemia Guideline and KDIGO 2024 CKD Guideline emphasize lifestyle modification and weight management as important components of long-term cardiovascular and kidney risk reduction. Even modest weight reduction may improve overall cardiometabolic health and support achievement of treatment goals.
+The patient's motivation to lose weight creates an opportunity for successful implementation of dietary and physical activity interventions.
+6. Preventive Care Gaps
+The patient appears to have several preventive care gaps, including lack of documented pneumococcal vaccination, herpes zoster vaccination, and an overdue Tdap booster.
+Patients with CKD and elevated cardiovascular risk frequently benefit from comprehensive preventive care strategies in addition to disease-specific pharmacotherapy. Immunization review and optimization should be incorporated into routine ambulatory care management to reduce preventable complications.
+Further verification of immunization history is warranted.
+PLAN
+Hyperlipidemia / ASCVD Risk Reduction
+Increase atorvastatin from 10 mg PO daily to 20 mg PO daily. 
+Counsel patient regarding adherence strategies. 
+Recommend use of pill organizer and daily medication routine. 
+Educate patient regarding relationship between CKD and cardiovascular risk. 
+Repeat lipid panel in approximately 6–12 weeks. 
+Chronic Kidney Disease
+Continue lisinopril 20 mg PO daily. 
+Educate patient regarding CKD staging and albuminuria. 
+Discuss importance of reducing kidney disease progression risk factors. 
+Repeat UACR in approximately 3 months. 
+Continue routine renal function monitoring. 
+Hypertension
+Continue lisinopril 20 mg PO daily. 
+Continue hydrochlorothiazide 25 mg PO daily. 
+Encourage home blood pressure monitoring. 
+Counsel on sodium reduction and lifestyle modification. 
+Pain Management
+Recommend minimizing ibuprofen use. 
+Encourage acetaminophen as first-line therapy when appropriate. 
+Discuss risks of chronic NSAID exposure in CKD. 
+Lifestyle / Weight Management
+Encourage progression toward at least 150 minutes per week of moderate-intensity physical activity. 
+Reduce restaurant meal frequency. 
+Increase fruit and vegetable intake. 
+Discuss weight-loss benefits for kidney and cardiovascular health. 
+Preventive Care
+Verify immunization history. 
+Recommend PCV vaccination if not previously received. 
+Recommend Shingrix vaccination series. 
+Recommend Tdap booster. 
+Follow-Up
+Follow up in 3 months. 
+Obtain repeat lipid panel, CMP, UACR, and blood pressure readings prior to next visit. 
+Reassess adherence, kidney function, albuminuria, and response to statin intensification at follow-up.
+
+
+SECTION 12: ACCEPTABLE ALTERNATIVE ANSWERS
+Patient A – Tuesday Initial Visit
+The purpose of this section is to help the AI grader distinguish between:
+Preferred answers 
+Acceptable clinical alternatives 
+Suboptimal answers 
+Unsafe answers 
+Students should not be penalized simply because their recommendation differs from the model SOAP note if their clinical reasoning remains guideline supported.
+Hyperlipidemia Management
+Preferred Answer
+Increase atorvastatin from 10 mg daily to 20 mg daily 
+Address medication adherence 
+Counsel regarding ASCVD risk reduction 
+Repeat lipid panel in 6–12 weeks 
+Rationale
+Patient has:
+LDL-C 132 mg/dL 
+Elevated ASCVD risk (11.8%) 
+CKD (risk-enhancing condition) 
+Family history of premature ASCVD 
+The 2026 Hyperlipidemia Guideline supports statin intensification in patients with elevated cardiovascular risk whose LDL-C remains above desired treatment thresholds.
+Acceptable Alternative #1
+Increase atorvastatin from 10 mg daily to 40 mg daily 
+Acceptable Because
+Remains guideline-supported 
+Provides greater LDL-C lowering 
+Multiple ASCVD risk enhancers present 
+Student Must
+Discuss potential adverse effects 
+Provide appropriate monitoring 
+Acceptable Alternative #2
+Continue atorvastatin 10 mg daily 
+Focus on adherence intervention 
+Repeat lipid panel after adherence improvement 
+Acceptable Because
+Patient admits missing atorvastatin 2–3 times weekly 
+Adherence is contributing to poor control 
+Student Must
+Clearly identify nonadherence 
+Develop adherence intervention 
+Provide close follow-up 
+Explain rationale for delaying intensification 
+Less Preferred Because
+LDL-C remains elevated 
+Multiple ASCVD risk-enhancing factors are present 
+Acceptable Alternative #3
+Increase atorvastatin to 20 mg daily 
+Refer patient for nutrition counseling 
+Acceptable Because
+Addresses both pharmacologic and lifestyle contributors 
+Unacceptable Answers
+Unsafe
+Discontinue statin therapy 
+Unsafe
+Recommend lifestyle modification alone 
+Unsafe
+Ignore ASCVD risk assessment 
+Unsafe
+Make no recommendation regarding LDL-C management 
+Chronic Kidney Disease Management
+Preferred Answer
+Correctly identify CKD G2A2 
+Continue lisinopril 
+Counsel regarding albuminuria 
+Repeat UACR in approximately 3 months 
+Avoid nephrotoxic medications 
+Rationale
+Patient has:
+eGFR 79 mL/min/1.73m² 
+Persistent UACR >30 mg/g 
+According to KDIGO 2024, persistent albuminuria confirms CKD even when eGFR remains preserved.
+Acceptable Alternative #1
+Continue current therapy 
+Repeat UACR sooner (4–8 weeks) 
+Acceptable Because
+Provides additional confirmation of persistence 
+Maintains kidney monitoring 
+Acceptable Alternative #2
+Refer to dietitian for CKD-focused nutrition counseling 
+Acceptable Because
+Lifestyle modification is guideline-supported 
+Promotes kidney risk reduction 
+Unacceptable Answers
+Unsafe
+State patient does not have CKD because eGFR is normal 
+Unsafe
+Ignore albuminuria findings 
+Unsafe
+Fail to stage CKD 
+Unsafe
+Discontinue ACE inhibitor without justification 
+Hypertension Management
+Preferred Answer
+Continue lisinopril 20 mg daily 
+Continue hydrochlorothiazide 25 mg daily 
+Reinforce adherence 
+Continue monitoring 
+Rationale
+Blood pressure is near goal and current therapy appears effective.
+Acceptable Alternative #1
+Increase lisinopril to 40 mg daily 
+Acceptable Because
+BP remains slightly above ideal target 
+ACE inhibitor optimization may further reduce albuminuria 
+Student Must
+Discuss monitoring of: 
+Serum creatinine 
+Potassium 
+Blood pressure 
+Less Preferred Because
+BP is already reasonably controlled 
+More information on adherence and home monitoring may be beneficial first 
+Acceptable Alternative #2
+Intensify lifestyle interventions 
+Continue current medications 
+Acceptable Because
+BP elevation is mild 
+Obesity and diet likely contribute 
+Unacceptable Answers
+Unsafe
+Stop ACE inhibitor therapy 
+Unsafe
+Ignore blood pressure entirely 
+Unsafe
+Escalate therapy without reviewing renal function 
+NSAID Management
+Preferred Answer
+Identify ibuprofen use 
+Recommend minimizing NSAID exposure 
+Educate regarding kidney risk 
+Rationale
+NSAIDs may worsen blood pressure control and increase risk of CKD progression.
+Acceptable Alternative
+Recommend discussion with PCP regarding alternative osteoarthritis management 
+Acceptable Because
+Addresses underlying reason for NSAID use 
+Unacceptable Answers
+Unsafe
+Fail to assess OTC medication use 
+Unsafe
+Encourage continued chronic NSAID use without discussing risks 
+Lifestyle Counseling
+Preferred
+Students address:
+Weight management 
+Sodium reduction 
+Physical activity 
+Restaurant meal frequency 
+Cardiovascular risk reduction 
+Kidney protection 
+Unacceptable
+No lifestyle counseling provided.
+Unacceptable
+Generic statement:
+"Eat healthier and exercise more"
+without patient-specific recommendations.
+Preventive Care
+Preferred
+Student identifies:
+Pneumococcal vaccine gap 
+Shingrix vaccine gap 
+Tdap booster gap 
+Acceptable
+Student identifies at least one immunization gap.
+Unacceptable
+No preventive care assessment.
+SECTION 13: CRITICAL MISSES
+Patient A – Tuesday Initial Visit
+These errors should result in major point deductions.
+Critical Miss #1
+Failed to recognize the patient has Chronic Kidney Disease.
+Rationale
+One of the primary educational objectives of this encounter is recognizing CKD despite preserved eGFR.
+The patient meets KDIGO 2024 criteria for CKD based on persistent albuminuria.
+Critical Miss #2
+Failed to correctly interpret albuminuria.
+Rationale
+Albuminuria is one of the most important findings in this case.
+Students should recognize:
+UACR 118 mg/g 
+Persistent elevation 
+A2 albuminuria category 
+Failure to interpret albuminuria prevents accurate risk stratification.
+Critical Miss #3
+Failed to stage CKD appropriately.
+Rationale
+Students should identify:
+CKD G2A2
+Failure to use both eGFR and albuminuria demonstrates incomplete CKD assessment.
+Critical Miss #4
+Failed to recognize elevated cardiovascular risk.
+Rationale
+The patient has:
+CKD 
+Hypertension 
+Hyperlipidemia 
+Obesity 
+Former tobacco use 
+Family history of premature ASCVD 
+Failure to assess cardiovascular risk undermines one of the major learning objectives of Week 2.
+Critical Miss #5
+Failed to recognize statin optimization opportunity.
+Rationale
+LDL-C remains elevated despite therapy.
+Students should evaluate:
+Adherence 
+Statin intensity 
+Need for intensification 
+A recommendation of no action regarding lipid management should result in a major deduction.
+Critical Miss #6
+Failed to assess medication adherence.
+Rationale
+The patient admits missing atorvastatin approximately 2–3 times weekly.
+Medication adherence is one of the primary contributors to current LDL-C control.
+Critical Miss #7
+Recommended therapy intensification without assessing adherence.
+Rationale
+Students should evaluate whether poor control reflects:
+Inadequate therapy 
+Poor adherence 
+Both 
+Failure to assess adherence before modifying treatment is poor ambulatory care practice.
+Critical Miss #8
+Failed to assess OTC medication use.
+Rationale
+The patient uses ibuprofen several times weekly.
+Failure to assess OTC medications results in missing a potentially important contributor to kidney disease progression.
+Critical Miss #9
+Failed to identify chronic NSAID exposure as a kidney risk factor.
+Rationale
+According to KDIGO 2024, avoidance of nephrotoxic medications is an important component of CKD management.
+Students should recognize the significance of chronic NSAID use.
+Critical Miss #10
+Failed to review renal function before making medication recommendations.
+Rationale
+Kidney function affects:
+Medication safety 
+Monitoring 
+Longitudinal management 
+Students should incorporate eGFR and renal function into therapeutic decision-making.
+Critical Miss #11
+Failed to provide a monitoring plan.
+Rationale
+Students should identify the need to monitor:
+Lipid panel 
+UACR 
+Renal function 
+Blood pressure 
+Medication adherence 
+Monitoring is a core component of ambulatory care practice.
+Critical Miss #12
+Failed to provide a follow-up plan.
+Rationale
+A complete ambulatory care encounter should include:
+Timing of follow-up 
+Planned laboratory monitoring 
+Assessment of therapeutic response 
+Critical Miss #13
+Failed to provide patient counseling.
+Rationale
+Students should educate the patient regarding:
+CKD 
+Albuminuria 
+ASCVD risk 
+Medication adherence 
+Lifestyle modification 
+Patient education is a core pharmacist responsibility.
+Critical Miss #14
+Failed to address lifestyle contributors.
+Rationale
+Major modifiable contributors include:
+Obesity 
+Sedentary lifestyle 
+Frequent restaurant meals 
+Poor dietary habits 
+Lifestyle modification is specifically emphasized in both the 2026 Hyperlipidemia Guideline and KDIGO 2024.
+Critical Miss #15
+Failed to recognize CKD increases cardiovascular risk.
+Rationale
+A major educational theme of Week 2 is understanding the relationship between kidney disease and cardiovascular disease.
+Students should recognize that CKD is not solely a renal disease state.
+Critical Miss #16
+Failed to identify preventive care gaps.
+Rationale
+Students should review:
+Pneumococcal vaccination 
+Shingrix vaccination 
+Tdap vaccination 
+This is lower severity than CKD recognition or statin optimization but remains clinically relevant.
+Critical Miss #17
+Incorrectly states the patient does not have CKD because eGFR is normal.
+Rationale
+This is the highest-priority knowledge error in the case.
+According to KDIGO 2024, persistent albuminuria is sufficient to establish CKD even when eGFR remains preserved.
+This error should result in substantial grading penalties.
+SECTION 14: TEACHING GUIDE
+Patient A – Tuesday Initial Visit
+What The Student Should Have Done Well
+The student should have:
+Recognized CKD despite preserved eGFR 
+Correctly classified CKD as G2A2 
+Identified persistent albuminuria 
+Assessed medication adherence 
+Assessed home blood pressure monitoring 
+Identified statin optimization opportunity 
+Recognized CKD as a cardiovascular risk enhancer 
+Assessed OTC medication use 
+Identified chronic NSAID exposure 
+Developed a monitoring plan 
+Created a follow-up plan 
+Provided patient-centered education 
+Common Student Mistakes
+Mistake #1
+Focusing only on eGFR.
+Example
+Student states:
+"Kidney function is normal because eGFR is 79."
+while completely ignoring albuminuria.
+Teaching Point
+CKD assessment requires:
+eGFR 
+Albuminuria 
+Both are necessary for proper classification according to KDIGO 2024.
+Mistake #2
+Treating albuminuria as a laboratory abnormality rather than evidence of kidney damage.
+Example
+Student notes elevated UACR but does not incorporate it into assessment or plan.
+Teaching Point
+Albuminuria is not simply a laboratory value.
+It is:
+Evidence of kidney damage 
+A predictor of CKD progression 
+A predictor of cardiovascular risk 
+Mistake #3
+Immediately escalating therapy without evaluating adherence.
+Example
+Student recommends multiple medication changes without asking:
+"How often do you miss your medications?"
+Teaching Point
+Poor control may result from:
+Inadequate therapy 
+Poor adherence 
+Both 
+Always assess adherence before assuming treatment failure.
+Mistake #4
+Missing OTC medication use.
+Example
+Student performs medication reconciliation but never asks about:
+OTC medications 
+Supplements 
+Nonprescription products 
+Teaching Point
+Patients frequently do not consider OTC products to be medications.
+Many important medication-related problems are identified only when directly asked.
+Mistake #5
+Treating CKD and cardiovascular disease as separate problems.
+Example
+Student discusses kidney disease but never addresses cardiovascular risk reduction.
+Teaching Point
+One of the primary goals of Week 2 is understanding that CKD and cardiovascular disease are closely interconnected.
+Many interventions improve both outcomes simultaneously.
+Teaching Pearls
+Pearl #1
+A normal eGFR does not exclude CKD.
+Persistent albuminuria may establish CKD even when filtration function appears preserved.
+Expected Discussion
+Students should understand why:
+G2A2 is CKD 
+G1A3 is CKD 
+Albuminuria changes management 
+Pearl #2
+Albuminuria often changes management before eGFR does.
+Many patients develop:
+Albuminuria first 
+eGFR decline later 
+Expected Discussion
+Early recognition creates opportunities for intervention before substantial kidney function loss occurs.
+Pearl #3
+CKD is a cardiovascular disease risk enhancer.
+According to the 2026 Hyperlipidemia Guideline, CKD should influence ASCVD risk assessment and treatment decisions.
+Expected Discussion
+Students should recognize why lipid management remains important even when kidney disease is the primary referral concern.
+Pearl #4
+The absence of symptoms does not equal the absence of risk.
+This patient feels well despite:
+CKD 
+Persistent albuminuria 
+Elevated ASCVD risk 
+Expected Discussion
+Many ambulatory care interventions are preventive rather than symptom-driven.
+Pearl #5
+The best intervention is often risk reduction rather than symptom relief.
+This encounter focuses on:
+Preventing future ASCVD 
+Preventing future CKD progression 
+Preventing future complications 
+rather than treating current symptoms.
+Follow-Up Questions
+Question 1
+"Why does this patient meet criteria for CKD despite having an eGFR of 79 mL/min/1.73m²?"
+Expected Discussion
+Persistent albuminuria 
+CKD classification requires both eGFR and albuminuria 
+KDIGO 2024 criteria 
+Question 2
+"What is the significance of a UACR of 118 mg/g?"
+Expected Discussion
+A2 albuminuria 
+Evidence of kidney damage 
+Increased CKD progression risk 
+Increased cardiovascular risk 
+Question 3
+"Why is CKD considered an ASCVD risk-enhancing condition?"
+Expected Discussion
+Increased cardiovascular event rates 
+Shared pathophysiology 
+Need for aggressive risk reduction 
+Question 4
+"Why did you choose statin intensification rather than adherence intervention alone?"
+Expected Discussion
+Students should justify:
+LDL-C remains elevated 
+Multiple ASCVD risk factors present 
+Elevated cardiovascular risk 
+Persistent need for LDL-C reduction 
+Alternative reasoning may also be acceptable if well supported.
+Question 5
+"What additional factors may contribute to future CKD progression in this patient?"
+Expected Discussion
+Hypertension 
+Obesity 
+NSAID use 
+Lifestyle factors 
+Medication adherence 
+Question 6
+"Why is chronic NSAID use concerning in a patient with CKD?"
+Expected Discussion
+Nephrotoxicity 
+Blood pressure effects 
+CKD progression risk 
+Question 7
+"How would you explain albuminuria to this patient in plain language?"
+Expected Discussion
+Students should avoid jargon.
+Example:
+"Protein leaking into the urine can be an early sign that the kidneys are under stress."
+Question 8
+"What should be monitored after today's interventions?"
+Expected Discussion
+Lipid panel 
+UACR 
+eGFR 
+Serum creatinine 
+Blood pressure 
+Medication adherence 
+Lifestyle changes 
+How The Student Can Improve Before Wednesday
+Before the next encounter, the student should be able to:
+Reassess response to statin intensification 
+Interpret repeat lipid results 
+Evaluate repeat albuminuria results 
+Assess adherence trends 
+Evaluate CKD progression risk longitudinally 
+Apply cardiorenal protection principles 
+Determine whether treatment goals are being achieved 
+Continue identifying opportunities for risk reduction 
+Think longitudinally rather than visit-to-visit
+
+Granular Rubric and Answer Key — Patient A (Michael Turner) Initial Ambulatory Care SOAP Note (Hyperlipidemia/ASCVD Risk & CKD G2A2) Patient A Tuesday
+[FOR AI PRECEPTOR CALIBRATION ONLY — NOT FOR STUDENT DISTRIBUTION]
+PURPOSE: This is the single, authoritative rubric for the Patient A (Michael Turner) Tuesday Initial-Visit Ambulatory Care SOAP Note. Every subsection’s discrete input point values sum exactly to the subsection header, and all subsection headers sum exactly to 100.0. The model answer scores 100.0/100.0 against this rubric.
+SCORING RULES:
+•  FULL: Input present, accurate, and clinically contextualized (not merely a keyword).
+•  HALF: Partially present — directionally correct but imprecise, or present without clinical context. Half-credit values are rounded to the nearest 0.05.
+•  ZERO: Absent, or a factually incorrect statement is made about that input.
+•  Additivity: Points are additive within each subsection → subsections additive within sections → sections additive to 100.0.
+Acceptable-alternative inputs (e.g., therapeutic choices) list every guideline-supported answer in parentheses; any listed answer earns full credit.
+SECTION 1: SUBJECTIVE (25.0 points)
+1A. CHIEF COMPLAINT AND REASON FOR REFERRAL (2.5 points) — 9 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1A.1
+	Patient age stated (58 years)
+	0.30
+	States 58 years
+	Age stated, imprecise
+	Omits
+	1A.2
+	Patient sex stated (male)
+	0.20
+	States male
+	—
+	Omits
+	1A.3
+	Visit type: initial collaborative practice management
+	0.40
+	States initial co-management
+	States visit, no type
+	Omits
+	1A.4
+	Setting: ambulatory care pharmacy clinic
+	0.30
+	Names clinic setting
+	—
+	Omits
+	1A.5
+	Referral source stated (primary care provider)
+	0.30
+	States PCP referral
+	Mentions referral, no source
+	Omits
+	1A.6
+	Co-management indication: hyperlipidemia
+	0.30
+	States hyperlipidemia
+	—
+	Omits
+	1A.7
+	Co-management indication: chronic kidney disease
+	0.30
+	States CKD
+	—
+	Omits
+	1A.8
+	Referral trigger: persistent LDL-C elevation
+	0.20
+	States LDL trigger
+	—
+	Omits
+	1A.9
+	Referral trigger: recently identified albuminuria
+	0.20
+	States albuminuria trigger
+	—
+	Omits
+	1A sum check: 0.30 + 0.20 + 0.40 + 0.30 + 0.30 + 0.30 + 0.30 + 0.20 + 0.20 = 2.50
+1B. HISTORY OF PRESENT ILLNESS (HPI) (5.5 points) — 14 inputs, sum = 5.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1B.1
+	Reports feeling generally well
+	0.20
+	States generally well
+	—
+	Omits
+	1B.2
+	Reports mild fatigue
+	0.30
+	States mild fatigue
+	—
+	Omits
+	1B.3
+	Reports difficulty losing weight
+	0.30
+	States difficulty losing weight
+	—
+	Omits
+	1B.4
+	Reports chronic intermittent knee pain
+	0.40
+	States chronic knee pain
+	States pain, no detail
+	Omits
+	1B.5
+	Home blood pressure monitoring (occasional)
+	0.30
+	States occasional HBPM
+	—
+	Omits
+	1B.6
+	Reported home blood pressure range (130s/80s)
+	0.60
+	States 130s/80s
+	States elevated, no range
+	Omits
+	1B.7
+	Does not maintain a written BP log
+	0.30
+	States no written log
+	—
+	Omits
+	1B.8
+	Atorvastatin nonadherence (missing 2-3 times weekly)
+	0.70
+	States 2-3 times weekly
+	States misses, no frequency
+	Omits
+	1B.9
+	Reason for nonadherence (forgets evening dose)
+	0.40
+	States forgets evening
+	Mentions reason vaguely
+	Omits
+	1B.10
+	Denies intentional skipping
+	0.20
+	States denies intentional skipping
+	—
+	Omits
+	1B.11
+	Denies financial barriers to adherence
+	0.30
+	States no financial barriers
+	—
+	Omits
+	1B.12
+	Ibuprofen use several times weekly for knee pain
+	0.50
+	States NSAID use for knee pain
+	—
+	Omits
+	1B.13
+	Unaware NSAIDs could affect kidney function / blood pressure
+	0.50
+	States this knowledge gap
+	—
+	Omits
+	1B.14
+	Limited understanding of albuminuria / why proteinuria is concerning
+	0.50
+	States this knowledge gap
+	—
+	Omits
+	1B sum check: 0.20 + 0.30 + 0.30 + 0.40 + 0.30 + 0.60 + 0.30 + 0.70 + 0.40 + 0.20 + 0.30 + 0.50 + 0.50 + 0.50 = 5.50
+1C. PAST MEDICAL, SURGICAL, AND FAMILY HISTORY (4.0 points) — 14 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1C.1
+	PMH: hypertension
+	0.30
+	Lists hypertension
+	—
+	Omits
+	1C.2
+	Hypertension duration (8 years)
+	0.20
+	States 8 years
+	—
+	Omits
+	1C.3
+	PMH: hyperlipidemia
+	0.30
+	Lists hyperlipidemia
+	—
+	Omits
+	1C.4
+	Hyperlipidemia duration (5 years)
+	0.20
+	States 5 years
+	—
+	Omits
+	1C.5
+	PMH: chronic kidney disease (G2A2)
+	0.50
+	Lists CKD with G2A2 stage
+	Lists CKD, no stage
+	Omits
+	1C.6
+	PMH: obesity
+	0.30
+	Lists obesity
+	—
+	Omits
+	1C.7
+	PSH: appendectomy (age 27)
+	0.30
+	Lists appendectomy
+	—
+	Omits
+	1C.8
+	Family history, father: myocardial infarction at age 61
+	0.50
+	States father MI at 61
+	States father MI, no age
+	Omits
+	1C.9
+	Family history, father: hypertension
+	0.20
+	Lists father hypertension
+	—
+	Omits
+	1C.10
+	Family history, father: hyperlipidemia
+	0.20
+	Lists father hyperlipidemia
+	—
+	Omits
+	1C.11
+	Family history, mother: hypertension
+	0.20
+	Lists mother hypertension
+	—
+	Omits
+	1C.12
+	Family history, mother: hyperlipidemia
+	0.20
+	Lists mother hyperlipidemia
+	—
+	Omits
+	1C.13
+	Family history: no known family history of ESKD
+	0.40
+	States no FH of ESKD
+	—
+	Omits
+	1C.14
+	Recognizes family history of premature ASCVD
+	0.20
+	Notes premature ASCVD history
+	—
+	Omits
+	1C sum check: 0.30 + 0.20 + 0.30 + 0.20 + 0.50 + 0.30 + 0.30 + 0.50 + 0.20 + 0.20 + 0.20 + 0.20 + 0.40 + 0.20 = 4.00
+1D. SOCIAL HISTORY (3.0 points) — 10 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1D.1
+	Marital/living status (married, lives with spouse)
+	0.20
+	States married/lives with spouse
+	—
+	Omits
+	1D.2
+	Occupation (accountant)
+	0.20
+	States occupation
+	—
+	Omits
+	1D.3
+	Tobacco status (former smoker, quit 6 years ago)
+	0.30
+	States former smoker + quit date
+	States former smoker only
+	Omits
+	1D.4
+	Tobacco quantity (20 pack-year history)
+	0.40
+	States 20 pack-years
+	States smoking, no quantity
+	Omits
+	1D.5
+	Alcohol quantity (1-2 beverages)
+	0.20
+	States 1-2 beverages
+	—
+	Omits
+	1D.6
+	Alcohol frequency (weekly)
+	0.20
+	States weekly
+	—
+	Omits
+	1D.7
+	Recreational drug use (denies)
+	0.20
+	States denies drug use
+	—
+	Omits
+	1D.8
+	Physical activity (limited, walking 1-2 times weekly)
+	0.50
+	States walking 1-2x weekly
+	States active, no detail
+	Omits
+	1D.9
+	Dietary pattern: frequent restaurant meals and processed foods
+	0.50
+	States restaurant/processed foods
+	—
+	Omits
+	1D.10
+	Does not monitor sodium intake / nutrition labels
+	0.30
+	States no sodium/label monitoring
+	—
+	Omits
+	1D sum check: 0.20 + 0.20 + 0.30 + 0.40 + 0.20 + 0.20 + 0.20 + 0.50 + 0.50 + 0.30 = 3.00
+1E. MEDICATIONS, ALLERGIES, AND IMMUNIZATIONS (6.0 points) — 20 inputs, sum = 6.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1E.1
+	Lisinopril listed
+	0.30
+	Names lisinopril
+	—
+	Omits
+	1E.2
+	Lisinopril dose (20 mg)
+	0.20
+	States 20 mg
+	—
+	Incorrect
+	1E.3
+	Lisinopril regimen (PO daily)
+	0.20
+	States PO daily
+	States daily, no route
+	Omits
+	1E.4
+	Hydrochlorothiazide listed
+	0.30
+	Names hydrochlorothiazide
+	—
+	Omits
+	1E.5
+	Hydrochlorothiazide dose (25 mg)
+	0.20
+	States 25 mg
+	—
+	Incorrect
+	1E.6
+	Hydrochlorothiazide regimen (PO daily)
+	0.20
+	States PO daily
+	States daily, no route
+	Omits
+	1E.7
+	Atorvastatin listed
+	0.30
+	Names atorvastatin
+	—
+	Omits
+	1E.8
+	Atorvastatin dose (10 mg)
+	0.30
+	States 10 mg
+	—
+	Incorrect
+	1E.9
+	Atorvastatin regimen (PO daily)
+	0.20
+	States PO daily
+	States daily, no route
+	Omits
+	1E.10
+	Ibuprofen listed
+	0.30
+	Names ibuprofen
+	—
+	Omits
+	1E.11
+	Ibuprofen dose (400-600 mg)
+	0.20
+	States 400-600 mg
+	States ibuprofen, no dose
+	Incorrect
+	1E.12
+	Ibuprofen frequency (several times weekly PRN)
+	0.30
+	States several times weekly PRN
+	States PRN, no frequency
+	Omits
+	1E.13
+	Ibuprofen flagged as patient-reported/OTC
+	0.30
+	Notes patient-reported / OTC
+	—
+	Omits
+	1E.14
+	No known drug allergies documented
+	0.40
+	States NKDA
+	—
+	Omits
+	1E.15
+	No known food allergies documented
+	0.30
+	States no known food allergies
+	—
+	Omits
+	1E.16
+	Influenza vaccine received this season
+	0.30
+	States influenza this season
+	States influenza, no timing
+	Omits
+	1E.17
+	COVID-19 booster received
+	0.20
+	States COVID booster
+	—
+	Omits
+	1E.18
+	Pneumococcal vaccination: none documented
+	0.50
+	States no documented pneumococcal
+	—
+	Omits
+	1E.19
+	Herpes zoster (Shingrix) vaccination: none documented
+	0.50
+	States no documented Shingrix
+	—
+	Omits
+	1E.20
+	Tdap last documented 12 years ago
+	0.50
+	States Tdap 12 years ago
+	States Tdap, no interval
+	Omits
+	1E sum check: 0.30 + 0.20 + 0.20 + 0.30 + 0.20 + 0.20 + 0.30 + 0.30 + 0.20 + 0.30 + 0.20 + 0.30 + 0.30 + 0.40 + 0.30 + 0.30 + 0.20 + 0.50 + 0.50 + 0.50 = 6.00
+1F. REVIEW OF SYSTEMS / RELEVANT NEGATIVES (2.0 points) — 8 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1F.1
+	Denies chest pain
+	0.25
+	States denies chest pain
+	—
+	Omits
+	1F.2
+	Denies shortness of breath
+	0.25
+	States denies SOB
+	—
+	Omits
+	1F.3
+	Denies palpitations
+	0.25
+	States denies palpitations
+	—
+	Omits
+	1F.4
+	Denies dizziness
+	0.25
+	States denies dizziness
+	—
+	Omits
+	1F.5
+	Denies syncope
+	0.25
+	States denies syncope
+	—
+	Omits
+	1F.6
+	Denies lower extremity edema
+	0.25
+	States denies LE edema
+	—
+	Omits
+	1F.7
+	Denies gross hematuria
+	0.25
+	States denies gross hematuria
+	—
+	Omits
+	1F.8
+	Denies changes in urinary frequency
+	0.25
+	States denies urinary frequency change
+	—
+	Omits
+	1F sum check: 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 = 2.00
+1G. PATIENT GOALS / CONCERNS (2.0 points) — 5 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1G.1
+	Concern about future kidney failure
+	0.40
+	States kidney failure concern
+	—
+	Omits
+	1G.2
+	Links concern to friend who required dialysis
+	0.30
+	Links to friend's dialysis
+	—
+	Omits
+	1G.3
+	Patient goal: weight loss
+	0.40
+	States weight-loss goal
+	—
+	Omits
+	1G.4
+	Patient goal: reduce future cardiovascular risk
+	0.50
+	States CV risk reduction goal
+	—
+	Omits
+	1G.5
+	Patient goal: avoid progression of kidney disease
+	0.40
+	States CKD-avoidance goal
+	—
+	Omits
+	1G sum check: 0.40 + 0.30 + 0.40 + 0.50 + 0.40 = 2.00
+Section 1 check: 2.5 + 5.5 + 4.0 + 3.0 + 6.0 + 2.0 + 2.0 = 25.0
+SECTION 2: OBJECTIVE (15.0 points)
+2A. VITAL SIGNS AND ANTHROPOMETRICS (4.0 points) — 7 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2A.1
+	Office blood pressure value (136/84 mmHg)
+	0.70
+	States 136/84 mmHg
+	BP stated, value imprecise
+	Omits
+	2A.2
+	Repeat office blood pressure value (134/82 mmHg)
+	0.60
+	States 134/82 mmHg
+	Notes repeat, no value
+	Omits
+	2A.3
+	Heart rate (72 bpm)
+	0.40
+	States 72 bpm
+	—
+	Omits
+	2A.4
+	Weight (103 kg)
+	0.50
+	States 103 kg
+	—
+	Omits
+	2A.5
+	Height (70 inches)
+	0.40
+	States 70 inches
+	—
+	Omits
+	2A.6
+	Body mass index (32.6 kg/m2)
+	0.70
+	States 32.6 kg/m2
+	BMI stated, value imprecise
+	Omits
+	2A.7
+	Home blood pressure log average (~136/83 mmHg)
+	0.70
+	States ~136/83 mmHg
+	Notes home log, no average
+	Omits
+	2A sum check: 0.70 + 0.60 + 0.40 + 0.50 + 0.40 + 0.70 + 0.70 = 4.00
+2B. LABORATORY DATA (8.5 points) — 14 inputs, sum = 8.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2B.1
+	Sodium (139 mEq/L)
+	0.30
+	States 139 mEq/L
+	—
+	Omits
+	2B.2
+	Potassium (4.5 mEq/L)
+	0.40
+	States 4.5 mEq/L
+	—
+	Omits
+	2B.3
+	Serum creatinine (1.08 mg/dL)
+	0.50
+	States 1.08 mg/dL
+	—
+	Omits
+	2B.4
+	eGFR (79 mL/min/1.73m2)
+	1.00
+	States 79 mL/min/1.73m2
+	eGFR stated, value imprecise
+	Omits
+	2B.5
+	AST (24 U/L)
+	0.30
+	States 24 U/L
+	—
+	Omits
+	2B.6
+	ALT (27 U/L)
+	0.30
+	States 27 U/L
+	—
+	Omits
+	2B.7
+	Total cholesterol (214 mg/dL)
+	0.40
+	States 214 mg/dL
+	—
+	Omits
+	2B.8
+	LDL-C (132 mg/dL)
+	1.10
+	States 132 mg/dL
+	LDL stated, value imprecise
+	Omits
+	2B.9
+	HDL-C (42 mg/dL)
+	0.40
+	States 42 mg/dL
+	—
+	Omits
+	2B.10
+	Triglycerides (196 mg/dL)
+	0.50
+	States 196 mg/dL
+	—
+	Omits
+	2B.11
+	Current UACR (118 mg/g)
+	1.10
+	States 118 mg/g
+	Notes UACR, no value
+	Omits
+	2B.12
+	Previous UACR (105 mg/g)
+	0.50
+	States 105 mg/g
+	—
+	Omits
+	2B.13
+	Persistent albuminuria across two values (105 to 118 mg/g)
+	0.50
+	States persistence with values
+	States persistent, no values
+	Omits
+	2B.14
+	10-year ASCVD risk estimate (11.8%)
+	1.20
+	States 11.8%
+	States elevated, no value
+	Omits
+	2B sum check: 0.30 + 0.40 + 0.50 + 1.00 + 0.30 + 0.30 + 0.40 + 1.10 + 0.40 + 0.50 + 1.10 + 0.50 + 0.50 + 1.20 = 8.50
+2C. CALCULATED VALUES AND INTERPRETATION (2.5 points) — 5 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2C.1
+	BMI value consistent with documented height and weight (32.6 kg/m2)
+	0.50
+	BMI consistent with ht/wt
+	BMI stated, not reconciled
+	Incorrect
+	2C.2
+	eGFR 79 consistent with CKD GFR category G2
+	0.60
+	States G2 from eGFR
+	States CKD, no category
+	Incorrect
+	2C.3
+	UACR 118 consistent with A2 (moderately increased albuminuria)
+	0.60
+	States A2 from UACR
+	States elevated, no category
+	Incorrect
+	2C.4
+	KDIGO classification G2A2
+	0.40
+	States G2A2
+	Names one axis
+	Omits
+	2C.5
+	AST/ALT within normal limits (baseline for statin therapy)
+	0.40
+	States LFTs normal/baseline
+	States values, no interpretation
+	Omits
+	2C sum check: 0.50 + 0.60 + 0.60 + 0.40 + 0.40 = 2.50
+Section 2 check: 4.0 + 8.5 + 2.5 = 15.0
+SECTION 3: ASSESSMENT (30.0 points)
+3A. PROBLEM 1 — HYPERLIPIDEMIA / ELEVATED ASCVD RISK, SUBOPTIMALLY CONTROLLED (8.0 points) — 18 inputs, sum = 8.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3A.1
+	Problem identified: hyperlipidemia / elevated ASCVD risk
+	0.40
+	Names the problem
+	—
+	Omits
+	3A.2
+	Status: suboptimally controlled
+	0.40
+	States suboptimal control
+	—
+	Incorrect
+	3A.3
+	Supports with LDL-C value (132 mg/dL)
+	0.50
+	References LDL 132
+	—
+	Omits
+	3A.4
+	Notes LDL elevated despite current atorvastatin 10 mg
+	0.50
+	States LDL high on current statin
+	States LDL only
+	Omits
+	3A.5
+	Documents 10-year ASCVD risk estimate (11.8%)
+	0.70
+	States 11.8%
+	References risk, no value
+	Omits
+	3A.6
+	Characterizes patient as elevated cardiovascular risk
+	0.40
+	States elevated CV risk
+	—
+	Omits
+	3A.7
+	Cites 2026 AHA/ACC Cholesterol Guideline
+	0.40
+	Names 2026 AHA/ACC cholesterol guideline
+	Cites guideline, no source
+	Omits
+	3A.8
+	Identifies CKD as an ASCVD risk-enhancing condition
+	0.60
+	States CKD as risk enhancer
+	—
+	Omits
+	3A.9
+	Risk enhancer: hypertension
+	0.30
+	Names hypertension
+	—
+	Omits
+	3A.10
+	Risk enhancer: obesity
+	0.30
+	Names obesity
+	—
+	Omits
+	3A.11
+	Risk enhancer: former tobacco use
+	0.30
+	Names former tobacco use
+	—
+	Omits
+	3A.12
+	Risk enhancer: family history of premature ASCVD
+	0.40
+	Names family ASCVD history
+	—
+	Omits
+	3A.13
+	LDL-C above desirable treatment thresholds
+	0.40
+	States LDL above threshold
+	—
+	Omits
+	3A.14
+	Suboptimal control attributed to inadequate statin intensity
+	0.50
+	States intensity inadequate
+	—
+	Omits
+	3A.15
+	Suboptimal control attributed to nonadherence (missing 2-3x weekly)
+	0.50
+	States nonadherence contribution
+	—
+	Omits
+	3A.16
+	Adherence counseling warranted
+	0.30
+	States counseling needed
+	—
+	Omits
+	3A.17
+	Recommends statin intensification (escalate to moderate-intensity regimen)
+	0.70
+	States intensification to moderate-intensity
+	States intensify, no intensity
+	Omits
+	3A.18
+	Concludes intensification appropriate at this visit
+	0.40
+	States intensify now
+	—
+	Omits
+	3A sum check: 0.40 + 0.40 + 0.50 + 0.50 + 0.70 + 0.40 + 0.40 + 0.60 + 0.30 + 0.30 + 0.30 + 0.40 + 0.40 + 0.50 + 0.50 + 0.30 + 0.70 + 0.40 = 8.00
+3B. PROBLEM 2 — CHRONIC KIDNEY DISEASE (G2A2), STABLE BUT AT INCREASED RISK (6.0 points) — 14 inputs, sum = 6.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3B.1
+	Problem identified: chronic kidney disease (G2A2)
+	0.50
+	Names CKD with stage
+	Names CKD, no stage
+	Omits
+	3B.2
+	Status: stable but at increased risk for progression
+	0.50
+	States both stable + at risk
+	States one only
+	Incorrect
+	3B.3
+	eGFR 79 supports GFR category G2 (preserved filtration)
+	0.50
+	States G2 with rationale
+	States eGFR only
+	Omits
+	3B.4
+	UACR confirms A2 (moderately increased albuminuria)
+	0.50
+	States A2 category
+	States albuminuria, no category
+	Omits
+	3B.5
+	Notes albuminuria persistent across two values (118 and 105 mg/g)
+	0.50
+	States persistence with values
+	States persistent, no values
+	Omits
+	3B.6
+	Persistent albuminuria confirms ongoing kidney damage despite preserved eGFR
+	0.60
+	States this interpretation
+	—
+	Omits
+	3B.7
+	Cites KDIGO 2024 CKD Guideline
+	0.40
+	Names KDIGO 2024
+	Cites guideline, no source
+	Omits
+	3B.8
+	Classifies CKD using both GFR and albuminuria categories
+	0.50
+	States dual-axis classification
+	—
+	Omits
+	3B.9
+	Both GFR and albuminuria independently predict progression + CV risk
+	0.50
+	States this point
+	—
+	Omits
+	3B.10
+	Progression risk factor: hypertension
+	0.20
+	Names hypertension
+	—
+	Omits
+	3B.11
+	Progression risk factor: obesity
+	0.20
+	Names obesity
+	—
+	Omits
+	3B.12
+	Progression risk factor: chronic NSAID exposure
+	0.30
+	Names NSAID exposure
+	—
+	Omits
+	3B.13
+	Continue ACE inhibitor therapy
+	0.30
+	States continue ACEi
+	—
+	Omits
+	3B.14
+	Avoid nephrotoxins / ongoing monitoring
+	0.50
+	States both
+	States one
+	Omits
+	3B sum check: 0.50 + 0.50 + 0.50 + 0.50 + 0.50 + 0.60 + 0.40 + 0.50 + 0.50 + 0.20 + 0.20 + 0.30 + 0.30 + 0.50 = 6.00
+3C. PROBLEM 3 — HYPERTENSION, NEAR GOAL (4.5 points) — 11 inputs, sum = 4.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3C.1
+	Problem identified: hypertension
+	0.30
+	Names hypertension
+	—
+	Omits
+	3C.2
+	Status: near goal
+	0.50
+	States near goal
+	—
+	Incorrect
+	3C.3
+	Documents office BP (136/84, repeat 134/82 mmHg)
+	0.50
+	States both values
+	States one value
+	Omits
+	3C.4
+	Home BP consistent with office measurements
+	0.30
+	States consistency
+	—
+	Omits
+	3C.5
+	Current regimen tolerated (lisinopril + hydrochlorothiazide)
+	0.40
+	Names both agents tolerated
+	Names one
+	Omits
+	3C.6
+	Renal function and serum potassium stable
+	0.30
+	States both stable
+	States one
+	Omits
+	3C.7
+	Cites KDIGO 2024: BP control slows CKD progression / reduces CV risk
+	0.50
+	States this guideline point
+	—
+	Omits
+	3C.8
+	BP elevation worsens albuminuria / kidney decline / ASCVD risk
+	0.50
+	Names >=2 consequences
+	Names 1
+	Omits
+	3C.9
+	Notes BP slightly above ideal CKD treatment target (KDIGO: SBP <120 mmHg when tolerated)
+	0.50
+	States above ideal CKD target
+	States above goal, generic
+	Omits
+	3C.10
+	Defers pharmacologic intensification given stable function / no severe HTN
+	0.40
+	States deferral with rationale
+	States defer only
+	Omits
+	3C.11
+	Recommends monitoring / lifestyle / adherence reinforcement first
+	0.30
+	States these steps first
+	—
+	Omits
+	3C sum check: 0.30 + 0.50 + 0.50 + 0.30 + 0.40 + 0.30 + 0.50 + 0.50 + 0.50 + 0.40 + 0.30 = 4.50
+3D. PROBLEM 4 — CHRONIC NSAID USE, POTENTIALLY HARMFUL (4.5 points) — 8 inputs, sum = 4.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3D.1
+	Problem identified: chronic NSAID use (potentially harmful)
+	0.60
+	Names the problem
+	—
+	Omits
+	3D.2
+	Identifies ibuprofen use several times weekly for knee pain
+	0.50
+	States NSAID frequency/indication
+	—
+	Omits
+	3D.3
+	Notes patient unaware of NSAID renal/blood pressure effects
+	0.50
+	States patient knowledge gap
+	—
+	Omits
+	3D.4
+	Cites KDIGO 2024: avoid potentially nephrotoxic medications in CKD
+	0.60
+	Cites this recommendation
+	—
+	Omits
+	3D.5
+	Chronic NSAID may worsen blood pressure control
+	0.60
+	States BP effect
+	—
+	Omits
+	3D.6
+	Chronic NSAID may cause kidney injury
+	0.50
+	States renal injury risk
+	—
+	Omits
+	3D.7
+	Chronic NSAID may contribute to CKD progression
+	0.60
+	States progression risk
+	—
+	Omits
+	3D.8
+	Education re safer pain management / NSAID minimization warranted
+	0.60
+	States education plan
+	—
+	Omits
+	3D sum check: 0.60 + 0.50 + 0.50 + 0.60 + 0.60 + 0.50 + 0.60 + 0.60 = 4.50
+3E. PROBLEM 5 — OBESITY (4.0 points) — 8 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3E.1
+	Problem identified: obesity
+	0.40
+	Names obesity
+	—
+	Omits
+	3E.2
+	Classifies BMI 32.6 kg/m2 as obesity (class I)
+	0.60
+	States class I obesity
+	States obese, no class
+	Omits
+	3E.3
+	Links obesity to elevated cardiovascular risk
+	0.50
+	States CV link
+	—
+	Omits
+	3E.4
+	Links obesity to hypertension
+	0.40
+	States HTN link
+	—
+	Omits
+	3E.5
+	Links obesity to future CKD progression risk
+	0.50
+	States CKD link
+	—
+	Omits
+	3E.6
+	Cites guidelines emphasizing lifestyle/weight management (2026 cholesterol + KDIGO 2024)
+	0.50
+	Names >=1 guideline source
+	Mentions guidelines, no source
+	Omits
+	3E.7
+	Modest weight reduction improves cardiometabolic health
+	0.50
+	States this benefit
+	—
+	Omits
+	3E.8
+	Patient motivation creates opportunity for intervention
+	0.60
+	States motivation/opportunity
+	—
+	Omits
+	3E sum check: 0.40 + 0.60 + 0.50 + 0.40 + 0.50 + 0.50 + 0.50 + 0.60 = 4.00
+3F. PROBLEM 6 — PREVENTIVE CARE GAPS (3.0 points) — 6 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3F.1
+	Problem identified: preventive care gaps
+	0.50
+	Names preventive care gaps
+	—
+	Omits
+	3F.2
+	Identifies pneumococcal vaccination gap
+	0.50
+	Names pneumococcal gap
+	—
+	Omits
+	3F.3
+	Identifies herpes zoster (Shingrix) vaccination gap
+	0.50
+	Names zoster gap
+	—
+	Omits
+	3F.4
+	Identifies overdue Tdap booster
+	0.50
+	Names Tdap gap
+	—
+	Omits
+	3F.5
+	Notes CKD / elevated-CV-risk patients benefit from comprehensive preventive care
+	0.50
+	States this rationale
+	—
+	Omits
+	3F.6
+	Recommends verification of immunization history
+	0.50
+	States verify history
+	—
+	Omits
+	3F sum check: 0.50 + 0.50 + 0.50 + 0.50 + 0.50 + 0.50 = 3.00
+Section 3 check: 8.0 + 6.0 + 4.5 + 4.5 + 4.0 + 3.0 = 30.0
+SECTION 4: PLAN (25.0 points)
+4A. HYPERLIPIDEMIA / ASCVD RISK REDUCTION (5.0 points) — 6 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4A.1
+	Increase atorvastatin to 20 mg daily (acceptable moderate-intensity statin: atorvastatin 10-20 mg, rosuvastatin 5-10 mg, simvastatin 20-40 mg, pravastatin 40-80 mg, lovastatin 40 mg, fluvastatin XL 80 mg, or pitavastatin 1-4 mg)
+	1.00
+	Any guideline-supported moderate-intensity statin with change
+	Names class, no agent/dose
+	Omits / no change
+	4A.2
+	Counsel patient regarding adherence strategies
+	0.70
+	States adherence counseling
+	—
+	Omits
+	4A.3
+	Recommend pill organizer / daily medication routine
+	0.70
+	States pill organizer/routine
+	—
+	Omits
+	4A.4
+	Educate patient regarding relationship between CKD and cardiovascular risk
+	0.80
+	States CKD-CV education
+	—
+	Omits
+	4A.5
+	Repeat lipid panel in ~6-12 weeks
+	0.90
+	States lipid panel 6-12 weeks
+	Repeat lipids, no timing
+	Omits
+	4A.6
+	Ties intensification to elevated ASCVD risk and risk enhancers
+	0.90
+	States risk-based rationale
+	—
+	Omits
+	4A sum check: 1.00 + 0.70 + 0.70 + 0.80 + 0.90 + 0.90 = 5.00
+4B. CHRONIC KIDNEY DISEASE (4.0 points) — 5 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4B.1
+	Continue lisinopril 20 mg daily
+	0.70
+	States continue lisinopril 20 mg
+	States continue, no dose
+	Omits
+	4B.2
+	Educate patient regarding CKD staging and albuminuria
+	0.90
+	States CKD/albuminuria education
+	—
+	Omits
+	4B.3
+	Discuss importance of reducing kidney disease progression risk factors
+	0.70
+	States progression-risk discussion
+	—
+	Omits
+	4B.4
+	Repeat UACR in ~3 months
+	0.80
+	States UACR in 3 months
+	Repeat UACR, no timing
+	Omits
+	4B.5
+	Continue routine renal function monitoring
+	0.90
+	States renal monitoring
+	—
+	Omits
+	4B sum check: 0.70 + 0.90 + 0.70 + 0.80 + 0.90 = 4.00
+4C. HYPERTENSION (3.0 points) — 4 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4C.1
+	Continue lisinopril 20 mg daily
+	0.70
+	States continue lisinopril 20 mg
+	States continue, no dose
+	Omits
+	4C.2
+	Continue hydrochlorothiazide 25 mg daily
+	0.70
+	States continue HCTZ 25 mg
+	States continue, no dose
+	Omits
+	4C.3
+	Encourage home blood pressure monitoring
+	0.70
+	States encourage HBPM
+	—
+	Omits
+	4C.4
+	Counsel on sodium reduction and lifestyle modification
+	0.90
+	States sodium/lifestyle counseling
+	—
+	Omits
+	4C sum check: 0.70 + 0.70 + 0.70 + 0.90 = 3.00
+4D. PAIN MANAGEMENT (3.0 points) — 3 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4D.1
+	Recommend minimizing ibuprofen use
+	0.90
+	States minimize ibuprofen
+	—
+	Omits
+	4D.2
+	Encourage acetaminophen as first-line therapy when appropriate
+	1.00
+	States acetaminophen first-line
+	Mentions acetaminophen, not first-line
+	Omits
+	4D.3
+	Discuss risks of chronic NSAID exposure in CKD
+	1.10
+	States CKD-specific NSAID risk discussion
+	States NSAID risk, not CKD-specific
+	Omits
+	4D sum check: 0.90 + 1.00 + 1.10 = 3.00
+4E. LIFESTYLE / WEIGHT MANAGEMENT (3.5 points) — 5 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4E.1
+	Encourage progression toward >=150 minutes/week moderate-intensity activity
+	0.90
+	States >=150 min/week goal
+	States exercise, no target
+	Omits
+	4E.2
+	Reduce restaurant meal frequency
+	0.70
+	States reduce restaurant meals
+	—
+	Omits
+	4E.3
+	Increase fruit and vegetable intake
+	0.70
+	States increase fruits/vegetables
+	—
+	Omits
+	4E.4
+	Discuss weight-loss benefits for kidney and cardiovascular health
+	0.80
+	States dual-benefit discussion
+	States weight loss, no link
+	Omits
+	4E.5
+	Ties lifestyle to sodium reduction / BP benefit
+	0.40
+	States BP/sodium rationale
+	—
+	Omits
+	4E sum check: 0.90 + 0.70 + 0.70 + 0.80 + 0.40 = 3.50
+4F. PREVENTIVE CARE (3.0 points) — 4 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4F.1
+	Verify immunization history
+	0.60
+	States verify immunizations
+	—
+	Omits
+	4F.2
+	Recommend PCV vaccination if not previously received
+	0.80
+	States PCV recommendation
+	—
+	Omits
+	4F.3
+	Recommend recombinant zoster (Shingrix) vaccination series
+	0.80
+	States Shingrix series
+	States zoster, no series
+	Omits
+	4F.4
+	Recommend Tdap booster
+	0.80
+	States Tdap recommendation
+	—
+	Omits
+	4F sum check: 0.60 + 0.80 + 0.80 + 0.80 = 3.00
+4G. FOLLOW-UP AND MONITORING (3.5 points) — 8 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4G.1
+	Follow up in 3 months
+	0.70
+	States 3-month follow-up
+	States follow-up, no timing
+	Omits
+	4G.2
+	Obtain repeat lipid panel before next visit
+	0.50
+	States lipid panel before visit
+	—
+	Omits
+	4G.3
+	Obtain repeat CMP before next visit
+	0.50
+	States CMP before visit
+	—
+	Omits
+	4G.4
+	Obtain repeat UACR before next visit
+	0.50
+	States UACR before visit
+	—
+	Omits
+	4G.5
+	Obtain repeat BP readings before next visit
+	0.30
+	States BP before visit
+	—
+	Omits
+	4G.6
+	Reassess adherence at follow-up
+	0.30
+	States review adherence
+	—
+	Omits
+	4G.7
+	Reassess kidney function / albuminuria at follow-up
+	0.40
+	States renal/albuminuria reassessment
+	—
+	Omits
+	4G.8
+	Reassess response to statin intensification at follow-up
+	0.30
+	States statin-response reassessment
+	—
+	Omits
+	4G sum check: 0.70 + 0.50 + 0.50 + 0.50 + 0.30 + 0.30 + 0.40 + 0.30 = 3.50
+Section 4 check: 5.0 + 4.0 + 3.0 + 3.0 + 3.5 + 3.0 + 3.5 = 25.0
+SECTION 5: PRESENTATION QUALITY (5.0 points)
+5A. ORGANIZATION AND SOAP STRUCTURE (2.0 points) — 4 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5A.1
+	Uses four-part SOAP structure (S / O / A / P)
+	0.50
+	All four sections present and labeled
+	Some sections present
+	Absent
+	5A.2
+	Subjective and objective data placed in correct sections
+	0.50
+	Correctly partitioned
+	Minor misplacement
+	Major misplacement
+	5A.3
+	Assessment presents a prioritized, numbered problem list
+	0.50
+	Numbered, prioritized list
+	Listed, not prioritized
+	Absent
+	5A.4
+	Each plan element maps to an assessed problem
+	0.50
+	All plan items mapped
+	Most mapped
+	Unmapped plan
+	5A sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+5B. FORMATTING AND DOCUMENTATION (2.0 points) — 4 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5B.1
+	Medications documented with drug, dose, route, and frequency
+	0.50
+	All four elements present
+	Missing one element
+	Largely incomplete
+	5B.2
+	Laboratory values reported with units
+	0.50
+	Units present throughout
+	Some units missing
+	Units absent
+	5B.3
+	Goals/targets stated with numeric thresholds
+	0.50
+	Numeric goals stated
+	Some numeric
+	Vague goals
+	5B.4
+	Documents CKD classification (G2A2) and ASCVD risk from objective data
+	0.50
+	Both documented
+	Partially documented
+	Not documented
+	5B sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+5C. PROFESSIONAL TONE AND SPECIFICITY (1.0 points) — 3 inputs, sum = 1.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5C.1
+	Objective, professional clinical language
+	0.40
+	Professional throughout
+	Minor lapses
+	Unprofessional
+	5C.2
+	Recommendations tied to guideline or clinical rationale
+	0.40
+	Rationale provided
+	Partial rationale
+	Absent
+	5C.3
+	Free of major factual or medication errors
+	0.20
+	No major errors
+	1 minor error
+	Major error
+	5C sum check: 0.40 + 0.40 + 0.20 = 1.00
+Section 5 check: 2.0 + 2.0 + 1.0 = 5.0
+GRAND TOTAL VERIFICATION
+§
+	Section
+	Subsections
+	Points
+	1
+	SUBJECTIVE
+	1A (2.5) + 1B (5.5) + 1C (4.0) + 1D (3.0) + 1E (6.0) + 1F (2.0) + 1G (2.0)
+	25.0
+	2
+	OBJECTIVE
+	2A (4.0) + 2B (8.5) + 2C (2.5)
+	15.0
+	3
+	ASSESSMENT
+	3A (8.0) + 3B (6.0) + 3C (4.5) + 3D (4.5) + 3E (4.0) + 3F (3.0)
+	30.0
+	4
+	PLAN
+	4A (5.0) + 4B (4.0) + 4C (3.0) + 4D (3.0) + 4E (3.5) + 4F (3.0) + 4G (3.5)
+	25.0
+	5
+	PRESENTATION QUALITY
+	5A (2.0) + 5B (2.0) + 5C (1.0)
+	5.0
+	 
+	GRAND TOTAL
+	 
+	100.0
+	GRADING SCALE
+Grade
+	Range
+	Description
+	A
+	90.0–100.0
+	Exceptional — comprehensive, accurate, clinically actionable
+	B
+	80.0–89.9
+	Proficient — solid coverage with minor gaps
+	C
+	70.0–79.9
+	Developing — adequate but missing key elements
+	D
+	60.0–69.9
+	Below expectations — significant gaps in content or analysis
+	F
+	Below 60.0
+	Unsatisfactory — major deficiencies
+	TOTAL DISCRETE INPUTS ACROSS ALL SECTIONS
+Section
+	Subsections
+	# Inputs
+	1. SUBJECTIVE
+	1A–1G
+	80
+	2. OBJECTIVE
+	2A–2C
+	26
+	3. ASSESSMENT
+	3A–3F
+	65
+	4. PLAN
+	4A–4G
+	35
+	5. PRESENTATION QUALITY
+	5A–5C
+	11
+	TOTAL
+	 
+	217
+	MODEL ANSWER SCORE: 100.0 / 100.0
+The model answer (Patient A / Michael Turner — Tuesday Initial Visit gold-standard SOAP note) earns full credit on every one of the 217 discrete inputs. Any student submission is scored against this rubric by evaluating each of the 217 discrete inputs independently, awarding FULL, HALF, or ZERO credit per input, and summing to a final score out of 100.0.
+Source guidelines for therapeutic alternatives: KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of CKD; 2026 AHA/ACC Guideline for the Management of Blood Cholesterol; CDC Adult Immunization Schedule.
+
+
+
+

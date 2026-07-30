@@ -164,7 +164,11 @@ const caseTue = {
 
 
   INTERVIEW_KNOWLEDGE: [
-    { id: 'w1a_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'wine', 'beer', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on special occasions." },
+    { id: 'maria-tue_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
+    { id: 'maria-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take ibuprofen 400 mg to 600 mg a few times a week for my knee stiffness, and I also take a daily multivitamin." },
+    { id: 'maria-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a small glass of wine on special family occasions or dinners, but that is about it." },
+    { id: 'maria-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
+    { id: 'maria-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had high blood pressure, type 2 diabetes, and had a heart attack at age 62. My mother had high blood pressure and type 2 diabetes, and suffered from diabetic kidney disease. My brother has type 2 diabetes." },
     { id: 'reason', topic: 'Reason for visit', field: null,
       keywords: ['why are you here', 'reason for', 'bring you in', 'what brings', 'referred', 'doctor send', 'visit today'],
       response: 'My doctor said my blood pressure and my diabetes numbers have been creeping up, so he wanted me to come talk with the pharmacist.' },

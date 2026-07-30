@@ -1,0 +1,188 @@
+﻿SECTION 8: PATIENT C MASTER PROFILE
+Patient Information
+Patient Name
+Linda Martinez
+Age
+68 years
+Sex
+Female
+Race/Ethnicity
+Hispanic/Latina
+Visit Setting
+Collaborative Practice Ambulatory Care Clinic
+Insurance
+Medicare Advantage Plan
+Preferred Language
+English
+Marital Status
+Married
+Occupation
+Retired Elementary School Teacher
+
+Main Medical Conditions
+Active Conditions
+Type 2 Diabetes Mellitus
+Hypertension
+Chronic Kidney Disease Stage 3a
+Severely Increased Albuminuria
+Atherosclerotic Cardiovascular Disease (History of STEMI)
+Hyperlipidemia
+Obesity
+Gastroesophageal Reflux Disease (GERD)
+Disease Duration
+Type 2 Diabetes Mellitus
+Diagnosed 15 years ago
+Hypertension
+Diagnosed 18 years ago
+Chronic Kidney Disease
+Diagnosed 3 years ago following myocardial infarction
+ASCVD
+ST-Elevation Myocardial Infarction 3 years ago
+Drug-eluting stent placement completed during hospitalization
+Hyperlipidemia
+Diagnosed 15 years ago
+Obesity
+Longstanding
+GERD
+Diagnosed 8 years ago
+
+Personality Profile
+General Personality
+Linda is highly motivated and wants to do everything possible to stay healthy.
+She takes her medical conditions seriously but frequently feels overwhelmed by the number of diseases, medications, laboratory values, and recommendations she receives.
+She often tells healthcare providers:
+"I'm trying my best."
+"I just want to know what's most important."
+"Sometimes I feel like there are too many things to focus on."
+Communication Style
+Engaged and cooperative
+Asks thoughtful questions
+Openly discusses concerns
+Frequently seeks reassurance
+Wants clear explanations regarding treatment priorities
+Emotional Characteristics
+Motivated to improve health
+Fearful of dialysis
+Fearful of another heart attack
+Overwhelmed by multiple chronic conditions
+Concerned about future loss of independence
+Highly invested in her family's well-being
+
+Health Literacy Level
+Moderate Health Literacy
+Linda understands:
+Diabetes affects blood sugar
+High blood pressure damages organs
+Heart attacks can happen again
+Kidney disease is serious
+Medications reduce risk
+Linda does NOT fully understand:
+CKD staging
+Albuminuria categories
+KDIGO risk classification
+Cardiorenal protection
+Relative risk reduction between therapies
+Why certain therapies may be prioritized over others
+
+Past Medical History
+Type 2 Diabetes Mellitus
+Hypertension
+Chronic Kidney Disease Stage 3a
+Severely Increased Albuminuria
+ST-Elevation Myocardial Infarction
+Hyperlipidemia
+Obesity
+GERD
+Percutaneous Coronary Intervention with Drug-Eluting Stent Placement
+3 years ago
+Cholecystectomy
+Age 49
+Total Abdominal Hysterectomy
+Age 52
+Family History
+Father
+Myocardial infarction at age 62
+Hypertension
+Mother
+Type 2 Diabetes Mellitus
+Chronic Kidney Disease
+Brother
+Myocardial infarction at age 58
+Sister
+Type 2 Diabetes Mellitus
+Hypertension
+
+Social History
+Tobacco
+Never smoker
+Alcohol
+Rare alcohol use
+Living Situation
+Lives with husband
+Exercise
+Occasional walking
+No structured exercise program
+Helps care for grandchildren multiple days per week
+Diet
+Attempts diabetic diet
+Frequently struggles with portion control
+Consumes restaurant meals multiple times weekly
+Inconsistent sodium restriction
+
+Medication List
+Metformin XR 1000 mg
+Take 2 tablets by mouth daily
+Empagliflozin 10 mg
+Take 1 tablet by mouth daily
+Semaglutide 0.5 mg
+Inject subcutaneously once weekly
+Lisinopril 20 mg
+Take 1 tablet by mouth daily
+Metoprolol Succinate 50 mg
+Take 1 tablet by mouth daily
+Atorvastatin 40 mg
+Take 1 tablet by mouth daily
+Aspirin 81 mg
+Take 1 tablet by mouth daily
+Omeprazole 20 mg
+Take 1 capsule by mouth daily
+
+Medication History
+No significant medication access barriers identified.
+No major adherence concerns identified.
+No hidden medication-related problems are intentionally built into this case.
+The primary educational challenge is prioritization of evidence-based interventions in a patient with multiple competing cardiorenal risk factors.
+Students should focus on determining which interventions provide the greatest reduction in future cardiovascular and renal events.
+
+Allergies
+Drug Allergies
+Penicillin
+Reaction: Rash
+Food Allergies
+None reported
+
+Patient Goals
+When asked:
+"What would you like to accomplish with your health?"
+Patient responds:
+"I want to avoid another heart attack and stay healthy enough to enjoy my family."
+Additional goals:
+Avoid dialysis
+Protect kidney function
+Remain independent
+Continue helping care for grandchildren
+Avoid hospitalization
+Reduce future cardiovascular risk
+
+Patient Fears and Concerns
+Primary Concern
+Progression of kidney disease
+Secondary Concern
+Having another heart attack
+Additional Concerns
+Eventually needing dialysis
+Eventually requiring insulin
+Managing too many medications
+Balancing recommendations from multiple healthcare providers
+Understanding what should be prioritized first
+

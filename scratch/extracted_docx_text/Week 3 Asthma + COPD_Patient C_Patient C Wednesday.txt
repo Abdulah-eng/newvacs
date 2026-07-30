@@ -1,0 +1,2430 @@
+﻿SECTION 9: PATIENT C – WEDNESDAY 3-MONTH FOLLOW-UP
+Encounter Overview
+Encounter Type
+Ambulatory Care Pharmacist Follow-Up Visit
+Visit Length
+30-minute collaborative practice visit
+Week
+Week 3 – Wednesday
+Difficulty Level
+Advanced APPE Student
+Primary Learning Objectives
+Students should be able to:
+Assess response to ICS-containing therapy 
+Evaluate asthma and COPD symptom control 
+Interpret changes in ACT and CAT scores 
+Assess adherence and inhaler technique 
+Evaluate recurrent respiratory symptoms 
+Recognize the impact of allergic rhinitis on lower airway disease 
+Identify upper airway contributors to poor symptom control 
+Avoid inappropriate escalation of pulmonary therapy 
+Construct a complete SOAP note 
+Develop an appropriate monitoring and follow-up strategy 
+1. Patient Snapshot
+Maria Thompson is a 69-year-old White female presenting for a 3-month ambulatory care pharmacy follow-up visit after initiation of budesonide/formoterol (Symbicort) in addition to ongoing tiotropium therapy for asthma-COPD overlap.
+At her initial visit, she was identified as having multiple asthma features, eosinophilic inflammation, recurrent exacerbations, and absence of ICS-containing therapy.
+Since initiation of Symbicort, she reports improvement in respiratory symptoms but continues to experience intermittent respiratory complaints.
+2. Chief Concern
+"My breathing is definitely better, but I'm still having some bad days."
+3. History of Present Illness
+Maria is a 69-year-old female with asthma-COPD overlap, allergic rhinitis, hypertension, and osteopenia presenting for a 3-month follow-up medication management visit.
+Since her previous visit, she reports noticeable improvement in respiratory symptoms.
+She reports:
+Less shortness of breath 
+Less wheezing 
+Reduced rescue inhaler use 
+Improved exercise tolerance 
+Fewer nighttime symptoms 
+She states she is pleased with the improvement overall.
+However, she continues to experience intermittent days when respiratory symptoms worsen.
+She reports:
+Nasal congestion 
+Postnasal drainage 
+Sneezing 
+Seasonal allergy symptoms 
+She reports one mild respiratory flare during the previous three months that resolved without oral corticosteroids, antibiotics, urgent care evaluation, or hospitalization.
+She denies:
+Steroid-treated exacerbations 
+Emergency department visits 
+Hospitalizations 
+She reports taking her inhalers as prescribed.
+4. Past Medical History
+Asthma
+Diagnosed during childhood 
+COPD
+Diagnosed 8 years ago 
+Allergic Rhinitis
+Diagnosed during early adulthood 
+Hypertension
+Diagnosed 15 years ago 
+Osteopenia
+Diagnosed 3 years ago 
+5. Medication List
+Budesonide/Formoterol (Symbicort) 160/4.5 mcg
+2 inhalations twice daily 
+Tiotropium (Spiriva Respimat)
+2 inhalations daily 
+Albuterol HFA
+2 puffs every 4–6 hours as needed 
+Fluticasone Nasal Spray
+1 spray each nostril daily 
+Lisinopril 20 mg daily
+Calcium Carbonate/Vitamin D
+1 tablet twice daily 
+6. Allergies
+Drug Allergies
+Sulfonamide antibiotics
+Rash 
+Food Allergies
+None
+7. Vitals
+Today's Vitals
+BP: 124/72 mmHg
+HR: 76 bpm
+RR: 16
+Temp: 98.2°F
+SpO₂: 96% on room air
+Weight: 71 kg
+Height: 64 inches
+BMI: 26.9 kg/m²
+8. Laboratory Data
+Pulmonary Function Testing
+Post-Bronchodilator FEV1/FVC
+0.56
+Post-Bronchodilator FEV1
+63% predicted
+Complete Blood Count
+Absolute Eosinophil Count
+380 cells/µL
+Asthma Control Test (ACT)
+Score: 20
+Interpretation
+Improved asthma control
+COPD Assessment Test (CAT)
+Score: 13
+Interpretation
+Improved symptom burden
+Exacerbation History
+Past 3 Months
+One mild respiratory flare 
+No systemic corticosteroids 
+No antibiotics 
+No hospitalization 
+9. Immunizations
+Influenza
+Received this season
+COVID
+Completed primary series and most recent booster
+PCV20
+Received
+RSV Vaccine
+Not documented
+Tdap
+Last documented 11 years ago
+10. Social History
+Tobacco
+Former smoker
+30 pack-year history
+Quit 12 years ago
+Alcohol
+Rare alcohol use
+Exercise
+Walking more frequently since previous visit
+Occupation
+Retired elementary school principal
+Living Situation
+Lives with spouse
+11. Family History
+Father
+COPD
+Coronary artery disease
+Mother
+Asthma
+Allergic rhinitis
+Sister
+Asthma
+12. Problem List
+Active Problems
+Asthma-COPD overlap 
+Improved respiratory control 
+Persistent allergic rhinitis 
+Seasonal allergy symptoms 
+Elevated eosinophils 
+Osteopenia 
+Preventive care gaps 
+13. Pharmacist Visit Notes
+Referral Reason
+Three-month follow-up after initiation of ICS-containing therapy.
+Key Concerns
+Assess response to Symbicort 
+Assess symptom improvement 
+Assess adherence 
+Assess inhaler technique 
+Evaluate persistent symptoms 
+Assess allergic rhinitis control 
+Determine need for therapy escalation 
+Assess preventive care gaps 
+14. Follow-Up Tasks Expected From Student
+Students should consider:
+Asthma Assessment
+Evaluate ACT score improvement 
+Assess symptom frequency 
+Assess nighttime symptoms 
+Assess rescue inhaler use 
+COPD Assessment
+Evaluate CAT score improvement 
+Assess activity limitation 
+Assess exacerbation history 
+Medication Assessment
+Assess adherence 
+Assess inhaler technique 
+Assess tolerability 
+Allergic Rhinitis
+Assess symptom burden 
+Evaluate treatment adherence 
+Determine impact on respiratory symptoms 
+Therapeutic Decision-Making
+Determine whether pulmonary therapy escalation is warranted 
+Identify non-pulmonary contributors to symptoms 
+Optimize allergic rhinitis management 
+Monitoring
+ACT score 
+CAT score 
+Exacerbations 
+Rescue inhaler use 
+Rhinitis symptoms 
+Adherence 
+Follow-Up
+Develop an appropriate monitoring plan 
+Determine future follow-up needs
+
+SECTION 10: AI PATIENT Q&A GUIDE
+Patient C – Wednesday 3-Month Follow-Up
+Purpose
+This document serves as the AI patient behavior guide.
+Responses should sound like a real patient, not a clinician.
+The patient should not volunteer hidden information unless appropriately prompted.
+Reason for Visit
+Student:
+"What brings you in today?"
+Patient:
+"I'm here for my breathing follow-up."
+Student:
+"What are you hoping to get out of today's visit?"
+Patient:
+"I want to see if things are going the way they should."
+Symptoms
+Student:
+"How have you been feeling since your last visit?"
+Patient:
+"Definitely better."
+Student:
+"Can you tell me more?"
+Patient:
+"I'm not getting as short of breath."
+Student:
+"What else has improved?"
+Patient:
+"I'm not wheezing nearly as much."
+Rescue Inhaler Use
+Student:
+"How often are you using albuterol now?"
+Patient:
+"Not nearly as often."
+Student:
+"About how often?"
+Patient:
+"Maybe a few times a week."
+Nighttime Symptoms
+Student:
+"Are breathing symptoms waking you up at night?"
+Patient:
+"Not very often anymore."
+Student:
+"How often?"
+Patient:
+"Maybe once every couple weeks."
+Activity Limitation
+Student:
+"Has your activity level changed?"
+Patient:
+"Yes."
+Student:
+"How so?"
+Patient:
+"I'm walking more and getting around easier."
+Exacerbation History
+Student:
+"Have you had any flare-ups since your last visit?"
+Patient:
+"One."
+Student:
+"What happened?"
+Patient:
+"It wasn't too bad."
+Student:
+"Did you need steroids?"
+Patient:
+"No."
+Student:
+"Antibiotics?"
+Patient:
+"No."
+Student:
+"Hospitalization?"
+Patient:
+"No."
+Medication Use
+Student:
+"What medications are you taking?"
+Patient:
+"My Symbicort, Spiriva, albuterol, blood pressure medicine, and calcium."
+Adherence
+Student:
+"Have you been taking your inhalers regularly?"
+Patient:
+"Yes."
+Student:
+"Do you miss doses?"
+Patient:
+"Very rarely."
+Inhaler Technique
+Student:
+"Can you show me how you use your inhalers?"
+Patient:
+"Sure."
+If assessed:
+Patient demonstrates appropriate inhaler technique.
+Allergy Symptoms
+Student:
+"Are you having any allergy symptoms?"
+Patient:
+"Actually yes."
+Student:
+"What symptoms?"
+Patient:
+"My nose has been bothering me quite a bit."
+Student:
+"Can you describe that?"
+Patient:
+"Congestion, drainage, sneezing."
+Fluticasone Nasal Spray (Hidden Information)
+DO NOT volunteer.
+Student:
+"Are you still using your nasal spray?"
+Patient:
+"Not really."
+Student:
+"What do you mean?"
+Patient:
+"I stopped using it."
+Student:
+"When did you stop?"
+Patient:
+"About six weeks ago."
+Student:
+"Why did you stop?"
+Patient:
+"I was feeling better and didn't think I needed it anymore."
+Relationship Between Allergies and Breathing (Hidden Information)
+DO NOT volunteer.
+Student:
+"Do you notice any connection between your allergy symptoms and your breathing?"
+Patient:
+"Now that you mention it, yes."
+Student:
+"Tell me more."
+Patient:
+"My breathing seems worse when my allergies are acting up."
+Patient Goals
+Student:
+"What health goal is most important to you right now?"
+Patient:
+"I'd like to keep improving."
+Student:
+"Anything else?"
+Patient:
+"I'd like fewer flare-ups."
+Patient Concerns
+Student:
+"What concerns you most?"
+Patient:
+"I don't want my breathing to start getting worse again."
+Understanding of Treatment
+Student:
+"What do you think about your inhalers so far?"
+Patient:
+"They seem to be helping."
+Student:
+"How much?"
+Patient:
+"Quite a bit."
+Follow-Up Preferences
+Student:
+"How do you prefer follow-up appointments?"
+Patient:
+"Phone visits are fine."
+Hidden Information Summary for AI
+The AI should NEVER volunteer these without prompting:
+Fluticasone nasal spray was stopped approximately 6 weeks ago 
+Allergy symptoms worsened after discontinuation 
+Breathing symptoms correlate with worsening allergies 
+Inhaler adherence is excellent 
+Inhaler technique is appropriate 
+Symbicort has significantly improved symptoms 
+Pulmonary therapy is working appropriately 
+Escalation is not needed 
+
+
+SECTION 10A: HIDDEN INFORMATION TRIGGER MAP
+Patient C – Wednesday 3-Month Follow-Up
+Hidden Fact #1: Fluticasone Nasal Spray Discontinued
+Information to Reveal
+Patient stopped Flonase approximately 6 weeks ago.
+Trigger Keywords
+nasal spray 
+fluticasone 
+allergies 
+rhinitis 
+medications 
+Appropriate AI Response
+"I stopped using it about six weeks ago."
+Information Not Volunteered
+Patient does not initially mention this.
+Hidden Fact #2: Self-Discontinuation Due to Improvement
+Information to Reveal
+Patient stopped therapy because symptoms initially improved.
+Trigger Keywords
+why stopped 
+adherence 
+medication changes 
+Appropriate AI Response
+"I felt better and thought I didn't need it anymore."
+Information Not Volunteered
+Patient only discusses this if asked.
+Hidden Fact #3: Allergy Symptoms Have Returned
+Information to Reveal
+Congestion, drainage, and sneezing have worsened.
+Trigger Keywords
+allergies 
+rhinitis 
+congestion 
+drainage 
+sneezing 
+Appropriate AI Response
+"My allergies have definitely been acting up again."
+Information Not Volunteered
+Patient only discusses if assessed.
+Hidden Fact #4: Allergies Affect Breathing
+Information to Reveal
+Respiratory symptoms worsen when allergies worsen.
+Trigger Keywords
+triggers 
+breathing 
+asthma 
+allergies 
+Appropriate AI Response
+"My breathing seems worse when my allergies are bothering me."
+Information Not Volunteered
+Patient has not independently recognized this connection.
+Hidden Fact #5: Excellent Inhaler Adherence
+Information to Reveal
+Symbicort and Spiriva are being used consistently.
+Trigger Keywords
+adherence 
+compliance 
+missed doses 
+Appropriate AI Response
+"I take them every day."
+Information Not Volunteered
+Patient only discusses if asked.
+Hidden Fact #6: Proper Inhaler Technique
+Information to Reveal
+Technique remains appropriate.
+Trigger Keywords
+technique 
+demonstration 
+inhaler use 
+Appropriate AI Response
+Patient demonstrates proper inhaler use.
+Information Not Volunteered
+Technique must be assessed.
+
+SECTION 11: GOLD-STANDARD AMBULATORY CARE PHARMACIST SOAP NOTE
+Patient C – Wednesday 3-Month Follow-Up
+SUBJECTIVE
+CC:
+Maria Thompson is a 69-year-old female presenting to the ambulatory care pharmacy clinic for a 3-month follow-up visit after initiation of budesonide/formoterol (Symbicort) for management of asthma-COPD overlap.
+HPI:
+The patient reports significant improvement in respiratory symptoms since her previous visit. She states that she is experiencing less shortness of breath, less wheezing, fewer nighttime symptoms, and improved exercise tolerance. She reports using albuterol only a few times weekly compared with multiple times daily at baseline.
+She reports one mild respiratory flare during the previous three months but denies requiring oral corticosteroids, antibiotics, urgent care evaluation, emergency department evaluation, or hospitalization.
+The patient reports excellent adherence to Symbicort and Spiriva and demonstrates appropriate inhaler technique.
+Despite overall improvement in respiratory symptoms, she reports worsening allergy symptoms over the past several weeks including nasal congestion, postnasal drainage, rhinorrhea, and sneezing.
+Upon further discussion, the patient reports that she discontinued fluticasone nasal spray approximately six weeks ago because her allergy symptoms had improved and she did not believe continued treatment was necessary.
+She has since noticed progressive worsening of allergy symptoms and believes her breathing tends to worsen when her allergies are uncontrolled.
+She remains motivated to improve respiratory control and reduce future exacerbations.
+No hospitalizations.
+No emergency department visits.
+Past Medical History
+Asthma diagnosed during childhood
+COPD diagnosed 8 years ago
+Allergic rhinitis
+Hypertension diagnosed 15 years ago
+Osteopenia diagnosed 3 years ago
+Past Surgical History
+Cholecystectomy
+Family History
+Father: COPD, coronary artery disease
+Mother: asthma, allergic rhinitis
+Sister: asthma
+Social History
+Married
+Retired elementary school principal
+Lives with spouse
+Former smoker
+30 pack-year smoking history
+Quit 12 years ago
+Rare alcohol use
+Denies recreational drug use
+Walking more frequently since previous visit
+Current Medications
+Budesonide/Formoterol (Symbicort) 160/4.5 mcg
+2 inhalations twice daily 
+Tiotropium (Spiriva Respimat)
+2 inhalations daily 
+Albuterol HFA
+2 puffs every 4–6 hours as needed 
+Fluticasone Nasal Spray
+Self-discontinued approximately 6 weeks ago 
+Lisinopril 20 mg PO daily
+Calcium Carbonate/Vitamin D
+1 tablet twice daily 
+Allergies
+Sulfonamide antibiotics
+Rash 
+Immunization History
+Influenza vaccine up to date
+COVID vaccination up to date
+PCV20 received
+RSV vaccination not documented
+Tdap overdue
+OBJECTIVE
+Vitals
+BP: 124/72 mmHg
+HR: 76 bpm
+RR: 16 breaths/min
+Weight: 71 kg
+Height: 64 inches
+BMI: 26.9 kg/m²
+SpO₂: 96% on room air
+Pulmonary Function Testing
+Post-Bronchodilator FEV1/FVC: 0.56
+Post-Bronchodilator FEV1: 63% predicted
+Complete Blood Count
+Absolute Eosinophil Count:
+380 cells/µL
+Asthma Control Test (ACT)
+ACT Score: 20
+Interpretation:
+Improved asthma control.
+COPD Assessment Test (CAT)
+CAT Score: 13
+Interpretation:
+Improved symptom burden.
+Exacerbation History
+Past 3 Months:
+One mild respiratory flare 
+No systemic corticosteroids 
+No antibiotics 
+No hospitalization 
+ASSESSMENT
+1. Asthma-COPD Overlap Phenotype (ACO) – Significantly Improved Following Initiation of ICS-Containing Therapy
+The patient demonstrates clinically meaningful improvement in respiratory symptoms following initiation of budesonide/formoterol in addition to ongoing tiotropium therapy. Since the previous visit, ACT score has improved from 15 to 20 and CAT score has improved from 19 to 13. She reports less dyspnea, less wheezing, fewer nighttime symptoms, reduced rescue inhaler use, and improved exercise tolerance. She has not experienced any corticosteroid-treated exacerbations, emergency department visits, or hospitalizations during the follow-up period.
+According to the 2025 GINA Report, inhaled corticosteroid-containing therapy remains the foundation of treatment for patients with asthma features because it reduces symptoms and future exacerbation risk. The patient's clinical response supports the presence of corticosteroid-responsive airway inflammation and confirms that initiation of ICS-containing therapy was appropriate.
+At this time, the patient's respiratory regimen appears effective, and there is insufficient evidence to support escalation of pulmonary therapy.
+2. Uncontrolled Allergic Rhinitis Contributing to Residual Respiratory Symptoms
+The patient reports worsening allergic rhinitis symptoms including congestion, rhinorrhea, postnasal drainage, and sneezing after self-discontinuation of fluticasone nasal spray approximately six weeks ago. She additionally reports that respiratory symptoms tend to worsen when allergy symptoms are poorly controlled.
+According to GINA 2025, allergic rhinitis is a common comorbidity that may negatively affect asthma control and should be actively managed as part of comprehensive airway disease treatment. The patient's ongoing intermittent respiratory complaints appear more consistent with uncontrolled upper airway disease than progression of asthma or COPD.
+Optimization of allergic rhinitis management is warranted before consideration of escalation of pulmonary therapy.
+3. Eosinophilic Airway Inflammation – Stable
+The patient's eosinophil count remains elevated at 380 cells/µL, consistent with persistent Type 2 airway inflammation. However, current clinical improvement following initiation of ICS-containing therapy suggests that eosinophilic inflammation is being appropriately addressed with her current regimen.
+According to GINA 2025, eosinophilic inflammation represents an important treatable trait that should be considered when evaluating future therapeutic options. At this time, biologic therapy is not indicated because the patient has demonstrated significant clinical improvement and has not experienced severe or recurrent exacerbations despite optimized inhaled therapy.
+Continued monitoring is appropriate.
+4. Recurrent Exacerbation Risk – Improved
+At the initial visit, the patient reported two corticosteroid-treated exacerbations during the previous year. Since initiation of ICS-containing therapy, she has experienced only one mild respiratory flare that did not require systemic corticosteroids, antibiotics, urgent care evaluation, or hospitalization.
+According to both GINA 2025 and GOLD 2026, reducing future exacerbation risk remains a major treatment goal. The patient's improvement suggests that current therapy is effectively reducing exacerbation burden.
+Continued monitoring remains warranted.
+5. Osteopenia
+The patient has a history of osteopenia. Improvement in respiratory disease control and reduction in future systemic corticosteroid exposure may help reduce long-term skeletal risk.
+Continued calcium and vitamin D supplementation remains appropriate.
+6. Preventive Care Gaps
+Potential preventive care gaps include:
+RSV vaccination 
+Tdap booster 
+Vaccination remains an important component of respiratory disease management and exacerbation prevention.
+Preventive care optimization remains appropriate.
+PLAN
+Asthma-COPD Overlap
+Continue budesonide/formoterol (Symbicort) 160/4.5 mcg
+Inhale 2 puffs twice daily 
+Continue tiotropium (Spiriva Respimat)
+2 inhalations daily 
+Continue albuterol HFA
+2 puffs every 4–6 hours as needed 
+Do not escalate pulmonary therapy at this time.
+Reinforce importance of continued adherence.
+Continue inhaler technique reinforcement.
+Allergic Rhinitis
+Restart fluticasone nasal spray
+1 spray in each nostril daily 
+Educate patient regarding chronic nature of allergic rhinitis.
+Discuss importance of consistent use even during periods of symptom improvement.
+Review allergen avoidance strategies.
+Monitoring
+Monitor:
+ACT score 
+CAT score 
+Rescue inhaler use 
+Nighttime symptoms 
+Exacerbation frequency 
+Allergic rhinitis symptoms 
+Medication adherence 
+Inhaler technique 
+Osteopenia
+Continue calcium carbonate/vitamin D supplementation.
+Continue efforts to minimize systemic corticosteroid exposure.
+Preventive Care
+Recommend RSV vaccination.
+Recommend Tdap booster.
+Review vaccination status at next visit.
+Follow-Up
+Follow up in approximately 3 months.
+Reassess asthma and COPD control.
+Reassess allergic rhinitis symptoms.
+Evaluate response to restarting fluticasone nasal spray.
+Continue longitudinal management of asthma-COPD overlap.
+
+
+SECTION 12: ACCEPTABLE ALTERNATIVE ANSWERS
+Patient C – Wednesday 3-Month Follow-Up
+The purpose of this section is to help the AI grader distinguish between:
+Preferred recommendations 
+Guideline-supported alternatives 
+Patient-centered approaches 
+Unsafe recommendations 
+Students should not be penalized for selecting a different management strategy if their approach appropriately recognizes the source of the patient's remaining symptoms and remains evidence-based.
+Asthma-COPD Overlap Management
+Preferred Answer
+Student correctly identifies:
+Significant improvement in respiratory control 
+ACT improvement from 15 → 20 
+CAT improvement from 19 → 13 
+Reduced rescue inhaler use 
+Reduced nighttime symptoms 
+No steroid-treated exacerbations 
+Appropriate response to ICS-containing therapy 
+Student appropriately continues:
+Symbicort 160/4.5 mcg 2 puffs BID 
+Spiriva Respimat 2 inhalations daily 
+Albuterol PRN 
+Student does not escalate pulmonary therapy.
+Rationale
+The patient demonstrates meaningful clinical improvement and does not meet criteria for escalation of asthma or COPD therapy.
+Acceptable Alternative #1
+Continue current inhaler regimen and arrange earlier follow-up after allergic rhinitis management is optimized.
+Acceptable Because
+Addresses remaining symptoms 
+Avoids unnecessary escalation 
+Maintains guideline-directed therapy 
+Acceptable Alternative #2
+Provide additional adherence and inhaler technique reinforcement while continuing current therapy.
+Acceptable Because
+Supports long-term disease control 
+Remains patient-centered 
+Unacceptable Answers
+Unsafe
+Escalate inhaled pulmonary therapy.
+Rationale
+The patient has responded appropriately to current treatment.
+Unsafe
+Initiate biologic therapy.
+Rationale
+Current disease severity does not justify biologic treatment.
+Unsafe
+Discontinue Symbicort.
+Rationale
+Patient has demonstrated significant benefit from ICS-containing therapy.
+Allergic Rhinitis Management
+Preferred Answer
+Student identifies:
+Self-discontinuation of fluticasone nasal spray 
+Return of allergy symptoms 
+Relationship between allergy symptoms and respiratory symptoms 
+Student recommends:
+Restart fluticasone nasal spray 
+Reinforce adherence 
+Provide education regarding chronic management 
+Rationale
+According to GINA 2025, treatment of comorbid allergic rhinitis may improve overall respiratory control.
+Acceptable Alternative
+Continue fluticasone nasal spray and consider adjunctive antihistamine therapy if symptoms remain uncontrolled.
+Acceptable Because
+Represents guideline-supported rhinitis management 
+Unacceptable Answers
+Unsafe
+Ignore allergic rhinitis.
+Rationale
+Upper airway disease contributes to symptom burden.
+Unsafe
+Escalate pulmonary therapy without addressing rhinitis.
+Rationale
+Fails to identify the primary contributor to residual symptoms.
+Eosinophil Interpretation
+Preferred Answer
+Student recognizes:
+Eosinophils remain elevated 
+Current therapy appears effective 
+Biologic therapy is not currently indicated 
+Rationale
+Eosinophils may become relevant later if disease remains uncontrolled despite optimized inhaled therapy.
+Acceptable Alternative
+Student notes eosinophilia as a future consideration while continuing current therapy.
+Acceptable Because
+Demonstrates understanding of treatable traits 
+Unacceptable Answers
+Unsafe
+Recommend biologic therapy based solely on eosinophil count.
+Rationale
+Clinical status does not justify escalation.
+Key Grading Principle for Patient C
+Students should receive credit if they:
+Recognize substantial improvement 
+Avoid inappropriate escalation 
+Identify uncontrolled allergic rhinitis 
+Restart nasal corticosteroid therapy 
+Continue effective inhaler regimen 
+Develop an appropriate monitoring plan 
+The primary educational objective is:
+Recognizing when residual symptoms originate from comorbid upper airway disease rather than uncontrolled lower airway disease.
+SECTION 13: CRITICAL MISSES
+Patient C – Wednesday 3-Month Follow-Up
+These errors should result in major point deductions.
+Critical Miss #1
+Error
+Failed to recognize overall clinical improvement.
+Rationale
+ACT and CAT scores both improved substantially.
+Critical Miss #2
+Error
+Failed to assess allergic rhinitis symptoms.
+Rationale
+Primary hidden learning objective.
+Critical Miss #3
+Error
+Failed to identify self-discontinuation of fluticasone nasal spray.
+Rationale
+Direct contributor to symptom recurrence.
+Critical Miss #4
+Error
+Escalated asthma or COPD therapy despite improvement.
+Rationale
+Current inhaler regimen is effective.
+Critical Miss #5
+Error
+Recommended biologic therapy.
+Rationale
+Patient does not currently meet criteria.
+Critical Miss #6
+Error
+Ignored relationship between upper airway disease and lower airway symptoms.
+Rationale
+Core educational objective.
+Critical Miss #7
+Error
+Failed to assess medication adherence.
+Rationale
+Adherence must be confirmed before judging treatment response.
+Critical Miss #8
+Error
+Failed to assess inhaler technique.
+Rationale
+Technique should be reassessed at follow-up.
+Critical Miss #9
+Error
+Failed to assess exacerbation history.
+Rationale
+Exacerbation burden remains an important treatment target.
+Critical Miss #10
+Error
+Failed to establish follow-up and monitoring plan.
+Rationale
+Longitudinal management is required.
+High-Priority Learning Objectives
+Recognize meaningful clinical improvement. 
+Avoid unnecessary escalation. 
+Identify allergic rhinitis as a contributor to respiratory symptoms. 
+Integrate upper and lower airway disease management. 
+Continue guideline-directed therapy appropriately. 
+SECTION 14: TEACHING GUIDE
+Patient C – Wednesday 3-Month Follow-Up
+What The Student Should Have Done Well
+The student should have:
+Assessed symptom improvement 
+Evaluated ACT score improvement 
+Evaluated CAT score improvement 
+Assessed rescue inhaler use 
+Assessed adherence 
+Assessed inhaler technique 
+Identified allergic rhinitis symptoms 
+Identified discontinuation of Flonase 
+Continued effective pulmonary therapy 
+Developed a monitoring strategy 
+Common Student Mistakes
+Mistake #1
+Escalating therapy because symptoms are not completely eliminated.
+Teaching Point
+Improvement does not always mean complete symptom resolution.
+Students should assess the overall trajectory of disease control.
+Mistake #2
+Ignoring upper airway disease.
+Teaching Point
+Allergic rhinitis commonly contributes to persistent respiratory symptoms.
+Mistake #3
+Focusing only on eosinophils.
+Teaching Point
+Treatment decisions should be driven by the entire clinical picture rather than a laboratory value alone.
+Mistake #4
+Assuming persistent symptoms automatically indicate treatment failure.
+Teaching Point
+Comorbid conditions may contribute to ongoing symptoms despite effective pulmonary therapy.
+Teaching Pearls
+Pearl #1
+The airway should be viewed as a unified system.
+Expected Discussion
+Upper airway inflammation frequently influences lower airway disease.
+Pearl #2
+Not every residual symptom requires escalation.
+Expected Discussion
+Students should first determine whether current therapy is effective.
+Pearl #3
+Medication self-discontinuation is common.
+Expected Discussion
+Patients frequently stop medications when symptoms improve.
+Pearl #4
+Biologic therapy requires appropriate patient selection.
+Expected Discussion
+Eosinophilia alone does not automatically justify biologic initiation.
+Pearl #5
+Longitudinal assessment is essential.
+Expected Discussion
+Management decisions should be based on trends rather than isolated findings.
+Follow-Up Questions
+Question 1
+What evidence suggests the current inhaler regimen is working?
+Expected Discussion
+ACT improved from 15 to 20 
+CAT improved from 19 to 13 
+Reduced rescue inhaler use 
+Reduced nighttime symptoms 
+No steroid-treated exacerbations 
+Question 2
+Why is escalation not appropriate today?
+Expected Discussion
+Significant improvement has occurred 
+Remaining symptoms are attributable to allergic rhinitis 
+Current pulmonary therapy is effective 
+Question 3
+How does allergic rhinitis affect respiratory disease control?
+Expected Discussion
+Upper airway inflammation may worsen lower airway symptoms 
+Rhinitis treatment improves overall airway control 
+Question 4
+Why is biologic therapy not indicated?
+Expected Discussion
+Symptoms improved 
+Exacerbation burden improved 
+Current therapy remains effective 
+Question 5
+What should be monitored before the next visit?
+Expected Discussion
+ACT score 
+CAT score 
+Exacerbations 
+Rescue inhaler use 
+Rhinitis symptoms 
+Adherence 
+Inhaler technique 
+How The Student Can Improve Before Thursday
+Before the final encounter, students should be able to:
+Assess persistent exacerbation risk despite optimized therapy 
+Interpret eosinophils in advanced clinical decision-making 
+Evaluate candidacy for biologic therapy 
+Apply MATINEE findings to patient care 
+Distinguish between patients who need escalation and those who do not
+
+Granular Rubric and Answer Key — Ambulatory Care SOAP Note (Asthma-COPD Overlap) Patient C Wednesday
+[FOR AI PRECEPTOR CALIBRATION ONLY — NOT FOR STUDENT DISTRIBUTION]
+PURPOSE: This is the single, authoritative rubric for the Patient C (Maria Thompson) 3-Month Follow-Up Ambulatory Care SOAP Note covering Asthma-COPD Overlap (ACO), Allergic Rhinitis, Eosinophilic Airway Inflammation, Exacerbation Risk, Osteopenia, and Preventive Care. Every subsection's discrete input point values sum exactly to the subsection header, and all subsection headers sum exactly to 100.0. The model answer scores 100.0/100.0 against this rubric. Source guidelines: 2025 Global Initiative for Asthma (GINA) Summary Guide and 2026 Global Initiative for Chronic Obstructive Lung Disease (GOLD) Report.
+ 
+SCORING RULES:
+• FULL: Input present, accurate, and clinically contextualized (not merely a keyword).
+• HALF: Partially present — directionally correct but imprecise, or present without clinical context. Half-credit values are rounded to the nearest 0.05.
+• ZERO: Absent, or a factually incorrect statement is made about that input.
+• Additivity: Points are additive within each subsection → subsections additive within sections → sections additive to 100.0.
+Acceptable-alternative inputs (e.g., therapeutic choices) list every guideline-supported answer in parentheses; any listed answer earns full credit.
+ 
+SECTION 1: SUBJECTIVE (25.0 points)
+1A. CHIEF COMPLAINT AND REASON FOR VISIT (2.0 points) — 8 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1A.1
+	Patient age stated (69 years)
+	0.25
+	States 69 years
+	Age stated, imprecise
+	Omits
+	1A.2
+	Patient sex stated (female)
+	0.20
+	States female
+	—
+	Omits
+	1A.3
+	Encounter setting stated (ambulatory care pharmacy clinic)
+	0.20
+	Names ambulatory care pharmacy clinic
+	Names clinic, no setting type
+	Omits
+	1A.4
+	Visit type stated (3-month follow-up)
+	0.25
+	States 3-month follow-up
+	States follow-up, no interval
+	Omits
+	1A.5
+	Reason for visit: management of asthma-COPD overlap
+	0.30
+	States asthma-COPD overlap management
+	States respiratory condition, vague
+	Omits
+	1A.6
+	Medication named for prior initiation: budesonide/formoterol (Symbicort)
+	0.30
+	Names budesonide/formoterol or Symbicort
+	Names ICS without drug name
+	Omits
+	1A.7
+	States significant improvement in respiratory symptoms since last visit
+	0.25
+	States significant improvement
+	States some improvement, no qualification
+	Omits
+	1A.8
+	No hospitalizations or ED visits reported
+	0.25
+	States no hospitalizations or ED visits
+	States no hospitalizations, omits ED
+	Omits
+	1A sum check: 0.25 + 0.20 + 0.20 + 0.25 + 0.30 + 0.30 + 0.25 + 0.25 = 2.00
+1B. HISTORY OF PRESENT ILLNESS (HPI) (5.0 points) — 14 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1B.1
+	States less shortness of breath since prior visit
+	0.30
+	States less dyspnea/shortness of breath
+	States improved breathing, vague
+	Omits
+	1B.2
+	States less wheezing since prior visit
+	0.30
+	States less wheezing
+	—
+	Omits
+	1B.3
+	States fewer nighttime symptoms since prior visit
+	0.30
+	States fewer nighttime symptoms
+	States improved sleep, no specificity
+	Omits
+	1B.4
+	States improved exercise tolerance since prior visit
+	0.30
+	States improved exercise tolerance
+	States more active, vague
+	Omits
+	1B.5
+	States albuterol use reduced to a few times weekly (compared with multiple times daily at baseline)
+	0.50
+	States few times weekly AND prior use was multiple times daily
+	States albuterol use reduced, no frequency comparison
+	Omits
+	1B.6
+	States one mild respiratory flare occurred in past 3 months
+	0.45
+	States one mild flare in past 3 months
+	States had a flare, no severity or count
+	Omits
+	1B.7
+	Denies oral corticosteroids required for flare
+	0.25
+	States denies oral corticosteroids
+	—
+	Omits
+	1B.8
+	Denies antibiotics required for flare
+	0.20
+	States denies antibiotics
+	—
+	Omits
+	1B.9
+	Denies urgent care, emergency department, or hospitalization for flare
+	0.25
+	States denies all three care settings
+	States denies hospitalization, omits urgent care/ED
+	Omits
+	1B.10
+	States excellent adherence to Symbicort and Spiriva
+	0.35
+	States excellent adherence to both inhalers
+	States adherent, names only one inhaler
+	Omits
+	1B.11
+	States demonstrates appropriate inhaler technique
+	0.30
+	States demonstrates appropriate inhaler technique
+	States good technique, no demonstration noted
+	Omits
+	1B.12
+	States worsening allergy symptoms for past several weeks (congestion, postnasal drainage, rhinorrhea, sneezing)
+	0.50
+	States worsening allergy symptoms AND lists ≥3 of 4 symptoms
+	States worsening allergy symptoms, lists <3 symptoms
+	Omits
+	1B.13
+	States fluticasone nasal spray self-discontinued approximately 6 weeks ago
+	0.45
+	States fluticasone nasal spray self-discontinued ~6 weeks ago
+	States discontinued, no agent or timeframe
+	Omits
+	1B.14
+	States progressive worsening of allergy symptoms after fluticasone discontinuation / patient believes breathing worsens when allergies uncontrolled
+	0.55
+	States both worsening since discontinuation AND link to breathing control
+	States worsened, no causal link to discontinuation
+	Omits
+	1B sum check: 0.30 + 0.30 + 0.30 + 0.30 + 0.50 + 0.45 + 0.25 + 0.20 + 0.25 + 0.35 + 0.30 + 0.50 + 0.45 + 0.55 = 5.00
+1C. PAST MEDICAL, SURGICAL, AND FAMILY HISTORY (4.0 points) — 14 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1C.1
+	PMH: asthma (onset childhood)
+	0.30
+	States asthma with childhood onset
+	States asthma, no onset
+	Omits
+	1C.2
+	PMH: COPD (diagnosed 8 years ago)
+	0.35
+	States COPD diagnosed 8 years ago
+	States COPD, no duration
+	Omits
+	1C.3
+	PMH: allergic rhinitis
+	0.30
+	Lists allergic rhinitis
+	Lists rhinitis, no modifier 'allergic'
+	Omits
+	1C.4
+	PMH: hypertension (diagnosed 15 years ago)
+	0.30
+	States hypertension diagnosed 15 years ago
+	States hypertension, no duration
+	Omits
+	1C.5
+	PMH: osteopenia (diagnosed 3 years ago)
+	0.30
+	States osteopenia diagnosed 3 years ago
+	States osteopenia, no duration
+	Omits
+	1C.6
+	PSH: cholecystectomy
+	0.30
+	Lists cholecystectomy under PSH
+	Lists cholecystectomy under PMH
+	Omits
+	1C.7
+	Family history, father: COPD
+	0.25
+	States father with COPD
+	—
+	Omits
+	1C.8
+	Family history, father: coronary artery disease
+	0.25
+	States father with coronary artery disease
+	States father with heart disease, no specification
+	Omits
+	1C.9
+	Family history, mother: asthma
+	0.25
+	States mother with asthma
+	—
+	Omits
+	1C.10
+	Family history, mother: allergic rhinitis
+	0.25
+	States mother with allergic rhinitis
+	States mother with allergies, no specificity
+	Omits
+	1C.11
+	Family history, sister: asthma
+	0.25
+	States sister with asthma
+	—
+	Omits
+	1C.12
+	Asthma onset specified as childhood (not merely 'history of asthma')
+	0.25
+	States childhood onset explicitly
+	States long-standing, no childhood specification
+	Omits
+	1C.13
+	Duration or timeframe stated for all timed diagnoses (COPD 8 yrs, HTN 15 yrs, osteopenia 3 yrs)
+	0.30
+	Duration stated for all three timed diagnoses
+	Duration stated for some but not all
+	Omits
+	1C.14
+	PSH section documented separately from PMH
+	0.35
+	PSH listed as its own labeled section
+	PSH items appear under PMH
+	Omits
+	1C sum check: 0.30 + 0.35 + 0.30 + 0.30 + 0.30 + 0.30 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.30 + 0.35 = 4.00
+1D. SOCIAL HISTORY (3.5 points) — 11 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1D.1
+	Marital status stated (married)
+	0.25
+	States married
+	—
+	Omits
+	1D.2
+	Living situation stated (lives with spouse)
+	0.25
+	States lives with spouse
+	States cohabitates, no relationship
+	Omits
+	1D.3
+	Prior occupation stated (retired elementary school principal)
+	0.30
+	States retired elementary school principal
+	States retired, no prior occupation
+	Omits
+	1D.4
+	Tobacco status stated (former smoker)
+	0.40
+	States former smoker
+	States nonsmoker without former/never distinction
+	Omits
+	1D.5
+	Smoking quantity stated (30 pack-years)
+	0.50
+	States 30 pack-year history
+	States smoker, no pack-year quantification
+	Omits
+	1D.6
+	Smoking cessation duration stated (quit 12 years ago)
+	0.40
+	States quit 12 years ago
+	States quit, no duration
+	Omits
+	1D.7
+	Alcohol use stated (rare)
+	0.25
+	States rare alcohol use
+	States uses alcohol, no frequency qualifier
+	Omits
+	1D.8
+	Recreational drug use denied
+	0.25
+	States denies recreational drug use
+	—
+	Omits
+	1D.9
+	Physical activity: walking more frequently since previous visit
+	0.40
+	States walking more frequently since prior visit
+	States active, no comparison to prior visit
+	Omits
+	1D.10
+	Employment or retirement status stated (retired)
+	0.25
+	States retired
+	States not working, no qualifier
+	Omits
+	1D.11
+	Social support and living context documented (married, lives with spouse)
+	0.25
+	States both married and living with spouse
+	States one element, not both
+	Omits
+	1D sum check: 0.25 + 0.25 + 0.30 + 0.40 + 0.50 + 0.40 + 0.25 + 0.25 + 0.40 + 0.25 + 0.25 = 3.50
+1E. MEDICATIONS, ADHERENCE, ALLERGIES, AND IMMUNIZATIONS (5.5 points) — 19 inputs, sum = 5.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1E.1
+	Budesonide/formoterol (Symbicort) listed by brand and generic name
+	0.30
+	Lists both generic and brand names
+	Lists one name only
+	Omits
+	1E.2
+	Budesonide/formoterol dose listed (160/4.5 mcg)
+	0.30
+	States 160/4.5 mcg
+	States a dose, value imprecise
+	Incorrect dose listed
+	1E.3
+	Budesonide/formoterol regimen listed (2 inhalations twice daily)
+	0.30
+	States 2 inhalations twice daily
+	States twice daily, no inhalation count
+	Omits
+	1E.4
+	Tiotropium (Spiriva Respimat) listed by brand and generic name
+	0.30
+	Lists both generic and brand names
+	Lists one name only
+	Omits
+	1E.5
+	Tiotropium regimen listed (2 inhalations daily)
+	0.25
+	States 2 inhalations daily
+	States once daily, no inhalation count
+	Omits
+	1E.6
+	Albuterol HFA listed by name and formulation
+	0.25
+	States albuterol HFA
+	States albuterol, no formulation
+	Omits
+	1E.7
+	Albuterol regimen listed (2 puffs every 4-6 hours as needed)
+	0.30
+	States 2 puffs q4-6h PRN
+	States PRN, no frequency or count
+	Omits
+	1E.8
+	Fluticasone nasal spray listed as self-discontinued approximately 6 weeks ago
+	0.40
+	States self-discontinued ~6 weeks ago
+	Lists fluticasone nasal spray without discontinuation status
+	Omits
+	1E.9
+	Lisinopril listed by name and dose (20 mg PO daily)
+	0.30
+	States lisinopril 20 mg PO daily
+	States lisinopril without dose or route
+	Incorrect dose listed
+	1E.10
+	Calcium carbonate/vitamin D listed with regimen (1 tablet twice daily)
+	0.30
+	States calcium carbonate/vitamin D 1 tablet twice daily
+	Lists supplement, no dose or frequency
+	Omits
+	1E.11
+	Allergy: sulfonamide antibiotics listed
+	0.35
+	States sulfonamide antibiotics
+	States sulfa, no antibiotic specification
+	Omits
+	1E.12
+	Allergy reaction type stated (rash)
+	0.30
+	States rash
+	States skin reaction, vague
+	Omits
+	1E.13
+	Influenza vaccine: up to date documented
+	0.20
+	States influenza vaccine up to date
+	States received influenza vaccine, no currency
+	Omits
+	1E.14
+	COVID vaccination: up to date documented
+	0.20
+	States COVID vaccination up to date
+	States received COVID vaccine, no currency
+	Omits
+	1E.15
+	PCV20: received documented
+	0.25
+	States PCV20 received
+	States pneumococcal vaccine, no specific product
+	Omits
+	1E.16
+	RSV vaccination: not documented (gap identified)
+	0.25
+	States RSV vaccination not documented
+	States RSV not received, no documentation qualifier
+	Omits
+	1E.17
+	Tdap: overdue documented (gap identified)
+	0.30
+	States Tdap overdue
+	States Tdap received, no overdue qualifier
+	Omits
+	1E.18
+	Immunization section organized with all five vaccine categories listed
+	0.25
+	Lists all five vaccines or statuses
+	Lists three or four, misses ≥1
+	Omits immunization section
+	1E.19
+	Medication list organized with drug, dose, and regimen for all active medications
+	0.40
+	Drug/dose/regimen present for all active medications
+	Missing element for one medication
+	Missing elements for ≥2 medications
+	1E sum check: 0.30 + 0.30 + 0.30 + 0.30 + 0.25 + 0.25 + 0.30 + 0.40 + 0.30 + 0.30 + 0.35 + 0.30 + 0.20 + 0.20 + 0.25 + 0.25 + 0.30 + 0.25 + 0.40 = 5.50
+1F. REVIEW OF SYSTEMS / RELEVANT NEGATIVES (2.0 points) — 7 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1F.1
+	States patient reports respiratory symptoms worsen when allergy symptoms are poorly controlled
+	0.40
+	States breathing worsens with uncontrolled allergies
+	States symptoms related, no causal link
+	Omits
+	1F.2
+	States patient believes poor allergy control correlates with worse breathing
+	0.30
+	States patient-reported association between allergy control and breathing
+	States symptom worsening, no allergy link
+	Omits
+	1F.3
+	States progressive worsening of allergy symptoms following fluticasone nasal spray discontinuation
+	0.30
+	States worsening after discontinuation with progressive qualifier
+	States worsening, no temporal link to discontinuation
+	Omits
+	1F.4
+	Denies oral corticosteroids for any respiratory episode in past 3 months
+	0.25
+	States denies oral corticosteroids for any episode
+	States denies corticosteroids for this flare only
+	Omits
+	1F.5
+	Denies urgent care or emergency department visit in past 3 months
+	0.25
+	States denies urgent care and ED visits
+	States denies one, omits other
+	Omits
+	1F.6
+	Denies hospitalization in past 3 months
+	0.25
+	States denies hospitalization
+	—
+	Omits
+	1F.7
+	Patient remains motivated to improve respiratory control and reduce future exacerbations
+	0.25
+	States patient remains motivated with specific goals named
+	States patient motivated, no goals specified
+	Omits
+	1F sum check: 0.40 + 0.30 + 0.30 + 0.25 + 0.25 + 0.25 + 0.25 = 2.00
+1G. PATIENT GOALS AND CONCERNS (3.0 points) — 5 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1G.1
+	Patient remains motivated to improve respiratory control
+	0.60
+	States patient motivated to improve respiratory control
+	States patient engaged, no specific goal
+	Omits
+	1G.2
+	Patient goal: reduce future exacerbations
+	0.60
+	States goal of reducing future exacerbations
+	States wants fewer attacks, vague
+	Omits
+	1G.3
+	Patient self-discontinued nasal spray believing symptoms had improved and continued treatment unnecessary
+	0.60
+	States patient stopped due to symptom improvement belief and sense that treatment was unnecessary
+	States patient stopped on their own, no rationale
+	Omits
+	1G.4
+	Patient now acknowledges connection between allergy management and breathing control
+	0.60
+	States patient recognizes allergy/breathing connection
+	States patient aware of worsening, no connection made
+	Omits
+	1G.5
+	Patient willing to restart fluticasone nasal spray / motivated to improve overall control
+	0.60
+	States patient willing to restart nasal spray
+	—
+	Omits
+	1G sum check: 0.60 + 0.60 + 0.60 + 0.60 + 0.60 = 3.00
+Section 1 check: 2.0 + 5.0 + 4.0 + 3.5 + 5.5 + 2.0 + 3.0 = 25.0
+ 
+SECTION 2: OBJECTIVE (15.0 points)
+2A. VITAL SIGNS AND ANTHROPOMETRICS (4.0 points) — 7 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2A.1
+	Blood pressure stated (124/72 mmHg)
+	0.60
+	States 124/72 mmHg
+	BP stated, value imprecise
+	Omits
+	2A.2
+	Heart rate stated (76 bpm)
+	0.50
+	States 76 bpm
+	HR stated, no units
+	Omits
+	2A.3
+	Respiratory rate stated (16 breaths/min)
+	0.50
+	States 16 breaths/min
+	RR stated, no units
+	Omits
+	2A.4
+	Weight stated (71 kg)
+	0.50
+	States 71 kg
+	Weight stated, wrong units
+	Omits
+	2A.5
+	Height stated (64 inches)
+	0.50
+	States 64 inches
+	Height stated, imprecise
+	Omits
+	2A.6
+	BMI stated (26.9 kg/m²)
+	0.60
+	States 26.9 kg/m²
+	BMI stated, value imprecise
+	Omits
+	2A.7
+	SpO2 stated (96% on room air)
+	0.80
+	States 96% on room air
+	States 96%, omits room air qualifier
+	Omits
+	2A sum check: 0.60 + 0.50 + 0.50 + 0.50 + 0.50 + 0.60 + 0.80 = 4.00
+2B. PULMONARY FUNCTION, BIOMARKERS, VALIDATED SCORES, AND EXACERBATION HISTORY (7.0 points) — 14 inputs, sum = 7.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2B.1
+	Post-bronchodilator FEV1/FVC ratio stated (0.56)
+	0.60
+	States 0.56
+	FEV1/FVC stated, value imprecise
+	Omits
+	2B.2
+	Post-bronchodilator FEV1 % predicted stated (63%)
+	0.60
+	States 63% predicted
+	FEV1% stated, value imprecise
+	Omits
+	2B.3
+	Absolute eosinophil count stated (380 cells/µL)
+	0.55
+	States 380 cells/µL
+	Eosinophil count stated, no units
+	Omits
+	2B.4
+	ACT score stated (20)
+	0.55
+	States ACT score 20
+	ACT stated, no numeric value
+	Omits
+	2B.5
+	ACT interpretation stated (improved asthma control)
+	0.40
+	States improved asthma control
+	States score improved, no interpretation
+	Omits
+	2B.6
+	CAT score stated (13)
+	0.55
+	States CAT score 13
+	CAT stated, no numeric value
+	Omits
+	2B.7
+	CAT interpretation stated (improved symptom burden)
+	0.40
+	States improved symptom burden
+	States score improved, no interpretation
+	Omits
+	2B.8
+	Exacerbation history: one mild respiratory flare in past 3 months
+	0.50
+	States one mild flare in past 3 months
+	States had a flare, no count/severity/interval
+	Omits
+	2B.9
+	Exacerbation history: no systemic corticosteroids used
+	0.45
+	States no systemic corticosteroids
+	—
+	Omits
+	2B.10
+	Exacerbation history: no antibiotics used
+	0.40
+	States no antibiotics
+	—
+	Omits
+	2B.11
+	Exacerbation history: no hospitalization
+	0.40
+	States no hospitalization
+	—
+	Omits
+	2B.12
+	Prior ACT score documented (15) and improvement from 15 to 20 noted
+	0.55
+	States prior ACT 15 and current ACT 20 (or delta)
+	States ACT improved, no prior value
+	Omits
+	2B.13
+	Prior CAT score documented (19) and improvement from 19 to 13 noted
+	0.55
+	States prior CAT 19 and current CAT 13 (or delta)
+	States CAT improved, no prior value
+	Omits
+	2B.14
+	Objective section organized into clearly labeled subsections
+	0.50
+	≥4 labeled subsections present (PFT, CBC, ACT/CAT, Exacerbation Hx)
+	2-3 labeled subsections
+	≤1 subsection or no labels
+	2B sum check: 0.60 + 0.60 + 0.55 + 0.55 + 0.40 + 0.55 + 0.40 + 0.50 + 0.45 + 0.40 + 0.40 + 0.55 + 0.55 + 0.50 = 7.00
+2C. CALCULATED VALUES, TRENDS, AND CLINICAL INTERPRETATION (4.0 points) — 6 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2C.1
+	BMI value consistent with documented height and weight (26.9 kg/m²)
+	0.60
+	BMI consistent with ht/wt
+	BMI stated, not reconciled to ht/wt
+	Incorrect BMI stated
+	2C.2
+	FEV1/FVC ratio of 0.56 confirms obstructive pattern (below 0.70 threshold per GOLD)
+	0.70
+	States FEV1/FVC <0.70 confirms obstruction
+	States low ratio, no threshold or implication
+	Omits
+	2C.3
+	FEV1 63% predicted consistent with moderate airflow obstruction
+	0.70
+	States 63% predicted / moderate obstruction
+	States low FEV1, no severity classification
+	Omits
+	2C.4
+	Eosinophil count of 380 cells/µL characterized as elevated Type 2 inflammatory biomarker
+	0.60
+	States elevated AND notes Type 2 significance
+	States elevated, no Type 2 context
+	Omits
+	2C.5
+	SpO2 of 96% documented in context of chronic respiratory disease
+	0.70
+	States 96% on room air in context of respiratory disease
+	States 96%, no clinical context
+	Omits
+	2C.6
+	ACT and CAT score trends interpreted against prior visit values
+	0.70
+	States prior and current scores with improvement noted
+	States scores improved, no prior values
+	Omits
+	2C sum check: 0.60 + 0.70 + 0.70 + 0.60 + 0.70 + 0.70 = 4.00
+Section 2 check: 4.0 + 7.0 + 4.0 = 15.0
+ 
+SECTION 3: ASSESSMENT (30.0 points)
+3A. PROBLEM 1 — ASTHMA-COPD OVERLAP (ACO) — SIGNIFICANTLY IMPROVED (7.0 points) — 14 inputs, sum = 7.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3A.1
+	Problem identified: asthma-COPD overlap phenotype (ACO)
+	0.50
+	Names asthma-COPD overlap / ACO explicitly
+	Names asthma or COPD separately, not overlap
+	Omits
+	3A.2
+	Status stated as significantly improved following initiation of ICS-containing therapy
+	0.50
+	States significantly improved AND links to ICS initiation
+	States improved, no link to therapy change
+	Omits
+	3A.3
+	ACT score improvement quantified (from 15 to 20)
+	0.60
+	States ACT improved from 15 to 20
+	States ACT improved, missing one value
+	Omits
+	3A.4
+	CAT score improvement quantified (from 19 to 13)
+	0.60
+	States CAT improved from 19 to 13
+	States CAT improved, missing one value
+	Omits
+	3A.5
+	States less dyspnea, less wheezing, and fewer nighttime symptoms since prior visit
+	0.45
+	Lists ≥2 of 3 specific symptom domains improved
+	States symptoms improved, no specifics
+	Omits
+	3A.6
+	States reduced rescue inhaler use since prior visit
+	0.45
+	States rescue inhaler use reduced (with context of prior use)
+	States uses less albuterol, no prior comparison
+	Omits
+	3A.7
+	States improved exercise tolerance since prior visit
+	0.35
+	States exercise tolerance improved
+	—
+	Omits
+	3A.8
+	States no corticosteroid-treated exacerbations in follow-up period
+	0.45
+	States no OCS-treated exacerbations
+	States no exacerbations requiring hospitalization only
+	Omits
+	3A.9
+	States no emergency department visits or hospitalizations in follow-up period
+	0.35
+	States no ED visits AND no hospitalizations
+	States no hospitalizations, omits ED
+	Omits
+	3A.10
+	References GINA 2025: ICS-containing therapy is foundation of treatment for asthma features / reduces symptoms and exacerbation risk
+	0.55
+	Cites GINA 2025 and states ICS is foundation
+	Cites GINA without specific principle
+	Omits
+	3A.11
+	States clinical response supports corticosteroid-responsive airway inflammation
+	0.40
+	States response confirms corticosteroid-responsive inflammation
+	States ICS working, no mechanism stated
+	Omits
+	3A.12
+	States initiation of ICS-containing therapy was appropriate based on clinical response
+	0.40
+	States initiation confirmed as appropriate by response
+	—
+	Omits
+	3A.13
+	States insufficient evidence to escalate pulmonary therapy at this time
+	0.80
+	States explicitly do not escalate / no evidence to support escalation
+	States continue current therapy, no escalation rationale
+	Omits
+	3A.14
+	Assessment integrates symptom data, score trends, and exacerbation history from current and prior visit
+	0.60
+	Uses specific data from both current and prior visit to support assessment
+	Uses only current visit data
+	Omits comparative analysis
+	3A sum check: 0.50 + 0.50 + 0.60 + 0.60 + 0.45 + 0.45 + 0.35 + 0.45 + 0.35 + 0.55 + 0.40 + 0.40 + 0.80 + 0.60 = 7.00
+3B. PROBLEM 2 — UNCONTROLLED ALLERGIC RHINITIS CONTRIBUTING TO RESIDUAL RESPIRATORY SYMPTOMS (6.0 points) — 11 inputs, sum = 6.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3B.1
+	Problem identified: uncontrolled allergic rhinitis
+	0.50
+	Names uncontrolled allergic rhinitis as distinct problem
+	Names allergic rhinitis without 'uncontrolled' qualifier
+	Omits
+	3B.2
+	States allergic rhinitis is contributing to residual respiratory symptoms
+	0.60
+	States AR contributing to respiratory symptoms explicitly
+	States nasal symptoms present, no respiratory link
+	Omits
+	3B.3
+	Symptom listed: nasal congestion
+	0.35
+	States nasal congestion
+	—
+	Omits
+	3B.4
+	Symptom listed: rhinorrhea
+	0.35
+	States rhinorrhea
+	—
+	Omits
+	3B.5
+	Symptom listed: postnasal drainage
+	0.35
+	States postnasal drainage
+	States postnasal drip or drainage
+	Omits
+	3B.6
+	Symptom listed: sneezing
+	0.35
+	States sneezing
+	—
+	Omits
+	3B.7
+	States fluticasone nasal spray self-discontinued approximately 6 weeks ago as precipitating cause
+	0.60
+	States self-discontinuation ~6 weeks ago as precipitating factor
+	States discontinued, no timing or causal framing
+	Omits
+	3B.8
+	References GINA 2025: allergic rhinitis is common comorbidity that may negatively affect asthma control
+	0.80
+	Cites GINA 2025 and states AR comorbidity impacts asthma
+	Cites GINA without AR comorbidity principle
+	Omits
+	3B.9
+	States ongoing respiratory complaints more consistent with uncontrolled upper airway disease than ACO progression
+	0.80
+	States respiratory complaints attributed to upper airway disease, not ACO worsening
+	States symptoms may be allergy-related, no differential attribution
+	Omits
+	3B.10
+	States optimization of AR management is warranted before considering pulmonary therapy escalation
+	1.00
+	States AR optimization before pulmonary escalation explicitly
+	States treat AR, no linkage to avoiding pulmonary escalation
+	Omits
+	3B.11
+	States patient reports worsening breathing tends to correlate with uncontrolled allergy symptoms
+	0.30
+	States patient-reported link between allergy control and breathing
+	States patient has allergy symptoms, no patient-reported link
+	Omits
+	3B sum check: 0.50 + 0.60 + 0.35 + 0.35 + 0.35 + 0.35 + 0.60 + 0.80 + 0.80 + 1.00 + 0.30 = 6.00
+3C. PROBLEM 3 — EOSINOPHILIC AIRWAY INFLAMMATION — STABLE (5.0 points) — 9 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3C.1
+	Problem identified: eosinophilic airway inflammation
+	0.50
+	Names eosinophilic airway inflammation as distinct problem
+	Names elevated eosinophils without airway inflammation framing
+	Omits
+	3C.2
+	Status stated as stable
+	0.40
+	States stable
+	States elevated, no stability qualifier
+	Omits
+	3C.3
+	Eosinophil count stated (380 cells/µL)
+	0.50
+	States 380 cells/µL
+	States count, no units
+	Omits
+	3C.4
+	States consistent with persistent Type 2 airway inflammation
+	0.55
+	States consistent with persistent Type 2 inflammation
+	States type 2 present, no persistence qualifier
+	Omits
+	3C.5
+	States current clinical improvement suggests eosinophilic inflammation is being appropriately addressed with current regimen
+	0.60
+	States improvement suggests inflammation addressed by current regimen
+	States ICS treats eosinophilia, no patient-specific link
+	Omits
+	3C.6
+	References GINA 2025: eosinophilic inflammation is an important treatable trait to consider for future therapeutic options
+	0.55
+	Cites GINA 2025 and names eosinophilia as treatable trait
+	Cites GINA without treatable trait framing
+	Omits
+	3C.7
+	States biologic therapy is not indicated at this time
+	0.60
+	States biologic not indicated
+	States patient not severe enough, no biologic mention
+	Omits
+	3C.8
+	Basis for withholding biologic: significant clinical improvement achieved
+	0.55
+	States significant improvement as basis for deferring biologic
+	States clinically improved, no connection to biologic deferral
+	Omits
+	3C.9
+	Basis for withholding biologic: no severe or recurrent exacerbations despite optimized inhaled therapy / states continued monitoring appropriate
+	0.75
+	States both no severe/recurrent exacerbations AND continued monitoring
+	States monitoring appropriate, no exacerbation basis
+	Omits
+	3C sum check: 0.50 + 0.40 + 0.50 + 0.55 + 0.60 + 0.55 + 0.60 + 0.55 + 0.75 = 5.00
+3D. PROBLEM 4 — RECURRENT EXACERBATION RISK — IMPROVED (5.0 points) — 9 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3D.1
+	Problem identified: recurrent exacerbation risk
+	0.50
+	Names recurrent exacerbation risk as distinct problem
+	States exacerbation history without risk framing
+	Omits
+	3D.2
+	Status stated as improved
+	0.40
+	States improved
+	States better, no qualifier
+	Omits
+	3D.3
+	Prior exacerbation history stated: two corticosteroid-treated exacerbations in previous year
+	0.65
+	States two OCS-treated exacerbations in prior year
+	States prior exacerbations, no count or treatment required
+	Omits
+	3D.4
+	States only one mild respiratory flare since initiation of ICS-containing therapy
+	0.65
+	States one mild flare since therapy initiation
+	States fewer flares, no count or comparison
+	Omits
+	3D.5
+	States flare did not require systemic corticosteroids
+	0.45
+	States no systemic corticosteroids required
+	—
+	Omits
+	3D.6
+	States flare did not require antibiotics, urgent care, ED, or hospitalization
+	0.45
+	States no antibiotics AND no care escalation required
+	States no hospitalization, omits other elements
+	Omits
+	3D.7
+	References GINA 2025 and GOLD 2026: reducing future exacerbation risk is a major treatment goal
+	0.65
+	Cites GINA 2025 AND GOLD 2026 and states exacerbation reduction as goal
+	Cites one guideline only
+	Omits
+	3D.8
+	States current therapy is effectively reducing exacerbation burden
+	0.55
+	States current therapy effectively reduces exacerbation burden
+	States therapy working, no exacerbation burden linkage
+	Omits
+	3D.9
+	States continued monitoring remains warranted
+	0.70
+	States continued monitoring warranted
+	States follow up, no monitoring rationale
+	Omits
+	3D sum check: 0.50 + 0.40 + 0.65 + 0.65 + 0.45 + 0.45 + 0.65 + 0.55 + 0.70 = 5.00
+3E. PROBLEM 5 — OSTEOPENIA (4.0 points) — 6 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3E.1
+	Problem identified: osteopenia
+	0.60
+	Names osteopenia as distinct problem
+	Names bone health concern, no diagnosis
+	Omits
+	3E.2
+	States improvement in respiratory disease control may reduce long-term skeletal risk
+	0.70
+	States improved respiratory control linked to reduced skeletal risk
+	States less OCS exposure is good, no bone linkage
+	Omits
+	3E.3
+	States reduction in future systemic corticosteroid exposure may reduce skeletal risk
+	0.70
+	States reduced future OCS exposure linked to bone protection
+	States OCS has side effects, no bone specification
+	Omits
+	3E.4
+	States calcium and vitamin D supplementation remains appropriate
+	0.70
+	States calcium/vitamin D remains appropriate
+	States continue supplements, no specific agent
+	Omits
+	3E.5
+	Calcium carbonate/vitamin D continuation explicitly stated
+	0.60
+	States continue calcium carbonate/vitamin D
+	States continue supplements without naming agents
+	Omits
+	3E.6
+	States continued monitoring is appropriate
+	0.70
+	States continued monitoring appropriate
+	States follow up, no monitoring context
+	Omits
+	3E sum check: 0.60 + 0.70 + 0.70 + 0.70 + 0.60 + 0.70 = 4.00
+3F. PROBLEM 6 — PREVENTIVE CARE GAPS (3.0 points) — 6 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3F.1
+	Problem identified: preventive care gaps
+	0.50
+	Names preventive care gaps as distinct problem
+	States vaccination needed, no problem framing
+	Omits
+	3F.2
+	Identifies RSV vaccination gap (not documented)
+	0.60
+	States RSV vaccination not documented
+	States RSV may be needed, no documentation-based framing
+	Omits
+	3F.3
+	Identifies Tdap booster gap (overdue)
+	0.60
+	States Tdap is overdue
+	States Tdap needed, no overdue qualifier
+	Omits
+	3F.4
+	States vaccination is an important component of respiratory disease management
+	0.45
+	States vaccination important for respiratory disease management
+	States vaccination good practice, no respiratory-specific framing
+	Omits
+	3F.5
+	States vaccination is important for exacerbation prevention
+	0.45
+	States vaccination reduces exacerbation risk
+	States vaccination recommended, no exacerbation link
+	Omits
+	3F.6
+	States preventive care optimization remains appropriate
+	0.40
+	States preventive care optimization appropriate
+	States needs vaccines, no optimization framing
+	Omits
+	3F sum check: 0.50 + 0.60 + 0.60 + 0.45 + 0.45 + 0.40 = 3.00
+Section 3 check: 7.0 + 6.0 + 5.0 + 5.0 + 4.0 + 3.0 = 30.0
+ 
+SECTION 4: PLAN (25.0 points)
+4A. ASTHMA-COPD OVERLAP (6.0 points) — 8 inputs, sum = 6.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4A.1
+	Continue budesonide/formoterol (Symbicort) 160/4.5 mcg explicitly stated
+	0.75
+	States continue budesonide/formoterol 160/4.5 mcg
+	States continue Symbicort without dose
+	States discontinue or change
+	4A.2
+	Budesonide/formoterol regimen stated (2 puffs twice daily)
+	0.60
+	States 2 puffs twice daily
+	States twice daily, no puff count
+	Omits
+	4A.3
+	Continue tiotropium (Spiriva Respimat) 2 inhalations daily explicitly stated
+	0.75
+	States continue tiotropium 2 inhalations daily
+	States continue Spiriva without regimen
+	States discontinue or change
+	4A.4
+	Continue albuterol HFA 2 puffs every 4-6 hours as needed explicitly stated
+	0.70
+	States continue albuterol HFA 2 puffs q4-6h PRN
+	States continue albuterol, no regimen
+	States discontinue
+	4A.5
+	States do not escalate pulmonary therapy at this time
+	0.85
+	States explicitly do not escalate / no escalation at this time
+	States continue current therapy without explicit no-escalation statement
+	Omits decision
+	4A.6
+	Reinforce importance of continued medication adherence
+	0.70
+	States reinforce adherence importance
+	States remind about medications, vague
+	Omits
+	4A.7
+	Continue inhaler technique reinforcement
+	0.65
+	States continue inhaler technique reinforcement
+	States check technique, no reinforcement
+	Omits
+	4A.8
+	States no new pulmonary medications added at this visit
+	1.00
+	States do not add new pulmonary medications / no escalation
+	States continue current regimen without no-add statement
+	Adds new pulmonary medication
+	4A sum check: 0.75 + 0.60 + 0.75 + 0.70 + 0.85 + 0.70 + 0.65 + 1.00 = 6.00
+4B. ALLERGIC RHINITIS (5.0 points) — 6 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4B.1
+	Restart fluticasone nasal spray (acceptable: fluticasone propionate nasal spray; mometasone furoate nasal spray; budesonide nasal spray; triamcinolone acetonide nasal spray — any intranasal corticosteroid per GINA 2025 recommendation for allergic rhinitis comorbidity)
+	1.00
+	Names any intranasal corticosteroid
+	States restart nasal spray without naming agent
+	Omits
+	4B.2
+	Fluticasone nasal spray dose stated (1 spray in each nostril daily)
+	0.80
+	States 1 spray each nostril daily
+	States once daily, no spray count or nostril specification
+	Omits
+	4B.3
+	Educate patient on chronic nature of allergic rhinitis
+	0.80
+	States educate on chronic nature of AR
+	States counsel patient, no chronic nature content
+	Omits
+	4B.4
+	Counsel on importance of consistent use even during periods of symptom improvement
+	0.80
+	States counsel on consistent use even when asymptomatic
+	States use daily, no symptom-improvement exception addressed
+	Omits
+	4B.5
+	Review allergen avoidance strategies
+	0.60
+	States review allergen avoidance strategies
+	States avoid triggers, no avoidance strategy content
+	Omits
+	4B.6
+	States optimization of AR management as priority before escalating pulmonary therapy
+	1.00
+	States AR optimization before pulmonary escalation explicitly
+	States treat AR, no linkage to pulmonary escalation decision
+	Omits
+	4B sum check: 1.00 + 0.80 + 0.80 + 0.80 + 0.60 + 1.00 = 5.00
+4C. MONITORING (4.0 points) — 10 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4C.1
+	Monitor ACT score
+	0.40
+	States monitor ACT score
+	States monitor asthma, no ACT specified
+	Omits
+	4C.2
+	Monitor CAT score
+	0.40
+	States monitor CAT score
+	States monitor COPD symptoms, no CAT specified
+	Omits
+	4C.3
+	Monitor rescue inhaler use
+	0.40
+	States monitor rescue inhaler use
+	States monitor albuterol, vague
+	Omits
+	4C.4
+	Monitor nighttime symptoms
+	0.40
+	States monitor nighttime symptoms
+	States monitor sleep, vague
+	Omits
+	4C.5
+	Monitor exacerbation frequency
+	0.40
+	States monitor exacerbation frequency
+	States monitor flare-ups, vague
+	Omits
+	4C.6
+	Monitor allergic rhinitis symptoms
+	0.50
+	States monitor allergic rhinitis symptoms
+	States monitor allergy, vague
+	Omits
+	4C.7
+	Monitor medication adherence
+	0.40
+	States monitor medication adherence
+	States check medications, vague
+	Omits
+	4C.8
+	Monitor inhaler technique
+	0.40
+	States monitor inhaler technique
+	States check inhaler, vague
+	Omits
+	4C.9
+	Monitoring section present as dedicated labeled subsection
+	0.35
+	Monitoring is its own labeled section
+	Monitoring items embedded in other sections
+	Omits monitoring section
+	4C.10
+	Monitoring plan addresses parameters tied to all active problems in Assessment
+	0.35
+	Monitoring covers respiratory, AR, and adherence domains
+	Covers only one or two domains
+	Omits monitoring plan
+	4C sum check: 0.40 + 0.40 + 0.40 + 0.40 + 0.40 + 0.50 + 0.40 + 0.40 + 0.35 + 0.35 = 4.00
+4D. OSTEOPENIA (3.0 points) — 4 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4D.1
+	Continue calcium carbonate/vitamin D supplementation stated
+	0.90
+	States continue calcium carbonate/vitamin D
+	States continue bone supplements without naming agents
+	Omits
+	4D.2
+	Continue efforts to minimize systemic corticosteroid exposure stated
+	0.90
+	States minimize systemic corticosteroid exposure
+	States avoid steroids, vague
+	Omits
+	4D.3
+	States rationale connecting corticosteroid exposure reduction to bone health / reduced skeletal risk
+	0.60
+	States OCS reduction tied to bone health explicitly
+	States OCS has bone risks, no patient-specific reduction goal
+	Omits
+	4D.4
+	Osteopenia management plan present as explicitly labeled subsection in Plan
+	0.60
+	Osteopenia is a labeled Plan subsection
+	Osteopenia management embedded in other section
+	Omits
+	4D sum check: 0.90 + 0.90 + 0.60 + 0.60 = 3.00
+4E. PREVENTIVE CARE (3.0 points) — 4 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4E.1
+	Recommend RSV vaccination stated
+	0.80
+	States recommend RSV vaccination
+	States RSV may be appropriate, not a direct recommendation
+	Omits
+	4E.2
+	Recommend Tdap booster stated
+	0.80
+	States recommend Tdap booster
+	States Tdap may be appropriate, not a direct recommendation
+	Omits
+	4E.3
+	Review vaccination status at next visit stated
+	0.70
+	States review vaccination status at next visit
+	States update vaccinations, no next visit timing
+	Omits
+	4E.4
+	Preventive care section present as labeled subsection in Plan
+	0.70
+	Preventive Care is a labeled Plan subsection
+	Vaccine recommendations embedded in other section
+	Omits
+	4E sum check: 0.80 + 0.80 + 0.70 + 0.70 = 3.00
+4F. FOLLOW-UP AND MONITORING SCHEDULE (4.0 points) — 7 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4F.1
+	Follow up in approximately 3 months stated
+	0.60
+	States follow up in approximately 3 months
+	States return to clinic, no interval
+	Omits
+	4F.2
+	Reassess asthma and COPD control at follow-up stated
+	0.55
+	States reassess asthma and COPD control at next visit
+	States reassess respiratory status, vague
+	Omits
+	4F.3
+	Reassess allergic rhinitis symptoms at follow-up stated
+	0.55
+	States reassess allergic rhinitis symptoms at next visit
+	States reassess allergy, vague
+	Omits
+	4F.4
+	Evaluate response to restarting fluticasone nasal spray at follow-up stated
+	0.65
+	States evaluate response to fluticasone nasal spray restart
+	States evaluate allergy medication, no agent specified
+	Omits
+	4F.5
+	Continue longitudinal management of asthma-COPD overlap stated
+	0.55
+	States continue longitudinal management of ACO
+	States continue monitoring, no ACO framing
+	Omits
+	4F.6
+	Follow-up section present as labeled subsection in Plan
+	0.50
+	Follow-Up is a labeled Plan subsection
+	Follow-up information embedded in other sections
+	Omits
+	4F.7
+	Follow-up agenda addresses all active problems from Assessment (ACO, AR, osteopenia, preventive care)
+	0.60
+	Follow-up agenda covers all 4 active problem areas
+	Covers 2-3 areas
+	Covers ≤1 area
+	4F sum check: 0.60 + 0.55 + 0.55 + 0.65 + 0.55 + 0.50 + 0.60 = 4.00
+Section 4 check: 6.0 + 5.0 + 4.0 + 3.0 + 3.0 + 4.0 = 25.0
+ 
+SECTION 5: PRESENTATION QUALITY (5.0 points)
+5A. ORGANIZATION AND SOAP STRUCTURE (2.0 points) — 4 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5A.1
+	Uses four-part SOAP structure (S/O/A/P)
+	0.50
+	All four sections present and labeled
+	Some sections present
+	Absent or only one section
+	5A.2
+	Subjective and objective data placed in correct sections
+	0.50
+	All data correctly partitioned
+	Minor misplacement
+	Major misplacement
+	5A.3
+	Assessment presents a prioritized, numbered problem list
+	0.50
+	Numbered, prioritized list with all 6 problems
+	Listed, not numbered or not prioritized
+	Absent
+	5A.4
+	Each Plan element maps to an assessed problem
+	0.50
+	All plan items correspond to Assessment problems
+	Most mapped, 1-2 unmapped
+	Multiple plan items unmapped
+	5A sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+5B. FORMATTING AND DOCUMENTATION (2.0 points) — 4 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5B.1
+	Medications documented with drug, dose, route, and frequency/regimen
+	0.50
+	All four elements present for all medications
+	Missing one element for any medication
+	Largely incomplete
+	5B.2
+	Laboratory and objective values reported with units
+	0.50
+	Units present for all reported values
+	Some units missing
+	Units absent
+	5B.3
+	Score values (ACT, CAT) reported with numeric value and interpretation
+	0.50
+	Numeric value AND interpretation present for both scores
+	One element missing for either score
+	Scores absent or no interpretation
+	5B.4
+	Plan items are specific and actionable
+	0.50
+	All plan items specific and actionable
+	Some items vague
+	Largely vague
+	5B sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+5C. PROFESSIONAL TONE AND SPECIFICITY (1.0 points) — 3 inputs, sum = 1.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5C.1
+	Objective, professional clinical language throughout
+	0.40
+	Professional throughout
+	Minor lapses in one section
+	Unprofessional or informal language
+	5C.2
+	Recommendations tied to GINA 2025 or GOLD 2026 guideline rationale
+	0.40
+	Rationale cited for major recommendations
+	Partial rationale
+	Rationale absent
+	5C.3
+	Free of major factual or medication errors
+	0.20
+	No major errors
+	1 minor error
+	Major factual or medication error
+	5C sum check: 0.40 + 0.40 + 0.20 = 1.00
+Section 5 check: 2.0 + 2.0 + 1.0 = 5.0
+ 
+GRAND TOTAL VERIFICATION
+§
+	Section
+	Subsections
+	Points
+	1
+	SUBJECTIVE
+	1A (2.0) + 1B (5.0) + 1C (4.0) + 1D (3.5) + 1E (5.5) + 1F (2.0) + 1G (3.0)
+	25.0
+	2
+	OBJECTIVE
+	2A (4.0) + 2B (7.0) + 2C (4.0)
+	15.0
+	3
+	ASSESSMENT
+	3A (7.0) + 3B (6.0) + 3C (5.0) + 3D (5.0) + 3E (4.0) + 3F (3.0)
+	30.0
+	4
+	PLAN
+	4A (6.0) + 4B (5.0) + 4C (4.0) + 4D (3.0) + 4E (3.0) + 4F (4.0)
+	25.0
+	5
+	PRESENTATION QUALITY
+	5A (2.0) + 5B (2.0) + 5C (1.0)
+	5.0
+	 
+	GRAND TOTAL
+	 
+	100.0
+	 
+GRADING SCALE
+Grade
+	Range
+	Description
+	A
+	90.0–100.0
+	Exceptional — comprehensive, accurate, clinically actionable
+	B
+	80.0–89.9
+	Proficient — solid coverage with minor gaps
+	C
+	70.0–79.9
+	Developing — adequate but missing key elements
+	D
+	60.0–69.9
+	Below expectations — significant gaps in content or analysis
+	F
+	Below 60.0
+	Unsatisfactory — major deficiencies
+	 
+TOTAL DISCRETE INPUTS ACROSS ALL SECTIONS
+Section
+	Subsections
+	# Inputs
+	1. SUBJECTIVE
+	1A–1G
+	78
+	2. OBJECTIVE
+	2A–2C
+	27
+	3. ASSESSMENT
+	3A–3F
+	55
+	4. PLAN
+	4A–4F
+	39
+	5. PRESENTATION QUALITY
+	5A–5C
+	11
+	TOTAL
+	 
+	210
+	 
+MODEL ANSWER SCORE: 100.0 / 100.0
+The model answer (Patient C — Wednesday 3-Month Follow-Up gold-standard SOAP note) earns full credit on every one of the 210 discrete inputs. Any student submission is scored against this rubric by evaluating each of the 210 discrete inputs independently, awarding FULL, HALF, or ZERO credit per input, and summing to a final score out of 100.0.
+Source guidelines for therapeutic alternatives: 2025 GINA Summary Guide for Asthma Management and Prevention; 2026 GOLD Report for COPD.
+
+
+
+

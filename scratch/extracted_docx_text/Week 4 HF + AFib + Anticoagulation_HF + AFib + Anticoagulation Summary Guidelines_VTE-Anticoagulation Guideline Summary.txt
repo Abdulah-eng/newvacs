@@ -1,0 +1,199 @@
+﻿Anticoagulation and Venous Thromboembolism Guideline Summary
+Based on:
+2026 ACC/AHA/CHEST Venous Thromboembolism Guideline
+2021 CHEST Guideline and Expert Panel Report: Antithrombotic Therapy for VTE Disease
+Why Anticoagulation Matters
+Anticoagulation therapy is one of the most effective strategies for preventing thromboembolic complications, but it also carries significant bleeding risk.
+Ambulatory care pharmacists frequently manage patients receiving anticoagulation for:
+Atrial fibrillation
+Deep vein thrombosis (DVT)
+Pulmonary embolism (PE)
+Recurrent venous thromboembolism prevention
+Appropriate anticoagulation management requires balancing:
+Prevention of thrombosis
+Prevention of stroke
+Prevention of recurrent VTE
+Bleeding risk
+Medication adherence
+Patient preferences
+The goal is to maximize clinical benefit while minimizing harm.
+Venous Thromboembolism Overview
+Venous thromboembolism (VTE) includes:
+Deep Vein Thrombosis (DVT)
+Formation of a blood clot within the deep venous system, most commonly in the lower extremities.
+Potential complications include:
+Clot propagation
+Recurrent thrombosis
+Post-thrombotic syndrome
+Pulmonary embolism
+Pulmonary Embolism (PE)
+Occurs when a thrombus embolizes to the pulmonary vasculature.
+Potential consequences include:
+Right ventricular strain
+Hemodynamic instability
+Death
+Provoked Versus Unprovoked VTE
+Determining whether a VTE was provoked or unprovoked is one of the most important factors influencing duration of anticoagulation.
+Provoked VTE
+Occurs in the setting of a transient risk factor.
+Examples:
+Major surgery
+Trauma
+Immobilization
+Hospitalization
+Temporary estrogen therapy
+Patients generally have a lower long-term recurrence risk after the provoking factor has resolved.
+Unprovoked VTE
+Occurs without an identifiable transient provoking factor.
+These patients typically have a higher risk of recurrent thrombosis.
+Examples:
+DVT without recent surgery or trauma
+PE without an identifiable provoking event
+Unprovoked VTE often prompts consideration of extended anticoagulation therapy.
+Duration of Anticoagulation
+Duration should be individualized based on recurrence risk and bleeding risk.
+Initial Treatment Phase
+All patients require therapeutic anticoagulation during the acute treatment phase.
+The initial treatment period is generally considered the first several months following diagnosis.
+Goals:
+Prevent clot extension
+Prevent embolization
+Reduce recurrence risk
+Extended Anticoagulation
+After completion of initial treatment, clinicians must determine whether anticoagulation should continue.
+Factors supporting extended therapy include:
+Unprovoked VTE
+Recurrent VTE
+Persistent risk factors
+Acceptable bleeding risk
+Factors supporting discontinuation include:
+Provoked VTE
+High bleeding risk
+Patient preference
+Extended therapy decisions frequently require shared decision-making.
+Recurrent VTE Risk Assessment
+Patients with a history of VTE should be periodically reassessed.
+Factors associated with increased recurrence risk include:
+Prior unprovoked VTE
+Multiple VTE events
+Active cancer
+Persistent thrombophilia
+Ongoing risk factors
+Recurrence risk remains elevated even years after the original event in some patients.
+Bleeding Risk Assessment
+The decision to continue anticoagulation should never be based solely on thrombotic risk.
+Bleeding risk must also be considered.
+Factors that increase bleeding risk include:
+Advanced age
+Chronic kidney disease
+Prior bleeding events
+Concurrent antiplatelet therapy
+Excessive alcohol use
+Poor medication adherence
+Importantly, increased bleeding risk does not automatically preclude anticoagulation.
+Rather, it should prompt more careful monitoring and patient-specific decision-making.
+Direct Oral Anticoagulants (DOACs)
+DOACs are commonly used for:
+Atrial fibrillation
+DVT treatment
+PE treatment
+Extended VTE prevention
+Advantages include:
+Predictable anticoagulation
+Limited routine laboratory monitoring
+Fewer food interactions
+Improved convenience
+Apixaban
+Common indications:
+Atrial fibrillation
+DVT treatment
+PE treatment
+Extended VTE prevention
+Advantages:
+Strong safety profile
+Favorable bleeding profile
+Frequently preferred in patients with CKD
+Rivaroxaban
+Common indications:
+Atrial fibrillation
+DVT treatment
+PE treatment
+Extended VTE prevention
+Advantages:
+Once-daily maintenance dosing
+Considerations:
+Requires food with therapeutic doses
+Renal dosing adjustments may be required
+Chronic Kidney Disease Considerations
+Renal function should be evaluated before initiating anticoagulation and monitored periodically thereafter.
+Important considerations include:
+Declining renal function may alter drug exposure.
+Dose adjustments may become necessary.
+CKD increases both thrombotic and bleeding risk.
+Patients with CKD often require more frequent reassessment than patients with normal renal function.
+Shared Decision-Making
+Many anticoagulation decisions involve balancing competing risks.
+Examples include:
+Continuing anticoagulation after remote unprovoked VTE
+Managing anticoagulation in CKD
+Evaluating bleeding concerns
+Addressing medication burden
+Patients should understand:
+Expected benefits
+Potential risks
+Monitoring requirements
+Alternatives when available
+The best decision is often the one that aligns evidence-based recommendations with patient values and preferences.
+Monitoring Parameters
+Clinical Monitoring
+Signs of recurrent VTE
+Dyspnea
+Leg swelling
+Chest pain
+Signs of bleeding
+Bruising
+Falls
+Adherence
+Laboratory Monitoring
+Serum creatinine
+eGFR
+CBC when clinically appropriate
+Hemoglobin and hematocrit
+Routine coagulation monitoring is generally not required with DOAC therapy.
+Common Medication Therapy Problems
+Examples frequently encountered in ambulatory care include:
+Premature discontinuation of anticoagulation
+Failure to reassess long-term anticoagulation needs
+Inappropriate dosing
+Cost-related nonadherence
+Unrecognized bleeding complications
+Failure to monitor renal function
+Patient misunderstanding regarding treatment duration
+Medication duplication involving antithrombotic agents
+Ambulatory Care Clinical Pearls
+Every anticoagulation decision requires assessment of both thrombotic and bleeding risk.
+Unprovoked VTE generally carries a higher recurrence risk than provoked VTE.
+Long-term anticoagulation decisions should be reassessed periodically.
+CKD increases both bleeding risk and thrombotic risk.
+Medication adherence is essential because missed doses rapidly reduce protection.
+Patients often overestimate bleeding risk and underestimate thrombosis risk.
+Shared decision-making is a critical component of long-term anticoagulation management.
+Application to This Week’s Patients
+Patient A
+Anticoagulation is not a primary management focus.
+Students should recognize that future development of atrial fibrillation or thromboembolic disease may alter management.
+Patient B
+Primary focus:
+Anticoagulation initiation
+Medication access barriers
+Adherence concerns
+Stroke prevention
+Students should recognize that the effectiveness of anticoagulation depends on consistent medication use.
+Patient C
+Primary focus:
+Persistent atrial fibrillation
+Remote unprovoked DVT
+CKD stage 3b
+Long-term anticoagulation decisions
+Students should integrate thrombotic risk, bleeding risk, renal function, and patient preferences when developing treatment recommendations.
+Patient C represents the most advanced anticoagulation decision-making scenario encountered during Week 4.

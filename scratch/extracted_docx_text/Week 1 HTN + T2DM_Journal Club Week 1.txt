@@ -1,0 +1,191 @@
+﻿Week 1 Journal Club Assignment
+Hypertension + Type 2 Diabetes
+Cardiorenal Protection Beyond Glycemic Control:
+The FLOW Trial
+Article
+Perkovic V, Tuttle KR, Rossing P, et al.
+Effects of Semaglutide on Chronic Kidney Disease in Patients with Type 2 Diabetes.
+N Engl J Med. 2024;390:1097-1111.
+Assignment Overview
+Students will critically evaluate the FLOW Trial and discuss how GLP-1 receptor agonists fit into contemporary management of:
+Type 2 diabetes 
+Chronic kidney disease 
+Albuminuria 
+ASCVD risk reduction 
+Students should focus on how pharmacists use evidence from this trial to make patient-specific treatment decisions rather than simply lowering A1C.
+Journal Club Key
+FLOW Trial: Effects of Semaglutide on Chronic Kidney Disease in Patients with Type 2 Diabetes
+Perkovic V, Tuttle KR, Rossing P, et al. Effects of Semaglutide on Chronic Kidney Disease in Patients with Type 2 Diabetes. N Engl J Med. 2024;390:1097-1111.
+Background
+• Chronic kidney disease (CKD) affects approximately 40% of patients with type 2 diabetes mellitus and is associated with increased risks of kidney failure, cardiovascular disease, hospitalization, and death.
+• SGLT2 inhibitors have become foundational therapy for diabetic kidney disease; however, substantial residual renal and cardiovascular risk remains despite optimized treatment.
+• GLP-1 receptor agonists have demonstrated cardiovascular benefits in previous cardiovascular outcomes trials, but definitive renal outcomes data were limited.
+• The FLOW trial was designed to determine whether semaglutide reduces kidney disease progression and cardiovascular outcomes in patients with type 2 diabetes and CKD.
+Study Objective
+To determine whether semaglutide reduces the risk of major kidney disease events, cardiovascular events, and death in patients with type 2 diabetes mellitus and chronic kidney disease.
+Methods
+Study Design
+• International
+• Multicenter
+• Randomized
+• Double-blind
+• Placebo-controlled trial
+Funding Source
+• Novo Nordisk
+Patient Population
+• 3,533 patients enrolled
+• Semaglutide group: n = 1,767
+• Placebo group: n = 1,766
+Major Inclusion Criteria
+• Age ≥18 years
+• Type 2 diabetes mellitus
+• CKD with:
+eGFR 50–75 mL/min/1.73m² with UACR 300–5000 mg/g 
+OR
+eGFR 25–50 mL/min/1.73m² with UACR 100–5000 mg/g 
+• Receiving standard-of-care therapy including RAAS blockade when appropriate
+Major Exclusion Criteria
+• Type 1 diabetes mellitus
+• Kidney transplant recipient
+• Dialysis-dependent kidney disease
+• Recent use of GLP-1 receptor agonist therapy
+• Recent major cardiovascular event
+Drug Treatment
+Treatment Group
+• Semaglutide 1 mg subcutaneous injection weekly
+Placebo Group
+• Matching placebo injection weekly
+Background Therapy
+Patients continued guideline-directed therapy including:
+• ACE inhibitor or ARB
+• SGLT2 inhibitor when appropriate
+• Statin therapy
+• Antihypertensive therapy
+Primary Endpoint
+Composite of:
+• Kidney failure
+• Sustained ≥50% decline in eGFR
+• Death from kidney causes
+• Death from cardiovascular causes
+Secondary Endpoints
+• Major kidney outcomes
+• Major adverse cardiovascular events (MACE)
+• All-cause mortality
+• Rate of eGFR decline
+Safety Outcomes
+• Serious adverse events
+• Acute kidney injury
+• Severe hypoglycemia
+• Pancreatitis
+• Gastrointestinal adverse effects
+• Gallbladder-related events
+Statistics
+• Intention-to-treat analysis
+• Cox proportional hazards models used
+• Two-sided alpha = 0.05
+• Trial stopped early due to demonstrated efficacy
+Data Collection / Frequency / Assessment Tools
+• Scheduled follow-up visits throughout trial
+• Median follow-up approximately 3.4 years
+• Laboratory monitoring included:
+eGFR 
+Serum creatinine 
+UACR 
+• Outcomes independently adjudicated
+Results
+Follow-Up
+• Median follow-up: 3.4 years
+• Trial stopped early due to efficacy
+Baseline Subject Characteristics
+• Mean age: 66 years
+• Female: approximately 30%
+• Mean eGFR: approximately 47 mL/min/1.73m²
+• Median UACR: approximately 568 mg/g
+• Established cardiovascular disease common
+• Baseline characteristics balanced between groups
+Primary Endpoint
+Primary outcome occurred less frequently in the semaglutide group.
+• Hazard Ratio (HR): 0.76
+• 95% CI: 0.66–0.88
+• p = 0.0003
+Relative Risk Reduction
+24%
+Secondary Outcomes
+Major Kidney Outcomes
+Significant reduction observed.
+Major Adverse Cardiovascular Events (MACE)
+Reduced with semaglutide therapy.
+All-Cause Mortality
+Lower incidence observed with semaglutide.
+eGFR Decline
+Semaglutide slowed kidney function decline compared with placebo.
+Safety Outcomes
+Gastrointestinal Adverse Events
+More common with semaglutide.
+Examples:
+• Nausea
+• Vomiting
+• Diarrhea
+Severe Hypoglycemia
+Rare
+Acute Kidney Injury
+No significant increase observed.
+Overall Safety
+Consistent with previously established semaglutide safety profile.
+Author's Conclusion
+"Among patients with type 2 diabetes and chronic kidney disease, semaglutide reduced the risk of major kidney disease events, cardiovascular events, and death compared with placebo."
+Strengths
+• First dedicated renal outcomes trial for a GLP-1 receptor agonist
+• Large international randomized controlled trial
+• Clinically meaningful kidney outcomes
+• Included high-risk CKD population
+• Modern background therapy
+• Strong statistical power
+• Demonstrated both renal and cardiovascular benefit
+Limitations
+• Trial stopped early due to efficacy
+• Limited long-term follow-up beyond study period
+• Injectable medication may affect real-world adherence
+• Predominantly albuminuric CKD population limits generalizability to lower-risk CKD
+• Industry funded
+Presenter's Conclusion / Clinical Application
+FLOW is one of the most important nephrology and diabetes trials published in the last several years. The study demonstrated that semaglutide provides clinically meaningful renal and cardiovascular protection in patients with type 2 diabetes and chronic kidney disease.
+The trial supports the growing shift away from viewing GLP-1 receptor agonists solely as glucose-lowering medications. Instead, semaglutide should be considered a cardiorenal risk-reduction therapy in appropriately selected patients with diabetes and CKD.
+For pharmacists, FLOW reinforces the importance of evaluating:
+• CKD stage
+• Albuminuria
+• ASCVD history
+• Residual cardiorenal risk
+when selecting therapy rather than focusing exclusively on A1C reduction.
+Patients most likely to benefit include those with:
+• Type 2 diabetes
+• CKD
+• Albuminuria
+• Established ASCVD
+• Persistent residual risk despite ACE inhibitor/ARB and SGLT2 inhibitor therapy
+References
+Perkovic V, Tuttle KR, Rossing P, et al. Effects of Semaglutide on Chronic Kidney Disease in Patients with Type 2 Diabetes. N Engl J Med. 2024;390(12):1097-1111.
+American Diabetes Association Professional Practice Committee. 11. Chronic kidney disease and risk management: Standards of Care in Diabetes—2026. Diabetes Care. 2026;49(suppl 1). Accessed June 8, 2026.
+Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2024 clinical practice guideline for the evaluation and management of chronic kidney disease. Kidney Int. 2024;105(4)(suppl):S1-S150.
+American Diabetes Association Professional Practice Committee. 10. Cardiovascular disease and risk management: Standards of Care in Diabetes—2026. Diabetes Care. 2026;49(suppl 1). Accessed June 8, 2026.
+
+Five Clinical Application Questions
+1. A patient with T2DM, eGFR 48 mL/min/1.73m², UACR 520 mg/g, and A1C 7.3% is already taking metformin and empagliflozin. Would FLOW support adding semaglutide?
+Answer: Yes. The patient's significant albuminuria and CKD place them at high cardiorenal risk. FLOW demonstrated kidney and cardiovascular benefits beyond glucose lowering.
+2. How would you explain semaglutide's benefit to a patient whose A1C is already controlled?
+Answer: Semaglutide helps reduce future kidney disease progression and cardiovascular events, not just blood sugar.
+3. A patient with prior MI, CKD Stage 3a, and UACR 450 mg/g is already taking an ACE inhibitor, SGLT2 inhibitor, and statin. Should semaglutide be considered?
+Answer: Yes. This patient resembles the high-risk population studied in FLOW and has substantial residual cardiovascular and renal risk.
+4. A patient's eGFR declines from 55 to 49 mL/min/1.73m² over six months while taking semaglutide. Does this indicate treatment failure?
+Answer: No. CKD progression should be assessed using overall trends, albuminuria changes, and clinical outcomes rather than a single eGFR value.
+5. Which patient would likely derive greater benefit from semaglutide?
+Patient A:
+A1C 9.5% 
+No CKD 
+No ASCVD 
+Patient B:
+A1C 7.2% 
+CKD Stage 3a 
+UACR 700 mg/g 
+Prior MI 
+Answer: Patient B. FLOW supports selecting therapy based on cardiorenal risk reduction rather than A1C alone.

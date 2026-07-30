@@ -1,0 +1,2541 @@
+﻿SECTION 9: PATIENT A – THURSDAY 6-month FOLLOW-UP VISIT
+Encounter Overview
+Encounter Type
+Ambulatory Care Pharmacist Follow-Up Visit
+Visit Length
+30-minute collaborative practice visit
+Week
+Week 4 – Thursday
+Difficulty Level
+Foundational APPE Student
+Primary Learning Objectives
+Students should be able to:
+Assess long-term response to GDMT 
+Evaluate medication tolerability 
+Interpret follow-up laboratory data 
+Determine whether further optimization is necessary 
+Reinforce self-management strategies 
+Develop a long-term monitoring plan 
+Construct a complete SOAP note 
+Apply maintenance-phase heart failure management principles 
+1. Patient Snapshot
+Michael Thompson is a 58-year-old male presenting for a scheduled 6-month follow-up after initiation and optimization of guideline-directed medical therapy for HFrEF.
+He reports substantial improvement in symptoms and has experienced no hospitalizations since diagnosis.
+Students must determine whether additional medication changes are necessary and develop an ongoing management plan.
+2. Chief Concern
+"I feel a lot better than I did when all of this started."
+3. History of Present Illness
+Michael is a 58-year-old male with HFrEF, hypertension, hyperlipidemia, and obesity presenting for routine follow-up.
+Since the previous visit:
+Spironolactone was initiated 
+No hospitalizations 
+No emergency department visits 
+No worsening heart failure symptoms 
+He reports:
+Markedly improved exercise tolerance 
+Walking most days 
+Improved stamina 
+Stable weight 
+He denies:
+Chest pain 
+Palpitations 
+Syncope 
+Orthopnea 
+PND 
+Edema 
+Significant dizziness 
+He reports only occasional fatigue with strenuous exertion.
+Overall he feels his quality of life has improved significantly.
+4. Past Medical History
+Heart Failure with Reduced Ejection Fraction
+Hypertension
+Hyperlipidemia
+Obesity
+5. Medication List
+Sacubitril/Valsartan 97/103 mg PO BID
+Metoprolol Succinate 100 mg PO daily
+Empagliflozin 10 mg PO daily
+Spironolactone 25 mg PO daily
+Atorvastatin 40 mg PO daily
+6. Allergies
+Drug Allergies
+NKDA
+Food Allergies
+None
+7. Vitals
+Today's Vitals
+BP: 112/68 mmHg
+HR: 62 bpm
+RR: 16
+Temp: 98.1°F
+Weight: 97 kg
+Height: 70 inches
+BMI: 30.7 kg/m²
+SpO₂: 98% on room air
+Home Monitoring Log
+Daily weights stable
+Average BP:
+112–118 / 68–72 mmHg
+Average HR:
+60–66 bpm
+No significant weight fluctuations
+8. Laboratory Data
+CMP
+Na: 137 mEq/L
+K: 4.8 mEq/L
+BUN: 20 mg/dL
+SCr: 1.2 mg/dL
+eGFR: 75 mL/min/1.73m²
+AST: 23 U/L
+ALT: 24 U/L
+BNP
+Current: 92 pg/mL
+Previous: 165 pg/mL
+Previous Baseline: 320 pg/mL
+Repeat Echocardiogram
+LVEF: 45%
+Previous: 35%
+Interpretation:
+Improved systolic function
+9. Immunizations
+Pneumococcal vaccine received since last visit.
+Shingrix dose #1 received.
+10. Social History
+Former smoker
+Alcohol:
+1–2 drinks on weekends
+Exercise:
+Walking 30–40 minutes most days
+Diet:
+Actively limiting sodium intake
+Improved dietary habits
+11. Family History
+No changes
+12. Problem List
+Active Problems
+Heart failure with improved ejection fraction (HFimpEF)
+Hypertension controlled
+Hyperlipidemia
+Obesity
+Need for long-term GDMT maintenance
+Need for continued monitoring
+13. Pharmacist Visit Notes
+Follow-Up Reason
+Assessment of long-term response to GDMT and establishment of maintenance plan.
+Key Concerns
+Evaluate clinical stability 
+Evaluate medication tolerability 
+Determine need for additional optimization 
+Reinforce long-term self-management 
+Develop ongoing monitoring strategy 
+14. Follow-Up Tasks Expected From Student
+Students should consider:
+Heart Failure Assessment
+Evaluate:
+Symptom burden 
+Functional status 
+Quality of life 
+Adherence 
+Interpret:
+BNP improvement 
+Echocardiogram improvement 
+GDMT Assessment
+Determine whether:
+Current therapy should continue 
+Additional titration is necessary 
+Therapy should be maintained despite EF improvement 
+Monitoring
+Continue monitoring:
+BP 
+HR 
+Weight 
+Renal function 
+Potassium 
+Symptoms 
+Patient Education
+Reinforce:
+Lifelong nature of heart failure 
+Importance of continued therapy 
+Adherence 
+Self-monitoring 
+Follow-Up Planning
+Develop long-term monitoring strategy
+Determine future follow-up schedule
+Identify ongoing preventive care opportunities
+
+SECTION 10: AI PATIENT Q&A GUIDE
+Patient A – Thursday Follow-Up Visit
+Purpose
+This document serves as the AI patient behavior guide.
+Responses should sound like a real patient, not a clinician.
+The patient should not volunteer hidden information unless appropriately prompted.
+Reason for Visit
+Student:
+"What brings you in today?"
+Patient:
+"I'm here for my regular heart failure follow-up."
+Student:
+"What are you hoping to get out of today's visit?"
+Patient:
+"I just want to make sure everything is still headed in the right direction."
+Symptoms
+Student:
+"How have you been feeling lately?"
+Patient:
+"Honestly, pretty good."
+Student:
+"What symptoms are you having?"
+Patient:
+"Not much anymore."
+Student:
+"Any shortness of breath?"
+Patient:
+"Not like before."
+Student:
+"Any swelling?"
+Patient:
+"No."
+Student:
+"Any chest pain?"
+Patient:
+"No."
+Student:
+"Any dizziness?"
+Patient:
+"Not really."
+Student:
+"Anything else bothering you?"
+Patient:
+"No major complaints."
+Functional Status
+Student:
+"What activities are you able to do now?"
+Patient:
+"A lot more than before."
+Student:
+"Can you tell me more?"
+Patient:
+"I'm walking most days now."
+Student:
+"How do stairs feel?"
+Patient:
+"Much better than before."
+Student:
+"Anything you still struggle with?"
+Patient:
+"Only if I'm really pushing myself."
+Medication Use
+Student:
+"What medications are you taking?"
+Patient:
+"My heart medications and cholesterol medicine."
+Student:
+"How are you taking them?"
+Patient:
+"Just like I was told."
+Student:
+"Any missed doses?"
+Patient:
+"Very rarely."
+Medication Tolerability
+Student:
+"Any medication side effects?"
+Patient:
+"No major problems."
+Student:
+"Anything you've noticed?"
+Patient:
+"Not really."
+Student:
+"Any concerns about taking these medications long term?"
+Patient:
+"A little."
+Student:
+"What concerns do you have?"
+Patient:
+"I just wonder if I'll need to stay on all of them forever."
+Home Monitoring
+Student:
+"Are you still checking your weight?"
+Patient:
+"Every morning."
+Student:
+"Any changes?"
+Patient:
+"It's been very stable."
+Student:
+"How about blood pressure?"
+Patient:
+"I check it pretty regularly."
+Student:
+"What have your readings looked like?"
+Patient:
+"Usually around 115 over 70."
+Lifestyle Changes
+Student:
+"Have you continued making lifestyle changes?"
+Patient:
+"Yes."
+Student:
+"What changes?"
+Patient:
+"I'm still walking regularly and watching my sodium."
+Student:
+"Anything else?"
+Patient:
+"I've lost some weight too."
+Understanding of Heart Failure
+Student:
+"What do you know about heart failure now?"
+Patient:
+"A lot more than when I started."
+Student:
+"What have you learned?"
+Patient:
+"That it's something I need to manage long term."
+Student:
+"What do you think has helped the most?"
+Patient:
+"Probably taking the medications and making some lifestyle changes."
+Patient Goals
+Student:
+"What health goal is most important to you now?"
+Patient:
+"I want to keep feeling this way."
+Student:
+"Anything else?"
+Patient:
+"I'd like to avoid being hospitalized."
+Student:
+"Anything else?"
+Patient:
+"I'd like to stay active as I get older."
+Patient Concerns
+Student:
+"What concerns you most?"
+Patient:
+"I don't want things to go backward."
+Student:
+"What else?"
+Patient:
+"I want to know what happens next."
+Follow-Up Preferences
+Student:
+"How do you prefer follow-up appointments?"
+Patient:
+"Whatever you think is best."
+Hidden Information Summary for AI
+The AI should NEVER volunteer these without prompting:
+Patient is surprised by how much better he feels compared with diagnosis.
+Patient wonders whether medications can eventually be discontinued.
+Patient assumes improved ejection fraction means heart failure is cured.
+Patient remains highly adherent.
+Patient has maintained daily weight monitoring.
+Patient has maintained sodium reduction efforts.
+Patient remains mildly symptomatic only with strenuous exertion.
+Patient is proud of his progress and appreciates positive reinforcement.
+
+
+SECTION 10A: HIDDEN INFORMATION TRIGGER MAP
+Patient A – Thursday Follow-Up Visit
+Hidden Fact #1: Belief That Heart Failure May Be "Gone"
+Information to Reveal
+Patient believes improved EF may mean his heart failure has resolved.
+Trigger Keywords
+What do you understand about your condition now?
+Do you think your heart failure is gone?
+What do you think the echocardiogram means?
+Improved EF
+Recovery
+Future expectations
+Heart failure prognosis
+Appropriate AI Response
+"I was wondering if that means my heart is back to normal."
+"I wasn't sure if I still have heart failure."
+Information Not Volunteered
+Patient does not initially disclose this assumption.
+Hidden Fact #2: Question About Lifelong Therapy
+Information to Reveal
+Patient wonders if medications can eventually be discontinued.
+Trigger Keywords
+Medication duration
+Long-term treatment
+Will I need these forever?
+Future medications
+Can medications be stopped?
+Maintenance therapy
+Heart failure medications
+Appropriate AI Response
+"Do you think I'll have to stay on all of these medications forever?"
+Information Not Volunteered
+Patient only raises this concern if treatment plans are discussed.
+Hidden Fact #3: Continued Adherence
+Information to Reveal
+Patient remains highly adherent.
+Trigger Keywords
+Medication adherence
+Missed doses
+Medication routine
+Compliance
+Daily routine
+How are you taking medications?
+Appropriate AI Response
+"I've been very consistent."
+"I rarely miss a dose."
+Information Not Volunteered
+Patient initially reports only that he is taking medications.
+Hidden Fact #4: Long-Term Lifestyle Success
+Information to Reveal
+Patient has maintained sodium reduction and exercise improvements.
+Trigger Keywords
+Lifestyle changes
+Diet
+Exercise
+Walking
+Sodium
+Nutrition
+Self-management
+Behavior changes
+Appropriate AI Response
+"I've actually stuck with the changes."
+"I'm still walking most days."
+Information Not Volunteered
+Patient does not initially emphasize the extent of his success.
+Hidden Fact #5: Residual Symptoms
+Information to Reveal
+Patient still experiences mild fatigue only with strenuous exertion.
+Trigger Keywords
+Remaining symptoms
+Exercise tolerance
+Activity limitations
+Fatigue
+Dyspnea
+Anything still difficult?
+Physical activity
+Appropriate AI Response
+"If I really push myself, I still notice it a little."
+Information Not Volunteered
+Patient initially states he feels good overall.
+Hidden Fact #6: Motivation and Confidence
+Information to Reveal
+Patient feels encouraged by progress and more confident managing heart failure.
+Trigger Keywords
+How do you feel about your progress?
+Confidence
+Self-management
+Motivation
+Heart failure education
+Lifestyle changes
+Future goals
+Appropriate AI Response
+"I feel a lot better about things than I did at the beginning."
+"I feel like I know what I need to do now."
+Information Not Volunteered
+Patient does not spontaneously discuss confidence or emotional growth.
+Hidden Fact #7: Desire for Prognostic Information
+Information to Reveal
+Patient wants to know what to expect long term.
+Trigger Keywords
+Future
+Prognosis
+Long-term outlook
+What happens next?
+Expectations
+Heart failure progression
+Future health
+Appropriate AI Response
+"I'd really like to know what the future looks like."
+Information Not Volunteered
+Patient only raises this concern if future planning is discussed.
+
+
+PATIENT A – THURSDAY FOLLOW-UP VISIT
+GOLD-STANDARD AMBULATORY CARE PHARMACIST SOAP NOTE
+SUBJECTIVE
+CC:
+Michael Thompson is a 58-year-old male presenting to the ambulatory care cardiology clinic for routine follow-up management of heart failure with reduced ejection fraction (HFrEF) approximately 6 months after initiation of guideline-directed medical therapy.
+HPI:
+The patient presents for routine follow-up after progressive optimization of HFrEF therapy.
+Since the previous visit, spironolactone was initiated and the patient's heart failure regimen has been further optimized. He reports substantial improvement in symptoms compared with when he was first diagnosed.
+The patient reports significantly improved exercise tolerance and energy levels. He states that activities previously associated with shortness of breath are now much easier to perform. He reports walking approximately 30–40 minutes most days of the week and has maintained regular physical activity.
+He denies:
+Chest pain 
+Palpitations 
+Syncope 
+Orthopnea 
+Paroxysmal nocturnal dyspnea 
+Lower extremity edema 
+Hospitalization 
+Emergency department visits 
+The patient reports only occasional fatigue with strenuous exertion.
+He reports excellent adherence to his medication regimen and states he rarely misses doses.
+The patient continues daily weight monitoring and reports stable weights without significant fluctuations.
+He reports ongoing efforts to reduce sodium intake and maintain lifestyle modifications.
+The patient expresses satisfaction with his progress but wonders whether improvement in heart function means medications may eventually be discontinued.
+Past Medical History
+Heart Failure with Reduced Ejection Fraction
+Hypertension
+Hyperlipidemia
+Obesity
+Past Surgical History
+Appendectomy
+Family History
+Father:
+Hypertension 
+Myocardial infarction at age 62 
+Mother:
+Type 2 diabetes mellitus 
+Social History
+Married
+Lives with spouse
+Works full-time as an accountant
+Former smoker
+20 pack-year history 
+Quit 5 years ago 
+Alcohol:
+1–2 drinks on weekends 
+Denies illicit drug use
+Maintains regular physical activity
+Current Medications
+Sacubitril/Valsartan 97/103 mg PO twice daily
+Metoprolol Succinate 100 mg PO daily
+Empagliflozin 10 mg PO daily
+Spironolactone 25 mg PO daily
+Atorvastatin 40 mg PO daily
+Allergies
+No known drug allergies
+Immunization History
+Influenza vaccine up to date
+COVID vaccination up to date
+Pneumococcal vaccination received
+Shingrix dose #1 received
+Tdap due within approximately 1 year
+OBJECTIVE
+Vitals
+BP: 112/68 mmHg
+HR: 62 bpm
+RR: 16 breaths/min
+Temp: 98.1°F
+SpO₂: 98% on room air
+Weight: 97 kg
+Height: 70 inches
+BMI: 30.7 kg/m²
+Home Monitoring
+Average Home BP:
+115/70 mmHg
+Average Home HR:
+62 bpm
+Daily weights stable
+No significant weight fluctuations
+Laboratory Data
+Comprehensive Metabolic Panel
+Na: 137 mEq/L
+K: 4.8 mEq/L
+BUN: 20 mg/dL
+SCr: 1.2 mg/dL
+eGFR: 75 mL/min/1.73m²
+AST: 23 U/L
+ALT: 24 U/L
+BNP
+Current: 92 pg/mL
+Previous: 165 pg/mL
+Baseline: 320 pg/mL
+Echocardiogram
+Current LVEF: 45%
+Previous LVEF: 35%
+Interpretation:
+Improved left ventricular systolic function
+ASSESSMENT
+Heart Failure with Improved Ejection Fraction (HFimpEF) – Significant Improvement Following Guideline-Directed Medical Therapy
+Michael Thompson is a 58-year-old male with previously documented HFrEF (LVEF 35%) who presents for longitudinal follow-up after successful implementation and optimization of guideline-directed medical therapy. Since diagnosis, the patient has experienced substantial clinical improvement as evidenced by markedly improved exercise tolerance, resolution of edema, improved functional capacity, stable weight, and absence of heart failure hospitalizations or emergency department visits. Objective improvement is further demonstrated by reduction in BNP from 320 pg/mL to 92 pg/mL and improvement in LVEF from 35% to 45%.
+The patient is currently receiving all four foundational HFrEF medication classes including sacubitril/valsartan, metoprolol succinate, empagliflozin, and spironolactone. He reports excellent adherence and is tolerating therapy well without clinically significant adverse effects. Blood pressure, renal function, and potassium remain acceptable and do not currently limit therapy.
+Although the patient's ejection fraction has improved, current evidence and guideline recommendations support continuation of guideline-directed medical therapy. This clinical scenario is most consistent with heart failure with improved ejection fraction (HFimpEF). Improvement in ventricular function reflects successful response to therapy rather than resolution of underlying disease. Discontinuation of GDMT may increase risk of recurrent ventricular dysfunction, worsening symptoms, and heart failure hospitalization. Therefore, continuation of current therapy is recommended.
+The primary focus of today's visit is maintenance of long-term disease control, reinforcement of adherence, and continued monitoring for progression or recurrence of symptoms.
+Hypertension – Controlled
+Blood pressure remains well controlled and within a range that supports continuation of current therapy. No medication changes are necessary at this time.
+Hyperlipidemia – Stable
+The patient remains on appropriate statin therapy and continues to tolerate treatment without reported adverse effects. Continued therapy is appropriate.
+Preventive Care
+The patient has successfully addressed several preventive care gaps since previous visits, including pneumococcal vaccination and initiation of the Shingrix series. Future preventive care should include completion of Shingrix vaccination and Tdap update when due.
+PLAN
+Heart Failure
+Continue sacubitril/valsartan 97/103 mg PO twice daily.
+Continue metoprolol succinate 100 mg PO daily.
+Continue empagliflozin 10 mg PO daily.
+Continue spironolactone 25 mg PO daily.
+Continue current guideline-directed medical therapy despite improvement in ejection fraction.
+Educate patient regarding HFimpEF and importance of ongoing therapy.
+Reinforce that improvement reflects treatment success rather than cure.
+Continue lifestyle modification efforts.
+Hypertension
+Continue current management.
+Monitor blood pressure during routine follow-up.
+Hyperlipidemia
+Continue atorvastatin 40 mg PO daily.
+Continue cardiovascular risk reduction efforts.
+Patient Education
+Discuss:
+Heart failure with improved ejection fraction 
+Importance of lifelong adherence 
+Daily weight monitoring 
+Sodium restriction 
+Recognition of worsening symptoms 
+Need for continued follow-up despite feeling well 
+Address patient questions regarding long-term prognosis and medication duration.
+Monitoring
+Monitor:
+Blood pressure 
+Heart rate 
+Weight 
+Heart failure symptoms 
+Renal function 
+Potassium 
+Medication adherence 
+Repeat laboratory monitoring as clinically indicated.
+Consider repeat echocardiogram according to cardiology follow-up plan.
+Preventive Care
+Complete Shingrix series.
+Update Tdap when due.
+Continue routine preventive health maintenance.
+Follow-Up
+Follow up in approximately 3–6 months.
+Continue longitudinal monitoring of symptoms, laboratory values, adherence, and quality of life.
+Maintain maximally tolerated guideline-directed medical therapy long term.
+
+
+SECTION 12: ACCEPTABLE ALTERNATIVE ANSWERS
+Patient A – Thursday Follow-Up Visit
+The purpose of this section is to help the AI grader distinguish between:
+Preferred recommendations
+Guideline-supported alternatives
+Patient-centered approaches
+Unsafe recommendations
+Students should not be penalized for selecting a different treatment strategy if their approach appropriately addresses the patient's heart failure and remains guideline supported.
+Heart Failure with Improved Ejection Fraction (HFimpEF)
+Preferred Answer
+Recognize:
+LVEF improved from 35% to 45%
+Significant symptom improvement
+BNP improvement
+Excellent adherence
+Successful implementation of all four foundational GDMT classes
+Correctly identify the patient as having:
+Heart Failure with Improved Ejection Fraction (HFimpEF)
+Recommend:
+Continue sacubitril/valsartan
+Continue metoprolol succinate
+Continue empagliflozin
+Continue spironolactone
+Provide patient education regarding the importance of maintaining therapy despite improvement.
+Develop long-term monitoring plan.
+Rationale
+Current evidence suggests that improvement in ejection fraction reflects treatment success rather than cure.
+Patients with HFimpEF remain at risk for recurrent ventricular dysfunction and worsening heart failure if therapy is withdrawn.
+Continuation of GDMT is recommended.
+Acceptable Alternative #1
+Continue all current medications.
+Increase monitoring frequency.
+Repeat echocardiogram at a later interval.
+Acceptable Because
+Recognizes successful therapy.
+Maintains evidence-based treatment.
+Supports longitudinal monitoring.
+Acceptable Alternative #2
+Continue current GDMT without medication changes.
+Focus primarily on:
+Adherence
+Lifestyle modification
+Monitoring
+Patient education
+Acceptable Because
+Patient is clinically stable and near-optimal therapy has been achieved.
+Acceptable Alternative #3
+Recommend cardiology follow-up for future reassessment of ventricular function while maintaining current therapy.
+Acceptable Because
+Continues evidence-based treatment and recognizes ongoing need for specialist involvement.
+Patient Education
+Preferred Answer
+Explain:
+Improvement in EF is encouraging
+Heart failure has improved but is not cured
+Medications remain necessary
+Ongoing monitoring remains important
+Long-term adherence is critical
+Rationale
+Patients frequently assume improvement in EF allows discontinuation of therapy.
+This misconception should be addressed directly.
+Acceptable Alternative
+Use teach-back methods.
+Provide written educational materials.
+Encourage spouse or family involvement.
+Acceptable Because
+Supports long-term adherence and understanding.
+Monitoring
+Preferred Answer
+Continue monitoring:
+Blood pressure
+Heart rate
+Weight
+Symptoms
+Renal function
+Potassium
+Medication adherence
+Recommend periodic echocardiographic reassessment.
+Acceptable Alternative
+Continue symptom-based monitoring with routine laboratory surveillance.
+Acceptable Because
+Maintains focus on long-term disease control.
+Preventive Care
+Preferred Answer
+Recognize:
+Pneumococcal vaccination completed
+Shingrix series in progress
+Tdap update remains appropriate
+Acceptable Alternative
+Coordinate preventive care with PCP.
+Acceptable Because
+Maintains comprehensive care approach.
+Unacceptable Answers
+Unsafe
+Discontinue sacubitril/valsartan because EF improved.
+Rationale
+Improvement likely resulted from therapy.
+Withdrawal may increase risk of relapse.
+Unsafe
+Discontinue beta blocker because symptoms improved.
+Rationale
+Contrary to HFimpEF management principles.
+Unsafe
+Discontinue all heart failure therapy because EF improved.
+Rationale
+Not supported by current guidelines.
+Unsafe
+Recommend no further follow-up.
+Rationale
+Heart failure requires ongoing monitoring.
+Unsafe
+Fail to discuss long-term adherence.
+Rationale
+Patient specifically expresses questions regarding medication duration.
+SECTION 13: CRITICAL MISSES
+Patient A – Thursday Follow-Up Visit
+These errors should result in major point deductions.
+Critical Miss #1
+Error
+Failed to recognize HFimpEF.
+Rationale
+The patient demonstrates:
+Improved LVEF
+Improved BNP
+Improved symptoms
+Recognition of HFimpEF is a major learning objective.
+Critical Miss #2
+Error
+Failed to recognize successful response to GDMT.
+Rationale
+Objective and subjective improvement clearly demonstrate treatment success.
+Critical Miss #3
+Error
+Recommended discontinuation of GDMT because EF improved.
+Rationale
+Improvement occurred because of therapy and does not represent cure.
+Critical Miss #4
+Error
+Recommended reducing foundational therapy without clinical justification.
+Rationale
+No significant adverse effects or contraindications are present.
+Critical Miss #5
+Error
+Failed to assess medication adherence.
+Rationale
+Long-term success depends heavily on adherence.
+Critical Miss #6
+Error
+Failed to assess patient understanding of HFimpEF.
+Rationale
+Patient expresses uncertainty regarding future treatment needs.
+Critical Miss #7
+Error
+Failed to address patient questions regarding medication duration.
+Rationale
+This is a key counseling opportunity.
+Critical Miss #8
+Error
+Failed to reinforce self-management behaviors.
+Rationale
+Daily weights, sodium reduction, and exercise remain important.
+Critical Miss #9
+Error
+Failed to recommend ongoing monitoring.
+Rationale
+HFimpEF requires continued surveillance.
+Critical Miss #10
+Error
+Failed to identify remaining preventive care needs.
+Rationale
+Shingrix completion and future Tdap remain appropriate.
+High-Priority Patient A Learning Objectives
+Students should understand that HFimpEF is not equivalent to cure.
+Students should recognize the importance of continuing GDMT after EF improvement.
+Students should demonstrate maintenance-phase heart failure management.
+Students should provide patient-centered counseling regarding long-term expectations.
+Students should recognize that successful ambulatory care management often involves maintaining effective therapy rather than making additional medication changes.
+SECTION 14: TEACHING GUIDE
+Patient A – Thursday Follow-Up Visit
+What The Student Should Have Done Well
+The student should have:
+Recognized HFimpEF
+Assessed treatment response
+Interpreted echocardiogram improvement
+Interpreted BNP improvement
+Assessed medication adherence
+Assessed medication tolerability
+Recommended continuation of GDMT
+Addressed patient questions regarding medication duration
+Reinforced self-management behaviors
+Developed long-term monitoring recommendations
+Common Student Mistakes
+Mistake #1
+Assuming improved EF means heart failure has resolved.
+Teaching Point
+HFimpEF represents improvement in ventricular function, not elimination of disease.
+Mistake #2
+Wanting to discontinue medications because the patient feels better.
+Teaching Point
+Patients often improve because therapy is working.
+Stopping therapy may reverse those gains.
+Mistake #3
+Focusing exclusively on echocardiogram results.
+Teaching Point
+Management decisions should integrate:
+Symptoms
+Functional status
+Adherence
+Laboratory data
+Imaging findings
+Mistake #4
+Neglecting long-term patient education.
+Teaching Point
+Many patients mistakenly believe heart failure can be "cured."
+This misconception should be addressed.
+Mistake #5
+Assuming no intervention is needed because the patient is stable.
+Teaching Point
+Maintenance visits remain important opportunities for reinforcement and monitoring.
+Teaching Pearls
+Pearl #1
+HFimpEF is a success story.
+Expected Discussion
+Improved EF demonstrates benefit from GDMT.
+Pearl #2
+Improved EF does not justify therapy withdrawal.
+Expected Discussion
+Continuation of GDMT remains recommended.
+Pearl #3
+Successful ambulatory care management often focuses on maintenance.
+Expected Discussion
+The goal is preserving gains and preventing relapse.
+Pearl #4
+Patient education remains important even when disease is controlled.
+Expected Discussion
+Long-term adherence depends on understanding.
+Pearl #5
+Heart failure is a chronic condition.
+Expected Discussion
+Ongoing follow-up and monitoring remain necessary.
+Follow-Up Questions
+Question 1
+"What findings support a diagnosis of HFimpEF?"
+Expected Discussion
+Previous LVEF 35%
+Current LVEF 45%
+Improved symptoms
+Improved BNP
+Question 2
+"Should GDMT be continued after EF improves?"
+Expected Discussion
+Yes. Current evidence supports continuation of therapy.
+Question 3
+"Why is discontinuation of therapy potentially harmful?"
+Expected Discussion
+Withdrawal may result in recurrent ventricular dysfunction and worsening heart failure.
+Question 4
+"What monitoring remains important?"
+Expected Discussion
+Blood pressure
+Heart rate
+Weight
+Renal function
+Potassium
+Symptoms
+Adherence
+Question 5
+"What counseling should be provided regarding medication duration?"
+Expected Discussion
+Patients should understand that long-term therapy remains necessary despite improvement.
+Question 6
+"What is the major educational pearl of this encounter?"
+Expected Discussion
+HFimpEF is improvement, not cure. Continue GDMT.
+How The Student Can Improve Before Moving to Patient B
+Before beginning Patient B, students should be able to:
+Implement foundational GDMT
+Optimize therapy longitudinally
+Interpret treatment response
+Recognize HFimpEF
+Distinguish improvement from cure
+Develop maintenance-phase management plans
+Provide effective heart failure education
+Patient A establishes the foundational heart failure framework that will be expanded upon in Patient B through adherence barriers, access issues, and more complex real-world decision-making.
+
+Granular Rubric and Answer Key — Heart Failure with Improved Ejection Fraction (HFimpEF) Follow-Up — Patient A Thursday
+ 
+[FOR AI PRECEPTOR CALIBRATION ONLY — NOT FOR STUDENT DISTRIBUTION]
+ 
+PURPOSE:
+This is the single, authoritative rubric for the Patient A (Michael Thompson) Thursday Follow-Up Ambulatory Care Cardiology SOAP Note. Every subsection's discrete input point values sum exactly to the subsection header, all subsection headers sum exactly to the section header, and all sections sum exactly to 100.0. The model answer scores 100.0/100.0 against this rubric. Clinical content is derived from the 2022 AHA/ACC/HFSA Heart Failure Guideline (primary source for HF management) and associated guideline-supported GDMT options. The 2026 AHA/ACC Acute PE Guideline was provided as week's reference context; PE-specific criteria do not appear in this rubric.
+ 
+SCORING RULES:
+• FULL: Input present, accurate, and clinically contextualized (not merely a keyword).
+• HALF: Partially present — directionally correct but imprecise, or present without clinical context. Half-credit values are rounded to the nearest 0.05.
+• ZERO: Absent, or a factually incorrect statement is made about that input.
+• Additivity: Points are additive within each subsection → subsections additive within sections → sections additive to 100.0.
+Acceptable-alternative inputs (e.g., therapeutic choices) list every guideline-supported answer in parentheses; any listed answer earns full credit.
+ 
+GDMT ACCEPTABLE ALTERNATIVES PER GUIDELINES:
+• ARNI: sacubitril/valsartan (only GDMT-recommended ARNI for HFrEF/HFimpEF)
+• Beta-blocker: metoprolol succinate, carvedilol, bisoprolol (evidence-based HF beta-blockers only)
+• SGLT2 inhibitor: empagliflozin, dapagliflozin
+• MRA: spironolactone, eplerenone
+• Statin (hyperlipidemia): atorvastatin 40–80 mg (high-intensity); atorvastatin 10–20 mg, rosuvastatin 5–10 mg, simvastatin 20–40 mg (moderate-intensity)
+ 
+ 
+SECTION 1: SUBJECTIVE (25.0 points)
+1A. CHIEF COMPLAINT / REASON FOR VISIT (2.5 points) — 9 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1A.1
+	Patient name stated (Michael Thompson)
+	0.20
+	States Michael Thompson
+	—
+	Omits
+	1A.2
+	Patient age stated (58 years)
+	0.20
+	States 58 years
+	Age stated, imprecise
+	Omits
+	1A.3
+	Patient sex stated (male)
+	0.10
+	States male
+	—
+	Omits
+	1A.4
+	Encounter setting stated (ambulatory care cardiology clinic)
+	0.20
+	States ambulatory care cardiology clinic
+	States clinic, no specialty
+	Omits
+	1A.5
+	Visit type stated (routine follow-up)
+	0.20
+	States routine follow-up
+	States follow-up, no qualifier
+	Omits
+	1A.6
+	Primary diagnosis stated (HFrEF)
+	0.30
+	States heart failure with reduced ejection fraction / HFrEF
+	States heart failure, no type
+	Omits
+	1A.7
+	Time since GDMT initiation (approximately 6 months)
+	0.30
+	States approximately 6 months after GDMT initiation
+	States follow-up timing, imprecise
+	Omits
+	1A.8
+	GDMT optimization context stated
+	0.50
+	States guideline-directed medical therapy optimization
+	States medications, no GDMT framing
+	Omits
+	1A.9
+	Spironolactone identified as most recent addition since prior visit
+	0.50
+	States spironolactone initiated since prior visit
+	States new medication, no name
+	Omits
+	1A sum check: 0.20 + 0.20 + 0.10 + 0.20 + 0.20 + 0.30 + 0.30 + 0.50 + 0.50 = 2.50
+ 
+1B. HISTORY OF PRESENT ILLNESS (HPI) (5.0 points) — 20 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1B.1
+	Substantial improvement in symptoms noted since diagnosis
+	0.30
+	States substantial improvement compared with initial diagnosis
+	States improvement, no comparison point
+	Omits
+	1B.2
+	Improved exercise tolerance reported
+	0.30
+	States improved exercise tolerance
+	States better activity, no specificity
+	Omits
+	1B.3
+	Improved energy levels reported
+	0.20
+	States improved energy levels
+	—
+	Omits
+	1B.4
+	Activities previously causing dyspnea now easier
+	0.20
+	States activities previously associated with dyspnea now easier
+	States feels better, no context
+	Omits
+	1B.5
+	Walking frequency and duration stated (approximately 30–40 minutes most days)
+	0.40
+	States walks approximately 30–40 minutes most days of the week
+	States walks, no duration or frequency
+	Omits
+	1B.6
+	Denies chest pain
+	0.20
+	States denies chest pain
+	—
+	Omits
+	1B.7
+	Denies palpitations
+	0.20
+	States denies palpitations
+	—
+	Omits
+	1B.8
+	Denies syncope
+	0.20
+	States denies syncope
+	—
+	Omits
+	1B.9
+	Denies orthopnea
+	0.20
+	States denies orthopnea
+	—
+	Omits
+	1B.10
+	Denies paroxysmal nocturnal dyspnea (PND)
+	0.20
+	States denies PND / paroxysmal nocturnal dyspnea
+	—
+	Omits
+	1B.11
+	Denies lower extremity edema
+	0.20
+	States denies lower extremity edema
+	—
+	Omits
+	1B.12
+	Denies hospitalization since last visit
+	0.20
+	States denies hospitalization
+	—
+	Omits
+	1B.13
+	Denies emergency department visits
+	0.20
+	States denies ED visits
+	—
+	Omits
+	1B.14
+	Reports only occasional fatigue with strenuous exertion
+	0.30
+	States occasional fatigue with strenuous exertion only
+	States fatigue, no qualifier
+	Omits
+	1B.15
+	Excellent medication adherence reported; rarely misses doses
+	0.40
+	States excellent adherence / rarely misses doses
+	States adherent, no specificity
+	Omits
+	1B.16
+	Daily weight monitoring reported
+	0.20
+	States daily weight monitoring
+	—
+	Omits
+	1B.17
+	Stable weights without significant fluctuations reported
+	0.20
+	States stable weights, no significant fluctuations
+	States weighs self, no result
+	Omits
+	1B.18
+	Ongoing sodium reduction efforts reported
+	0.20
+	States sodium reduction efforts ongoing
+	—
+	Omits
+	1B.19
+	Patient expresses satisfaction with progress
+	0.20
+	States patient satisfied with progress
+	—
+	Omits
+	1B.20
+	Patient questions whether medication can be discontinued given improvement
+	0.50
+	States patient inquires about discontinuing medications given symptom/EF improvement
+	States question about medications, no context
+	Omits
+	1B sum check: 0.30 + 0.30 + 0.20 + 0.20 + 0.40 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.30 + 0.40 + 0.20 + 0.20 + 0.20 + 0.20 + 0.50 = 5.00
+ 
+1C. PAST MEDICAL, SURGICAL, AND FAMILY HISTORY (4.0 points) — 11 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1C.1
+	PMH: Heart Failure with Reduced Ejection Fraction
+	0.50
+	Lists HFrEF / heart failure with reduced ejection fraction
+	Lists heart failure, no type specifier
+	Omits
+	1C.2
+	PMH: Hypertension
+	0.20
+	Lists hypertension
+	—
+	Omits
+	1C.3
+	PMH: Hyperlipidemia
+	0.20
+	Lists hyperlipidemia
+	—
+	Omits
+	1C.4
+	PMH: Obesity
+	0.20
+	Lists obesity
+	—
+	Omits
+	1C.5
+	PSH: Appendectomy
+	0.30
+	Lists appendectomy
+	—
+	Omits
+	1C.6
+	Family history, father: hypertension
+	0.25
+	States father had hypertension
+	—
+	Omits
+	1C.7
+	Family history, father: myocardial infarction at age 62
+	0.60
+	States father had MI at age 62
+	States father MI, no age
+	Omits
+	1C.8
+	Family history, mother: type 2 diabetes mellitus
+	0.50
+	States mother had type 2 diabetes mellitus
+	States mother diabetic, no type
+	Omits
+	1C.9
+	PSH documented as single procedure (appendectomy only)
+	0.30
+	Documents surgical history as appendectomy only
+	—
+	Omits
+	1C.10
+	All four PMH conditions listed
+	0.40
+	Lists all four PMH conditions (HFrEF, HTN, hyperlipidemia, obesity)
+	Lists ≥3, misses one
+	Omits ≥2
+	1C.11
+	Family history limited to paternal and maternal elements per note
+	0.55
+	Documents family history as presented (no additional speculative entries)
+	—
+	Adds unsupported FH
+	1C sum check: 0.50 + 0.20 + 0.20 + 0.20 + 0.30 + 0.25 + 0.60 + 0.50 + 0.30 + 0.40 + 0.55 = 4.00
+ 
+1D. SOCIAL HISTORY (3.0 points) — 11 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1D.1
+	Marital status: married
+	0.20
+	States married
+	—
+	Omits
+	1D.2
+	Lives with spouse
+	0.20
+	States lives with spouse
+	—
+	Omits
+	1D.3
+	Occupation: works full-time as an accountant
+	0.20
+	States full-time accountant
+	States employed, no occupation
+	Omits
+	1D.4
+	Tobacco status: former smoker
+	0.20
+	States former smoker
+	States nonsmoker without former/current distinction
+	Omits
+	1D.5
+	Pack-year history: 20 pack-years
+	0.30
+	States 20 pack-year history
+	States smoking history, no quantity
+	Omits
+	1D.6
+	Smoking cessation: quit 5 years ago
+	0.30
+	States quit 5 years ago
+	States quit, no time frame
+	Omits
+	1D.7
+	Alcohol: 1–2 drinks on weekends
+	0.40
+	States 1–2 drinks on weekends
+	States social drinker, no quantity or frequency
+	Omits
+	1D.8
+	Denies illicit drug use
+	0.20
+	States denies illicit drug use
+	—
+	Omits
+	1D.9
+	Maintains regular physical activity
+	0.20
+	States maintains regular physical activity
+	—
+	Omits
+	1D.10
+	Physical activity detail present (walking, referenced in HPI context)
+	0.30
+	Documents walking routine / references HPI physical activity
+	—
+	Omits
+	1D.11
+	Social history comprehensive (all elements documented)
+	0.50
+	All social history elements addressed (marital, living, occupation, tobacco, alcohol, illicit, activity)
+	≥5 elements documented
+	≤4 elements documented
+	1D sum check: 0.20 + 0.20 + 0.20 + 0.20 + 0.30 + 0.30 + 0.40 + 0.20 + 0.20 + 0.30 + 0.50 = 3.00
+ 
+1E. CURRENT MEDICATIONS, ALLERGIES, AND IMMUNIZATIONS (6.5 points) — 21 inputs, sum = 6.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1E.1
+	Sacubitril/valsartan listed by name (both components)
+	0.40
+	Names sacubitril/valsartan
+	Names valsartan only or entresto without generic
+	Omits
+	1E.2
+	Sacubitril/valsartan dose: 97/103 mg
+	0.40
+	States 97/103 mg
+	States dose imprecisely (e.g., 100/103 or 97/100)
+	Incorrect
+	1E.3
+	Sacubitril/valsartan regimen: PO twice daily
+	0.25
+	States PO twice daily
+	States twice daily, no route
+	Omits
+	1E.4
+	Metoprolol succinate listed (with formulation/ER distinction)
+	0.30
+	Names metoprolol succinate / metoprolol XL
+	Names metoprolol without succinate/ER/XL
+	Omits
+	1E.5
+	Metoprolol succinate dose: 100 mg
+	0.30
+	States 100 mg
+	—
+	Incorrect
+	1E.6
+	Metoprolol succinate regimen: PO daily
+	0.20
+	States PO daily
+	States daily, no route
+	Omits
+	1E.7
+	Empagliflozin listed
+	0.35
+	Names empagliflozin
+	—
+	Omits
+	1E.8
+	Empagliflozin dose: 10 mg
+	0.30
+	States 10 mg
+	—
+	Incorrect
+	1E.9
+	Empagliflozin regimen: PO daily
+	0.20
+	States PO daily
+	States daily, no route
+	Omits
+	1E.10
+	Spironolactone listed
+	0.30
+	Names spironolactone
+	—
+	Omits
+	1E.11
+	Spironolactone dose: 25 mg
+	0.30
+	States 25 mg
+	—
+	Incorrect
+	1E.12
+	Spironolactone regimen: PO daily
+	0.20
+	States PO daily
+	States daily, no route
+	Omits
+	1E.13
+	Atorvastatin listed
+	0.30
+	Names atorvastatin
+	—
+	Omits
+	1E.14
+	Atorvastatin dose: 40 mg
+	0.30
+	States 40 mg
+	—
+	Incorrect
+	1E.15
+	Atorvastatin regimen: PO daily
+	0.20
+	States PO daily
+	States daily, no route
+	Omits
+	1E.16
+	No known drug allergies documented (NKDA)
+	0.60
+	States NKDA or no known drug allergies
+	—
+	Omits
+	1E.17
+	Influenza vaccine: up to date
+	0.30
+	States influenza vaccine up to date
+	—
+	Omits
+	1E.18
+	COVID vaccination: up to date
+	0.30
+	States COVID vaccination up to date
+	—
+	Omits
+	1E.19
+	Pneumococcal vaccination: received
+	0.25
+	States pneumococcal vaccination received
+	—
+	Omits
+	1E.20
+	Shingrix dose #1: received
+	0.35
+	States Shingrix dose 1 received
+	States Shingrix given, no dose number
+	Omits
+	1E.21
+	Tdap: due within approximately 1 year
+	0.40
+	States Tdap due within approximately 1 year
+	States Tdap needed, no timeframe
+	Omits
+	1E sum check: 0.40 + 0.40 + 0.25 + 0.30 + 0.30 + 0.20 + 0.35 + 0.30 + 0.20 + 0.30 + 0.30 + 0.20 + 0.30 + 0.30 + 0.20 + 0.60 + 0.30 + 0.30 + 0.25 + 0.35 + 0.40 = 6.50
+ 
+1F. REVIEW OF SYSTEMS / RELEVANT NEGATIVES (2.0 points) — 8 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1F.1
+	Denies chest pain
+	0.25
+	States denies chest pain
+	—
+	Omits
+	1F.2
+	Denies palpitations
+	0.25
+	States denies palpitations
+	—
+	Omits
+	1F.3
+	Denies syncope
+	0.25
+	States denies syncope
+	—
+	Omits
+	1F.4
+	Denies orthopnea
+	0.25
+	States denies orthopnea
+	—
+	Omits
+	1F.5
+	Denies paroxysmal nocturnal dyspnea
+	0.25
+	States denies PND
+	—
+	Omits
+	1F.6
+	Denies lower extremity edema
+	0.25
+	States denies LE edema
+	—
+	Omits
+	1F.7
+	Denies hospitalization
+	0.25
+	States denies hospitalization
+	—
+	Omits
+	1F.8
+	Denies emergency department visits
+	0.25
+	States denies ED visits
+	—
+	Omits
+	1F sum check: 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 = 2.00
+ 
+1G. PATIENT GOALS / CONCERNS (2.0 points) — 5 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1G.1
+	Patient expresses satisfaction with progress
+	0.40
+	States patient satisfied with progress
+	—
+	Omits
+	1G.2
+	Patient questions whether medications may eventually be discontinued
+	0.50
+	States patient asks about stopping medications given improvement
+	States medication question, no framing
+	Omits
+	1G.3
+	Question contextualized as relating to cardiac improvement / EF recovery
+	0.40
+	Links patient's question to EF improvement or symptom resolution
+	—
+	Omits
+	1G.4
+	Patient engaged in lifestyle modifications and self-care
+	0.30
+	States patient engaged in lifestyle modifications
+	—
+	Omits
+	1G.5
+	Ongoing physical activity maintained as patient goal
+	0.40
+	States patient maintains regular physical activity as ongoing goal
+	States active, no goal framing
+	Omits
+	1G sum check: 0.40 + 0.50 + 0.40 + 0.30 + 0.40 = 2.00
+ 
+Section 1 check: 2.5 + 5.0 + 4.0 + 3.0 + 6.5 + 2.0 + 2.0 = 25.0
+ 
+ 
+SECTION 2: OBJECTIVE (15.0 points)
+2A. VITAL SIGNS AND ANTHROPOMETRICS (5.0 points) — 11 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2A.1
+	Office blood pressure: 112/68 mmHg
+	0.60
+	States 112/68 mmHg
+	BP stated, value imprecise
+	Omits
+	2A.2
+	Heart rate: 62 bpm
+	0.40
+	States 62 bpm
+	—
+	Omits
+	2A.3
+	Respiratory rate: 16 breaths/min
+	0.30
+	States 16 breaths/min
+	—
+	Omits
+	2A.4
+	Temperature: 98.1°F
+	0.30
+	States 98.1°F
+	—
+	Omits
+	2A.5
+	SpO2: 98% on room air
+	0.40
+	States 98% on room air
+	States SpO2 value, omits 'room air' qualifier
+	Omits
+	2A.6
+	Weight: 97 kg
+	0.40
+	States 97 kg
+	—
+	Omits
+	2A.7
+	Height: 70 inches
+	0.30
+	States 70 inches
+	—
+	Omits
+	2A.8
+	BMI: 30.7 kg/m²
+	0.50
+	States 30.7 kg/m²
+	BMI stated, value imprecise
+	Omits
+	2A.9
+	Average home BP: 115/70 mmHg
+	0.50
+	States 115/70 mmHg average home BP
+	States home BP, no value
+	Omits
+	2A.10
+	Average home HR: 62 bpm
+	0.30
+	States 62 bpm average home HR
+	—
+	Omits
+	2A.11
+	Daily weights stable; no significant fluctuations reported
+	1.00
+	States daily weights stable without significant fluctuations
+	States stable weights, no monitoring context
+	Omits
+	2A sum check: 0.60 + 0.40 + 0.30 + 0.30 + 0.40 + 0.40 + 0.30 + 0.50 + 0.50 + 0.30 + 1.00 = 5.00
+ 
+2B. LABORATORY DATA (6.0 points) — 13 inputs, sum = 6.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2B.1
+	Sodium: 137 mEq/L
+	0.30
+	States 137 mEq/L
+	—
+	Omits
+	2B.2
+	Potassium: 4.8 mEq/L
+	0.50
+	States 4.8 mEq/L
+	—
+	Omits
+	2B.3
+	BUN: 20 mg/dL
+	0.30
+	States 20 mg/dL
+	—
+	Omits
+	2B.4
+	Serum creatinine: 1.2 mg/dL
+	0.50
+	States 1.2 mg/dL
+	—
+	Omits
+	2B.5
+	eGFR: 75 mL/min/1.73m²
+	0.60
+	States 75 mL/min/1.73m²
+	States eGFR value, imprecise
+	Omits
+	2B.6
+	AST: 23 U/L
+	0.30
+	States 23 U/L
+	—
+	Omits
+	2B.7
+	ALT: 24 U/L
+	0.30
+	States 24 U/L
+	—
+	Omits
+	2B.8
+	BNP current: 92 pg/mL
+	0.70
+	States current BNP 92 pg/mL
+	BNP stated, value imprecise
+	Omits
+	2B.9
+	BNP previous: 165 pg/mL
+	0.50
+	States previous BNP 165 pg/mL
+	States prior BNP, no value
+	Omits
+	2B.10
+	BNP baseline: 320 pg/mL
+	0.50
+	States baseline BNP 320 pg/mL
+	States baseline BNP, no value
+	Omits
+	2B.11
+	Echocardiogram current LVEF: 45%
+	0.70
+	States current LVEF 45%
+	States LVEF improved, no value
+	Omits
+	2B.12
+	Echocardiogram previous LVEF: 35%
+	0.40
+	States previous LVEF 35%
+	States prior LVEF, no value
+	Omits
+	2B.13
+	Echocardiogram interpretation: improved left ventricular systolic function
+	0.40
+	States improved LV systolic function
+	States EF improved, no formal interpretation
+	Omits
+	2B sum check: 0.30 + 0.50 + 0.30 + 0.50 + 0.60 + 0.30 + 0.30 + 0.70 + 0.50 + 0.50 + 0.70 + 0.40 + 0.40 = 6.00
+ 
+2C. CALCULATED VALUES, TRENDS, AND MISSING-BUT-EXPECTED DATA (4.0 points) — 7 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2C.1
+	BMI consistent with documented height and weight (30.7 kg/m²)
+	0.50
+	States BMI 30.7 consistent with 97 kg / 70 inches
+	BMI stated, not reconciled with ht/wt
+	Incorrect
+	2C.2
+	BNP downward trend identified (320 → 165 → 92 pg/mL)
+	0.70
+	States BNP trending downward with all three values
+	States BNP improved, not all three values
+	Omits trend
+	2C.3
+	LVEF improvement trend identified (35% → 45%)
+	0.60
+	States LVEF improved from 35% to 45%
+	States EF improved, no specific values
+	Omits
+	2C.4
+	Potassium within acceptable range in context of MRA and ARNi therapy
+	0.60
+	States K 4.8 mEq/L acceptable in context of spironolactone / sacubitril-valsartan
+	States K normal, no medication context
+	Omits
+	2C.5
+	eGFR adequate (≥60 mL/min) supporting continuation of current regimen
+	0.60
+	States eGFR 75 adequate to support current four-drug GDMT
+	States eGFR, no clinical interpretation
+	Omits
+	2C.6
+	Lipid panel not obtained at this visit (missing-but-expected for statin monitoring)
+	0.50
+	Flags absence of lipid panel as expected monitoring data given statin therapy
+	—
+	Omits
+	2C.7
+	Home monitoring values corroborate office vital signs
+	0.50
+	States home BP/HR corroborate office measurements
+	—
+	Omits
+	2C sum check: 0.50 + 0.70 + 0.60 + 0.60 + 0.60 + 0.50 + 0.50 = 4.00
+ 
+Section 2 check: 5.0 + 6.0 + 4.0 = 15.0
+ 
+ 
+SECTION 3: ASSESSMENT (30.0 points)
+3A. PROBLEM 1 — HEART FAILURE WITH IMPROVED EJECTION FRACTION (HFimpEF) — SIGNIFICANT IMPROVEMENT FOLLOWING GDMT (14.0 points) — 21 inputs, sum = 14.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3A.1
+	Problem labeled: Heart Failure with Improved Ejection Fraction (HFimpEF)
+	0.90
+	States HFimpEF / heart failure with improved ejection fraction
+	States improved EF without HFimpEF label
+	Omits
+	3A.2
+	Clinical status: significant improvement following GDMT
+	0.60
+	States significant improvement following GDMT
+	States improvement, no GDMT attribution
+	Omits
+	3A.3
+	Patient demographics restated (58-year-old male)
+	0.20
+	States 58-year-old male
+	—
+	Omits
+	3A.4
+	Previous LVEF documented (35%)
+	0.60
+	States previously documented LVEF 35%
+	States prior EF, no value
+	Omits
+	3A.5
+	Current LVEF documented (45%)
+	0.60
+	States current LVEF 45%
+	States current EF, no value
+	Omits
+	3A.6
+	BNP improvement documented (baseline 320 → current 92 pg/mL)
+	0.70
+	States BNP improved from 320 pg/mL to 92 pg/mL
+	States BNP improved, missing one value
+	Omits
+	3A.7
+	Symptom improvement: markedly improved exercise tolerance
+	0.60
+	States markedly improved exercise tolerance
+	States improved, no qualifier
+	Omits
+	3A.8
+	Symptom improvement: resolution of edema
+	0.60
+	States resolution of edema
+	—
+	Omits
+	3A.9
+	Symptom improvement: stable weight
+	0.40
+	States stable weight
+	—
+	Omits
+	3A.10
+	No HF hospitalizations or ED visits since GDMT initiation
+	0.60
+	States absence of HF hospitalization or ED visits
+	States no admissions, no ED context
+	Omits
+	3A.11
+	All four GDMT classes confirmed: ARNI, beta-blocker, SGLT2i, MRA
+	1.20
+	Names all four classes: sacubitril/valsartan, metoprolol succinate, empagliflozin, spironolactone
+	Names three of four classes
+	Names fewer than three classes
+	3A.12
+	Excellent adherence and therapy tolerated without clinically significant adverse effects
+	0.70
+	States excellent adherence and therapy tolerated without clinically significant adverse effects
+	States adherent, no tolerability
+	Omits
+	3A.13
+	BP, renal function, and potassium noted as acceptable and not limiting therapy
+	0.80
+	States all three parameters (BP, renal function, K) acceptable and not limiting therapy
+	States one or two of three acceptable parameters
+	Omits all
+	3A.14
+	Clinical scenario identified as HFimpEF (not resolution of disease)
+	0.50
+	States scenario is HFimpEF, not resolution of underlying disease
+	States improved EF, no HFimpEF framing
+	Omits
+	3A.15
+	Guideline support cited: current evidence supports GDMT continuation despite EF improvement
+	1.20
+	States current evidence and guideline recommendations support continuation of GDMT despite EF improvement
+	States continue GDMT, no guideline support cited
+	Omits
+	3A.16
+	Improvement reflects treatment success, not disease resolution
+	1.00
+	States improvement reflects successful treatment response, not resolution of underlying disease
+	States continue therapy, no rationale
+	Omits
+	3A.17
+	Risks of GDMT discontinuation articulated (recurrent dysfunction, worsening symptoms, hospitalization)
+	1.00
+	States discontinuation risks include recurrent ventricular dysfunction, worsening symptoms, HF hospitalization
+	States risk of stopping, missing specific outcomes
+	Omits
+	3A.18
+	Primary focus of visit stated (maintenance, adherence reinforcement, monitoring)
+	0.90
+	States primary visit focus is long-term disease control maintenance, adherence reinforcement, monitoring
+	States monitor, no explicit focus statement
+	Omits
+	3A.19
+	Spironolactone identified as most recently added GDMT agent
+	0.40
+	States spironolactone recently initiated since prior visit
+	—
+	Omits
+	3A.20
+	Regimen now considered fully optimized (all four classes in place)
+	0.30
+	States regimen further optimized with all four foundational classes now in place
+	—
+	Omits
+	3A.21
+	Four foundational GDMT classes explicitly enumerated in assessment
+	0.20
+	States regimen includes all four foundational HFrEF medication classes
+	—
+	Omits
+	3A sum check: 0.90 + 0.60 + 0.20 + 0.60 + 0.60 + 0.70 + 0.60 + 0.60 + 0.40 + 0.60 + 1.20 + 0.70 + 0.80 + 0.50 + 1.20 + 1.00 + 1.00 + 0.90 + 0.40 + 0.30 + 0.20 = 14.00
+ 
+3B. PROBLEM 2 — HYPERTENSION — CONTROLLED (5.0 points) — 9 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3B.1
+	Problem labeled: Hypertension
+	0.40
+	Names hypertension as problem
+	—
+	Omits
+	3B.2
+	Control status: Controlled
+	0.70
+	States controlled
+	States managed without controlled designation
+	Incorrect
+	3B.3
+	Supports control with office BP value (112/68 mmHg)
+	0.70
+	References office BP 112/68 mmHg as evidence of control
+	States BP controlled, no value
+	Omits
+	3B.4
+	Supports control with home average BP (115/70 mmHg)
+	0.40
+	References home average BP 115/70 mmHg
+	States home BP consistent, no value
+	Omits
+	3B.5
+	BP in range supporting continuation of current therapy
+	0.40
+	States BP in range supporting continuation of current therapy
+	—
+	Omits
+	3B.6
+	No medication changes needed at this time
+	0.40
+	States no medication changes needed for hypertension
+	—
+	Omits
+	3B.7
+	BP within acceptable range for current ARNi and beta-blocker dosing
+	0.90
+	States BP within acceptable range for current sacubitril/valsartan and metoprolol succinate dosing
+	States BP ok for meds, no specific agents named
+	Omits
+	3B.8
+	Continue monitoring BP at routine follow-up stated
+	0.70
+	States BP monitoring during routine follow-up visits
+	—
+	Omits
+	3B.9
+	Hypertension managed through current HF regimen (no separate antihypertensive needed)
+	0.40
+	States hypertension controlled through current GDMT without additional antihypertensive
+	States controlled, no attribution to GDMT
+	Omits
+	3B sum check: 0.40 + 0.70 + 0.70 + 0.40 + 0.40 + 0.40 + 0.90 + 0.70 + 0.40 = 5.00
+ 
+3C. PROBLEM 3 — HYPERLIPIDEMIA — STABLE (5.5 points) — 9 inputs, sum = 5.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3C.1
+	Problem labeled: Hyperlipidemia
+	0.70
+	Names hyperlipidemia as problem
+	—
+	Omits
+	3C.2
+	Status labeled: Stable
+	0.40
+	States stable
+	States controlled or managed, no 'stable'
+	Incorrect
+	3C.3
+	Patient on appropriate statin therapy
+	0.70
+	States patient on appropriate statin therapy
+	States on statin, no appropriateness assessment
+	Omits
+	3C.4
+	Statin identified: atorvastatin 40 mg
+	0.90
+	Names atorvastatin 40 mg (acceptable: high-intensity atorvastatin 40–80 mg; moderate-intensity alternatives atorvastatin 10–20 mg, rosuvastatin 5–10 mg per guideline)
+	Names atorvastatin, no dose
+	Omits
+	3C.5
+	Statin tolerated without reported adverse effects
+	0.40
+	States tolerates statin without adverse effects
+	States tolerating, no adverse effect confirmation
+	Omits
+	3C.6
+	Continued therapy stated as appropriate
+	0.40
+	States continued therapy appropriate
+	—
+	Omits
+	3C.7
+	Lipid panel not available at this visit (not obtained)
+	0.40
+	States lipid panel not available/not obtained at this visit
+	—
+	Omits
+	3C.8
+	Statin used for cardiovascular risk reduction (contextual rationale)
+	0.90
+	States statin continues for cardiovascular risk reduction in context of HFrEF and cardiovascular comorbidities
+	States on statin, no rationale
+	Omits
+	3C.9
+	No dose change identified or recommended
+	0.70
+	States no statin dose change at this visit
+	—
+	Omits
+	3C sum check: 0.70 + 0.40 + 0.70 + 0.90 + 0.40 + 0.40 + 0.40 + 0.90 + 0.70 = 5.50
+ 
+3D. PROBLEM 4 — PREVENTIVE CARE (5.5 points) — 9 inputs, sum = 5.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3D.1
+	Preventive care identified as a distinct assessment problem
+	0.40
+	Names preventive care as a problem or distinct assessment topic
+	—
+	Omits
+	3D.2
+	Prior preventive care gaps successfully addressed since previous visits
+	0.60
+	States several preventive care gaps addressed since prior visits
+	States vaccines updated, no comparison to prior visits
+	Omits
+	3D.3
+	Pneumococcal vaccination documented as received
+	0.60
+	States pneumococcal vaccination received
+	—
+	Omits
+	3D.4
+	Shingrix series initiated: dose #1 received
+	0.70
+	States Shingrix series initiated / dose 1 received
+	States Shingrix given, no dose number
+	Omits
+	3D.5
+	Remaining preventive need: Shingrix dose #2 / series completion
+	0.70
+	States Shingrix series completion needed
+	States Shingrix needed, no series context
+	Omits
+	3D.6
+	Remaining preventive need: Tdap update when due (~1 year)
+	0.70
+	States Tdap update due within approximately 1 year
+	States Tdap needed, no timeframe
+	Omits
+	3D.7
+	Future preventive care plan outlined (Shingrix completion + Tdap)
+	0.80
+	States future preventive care includes Shingrix series completion and Tdap update
+	Lists one only
+	Omits both
+	3D.8
+	Influenza and COVID vaccines current; no further action needed
+	0.50
+	States influenza and COVID vaccines current, no action required
+	States vaccines up to date, no distinction
+	Omits
+	3D.9
+	Overall preventive care progress recognized
+	0.50
+	States patient has successfully addressed multiple preventive care gaps since prior visits
+	States updated, no progress recognition
+	Omits
+	3D sum check: 0.40 + 0.60 + 0.60 + 0.70 + 0.70 + 0.70 + 0.80 + 0.50 + 0.50 = 5.50
+ 
+Section 3 check: 14.0 + 5.0 + 5.5 + 5.5 = 30.0
+ 
+ 
+SECTION 4: PLAN (25.0 points)
+4A. HEART FAILURE PLAN (10.0 points) — 18 inputs, sum = 10.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4A.1
+	Continue sacubitril/valsartan 97/103 mg PO twice daily
+	1.00
+	States continue sacubitril/valsartan 97/103 mg PO twice daily (acceptable ARNI: sacubitril/valsartan)
+	Names drug, omits dose or frequency
+	Omits
+	4A.2
+	Continue metoprolol succinate 100 mg PO daily
+	0.50
+	States continue metoprolol succinate 100 mg PO daily (acceptable beta-blockers: metoprolol succinate, carvedilol, bisoprolol)
+	Names drug, omits dose
+	Omits
+	4A.3
+	Continue empagliflozin 10 mg PO daily
+	0.50
+	States continue empagliflozin 10 mg PO daily (acceptable SGLT2i: empagliflozin, dapagliflozin)
+	Names drug, omits dose
+	Omits
+	4A.4
+	Continue spironolactone 25 mg PO daily
+	0.50
+	States continue spironolactone 25 mg PO daily (acceptable MRA: spironolactone, eplerenone)
+	Names drug, omits dose
+	Omits
+	4A.5
+	All four GDMT agents continued; no new additions or changes at this visit
+	0.40
+	States continuation of all four GDMT agents without changes
+	Names three of four agents
+	Names fewer than three
+	4A.6
+	Continue GDMT explicitly despite improvement in ejection fraction — stated
+	1.20
+	States continue current GDMT despite EF improvement / despite HFimpEF
+	States continue medications, no EF or HFimpEF context
+	Omits
+	4A.7
+	Patient education: explain HFimpEF concept
+	0.70
+	States educate patient regarding HFimpEF
+	States educate on heart failure, no HFimpEF specificity
+	Omits
+	4A.8
+	Patient education: reinforce that improvement reflects treatment success, not cure
+	0.90
+	States reinforce that improvement reflects treatment success, not cure
+	States educate on medication importance, no cure framing
+	Omits
+	4A.9
+	Guideline / evidence support for GDMT continuation in HFimpEF cited in plan
+	0.90
+	States evidence or guidelines support GDMT continuation in HFimpEF
+	States continue per guidelines, no HFimpEF specificity
+	Omits
+	4A.10
+	Continue lifestyle modification efforts
+	0.30
+	States continue lifestyle modification
+	—
+	Omits
+	4A.11
+	Continue daily weight monitoring
+	0.30
+	States continue daily weight monitoring
+	—
+	Omits
+	4A.12
+	Continue sodium restriction
+	0.30
+	States continue sodium restriction
+	—
+	Omits
+	4A.13
+	Guideline-supported GDMT alternatives listed if applicable (ARNI/BB/SGLT2i/MRA options per guidelines)
+	0.50
+	If alternatives listed, names guideline-supported agents in all four classes
+	Lists alternatives, omits ≥1 class
+	Lists non-guideline agents
+	4A.14
+	No dose escalation at this visit (maintain current doses)
+	0.30
+	States no dose changes at this visit / maintain current doses
+	—
+	Omits
+	4A.15
+	Plan addresses patient's question regarding medication discontinuation
+	0.70
+	Plan or education element directly addresses patient's discontinuation question
+	—
+	Omits
+	4A.16
+	Educate on recognition of worsening heart failure symptoms
+	0.40
+	States educate on recognition of worsening HF symptoms
+	—
+	Omits
+	4A.17
+	Reinforce need for continued follow-up despite feeling well
+	0.40
+	States reinforce need for ongoing follow-up despite symptom improvement
+	—
+	Omits
+	4A.18
+	Plan cohesive and consistent with Assessment (HFimpEF)
+	0.20
+	Plan aligns with Assessment HFimpEF framing and all four drugs
+	Minor inconsistency
+	Major inconsistency or mismatch
+	4A sum check: 1.00 + 0.50 + 0.50 + 0.50 + 0.40 + 1.20 + 0.70 + 0.90 + 0.90 + 0.30 + 0.30 + 0.30 + 0.50 + 0.30 + 0.70 + 0.40 + 0.40 + 0.20 = 10.00
+ 
+4B. HYPERTENSION PLAN (2.5 points) — 3 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4B.1
+	Continue current management stated (no new drug/dose)
+	0.80
+	States continue current management
+	States manage BP, no continuation framing
+	Omits
+	4B.2
+	Monitor blood pressure at routine follow-up
+	0.80
+	States monitor BP during routine follow-up
+	States monitor, no frequency context
+	Omits
+	4B.3
+	No new antihypertensive initiated and no dose change
+	0.90
+	Plan consistent with continuation only; no new agent or dose adjustment
+	States manage HTN, implies change
+	Incorrectly adds new antihypertensive
+	4B sum check: 0.80 + 0.80 + 0.90 = 2.50
+ 
+4C. HYPERLIPIDEMIA PLAN (2.5 points) — 3 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4C.1
+	Continue atorvastatin 40 mg PO daily
+	0.90
+	States continue atorvastatin 40 mg PO daily
+	Names drug, omits dose
+	Omits
+	4C.2
+	Continue cardiovascular risk reduction efforts
+	0.70
+	States continue cardiovascular risk reduction
+	—
+	Omits
+	4C.3
+	No dose change or statin switch
+	0.90
+	States continue atorvastatin without dose change; no statin switch indicated
+	States continue statin, implies change
+	Adds alternative statin or changes dose incorrectly
+	4C sum check: 0.90 + 0.70 + 0.90 = 2.50
+ 
+4D. PATIENT EDUCATION PLAN (4.0 points) — 9 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4D.1
+	Discuss HFimpEF concept with patient
+	0.50
+	States discuss HFimpEF concept
+	—
+	Omits
+	4D.2
+	Discuss importance of lifelong adherence
+	0.50
+	States discuss importance of lifelong adherence
+	—
+	Omits
+	4D.3
+	Discuss daily weight monitoring
+	0.30
+	States discuss daily weight monitoring
+	—
+	Omits
+	4D.4
+	Discuss sodium restriction
+	0.30
+	States discuss sodium restriction
+	—
+	Omits
+	4D.5
+	Discuss recognition of worsening heart failure symptoms
+	0.40
+	States discuss recognition of worsening HF symptoms
+	—
+	Omits
+	4D.6
+	Discuss need for continued follow-up despite feeling well
+	0.40
+	States discuss need for continued follow-up despite symptom improvement
+	—
+	Omits
+	4D.7
+	Address patient questions regarding long-term prognosis and medication duration
+	0.60
+	States address patient questions about long-term prognosis and medication duration
+	States address questions, no specificity
+	Omits
+	4D.8
+	Education addresses specific patient concern (medication discontinuation)
+	0.50
+	Education explicitly addresses patient's question about stopping medications
+	—
+	Omits
+	4D.9
+	Reinforce improvement reflects treatment success, not cure (as education point)
+	0.50
+	States reinforce this concept during education
+	—
+	Omits
+	4D sum check: 0.50 + 0.50 + 0.30 + 0.30 + 0.40 + 0.40 + 0.60 + 0.50 + 0.50 = 4.00
+ 
+4E. MONITORING PLAN (3.5 points) — 10 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4E.1
+	Monitor blood pressure
+	0.30
+	States monitor blood pressure
+	—
+	Omits
+	4E.2
+	Monitor heart rate
+	0.30
+	States monitor heart rate
+	—
+	Omits
+	4E.3
+	Monitor weight
+	0.30
+	States monitor weight
+	—
+	Omits
+	4E.4
+	Monitor heart failure symptoms
+	0.30
+	States monitor heart failure symptoms
+	—
+	Omits
+	4E.5
+	Monitor renal function
+	0.40
+	States monitor renal function
+	—
+	Omits
+	4E.6
+	Monitor potassium
+	0.40
+	States monitor potassium
+	—
+	Omits
+	4E.7
+	Monitor medication adherence
+	0.30
+	States monitor medication adherence
+	—
+	Omits
+	4E.8
+	Repeat laboratory monitoring as clinically indicated
+	0.40
+	States repeat laboratory monitoring as clinically indicated
+	—
+	Omits
+	4E.9
+	Consider repeat echocardiogram per cardiology follow-up plan
+	0.40
+	States consider repeat echocardiogram according to cardiology follow-up
+	States repeat echo, no cardiology framing
+	Omits
+	4E.10
+	Monitoring plan addresses all key GDMT parameters (BP, HR, K, renal function, weight, symptoms, adherence)
+	0.40
+	Monitoring plan addresses all key GDMT surveillance parameters
+	Addresses ≥4 parameters
+	Addresses ≤3 parameters
+	4E sum check: 0.30 + 0.30 + 0.30 + 0.30 + 0.40 + 0.40 + 0.30 + 0.40 + 0.40 + 0.40 = 3.50
+ 
+4F. PREVENTIVE CARE PLAN (1.5 points) — 3 inputs, sum = 1.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4F.1
+	Complete Shingrix series (dose #2)
+	0.50
+	States complete Shingrix series / administer dose 2
+	States Shingrix, no series completion framing
+	Omits
+	4F.2
+	Update Tdap when due
+	0.50
+	States update Tdap when due
+	States Tdap needed, no timing
+	Omits
+	4F.3
+	Continue routine preventive health maintenance
+	0.50
+	States continue routine preventive health maintenance
+	—
+	Omits
+	4F sum check: 0.50 + 0.50 + 0.50 = 1.50
+ 
+4G. FOLLOW-UP PLAN (1.0 points) — 3 inputs, sum = 1.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4G.1
+	Follow up in approximately 3–6 months
+	0.40
+	States follow up in approximately 3–6 months
+	States follow up, no timeframe
+	Omits
+	4G.2
+	Continue longitudinal monitoring of symptoms, labs, adherence, and quality of life
+	0.30
+	States longitudinal monitoring of symptoms, lab values, adherence, and quality of life
+	States monitor, omits ≥1 of four elements
+	Omits all
+	4G.3
+	Maintain maximally tolerated GDMT long term
+	0.30
+	States maintain maximally tolerated GDMT long term
+	States maintain therapy, no 'maximally tolerated' qualifier
+	Omits
+	4G sum check: 0.40 + 0.30 + 0.30 = 1.00
+ 
+Section 4 check: 10.0 + 2.5 + 2.5 + 4.0 + 3.5 + 1.5 + 1.0 = 25.0
+ 
+ 
+SECTION 5: PRESENTATION QUALITY (5.0 points)
+5A. ORGANIZATION AND SOAP STRUCTURE (2.0 points) — 4 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5A.1
+	All four SOAP sections present and clearly labeled
+	0.50
+	All four sections (S/O/A/P) present and labeled
+	Three of four present
+	Two or fewer present
+	5A.2
+	Assessment problems in logical priority order (HF first)
+	0.50
+	HFimpEF presented as first and primary problem
+	HF present but not listed first
+	HF omitted or order illogical
+	5A.3
+	Plan mirrors assessment problem order
+	0.50
+	Plan sections follow same order as assessment problems
+	Minor mismatch (one problem displaced)
+	Major mismatch
+	5A.4
+	Information categorized within correct SOAP sections
+	0.50
+	All elements placed in appropriate SOAP sections
+	Minor misplacement of ≤2 elements
+	Major misplacement or structural errors
+	5A sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+ 
+5B. FORMATTING AND DOCUMENTATION (1.5 points) — 3 inputs, sum = 1.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5B.1
+	Vital signs, labs, and medications in organized, readable format
+	0.50
+	Data presented in structured, readable format
+	Minor formatting issues
+	Unreadable or disorganized format
+	5B.2
+	Medication entries include drug name, dose, route, and frequency
+	0.50
+	All five medications include name/dose/route/frequency
+	≥3 of 4 elements for most medications
+	Systematic omission of ≥2 elements
+	5B.3
+	Subsection headers used to organize the plan
+	0.50
+	Plan uses clear headers for each problem/topic
+	Some headers present
+	No headers used
+	5B sum check: 0.50 + 0.50 + 0.50 = 1.50
+ 
+5C. PROFESSIONAL TONE AND CLINICAL SPECIFICITY (1.5 points) — 3 inputs, sum = 1.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5C.1
+	Clinical language appropriate to pharmacist level
+	0.50
+	Consistently professional pharmacist-level clinical language throughout
+	Occasional informal or lay language
+	Predominantly lay or unprofessional language
+	5C.2
+	Assessment contains clinical reasoning, not merely problem listing
+	0.50
+	Assessment demonstrates clinical reasoning for each problem (not just problem names)
+	Reasoning for some problems only
+	Problems listed without reasoning
+	5C.3
+	Patient question/concern acknowledged and professionally addressed
+	0.50
+	Patient concern about medication discontinuation acknowledged and addressed clinically
+	Concern acknowledged without clinical response
+	Concern ignored entirely
+	5C sum check: 0.50 + 0.50 + 0.50 = 1.50
+ 
+Section 5 check: 2.0 + 1.5 + 1.5 = 5.0
+ 
+ 
+GRAND TOTAL VERIFICATION
+Section
+	Points Possible
+	Subsections
+	Discrete Inputs
+	Section 1: Subjective
+	25.0
+	7 (1A–1G)
+	85
+	Section 2: Objective
+	15.0
+	3 (2A–2C)
+	31
+	Section 3: Assessment
+	30.0
+	4 (3A–3D)
+	48
+	Section 4: Plan
+	25.0
+	7 (4A–4G)
+	49
+	Section 5: Presentation Quality
+	5.0
+	3 (5A–5C)
+	10
+	GRAND TOTAL
+	100.0
+	24
+	223
+	 
+ 
+GRADING SCALE
+Grade
+	Score Range
+	Descriptor
+	A
+	90.0 – 100.0
+	Meets or exceeds expectations
+	B
+	80.0 – 89.9
+	Approaching expectations
+	C
+	70.0 – 79.9
+	Partially meets expectations
+	D
+	60.0 – 69.9
+	Below expectations
+	F
+	< 60.0
+	Does not meet expectations
+	 
+ 
+MODEL ANSWER SCORE: 100.0 / 100.0
+A student who reproduces the model SOAP note exactly will earn 100.0 / 100.0 against this rubric. Every statement in the model note maps to at least one scorable criterion listed above.
+

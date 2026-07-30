@@ -1,0 +1,185 @@
+﻿Week 5 Journal Club Assignment
+Depression + Anxiety + Tobacco Cessation
+Escalating Therapy After Antidepressant Failure:
+The ESCAPE-TRD Trial
+Article
+Daly EJ, Singh JB, Fedgchin M, et al.
+Esketamine Nasal Spray versus Quetiapine Extended Release for Treatment-Resistant Depression.
+N Engl J Med. 2023;388:227-239.
+Assignment Overview
+Students will critically evaluate the ESCAPE-TRD Trial and discuss how treatment-resistant depression should be managed in ambulatory care practice.
+Students should focus on how pharmacists evaluate inadequate antidepressant response and determine when escalation of therapy is appropriate.
+Key concepts include:
+• Major depressive disorder
+• Generalized anxiety disorder
+• Treatment-resistant depression
+• Antidepressant optimization
+• Augmentation strategies
+• Shared decision-making
+Students should consider how pharmacists distinguish medication failure from poor adherence and how advanced therapies may fit into management of patients with persistent depressive symptoms.
+Journal Club Key
+ESCAPE-TRD Trial: Esketamine Nasal Spray versus Quetiapine Extended Release for Treatment-Resistant Depression
+Daly EJ, Singh JB, Fedgchin M, et al. Esketamine Nasal Spray versus Quetiapine Extended Release for Treatment-Resistant Depression. N Engl J Med. 2023;388:227-239.
+Background
+• Major depressive disorder (MDD) affects millions of adults and remains one of the leading causes of disability worldwide.
+• Although many patients respond to first-line antidepressant therapy, a substantial proportion fail to achieve remission despite adequate treatment.
+• Treatment-resistant depression (TRD) is generally defined as failure to achieve adequate response following at least two antidepressant treatment trials of adequate dose and duration.
+• Patients with TRD experience higher rates of hospitalization, functional impairment, unemployment, suicidality, and reduced quality of life.
+• Common strategies following antidepressant failure include switching antidepressants, combination therapy, or augmentation with other pharmacologic agents.
+• Quetiapine extended release is a commonly utilized augmentation option for patients with persistent depressive symptoms.
+• Esketamine is a rapid-acting N-methyl-D-aspartate (NMDA) receptor antagonist approved for treatment-resistant depression when used in conjunction with an oral antidepressant.
+• The ESCAPE-TRD Trial was designed to compare esketamine-based treatment with quetiapine extended-release augmentation in patients with treatment-resistant depression.
+Study Objective
+To compare remission rates and long-term treatment outcomes between esketamine nasal spray and quetiapine extended-release augmentation in adults with treatment-resistant depression.
+Methods
+Study Design
+• International
+• Multicenter
+• Randomized
+• Open-label
+• Active-controlled trial
+Funding Source
+• Janssen Research & Development
+Patient Population
+• Adults with treatment-resistant major depressive disorder
+• Inadequate response to multiple antidepressant treatment trials
+Major Inclusion Criteria
+• Age 18 to 74 years
+• Major depressive disorder
+• Failure of at least two antidepressant therapies
+• Current depressive episode requiring treatment escalation
+Major Exclusion Criteria
+• Bipolar disorder
+• Psychotic disorders
+• Active substance use disorders
+• Significant medical instability
+• Contraindications to study medications
+Drug Treatment
+Treatment Group
+• Esketamine nasal spray
+• Administered under supervision
+• Continued oral antidepressant therapy
+Comparator Group
+• Quetiapine extended release augmentation
+• Continued oral antidepressant therapy
+Primary Endpoint
+Remission at Week 8
+Remission defined by standardized depression rating scale criteria.
+Secondary Endpoints
+• Sustained remission
+• Response rates
+• Relapse prevention
+• Functional outcomes
+• Quality-of-life measures
+Safety Outcomes
+• Serious adverse events
+• Treatment discontinuation
+• Sedation
+• Dissociation
+• Blood pressure elevations
+• Other adverse effects
+Statistics
+• Intention-to-treat analysis
+• Randomized comparison
+• Prespecified efficacy endpoints
+• Prespecified safety monitoring
+Data Collection / Frequency / Assessment Tools
+• Scheduled clinic visits
+• Depression symptom assessments
+• Standardized rating scales
+• Adverse event monitoring
+• Functional status assessments
+Results
+Follow-Up
+• Patients were followed through acute and maintenance treatment phases.
+Baseline Subject Characteristics
+• Mean age approximately 45 years
+• Long-standing depressive illness
+• Multiple prior antidepressant failures
+• Baseline characteristics balanced between groups
+Primary Endpoint
+Remission occurred more frequently with esketamine than with quetiapine extended release.
+Patients receiving esketamine achieved significantly higher rates of remission at Week 8 compared with patients receiving quetiapine augmentation.
+Secondary Outcomes
+Response Rates
+• Greater response rates observed with esketamine.
+Sustained Remission
+• More patients maintained remission throughout follow-up with esketamine.
+Relapse Prevention
+• Esketamine demonstrated favorable long-term outcomes compared with quetiapine augmentation.
+Functional Outcomes
+• Improvements in functioning and quality of life were observed in both groups but favored esketamine.
+Safety Outcomes
+Esketamine
+Common adverse effects included:
+• Dissociation
+• Dizziness
+• Nausea
+• Transient blood pressure increases
+Quetiapine
+Common adverse effects included:
+• Sedation
+• Somnolence
+• Weight gain
+• Metabolic concerns
+Treatment Discontinuation
+• Similar overall completion rates between groups.
+Author's Conclusion
+Among adults with treatment-resistant depression, esketamine nasal spray combined with an oral antidepressant resulted in higher remission rates than quetiapine extended-release augmentation.
+Strengths
+• Randomized controlled design
+• Active comparator
+• Clinically meaningful outcome measures
+• Included patients with true treatment-resistant depression
+• Evaluated both acute and maintenance outcomes
+• Strong relevance to antidepressant escalation strategies
+• High applicability to behavioral health practice
+Limitations
+• Open-label design
+• Specialty psychiatric treatment setting
+• Limited generalizability to all depression populations
+• Esketamine requires supervised administration
+• Cost and access barriers may limit implementation
+• Industry funded
+Presenter's Conclusion / Clinical Application
+ESCAPE-TRD provides important evidence regarding management of patients with treatment-resistant depression.
+The study demonstrated that esketamine-based therapy produced higher remission rates than quetiapine extended-release augmentation among adults with persistent depressive symptoms despite prior antidepressant therapy.
+For pharmacists, this trial reinforces the importance of evaluating:
+• Adequate antidepressant duration
+• Adequate antidepressant dosing
+• Medication adherence
+• Comorbid anxiety
+• Patient preferences
+• Access barriers
+• Adverse effect burden
+before determining that treatment failure has occurred.
+The trial also highlights the importance of recognizing when escalation beyond traditional antidepressant therapy may be appropriate.
+Although esketamine is often managed in specialty settings, pharmacists play a critical role in identifying patients who may benefit from referral for advanced treatment options.
+Patients who may potentially benefit from advanced treatment strategies include those with:
+• Persistent depressive symptoms
+• Multiple antidepressant failures
+• Significant functional impairment
+• Comorbid anxiety disorders
+• Recurrent depressive episodes
+• High risk for relapse
+References
+Daly EJ, Singh JB, Fedgchin M, et al. Esketamine Nasal Spray versus Quetiapine Extended Release for Treatment-Resistant Depression. N Engl J Med. 2023;388:227-239.
+Qaseem A, Owens DK, Etxeandia-Ikobaltzeta I, et al. Nonpharmacologic and Pharmacologic Treatments of Adults in the Acute Phase of Major Depressive Disorder: A Living Clinical Guideline From the American College of Physicians. Ann Intern Med. 2023;176(2):239-252.
+American Psychiatric Association. Practice Guideline for the Treatment of Patients With Major Depressive Disorder.
+Department of Veterans Affairs and Department of Defense. VA/DoD Clinical Practice Guideline for the Management of Major Depressive Disorder.
+Five Clinical Application Questions
+A patient has been taking sertraline 200 mg daily for 12 weeks and reports perfect adherence, yet continues to have significant depressive symptoms. How would you determine whether this patient meets criteria for treatment-resistant depression?
+Answer:
+The pharmacist should first confirm adequate dose, duration, adherence, and diagnosis. Treatment-resistant depression generally requires failure of at least two adequate antidepressant trials. Additional factors such as comorbid anxiety, substance use, and psychosocial stressors should also be evaluated before classifying a patient as treatment resistant.
+A patient reports persistent depression after several antidepressant trials but admits to taking medication only three to four days per week. How does this influence interpretation of treatment failure?
+Answer:
+This patient does not meet criteria for true treatment-resistant depression because inadequate adherence may explain the lack of response. Adherence should be optimized before considering escalation to advanced therapies.
+Why was quetiapine extended release an appropriate comparator in ESCAPE-TRD?
+Answer:
+Quetiapine is a commonly used augmentation strategy for patients with inadequate antidepressant response. Comparing esketamine against an established augmentation option provides clinically meaningful information for treatment decisions.
+A patient with depression and significant anxiety has failed multiple antidepressants. What factors should be considered before referring for esketamine treatment?
+Answer:
+The pharmacist should evaluate prior medication history, adherence, severity of symptoms, comorbid psychiatric conditions, access to treatment centers, transportation, monitoring requirements, adverse effect concerns, and patient preferences.
+How does ESCAPE-TRD reinforce the pharmacist's role in behavioral health management?
+Answer:
+The trial highlights the importance of identifying inadequate response, assessing adherence, monitoring symptom severity, evaluating adverse effects, recognizing treatment-resistant depression, and facilitating referral for advanced treatment when appropriate.

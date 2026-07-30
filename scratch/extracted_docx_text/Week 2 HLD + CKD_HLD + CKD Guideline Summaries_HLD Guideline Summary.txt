@@ -1,0 +1,141 @@
+﻿Week 2 Hyperlipidemia & ASCVD Risk Reduction Teaching Summary
+Lipid Goals
+General Goal
+Reduce ASCVD risk through evidence-based LDL-C lowering.
+Treatment intensity should be individualized based on:
+Presence of ASCVD 
+LDL-C level 
+CKD status 
+Diabetes status 
+Overall cardiovascular risk 
+Medication tolerance 
+Patient preferences 
+Initial Evaluation
+Assess:
+LDL-C 
+HDL-C 
+Triglycerides 
+Non-HDL-C 
+ASCVD history 
+Diabetes status 
+CKD status 
+Smoking status 
+Blood pressure 
+Family history of premature ASCVD 
+Current lipid-lowering therapy 
+Statin tolerance 
+First-Line Therapy
+Most patients:
+Statin therapy + lifestyle modification
+Treatment intensity should be guided by:
+Primary versus secondary prevention 
+ASCVD risk category 
+LDL-C level 
+Presence of diabetes 
+Presence of CKD 
+Statin Therapy
+Benefits
+LDL-C reduction 
+ASCVD event reduction 
+Reduction in MI risk 
+Reduction in stroke risk 
+Reduction in cardiovascular mortality 
+High-Intensity Statins
+Examples:
+Atorvastatin 40–80 mg daily 
+Rosuvastatin 20–40 mg daily 
+Moderate-Intensity Statins
+Examples:
+Atorvastatin 10–20 mg daily 
+Rosuvastatin 5–10 mg daily 
+Simvastatin 20–40 mg daily 
+Pravastatin 40–80 mg daily 
+Nonstatin Therapy
+Ezetimibe
+Benefits:
+Additional LDL-C lowering 
+Oral administration 
+Generally well tolerated 
+Most commonly used:
+When LDL-C remains above goal despite maximally tolerated statin therapy 
+When statin intolerance limits therapy 
+PCSK9 Inhibitors
+Benefits:
+Significant LDL-C reduction 
+ASCVD risk reduction 
+Examples:
+Evolocumab 
+Alirocumab 
+Inclisiran
+Benefits:
+Significant LDL-C reduction 
+Infrequent dosing schedule 
+May be considered when additional LDL-C lowering is needed despite optimized therapy.
+Hypertriglyceridemia
+Assess:
+Secondary causes 
+Alcohol intake 
+Dietary contributors 
+Diabetes control 
+Medication contributors 
+Management:
+Lifestyle modification 
+Weight reduction 
+Glycemic optimization when applicable 
+Appropriate pharmacologic therapy based on triglyceride level and cardiovascular risk 
+Diabetes and Lipid Management
+Patients with diabetes have elevated ASCVD risk.
+Assess:
+Duration of diabetes 
+Additional ASCVD risk enhancers 
+CKD status 
+Albuminuria 
+Most adults with diabetes require statin therapy.
+CKD and Lipid Management
+CKD increases cardiovascular risk.
+Assess:
+eGFR 
+Albuminuria 
+CKD progression risk 
+Lipid-lowering therapy remains an important component of cardiovascular risk reduction.
+Monitoring
+Lipid panel 
+Medication adherence 
+Statin tolerance 
+Liver-related adverse effects when clinically indicated 
+Muscle-related symptoms 
+ASCVD events 
+Lifestyle modification progress 
+Lifestyle Counseling
+Heart-healthy dietary pattern 
+Weight management 
+Physical activity 
+Tobacco cessation 
+Alcohol moderation 
+Medication adherence 
+Pharmacist-Specific Interventions
+Statin optimization 
+Identification of ASCVD risk enhancers 
+Evaluation of statin intolerance 
+Nonstatin therapy optimization 
+Adherence assessment 
+Insurance navigation 
+Lifestyle counseling 
+Monitoring plan development 
+Common Student Mistakes
+Focusing only on LDL-C numbers 
+Ignoring overall ASCVD risk 
+Missing secondary prevention opportunities 
+Underutilizing high-intensity statins 
+Delaying therapy intensification 
+Missing nonstatin therapy indications 
+Failing to assess adherence before intensifying therapy 
+Ignoring CKD as a cardiovascular risk enhancer 
+Escalation Points
+Established ASCVD 
+Severely elevated LDL-C 
+Progressive ASCVD despite therapy 
+Statin intolerance limiting treatment 
+Persistent LDL-C elevation despite optimized therapy 
+Familial hypercholesterolemia concerns 
+Very high cardiovascular risk patients

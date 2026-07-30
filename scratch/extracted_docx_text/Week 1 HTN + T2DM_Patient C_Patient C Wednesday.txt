@@ -1,0 +1,2538 @@
+﻿SECTION 9: PATIENT C – WEDNESDAY FIRST FOLLOW-UP
+Encounter Overview
+Encounter Type
+3-month Follow-Up
+Week
+Week 3 – Wednesday
+Difficulty Level
+Advanced APPE Student
+Primary Learning Objectives
+Students should be able to:
+Assess response to cardiorenal risk reduction strategies. 
+Reassess CKD progression risk. 
+Evaluate albuminuria trends. 
+Interpret treatment response beyond A1C. 
+Reassess cardiovascular risk. 
+Determine whether additional therapeutic optimization is warranted. 
+Continue prioritizing interventions in a complex patient. 
+1. Patient Snapshot
+Linda Martinez returns four weeks after her initial ambulatory care pharmacy visit.
+At the previous visit, major clinical concerns included:
+CKD Stage 3a 
+Severe albuminuria 
+Established ASCVD 
+Hypertension above goal 
+A1C above goal 
+LDL-C above secondary prevention goals 
+The patient reports implementing recommended lifestyle changes and remains highly motivated to improve her health.
+2. Chief Concern
+"I've been trying really hard to do what everyone recommended. I just want to know if my kidneys are doing any better."
+3. History of Present Illness
+Linda Martinez is a 68-year-old female with type 2 diabetes mellitus, hypertension, CKD stage 3a with severe albuminuria, obesity, hyperlipidemia, and prior STEMI who presents for follow-up ambulatory care pharmacy management.
+Since the previous visit, the patient reports:
+Excellent medication adherence 
+Improved understanding of kidney disease 
+Increased attention to sodium intake 
+Improved consistency with medication administration 
+Increased physical activity 
+She denies:
+Chest pain 
+Shortness of breath 
+Syncope 
+Orthopnea 
+PND 
+Hypoglycemia 
+She reports:
+Mild fatigue 
+Occasional lower extremity swelling after prolonged standing 
+No significant medication adverse effects 
+The patient states:
+"I still worry about my kidneys, but I understand things a lot better now."
+4. Past Medical History
+Type 2 Diabetes Mellitus
+Diagnosed 15 years ago
+Hypertension
+Diagnosed 18 years ago
+Chronic Kidney Disease Stage 3a
+Diagnosed 3 years ago
+Severe Albuminuria
+ST-Elevation Myocardial Infarction
+3 years ago
+Hyperlipidemia
+Diagnosed 15 years ago
+Obesity
+Longstanding
+GERD
+Diagnosed 8 years ago
+Past Surgical History
+PCI with drug-eluting stent placement
+3 years ago
+Cholecystectomy
+Age 49
+Total abdominal hysterectomy
+Age 52
+5. Medication List
+Metformin XR 1000 mg
+Take 2 tablets by mouth daily
+Empagliflozin 10 mg
+Take 1 tablet by mouth daily
+Semaglutide 0.5 mg
+Inject subcutaneously once weekly
+Lisinopril 40 mg
+Take 1 tablet by mouth daily
+Metoprolol Succinate 50 mg
+Take 1 tablet by mouth daily
+Atorvastatin 40 mg
+Take 1 tablet by mouth daily
+Aspirin 81 mg
+Take 1 tablet by mouth daily
+Omeprazole 20 mg
+Take 1 capsule by mouth daily
+6. Allergies
+Drug Allergies
+Penicillin
+Reaction: Rash
+Food Allergies
+None reported
+7. Vitals
+BP: 130/78 mmHg
+Repeat BP: 128/78 mmHg
+HR: 70 bpm
+Weight: 94.5 kg
+BMI: 34.7 kg/m²
+Home Blood Pressure Log
+Average:
+129/78 mmHg
+Range:
+124–134 systolic
+74–82 diastolic
+8. Laboratory Data
+Hemoglobin A1C
+Current: 7.9%
+Previous: 8.2%
+Comprehensive Metabolic Panel
+Na: 138 mEq/L
+K: 4.8 mEq/L
+SCr: 1.28 mg/dL
+eGFR: 50 mL/min/1.73m²
+Urine Albumin-to-Creatinine Ratio
+Current: 330 mg/g
+Previous: 452 mg/g
+Lipid Panel
+TC: 170 mg/dL
+LDL-C: 86 mg/dL
+HDL-C: 45 mg/dL
+TG: 184 mg/dL
+9. Immunizations
+Influenza: Current
+COVID: Current
+PCV: Received age 65
+Shingrix: Complete
+Tdap: Overdue
+10. Social History
+Tobacco
+Never smoker
+Alcohol
+Rare alcohol use
+Exercise
+Walking 3–4 days per week
+Approximately 20–30 minutes
+Diet
+Improved sodium awareness
+Reduced restaurant meals
+Continues working on portion control
+11. Family History
+Father
+Myocardial infarction age 62
+Hypertension
+Mother
+Type 2 Diabetes Mellitus
+Chronic Kidney Disease
+Brother
+Myocardial infarction age 58
+Sister
+Type 2 Diabetes Mellitus
+Hypertension
+12. Problem List
+Type 2 diabetes mellitus improving but above goal 
+Hypertension now controlled 
+CKD Stage 3a 
+Severe albuminuria improving 
+Established ASCVD 
+LDL-C above secondary prevention targets 
+Obesity improving 
+Persistent residual cardiorenal risk 
+CKD knowledge improving 
+Overdue Tdap vaccination 
+13. Pharmacist Visit Notes
+Referral Reason
+Follow-up evaluation after prioritization of cardiorenal risk reduction.
+Key Concerns
+Interpretation of albuminuria improvement 
+Ongoing CKD progression risk 
+Residual cardiovascular risk 
+Need for further optimization 
+Prioritization of next intervention 
+14. Follow-Up Tasks Expected From Student
+Students should assess:
+Chronic Kidney Disease
+Interpretation of UACR improvement 
+Ongoing CKD risk 
+Adequacy of current therapy 
+Hypertension
+Goal attainment 
+Impact on CKD progression 
+Type 2 Diabetes Mellitus
+Ongoing management 
+Need for further intensification 
+ASCVD
+Residual risk assessment 
+Lipid optimization opportunities 
+Prioritization
+Determine what deserves attention next 
+Justify rationale 
+Lifestyle
+Reinforce successful changes 
+Preventive Care
+Address vaccine gap
+
+SECTION 10: AI PATIENT Q&A GUIDE
+Patient C – Wednesday First Follow-Up
+Reason for Visit
+Student: "What brings you in today?"
+Patient:
+"I'm here for my follow-up to see if things are moving in the right direction."
+Student: "How do you think things have been going?"
+Patient:
+"I think they've been going pretty well."
+Symptoms
+Student: "How have you been feeling since your last visit?"
+Patient:
+"Pretty good overall."
+Student: "Any chest pain?"
+Patient:
+"No."
+Student: "Any shortness of breath?"
+Patient:
+"No."
+Student: "Any dizziness or fainting?"
+Patient:
+"No."
+Student: "Any swelling?"
+Patient:
+"A little around my ankles sometimes if I've been standing all day."
+Student: "Any low blood sugar symptoms?"
+Patient:
+"No."
+Medication Use
+Student: "Are you taking your medications as prescribed?"
+Patient:
+"Yes."
+Student: "Any missed doses?"
+Patient:
+"Maybe one or two since our last visit."
+Student: "Any medication side effects?"
+Patient:
+"Nothing significant."
+Student: "Any problems getting your medications?"
+Patient:
+"No."
+Medication Adherence
+Student: "How confident are you with your medications now?"
+Patient:
+"Much more confident."
+Student: "What helped the most?"
+Patient:
+"Understanding what they were actually helping with."
+Home Blood Pressure Monitoring
+Student: "Have you been checking your blood pressure?"
+Patient:
+"Yes."
+Student: "What numbers are you seeing?"
+Patient:
+"Usually around the upper 120s."
+Student: "How often are you checking?"
+Patient:
+"A few times each week."
+Home Glucose Monitoring
+Student: "Have you been checking your blood sugars?"
+Patient:
+"Yes."
+Student: "What numbers are you seeing?"
+Patient:
+"Usually around 130 to 160 in the mornings."
+Student: "Do you think they've improved?"
+Patient:
+"Definitely."
+Kidney Disease Understanding
+Student: "What do you understand about your kidney disease now?"
+Patient:
+"A lot more than I did before."
+Student: "What have you learned?"
+Patient:
+"That my kidneys aren't failing, but they're at risk of getting worse if I don't take care of them."
+Student: "What worries you most now?"
+Patient:
+"I still worry about dialysis."
+Student: "Do you understand what protein in your urine means?"
+Patient:
+"I understand it's a sign that my kidneys are being damaged."
+Cardiovascular History
+Student: "Do you still think about your heart attack?"
+Patient:
+"Absolutely."
+Student: "What worries you the most?"
+Patient:
+"Having another one."
+Student: "What are you doing differently now?"
+Patient:
+"I'm paying a lot more attention to my health."
+Diet
+Student: "What changes have you made to your diet?"
+Patient:
+"I've been trying to cut back on sodium and eat out less."
+Student: "What has been hardest?"
+Patient:
+"Portion control."
+Exercise
+Student: "What does exercise look like now?"
+Patient:
+"I've been walking more."
+Student: "How often?"
+Patient:
+"Three or four times a week."
+Student: "For how long?"
+Patient:
+"Usually around twenty to thirty minutes."
+Disease Understanding
+Student: "What condition worries you the most now?"
+Patient:
+"My kidneys."
+Student: "What condition do you think is most dangerous?"
+Patient:
+"Probably my heart and kidneys together."
+Student: "Do you feel like you understand your medications better?"
+Patient:
+"Definitely."
+Patient Goals
+Student: "What health goal is most important to you right now?"
+Patient:
+"Avoiding another heart attack."
+Student: "What else?"
+Patient:
+"Keeping my kidneys healthy."
+Student: "Anything else?"
+Patient:
+"Staying independent."
+Patient Concerns
+Student: "What concerns do you still have?"
+Patient:
+"I still worry about my kidneys getting worse."
+Student: "Anything else?"
+Patient:
+"I worry that I'm still at risk for another heart attack."
+Readiness to Change
+Student: "How motivated are you to continue making changes?"
+Patient:
+"Very motivated."
+Student: "If we recommended additional changes, would you be willing to consider them?"
+Patient:
+"Absolutely."
+Follow-Up Preferences
+Student: "How would you like to continue follow-up?"
+Patient:
+"Whatever helps me stay healthy."
+
+
+SECTION 10A: HIDDEN INFORMATION TRIGGER MAP
+Patient C – Wednesday First Follow-Up
+Hidden Fact #1: Patient Understands Kidney Disease Better Than Before
+Information to Reveal
+The patient's understanding of CKD has improved significantly since the initial visit.
+Trigger Keywords
+kidney disease, CKD, education, understanding, progression, stage, counseling
+Appropriate AI Response
+"I understand a lot more now than I did before."
+Information Not Volunteered
+Patient does not spontaneously discuss educational gains.
+Hidden Fact #2: Dialysis Remains Her Greatest Fear
+Information to Reveal
+Despite improved understanding, dialysis remains her greatest long-term concern.
+Trigger Keywords
+dialysis, fears, concerns, kidney failure, progression, future
+Appropriate AI Response
+"Dialysis is still the thing that scares me the most."
+Information Not Volunteered
+Patient initially discusses improvement before discussing fears.
+Hidden Fact #3: Prior Heart Attack Still Strongly Influences Decision-Making
+Information to Reveal
+The previous STEMI remains emotionally impactful and motivates adherence.
+Trigger Keywords
+heart attack, STEMI, cardiovascular risk, prevention, concerns, motivation
+Appropriate AI Response
+"I don't ever want to go through another heart attack."
+Information Not Volunteered
+Patient initially focuses on kidney disease.
+Hidden Fact #4: Patient Does Not Realize Risk Remains High
+Information to Reveal
+The patient assumes improvement means risk has largely resolved.
+Trigger Keywords
+risk, improvement, goals, progress, kidney disease, cardiovascular disease
+Appropriate AI Response
+"Since my numbers are improving, I figured I was mostly out of danger."
+Information Not Volunteered
+Patient generally believes improvement equals safety.
+Hidden Fact #5: Patient Still Does Not Fully Understand Albuminuria
+Information to Reveal
+The patient knows albuminuria is important but does not understand how strongly it predicts kidney and cardiovascular outcomes.
+Trigger Keywords
+albuminuria, protein in urine, UACR, kidney damage, risk
+Appropriate AI Response
+"I know it's important, but I don't really understand how much it matters."
+Information Not Volunteered
+Patient understands more than Tuesday but still has knowledge gaps.
+Hidden Fact #6: Patient Is Proud of Lifestyle Improvements
+Information to Reveal
+The patient feels encouraged by recent progress.
+Trigger Keywords
+exercise, diet, lifestyle changes, progress, motivation
+Appropriate AI Response
+"I've worked really hard to make some changes."
+Information Not Volunteered
+Patient does not initially seek recognition for progress.
+Hidden Fact #7: Patient Remains Highly Motivated
+Information to Reveal
+The patient remains willing to intensify therapy if it reduces future risk.
+Trigger Keywords
+treatment changes, medication changes, recommendations, goals
+Appropriate AI Response
+"If it's going to help protect my heart or kidneys, I'm willing to do it."
+Information Not Volunteered
+Patient waits for provider recommendations.
+Hidden Fact #8: Patient Is Looking for Reassurance
+Information to Reveal
+The patient wants confirmation that her efforts are making a difference.
+Trigger Keywords
+progress, improvement, goals, labs, treatment success
+Appropriate AI Response
+"I just want to know if what I'm doing is actually helping."
+Information Not Volunteered
+Patient does not directly ask for reassurance.
+
+
+PATIENT C – WEDNESDAY FIRST FOLLOW-UP
+GOLD-STANDARD AMBULATORY CARE PHARMACIST SOAP NOTE
+SUBJECTIVE
+CC: Linda Martinez is a 68-year-old female who presents to the ambulatory care pharmacy clinic for a scheduled follow-up visit for collaborative practice management of type 2 diabetes mellitus, hypertension, chronic kidney disease, hyperlipidemia, obesity, and secondary prevention of atherosclerotic cardiovascular disease following STEMI with PCI.
+HPI
+The patient reports improvement since her previous visit and states that she feels more confident managing her chronic conditions. She reports excellent medication adherence and denies missed doses aside from one or two isolated occurrences since the previous visit.
+She reports increased understanding of her kidney disease and states that she now better understands the relationship between blood pressure, diabetes, kidney disease progression, and cardiovascular risk. Despite this improved understanding, she remains concerned about eventually requiring dialysis.
+The patient reports checking blood pressure several times weekly and reports readings generally in the upper 120s systolic and upper 70s diastolic. She reports checking fasting blood glucose several times weekly with readings generally ranging between 130–160 mg/dL.
+She reports improved dietary habits including reduced sodium intake, fewer restaurant meals, and greater attention to portion control. She has also increased physical activity and is walking approximately three to four days per week for 20–30 minutes.
+She denies chest pain, shortness of breath, palpitations, syncope, orthopnea, paroxysmal nocturnal dyspnea, hypoglycemia, or medication-related adverse effects. She reports occasional mild lower extremity swelling after prolonged standing and intermittent fatigue.
+The patient remains highly motivated to prevent progression of kidney disease and avoid another myocardial infarction.
+Past Medical History
+Type 2 Diabetes Mellitus diagnosed 15 years ago 
+Hypertension diagnosed 18 years ago 
+Chronic Kidney Disease Stage 3a 
+Severely Increased Albuminuria 
+ST-Elevation Myocardial Infarction 3 years ago 
+Hyperlipidemia 
+Obesity 
+Gastroesophageal Reflux Disease 
+Past Surgical History
+Percutaneous coronary intervention with drug-eluting stent placement (3 years ago) 
+Cholecystectomy (age 49) 
+Total abdominal hysterectomy (age 52) 
+Family History
+Father: Myocardial infarction at age 62, hypertension 
+Mother: Type 2 diabetes mellitus, chronic kidney disease 
+Brother: Myocardial infarction at age 58 
+Sister: Hypertension and type 2 diabetes mellitus 
+Social History
+Married and lives with husband 
+Retired elementary school teacher 
+Never smoker 
+Rare alcohol use 
+Denies recreational drug use 
+Walking 3–4 days per week 
+Assists with childcare for grandchildren multiple days per week 
+Improved dietary habits with reduced sodium intake and fewer restaurant meals 
+Allergies
+Penicillin (rash) 
+Current Medications
+Metformin XR 1000 mg by mouth twice daily 
+Empagliflozin 10 mg by mouth daily 
+Semaglutide 0.5 mg subcutaneously weekly 
+Lisinopril 40 mg by mouth daily 
+Metoprolol succinate 50 mg by mouth daily 
+Atorvastatin 40 mg by mouth daily 
+Aspirin 81 mg by mouth daily 
+Omeprazole 20 mg by mouth daily 
+Immunization History
+Influenza vaccine current 
+COVID-19 vaccine current 
+PCV received at age 65 
+Shingrix series complete 
+Tdap last received 11 years ago 
+OBJECTIVE
+Vitals
+BP: 130/78 mmHg 
+Repeat BP: 128/78 mmHg 
+HR: 70 bpm 
+Weight: 94.5 kg 
+BMI: 34.7 kg/m² 
+Home Blood Pressure Log
+Average approximately 129/78 mmHg 
+Laboratory Data
+Hemoglobin A1C
+Current: 7.9% 
+Previous: 8.2% 
+Comprehensive Metabolic Panel
+Na: 138 mEq/L 
+K: 4.8 mEq/L 
+SCr: 1.28 mg/dL 
+eGFR: 50 mL/min/1.73m² 
+Urine Albumin-to-Creatinine Ratio
+Current: 330 mg/g 
+Previous: 452 mg/g 
+Lipid Panel
+TC: 170 mg/dL 
+LDL-C: 86 mg/dL 
+HDL-C: 45 mg/dL 
+TG: 184 mg/dL 
+ASSESSMENT
+1. Chronic Kidney Disease Stage 3a with Severely Increased Albuminuria – Improving but Persistent Very High Risk
+The patient has CKD Stage G3a with an eGFR of 50 mL/min/1.73m² and persistent severely increased albuminuria with a UACR of 330 mg/g, consistent with A3 albuminuria. Although albuminuria has improved significantly from 452 mg/g to 330 mg/g following optimization of therapy, the patient remains within the A3 category. According to KDIGO and the 2026 ADA Standards of Care, persistent severe albuminuria remains a major predictor of CKD progression, cardiovascular events, and future kidney failure.
+The observed reduction in albuminuria suggests that the prior therapeutic strategy was effective and that progression risk has likely been reduced. However, substantial residual risk remains due to persistent albuminuria, diabetes, hypertension, CKD, and established ASCVD. Additional optimization of cardiorenal protective therapy should continue to be considered.
+2. Type 2 Diabetes Mellitus – Improving but Above Goal
+The patient's A1C has improved from 8.2% to 7.9% following improved lifestyle behaviors and continued adherence to metformin, empagliflozin, and semaglutide therapy. According to the 2026 ADA Standards of Care, an A1C target of less than 7% is appropriate for many healthy older adults with preserved functional status and reasonable life expectancy.
+Although glycemic control remains above goal, the patient demonstrates meaningful improvement and is moving in the desired direction. Current therapy includes agents with established cardiovascular and renal benefit. Additional optimization may be appropriate; however, treatment decisions should continue to prioritize therapies that provide both glycemic improvement and cardiorenal protection.
+3. Hypertension – Controlled
+The patient's blood pressure has improved from 142/84 mmHg at the initial visit to 130/78 mmHg with repeat measurement of 128/78 mmHg. Home blood pressure monitoring demonstrates similar control. According to the 2025 ACC/AHA Hypertension Guideline, ADA Standards of Care, and KDIGO recommendations, a blood pressure target of less than 130/80 mmHg is appropriate in patients with diabetes, CKD, and elevated cardiovascular risk.
+Improved blood pressure control likely contributed to the reduction in albuminuria and represents an important component of ongoing kidney protection. Current therapy is effective and well tolerated. Continued monitoring and maintenance of blood pressure control remain essential.
+4. Secondary ASCVD Prevention – Residual Risk Remains
+The patient has established ASCVD with a history of STEMI requiring PCI. Despite improvement in overall risk factor management, she remains at very high cardiovascular risk due to diabetes, CKD, obesity, and prior myocardial infarction.
+LDL-C has improved modestly from 92 mg/dL to 86 mg/dL but remains above ideal secondary prevention targets. According to ADA and ACC/AHA recommendations, aggressive lipid-lowering strategies should be considered in patients with established ASCVD and multiple high-risk features. Residual cardiovascular risk remains substantial and may represent the next highest-yield target for intervention.
+5. Obesity – Improving
+The patient's BMI remains elevated at 34.7 kg/m² but weight has decreased since the previous visit. According to the ADA Standards of Care, obesity should be managed as a chronic disease because of its contribution to diabetes progression, hypertension, CKD progression, and cardiovascular risk.
+The patient has implemented meaningful lifestyle modifications and demonstrates strong motivation. Continued emphasis on sustainable weight reduction strategies remains appropriate.
+6. Health Literacy Regarding CKD and Cardiorenal Protection – Improving
+The patient demonstrates significantly improved understanding of kidney disease, albuminuria, and cardiovascular risk compared with the initial encounter. She now recognizes the relationship between blood pressure control, diabetes management, and kidney disease progression.
+Although improvement is evident, additional education regarding residual risk, albuminuria significance, and long-term cardiorenal protection remains appropriate. Ongoing patient education should continue to support shared decision-making.
+7. Preventive Care Gap
+The patient remains overdue for Tdap vaccination according to current CDC Adult Immunization Schedule recommendations.
+PLAN
+Chronic Kidney Disease / Albuminuria
+Continue lisinopril 40 mg by mouth daily. 
+Continue empagliflozin 10 mg by mouth daily. 
+Reinforce importance of BP control for kidney protection. 
+Continue monitoring eGFR and UACR. 
+Evaluate additional cardiorenal risk reduction opportunities at future visits. 
+Type 2 Diabetes Mellitus
+Continue metformin XR 1000 mg by mouth twice daily. 
+Continue empagliflozin 10 mg by mouth daily. 
+Continue semaglutide 0.5 mg subcutaneously weekly. 
+Reinforce dietary and lifestyle modifications. 
+Repeat A1C in approximately 3 months. 
+Hypertension
+Continue lisinopril 40 mg by mouth daily. 
+Continue metoprolol succinate 50 mg by mouth daily. 
+Continue home blood pressure monitoring. 
+Maintain BP goal <130/80 mmHg. 
+Secondary ASCVD Prevention
+Continue atorvastatin 40 mg by mouth daily. 
+Continue aspirin 81 mg by mouth daily. 
+Reassess need for further lipid-lowering optimization. 
+Reinforce cardiovascular risk reduction strategies. 
+Obesity
+Continue walking program. 
+Encourage progression toward ≥150 minutes/week of moderate-intensity physical activity. 
+Reinforce portion control and dietary modifications. 
+Health Literacy
+Continue CKD education. 
+Continue counseling regarding albuminuria and cardiovascular risk. 
+Reinforce significance of persistent residual risk despite improvement. 
+Preventive Care
+Recommend Tdap vaccination. 
+Follow-Up
+Follow up in approximately 4–8 weeks. 
+Repeat laboratory monitoring as appropriate. 
+Reassess albuminuria trend. 
+Reassess LDL-C and cardiovascular risk reduction strategy. 
+Continue long-term cardiorenal risk reduction efforts.
+
+SECTION 12: ACCEPTABLE ALTERNATIVE ANSWERS
+Patient C – Wednesday First Follow-Up
+Educational Purpose
+This encounter evaluates whether students can appropriately interpret clinical improvement while recognizing persistent cardiorenal and cardiovascular risk.
+Students should recognize:
+Albuminuria improved significantly. 
+Blood pressure is now controlled. 
+A1C improved. 
+Lifestyle modifications are working. 
+CKD and ASCVD remain present. 
+Significant residual risk remains. 
+The educational objective is determining:
+"What should become the next therapeutic priority now that the original intervention strategy is working?"
+Chronic Kidney Disease with Persistent Severe Albuminuria
+Preferred Answer
+Continue current cardiorenal protective therapy and recognize that the reduction in albuminuria represents meaningful improvement.
+Continue:
+Lisinopril 40 mg daily 
+Empagliflozin 10 mg daily 
+Continue monitoring:
+eGFR 
+UACR 
+Potassium 
+Why Preferred
+The patient's UACR improved:
+452 mg/g → 330 mg/g
+The intervention appears effective. However, the patient remains classified as A3 albuminuria and continues to have substantial residual cardiorenal risk.
+Acceptable Alternative #1
+Recommend initiation of finerenone.
+Why Acceptable
+Patient has:
+Type 2 diabetes 
+CKD Stage 3a 
+Persistent A3 albuminuria 
+eGFR >25 mL/min/1.73m² 
+Stable potassium 
+Student appropriately recognizes persistent residual kidney and cardiovascular risk.
+Requirement
+Student should discuss:
+Potassium monitoring 
+Renal function monitoring 
+Hyperkalemia risk 
+Follow-up laboratory assessment 
+Acceptable Alternative #2
+Continue current therapy and reassess albuminuria trajectory before making additional medication changes.
+Why Acceptable
+Albuminuria has demonstrated significant improvement and current therapy appears effective.
+Student appropriately recognizes that not every improving patient requires immediate therapeutic intensification.
+Type 2 Diabetes Mellitus
+Preferred Answer
+Continue current therapy.
+Continue:
+Metformin XR 
+Empagliflozin 
+Semaglutide 
+Why Preferred
+A1C improved:
+8.2% → 7.9%
+The patient demonstrates favorable progression.
+The patient is also receiving therapies with established cardiovascular and renal benefits.
+Acceptable Alternative
+Increase semaglutide.
+Why Acceptable
+Patient remains:
+Above A1C goal 
+Obese 
+At high ASCVD risk 
+Additional benefits include:
+Further A1C reduction 
+Additional weight reduction 
+Potential cardiovascular benefit 
+Unacceptable
+Initiate insulin therapy.
+Why
+Provides glycemic improvement but offers less overall cardiorenal benefit than available alternatives.
+Hypertension
+Preferred Answer
+Continue current antihypertensive therapy.
+Why Preferred
+Patient now meets guideline-directed blood pressure goals.
+Office BP:
+128/78 mmHg
+Home BP:
+129/78 mmHg
+Improved blood pressure control likely contributed to the observed reduction in albuminuria.
+Acceptable Alternative
+Increase home BP monitoring frequency.
+Why Acceptable
+Patient remains:
+CKD 
+Secondary prevention ASCVD 
+High risk 
+Additional monitoring may be reasonable.
+Unacceptable
+Escalate antihypertensive therapy despite controlled BP without clinical justification.
+Secondary ASCVD Prevention
+Preferred Answer
+Recognize residual cardiovascular risk and identify lipid optimization as the next major therapeutic priority.
+Potential recommendations:
+Increase atorvastatin to 80 mg daily 
+OR
+Consider addition of ezetimibe 
+Why Preferred
+Patient has:
+Prior STEMI 
+Diabetes 
+CKD 
+LDL-C:
+92 → 86 mg/dL
+Residual cardiovascular risk remains substantial.
+Acceptable Alternative
+Continue current statin therapy and repeat lipid panel before intensification.
+Why Acceptable
+Reasonable if accompanied by appropriate rationale and close follow-up.
+Obesity
+Preferred Answer
+Continue lifestyle interventions.
+Why Preferred
+Patient demonstrates:
+Weight reduction 
+Increased physical activity 
+Improved dietary habits 
+Acceptable Alternative
+Increase semaglutide dose.
+Why Acceptable
+Additional weight reduction may further improve:
+Diabetes 
+Hypertension 
+CKD progression risk 
+ASCVD risk 
+Preventive Care
+Preferred Answer
+Recommend Tdap vaccination.
+Acceptable Alternative
+Coordinate vaccination through PCP or community pharmacy.
+SECTION 13: CRITICAL MISSES
+Patient C – Wednesday First Follow-Up
+Critical Miss #1
+Failed to recognize improvement in albuminuria.
+Why Important
+Reduction in albuminuria was one of the primary therapeutic goals of the initial encounter.
+Critical Miss #2
+Failed to recognize blood pressure is now controlled.
+Critical Miss #3
+Failed to recognize improvement in glycemic control.
+Critical Miss #4
+Failed to recognize that albuminuria remains severely elevated.
+Why Important
+Patient remains classified as A3 albuminuria and therefore remains at high risk.
+Critical Miss #5
+Assumed improvement means risk has resolved.
+Why Important
+Core educational objective of this encounter.
+Critical Miss #6
+Failed to reassess CKD progression risk.
+Critical Miss #7
+Failed to identify residual ASCVD risk.
+Critical Miss #8
+Failed to recognize this remains a secondary prevention patient.
+Critical Miss #9
+Focused exclusively on A1C.
+Critical Miss #10
+Ignored LDL-C despite established ASCVD.
+Critical Miss #11
+Failed to discuss next therapeutic priority.
+Critical Miss #12
+Failed to recognize improved health literacy.
+Critical Miss #13
+Failed to reinforce successful lifestyle changes.
+Critical Miss #14
+Failed to discuss appropriate monitoring parameters.
+Critical Miss #15
+Failed to justify the next intervention.
+Why Important
+Clinical prioritization remains the primary learning objective.
+SECTION 14: TEACHING GUIDE
+Patient C – Wednesday First Follow-Up
+What the Student Should Have Done Well
+The student should have:
+Recognized significant improvement in albuminuria. 
+Recognized achievement of blood pressure goals. 
+Recognized improved glycemic control. 
+Reassessed CKD progression risk. 
+Identified persistent residual cardiovascular risk. 
+Identified persistent residual renal risk. 
+Selected an appropriate next therapeutic priority. 
+Justified recommendations using guideline-based reasoning. 
+Common Student Mistakes
+Mistake #1
+Assuming improvement means the problem has been solved.
+Students often see:
+Improved UACR 
+Improved BP 
+Improved A1C 
+and conclude that no additional interventions are necessary.
+Mistake #2
+Ignoring persistent A3 albuminuria.
+Although improvement occurred:
+452 mg/g → 330 mg/g
+the patient remains classified as severely increased albuminuria.
+Mistake #3
+Failing to transition priorities.
+Tuesday focused on:
+"What should we prioritize first?"
+Wednesday asks:
+"What should become the next priority now that our initial strategy is working?"
+Mistake #4
+Missing residual ASCVD risk.
+Students often become heavily focused on CKD and fail to reassess cardiovascular risk.
+Mistake #5
+Treating LDL-C as a minor issue.
+In a patient with:
+Prior STEMI 
+Diabetes 
+CKD 
+residual cardiovascular risk remains a major therapeutic concern.
+Teaching Pearls
+Pearl #1
+Improvement does not equal risk elimination.
+Pearl #2
+Albuminuria reduction is clinically meaningful even when albuminuria remains elevated.
+Pearl #3
+Clinical success should be assessed by trajectory rather than a single value.
+Pearl #4
+Patients with CKD and ASCVD frequently require sequential prioritization of interventions.
+Pearl #5
+Residual cardiovascular and renal risk should be reassessed at every visit.
+Pearl #6
+The next best intervention changes as the patient's condition evolves.
+Follow-Up Questions
+Question 1
+How should you interpret the reduction in UACR?
+Expected Discussion:
+Significant improvement occurred. 
+Albuminuria remains A3. 
+Risk remains elevated. 
+Question 2
+Would you classify this patient as low risk now?
+Expected Discussion:
+No.
+Patient remains:
+CKD Stage 3a 
+A3 Albuminuria 
+Prior STEMI 
+Type 2 diabetes 
+Question 3
+What should become the next therapeutic priority?
+Expected Discussion:
+Reasonable answers include:
+Lipid optimization 
+Additional CKD risk reduction 
+Further weight reduction 
+Semaglutide titration 
+Finerenone consideration 
+Student should justify rationale.
+Question 4
+Why does LDL-C remain important despite improving kidney outcomes?
+Expected Discussion:
+Patient remains secondary prevention ASCVD and continues to have substantial residual cardiovascular risk.
+Question 5
+Would you consider finerenone in this patient?
+Expected Discussion:
+Yes, consideration may be appropriate because the patient has:
+T2DM 
+CKD 
+Persistent albuminuria 
+Preserved eGFR 
+Student should discuss:
+Potassium monitoring 
+Renal monitoring 
+Shared decision-making 
+Question 6
+What evidence suggests the initial intervention strategy was successful?
+Expected Discussion:
+UACR reduction 
+BP improvement 
+A1C improvement 
+Weight reduction 
+Improved health literacy 
+Question 7
+How would you explain residual risk to this patient?
+Expected Discussion:
+Risk has been reduced but not eliminated.
+Patient remains:
+CKD 
+ASCVD 
+Type 2 diabetes 
+Long-term therapy and monitoring remain essential.
+Question 8
+What long-term complications remain most concerning?
+Expected Discussion:
+Recurrent myocardial infarction 
+CKD progression 
+Heart failure 
+Kidney failure 
+How the Student Can Improve Before Thursday
+Before the final encounter, students should be able to:
+Interpret treatment response beyond simple goal attainment. 
+Recognize persistent residual cardiovascular and renal risk. 
+Reprioritize interventions as patient status evolves. 
+Apply ADA, KDIGO, and ACC/AHA recommendations together. 
+Explain risk reduction concepts using patient-centered language. 
+Develop longitudinal monitoring plans for high-risk patients.
+
+
+Granular Rubric and Answer Key — Patient C First Follow-Up Ambulatory Care SOAP Note (CKD G3aA3 Improving, T2DM, HTN Controlled & Secondary ASCVD Prevention) Patient C Wednesday
+[FOR AI PRECEPTOR CALIBRATION ONLY — NOT FOR STUDENT DISTRIBUTION]
+PURPOSE: This is the single, authoritative rubric for the Patient C (Linda Martinez) Wednesday First Follow-Up Ambulatory Care SOAP Note. Every subsection’s discrete input point values sum exactly to the subsection header, and all subsection headers sum exactly to 100.0. The model answer scores 100.0/100.0 against this rubric.
+SCORING RULES:
+•  FULL: Input present, accurate, and clinically contextualized (not merely a keyword).
+•  HALF: Partially present — directionally correct but imprecise, or present without clinical context. Half-credit values are rounded to the nearest 0.05.
+•  ZERO: Absent, or a factually incorrect statement is made about that input.
+•  Additivity: Points are additive within each subsection → subsections additive within sections → sections additive to 100.0.
+Acceptable-alternative inputs (e.g., therapeutic choices) list every guideline-supported answer in parentheses; any listed answer earns full credit.
+SECTION 1: SUBJECTIVE (25.0 points)
+1A. CHIEF COMPLAINT AND REASON FOR VISIT (3.0 points) — 11 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1A.1
+	Patient age stated (68 years)
+	0.30
+	States 68 years
+	Age stated, imprecise
+	Omits
+	1A.2
+	Patient sex stated (female)
+	0.20
+	States female
+	—
+	Omits
+	1A.3
+	Visit type: scheduled follow-up
+	0.40
+	States scheduled follow-up
+	States visit, no type
+	Omits
+	1A.4
+	Setting: ambulatory care pharmacy clinic
+	0.30
+	Names clinic setting
+	—
+	Omits
+	1A.5
+	Managed condition: type 2 diabetes mellitus
+	0.20
+	States type 2 diabetes
+	—
+	Omits
+	1A.6
+	Managed condition: hypertension
+	0.20
+	States hypertension
+	—
+	Omits
+	1A.7
+	Managed condition: chronic kidney disease
+	0.30
+	States CKD
+	—
+	Omits
+	1A.8
+	Managed condition: hyperlipidemia
+	0.20
+	States hyperlipidemia
+	—
+	Omits
+	1A.9
+	Managed condition: obesity
+	0.20
+	States obesity
+	—
+	Omits
+	1A.10
+	Managed focus: secondary prevention of ASCVD
+	0.40
+	States secondary ASCVD prevention
+	—
+	Omits
+	1A.11
+	Notes prior STEMI with PCI context
+	0.30
+	States prior STEMI/PCI
+	—
+	Omits
+	1A sum check: 0.30 + 0.20 + 0.40 + 0.30 + 0.20 + 0.20 + 0.30 + 0.20 + 0.20 + 0.40 + 0.30 = 3.00
+1B. HISTORY OF PRESENT ILLNESS (HPI) (5.5 points) — 14 inputs, sum = 5.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1B.1
+	Reports improvement since previous visit
+	0.30
+	States improvement
+	—
+	Omits
+	1B.2
+	Reports more confidence managing chronic conditions
+	0.30
+	States increased confidence
+	—
+	Omits
+	1B.3
+	Reports excellent medication adherence
+	0.40
+	States excellent adherence
+	—
+	Omits
+	1B.4
+	Denies missed doses aside from 1-2 isolated occurrences
+	0.40
+	States ~1-2 isolated misses
+	States adherent, no detail
+	Omits
+	1B.5
+	Reports increased understanding of kidney disease
+	0.40
+	States increased understanding
+	—
+	Omits
+	1B.6
+	Understands BP/diabetes/CKD progression/cardiovascular risk relationship
+	0.50
+	States this relationship
+	States partial relationship
+	Omits
+	1B.7
+	Blood pressure monitoring frequency (several times weekly)
+	0.30
+	States several times weekly
+	—
+	Omits
+	1B.8
+	Reported home blood pressure range (upper 120s/upper 70s)
+	0.50
+	States upper 120s/upper 70s
+	States controlled, no range
+	Omits
+	1B.9
+	Glucose monitoring frequency (several times weekly)
+	0.30
+	States several times weekly
+	—
+	Omits
+	1B.10
+	Reported fasting glucose range (130-160 mg/dL)
+	0.50
+	States 130-160 mg/dL
+	Range stated, imprecise
+	Omits
+	1B.11
+	Improved diet (reduced sodium, fewer restaurant meals, portion control)
+	0.50
+	States >=2 dietary improvements
+	States 1
+	Omits
+	1B.12
+	Increased physical activity (3-4 days/week, 20-30 min)
+	0.50
+	States 3-4 days/week, 20-30 min
+	States more active, no detail
+	Omits
+	1B.13
+	Reports occasional mild lower extremity swelling after prolonged standing
+	0.40
+	States positional LE swelling
+	States edema, no context
+	Omits
+	1B.14
+	Reports intermittent fatigue
+	0.20
+	States intermittent fatigue
+	—
+	Omits
+	1B sum check: 0.30 + 0.30 + 0.40 + 0.40 + 0.40 + 0.50 + 0.30 + 0.50 + 0.30 + 0.50 + 0.50 + 0.50 + 0.40 + 0.20 = 5.50
+1C. PAST MEDICAL, SURGICAL, AND FAMILY HISTORY (5.0 points) — 17 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1C.1
+	PMH: type 2 diabetes mellitus
+	0.20
+	Lists type 2 diabetes
+	—
+	Omits
+	1C.2
+	Type 2 diabetes duration (15 years)
+	0.20
+	States 15 years
+	—
+	Omits
+	1C.3
+	PMH: hypertension
+	0.20
+	Lists hypertension
+	—
+	Omits
+	1C.4
+	Hypertension duration (18 years)
+	0.20
+	States 18 years
+	—
+	Omits
+	1C.5
+	PMH: chronic kidney disease Stage 3a
+	0.50
+	Lists CKD Stage 3a
+	Lists CKD, no stage
+	Omits
+	1C.6
+	PMH: severely increased albuminuria
+	0.50
+	Lists severe albuminuria
+	Lists albuminuria, no category
+	Omits
+	1C.7
+	PMH: ST-elevation myocardial infarction 3 years ago
+	0.40
+	Lists STEMI 3 years ago
+	Lists MI, no timing
+	Omits
+	1C.8
+	PMH: hyperlipidemia
+	0.20
+	Lists hyperlipidemia
+	—
+	Omits
+	1C.9
+	PMH: obesity
+	0.20
+	Lists obesity
+	—
+	Omits
+	1C.10
+	PMH: gastroesophageal reflux disease
+	0.20
+	Lists GERD
+	—
+	Omits
+	1C.11
+	PSH: PCI with drug-eluting stent (3 years ago)
+	0.30
+	Lists PCI/DES
+	Lists PCI, no detail
+	Omits
+	1C.12
+	PSH: cholecystectomy (age 49)
+	0.20
+	Lists cholecystectomy
+	—
+	Omits
+	1C.13
+	PSH: total abdominal hysterectomy (age 52)
+	0.20
+	Lists hysterectomy
+	—
+	Omits
+	1C.14
+	Family history, father: MI at age 62 and hypertension
+	0.40
+	States father MI at 62 + HTN
+	States father MI, no age
+	Omits
+	1C.15
+	Family history, mother: type 2 diabetes and CKD
+	0.40
+	States mother T2DM + CKD
+	Names one condition
+	Omits
+	1C.16
+	Family history, brother: MI at age 58
+	0.40
+	States brother MI at 58
+	States brother MI, no age
+	Omits
+	1C.17
+	Family history, sister: hypertension and type 2 diabetes
+	0.30
+	States sister HTN + T2DM
+	Names one condition
+	Omits
+	1C sum check: 0.20 + 0.20 + 0.20 + 0.20 + 0.50 + 0.50 + 0.40 + 0.20 + 0.20 + 0.20 + 0.30 + 0.20 + 0.20 + 0.40 + 0.40 + 0.40 + 0.30 = 5.00
+1D. SOCIAL HISTORY (2.5 points) — 8 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1D.1
+	Marital/living status (married, lives with husband)
+	0.20
+	States married/lives with husband
+	—
+	Omits
+	1D.2
+	Occupation (retired elementary school teacher)
+	0.30
+	States occupation
+	—
+	Omits
+	1D.3
+	Tobacco status (never smoker)
+	0.40
+	States never smoker
+	States nonsmoker, no never/former
+	Omits
+	1D.4
+	Alcohol use status (rare use)
+	0.30
+	States rare alcohol use
+	—
+	Omits
+	1D.5
+	Recreational drug use (denies)
+	0.20
+	States denies drug use
+	—
+	Omits
+	1D.6
+	Physical activity (walking 3-4 days per week)
+	0.40
+	States 3-4 days/week
+	States active, no detail
+	Omits
+	1D.7
+	Assists with grandchildren childcare multiple days per week
+	0.30
+	States childcare role
+	—
+	Omits
+	1D.8
+	Improved dietary habits (reduced sodium, fewer restaurant meals)
+	0.40
+	States dietary improvements
+	States diet, no detail
+	Omits
+	1D sum check: 0.20 + 0.30 + 0.40 + 0.30 + 0.20 + 0.40 + 0.30 + 0.40 = 2.50
+1E. MEDICATIONS, ALLERGIES, AND IMMUNIZATIONS (5.5 points) — 30 inputs, sum = 5.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1E.1
+	Metformin XR listed (name and formulation)
+	0.20
+	Names metformin XR
+	Names metformin, no formulation
+	Omits
+	1E.2
+	Metformin dose (1000 mg)
+	0.10
+	States 1000 mg
+	—
+	Incorrect
+	1E.3
+	Metformin regimen (by mouth twice daily)
+	0.20
+	States PO twice daily
+	States daily, wrong frequency
+	Omits
+	1E.4
+	Empagliflozin listed
+	0.20
+	Names empagliflozin
+	—
+	Omits
+	1E.5
+	Empagliflozin dose (10 mg)
+	0.10
+	States 10 mg
+	—
+	Incorrect
+	1E.6
+	Empagliflozin regimen (by mouth daily)
+	0.10
+	States PO daily
+	—
+	Omits
+	1E.7
+	Semaglutide listed
+	0.20
+	Names semaglutide
+	—
+	Omits
+	1E.8
+	Semaglutide dose (0.5 mg)
+	0.10
+	States 0.5 mg
+	—
+	Incorrect
+	1E.9
+	Semaglutide regimen (subcutaneously weekly)
+	0.30
+	States SC weekly
+	States weekly, no route
+	Omits
+	1E.10
+	Lisinopril listed
+	0.20
+	Names lisinopril
+	—
+	Omits
+	1E.11
+	Lisinopril dose (40 mg) — uptitrated from prior 20 mg
+	0.20
+	States 40 mg
+	States lisinopril, wrong/old dose
+	Incorrect
+	1E.12
+	Lisinopril regimen (by mouth daily)
+	0.10
+	States PO daily
+	—
+	Omits
+	1E.13
+	Metoprolol succinate listed (name and formulation)
+	0.20
+	Names metoprolol succinate
+	Names metoprolol, no salt
+	Omits
+	1E.14
+	Metoprolol dose (50 mg)
+	0.10
+	States 50 mg
+	—
+	Incorrect
+	1E.15
+	Metoprolol regimen (by mouth daily)
+	0.10
+	States PO daily
+	—
+	Omits
+	1E.16
+	Atorvastatin listed
+	0.20
+	Names atorvastatin
+	—
+	Omits
+	1E.17
+	Atorvastatin dose (40 mg)
+	0.10
+	States 40 mg
+	—
+	Incorrect
+	1E.18
+	Atorvastatin regimen (by mouth daily)
+	0.10
+	States PO daily
+	—
+	Omits
+	1E.19
+	Aspirin listed
+	0.20
+	Names aspirin
+	—
+	Omits
+	1E.20
+	Aspirin dose (81 mg)
+	0.10
+	States 81 mg
+	—
+	Incorrect
+	1E.21
+	Aspirin regimen (by mouth daily)
+	0.10
+	States PO daily
+	—
+	Omits
+	1E.22
+	Omeprazole listed
+	0.20
+	Names omeprazole
+	—
+	Omits
+	1E.23
+	Omeprazole dose (20 mg)
+	0.10
+	States 20 mg
+	—
+	Incorrect
+	1E.24
+	Penicillin allergy documented
+	0.40
+	States penicillin allergy
+	—
+	Omits
+	1E.25
+	Penicillin reaction documented (rash)
+	0.20
+	States rash
+	Notes reaction, unspecified
+	Omits
+	1E.26
+	Influenza vaccine current
+	0.20
+	States influenza current
+	—
+	Omits
+	1E.27
+	COVID-19 vaccine current
+	0.20
+	States COVID current
+	—
+	Omits
+	1E.28
+	Pneumococcal (PCV) received at age 65
+	0.30
+	States PCV at 65
+	States PCV, no detail
+	Omits
+	1E.29
+	Shingrix series complete
+	0.30
+	States Shingrix complete
+	—
+	Omits
+	1E.30
+	Tdap last received 11 years ago
+	0.40
+	States Tdap 11 years ago
+	States Tdap, no interval
+	Omits
+	1E sum check: 0.20 + 0.10 + 0.20 + 0.20 + 0.10 + 0.10 + 0.20 + 0.10 + 0.30 + 0.20 + 0.20 + 0.10 + 0.20 + 0.10 + 0.10 + 0.20 + 0.10 + 0.10 + 0.20 + 0.10 + 0.10 + 0.20 + 0.10 + 0.40 + 0.20 + 0.20 + 0.20 + 0.30 + 0.30 + 0.40 = 5.50
+1F. REVIEW OF SYSTEMS / RELEVANT NEGATIVES (1.5 points) — 8 inputs, sum = 1.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1F.1
+	Denies chest pain
+	0.20
+	States denies chest pain
+	—
+	Omits
+	1F.2
+	Denies shortness of breath
+	0.20
+	States denies SOB
+	—
+	Omits
+	1F.3
+	Denies palpitations
+	0.20
+	States denies palpitations
+	—
+	Omits
+	1F.4
+	Denies syncope
+	0.20
+	States denies syncope
+	—
+	Omits
+	1F.5
+	Denies orthopnea
+	0.20
+	States denies orthopnea
+	—
+	Omits
+	1F.6
+	Denies paroxysmal nocturnal dyspnea
+	0.20
+	States denies PND
+	—
+	Omits
+	1F.7
+	Denies hypoglycemia
+	0.15
+	States denies hypoglycemia
+	—
+	Omits
+	1F.8
+	Denies medication-related adverse effects
+	0.15
+	States denies adverse effects
+	—
+	Omits
+	1F sum check: 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.15 + 0.15 = 1.50
+1G. PATIENT GOALS / CONCERNS (2.0 points) — 3 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1G.1
+	Remains concerned about eventually requiring dialysis
+	0.60
+	States dialysis concern
+	—
+	Omits
+	1G.2
+	Highly motivated to prevent kidney disease progression
+	0.70
+	States kidney-preservation motivation
+	—
+	Omits
+	1G.3
+	Highly motivated to avoid another myocardial infarction
+	0.70
+	States MI-avoidance motivation
+	—
+	Omits
+	1G sum check: 0.60 + 0.70 + 0.70 = 2.00
+Section 1 check: 3.0 + 5.5 + 5.0 + 2.5 + 5.5 + 1.5 + 2.0 = 25.0
+SECTION 2: OBJECTIVE (15.0 points)
+2A. VITAL SIGNS AND ANTHROPOMETRICS (3.5 points) — 6 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2A.1
+	Office blood pressure value (130/78 mmHg)
+	0.70
+	States 130/78 mmHg
+	BP stated, value imprecise
+	Omits
+	2A.2
+	Repeat office blood pressure value (128/78 mmHg)
+	0.60
+	States 128/78 mmHg
+	Notes repeat, no value
+	Omits
+	2A.3
+	Heart rate (70 bpm)
+	0.40
+	States 70 bpm
+	—
+	Omits
+	2A.4
+	Weight (94.5 kg)
+	0.50
+	States 94.5 kg
+	—
+	Omits
+	2A.5
+	Body mass index (34.7 kg/m2)
+	0.60
+	States 34.7 kg/m2
+	BMI stated, value imprecise
+	Omits
+	2A.6
+	Home blood pressure log average (~129/78 mmHg)
+	0.70
+	States ~129/78 mmHg
+	Notes home log, no average
+	Omits
+	2A sum check: 0.70 + 0.60 + 0.40 + 0.50 + 0.60 + 0.70 = 3.50
+2B. LABORATORY DATA (9.0 points) — 15 inputs, sum = 9.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2B.1
+	Current A1C (7.9%)
+	0.90
+	States 7.9%
+	A1C stated, value imprecise
+	Omits
+	2B.2
+	Previous A1C (8.2%)
+	0.40
+	States 8.2%
+	—
+	Omits
+	2B.3
+	A1C improvement noted (8.2% to 7.9%)
+	0.40
+	States improvement with values
+	States improved, no values
+	Omits
+	2B.4
+	Sodium (138 mEq/L)
+	0.30
+	States 138 mEq/L
+	—
+	Omits
+	2B.5
+	Potassium (4.8 mEq/L)
+	0.80
+	States 4.8 mEq/L
+	—
+	Omits
+	2B.6
+	Serum creatinine (1.28 mg/dL)
+	0.60
+	States 1.28 mg/dL
+	—
+	Omits
+	2B.7
+	eGFR (50 mL/min/1.73m2)
+	1.00
+	States 50 mL/min/1.73m2
+	eGFR stated, value imprecise
+	Omits
+	2B.8
+	Current UACR (330 mg/g)
+	1.00
+	States 330 mg/g
+	Notes UACR, no value
+	Omits
+	2B.9
+	Previous UACR (452 mg/g)
+	0.50
+	States 452 mg/g
+	—
+	Omits
+	2B.10
+	UACR improvement noted (452 to 330 mg/g)
+	0.60
+	States improvement with values
+	States improved, no values
+	Omits
+	2B.11
+	Total cholesterol (170 mg/dL)
+	0.40
+	States 170 mg/dL
+	—
+	Omits
+	2B.12
+	LDL-C (86 mg/dL)
+	0.80
+	States 86 mg/dL
+	LDL stated, value imprecise
+	Omits
+	2B.13
+	HDL-C (45 mg/dL)
+	0.40
+	States 45 mg/dL
+	—
+	Omits
+	2B.14
+	Triglycerides (184 mg/dL)
+	0.50
+	States 184 mg/dL
+	—
+	Omits
+	2B.15
+	LDL-C improvement noted (92 to 86 mg/dL)
+	0.40
+	States improvement with values
+	States improved, no values
+	Omits
+	2B sum check: 0.90 + 0.40 + 0.40 + 0.30 + 0.80 + 0.60 + 1.00 + 1.00 + 0.50 + 0.60 + 0.40 + 0.80 + 0.40 + 0.50 + 0.40 = 9.00
+2C. TRENDS / INTERPRETATION (2.5 points) — 5 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2C.1
+	BMI value consistent with documented weight (34.7 kg/m2)
+	0.40
+	BMI consistent with weight
+	BMI stated, not reconciled
+	Incorrect
+	2C.2
+	UACR improved but remains A3 (severely increased)
+	0.60
+	States improved yet still A3
+	States improved only
+	Omits
+	2C.3
+	Home BP corroborates office; now at <130/80 goal
+	0.50
+	States corroboration + at goal
+	States corroboration only
+	Omits
+	2C.4
+	eGFR stable; potassium rising on uptitrated ACE inhibitor
+	0.60
+	Notes K rise with ACEi titration
+	States values only
+	Omits
+	2C.5
+	Lipids improved; LDL-C still above secondary-prevention goal
+	0.40
+	States both improvement + gap
+	States one
+	Omits
+	2C sum check: 0.40 + 0.60 + 0.50 + 0.60 + 0.40 = 2.50
+Section 2 check: 3.5 + 9.0 + 2.5 = 15.0
+SECTION 3: ASSESSMENT (30.0 points)
+3A. PROBLEM 1 — CKD STAGE 3a / SEVERE ALBUMINURIA, IMPROVING / PERSISTENT VERY HIGH RISK (7.0 points) — 14 inputs, sum = 7.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3A.1
+	Problem identified: CKD Stage 3a with severely increased albuminuria
+	0.50
+	Names the problem
+	—
+	Omits
+	3A.2
+	Status: improving but persistent very high risk
+	0.60
+	States both improving and high risk
+	States one only
+	Incorrect
+	3A.3
+	eGFR 50 corresponds to CKD Stage G3a
+	0.50
+	States G3a
+	States CKD, no stage
+	Incorrect
+	3A.4
+	UACR 330 corresponds to A3 (severely increased)
+	0.60
+	States A3
+	States elevated, no category
+	Incorrect
+	3A.5
+	Documents albuminuria improvement (452 to 330 mg/g)
+	0.60
+	States change with values
+	States improved, no values
+	Omits
+	3A.6
+	Notes patient remains within A3 category despite improvement
+	0.50
+	States still A3
+	—
+	Omits
+	3A.7
+	Cites KDIGO and/or ADA 2026
+	0.40
+	Names a guideline source
+	Cites guideline, no source
+	Omits
+	3A.8
+	Persistent severe albuminuria predicts CKD progression / CV events / kidney failure
+	0.60
+	Names >=2 risks
+	Names 1
+	Omits
+	3A.9
+	Albuminuria reduction suggests prior therapeutic strategy was effective
+	0.50
+	States this inference
+	—
+	Omits
+	3A.10
+	Progression risk likely reduced
+	0.40
+	States reduced progression risk
+	—
+	Omits
+	3A.11
+	Substantial residual risk remains (albuminuria/DM/HTN/CKD/ASCVD)
+	0.50
+	Names >=3 contributors
+	Names 1-2
+	Omits
+	3A.12
+	Continue considering cardiorenal protective optimization
+	0.50
+	States ongoing optimization
+	—
+	Omits
+	3A.13
+	Opportunity for further renoprotection (acceptable: nonsteroidal MRA finerenone if potassium permits)
+	0.40
+	Names a guideline-supported addition
+	States add therapy, no agent
+	Omits
+	3A.14
+	Rising potassium may limit further RAAS/MRA intensification
+	0.40
+	Links K to therapy limits
+	—
+	Omits
+	3A sum check: 0.50 + 0.60 + 0.50 + 0.60 + 0.60 + 0.50 + 0.40 + 0.60 + 0.50 + 0.40 + 0.50 + 0.50 + 0.40 + 0.40 = 7.00
+3B. PROBLEM 2 — TYPE 2 DIABETES, IMPROVING BUT ABOVE GOAL (5.0 points) — 11 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3B.1
+	Problem identified: type 2 diabetes mellitus
+	0.30
+	Names type 2 diabetes
+	—
+	Omits
+	3B.2
+	Status: improving but above goal
+	0.50
+	States improving but above goal
+	States one only
+	Incorrect
+	3B.3
+	Documents A1C improvement (8.2% to 7.9%)
+	0.50
+	States change with values
+	States improved, no values
+	Omits
+	3B.4
+	Attributes to improved lifestyle and continued adherence
+	0.40
+	Names >=1 driver
+	—
+	Omits
+	3B.5
+	References therapy (metformin/empagliflozin/semaglutide)
+	0.50
+	Names all three
+	Names 1-2
+	Omits
+	3B.6
+	States A1C goal <7%
+	0.50
+	States <7%
+	States vague glycemic goal
+	Omits
+	3B.7
+	Individualizes goal for healthy older adult
+	0.40
+	States individualized rationale
+	—
+	Omits
+	3B.8
+	Cites ADA 2026 Standards of Care
+	0.30
+	Names ADA 2026
+	Cites guideline, no source
+	Omits
+	3B.9
+	Notes meaningful improvement / moving in desired direction
+	0.40
+	States favorable direction
+	—
+	Omits
+	3B.10
+	Therapy includes agents with established CV/renal benefit
+	0.60
+	States this point
+	—
+	Omits
+	3B.11
+	Prioritize therapies with glycemic + cardiorenal benefit
+	0.60
+	States this prioritization
+	—
+	Omits
+	3B sum check: 0.30 + 0.50 + 0.50 + 0.40 + 0.50 + 0.50 + 0.40 + 0.30 + 0.40 + 0.60 + 0.60 = 5.00
+3C. PROBLEM 3 — HYPERTENSION, CONTROLLED (4.5 points) — 10 inputs, sum = 4.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3C.1
+	Problem identified: hypertension
+	0.30
+	Names hypertension
+	—
+	Omits
+	3C.2
+	Status: controlled
+	0.60
+	States controlled
+	—
+	Incorrect
+	3C.3
+	Documents BP improvement (142/84 to 130/78, repeat 128/78 mmHg)
+	0.60
+	States change with values
+	States improved, no values
+	Omits
+	3C.4
+	References home BP showing similar control
+	0.40
+	References home control
+	—
+	Omits
+	3C.5
+	States goal <130/80 mmHg for diabetes/CKD/high CV risk
+	0.60
+	States <130/80 mmHg
+	States <140/90 or vague
+	Omits
+	3C.6
+	Cites 2025 ACC/AHA + ADA + KDIGO
+	0.40
+	Names >=1 guideline source
+	Cites guideline, no source
+	Omits
+	3C.7
+	Links improved BP control to albuminuria reduction / kidney protection
+	0.60
+	States this linkage
+	—
+	Omits
+	3C.8
+	Therapy effective and well tolerated
+	0.40
+	States effective + tolerated
+	States one only
+	Omits
+	3C.9
+	Continue monitoring and maintenance of control
+	0.30
+	States ongoing maintenance
+	—
+	Omits
+	3C.10
+	Recognizes lisinopril uptitration (20 to 40 mg) contributed
+	0.30
+	Notes ACEi titration role
+	—
+	Omits
+	3C sum check: 0.30 + 0.60 + 0.60 + 0.40 + 0.60 + 0.40 + 0.60 + 0.40 + 0.30 + 0.30 = 4.50
+3D. PROBLEM 4 — SECONDARY ASCVD PREVENTION, RESIDUAL RISK REMAINS (5.0 points) — 11 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3D.1
+	Problem identified: secondary ASCVD prevention
+	0.40
+	Names the problem
+	—
+	Omits
+	3D.2
+	Status: residual risk remains
+	0.40
+	States residual risk
+	—
+	Incorrect
+	3D.3
+	Established ASCVD (STEMI requiring PCI)
+	0.50
+	States established ASCVD basis
+	States MI, no detail
+	Omits
+	3D.4
+	Remains very high cardiovascular risk (diabetes/CKD/obesity/prior MI)
+	0.50
+	Names >=3 risk drivers
+	Names 1-2
+	Omits
+	3D.5
+	Documents LDL-C improvement (92 to 86 mg/dL)
+	0.60
+	States change with values
+	States improved, no values
+	Omits
+	3D.6
+	LDL-C remains above ideal secondary-prevention target (<70 or <55 mg/dL)
+	0.60
+	States the LDL goal/gap
+	States LDL only
+	Omits
+	3D.7
+	Cites ADA / ACC-AHA lipid recommendations
+	0.40
+	Names a guideline source
+	Cites guideline, no source
+	Omits
+	3D.8
+	Aggressive lipid-lowering indicated for established ASCVD + high-risk features
+	0.50
+	States this indication
+	—
+	Omits
+	3D.9
+	Substantial residual cardiovascular risk
+	0.40
+	States residual risk
+	—
+	Omits
+	3D.10
+	Identifies lipid optimization as the next highest-yield target
+	0.40
+	States this prioritization
+	—
+	Omits
+	3D.11
+	Additional lipid-lowering option (acceptable: ezetimibe, PCSK9 inhibitor, bempedoic acid)
+	0.30
+	Names a guideline-supported agent
+	States add therapy, no agent
+	Omits
+	3D sum check: 0.40 + 0.40 + 0.50 + 0.50 + 0.60 + 0.60 + 0.40 + 0.50 + 0.40 + 0.40 + 0.30 = 5.00
+3E. PROBLEM 5 — OBESITY, IMPROVING (3.5 points) — 7 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3E.1
+	Problem identified: obesity
+	0.40
+	Names obesity
+	—
+	Omits
+	3E.2
+	Status: improving
+	0.40
+	States improving
+	—
+	Incorrect
+	3E.3
+	BMI remains elevated (34.7 kg/m2) but weight decreased
+	0.60
+	States both still elevated + decreased
+	States one only
+	Omits
+	3E.4
+	Manage obesity as a chronic disease (per ADA)
+	0.50
+	States chronic-disease framing
+	—
+	Omits
+	3E.5
+	Links obesity to diabetes/HTN/CKD progression/CV risk
+	0.50
+	Names >=2 linked risks
+	Names 1
+	Omits
+	3E.6
+	Notes meaningful lifestyle modifications and strong motivation
+	0.50
+	States both
+	States one
+	Omits
+	3E.7
+	Continue sustainable weight reduction strategies
+	0.60
+	States continued strategy
+	—
+	Omits
+	3E sum check: 0.40 + 0.40 + 0.60 + 0.50 + 0.50 + 0.50 + 0.60 = 3.50
+3F. PROBLEM 6 — HEALTH LITERACY (CKD/CARDIORENAL), IMPROVING (3.0 points) — 6 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3F.1
+	Problem identified: health literacy (improving)
+	0.50
+	Names the problem
+	—
+	Omits
+	3F.2
+	Significantly improved understanding of kidney disease/albuminuria/CV risk
+	0.50
+	States improvement
+	—
+	Omits
+	3F.3
+	Recognizes BP/diabetes/CKD progression relationship
+	0.50
+	States this recognition
+	—
+	Omits
+	3F.4
+	Additional education re residual risk / albuminuria significance appropriate
+	0.50
+	States ongoing education need
+	—
+	Omits
+	3F.5
+	Continue education on long-term cardiorenal protection
+	0.50
+	States cardiorenal education
+	—
+	Omits
+	3F.6
+	Ongoing education supports shared decision-making
+	0.50
+	States shared decision-making
+	—
+	Omits
+	3F sum check: 0.50 + 0.50 + 0.50 + 0.50 + 0.50 + 0.50 = 3.00
+3G. PROBLEM 7 — PREVENTIVE CARE GAP (2.0 points) — 3 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3G.1
+	Problem identified: preventive care gap
+	0.60
+	Names preventive care gap
+	—
+	Omits
+	3G.2
+	Identifies Tdap as overdue
+	0.80
+	States Tdap overdue
+	Names Tdap, no status
+	Omits
+	3G.3
+	References CDC Adult Immunization Schedule
+	0.60
+	Cites CDC schedule
+	—
+	Omits
+	3G sum check: 0.60 + 0.80 + 0.60 = 2.00
+Section 3 check: 7.0 + 5.0 + 4.5 + 5.0 + 3.5 + 3.0 + 2.0 = 30.0
+SECTION 4: PLAN (25.0 points)
+4A. CHRONIC KIDNEY DISEASE / ALBUMINURIA (4.5 points) — 6 inputs, sum = 4.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4A.1
+	Continue lisinopril 40 mg daily
+	0.80
+	States continue lisinopril 40 mg
+	States continue, no dose
+	Omits
+	4A.2
+	Continue empagliflozin 10 mg daily
+	0.70
+	States continue empagliflozin 10 mg
+	States continue, no dose
+	Omits
+	4A.3
+	Reinforce importance of BP control for kidney protection
+	0.80
+	States BP-renal linkage reinforcement
+	—
+	Omits
+	4A.4
+	Continue monitoring eGFR and UACR
+	0.80
+	States eGFR/UACR monitoring
+	—
+	Omits
+	4A.5
+	Evaluate additional cardiorenal risk reduction opportunities at future visits
+	0.80
+	States future optimization
+	—
+	Omits
+	4A.6
+	Monitor potassium given uptitrated ACE inhibitor
+	0.60
+	States potassium monitoring
+	—
+	Omits
+	4A sum check: 0.80 + 0.70 + 0.80 + 0.80 + 0.80 + 0.60 = 4.50
+4B. TYPE 2 DIABETES MELLITUS (3.5 points) — 5 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4B.1
+	Continue metformin XR 1000 mg twice daily
+	0.80
+	States continue metformin BID
+	States continue, no dose/frequency
+	Omits
+	4B.2
+	Continue empagliflozin 10 mg daily
+	0.60
+	States continue empagliflozin 10 mg
+	States continue, no dose
+	Omits
+	4B.3
+	Continue semaglutide 0.5 mg subcutaneously weekly
+	0.70
+	States continue semaglutide SC weekly
+	States continue, no route/freq
+	Omits
+	4B.4
+	Reinforce dietary and lifestyle modifications
+	0.70
+	States reinforce diet/lifestyle
+	—
+	Omits
+	4B.5
+	Repeat A1C in ~3 months
+	0.70
+	States A1C in 3 months
+	Repeat A1C, no timing
+	Omits
+	4B sum check: 0.80 + 0.60 + 0.70 + 0.70 + 0.70 = 3.50
+4C. HYPERTENSION (3.0 points) — 4 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4C.1
+	Continue lisinopril 40 mg daily
+	0.70
+	States continue lisinopril 40 mg
+	States continue, no dose
+	Omits
+	4C.2
+	Continue metoprolol succinate 50 mg daily
+	0.70
+	States continue metoprolol 50 mg
+	States continue, no dose
+	Omits
+	4C.3
+	Continue home blood pressure monitoring
+	0.70
+	States continue HBPM
+	—
+	Omits
+	4C.4
+	Maintain BP goal <130/80 mmHg
+	0.90
+	States <130/80 maintenance goal
+	States maintain, no target
+	Omits
+	4C sum check: 0.70 + 0.70 + 0.70 + 0.90 = 3.00
+4D. SECONDARY ASCVD PREVENTION (3.5 points) — 5 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4D.1
+	Continue atorvastatin 40 mg daily
+	0.70
+	States continue atorvastatin 40 mg
+	States continue, no dose
+	Omits
+	4D.2
+	Continue aspirin 81 mg daily
+	0.70
+	States continue aspirin 81 mg
+	States continue, no dose
+	Omits
+	4D.3
+	Reassess need for further lipid-lowering optimization (acceptable add-on: ezetimibe, PCSK9 inhibitor, bempedoic acid)
+	1.00
+	Names a guideline-supported add-on
+	States reassess, no agent
+	Omits
+	4D.4
+	Reinforce cardiovascular risk reduction strategies
+	0.60
+	States CV risk reduction
+	—
+	Omits
+	4D.5
+	Targets secondary-prevention LDL goal (<70 or <55 mg/dL)
+	0.50
+	States the LDL target
+	—
+	Omits
+	4D sum check: 0.70 + 0.70 + 1.00 + 0.60 + 0.50 = 3.50
+4E. OBESITY (3.0 points) — 4 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4E.1
+	Continue walking program
+	0.70
+	States continue walking
+	—
+	Omits
+	4E.2
+	Encourage progression toward >=150 minutes/week moderate activity
+	0.90
+	States >=150 min/week goal
+	States exercise, no target
+	Omits
+	4E.3
+	Reinforce portion control and dietary modifications
+	0.80
+	States portion/dietary reinforcement
+	—
+	Omits
+	4E.4
+	Leverage GLP-1 RA therapy for ongoing weight management
+	0.60
+	States GLP-1 weight role
+	—
+	Omits
+	4E sum check: 0.70 + 0.90 + 0.80 + 0.60 = 3.00
+4F. HEALTH LITERACY (3.0 points) — 4 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4F.1
+	Continue CKD education
+	0.80
+	States continue CKD education
+	—
+	Omits
+	4F.2
+	Continue counseling regarding albuminuria and cardiovascular risk
+	0.90
+	States albuminuria/CV counseling
+	—
+	Omits
+	4F.3
+	Reinforce significance of persistent residual risk despite improvement
+	0.90
+	States residual-risk reinforcement
+	—
+	Omits
+	4F.4
+	Support shared decision-making
+	0.40
+	States shared decision-making
+	—
+	Omits
+	4F sum check: 0.80 + 0.90 + 0.90 + 0.40 = 3.00
+4G. PREVENTIVE CARE (1.0 points) — 1 inputs, sum = 1.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4G.1
+	Recommend Tdap vaccination
+	1.00
+	States Tdap recommendation
+	—
+	Omits
+	4G sum check: 1.00 = 1.00
+4H. FOLLOW-UP AND MONITORING (3.5 points) — 6 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4H.1
+	Follow up in ~4-8 weeks
+	0.70
+	States 4-8 week follow-up
+	States follow-up, no timing
+	Omits
+	4H.2
+	Repeat laboratory monitoring as appropriate
+	0.50
+	States repeat labs
+	—
+	Omits
+	4H.3
+	Reassess albuminuria trend
+	0.70
+	States albuminuria reassessment
+	—
+	Omits
+	4H.4
+	Reassess LDL-C and cardiovascular risk reduction strategy
+	0.70
+	States LDL/CV reassessment
+	—
+	Omits
+	4H.5
+	Continue long-term cardiorenal risk reduction efforts
+	0.50
+	States long-term cardiorenal plan
+	—
+	Omits
+	4H.6
+	Reassess potassium / renal function
+	0.40
+	States potassium/renal reassessment
+	—
+	Omits
+	4H sum check: 0.70 + 0.50 + 0.70 + 0.70 + 0.50 + 0.40 = 3.50
+Section 4 check: 4.5 + 3.5 + 3.0 + 3.5 + 3.0 + 3.0 + 1.0 + 3.5 = 25.0
+SECTION 5: PRESENTATION QUALITY (5.0 points)
+5A. ORGANIZATION AND SOAP STRUCTURE (2.0 points) — 4 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5A.1
+	Uses four-part SOAP structure (S / O / A / P)
+	0.50
+	All four sections present and labeled
+	Some sections present
+	Absent
+	5A.2
+	Subjective and objective data placed in correct sections
+	0.50
+	Correctly partitioned
+	Minor misplacement
+	Major misplacement
+	5A.3
+	Assessment presents a prioritized, numbered problem list (CKD prioritized)
+	0.50
+	Numbered, prioritized list
+	Listed, not prioritized
+	Absent
+	5A.4
+	Each plan element maps to an assessed problem
+	0.50
+	All plan items mapped
+	Most mapped
+	Unmapped plan
+	5A sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+5B. FORMATTING AND DOCUMENTATION (2.0 points) — 4 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5B.1
+	Medications documented with drug, dose, route, and frequency
+	0.50
+	All four elements present
+	Missing one element
+	Largely incomplete
+	5B.2
+	Laboratory values reported with units
+	0.50
+	Units present throughout
+	Some units missing
+	Units absent
+	5B.3
+	Goals/targets stated with numeric thresholds
+	0.50
+	Numeric goals stated
+	Some numeric
+	Vague goals
+	5B.4
+	Documents trends versus prior visit (UACR, A1C, BP, LDL)
+	0.50
+	Reports >=3 trends
+	Reports 1-2 trends
+	No trends
+	5B sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+5C. PROFESSIONAL TONE AND SPECIFICITY (1.0 points) — 3 inputs, sum = 1.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5C.1
+	Objective, professional clinical language
+	0.40
+	Professional throughout
+	Minor lapses
+	Unprofessional
+	5C.2
+	Recommendations tied to guideline or clinical rationale
+	0.40
+	Rationale provided
+	Partial rationale
+	Absent
+	5C.3
+	Free of major factual or medication errors
+	0.20
+	No major errors
+	1 minor error
+	Major error
+	5C sum check: 0.40 + 0.40 + 0.20 = 1.00
+Section 5 check: 2.0 + 2.0 + 1.0 = 5.0
+GRAND TOTAL VERIFICATION
+§
+	Section
+	Subsections
+	Points
+	1
+	SUBJECTIVE
+	1A (3.0) + 1B (5.5) + 1C (5.0) + 1D (2.5) + 1E (5.5) + 1F (1.5) + 1G (2.0)
+	25.0
+	2
+	OBJECTIVE
+	2A (3.5) + 2B (9.0) + 2C (2.5)
+	15.0
+	3
+	ASSESSMENT
+	3A (7.0) + 3B (5.0) + 3C (4.5) + 3D (5.0) + 3E (3.5) + 3F (3.0) + 3G (2.0)
+	30.0
+	4
+	PLAN
+	4A (4.5) + 4B (3.5) + 4C (3.0) + 4D (3.5) + 4E (3.0) + 4F (3.0) + 4G (1.0) + 4H (3.5)
+	25.0
+	5
+	PRESENTATION QUALITY
+	5A (2.0) + 5B (2.0) + 5C (1.0)
+	5.0
+	 
+	GRAND TOTAL
+	 
+	100.0
+	GRADING SCALE
+Grade
+	Range
+	Description
+	A
+	90.0–100.0
+	Exceptional — comprehensive, accurate, clinically actionable
+	B
+	80.0–89.9
+	Proficient — solid coverage with minor gaps
+	C
+	70.0–79.9
+	Developing — adequate but missing key elements
+	D
+	60.0–69.9
+	Below expectations — significant gaps in content or analysis
+	F
+	Below 60.0
+	Unsatisfactory — major deficiencies
+	TOTAL DISCRETE INPUTS ACROSS ALL SECTIONS
+Section
+	Subsections
+	# Inputs
+	1. SUBJECTIVE
+	1A–1G
+	91
+	2. OBJECTIVE
+	2A–2C
+	26
+	3. ASSESSMENT
+	3A–3G
+	62
+	4. PLAN
+	4A–4H
+	35
+	5. PRESENTATION QUALITY
+	5A–5C
+	11
+	TOTAL
+	 
+	225
+	MODEL ANSWER SCORE: 100.0 / 100.0
+The model answer (Patient C — Wednesday First Follow-Up gold-standard SOAP note) earns full credit on every one of the 225 discrete inputs. Any student submission is scored against this rubric by evaluating each of the 225 discrete inputs independently, awarding FULL, HALF, or ZERO credit per input, and summing to a final score out of 100.0.
+Source guidelines for therapeutic alternatives: 2025 ACC/AHA Hypertension Guideline; ADA Standards of Care in Diabetes — 2026; KDIGO CKD Guideline; ACC/AHA Cholesterol Guideline; CDC Adult Immunization Schedule.
+
+
+

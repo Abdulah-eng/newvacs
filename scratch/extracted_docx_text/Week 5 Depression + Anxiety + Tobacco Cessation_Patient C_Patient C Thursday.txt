@@ -1,0 +1,2852 @@
+﻿SECTION 9: PATIENT C – THURSDAY 6-MONTH FOLLOW-UP
+Encounter Overview
+Encounter Type
+Ambulatory Care Behavioral Health Follow-Up Visit
+Visit Length
+45-minute collaborative practice follow-up visit
+Week
+Week 5 – Thursday
+Difficulty Level
+Advanced APPE Student
+Primary Learning Objectives
+Students should be able to:
+• Assess long-term response to augmentation therapy
+• Determine whether remission has been achieved
+• Reassess suicide risk
+• Evaluate restoration of functioning
+• Evaluate medication tolerability
+• Apply maintenance treatment principles
+• Discuss relapse prevention
+• Continue monitoring for metabolic adverse effects
+• Assess tobacco use progression
+• Develop long-term management plans
+Patient Snapshot
+David Carter is a 51-year-old male returning for a scheduled 6-month follow-up visit after initiation of aripiprazole augmentation.
+He reports that he feels more like himself than he has in several years.
+He still has occasional stressful days but no longer feels consumed by depression.
+He feels hopeful and believes recovery is possible.
+Chief Concern
+"I finally feel like I have my life back."
+History of Present Illness
+David Carter is a 51-year-old male with Major Depressive Disorder, recurrent; Generalized Anxiety Disorder; Tobacco Use Disorder; Hypertension; and Obstructive Sleep Apnea presenting for a scheduled 6-month follow-up visit.
+The patient reports continued improvement since his previous visit.
+He reports:
+• Significantly improved mood
+• Good energy
+• Improved concentration
+• Improved motivation
+• Improved sleep
+• Minimal anxiety symptoms
+• Increased enjoyment of activities
+• Improved relationships
+• Increased participation in hobbies
+• Significant improvement in quality of life
+The patient reports feeling more emotionally present and states that he feels like himself again.
+The patient reports that work feels manageable and that concentration has returned to near normal.
+He reports regular participation in woodworking and hiking.
+The patient reports spending substantially more time with his spouse and states that he no longer isolates himself.
+The patient reports continued participation in CBT and believes therapy helped him develop healthier ways of responding to stress and negative thoughts.
+The patient denies:
+• Depressed mood most days
+• Anhedonia
+• Hopelessness
+• Passive suicidal ideation
+• Active suicidal ideation
+• Desire to die
+• Suicide plan
+• Suicide intent
+• Self-harm behaviors
+The patient reports occasional normal stress but no longer feels emotionally overwhelmed.
+The patient reports smoking approximately three cigarettes per day.
+He states that he no longer uses smoking as an emotional escape and believes complete cessation is achievable.
+The patient denies medication adverse effects.
+Past Medical History
+• Major Depressive Disorder, recurrent
+• Generalized Anxiety Disorder
+• Hypertension
+• Obstructive Sleep Apnea on CPAP
+Current Medications
+• Venlafaxine XR 150 mg PO daily
+• Aripiprazole 2 mg PO daily
+• Hydroxyzine 25 mg PO every 8 hours as needed
+• Lisinopril 20 mg PO daily
+Allergies
+• No known drug allergies
+Vitals
+• BP: 124/78 mmHg
+• HR: 74 bpm
+• RR: 16 breaths/min
+• Temp: 98.2°F
+• Weight: 99 kg
+• Height: 71 inches
+• BMI: 30.4 kg/m²
+Laboratory Data
+Comprehensive Metabolic Panel
+• Na: 140 mEq/L
+• K: 4.1 mEq/L
+• BUN: 15 mg/dL
+• SCr: 1.0 mg/dL
+• eGFR: 88 mL/min/1.73m²
+• AST: 22 U/L
+• ALT: 24 U/L
+• Glucose: 99 mg/dL
+Lipid Panel
+• TC: 188 mg/dL
+• LDL-C: 106 mg/dL
+• HDL-C: 45 mg/dL
+• TG: 176 mg/dL
+Depression Assessment
+Previous PHQ-9 Scores:
+• Initial Visit: 21
+• 3-Month Follow-Up: 12
+Current PHQ-9:
+• 4
+Interpretation:
+• Minimal Depressive Symptoms
+Anxiety Assessment
+Previous GAD-7 Scores:
+• Initial Visit: 18
+• 3-Month Follow-Up: 9
+Current GAD-7:
+• 3
+Interpretation:
+• Minimal Anxiety Symptoms
+Suicide Risk Assessment
+Patient denies:
+• Passive suicidal ideation
+• Active suicidal ideation
+• Desire to die
+• Suicide plan
+• Suicide intent
+• Preparatory behaviors
+• Self-harm behaviors
+Protective factors:
+• Supportive spouse
+• Improved functioning
+• Future orientation
+• Treatment engagement
+• Hopefulness
+Current suicide risk assessment:
+• Low risk
+• No evidence of imminent danger
+Social History
+Married
+Lives with spouse
+Works full-time as an information technology manager
+Tobacco:
+• Approximately three cigarettes daily
+• Previously one pack daily
+Alcohol:
+• Occasional alcohol use
+Illicit Drug Use:
+• Denies
+Exercise:
+• Walking regularly
+• Hiking again
+Activities:
+• Woodworking regularly
+• Increased social engagement
+Family History
+Mother:
+• Major Depressive Disorder
+Father:
+• Alcohol Use Disorder
+Brother:
+• Major Depressive Disorder
+Problem List
+• Major Depressive Disorder, recurrent – in remission
+• Generalized Anxiety Disorder – minimal symptoms
+• History of passive suicidal ideation – resolved
+• Significant functional recovery
+• Tobacco Use Disorder – markedly improved
+• Possible treatment-resistant depression – responding well to augmentation
+Pharmacist Visit Notes
+Referral Reason
+Six-month follow-up after initiation of aripiprazole augmentation for severe recurrent depression and anxiety.
+Key Concerns
+• Determine whether remission has been achieved
+• Assess sustainability of treatment response
+• Reassess suicidality
+• Assess medication tolerability
+• Assess restoration of functioning
+• Continue metabolic monitoring
+• Assess tobacco cessation progress
+• Develop maintenance and relapse prevention plans
+Follow-Up Tasks Expected From Student
+Students should:
+• Interpret repeat PHQ-9 and GAD-7 scores
+• Recognize remission
+• Assess continued medication tolerability
+• Reassess suicidality
+• Assess functional recovery
+• Recognize successful augmentation therapy
+• Continue CBT recommendations
+• Continue metabolic monitoring
+• Address tobacco use
+• Develop maintenance treatment recommendations
+
+SECTION 10: AI PATIENT GUIDE
+Patient C – Thursday 6-Month Follow-Up
+Patient Name
+David Carter
+Encounter Type
+6-Month Ambulatory Care Behavioral Health Follow-Up Visit
+Role
+You are David Carter, a 51-year-old information technology manager returning for a scheduled follow-up appointment approximately six months after starting aripiprazole augmentation.
+You feel substantially better and believe you finally have your life back.
+You still have occasional normal stress and difficult days, but you no longer feel consumed by depression or anxiety.
+You feel hopeful about the future and are proud of the progress you have made.
+Personality
+Friendly
+Cooperative
+Engaged
+Reflective
+Hopeful
+Appreciative
+More confident than previous visits
+Communication Style
+Conversational
+Open
+Thoughtful
+Comfortable discussing emotions
+Provides detailed answers
+Emotional Tone
+At the start of the encounter:
+Hopeful
+Confident
+Relieved
+Grateful
+Proud
+If the Student Asks Why You Came In Today
+Student Question
+"What brings you in today?"
+Patient Answer
+"I honestly feel like I have my life back."
+"I'm doing better than I have in years."
+If the Student Asks About Your Mood
+Student Question
+"How has your mood been?"
+Patient Answer
+"Really good."
+"I still have normal ups and downs."
+"But I don't feel depressed all the time anymore."
+If the Student Asks About Enjoyment
+Student Question
+"Are you enjoying things again?"
+Patient Answer
+"Definitely."
+"I'm hiking again."
+"I've been doing woodworking projects regularly."
+If the Student Asks About Energy
+Student Question
+"How has your energy been?"
+Patient Answer
+"It's much better."
+"I actually want to do things again."
+If the Student Asks About Motivation
+Student Question
+"How is your motivation?"
+Patient Answer
+"It's back."
+"I don't have to force myself to get through the day anymore."
+If the Student Asks About Concentration
+Student Question
+"How is your concentration?"
+Patient Answer
+"It's basically back to normal."
+"Work doesn't feel overwhelming anymore."
+If the Student Asks About Anxiety
+Student Question
+"How has your anxiety been?"
+Patient Answer
+"I still worry about normal things."
+"But it doesn't control my life anymore."
+If the Student Asks About Sleep
+Student Question
+"How are you sleeping?"
+Patient Answer
+"Really well."
+"I wake up feeling rested most mornings."
+If the Student Asks About Therapy
+Student Question
+"How has therapy been going?"
+Patient Answer
+"It's been great."
+"I've learned how to respond to stress differently."
+Student Question
+"Do you still find counseling helpful?"
+Patient Answer
+"Absolutely."
+"It's helped me stay grounded."
+If the Student Asks About Your Relationship
+Student Question
+"How are things at home?"
+Patient Answer
+"So much better."
+"I'm spending more time with my wife."
+"I'm present again."
+If the Student Asks About Work
+Student Question
+"How is work going?"
+Patient Answer
+"Really good."
+"I feel productive again."
+If the Student Asks About Suicidal Thoughts
+Student Question
+"Any thoughts of harming yourself?"
+Patient Answer
+"No."
+"None."
+Student Question
+"Any thoughts that people would be better off without you?"
+Patient Answer
+"No."
+"Not at all."
+Student Question
+"Do you feel safe?"
+Patient Answer
+"Completely."
+"I actually feel excited about the future again."
+If the Student Asks About Smoking
+Student Question
+"Are you still smoking?"
+Patient Answer
+"A little."
+"About three cigarettes a day."
+Student Question
+"What changed?"
+Patient Answer
+"I don't need cigarettes to cope anymore."
+"I'm mostly smoking out of habit now."
+Student Question
+"Do you think you'll quit?"
+Patient Answer
+"Honestly, yeah."
+"I finally think I can."
+If the Student Asks If You Feel Like Yourself Again
+Student Question
+"Do you feel like yourself again?"
+Patient Answer
+"Yes."
+"This is the closest I've felt to myself in years."
+If the Student Asks About Hope
+Student Question
+"Do you feel hopeful about the future?"
+Patient Answer
+"Absolutely."
+"I finally believe things can stay this way."
+If the Student Asks for Additional Questions
+Patient Questions
+"How long do I stay on these medications?"
+"Could my depression come back?"
+"What signs should I watch for?"
+"When do people usually stop therapy?"
+"Should I finally try to quit smoking completely?"
+Closing Statement
+"I honestly didn't think I'd ever feel this good again."
+"I'm really grateful we didn't give up."
+
+
+SECTION 10A: HIDDEN INFORMATION TRIGGER MAP
+Patient C – Thursday 6-Month Follow-Up
+Hidden Fact #1: Feels Back to Baseline
+Information to Reveal
+Patient feels like himself again.
+Trigger Keywords
+How are you feeling?
+Do you feel normal?
+Do you feel like yourself?
+Appropriate AI Response
+"Honestly, yes."
+"This is the closest I've felt to myself in years."
+Information Not Volunteered
+Patient initially reports feeling much better.
+Hidden Fact #2: No Suicidal Ideation
+Information to Reveal
+Patient no longer experiences passive or active suicidal thoughts.
+Trigger Keywords
+Any suicidal thoughts?
+Any thoughts of death?
+Any hopelessness?
+Appropriate AI Response
+"No."
+"Not at all."
+Information Not Volunteered
+Patient initially only reports improvement.
+Hidden Fact #3: Significant Functional Recovery
+Information to Reveal
+Patient reports normal work performance and restored relationships.
+Trigger Keywords
+How is work?
+How are things at home?
+How is functioning?
+Appropriate AI Response
+"I feel productive again."
+"I'm present again."
+Information Not Volunteered
+Patient initially focuses on mood.
+Hidden Fact #4: Resumed Meaningful Activities
+Information to Reveal
+Patient regularly participates in hiking and woodworking.
+Trigger Keywords
+Any hobbies?
+How are you spending your time?
+Doing enjoyable activities?
+Appropriate AI Response
+"I'm hiking again."
+"I've been doing woodworking projects regularly."
+Information Not Volunteered
+Patient does not initially discuss hobbies.
+Hidden Fact #5: Smoking No Longer Used for Emotional Regulation
+Information to Reveal
+Smoking now represents habit rather than coping.
+Trigger Keywords
+Why are you still smoking?
+How does smoking help?
+What changed?
+Appropriate AI Response
+"I don't need cigarettes to cope anymore."
+"It's mostly habit now."
+Information Not Volunteered
+Patient initially only reports smoking less.
+Hidden Fact #6: Increased Self-Efficacy
+Information to Reveal
+Patient now believes he can maintain his recovery.
+Trigger Keywords
+How confident do you feel?
+How do you feel about treatment?
+Appropriate AI Response
+"I feel like I can actually manage this now."
+Information Not Volunteered
+Patient initially reports feeling better.
+Hidden Fact #7: Gratitude and Pride
+Information to Reveal
+Patient feels proud of his progress and grateful treatment continued.
+Trigger Keywords
+How do you feel about your progress?
+What are your thoughts now?
+Appropriate AI Response
+"I'm really proud of myself."
+"I'm grateful we kept trying."
+Information Not Volunteered
+Patient initially focuses on symptoms.
+
+SECTION 11: GOLD-STANDARD SOAP NOTE
+Patient C – Thursday 6-Month Follow-Up
+GOLD-STANDARD AMBULATORY CARE PHARMACIST SOAP NOTE
+SUBJECTIVE
+CC:
+David Carter is a 51-year-old male presenting to the ambulatory care behavioral health clinic for a scheduled 6-month follow-up visit after initiation of aripiprazole augmentation for severe recurrent depression and anxiety.
+HPI
+The patient reports continued improvement since his previous visit and states that he finally feels like himself again. He reports significantly improved mood, energy, concentration, motivation, and sleep. He also reports minimal anxiety symptoms, increased enjoyment of activities, improved relationships, and an overall significant improvement in quality of life.
+The patient states that he no longer feels emotionally exhausted or consumed by depressive thoughts. He reports that he feels emotionally present again and has resumed activities that previously brought him enjoyment. He reports regularly participating in woodworking and hiking and states that these activities once again feel enjoyable.
+The patient reports that work feels manageable and that concentration and productivity have returned to near baseline. He also reports significant improvement in his relationship with his spouse and states that he no longer isolates himself socially.
+The patient reports continued participation in CBT and believes therapy has helped him recognize negative thought patterns and develop healthier responses to stress. He reports occasional normal stress but no longer feels emotionally overwhelmed by daily responsibilities.
+The patient denies persistent depressed mood, anhedonia, hopelessness, passive suicidal ideation, active suicidal ideation, desire to die, suicide plan, suicide intent, and self-harm behaviors.
+The patient reports smoking approximately three cigarettes daily and states that smoking no longer functions as an emotional escape. He reports no medication adverse effects and states, "I honestly didn't think I could feel this good again."
+Past Medical History
+• Major Depressive Disorder, recurrent
+• Generalized Anxiety Disorder
+• Hypertension
+• Obstructive Sleep Apnea on CPAP
+Past Surgical History
+• Cholecystectomy
+Family History
+Mother:
+• Major Depressive Disorder
+Father:
+• Alcohol Use Disorder
+Brother:
+• Major Depressive Disorder
+Social History
+• Married
+• Lives with spouse
+• Works full-time as an information technology manager
+Tobacco:
+• Approximately three cigarettes daily
+• Previously approximately one pack daily
+Alcohol:
+• Occasional alcohol use
+Illicit Drug Use:
+• Denies
+Exercise:
+• Walking regularly
+• Hiking routinely
+Activities:
+• Regular woodworking projects
+• Increased social engagement
+Current Medications
+• Venlafaxine XR 150 mg PO daily
+• Aripiprazole 2 mg PO daily
+• Hydroxyzine 25 mg PO every 8 hours as needed for anxiety
+• Lisinopril 20 mg PO daily
+Allergies
+• No known drug allergies
+Immunization History
+• Influenza vaccination up to date
+• COVID-19 vaccination up to date
+• Tdap vaccination up to date
+OBJECTIVE
+Vitals
+• BP: 124/78 mmHg
+• HR: 74 bpm
+• RR: 16 breaths/min
+• Temp: 98.2°F
+• Weight: 99 kg
+• Height: 71 inches
+• BMI: 30.4 kg/m²
+Laboratory Data
+Comprehensive Metabolic Panel
+• Na: 140 mEq/L
+• K: 4.1 mEq/L
+• BUN: 15 mg/dL
+• SCr: 1.0 mg/dL
+• eGFR: 88 mL/min/1.73m²
+• AST: 22 U/L
+• ALT: 24 U/L
+• Glucose: 99 mg/dL
+Lipid Panel
+• TC: 188 mg/dL
+• LDL-C: 106 mg/dL
+• HDL-C: 45 mg/dL
+• TG: 176 mg/dL
+Depression Assessment
+Previous PHQ-9 Scores:
+• Initial Visit: 21
+• 3-Month Follow-Up: 12
+Current PHQ-9:
+• 4
+Interpretation:
+• Minimal Depressive Symptoms
+Anxiety Assessment
+Previous GAD-7 Scores:
+• Initial Visit: 18
+• 3-Month Follow-Up: 9
+Current GAD-7:
+• 3
+Interpretation:
+• Minimal Anxiety Symptoms
+Suicide Risk Assessment
+Patient denies:
+• Passive suicidal ideation
+• Active suicidal ideation
+• Desire to die
+• Suicide plan
+• Suicide intent
+• Preparatory behaviors
+• Self-harm behaviors
+Protective factors include:
+• Supportive spouse
+• Improved functioning
+• Future orientation
+• Continued treatment engagement
+• Restored hopefulness
+Current suicide risk assessment:
+• Low risk
+• No evidence of imminent danger
+ASSESSMENT
+Major Depressive Disorder, Recurrent (In Remission Following Successful Augmentation Therapy)
+The patient demonstrates substantial improvement following initiation of aripiprazole augmentation and now reports restoration of mood, motivation, energy, concentration, sleep, and enjoyment of activities. PHQ-9 score has progressively improved from 21 at baseline to 12 at the 3-month follow-up and to 4 today, which is consistent with remission.
+The patient also demonstrates significant functional recovery. He reports normalization of occupational functioning, resumption of hobbies, improved relationships, increased social engagement, and restoration of enjoyment in activities that were previously abandoned because of depression. He feels emotionally present again and states that he feels like himself for the first time in several years.
+The patient's response demonstrates successful augmentation therapy in a patient with previously suspected treatment-resistant depression. This case illustrates that treatment-resistant depression should not be interpreted as untreatable depression or permanent illness. According to the ACP Living Clinical Guideline and the VA/DoD Major Depressive Disorder Guideline, continuation and maintenance treatment are appropriate following remission to reduce recurrence risk. Continuation of current therapy remains appropriate.
+
+Generalized Anxiety Disorder (Minimal Symptoms, Stable)
+The patient reports minimal residual anxiety symptoms that no longer interfere with daily functioning. GAD-7 score has improved from 18 at baseline to 9 at the 3-month follow-up and to 3 today. He reports improved stress management and attributes continued improvement to both pharmacotherapy and CBT. Current treatment appears effective and continuation of therapy remains appropriate.
+
+History of Passive Suicidal Ideation (Resolved)
+The patient previously endorsed passive thoughts that others would be better off without him but now consistently denies passive suicidal ideation, active suicidal ideation, desire to die, suicide intent, and suicide plan. He demonstrates numerous protective factors including improved functioning, future-oriented thinking, strong support from his spouse, continued treatment engagement, and restoration of hopefulness.
+Suicide risk currently appears low and there is no evidence of imminent danger. Given his history of severe depression and prior passive suicidal ideation, continued longitudinal assessment remains appropriate.
+
+Tobacco Use Disorder (Markedly Improved)
+The patient reports smoking approximately three cigarettes daily, representing a substantial reduction from his previous use of approximately one pack per day. Smoking no longer functions as emotional regulation and now appears primarily habitual in nature. The patient demonstrates increased confidence in his ability to quit completely and believes full abstinence is achievable. Continued motivational interviewing and tobacco cessation counseling remain appropriate.
+
+Behavioral Health Knowledge Deficit (Significantly Improved)
+The patient now demonstrates excellent understanding of depression remission, long-term treatment expectations, relapse prevention principles, and the role of continued medication adherence and psychotherapy. Additional reinforcement of maintenance treatment principles and early recognition of symptom recurrence remains appropriate.
+
+PLAN
+Major Depressive Disorder
+Continue:
+• Venlafaxine XR 150 mg PO daily
+• Aripiprazole 2 mg PO daily
+Rationale:
+• Meaningful clinical improvement
+• Good tolerability
+• Resolution of passive suicidal ideation
+• Functional recovery has begun
+• Remission has not yet been achieved
+Continue CBT.
+Repeat PHQ-9 at future follow-up visits.
+Generalized Anxiety Disorder
+Continue:
+• Venlafaxine XR 150 mg PO daily
+• Hydroxyzine 25 mg PO every 8 hours as needed
+Continue CBT.
+Repeat GAD-7 at future follow-up visits.
+Suicide Risk Monitoring
+Reinforce safety plan.
+Encourage patient to:
+• Monitor worsening symptoms
+• Discuss symptom changes with spouse
+• Contact healthcare team if suicidal thoughts return
+• Utilize crisis resources if needed
+Continue suicide risk assessment at future visits.
+Tobacco Use Disorder
+Congratulate patient on reduction in smoking.
+Continue motivational interviewing.
+Discuss:
+• Smoking triggers
+• Relationship between smoking and emotional distress
+• Future cessation goals
+Reassess readiness to quit at future visits.
+Patient Education
+Provide education regarding:
+• Partial response versus remission
+• Expected treatment timelines
+• Importance of continued treatment adherence
+• Continued psychotherapy participation
+• Warning signs of relapse
+• Smoking cessation
+• Importance of maintaining hope and treatment engagement
+Monitoring
+Monitor:
+• PHQ-9
+• GAD-7
+• Mood
+• Anxiety symptoms
+• Suicidal ideation
+• Functional status
+• Medication adherence
+• Medication tolerability
+• Weight
+• BMI
+• Fasting glucose
+• Lipid parameters
+• Tobacco use
+Follow-Up
+Schedule follow-up in approximately 3 months.
+At Follow-Up:
+• Repeat PHQ-9
+• Repeat GAD-7
+• Assess for remission
+• Assess medication tolerability
+• Reassess suicidality
+• Assess functional recovery
+• Assess continued CBT participation
+• Assess tobacco use and readiness for cessation
+• Reassess long-term treatment goals
+Future visits should focus on progression toward remission, continued functional recovery, maintenance of resolved suicidal ideation, and long-term management of this previously high-risk patient.
+
+SECTION 12: ACCEPTABLE ALTERNATIVE ANSWERS
+Patient C – Thursday 6-Month Follow-Up
+The purpose of this section is to help the AI grader distinguish between:
+• Recognition of remission
+• Recognition of successful augmentation therapy
+• Recognition of substantial functional recovery
+• Appropriate maintenance treatment planning
+• Appropriate relapse prevention counseling
+Students should not be penalized for selecting different guideline-supported maintenance strategies if they appropriately recognize remission, continue evidence-based therapy, and develop long-term management plans.
+Major Depressive Disorder
+Preferred Answer
+Identify:
+• PHQ-9 improvement from 21 → 12 → 4
+• Remission achieved
+• Significant functional recovery
+• Restoration of hope
+• Resolution of hopelessness
+• Successful augmentation therapy
+Recommend:
+• Continue venlafaxine XR 150 mg PO daily
+• Continue aripiprazole 2 mg PO daily
+• Continue CBT
+• Continue maintenance therapy
+• Provide relapse prevention counseling
+Rationale
+The patient demonstrates:
+• Minimal depressive symptoms
+• Restoration of occupational functioning
+• Resumption of hobbies
+• Improved marital relationship
+• Increased social engagement
+• Improved quality of life
+• Restoration of self-efficacy
+According to the ACP Living Clinical Guideline and the VA/DoD Major Depressive Disorder Guideline, patients who achieve remission should continue maintenance treatment to reduce recurrence risk.
+Premature discontinuation of therapy may increase the likelihood of relapse.
+Acceptable Alternative #1
+Continue current medications and decrease psychotherapy frequency while maintaining periodic counseling sessions.
+Acceptable Because
+Patients who achieve sustained remission may transition to less frequent psychotherapy while maintaining access to coping strategies and support.
+Acceptable Alternative #2
+Continue current medications and schedule follow-up in approximately six months.
+Acceptable Because
+The patient demonstrates:
+• Remission
+• Excellent adherence
+• Stable functioning
+• Good insight
+• Strong support systems
+Less Preferred Because
+Some clinicians may prefer closer follow-up given the patient's previous severe symptoms and history of passive suicidal ideation.
+Unacceptable Answer
+Discontinue aripiprazole because the patient feels better.
+Unsafe Because
+The patient recently achieved remission following augmentation therapy.
+Premature discontinuation may increase the risk of:
+• Relapse
+• Functional decline
+• Return of hopelessness
+• Recurrence of suicidal thoughts
+Unacceptable Answer
+Discontinue all antidepressant therapy.
+Unsafe Because
+Remission does not equal cure.
+Maintenance treatment remains appropriate.
+Generalized Anxiety Disorder
+Preferred Answer
+Identify:
+• GAD-7 improvement from 18 → 9 → 3
+• Minimal residual symptoms
+• Improved coping
+• Minimal functional impairment
+Recommend:
+• Continue current therapy
+• Continue CBT
+• Continue monitoring
+Rationale
+Symptoms no longer meaningfully interfere with functioning.
+Current treatment remains effective.
+Acceptable Alternative
+Decrease psychotherapy frequency while continuing maintenance pharmacotherapy.
+Acceptable Because
+The patient demonstrates excellent insight and coping skills.
+History of Passive Suicidal Ideation
+Preferred Answer
+Recognize:
+• Passive suicidal ideation remains resolved
+• No active suicidal ideation
+• Numerous protective factors present
+Recommend:
+• Continue periodic reassessment
+• Reinforce safety planning
+• Provide relapse prevention counseling
+Rationale
+Previous passive suicidal ideation remains clinically relevant despite current stability.
+Continued longitudinal monitoring remains appropriate.
+Acceptable Alternative
+Increase emphasis on recognition of early warning signs and encourage earlier follow-up if symptoms recur.
+Acceptable Because
+Patients with previous severe depression may benefit from proactive relapse planning.
+Tobacco Use Disorder
+Preferred Answer
+Identify:
+• Smoking reduced from one pack daily to approximately three cigarettes daily
+• Smoking no longer serves as emotional regulation
+• Increased confidence regarding cessation
+Recommend:
+• Continue motivational interviewing
+• Encourage complete abstinence
+• Discuss cessation strategies
+Rationale
+The patient demonstrates meaningful behavioral change and increasing readiness for complete cessation.
+Acceptable Alternative
+Discuss initiating tobacco cessation pharmacotherapy.
+Examples:
+• Nicotine replacement therapy
+• Varenicline
+• Bupropion SR
+Acceptable Because
+The patient appears increasingly ready for complete cessation.
+Patient Education
+Preferred Answer
+Explain:
+• Remission versus cure
+• Maintenance treatment expectations
+• Relapse prevention strategies
+• Warning signs of recurrence
+• Importance of medication adherence
+• Continued role of CBT
+• Tobacco cessation benefits
+Rationale
+Patients frequently assume treatment is complete once they feel better.
+Education improves long-term outcomes and reduces recurrence risk.
+SECTION 13: CRITICAL MISSES
+Patient C – Thursday 6-Month Follow-Up
+These errors should result in major point deductions.
+Critical Miss #1
+Error
+Failed to recognize remission.
+Rationale
+PHQ-9 score of 4, minimal symptoms, and restoration of functioning are consistent with remission.
+Critical Miss #2
+Error
+Recommended discontinuation of augmentation therapy.
+Rationale
+The patient recently achieved remission following augmentation.
+Premature discontinuation increases relapse risk.
+Critical Miss #3
+Error
+Failed to reassess suicidality.
+Rationale
+History of passive suicidal ideation remains clinically important.
+Critical Miss #4
+Error
+Failed to recognize functional recovery.
+Rationale
+Treatment success extends beyond symptom scores.
+Critical Miss #5
+Error
+Failed to continue metabolic monitoring.
+Rationale
+Aripiprazole requires continued monitoring of:
+• Weight
+• BMI
+• Glucose
+• Lipids
+Critical Miss #6
+Error
+Failed to provide relapse prevention counseling.
+Rationale
+Relapse prevention is a major goal following remission.
+Critical Miss #7
+Error
+Failed to reinforce successful treatment behaviors.
+Rationale
+Positive reinforcement strengthens long-term engagement.
+Critical Miss #8
+Error
+Failed to address tobacco use.
+Rationale
+Substantial improvement deserves reinforcement and complete cessation remains an important goal.
+Critical Miss #9
+Error
+Failed to discuss maintenance treatment expectations.
+Rationale
+Patients commonly assume treatment should stop once they feel better.
+Critical Miss #10
+Error
+Failed to establish long-term follow-up.
+Rationale
+Patients with prior severe depression and passive suicidal ideation still require ongoing monitoring.
+High-Priority Learning Objectives
+• Recognize remission.
+• Continue maintenance treatment.
+• Reassess suicide risk longitudinally.
+• Reinforce successful treatment behaviors.
+• Provide relapse prevention counseling.
+• Continue metabolic monitoring.
+• Encourage tobacco cessation.
+• Develop long-term management plans.
+SECTION 14: TEACHING GUIDE
+Patient C – Thursday 6-Month Follow-Up
+What the Student Should Have Done Well
+The student should have:
+• Recognized remission
+• Correctly interpreted PHQ-9 and GAD-7 scores
+• Recognized successful augmentation therapy
+• Reassessed suicidality
+• Recognized functional recovery
+• Continued maintenance treatment
+• Continued metabolic monitoring
+• Reinforced CBT participation
+• Addressed tobacco use
+• Developed relapse prevention recommendations
+Common Student Mistakes
+Mistake #1
+Assuming remission means cure.
+Teaching Point
+Remission significantly reduces symptom burden but does not eliminate recurrence risk.
+Mistake #2
+Stopping medications too soon.
+Teaching Point
+Maintenance treatment reduces the risk of relapse.
+Mistake #3
+Ignoring previous passive suicidal ideation.
+Teaching Point
+Prior suicidal thoughts remain clinically important and warrant ongoing assessment.
+Mistake #4
+Focusing exclusively on symptom scores.
+Teaching Point
+The patient regained:
+• Relationships
+• Hobbies
+• Occupational functioning
+• Enjoyment
+• Hope
+These outcomes are equally important.
+Mistake #5
+Assuming treatment-resistant depression is permanent.
+Teaching Point
+Treatment-resistant depression often improves substantially with longitudinal, evidence-based management.
+Teaching Pearls
+Pearl #1
+Treatment-resistant depression does not mean untreatable depression.
+Expected Discussion
+Many patients achieve meaningful recovery through augmentation strategies and continued treatment engagement.
+Pearl #2
+Functional recovery is one of the strongest indicators of successful treatment.
+Expected Discussion
+Patients frequently judge recovery by their ability to work, enjoy activities, and reconnect with loved ones.
+Pearl #3
+Hope is a therapeutic outcome.
+Expected Discussion
+Restoration of hope frequently accompanies recovery and supports long-term engagement.
+Pearl #4
+Maintenance treatment is essential.
+Expected Discussion
+The goal is not only achieving remission but sustaining it.
+Pearl #5
+Behavioral change often occurs progressively.
+Expected Discussion
+Smoking decreased from one pack daily to approximately three cigarettes daily and no longer serves as emotional regulation.
+Follow-Up Questions
+Question 1
+"How do you know this patient is in remission?"
+Expected Discussion
+• PHQ-9 score of 4
+• Minimal symptoms
+• Functional recovery
+• Restored enjoyment
+• Improved relationships
+Question 2
+"What demonstrates successful augmentation therapy?"
+Expected Discussion
+• Severe symptoms improved dramatically
+• Functional recovery occurred
+• Suicidal thoughts resolved
+• Hope returned
+Question 3
+"Should medications be stopped today?"
+Expected Discussion
+No.
+Maintenance treatment remains appropriate.
+Question 4
+"What outcomes are most meaningful?"
+Expected Discussion
+• Feeling like himself again
+• Resumed hobbies
+• Improved marriage
+• Restored productivity
+• Resolution of hopelessness
+• Restoration of hope
+Question 5
+"What are the major goals moving forward?"
+Expected Discussion
+• Maintain remission
+• Prevent relapse
+• Continue monitoring
+• Support tobacco cessation
+• Reinforce successful coping strategies
+• Continue long-term engagement
+How the Student Can Improve Moving Forward
+Students should now be able to:
+• Recognize remission in high-risk patients
+• Apply maintenance treatment principles
+• Continue suicide risk monitoring
+• Reinforce self-efficacy
+• Monitor augmentation therapy safely
+• Provide relapse prevention counseling
+• Support tobacco cessation
+• Develop long-term behavioral health management plans
+
+Granular Rubric and Answer Key — Ambulatory Care Behavioral Health SOAP Note
+Major Depressive Disorder, Generalized Anxiety Disorder, Tobacco Use Disorder
+Patient C — Thursday 6-Month Follow-Up
+[FOR AI PRECEPTOR CALIBRATION ONLY — NOT FOR STUDENT DISTRIBUTION]
+PURPOSE: This is the single, authoritative rubric for the Patient C (David Carter) Thursday 6-Month Follow-Up Ambulatory Care Behavioral Health SOAP Note. Every subsection's discrete input point values sum exactly to the subsection header, and all subsection headers sum exactly to 100.0. The model answer scores 100.0/100.0 against this rubric.
+SCORING RULES:
+•  FULL: Input present, accurate, and clinically contextualized (not merely a keyword).
+•  HALF: Partially present — directionally correct but imprecise, or present without clinical context. Half-credit values are rounded to the nearest 0.05.
+•  ZERO: Absent, or a factually incorrect statement is made about that input.
+•  Additivity: Points are additive within each subsection → subsections additive within sections → sections additive to 100.0.
+Acceptable-alternative inputs (e.g., therapeutic choices) list every guideline-supported answer in parentheses; any listed answer earns full credit.
+SECTION 1: SUBJECTIVE (25.0 points)
+1A. CHIEF COMPLAINT / REASON FOR VISIT (2.5 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1A.1
+	Patient age stated (51 years)
+	0.30
+	States 51 years
+	Age stated, imprecise
+	Omits
+	1A.2
+	Patient sex stated (male)
+	0.20
+	States male
+	—
+	Omits
+	1A.3
+	Encounter setting stated (ambulatory care behavioral health clinic)
+	0.35
+	Names behavioral health clinic setting
+	Names clinic only, no behavioral health
+	Omits
+	1A.4
+	Encounter type stated (scheduled 6-month follow-up)
+	0.35
+	States scheduled 6-month follow-up
+	States follow-up, no interval or scheduled
+	Omits
+	1A.5
+	Reason for visit: aripiprazole augmentation follow-up
+	0.35
+	States aripiprazole augmentation follow-up
+	Mentions augmentation, no drug
+	Omits
+	1A.6
+	Primary diagnoses stated: severe recurrent major depressive disorder
+	0.35
+	States severe recurrent MDD
+	States depression, no severity or recurrence specifier
+	Omits
+	1A.7
+	Co-diagnosis stated: generalized anxiety disorder (or anxiety)
+	0.30
+	States GAD or anxiety
+	—
+	Omits
+	1A.8
+	Visit is 6 months after initiation of augmentation
+	0.30
+	States 6 months since aripiprazole initiation
+	—
+	Omits
+	1A sum check: 0.30 + 0.20 + 0.35 + 0.35 + 0.35 + 0.35 + 0.30 + 0.30 = 2.5
+	 
+1B. HISTORY OF PRESENT ILLNESS (6.5 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1B.1
+	Overall status: continued improvement since previous visit
+	0.40
+	States continued improvement since prior visit
+	States improvement, no temporal framing
+	Omits
+	1B.2
+	Mood: patient reports feeling like himself again
+	0.30
+	States patient feels like himself again
+	States improved mood, no quote or framing
+	Omits
+	1B.3
+	Specific symptom improved: mood
+	0.20
+	States improved mood
+	—
+	Omits
+	1B.4
+	Specific symptom improved: energy
+	0.20
+	States improved energy
+	—
+	Omits
+	1B.5
+	Specific symptom improved: concentration
+	0.20
+	States improved concentration
+	—
+	Omits
+	1B.6
+	Specific symptom improved: motivation
+	0.20
+	States improved motivation
+	—
+	Omits
+	1B.7
+	Specific symptom improved: sleep
+	0.20
+	States improved sleep
+	—
+	Omits
+	1B.8
+	Anxiety symptoms: minimal
+	0.20
+	States minimal anxiety symptoms
+	—
+	Omits
+	1B.9
+	Increased enjoyment of activities / anhedonia resolved
+	0.40
+	States increased enjoyment of activities
+	—
+	Omits
+	1B.10
+	Improved relationships
+	0.20
+	States improved relationships
+	—
+	Omits
+	1B.11
+	Overall significant improvement in quality of life
+	0.20
+	States significant improvement in quality of life
+	—
+	Omits
+	1B.12
+	No longer emotionally exhausted or consumed by depressive thoughts
+	0.20
+	States no longer emotionally exhausted or consumed by depressive thoughts
+	—
+	Omits
+	1B.13
+	Feels emotionally present again
+	0.20
+	States feels emotionally present again
+	—
+	Omits
+	1B.14
+	Resumes woodworking (named hobby)
+	0.30
+	States woodworking resumes
+	States resumed hobbies, no specific activity named
+	Omits
+	1B.15
+	Resumes hiking (named hobby)
+	0.30
+	States hiking resumes
+	States resumed hobbies, no specific activity named
+	Omits
+	1B.16
+	Activities once again feel enjoyable
+	0.20
+	States activities feel enjoyable again
+	—
+	Omits
+	1B.17
+	Work feels manageable; concentration and productivity near baseline
+	0.40
+	States work manageable and productivity near baseline
+	States work improved, only one aspect
+	Omits
+	1B.18
+	Significant improvement in relationship with spouse; no longer isolates socially
+	0.40
+	States improved spousal relationship and reduced social isolation
+	States improved relationship, only one aspect
+	Omits
+	1B.19
+	Continued participation in CBT
+	0.40
+	States continued CBT participation
+	—
+	Omits
+	1B.20
+	CBT perceived as helpful: recognizes negative thought patterns
+	0.20
+	States CBT helps recognize negative thought patterns
+	—
+	Omits
+	1B.21
+	Occasional normal stress; no longer emotionally overwhelmed
+	0.20
+	States occasional stress without emotional overwhelm
+	—
+	Omits
+	1B.22
+	Current tobacco use: approximately three cigarettes daily
+	0.40
+	States approximately 3 cigarettes daily
+	States current smoking, no quantity
+	Omits
+	1B.23
+	Smoking no longer functions as emotional escape
+	0.20
+	States smoking no longer serves as emotional escape
+	—
+	Omits
+	1B.24
+	No medication adverse effects
+	0.20
+	States no adverse effects
+	—
+	Omits
+	1B.25
+	Patient quote or paraphrase of restored hope ('didn't think I could feel this good')
+	0.20
+	States patient quote or paraphrase expressing restored hope
+	—
+	Omits
+	1B sum check: 0.40 + 0.30 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.40 + 0.20 + 0.20 + 0.20 + 0.20 + 0.30 + 0.30 + 0.20 + 0.40 + 0.40 + 0.40 + 0.20 + 0.20 + 0.40 + 0.20 + 0.20 + 0.20 = 6.5
+	 
+1C. PAST MEDICAL / SURGICAL / FAMILY HISTORY (3.5 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1C.1
+	PMH: Major Depressive Disorder, recurrent
+	0.40
+	Lists MDD, recurrent
+	Lists MDD, no recurrent specifier
+	Omits
+	1C.2
+	PMH: Generalized Anxiety Disorder
+	0.30
+	Lists GAD
+	—
+	Omits
+	1C.3
+	PMH: Hypertension
+	0.35
+	Lists hypertension
+	—
+	Omits
+	1C.4
+	PMH: Obstructive Sleep Apnea on CPAP
+	0.40
+	Lists OSA on CPAP
+	Lists OSA, no CPAP
+	Omits
+	1C.5
+	PSH: Cholecystectomy
+	0.35
+	Lists cholecystectomy
+	—
+	Omits
+	1C.6
+	Family history, mother: Major Depressive Disorder
+	0.40
+	States mother MDD
+	—
+	Omits
+	1C.7
+	Family history, father: Alcohol Use Disorder
+	0.40
+	States father alcohol use disorder
+	States father alcoholism, no AUD framing
+	Omits
+	1C.8
+	Family history, brother: Major Depressive Disorder
+	0.40
+	States brother MDD
+	—
+	Omits
+	1C.9
+	Notes pattern of psychiatric illness in family (MDD in multiple first-degree relatives)
+	0.25
+	States pattern of MDD across family members
+	—
+	Omits
+	1C.10
+	No additional PMH conditions beyond the four listed
+	0.25
+	Limits PMH to stated four conditions or states no other PMH
+	—
+	Omits
+	1C sum check: 0.40 + 0.30 + 0.35 + 0.40 + 0.35 + 0.40 + 0.40 + 0.40 + 0.25 + 0.25 = 3.5
+	 
+1D. SOCIAL HISTORY (3.0 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1D.1
+	Marital status: married
+	0.30
+	States married
+	—
+	Omits
+	1D.2
+	Living situation: lives with spouse
+	0.30
+	States lives with spouse
+	—
+	Omits
+	1D.3
+	Employment: works full-time as information technology manager
+	0.40
+	States works full-time as IT manager
+	States employed, no role
+	Omits
+	1D.4
+	Tobacco: current use, approximately three cigarettes daily
+	0.35
+	States approximately 3 cigarettes daily
+	States smokes, no quantity
+	Omits
+	1D.5
+	Tobacco: prior use of approximately one pack daily (reduction from baseline)
+	0.35
+	States prior use of approximately one pack daily
+	States prior heavier use, no quantity
+	Omits
+	1D.6
+	Alcohol: occasional use
+	0.25
+	States occasional alcohol use
+	—
+	Omits
+	1D.7
+	Illicit drug use: denies
+	0.25
+	States denies illicit drug use
+	—
+	Omits
+	1D.8
+	Exercise: walking regularly and hiking routinely
+	0.35
+	States walking and hiking regularly
+	States exercises, only one activity
+	Omits
+	1D.9
+	Activities: regular woodworking projects
+	0.25
+	States woodworking projects
+	—
+	Omits
+	1D.10
+	Social engagement: increased
+	0.20
+	States increased social engagement
+	—
+	Omits
+	1D sum check: 0.30 + 0.30 + 0.40 + 0.35 + 0.35 + 0.25 + 0.25 + 0.35 + 0.25 + 0.20 = 3.0
+	 
+1E. CURRENT MEDICATIONS / ALLERGIES / IMMUNIZATIONS (5.0 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1E.1
+	Venlafaxine XR listed (name and formulation)
+	0.40
+	Names venlafaxine XR or extended-release
+	Names venlafaxine, no XR formulation
+	Omits
+	1E.2
+	Venlafaxine XR dose (150 mg)
+	0.35
+	States 150 mg
+	—
+	Incorrect dose
+	1E.3
+	Venlafaxine XR regimen (PO daily)
+	0.25
+	States PO daily
+	States daily, no route
+	Omits
+	1E.4
+	Aripiprazole listed
+	0.40
+	Names aripiprazole
+	—
+	Omits
+	1E.5
+	Aripiprazole dose (2 mg)
+	0.40
+	States 2 mg
+	—
+	Incorrect dose
+	1E.6
+	Aripiprazole regimen (PO daily)
+	0.25
+	States PO daily
+	States daily, no route
+	Omits
+	1E.7
+	Hydroxyzine listed
+	0.35
+	Names hydroxyzine
+	—
+	Omits
+	1E.8
+	Hydroxyzine dose (25 mg)
+	0.35
+	States 25 mg
+	—
+	Incorrect dose
+	1E.9
+	Hydroxyzine regimen (PO every 8 hours as needed for anxiety)
+	0.30
+	States PO q8h PRN anxiety
+	States PRN, no interval or route
+	Omits
+	1E.10
+	Lisinopril listed
+	0.30
+	Names lisinopril
+	—
+	Omits
+	1E.11
+	Lisinopril dose (20 mg)
+	0.30
+	States 20 mg
+	—
+	Incorrect dose
+	1E.12
+	Lisinopril regimen (PO daily)
+	0.25
+	States PO daily
+	States daily, no route
+	Omits
+	1E.13
+	No known drug allergies documented
+	0.40
+	States NKDA
+	—
+	Omits
+	1E.14
+	Influenza vaccination: up to date
+	0.25
+	States influenza up to date
+	—
+	Omits
+	1E.15
+	COVID-19 vaccination: up to date
+	0.25
+	States COVID up to date
+	—
+	Omits
+	1E.16
+	Tdap vaccination: up to date
+	0.20
+	States Tdap up to date
+	—
+	Omits
+	1E sum check: 0.40 + 0.35 + 0.25 + 0.40 + 0.40 + 0.25 + 0.35 + 0.35 + 0.30 + 0.30 + 0.30 + 0.25 + 0.40 + 0.25 + 0.25 + 0.20 = 5.0
+	 
+1F. REVIEW OF SYSTEMS / RELEVANT NEGATIVES (2.5 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1F.1
+	Denies persistent depressed mood
+	0.30
+	States denies persistent depressed mood
+	—
+	Omits
+	1F.2
+	Denies anhedonia
+	0.25
+	States denies anhedonia
+	—
+	Omits
+	1F.3
+	Denies hopelessness
+	0.25
+	States denies hopelessness
+	—
+	Omits
+	1F.4
+	Denies passive suicidal ideation
+	0.40
+	States denies passive SI
+	—
+	Omits
+	1F.5
+	Denies active suicidal ideation
+	0.40
+	States denies active SI
+	—
+	Omits
+	1F.6
+	Denies desire to die
+	0.25
+	States denies desire to die
+	—
+	Omits
+	1F.7
+	Denies suicide plan
+	0.25
+	States denies suicide plan
+	—
+	Omits
+	1F.8
+	Denies suicide intent
+	0.20
+	States denies suicide intent
+	—
+	Omits
+	1F.9
+	Denies self-harm behaviors
+	0.20
+	States denies self-harm behaviors
+	—
+	Omits
+	1F sum check: 0.30 + 0.25 + 0.25 + 0.40 + 0.40 + 0.25 + 0.25 + 0.20 + 0.20 = 2.5
+	 
+1G. PATIENT GOALS / CONCERNS (2.0 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1G.1
+	Patient statement of restored hope (didn't think he could feel this good)
+	0.50
+	States patient expressed restored hope or surprise at recovery
+	—
+	Omits
+	1G.2
+	Patient goal: maintain current improvement
+	0.40
+	States patient motivated to maintain improvement
+	—
+	Omits
+	1G.3
+	Tobacco: smoking no longer emotional escape; primarily habitual
+	0.40
+	States smoking now primarily habitual in nature
+	—
+	Omits
+	1G.4
+	Tobacco: increased confidence in ability to quit completely
+	0.40
+	States increased confidence in achieving full cessation
+	—
+	Omits
+	1G.5
+	Patient believes full abstinence is achievable
+	0.30
+	States patient believes full abstinence achievable
+	—
+	Omits
+	1G sum check: 0.50 + 0.40 + 0.40 + 0.40 + 0.30 = 2.0
+	 
+Section check: 1A (2.5) + 1B (6.5) + 1C (3.5) + 1D (3.0) + 1E (5.0) + 1F (2.5) + 1G (2.0) = 25.0
+SECTION 2: OBJECTIVE (15.0 points)
+2A. VITAL SIGNS AND ANTHROPOMETRICS (5.5 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2A.1
+	Blood pressure (124/78 mmHg)
+	0.70
+	States 124/78 mmHg
+	BP stated, value imprecise
+	Omits
+	2A.2
+	Heart rate (74 bpm)
+	0.50
+	States 74 bpm
+	—
+	Omits
+	2A.3
+	Respiratory rate (16 breaths/min)
+	0.40
+	States 16 breaths/min
+	—
+	Omits
+	2A.4
+	Temperature (98.2°F)
+	0.40
+	States 98.2°F
+	—
+	Omits
+	2A.5
+	Weight (99 kg)
+	0.60
+	States 99 kg
+	—
+	Omits
+	2A.6
+	Height (71 inches)
+	0.50
+	States 71 inches
+	—
+	Omits
+	2A.7
+	BMI (30.4 kg/m²)
+	0.70
+	States 30.4 kg/m²
+	BMI stated, value imprecise
+	Omits
+	2A.8
+	BMI classified as obesity (BMI ≥30)
+	0.50
+	States BMI 30.4 consistent with obesity
+	States overweight without obesity classification
+	Omits
+	2A.9
+	Blood pressure interpreted as at-goal or well-controlled
+	0.60
+	States BP at goal or well-controlled
+	States BP value only, no interpretation
+	Omits
+	2A.10
+	Vital signs overall within normal limits or clinically acceptable
+	0.60
+	States vitals acceptable or within normal limits
+	States individual values without overall interpretation
+	Omits
+	2A sum check: 0.70 + 0.50 + 0.40 + 0.40 + 0.60 + 0.50 + 0.70 + 0.50 + 0.60 + 0.60 = 5.5
+	 
+2B. LABORATORY DATA (6.5 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2B.1
+	Sodium (140 mEq/L)
+	0.30
+	States 140 mEq/L
+	—
+	Omits
+	2B.2
+	Potassium (4.1 mEq/L)
+	0.35
+	States 4.1 mEq/L
+	—
+	Omits
+	2B.3
+	BUN (15 mg/dL)
+	0.30
+	States 15 mg/dL
+	—
+	Omits
+	2B.4
+	Serum creatinine (1.0 mg/dL)
+	0.45
+	States 1.0 mg/dL
+	—
+	Omits
+	2B.5
+	eGFR (88 mL/min/1.73m²)
+	0.60
+	States 88 mL/min/1.73m²
+	eGFR stated, value imprecise
+	Omits
+	2B.6
+	AST (22 U/L)
+	0.35
+	States 22 U/L
+	—
+	Omits
+	2B.7
+	ALT (24 U/L)
+	0.35
+	States 24 U/L
+	—
+	Omits
+	2B.8
+	Glucose (99 mg/dL)
+	0.40
+	States 99 mg/dL
+	—
+	Omits
+	2B.9
+	Total cholesterol (188 mg/dL)
+	0.45
+	States 188 mg/dL
+	—
+	Omits
+	2B.10
+	LDL-C (106 mg/dL)
+	0.65
+	States 106 mg/dL
+	LDL stated, value imprecise
+	Omits
+	2B.11
+	HDL-C (45 mg/dL)
+	0.40
+	States 45 mg/dL
+	—
+	Omits
+	2B.12
+	Triglycerides (176 mg/dL)
+	0.45
+	States 176 mg/dL
+	—
+	Omits
+	2B.13
+	Hepatic panel (AST/ALT) within normal limits
+	0.45
+	States hepatic panel normal or WNL
+	States normal, no values
+	Omits
+	2B.14
+	Renal function acceptable for current medications (eGFR 88)
+	0.45
+	States renal function acceptable or adequate
+	States labs normal, no drug relevance
+	Omits
+	2B.15
+	Glucose normal; no metabolic concern from aripiprazole
+	0.55
+	States glucose normal and notes absence of hyperglycemia from atypical antipsychotic
+	States glucose normal, no drug context
+	Omits
+	2B sum check: 0.30 + 0.35 + 0.30 + 0.45 + 0.60 + 0.35 + 0.35 + 0.40 + 0.45 + 0.65 + 0.40 + 0.45 + 0.45 + 0.45 + 0.55 = 6.5
+	 
+2C. ASSESSMENT TOOLS / TRENDS / EXPECTED DATA (3.0 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2C.1
+	Current PHQ-9 score stated (4)
+	0.50
+	States PHQ-9 of 4
+	—
+	Omits
+	2C.2
+	PHQ-9 baseline value stated (21 at initial visit)
+	0.35
+	States PHQ-9 was 21 at baseline
+	—
+	Omits
+	2C.3
+	PHQ-9 3-month value stated (12)
+	0.30
+	States PHQ-9 was 12 at 3-month visit
+	—
+	Omits
+	2C.4
+	PHQ-9 current interpretation: minimal depressive symptoms
+	0.35
+	States PHQ-9 of 4 = minimal depressive symptoms
+	States score, no interpretation
+	Omits
+	2C.5
+	Current GAD-7 score stated (3)
+	0.40
+	States GAD-7 of 3
+	—
+	Omits
+	2C.6
+	GAD-7 baseline value stated (18 at initial visit)
+	0.30
+	States GAD-7 was 18 at baseline
+	—
+	Omits
+	2C.7
+	GAD-7 3-month value stated (9)
+	0.25
+	States GAD-7 was 9 at 3-month visit
+	—
+	Omits
+	2C.8
+	GAD-7 current interpretation: minimal anxiety symptoms
+	0.35
+	States GAD-7 of 3 = minimal anxiety symptoms
+	States score, no interpretation
+	Omits
+	2C.9
+	Metabolic monitoring labs noted as expected/required for aripiprazole
+	0.20
+	States metabolic labs present and expected for atypical antipsychotic monitoring
+	—
+	Omits
+	2C sum check: 0.50 + 0.35 + 0.30 + 0.35 + 0.40 + 0.30 + 0.25 + 0.35 + 0.20 = 3.0
+	 
+Section check: 2A (5.5) + 2B (6.5) + 2C (3.0) = 15.0
+SECTION 3: ASSESSMENT (30.0 points)
+3A. PROBLEM 1 — MAJOR DEPRESSIVE DISORDER, RECURRENT (IN REMISSION FOLLOWING SUCCESSFUL AUGMENTATION THERAPY) (9.0 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3A.1
+	Problem identified: Major Depressive Disorder, recurrent
+	0.30
+	Names MDD, recurrent
+	Names MDD, no recurrent specifier
+	Omits
+	3A.2
+	Status: in remission following successful augmentation therapy
+	0.65
+	States in remission following augmentation
+	States improved, no remission framing
+	Omits
+	3A.3
+	Supports remission with current PHQ-9 of 4
+	0.60
+	References current PHQ-9 of 4
+	—
+	Omits
+	3A.4
+	PHQ-9 trajectory stated: 21 → 12 → 4
+	0.70
+	States all three PHQ-9 values in progression
+	States trajectory without all three values
+	Omits
+	3A.5
+	PHQ-9 of 4 interpreted as consistent with remission
+	0.55
+	States PHQ-9 of 4 is consistent with remission
+	States score, no remission interpretation
+	Omits
+	3A.6
+	Functional recovery: occupational functioning normalized
+	0.40
+	States normalization of work functioning
+	—
+	Omits
+	3A.7
+	Functional recovery: resumption of hobbies (woodworking, hiking)
+	0.45
+	States resumption of specific hobbies
+	States resumed activities, no hobbies named
+	Omits
+	3A.8
+	Functional recovery: improved relationships and social engagement
+	0.40
+	States improved relationships and social engagement
+	States improved relationships only
+	Omits
+	3A.9
+	Patient feels emotionally present again / feels like himself for the first time in years
+	0.40
+	States patient feels emotionally present or like himself again
+	—
+	Omits
+	3A.10
+	Characterizes case as successful augmentation in previously suspected treatment-resistant depression
+	0.70
+	States this demonstrates successful augmentation in previously suspected TRD
+	States augmentation successful, no TRD framing
+	Omits
+	3A.11
+	Clarifies treatment-resistant depression should not be interpreted as permanent illness
+	0.55
+	States TRD is not untreatable or permanent
+	—
+	Omits
+	3A.12
+	Cites ACP Living Clinical Guideline for continuation/maintenance recommendation
+	0.50
+	Names ACP Living Clinical Guideline
+	Cites guideline, no source named
+	Omits
+	3A.13
+	Cites VA/DoD MDD Guideline for continuation/maintenance recommendation
+	0.50
+	Names VA/DoD MDD Guideline
+	Cites guideline, no source named
+	Omits
+	3A.14
+	States continuation and maintenance treatment appropriate post-remission to reduce recurrence risk
+	0.55
+	States continuation appropriate to reduce recurrence
+	States continue treatment, no guideline rationale
+	Omits
+	3A.15
+	States continuation of current therapy remains appropriate
+	0.45
+	States continuation of current therapy appropriate
+	—
+	Omits
+	3A.16
+	Passive suicidal ideation previously present, now resolved
+	0.50
+	States prior passive SI now resolved
+	States prior SI history only
+	Omits
+	3A.17
+	PHQ-9 to be repeated at future follow-up visits
+	0.35
+	States repeat PHQ-9 at future visits
+	—
+	Omits
+	3A.18
+	Assessment distinguishes remission from partial response
+	0.45
+	States remission achieved, distinguished from partial response
+	States improved, no remission vs partial response distinction
+	Omits
+	3A sum check: 0.30 + 0.65 + 0.60 + 0.70 + 0.55 + 0.40 + 0.45 + 0.40 + 0.40 + 0.70 + 0.55 + 0.50 + 0.50 + 0.55 + 0.45 + 0.50 + 0.35 + 0.45 = 9.0
+	 
+3B. PROBLEM 2 — GENERALIZED ANXIETY DISORDER (MINIMAL SYMPTOMS, STABLE) (5.0 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3B.1
+	Problem identified: Generalized Anxiety Disorder
+	0.40
+	Names GAD or generalized anxiety disorder
+	Names anxiety, no disorder specificity
+	Omits
+	3B.2
+	Status: minimal symptoms, stable
+	0.50
+	States minimal symptoms or stable
+	States improved without minimal/stable characterization
+	Omits
+	3B.3
+	Supports assessment with current GAD-7 of 3
+	0.50
+	References current GAD-7 of 3
+	—
+	Omits
+	3B.4
+	GAD-7 trajectory stated: 18 → 9 → 3
+	0.60
+	States all three GAD-7 values in progression
+	States trajectory without all three values
+	Omits
+	3B.5
+	GAD-7 of 3 interpreted as minimal anxiety symptoms
+	0.45
+	States GAD-7 of 3 = minimal anxiety symptoms
+	States score, no interpretation
+	Omits
+	3B.6
+	Anxiety symptoms no longer interfere with daily functioning
+	0.40
+	States anxiety no longer interfering with daily function
+	—
+	Omits
+	3B.7
+	Improvement attributed to both pharmacotherapy and CBT
+	0.45
+	States both pharmacotherapy and CBT credited for improvement
+	States improvement attributed to one modality only
+	Omits
+	3B.8
+	States current treatment appears effective
+	0.35
+	States current treatment effective
+	—
+	Omits
+	3B.9
+	States continuation of therapy appropriate
+	0.30
+	States continuation of therapy appropriate
+	—
+	Omits
+	3B.10
+	GAD-7 to be repeated at future follow-up visits
+	0.30
+	States repeat GAD-7 at future visits
+	—
+	Omits
+	3B.11
+	Improved stress management attributed to CBT
+	0.40
+	States improved stress management linked to CBT
+	—
+	Omits
+	3B.12
+	Hydroxyzine PRN continues as part of regimen
+	0.35
+	States hydroxyzine PRN continues on regimen
+	—
+	Omits
+	3B sum check: 0.40 + 0.50 + 0.50 + 0.60 + 0.45 + 0.40 + 0.45 + 0.35 + 0.30 + 0.30 + 0.40 + 0.35 = 5.0
+	 
+3C. PROBLEM 3 — HISTORY OF PASSIVE SUICIDAL IDEATION (RESOLVED) (5.0 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3C.1
+	Problem identified: history of passive suicidal ideation, resolved
+	0.40
+	States prior passive SI as resolved
+	Names SI history, no resolved status
+	Omits
+	3C.2
+	Patient previously endorsed passive SI: others would be better off without him
+	0.50
+	States specific prior passive SI content (others better off without him)
+	States prior SI, no specific content
+	Omits
+	3C.3
+	Patient currently denies passive suicidal ideation
+	0.45
+	States currently denies passive SI
+	—
+	Omits
+	3C.4
+	Patient currently denies active suicidal ideation
+	0.45
+	States currently denies active SI
+	—
+	Omits
+	3C.5
+	Patient currently denies desire to die
+	0.35
+	States denies desire to die
+	—
+	Omits
+	3C.6
+	Patient currently denies suicide intent
+	0.30
+	States denies suicide intent
+	—
+	Omits
+	3C.7
+	Patient currently denies suicide plan
+	0.30
+	States denies suicide plan
+	—
+	Omits
+	3C.8
+	Protective factor: supportive spouse
+	0.35
+	Lists supportive spouse as protective factor
+	—
+	Omits
+	3C.9
+	Protective factor: improved functioning
+	0.30
+	Lists improved functioning as protective factor
+	—
+	Omits
+	3C.10
+	Protective factor: future-oriented thinking
+	0.30
+	Lists future orientation as protective factor
+	—
+	Omits
+	3C.11
+	Protective factor: continued treatment engagement
+	0.30
+	Lists continued treatment engagement as protective factor
+	—
+	Omits
+	3C.12
+	Protective factor: restored hopefulness
+	0.25
+	Lists restored hopefulness as protective factor
+	—
+	Omits
+	3C.13
+	Current suicide risk: low; no evidence of imminent danger
+	0.45
+	States low risk and no imminent danger
+	States low risk only, no imminent danger statement
+	Omits
+	3C.14
+	Continued longitudinal suicide risk assessment warranted given prior history
+	0.30
+	States continued longitudinal assessment appropriate given prior high-risk history
+	—
+	Omits
+	3C sum check: 0.40 + 0.50 + 0.45 + 0.45 + 0.35 + 0.30 + 0.30 + 0.35 + 0.30 + 0.30 + 0.30 + 0.25 + 0.45 + 0.30 = 5.0
+	 
+3D. PROBLEM 4 — TOBACCO USE DISORDER (MARKEDLY IMPROVED) (5.0 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3D.1
+	Problem identified: tobacco use disorder (or tobacco use)
+	0.40
+	Names tobacco use disorder or tobacco use
+	—
+	Omits
+	3D.2
+	Status: markedly improved
+	0.40
+	States markedly improved
+	States improved, no magnitude characterization
+	Omits
+	3D.3
+	Current use: approximately three cigarettes daily
+	0.60
+	States approximately 3 cigarettes daily
+	States current use, no quantity
+	Omits
+	3D.4
+	Prior use stated: approximately one pack daily
+	0.60
+	States prior use of approximately one pack daily
+	States reduced from prior use, no prior quantity
+	Omits
+	3D.5
+	Reduction characterized as substantial (from one pack to three cigarettes)
+	0.50
+	States substantial reduction or quantifies magnitude
+	States reduced, no magnitude
+	Omits
+	3D.6
+	Smoking no longer functions as emotional regulation / escape
+	0.50
+	States smoking no longer serves as emotional escape or regulation
+	—
+	Omits
+	3D.7
+	Smoking now appears primarily habitual in nature
+	0.50
+	States smoking now primarily habitual
+	—
+	Omits
+	3D.8
+	Patient demonstrates increased confidence in ability to quit completely
+	0.50
+	States increased confidence in achieving full cessation
+	—
+	Omits
+	3D.9
+	Patient believes full abstinence is achievable
+	0.30
+	States patient believes full abstinence achievable
+	—
+	Omits
+	3D.10
+	Continued motivational interviewing and tobacco cessation counseling appropriate
+	0.70
+	States continued MI and tobacco cessation counseling are appropriate
+	States counseling only, no MI specification
+	Omits
+	3D sum check: 0.40 + 0.40 + 0.60 + 0.60 + 0.50 + 0.50 + 0.50 + 0.50 + 0.30 + 0.70 = 5.0
+	 
+3E. PROBLEM 5 — BEHAVIORAL HEALTH KNOWLEDGE DEFICIT (SIGNIFICANTLY IMPROVED) (6.0 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3E.1
+	Problem identified: behavioral health knowledge deficit
+	0.40
+	Names behavioral health knowledge deficit or patient education need
+	—
+	Omits
+	3E.2
+	Status: significantly improved
+	0.30
+	States significantly improved
+	States improved, no magnitude
+	Omits
+	3E.3
+	Patient now demonstrates understanding of depression remission
+	0.60
+	States patient understands depression remission
+	—
+	Omits
+	3E.4
+	Patient now demonstrates understanding of long-term treatment expectations
+	0.60
+	States patient understands long-term treatment expectations
+	—
+	Omits
+	3E.5
+	Patient now demonstrates understanding of relapse prevention principles
+	0.60
+	States patient understands relapse prevention
+	—
+	Omits
+	3E.6
+	Patient now demonstrates understanding of role of medication adherence
+	0.60
+	States patient understands continued medication adherence
+	—
+	Omits
+	3E.7
+	Patient now demonstrates understanding of role of continued psychotherapy
+	0.60
+	States patient understands continued psychotherapy role
+	—
+	Omits
+	3E.8
+	Continued reinforcement of maintenance treatment principles remains appropriate
+	0.60
+	States continued reinforcement of maintenance treatment appropriate
+	—
+	Omits
+	3E.9
+	Continued reinforcement of early symptom recurrence recognition remains appropriate
+	0.60
+	States reinforcement of early recognition of recurrence appropriate
+	—
+	Omits
+	3E.10
+	Acknowledges this is a previously high-risk patient requiring long-term management
+	0.50
+	States this patient was previously high-risk requiring continued management
+	—
+	Omits
+	3E.11
+	Education plan supports adherence and long-term treatment engagement
+	0.60
+	States continued education to support adherence and engagement
+	—
+	Omits
+	3E sum check: 0.40 + 0.30 + 0.60 + 0.60 + 0.60 + 0.60 + 0.60 + 0.60 + 0.60 + 0.50 + 0.60 = 6.0
+	 
+Section check: 3A (9.0) + 3B (5.0) + 3C (5.0) + 3D (5.0) + 3E (6.0) = 30.0
+SECTION 4: PLAN (25.0 points)
+4A. MAJOR DEPRESSIVE DISORDER (5.5 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4A.1
+	CONTINUE venlafaxine XR 150 mg PO daily — must state CONTINUE at current dose
+	0.60
+	States continue venlafaxine XR 150 mg PO daily
+	States venlafaxine; dose, route, or CONTINUE missing
+	States dose change or omits
+	4A.2
+	CONTINUE aripiprazole 2 mg PO daily — must state CONTINUE at current dose
+	0.60
+	States continue aripiprazole 2 mg PO daily
+	States aripiprazole; dose, route, or CONTINUE missing
+	States dose change or omits
+	4A.3
+	Rationale: meaningful clinical improvement
+	0.35
+	States meaningful clinical improvement as rationale
+	—
+	Omits
+	4A.4
+	Rationale: good tolerability
+	0.35
+	States good tolerability as rationale
+	—
+	Omits
+	4A.5
+	Rationale: resolution of passive suicidal ideation
+	0.45
+	States resolution of passive SI as rationale
+	—
+	Omits
+	4A.6
+	Rationale: functional recovery has begun
+	0.35
+	States functional recovery as rationale
+	—
+	Omits
+	4A.7
+	Note: remission not yet achieved (follow-up will formally assess remission)
+	0.45
+	States remission not yet confirmed or to be assessed at follow-up
+	—
+	Incorrectly states remission achieved in plan, or omits
+	4A.8
+	Continue CBT
+	0.45
+	States continue CBT
+	—
+	Omits
+	4A.9
+	Repeat PHQ-9 at future follow-up visits
+	0.45
+	States repeat PHQ-9 at future visits
+	States monitor mood, no tool
+	Omits
+	4A.10
+	Guideline support cited for continuation therapy (ACP and/or VA/DoD MDD)
+	0.35
+	References ACP Living Guideline and/or VA/DoD MDD guideline
+	Mentions guideline, no source named
+	Omits
+	4A.11
+	Continuation/maintenance treatment appropriate to reduce recurrence risk
+	0.55
+	States continuation appropriate for recurrence risk reduction
+	—
+	Omits
+	4A.12
+	Follow-up scheduled in approximately 3 months
+	0.55
+	States follow-up in approximately 3 months
+	States follow-up, no timing
+	Omits
+	4A sum check: 0.60 + 0.60 + 0.35 + 0.35 + 0.45 + 0.35 + 0.45 + 0.45 + 0.45 + 0.35 + 0.55 + 0.55 = 5.5
+	 
+4B. GENERALIZED ANXIETY DISORDER (3.5 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4B.1
+	CONTINUE venlafaxine XR 150 mg PO daily (for GAD)
+	0.60
+	States continue venlafaxine XR for GAD (acceptable: SSRIs or SNRIs with GAD indication per JAMA 2026: escitalopram, paroxetine, duloxetine, venlafaxine)
+	States continue venlafaxine, no GAD indication context
+	Omits
+	4B.2
+	CONTINUE hydroxyzine 25 mg PO every 8 hours as needed
+	0.60
+	States continue hydroxyzine 25 mg PO q8h PRN anxiety
+	States hydroxyzine PRN; dose or interval missing
+	Incorrect dose or omits
+	4B.3
+	Continue CBT for anxiety
+	0.40
+	States continue CBT for anxiety or GAD
+	—
+	Omits
+	4B.4
+	Repeat GAD-7 at future follow-up visits
+	0.50
+	States repeat GAD-7 at future visits
+	States monitor anxiety, no tool specified
+	Omits
+	4B.5
+	Monitor anxiety symptom trajectory
+	0.35
+	States monitor anxiety symptoms
+	—
+	Omits
+	4B.6
+	Assess medication tolerability at follow-up
+	0.30
+	States assess medication tolerability
+	—
+	Omits
+	4B.7
+	Plan links to continued CBT for anxiety management
+	0.30
+	States continued CBT tied to anxiety management
+	—
+	Omits
+	4B.8
+	Venlafaxine noted as first-line or FDA-indicated SNRI for GAD
+	0.30
+	States venlafaxine is first-line or FDA-indicated for GAD
+	—
+	Omits
+	4B.9
+	Hydroxyzine recognized as guideline-supported adjunctive agent for anxiety (per JAMA 2026 review)
+	0.15
+	Notes hydroxyzine as guideline-supported short-acting option for anxiety
+	—
+	Omits
+	4B sum check: 0.60 + 0.60 + 0.40 + 0.50 + 0.35 + 0.30 + 0.30 + 0.30 + 0.15 = 3.5
+	 
+4C. SUICIDE RISK MONITORING (3.0 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4C.1
+	Reinforce safety plan
+	0.50
+	States reinforce safety plan
+	—
+	Omits
+	4C.2
+	Encourage patient to monitor for worsening symptoms
+	0.40
+	States encourage monitoring for worsening symptoms
+	—
+	Omits
+	4C.3
+	Encourage patient to discuss symptom changes with spouse
+	0.40
+	States encourage discussion of symptom changes with spouse
+	—
+	Omits
+	4C.4
+	Encourage contact with healthcare team if suicidal thoughts return
+	0.50
+	States encourage contacting team if SI returns
+	—
+	Omits
+	4C.5
+	Encourage utilization of crisis resources if needed
+	0.40
+	States encourage crisis resources if needed
+	—
+	Omits
+	4C.6
+	Continue suicide risk assessment at future visits
+	0.40
+	States continue suicide risk assessment at future visits
+	—
+	Omits
+	4C.7
+	Rationale: prior passive SI history warrants continued longitudinal monitoring
+	0.40
+	Links continued monitoring to prior SI history
+	—
+	Omits
+	4C sum check: 0.50 + 0.40 + 0.40 + 0.50 + 0.40 + 0.40 + 0.40 = 3.0
+	 
+4D. TOBACCO USE DISORDER (3.5 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4D.1
+	Congratulate patient on reduction in smoking
+	0.25
+	States congratulate patient on smoking reduction
+	—
+	Omits
+	4D.2
+	Continue motivational interviewing
+	0.50
+	States continue motivational interviewing
+	States counseling, no MI specification
+	Omits
+	4D.3
+	Discuss smoking triggers
+	0.40
+	States discuss smoking triggers
+	—
+	Omits
+	4D.4
+	Discuss relationship between smoking and emotional distress
+	0.40
+	States discuss relationship between smoking and emotional distress
+	—
+	Omits
+	4D.5
+	Discuss future cessation goals
+	0.40
+	States discuss future cessation goals
+	—
+	Omits
+	4D.6
+	Reassess readiness to quit at future visits
+	0.45
+	States reassess readiness to quit at future visits
+	States reassess cessation without readiness framing
+	Omits
+	4D.7
+	Guideline-supported cessation pharmacotherapy options available when patient ready (acceptable per USPSTF 2021 and VA/DoD 2026: varenicline [first-line, Strong for], combination NRT [patch + short-acting, Strong for], bupropion SR [Strong for]; e-cigarettes NOT recommended [USPSTF I statement])
+	0.45
+	Names at least one guideline-supported cessation pharmacotherapy option or acknowledges plan to discuss when ready
+	—
+	Omits
+	4D.8
+	Behavioral cessation counseling is evidence-based (USPSTF Grade A for non-pregnant adults)
+	0.15
+	References behavioral counseling as evidence-based for cessation
+	—
+	Omits
+	4D.9
+	Provide smoking cessation education
+	0.25
+	States provide or discuss smoking cessation education
+	—
+	Omits
+	4D.10
+	Tobacco use education: smoking cessation listed under patient education
+	0.25
+	States smoking cessation education included in patient education plan
+	—
+	Omits
+	4D sum check: 0.25 + 0.50 + 0.40 + 0.40 + 0.40 + 0.45 + 0.45 + 0.15 + 0.25 + 0.25 = 3.5
+	 
+4E. PATIENT EDUCATION (3.5 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4E.1
+	Education topic: partial response versus remission
+	0.40
+	States provide education on partial response vs remission
+	—
+	Omits
+	4E.2
+	Education topic: expected treatment timelines
+	0.35
+	States provide education on expected treatment timelines
+	—
+	Omits
+	4E.3
+	Education topic: importance of continued medication adherence
+	0.40
+	States provide education on medication adherence
+	—
+	Omits
+	4E.4
+	Education topic: continued psychotherapy participation
+	0.35
+	States provide education on continued psychotherapy
+	—
+	Omits
+	4E.5
+	Education topic: warning signs of relapse
+	0.40
+	States provide education on relapse warning signs
+	—
+	Omits
+	4E.6
+	Education topic: smoking cessation
+	0.40
+	States provide education on smoking cessation
+	—
+	Omits
+	4E.7
+	Education topic: importance of maintaining hope and treatment engagement
+	0.40
+	States provide education on hope and treatment engagement
+	—
+	Omits
+	4E.8
+	Education framing: reinforce maintenance treatment principles
+	0.30
+	States reinforce maintenance treatment principles
+	—
+	Omits
+	4E.9
+	Education framing: early recognition of symptom recurrence
+	0.30
+	States education on early recognition of recurrence
+	—
+	Omits
+	4E.10
+	Education includes smoking cessation resources
+	0.20
+	States education to include cessation resources
+	—
+	Omits
+	4E sum check: 0.40 + 0.35 + 0.40 + 0.35 + 0.40 + 0.40 + 0.40 + 0.30 + 0.30 + 0.20 = 3.5
+	 
+4F. MONITORING (3.5 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4F.1
+	Monitor PHQ-9
+	0.30
+	States monitor PHQ-9
+	—
+	Omits
+	4F.2
+	Monitor GAD-7
+	0.30
+	States monitor GAD-7
+	—
+	Omits
+	4F.3
+	Monitor mood
+	0.25
+	States monitor mood
+	—
+	Omits
+	4F.4
+	Monitor anxiety symptoms
+	0.25
+	States monitor anxiety symptoms
+	—
+	Omits
+	4F.5
+	Monitor suicidal ideation
+	0.30
+	States monitor suicidal ideation
+	—
+	Omits
+	4F.6
+	Monitor functional status
+	0.25
+	States monitor functional status
+	—
+	Omits
+	4F.7
+	Monitor medication adherence
+	0.25
+	States monitor medication adherence
+	—
+	Omits
+	4F.8
+	Monitor medication tolerability
+	0.30
+	States monitor medication tolerability
+	—
+	Omits
+	4F.9
+	Monitor weight
+	0.25
+	States monitor weight
+	—
+	Omits
+	4F.10
+	Monitor BMI
+	0.20
+	States monitor BMI
+	—
+	Omits
+	4F.11
+	Monitor fasting glucose
+	0.30
+	States monitor fasting glucose
+	—
+	Omits
+	4F.12
+	Monitor lipid parameters
+	0.30
+	States monitor lipid parameters
+	—
+	Omits
+	4F.13
+	Monitor tobacco use
+	0.25
+	States monitor tobacco use
+	—
+	Omits
+	4F sum check: 0.30 + 0.30 + 0.25 + 0.25 + 0.30 + 0.25 + 0.25 + 0.30 + 0.25 + 0.20 + 0.30 + 0.30 + 0.25 = 3.5
+	 
+4G. FOLLOW-UP AND NEXT-VISIT AGENDA (2.5 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4G.1
+	Follow-up in approximately 3 months
+	0.40
+	States follow-up in approximately 3 months
+	States follow-up, no timing
+	Omits
+	4G.2
+	At follow-up: repeat PHQ-9
+	0.25
+	States repeat PHQ-9 at follow-up
+	—
+	Omits
+	4G.3
+	At follow-up: repeat GAD-7
+	0.25
+	States repeat GAD-7 at follow-up
+	—
+	Omits
+	4G.4
+	At follow-up: assess for remission
+	0.25
+	States assess for remission at follow-up
+	States assess depression, no remission framing
+	Omits
+	4G.5
+	At follow-up: assess medication tolerability
+	0.20
+	States assess tolerability at follow-up
+	—
+	Omits
+	4G.6
+	At follow-up: reassess suicidality
+	0.30
+	States reassess suicidality at follow-up
+	—
+	Omits
+	4G.7
+	At follow-up: assess functional recovery
+	0.20
+	States assess functional recovery at follow-up
+	—
+	Omits
+	4G.8
+	At follow-up: assess continued CBT participation
+	0.20
+	States assess CBT participation at follow-up
+	—
+	Omits
+	4G.9
+	At follow-up: assess tobacco use and readiness for cessation
+	0.25
+	States assess tobacco use and cessation readiness
+	States assess tobacco use only
+	Omits
+	4G.10
+	Future visits focus on: remission, functional recovery, SI maintenance, long-term management
+	0.20
+	States future focus on remission, functional recovery, SI maintenance, and long-term management
+	States future focus vaguely
+	Omits
+	4G sum check: 0.40 + 0.25 + 0.25 + 0.25 + 0.20 + 0.30 + 0.20 + 0.20 + 0.25 + 0.20 = 2.5
+	 
+Section check: 4A (5.5) + 4B (3.5) + 4C (3.0) + 4D (3.5) + 4E (3.5) + 4F (3.5) + 4G (2.5) = 25.0
+SECTION 5: PRESENTATION QUALITY (5.0 points)
+5A. ORGANIZATION AND SOAP STRUCTURE (2.0 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5A.1
+	Uses four-part SOAP structure (S / O / A / P)
+	0.50
+	All four sections present and labeled
+	Some sections present
+	Absent
+	5A.2
+	Subjective and objective data placed in correct sections
+	0.50
+	Correctly partitioned
+	Minor misplacement
+	Major misplacement
+	5A.3
+	Assessment presents a prioritized, numbered, or organized problem list
+	0.50
+	Numbered/prioritized problem list
+	Listed, not prioritized
+	Absent
+	5A.4
+	Each plan element maps to an assessed problem
+	0.50
+	All plan items map to a problem
+	Most mapped
+	Unmapped plan
+	5A sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.0
+	 
+5B. FORMATTING AND DOCUMENTATION (2.0 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5B.1
+	Medications documented with drug, dose, route, and frequency
+	0.50
+	All four elements present for each drug
+	Missing one element per drug
+	Largely incomplete
+	5B.2
+	Laboratory values reported with units
+	0.50
+	Units present throughout
+	Some units missing
+	Units absent
+	5B.3
+	Assessment tools reported with numeric scores and interpretations
+	0.50
+	Scores and interpretations present
+	Scores present without interpretation
+	Scores absent
+	5B.4
+	Plan items are specific and actionable
+	0.50
+	Specific, actionable plan items throughout
+	Partly vague
+	Vague throughout
+	5B sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.0
+	 
+5C. PROFESSIONAL TONE AND SPECIFICITY (1.0 points)
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5C.1
+	Objective, professional clinical language throughout
+	0.40
+	Professional throughout
+	Minor lapses
+	Unprofessional
+	5C.2
+	Recommendations tied to guideline rationale
+	0.40
+	Rationale provided for key decisions
+	Partial rationale
+	Absent
+	5C.3
+	Free of major factual or medication errors
+	0.20
+	No major errors
+	1 minor error
+	Major error
+	5C sum check: 0.40 + 0.40 + 0.20 = 1.0
+	 
+Section check: 5A (2.0) + 5B (2.0) + 5C (1.0) = 5.0
+GRAND TOTAL VERIFICATION
+§
+	Section
+	Subsections
+	Points
+	1
+	SUBJECTIVE
+	1A (2.5) + 1B (6.5) + 1C (3.5) + 1D (3.0) + 1E (5.0) + 1F (2.5) + 1G (2.0)
+	25.0
+	2
+	OBJECTIVE
+	2A (5.5) + 2B (6.5) + 2C (3.0)
+	15.0
+	3
+	ASSESSMENT
+	3A (9.0) + 3B (5.0) + 3C (5.0) + 3D (5.0) + 3E (6.0)
+	30.0
+	4
+	PLAN
+	4A (5.5) + 4B (3.5) + 4C (3.0) + 4D (3.5) + 4E (3.5) + 4F (3.5) + 4G (2.5)
+	25.0
+	5
+	PRESENTATION QUALITY
+	5A (2.0) + 5B (2.0) + 5C (1.0)
+	5.0
+	 
+	GRAND TOTAL
+	 
+	100.0
+	GRADING SCALE
+Grade
+	Range
+	Description
+	A
+	90.0–100.0
+	Exceptional — comprehensive, accurate, clinically actionable
+	B
+	80.0–89.9
+	Proficient — solid coverage with minor gaps
+	C
+	70.0–79.9
+	Developing — adequate but missing key elements
+	D
+	60.0–69.9
+	Below expectations — significant gaps in content or analysis
+	F
+	Below 60.0
+	Unsatisfactory — major deficiencies
+	TOTAL DISCRETE INPUTS ACROSS ALL SECTIONS
+Section
+	Subsections
+	# Inputs
+	SECTION 1: SUBJECTIVE
+	1A, 1B, 1C, 1D, 1E, 1F, 1G
+	83
+	SECTION 2: OBJECTIVE
+	2A, 2B, 2C
+	34
+	SECTION 3: ASSESSMENT
+	3A, 3B, 3C, 3D, 3E
+	65
+	SECTION 4: PLAN
+	4A, 4B, 4C, 4D, 4E, 4F, 4G
+	71
+	SECTION 5: PRESENTATION QUALITY
+	5A, 5B, 5C
+	11
+	TOTAL
+	 
+	264
+	MODEL ANSWER SCORE: 100.0 / 100.0
+The model answer (Patient C — David Carter — Thursday 6-Month Follow-Up gold-standard SOAP note) earns full credit on every one of the 264 discrete inputs. Any student submission is scored against this rubric by evaluating each of the 264 discrete inputs independently, awarding FULL, HALF, or ZERO credit per input, and summing to a final score out of 100.0.
+Source guidelines for therapeutic alternatives: ACP Living Clinical Guideline — Nonpharmacologic and Pharmacologic Treatments of Adults in the Acute Phase of Major Depressive Disorder (2023); VA/DoD Clinical Practice Guideline for the Management of Major Depressive Disorder (2022); USPSTF Recommendation Statement — Interventions for Tobacco Smoking Cessation in Adults (2021); VA/DoD Clinical Practice Guideline for Tobacco Use Treatment (2026); JAMA Internal Medicine — Treatment of Anxiety for Adults in Primary Care Settings (Shepardson et al., 2026); USPSTF Evidence Report — Anxiety Screening (O'Connor et al., 2023).

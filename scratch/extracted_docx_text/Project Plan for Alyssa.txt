@@ -1,0 +1,495 @@
+
+Project Plan for Alyssa
+VACS: Virtual Ambulatory Care Simulator
+Clinical Case Development Project
+By Premier Pharma Mentors
+1. Project Purpose
+Alyssa,
+You are being asked to support the development of VACS: Virtual Ambulatory Care Simulator, Premier Pharma Mentors’ web-based pharmacy education platform.
+The goal of VACS is to give pharmacy students a realistic, clinically rigorous environment where they can practice reviewing patient charts, interviewing AI patients, identifying medication-related problems, writing SOAP notes, and receiving structured preceptor feedback.
+The end goal is to develop realistic patient cases based on the clinical guidelines for the top 10 ambulatory care disease states and the top 11 inpatient disease states in America. However, we will begin with one prototype week before expanding to the full case library.
+
+2. Immediate Assignment
+Your immediate assignment is to build the prototype content for:
+Week 1: Hypertension + Type 2 Diabetes
+This Week 1 prototype will become the model for future disease-state blocks across the VACS platform.
+Do not build the full 5-week experience yet. Do not build all top 10 ambulatory or inpatient disease states yet. The priority is to make Week 1 excellent so that it can serve as the master template for future case development.
+
+3. Overall VACS Student Experience
+The student experience should be designed around the following workflow:
+Student logs into VACS.
+Student sees the assigned disease-state block.
+Student opens the assigned patient chart.
+Student reviews the EMR-style patient profile.
+Student interviews the AI patient.
+Student moves between the chart, patient interview, workup section, and SOAP note.
+Student writes and submits a SOAP note.
+AI grades the SOAP note.
+Dr. Kurunwune, the virtual preceptor, provides feedback.
+Student applies feedback to the next encounter.
+The cases should feel clinically realistic. Students should need to gather information, interpret trends, identify missing data, assess safety, and make patient-specific recommendations.
+
+4. Full Future Disease-State Vision
+Eventually, VACS should include multiple disease-state blocks across ambulatory care and inpatient care.
+Week
+	Primary Disease 1
+	Primary Disease 2
+	Secondary Disease States
+	Major therapeutic themes 
+	Week 1
+	HTN
+	T2DM
+	Obesity, ASCVD risk, hyperlipidemia, diabetic kidney disease 
+	Guideline application, foundations of amcare, medication initiation, lifestyle modification
+	Week 2
+	Hyperlipidemia and ASCVD risk
+	CKD 
+	Albuminuria, diabetic kidney disease, renal monitoting
+	Cardiorenal protection, statin optimization, SGLT2 inhibitors, CKD progression intervention
+	Week 3
+	Asthma 
+	COPD
+	Smoking cessation, immunizations
+	Inhaler technique, disease monitoring, exacerbation prevention, tobacco cessation counseling
+	Week 4
+	Heart failure 
+	Afib/Anticoagulation
+	VTE Prevention, stroke prevention
+	GDMT optimization, anticoagulation selection, monitoring transitions of care
+	Week 5
+	Depression and Anxiety 
+	Tobacco Cessation
+	Behavioral health, medication adherence, motivational interviewing
+	Adherence barriers, smoking cessation pharmacotherapy
+	Week 6
+	Capstone Week
+	
+The long-term goal is to expand this into cases covering the top 10 ambulatory disease states and top 10 inpatient disease states in America.
+For now, your work should focus only on:
+Week 1: Hypertension + Type 2 Diabetes
+
+5. Week 1 Structure
+Week 1 should include:
+Monday: Guideline Review Day
+Students review the primary guidelines and key clinical decision points for hypertension and type 2 diabetes.
+The Monday content should prepare students to manage patients during the rest of the week. Since this content is for pharmacy students, it should not over-explain basic terminology. Instead, it should focus on guideline-based clinical application.
+Key areas to include:
+Blood pressure classification and treatment thresholds
+Blood pressure goals by patient type
+First-line antihypertensive therapy
+When to initiate monotherapy versus combination therapy
+Lifestyle interventions with expected clinical impact
+A1c goals and individualization of therapy
+Type 2 diabetes medication selection
+Metformin use and contraindications
+GLP-1 receptor agonists
+SGLT2 inhibitors
+Kidney protection
+ASCVD risk reduction
+Statin use in patients with diabetes
+Renal monitoring
+UACR and eGFR interpretation
+Medication safety monitoring
+Counseling priorities
+Follow-up timing
+Common student mistakes
+Tuesday: Initial Visits
+Students see all three patients for the first time.
+Tuesday should be foundational but not overly simple. The goal is for students to:
+Review the chart
+Identify uncontrolled hypertension and/or diabetes
+Recognize missing labs or missing history
+Assess current medications
+Interview the patient effectively
+Identify adherence, lifestyle, access, or monitoring gaps
+Develop an initial care plan
+Write a complete SOAP note
+Wednesday: 3-Month Follow-Up
+The same three patients return three months later.
+Wednesday should be intermediate-level. The goal is for students to:
+Reassess blood pressure response
+Reassess A1c response
+Interpret new labs
+Review home blood pressure and/or glucose data
+Assess adherence
+Assess side effects
+Determine whether the initial plan worked
+Modify therapy based on patient-specific factors
+Document a stronger SOAP note
+Thursday: Second 3-Month Follow-Up
+The same three patients return another three months later.
+Thursday should be advanced-level. The goal is for students to:
+Manage more complex follow-up decisions
+Adjust therapy based on incomplete or evolving response
+Address cost, access, adherence, side effects, or patient preference barriers
+Recognize safety concerns
+Apply guideline-based escalation
+Counsel the patient clearly
+Create an appropriate follow-up and monitoring plan
+Friday: Journal Club / Reflection
+Friday should reinforce clinical decision-making from the week.
+
+Topic: SGLT2 inhibitors and GLP-1 receptor agonists in patients with type 2 diabetes and cardiorenal disease**
+The Friday assignment should require students to answer:
+What did the article or evidence teach you?
+How does this evidence apply to one of this week’s patients?
+Which patient would benefit most from this therapy and why?
+What patient-specific factors would affect the medication decision?
+What monitoring, counseling, or access issues would need to be addressed?
+
+
+6. Alyssa’s Workplan
+Step 1: Confirm the Primary Guidelines
+Identify the most current official clinical guidelines for:
+Hypertension
+Type 2 Diabetes
+Use official sources only. Prioritize:
+American Diabetes Association
+American Heart Association
+American College of Cardiology
+Peer-reviewed guideline publications
+Official professional society websites
+Avoid:
+Unofficial summaries
+Random blogs
+Outdated slide decks
+Drug company promotional materials
+AI-generated summaries without source verification
+PDFs that do not clearly trace back to the original guideline source
+Deliverable:
+Create a source list that includes:
+Guideline title
+Publishing organization
+Year
+Official URL
+PDF link, if available
+Brief note on why it is the primary source
+
+Step 2: Save the Guideline Sources
+Create a folder called:
+Week 1 - HTN + T2DM / Guidelines
+Save the guidelines or official source links using clear file names.
+Example file naming structure:
+HTN_AHA_ACC_2025_High_Blood_Pressure_Guideline.pdf
+Diabetes_ADA_2026_Standards_of_Care.pdf
+If a guideline is web-based rather than available as one clean PDF, save the official URL and cite the specific sections used.
+
+Step 3: Create Guideline Teaching Summaries
+Create a concise but clinically useful teaching summary for each disease state:
+Hypertension Guideline Teaching Summary
+Type 2 Diabetes Guideline Teaching Summary
+Each summary should be written for pharmacy students, not laypeople.
+Each summary should include:
+Treatment goals
+Patient-specific goal considerations
+Initial therapy recommendations
+When to intensify therapy
+Preferred medication classes
+Safety considerations
+Monitoring parameters
+Relevant labs
+Lifestyle counseling priorities
+Pharmacist-specific interventions
+Common student mistakes
+Red flags or escalation points
+Do not spend space defining basic concepts such as what blood pressure, A1c, eGFR, or UACR are unless the explanation is tied to a clinical decision.
+
+Step 4: Create the Week 1 Overview Document
+Create a document titled:
+Week 1 Overview - Hypertension + Type 2 Diabetes
+Include:
+Why hypertension and type 2 diabetes are paired together
+What students should learn this week
+Which guidelines students should review
+What clinical skills students will practice
+What each of the three longitudinal patients is designed to teach
+How complexity increases from Tuesday to Wednesday to Thursday
+Weekly Workflow 
+The overview should make it clear that this week is not just about knowing the guidelines. It is about applying the guidelines to real patient scenarios.
+
+7. Longitudinal Patient Development
+Create three fake longitudinal patients.
+Do not use real patient information.
+Each patient should have a distinct clinical purpose.
+Patient A: Foundational Case
+Clinical focus:
+Mildly uncontrolled hypertension
+Elevated A1c
+Missing or incomplete labs
+Lifestyle counseling
+Basic medication optimization
+Foundational SOAP note expectations
+This patient should test whether the student can identify common ambulatory care gaps and develop a safe initial plan.
+Patient B: Adherence / Access Case
+Clinical focus:
+Uncontrolled hypertension and/or diabetes
+Missed medication doses
+Cost or access barrier
+Medication side effects
+Need for practical intervention
+Patient-centered communication
+This patient should test whether the student looks beyond the guideline and identifies why the patient is not achieving control.
+Patient C: Higher-Risk Case
+Clinical focus:
+Diabetes complications or high ASCVD risk
+Kidney concerns
+Need for statin therapy or therapy intensification
+GLP-1 receptor agonist or SGLT2 inhibitor consideration
+More complex monitoring and safety decisions
+This patient should test whether the student can integrate hypertension, diabetes, kidney protection, and cardiovascular risk reduction.
+
+8. Patient Master Profiles
+Each patient needs a master profile.
+Each master profile should include:
+Patient name
+Age
+Sex
+Visit setting
+Main medical conditions
+Personality
+Health literacy level
+Past medical history
+Medication list
+Allergies
+Social history
+Family history
+Patient goals
+Patient fears or concerns
+Hidden information
+Hidden information is especially important for the AI patient interaction. The patient should not volunteer everything immediately. Certain information should only be revealed if the student asks appropriately.
+Examples of hidden information:
+Missed doses
+OTC medication use
+Home blood pressure technique issues
+Medication affordability concerns
+Side effects
+Low health literacy
+Fear of injections
+Diet patterns
+Inconsistent glucose monitoring
+Use of NSAIDs
+Symptoms concerning for hypoglycemia, hypotension, or complications
+
+9. Patient Encounters
+Each patient needs three encounters:
+Tuesday initial visit
+Wednesday 3-month follow-up
+Thursday second 3-month follow-up
+With three patients and three visits per patient, Week 1 will include:
+9 total patient encounters
+Each encounter should include:
+Patient snapshot
+Chief concern
+HPI
+Past medical history
+Medication list
+Allergies
+Vitals
+Labs
+Immunizations
+Social history
+Family history
+Problem list
+Visit notes
+Follow-up tasks
+Hidden facts
+What the patient should say if asked
+Each encounter should build on the previous visit. The patient should not reset each day. The student should experience the patient’s clinical journey over time.
+
+10. AI Patient Q&A Guidance
+10A Section added- Hidden Information Trigger Words/Key words 
+For each encounter, create AI patient Q&A guidance.
+This should include likely student questions and realistic patient responses.
+Categories to include:
+Reason for visit
+Symptoms
+Medication use
+Adherence
+Side effects
+Diet
+Exercise
+Home blood pressure monitoring
+Home blood glucose monitoring
+Cost or access barriers
+Allergies
+OTC medications and supplements
+Patient goals
+Patient concerns
+Understanding of disease state
+Readiness to change
+Follow-up preferences
+The AI patient should answer like a real person, not like a clinician. Responses should sound natural, brief, and patient-centered.
+Example:
+Student asks: “Do you ever miss your medications?”
+Patient response: “Honestly, yes. I probably miss them a few times a week, mostly when I’m rushing in the morning.”
+Do not make the patient over-explain the clinical significance. The student should be responsible for interpreting what the answer means.
+
+11. Model SOAP Notes
+Each of the 9 encounters needs a gold-standard SOAP note.
+Each SOAP note should include:
+Subjective
+Patient-reported symptoms
+Medication-taking behavior
+Side effects
+Lifestyle factors
+Home monitoring
+Patient goals or concerns
+Relevant hidden information if elicited
+Objective
+Vitals
+Labs
+Medication list
+Allergies
+Relevant chart data
+Immunizations, if applicable
+ASCVD risk, renal function, UACR, or other relevant clinical data when available
+Assessment
+Clinical interpretation of hypertension control
+Clinical interpretation of diabetes control
+Medication-related problems
+Safety concerns
+Adherence or access issues
+Guideline-based gaps
+Patient-specific barriers
+Prioritized problem list
+Plan
+Medication recommendations
+Lifestyle recommendations
+Monitoring plan
+Labs needed
+Counseling points
+Follow-up timing
+When to escalate care
+Patient education priorities
+The model SOAP note should be strong enough to serve as the grading reference.
+
+12. Acceptable Alternative Answers
+For each encounter, list clinically reasonable alternative recommendations.
+This section should help the AI grader and Dr. Kurunwune distinguish between:
+The preferred answer
+Other acceptable clinical answers
+Unacceptable or unsafe answers
+Examples of acceptable alternatives may include:
+ACE inhibitor versus ARB when clinically appropriate
+Thiazide-like diuretic versus calcium channel blocker depending on patient factors
+Optimizing metformin before adding another agent
+Adding a GLP-1 receptor agonist for ASCVD/weight benefit
+Adding an SGLT2 inhibitor for kidney or heart failure benefit
+Deferring medication changes temporarily if adherence is the main issue
+Ordering missing labs before making a medication change
+Reassessing home blood pressure technique before intensifying therapy
+Also list unacceptable answers.
+Examples:
+Intensifying therapy without assessing adherence
+Starting or increasing medication without checking renal function when needed
+Ignoring hypoglycemia symptoms
+Missing albuminuria in a patient with diabetes
+Failing to address cost barriers
+Recommending a therapy contraindicated by patient-specific factors
+Creating a plan with no follow-up or monitoring
+
+13. Critical Misses
+For each encounter, create a list of critical misses.
+These are major errors students should lose points for.
+Examples:
+Did not assess medication adherence
+Did not ask about side effects
+Did not evaluate home blood pressure readings
+Did not assess home blood pressure technique
+Did not evaluate A1c trend
+Did not identify missing kidney labs
+Did not assess UACR when clinically relevant
+Did not identify need for statin therapy
+Did not address lifestyle contributors
+Recommended therapy without checking safety labs
+Ignored cost or access barriers
+Missed red-flag symptoms
+Did not provide patient counseling
+Did not create a monitoring plan
+Did not create a follow-up plan
+The critical misses should be specific to each case, not generic copy-and-paste items.
+14. Dr. Kurunwune Teaching Points
+For each encounter, create a teaching guide for the virtual preceptor.
+Each guide should include:
+What the student should have done well
+Common student mistakes
+Teaching pearls
+Follow-up questions Dr. Kurunwune should ask
+How the student can improve before the next encounter
+Example teaching questions:
+“What additional information did you need before making your recommendation?”
+“How did you determine whether this patient needed medication intensification versus adherence support?”
+“Why does kidney function matter before recommending this medication?”
+“Why does albuminuria change your treatment priorities in diabetes?”
+“What would you monitor after starting this medication?”
+“How would you explain this recommendation to the patient in plain language?”
+“What would make this plan difficult for the patient to follow?”
+These teaching points should help the student become a stronger clinical thinker, not just memorize the correct answer.
+
+15. Friday Journal Club Prompt
+Create a Friday journal club or reflection prompt focused on:
+SGLT2 inhibitors or GLP-1 receptor agonists in patients with type 2 diabetes and cardiovascular risk
+Potential article topic:
+SURPASS-CVOT: Tirzepatide vs. Dulaglutide in Type 2 Diabetes and ASCVD
+The prompt should include:
+Reflection question
+Clinical application question
+Patient selection question
+Monitoring and counseling question
+Access or affordability question
+Example questions:
+What was the most clinically important takeaway from the trial?
+How does the evidence apply to one of this week’s patients?
+Which patient would benefit most from this therapy and why?
+What risks, side effects, or monitoring parameters would you discuss?
+What cost, coverage, or adherence barriers might affect real-world use?
+
+16. Final Week 1 Deliverables
+The final Week 1 folder should include:
+Guideline PDFs or official source links
+Hypertension guideline teaching summary
+Type 2 diabetes guideline teaching summary
+Week 1 overview document
+Patient A master profile
+Patient A Tuesday encounter
+Patient A Wednesday encounter
+Patient A Thursday encounter
+Patient B master profile
+Patient B Tuesday encounter
+Patient B Wednesday encounter
+Patient B Thursday encounter
+Patient C master profile
+Patient C Tuesday encounter
+Patient C Wednesday encounter
+Patient C Thursday encounter
+AI patient Q&A guide for each encounter
+Model SOAP note for each encounter
+Acceptable alternative answers for each encounter
+Critical misses for each encounter
+Dr. Kurunwune teaching points for each encounter
+Friday journal club prompt
+Total patient encounters:
+3 patients x 3 visits = 9 total encounters
+
+17. Quality Expectations
+Alyssa, your work should be:
+Clinically accurate
+Guideline-based
+Patient-specific
+Realistic for ambulatory care pharmacy
+Clear enough for students to use
+Detailed enough for AI grading
+Structured enough to become a reusable template
+The goal is not to create generic textbook cases. The goal is to create realistic patient journeys where students must think like ambulatory care pharmacists.
+
+18. Most Important Rule
+Only build:
+Week 1: Hypertension + Type 2 Diabetes
+Once Week 1 is reviewed and approved, it will become the template for future disease-state modules across VACS.
+
+Create a project folder -> load the document into the project foldee / brain 
+Sub folder is a week of work
+Load the guidelines here
+For each deliverable, tell chat what you want to do, then ask it to build a prompt that you can use that will build it correctly. Please ask any clarifying questions to you
+Ask chat to build you a quality assurance prompt that you can use to check the quality of each of your deliverables after you build it 
+

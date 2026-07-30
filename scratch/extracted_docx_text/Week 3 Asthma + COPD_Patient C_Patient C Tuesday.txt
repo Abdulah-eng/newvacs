@@ -1,0 +1,2642 @@
+﻿SECTION 9: PATIENT C – TUESDAY INITIAL VISIT
+Encounter Overview
+Encounter Type
+Initial Ambulatory Care Pharmacist Visit
+Visit Length
+30-minute collaborative practice visit
+Week
+Week 3 – Tuesday
+Difficulty Level
+Advanced APPE Student
+Primary Learning Objectives
+Students should be able to:
+Recognize features of asthma-COPD overlap (ACO) 
+Differentiate asthma from COPD 
+Interpret spirometry findings 
+Evaluate bronchodilator reversibility 
+Interpret blood eosinophil counts 
+Assess exacerbation history 
+Evaluate appropriateness of inhaled corticosteroid therapy 
+Develop an evidence-based inhaler regimen 
+Assess comorbid allergic rhinitis 
+Construct a complete SOAP note 
+Develop an appropriate monitoring and follow-up strategy 
+1. Patient Snapshot
+Maria Thompson is a 69-year-old White female presenting for an initial ambulatory care pharmacy visit for management of chronic respiratory symptoms.
+Her primary care provider referred her due to worsening dyspnea, recurrent exacerbations, and persistent respiratory symptoms despite current inhaler therapy.
+This is the first time she has met with an ambulatory care pharmacist.
+2. Chief Concern
+"I feel like my breathing has been getting worse over the last few years."
+3. History of Present Illness
+Maria is a 69-year-old female with asthma, COPD, allergic rhinitis, hypertension, and osteopenia presenting for medication management.
+She reports gradually worsening respiratory symptoms over the past several years.
+She reports:
+Daily shortness of breath 
+Intermittent wheezing 
+Chronic cough 
+Frequent rescue inhaler use 
+Nighttime respiratory symptoms 
+She reports symptoms occurring most days of the week.
+She reports waking due to respiratory symptoms approximately two to three nights per week.
+She states that climbing stairs, walking uphill, and prolonged physical activity have become increasingly difficult.
+She reports using albuterol multiple times daily with temporary improvement.
+She reports two respiratory exacerbations during the past year requiring oral corticosteroid treatment.
+She denies:
+Chest pain 
+Hemoptysis 
+Syncope 
+Recent hospitalization 
+She remains concerned about progressive worsening of her lung disease.
+4. Past Medical History
+Asthma
+Diagnosed during childhood 
+COPD
+Diagnosed 8 years ago 
+Allergic Rhinitis
+Diagnosed during early adulthood 
+Hypertension
+Diagnosed 15 years ago 
+Osteopenia
+Diagnosed 3 years ago 
+5. Medication List
+Tiotropium (Spiriva Respimat)
+2 inhalations daily 
+Albuterol HFA
+2 puffs every 4–6 hours as needed 
+Fluticasone Nasal Spray
+1 spray each nostril daily 
+Lisinopril 20 mg daily
+Calcium Carbonate/Vitamin D
+1 tablet twice daily 
+6. Allergies
+Drug Allergies
+Sulfonamide antibiotics
+Rash 
+Food Allergies
+None
+7. Vitals
+Today's Vitals
+BP: 126/74 mmHg
+HR: 80 bpm
+RR: 18
+Temp: 98.4°F
+SpO₂: 95% on room air
+Weight: 71 kg
+Height: 64 inches
+BMI: 26.9 kg/m²
+8. Laboratory Data
+Pulmonary Function Testing
+Pre-Bronchodilator FEV1/FVC
+0.54
+Post-Bronchodilator FEV1/FVC
+0.55
+Post-Bronchodilator FEV1
+58% predicted
+Bronchodilator Response
+FEV1 improvement: 15%
+Absolute FEV1 improvement: 260 mL
+Complete Blood Count
+Absolute Eosinophil Count
+420 cells/µL
+Asthma Control Test (ACT)
+Score: 15
+Interpretation:
+Poorly controlled asthma symptoms
+COPD Assessment Test (CAT)
+Score: 19
+Interpretation:
+Significant COPD symptom burden
+Exacerbation History
+Past 12 Months
+Two respiratory exacerbations requiring oral corticosteroids 
+No hospitalizations
+9. Immunizations
+Influenza
+Received this season
+COVID
+Completed primary series and most recent booster
+PCV20
+Received
+RSV Vaccine
+Not documented
+Tdap
+Last documented 11 years ago
+10. Social History
+Tobacco
+Former smoker
+30 pack-year history
+Quit 12 years ago
+Alcohol
+Rare alcohol use
+Exercise
+Walks several times weekly
+Activity limited by respiratory symptoms
+Occupation
+Retired elementary school principal
+Living Situation
+Lives with spouse
+11. Family History
+Father
+COPD
+Coronary artery disease
+Mother
+Asthma
+Allergic rhinitis
+Sister
+Asthma
+12. Problem List
+Active Problems
+Asthma-COPD overlap phenotype 
+Poorly controlled respiratory symptoms 
+Frequent rescue inhaler use 
+Nighttime respiratory symptoms 
+Recurrent exacerbations 
+Elevated eosinophil count 
+Absence of inhaled corticosteroid therapy 
+Allergic rhinitis 
+Osteopenia 
+Preventive care gaps 
+13. Pharmacist Visit Notes
+Referral Reason
+Persistent respiratory symptoms and recurrent exacerbations despite current inhaler therapy.
+Key Concerns
+Assess asthma features 
+Assess COPD features 
+Evaluate bronchodilator reversibility 
+Interpret eosinophil count 
+Evaluate exacerbation history 
+Assess appropriateness of ICS therapy 
+Assess allergic rhinitis control 
+Develop optimal inhaler regimen 
+Assess preventive care gaps 
+14. Follow-Up Tasks Expected From Student
+Students should consider:
+Asthma Assessment
+Evaluate symptom frequency 
+Evaluate nighttime symptoms 
+Interpret ACT score 
+Assess rescue inhaler use 
+COPD Assessment
+Evaluate CAT score 
+Assess activity limitation 
+Assess exacerbation history 
+Interpret spirometry findings 
+Asthma-COPD Overlap Assessment
+Identify overlapping disease features 
+Evaluate eosinophilic inflammation 
+Assess need for ICS-containing therapy 
+Therapeutic Decision-Making
+Determine appropriate inhaler regimen 
+Evaluate need for ICS/LABA therapy 
+Determine role of LAMA continuation 
+Allergic Rhinitis
+Assess symptom control 
+Evaluate impact on respiratory symptoms 
+Monitoring
+ACT score 
+CAT score 
+Exacerbations 
+Rescue inhaler use 
+Eosinophils 
+Symptom burden 
+Follow-Up
+Develop an appropriate monitoring plan 
+Establish follow-up after therapy initiation
+
+SECTION 10: AI PATIENT Q&A GUIDE
+Patient C – Tuesday Initial Visit
+Purpose
+This document serves as the AI patient behavior guide.
+Responses should sound like a real patient, not a clinician.
+The patient should not volunteer hidden information unless appropriately prompted.
+Reason for Visit
+Student:
+"What brings you in today?"
+Patient:
+"My doctor wanted me to talk with you about my breathing."
+Student:
+"What are you hoping to get out of today's visit?"
+Patient:
+"I'd like to breathe better and stop having so many flare-ups."
+Symptoms
+Student:
+"How have you been feeling lately?"
+Patient:
+"My breathing hasn't been great."
+Student:
+"Can you tell me more?"
+Patient:
+"I get short of breath pretty easily."
+Student:
+"What else?"
+Patient:
+"I wheeze sometimes too."
+Symptom Frequency
+Student:
+"How often do you have breathing symptoms?"
+Patient:
+"Most days."
+Student:
+"How often are you using your rescue inhaler?"
+Patient:
+"Several times a day."
+Student:
+"Does it help?"
+Patient:
+"Yes, but it doesn't last very long."
+Nighttime Symptoms
+Student:
+"Do symptoms wake you up at night?"
+Patient:
+"Yes."
+Student:
+"How often?"
+Patient:
+"Maybe two or three nights a week."
+Activity Limitation
+Student:
+"Does your breathing affect your activities?"
+Patient:
+"Definitely."
+Student:
+"What kinds of activities?"
+Patient:
+"Walking uphill, stairs, longer walks."
+Exacerbation History
+Student:
+"Have you had any breathing flare-ups recently?"
+Patient:
+"Yes."
+Student:
+"How many during the last year?"
+Patient:
+"Two."
+Student:
+"What happened?"
+Patient:
+"I needed steroids both times."
+Student:
+"Any hospitalizations?"
+Patient:
+"No."
+Asthma History (Hidden Information)
+DO NOT volunteer.
+Student:
+"When were you diagnosed with asthma?"
+Patient:
+"When I was a kid."
+Student:
+"How old were you?"
+Patient:
+"I was in elementary school."
+Student:
+"Have you always had asthma symptoms?"
+Patient:
+"On and off most of my life."
+COPD History
+Student:
+"When were you diagnosed with COPD?"
+Patient:
+"About eight years ago."
+Allergic Rhinitis
+Student:
+"Do you have allergies?"
+Patient:
+"Yes."
+Student:
+"What kinds of symptoms?"
+Patient:
+"Runny nose, congestion, sneezing."
+Student:
+"Do they affect your breathing?"
+Patient:
+"I think they probably do."
+Medication Use
+Student:
+"What medications are you taking?"
+Patient:
+"My Spiriva inhaler, albuterol, nasal spray, blood pressure medicine, and calcium."
+Inhaled Corticosteroid History (Hidden Information)
+DO NOT volunteer.
+Student:
+"Have you ever been on another inhaler?"
+Patient:
+"Years ago."
+Student:
+"What do you remember about it?"
+Patient:
+"I think it had a steroid in it."
+Student:
+"Why did you stop it?"
+Patient:
+"My doctor switched things around when I was diagnosed with COPD."
+Medication Adherence
+Student:
+"Do you take your medications as prescribed?"
+Patient:
+"Yes."
+Student:
+"Do you miss doses?"
+Patient:
+"Not very often."
+Inhaler Technique
+Student:
+"Can you show me how you use your inhaler?"
+Patient:
+"Sure."
+If assessed:
+Patient demonstrates appropriate inhaler technique.
+Smoking History
+Student:
+"Do you smoke?"
+Patient:
+"No."
+Student:
+"Have you smoked before?"
+Patient:
+"Yes."
+Student:
+"How much?"
+Patient:
+"About a pack a day for thirty years."
+Student:
+"When did you quit?"
+Patient:
+"Twelve years ago."
+Patient Goals
+Student:
+"What health goal is most important to you?"
+Patient:
+"I want to stay active."
+Student:
+"Anything else?"
+Patient:
+"I'd like to avoid future flare-ups."
+Patient Concerns
+Student:
+"What concerns you most?"
+Patient:
+"My breathing getting worse."
+Student:
+"Anything else?"
+Patient:
+"I don't want to end up in the hospital."
+Understanding of Disease
+Student:
+"What do you know about your lung disease?"
+Patient:
+"I know I have COPD and asthma."
+Student:
+"Do you think they're different?"
+Patient:
+"I'm honestly not sure."
+Hidden Information Summary for AI
+The AI should NEVER volunteer these without prompting:
+Asthma diagnosed in childhood 
+Previous ICS-containing inhaler use 
+Prior inhaler was discontinued after COPD diagnosis 
+Allergies significantly contribute to symptoms 
+Adherence is generally good 
+Inhaler technique is appropriate 
+Patient has experienced asthma symptoms most of her life 
+Avoiding future exacerbations is a major motivator 
+
+
+SECTION 10A: HIDDEN INFORMATION TRIGGER MAP
+Patient C – Tuesday Initial Visit
+Hidden Fact #1: Childhood Asthma
+Information to Reveal
+Patient was diagnosed with asthma during childhood.
+Trigger Keywords
+asthma history 
+childhood asthma 
+diagnosis 
+respiratory history 
+Appropriate AI Response
+"I was diagnosed with asthma when I was a kid."
+Information Not Volunteered
+Patient does not initially discuss childhood asthma.
+Hidden Fact #2: Previous ICS Use
+Information to Reveal
+Patient previously used an ICS-containing inhaler.
+Trigger Keywords
+previous inhalers 
+medication history 
+steroid inhaler 
+controller inhaler 
+Appropriate AI Response
+"I remember using an inhaler with a steroid years ago."
+Information Not Volunteered
+Patient does not initially discuss prior therapy.
+Hidden Fact #3: ICS Was Discontinued After COPD Diagnosis
+Information to Reveal
+Treatment shifted after COPD diagnosis.
+Trigger Keywords
+why stopped 
+medication changes 
+COPD diagnosis 
+previous treatment 
+Appropriate AI Response
+"My medications changed after they told me I had COPD."
+Information Not Volunteered
+Patient only discusses this if asked.
+Hidden Fact #4: Allergic Rhinitis Contributes to Symptoms
+Information to Reveal
+Upper airway symptoms frequently worsen respiratory symptoms.
+Trigger Keywords
+allergies 
+congestion 
+rhinitis 
+triggers 
+Appropriate AI Response
+"My breathing usually seems worse when my allergies act up."
+Information Not Volunteered
+Patient does not automatically connect allergies to breathing.
+Hidden Fact #5: Good Adherence
+Information to Reveal
+Patient takes medications consistently.
+Trigger Keywords
+adherence 
+missed doses 
+compliance 
+Appropriate AI Response
+"I take them pretty much every day."
+Information Not Volunteered
+Patient only discusses adherence if asked.
+Hidden Fact #6: Appropriate Technique
+Information to Reveal
+Patient demonstrates proper inhaler technique.
+Trigger Keywords
+technique 
+inhaler use 
+demonstration 
+Appropriate AI Response
+Patient demonstrates appropriate inhaler use.
+Information Not Volunteered
+Technique must be assessed.
+
+SECTION 11: GOLD-STANDARD AMBULATORY CARE PHARMACIST SOAP NOTE
+Patient C – Tuesday Initial Visit
+SUBJECTIVE
+CC:
+Maria Thompson is a 69-year-old female presenting to the ambulatory care pharmacy clinic for initial collaborative practice management of chronic respiratory disease after referral from her primary care provider due to worsening dyspnea, recurrent exacerbations, and persistent respiratory symptoms despite current inhaler therapy.
+HPI:
+The patient reports progressively worsening respiratory symptoms over the past several years. She reports daily shortness of breath, intermittent wheezing, chronic cough, and frequent use of her rescue inhaler.
+She reports symptoms occurring most days of the week and states that she uses albuterol several times daily with temporary relief.
+The patient reports waking due to respiratory symptoms approximately two to three nights per week.
+She reports increasing difficulty with activities including climbing stairs, walking uphill, and prolonged physical activity.
+The patient reports two respiratory exacerbations during the previous year requiring treatment with oral corticosteroids. She denies hospitalization related to either event.
+Upon further discussion, the patient reports a history of asthma dating back to childhood. She states that she has experienced asthma symptoms intermittently throughout most of her life.
+She reports being diagnosed with COPD approximately eight years ago.
+The patient additionally reports allergic rhinitis with congestion, sneezing, and nasal symptoms that often worsen during allergy seasons.
+She recalls previously using an inhaler containing a corticosteroid but reports that her respiratory regimen changed after her COPD diagnosis.
+The patient reports good adherence to her current medications and demonstrates appropriate inhaler technique.
+She remains concerned about progressive respiratory decline and wishes to avoid future exacerbations and hospitalization.
+No recent hospitalizations.
+No emergency department visits.
+Past Medical History
+Asthma diagnosed during childhood
+COPD diagnosed 8 years ago
+Allergic rhinitis
+Hypertension diagnosed 15 years ago
+Osteopenia diagnosed 3 years ago
+Past Surgical History
+Cholecystectomy
+Family History
+Father: COPD, coronary artery disease
+Mother: asthma, allergic rhinitis
+Sister: asthma
+Social History
+Married
+Retired elementary school principal
+Lives with spouse
+Former smoker
+30 pack-year smoking history
+Quit 12 years ago
+Rare alcohol use
+Denies recreational drug use
+Physical activity limited by respiratory symptoms
+Current Medications
+Tiotropium (Spiriva Respimat)
+2 inhalations daily 
+Albuterol HFA
+2 puffs every 4–6 hours as needed 
+Fluticasone nasal spray
+1 spray each nostril daily 
+Lisinopril 20 mg PO daily
+Calcium carbonate/vitamin D
+1 tablet twice daily 
+Allergies
+Sulfonamide antibiotics
+Rash 
+Immunization History
+Influenza vaccine up to date
+COVID vaccination up to date
+PCV20 received
+RSV vaccination not documented
+Tdap overdue
+OBJECTIVE
+Vitals
+BP: 126/74 mmHg
+HR: 80 bpm
+RR: 18 bpm
+Weight: 71 kg
+Height: 64 inches
+BMI: 26.9 kg/m²
+SpO₂: 95% on room air
+Pulmonary Function Testing
+Pre-Bronchodilator FEV1/FVC: 0.54
+Post-Bronchodilator FEV1/FVC: 0.55
+Post-Bronchodilator FEV1: 58% predicted
+Bronchodilator Response:
+FEV1 improvement: 15% 
+Absolute improvement: 260 mL 
+Complete Blood Count
+Absolute Eosinophil Count:
+420 cells/µL
+Asthma Control Test (ACT)
+ACT Score: 15
+Interpretation:
+Poorly controlled asthma symptoms
+COPD Assessment Test (CAT)
+CAT Score: 19
+Interpretation:
+Significant COPD symptom burden
+Exacerbation History
+Past 12 Months:
+Two respiratory exacerbations requiring oral corticosteroids 
+No hospitalizations
+1. Asthma-COPD Overlap Phenotype (ACO) with Poorly Controlled Respiratory Disease
+The patient demonstrates clinical features consistent with both asthma and COPD, suggesting an asthma-COPD overlap phenotype rather than isolated COPD. She has a longstanding history of asthma dating back to childhood and continues to experience wheezing, nighttime symptoms, allergic rhinitis, and significant bronchodilator reversibility. Additionally, her elevated eosinophil count supports the presence of Type 2 airway inflammation. At the same time, she has a significant smoking history, persistent airflow obstruction, chronic dyspnea, and an established diagnosis of COPD. According to the 2025 GINA Report, patients with asthma features should not be managed with bronchodilator therapy alone because inhaled corticosteroids are essential for reducing exacerbation risk and improving disease control. Despite multiple asthma-associated characteristics and recurrent corticosteroid-treated exacerbations, the patient is currently receiving tiotropium without an ICS-containing controller regimen. Her current symptom burden, exacerbation history, and evidence of eosinophilic inflammation strongly support initiation of ICS-containing therapy.
+2. Uncontrolled Asthma
+The patient's asthma remains poorly controlled as evidenced by an ACT score of 15, daily respiratory symptoms, frequent albuterol use, nighttime awakenings occurring two to three times weekly, and two corticosteroid-treated exacerbations within the past year. According to GINA 2025, all adults with asthma should receive ICS-containing therapy to reduce the risk of severe exacerbations, hospitalization, and asthma-related mortality. The patient's current treatment regimen does not include an inhaled corticosteroid despite multiple indicators of uncontrolled disease. Her reliance on short-acting bronchodilator therapy and persistent symptom burden indicate a need for guideline-directed controller therapy escalation.
+3. Chronic Obstructive Pulmonary Disease with Significant Symptom Burden
+The patient also has established COPD with persistent airflow obstruction demonstrated by a post-bronchodilator FEV1/FVC ratio of 0.55 and an FEV1 of 58% predicted. She reports daily dyspnea, exercise intolerance, and activity limitation that negatively impact her quality of life. Her CAT score of 19 indicates substantial symptom burden. According to the 2026 GOLD Report, COPD assessment should incorporate symptom severity, activity limitation, and exacerbation history in addition to spirometric findings. While COPD likely contributes significantly to her current symptoms, management decisions must account for her concurrent asthma features and eosinophilic inflammation. Treatment should therefore focus on addressing both obstructive lung disease processes rather than applying a COPD-only management approach.
+4. Recurrent Respiratory Exacerbations
+The patient reports two respiratory exacerbations during the previous year that required treatment with systemic corticosteroids. Prior exacerbations are among the strongest predictors of future exacerbation risk and are associated with accelerated lung function decline, reduced quality of life, and increased healthcare utilization. According to both GINA 2025 and GOLD 2026, reducing future exacerbation risk is a major therapeutic goal. The absence of ICS-containing therapy likely contributes to the patient's recurrent exacerbations, and optimization of anti-inflammatory treatment is warranted.
+5. Eosinophilic Airway Inflammation
+The patient's absolute eosinophil count is elevated at 420 cells/µL, supporting the presence of Type 2 inflammatory airway disease. Elevated eosinophils are associated with increased responsiveness to inhaled corticosteroid therapy and are recognized by GINA 2025 as an important treatable trait in asthma management. In this patient, eosinophilic inflammation further supports the need for ICS-containing therapy and may become clinically relevant in future treatment decisions should exacerbations persist despite optimized inhaled therapy.
+6. Allergic Rhinitis
+The patient continues to experience allergic rhinitis symptoms including congestion, rhinorrhea, and sneezing. Upper airway disease commonly coexists with asthma and may contribute to poor asthma control and increased symptom burden. According to GINA 2025, management of comorbid allergic rhinitis is an important component of comprehensive airway disease management. Continued treatment and symptom monitoring remain appropriate.
+7. Osteopenia
+The patient has a history of osteopenia and therefore may be particularly vulnerable to the adverse effects associated with repeated systemic corticosteroid exposure. Improving long-term respiratory disease control and preventing future exacerbations may help minimize the need for systemic corticosteroids and reduce future skeletal risk.
+8. Preventive Care Gaps
+The patient appears to have outstanding preventive care needs, including RSV vaccination and Tdap booster administration. Vaccination remains an important component of both asthma and COPD management because respiratory infections are common triggers of exacerbations. Preventive care optimization should be incorporated into the overall management plan.
+
+PLAN
+Asthma-COPD Overlap
+Continue tiotropium (Spiriva Respimat)
+2 inhalations daily 
+Initiate budesonide/formoterol (Symbicort) 160/4.5 mcg
+Inhale 2 puffs twice daily 
+Continue albuterol HFA
+2 puffs every 4–6 hours as needed for shortness of breath or wheezing 
+Provide inhaler education.
+Review proper inhaler technique.
+Discuss rationale for inhaled corticosteroid therapy.
+Counsel patient regarding expected benefits including:
+Improved symptom control 
+Reduced nighttime symptoms 
+Reduced exacerbation risk 
+Reduced rescue inhaler use 
+Allergic Rhinitis
+Continue fluticasone nasal spray
+1 spray each nostril daily 
+Continue allergen avoidance strategies.
+Discuss relationship between upper airway and lower airway disease.
+Exacerbation Prevention
+Review recognition of worsening respiratory symptoms.
+Discuss importance of early intervention.
+Encourage prompt medical evaluation for future exacerbations.
+Monitoring
+Monitor:
+ACT score 
+CAT score 
+Symptom frequency 
+Nighttime symptoms 
+Rescue inhaler use 
+Exacerbations 
+Medication adherence 
+Inhaler technique 
+Osteopenia
+Continue calcium carbonate/vitamin D supplementation.
+Minimize future systemic corticosteroid exposure when possible.
+Preventive Care
+Recommend RSV vaccination.
+Recommend Tdap booster.
+Review immunization history at follow-up.
+Follow-Up
+Follow up in approximately 3 months.
+Assess response to Symbicort initiation.
+Reassess ACT score, CAT score, exacerbation frequency, symptom burden, inhaler technique, and adherence.
+Continue longitudinal management of asthma-COPD overlap syndrome.
+
+
+SECTION 12: ACCEPTABLE ALTERNATIVE ANSWERS
+Patient C – Tuesday Initial Visit
+Asthma-COPD Overlap Recognition
+Preferred Answer
+Student correctly identifies that the patient demonstrates features of both asthma and COPD rather than isolated COPD.
+Evidence supporting asthma includes:
+Childhood asthma diagnosis 
+Allergic rhinitis 
+Family history of asthma 
+Nighttime symptoms 
+Significant bronchodilator reversibility 
+Elevated eosinophils 
+Evidence supporting COPD includes:
+Former smoker 
+30 pack-year smoking history 
+Persistent airflow obstruction 
+Established COPD diagnosis 
+Chronic dyspnea 
+Rationale
+Recognition of overlapping disease processes is the primary educational objective of this encounter.
+Failure to recognize asthma features may result in inappropriate treatment decisions.
+Acceptable Alternative #1
+Student describes the patient as:
+COPD with significant asthma features 
+Acceptable Because
+The student recognizes the need to incorporate asthma-directed therapy.
+Acceptable Alternative #2
+Student identifies eosinophilic obstructive airway disease requiring ICS therapy.
+Acceptable Because
+The therapeutic implications remain appropriate.
+Unacceptable Answers
+Unsafe
+Classify patient as COPD alone.
+Rationale
+Fails to recognize multiple asthma-related characteristics.
+Unsafe
+Ignore childhood asthma history.
+Rationale
+Misses one of the strongest clues suggesting overlap disease.
+Controller Therapy Selection
+Preferred Answer
+Continue tiotropium (Spiriva Respimat)
+2 inhalations daily 
+Initiate budesonide/formoterol (Symbicort) 160/4.5 mcg
+2 inhalations twice daily 
+Continue albuterol HFA as needed.
+Rationale
+The patient requires ICS-containing therapy.
+According to GINA 2025, adults with asthma should receive inhaled corticosteroid therapy to reduce exacerbation risk.
+Acceptable Alternative #1
+Initiate another guideline-supported ICS/LABA product.
+Examples:
+Fluticasone/salmeterol 
+Fluticasone/vilanterol 
+Mometasone/formoterol 
+Acceptable Because
+All provide ICS-containing controller therapy.
+Acceptable Alternative #2
+Recommend SMART therapy using budesonide/formoterol.
+Acceptable Because
+Consistent with GINA recommendations.
+Student must appropriately justify the approach.
+Unacceptable Answers
+Unsafe
+Continue Spiriva alone.
+Rationale
+Fails to address uncontrolled asthma.
+Unsafe
+LABA monotherapy.
+Rationale
+Contraindicated in asthma.
+Unsafe
+Remove Spiriva and prescribe albuterol only.
+Rationale
+Would represent significant undertreatment.
+Eosinophil Interpretation
+Preferred Answer
+Student recognizes that eosinophils of 420 cells/µL support Type 2 inflammation and likely responsiveness to inhaled corticosteroid therapy.
+Rationale
+This finding supports initiation of ICS-containing therapy.
+Acceptable Alternative
+Student identifies eosinophilia as an asthma-associated finding.
+Acceptable Because
+Demonstrates clinically appropriate interpretation.
+Unacceptable Answers
+Unsafe
+Ignore eosinophils completely.
+Unsafe
+Interpret eosinophilia as evidence of infection.
+Allergic Rhinitis
+Preferred Answer
+Continue fluticasone nasal spray.
+Recognize contribution of upper airway disease to respiratory symptoms.
+Rationale
+GINA emphasizes treatment of comorbid conditions affecting asthma control.
+Key Grading Principle for Patient C
+Students should receive credit if they:
+Recognize asthma features 
+Recognize COPD features 
+Identify need for ICS-containing therapy 
+Address eosinophilic inflammation 
+Continue appropriate maintenance bronchodilator therapy 
+Develop an appropriate monitoring plan 
+The primary educational objective is:
+Recognizing that patients with asthma features should not be managed as COPD alone.
+SECTION 13: CRITICAL MISSES
+Patient C – Tuesday Initial Visit
+These errors should result in major point deductions.
+Critical Miss #1
+Error
+Failed to identify childhood asthma history.
+Rationale
+One of the strongest clues supporting asthma-COPD overlap.
+Critical Miss #2
+Error
+Failed to recognize asthma-COPD overlap.
+Rationale
+Primary learning objective of the encounter.
+Critical Miss #3
+Error
+Failed to initiate ICS-containing therapy.
+Rationale
+Patient demonstrates multiple asthma features and recurrent exacerbations.
+Critical Miss #4
+Error
+Recommended bronchodilator-only therapy.
+Rationale
+Contrary to GINA recommendations.
+Critical Miss #5
+Error
+Ignored elevated eosinophil count.
+Rationale
+Supports Type 2 inflammation and corticosteroid responsiveness.
+Critical Miss #6
+Error
+Failed to assess exacerbation history.
+Rationale
+Exacerbations are a major determinant of future risk.
+Critical Miss #7
+Error
+Failed to assess nighttime symptoms.
+Rationale
+Important indicator of uncontrolled asthma.
+Critical Miss #8
+Error
+Failed to assess rescue inhaler use.
+Rationale
+Frequent albuterol use suggests poor disease control.
+Critical Miss #9
+Error
+Failed to evaluate allergic rhinitis.
+Rationale
+Comorbid upper airway disease influences asthma control.
+Critical Miss #10
+Error
+Failed to establish a follow-up plan.
+Rationale
+Controller therapy initiation requires reassessment.
+High-Priority Learning Objectives
+Recognize asthma-COPD overlap 
+Understand importance of ICS therapy 
+Interpret eosinophils appropriately 
+Incorporate GINA and GOLD principles 
+Address exacerbation prevention 
+Utilize comprehensive airway disease management 
+SECTION 14: TEACHING GUIDE
+Patient C – Tuesday Initial Visit
+What The Student Should Have Done Well
+The student should have:
+Obtained detailed respiratory history 
+Identified childhood asthma 
+Assessed symptom burden 
+Assessed nighttime symptoms 
+Assessed rescue inhaler use 
+Reviewed spirometry 
+Interpreted eosinophil count 
+Recognized overlap phenotype 
+Initiated ICS-containing therapy 
+Developed a monitoring plan 
+Common Student Mistakes
+Mistake #1
+Focusing only on the COPD diagnosis.
+Teaching Point
+Many clinicians anchor on the COPD label and overlook important asthma features.
+The patient's childhood asthma history significantly changes management.
+Mistake #2
+Ignoring bronchodilator reversibility.
+Teaching Point
+Significant reversibility suggests an asthma component and supports ICS use.
+Mistake #3
+Treating eosinophils as an incidental finding.
+Teaching Point
+Eosinophils represent a clinically meaningful treatable trait.
+Mistake #4
+Failing to recognize the importance of nighttime symptoms.
+Teaching Point
+Nighttime symptoms are strongly associated with uncontrolled asthma.
+Teaching Pearls
+Pearl #1
+Not every patient fits neatly into a single disease-state category.
+Expected Discussion
+Many real-world patients demonstrate characteristics of both asthma and COPD.
+Pearl #2
+GINA and GOLD recommendations may need to be integrated.
+Expected Discussion
+Management decisions should be individualized based on patient characteristics rather than diagnostic labels alone.
+Pearl #3
+Patients with asthma features require ICS-containing therapy.
+Expected Discussion
+Failure to provide anti-inflammatory treatment increases exacerbation risk.
+Pearl #4
+Eosinophils are an important treatable trait.
+Expected Discussion
+Elevated eosinophils help identify patients likely to respond to corticosteroid therapy.
+Pearl #5
+Exacerbation prevention is a major treatment goal.
+Expected Discussion
+Reducing exacerbations helps preserve lung function and quality of life.
+Follow-Up Questions
+Question 1
+What findings support asthma-COPD overlap rather than isolated COPD?
+Expected Discussion
+Childhood asthma 
+Allergic rhinitis 
+Eosinophilia 
+Bronchodilator reversibility 
+Smoking history 
+Persistent obstruction 
+Question 2
+Why is ICS therapy indicated?
+Expected Discussion
+Asthma features 
+Eosinophilic inflammation 
+Recurrent exacerbations 
+GINA recommendations 
+Question 3
+What role do eosinophils play in this case?
+Expected Discussion
+Marker of Type 2 inflammation 
+Supports corticosteroid responsiveness 
+Question 4
+How might allergic rhinitis affect respiratory control?
+Expected Discussion
+Upper and lower airway disease are interconnected 
+Rhinitis may worsen respiratory symptoms 
+Question 5
+What outcomes should be monitored after Symbicort initiation?
+Expected Discussion
+ACT score 
+CAT score 
+Rescue inhaler use 
+Nighttime symptoms 
+Exacerbations 
+Adherence 
+How The Student Can Improve Before Wednesday
+Before the next encounter, students should be able to:
+Assess response to ICS-containing therapy 
+Reassess airway inflammation contributors 
+Evaluate comorbid allergic disease 
+Avoid unnecessary escalation 
+Continue integrating GINA and GOLD principles
+Granular Rubric and Answer Key — Chronic Respiratory Disease SOAP Note (Asthma-COPD Overlap) Patient C Tuesday
+[FOR AI PRECEPTOR CALIBRATION ONLY — NOT FOR STUDENT DISTRIBUTION]
+PURPOSE: This is the single, authoritative rubric for the Patient C (Maria Thompson) Initial-Visit Ambulatory Care SOAP Note focusing on Asthma-COPD Overlap. Every subsection's discrete input point values sum exactly to the subsection header, and all subsection headers sum exactly to 100.0. The model answer scores 100.0/100.0 against this rubric.
+SCORING RULES:
+FULL: Input present, accurate, and clinically contextualized (not merely a keyword).
+HALF: Partially present — directionally correct but imprecise, or present without clinical context. Half-credit values are rounded to the nearest 0.05.
+ZERO: Absent, or a factually incorrect statement is made about that input.
+Additivity: Points are additive within each subsection → subsections additive within sections → sections additive to 100.0.
+Acceptable-alternative inputs (e.g., therapeutic choices) list every guideline-supported answer in parentheses; any listed answer earns full credit.
+SECTION 1: SUBJECTIVE (25.0 points)
+1A. CHIEF COMPLAINT AND REASON FOR REFERRAL (2.50 points) — 9 inputs, sum = 2.50
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1A.1
+	Patient age stated (69 years)
+	0.25
+	States 69 years
+	Age stated, imprecise
+	Omits
+	1A.2
+	Patient sex stated (female)
+	0.15
+	States female
+	—
+	Omits
+	1A.3
+	Encounter setting stated (ambulatory care pharmacy clinic, initial visit)
+	0.25
+	Names setting + initial/new visit
+	Names setting only
+	Omits
+	1A.4
+	Referral source stated (primary care provider)
+	0.25
+	States PCP referral
+	Mentions referral, no source
+	Omits
+	1A.5
+	Reason for referral: worsening dyspnea
+	0.30
+	States worsening dyspnea
+	States dyspnea, no worsening qualifier
+	Omits
+	1A.6
+	Reason for referral: recurrent exacerbations
+	0.30
+	States recurrent exacerbations
+	States exacerbations, no recurrent qualifier
+	Omits
+	1A.7
+	Reason for referral: persistent respiratory symptoms despite current inhaler therapy
+	0.30
+	States persistent symptoms despite current inhaler therapy
+	States persistent symptoms, no mention of current therapy
+	Omits
+	1A.8
+	Nature of encounter: collaborative practice management of chronic respiratory disease
+	0.20
+	States collaborative practice management of chronic respiratory disease
+	States management, no collaborative/chronic detail
+	Omits
+	1A.9
+	Referred for initial management visit (not a follow-up)
+	0.50
+	States initial/new patient visit
+	States visit type ambiguously
+	Omits
+	1A sum check: 0.25 + 0.15 + 0.25 + 0.25 + 0.30 + 0.30 + 0.30 + 0.20 + 0.50 = 2.50
+1B. HISTORY OF PRESENT ILLNESS (HPI) (5.00 points) — 22 inputs, sum = 5.00
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1B.1
+	Symptoms reported as progressively worsening over past several years
+	0.30
+	States progressive worsening over several years
+	States worsening, no duration
+	Omits
+	1B.2
+	Symptom: daily shortness of breath
+	0.30
+	States daily shortness of breath/dyspnea
+	States dyspnea, no frequency
+	Omits
+	1B.3
+	Symptom: intermittent wheezing
+	0.20
+	States intermittent wheezing
+	States wheezing, no intermittent qualifier
+	Omits
+	1B.4
+	Symptom: chronic cough
+	0.20
+	States chronic cough
+	States cough, no chronic qualifier
+	Omits
+	1B.5
+	Symptom: frequent rescue inhaler use (albuterol used several times daily)
+	0.30
+	States albuterol used several times daily
+	States frequent use, no quantification
+	Omits
+	1B.6
+	Symptom frequency: symptoms occurring most days of the week
+	0.20
+	States symptoms most days of the week
+	States frequent symptoms, no most-days detail
+	Omits
+	1B.7
+	Nocturnal symptoms: waking 2–3 nights per week due to respiratory symptoms
+	0.40
+	States waking 2–3 nights per week
+	States nighttime symptoms, no frequency
+	Omits
+	1B.8
+	Activity limitation: difficulty climbing stairs
+	0.15
+	States difficulty climbing stairs
+	—
+	Omits
+	1B.9
+	Activity limitation: difficulty walking uphill
+	0.15
+	States difficulty walking uphill
+	—
+	Omits
+	1B.10
+	Activity limitation: difficulty with prolonged physical activity
+	0.15
+	States difficulty with prolonged physical activity
+	States activity limitation, nonspecific
+	Omits
+	1B.11
+	Exacerbation history: two exacerbations in the past year
+	0.40
+	States two exacerbations in past year
+	States exacerbations, no number or timeframe
+	Omits
+	1B.12
+	Exacerbation treatment: required oral corticosteroids
+	0.30
+	States treated with oral corticosteroids
+	States treated, no OCS specified
+	Omits
+	1B.13
+	Denies hospitalization related to either exacerbation
+	0.20
+	States no hospitalization for either event
+	States no hospitalization, not linked to exacerbations
+	Omits
+	1B.14
+	Childhood asthma history acknowledged
+	0.20
+	States asthma dating back to childhood
+	States prior asthma, no childhood timing
+	Omits
+	1B.15
+	COPD diagnosed approximately 8 years ago
+	0.20
+	States COPD diagnosed 8 years ago
+	States COPD diagnosed, no timing
+	Omits
+	1B.16
+	Comorbid allergic rhinitis reported (congestion, sneezing, nasal symptoms)
+	0.20
+	States allergic rhinitis with congestion/sneezing/nasal symptoms
+	States allergic rhinitis, no symptom detail
+	Omits
+	1B.17
+	Allergic rhinitis symptoms worsen during allergy seasons
+	0.15
+	States seasonal worsening
+	—
+	Omits
+	1B.18
+	Prior ICS use recalled; regimen changed after COPD diagnosis
+	0.20
+	States previously on ICS, regimen changed after COPD dx
+	States prior ICS use, no context
+	Omits
+	1B.19
+	Good adherence to current medications stated
+	0.20
+	States good adherence
+	—
+	Omits
+	1B.20
+	Appropriate inhaler technique demonstrated
+	0.20
+	States appropriate inhaler technique
+	—
+	Omits
+	1B.21
+	Patient concern: progressive respiratory decline and desire to avoid future exacerbations and hospitalization
+	0.20
+	States concern about decline and desire to avoid exacerbations/hospitalization
+	States concern, nonspecific
+	Omits
+	1B.22
+	Denies recent hospitalizations and emergency department visits
+	0.20
+	Denies recent hospitalizations and ED visits
+	Denies one but not both
+	Omits
+	1B sum check: 0.30 + 0.30 + 0.20 + 0.20 + 0.30 + 0.20 + 0.40 + 0.15 + 0.15 + 0.15 + 0.40 + 0.30 + 0.20 + 0.20 + 0.20 + 0.20 + 0.15 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 = 5.00
+1C. PAST MEDICAL, SURGICAL, AND FAMILY HISTORY (3.80 points) — 12 inputs, sum = 3.80
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1C.1
+	PMH: asthma (diagnosed during childhood)
+	0.40
+	Lists asthma with childhood onset
+	Lists asthma, no childhood timing
+	Omits
+	1C.2
+	PMH: COPD (diagnosed 8 years ago)
+	0.40
+	Lists COPD with 8-year duration
+	Lists COPD, no duration
+	Omits
+	1C.3
+	PMH: allergic rhinitis
+	0.25
+	Lists allergic rhinitis
+	—
+	Omits
+	1C.4
+	PMH: hypertension (diagnosed 15 years ago)
+	0.40
+	Lists hypertension with 15-year duration
+	Lists hypertension, no duration
+	Omits
+	1C.5
+	PMH: osteopenia (diagnosed 3 years ago)
+	0.40
+	Lists osteopenia with 3-year duration
+	Lists osteopenia, no duration
+	Omits
+	1C.6
+	PSH: cholecystectomy
+	0.25
+	Lists cholecystectomy
+	—
+	Omits
+	1C.7
+	Family history, father: COPD
+	0.25
+	States father had COPD
+	—
+	Omits
+	1C.8
+	Family history, father: coronary artery disease
+	0.25
+	States father had coronary artery disease
+	—
+	Omits
+	1C.9
+	Family history, mother: asthma
+	0.25
+	States mother had asthma
+	—
+	Omits
+	1C.10
+	Family history, mother: allergic rhinitis
+	0.25
+	States mother had allergic rhinitis
+	—
+	Omits
+	1C.11
+	Family history, sister: asthma
+	0.25
+	States sister had asthma
+	—
+	Omits
+	1C.12
+	Family history of asthma supports inherited atopic predisposition (at minimum two first-degree relatives with asthma)
+	0.45
+	Notes multiple first-degree relatives with asthma supporting atopic predisposition
+	Notes family asthma, no atopic/predisposition framing
+	Omits
+	1C sum check: 0.40 + 0.40 + 0.25 + 0.40 + 0.40 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.25 + 0.45 = 3.80
+1D. SOCIAL HISTORY (3.00 points) — 10 inputs, sum = 3.00
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1D.1
+	Marital status: married
+	0.20
+	States married
+	—
+	Omits
+	1D.2
+	Living arrangement: lives with spouse
+	0.20
+	States lives with spouse
+	—
+	Omits
+	1D.3
+	Occupation: retired elementary school principal
+	0.20
+	States retired elementary school principal
+	States occupation, incomplete detail
+	Omits
+	1D.4
+	Tobacco status: former smoker
+	0.30
+	States former smoker
+	States nonsmoker without former/never distinction
+	Omits
+	1D.5
+	Smoking quantity: 30 pack-year history
+	0.40
+	States 30 pack-years
+	States pack-years, imprecise number
+	Omits
+	1D.6
+	Tobacco cessation: quit 12 years ago
+	0.40
+	States quit 12 years ago
+	States quit, no timeframe
+	Omits
+	1D.7
+	Alcohol use: rare
+	0.20
+	States rare alcohol use
+	States alcohol use, no frequency qualifier
+	Omits
+	1D.8
+	Recreational drug use: denied
+	0.20
+	States denies recreational drug use
+	—
+	Omits
+	1D.9
+	Physical activity limited by respiratory symptoms
+	0.40
+	States activity limited by respiratory symptoms
+	States limited activity, no respiratory link
+	Omits
+	1D.10
+	Physical activity: no specific exercise routine noted (limited)
+	0.50
+	States no active exercise routine due to symptom limitation
+	States limited, nonspecific
+	Omits
+	1D sum check: 0.20 + 0.20 + 0.20 + 0.30 + 0.40 + 0.40 + 0.20 + 0.20 + 0.40 + 0.50 = 3.00
+1E. MEDICATIONS, ALLERGIES, AND IMMUNIZATIONS (6.50 points) — 20 inputs, sum = 6.50
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1E.1
+	Tiotropium (Spiriva Respimat) listed by name and brand
+	0.40
+	Names tiotropium AND Spiriva Respimat
+	Names one (generic or brand only)
+	Omits
+	1E.2
+	Tiotropium dose: 2 inhalations
+	0.30
+	States 2 inhalations
+	—
+	Incorrect
+	1E.3
+	Tiotropium regimen: daily
+	0.25
+	States daily
+	—
+	Omits
+	1E.4
+	Albuterol HFA listed
+	0.35
+	Names albuterol HFA
+	Names albuterol, no HFA formulation
+	Omits
+	1E.5
+	Albuterol dose: 2 puffs
+	0.25
+	States 2 puffs
+	—
+	Incorrect
+	1E.6
+	Albuterol regimen: every 4–6 hours as needed
+	0.30
+	States q4–6h PRN
+	States PRN, no interval
+	Omits
+	1E.7
+	Fluticasone nasal spray listed
+	0.35
+	Names fluticasone nasal spray
+	Names fluticasone without nasal/spray qualifier
+	Omits
+	1E.8
+	Fluticasone nasal spray dose/regimen: 1 spray each nostril daily
+	0.30
+	States 1 spray each nostril daily
+	States daily, no per-nostril dose
+	Omits
+	1E.9
+	Lisinopril listed
+	0.25
+	Names lisinopril
+	—
+	Omits
+	1E.10
+	Lisinopril dose: 20 mg
+	0.35
+	States 20 mg
+	—
+	Incorrect
+	1E.11
+	Lisinopril regimen: PO daily
+	0.20
+	States PO daily
+	States daily, no route
+	Omits
+	1E.12
+	Calcium carbonate/vitamin D listed
+	0.25
+	Names calcium carbonate with vitamin D combination
+	Names calcium, no vitamin D
+	Omits
+	1E.13
+	Calcium carbonate/vitamin D dose: 1 tablet twice daily
+	0.30
+	States 1 tablet twice daily
+	States twice daily, no tablet quantity
+	Incorrect
+	1E.14
+	Allergy: sulfonamide antibiotics listed
+	0.50
+	States sulfonamide antibiotics
+	States sulfa, no antibiotic qualifier
+	Omits
+	1E.15
+	Allergy reaction type: rash
+	0.30
+	States rash as reaction
+	—
+	Omits
+	1E.16
+	Influenza vaccine: up to date
+	0.30
+	States influenza vaccine up to date
+	States influenza vaccine, no status
+	Omits
+	1E.17
+	COVID vaccination: up to date
+	0.30
+	States COVID vaccination up to date
+	States COVID vaccine, no status
+	Omits
+	1E.18
+	PCV20 received
+	0.35
+	States PCV20 received
+	States pneumococcal vaccine, no specific formulation
+	Omits
+	1E.19
+	RSV vaccination: not documented
+	0.45
+	States RSV vaccination not documented
+	Mentions RSV vaccine without not-documented status
+	Omits
+	1E.20
+	Tdap: overdue
+	0.45
+	States Tdap overdue
+	States Tdap, no overdue status
+	Omits
+	1E sum check: 0.40 + 0.30 + 0.25 + 0.35 + 0.25 + 0.30 + 0.35 + 0.30 + 0.25 + 0.35 + 0.20 + 0.25 + 0.30 + 0.50 + 0.30 + 0.30 + 0.30 + 0.35 + 0.45 + 0.45 = 6.50
+1F. REVIEW OF SYSTEMS / RELEVANT NEGATIVES (2.00 points) — 5 inputs, sum = 2.00
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1F.1
+	No recent hospitalizations
+	0.40
+	States no recent hospitalizations
+	—
+	Omits
+	1F.2
+	No emergency department visits
+	0.40
+	States no ED visits
+	—
+	Omits
+	1F.3
+	Allergic rhinitis symptoms: congestion, sneezing, and nasal symptoms reported (positive finding)
+	0.40
+	Documents all three AR symptom subtypes
+	Documents AR symptoms generally, not all three
+	Omits
+	1F.4
+	Seasonal worsening pattern of rhinitis noted
+	0.30
+	States seasonal worsening pattern
+	—
+	Omits
+	1F.5
+	Activity limitation documented as symptom-driven (relevant positive)
+	0.50
+	States activity limited by respiratory symptoms
+	States activity limitation without etiology link
+	Omits
+	1F sum check: 0.40 + 0.40 + 0.40 + 0.30 + 0.50 = 2.00
+1G. PATIENT GOALS AND CONCERNS (2.20 points) — 4 inputs, sum = 2.20
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1G.1
+	Patient concerned about progressive respiratory decline
+	0.55
+	States concern about progressive decline
+	States general concern about breathing
+	Omits
+	1G.2
+	Patient wishes to avoid future exacerbations
+	0.55
+	States desire to avoid future exacerbations
+	States general concern, no exacerbation-specific mention
+	Omits
+	1G.3
+	Patient wishes to avoid future hospitalization
+	0.55
+	States desire to avoid hospitalization
+	—
+	Omits
+	1G.4
+	Patient demonstrates awareness of treatment limitations / desire for optimized management
+	0.55
+	Notes patient seeks optimized or improved management
+	Notes general concern only
+	Omits
+	1G sum check: 0.55 + 0.55 + 0.55 + 0.55 = 2.20
+Section 1 check: 1A (2.50) + 1B (5.00) + 1C (3.80) + 1D (3.00) + 1E (6.50) + 1F (2.00) + 1G (2.20) = 25.0
+ 
+SECTION 2: OBJECTIVE (15.0 points)
+2A. VITAL SIGNS AND ANTHROPOMETRICS (3.50 points) — 8 inputs, sum = 3.50
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2A.1
+	Blood pressure value (126/74 mmHg)
+	0.50
+	States 126/74 mmHg
+	BP stated, value imprecise
+	Omits
+	2A.2
+	Heart rate (80 bpm)
+	0.30
+	States 80 bpm
+	—
+	Omits
+	2A.3
+	Respiratory rate (18 bpm)
+	0.30
+	States 18 bpm
+	—
+	Omits
+	2A.4
+	Weight (71 kg)
+	0.40
+	States 71 kg
+	—
+	Omits
+	2A.5
+	Height (64 inches)
+	0.30
+	States 64 inches
+	—
+	Omits
+	2A.6
+	Body mass index (26.9 kg/m²)
+	0.50
+	States 26.9 kg/m²
+	BMI stated, value imprecise
+	Omits
+	2A.7
+	SpO₂ on room air (95%)
+	0.70
+	States 95% on room air
+	States SpO₂ value without room-air qualifier
+	Omits
+	2A.8
+	No temperature or pain score documented (acceptable absence per note)
+	0.50
+	Documents all vitals present in note; absence of temp/pain noted or not required
+	—
+	—
+	2A sum check: 0.50 + 0.30 + 0.30 + 0.40 + 0.30 + 0.50 + 0.70 + 0.50 = 3.50
+2B. PULMONARY FUNCTION TESTING AND LABORATORY DATA (8.00 points) — 12 inputs, sum = 8.00
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2B.1
+	Pre-bronchodilator FEV1/FVC ratio (0.54)
+	0.60
+	States pre-BD FEV1/FVC 0.54
+	States FEV1/FVC, imprecise value
+	Omits
+	2B.2
+	Post-bronchodilator FEV1/FVC ratio (0.55)
+	0.70
+	States post-BD FEV1/FVC 0.55
+	States post-BD ratio, imprecise value
+	Omits
+	2B.3
+	Post-bronchodilator FEV1 (58% predicted)
+	0.70
+	States 58% predicted
+	States FEV1% predicted, imprecise value
+	Omits
+	2B.4
+	Bronchodilator response — FEV1 improvement: 15%
+	0.60
+	States 15% FEV1 improvement
+	States BD response, no percent
+	Omits
+	2B.5
+	Bronchodilator response — absolute improvement: 260 mL
+	0.70
+	States 260 mL absolute improvement
+	States absolute improvement, no value
+	Omits
+	2B.6
+	Absolute eosinophil count (420 cells/µL)
+	0.90
+	States 420 cells/µL eosinophils
+	States eosinophil count, imprecise value or wrong units
+	Omits
+	2B.7
+	ACT score stated (15)
+	0.70
+	States ACT score of 15
+	States ACT, no numerical score
+	Omits
+	2B.8
+	ACT interpretation: poorly controlled asthma symptoms
+	0.60
+	States poorly controlled asthma
+	States not controlled without "poorly" qualifier
+	Omits
+	2B.9
+	CAT score stated (19)
+	0.70
+	States CAT score of 19
+	States CAT, no numerical score
+	Omits
+	2B.10
+	CAT interpretation: significant COPD symptom burden
+	0.60
+	States significant COPD symptom burden
+	States high burden without significant qualifier
+	Omits
+	2B.11
+	Exacerbation history: two in past 12 months requiring OCS
+	0.60
+	States two exacerbations in past 12 months requiring OCS
+	States two exacerbations, no OCS or no timeframe
+	Omits
+	2B.12
+	No hospitalizations in past 12 months documented
+	0.60
+	States no hospitalizations
+	—
+	Omits
+	2B sum check: 0.60 + 0.70 + 0.70 + 0.60 + 0.70 + 0.90 + 0.70 + 0.60 + 0.70 + 0.60 + 0.60 + 0.60 = 8.00
+2C. CALCULATED VALUES, TRENDS, AND MISSING EXPECTED DATA (3.50 points) — 6 inputs, sum = 3.50
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2C.1
+	FEV1/FVC <0.70 post-bronchodilator confirms fixed airflow obstruction (GOLD criterion)
+	0.70
+	States post-BD FEV1/FVC <0.70 confirming obstruction per GOLD criteria
+	Notes obstruction, no GOLD criterion link
+	Omits
+	2C.2
+	Significant bronchodilator reversibility: FEV1 ≥12% AND ≥200 mL improvement satisfies GINA 2025 criteria
+	0.80
+	States both ≥12% AND ≥200 mL meet GINA reversibility criteria
+	Notes reversibility without both numeric thresholds or GINA citation
+	Omits
+	2C.3
+	Eosinophil count (420 cells/µL) supports Type 2 airway inflammation per GINA 2025
+	0.60
+	States eosinophil count supports Type 2 inflammation per GINA 2025
+	Notes elevated eosinophils without GINA link
+	Omits
+	2C.4
+	ACT score 15 falls below well-controlled threshold (≥20) per GINA 2025
+	0.50
+	States ACT 15 is below ≥20 threshold for well-controlled asthma
+	States poorly controlled without threshold reference
+	Omits
+	2C.5
+	CAT score 19 is above 10-point threshold indicating significant symptom burden per GOLD 2026
+	0.50
+	States CAT 19 exceeds 10-point threshold per GOLD 2026
+	States significant burden without threshold or GOLD citation
+	Omits
+	2C.6
+	Spirometry not available to rule in/out FeNO as missing/expected biomarker (or alternative: notes FeNO not documented)
+	0.40
+	Notes FeNO not available or not documented as expected biomarker
+	Mentions biomarker gap without specific FeNO
+	Omits or incorrectly states FeNO available
+	2C sum check: 0.70 + 0.80 + 0.60 + 0.50 + 0.50 + 0.40 = 3.50
+Section 2 check: 2A (3.50) + 2B (8.00) + 2C (3.50) = 15.0
+ 
+SECTION 3: ASSESSMENT (30.0 points)
+3A. PROBLEM 1 — ASTHMA-COPD OVERLAP PHENOTYPE (ACO) WITH POORLY CONTROLLED RESPIRATORY DISEASE (7.00 points) — 15 inputs, sum = 7.00
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3A.1
+	Problem identified: asthma-COPD overlap phenotype (ACO)
+	0.60
+	Names ACO or asthma-COPD overlap phenotype
+	Names two separate conditions without overlap framing
+	Omits or names only one condition
+	3A.2
+	Asthma feature cited: longstanding history dating to childhood
+	0.30
+	States childhood-onset asthma history
+	States asthma history, no childhood timeframe
+	Omits
+	3A.3
+	Asthma feature cited: persistent wheezing and nighttime symptoms
+	0.40
+	States wheezing and nighttime symptom overlap
+	States one of the two features
+	Omits
+	3A.4
+	Asthma feature cited: allergic rhinitis as atopic comorbidity
+	0.30
+	Notes allergic rhinitis as atopic comorbidity
+	Notes allergic rhinitis without linking to atopy/asthma
+	Omits
+	3A.5
+	Asthma feature cited: significant bronchodilator reversibility (FEV1 ≥12% and ≥200 mL)
+	0.50
+	States FEV1 reversibility meeting GINA criteria (≥12% AND ≥200 mL)
+	States reversibility without both thresholds
+	Omits
+	3A.6
+	Asthma feature cited: elevated eosinophil count (420 cells/µL) supporting Type 2 inflammation
+	0.50
+	States eosinophil count 420 cells/µL supports Type 2 inflammation
+	States elevated eosinophils without value or GINA Type 2 link
+	Omits
+	3A.7
+	COPD feature cited: significant smoking history (30 pack-years)
+	0.30
+	States 30 pack-year smoking history
+	States smoking history, no pack-year detail
+	Omits
+	3A.8
+	COPD feature cited: persistent airflow obstruction (post-BD FEV1/FVC 0.55)
+	0.30
+	States post-BD FEV1/FVC 0.55 as persistent obstruction
+	States obstruction, no value
+	Omits
+	3A.9
+	COPD feature cited: chronic dyspnea and established COPD diagnosis
+	0.30
+	States chronic dyspnea and COPD diagnosis
+	States one feature only
+	Omits
+	3A.10
+	Per GINA 2025: patients with asthma features should not be managed with bronchodilator therapy alone — ICS is essential
+	0.70
+	Cites GINA 2025 and states ICS essential for patients with asthma features
+	States ICS needed without GINA 2025 citation
+	Omits
+	3A.11
+	States current regimen (tiotropium only) lacks ICS-containing controller therapy
+	0.70
+	States patient is on tiotropium without ICS-containing controller
+	States ICS missing without identifying tiotropium as current sole agent
+	Omits
+	3A.12
+	Recurrent corticosteroid-treated exacerbations and eosinophilic inflammation cited as supporting ICS initiation
+	0.50
+	Links exacerbations AND eosinophilic inflammation to ICS need
+	Links one factor to ICS need
+	Omits
+	3A.13
+	Concludes ICS-containing therapy should be initiated
+	0.60
+	States ICS-containing therapy should be initiated
+	States therapy should change without specifying ICS
+	Omits
+	3A.14
+	Symptom burden/control status: poorly controlled
+	0.50
+	States poorly controlled or uncontrolled
+	States not optimally controlled
+	Omits or states well controlled
+	3A.15
+	Guideline citation: GINA 2025 Report referenced
+	0.50
+	Names GINA 2025 (or 2025 GINA Report)
+	States guideline reference without year/source
+	Omits
+	3A sum check: 0.60 + 0.30 + 0.40 + 0.30 + 0.50 + 0.50 + 0.30 + 0.30 + 0.30 + 0.70 + 0.70 + 0.50 + 0.60 + 0.50 + 0.50 = 7.00
+3B. PROBLEM 2 — UNCONTROLLED ASTHMA (5.00 points) — 10 inputs, sum = 5.00
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3B.1
+	Problem identified: uncontrolled asthma
+	0.50
+	Names uncontrolled asthma as separate problem
+	Mentions uncontrolled asthma within another problem without distinct heading
+	Omits
+	3B.2
+	Control status supported by ACT score of 15
+	0.60
+	References ACT score of 15 as evidence
+	States poorly controlled without ACT value
+	Omits
+	3B.3
+	Daily respiratory symptoms cited as evidence of poor control
+	0.40
+	States daily symptoms as evidence
+	States symptoms without frequency
+	Omits
+	3B.4
+	Frequent albuterol use (several times daily) cited as evidence of poor control
+	0.40
+	States frequent albuterol use (several times daily)
+	States SABA overuse without quantification
+	Omits
+	3B.5
+	Nighttime awakenings (2–3 per week) cited as evidence of poor control
+	0.40
+	States nighttime awakenings 2–3 per week
+	States nighttime symptoms, no frequency
+	Omits
+	3B.6
+	Two corticosteroid-treated exacerbations in past year cited as evidence of poor control
+	0.50
+	States two OCS-treated exacerbations as evidence of poor control
+	States exacerbations without OCS or without count
+	Omits
+	3B.7
+	Per GINA 2025: all adults with asthma should receive ICS-containing therapy
+	0.60
+	States GINA 2025 recommendation for ICS in all adults with asthma
+	States ICS recommendation without GINA 2025 citation
+	Omits
+	3B.8
+	Current regimen lacks ICS despite multiple uncontrolled markers
+	0.50
+	States no ICS present despite multiple control failures
+	States no ICS present
+	Omits
+	3B.9
+	Reliance on short-acting bronchodilator alone indicates need for controller therapy escalation
+	0.60
+	States SABA reliance indicates need for controller escalation
+	States SABA dependence without escalation conclusion
+	Omits
+	3B.10
+	Concludes guideline-directed controller therapy escalation warranted
+	0.50
+	States controller therapy escalation is warranted per guidelines
+	States escalation needed without guideline grounding
+	Omits
+	3B sum check: 0.50 + 0.60 + 0.40 + 0.40 + 0.40 + 0.50 + 0.60 + 0.50 + 0.60 + 0.50 = 5.00
+3C. PROBLEM 3 — CHRONIC OBSTRUCTIVE PULMONARY DISEASE WITH SIGNIFICANT SYMPTOM BURDEN (4.00 points) — 9 inputs, sum = 4.00
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3C.1
+	Problem identified: established COPD with persistent airflow obstruction
+	0.40
+	Names COPD with persistent airflow obstruction
+	Names COPD without obstruction characterization
+	Omits
+	3C.2
+	Post-bronchodilator FEV1/FVC 0.55 cited as confirming obstruction
+	0.40
+	States post-BD FEV1/FVC 0.55
+	States obstruction, no value
+	Omits
+	3C.3
+	Post-bronchodilator FEV1 58% predicted cited
+	0.40
+	States FEV1 58% predicted
+	States FEV1 reduced, no value
+	Omits
+	3C.4
+	CAT score 19 cited as indicating substantial symptom burden
+	0.50
+	States CAT 19 indicates substantial symptom burden
+	States high symptom burden, no CAT value
+	Omits
+	3C.5
+	Daily dyspnea, exercise intolerance, and activity limitation documented
+	0.40
+	States daily dyspnea, exercise intolerance, and activity limitation
+	States two of three elements
+	Omits
+	3C.6
+	Per GOLD 2026: COPD assessment incorporates symptom severity, activity limitation, and exacerbation history in addition to spirometry
+	0.60
+	States GOLD 2026 multi-domain assessment principle
+	States multi-domain approach without GOLD 2026 citation
+	Omits
+	3C.7
+	States concurrent asthma features require integrated management approach, not COPD-only strategy
+	0.40
+	States COPD management must account for concurrent asthma features
+	Notes complexity of overlap without specific management implication
+	Omits
+	3C.8
+	Treatment focus should address both obstructive disease processes
+	0.40
+	States treatment should address both asthma and COPD components
+	States dual management needed, nonspecific
+	Omits
+	3C.9
+	GOLD 2026 referenced as guideline authority
+	0.50
+	Names GOLD 2026 (or 2026 GOLD Report)
+	States GOLD guideline without year
+	Omits
+	3C sum check: 0.40 + 0.40 + 0.40 + 0.50 + 0.40 + 0.60 + 0.40 + 0.40 + 0.50 = 4.00
+3D. PROBLEM 4 — RECURRENT RESPIRATORY EXACERBATIONS (3.50 points) — 8 inputs, sum = 3.50
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3D.1
+	Problem identified: recurrent respiratory exacerbations
+	0.40
+	Names recurrent respiratory exacerbations as distinct problem
+	Mentions exacerbations without distinct problem framing
+	Omits
+	3D.2
+	States two OCS-requiring exacerbations in the previous year
+	0.40
+	States two OCS-requiring exacerbations in past year
+	States exacerbations without OCS or count
+	Omits
+	3D.3
+	Prior exacerbations identified as strongest predictor of future exacerbation risk
+	0.40
+	States prior exacerbations are strongest predictor of future risk
+	States exacerbations increase risk, no strongest-predictor language
+	Omits
+	3D.4
+	Links exacerbations to accelerated lung function decline, reduced quality of life, and increased healthcare utilization
+	0.40
+	Names all three consequences
+	Names one or two consequences
+	Omits
+	3D.5
+	Per GINA 2025 and GOLD 2026: reducing future exacerbation risk is a major therapeutic goal
+	0.50
+	States both GINA 2025 and GOLD 2026 cite exacerbation reduction as major goal
+	States one guideline cites exacerbation reduction
+	Omits
+	3D.6
+	Absence of ICS-containing therapy likely contributes to recurrent exacerbations
+	0.50
+	States ICS absence likely contributes to recurrent exacerbations
+	States ICS absence and exacerbations without causal link
+	Omits
+	3D.7
+	Concludes optimization of anti-inflammatory treatment is warranted
+	0.40
+	States anti-inflammatory treatment optimization is warranted
+	States treatment optimization needed, nonspecific
+	Omits
+	3D.8
+	Guideline authority: both GINA 2025 and GOLD 2026 cited in same context
+	0.50
+	Names both GINA 2025 AND GOLD 2026
+	Names one guideline source only
+	Omits
+	3D sum check: 0.40 + 0.40 + 0.40 + 0.40 + 0.50 + 0.50 + 0.40 + 0.50 = 3.50
+3E. PROBLEM 5 — EOSINOPHILIC AIRWAY INFLAMMATION (3.50 points) — 8 inputs, sum = 3.50
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3E.1
+	Problem identified: eosinophilic airway inflammation
+	0.40
+	Names eosinophilic airway inflammation as distinct problem
+	Mentions eosinophils without labeling as separate problem
+	Omits
+	3E.2
+	Eosinophil count stated: 420 cells/µL
+	0.50
+	States 420 cells/µL
+	States elevated eosinophils, no value
+	Omits
+	3E.3
+	States this supports presence of Type 2 inflammatory airway disease
+	0.40
+	States supports Type 2 inflammatory airway disease
+	States indicates inflammation without Type 2 label
+	Omits
+	3E.4
+	Per GINA 2025: elevated eosinophils associated with increased responsiveness to ICS therapy
+	0.50
+	States GINA 2025 links elevated eosinophils to ICS responsiveness
+	States ICS responsiveness without GINA 2025 citation
+	Omits
+	3E.5
+	Eosinophilia recognized as important treatable trait in asthma management per GINA 2025
+	0.40
+	States GINA 2025 recognizes eosinophilic inflammation as treatable trait
+	States treatable trait without GINA citation
+	Omits
+	3E.6
+	Eosinophilia further supports need for ICS-containing therapy in this patient
+	0.40
+	States eosinophilia further supports ICS-containing therapy
+	States supports ICS, no eosinophil-specific reasoning
+	Omits
+	3E.7
+	Notes eosinophil count may be clinically relevant for future biologic decisions if exacerbations persist
+	0.40
+	States eosinophil count relevant for future biologic decisions if exacerbations persist
+	States biologic consideration, no conditional framing
+	Omits
+	3E.8
+	GINA 2025 cited as guideline authority for eosinophil-driven decision-making
+	0.50
+	Names GINA 2025 explicitly in context of eosinophils
+	Cites guideline without year or source
+	Omits
+	3E sum check: 0.40 + 0.50 + 0.40 + 0.50 + 0.40 + 0.40 + 0.40 + 0.50 = 3.50
+3F. PROBLEM 6 — ALLERGIC RHINITIS (2.50 points) — 7 inputs, sum = 2.50
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3F.1
+	Problem identified: allergic rhinitis
+	0.40
+	Names allergic rhinitis as a distinct problem
+	Mentions AR within another problem, not distinct
+	Omits
+	3F.2
+	Symptoms: congestion, rhinorrhea, and sneezing
+	0.30
+	States all three AR symptom types
+	States one or two symptom types
+	Omits
+	3F.3
+	States upper airway disease commonly coexists with asthma
+	0.30
+	States upper airway disease commonly coexists with asthma
+	Notes relationship without co-occurrence framing
+	Omits
+	3F.4
+	States upper airway disease may contribute to poor asthma control and increased symptom burden
+	0.40
+	States AR may worsen asthma control and increase symptom burden
+	States AR affects asthma, nonspecific
+	Omits
+	3F.5
+	Per GINA 2025: management of comorbid allergic rhinitis is important component of comprehensive airway disease management
+	0.50
+	Cites GINA 2025 and names AR management as component of airway disease care
+	States GINA recommendation without 2025 citation
+	Omits
+	3F.6
+	Concludes continued treatment and symptom monitoring appropriate
+	0.30
+	States continued treatment and monitoring appropriate
+	States continued treatment without monitoring
+	Omits
+	3F.7
+	AR recognized as relevant comorbidity requiring ongoing management
+	0.30
+	States AR as relevant ongoing comorbidity
+	Mentions AR as concern
+	Omits
+	3F sum check: 0.40 + 0.30 + 0.30 + 0.40 + 0.50 + 0.30 + 0.30 = 2.50
+3G. PROBLEM 7 — OSTEOPENIA (1.50 points) — 4 inputs, sum = 1.50
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3G.1
+	Problem identified: osteopenia
+	0.40
+	Names osteopenia as a distinct problem
+	Mentions osteopenia without distinct problem framing
+	Omits
+	3G.2
+	Patient with osteopenia is particularly vulnerable to adverse effects of systemic corticosteroids
+	0.40
+	States osteopenia increases vulnerability to systemic corticosteroid effects
+	States OCS effects without linking to osteopenia
+	Omits
+	3G.3
+	Improved respiratory disease control may reduce future systemic corticosteroid exposure and skeletal risk
+	0.40
+	States better disease control may reduce OCS exposure and skeletal risk
+	States OCS reduction goal without linking to skeletal risk
+	Omits
+	3G.4
+	Minimizing future exacerbations as strategy to reduce OCS-related skeletal risk acknowledged
+	0.30
+	States exacerbation prevention as strategy to reduce OCS-related bone risk
+	States OCS minimization needed
+	Omits
+	3G sum check: 0.40 + 0.40 + 0.40 + 0.30 = 1.50
+3H. PROBLEM 8 — PREVENTIVE CARE GAPS (3.00 points) — 7 inputs, sum = 3.00
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3H.1
+	Problem identified: preventive care gaps
+	0.30
+	Names preventive care gaps as a distinct problem
+	Mentions vaccination gaps within another problem
+	Omits
+	3H.2
+	RSV vaccination gap identified: not documented
+	0.50
+	States RSV vaccination not documented
+	States RSV vaccination gap, no not-documented framing
+	Omits
+	3H.3
+	Tdap booster gap identified: overdue
+	0.50
+	States Tdap booster overdue
+	States Tdap gap, no overdue framing
+	Omits
+	3H.4
+	States vaccination is important component of both asthma and COPD management
+	0.40
+	States vaccination important in both asthma AND COPD management
+	States vaccination important in one condition only
+	Omits
+	3H.5
+	Respiratory infections identified as common exacerbation triggers
+	0.40
+	States respiratory infections are common exacerbation triggers
+	States infections trigger exacerbations, no common/frequent qualifier
+	Omits
+	3H.6
+	Preventive care optimization should be incorporated into overall management plan
+	0.40
+	States preventive care optimization is part of overall management plan
+	States vaccines should be given
+	Omits
+	3H.7
+	Recommends review/follow-up of immunization history
+	0.50
+	States review immunization history at follow-up
+	States review needed, no timing
+	Omits
+	3H sum check: 0.30 + 0.50 + 0.50 + 0.40 + 0.40 + 0.40 + 0.50 = 3.00
+Section 3 check: 3A (7.00) + 3B (5.00) + 3C (4.00) + 3D (3.50) + 3E (3.50) + 3F (2.50) + 3G (1.50) + 3H (3.00) = 30.0
+ 
+SECTION 4: PLAN (25.0 points)
+4A. ASTHMA-COPD OVERLAP — PHARMACOLOGIC MANAGEMENT (7.00 points) — 16 inputs, sum = 7.00
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4A.1
+	Continue tiotropium (Spiriva Respimat) — medication name and brand stated
+	0.50
+	States continue tiotropium/Spiriva Respimat
+	States continue tiotropium, no brand
+	Omits or discontinues
+	4A.2
+	Tiotropium dose continued: 2 inhalations daily
+	0.30
+	States 2 inhalations daily
+	States continue tiotropium, no dose
+	Incorrect dose or omits
+	4A.3
+	Initiate budesonide/formoterol (Symbicort) — medication name and brand stated (acceptable ICS-formoterol alternatives per GINA 2025: beclometasone-formoterol [Fostair/Dupixent inhaler])
+	0.70
+	Names budesonide/formoterol AND Symbicort
+	Names one (generic or brand only)
+	Omits or names ICS-LABA without formoterol
+	4A.4
+	Budesonide/formoterol strength: 160/4.5 mcg
+	0.60
+	States 160/4.5 mcg
+	States strength, imprecise
+	Incorrect strength or omits
+	4A.5
+	Budesonide/formoterol regimen: 2 puffs twice daily (maintenance)
+	0.60
+	States 2 puffs twice daily
+	States twice daily, no puff count
+	Incorrect regimen or omits
+	4A.6
+	Continue albuterol HFA as rescue inhaler
+	0.35
+	States continue albuterol HFA
+	States continue albuterol, no HFA
+	Omits or discontinues
+	4A.7
+	Albuterol regimen maintained: 2 puffs every 4–6 hours as needed for SOB or wheezing
+	0.35
+	States 2 puffs q4–6h PRN for SOB/wheezing
+	States PRN albuterol, no dose or interval
+	Incorrect or omits
+	4A.8
+	Provide inhaler education (generic statement)
+	0.30
+	States provide inhaler education
+	—
+	Omits
+	4A.9
+	Review proper inhaler technique
+	0.30
+	States review inhaler technique
+	—
+	Omits
+	4A.10
+	Discuss rationale for ICS therapy with patient
+	0.35
+	States discuss ICS rationale with patient
+	—
+	Omits
+	4A.11
+	Counsel on expected benefit: improved symptom control
+	0.25
+	States improved symptom control
+	—
+	Omits
+	4A.12
+	Counsel on expected benefit: reduced nighttime symptoms
+	0.25
+	States reduced nighttime symptoms
+	—
+	Omits
+	4A.13
+	Counsel on expected benefit: reduced exacerbation risk
+	0.35
+	States reduced exacerbation risk
+	—
+	Omits
+	4A.14
+	Counsel on expected benefit: reduced rescue inhaler use
+	0.25
+	States reduced rescue inhaler use
+	—
+	Omits
+	4A.15
+	ICS-formoterol plan is consistent with GINA 2025 Track 1 MART or Step 3/4 maintenance for adults
+	0.80
+	States plan is consistent with GINA 2025 Track 1 or Step 3/4 maintenance approach
+	States guideline-consistent without GINA 2025 track reference
+	Omits or explicitly contradicts GINA
+	4A.16
+	Appropriate that budesonide/formoterol was selected (ICS-formoterol required for MART per GINA; formoterol is the only ICS-LABA approved for MART)
+	0.75
+	States choice of formoterol-containing ICS-LABA is required for MART strategy
+	States MART concept without formoterol-specific justification
+	Omits
+	4A sum check: 0.50 + 0.30 + 0.70 + 0.60 + 0.60 + 0.35 + 0.35 + 0.30 + 0.30 + 0.35 + 0.25 + 0.25 + 0.35 + 0.25 + 0.80 + 0.75 = 7.00
+4B. ALLERGIC RHINITIS (2.50 points) — 5 inputs, sum = 2.50
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4B.1
+	Continue fluticasone nasal spray
+	0.50
+	States continue fluticasone nasal spray
+	States continue nasal spray, no drug name
+	Omits or discontinues
+	4B.2
+	Fluticasone nasal spray dose maintained: 1 spray each nostril daily
+	0.40
+	States 1 spray each nostril daily
+	States continue current dose without specifics
+	Incorrect dose or omits
+	4B.3
+	Continue allergen avoidance strategies
+	0.40
+	States continue allergen avoidance
+	—
+	Omits
+	4B.4
+	Discuss relationship between upper airway and lower airway disease
+	0.60
+	States discuss upper-lower airway relationship with patient
+	States link mentioned without patient-education framing
+	Omits
+	4B.5
+	Symptom monitoring for allergic rhinitis maintained
+	0.60
+	States ongoing monitoring of AR symptoms
+	States monitor, nonspecific
+	Omits
+	4B sum check: 0.50 + 0.40 + 0.40 + 0.60 + 0.60 = 2.50
+4C. EXACERBATION PREVENTION EDUCATION (2.00 points) — 4 inputs, sum = 2.00
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4C.1
+	Review recognition of worsening respiratory symptoms
+	0.50
+	States review recognition of worsening symptoms
+	—
+	Omits
+	4C.2
+	Discuss importance of early intervention
+	0.50
+	States discuss importance of early intervention
+	—
+	Omits
+	4C.3
+	Encourage prompt medical evaluation for future exacerbations
+	0.50
+	States encourage prompt medical evaluation for future exacerbations
+	States seek care, no future exacerbation framing
+	Omits
+	4C.4
+	Education plan is grounded in GINA 2025 / GOLD 2026 written action plan principles
+	0.50
+	States education supports written action plan per GINA/GOLD
+	States education without guideline action plan link
+	Omits
+	4C sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+4D. MONITORING (4.50 points) — 9 inputs, sum = 4.50
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4D.1
+	Monitor ACT score
+	0.55
+	States monitor ACT score
+	—
+	Omits
+	4D.2
+	Monitor CAT score
+	0.55
+	States monitor CAT score
+	—
+	Omits
+	4D.3
+	Monitor symptom frequency
+	0.50
+	States monitor symptom frequency
+	—
+	Omits
+	4D.4
+	Monitor nighttime symptoms
+	0.45
+	States monitor nighttime symptoms
+	—
+	Omits
+	4D.5
+	Monitor rescue inhaler use (albuterol frequency)
+	0.45
+	States monitor rescue inhaler use
+	—
+	Omits
+	4D.6
+	Monitor exacerbations
+	0.55
+	States monitor exacerbations
+	—
+	Omits
+	4D.7
+	Monitor medication adherence
+	0.45
+	States monitor medication adherence
+	—
+	Omits
+	4D.8
+	Monitor inhaler technique
+	0.45
+	States monitor inhaler technique
+	—
+	Omits
+	4D.9
+	Monitoring plan reflects all GINA 2025 symptom-control domains (ACT, nighttime, SABA use, activity)
+	0.55
+	States monitoring covers all GINA 2025 symptom control domains
+	States monitoring covers most domains
+	Monitoring plan omits major GINA domain
+	4D sum check: 0.55 + 0.55 + 0.50 + 0.45 + 0.45 + 0.55 + 0.45 + 0.45 + 0.55 = 4.50
+4E. OSTEOPENIA (2.00 points) — 3 inputs, sum = 2.00
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4E.1
+	Continue calcium carbonate/vitamin D supplementation
+	0.70
+	States continue calcium carbonate/vitamin D
+	States continue calcium supplement, no vitamin D or specifics
+	Omits or discontinues
+	4E.2
+	Minimize future systemic corticosteroid exposure when possible
+	0.70
+	States minimize systemic corticosteroid exposure when possible
+	States minimize OCS, no when-possible qualifier
+	Omits
+	4E.3
+	Links OCS minimization to osteopenia management rationale
+	0.60
+	States OCS minimization is specifically relevant to osteopenia management
+	States OCS minimization without linking to bone health
+	Omits
+	4E sum check: 0.70 + 0.70 + 0.60 = 2.00
+4F. PREVENTIVE CARE (2.50 points) — 4 inputs, sum = 2.50
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4F.1
+	Recommend RSV vaccination
+	0.70
+	States recommend RSV vaccination
+	States RSV vaccine mentioned, no recommendation
+	Omits
+	4F.2
+	Recommend Tdap booster
+	0.70
+	States recommend Tdap booster
+	States Tdap mentioned, no recommendation
+	Omits
+	4F.3
+	Review immunization history at follow-up
+	0.60
+	States review immunization history at follow-up
+	States review immunizations, no follow-up timing
+	Omits
+	4F.4
+	Vaccination framed as part of respiratory disease management (exacerbation prevention)
+	0.50
+	States vaccination is part of respiratory disease management for exacerbation prevention
+	States vaccination important without respiratory/exacerbation link
+	Omits
+	4F sum check: 0.70 + 0.70 + 0.60 + 0.50 = 2.50
+4G. FOLLOW-UP AND MONITORING (4.50 points) — 9 inputs, sum = 4.50
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4G.1
+	Follow up in approximately 3 months
+	0.60
+	States follow-up in 3 months
+	States follow-up, no timing
+	Omits
+	4G.2
+	Assess response to budesonide/formoterol (Symbicort) initiation at follow-up
+	0.50
+	States assess response to Symbicort/budesonide-formoterol initiation
+	States assess response, no specific drug
+	Omits
+	4G.3
+	Reassess ACT score at follow-up
+	0.50
+	States reassess ACT at follow-up
+	States reassess symptoms, no ACT specific
+	Omits
+	4G.4
+	Reassess CAT score at follow-up
+	0.50
+	States reassess CAT at follow-up
+	States reassess, no CAT specific
+	Omits
+	4G.5
+	Reassess exacerbation frequency at follow-up
+	0.40
+	States reassess exacerbation frequency
+	States reassess exacerbations
+	Omits
+	4G.6
+	Reassess symptom burden at follow-up
+	0.40
+	States reassess symptom burden
+	States reassess symptoms, nonspecific
+	Omits
+	4G.7
+	Reassess inhaler technique at follow-up
+	0.40
+	States reassess inhaler technique
+	—
+	Omits
+	4G.8
+	Reassess medication adherence at follow-up
+	0.40
+	States reassess adherence
+	—
+	Omits
+	4G.9
+	Continue longitudinal management of asthma-COPD overlap syndrome stated
+	0.80
+	States continue longitudinal management of ACO/asthma-COPD overlap
+	States ongoing management, no ACO/overlap specific
+	Omits
+	4G sum check: 0.60 + 0.50 + 0.50 + 0.50 + 0.40 + 0.40 + 0.40 + 0.40 + 0.80 = 4.50
+Section 4 check: 4A (7.00) + 4B (2.50) + 4C (2.00) + 4D (4.50) + 4E (2.00) + 4F (2.50) + 4G (4.50) = 25.0
+ 
+SECTION 5: PRESENTATION QUALITY (5.0 points)
+5A. ORGANIZATION AND SOAP STRUCTURE (2.00 points) — 4 inputs, sum = 2.00
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5A.1
+	Uses four-part SOAP structure (S / O / A / P)
+	0.50
+	All four sections present and labeled
+	Some sections present
+	Absent
+	5A.2
+	Subjective and objective data placed in correct sections
+	0.50
+	Correctly partitioned
+	Minor misplacement
+	Major misplacement
+	5A.3
+	Assessment presents a prioritized, numbered problem list (8 problems in note order)
+	0.50
+	Numbered, prioritized list with all 8 problems
+	Listed, not prioritized, or missing problems
+	Absent or unordered
+	5A.4
+	Each plan element maps to an assessed problem
+	0.50
+	All plan items mapped to assessed problems
+	Most mapped
+	Unmapped plan items
+	5A sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+5B. FORMATTING AND DOCUMENTATION (2.00 points) — 4 inputs, sum = 2.00
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5B.1
+	Medications documented with drug name, dose, route, and frequency
+	0.50
+	All four elements present for each medication
+	Missing one element for one or more medications
+	Largely incomplete
+	5B.2
+	Laboratory and PFT values reported with appropriate units
+	0.50
+	Units present throughout (mcg, cells/µL, %, mmHg, etc.)
+	Some units missing
+	Units absent
+	5B.3
+	Clinical scores stated with numeric values (ACT = 15, CAT = 19)
+	0.50
+	Both numeric scores stated with labels
+	One score stated numerically
+	No numeric scores
+	5B.4
+	Plan items are specific and actionable
+	0.50
+	All plan items specific and actionable
+	Some plan items vague
+	Vague throughout
+	5B sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+5C. PROFESSIONAL TONE AND SPECIFICITY (1.00 points) — 3 inputs, sum = 1.00
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5C.1
+	Objective, professional clinical language throughout
+	0.40
+	Professional throughout
+	Minor lapses
+	Unprofessional
+	5C.2
+	Recommendations tied to guideline rationale (GINA 2025, GOLD 2026)
+	0.40
+	Guideline rationale provided and both GINA 2025 and GOLD 2026 cited
+	Partial rationale or one guideline only
+	Absent
+	5C.3
+	Free of major factual or medication errors
+	0.20
+	No major errors
+	1 minor error
+	Major error
+	5C sum check: 0.40 + 0.40 + 0.20 = 1.00
+Section 5 check: 5A (2.00) + 5B (2.00) + 5C (1.00) = 5.0
+ 
+GRAND TOTAL VERIFICATION
+§
+	Section
+	Subsections
+	Points
+	1
+	SUBJECTIVE
+	1A (2.50) + 1B (5.00) + 1C (3.80) + 1D (3.00) + 1E (6.50) + 1F (2.00) + 1G (2.20)
+	25.0
+	2
+	OBJECTIVE
+	2A (3.50) + 2B (8.00) + 2C (3.50)
+	15.0
+	3
+	ASSESSMENT
+	3A (7.00) + 3B (5.00) + 3C (4.00) + 3D (3.50) + 3E (3.50) + 3F (2.50) + 3G (1.50) + 3H (3.00)
+	30.0
+	4
+	PLAN
+	4A (7.00) + 4B (2.50) + 4C (2.00) + 4D (4.50) + 4E (2.00) + 4F (2.50) + 4G (4.50)
+	25.0
+	5
+	PRESENTATION QUALITY
+	5A (2.00) + 5B (2.00) + 5C (1.00)
+	5.0
+	 
+	GRAND TOTAL
+	 
+	100.0
+	GRADING SCALE
+Grade
+	Range
+	Description
+	A
+	90.0–100.0
+	Exceptional — comprehensive, accurate, clinically actionable
+	B
+	80.0–89.9
+	Proficient — solid coverage with minor gaps
+	C
+	70.0–79.9
+	Developing — adequate but missing key elements
+	D
+	60.0–69.9
+	Below expectations — significant gaps in content or analysis
+	F
+	Below 60.0
+	Unsatisfactory — major deficiencies
+	TOTAL DISCRETE INPUTS ACROSS ALL SECTIONS
+Section
+	Subsections
+	# Inputs
+	1. SUBJECTIVE
+	1A–1B–1C–1D–1E–1F–1G
+	82
+	2. OBJECTIVE
+	2A–2B–2C
+	26
+	3. ASSESSMENT
+	3A–3B–3C–3D–3E–3F–3G–3H
+	68
+	4. PLAN
+	4A–4B–4C–4D–4E–4F–4G
+	50
+	5. PRESENTATION QUALITY
+	5A–5B–5C
+	11
+	TOTAL
+	 
+	237
+	MODEL ANSWER SCORE: 100.0 / 100.0
+The model answer (Patient C — Tuesday Initial Visit gold-standard SOAP note) earns full credit on every one of the 237 discrete inputs. Any student submission is scored against this rubric by evaluating each of the 237 discrete inputs independently, awarding FULL, HALF, or ZERO credit per input, and summing to a final score out of 100.0.
+Source guidelines for therapeutic alternatives: 2025 GINA Summary Guide for Asthma Management and Prevention; 2026 GOLD Report for COPD Diagnosis, Management and Prevention.
+
+
+
+

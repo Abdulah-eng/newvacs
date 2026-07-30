@@ -1,0 +1,2630 @@
+﻿SECTION 9: PATIENT C – TUESDAY INITIAL VISIT
+Encounter Overview
+Encounter Type
+Initial Ambulatory Care Pharmacist Visit
+Visit Length
+30-minute collaborative practice visit
+Week
+Week 2 – Tuesday
+Difficulty Level
+Advanced APPE Student
+Primary Learning Objectives
+Students should be able to:
+Correctly stage CKD G3bA3 
+Assess cardiorenal risk in diabetes 
+Identify persistent albuminuria despite guideline-directed therapy 
+Assess residual ASCVD risk 
+Prioritize therapeutic interventions 
+Evaluate candidacy for additional kidney-protective therapies 
+Conduct shared decision-making 
+Address medication burden concerns 
+Develop a comprehensive ambulatory care plan 
+Construct an advanced SOAP note 
+1. Patient Snapshot
+David Chen is a 62-year-old male referred to the ambulatory care pharmacy clinic for management of CKD, type 2 diabetes mellitus, hyperlipidemia, and hypertension.
+His primary care physician is concerned about progressive kidney disease risk despite treatment with an ACE inhibitor, SGLT2 inhibitor, statin therapy, and reasonable glycemic control.
+This is his first ambulatory care pharmacy visit.
+2. Chief Concern
+"My doctor says my kidneys are still at risk even though my diabetes and cholesterol seem fairly controlled."
+3. History of Present Illness
+David Chen is a 62-year-old male with type 2 diabetes mellitus, CKD, hypertension, hyperlipidemia, and obesity presenting for initial medication management.
+The patient reports feeling generally well.
+He denies:
+Chest pain 
+Shortness of breath 
+Syncope 
+Palpitations 
+Lower extremity edema 
+Gross hematuria 
+He reports:
+Mild fatigue 
+Occasional nocturia 
+Concern regarding worsening kidney disease 
+The patient states he carefully follows his laboratory values and frequently researches his conditions online.
+He understands that his kidney function has declined over time but is uncertain why additional treatment may be needed when he is already taking multiple medications.
+He reports good adherence to his current medications.
+No recent hospitalizations.
+No recent emergency department visits.
+4. Past Medical History
+Type 2 Diabetes Mellitus
+Diagnosed 14 years ago
+Chronic Kidney Disease (G3bA3)
+Diagnosed approximately 4 years ago
+Hypertension
+Diagnosed 16 years ago
+Hyperlipidemia
+Diagnosed 15 years ago
+Obesity
+5. Medication List
+Metformin ER 1000 mg PO BID
+Empagliflozin 25 mg PO daily
+Lisinopril 20 mg PO daily
+Rosuvastatin 20 mg PO daily
+Amlodipine 5 mg PO daily
+6. Allergies
+No Known Drug Allergies
+7. Vitals
+Today's Vitals
+BP: 138/82 mmHg
+Repeat BP: 136/80 mmHg
+HR: 72 bpm
+RR: 16
+Temp: 98.2°F
+Weight: 102 kg
+Height: 70 inches
+BMI: 32.3 kg/m²
+Home BP Monitoring
+Provided only if requested.
+Average BP:
+136/80 mmHg
+8. Laboratory Data
+CMP
+Na: 138 mEq/L
+K: 4.8 mEq/L
+SCr: 1.82 mg/dL
+eGFR: 42 mL/min/1.73m²
+AST: 24 U/L
+ALT: 22 U/L
+Lipid Panel
+TC: 172 mg/dL
+LDL-C: 88 mg/dL
+HDL-C: 43 mg/dL
+TG: 178 mg/dL
+Diabetes Monitoring
+A1C: 7.2%
+Fasting Glucose: 136 mg/dL
+Urine Albumin-to-Creatinine Ratio
+Current UACR: 520 mg/g
+Previous UACR: 505 mg/g
+ASCVD Risk
+10-Year ASCVD Risk Estimate: 22%
+9. Immunizations
+Influenza
+Up to date
+COVID
+Up to date
+PCV
+Not documented
+Shingrix
+Not documented
+Tdap
+Overdue
+10. Social History
+Tobacco
+Never smoker
+Alcohol
+Occasional
+1–2 drinks weekly
+Exercise
+Walking approximately 3 days weekly
+Diet
+Attempts diabetic diet
+Occasional dietary lapses
+11. Family History
+Father
+MI age 58
+Type 2 Diabetes
+Mother
+Type 2 Diabetes
+CKD
+Brother
+Coronary artery disease
+12. Problem List
+Active Problems
+CKD G3bA3 
+Severe albuminuria 
+Type 2 diabetes mellitus 
+Elevated ASCVD risk 
+Hyperlipidemia 
+Hypertension 
+Obesity 
+Residual cardiorenal risk 
+Potential undertreatment of CKD progression risk 
+Preventive care gaps 
+13. Pharmacist Visit Notes
+Referral Reason
+Persistent CKD progression risk despite ACE inhibitor and SGLT2 inhibitor therapy.
+Key Concerns
+CKD G3bA3 
+Severe albuminuria 
+Persistent cardiorenal risk 
+Residual ASCVD risk 
+Medication burden concerns 
+Potential candidacy for additional kidney-protective therapy 
+Need for shared decision-making 
+14. Follow-Up Tasks Expected From Student
+Students should consider:
+CKD
+Correctly stage CKD G3bA3 
+Interpret severe albuminuria 
+Assess progression risk 
+Diabetes
+Assess glycemic control 
+Evaluate contribution to CKD risk 
+Cardiorenal Protection
+Identify residual risk despite current therapy 
+Assess whether additional therapy should be considered 
+Hyperlipidemia
+Evaluate LDL-C in context of CKD and diabetes 
+Assess residual ASCVD risk 
+Hypertension
+Assess BP control 
+Consider optimization strategies 
+
+SECTION 10: AI PATIENT Q&A GUIDE
+Patient C – Tuesday Initial Visit
+Purpose
+This document serves as the AI patient behavior guide.
+Responses should sound like a real patient, not a clinician.
+The patient should not volunteer hidden information unless appropriately prompted.
+
+Reason for Visit
+Student:
+"What brings you in today?"
+Patient:
+"My doctor said I should talk with you about my kidneys."
+
+Student:
+"What are you hoping to discuss today?"
+Patient:
+"I want to understand why my kidneys are still considered high risk."
+
+Symptoms
+Student:
+"How have you been feeling lately?"
+Patient:
+"Pretty good overall."
+
+Student:
+"Any chest pain or shortness of breath?"
+Patient:
+"No."
+
+Student:
+"Any swelling?"
+Patient:
+"No."
+
+Student:
+"Any dizziness?"
+Patient:
+"No."
+
+Student:
+"Any changes in urination?"
+Patient:
+"I get up once or twice at night sometimes."
+
+Student:
+"Anything else concerning you?"
+Patient:
+"Just the idea that my kidneys could keep getting worse."
+
+Medication Use
+Student:
+"Can you tell me what medications you're taking?"
+Patient:
+"Metformin, Jardiance, lisinopril, rosuvastatin, and amlodipine."
+
+Student:
+"How do you take them?"
+Patient:
+"Every day."
+
+Student:
+"How often do you miss doses?"
+Patient:
+"Very rarely."
+
+Student:
+"Any problems taking them?"
+Patient:
+"No."
+
+Medication Burden (Hidden Information)
+Do not volunteer.
+
+Student:
+"How do you feel about the number of medications you're taking?"
+Patient:
+"I take quite a few already."
+
+Student:
+"Does that bother you?"
+Patient:
+"A little."
+
+Student:
+"What concerns you most?"
+Patient:
+"It feels like every time something comes up the answer is another medication."
+
+Previous Medication Recommendations (Hidden Information)
+Do not volunteer.
+
+Student:
+"Has anyone discussed other treatment options for your kidneys?"
+Patient:
+"Maybe."
+
+Student:
+"What do you mean by maybe?"
+Patient:
+"A kidney medication was mentioned once."
+
+Student:
+"Do you remember the name?"
+Patient:
+"I think it was called finerenone."
+
+Student:
+"Did you start it?"
+Patient:
+"No."
+
+Student:
+"Why not?"
+Patient:
+"I decided against it."
+
+Finerenone Concerns (Hidden Information)
+Only reveal if explored.
+
+Student:
+"What made you decide against it?"
+Patient:
+"I wasn't convinced I needed it."
+
+Student:
+"Anything else?"
+Patient:
+"I was worried about side effects."
+
+Student:
+"What side effects?"
+Patient:
+"I remember hearing something about potassium."
+
+Student:
+"Any other concerns?"
+Patient:
+"I wasn't sure how much it would cost."
+
+Student:
+"Did someone explain why it was being recommended?"
+Patient:
+"Not really."
+
+Student:
+"Do you understand why it was suggested?"
+Patient:
+"Not completely."
+
+Diabetes
+Student:
+"How do you feel your diabetes is doing?"
+Patient:
+"Pretty well."
+
+Student:
+"Do you monitor your blood sugars?"
+Patient:
+"Sometimes."
+
+Student:
+"What numbers do you typically see?"
+Patient:
+"Usually around 120 to 150."
+
+Student:
+"Any hypoglycemia?"
+Patient:
+"No."
+
+Blood Pressure
+Student:
+"Do you check your blood pressure at home?"
+Patient:
+"Yes."
+
+Student:
+"What numbers are you seeing?"
+Patient:
+"Usually in the mid-130s."
+
+Student:
+"Do you keep a log?"
+Patient:
+"Yes."
+
+Diet
+Student:
+"How has your diet been?"
+Patient:
+"Fairly good."
+
+Student:
+"What does a typical day look like?"
+Patient:
+"I try to follow a diabetic diet."
+
+Student:
+"Any challenges?"
+Patient:
+"I still eat out more often than I should."
+
+Exercise
+Student:
+"What does exercise look like?"
+Patient:
+"I walk a few times a week."
+
+Student:
+"How often?"
+Patient:
+"About three days a week."
+
+Student:
+"How long?"
+Patient:
+"Usually 30 minutes."
+
+Patient Goals
+Student:
+"What health goals are most important to you?"
+Patient:
+"I want to avoid dialysis."
+
+Student:
+"Anything else?"
+Patient:
+"I want to stay healthy enough to keep working."
+
+Patient Concerns
+Student:
+"What concerns you most today?"
+Patient:
+"That my kidneys are getting worse even though I'm doing a lot already."
+
+Student:
+"What specifically worries you?"
+Patient:
+"I don't want to end up on dialysis."
+
+Understanding of Disease States
+Student:
+"What do you understand about your kidney disease?"
+Patient:
+"I know it's worse than it used to be."
+
+Student:
+"What are you still unsure about?"
+Patient:
+"I don't understand why I'm still considered high risk."
+
+Student:
+"What do you understand about albumin in your urine?"
+Patient:
+"Not much."
+
+Student:
+"What do you understand about the medication that was suggested before?"
+Patient:
+"Honestly, not very much."
+
+Readiness to Change
+Student:
+"How open are you to making changes if they're recommended?"
+Patient:
+"It depends on the reason."
+
+Student:
+"What do you mean?"
+Patient:
+"If there's good evidence it will actually help, I'm willing to listen."
+
+Follow-Up Preferences
+Student:
+"How do you prefer follow-up appointments?"
+Patient:
+"Phone visits work well."
+
+Hidden Information Summary for AI
+The AI should NEVER volunteer these without prompting:
+Finerenone was previously recommended. 
+Patient declined finerenone. 
+Hyperkalemia concerns influenced decision-making. 
+Cost concerns influenced decision-making. 
+Medication burden influenced decision-making. 
+Patient never fully understood the rationale. 
+Dialysis is his greatest fear. 
+
+SECTION 10A: HIDDEN INFORMATION TRIGGER MAP
+Patient C – Tuesday Initial Visit
+Hidden Fact #1: Prior Finerenone Recommendation
+Information to Reveal
+Finerenone was previously discussed but never started.
+Trigger Keywords
+finerenone, kidney medication, previous recommendations, medication history, declined treatment
+Appropriate AI Response
+"A doctor mentioned finerenone before, but I never started it."
+Information Not Volunteered
+Patient does not disclose this unless specifically asked.
+
+Hidden Fact #2: Hyperkalemia Concern
+Information to Reveal
+Patient worried about potassium-related side effects.
+Trigger Keywords
+potassium, hyperkalemia, side effects, medication risks, concerns
+Appropriate AI Response
+"I remember hearing that it could affect potassium levels."
+Information Not Volunteered
+Patient only reveals after discussion of concerns.
+
+Hidden Fact #3: Medication Burden
+Information to Reveal
+Patient is hesitant to add more medications.
+Trigger Keywords
+pill burden, medications, adding therapy, concerns, adherence
+Appropriate AI Response
+"It feels like every solution ends up being another pill."
+Information Not Volunteered
+Patient does not lead with this concern.
+
+Hidden Fact #4: Cost Concern
+Information to Reveal
+Patient worried medication might be expensive.
+Trigger Keywords
+cost, affordability, insurance, copay, expenses
+Appropriate AI Response
+"I wasn't sure what it would cost me."
+Information Not Volunteered
+Patient does not spontaneously discuss finances.
+
+Hidden Fact #5: Lack of Understanding
+Information to Reveal
+Patient never understood why finerenone was recommended.
+Trigger Keywords
+understanding, rationale, kidney protection, purpose, treatment goals
+Appropriate AI Response
+"I never really understood why I needed it."
+Information Not Volunteered
+Patient only reveals when specifically asked.
+
+Hidden Fact #6: Fear of Dialysis
+Information to Reveal
+Dialysis is the patient's strongest fear.
+Trigger Keywords
+dialysis, progression, future, fears, kidney failure
+Appropriate AI Response
+"That's the thing I'm most worried about."
+Information Not Volunteered
+Patient does not initially discuss this fear.
+
+
+PATIENT C – TUESDAY INITIAL VISIT
+GOLD-STANDARD AMBULATORY CARE PHARMACIST SOAP NOTE
+SUBJECTIVE
+CC:
+David Chen is a 62-year-old male presenting to the ambulatory care pharmacy clinic for initial collaborative practice management of chronic kidney disease, type 2 diabetes mellitus, hyperlipidemia, and hypertension following referral from his primary care provider due to persistent kidney disease progression risk.
+HPI:
+The patient reports feeling generally well and denies chest pain, shortness of breath, palpitations, syncope, lower extremity edema, gross hematuria, or significant urinary complaints.
+He reports mild fatigue and occasional nocturia but otherwise feels healthy. He remains active and continues working full-time.
+The patient states he follows his laboratory values closely and frequently researches his conditions online. He understands that his kidney function has declined over time but is uncertain why he continues to be considered high risk despite taking multiple medications.
+He reports excellent adherence to his current medication regimen including metformin, empagliflozin, lisinopril, rosuvastatin, and amlodipine.
+Upon further discussion, the patient reports that finerenone had previously been recommended by another provider but he elected not to initiate therapy. He states that he never fully understood why the medication was being recommended and had concerns regarding hyperkalemia, medication cost, and increasing pill burden.
+The patient expresses concern regarding future kidney disease progression and identifies dialysis as his greatest health-related fear.
+No recent hospitalizations.
+No recent emergency department visits.
+Past Medical History
+Type 2 Diabetes Mellitus 
+Chronic Kidney Disease (G3bA3) 
+Hypertension 
+Hyperlipidemia 
+Obesity 
+Past Surgical History
+No surgical history reported 
+Family History
+Father: myocardial infarction age 58, type 2 diabetes mellitus 
+Mother: chronic kidney disease, type 2 diabetes mellitus 
+Brother: coronary artery disease 
+Social History
+Married 
+Electrical engineer 
+Never smoker 
+Occasional alcohol use 
+Denies recreational drug use 
+Walks approximately 3 days per week 
+Attempts diabetic diet but reports occasional dietary lapses 
+Current Medications
+Metformin ER 1000 mg PO BID 
+Empagliflozin 25 mg PO daily 
+Lisinopril 20 mg PO daily 
+Rosuvastatin 20 mg PO daily 
+Amlodipine 5 mg PO daily 
+Medication History
+Finerenone previously recommended 
+Therapy never initiated 
+Allergies
+No known drug allergies 
+Immunization History
+Influenza vaccine up to date 
+COVID vaccination up to date 
+No documented pneumococcal vaccination 
+No documented herpes zoster vaccination 
+Tdap overdue 
+OBJECTIVE
+Vitals
+BP: 138/82 mmHg
+Repeat BP: 136/80 mmHg
+HR: 72 bpm
+Weight: 102 kg
+Height: 70 inches
+BMI: 32.3 kg/m²
+Home BP Monitoring
+Average BP:
+136/80 mmHg
+Patient maintains home BP log.
+CMP
+Na: 138 mEq/L
+K: 4.8 mEq/L
+SCr: 1.82 mg/dL
+eGFR: 42 mL/min/1.73m²
+AST: 24 U/L
+ALT: 22 U/L
+Lipid Panel
+TC: 172 mg/dL
+LDL-C: 88 mg/dL
+HDL-C: 43 mg/dL
+TG: 178 mg/dL
+Diabetes Monitoring
+A1C: 7.2%
+Fasting Glucose: 136 mg/dL
+Albuminuria
+Current UACR: 520 mg/g
+Previous UACR: 505 mg/g
+ASCVD Risk
+10-Year ASCVD Risk Estimate: 22%
+ASSESSMENT
+1. Chronic Kidney Disease (G3bA3) – High Risk for Progression
+The patient has CKD G3bA3 based on eGFR 42 mL/min/1.73m² and severely increased albuminuria (UACR 520 mg/g). Persistent severe albuminuria and reduced kidney function place the patient at substantial risk for future kidney disease progression, cardiovascular events, and kidney failure.
+According to the KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease, both eGFR and albuminuria should be incorporated into CKD staging because both independently predict kidney and cardiovascular outcomes. The patient's combination of G3b kidney function and A3 albuminuria represents a significantly elevated risk category.
+Despite ACE inhibitor and SGLT2 inhibitor therapy, substantial residual kidney disease risk remains.
+2. Type 2 Diabetes Mellitus with CKD – Reasonably Controlled but Persistent Cardiorenal Risk
+The patient's A1C is 7.2%, suggesting reasonable glycemic control. He reports adherence to metformin and empagliflozin and denies hypoglycemia.
+According to KDIGO 2024, management of diabetes in CKD extends beyond glycemic control and includes therapies that reduce kidney and cardiovascular risk. Although glycemic control is acceptable, persistent severe albuminuria indicates ongoing cardiorenal risk that is not fully addressed by glucose lowering alone.
+3. Persistent Albuminuria Despite Guideline-Directed Foundational Therapy
+The patient remains on appropriate foundational therapies including:
+ACE inhibitor (lisinopril) 
+SGLT2 inhibitor (empagliflozin) 
+Despite these interventions, UACR remains significantly elevated at 520 mg/g.
+According to KDIGO 2024, persistent albuminuria despite maximally tolerated RAAS inhibition and SGLT2 inhibitor therapy may warrant consideration of additional kidney-protective therapies in appropriate patients.
+Further discussion regarding previously declined finerenone therapy appears warranted.
+4. Hyperlipidemia / Elevated ASCVD Risk
+The patient remains at elevated cardiovascular risk due to diabetes, CKD G3bA3, hypertension, obesity, family history of premature ASCVD, and persistent albuminuria.
+LDL-C is 88 mg/dL while receiving rosuvastatin 20 mg daily.
+According to the 2026 AHA/ACC Guideline for the Management of Blood Cholesterol, CKD and diabetes are important risk-enhancing conditions that substantially increase ASCVD risk.
+Ongoing lipid-lowering therapy remains appropriate.
+5. Hypertension – Above Ideal Goal
+Blood pressure remains mildly elevated with office and home readings averaging approximately 136/80 mmHg.
+According to KDIGO 2024, blood pressure control remains one of the most effective interventions for reducing CKD progression and cardiovascular complications.
+Additional optimization may be reasonable after assessment of overall treatment priorities and patient preferences.
+6. Medication Hesitancy Regarding Additional Kidney-Protective Therapy
+The patient previously declined finerenone despite provider recommendation.
+Contributing factors include:
+Incomplete understanding of rationale 
+Hyperkalemia concerns 
+Cost concerns 
+Medication burden concerns 
+This represents a knowledge and shared decision-making opportunity rather than medication nonadherence.
+Further discussion regarding benefits, risks, monitoring requirements, and patient priorities is warranted.
+7. Obesity
+BMI is 32.3 kg/m² and likely contributes to ongoing cardiovascular and kidney disease risk.
+Both KDIGO 2024 and the 2026 Hyperlipidemia Guideline emphasize lifestyle modification and weight reduction as important components of risk reduction.
+Continued lifestyle interventions remain appropriate.
+8. Preventive Care Gaps
+Potential preventive care gaps include:
+Pneumococcal vaccination 
+Shingrix vaccination 
+Tdap booster 
+Preventive care optimization remains appropriate.
+PLAN
+Chronic Kidney Disease
+Continue lisinopril 20 mg PO daily. 
+Continue empagliflozin 25 mg PO daily. 
+Reinforce CKD education. 
+Discuss persistent albuminuria and residual kidney disease risk. 
+Discuss risks and benefits of finerenone using shared decision-making. 
+Continue monitoring renal function and albuminuria. 
+Diabetes
+Continue metformin ER 1000 mg PO BID. 
+Continue empagliflozin 25 mg PO daily. 
+Continue lifestyle modifications. 
+Repeat A1C per routine monitoring schedule. 
+Hyperlipidemia / ASCVD Risk Reduction
+Continue rosuvastatin 20 mg PO daily. 
+Reinforce cardiovascular risk-reduction strategies. 
+Continue lipid monitoring. 
+Hypertension
+Continue lisinopril 20 mg PO daily. 
+Continue amlodipine 5 mg PO daily. 
+Continue home BP monitoring. 
+Consider future BP optimization if indicated. 
+Shared Decision-Making / Medication Education
+Explore patient's concerns regarding finerenone. 
+Discuss hyperkalemia monitoring. 
+Discuss expected kidney and cardiovascular benefits. 
+Discuss medication affordability and insurance coverage. 
+Address medication burden concerns. 
+Lifestyle / Weight Management
+Continue walking program. 
+Encourage gradual weight reduction. 
+Reinforce diabetic dietary modifications. 
+Preventive Care
+Clarify pneumococcal vaccination status. 
+Recommend Shingrix vaccination if appropriate. 
+Recommend Tdap booster. 
+Follow-Up
+Follow up in approximately 3 months. 
+Obtain repeat CMP, UACR, A1C, lipid panel, and BP log prior to follow-up. 
+Reassess willingness to initiate additional kidney-protective therapy. 
+Continue monitoring CKD progression risk.
+
+
+SECTION 12: ACCEPTABLE ALTERNATIVE ANSWERS
+Patient C – Tuesday Initial Visit
+The purpose of this section is to help the AI grader distinguish between:
+Preferred recommendations 
+Guideline-supported alternatives 
+Appropriate clinical judgment 
+Unsafe recommendations 
+Students should receive credit when recommendations are evidence-based, patient-centered, and appropriately justified.
+CKD Management
+Preferred Answer
+Correctly identify CKD G3bA3. 
+Recognize persistent severe albuminuria despite ACE inhibitor and SGLT2 inhibitor therapy. 
+Explore prior finerenone recommendation. 
+Address barriers using shared decision-making. 
+Recommend consideration of finerenone after discussion of risks and benefits. 
+Rationale
+The patient has:
+CKD G3bA3 
+UACR 520 mg/g 
+T2DM 
+Persistent albuminuria 
+Current ACE inhibitor therapy 
+Current SGLT2 inhibitor therapy 
+According to KDIGO 2024, patients with T2DM, CKD, and persistent albuminuria despite optimized foundational therapy remain at elevated risk for kidney disease progression and cardiovascular events.
+Acceptable Alternative #1
+Continue current therapy while first addressing patient concerns before making a recommendation.
+Acceptable Because
+Shared decision-making remains central to care.
+Student Must
+Discuss residual risk. 
+Explore prior concerns. 
+Establish follow-up. 
+Acceptable Alternative #2
+Recommend referral to nephrology before initiating additional therapy.
+Acceptable Because
+Patient has:
+CKD G3bA3 
+Severe albuminuria 
+Elevated progression risk 
+Less Preferred Because
+The pharmacist should still recognize candidacy for additional kidney-protective therapy.
+Unacceptable Answers
+Unsafe
+State current therapy is sufficient because A1C is controlled.
+Unsafe
+Ignore severe albuminuria.
+Unsafe
+Ignore residual CKD risk.
+Unsafe
+Fail to reassess previous treatment decisions.
+Finerenone Discussion
+Preferred Answer
+Student identifies:
+Finerenone was previously recommended. 
+Therapy was declined. 
+Patient concerns should be explored. 
+Student Should Address
+Hyperkalemia concerns 
+Cost concerns 
+Medication burden concerns 
+Expected benefits 
+Monitoring requirements 
+Acceptable Alternative
+Provide education and defer decision until follow-up.
+Acceptable Because
+Patient remains uncertain regarding therapy.
+Unacceptable Answers
+Unsafe
+Pressure patient into treatment.
+Unsafe
+Dismiss concerns regarding potassium.
+Unsafe
+Ignore patient preferences.
+Hyperlipidemia Management
+Preferred Answer
+Continue rosuvastatin 20 mg daily.
+Rationale
+Patient remains at elevated ASCVD risk but demonstrates reasonable LDL-C control.
+According to the 2026 AHA/ACC Guideline for the Management of Blood Cholesterol, CKD and diabetes substantially increase cardiovascular risk and support ongoing statin therapy.
+Acceptable Alternative
+Discuss future intensification if clinically warranted.
+Acceptable Because
+Patient remains high risk.
+Unacceptable Answers
+Unsafe
+Discontinue statin therapy.
+Unsafe
+Ignore cardiovascular risk.
+Diabetes Management
+Preferred Answer
+Continue current regimen.
+Rationale
+A1C:
+7.2%
+Current therapy:
+Metformin 
+Empagliflozin 
+Reasonable control is present.
+Acceptable Alternative
+Discuss future glycemic optimization strategies.
+Unacceptable Answers
+Unsafe
+Focus exclusively on A1C and ignore CKD.
+Hypertension Management
+Preferred Answer
+Continue current regimen while evaluating broader cardiorenal risk.
+Rationale
+Blood pressure remains mildly elevated but is not the primary issue driving this encounter.
+Acceptable Alternative
+Increase lisinopril if justified.
+Student Must Include
+Potassium monitoring 
+Renal function monitoring 
+BP monitoring 
+Unacceptable Answers
+Unsafe
+Ignore blood pressure entirely.
+Shared Decision-Making
+Preferred Answer
+Student explores:
+Understanding of disease 
+Prior experiences 
+Concerns regarding therapy 
+Treatment goals 
+Rationale
+This is the primary educational objective.
+Unacceptable Answers
+Unsafe
+Provide guideline recommendations without discussing patient concerns.
+Preventive Care
+Preferred Answer
+Identify:
+Pneumococcal vaccine gap 
+Shingrix vaccine gap 
+Tdap booster gap 
+Key Grading Principle
+Students should receive credit if they:
+Correctly identify CKD G3bA3. 
+Recognize severe albuminuria. 
+Recognize residual cardiorenal risk. 
+Discover prior finerenone recommendation. 
+Address patient concerns. 
+Utilize shared decision-making. 
+The major educational objective is:
+Recognizing that high-risk CKD may require additional risk-reduction strategies beyond foundational therapy.
+SECTION 13: CRITICAL MISSES
+Patient C – Tuesday Initial Visit
+These errors should result in major point deductions.
+Critical Miss #1
+Failed to identify CKD G3bA3.
+Rationale
+Correct staging is foundational.
+Critical Miss #2
+Failed to recognize severe albuminuria.
+Rationale
+UACR:
+520 mg/g
+represents severe albuminuria.
+Critical Miss #3
+Focused only on eGFR and ignored albuminuria.
+Rationale
+KDIGO 2024 requires consideration of both.
+Critical Miss #4
+Failed to identify persistent residual kidney risk.
+Rationale
+Patient remains high risk despite treatment.
+Critical Miss #5
+Failed to discover prior finerenone recommendation.
+Rationale
+This is the major hidden educational objective.
+Critical Miss #6
+Failed to assess why therapy was declined.
+Rationale
+Students must explore:
+Hyperkalemia concerns 
+Cost concerns 
+Medication burden concerns 
+Critical Miss #7
+Dismissed patient concerns.
+Rationale
+Shared decision-making is essential.
+Critical Miss #8
+Recommended therapy without patient education.
+Rationale
+Patient never understood prior rationale.
+Critical Miss #9
+Focused exclusively on diabetes control.
+Rationale
+This case is about cardiorenal risk.
+Critical Miss #10
+Failed to recognize elevated ASCVD risk.
+Rationale
+Patient has:
+Diabetes 
+CKD G3bA3 
+Hypertension 
+Hyperlipidemia 
+Critical Miss #11
+Failed to address blood pressure.
+Critical Miss #12
+Failed to provide monitoring plan.
+Critical Miss #13
+Failed to provide follow-up plan.
+Critical Miss #14
+Ignored preventive care gaps.
+Critical Miss #15
+Assumed patient was nonadherent.
+Rationale
+Patient reports excellent adherence.
+High-Priority Tuesday Learning Objectives
+CKD staging requires both eGFR and albuminuria. 
+Severe albuminuria substantially increases risk. 
+Residual risk may persist despite foundational therapy. 
+Shared decision-making remains essential. 
+Additional therapy requires patient understanding and buy-in. 
+Cardiorenal protection extends beyond glycemic control. 
+SECTION 14: TEACHING GUIDE
+Patient C – Tuesday Initial Visit
+What The Student Should Have Done Well
+The student should have:
+Correctly staged CKD G3bA3. 
+Identified severe albuminuria. 
+Recognized residual cardiorenal risk. 
+Identified prior finerenone recommendation. 
+Explored barriers to therapy. 
+Addressed medication concerns. 
+Utilized shared decision-making. 
+Developed a monitoring plan. 
+Recognized elevated ASCVD risk. 
+Common Student Mistakes
+Mistake #1
+Focusing only on A1C.
+Example
+Student states:
+"Diabetes is controlled so things look good."
+Teaching Point
+Kidney risk remains high despite reasonable glycemic control.
+Mistake #2
+Ignoring albuminuria.
+Example
+Student focuses only on eGFR.
+Teaching Point
+Albuminuria independently predicts progression risk.
+Mistake #3
+Immediately recommending finerenone without discussion.
+Teaching Point
+Patient concerns must be addressed first.
+Mistake #4
+Failing to assess prior treatment decisions.
+Example
+Student never asks about previous recommendations.
+Teaching Point
+Medication history often reveals critical information.
+Mistake #5
+Treating the guideline as the conversation.
+Teaching Point
+Guidelines support decisions; patients make decisions.
+Teaching Pearls
+Pearl #1
+Residual risk remains important even when foundational therapies are optimized.
+Expected Discussion
+ACE inhibitor + SGLT2 inhibitor therapy reduces risk but may not eliminate it.
+Pearl #2
+Albuminuria is both a marker and mediator of risk.
+Expected Discussion
+Persistent severe albuminuria signals ongoing kidney injury.
+Pearl #3
+Patients often decline therapy because they do not understand the rationale.
+Expected Discussion
+Education can be as important as prescribing.
+Pearl #4
+Shared decision-making improves long-term implementation.
+Expected Discussion
+Understanding concerns improves treatment acceptance.
+Pearl #5
+Advanced CKD management requires prioritization.
+Expected Discussion
+Not every abnormal value requires the same urgency.
+Follow-Up Questions
+Question 1
+"Why is this patient considered high risk despite reasonable A1C and LDL-C values?"
+Expected Discussion
+CKD G3bA3 
+Severe albuminuria 
+Diabetes 
+Elevated ASCVD risk 
+Question 2
+"What does UACR 520 mg/g tell you?"
+Expected Discussion
+Persistent severe albuminuria and elevated progression risk.
+Question 3
+"Why might finerenone have been recommended previously?"
+Expected Discussion
+Persistent albuminuria despite foundational therapy.
+Question 4
+"What barriers prevented therapy initiation?"
+Expected Discussion
+Hyperkalemia concerns 
+Cost concerns 
+Medication burden 
+Lack of understanding 
+Question 5
+"What additional information is needed before recommending therapy?"
+Expected Discussion
+Patient preferences, concerns, affordability, and willingness.
+Question 6
+"What should be monitored moving forward?"
+Expected Discussion
+Renal function 
+Potassium 
+UACR 
+BP 
+A1C 
+Lipids
+How The Student Can Improve Before Wednesday
+Before the next encounter, students should be able to:
+Correctly stage CKD using both eGFR and albuminuria. 
+Recognize that CKD G3bA3 represents substantially elevated kidney and cardiovascular risk. 
+Explain why residual cardiorenal risk persists despite ACE inhibitor, SGLT2 inhibitor, statin, and reasonable glycemic control. 
+Discuss persistent severe albuminuria and its role in CKD progression risk. 
+Utilize shared decision-making to explore medication concerns, cost concerns, and pill burden concerns. 
+Explain the rationale, benefits, risks, and monitoring requirements of finerenone using patient-friendly language. 
+Prioritize interventions in complex patients with multiple competing risk factors. 
+Differentiate between improving risk factors and eliminating disease risk. 
+Develop confidence discussing advanced CKD management strategies. 
+Apply guideline recommendations while incorporating patient preferences and treatment goals.
+
+Granular Rubric and Answer Key — Patient C (David Chen) Initial Ambulatory Care SOAP Note (CKD G3bA3, T2DM, Persistent Albuminuria & Finerenone Shared Decision-Making) Patient C Tuesday
+[FOR AI PRECEPTOR CALIBRATION ONLY — NOT FOR STUDENT DISTRIBUTION]
+PURPOSE: This is the single, authoritative rubric for the Patient C (David Chen) Tuesday Initial-Visit Ambulatory Care SOAP Note. Every subsection’s discrete input point values sum exactly to the subsection header, and all subsection headers sum exactly to 100.0. The model answer scores 100.0/100.0 against this rubric.
+SCORING RULES:
+•  FULL: Input present, accurate, and clinically contextualized (not merely a keyword).
+•  HALF: Partially present — directionally correct but imprecise, or present without clinical context. Half-credit values are rounded to the nearest 0.05.
+•  ZERO: Absent, or a factually incorrect statement is made about that input.
+•  Additivity: Points are additive within each subsection → subsections additive within sections → sections additive to 100.0.
+Acceptable-alternative inputs (e.g., therapeutic choices) list every guideline-supported answer in parentheses; any listed answer earns full credit.
+SECTION 1: SUBJECTIVE (25.0 points)
+1A. CHIEF COMPLAINT AND REASON FOR REFERRAL (2.5 points) — 10 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1A.1
+	Patient age stated (62 years)
+	0.30
+	States 62 years
+	Age stated, imprecise
+	Omits
+	1A.2
+	Patient sex stated (male)
+	0.20
+	States male
+	—
+	Omits
+	1A.3
+	Visit type: initial collaborative practice management
+	0.40
+	States initial co-management
+	States visit, no type
+	Omits
+	1A.4
+	Setting: ambulatory care pharmacy clinic
+	0.30
+	Names clinic setting
+	—
+	Omits
+	1A.5
+	Referral source stated (primary care provider)
+	0.30
+	States PCP referral
+	Mentions referral, no source
+	Omits
+	1A.6
+	Managed condition: chronic kidney disease
+	0.30
+	States CKD
+	—
+	Omits
+	1A.7
+	Managed condition: type 2 diabetes mellitus
+	0.20
+	States type 2 diabetes
+	—
+	Omits
+	1A.8
+	Managed condition: hyperlipidemia
+	0.10
+	States hyperlipidemia
+	—
+	Omits
+	1A.9
+	Managed condition: hypertension
+	0.10
+	States hypertension
+	—
+	Omits
+	1A.10
+	Referral trigger: persistent kidney disease progression risk
+	0.30
+	States this trigger
+	—
+	Omits
+	1A sum check: 0.30 + 0.20 + 0.40 + 0.30 + 0.30 + 0.30 + 0.20 + 0.10 + 0.10 + 0.30 = 2.50
+1B. HISTORY OF PRESENT ILLNESS (HPI) (6.0 points) — 14 inputs, sum = 6.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1B.1
+	Reports feeling generally well
+	0.20
+	States generally well
+	—
+	Omits
+	1B.2
+	Reports mild fatigue
+	0.30
+	States mild fatigue
+	—
+	Omits
+	1B.3
+	Reports occasional nocturia
+	0.50
+	States occasional nocturia
+	—
+	Omits
+	1B.4
+	Remains active / works full-time
+	0.30
+	States active/works full-time
+	—
+	Omits
+	1B.5
+	Follows lab values closely / researches conditions online
+	0.50
+	States this engagement
+	—
+	Omits
+	1B.6
+	Understands kidney function declined but uncertain why still high risk
+	0.60
+	States this understanding/uncertainty
+	States one only
+	Omits
+	1B.7
+	Reports excellent adherence to current regimen
+	0.60
+	States excellent adherence
+	—
+	Omits
+	1B.8
+	Finerenone previously recommended but elected not to initiate
+	0.80
+	States prior decline of finerenone
+	States finerenone, no status
+	Omits
+	1B.9
+	Never fully understood why finerenone was recommended
+	0.60
+	States this knowledge gap
+	—
+	Omits
+	1B.10
+	Concern: hyperkalemia
+	0.40
+	Names hyperkalemia concern
+	—
+	Omits
+	1B.11
+	Concern: medication cost
+	0.40
+	Names cost concern
+	—
+	Omits
+	1B.12
+	Concern: increasing pill burden
+	0.40
+	Names pill-burden concern
+	—
+	Omits
+	1B.13
+	No recent hospitalizations
+	0.20
+	States no hospitalizations
+	—
+	Omits
+	1B.14
+	No recent emergency department visits
+	0.20
+	States no ED visits
+	—
+	Omits
+	1B sum check: 0.20 + 0.30 + 0.50 + 0.30 + 0.50 + 0.60 + 0.60 + 0.80 + 0.60 + 0.40 + 0.40 + 0.40 + 0.20 + 0.20 = 6.00
+1C. PAST MEDICAL, SURGICAL, AND FAMILY HISTORY (3.5 points) — 11 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1C.1
+	PMH: type 2 diabetes mellitus
+	0.30
+	Lists type 2 diabetes
+	—
+	Omits
+	1C.2
+	PMH: chronic kidney disease (G3bA3)
+	0.60
+	Lists CKD with G3bA3
+	Lists CKD, no stage
+	Omits
+	1C.3
+	PMH: hypertension
+	0.30
+	Lists hypertension
+	—
+	Omits
+	1C.4
+	PMH: hyperlipidemia
+	0.30
+	Lists hyperlipidemia
+	—
+	Omits
+	1C.5
+	PMH: obesity
+	0.30
+	Lists obesity
+	—
+	Omits
+	1C.6
+	PSH: no surgical history reported (documented)
+	0.10
+	Notes no surgical history
+	—
+	Omits
+	1C.7
+	Family history, father: myocardial infarction at age 58
+	0.50
+	States father MI at 58
+	States father MI, no age
+	Omits
+	1C.8
+	Family history, father: type 2 diabetes
+	0.20
+	Lists father type 2 diabetes
+	—
+	Omits
+	1C.9
+	Family history, mother: chronic kidney disease
+	0.40
+	States mother CKD
+	—
+	Omits
+	1C.10
+	Family history, mother: type 2 diabetes
+	0.20
+	Lists mother type 2 diabetes
+	—
+	Omits
+	1C.11
+	Family history, brother: coronary artery disease
+	0.30
+	States brother CAD
+	—
+	Omits
+	1C sum check: 0.30 + 0.60 + 0.30 + 0.30 + 0.30 + 0.10 + 0.50 + 0.20 + 0.40 + 0.20 + 0.30 = 3.50
+1D. SOCIAL HISTORY (2.5 points) — 7 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1D.1
+	Marital status (married)
+	0.20
+	States married
+	—
+	Omits
+	1D.2
+	Occupation (electrical engineer)
+	0.30
+	States occupation
+	—
+	Omits
+	1D.3
+	Tobacco status (never smoker)
+	0.40
+	States never smoker
+	States nonsmoker, no never/former
+	Omits
+	1D.4
+	Alcohol use (occasional)
+	0.30
+	States occasional alcohol use
+	—
+	Omits
+	1D.5
+	Recreational drug use (denies)
+	0.20
+	States denies drug use
+	—
+	Omits
+	1D.6
+	Physical activity (walks ~3 days per week)
+	0.50
+	States ~3 days/week
+	States active, no detail
+	Omits
+	1D.7
+	Attempts diabetic diet with occasional dietary lapses
+	0.60
+	States diet attempt + lapses
+	States diet only
+	Omits
+	1D sum check: 0.20 + 0.30 + 0.40 + 0.30 + 0.20 + 0.50 + 0.60 = 2.50
+1E. MEDICATIONS, MEDICATION HISTORY, ALLERGIES, AND IMMUNIZATIONS (5.5 points) — 23 inputs, sum = 5.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1E.1
+	Metformin ER listed
+	0.20
+	Names metformin ER
+	Names metformin, no formulation
+	Omits
+	1E.2
+	Metformin dose (1000 mg)
+	0.20
+	States 1000 mg
+	—
+	Incorrect
+	1E.3
+	Metformin regimen (PO BID)
+	0.20
+	States PO BID
+	States daily, wrong frequency
+	Omits
+	1E.4
+	Empagliflozin listed
+	0.20
+	Names empagliflozin
+	—
+	Omits
+	1E.5
+	Empagliflozin dose (25 mg)
+	0.20
+	States 25 mg
+	—
+	Incorrect
+	1E.6
+	Empagliflozin regimen (PO daily)
+	0.20
+	States PO daily
+	States daily, no route
+	Omits
+	1E.7
+	Lisinopril listed
+	0.20
+	Names lisinopril
+	—
+	Omits
+	1E.8
+	Lisinopril dose (20 mg)
+	0.20
+	States 20 mg
+	—
+	Incorrect
+	1E.9
+	Lisinopril regimen (PO daily)
+	0.10
+	States PO daily
+	—
+	Omits
+	1E.10
+	Rosuvastatin listed
+	0.20
+	Names rosuvastatin
+	—
+	Omits
+	1E.11
+	Rosuvastatin dose (20 mg)
+	0.20
+	States 20 mg
+	—
+	Incorrect
+	1E.12
+	Rosuvastatin regimen (PO daily)
+	0.10
+	States PO daily
+	—
+	Omits
+	1E.13
+	Amlodipine listed
+	0.20
+	Names amlodipine
+	—
+	Omits
+	1E.14
+	Amlodipine dose (5 mg)
+	0.10
+	States 5 mg
+	—
+	Incorrect
+	1E.15
+	Amlodipine regimen (PO daily)
+	0.10
+	States PO daily
+	—
+	Omits
+	1E.16
+	Medication history: finerenone previously recommended
+	0.40
+	States finerenone recommended
+	—
+	Omits
+	1E.17
+	Finerenone never initiated
+	0.30
+	States never initiated
+	—
+	Omits
+	1E.18
+	No known drug allergies documented
+	0.40
+	States NKDA
+	—
+	Omits
+	1E.19
+	Influenza vaccine up to date
+	0.20
+	States influenza up to date
+	—
+	Omits
+	1E.20
+	COVID-19 vaccination up to date
+	0.20
+	States COVID up to date
+	—
+	Omits
+	1E.21
+	Pneumococcal vaccination: none documented
+	0.40
+	States no documented pneumococcal
+	—
+	Omits
+	1E.22
+	Herpes zoster vaccination: none documented
+	0.40
+	States no documented zoster
+	—
+	Omits
+	1E.23
+	Tdap overdue
+	0.60
+	States Tdap overdue
+	States Tdap, no status
+	Omits
+	1E sum check: 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.20 + 0.10 + 0.20 + 0.20 + 0.10 + 0.20 + 0.10 + 0.10 + 0.40 + 0.30 + 0.40 + 0.20 + 0.20 + 0.40 + 0.40 + 0.60 = 5.50
+1F. REVIEW OF SYSTEMS / RELEVANT NEGATIVES (2.0 points) — 7 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1F.1
+	Denies chest pain
+	0.30
+	States denies chest pain
+	—
+	Omits
+	1F.2
+	Denies shortness of breath
+	0.30
+	States denies SOB
+	—
+	Omits
+	1F.3
+	Denies palpitations
+	0.30
+	States denies palpitations
+	—
+	Omits
+	1F.4
+	Denies syncope
+	0.30
+	States denies syncope
+	—
+	Omits
+	1F.5
+	Denies lower extremity edema
+	0.30
+	States denies LE edema
+	—
+	Omits
+	1F.6
+	Denies gross hematuria
+	0.25
+	States denies gross hematuria
+	—
+	Omits
+	1F.7
+	Denies significant urinary complaints
+	0.25
+	States denies urinary complaints
+	—
+	Omits
+	1F sum check: 0.30 + 0.30 + 0.30 + 0.30 + 0.30 + 0.25 + 0.25 = 2.00
+1G. PATIENT GOALS / CONCERNS (3.0 points) — 4 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1G.1
+	Concern about future kidney disease progression
+	0.70
+	States kidney progression concern
+	—
+	Omits
+	1G.2
+	Identifies dialysis as greatest health-related fear
+	0.90
+	States dialysis as greatest fear
+	States dialysis concern, not greatest
+	Omits
+	1G.3
+	Highly engaged in own care (follows labs, researches conditions)
+	0.60
+	States engagement
+	—
+	Omits
+	1G.4
+	Wants to understand why he remains high risk
+	0.80
+	States desire to understand risk
+	—
+	Omits
+	1G sum check: 0.70 + 0.90 + 0.60 + 0.80 = 3.00
+Section 1 check: 2.5 + 6.0 + 3.5 + 2.5 + 5.5 + 2.0 + 3.0 = 25.0
+SECTION 2: OBJECTIVE (15.0 points)
+2A. VITAL SIGNS AND ANTHROPOMETRICS (3.5 points) — 7 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2A.1
+	Office blood pressure value (138/82 mmHg)
+	0.60
+	States 138/82 mmHg
+	BP stated, value imprecise
+	Omits
+	2A.2
+	Repeat office blood pressure value (136/80 mmHg)
+	0.50
+	States 136/80 mmHg
+	Notes repeat, no value
+	Omits
+	2A.3
+	Heart rate (72 bpm)
+	0.40
+	States 72 bpm
+	—
+	Omits
+	2A.4
+	Weight (102 kg)
+	0.40
+	States 102 kg
+	—
+	Omits
+	2A.5
+	Height (70 inches)
+	0.30
+	States 70 inches
+	—
+	Omits
+	2A.6
+	Body mass index (32.3 kg/m2)
+	0.60
+	States 32.3 kg/m2
+	BMI stated, value imprecise
+	Omits
+	2A.7
+	Home blood pressure average (136/80 mmHg; maintains log)
+	0.70
+	States 136/80 + maintains log
+	States average only
+	Omits
+	2A sum check: 0.60 + 0.50 + 0.40 + 0.40 + 0.30 + 0.60 + 0.70 = 3.50
+2B. LABORATORY DATA (9.0 points) — 16 inputs, sum = 9.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2B.1
+	Sodium (138 mEq/L)
+	0.30
+	States 138 mEq/L
+	—
+	Omits
+	2B.2
+	Potassium (4.8 mEq/L)
+	0.80
+	States 4.8 mEq/L
+	—
+	Omits
+	2B.3
+	Serum creatinine (1.82 mg/dL)
+	0.60
+	States 1.82 mg/dL
+	—
+	Omits
+	2B.4
+	eGFR (42 mL/min/1.73m2)
+	1.10
+	States 42 mL/min/1.73m2
+	eGFR stated, value imprecise
+	Omits
+	2B.5
+	AST (24 U/L)
+	0.30
+	States 24 U/L
+	—
+	Omits
+	2B.6
+	ALT (22 U/L)
+	0.30
+	States 22 U/L
+	—
+	Omits
+	2B.7
+	Total cholesterol (172 mg/dL)
+	0.30
+	States 172 mg/dL
+	—
+	Omits
+	2B.8
+	LDL-C (88 mg/dL)
+	0.70
+	States 88 mg/dL
+	LDL stated, value imprecise
+	Omits
+	2B.9
+	HDL-C (43 mg/dL)
+	0.30
+	States 43 mg/dL
+	—
+	Omits
+	2B.10
+	Triglycerides (178 mg/dL)
+	0.30
+	States 178 mg/dL
+	—
+	Omits
+	2B.11
+	A1C (7.2%)
+	0.80
+	States 7.2%
+	A1C stated, value imprecise
+	Omits
+	2B.12
+	Fasting glucose (136 mg/dL)
+	0.40
+	States 136 mg/dL
+	—
+	Omits
+	2B.13
+	Current UACR (520 mg/g)
+	1.10
+	States 520 mg/g
+	Notes UACR, no value
+	Omits
+	2B.14
+	Previous UACR (505 mg/g)
+	0.40
+	States 505 mg/g
+	—
+	Omits
+	2B.15
+	Persistent severe albuminuria (505 to 520 mg/g)
+	0.50
+	States persistence with values
+	States persistent, no values
+	Omits
+	2B.16
+	10-year ASCVD risk estimate (22%)
+	0.80
+	States 22%
+	States elevated, no value
+	Omits
+	2B sum check: 0.30 + 0.80 + 0.60 + 1.10 + 0.30 + 0.30 + 0.30 + 0.70 + 0.30 + 0.30 + 0.80 + 0.40 + 1.10 + 0.40 + 0.50 + 0.80 = 9.00
+2C. CALCULATED VALUES AND INTERPRETATION (2.5 points) — 5 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2C.1
+	BMI value consistent with documented height and weight (32.3 kg/m2)
+	0.40
+	BMI consistent with ht/wt
+	BMI stated, not reconciled
+	Incorrect
+	2C.2
+	eGFR 42 consistent with CKD GFR category G3b
+	0.60
+	States G3b from eGFR
+	States CKD, no category
+	Incorrect
+	2C.3
+	UACR 520 consistent with A3 (severely increased albuminuria)
+	0.60
+	States A3 from UACR
+	States elevated, no category
+	Incorrect
+	2C.4
+	KDIGO classification G3bA3 (high/very-high risk)
+	0.50
+	States G3bA3 + risk category
+	Names one axis
+	Omits
+	2C.5
+	Potassium 4.8 relevant to finerenone candidacy / monitoring
+	0.40
+	Links K to finerenone decision
+	States K, no interpretation
+	Omits
+	2C sum check: 0.40 + 0.60 + 0.60 + 0.50 + 0.40 = 2.50
+Section 2 check: 3.5 + 9.0 + 2.5 = 15.0
+SECTION 3: ASSESSMENT (30.0 points)
+3A. PROBLEM 1 — CKD (G3bA3), HIGH RISK FOR PROGRESSION (7.0 points) — 14 inputs, sum = 7.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3A.1
+	Problem identified: CKD (G3bA3)
+	0.50
+	Names CKD with stage
+	Names CKD, no stage
+	Omits
+	3A.2
+	Status: high risk for progression
+	0.50
+	States high progression risk
+	—
+	Incorrect
+	3A.3
+	eGFR 42 supports G3b category
+	0.60
+	States G3b
+	States eGFR only
+	Omits
+	3A.4
+	UACR 520 confirms A3 (severely increased albuminuria)
+	0.60
+	States A3 category
+	States albuminuria, no category
+	Omits
+	3A.5
+	KDIGO classification G3bA3
+	0.60
+	States G3bA3
+	Names one axis
+	Omits
+	3A.6
+	Assigns significantly elevated / high-risk KDIGO category
+	0.50
+	States high-risk category
+	—
+	Omits
+	3A.7
+	Persistent severe albuminuria + reduced function drive progression risk
+	0.50
+	States combined risk
+	—
+	Omits
+	3A.8
+	Risk for cardiovascular events
+	0.40
+	States CV event risk
+	—
+	Omits
+	3A.9
+	Risk for kidney failure
+	0.40
+	States kidney failure risk
+	—
+	Omits
+	3A.10
+	Cites KDIGO 2024 CKD Guideline
+	0.40
+	Names KDIGO 2024
+	Cites guideline, no source
+	Omits
+	3A.11
+	Classifies CKD using both eGFR and albuminuria
+	0.50
+	States dual-axis classification
+	—
+	Omits
+	3A.12
+	Substantial residual risk despite ACE inhibitor + SGLT2 inhibitor
+	0.60
+	States residual risk on therapy
+	—
+	Omits
+	3A.13
+	Identifies need for additional kidney-protective therapy
+	0.40
+	States need for added therapy
+	—
+	Omits
+	3A.14
+	Notes opportunity to add nonsteroidal MRA finerenone (potassium permitting)
+	0.50
+	Names finerenone as addition
+	States add therapy, no agent
+	Omits
+	3A sum check: 0.50 + 0.50 + 0.60 + 0.60 + 0.60 + 0.50 + 0.50 + 0.40 + 0.40 + 0.40 + 0.50 + 0.60 + 0.40 + 0.50 = 7.00
+3B. PROBLEM 2 — T2DM WITH CKD, CONTROLLED BUT PERSISTENT CARDIORENAL RISK (4.0 points) — 8 inputs, sum = 4.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3B.1
+	Problem identified: type 2 diabetes with CKD
+	0.40
+	Names T2DM with CKD
+	Names T2DM only
+	Omits
+	3B.2
+	Status: reasonably controlled but persistent cardiorenal risk
+	0.50
+	States both control + residual risk
+	States one only
+	Incorrect
+	3B.3
+	Supports with A1C (7.2%)
+	0.50
+	References A1C 7.2%
+	—
+	Omits
+	3B.4
+	Reports adherence to metformin + empagliflozin; denies hypoglycemia
+	0.50
+	States both
+	States one
+	Omits
+	3B.5
+	Cites KDIGO 2024: diabetes management in CKD extends beyond glycemic control
+	0.60
+	States this point
+	—
+	Omits
+	3B.6
+	Glycemic control is acceptable
+	0.40
+	States acceptable control
+	—
+	Omits
+	3B.7
+	Persistent severe albuminuria = cardiorenal risk not addressed by glucose lowering alone
+	0.60
+	States this insight
+	—
+	Omits
+	3B.8
+	Treatment should prioritize kidney/CV risk-reducing therapies
+	0.50
+	States this prioritization
+	—
+	Omits
+	3B sum check: 0.40 + 0.50 + 0.50 + 0.50 + 0.60 + 0.40 + 0.60 + 0.50 = 4.00
+3C. PROBLEM 3 — PERSISTENT ALBUMINURIA DESPITE FOUNDATIONAL THERAPY (5.0 points) — 9 inputs, sum = 5.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3C.1
+	Problem identified: persistent albuminuria despite guideline-directed foundational therapy
+	0.60
+	Names the problem
+	—
+	Omits
+	3C.2
+	On ACE inhibitor (lisinopril) foundational therapy
+	0.50
+	Names ACEi foundational therapy
+	—
+	Omits
+	3C.3
+	On SGLT2 inhibitor (empagliflozin) foundational therapy
+	0.50
+	Names SGLT2 foundational therapy
+	—
+	Omits
+	3C.4
+	UACR remains significantly elevated (520 mg/g) despite therapy
+	0.60
+	States persistent elevation on therapy
+	States UACR only
+	Omits
+	3C.5
+	Cites KDIGO 2024: persistent albuminuria despite RAASi + SGLT2 warrants added therapy
+	0.70
+	States this recommendation
+	—
+	Omits
+	3C.6
+	Identifies finerenone (nonsteroidal MRA) as guideline-supported addition
+	0.70
+	Names finerenone specifically
+	States add therapy, no agent
+	Omits
+	3C.7
+	Notes potassium (4.8) permits finerenone consideration with monitoring
+	0.50
+	Links K to finerenone candidacy
+	—
+	Omits
+	3C.8
+	Further discussion regarding previously declined finerenone warranted
+	0.60
+	States this plan
+	—
+	Omits
+	3C.9
+	Frames as foundational therapy optimization
+	0.30
+	States optimization framing
+	—
+	Omits
+	3C sum check: 0.60 + 0.50 + 0.50 + 0.60 + 0.70 + 0.70 + 0.50 + 0.60 + 0.30 = 5.00
+3D. PROBLEM 4 — HYPERLIPIDEMIA / ELEVATED ASCVD RISK (3.5 points) — 8 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3D.1
+	Problem identified: hyperlipidemia / elevated ASCVD risk
+	0.40
+	Names the problem
+	—
+	Omits
+	3D.2
+	Documents 10-year ASCVD risk (22%)
+	0.50
+	States 22%
+	References risk, no value
+	Omits
+	3D.3
+	LDL-C 88 mg/dL on rosuvastatin 20 mg
+	0.50
+	States LDL on current statin
+	States LDL only
+	Omits
+	3D.4
+	Cites 2026 AHA/ACC: CKD + diabetes are risk-enhancing conditions
+	0.50
+	States this guideline point
+	—
+	Omits
+	3D.5
+	Lists elevated-risk factors (diabetes/CKD/HTN/obesity/family ASCVD/albuminuria)
+	0.50
+	Names >=3 factors
+	Names 1-2
+	Omits
+	3D.6
+	Characterizes as high / elevated cardiovascular risk
+	0.40
+	States elevated CV risk
+	—
+	Omits
+	3D.7
+	Ongoing lipid-lowering therapy remains appropriate
+	0.40
+	States continue lipid therapy
+	—
+	Omits
+	3D.8
+	Notes current LDL response on high-intensity statin
+	0.30
+	States statin response
+	—
+	Omits
+	3D sum check: 0.40 + 0.50 + 0.50 + 0.50 + 0.50 + 0.40 + 0.40 + 0.30 = 3.50
+3E. PROBLEM 5 — HYPERTENSION, ABOVE IDEAL GOAL (3.5 points) — 7 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3E.1
+	Problem identified: hypertension
+	0.40
+	Names hypertension
+	—
+	Omits
+	3E.2
+	Status: above ideal goal
+	0.50
+	States above ideal goal
+	—
+	Incorrect
+	3E.3
+	Documents office + home BP (~136/80 mmHg)
+	0.60
+	States values
+	States elevated, no value
+	Omits
+	3E.4
+	Cites KDIGO 2024: BP control reduces CKD progression / CV complications
+	0.60
+	States this guideline point
+	—
+	Omits
+	3E.5
+	Notes current regimen (lisinopril + amlodipine)
+	0.40
+	Names both agents
+	Names one
+	Omits
+	3E.6
+	Additional optimization reasonable after assessing priorities / preferences
+	0.60
+	States prioritized optimization
+	—
+	Omits
+	3E.7
+	Defers intensification pending prioritization
+	0.40
+	States deferral
+	—
+	Omits
+	3E sum check: 0.40 + 0.50 + 0.60 + 0.60 + 0.40 + 0.60 + 0.40 = 3.50
+3F. PROBLEM 6 — MEDICATION HESITANCY REGARDING ADDITIONAL KIDNEY-PROTECTIVE THERAPY (3.5 points) — 8 inputs, sum = 3.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3F.1
+	Problem identified: medication hesitancy re additional kidney-protective therapy
+	0.60
+	Names the problem
+	—
+	Omits
+	3F.2
+	Previously declined finerenone despite provider recommendation
+	0.50
+	States prior decline
+	—
+	Omits
+	3F.3
+	Contributor: incomplete understanding of rationale
+	0.50
+	Names understanding gap
+	—
+	Omits
+	3F.4
+	Contributor: hyperkalemia concerns
+	0.40
+	Names hyperkalemia concern
+	—
+	Omits
+	3F.5
+	Contributor: cost concerns
+	0.40
+	Names cost concern
+	—
+	Omits
+	3F.6
+	Contributor: medication burden concerns
+	0.40
+	Names pill-burden concern
+	—
+	Omits
+	3F.7
+	Frames as knowledge / shared decision-making opportunity, not nonadherence
+	0.40
+	States this framing
+	—
+	Omits
+	3F.8
+	Further discussion re benefits/risks/monitoring/priorities warranted
+	0.30
+	States discussion plan
+	—
+	Omits
+	3F sum check: 0.60 + 0.50 + 0.50 + 0.40 + 0.40 + 0.40 + 0.40 + 0.30 = 3.50
+3G. PROBLEM 7 — OBESITY (2.0 points) — 5 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3G.1
+	Problem identified: obesity
+	0.40
+	Names obesity
+	—
+	Omits
+	3G.2
+	Classifies BMI 32.3 kg/m2 as obesity (class I)
+	0.50
+	States class I obesity
+	States obese, no class
+	Omits
+	3G.3
+	Contributes to ongoing cardiovascular and kidney disease risk
+	0.50
+	Names both risks
+	Names one
+	Omits
+	3G.4
+	Cites guidelines emphasizing lifestyle/weight reduction (KDIGO 2024 + 2026 cholesterol)
+	0.30
+	Names >=1 guideline source
+	Mentions guidelines, no source
+	Omits
+	3G.5
+	Continued lifestyle interventions remain appropriate
+	0.30
+	States continued lifestyle
+	—
+	Omits
+	3G sum check: 0.40 + 0.50 + 0.50 + 0.30 + 0.30 = 2.00
+3H. PROBLEM 8 — PREVENTIVE CARE GAPS (1.5 points) — 4 inputs, sum = 1.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3H.1
+	Problem identified: preventive care gaps
+	0.40
+	Names preventive care gaps
+	—
+	Omits
+	3H.2
+	Pneumococcal vaccination gap
+	0.40
+	Names pneumococcal gap
+	—
+	Omits
+	3H.3
+	Herpes zoster (Shingrix) vaccination gap
+	0.30
+	Names zoster gap
+	—
+	Omits
+	3H.4
+	Tdap booster gap (overdue)
+	0.40
+	Names Tdap gap
+	—
+	Omits
+	3H sum check: 0.40 + 0.40 + 0.30 + 0.40 = 1.50
+Section 3 check: 7.0 + 4.0 + 5.0 + 3.5 + 3.5 + 3.5 + 2.0 + 1.5 = 30.0
+SECTION 4: PLAN (25.0 points)
+4A. CHRONIC KIDNEY DISEASE (5.5 points) — 7 inputs, sum = 5.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4A.1
+	Continue lisinopril 20 mg daily
+	0.70
+	States continue lisinopril 20 mg
+	States continue, no dose
+	Omits
+	4A.2
+	Continue empagliflozin 25 mg daily
+	0.70
+	States continue empagliflozin 25 mg
+	States continue, no dose
+	Omits
+	4A.3
+	Reinforce CKD education
+	0.60
+	States reinforce CKD education
+	—
+	Omits
+	4A.4
+	Discuss persistent albuminuria and residual kidney disease risk
+	0.80
+	States this discussion
+	—
+	Omits
+	4A.5
+	Discuss risks/benefits of finerenone via shared decision-making (acceptable: nonsteroidal MRA finerenone)
+	1.10
+	States finerenone discussion via SDM
+	States consider therapy, no agent
+	Omits
+	4A.6
+	Continue monitoring renal function and albuminuria
+	0.80
+	States renal + UACR monitoring
+	States one only
+	Omits
+	4A.7
+	Plan potassium monitoring if finerenone initiated
+	0.80
+	States potassium monitoring plan
+	—
+	Omits
+	4A sum check: 0.70 + 0.70 + 0.60 + 0.80 + 1.10 + 0.80 + 0.80 = 5.50
+4B. DIABETES (3.0 points) — 4 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4B.1
+	Continue metformin ER 1000 mg BID
+	0.80
+	States continue metformin BID
+	States continue, no dose/frequency
+	Omits
+	4B.2
+	Continue empagliflozin 25 mg daily
+	0.70
+	States continue empagliflozin 25 mg
+	States continue, no dose
+	Omits
+	4B.3
+	Continue lifestyle modifications
+	0.70
+	States continue lifestyle
+	—
+	Omits
+	4B.4
+	Repeat A1C per routine monitoring schedule
+	0.80
+	States repeat A1C
+	—
+	Omits
+	4B sum check: 0.80 + 0.70 + 0.70 + 0.80 = 3.00
+4C. HYPERLIPIDEMIA / ASCVD RISK REDUCTION (2.5 points) — 3 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4C.1
+	Continue rosuvastatin 20 mg daily
+	0.90
+	States continue rosuvastatin 20 mg
+	States continue, no dose
+	Omits
+	4C.2
+	Reinforce cardiovascular risk-reduction strategies
+	0.80
+	States CV risk-reduction reinforcement
+	—
+	Omits
+	4C.3
+	Continue lipid monitoring
+	0.80
+	States continue lipid monitoring
+	—
+	Omits
+	4C sum check: 0.90 + 0.80 + 0.80 = 2.50
+4D. HYPERTENSION (3.0 points) — 4 inputs, sum = 3.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4D.1
+	Continue lisinopril 20 mg daily
+	0.70
+	States continue lisinopril 20 mg
+	States continue, no dose
+	Omits
+	4D.2
+	Continue amlodipine 5 mg daily
+	0.80
+	States continue amlodipine 5 mg
+	States continue, no dose
+	Omits
+	4D.3
+	Continue home blood pressure monitoring
+	0.70
+	States continue HBPM
+	—
+	Omits
+	4D.4
+	Consider future BP optimization if indicated
+	0.80
+	States conditional optimization
+	—
+	Omits
+	4D sum check: 0.70 + 0.80 + 0.70 + 0.80 = 3.00
+4E. SHARED DECISION-MAKING / MEDICATION EDUCATION (4.5 points) — 5 inputs, sum = 4.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4E.1
+	Explore patient's concerns regarding finerenone
+	0.90
+	States exploring concerns
+	—
+	Omits
+	4E.2
+	Discuss hyperkalemia monitoring
+	0.90
+	States hyperkalemia monitoring discussion
+	—
+	Omits
+	4E.3
+	Discuss expected kidney and cardiovascular benefits
+	1.00
+	States benefit discussion
+	States benefits, one domain
+	Omits
+	4E.4
+	Discuss medication affordability and insurance coverage
+	0.90
+	States affordability discussion
+	—
+	Omits
+	4E.5
+	Address medication burden concerns
+	0.80
+	States burden discussion
+	—
+	Omits
+	4E sum check: 0.90 + 0.90 + 1.00 + 0.90 + 0.80 = 4.50
+4F. LIFESTYLE / WEIGHT MANAGEMENT (2.5 points) — 3 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4F.1
+	Continue walking program
+	0.80
+	States continue walking
+	—
+	Omits
+	4F.2
+	Encourage gradual weight reduction
+	0.80
+	States gradual weight reduction
+	—
+	Omits
+	4F.3
+	Reinforce diabetic dietary modifications
+	0.90
+	States dietary reinforcement
+	—
+	Omits
+	4F sum check: 0.80 + 0.80 + 0.90 = 2.50
+4G. PREVENTIVE CARE (1.5 points) — 3 inputs, sum = 1.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4G.1
+	Clarify pneumococcal vaccination status
+	0.50
+	States clarify pneumococcal
+	—
+	Omits
+	4G.2
+	Recommend Shingrix vaccination if appropriate
+	0.50
+	States Shingrix recommendation
+	—
+	Omits
+	4G.3
+	Recommend Tdap booster
+	0.50
+	States Tdap recommendation
+	—
+	Omits
+	4G sum check: 0.50 + 0.50 + 0.50 = 1.50
+4H. FOLLOW-UP AND MONITORING (2.5 points) — 7 inputs, sum = 2.5
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4H.1
+	Follow up in ~3 months
+	0.60
+	States 3-month follow-up
+	States follow-up, no timing
+	Omits
+	4H.2
+	Obtain repeat CMP before follow-up
+	0.30
+	States CMP before visit
+	—
+	Omits
+	4H.3
+	Obtain repeat UACR before follow-up
+	0.40
+	States UACR before visit
+	—
+	Omits
+	4H.4
+	Obtain repeat A1C before follow-up
+	0.30
+	States A1C before visit
+	—
+	Omits
+	4H.5
+	Obtain repeat lipid panel + BP log before follow-up
+	0.30
+	States lipids/BP before visit
+	—
+	Omits
+	4H.6
+	Reassess willingness to initiate additional kidney-protective therapy
+	0.40
+	States reassessment of finerenone willingness
+	—
+	Omits
+	4H.7
+	Continue monitoring CKD progression risk
+	0.20
+	States CKD monitoring
+	—
+	Omits
+	4H sum check: 0.60 + 0.30 + 0.40 + 0.30 + 0.30 + 0.40 + 0.20 = 2.50
+Section 4 check: 5.5 + 3.0 + 2.5 + 3.0 + 4.5 + 2.5 + 1.5 + 2.5 = 25.0
+SECTION 5: PRESENTATION QUALITY (5.0 points)
+5A. ORGANIZATION AND SOAP STRUCTURE (2.0 points) — 4 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5A.1
+	Uses four-part SOAP structure (S / O / A / P)
+	0.50
+	All four sections present and labeled
+	Some sections present
+	Absent
+	5A.2
+	Subjective and objective data placed in correct sections
+	0.50
+	Correctly partitioned
+	Minor misplacement
+	Major misplacement
+	5A.3
+	Assessment presents a prioritized, numbered problem list (CKD prioritized)
+	0.50
+	Numbered, prioritized list
+	Listed, not prioritized
+	Absent
+	5A.4
+	Each plan element maps to an assessed problem
+	0.50
+	All plan items mapped
+	Most mapped
+	Unmapped plan
+	5A sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+5B. FORMATTING AND DOCUMENTATION (2.0 points) — 4 inputs, sum = 2.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5B.1
+	Medications documented with drug, dose, route, and frequency
+	0.50
+	All four elements present
+	Missing one element
+	Largely incomplete
+	5B.2
+	Laboratory values reported with units
+	0.50
+	Units present throughout
+	Some units missing
+	Units absent
+	5B.3
+	Goals/targets stated with numeric thresholds
+	0.50
+	Numeric goals stated
+	Some numeric
+	Vague goals
+	5B.4
+	Documents CKD classification (G3bA3) and captures finerenone hesitancy as discrete problem
+	0.50
+	Both documented
+	Partially documented
+	Not documented
+	5B sum check: 0.50 + 0.50 + 0.50 + 0.50 = 2.00
+5C. PROFESSIONAL TONE AND SPECIFICITY (1.0 points) — 3 inputs, sum = 1.0
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5C.1
+	Objective, professional clinical language
+	0.40
+	Professional throughout
+	Minor lapses
+	Unprofessional
+	5C.2
+	Recommendations tied to guideline or clinical rationale
+	0.40
+	Rationale provided
+	Partial rationale
+	Absent
+	5C.3
+	Free of major factual or medication errors
+	0.20
+	No major errors
+	1 minor error
+	Major error
+	5C sum check: 0.40 + 0.40 + 0.20 = 1.00
+Section 5 check: 2.0 + 2.0 + 1.0 = 5.0
+GRAND TOTAL VERIFICATION
+§
+	Section
+	Subsections
+	Points
+	1
+	SUBJECTIVE
+	1A (2.5) + 1B (6.0) + 1C (3.5) + 1D (2.5) + 1E (5.5) + 1F (2.0) + 1G (3.0)
+	25.0
+	2
+	OBJECTIVE
+	2A (3.5) + 2B (9.0) + 2C (2.5)
+	15.0
+	3
+	ASSESSMENT
+	3A (7.0) + 3B (4.0) + 3C (5.0) + 3D (3.5) + 3E (3.5) + 3F (3.5) + 3G (2.0) + 3H (1.5)
+	30.0
+	4
+	PLAN
+	4A (5.5) + 4B (3.0) + 4C (2.5) + 4D (3.0) + 4E (4.5) + 4F (2.5) + 4G (1.5) + 4H (2.5)
+	25.0
+	5
+	PRESENTATION QUALITY
+	5A (2.0) + 5B (2.0) + 5C (1.0)
+	5.0
+	 
+	GRAND TOTAL
+	 
+	100.0
+	GRADING SCALE
+Grade
+	Range
+	Description
+	A
+	90.0–100.0
+	Exceptional — comprehensive, accurate, clinically actionable
+	B
+	80.0–89.9
+	Proficient — solid coverage with minor gaps
+	C
+	70.0–79.9
+	Developing — adequate but missing key elements
+	D
+	60.0–69.9
+	Below expectations — significant gaps in content or analysis
+	F
+	Below 60.0
+	Unsatisfactory — major deficiencies
+	TOTAL DISCRETE INPUTS ACROSS ALL SECTIONS
+Section
+	Subsections
+	# Inputs
+	1. SUBJECTIVE
+	1A–1G
+	76
+	2. OBJECTIVE
+	2A–2C
+	28
+	3. ASSESSMENT
+	3A–3H
+	63
+	4. PLAN
+	4A–4H
+	36
+	5. PRESENTATION QUALITY
+	5A–5C
+	11
+	TOTAL
+	 
+	214
+	MODEL ANSWER SCORE: 100.0 / 100.0
+The model answer (Patient C / David Chen — Tuesday Initial Visit gold-standard SOAP note) earns full credit on every one of the 214 discrete inputs. Any student submission is scored against this rubric by evaluating each of the 214 discrete inputs independently, awarding FULL, HALF, or ZERO credit per input, and summing to a final score out of 100.0.
+Source guidelines for therapeutic alternatives: KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of CKD; 2026 AHA/ACC Guideline for the Management of Blood Cholesterol; CDC Adult Immunization Schedule.
+
+

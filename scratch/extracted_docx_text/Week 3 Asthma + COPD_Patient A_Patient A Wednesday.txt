@@ -1,0 +1,2649 @@
+﻿SECTION 9: PATIENT A – WEDNESDAY 3-MONTH FOLLOW-UP
+Encounter Overview
+Encounter Type
+Ambulatory Care Pharmacist Follow-Up Visit
+Visit Length
+30-minute collaborative practice visit
+Week
+Week 3 – Wednesday
+Difficulty Level
+Intermediate APPE Student
+Primary Learning Objectives
+Students should be able to:
+Assess response to recently initiated SMART therapy
+Evaluate asthma control using GINA criteria
+Assess medication adherence
+Assess inhaler technique
+Differentiate treatment failure from technique-related issues
+Evaluate improvement in allergic rhinitis symptoms
+Reinforce appropriate asthma self-management
+Determine whether therapy escalation is necessary
+Construct a complete SOAP note
+Develop an appropriate monitoring and follow-up strategy
+1. Patient Snapshot
+Sarah Thompson is a 34-year-old White female presenting for a 3-month follow-up ambulatory care pharmacy visit after initiation of SMART therapy for uncontrolled asthma.
+At her initial visit, she demonstrated uncontrolled asthma characterized by frequent daytime symptoms, excessive rescue inhaler use, nighttime awakenings, and activity limitation.
+She was started on budesonide/formoterol SMART therapy and received asthma education.
+2. Chief Concern
+"My breathing is definitely better, but I still feel like I have symptoms sometimes."
+3. History of Present Illness
+Sarah is a 34-year-old female with asthma and allergic rhinitis presenting for a 3-month follow-up medication management visit.
+Since her last visit, she reports significant improvement in her breathing and overall asthma control.
+She reports:
+Less frequent wheezing
+Improved exercise tolerance
+Improved ability to participate in outdoor activities
+Reduced need for rescue medication
+Improvement in allergy symptoms
+She denies:
+Emergency department visits
+Hospitalizations
+Oral corticosteroid use
+Chest pain
+Syncope
+Fever
+Recent respiratory infections
+She reports occasional breakthrough symptoms but feels her asthma is substantially better than it was three months ago.
+She reports taking her inhaler as prescribed and denies difficulty obtaining medications.
+She reports using her nasal spray consistently since the previous visit.
+4. Past Medical History
+Asthma
+Diagnosed age 8
+Allergic Rhinitis
+Seasonal Allergies
+5. Medication List
+Budesonide/Formoterol 160/4.5 mcg Inhaler
+1 inhalation twice daily
+1 inhalation as needed for symptom relief
+Cetirizine 10 mg daily
+Fluticasone Nasal Spray
+1 spray each nostril daily
+6. Allergies
+Drug Allergies
+NKDA
+Food Allergies
+None
+7. Vitals
+Today's Vitals
+BP: 120/76 mmHg
+HR: 78 bpm
+RR: 16
+Temp: 98.1°F
+SpO₂: 99% on room air
+Weight: 75 kg
+Height: 5'5"
+BMI: 27.5 kg/m²
+8. Laboratory Data
+Pulmonary Function Testing
+Pre-Bronchodilator FEV1/FVC
+0.76
+Post-Bronchodilator Response
+FEV1 increase: 9%
+Absolute increase: 180 mL
+Asthma Control Test (ACT)
+Score: 21
+Interpretation
+Well-controlled asthma
+9. Immunizations
+Influenza
+Received this season
+COVID
+Completed primary series and most recent booster
+PCV20
+Not documented
+Tdap
+Last documented 11 years ago
+10. Social History
+Tobacco
+Never smoker
+Alcohol
+Occasional wine consumption
+Exercise
+Returned to occasional hiking
+Reports improved exercise tolerance
+Occupation
+Elementary school teacher
+Living Situation
+Lives with husband and two children
+11. Family History
+Mother
+Asthma
+Father
+Hypertension
+Brother
+Seasonal allergies
+12. Problem List
+Active Problems
+Asthma, improved on SMART therapy
+Occasional breakthrough symptoms
+Possible inhaler technique deficiencies
+Allergic rhinitis, improved
+Preventive care gaps
+13. Pharmacist Visit Notes
+Referral Reason
+Three-month follow-up after initiation of SMART therapy.
+Key Concerns
+Assess response to SMART therapy
+Assess asthma control
+Assess medication adherence
+Assess inhaler technique
+Determine whether therapy escalation is necessary
+Assess allergic rhinitis control
+Reinforce asthma education
+Assess preventive care gaps
+14. Follow-Up Tasks Expected From Student
+Students should consider:
+Asthma
+Assess symptom frequency
+Assess nighttime symptoms
+Assess reliever inhaler use
+Assess activity limitation
+Interpret ACT score
+Evaluate response to SMART therapy
+Determine whether asthma is controlled
+Medication Assessment
+Assess medication adherence
+Assess inhaler access
+Assess adverse effects
+Inhaler Technique
+Evaluate inhaler technique
+Identify technique deficiencies
+Provide corrective education
+Therapeutic Decision-Making
+Determine whether therapy escalation is necessary
+Differentiate treatment failure from implementation problems
+Continue guideline-directed therapy when appropriate
+Allergic Rhinitis
+Assess symptom improvement
+Reinforce adherence
+Continue appropriate therapy
+Preventive Care
+Assess vaccine eligibility
+Identify preventive care gaps
+Monitoring
+ACT monitoring
+Symptom monitoring
+Reliever use monitoring
+Exacerbation monitoring
+Adherence monitoring
+Technique monitoring
+Follow-Up
+Develop an appropriate follow-up plan
+Determine monitoring parameters moving forward
+
+SECTION 10: AI PATIENT Q&A GUIDE
+Patient A – Wednesday 3-Month Follow-Up
+Purpose
+This document serves as the AI patient behavior guide.
+Responses should sound like a real patient, not a clinician.
+The patient should not volunteer hidden information unless appropriately prompted.
+Reason for Visit
+Student:
+"What brings you in today?"
+Patient:
+"I'm here for my asthma follow-up."
+Student:
+"What are you hoping to get out of today's visit?"
+Patient:
+"I want to make sure things are going in the right direction."
+Symptoms
+Student:
+"How have you been feeling since your last visit?"
+Patient:
+"Definitely better."
+Student:
+"Can you tell me more?"
+Patient:
+"I'm not wheezing nearly as much and my breathing has improved."
+Student:
+"Do you still have asthma symptoms?"
+Patient:
+"Sometimes."
+Student:
+"How often?"
+Patient:
+"Not nearly as often as before."
+Asthma Symptoms
+Student:
+"How often are you having symptoms now?"
+Patient:
+"Maybe once or twice a week."
+Student:
+"How often are you using your inhaler for symptoms?"
+Patient:
+"About once or twice a week."
+Student:
+"Do symptoms wake you up at night?"
+Patient:
+"Not very often."
+Student:
+"How often?"
+Patient:
+"Maybe once or twice a month."
+Student:
+"Do symptoms limit your activities?"
+Patient:
+"Not like they used to."
+Student:
+"Can you tell me more?"
+Patient:
+"I've started hiking again and can keep up with my kids a lot better."
+Medication Use
+Student:
+"What medications are you taking now?"
+Patient:
+"The inhaler you started me on, cetirizine, and my nasal spray."
+Student:
+"How are you using the inhaler?"
+Patient:
+"One puff in the morning and one puff at night."
+Student:
+"What do you do when you have symptoms?"
+Patient:
+"I use the same inhaler."
+Student:
+"Have you missed any doses?"
+Patient:
+"Not really."
+Student:
+"How often?"
+Patient:
+"Maybe one or two doses since I started."
+Medication Adherence
+Student:
+"Have you had any trouble getting your medications?"
+Patient:
+"No."
+Student:
+"Any insurance or cost issues?"
+Patient:
+"No."
+Student:
+"Any side effects?"
+Patient:
+"No."
+Allergic Rhinitis
+Student:
+"How have your allergies been?"
+Patient:
+"Much better."
+Student:
+"What changed?"
+Patient:
+"I started using the nasal spray every day."
+Student:
+"Have your allergy symptoms improved?"
+Patient:
+"Definitely."
+Student:
+"What symptoms improved?"
+Patient:
+"The congestion and sneezing."
+Inhaler Technique (Hidden Information)
+DO NOT volunteer.
+Student:
+"Can you show me how you use your inhaler?"
+Patient:
+"Sure."
+If technique assessment is performed, reveal:
+Does not fully exhale before inhalation
+Does not hold breath after inhalation
+Student:
+"Has anyone reviewed inhaler technique since your last visit?"
+Patient:
+"No."
+Student:
+"Do you think you're using it correctly?"
+Patient:
+"I think so."
+Hospitalizations and Exacerbations
+Student:
+"Any emergency room visits?"
+Patient:
+"No."
+Student:
+"Any hospitalizations?"
+Patient:
+"No."
+Student:
+"Any oral steroid use?"
+Patient:
+"No."
+Student:
+"Any asthma attacks?"
+Patient:
+"No."
+Concerns About Treatment
+Student:
+"How do you feel about your current treatment?"
+Patient:
+"I think it's helping."
+Student:
+"Any concerns?"
+Patient:
+"No major concerns."
+Student:
+"Any concerns about steroids now?"
+Patient:
+"Not really. You explained it pretty well last time."
+Lifestyle and Triggers
+Student:
+"Have you noticed any triggers?"
+Patient:
+"My allergies still affect me sometimes."
+Student:
+"Anything else?"
+Patient:
+"Heavy exercise can still bother me occasionally."
+Patient Goals
+Student:
+"What health goal is most important to you right now?"
+Patient:
+"I'd like to keep improving."
+Student:
+"Anything else?"
+Patient:
+"I want to avoid going backwards."
+Patient Concerns
+Student:
+"What concerns you most?"
+Patient:
+"I just want to keep my asthma under control."
+Understanding of Asthma
+Student:
+"What do you know about your asthma treatment now?"
+Patient:
+"I understand a lot more than I did before."
+Student:
+"What do you think the inhaler is doing?"
+Patient:
+"It's helping prevent symptoms, not just treating them."
+Readiness to Change
+Student:
+"How motivated are you to keep following the plan?"
+Patient:
+"Very motivated."
+Follow-Up Preferences
+Student:
+"How do you prefer follow-up appointments?"
+Patient:
+"Either in person or by phone is fine."
+Hidden Information Summary for AI
+The AI should NEVER volunteer these without prompting:
+Inhaler technique remains suboptimal
+Patient does not fully exhale before inhalation
+Patient does not hold breath after inhalation
+Adherence is excellent
+No affordability concerns exist
+No significant adverse effects exist
+Allergic rhinitis has improved significantly
+No exacerbations have occurred since therapy initiation
+
+
+SECTION 10A: HIDDEN INFORMATION TRIGGER MAP
+Patient A – Wednesday 3-Month Follow-Up
+Hidden Fact #1: Inhaler Technique Error
+Information to Reveal
+Patient does not fully exhale before inhalation.
+Trigger Keywords
+inhaler technique, demonstrate inhaler use, inhaler assessment, administration technique
+Appropriate AI Response
+"I usually just put the inhaler in my mouth and take a breath in."
+Information Not Volunteered
+Patient believes her technique is correct.
+Hidden Fact #2: Inhaler Technique Error
+Information to Reveal
+Patient does not hold breath after inhalation.
+Trigger Keywords
+inhaler technique, administration steps, inhaler demonstration
+Appropriate AI Response
+"I usually breathe right back out afterwards."
+Information Not Volunteered
+Patient is unaware this is incorrect.
+Hidden Fact #3: Excellent Adherence
+Information to Reveal
+Patient rarely misses doses.
+Trigger Keywords
+adherence, missed doses, compliance, medication use
+Appropriate AI Response
+"Maybe one or two doses since I started."
+Information Not Volunteered
+Patient does not automatically discuss adherence.
+Hidden Fact #4: No Affordability Barriers
+Information to Reveal
+Patient has not experienced cost concerns.
+Trigger Keywords
+cost, affordability, insurance, medication access
+Appropriate AI Response
+"No, I haven't had any issues getting it."
+Information Not Volunteered
+Patient does not discuss costs unless asked.
+Hidden Fact #5: No Adverse Effects
+Information to Reveal
+Patient has tolerated therapy well.
+Trigger Keywords
+side effects, tolerability, adverse effects
+Appropriate AI Response
+"I haven't noticed any problems."
+Information Not Volunteered
+Patient only discusses this if asked.
+Hidden Fact #6: Improved Allergic Rhinitis
+Information to Reveal
+Daily fluticasone use improved allergy symptoms.
+Trigger Keywords
+allergies, congestion, sneezing, nasal spray
+Appropriate AI Response
+"My allergies are much better since I started using the nasal spray every day."
+Information Not Volunteered
+Patient does not automatically connect allergy improvement with asthma improvement.
+Hidden Fact #7: No Exacerbations
+Information to Reveal
+Patient has had no exacerbations since treatment initiation.
+Trigger Keywords
+asthma attacks, exacerbations, urgent care, ER visits, steroids
+Appropriate AI Response
+"No, I haven't had any problems like that."
+Information Not Volunteered
+Patient only reveals this if specifically assessed.
+
+
+SECTION 11: GOLD-STANDARD AMBULATORY CARE PHARMACIST SOAP NOTE
+Patient A – Wednesday 3-Month Follow-Up
+SUBJECTIVE
+CC:
+Sarah Thompson is a 34-year-old female presenting to the ambulatory care pharmacy clinic for a 3-month follow-up visit after initiation of SMART therapy for uncontrolled asthma.
+HPI:
+The patient reports significant improvement in her asthma symptoms since her previous visit.
+She reports substantially less wheezing, less shortness of breath, and improved exercise tolerance. She states she has resumed some outdoor activities and is better able to keep up with her children.
+The patient reports asthma symptoms approximately one to two times weekly and reports using her budesonide/formoterol inhaler for symptom relief approximately one to two times weekly.
+She reports nighttime symptoms approximately one to two times per month.
+The patient denies emergency department visits, hospitalizations, asthma exacerbations, or oral corticosteroid use since the previous visit.
+She reports taking her inhaler consistently and estimates missing only one or two doses since therapy initiation.
+The patient reports significant improvement in allergy symptoms and states she has been using her fluticasone nasal spray daily as instructed.
+Upon inhaler technique assessment, the patient demonstrates improper inhaler administration including failure to fully exhale before inhalation and failure to hold her breath following medication administration.
+She denies medication affordability concerns and denies adverse effects from therapy.
+Past Medical History
+Asthma diagnosed age 8
+Allergic rhinitis
+Seasonal allergies
+Past Surgical History
+None reported
+Family History
+Mother: asthma
+Father: hypertension
+Brother: seasonal allergies
+Social History
+Married
+Elementary school teacher
+Lives with husband and two children
+Never smoker
+Occasional alcohol use
+Denies recreational drug use
+Improved physical activity since previous visit
+Current Medications
+Budesonide/formoterol 160/4.5 mcg inhaler
+1 inhalation twice daily
+1 inhalation as needed for symptom relief
+Cetirizine 10 mg PO daily
+Fluticasone nasal spray
+1 spray each nostril daily
+Allergies
+No known drug allergies
+Immunization History
+Influenza vaccine up to date
+COVID vaccination up to date
+No documented pneumococcal vaccination
+Tdap overdue
+OBJECTIVE
+Vitals
+BP: 120/76 mmHg
+HR: 78 bpm
+RR: 16 bpm
+Weight: 75 kg
+Height: 65 inches
+BMI: 27.5 kg/m²
+SpO₂: 99% on room air
+Pulmonary Function Testing
+Pre-Bronchodilator FEV1/FVC: 0.76
+Post-Bronchodilator FEV1 Improvement: 9%
+Absolute FEV1 Improvement: 180 mL
+Asthma Control Test (ACT) Score: 21
+Interpretation: Well-Controlled Asthma
+ASSESSMENT
+Asthma – Improved / Near Goal
+The patient demonstrates substantial improvement in asthma control following initiation of SMART therapy. Improvements include reduced symptom frequency, markedly reduced reliever use, decreased nighttime awakenings, improved activity tolerance, and improvement in ACT score from 16 to 21.
+The patient has experienced no exacerbations, no oral corticosteroid use, and no asthma-related urgent care visits since therapy initiation.
+According to GINA 2026, assessment of treatment response should include symptom control, reliever use, exacerbation history, adherence, and inhaler technique. While the patient reports occasional residual symptoms, overall control has improved significantly and current therapy appears effective.
+At this time, there is insufficient evidence to justify pharmacologic escalation.
+Inhaler Technique Deficiency
+The patient demonstrates improper inhaler technique including failure to fully exhale before inhalation and failure to hold her breath after inhalation.
+These technique deficiencies may contribute to residual symptoms despite otherwise successful treatment.
+This represents an implementation issue rather than medication failure.
+Correction of inhaler technique should occur before consideration of treatment escalation.
+Allergic Rhinitis – Improved
+The patient reports significant improvement in allergic rhinitis symptoms after initiating consistent daily use of intranasal corticosteroid therapy.
+Improved control of upper airway symptoms may be contributing to improved asthma outcomes.
+Current therapy appears effective and well tolerated.
+Asthma Self-Management – Improved
+The patient demonstrates improved understanding of asthma management and can appropriately describe the purpose of maintenance therapy.
+She reports good adherence and demonstrates increased engagement in self-management behaviors.
+Continued education and reinforcement remain appropriate.
+Preventive Care Gaps
+Potential preventive care gaps include:
+Pneumococcal vaccination
+Tdap booster
+Preventive care optimization remains appropriate.
+PLAN
+Asthma
+Continue budesonide/formoterol 160/4.5 mcg inhaler
+Continue 1 inhalation twice daily
+Continue 1 inhalation as needed for symptom relief
+Do not escalate therapy at this time
+Inhaler Technique
+Review inhaler technique in detail
+Demonstrate proper administration
+Instruct patient to fully exhale before inhalation
+Instruct patient to hold breath following inhalation
+Utilize teach-back technique
+Reassess technique at next visit
+Allergic Rhinitis
+Continue cetirizine 10 mg PO daily
+Continue fluticasone nasal spray daily
+Reinforce adherence
+Continue allergen avoidance strategies
+Patient Education
+Reinforce controller versus reliever concepts
+Review SMART therapy
+Reinforce importance of adherence
+Review trigger avoidance
+Encourage ongoing symptom monitoring
+Monitoring
+Monitor:
+ACT score
+Symptom frequency
+Reliever use
+Nighttime awakenings
+Exacerbations
+Inhaler technique
+Medication adherence
+Allergic rhinitis symptoms
+Preventive Care
+Recommend pneumococcal vaccination if indicated
+Recommend Tdap booster
+Follow-Up
+Follow up in approximately 3 months
+Reassess asthma control
+Reassess inhaler technique
+Reassess symptom burden
+Evaluate need for future therapy adjustment if control worsens
+
+SECTION 12: ACCEPTABLE ALTERNATIVE ANSWERS
+Patient A – Wednesday 3-Month Follow-Up
+The purpose of this section is to help the AI grader distinguish between:
+Preferred recommendations
+Guideline-supported alternatives
+Patient-centered approaches
+Unsafe recommendations
+Students should not be penalized for selecting a different treatment strategy if their approach appropriately addresses the patient's asthma control and remains guideline supported.
+Asthma Management
+Preferred Answer
+Recognize significant improvement in asthma control
+Identify ACT improvement from 16 to 21
+Recognize reduction in symptom frequency
+Recognize reduction in reliever use
+Identify absence of exacerbations
+Continue current SMART therapy
+Avoid unnecessary therapy escalation
+Focus on inhaler technique correction
+Rationale
+The patient demonstrates:
+Improved ACT score
+Reduced reliever use
+Improved activity tolerance
+Improved nighttime symptoms
+No exacerbations
+Good adherence
+According to GINA 2026:
+Therapy should not be escalated solely because mild residual symptoms remain
+Adherence and inhaler technique should be assessed before treatment escalation
+Acceptable Alternative #1
+Continue current SMART therapy
+Schedule earlier follow-up after inhaler technique correction
+Acceptable Because
+Addresses implementation issue
+Provides close monitoring
+Student Must
+Identify inhaler technique deficiencies
+Provide education
+Establish follow-up plan
+Acceptable Alternative #2
+Continue current therapy
+Increase emphasis on self-monitoring and asthma action plan
+Acceptable Because
+Asthma control has improved substantially
+Supports long-term disease management
+Acceptable Alternative #3
+Consider future step-up therapy only if symptoms persist after technique correction
+Acceptable Because
+Demonstrates understanding of escalation criteria
+Student Must
+Correct inhaler technique first
+Reassess response before escalating
+Unacceptable Answers
+Unsafe
+Escalate to higher-dose therapy immediately
+Rationale
+Evidence of treatment failure is lacking
+Technique deficiencies have not been addressed
+Unsafe
+Add additional controller medications
+Rationale
+Current regimen appears effective
+Unsafe
+Refer for biologic therapy
+Rationale
+Patient does not meet criteria for severe uncontrolled asthma
+Unsafe
+Discontinue SMART therapy
+Rationale
+Current regimen is improving disease control
+Inhaler Technique Assessment
+Preferred Answer
+Student identifies:
+Failure to fully exhale before inhalation
+Failure to hold breath after inhalation
+Need for technique education
+Rationale
+Technique deficiencies may reduce medication delivery and contribute to residual symptoms.
+Acceptable Alternative
+Request in-office inhaler demonstration
+Utilize teach-back technique
+Acceptable Because
+Confirms actual inhaler use
+Improves educational value
+Unacceptable Answers
+Unsafe
+Assume inhaler technique is correct
+Unsafe
+Escalate therapy without evaluating technique
+Medication Adherence
+Preferred Answer
+Student identifies:
+Excellent adherence
+Minimal missed doses
+No access barriers
+No affordability concerns
+Rationale
+Implementation barriers should be ruled out before making treatment changes.
+Acceptable Alternative
+Utilize refill history to confirm adherence
+Acceptable Because
+Provides objective adherence assessment
+Unacceptable Answers
+Unsafe
+Assume poor adherence without assessment
+Unsafe
+Ignore adherence assessment
+Allergic Rhinitis Management
+Preferred Answer
+Recognize symptom improvement
+Continue current therapy
+Reinforce daily fluticasone use
+Rationale
+Improved rhinitis control may contribute to improved asthma outcomes.
+Acceptable Alternative
+Reinforce allergen avoidance measures
+Acceptable Because
+Supports long-term symptom control
+Unacceptable Answers
+Unsafe
+Discontinue effective therapy
+Unsafe
+Ignore allergic rhinitis management
+Patient Education
+Preferred Answer
+Reinforce:
+Proper inhaler technique
+Importance of adherence
+SMART therapy use
+Trigger management
+Asthma action plan
+Rationale
+Education remains essential even when symptoms improve.
+Acceptable Alternative
+Provide written educational materials
+Acceptable Because
+Reinforces counseling
+Unacceptable Answers
+Unsafe
+Provide no education
+Unsafe
+Assume previous counseling is sufficient
+Preventive Care
+Preferred Answer
+Identify:
+Pneumococcal vaccine gap
+Tdap booster gap
+
+SECTION 13: CRITICAL MISSES
+Patient A – Wednesday 3-Month Follow-Up
+These errors should result in major point deductions.
+Critical Miss #1
+Error
+Failed to recognize improvement in asthma control
+Rationale
+The patient demonstrates:
+Improved ACT score
+Reduced reliever use
+Improved symptoms
+Improved activity tolerance
+Critical Miss #2
+Error
+Failed to assess inhaler technique
+Rationale
+Technique deficiency is the primary hidden learning objective
+Critical Miss #3
+Error
+Failed to identify inhaler technique deficiencies
+Rationale
+The patient demonstrates:
+Incomplete exhalation before inhalation
+Failure to hold breath after inhalation
+Critical Miss #4
+Error
+Escalated therapy without assessing technique
+Rationale
+Technique correction should occur before medication escalation
+Critical Miss #5
+Error
+Incorrectly classified current therapy as ineffective
+Rationale
+Significant clinical improvement has occurred
+Critical Miss #6
+Error
+Failed to assess medication adherence
+Rationale
+Adherence should be evaluated before changing therapy
+Critical Miss #7
+Error
+Failed to recognize absence of exacerbations
+Rationale
+No exacerbations have occurred since treatment initiation
+Critical Miss #8
+Error
+Failed to reinforce inhaler education
+Rationale
+Education remains a major pharmacist responsibility
+Critical Miss #9
+Error
+Failed to reassess allergic rhinitis
+Rationale
+Improvement in rhinitis contributed to overall success
+Critical Miss #10
+Error
+Failed to provide monitoring plan
+Rationale
+Students should monitor:
+ACT score
+Symptoms
+Reliever use
+Technique
+Adherence
+Exacerbations
+Critical Miss #11
+Error
+Failed to provide follow-up plan
+Rationale
+Longitudinal reassessment is required
+Critical Miss #12
+Error
+Failed to identify preventive care gaps
+Rationale
+Potential gaps include:
+Pneumococcal vaccination
+Tdap booster
+High-Priority Patient A Learning Objectives
+Improved symptoms do not automatically require treatment changes
+Inhaler technique must be assessed before escalation
+Implementation problems can mimic treatment failure
+Asthma management requires ongoing monitoring
+Pharmacists play a critical role in inhaler education
+Appropriate therapy changes require complete patient assessment
+
+
+SECTION 14: TEACHING GUIDE
+Patient A – Wednesday 3-Month Follow-Up
+What The Student Should Have Done Well
+The student should have:
+Recognized improved asthma control
+Interpreted ACT improvement
+Assessed symptom burden
+Assessed reliever use
+Assessed adherence
+Assessed inhaler technique
+Identified technique deficiencies
+Continued SMART therapy appropriately
+Reinforced asthma education
+Developed a monitoring strategy
+Common Student Mistakes
+Mistake #1
+Assuming any remaining symptoms require escalation.
+Teaching Point
+Improvement should be evaluated before escalating therapy.
+Students should consider:
+Adherence
+Technique
+Exacerbation history
+Symptom trends
+Mistake #2
+Failing to assess inhaler technique.
+Teaching Point
+Technique assessment should be routine during asthma follow-up visits.
+Mistake #3
+Confusing implementation problems with treatment failure.
+Teaching Point
+Medication effectiveness cannot be accurately assessed if administration is incorrect.
+Mistake #4
+Focusing only on ACT score.
+Teaching Point
+Asthma assessment should include:
+Symptoms
+Reliever use
+Activity limitation
+Exacerbations
+Technique
+Adherence
+Mistake #5
+Ignoring improvement in allergic rhinitis.
+Teaching Point
+Upper airway disease often affects asthma outcomes.
+Teaching Pearls
+Pearl #1
+The first question should not always be "What medication should I add?"
+Expected Discussion
+Many asthma problems are related to implementation rather than medication selection.
+Pearl #2
+Inhaler technique should be reassessed regularly.
+Expected Discussion
+Errors can develop over time.
+Many patients unknowingly use inhalers incorrectly.
+Pearl #3
+Clinical improvement matters.
+Expected Discussion
+Compare current status with baseline.
+Evaluate trends rather than isolated findings.
+Pearl #4
+Good adherence should be recognized.
+Expected Discussion
+Positive reinforcement supports long-term success.
+Pearl #5
+Not every asthma patient with residual symptoms needs more medication.
+Expected Discussion
+Escalation should be reserved for patients who remain uncontrolled despite optimized implementation.
+Follow-Up Questions
+Question 1
+"What evidence suggests the current regimen is working?"
+Expected Discussion
+ACT improvement
+Reduced reliever use
+Improved activity tolerance
+Reduced nighttime symptoms
+No exacerbations
+Question 2
+"Why should inhaler technique be assessed before escalation?"
+Expected Discussion
+Poor technique can reduce medication delivery
+Apparent treatment failure may actually be an implementation issue
+Question 3
+"What inhaler technique errors were identified?"
+Expected Discussion
+Failure to fully exhale before inhalation
+Failure to hold breath after inhalation
+Question 4
+"Why is escalation not appropriate at this time?"
+Expected Discussion
+Significant improvement has occurred
+Technique deficiencies remain uncorrected
+No exacerbations have occurred
+Question 5
+"What monitoring is needed moving forward?"
+Expected Discussion
+ACT score
+Symptom frequency
+Reliever use
+Adherence
+Technique
+Exacerbations
+Question 6
+"How has allergic rhinitis affected this case?"
+Expected Discussion
+Improved allergy control likely contributed to improved asthma control
+Comorbid conditions should be reassessed during follow-up
+How The Student Can Improve Before Thursday
+Before the next encounter, students should be able to:
+Evaluate long-term asthma control
+Assess exacerbation risk
+Interpret changes in symptoms over time
+Determine when escalation is truly warranted
+Apply longitudinal asthma management principles
+Differentiate isolated events from sustained loss of control
+
+
+
+SOAP NOTE GRADING RUBRIC
+Patient A – Wednesday 3-Month Follow-Up  |  Asthma / GINA 2025–2026
+[FOR AI PRECEPTOR CALIBRATION ONLY — NOT FOR STUDENT DISTRIBUTION]
+PURPOSE
+This rubric is the authoritative grading instrument for the Patient A Wednesday 3-Month Follow-Up SOAP note in the ambulatory care pharmacy clerkship. It was constructed backward from the gold-standard model answer: a student who reproduces the model note exactly will earn 100.0 / 100.0. All scorable elements are atomic, objective, and binary. No subjective language (e.g., "adequately," "appropriately," "correctly," "thoroughly") appears in any criterion. Therapeutic alternatives are enumerated from the GINA 2025–2026 guidelines only.
+SCORING RULES
+FULL CREDIT: Student response matches all required elements as specified in the Full Credit column.
+HALF CREDIT: Student response is partially correct as specified in the Half Credit column. Half-credit values are rounded to the nearest 0.05.
+ZERO CREDIT: Student response omits, is incorrect, or contradicts the required element.
+Scoring is additive. Award each item independently.
+Where the Half Credit column shows "—", only full or zero credit is awarded.
+ 
+SECTION 1 — SUBJECTIVE  [25 pts]
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1A  CHIEF COMPLAINT / REASON FOR VISIT  [2.5 pts]
+	1A.1
+	Patient name stated (Sarah Thompson)
+	0.30
+	States Sarah Thompson
+	—
+	Omits
+	1A.2
+	Patient age stated (34 years)
+	0.25
+	States 34 years
+	—
+	Omits
+	1A.3
+	Patient sex stated (female)
+	0.25
+	States female
+	—
+	Omits
+	1A.4
+	Encounter setting stated (ambulatory care pharmacy clinic)
+	0.25
+	Names ambulatory care pharmacy clinic
+	Names clinic, no specialty
+	Omits
+	1A.5
+	Encounter type stated (3-month follow-up)
+	0.35
+	States 3-month follow-up
+	States follow-up, no interval
+	Omits
+	1A.6
+	Reason for visit: follow-up after asthma therapy initiation
+	0.35
+	States follow-up after asthma therapy initiation
+	States follow-up, no condition
+	Omits
+	1A.7
+	Prior therapy identified: SMART therapy
+	0.45
+	Names SMART therapy
+	Names inhaler only, no SMART label
+	Omits
+	1A.8
+	Prior condition context: uncontrolled asthma (status at time of initiation)
+	0.30
+	States uncontrolled asthma as prior status
+	States asthma only
+	Omits
+	Subsection 1A subtotal  ►  2.5 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1B  HISTORY OF PRESENT ILLNESS (HPI)  [5.5 pts]
+	1B.1
+	Reports significant improvement in asthma symptoms overall
+	0.30
+	States significant improvement in asthma symptoms
+	States improvement, no qualifier
+	Omits
+	1B.2
+	Less wheezing since previous visit
+	0.20
+	States less wheezing
+	—
+	Omits
+	1B.3
+	Less shortness of breath since previous visit
+	0.20
+	States less shortness of breath
+	—
+	Omits
+	1B.4
+	Improved exercise tolerance since previous visit
+	0.20
+	States improved exercise tolerance
+	—
+	Omits
+	1B.5
+	Resumed outdoor activities since previous visit
+	0.20
+	States resumed outdoor activities
+	—
+	Omits
+	1B.6
+	Better able to keep up with children since previous visit
+	0.20
+	States better able to keep up with children
+	—
+	Omits
+	1B.7
+	Current daytime symptom frequency: approximately 1-2 times weekly
+	0.45
+	States 1-2 times weekly
+	States occasional, no frequency
+	Omits
+	1B.8
+	Reliever use frequency: approximately 1-2 times weekly (budesonide/formoterol)
+	0.45
+	States uses budesonide/formoterol for relief 1-2 times weekly
+	States uses reliever, no frequency
+	Omits
+	1B.9
+	Nighttime symptom frequency: approximately 1-2 times per month
+	0.45
+	States nighttime symptoms 1-2 times per month
+	States nighttime symptoms, no frequency
+	Omits
+	1B.10
+	Denies ED visits since previous visit
+	0.30
+	States denies ED visits
+	—
+	Omits
+	1B.11
+	Denies hospitalizations since previous visit
+	0.20
+	States denies hospitalizations
+	—
+	Omits
+	1B.12
+	Denies asthma exacerbations since previous visit
+	0.30
+	States denies exacerbations
+	—
+	Omits
+	1B.13
+	Denies oral corticosteroid use since previous visit
+	0.30
+	States denies OCS use
+	—
+	Omits
+	1B.14
+	Reports consistent inhaler use
+	0.25
+	States consistent inhaler use
+	—
+	Omits
+	1B.15
+	Estimates missing only 1-2 doses since therapy initiation
+	0.30
+	States missed only 1-2 doses total
+	States mostly adherent, no quantity
+	Omits
+	1B.16
+	Allergic rhinitis: significant improvement using daily fluticasone nasal spray
+	0.25
+	States significant allergy improvement with daily fluticasone nasal spray
+	States improved, no medication link
+	Omits
+	1B.17
+	Inhaler technique error observed: failure to fully exhale before inhalation
+	0.30
+	States failure to fully exhale before inhalation
+	States technique error, unspecified
+	Omits
+	1B.18
+	Inhaler technique error observed: failure to hold breath after inhalation
+	0.30
+	States failure to hold breath after inhalation
+	States technique error, unspecified
+	Omits
+	1B.19
+	Denies medication affordability concerns
+	0.15
+	States denies affordability concerns
+	—
+	Omits
+	1B.20
+	Denies adverse effects from therapy
+	0.20
+	States denies adverse effects
+	—
+	Omits
+	Subsection 1B subtotal  ►  5.5 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1C  PAST MEDICAL, SURGICAL, AND FAMILY HISTORY  [3 pts]
+	1C.1
+	PMH: asthma
+	0.25
+	Lists asthma
+	—
+	Omits
+	1C.2
+	Asthma onset age: diagnosed age 8
+	0.30
+	States diagnosed at age 8
+	States childhood onset, no age
+	Omits
+	1C.3
+	PMH: allergic rhinitis
+	0.25
+	Lists allergic rhinitis
+	—
+	Omits
+	1C.4
+	PMH: seasonal allergies
+	0.25
+	Lists seasonal allergies
+	—
+	Omits
+	1C.5
+	PSH: none reported
+	0.20
+	States no surgical history
+	—
+	Omits
+	1C.6
+	Family history, mother: asthma
+	0.40
+	States mother has asthma
+	—
+	Omits
+	1C.7
+	Family history, father: hypertension
+	0.35
+	States father has hypertension
+	—
+	Omits
+	1C.8
+	Family history, brother: seasonal allergies
+	0.35
+	States brother has seasonal allergies
+	—
+	Omits
+	1C.9
+	Documents all three family members (mother, father, brother)
+	0.30
+	Documents all three family members
+	Documents 2 of 3
+	Omits
+	1C.10
+	Maternal asthma history noted as relevant to patient's atopic phenotype
+	0.30
+	Notes maternal asthma as atopic risk factor
+	—
+	Omits
+	1C.11
+	No additional PMH beyond the three listed conditions
+	0.05
+	States no other PMH
+	—
+	Omits
+	Subsection 1C subtotal  ►  3 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1D  SOCIAL HISTORY  [2.5 pts]
+	1D.1
+	Marital status: married
+	0.20
+	States married
+	—
+	Omits
+	1D.2
+	Household: lives with husband and two children
+	0.30
+	States lives with husband and two children
+	States lives with family, no detail
+	Omits
+	1D.3
+	Occupation: elementary school teacher
+	0.35
+	States elementary school teacher
+	States teacher, no school level
+	Omits
+	1D.4
+	Tobacco status: never smoker
+	0.45
+	States never smoker
+	States nonsmoker without 'never'
+	Omits
+	1D.5
+	Alcohol use: occasional
+	0.25
+	States occasional alcohol use
+	—
+	Omits
+	1D.6
+	Recreational drug use: denies
+	0.25
+	States denies recreational drug use
+	—
+	Omits
+	1D.7
+	Physical activity: improved since previous visit
+	0.30
+	States improved physical activity since prior visit
+	States active, no improvement noted
+	Omits
+	1D.8
+	Functional improvement: resumed outdoor activities as marker of progress
+	0.20
+	States resumed outdoor activities as functional improvement marker
+	—
+	Omits
+	1D.9
+	Household context: two children relevant to viral trigger exposure risk
+	0.20
+	Notes household with children as context relevant to asthma
+	—
+	Omits
+	Subsection 1D subtotal  ►  2.5 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1E  MEDICATIONS, ALLERGIES, AND IMMUNIZATIONS  [6 pts]
+	1E.1
+	Budesonide/formoterol listed (both drug components named)
+	0.40
+	Names budesonide/formoterol
+	Names one component only
+	Omits
+	1E.2
+	Budesonide/formoterol dose (160/4.5 mcg)
+	0.40
+	States 160/4.5 mcg
+	States dose, imprecise
+	Incorrect
+	1E.3
+	Maintenance regimen: 1 inhalation twice daily
+	0.30
+	States 1 inhalation twice daily
+	States twice daily, no inhalation count
+	Omits
+	1E.4
+	Reliever regimen: 1 inhalation as needed
+	0.30
+	States 1 inhalation as needed
+	States PRN, no count
+	Omits
+	1E.5
+	SMART therapy designation applied (maintenance + reliever roles of same inhaler)
+	0.40
+	Labels as SMART therapy with dual maintenance and reliever roles
+	Names SMART, no dual-role detail
+	Omits
+	1E.6
+	Cetirizine listed
+	0.40
+	Names cetirizine
+	—
+	Omits
+	1E.7
+	Cetirizine dose: 10 mg
+	0.30
+	States 10 mg
+	—
+	Incorrect
+	1E.8
+	Cetirizine route and frequency: PO daily
+	0.30
+	States PO daily
+	States daily, no route
+	Omits
+	1E.9
+	Fluticasone nasal spray listed
+	0.40
+	Names fluticasone nasal spray
+	Names fluticasone, no formulation
+	Omits
+	1E.10
+	Fluticasone nasal spray regimen: 1 spray each nostril daily
+	0.40
+	States 1 spray each nostril daily
+	States daily nasal spray, no spray count
+	Omits
+	1E.11
+	No known drug allergies (NKDA)
+	0.40
+	States NKDA
+	—
+	Omits
+	1E.12
+	Influenza vaccine: up to date
+	0.30
+	States influenza vaccine up to date
+	States influenza vaccine, no status
+	Omits
+	1E.13
+	COVID vaccination: up to date
+	0.30
+	States COVID vaccination up to date
+	—
+	Omits
+	1E.14
+	Pneumococcal vaccination: no documented vaccination
+	0.40
+	States no documented pneumococcal vaccination
+	—
+	Omits
+	1E.15
+	Tdap: overdue
+	0.40
+	States Tdap overdue
+	States Tdap, no overdue status
+	Omits
+	1E.16
+	No additional medications listed beyond three current medications
+	0.30
+	States no other medications
+	—
+	Omits
+	1E.17
+	All four immunization statuses documented (influenza, COVID, pneumococcal, Tdap)
+	0.30
+	Documents all four immunization statuses
+	Documents 3 of 4
+	Omits
+	Subsection 1E subtotal  ►  6 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1F  REVIEW OF SYSTEMS / RELEVANT NEGATIVES  [2.5 pts]
+	1F.1
+	Denies ED visits since therapy initiation
+	0.30
+	States denies ED visits
+	—
+	Omits
+	1F.2
+	Denies hospitalizations since therapy initiation
+	0.30
+	States denies hospitalizations
+	—
+	Omits
+	1F.3
+	Denies asthma exacerbations since therapy initiation
+	0.30
+	States denies exacerbations
+	—
+	Omits
+	1F.4
+	Denies oral corticosteroid use since therapy initiation
+	0.25
+	States denies OCS use
+	—
+	Omits
+	1F.5
+	Denies adverse medication effects
+	0.25
+	States denies adverse effects
+	—
+	Omits
+	1F.6
+	Denies medication affordability concerns
+	0.25
+	States denies affordability concerns
+	—
+	Omits
+	1F.7
+	Reports improved physical activity (positive functional change)
+	0.25
+	States improved physical activity
+	—
+	Omits
+	1F.8
+	Reports improvement in allergic rhinitis symptoms (positive finding)
+	0.25
+	States improved allergy symptoms
+	—
+	Omits
+	1F.9
+	No new complaints since therapy initiation
+	0.35
+	States no new complaints
+	—
+	Omits
+	Subsection 1F subtotal  ►  2.5 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	1G  PATIENT GOALS AND CONCERNS  [3 pts]
+	1G.1
+	Patient satisfied with current therapy and reports no desire for change
+	0.40
+	States patient satisfied and denies desire for change
+	—
+	Omits
+	1G.2
+	Goal: maintain improved asthma control
+	0.40
+	States goal of maintaining improved control
+	—
+	Omits
+	1G.3
+	Goal: continue resumed outdoor activities and keep up with children
+	0.40
+	States goal to maintain functional gains
+	—
+	Omits
+	1G.4
+	Patient receptive to inhaler technique correction
+	0.40
+	States patient receptive to technique correction
+	—
+	Omits
+	1G.5
+	Patient demonstrates increased engagement in asthma self-management
+	0.40
+	States patient demonstrates self-management engagement
+	—
+	Omits
+	1G.6
+	No medication concerns or cost barriers expressed
+	0.30
+	States no medication concerns or cost barriers
+	—
+	Omits
+	1G.7
+	Patient can describe purpose of maintenance therapy (controller vs. reliever)
+	0.35
+	States patient understands controller vs. reliever role
+	—
+	Omits
+	1G.8
+	Patient willing to continue current regimen
+	0.35
+	States patient willing to continue current regimen
+	—
+	Omits
+	Subsection 1G subtotal  ►  3 pts
+SECTION 1 TOTAL: 1A(2.5) + 1B(5.5) + 1C(3) + 1D(2.5) + 1E(6) + 1F(2.5) + 1G(3)  ►  25 pts
+ 
+SECTION 2 — OBJECTIVE  [15 pts]
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2A  VITAL SIGNS AND ANTHROPOMETRICS  [5.5 pts]
+	2A.1
+	Blood pressure value (120/76 mmHg)
+	0.80
+	States 120/76 mmHg
+	BP stated, value imprecise
+	Omits
+	2A.2
+	Blood pressure interpreted as within normal limits
+	0.30
+	States BP within normal limits
+	—
+	Omits
+	2A.3
+	Heart rate (78 bpm)
+	0.60
+	States 78 bpm
+	—
+	Omits
+	2A.4
+	Respiratory rate (16 bpm)
+	0.35
+	States 16 bpm
+	—
+	Omits
+	2A.5
+	Weight (75 kg)
+	0.50
+	States 75 kg
+	—
+	Omits
+	2A.6
+	Height (65 inches)
+	0.40
+	States 65 inches
+	—
+	Omits
+	2A.7
+	BMI value (27.5 kg/m²)
+	0.60
+	States 27.5 kg/m²
+	BMI stated, value imprecise
+	Omits
+	2A.8
+	BMI 27.5 kg/m² classified as overweight (not obese)
+	0.40
+	States BMI 27.5 classified as overweight
+	States BMI, no classification
+	Omits
+	2A.9
+	SpO₂ value (99%)
+	0.50
+	States 99%
+	States SpO₂, no value
+	Omits
+	2A.10
+	SpO₂ documented on room air
+	0.30
+	States on room air
+	States SpO₂, no qualifier
+	Omits
+	2A.11
+	SpO₂ interpreted as within normal limits / no hypoxemia
+	0.30
+	States no hypoxemia / within normal limits
+	—
+	Omits
+	2A.12
+	All six vital sign parameters documented (BP, HR, RR, Wt, Ht, SpO₂)
+	0.45
+	Documents all six vital parameters
+	Documents 4-5
+	Documents ≤3
+	Subsection 2A subtotal  ►  5.5 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2B  PULMONARY FUNCTION TESTING AND CLINICAL ASSESSMENT TOOLS  [7 pts]
+	2B.1
+	Pre-bronchodilator FEV1/FVC ratio stated (0.76)
+	0.70
+	States FEV1/FVC 0.76
+	States ratio, value imprecise
+	Omits
+	2B.2
+	FEV1/FVC ≥0.70 interpreted as no fixed airflow obstruction
+	0.70
+	States FEV1/FVC ≥0.70 = no fixed airflow obstruction
+	States ratio, no interpretation
+	Omits
+	2B.3
+	Post-bronchodilator FEV1 improvement stated (9%)
+	0.70
+	States 9% post-BD FEV1 improvement
+	States improvement, no percentage
+	Omits
+	2B.4
+	Absolute FEV1 improvement stated (180 mL)
+	0.70
+	States 180 mL absolute improvement
+	States mL improvement, no value
+	Omits
+	2B.5
+	Post-BD values do not meet GINA reversibility threshold (requires ≥12% AND ≥200 mL)
+	0.70
+	States 9% and 180 mL are below GINA reversibility threshold (≥12%, ≥200 mL)
+	States partial reversal, no threshold
+	Omits
+	2B.6
+	ACT score stated (21)
+	0.70
+	States ACT score of 21
+	States ACT, no value
+	Omits
+	2B.7
+	ACT score 21 interpreted as well-controlled asthma
+	0.70
+	States ACT 21 = well-controlled asthma
+	States controlled, no score
+	Omits
+	2B.8
+	ACT score improvement from prior visit documented (16 → 21)
+	0.70
+	States ACT improved from 16 to 21
+	States improved, one value only
+	Omits
+	2B.9
+	ACT improvement quantified (+5 points)
+	0.70
+	States +5 point improvement
+	States improved, no quantity
+	Omits
+	2B.10
+	No additional laboratory data ordered or required at this follow-up visit
+	0.70
+	States no labs ordered or required this visit
+	—
+	Omits
+	Subsection 2B subtotal  ►  7 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	2C  CALCULATED VALUES, TRENDS, AND MISSING-BUT-EXPECTED DATA  [2.5 pts]
+	2C.1
+	BMI 27.5 kg/m² consistent with height (65 in) and weight (75 kg)
+	0.50
+	States BMI consistent with stated ht/wt
+	BMI stated, not reconciled
+	Incorrect
+	2C.2
+	ACT trajectory: prior score 16, current score 21 (improving trend)
+	0.50
+	States ACT trajectory with both prior and current values
+	States improving trend, one value
+	Omits
+	2C.3
+	Post-BD spirometry below both GINA reversibility thresholds (9% < 12%; 180 mL < 200 mL)
+	0.50
+	States both GINA reversibility thresholds not met
+	States one criterion not met
+	Omits
+	2C.4
+	FeNO and blood eosinophils not assessed this visit (Type 2 biomarkers)
+	0.30
+	States Type 2 biomarkers not assessed this visit
+	—
+	Omits
+	2C.5
+	Overall objective data support stable, improving clinical picture
+	0.30
+	States objective data support clinical stability and improvement
+	—
+	Omits
+	2C.6
+	PEF not separately measured; spirometry and ACT serve as primary lung function assessment
+	0.20
+	Notes PEF not measured; PFTs and ACT used as primary assessment
+	—
+	Omits
+	2C.7
+	Allergic rhinitis improvement based on patient report; no objective rhinitis data collected this visit
+	0.20
+	Notes allergy improvement by patient report only; no objective data
+	—
+	Omits
+	Subsection 2C subtotal  ►  2.5 pts
+SECTION 2 TOTAL: 2A(5.5) + 2B(7) + 2C(2.5)  ►  15 pts
+ 
+SECTION 3 — ASSESSMENT  [30 pts]
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3A  PROBLEM 1 — ASTHMA, IMPROVED / NEAR GOAL  [9 pts]
+	3A.1
+	Problem identified: asthma
+	0.30
+	Names asthma as the problem
+	—
+	Omits
+	3A.2
+	Control status labeled: improved / near goal
+	0.70
+	States improved or near goal
+	States controlled or uncontrolled (binary)
+	Incorrect
+	3A.3
+	ACT score 21 cited in support of well-controlled classification
+	0.70
+	References ACT 21 as supporting well-controlled
+	States ACT, no classification
+	Omits
+	3A.4
+	Supports assessment: reduced daytime symptom frequency (1-2 times/week)
+	0.60
+	References reduced daytime symptom frequency
+	—
+	Omits
+	3A.5
+	Supports assessment: reduced reliever use (1-2 times/week)
+	0.60
+	References reduced reliever use frequency
+	—
+	Omits
+	3A.6
+	Supports assessment: reduced nighttime symptoms (1-2 times/month)
+	0.70
+	References reduced nighttime awakenings
+	—
+	Omits
+	3A.7
+	Supports assessment: improved activity tolerance (outdoor activities, keeping up with children)
+	0.40
+	References improved functional capacity
+	—
+	Omits
+	3A.8
+	Supports assessment: no exacerbations, OCS use, or ED/hospital visits since initiation
+	0.60
+	States no exacerbations, OCS, or ED/hospital visits
+	States no exacerbations only
+	Omits
+	3A.9
+	Cites GINA 2026 as assessment framework (acceptable: GINA 2025)
+	0.50
+	Names GINA 2026 or GINA 2025
+	Cites GINA, no year
+	Omits
+	3A.10
+	GINA assessment components cited: symptom control, reliever use, exacerbations, adherence, inhaler technique
+	0.60
+	Lists ≥4 of 5 GINA assessment domains
+	Lists 2-3 domains
+	Omits
+	3A.11
+	Concludes pharmacologic escalation is not warranted at this time
+	0.70
+	States escalation not warranted at this time
+	—
+	Omits or recommends escalation
+	3A.12
+	Rationale for no escalation: insufficient evidence given otherwise effective therapy
+	0.50
+	States insufficient evidence to justify escalation
+	States no escalation, no rationale
+	Omits
+	3A.13
+	ACT trajectory from prior visit documented: 16 → 21
+	0.60
+	States ACT improved from 16 to 21
+	States improved, one value only
+	Omits
+	3A.14
+	Good adherence cited as contributor to improvement
+	0.40
+	References good adherence as contributor
+	—
+	Omits
+	3A.15
+	Allergic rhinitis improvement cited as possible contributor to asthma improvement
+	0.40
+	Links rhinitis improvement to asthma outcomes
+	—
+	Omits
+	3A.16
+	Current therapy appears effective and well tolerated
+	0.40
+	States therapy effective and well tolerated
+	—
+	Omits
+	3A.17
+	Residual symptoms (1-2x/week) do not justify pharmacologic step-up
+	0.30
+	States residual symptoms do not justify step-up
+	—
+	Omits
+	Subsection 3A subtotal  ►  9 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3B  PROBLEM 2 — INHALER TECHNIQUE DEFICIENCY  [5.5 pts]
+	3B.1
+	Problem identified: inhaler technique deficiency
+	0.80
+	Names inhaler technique deficiency as problem
+	States technique issue, no label
+	Omits
+	3B.2
+	Specific error: failure to fully exhale before inhalation
+	0.70
+	States failure to fully exhale before inhalation
+	States technique error, unspecified
+	Omits
+	3B.3
+	Specific error: failure to hold breath after inhalation
+	0.70
+	States failure to hold breath after inhalation
+	States technique error, unspecified
+	Omits
+	3B.4
+	Technique errors may contribute to residual symptoms despite effective therapy
+	0.70
+	States technique errors may contribute to residual symptoms
+	—
+	Omits
+	3B.5
+	Classifies deficiency as implementation issue, not medication failure
+	0.65
+	States this is an implementation issue not medication failure
+	—
+	Omits
+	3B.6
+	Technique correction should precede any consideration of escalation
+	0.65
+	States correct technique before considering escalation
+	—
+	Omits
+	3B.7
+	Technique deficiency confirmed by direct observation during visit
+	0.45
+	States technique assessed by direct observation
+	—
+	Omits
+	3B.8
+	Reassessment of technique at next visit is indicated
+	0.35
+	States technique reassessment planned at next visit
+	—
+	Omits
+	3B.9
+	Aligns with GINA recommendation to check and correct inhaler technique at every opportunity
+	0.30
+	Cites or aligns with GINA technique-check recommendation
+	—
+	Omits
+	3B.10
+	Incorrect technique reduces drug deposition and clinical efficacy
+	0.20
+	States incorrect technique reduces drug deposition/efficacy
+	—
+	Omits
+	Subsection 3B subtotal  ►  5.5 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3C  PROBLEM 3 — ALLERGIC RHINITIS, IMPROVED  [4.5 pts]
+	3C.1
+	Problem identified: allergic rhinitis
+	0.40
+	Names allergic rhinitis
+	—
+	Omits
+	3C.2
+	Control status: improved
+	0.40
+	States improved
+	States stable, no improvement
+	Omits
+	3C.3
+	Improvement attributed to consistent daily intranasal corticosteroid use
+	0.60
+	Links improvement to daily intranasal corticosteroid (fluticasone nasal spray)
+	States improved, no medication link
+	Omits
+	3C.4
+	Improved upper airway control may contribute to improved asthma outcomes
+	0.70
+	States rhinitis improvement may contribute to asthma improvement
+	—
+	Omits
+	3C.5
+	Current therapy (cetirizine + fluticasone nasal spray) effective
+	0.50
+	States current combination therapy effective
+	—
+	Omits
+	3C.6
+	Current therapy well tolerated
+	0.30
+	States well tolerated
+	—
+	Omits
+	3C.7
+	No therapeutic change indicated at this visit
+	0.40
+	States no change needed to rhinitis therapy
+	—
+	Omits
+	3C.8
+	Intranasal corticosteroid is guideline-appropriate (GINA recommends for allergic rhinitis in asthma)
+	0.50
+	States intranasal corticosteroid is GINA-appropriate
+	—
+	Omits
+	3C.9
+	Continued allergen avoidance strategies appropriate
+	0.30
+	States allergen avoidance appropriate
+	—
+	Omits
+	3C.10
+	Adherence reinforcement to daily nasal spray cited as ongoing priority
+	0.40
+	States reinforce adherence to daily nasal spray
+	—
+	Omits
+	Subsection 3C subtotal  ►  4.5 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3D  PROBLEM 4 — ASTHMA SELF-MANAGEMENT, IMPROVED  [5 pts]
+	3D.1
+	Problem identified: asthma self-management
+	0.40
+	Names asthma self-management as problem/focus
+	—
+	Omits
+	3D.2
+	Self-management status: improved
+	0.35
+	States improved
+	—
+	Omits
+	3D.3
+	Patient demonstrates understanding of purpose of maintenance therapy
+	0.55
+	States patient describes purpose of maintenance therapy
+	—
+	Omits
+	3D.4
+	Patient reports good adherence to regimen
+	0.40
+	States patient reports good adherence
+	—
+	Omits
+	3D.5
+	Patient demonstrates increased engagement in self-management behaviors
+	0.45
+	States increased self-management engagement
+	—
+	Omits
+	3D.6
+	Patient can distinguish controller from reliever role
+	0.55
+	States patient understands controller vs. reliever distinction
+	—
+	Omits
+	3D.7
+	Continued education and reinforcement remain appropriate
+	0.40
+	States continued education and reinforcement appropriate
+	—
+	Omits
+	3D.8
+	Education targets identified: trigger avoidance, SMART therapy review, adherence, symptom monitoring
+	0.55
+	Lists ≥3 of 4 education targets
+	Lists 1-2 targets
+	Omits
+	3D.9
+	Self-management improvement contributes to overall asthma outcome improvement
+	0.35
+	Links self-management improvement to clinical outcomes
+	—
+	Omits
+	3D.10
+	GINA supports guided self-management education to reduce exacerbation risk
+	0.25
+	References GINA self-management recommendation
+	—
+	Omits
+	3D.11
+	Ongoing symptom monitoring encouraged as self-management skill
+	0.25
+	States encourage ongoing symptom monitoring
+	—
+	Omits
+	3D.12
+	Improved functional ability (outdoor activities) serves as self-management outcome marker
+	0.50
+	States improved function as self-management outcome
+	—
+	Omits
+	Subsection 3D subtotal  ►  5 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	3E  PROBLEM 5 — PREVENTIVE CARE GAPS  [6 pts]
+	3E.1
+	Problem identified: preventive care / immunization gaps
+	0.60
+	Names preventive care / immunization gap
+	—
+	Omits
+	3E.2
+	Identifies pneumococcal vaccination gap (no documented vaccination)
+	0.80
+	States no documented pneumococcal vaccination
+	—
+	Omits
+	3E.3
+	Identifies Tdap as overdue
+	0.80
+	States Tdap overdue
+	States Tdap present, no overdue status
+	Omits
+	3E.4
+	Notes influenza vaccine up to date (positive immunization finding)
+	0.50
+	States influenza vaccine up to date
+	—
+	Omits
+	3E.5
+	Notes COVID vaccination up to date (positive immunization finding)
+	0.50
+	States COVID vaccination up to date
+	—
+	Omits
+	3E.6
+	GINA recommends keeping respiratory vaccines current (influenza, pneumococcal, COVID-19) for asthma
+	0.70
+	Cites GINA vaccine recommendation for asthma patients
+	—
+	Omits
+	3E.7
+	Pneumococcal vaccination recommended for patients with respiratory disease including asthma
+	0.70
+	States pneumococcal vaccine recommended for asthma
+	—
+	Omits
+	3E.8
+	States preventive care optimization remains appropriate
+	0.50
+	States preventive care optimization appropriate
+	—
+	Omits
+	3E.9
+	Both actionable gaps (pneumococcal and Tdap) identified and named
+	0.50
+	Names both pneumococcal and Tdap as gaps
+	Names one gap only
+	Omits
+	3E.10
+	Compliant vaccines (influenza, COVID) documented to complete immunization picture
+	0.40
+	Documents both compliant vaccines
+	Documents one only
+	Omits
+	Subsection 3E subtotal  ►  6 pts
+SECTION 3 TOTAL: 3A(9) + 3B(5.5) + 3C(4.5) + 3D(5) + 3E(6)  ►  30 pts
+ 
+SECTION 4 — PLAN  [25 pts]
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4A  ASTHMA  [5.5 pts]
+	4A.1
+	Continue budesonide/formoterol 160/4.5 mcg inhaler (no change in drug or strength)
+	0.80
+	States continue budesonide/formoterol 160/4.5 mcg
+	States continue inhaler, no dose
+	Incorrect dose or new agent
+	4A.2
+	Continue 1 inhalation twice daily as maintenance dose
+	0.50
+	States 1 inhalation twice daily
+	States twice daily, no inhalation count
+	Omits
+	4A.3
+	Continue 1 inhalation as needed for symptom relief
+	0.60
+	States 1 inhalation as needed
+	States PRN, no count
+	Omits
+	4A.4
+	States explicitly: do not escalate therapy at this time
+	0.70
+	States do not escalate / no step-up at this time
+	—
+	Omits or recommends escalation
+	4A.5
+	Rationale for no escalation: patient meets well-controlled criteria per GINA (ACT 21)
+	0.60
+	States well-controlled per GINA criteria as rationale for no escalation
+	States no escalation, no rationale
+	Omits
+	4A.6
+	Notes guideline-acceptable escalation options if future step-up ever needed (per GINA Track 1, acceptable if asthma worsens: Step 3 MART — budesonide-formoterol 160/4.5 mcg 1 inhalation BID + 1 PRN; Step 4 MART — 2 inhalations BID + 1 PRN; also acceptable: beclometasone-formoterol 100/6 mcg MART; Step 5 referral for severe asthma phenotyping and add-on therapy)
+	0.40
+	Names at least one GINA Track 1 escalation alternative with dose or step designation
+	Names alternative without dose/step
+	Omits
+	4A.7
+	Step-down may be considered after ≥3 months of sustained well-controlled asthma
+	0.50
+	States step-down considered after ≥3 months sustained control
+	States step-down possible, no timeline
+	Omits
+	4A.8
+	Continue ICS-containing therapy during viral illness (per GINA)
+	0.40
+	States continue ICS during viral illness
+	—
+	Omits
+	4A.9
+	Reinforce or provide written asthma action plan
+	0.40
+	States reinforce or provide written asthma action plan
+	—
+	Omits
+	4A.10
+	Reinforce tobacco/vaping avoidance (already never-smoker)
+	0.30
+	States reinforce tobacco/vaping avoidance
+	—
+	Omits
+	4A.11
+	Encourage physical activity (beneficial for asthma control per GINA)
+	0.30
+	States encourage physical activity
+	—
+	Omits
+	Subsection 4A subtotal  ►  5.5 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4B  INHALER TECHNIQUE  [3.5 pts]
+	4B.1
+	Review inhaler technique in detail during this visit
+	0.50
+	States review inhaler technique in detail
+	—
+	Omits
+	4B.2
+	Demonstrate proper inhaler administration technique
+	0.50
+	States demonstrate proper administration
+	—
+	Omits
+	4B.3
+	Instruct patient to fully exhale before inhalation
+	0.60
+	States instruct to fully exhale before inhalation
+	—
+	Omits
+	4B.4
+	Instruct patient to hold breath following inhalation
+	0.60
+	States instruct to hold breath after inhalation
+	—
+	Omits
+	4B.5
+	Utilize teach-back technique to confirm patient understanding
+	0.50
+	States use teach-back technique
+	States education, no teach-back
+	Omits
+	4B.6
+	Reassess inhaler technique at next scheduled visit
+	0.50
+	States reassess technique at next visit
+	—
+	Omits
+	4B.7
+	Use device-specific technique checklist during education
+	0.30
+	States use device-specific checklist
+	—
+	Omits
+	Subsection 4B subtotal  ►  3.5 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4C  ALLERGIC RHINITIS  [3 pts]
+	4C.1
+	Continue cetirizine 10 mg PO daily
+	0.60
+	States continue cetirizine 10 mg PO daily
+	States continue cetirizine, no dose/route
+	Omits
+	4C.2
+	Continue fluticasone nasal spray 1 spray each nostril daily
+	0.60
+	States continue fluticasone nasal spray daily
+	States continue nasal spray, no drug name
+	Omits
+	4C.3
+	Reinforce adherence to intranasal corticosteroid
+	0.40
+	States reinforce adherence to nasal spray
+	—
+	Omits
+	4C.4
+	Continue allergen avoidance strategies
+	0.40
+	States continue allergen avoidance strategies
+	—
+	Omits
+	4C.5
+	No change to allergic rhinitis pharmacotherapy at this visit
+	0.40
+	States no change to rhinitis therapy
+	—
+	Omits
+	4C.6
+	Intranasal corticosteroid is GINA-aligned treatment for allergic rhinitis in asthma
+	0.30
+	States intranasal corticosteroid is GINA-aligned
+	—
+	Omits
+	4C.7
+	States rhinitis treatment supports asthma outcomes
+	0.30
+	States rhinitis treatment supports asthma outcomes
+	—
+	Omits
+	Subsection 4C subtotal  ►  3 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4D  PATIENT EDUCATION  [3.5 pts]
+	4D.1
+	Reinforce controller versus reliever concepts
+	0.50
+	States reinforce controller vs. reliever concepts
+	—
+	Omits
+	4D.2
+	Review SMART therapy (maintenance + reliever role of same inhaler)
+	0.50
+	States review SMART therapy dual role
+	—
+	Omits
+	4D.3
+	Reinforce importance of adherence to maintenance dosing
+	0.50
+	States reinforce adherence to maintenance dosing
+	—
+	Omits
+	4D.4
+	Review trigger avoidance strategies
+	0.40
+	States review trigger avoidance
+	—
+	Omits
+	4D.5
+	Encourage ongoing symptom monitoring
+	0.40
+	States encourage ongoing symptom monitoring
+	—
+	Omits
+	4D.6
+	Educate on maximum daily inhalation limit for ICS-formoterol (to prevent overuse)
+	0.25
+	States counsel on maximum daily inhalation limit
+	—
+	Omits
+	4D.7
+	Educate on when to seek urgent or emergency care
+	0.25
+	States educate on when to seek urgent care
+	—
+	Omits
+	4D.8
+	Reinforce written asthma action plan use
+	0.30
+	States reinforce written asthma action plan use
+	—
+	Omits
+	4D.9
+	Educate on respiratory vaccine importance for asthma patients
+	0.40
+	States educate on vaccine importance for asthma
+	—
+	Omits
+	Subsection 4D subtotal  ►  3.5 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4E  PREVENTIVE CARE  [2 pts]
+	4E.1
+	Recommend pneumococcal vaccination if indicated
+	0.60
+	States recommend pneumococcal vaccination if indicated
+	—
+	Omits
+	4E.2
+	Recommend Tdap booster
+	0.60
+	States recommend Tdap booster
+	—
+	Omits
+	4E.3
+	Confirm influenza vaccine compliance (already up to date)
+	0.30
+	States confirm influenza vaccine compliance
+	—
+	Omits
+	4E.4
+	Confirm COVID vaccination compliance (already up to date)
+	0.30
+	States confirm COVID vaccination compliance
+	—
+	Omits
+	4E.5
+	Advise keeping respiratory vaccines current per GINA and local guidelines
+	0.20
+	States advise keep respiratory vaccines current
+	—
+	Omits
+	Subsection 4E subtotal  ►  2 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4F  MONITORING  [4 pts]
+	4F.1
+	Monitor ACT score at follow-up
+	0.50
+	States monitor ACT score
+	—
+	Omits
+	4F.2
+	Monitor daytime symptom frequency
+	0.40
+	States monitor symptom frequency
+	—
+	Omits
+	4F.3
+	Monitor reliever use frequency
+	0.40
+	States monitor reliever use
+	—
+	Omits
+	4F.4
+	Monitor nighttime awakenings / nocturnal symptoms
+	0.40
+	States monitor nighttime awakenings
+	—
+	Omits
+	4F.5
+	Monitor for asthma exacerbations
+	0.40
+	States monitor for exacerbations
+	—
+	Omits
+	4F.6
+	Monitor inhaler technique at next visit
+	0.40
+	States monitor inhaler technique
+	—
+	Omits
+	4F.7
+	Monitor medication adherence
+	0.30
+	States monitor adherence
+	—
+	Omits
+	4F.8
+	Monitor allergic rhinitis symptom control
+	0.30
+	States monitor allergic rhinitis symptoms
+	—
+	Omits
+	4F.9
+	Plan for spirometry per GINA timeline (at least every 1-2 years or if control worsens)
+	0.40
+	States plan for spirometry per GINA timeline
+	—
+	Omits
+	4F.10
+	Flag for treatment escalation reassessment if asthma control worsens
+	0.50
+	States evaluate therapy adjustment if control worsens
+	—
+	Omits
+	Subsection 4F subtotal  ►  4 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	4G  FOLLOW-UP AND MONITORING  [3.5 pts]
+	4G.1
+	Follow up in approximately 3 months
+	0.70
+	States follow up in ~3 months
+	States follow-up, no interval
+	Omits
+	4G.2
+	Reassess asthma control at next visit
+	0.60
+	States reassess asthma control
+	—
+	Omits
+	4G.3
+	Reassess inhaler technique at next visit
+	0.60
+	States reassess inhaler technique
+	—
+	Omits
+	4G.4
+	Reassess symptom burden at next visit
+	0.55
+	States reassess symptom burden
+	—
+	Omits
+	4G.5
+	Evaluate need for therapy adjustment if control worsens before next visit
+	0.55
+	States evaluate therapy adjustment if control worsens
+	—
+	Omits
+	4G.6
+	Evaluate step-down eligibility if ≥3 months of sustained well-controlled asthma
+	0.50
+	States consider step-down after ≥3 months sustained control
+	States step-down possible, no timeline
+	Omits
+	Subsection 4G subtotal  ►  3.5 pts
+SECTION 4 TOTAL: 4A(5.5) + 4B(3.5) + 4C(3) + 4D(3.5) + 4E(2) + 4F(4) + 4G(3.5)  ►  25 pts
+ 
+SECTION 5 — PRESENTATION QUALITY  [5 pts]
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5A  ORGANIZATION AND SOAP STRUCTURE  [2 pts]
+	5A.1
+	Uses four-part SOAP structure (S / O / A / P)
+	0.50
+	All four sections present and labeled
+	Some sections present
+	Absent
+	5A.2
+	Subjective and objective data placed in correct sections
+	0.50
+	Correctly partitioned
+	Minor misplacement
+	Major misplacement
+	5A.3
+	Assessment presents a prioritized, numbered problem list
+	0.50
+	Numbered, prioritized list
+	Listed, not prioritized
+	Absent
+	5A.4
+	Each plan element maps to an assessed problem
+	0.50
+	All plan items mapped to a problem
+	Most mapped
+	Unmapped plan items
+	Subsection 5A subtotal  ►  2 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5B  FORMATTING AND DOCUMENTATION  [2 pts]
+	5B.1
+	Medications documented with drug, dose, route, and frequency for all three current medications
+	0.50
+	All four elements present for each medication
+	Missing one element per medication
+	Largely incomplete
+	5B.2
+	Clinical values reported with appropriate units (mcg, mmHg, bpm, kg/m², %, mL)
+	0.50
+	Units present throughout
+	Some units missing
+	Units absent
+	5B.3
+	Goals/targets stated with specific criteria (ACT score, GINA control criteria, spirometric thresholds)
+	0.50
+	Specific targets stated
+	Some specific targets
+	Vague goals only
+	5B.4
+	Plan items are specific and actionable
+	0.50
+	All plan items specific and actionable
+	Partly vague
+	Vague or absent
+	Subsection 5B subtotal  ►  2 pts
+#
+	Discrete Input
+	Pts
+	Full Credit
+	Half Credit
+	Zero Credit
+	5C  PROFESSIONAL TONE AND SPECIFICITY  [1 pts]
+	5C.1
+	Objective, professional clinical language throughout
+	0.40
+	Professional throughout
+	Minor lapses
+	Unprofessional
+	5C.2
+	Recommendations tied to guideline rationale (GINA 2025/2026)
+	0.40
+	Rationale provided and sourced
+	Partial rationale
+	Rationale absent
+	5C.3
+	Free of major factual or medication errors
+	0.20
+	No major errors
+	1 minor error
+	Major error present
+	Subsection 5C subtotal  ►  1 pts
+SECTION 5 TOTAL: 5A(2) + 5B(2) + 5C(1)  ►  5 pts
+ 
+GRAND TOTAL VERIFICATION
+Section
+	Title
+	Points
+	% of Total
+	Section 1
+	SUBJECTIVE
+	25.0
+	25.0%
+	Section 2
+	OBJECTIVE
+	15.0
+	15.0%
+	Section 3
+	ASSESSMENT
+	30.0
+	30.0%
+	Section 4
+	PLAN
+	25.0
+	25.0%
+	Section 5
+	PRESENTATION QUALITY
+	5.0
+	5.0%
+	TOTAL
+	All Sections
+	100.0
+	100.0%
+	GRADING SCALE
+Grade
+	Score Range
+	A
+	90.0 – 100.0
+	B
+	80.0 – 89.9
+	C
+	70.0 – 79.9
+	D
+	60.0 – 69.9
+	F
+	< 60.0
+	TOTAL DISCRETE INPUTS
+Section
+	Subsections
+	Discrete Inputs
+	Points
+	Section 1 — SUBJECTIVE
+	7
+	82
+	25.0
+	Section 2 — OBJECTIVE
+	3
+	29
+	15.0
+	Section 3 — ASSESSMENT
+	5
+	59
+	30.0
+	Section 4 — PLAN
+	7
+	55
+	25.0
+	Section 5 — PRESENTATION QUALITY
+	3
+	11
+	5.0
+	TOTAL
+	25
+	236
+	100.0
+	MODEL ANSWER SCORE: 100.0 / 100.0
+A student who reproduces the model SOAP note exactly will earn 100.0 / 100.0 on this rubric.
+
