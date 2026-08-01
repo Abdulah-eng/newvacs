@@ -19,7 +19,7 @@ const michaelTue = makeCase({
   },
   VITALS: { bp: '138/86', bpRepeat: '136/84', hr: '82', rr: '16', temp: '98.6°F', spo2: '96%', weight: '103 kg', height: "5'10\"", bmi: '32.6', vitalsTime: '06/23/2026 09:14', flags: {} },
   LABS: [
-    { label: 'BNP', value: '320', unit: 'pg/mL', flag: 'high' },
+    { label: 'NT-proBNP', value: '320', unit: 'pg/mL', flag: 'high' },
     { label: 'K', value: '4.2', unit: 'mEq/L', flag: 'normal' },
     { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
     { label: 'eGFR', value: '88', unit: 'mL/min/1.73m²', flag: 'normal' },
@@ -88,7 +88,7 @@ const michaelWed = makeCase({
   },
   VITALS: { bp: '106/68', bpRepeat: '104/66', hr: '62', rr: '16', temp: '98.6°F', spo2: '97%', weight: '101 kg', height: "5'10\"", bmi: '31.9', flags: { bp: 'warn' } },
   LABS: [
-    { label: 'BNP', value: '165', unit: 'pg/mL', flag: 'high' },
+    { label: 'NT-proBNP', value: '165', unit: 'pg/mL', flag: 'high' },
     { label: 'K', value: '4.5', unit: 'mEq/L', flag: 'normal' },
     { label: 'SCr', value: '1.08', unit: 'mg/dL', flag: 'normal' },
     { label: 'eGFR', value: '80', unit: 'mL/min/1.73m²', flag: 'normal' }
@@ -150,7 +150,7 @@ const michaelThu = makeCase({
   },
   VITALS: { bp: '122/78', bpRepeat: '120/76', hr: '70', rr: '16', temp: '98.6°F', spo2: '97%', weight: '101 kg', height: "5'10\"", bmi: '31.9', flags: {} },
   LABS: [
-    { label: 'BNP', value: '92', unit: 'pg/mL', flag: 'normal' },
+    { label: 'NT-proBNP', value: '92', unit: 'pg/mL', flag: 'normal' },
     { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal' },
     { label: 'SCr', value: '1.2', unit: 'mg/dL', flag: 'normal' },
     { label: 'eGFR', value: '75', unit: 'mL/min/1.73m²', flag: 'normal' }
@@ -218,7 +218,7 @@ const angelaTue = makeCase({
     { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal' },
     { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
     { label: 'eGFR', value: '72', unit: 'mL/min/1.73m²', flag: 'normal' },
-    { label: 'BNP', value: '210', unit: 'pg/mL', flag: 'high' }
+    { label: 'NT-proBNP', value: '210', unit: 'pg/mL', flag: 'high' }
   ],
   ALERTS: [{ level: 'high', text: 'Patient has AFib with elevated stroke risk (CHA2DS2-VASc = 4) but is not taking her prescribed anticoagulant.' }],
   PROBLEMS: [
@@ -282,7 +282,7 @@ const angelaWed = makeCase({
     { label: 'K', value: '4.3', unit: 'mEq/L', flag: 'normal' },
     { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
     { label: 'eGFR', value: '73', unit: 'mL/min/1.73m²', flag: 'normal' },
-    { label: 'BNP', value: '210', unit: 'pg/mL', flag: 'high' }
+    { label: 'NT-proBNP', value: '210', unit: 'pg/mL', flag: 'high' }
   ],
   ALERTS: [],
   PROBLEMS: [{ name: 'AFib', detail: 'Cost resolved, fear of bleeding', flag: 'warn' }],
@@ -396,7 +396,7 @@ const robertTue = makeCase({
     { label: 'K', value: '5.0', unit: 'mEq/L', flag: 'normal' },
     { label: 'SCr', value: '1.82', unit: 'mg/dL', flag: 'high' },
     { label: 'eGFR', value: '38', unit: 'mL/min/1.73m²', flag: 'low' },
-    { label: 'BNP', value: '165', unit: 'pg/mL', flag: 'high' }
+    { label: 'NT-proBNP', value: '165', unit: 'pg/mL', flag: 'high' }
   ],
   ALERTS: [{ level: 'high', text: 'Patient meets criteria for Apixaban dose reduction (age ≥80 [no, he is 76], weight ≤60 kg [yes, 58 kg], SCr ≥1.5 [no, 1.4]). Wait, let me check the criteria again. Ah, he only meets ONE criterion (weight). So standard dose is correct! Let me re-evaluate.' }, { level: 'warn', text: 'Polypharmacy and CKD necessitate careful monitoring.' }],
   PROBLEMS: [
