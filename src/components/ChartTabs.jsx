@@ -9,7 +9,7 @@ import {
 /* ------------------------------------------------------------------ Snapshot */
 export function SnapshotTab({ c }) {
   const v = c.VITALS
-  const KEY_LAB_ORDER = ['A1C', 'eGFR', 'SCr', 'LDL-C', 'UACR', 'FEV1', 'FVC', 'FEV1/FVC', 'Eosinophils', 'Absolute Eosinophils', 'NT-proBNP']
+  const KEY_LAB_ORDER = ['A1C', 'eGFR', 'SCr', 'LDL-C', 'UACR', 'FEV1', 'FVC', 'FEV1/FVC', 'Eosinophils', 'Absolute Eosinophils', 'NT-proBNP', 'BNP']
   const keyLabs = c.LABS
     .filter(l => KEY_LAB_ORDER.includes(l.label))
     .sort((a, b) => KEY_LAB_ORDER.indexOf(a.label) - KEY_LAB_ORDER.indexOf(b.label))

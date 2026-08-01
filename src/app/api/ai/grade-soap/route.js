@@ -13,7 +13,7 @@ const NAME_TO_LETTER = {
   'David Chen': 'C',
   'Sarah Thompson': 'A',
   'Robert "Bob" Jenkins': 'B',
-  'Robert Jenkins': 'B',
+  'Robert Jenkins': 'C',
   'Maria Thompson': 'C',
   'Michael Thompson': 'A',
   'Angela Brooks': 'B',

@@ -19,10 +19,10 @@ const michaelTue = makeCase({
   },
   VITALS: { bp: '138/86', bpRepeat: '136/84', hr: '82', rr: '16', temp: '98.6°F', spo2: '96%', weight: '103 kg', height: "5'10\"", bmi: '32.6', vitalsTime: '06/23/2026 09:14', flags: {} },
   LABS: [
-    { label: 'NT-proBNP', value: '1850', unit: 'pg/mL', flag: 'high' },
+    { label: 'BNP', value: '320', unit: 'pg/mL', flag: 'high' },
     { label: 'K', value: '4.2', unit: 'mEq/L', flag: 'normal' },
-    { label: 'SCr', value: '1.02', unit: 'mg/dL', flag: 'normal' },
-    { label: 'eGFR', value: '79', unit: 'mL/min/1.73m²', flag: 'normal' },
+    { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
+    { label: 'eGFR', value: '88', unit: 'mL/min/1.73m²', flag: 'normal' },
   ],
   ALERTS: [
     { level: 'warn', text: 'HFrEF (LVEF 35%) not on optimal GDMT. Missing evidence-based beta blocker, MRA, and SGLT2i. Lisinopril can be optimized.' },
@@ -86,8 +86,13 @@ const michaelWed = makeCase({
     diseaseStates: ['HFrEF'],
     learningObjectives: ['Manage GDMT side effects (orthostasis)', 'Adjust non-GDMT meds to facilitate GDMT tolerance'],
   },
-  VITALS: { bp: '106/68', bpRepeat: '104/66', hr: '62', rr: '16', temp: '98.6°F', weight: '101 kg', height: "5'10\"", bmi: '31.9', flags: { bp: 'warn' } },
-  LABS: [{ label: 'K', value: '4.5', unit: 'mEq/L', flag: 'normal' }, { label: 'SCr', value: '1.08', unit: 'mg/dL', flag: 'normal' }],
+  VITALS: { bp: '106/68', bpRepeat: '104/66', hr: '62', rr: '16', temp: '98.6°F', spo2: '97%', weight: '101 kg', height: "5'10\"", bmi: '31.9', flags: { bp: 'warn' } },
+  LABS: [
+    { label: 'BNP', value: '165', unit: 'pg/mL', flag: 'high' },
+    { label: 'K', value: '4.5', unit: 'mEq/L', flag: 'normal' },
+    { label: 'SCr', value: '1.08', unit: 'mg/dL', flag: 'normal' },
+    { label: 'eGFR', value: '80', unit: 'mL/min/1.73m²', flag: 'normal' }
+  ],
   ALERTS: [],
   PROBLEMS: [{ name: 'HFrEF', detail: 'On GDMT, experiencing orthostasis', flag: 'warn' }],
   MEDICATIONS: [
@@ -143,8 +148,13 @@ const michaelThu = makeCase({
     diseaseStates: ['HFrEF'],
     learningObjectives: ['Recognize the need to titrate GDMT to target doses, not just starting doses'],
   },
-  VITALS: { bp: '122/78', bpRepeat: '120/76', hr: '70', rr: '16', temp: '98.6°F', weight: '101 kg', height: "5'10\"", bmi: '31.9', flags: {} },
-  LABS: [{ label: 'K', value: '4.6', unit: 'mEq/L', flag: 'normal' }, { label: 'SCr', value: '1.10', unit: 'mg/dL', flag: 'normal' }],
+  VITALS: { bp: '122/78', bpRepeat: '120/76', hr: '70', rr: '16', temp: '98.6°F', spo2: '97%', weight: '101 kg', height: "5'10\"", bmi: '31.9', flags: {} },
+  LABS: [
+    { label: 'BNP', value: '92', unit: 'pg/mL', flag: 'normal' },
+    { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal' },
+    { label: 'SCr', value: '1.2', unit: 'mg/dL', flag: 'normal' },
+    { label: 'eGFR', value: '75', unit: 'mL/min/1.73m²', flag: 'normal' }
+  ],
   ALERTS: [],
   PROBLEMS: [{ name: 'HFrEF', detail: 'Stable, requires GDMT titration', flag: 'warn' }],
   MEDICATIONS: [
@@ -202,8 +212,14 @@ const angelaTue = makeCase({
     diseaseStates: ['HFrEF', 'AFib'],
     learningObjectives: ['Calculate CHA2DS2-VASc score', 'Identify cost nonadherence as a barrier to stroke prevention'],
   },
-  VITALS: { bp: '130/80', bpRepeat: '128/78', hr: '78', rr: '16', temp: '98.6°F', weight: '85 kg', height: "5'4\"", bmi: '32.1', flags: {} },
-  LABS: [{ label: 'SCr', value: '1.1', unit: 'mg/dL', flag: 'normal' }],
+  VITALS: { bp: '130/80', bpRepeat: '128/78', hr: '78', rr: '16', temp: '98.6°F', spo2: '97%', weight: '85 kg', height: "5'4\"", bmi: '32.1', flags: {} },
+  LABS: [
+    { label: 'Sodium', value: '139', unit: 'mEq/L', flag: 'normal' },
+    { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal' },
+    { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
+    { label: 'eGFR', value: '72', unit: 'mL/min/1.73m²', flag: 'normal' },
+    { label: 'BNP', value: '210', unit: 'pg/mL', flag: 'high' }
+  ],
   ALERTS: [{ level: 'high', text: 'Patient has AFib with elevated stroke risk (CHA2DS2-VASc = 4) but is not taking her prescribed anticoagulant.' }],
   PROBLEMS: [
     { name: 'Persistent AFib', detail: 'CHA2DS2-VASc 4. High stroke risk.', flag: 'high' },
@@ -260,8 +276,14 @@ const angelaWed = makeCase({
     diseaseStates: ['AFib'],
     learningObjectives: ['Address bleeding fears using shared decision-making', 'Calculate HAS-BLED'],
   },
-  VITALS: { ...angelaTue.VITALS },
-  LABS: angelaTue.LABS,
+  VITALS: { bp: '130/80', bpRepeat: '128/78', hr: '78', rr: '16', temp: '98.6°F', spo2: '97%', weight: '85 kg', height: "5'4\"", bmi: '32.1', flags: {} },
+  LABS: [
+    { label: 'Sodium', value: '139', unit: 'mEq/L', flag: 'normal' },
+    { label: 'K', value: '4.3', unit: 'mEq/L', flag: 'normal' },
+    { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
+    { label: 'eGFR', value: '73', unit: 'mL/min/1.73m²', flag: 'normal' },
+    { label: 'BNP', value: '210', unit: 'pg/mL', flag: 'high' }
+  ],
   ALERTS: [],
   PROBLEMS: [{ name: 'AFib', detail: 'Cost resolved, fear of bleeding', flag: 'warn' }],
   MEDICATIONS: angelaTue.MEDICATIONS,
@@ -310,8 +332,13 @@ const angelaThu = makeCase({
     diseaseStates: ['AFib', 'HFrEF'],
     learningObjectives: ['Provide positive reinforcement and confirm adherence'],
   },
-  VITALS: { ...angelaTue.VITALS },
-  LABS: angelaTue.LABS,
+  VITALS: { bp: '130/80', bpRepeat: '128/78', hr: '78', rr: '16', temp: '98.6°F', spo2: '97%', weight: '85 kg', height: "5'4\"", bmi: '32.1', flags: {} },
+  LABS: [
+    { label: 'Sodium', value: '138', unit: 'mEq/L', flag: 'normal' },
+    { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal' },
+    { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
+    { label: 'eGFR', value: '72', unit: 'mL/min/1.73m²', flag: 'normal' }
+  ],
   ALERTS: [],
   PROBLEMS: [{ name: 'AFib', detail: 'Anticoagulated successfully', flag: 'normal' }],
   MEDICATIONS: angelaTue.MEDICATIONS,
@@ -363,8 +390,14 @@ const robertTue = makeCase({
     diseaseStates: ['HFrEF', 'AFib', 'CKD', 'T2DM'],
     learningObjectives: ['Identify need for DOAC dose adjustment based on age, weight, and SCr'],
   },
-  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', weight: '58 kg', height: "5'7\"", bmi: '20.0', flags: {} },
-  LABS: [{ label: 'SCr', value: '1.4', unit: 'mg/dL', flag: 'high' }, { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal' }],
+  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '58 kg', height: "5'7\"", bmi: '20.0', flags: {} },
+  LABS: [
+    { label: 'Sodium', value: '138', unit: 'mEq/L', flag: 'normal' },
+    { label: 'K', value: '5.0', unit: 'mEq/L', flag: 'normal' },
+    { label: 'SCr', value: '1.82', unit: 'mg/dL', flag: 'high' },
+    { label: 'eGFR', value: '38', unit: 'mL/min/1.73m²', flag: 'low' },
+    { label: 'BNP', value: '165', unit: 'pg/mL', flag: 'high' }
+  ],
   ALERTS: [{ level: 'high', text: 'Patient meets criteria for Apixaban dose reduction (age ≥80 [no, he is 76], weight ≤60 kg [yes, 58 kg], SCr ≥1.5 [no, 1.4]). Wait, let me check the criteria again. Ah, he only meets ONE criterion (weight). So standard dose is correct! Let me re-evaluate.' }, { level: 'warn', text: 'Polypharmacy and CKD necessitate careful monitoring.' }],
   PROBLEMS: [
     { name: 'AFib', detail: 'On Apixaban 5 mg BID', flag: 'normal' },
@@ -423,8 +456,13 @@ const robertWed = makeCase({
     diseaseStates: ['AFib'],
     learningObjectives: ['Manage minor bleeding on DOACs', 'Apply AZALEA-TIMI 71 concepts regarding future Factor XI inhibitors'],
   },
-  VITALS: { ...robertTue.VITALS },
-  LABS: robertTue.LABS,
+  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '58 kg', height: "5'7\"", bmi: '20.0', flags: {} },
+  LABS: [
+    { label: 'Sodium', value: '138', unit: 'mEq/L', flag: 'normal' },
+    { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal' },
+    { label: 'SCr', value: '1.79', unit: 'mg/dL', flag: 'high' },
+    { label: 'eGFR', value: '39', unit: 'mL/min/1.73m²', flag: 'low' }
+  ],
   ALERTS: [],
   PROBLEMS: [{ name: 'AFib', detail: 'Minor epistaxis on DOAC', flag: 'warn' }],
   MEDICATIONS: robertTue.MEDICATIONS,
@@ -473,8 +511,13 @@ const robertThu = makeCase({
     diseaseStates: ['HFrEF', 'AFib', 'CKD'],
     learningObjectives: ['Recognize successful management of complex polypharmacy'],
   },
-  VITALS: { ...robertTue.VITALS },
-  LABS: [{ label: 'SCr', value: '1.4', unit: 'mg/dL', flag: 'normal' }, { label: 'K', value: '4.7', unit: 'mEq/L', flag: 'normal' }],
+  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '58 kg', height: "5'7\"", bmi: '20.0', flags: {} },
+  LABS: [
+    { label: 'Sodium', value: '139', unit: 'mEq/L', flag: 'normal' },
+    { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal' },
+    { label: 'SCr', value: '1.76', unit: 'mg/dL', flag: 'high' },
+    { label: 'eGFR', value: '40', unit: 'mL/min/1.73m²', flag: 'low' }
+  ],
   ALERTS: [],
   PROBLEMS: [{ name: 'Multi-morbidity', detail: 'Stable', flag: 'normal' }],
   MEDICATIONS: robertTue.MEDICATIONS,
