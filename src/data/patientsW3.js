@@ -105,8 +105,8 @@ const sarahWed = makeCase({
     learningObjectives: ['Escalate therapy per GINA guidelines (e.g., add LABA or switch to SMART therapy)'],
   },
   VITALS: { ...sarahTue.VITALS },
-  LABS: [],
-  ALERTS: [],
+  LABS: sarahTue.LABS,
+  ALERTS: [{ level: 'warn', text: 'Asthma partly controlled — assess adherence and consider therapy escalation (add LABA).' }],
   PROBLEMS: [{ name: 'Asthma', detail: 'Partly controlled', flag: 'warn' }],
   MEDICATIONS: sarahTue.MEDICATIONS,
   IMMUNIZATIONS: sarahTue.IMMUNIZATIONS,
@@ -165,7 +165,8 @@ const sarahThu = makeCase({
   VITALS: { ...sarahTue.VITALS },
   LABS: [
     { label: 'FEV1', value: '2.9', unit: 'L (85% pred)', flag: 'normal' },
-    { label: 'FEV1/FVC', value: '0.80', flag: 'normal' }
+    { label: 'FEV1/FVC', value: '0.80', flag: 'normal' },
+    { label: 'FVC', value: '3.63', unit: 'L', flag: 'normal' }
   ],
   ALERTS: [{ level: 'info', text: 'Patient is due for routine vaccination review.' }],
   PROBLEMS: [{ name: 'Asthma', detail: 'Well controlled on SMART', flag: 'normal' }],
@@ -224,7 +225,7 @@ const bobTue = makeCase({
     diseaseStates: ['COPD', 'Hypertension', 'Hyperlipidemia'],
     learningObjectives: ['Identify missing maintenance therapy in symptomatic COPD', 'Assess cost and technique barriers'],
   },
-  VITALS: { bp: '132/82', bpRepeat: '130/80', hr: '76', rr: '20', temp: '98.4°F', weight: '80 kg', height: "5'9\"", bmi: '26.0', flags: {} },
+  VITALS: { bp: '132/82', bpRepeat: '130/80', hr: '76', rr: '20', temp: '98.4°F', weight: '80 kg', height: "5'9\"", bmi: '26.0', flags: { bp: 'warn', bpRepeat: 'warn' } },
   LABS: [
     { label: 'Eosinophils', value: '150', unit: 'cells/µL', flag: 'normal' },
     { label: 'FEV1', value: '1.8', unit: 'L (58% pred)', flag: 'warn' },
@@ -303,7 +304,7 @@ const bobWed = makeCase({
   },
   VITALS: { ...bobTue.VITALS },
   LABS: bobTue.LABS,
-  ALERTS: [],
+  ALERTS: [{ level: 'warn', text: 'COPD symptoms persistent despite LAMA therapy — evaluate inhaler technique and device adherence.' }],
   PROBLEMS: [{ name: 'COPD', detail: 'Symptomatic despite LAMA', flag: 'warn' }],
   MEDICATIONS: [
     ...bobTue.MEDICATIONS,
@@ -471,14 +472,20 @@ const mariaWed = makeCase({
   id: 'w3-maria_t-wed',
   PATIENT: { ...mariaTue.PATIENT },
   ENCOUNTER: { week: 'Week 3', 
-    day: 'Wednesday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
+    day: 'Wednesday', type: '3-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I'm using the new triple inhaler every day perfectly, but I still had another flare-up last month.",
     snapshotSummary: 'Maria was escalated to triple therapy (Trelegy). She is perfectly adherent with great technique, but she is still exacerbating. Eosinophils remain high.',
     diseaseStates: ['ACO'],
     learningObjectives: ['Identify biologic candidacy for severe eosinophilic exacerbating disease (MATINEE)'],
   },
   VITALS: { ...mariaTue.VITALS },
-  LABS: [{ label: 'Eosinophils', value: '420', unit: 'cells/µL', flag: 'high' }],
+  LABS: [
+    { label: 'Eosinophils', value: '420', unit: 'cells/µL', flag: 'high', note: 'Elevated (eosinophilic phenotype)' },
+    { label: 'Absolute Eosinophils', value: '420', unit: 'cells/µL', flag: 'high' },
+    { label: 'FEV1', value: '1.45', unit: 'L (58% pred)', flag: 'warn', note: 'Post-bronchodilator' },
+    { label: 'FEV1/FVC', value: '0.55', flag: 'warn', note: 'Post-bronchodilator (Pre-BD was 0.54)' },
+    { label: 'FVC', value: '2.63', unit: 'L', flag: 'warn' }
+  ],
   ALERTS: [{ level: 'high', text: 'Continued exacerbations despite optimized triple inhaled therapy.' }],
   PROBLEMS: [{ name: 'ACO', detail: 'Exacerbating on triple therapy', flag: 'high' }],
   MEDICATIONS: [
@@ -495,13 +502,12 @@ const mariaWed = makeCase({
     { id: 'c1', title: 'Managing Severe Symptoms', body: [
       "Your breathing tests show we need to step up your treatment. Let's discuss adding a specialized medication to target the specific type of inflammation you have." ] }
   ],
-  GUIDING_QUESTIONS:
-   [
-    'What evidence suggests the current inhaler regimen is working?',
-    'Why is escalation not appropriate today?',
-    'How does allergic rhinitis affect respiratory disease control?',
-    'Why is biologic therapy not indicated?',
-    'What should be monitored before the next visit?'
+  GUIDING_QUESTIONS: [
+    'What evidence suggests the current inhaled triple therapy is insufficient?',
+    'Why is biologic therapy (anti-IL-5) indicated for this patient?',
+    'What is the significance of persistent eosinophilia (420 cells/µL) despite triple therapy?',
+    'How does the MATINEE trial support the use of mepolizumab in COPD/ACO?',
+    'What monitoring parameters and clinical outcomes should be tracked after initiating biologic therapy?'
   ],
 
   INTERVIEW_KNOWLEDGE: [
@@ -535,8 +541,14 @@ const mariaThu = makeCase({
     learningObjectives: ['Recognize the impact of targeted biologic therapy in the appropriate phenotype'],
   },
   VITALS: { ...mariaTue.VITALS },
-  LABS: [{ label: 'Eosinophils', value: '50', unit: 'cells/µL', flag: 'normal', note: 'Suppressed by biologic therapy' }],
-  ALERTS: [],
+  LABS: [
+    { label: 'Eosinophils', value: '50', unit: 'cells/µL', flag: 'normal', note: 'Suppressed by biologic therapy' },
+    { label: 'Absolute Eosinophils', value: '50', unit: 'cells/µL', flag: 'normal', note: 'Suppressed by biologic therapy' },
+    { label: 'FEV1', value: '1.65', unit: 'L (66% pred)', flag: 'warn', note: 'Improved / post-bronchodilator' },
+    { label: 'FEV1/FVC', value: '0.60', flag: 'warn' },
+    { label: 'FVC', value: '2.75', unit: 'L', flag: 'warn' }
+  ],
+  ALERTS: [{ level: 'info', text: 'Eosinophil levels normalized and symptoms stable on biologic therapy.' }],
   PROBLEMS: [{ name: 'ACO', detail: 'Stable on triple therapy + mepolizumab', flag: 'normal' }],
   MEDICATIONS: [
     ...mariaWed.MEDICATIONS,
@@ -550,7 +562,7 @@ const mariaThu = makeCase({
   ],
     COUNSELING: [
     { id: 'c1', title: 'Biologic Therapy Adherence', body: [
-      "This new injectable medication works differently—it targets the eosinophils causing your flare-ups. It takes time to see the full effect, so please don't miss any appointments for your injections." ] }
+      "This injectable medication works differently—it targets the eosinophils causing your flare-ups. It is the reason you have stayed out of flare-ups, so please don't miss any appointments for your injections." ] }
   ],
   GUIDING_QUESTIONS:
    [

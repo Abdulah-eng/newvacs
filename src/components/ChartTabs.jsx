@@ -9,8 +9,10 @@ import {
 /* ------------------------------------------------------------------ Snapshot */
 export function SnapshotTab({ c }) {
   const v = c.VITALS
-  const keyLabs = c.LABS.filter(l =>
-    ['A1C', 'eGFR', 'SCr', 'LDL-C', 'UACR', 'Eosinophils', 'Absolute Eosinophils', 'FEV1', 'FVC', 'FEV1/FVC'].includes(l.label))
+  const KEY_LAB_ORDER = ['A1C', 'eGFR', 'SCr', 'LDL-C', 'UACR', 'FEV1', 'FVC', 'FEV1/FVC', 'Eosinophils', 'Absolute Eosinophils', 'NT-proBNP']
+  const keyLabs = c.LABS
+    .filter(l => KEY_LAB_ORDER.includes(l.label))
+    .sort((a, b) => KEY_LAB_ORDER.indexOf(a.label) - KEY_LAB_ORDER.indexOf(b.label))
   
   const vitalsList = [
     { label: 'Office BP', value: v.bp, flag: v.flags?.bp, trend: 'down' },
@@ -291,7 +293,8 @@ const LAB_GROUPS = [
 ]
 
 function membersOf(c, members) {
-  return c.LABS.filter(l => members.includes(l.label))
+  const filtered = c.LABS.filter(l => members.includes(l.label))
+  return filtered.sort((a, b) => members.indexOf(a.label) - members.indexOf(b.label))
 }
 function panelStatus(labs) {
   if (labs.length === 0) return { text: 'Not ordered', flag: 'missing' }

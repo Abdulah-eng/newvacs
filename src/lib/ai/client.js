@@ -19,39 +19,63 @@ export async function callJsonLlm(messages, modelOverride = null) {
   const systemMsg = messages.find(m => m.role === 'system')?.content || ''
   const userMessages = messages.filter(m => m.role !== 'system')
 
-  const response = await anthropic.messages.create({
-    model: modelOverride || process.env.ANTHROPIC_MODEL || 'claude-sonnet-5',
-    max_tokens: 32768,
-    system: systemMsg + '\n\nIMPORTANT: You must respond ONLY with a valid JSON object. Do not include markdown code blocks, conversational text, or explanations before or after the JSON.',
-    messages: userMessages,
-  })
-
-  let text = response.content.find(b => b.type === 'text')?.text || ''
+  const baseModel = modelOverride || process.env.ANTHROPIC_MODEL || 'claude-sonnet-5'
   
-  // Clean markdown code blocks just in case
-  text = text.replace(/```json\n?/gi, '').replace(/```\n?/g, '').trim()
-  
-  try {
-    // Attempt direct parse first
-    return JSON.parse(text)
-  } catch (e) {
-    // If it fails, try to extract JSON from conversational padding (common with Thinking models)
-    try {
-      const startIndex = text.indexOf('{')
-      const endIndex = text.lastIndexOf('}')
-      if (startIndex !== -1 && endIndex !== -1 && endIndex > startIndex) {
-        const jsonStr = text.substring(startIndex, endIndex + 1)
-        return JSON.parse(jsonStr)
-      }
-    } catch (e2) {
-      // Fall through to the error throw
-    }
-    
-    console.error('Anthropic JSON parse error. Raw text:', text)
-    const err = new Error('Failed to parse AI response as JSON. See server logs for raw text.')
-    err.rawText = text
-    throw err
+  // List of fallback models to try if the first one fails
+  const modelsToTry = [baseModel]
+  if (baseModel === 'llama-3.1-8b-instant') {
+    modelsToTry.push('llama-3.3-70b-versatile')
+    modelsToTry.push('mixtral-8x7b-32768')
   }
+
+  let lastError = null
+  for (const model of modelsToTry) {
+    try {
+      const response = await anthropic.messages.create({
+        model: model,
+        max_tokens: 32768,
+        system: systemMsg + '\n\nIMPORTANT: You must respond ONLY with a valid JSON object. Do not include markdown code blocks, conversational text, or explanations before or after the JSON.',
+        messages: userMessages,
+      })
+
+      let text = response.content.find(b => b.type === 'text')?.text || ''
+      
+      // Clean markdown code blocks just in case
+      text = text.replace(/```json\n?/gi, '').replace(/```\n?/g, '').trim()
+      
+      try {
+        // Attempt direct parse first
+        return JSON.parse(text)
+      } catch (e) {
+        // If it fails, try to extract JSON from conversational padding (common with Thinking models)
+        const startIndex = text.indexOf('{')
+        const endIndex = text.lastIndexOf('}')
+        if (startIndex !== -1 && endIndex !== -1 && endIndex > startIndex) {
+          const jsonStr = text.substring(startIndex, endIndex + 1)
+          return JSON.parse(jsonStr)
+        }
+        throw e
+      }
+    } catch (err) {
+      console.warn(`Failed callJsonLlm with model ${model}:`, err.message)
+      lastError = err
+      const isRateOrLimitError = 
+        err.message.includes('rate_limit') || 
+        err.message.includes('Limit 6000') || 
+        err.message.includes('Request too large') || 
+        err.message.includes('413') ||
+        err.message.includes('429') ||
+        err.status === 413 || 
+        err.status === 429
+
+      if (isRateOrLimitError && modelsToTry.indexOf(model) < modelsToTry.length - 1) {
+        console.log(`Retrying with fallback model...`)
+        continue // Try next model
+      }
+      throw err // For other errors (like invalid API key), fail immediately
+    }
+  }
+  throw lastError
 }
 
 /**
