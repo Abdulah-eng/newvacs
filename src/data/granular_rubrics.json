@@ -16686,7 +16686,7 @@
       "id": "1C.11",
       "description": "Family history: no known family history of ESKD",
       "points": 0.5,
-      "fullCredit": "States no FH of ESKD",
+      "fullCredit": "States no family history of kidney disease, ESKD, end-stage kidney disease, or dialysis",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -18376,7 +18376,7 @@
       "id": "1C.13",
       "description": "Family history: no known family history of ESKD",
       "points": 0.4,
-      "fullCredit": "States no FH of ESKD",
+      "fullCredit": "States no family history of kidney disease, ESKD, end-stage kidney disease, or dialysis",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },

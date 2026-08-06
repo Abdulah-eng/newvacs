@@ -59,6 +59,7 @@ RULES:
 3. If an input is "Omits" or "Absent", give it 0 points.
 4. Output an array of itemized deductions. You do NOT need to output items where the student earned FULL credit. ONLY output items where the student lost points (HALF or ZERO credit).
 5. Do NOT apply duplicate penalties for the same omission across equivalent rubric items. If the student documented the clinical information anywhere in their note, award them credit for the matching rubric item even if it is not in the exact expected section. Be generous and do not double-penalize.
+6. Synonymous patient-reported phrasing for negative family history (e.g. 'no family history of kidney disease', 'no family history of dialysis', or 'no family history of ESKD') MUST receive FULL CREDIT for family history rubric items. Do NOT deduct points if the student accurately documents the patient's reported negative family history.
 
 Respond ONLY with a JSON object in this exact format:
 {
