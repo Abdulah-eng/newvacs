@@ -2,17 +2,48 @@ import React from 'react'
 import { Card, AutoTextarea, SectionTitle, MissingCallout } from './ui'
 import { FileText, MessageSquare, Sparkles } from 'lucide-react'
 
+const FIELD_LABEL_MAP = {
+  hpiNarrative: 'HPI Narrative',
+  currentMeds: 'Current Medications',
+  adherence: 'Medication Adherence',
+  otc: 'OTC & Supplements',
+  sideEffects: 'Side Effects',
+  diet: 'Diet',
+  exercise: 'Exercise',
+  tobacco: 'Tobacco Use',
+  alcohol: 'Alcohol Use',
+  caffeine: 'Caffeine',
+  familyHistory: 'Family History',
+  homeBp: 'Home Blood Pressure',
+  bpTechnique: 'BP Measurement Technique',
+  glucoseMonitoring: 'Home Glucose Monitoring',
+  weightGoals: 'Weight & Lifestyle Goals',
+  diseaseUnderstanding: 'Disease Understanding',
+  concerns: 'Patient Concerns',
+  cost: 'Cost & Affordability'
+}
+
 export function SubjectiveTab({ c, interview, discovered, onField }) {
   const fields = c.INTERVIEW_FIELDS || []
   
   // Helper to safely get field by key, or fallback if it's missing from c.INTERVIEW_FIELDS
-  const getField = (k) => fields.find(f => f.key === k) || { key: k, label: k }
+  const getField = (k) => {
+    const caseField = fields.find(f => f.key === k)
+    const label = FIELD_LABEL_MAP[k] || k
+    return {
+      key: k,
+      label,
+      placeholder: caseField?.placeholder || `Document details about ${label.toLowerCase()}...`,
+      type: caseField?.type,
+      options: caseField?.options
+    }
+  }
 
   const groups = [
     {
       id: 'hpi', label: 'HPI', title: 'History of Present Illness',
       fields: [
-        { key: 'hpiNarrative', label: 'HPI narrative', placeholder: 'Brief narrative of the present illness...' }
+        { key: 'hpiNarrative', label: 'HPI Narrative', placeholder: 'Brief narrative of the present illness...' }
       ]
     },
     {
@@ -24,9 +55,9 @@ export function SubjectiveTab({ c, interview, discovered, onField }) {
       fields: [
         getField('diet'),
         getField('exercise'),
-        { key: 'tobacco', label: 'Tobacco use', type: 'select', options: ['None', 'Occasional', 'Moderate', 'Heavy', 'previous tobacco user'] },
-        { key: 'alcohol', label: 'Alcohol use', type: 'select', options: ['None', 'Occasional', 'Moderate', 'Heavy', 'previous heavy/occasional drinker'] },
-        { key: 'caffeine', label: 'Caffeine', placeholder: 'e.g., 2 cups coffee/day' }
+        { key: 'tobacco', label: 'Tobacco Use', type: 'select', options: ['None', 'Occasional', 'Moderate', 'Heavy', 'previous tobacco user'] },
+        { key: 'alcohol', label: 'Alcohol Use', type: 'select', options: ['None', 'Occasional', 'Moderate', 'Heavy', 'previous heavy/occasional drinker'] },
+        getField('caffeine')
       ]
     },
     {

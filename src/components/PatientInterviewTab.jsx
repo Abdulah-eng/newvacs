@@ -384,32 +384,79 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
         const errText = "I'm sorry, I didn't catch that. Could you repeat?"
         onAsk(text, { text: errText }); await speakText(errText)
       } else {
-        let field = reply.hidden_info_triggered ? c.INTERVIEW_KNOWLEDGE.find(k => k.id === reply.hidden_info_triggered)?.field : null
+        let fields = []
+        if (reply.hidden_info_triggered) {
+          const matchedField = c.INTERVIEW_KNOWLEDGE?.find(k => k.id === reply.hidden_info_triggered)?.field
+          if (matchedField) fields.push(matchedField)
+        }
         
-        // Enhanced client-side fallback discovery logic
-        if (!field && c.INTERVIEW_KNOWLEDGE) {
+        // Scan text and response for all standard subjective fields
+        if (c.INTERVIEW_KNOWLEDGE) {
           const q = text.toLowerCase()
           const combined = (text + ' ' + (reply.response || '')).toLowerCase()
           
-          if (q.includes('otc') || q.includes('over the counter') || q.includes('over-the-counter') || q.includes('supplement') || q.includes('herbal') || q.includes('vitamin') || q.includes('melatonin') || q.includes('calcium') || q.includes('fish oil') || q.includes('coq10') || q.includes('multivitamin')) {
-            field = 'otc'
-          } else if (q.includes('alcohol') || q.includes('drink') || q.includes('beer') || q.includes('wine') || q.includes('liquor')) {
-            field = 'alcohol'
-          } else if (q.includes('family history') || q.includes('parents') || q.includes('father') || q.includes('mother') || q.includes('brother') || q.includes('sister') || q.includes('sibling') || q.includes('grandparents') || q.includes('grandmother') || q.includes('grandfather') || q.includes('dad') || q.includes('mom')) {
-            field = 'familyHistory'
-          } else if (q.includes('allergy') || q.includes('allergic') || q.includes('allergies') || q.includes('reaction') || q.includes('rash') || q.includes('hives') || q.includes('nkda')) {
-            field = 'allergies'
-          } else if (q.includes('tobacco') || q.includes('smoke') || q.includes('smoking') || q.includes('cigarette') || q.includes('cigar') || q.includes('vape') || q.includes('vaping') || q.includes('nicotine') || q.includes('pack-year') || q.includes('packs')) {
-            field = 'tobacco'
+          if (q.includes('otc') || q.includes('over the counter') || q.includes('over-the-counter') || q.includes('supplement') || q.includes('herbal') || q.includes('vitamin') || q.includes('melatonin') || q.includes('calcium') || q.includes('fish oil') || q.includes('coq10') || q.includes('multivitamin') || combined.includes('ibuprofen') || combined.includes('acetaminophen') || combined.includes('tylenol') || combined.includes('advil') || combined.includes('aspirin')) {
+            fields.push('otc')
+          }
+          if (q.includes('alcohol') || q.includes('drink') || q.includes('beer') || q.includes('wine') || q.includes('liquor') || combined.includes('drink') || combined.includes('alcohol')) {
+            fields.push('alcohol')
+          }
+          if (q.includes('family history') || q.includes('parents') || q.includes('father') || q.includes('mother') || q.includes('brother') || q.includes('sister') || q.includes('sibling') || q.includes('grandparents') || q.includes('grandmother') || q.includes('grandfather') || q.includes('dad') || q.includes('mom') || combined.includes('family history') || combined.includes('mother') || combined.includes('father')) {
+            fields.push('familyHistory')
+          }
+          if (q.includes('allergy') || q.includes('allergic') || q.includes('allergies') || q.includes('reaction') || q.includes('rash') || q.includes('hives') || q.includes('nkda') || combined.includes('allergic') || combined.includes('allergy')) {
+            fields.push('allergies')
+          }
+          if (q.includes('tobacco') || q.includes('smoke') || q.includes('smoking') || q.includes('cigarette') || q.includes('cigar') || q.includes('vape') || q.includes('vaping') || q.includes('nicotine') || q.includes('pack-year') || q.includes('packs') || combined.includes('smoke') || combined.includes('tobacco')) {
+            fields.push('tobacco')
+          }
+          if (q.includes('caffeine') || q.includes('coffee') || q.includes('tea') || q.includes('soda') || q.includes('coke') || q.includes('energy drink') || combined.includes('caffeine') || combined.includes('coffee') || combined.includes('tea')) {
+            fields.push('caffeine')
+          }
+          if (q.includes('diet') || q.includes('eat') || q.includes('food') || q.includes('nutrition') || q.includes('meal') || q.includes('restaurant') || combined.includes('diet') || combined.includes('eat') || combined.includes('food')) {
+            fields.push('diet')
+          }
+          if (q.includes('exercise') || q.includes('walk') || q.includes('activity') || q.includes('gym') || q.includes('workout') || q.includes('run') || q.includes('sport') || combined.includes('exercise') || combined.includes('walk') || combined.includes('activity')) {
+            fields.push('exercise')
+          }
+          if (q.includes('home bp') || q.includes('home blood pressure') || q.includes('blood pressure at home') || q.includes('check bp at home') || q.includes('monitor bp') || q.includes('home check') || q.includes('log') || combined.includes('home blood pressure') || combined.includes('check my blood pressure at home')) {
+            fields.push('homeBp')
+          }
+          if (q.includes('technique') || q.includes('cuff') || q.includes('how do you check') || q.includes('arm') || q.includes('sit') || q.includes('rest') || combined.includes('technique') || combined.includes('cuff')) {
+            fields.push('bpTechnique')
+          }
+          if (q.includes('glucose') || q.includes('finger') || q.includes('sugar') || q.includes('check sugar') || q.includes('monitor glucose') || q.includes('cgm') || q.includes('meter') || combined.includes('glucose') || combined.includes('sugar')) {
+            fields.push('glucoseMonitoring')
+          }
+          if (q.includes('weight') || q.includes('lose') || q.includes('lbs') || q.includes('kg') || q.includes('fat') || q.includes('obese') || q.includes('lifestyle') || combined.includes('weight') || combined.includes('lose')) {
+            fields.push('weightGoals')
+          }
+          if (q.includes('understand') || q.includes('know') || q.includes('explain') || q.includes('what is') || q.includes('grasp') || combined.includes('understand') || combined.includes('explain')) {
+            fields.push('diseaseUnderstanding')
+          }
+          if (q.includes('concern') || q.includes('worry') || q.includes('afraid') || q.includes('scared') || q.includes('fear') || q.includes('anxious') || q.includes('bother') || combined.includes('concern') || combined.includes('worry') || combined.includes('afraid') || combined.includes('scared')) {
+            fields.push('concerns')
+          }
+          if (q.includes('cost') || q.includes('afford') || q.includes('expensive') || q.includes('pay') || q.includes('price') || q.includes('money') || q.includes('insurance') || q.includes('copay') || combined.includes('cost') || combined.includes('afford') || combined.includes('expensive') || combined.includes('insurance')) {
+            fields.push('cost')
+          }
+          if (q.includes('adhere') || q.includes('miss') || q.includes('forget') || q.includes('skip') || q.includes('regularly') || q.includes('consistent') || combined.includes('miss') || combined.includes('forget') || combined.includes('skip')) {
+            fields.push('adherence')
+          }
+          if (q.includes('side effect') || q.includes('adverse') || q.includes('muscle') || q.includes('pain') || q.includes('ache') || q.includes('stiffness') || combined.includes('side effect') || combined.includes('muscle')) {
+            fields.push('sideEffects')
           }
           
-          if (!field) {
-            const matched = c.INTERVIEW_KNOWLEDGE.find(k => k.field && k.keywords?.some(kw => combined.includes(kw.toLowerCase())))
-            if (matched) field = matched.field
-          }
+          c.INTERVIEW_KNOWLEDGE.forEach(k => {
+            if (k.field && k.keywords?.some(kw => combined.includes(kw.toLowerCase()))) {
+              fields.push(k.field)
+            }
+          })
         }
-
-        onAsk(text, { text: reply.response, field }); await speakText(reply.response)
+        
+        fields = [...new Set(fields)]
+        
+        onAsk(text, { text: reply.response, fields, field: fields[0] }); await speakText(reply.response)
       }
     } catch (_) {
       const errText = "I'm having a little trouble. Could you ask again?"

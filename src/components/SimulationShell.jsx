@@ -75,9 +75,14 @@ export default function SimulationShell({ caseData, onExit }) {
   })
 
   const ask = (q, reply) => update(s => {
-    const chat = [...s.chat, { role: 'student', text: q }, { role: 'patient', text: reply.text, discovered: !!reply.field }]
+    const hasDiscovered = !!(reply.field || (reply.fields && reply.fields.length > 0))
+    const chat = [...s.chat, { role: 'student', text: q }, { role: 'patient', text: reply.text, discovered: hasDiscovered }]
     const discovered = { ...s.discovered }
-    if (reply.field) discovered[reply.field] = true
+    if (reply.fields && Array.isArray(reply.fields)) {
+      reply.fields.forEach(f => { discovered[f] = true })
+    } else if (reply.field) {
+      discovered[reply.field] = true
+    }
     return { ...s, chat, discovered, __progress: { ...s.__progress, interview: true } }
   })
 
