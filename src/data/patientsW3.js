@@ -415,7 +415,7 @@ const mariaTue = makeCase({
   },
   VITALS: { bp: '128/80', bpRepeat: '126/78', hr: '72', rr: '18', temp: '98.6°F', weight: '70 kg', height: "5'4\"", bmi: '26.5', flags: {} },
   LABS: [
-    { label: 'Eosinophils', value: '420', unit: 'cells/µL', flag: 'high', note: 'Elevated (eosinophilic phenotype)' },
+    { label: 'Eosinophils', value: '6', unit: '%', flag: 'high', note: 'Elevated (eosinophilic phenotype)' },
     { label: 'Absolute Eosinophils', value: '420', unit: 'cells/µL', flag: 'high' },
     { label: 'FEV1', value: '1.45', unit: 'L (58% pred)', flag: 'warn', note: 'Post-bronchodilator' },
     { label: 'FEV1/FVC', value: '0.55', flag: 'warn', note: 'Post-bronchodilator (Pre-BD was 0.54)' },
@@ -480,7 +480,7 @@ const mariaWed = makeCase({
   },
   VITALS: { ...mariaTue.VITALS },
   LABS: [
-    { label: 'Eosinophils', value: '420', unit: 'cells/µL', flag: 'high', note: 'Elevated (eosinophilic phenotype)' },
+    { label: 'Eosinophils', value: '6', unit: '%', flag: 'high', note: 'Elevated (eosinophilic phenotype)' },
     { label: 'Absolute Eosinophils', value: '420', unit: 'cells/µL', flag: 'high' },
     { label: 'FEV1', value: '1.45', unit: 'L (58% pred)', flag: 'warn', note: 'Post-bronchodilator' },
     { label: 'FEV1/FVC', value: '0.55', flag: 'warn', note: 'Post-bronchodilator (Pre-BD was 0.54)' },
@@ -542,7 +542,7 @@ const mariaThu = makeCase({
   },
   VITALS: { ...mariaTue.VITALS },
   LABS: [
-    { label: 'Eosinophils', value: '50', unit: 'cells/µL', flag: 'normal', note: 'Suppressed by biologic therapy' },
+    { label: 'Eosinophils', value: '1', unit: '%', flag: 'normal', note: 'Suppressed by biologic therapy' },
     { label: 'Absolute Eosinophils', value: '50', unit: 'cells/µL', flag: 'normal', note: 'Suppressed by biologic therapy' },
     { label: 'FEV1', value: '1.65', unit: 'L (66% pred)', flag: 'warn', note: 'Improved / post-bronchodilator' },
     { label: 'FEV1/FVC', value: '0.60', flag: 'warn' },

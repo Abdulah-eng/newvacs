@@ -76,7 +76,12 @@ export function generateSoapDraft(caseData, state) {
 
   // ---------- Objective ----------
   const objLines = []
-  objLines.push(`Vitals: BP ${v.bp} (repeat ${v.bpRepeat}), HR ${v.hr}, RR ${v.rr ?? '—'}, Temp ${v.temp ?? '—'}, SpO₂ ${v.spo2 || '97 %'}, Wt ${v.weight}, Ht ${v.height}, BMI ${v.bmi}.`)
+  const rawSpO2 = v.spo2 || '97%';
+  const spo2Display = (rawSpO2.includes('room air') || rawSpO2.includes('O2') || rawSpO2.includes('L/min') || rawSpO2.includes('NC')) 
+    ? rawSpO2 
+    : `${rawSpO2} on room air`;
+
+  objLines.push(`Vitals: BP ${v.bp} (repeat ${v.bpRepeat}), HR ${v.hr}, RR ${v.rr ?? '—'}, Temp ${v.temp ?? '—'}, SpO₂ ${spo2Display}, Wt ${v.weight}, Ht ${v.height}, BMI ${v.bmi}.`)
   objLines.push('Labs: ' + labs.map(l => `${l.label} ${l.value}${l.unit ? ' ' + l.unit : ''}`).join('; ') + '.')
   objLines.push('Medications: ' + caseData.MEDICATIONS.map(m => `${m.name} ${m.dose} ${m.route} ${m.freq}`).join('; ') + '.')
   objLines.push('Allergies: ' + (caseData.ALLERGIES.map(a => a.substance).join(', ') || 'NKDA') + '.')
