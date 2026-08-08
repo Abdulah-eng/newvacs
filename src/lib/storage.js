@@ -30,7 +30,11 @@ export function saveCaseState(caseId, state) {
 }
 
 export function resetCaseState(caseId) {
-  try { localStorage.removeItem(key(caseId)) } catch { /* ignore */ }
+  try {
+    localStorage.removeItem(key(caseId))
+    localStorage.removeItem('vacs::timer_end::' + caseId)
+    localStorage.removeItem('vacs::timer_rem::' + caseId)
+  } catch { /* ignore */ }
 }
 
 // Global status index so the dashboard can show Not started / In progress / Completed.

@@ -1,0 +1,1626 @@
+[
+  {
+    "id": "1A.1",
+    "description": "Patient age stated (66 years)",
+    "points": 0.4,
+    "fullCredit": "States 66 years",
+    "halfCredit": "Age stated, imprecise",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1A.2",
+    "description": "Patient sex stated (female)",
+    "points": 0.3,
+    "fullCredit": "States female",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1A.3",
+    "description": "Visit type: three-month follow-up",
+    "points": 0.5,
+    "fullCredit": "States 3-month follow-up",
+    "halfCredit": "States follow-up, no interval",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1A.4",
+    "description": "Setting: ambulatory care pharmacy clinic",
+    "points": 0.3,
+    "fullCredit": "Names clinic setting",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1A.5",
+    "description": "Managed condition: hyperlipidemia",
+    "points": 0.3,
+    "fullCredit": "States hyperlipidemia",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1A.6",
+    "description": "Managed condition: chronic kidney disease",
+    "points": 0.3,
+    "fullCredit": "States CKD",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1A.7",
+    "description": "Context: follow-up after initiation of rosuvastatin therapy",
+    "points": 0.4,
+    "fullCredit": "States post-rosuvastatin-initiation context",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1B.1",
+    "description": "Reports doing well overall since previous visit",
+    "points": 0.4,
+    "fullCredit": "States doing well",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1B.2",
+    "description": "Successfully initiated rosuvastatin therapy",
+    "points": 0.7,
+    "fullCredit": "States successful initiation",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1B.3",
+    "description": "Reports adherence (missing only 1-2 doses over 3 months)",
+    "points": 0.7,
+    "fullCredit": "States ~1-2 missed doses",
+    "halfCredit": "States adherent, no detail",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1B.4",
+    "description": "Reassured medication more affordable than originally anticipated",
+    "points": 0.6,
+    "fullCredit": "States affordability reassurance",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1B.5",
+    "description": "Significantly reduced statin concerns after no serious adverse effects",
+    "points": 0.6,
+    "fullCredit": "States reduced concern + reason",
+    "halfCredit": "States reduced concern only",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1B.6",
+    "description": "Reports occasional mild bilateral leg soreness",
+    "points": 0.7,
+    "fullCredit": "States mild bilateral leg soreness",
+    "halfCredit": "States soreness, no detail",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1B.7",
+    "description": "Soreness occurs primarily after walking",
+    "points": 0.5,
+    "fullCredit": "States post-walking timing",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1B.8",
+    "description": "Soreness not activity-limiting / does not interfere with daily activities",
+    "points": 0.5,
+    "fullCredit": "States non-limiting nature",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1B.9",
+    "description": "Unsure whether soreness is exercise- or medication-related",
+    "points": 0.4,
+    "fullCredit": "States this uncertainty",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1B.10",
+    "description": "Increasing walking frequency",
+    "points": 0.4,
+    "fullCredit": "States increased walking",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1B.11",
+    "description": "Reducing packaged food consumption",
+    "points": 0.4,
+    "fullCredit": "States reduced packaged food",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1B.12",
+    "description": "No hospitalizations since previous visit",
+    "points": 0.3,
+    "fullCredit": "States no hospitalizations",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1B.13",
+    "description": "No emergency department visits since previous visit",
+    "points": 0.3,
+    "fullCredit": "States no ED visits",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1C.1",
+    "description": "PMH: hypertension",
+    "points": 0.2,
+    "fullCredit": "Lists hypertension",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1C.2",
+    "description": "PMH: hyperlipidemia",
+    "points": 0.2,
+    "fullCredit": "Lists hyperlipidemia",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1C.3",
+    "description": "PMH: chronic kidney disease (G3aA2)",
+    "points": 0.6,
+    "fullCredit": "Lists CKD with G3aA2",
+    "halfCredit": "Lists CKD, no stage",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1C.4",
+    "description": "PMH: obesity",
+    "points": 0.3,
+    "fullCredit": "Lists obesity",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1C.5",
+    "description": "PSH: cholecystectomy",
+    "points": 0.2,
+    "fullCredit": "Lists cholecystectomy",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1C.6",
+    "description": "PSH: total abdominal hysterectomy",
+    "points": 0.2,
+    "fullCredit": "Lists hysterectomy",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1C.7",
+    "description": "Family history, father: myocardial infarction at age 63",
+    "points": 0.6,
+    "fullCredit": "States father MI at 63",
+    "halfCredit": "States father MI, no age",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1C.8",
+    "description": "Family history, father: hypertension",
+    "points": 0.2,
+    "fullCredit": "Lists father hypertension",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1C.9",
+    "description": "Family history, father: hyperlipidemia",
+    "points": 0.2,
+    "fullCredit": "Lists father hyperlipidemia",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1C.10",
+    "description": "Family history, mother: chronic kidney disease",
+    "points": 0.4,
+    "fullCredit": "States mother CKD",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1C.11",
+    "description": "Family history, mother: hypertension",
+    "points": 0.2,
+    "fullCredit": "Lists mother hypertension",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1C.12",
+    "description": "Family history, sister: hypertension and hyperlipidemia",
+    "points": 0.2,
+    "fullCredit": "States sister HTN + HLD",
+    "halfCredit": "Names one condition",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1D.1",
+    "description": "Marital status (widowed)",
+    "points": 0.2,
+    "fullCredit": "States widowed",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1D.2",
+    "description": "Occupation (retired elementary school teacher)",
+    "points": 0.2,
+    "fullCredit": "States occupation",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1D.3",
+    "description": "Lives independently",
+    "points": 0.2,
+    "fullCredit": "States lives independently",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1D.4",
+    "description": "Tobacco status (never smoker)",
+    "points": 0.4,
+    "fullCredit": "States never smoker",
+    "halfCredit": "States nonsmoker, no never/former",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1D.5",
+    "description": "Alcohol use (rare)",
+    "points": 0.3,
+    "fullCredit": "States rare alcohol use",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1D.6",
+    "description": "Recreational drug use (denies)",
+    "points": 0.2,
+    "fullCredit": "States denies drug use",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1D.7",
+    "description": "Physical activity (walking ~3 days weekly)",
+    "points": 0.5,
+    "fullCredit": "States ~3 days/week",
+    "halfCredit": "States active, no detail",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1D.8",
+    "description": "Reduced packaged food consumption",
+    "points": 0.5,
+    "fullCredit": "States reduced packaged food",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1E.1",
+    "description": "Losartan listed",
+    "points": 0.3,
+    "fullCredit": "Names losartan",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1E.2",
+    "description": "Losartan dose (50 mg)",
+    "points": 0.2,
+    "fullCredit": "States 50 mg",
+    "halfCredit": "—",
+    "zeroCredit": "Incorrect"
+  },
+  {
+    "id": "1E.3",
+    "description": "Losartan regimen (PO daily)",
+    "points": 0.2,
+    "fullCredit": "States PO daily",
+    "halfCredit": "States daily, no route",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1E.4",
+    "description": "Amlodipine listed",
+    "points": 0.3,
+    "fullCredit": "Names amlodipine",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1E.5",
+    "description": "Amlodipine dose (10 mg)",
+    "points": 0.2,
+    "fullCredit": "States 10 mg",
+    "halfCredit": "—",
+    "zeroCredit": "Incorrect"
+  },
+  {
+    "id": "1E.6",
+    "description": "Amlodipine regimen (PO daily)",
+    "points": 0.2,
+    "fullCredit": "States PO daily",
+    "halfCredit": "States daily, no route",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1E.7",
+    "description": "Rosuvastatin listed (now active statin)",
+    "points": 0.3,
+    "fullCredit": "Names rosuvastatin",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1E.8",
+    "description": "Rosuvastatin dose (20 mg)",
+    "points": 0.4,
+    "fullCredit": "States 20 mg",
+    "halfCredit": "—",
+    "zeroCredit": "Incorrect"
+  },
+  {
+    "id": "1E.9",
+    "description": "Rosuvastatin regimen (PO daily)",
+    "points": 0.3,
+    "fullCredit": "States PO daily",
+    "halfCredit": "States daily, no route",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1E.10",
+    "description": "Simvastatin no longer listed (discontinued per prior plan)",
+    "points": 0.5,
+    "fullCredit": "Notes simvastatin discontinued",
+    "halfCredit": "—",
+    "zeroCredit": "Omits / still lists simvastatin"
+  },
+  {
+    "id": "1E.11",
+    "description": "Penicillin allergy documented",
+    "points": 0.4,
+    "fullCredit": "States penicillin allergy",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1E.12",
+    "description": "Penicillin reaction documented (rash as child)",
+    "points": 0.2,
+    "fullCredit": "States rash as child",
+    "halfCredit": "Notes reaction, unspecified",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1E.13",
+    "description": "Influenza vaccine up to date",
+    "points": 0.3,
+    "fullCredit": "States influenza up to date",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1E.14",
+    "description": "COVID-19 vaccination up to date",
+    "points": 0.3,
+    "fullCredit": "States COVID up to date",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1E.15",
+    "description": "Pneumococcal vaccination: none documented",
+    "points": 0.4,
+    "fullCredit": "States no documented pneumococcal",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1E.16",
+    "description": "Herpes zoster vaccination: none documented",
+    "points": 0.4,
+    "fullCredit": "States no documented zoster",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1E.17",
+    "description": "Tdap overdue",
+    "points": 0.6,
+    "fullCredit": "States Tdap overdue",
+    "halfCredit": "States Tdap, no status",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1F.1",
+    "description": "Denies chest pain",
+    "points": 0.3,
+    "fullCredit": "States denies chest pain",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1F.2",
+    "description": "Denies shortness of breath",
+    "points": 0.3,
+    "fullCredit": "States denies SOB",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1F.3",
+    "description": "Denies palpitations",
+    "points": 0.3,
+    "fullCredit": "States denies palpitations",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1F.4",
+    "description": "Denies syncope",
+    "points": 0.3,
+    "fullCredit": "States denies syncope",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1F.5",
+    "description": "Denies lower extremity edema",
+    "points": 0.3,
+    "fullCredit": "States denies LE edema",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1F.6",
+    "description": "Denies gross hematuria",
+    "points": 0.25,
+    "fullCredit": "States denies gross hematuria",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1F.7",
+    "description": "Denies urinary complaints",
+    "points": 0.25,
+    "fullCredit": "States denies urinary complaints",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1G.1",
+    "description": "Motivated to avoid dialysis",
+    "points": 0.8,
+    "fullCredit": "States dialysis-avoidance goal",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1G.2",
+    "description": "Motivated to maintain independence",
+    "points": 0.8,
+    "fullCredit": "States independence goal",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1G.3",
+    "description": "Reduced anxiety / reassurance regarding statin therapy",
+    "points": 0.5,
+    "fullCredit": "States reduced concern/engagement",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "1G.4",
+    "description": "Wishes to continue therapy",
+    "points": 0.4,
+    "fullCredit": "States desire to continue",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2A.1",
+    "description": "Office blood pressure value (136/82 mmHg)",
+    "points": 0.7,
+    "fullCredit": "States 136/82 mmHg",
+    "halfCredit": "BP stated, value imprecise",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2A.2",
+    "description": "Repeat office blood pressure value (134/80 mmHg)",
+    "points": 0.6,
+    "fullCredit": "States 134/80 mmHg",
+    "halfCredit": "Notes repeat, no value",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2A.3",
+    "description": "Heart rate (72 bpm)",
+    "points": 0.4,
+    "fullCredit": "States 72 bpm",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2A.4",
+    "description": "Weight (95 kg)",
+    "points": 0.5,
+    "fullCredit": "States 95 kg",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2A.5",
+    "description": "Height (64 inches)",
+    "points": 0.3,
+    "fullCredit": "States 64 inches",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2A.6",
+    "description": "Body mass index (35.9 kg/m2)",
+    "points": 0.6,
+    "fullCredit": "States 35.9 kg/m2",
+    "halfCredit": "BMI stated, value imprecise",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2A.7",
+    "description": "Home blood pressure average (136/82 mmHg)",
+    "points": 0.6,
+    "fullCredit": "States 136/82 mmHg",
+    "halfCredit": "Notes home log, no average",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2A.8",
+    "description": "Home BP range documented (132-140 SBP / 78-84 DBP)",
+    "points": 0.3,
+    "fullCredit": "States both ranges",
+    "halfCredit": "States partial range",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.1",
+    "description": "Sodium (139 mEq/L)",
+    "points": 0.3,
+    "fullCredit": "States 139 mEq/L",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.2",
+    "description": "Potassium (4.6 mEq/L)",
+    "points": 0.4,
+    "fullCredit": "States 4.6 mEq/L",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.3",
+    "description": "Serum creatinine (1.20 mg/dL)",
+    "points": 0.5,
+    "fullCredit": "States 1.20 mg/dL",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.4",
+    "description": "eGFR (53 mL/min/1.73m2)",
+    "points": 0.9,
+    "fullCredit": "States 53 mL/min/1.73m2",
+    "halfCredit": "eGFR stated, value imprecise",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.5",
+    "description": "AST (22 U/L)",
+    "points": 0.3,
+    "fullCredit": "States 22 U/L",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.6",
+    "description": "ALT (21 U/L)",
+    "points": 0.4,
+    "fullCredit": "States 21 U/L",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.7",
+    "description": "Total cholesterol (184 mg/dL)",
+    "points": 0.3,
+    "fullCredit": "States 184 mg/dL",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.8",
+    "description": "LDL-C (89 mg/dL)",
+    "points": 1.1,
+    "fullCredit": "States 89 mg/dL",
+    "halfCredit": "LDL stated, value imprecise",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.9",
+    "description": "LDL-C improvement (148 to 89 mg/dL)",
+    "points": 0.7,
+    "fullCredit": "States improvement with values",
+    "halfCredit": "States improved, no values",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.10",
+    "description": "HDL-C (44 mg/dL)",
+    "points": 0.3,
+    "fullCredit": "States 44 mg/dL",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.11",
+    "description": "Triglycerides (165 mg/dL)",
+    "points": 0.3,
+    "fullCredit": "States 165 mg/dL",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.12",
+    "description": "Current UACR (160 mg/g)",
+    "points": 0.9,
+    "fullCredit": "States 160 mg/g",
+    "halfCredit": "Notes UACR, no value",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.13",
+    "description": "Previous UACR (165 mg/g)",
+    "points": 0.4,
+    "fullCredit": "States 165 mg/g",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.14",
+    "description": "UACR stable / minimal change (165 to 160 mg/g)",
+    "points": 0.4,
+    "fullCredit": "States stability with values",
+    "halfCredit": "States stable, no values",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.15",
+    "description": "10-year ASCVD risk estimate (14.5%)",
+    "points": 0.9,
+    "fullCredit": "States 14.5%",
+    "halfCredit": "States risk, no value",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2B.16",
+    "description": "ASCVD risk improvement (17.4% to 14.5%)",
+    "points": 0.4,
+    "fullCredit": "States improvement with values",
+    "halfCredit": "States improved, no values",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2C.1",
+    "description": "BMI value consistent with documented height and weight (35.9 kg/m2)",
+    "points": 0.4,
+    "fullCredit": "BMI consistent with ht/wt",
+    "halfCredit": "BMI stated, not reconciled",
+    "zeroCredit": "Incorrect"
+  },
+  {
+    "id": "2C.2",
+    "description": "eGFR stable (G3a)",
+    "points": 0.5,
+    "fullCredit": "States stable G3a",
+    "halfCredit": "States eGFR, no interpretation",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2C.3",
+    "description": "UACR essentially stable; remains A2",
+    "points": 0.6,
+    "fullCredit": "States stable + still A2",
+    "halfCredit": "States stable only",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2C.4",
+    "description": "Home BP corroborates office; improved but above ideal CKD target",
+    "points": 0.5,
+    "fullCredit": "States corroboration + above ideal",
+    "halfCredit": "States corroboration only",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2C.5",
+    "description": "AST/ALT normal — no statin hepatotoxicity",
+    "points": 0.3,
+    "fullCredit": "States LFTs normal on statin",
+    "halfCredit": "States values, no interpretation",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "2C.6",
+    "description": "Marked lipid response confirms effective statin therapy",
+    "points": 0.2,
+    "fullCredit": "Notes effective response",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3A.1",
+    "description": "Problem identified: hyperlipidemia / elevated ASCVD risk",
+    "points": 0.4,
+    "fullCredit": "Names the problem",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3A.2",
+    "description": "Status: significantly improved",
+    "points": 0.5,
+    "fullCredit": "States significantly improved",
+    "halfCredit": "—",
+    "zeroCredit": "Incorrect"
+  },
+  {
+    "id": "3A.3",
+    "description": "Documents LDL-C improvement (148 to 89 mg/dL)",
+    "points": 0.7,
+    "fullCredit": "States change with values",
+    "halfCredit": "States improved, no values",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3A.4",
+    "description": "Attributes to successful rosuvastatin initiation",
+    "points": 0.5,
+    "fullCredit": "States initiation as driver",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3A.5",
+    "description": "Reports excellent adherence; denies significant adverse effects",
+    "points": 0.4,
+    "fullCredit": "States both",
+    "halfCredit": "States one",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3A.6",
+    "description": "Cites 2026 AHA/ACC Cholesterol Guideline",
+    "points": 0.4,
+    "fullCredit": "Names 2026 AHA/ACC cholesterol guideline",
+    "halfCredit": "Cites guideline, no source",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3A.7",
+    "description": "CKD remains a risk-enhancing condition supporting intensive LDL reduction",
+    "points": 0.5,
+    "fullCredit": "States this point",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3A.8",
+    "description": "LDL reduction confirms prior failure was non-initiation, not drug failure",
+    "points": 0.7,
+    "fullCredit": "States this key insight",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3A.9",
+    "description": "Documents ASCVD risk improvement (17.4% to 14.5%)",
+    "points": 0.5,
+    "fullCredit": "States change with values",
+    "halfCredit": "States improved, no values",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3A.10",
+    "description": "Notes residual risk factors (CKD/HTN/obesity/advanced age/family ASCVD)",
+    "points": 0.6,
+    "fullCredit": "Names &gt;=3 factors",
+    "halfCredit": "Names 1-2",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3A.11",
+    "description": "Ongoing risk reduction remains necessary",
+    "points": 0.4,
+    "fullCredit": "States ongoing risk reduction",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3A.12",
+    "description": "Supports continuation of current statin regimen",
+    "points": 0.4,
+    "fullCredit": "States continue statin",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3B.1",
+    "description": "Problem identified: therapeutic inertia (resolved)",
+    "points": 0.7,
+    "fullCredit": "Names the problem + resolution",
+    "halfCredit": "Names problem only",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3B.2",
+    "description": "Recalls prior barriers (affordability + fear of adverse effects)",
+    "points": 0.6,
+    "fullCredit": "Names both barriers",
+    "halfCredit": "Names one",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3B.3",
+    "description": "Barriers successfully identified and addressed",
+    "points": 0.7,
+    "fullCredit": "States barriers resolved",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3B.4",
+    "description": "Patient initiated therapy with excellent adherence",
+    "points": 0.6,
+    "fullCredit": "States initiation + adherence",
+    "halfCredit": "States one",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3B.5",
+    "description": "Now demonstrates substantial LDL-C improvement",
+    "points": 0.5,
+    "fullCredit": "States LDL improvement",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3B.6",
+    "description": "Illustrates identifying implementation barriers before assuming failure",
+    "points": 0.5,
+    "fullCredit": "States this lesson",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3B.7",
+    "description": "Continue reinforcing open communication regarding future concerns",
+    "points": 0.4,
+    "fullCredit": "States communication reinforcement",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3C.1",
+    "description": "Problem identified: CKD (G3aA2)",
+    "points": 0.5,
+    "fullCredit": "Names CKD with stage",
+    "halfCredit": "Names CKD, no stage",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3C.2",
+    "description": "Status: stable",
+    "points": 0.4,
+    "fullCredit": "States stable",
+    "halfCredit": "—",
+    "zeroCredit": "Incorrect"
+  },
+  {
+    "id": "3C.3",
+    "description": "eGFR 53 supports G3a category",
+    "points": 0.5,
+    "fullCredit": "States G3a",
+    "halfCredit": "States eGFR only",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3C.4",
+    "description": "UACR 160 confirms persistent A2",
+    "points": 0.5,
+    "fullCredit": "States A2 category",
+    "halfCredit": "States albuminuria, no category",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3C.5",
+    "description": "Cites KDIGO 2024 CKD Guideline",
+    "points": 0.4,
+    "fullCredit": "Names KDIGO 2024",
+    "halfCredit": "Cites guideline, no source",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3C.6",
+    "description": "Classifies CKD using both eGFR and albuminuria",
+    "points": 0.5,
+    "fullCredit": "States dual-axis classification",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3C.7",
+    "description": "Kidney function stable; albuminuria minimal change",
+    "points": 0.5,
+    "fullCredit": "States both",
+    "halfCredit": "States one",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3C.8",
+    "description": "Persistent CKD continues to contribute to elevated CV risk",
+    "points": 0.4,
+    "fullCredit": "States CV risk contribution",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3C.9",
+    "description": "Requires ongoing monitoring",
+    "points": 0.3,
+    "fullCredit": "States ongoing monitoring",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3D.1",
+    "description": "Problem identified: hypertension",
+    "points": 0.4,
+    "fullCredit": "Names hypertension",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3D.2",
+    "description": "Status: improved but above ideal target",
+    "points": 0.6,
+    "fullCredit": "States both improved + above target",
+    "halfCredit": "States one only",
+    "zeroCredit": "Incorrect"
+  },
+  {
+    "id": "3D.3",
+    "description": "Documents office and home BP (~136/82 mmHg)",
+    "points": 0.6,
+    "fullCredit": "States values",
+    "halfCredit": "States elevated, no value",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3D.4",
+    "description": "Cites KDIGO 2024: BP control reduces CKD progression / CV complications",
+    "points": 0.6,
+    "fullCredit": "States this guideline point",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3D.5",
+    "description": "Notes improvement from prior visit",
+    "points": 0.5,
+    "fullCredit": "States improvement",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3D.6",
+    "description": "Additional optimization may be considered if persistently elevated",
+    "points": 0.5,
+    "fullCredit": "States future optimization",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3D.7",
+    "description": "Defers intensification at this visit",
+    "points": 0.3,
+    "fullCredit": "States deferral",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3E.1",
+    "description": "Problem identified: possible SAMS vs exercise-related muscle soreness",
+    "points": 0.6,
+    "fullCredit": "Names the differential problem",
+    "halfCredit": "Names muscle symptom only",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3E.2",
+    "description": "Characterizes soreness (mild, intermittent, bilateral, post-walking)",
+    "points": 0.6,
+    "fullCredit": "Names &gt;=3 descriptors",
+    "halfCredit": "Names 1-2",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3E.3",
+    "description": "Symptoms non-limiting / do not significantly impair function",
+    "points": 0.5,
+    "fullCredit": "States non-limiting",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3E.4",
+    "description": "Feature against significant SAMS: symptoms occur primarily after exercise",
+    "points": 0.5,
+    "fullCredit": "States this feature",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3E.5",
+    "description": "Feature against significant SAMS: symptoms are mild",
+    "points": 0.4,
+    "fullCredit": "States this feature",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3E.6",
+    "description": "Feature against significant SAMS: symptoms are not progressive",
+    "points": 0.5,
+    "fullCredit": "States this feature",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3E.7",
+    "description": "Feature against significant SAMS: activities are not limited",
+    "points": 0.4,
+    "fullCredit": "States this feature",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3E.8",
+    "description": "Feature against significant SAMS: patient wishes to continue therapy",
+    "points": 0.4,
+    "fullCredit": "States this feature",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3E.9",
+    "description": "Substantial LDL reduction + favorable tolerability support continuation",
+    "points": 0.6,
+    "fullCredit": "States risk-benefit favoring continuation",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3E.10",
+    "description": "Continue rosuvastatin while monitoring symptoms",
+    "points": 0.6,
+    "fullCredit": "States continue + monitor",
+    "halfCredit": "States one",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3E.11",
+    "description": "Differentiates statin myalgia from exercise-related soreness",
+    "points": 0.4,
+    "fullCredit": "States the differentiation",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3F.1",
+    "description": "Problem identified: medication affordability barrier (improved)",
+    "points": 0.6,
+    "fullCredit": "Names the problem",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3F.2",
+    "description": "Costs substantially lower than anticipated after initiation",
+    "points": 0.6,
+    "fullCredit": "States lower-than-expected cost",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3F.3",
+    "description": "Affordability concerns remain present",
+    "points": 0.5,
+    "fullCredit": "States residual concern",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3F.4",
+    "description": "No longer appears to be preventing medication implementation",
+    "points": 0.6,
+    "fullCredit": "States no longer a barrier",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3F.5",
+    "description": "Continue assessing medication access at future visits",
+    "points": 0.4,
+    "fullCredit": "States ongoing assessment",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3F.6",
+    "description": "Links resolved affordability to successful initiation",
+    "points": 0.3,
+    "fullCredit": "States this linkage",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3G.1",
+    "description": "Problem identified: obesity",
+    "points": 0.4,
+    "fullCredit": "Names obesity",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3G.2",
+    "description": "Status: slight improvement",
+    "points": 0.4,
+    "fullCredit": "States slight improvement",
+    "halfCredit": "—",
+    "zeroCredit": "Incorrect"
+  },
+  {
+    "id": "3G.3",
+    "description": "Documents weight loss (~1 kg)",
+    "points": 0.6,
+    "fullCredit": "States ~1 kg loss",
+    "halfCredit": "States lost weight, no value",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3G.4",
+    "description": "Attributes to increased activity + improved dietary choices",
+    "points": 0.5,
+    "fullCredit": "Names both contributors",
+    "halfCredit": "Names one",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3G.5",
+    "description": "Cites guidelines emphasizing lifestyle modification (2026 cholesterol + KDIGO 2024)",
+    "points": 0.3,
+    "fullCredit": "Names &gt;=1 guideline source",
+    "halfCredit": "Mentions guidelines, no source",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3G.6",
+    "description": "Reinforce continued progress",
+    "points": 0.3,
+    "fullCredit": "States reinforcement",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3H.1",
+    "description": "Problem identified: preventive care gaps",
+    "points": 0.4,
+    "fullCredit": "Names preventive care gaps",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3H.2",
+    "description": "Pneumococcal vaccination gap",
+    "points": 0.4,
+    "fullCredit": "Names pneumococcal gap",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3H.3",
+    "description": "Herpes zoster (Shingrix) vaccination gap",
+    "points": 0.3,
+    "fullCredit": "Names zoster gap",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "3H.4",
+    "description": "Tdap booster gap (overdue)",
+    "points": 0.4,
+    "fullCredit": "Names Tdap gap",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4A.1",
+    "description": "Continue rosuvastatin 20 mg daily",
+    "points": 0.9,
+    "fullCredit": "States continue rosuvastatin 20 mg",
+    "halfCredit": "States continue, no dose",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4A.2",
+    "description": "Reinforce adherence",
+    "points": 0.8,
+    "fullCredit": "States reinforce adherence",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4A.3",
+    "description": "Continue shared decision-making regarding therapy",
+    "points": 0.8,
+    "fullCredit": "States shared decision-making",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4A.4",
+    "description": "Repeat lipid panel prior to next follow-up",
+    "points": 0.7,
+    "fullCredit": "States repeat lipids before follow-up",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4A.5",
+    "description": "No further statin intensification given favorable response",
+    "points": 0.3,
+    "fullCredit": "States holding intensification",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4B.1",
+    "description": "Continue losartan 50 mg daily",
+    "points": 0.9,
+    "fullCredit": "States continue losartan 50 mg",
+    "halfCredit": "States continue, no dose",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4B.2",
+    "description": "Continue monitoring renal function and UACR",
+    "points": 1.1,
+    "fullCredit": "States renal + UACR monitoring",
+    "halfCredit": "States one only",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4B.3",
+    "description": "Reinforce kidney-protective lifestyle modifications",
+    "points": 1,
+    "fullCredit": "States kidney-protective lifestyle",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4B.4",
+    "description": "Notes losartan provides renal protection",
+    "points": 0.5,
+    "fullCredit": "States renoprotective rationale",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4C.1",
+    "description": "Continue losartan 50 mg daily",
+    "points": 0.8,
+    "fullCredit": "States continue losartan 50 mg",
+    "halfCredit": "States continue, no dose",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4C.2",
+    "description": "Continue amlodipine 10 mg daily",
+    "points": 0.8,
+    "fullCredit": "States continue amlodipine 10 mg",
+    "halfCredit": "States continue, no dose",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4C.3",
+    "description": "Continue home blood pressure monitoring",
+    "points": 0.9,
+    "fullCredit": "States continue HBPM",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4C.4",
+    "description": "Reassess need for therapy optimization at next visit",
+    "points": 1,
+    "fullCredit": "States conditional reassessment",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4D.1",
+    "description": "Continue rosuvastatin therapy",
+    "points": 0.9,
+    "fullCredit": "States continue rosuvastatin",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4D.2",
+    "description": "Monitor for worsening muscle symptoms",
+    "points": 1.1,
+    "fullCredit": "States symptom monitoring",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4D.3",
+    "description": "Educate patient regarding symptoms that should prompt medical evaluation",
+    "points": 1.2,
+    "fullCredit": "States red-flag education",
+    "halfCredit": "States educate, generic",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4D.4",
+    "description": "Reassess at next follow-up",
+    "points": 0.9,
+    "fullCredit": "States reassessment",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4D.5",
+    "description": "Avoids unnecessary statin discontinuation given mild non-limiting symptoms",
+    "points": 0.9,
+    "fullCredit": "States rationale for not stopping",
+    "halfCredit": "—",
+    "zeroCredit": "Omits / discontinues unnecessarily"
+  },
+  {
+    "id": "4E.1",
+    "description": "Continue walking program",
+    "points": 0.8,
+    "fullCredit": "States continue walking",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4E.2",
+    "description": "Continue sodium reduction efforts",
+    "points": 0.8,
+    "fullCredit": "States continue sodium reduction",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4E.3",
+    "description": "Continue gradual weight-loss efforts",
+    "points": 0.9,
+    "fullCredit": "States continue weight loss",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4E.4",
+    "description": "Reinforce positive lifestyle changes",
+    "points": 1,
+    "fullCredit": "States reinforcement of changes",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4F.1",
+    "description": "Clarify pneumococcal vaccination history",
+    "points": 0.9,
+    "fullCredit": "States clarify pneumococcal",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4F.2",
+    "description": "Recommend Shingrix vaccination if not previously administered",
+    "points": 1,
+    "fullCredit": "States Shingrix recommendation",
+    "halfCredit": "States zoster, no detail",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4F.3",
+    "description": "Recommend Tdap booster",
+    "points": 1.1,
+    "fullCredit": "States Tdap recommendation",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4G.1",
+    "description": "Follow up in ~3 months",
+    "points": 0.7,
+    "fullCredit": "States 3-month follow-up",
+    "halfCredit": "States follow-up, no timing",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4G.2",
+    "description": "Obtain repeat lipid panel before follow-up",
+    "points": 0.4,
+    "fullCredit": "States lipid panel before visit",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4G.3",
+    "description": "Obtain repeat CMP before follow-up",
+    "points": 0.4,
+    "fullCredit": "States CMP before visit",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4G.4",
+    "description": "Obtain repeat UACR before follow-up",
+    "points": 0.4,
+    "fullCredit": "States UACR before visit",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4G.5",
+    "description": "Obtain BP log before follow-up",
+    "points": 0.3,
+    "fullCredit": "States BP log before visit",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4G.6",
+    "description": "Reassess statin tolerability at follow-up",
+    "points": 0.4,
+    "fullCredit": "States tolerability reassessment",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "4G.7",
+    "description": "Reassess CKD progression / cardiovascular risk reduction at follow-up",
+    "points": 0.4,
+    "fullCredit": "States CKD/CV reassessment",
+    "halfCredit": "—",
+    "zeroCredit": "Omits"
+  },
+  {
+    "id": "5A.1",
+    "description": "Uses four-part SOAP structure (S / O / A / P)",
+    "points": 0.5,
+    "fullCredit": "All four sections present and labeled",
+    "halfCredit": "Some sections present",
+    "zeroCredit": "Absent"
+  },
+  {
+    "id": "5A.2",
+    "description": "Subjective and objective data placed in correct sections",
+    "points": 0.5,
+    "fullCredit": "Correctly partitioned",
+    "halfCredit": "Minor misplacement",
+    "zeroCredit": "Major misplacement"
+  },
+  {
+    "id": "5A.3",
+    "description": "Assessment presents a prioritized, numbered problem list",
+    "points": 0.5,
+    "fullCredit": "Numbered, prioritized list",
+    "halfCredit": "Listed, not prioritized",
+    "zeroCredit": "Absent"
+  },
+  {
+    "id": "5A.4",
+    "description": "Each plan element maps to an assessed problem",
+    "points": 0.5,
+    "fullCredit": "All plan items mapped",
+    "halfCredit": "Most mapped",
+    "zeroCredit": "Unmapped plan"
+  },
+  {
+    "id": "5B.1",
+    "description": "Medications documented with drug, dose, route, and frequency",
+    "points": 0.5,
+    "fullCredit": "All four elements present",
+    "halfCredit": "Missing one element",
+    "zeroCredit": "Largely incomplete"
+  },
+  {
+    "id": "5B.2",
+    "description": "Laboratory values reported with units",
+    "points": 0.5,
+    "fullCredit": "Units present throughout",
+    "halfCredit": "Some units missing",
+    "zeroCredit": "Units absent"
+  },
+  {
+    "id": "5B.3",
+    "description": "Goals/targets stated with numeric thresholds",
+    "points": 0.5,
+    "fullCredit": "Numeric goals stated",
+    "halfCredit": "Some numeric",
+    "zeroCredit": "Vague goals"
+  },
+  {
+    "id": "5B.4",
+    "description": "Documents trends versus prior visit (LDL, ASCVD risk, UACR, BP, weight)",
+    "points": 0.5,
+    "fullCredit": "Reports &gt;=3 trends",
+    "halfCredit": "Reports 1-2 trends",
+    "zeroCredit": "No trends"
+  },
+  {
+    "id": "5C.1",
+    "description": "Objective, professional clinical language",
+    "points": 0.4,
+    "fullCredit": "Professional throughout",
+    "halfCredit": "Minor lapses",
+    "zeroCredit": "Unprofessional"
+  },
+  {
+    "id": "5C.2",
+    "description": "Recommendations tied to guideline or clinical rationale",
+    "points": 0.4,
+    "fullCredit": "Rationale provided",
+    "halfCredit": "Partial rationale",
+    "zeroCredit": "Absent"
+  },
+  {
+    "id": "5C.3",
+    "description": "Free of major factual or medication errors",
+    "points": 0.2,
+    "fullCredit": "No major errors",
+    "halfCredit": "1 minor error",
+    "zeroCredit": "Major error"
+  }
+]

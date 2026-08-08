@@ -395,6 +395,12 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
           const q = text.toLowerCase()
           const combined = (text + ' ' + (reply.response || '')).toLowerCase()
           
+          if (q.includes('hpi') || q.includes('present') || q.includes('symptom') || q.includes('feeling') || q.includes('history') || q.includes('diagnose') || q.includes('how long') || q.includes('why are you here') || q.includes('brought you') || combined.includes('symptom') || combined.includes('feeling') || combined.includes('diagnosed') || combined.includes('dealing with')) {
+            fields.push('hpiNarrative')
+          }
+          if (q.includes('medication') || q.includes('meds') || q.includes('drug') || q.includes('prescription') || q.includes('prescribe') || q.includes('pill') || q.includes('taking') || q.includes('statin') || combined.includes('medication') || combined.includes('taking')) {
+            fields.push('currentMeds')
+          }
           if (q.includes('otc') || q.includes('over the counter') || q.includes('over-the-counter') || q.includes('supplement') || q.includes('herbal') || q.includes('vitamin') || q.includes('melatonin') || q.includes('calcium') || q.includes('fish oil') || q.includes('coq10') || q.includes('multivitamin') || combined.includes('ibuprofen') || combined.includes('acetaminophen') || combined.includes('tylenol') || combined.includes('advil') || combined.includes('aspirin')) {
             fields.push('otc')
           }
@@ -547,7 +553,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
                   <div ref={voiceScrollRef} className="flex-1 overflow-y-auto thin-scroll px-4 py-3 space-y-3">
                     {chat.length === 0 ? <p className="text-[12px] text-slate-400 text-center mt-6">Start talking — your conversation will appear here.</p>
                       : chat.map((m, i) => <Bubble key={i} role={m.role} text={m.text} discovered={m.discovered} compact />)}
-                    {timeLeft === 0 && <div className="rounded-lg bg-red-50 border border-red-200 px-3 py-2 text-[12px] text-red-700 font-semibold text-center">30-minute session expired. Document your findings.</div>}
+                    {timeLeft === 0 && <div className="rounded-lg bg-red-50 border border-red-200 px-3 py-2 text-[12px] text-red-700 font-semibold text-center">{Math.round(baseTime / 60)}-minute session expired. Document your findings.</div>}
                   </div>
                 </div>
               </div>
@@ -559,7 +565,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
                 </div>
                 <div ref={scrollRef} className="flex-1 overflow-y-auto thin-scroll px-4 py-4 space-y-3 bg-slate-50/60">
                   {chat.length === 0 && timeLeft > 0 && <div className="text-center text-[13px] text-slate-400 mt-10"><MessageSquare size={28} className="mx-auto mb-2 opacity-40" />Start the conversation. Try a suggested question below.</div>}
-                  {timeLeft === 0 && <div className="text-center text-[13px] text-red-500 font-bold mt-4 p-3 bg-red-50 rounded-lg">Your 30-minute interview session has expired. Please document your findings.</div>}
+                  {timeLeft === 0 && <div className="text-center text-[13px] text-red-500 font-bold mt-4 p-3 bg-red-50 rounded-lg">Your {Math.round(baseTime / 60)}-minute interview session has expired. Please document your findings.</div>}
                   {chat.map((m, i) => <Bubble key={i} role={m.role} text={m.text} discovered={m.discovered} />)}
                 </div>
                 <div className="px-3 py-3 border-t border-slate-100">

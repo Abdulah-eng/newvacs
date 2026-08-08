@@ -45,14 +45,20 @@ export async function callJsonLlm(messages, modelOverride = null) {
       
       try {
         // Attempt direct parse first
-        return JSON.parse(text)
+        const cleaned = cleanJsonNestedQuotes(text)
+        return JSON.parse(cleaned)
       } catch (e) {
         // If it fails, try to extract JSON from conversational padding (common with Thinking models)
         const startIndex = text.indexOf('{')
         const endIndex = text.lastIndexOf('}')
         if (startIndex !== -1 && endIndex !== -1 && endIndex > startIndex) {
           const jsonStr = text.substring(startIndex, endIndex + 1)
-          return JSON.parse(jsonStr)
+          try {
+            const cleaned = cleanJsonNestedQuotes(jsonStr)
+            return JSON.parse(cleaned)
+          } catch (innerErr) {
+            // ignore and throw original error
+          }
         }
         throw e
       }
@@ -96,5 +102,19 @@ export async function callLlm(messages, modelOverride = null) {
   })
 
   return response.content.find(b => b.type === 'text')?.text || ''
+}
+
+function cleanJsonNestedQuotes(str) {
+  return str.split('\n').map(line => {
+    const match = line.match(/^(\s*"[^"]+"\s*:\s*")(.*)("\s*,?\s*)$/)
+    if (match) {
+      const [_, prefix, content, suffix] = match
+      if (content.includes('"') && !content.includes('":')) {
+        const cleanedContent = content.replace(/"/g, "'")
+        return prefix + cleanedContent + suffix
+      }
+    }
+    return line
+  }).join('\n')
 }
 
