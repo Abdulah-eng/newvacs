@@ -732,7 +732,7 @@ const davidTue = makeCase({
     { label: 'SCr', value: '1.82', unit: 'mg/dL', flag: 'high' },
     { label: 'eGFR', value: '42', unit: 'mL/min/1.73m²', flag: 'warn', note: 'Moderately-to-severely decreased (G3b)' },
     { label: 'A1C', value: '7.2', unit: '%', flag: 'high' },
-    { label: 'Fasting glucose', value: '136', unit: 'mg/dL', flag: 'high' },
+    { label: 'Glucose', value: '136', unit: 'mg/dL', flag: 'high', note: 'Fasting' },
     { label: 'AST', value: '24', unit: 'U/L', flag: 'normal' },
     { label: 'ALT', value: '27', unit: 'U/L', flag: 'normal' },
     { label: 'Total cholesterol', value: '168', unit: 'mg/dL', flag: 'normal' },
