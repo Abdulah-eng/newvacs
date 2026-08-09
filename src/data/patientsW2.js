@@ -729,9 +729,10 @@ const davidTue = makeCase({
   LABS: [
     { label: 'Sodium', value: '139', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '4.5', unit: 'mEq/L', flag: 'normal', note: 'Baseline potassium' },
-    { label: 'SCr', value: '1.68', unit: 'mg/dL', flag: 'high' },
+    { label: 'SCr', value: '1.82', unit: 'mg/dL', flag: 'high' },
     { label: 'eGFR', value: '42', unit: 'mL/min/1.73m²', flag: 'warn', note: 'Moderately-to-severely decreased (G3b)' },
     { label: 'A1C', value: '7.2', unit: '%', flag: 'high' },
+    { label: 'Fasting glucose', value: '136', unit: 'mg/dL', flag: 'high' },
     { label: 'AST', value: '24', unit: 'U/L', flag: 'normal' },
     { label: 'ALT', value: '27', unit: 'U/L', flag: 'normal' },
     { label: 'Total cholesterol', value: '168', unit: 'mg/dL', flag: 'normal' },
