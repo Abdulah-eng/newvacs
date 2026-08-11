@@ -214,7 +214,7 @@ const angelaTue = makeCase({
   },
   VITALS: { bp: '130/80', bpRepeat: '128/78', hr: '78', rr: '16', temp: '98.6°F', spo2: '97%', weight: '85 kg', height: "5'4\"", bmi: '32.1', flags: {} },
   LABS: [
-    { label: 'Sodium', value: '139', unit: 'mEq/L', flag: 'normal' },
+    { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal' },
     { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
     { label: 'eGFR', value: '72', unit: 'mL/min/1.73m²', flag: 'normal' },
@@ -278,7 +278,7 @@ const angelaWed = makeCase({
   },
   VITALS: { bp: '130/80', bpRepeat: '128/78', hr: '78', rr: '16', temp: '98.6°F', spo2: '97%', weight: '85 kg', height: "5'4\"", bmi: '32.1', flags: {} },
   LABS: [
-    { label: 'Sodium', value: '139', unit: 'mEq/L', flag: 'normal' },
+    { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '4.3', unit: 'mEq/L', flag: 'normal' },
     { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
     { label: 'eGFR', value: '73', unit: 'mL/min/1.73m²', flag: 'normal' },
@@ -334,7 +334,7 @@ const angelaThu = makeCase({
   },
   VITALS: { bp: '130/80', bpRepeat: '128/78', hr: '78', rr: '16', temp: '98.6°F', spo2: '97%', weight: '85 kg', height: "5'4\"", bmi: '32.1', flags: {} },
   LABS: [
-    { label: 'Sodium', value: '138', unit: 'mEq/L', flag: 'normal' },
+    { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal' },
     { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
     { label: 'eGFR', value: '72', unit: 'mL/min/1.73m²', flag: 'normal' }
@@ -392,7 +392,7 @@ const robertTue = makeCase({
   },
   VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '58 kg', height: "5'7\"", bmi: '20.0', flags: {} },
   LABS: [
-    { label: 'Sodium', value: '138', unit: 'mEq/L', flag: 'normal' },
+    { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '5.0', unit: 'mEq/L', flag: 'normal' },
     { label: 'SCr', value: '1.82', unit: 'mg/dL', flag: 'high' },
     { label: 'eGFR', value: '38', unit: 'mL/min/1.73m²', flag: 'low' },
@@ -458,7 +458,7 @@ const robertWed = makeCase({
   },
   VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '58 kg', height: "5'7\"", bmi: '20.0', flags: {} },
   LABS: [
-    { label: 'Sodium', value: '138', unit: 'mEq/L', flag: 'normal' },
+    { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal' },
     { label: 'SCr', value: '1.79', unit: 'mg/dL', flag: 'high' },
     { label: 'eGFR', value: '39', unit: 'mL/min/1.73m²', flag: 'low' }
@@ -513,7 +513,7 @@ const robertThu = makeCase({
   },
   VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '58 kg', height: "5'7\"", bmi: '20.0', flags: {} },
   LABS: [
-    { label: 'Sodium', value: '139', unit: 'mEq/L', flag: 'normal' },
+    { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal' },
     { label: 'SCr', value: '1.76', unit: 'mg/dL', flag: 'high' },
     { label: 'eGFR', value: '40', unit: 'mL/min/1.73m²', flag: 'low' }
