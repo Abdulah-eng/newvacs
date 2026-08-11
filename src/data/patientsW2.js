@@ -640,6 +640,9 @@ const angelaThu = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'concerns', label: 'Confidence / adherence', placeholder: 'How she feels about the regimen…' },
     { key: 'weightGoals', label: 'Goals & lifestyle', placeholder: 'Weight, activity, prevention…' },
+    { key: 'familyHistory', label: 'Family History', placeholder: 'Parents, siblings…' },
+    { key: 'social', label: 'Social History', placeholder: 'Occupation, living situation…' },
+    { key: 'allergies', label: 'Allergies / Vaccinations', placeholder: 'Reactions, vaccines…' },
   ],
   GUIDING_QUESTIONS: [
     'Why should rosuvastatin be continued despite LDL-C improvement?',
