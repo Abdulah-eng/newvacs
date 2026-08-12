@@ -1,15 +1,7 @@
--- =============================================================================
--- VACS — Virtual Ambulatory Care Simulator
--- Supabase PostgreSQL Schema — v1.0
--- Run this in Supabase SQL Editor (Dashboard → SQL Editor → New query)
--- =============================================================================
 
--- Enable UUID extension (already on by default in Supabase)
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
--- =============================================================================
--- 1. SCHOOLS (institutional customers / tenants)
--- =============================================================================
+
 CREATE TABLE IF NOT EXISTS schools (
   id            UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   name          TEXT NOT NULL,
@@ -19,9 +11,7 @@ CREATE TABLE IF NOT EXISTS schools (
 );
 
 -- =============================================================================
--- 2. PROFILES (extends Supabase auth.users)
--- Supabase auth handles password/email. This table stores role + school info.
--- =============================================================================
+
 CREATE TABLE IF NOT EXISTS profiles (
   id            UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
   full_name     TEXT,
@@ -33,7 +23,6 @@ CREATE TABLE IF NOT EXISTS profiles (
   updated_at    TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
--- Auto-create profile row when a new auth user is created
 CREATE OR REPLACE FUNCTION public.handle_new_user()
 RETURNS TRIGGER AS $$
 BEGIN
@@ -53,9 +42,7 @@ CREATE TRIGGER on_auth_user_created
   AFTER INSERT ON auth.users
   FOR EACH ROW EXECUTE PROCEDURE public.handle_new_user();
 
--- =============================================================================
--- 3. COHORTS (groups of students assigned to a VACS run)
--- =============================================================================
+
 CREATE TABLE IF NOT EXISTS cohorts (
   id            UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   school_id     UUID REFERENCES schools(id) ON DELETE CASCADE,
@@ -75,8 +62,7 @@ CREATE TABLE IF NOT EXISTS cohort_members (
   PRIMARY KEY (cohort_id, user_id)
 );
 
--- =============================================================================
--- 4. WEEKS (the 5 weekly disease-state modules)
+
 -- =============================================================================
 CREATE TABLE IF NOT EXISTS weeks (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
@@ -92,12 +78,7 @@ CREATE TABLE IF NOT EXISTS weeks (
   UNIQUE (week_number, cohort_id)
 );
 
--- Note: We also require a storage bucket named 'guidelines' for PDF uploads.
--- INSERT INTO storage.buckets (id, name, public) VALUES ('guidelines', 'guidelines', true);
 
--- =============================================================================
--- 5. CONTENT PACKS (metadata for each week's uploaded clinical content)
--- =============================================================================
 CREATE TABLE IF NOT EXISTS content_packs (
   id                  UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   week_id             UUID NOT NULL REFERENCES weeks(id) ON DELETE CASCADE,
@@ -113,14 +94,11 @@ CREATE TABLE IF NOT EXISTS content_packs (
   updated_at          TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
--- =============================================================================
--- 6. STUDENT WEEK PROGRESS (tracks per-student, per-week unlock state)
--- =============================================================================
+
 CREATE TABLE IF NOT EXISTS student_week_progress (
   id                    UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id               UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
   week_id               UUID NOT NULL REFERENCES weeks(id) ON DELETE CASCADE,
-  -- Day statuses: 'locked' | 'unlocked' | 'in_progress' | 'complete'
   mon_status            TEXT NOT NULL DEFAULT 'unlocked',
   tue_status            TEXT NOT NULL DEFAULT 'locked',
   wed_status            TEXT NOT NULL DEFAULT 'locked',
@@ -132,9 +110,6 @@ CREATE TABLE IF NOT EXISTS student_week_progress (
   UNIQUE (user_id, week_id)
 );
 
--- =============================================================================
--- 7. QUIZ ATTEMPTS (Monday quiz — stores each attempt)
--- =============================================================================
 CREATE TABLE IF NOT EXISTS quiz_attempts (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id         UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
@@ -146,9 +121,6 @@ CREATE TABLE IF NOT EXISTS quiz_attempts (
   submitted_at    TIMESTAMPTZ
 );
 
--- =============================================================================
--- 8. QUIZ QUESTION RESULTS (per-question breakdown for each attempt)
--- =============================================================================
 CREATE TABLE IF NOT EXISTS quiz_question_results (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   attempt_id      UUID NOT NULL REFERENCES quiz_attempts(id) ON DELETE CASCADE,
@@ -162,9 +134,7 @@ CREATE TABLE IF NOT EXISTS quiz_question_results (
   created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
--- =============================================================================
--- 9. PATIENT INTERVIEWS (AI interview sessions)
--- =============================================================================
+
 CREATE TABLE IF NOT EXISTS patient_interviews (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id         UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
@@ -177,10 +147,6 @@ CREATE TABLE IF NOT EXISTS patient_interviews (
   completed_at    TIMESTAMPTZ,
   UNIQUE (user_id, week_id, patient_id, visit_day)
 );
-
--- =============================================================================
--- 10. HIDDEN INFO LOGS (tracks hidden information triggered or missed)
--- =============================================================================
 CREATE TABLE IF NOT EXISTS hidden_info_logs (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   interview_id    UUID NOT NULL REFERENCES patient_interviews(id) ON DELETE CASCADE,
@@ -192,9 +158,6 @@ CREATE TABLE IF NOT EXISTS hidden_info_logs (
   created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
--- =============================================================================
--- 11. SOAP SUBMISSIONS (structured SOAP note per patient per day)
--- =============================================================================
 CREATE TABLE IF NOT EXISTS soap_submissions (
   id              UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id         UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
@@ -218,9 +181,6 @@ CREATE TABLE IF NOT EXISTS soap_submissions (
   UNIQUE (user_id, week_id, patient_id, visit_day)
 );
 
--- =============================================================================
--- 12. SOAP GRADES (AI-generated scores and feedback per submission)
--- =============================================================================
 CREATE TABLE IF NOT EXISTS soap_grades (
   id                UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   soap_id           UUID NOT NULL REFERENCES soap_submissions(id) ON DELETE CASCADE UNIQUE,
