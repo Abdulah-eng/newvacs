@@ -3,6 +3,7 @@ import { SectionTitle } from './ui'
 import { generateSoapDraft } from '../lib/soapGenerator'
 import { gradeSoap, gradeBand } from '../lib/grader'
 import { GRADING_RUBRICS } from '../data/cases'
+import granularRubrics from '../data/granular_rubrics.json'
 import {
   Wand2, Copy, Check, AlertTriangle, GraduationCap, CheckCircle2, Circle,
   TrendingUp, ShieldAlert, Lightbulb, ListChecks, ChevronDown, ChevronRight, ShieldCheck
@@ -19,6 +20,13 @@ const TONE = {
   teal: { ring: 'ring-teal/30', bg: 'bg-teal/5', text: 'text-teal', chip: 'bg-teal/10 text-teal ring-teal/20' },
   amber: { ring: 'ring-amber-300', bg: 'bg-amber-50', text: 'text-amber-700', chip: 'bg-amber-100 text-amber-800 ring-amber-200' },
   red: { ring: 'ring-red-300', bg: 'bg-red-50', text: 'text-red-700', chip: 'bg-red-100 text-red-700 ring-red-200' },
+}
+
+const NAME_TO_LETTER = {
+  'Maria Gonzalez': 'A', 'James Wilson': 'B', 'Linda Martinez': 'C',
+  'Michael Turner': 'A', 'Angela Rodriguez': 'B', 'David Chen': 'C',
+  'Sarah Thompson': 'A', 'Robert "Bob" Jenkins': 'B', 'Robert Jenkins': 'C', 'Maria Thompson': 'C',
+  'Michael Thompson': 'A', 'Angela Brooks': 'B', 'Sarah Mitchell': 'A', 'Jessica Ramirez': 'B', 'David Carter': 'C',
 }
 
 export function SOAPNoteTab({ c, state, soap, onChange, onGraded }) {
@@ -100,18 +108,34 @@ export function SOAPNoteTab({ c, state, soap, onChange, onGraded }) {
         </button>
       </div>
 
-      {showRubric && c.PRECEPTOR?.checklist && (
+      {showRubric && (
         <div className="mb-4 rounded-xl border border-navy/20 bg-slate-50 shadow-sm p-4 animate-in slide-in-from-top-2">
           <div className="flex items-center gap-2 mb-3">
             <ListChecks size={18} className="text-navy" />
             <h3 className="font-head text-[15px] text-navy">Grading Checklist (Reference)</h3>
           </div>
           <ul className="grid sm:grid-cols-2 gap-x-4 gap-y-2">
-            {c.PRECEPTOR.checklist.map((item, i) => (
-              <li key={i} className="flex items-start gap-2 text-[12px] text-slate-700">
-                <ShieldCheck size={14} className="text-teal mt-0.5 shrink-0" /> {item}
-              </li>
-            ))}
+            {(() => {
+              const weekId = c.ENCOUNTER.week.split(' ')[1]
+              const letter = NAME_TO_LETTER[c.PATIENT.name]
+              const visitDay = c.ENCOUNTER.day
+              const rubricKey = `Week${weekId}_Patient_${letter}_${visitDay}`
+              
+              let items = c.PRECEPTOR?.checklist || []
+              if (items.length === 0 && granularRubrics[rubricKey]) {
+                items = granularRubrics[rubricKey].map(r => r.criterion)
+              }
+              
+              if (items.length === 0) {
+                return <li className="text-[12px] text-slate-500 italic">No checklist items available for this case.</li>
+              }
+
+              return items.map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-[12px] text-slate-700">
+                  <ShieldCheck size={14} className="text-teal mt-0.5 shrink-0" /> {item}
+                </li>
+              ))
+            })()}
           </ul>
         </div>
       )}
