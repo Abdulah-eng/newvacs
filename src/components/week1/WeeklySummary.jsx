@@ -1,5 +1,5 @@
 import React from 'react'
-import { loadCaseState } from '../../lib/storage'
+import { loadCaseState, saveCaseState } from '../../lib/storage'
 import { ChevronLeft, Award, GraduationCap, ClipboardList, FlaskConical, TrendingUp, AlertTriangle, CheckCircle2 } from 'lucide-react'
 
 const band = pct => pct >= 85 ? { t: 'text-teal', b: 'bg-teal/10' } : pct >= 65 ? { t: 'text-teal', b: 'bg-teal/5' } : pct >= 40 ? { t: 'text-amber-600', b: 'bg-amber-50' } : { t: 'text-red-500', b: 'bg-red-50' }

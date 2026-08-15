@@ -31382,27 +31382,27 @@
     },
     {
       "id": "1B.2",
-      "description": "States daytime symptom frequency (approximately 1–2 times weekly)",
+      "description": "States no daytime asthma symptoms in past 4 weeks",
       "points": 0.4,
-      "fullCredit": "States symptoms occur approximately 1–2 times per week",
-      "halfCredit": "States infrequent symptoms without numeric frequency",
+      "fullCredit": "States 0 daytime symptoms or no symptoms in past 4 weeks",
+      "halfCredit": "States rare symptoms without specifying zero frequency",
       "zeroCredit": "Symptom frequency absent"
     },
     {
       "id": "1B.3",
-      "description": "States reliever inhaler use frequency (approximately 1–2 times weekly)",
+      "description": "States no additional reliever inhaler use needed in recent weeks",
       "points": 0.4,
-      "fullCredit": "States reliever inhaler used approximately 1–2 times per week",
-      "halfCredit": "States infrequent use without numeric frequency",
-      "zeroCredit": "Reliever use frequency absent"
+      "fullCredit": "States patient has not needed extra (PRN) puffs in several weeks",
+      "halfCredit": "States reliever use is very low without stating zero",
+      "zeroCredit": "Reliever use not documented"
     },
     {
       "id": "1B.4",
-      "description": "States nighttime symptom frequency (rare; once during past month)",
+      "description": "States no nighttime awakenings from asthma",
       "points": 0.4,
-      "fullCredit": "States rare nighttime symptoms, approximately once in the past month",
-      "halfCredit": "States rare nighttime symptoms without the past-month timeframe",
-      "zeroCredit": "Nighttime symptom information absent"
+      "fullCredit": "States patient denies nighttime symptoms or awakenings",
+      "halfCredit": "States rare nighttime symptoms without specifying absence",
+      "zeroCredit": "Nighttime symptom status absent"
     },
     {
       "id": "1B.5",
@@ -31646,59 +31646,59 @@
     },
     {
       "id": "1E.4",
-      "description": "States maintenance dosing for budesonide/formoterol (1 inhalation twice daily)",
+      "description": "States maintenance dosing for budesonide/formoterol (1 inhalation twice daily under SMART)",
       "points": 0.45,
-      "fullCredit": "States 1 inhalation twice daily for maintenance",
-      "halfCredit": "States twice daily without specifying 1 inhalation, or states BID without route",
+      "fullCredit": "States 1 inhalation twice daily as maintenance component of SMART regimen",
+      "halfCredit": "States BID without specifying 1 inhalation or SMART context",
       "zeroCredit": "Maintenance dosing absent or incorrect"
     },
     {
       "id": "1E.5",
-      "description": "States PRN dosing for budesonide/formoterol (1 inhalation as needed for symptom relief)",
+      "description": "States PRN dosing for budesonide/formoterol (1 inhalation as needed for symptom relief under SMART)",
       "points": 0.45,
-      "fullCredit": "States 1 inhalation as needed (PRN) for symptom relief",
-      "halfCredit": "States PRN without specifying 1 inhalation or symptom relief context",
+      "fullCredit": "States 1 inhalation as needed (PRN) for relief under SMART regimen",
+      "halfCredit": "States PRN without specifying SMART or 1 inhalation",
       "zeroCredit": "PRN dosing absent"
     },
     {
       "id": "1E.6",
-      "description": "Lists cetirizine by name",
+      "description": "Lists loratadine by name",
       "points": 0.25,
-      "fullCredit": "Lists cetirizine (or Zyrtec) by name",
-      "halfCredit": "Lists an antihistamine without naming cetirizine",
+      "fullCredit": "Lists loratadine (or Claritin) by name",
+      "halfCredit": "Lists an antihistamine without naming loratadine",
       "zeroCredit": "Drug name absent"
     },
     {
       "id": "1E.7",
-      "description": "States cetirizine dose (10 mg)",
+      "description": "States loratadine dose (10 mg)",
       "points": 0.25,
-      "fullCredit": "States cetirizine 10 mg",
-      "halfCredit": "References dose without specifying 10 mg",
+      "fullCredit": "States loratadine 10 mg",
+      "halfCredit": "References antihistamine dose without specifying 10 mg",
       "zeroCredit": "Dose absent or incorrect"
     },
     {
       "id": "1E.8",
-      "description": "States cetirizine route and frequency (PO daily)",
+      "description": "States loratadine route and frequency (PO PRN / as needed)",
       "points": 0.2,
-      "fullCredit": "States PO (or oral) daily",
-      "halfCredit": "States daily without route, or route without frequency",
+      "fullCredit": "States PO (or oral) as needed / PRN",
+      "halfCredit": "States PRN without route, or oral without frequency",
       "zeroCredit": "Route and frequency both absent"
     },
     {
       "id": "1E.9",
-      "description": "Lists fluticasone nasal spray by name",
+      "description": "Notes rhinitis managed with loratadine PRN only (no intranasal corticosteroid prescribed at this visit)",
       "points": 0.3,
-      "fullCredit": "Lists fluticasone nasal spray (or Flonase) by name",
-      "halfCredit": "Lists intranasal corticosteroid spray without naming fluticasone",
-      "zeroCredit": "Drug name absent"
+      "fullCredit": "States only loratadine PRN for rhinitis; notes no intranasal steroid",
+      "halfCredit": "Lists rhinitis medication without noting absence of nasal spray",
+      "zeroCredit": "Rhinitis medication status absent"
     },
     {
       "id": "1E.10",
-      "description": "States fluticasone nasal spray dosing (1 spray each nostril daily)",
+      "description": "Notes patient uses multivitamin daily (OTC supplement)",
       "points": 0.35,
-      "fullCredit": "States 1 spray each nostril daily",
-      "halfCredit": "States daily dosing without specifying 1 spray per nostril",
-      "zeroCredit": "Dosing absent or incorrect"
+      "fullCredit": "Documents multivitamin as daily OTC supplement",
+      "halfCredit": "Mentions supplement without specifying multivitamin",
+      "zeroCredit": "OTC supplement not documented"
     },
     {
       "id": "1E.11",
@@ -31758,18 +31758,18 @@
     },
     {
       "id": "1E.18",
-      "description": "Lists all three active medications",
+      "description": "Lists both active medications",
       "points": 0.35,
-      "fullCredit": "All three medications listed: budesonide/formoterol, cetirizine, fluticasone nasal spray",
-      "halfCredit": "Two of three medications listed",
-      "zeroCredit": "Only one or zero medications listed"
+      "fullCredit": "Both medications listed: budesonide/formoterol and loratadine",
+      "halfCredit": "One of two medications listed",
+      "zeroCredit": "No medications listed"
     },
     {
       "id": "1F.1",
-      "description": "States minimal symptom burden (symptoms 1–2 times weekly)",
+      "description": "States no breakthrough asthma symptoms at current visit (0 daytime symptoms)",
       "points": 0.35,
-      "fullCredit": "States minimal asthma symptoms occurring 1–2 times per week",
-      "halfCredit": "States infrequent symptoms without numeric frequency",
+      "fullCredit": "States zero or no breakthrough asthma symptoms at this visit",
+      "halfCredit": "States very low symptoms without specifying zero",
       "zeroCredit": "Symptom burden not addressed"
     },
     {
@@ -31910,25 +31910,25 @@
     },
     {
       "id": "2B.8",
-      "description": "Interprets ACT score as well-controlled asthma",
+      "description": "Notes patient reports 0 breakthrough symptoms consistent with well-controlled asthma",
       "points": 0.55,
-      "fullCredit": "States ACT score of 22 indicates well-controlled asthma",
-      "halfCredit": "States ACT is good without using the well-controlled interpretation",
-      "zeroCredit": "ACT interpretation absent"
+      "fullCredit": "States patient-reported symptom history (0 breakthrough, no PRN use) consistent with well-controlled asthma",
+      "halfCredit": "States asthma is well controlled without referencing patient-reported criteria",
+      "zeroCredit": "Well-controlled classification absent"
     },
     {
       "id": "2C.1",
       "description": "Notes BMI value is consistent with healthy weight classification (23.9 kg/m²)",
       "points": 0.75,
-      "fullCredit": "Notes BMI of 27.5 kg/m² is in the overweight range",
+      "fullCredit": "Notes BMI of 23.9 kg/m² is in the normal/healthy weight range",
       "halfCredit": "Notes BMI without interpreting the classification",
       "zeroCredit": "BMI classification absent"
     },
     {
       "id": "2C.3",
-      "description": "Notes FEV1/FVC ratio (0.77) is above obstruction threshold (≥0.70)",
+      "description": "Notes FEV1/FVC ratio (0.80) is above obstruction threshold (≥0.70)",
       "points": 0.7,
-      "fullCredit": "States FEV1/FVC of 0.77 is above the 0.70 obstruction threshold",
+      "fullCredit": "States FEV1/FVC of 0.80 is above the 0.70 obstruction threshold",
       "halfCredit": "States ratio is normal without citing the 0.70 threshold",
       "zeroCredit": "Obstruction threshold comparison absent"
     },
@@ -32030,18 +32030,18 @@
     },
     {
       "id": "3A.13",
-      "description": "States infrequent reliever use at current visit",
+      "description": "States no additional (PRN) reliever use at current visit",
       "points": 0.45,
-      "fullCredit": "States reliever use is infrequent (1–2 times weekly)",
-      "halfCredit": "States reliever use is low without quantifying",
+      "fullCredit": "States patient has not used extra puffs / PRN doses in weeks",
+      "halfCredit": "States reliever use is low without quantifying as zero",
       "zeroCredit": "Reliever use frequency not stated"
     },
     {
       "id": "3A.14",
-      "description": "States rare nighttime symptoms at current visit",
+      "description": "States no nighttime asthma symptoms at current visit",
       "points": 0.4,
-      "fullCredit": "States nighttime symptoms are rare (once in past month)",
-      "halfCredit": "States nighttime symptoms occur without quantifying as rare",
+      "fullCredit": "States no nighttime awakenings from asthma at this visit",
+      "halfCredit": "States nighttime symptoms are rare without specifying absence",
       "zeroCredit": "Nighttime symptom status absent"
     },
     {
@@ -32054,11 +32054,11 @@
     },
     {
       "id": "3A.16",
-      "description": "States FEV1/FVC 0.77 (above obstruction threshold)",
+      "description": "States FEV1/FVC 0.80 (above obstruction threshold)",
       "points": 0.45,
-      "fullCredit": "States FEV1/FVC of 0.77 is above the lower limit of normal/obstruction threshold",
-      "halfCredit": "References FEV1/FVC without the specific value or threshold comparison",
-      "zeroCredit": "FEV1/FVC not cited in assessment"
+      "fullCredit": "States FEV1/FVC of 0.80 and interprets as above obstruction threshold",
+      "halfCredit": "States ratio without threshold comparison",
+      "zeroCredit": "PFT interpretation absent"
     },
     {
       "id": "3A.18",
@@ -32118,19 +32118,19 @@
     },
     {
       "id": "3C.2",
-      "description": "States patient uses fluticasone nasal spray consistently",
+      "description": "States patient uses loratadine PRN for rhinitis management",
       "points": 0.55,
-      "fullCredit": "States patient uses fluticasone nasal spray consistently or daily",
-      "halfCredit": "References fluticasone use without the consistent/daily qualifier",
-      "zeroCredit": "Fluticasone use not mentioned in assessment"
+      "fullCredit": "States loratadine PRN as the current rhinitis management strategy",
+      "halfCredit": "States antihistamine PRN without naming loratadine",
+      "zeroCredit": "Rhinitis medication not documented"
     },
     {
       "id": "3C.3",
-      "description": "States patient uses cetirizine",
+      "description": "Notes no intranasal corticosteroid is currently prescribed at this visit",
       "points": 0.55,
-      "fullCredit": "States patient uses cetirizine for rhinitis management",
-      "halfCredit": "References antihistamine without naming cetirizine",
-      "zeroCredit": "Cetirizine not mentioned in assessment"
+      "fullCredit": "States no nasal spray is in use; rhinitis managed with antihistamine alone",
+      "halfCredit": "Notes absence of nasal spray without full context",
+      "zeroCredit": "Rhinitis medication completeness not addressed"
     },
     {
       "id": "3C.4",
@@ -32310,19 +32310,19 @@
     },
     {
       "id": "4A.3",
-      "description": "States to continue maintenance dosing (1 inhalation twice daily)",
+      "description": "States continue budesonide/formoterol maintenance dose (1 inhalation twice daily)",
       "points": 0.65,
-      "fullCredit": "States continue 1 inhalation twice daily for maintenance",
-      "halfCredit": "States twice daily without the 1 inhalation specification",
-      "zeroCredit": "Maintenance dose instruction absent"
+      "fullCredit": "States to continue 1 inhalation twice daily as maintenance under SMART",
+      "halfCredit": "States continue BID without specifying 1 inhalation",
+      "zeroCredit": "Maintenance dosing not addressed in plan"
     },
     {
       "id": "4A.4",
-      "description": "States to continue PRN dosing (1 inhalation as needed for symptom relief)",
+      "description": "States continue PRN dosing (1 inhalation as needed for symptom relief)",
       "points": 0.65,
-      "fullCredit": "States continue 1 inhalation as needed for symptom relief",
-      "halfCredit": "States PRN dosing without specifying 1 inhalation or symptom context",
-      "zeroCredit": "PRN instruction absent"
+      "fullCredit": "States to continue 1 inhalation as needed under SMART",
+      "halfCredit": "States PRN without specifying 1 inhalation",
+      "zeroCredit": "PRN component absent from plan"
     },
     {
       "id": "4A.5",
@@ -32406,19 +32406,19 @@
     },
     {
       "id": "4C.1",
-      "description": "States to continue cetirizine 10 mg PO daily",
+      "description": "States to continue loratadine 10 mg PO PRN for rhinitis",
       "points": 0.6,
-      "fullCredit": "States to continue cetirizine 10 mg PO daily",
-      "halfCredit": "States to continue cetirizine without the dose (10 mg) or route/frequency",
-      "zeroCredit": "Cetirizine continuation absent"
+      "fullCredit": "States continue loratadine 10 mg PRN",
+      "halfCredit": "States continue antihistamine without naming loratadine or specifying PRN",
+      "zeroCredit": "Rhinitis medication plan absent"
     },
     {
       "id": "4C.2",
-      "description": "States to continue fluticasone nasal spray daily",
+      "description": "Considers adding or initiating intranasal corticosteroid if rhinitis symptoms worsen or become persistent",
       "points": 0.6,
-      "fullCredit": "States to continue fluticasone nasal spray daily",
-      "halfCredit": "States to continue nasal spray without naming fluticasone",
-      "zeroCredit": "Fluticasone nasal spray continuation absent"
+      "fullCredit": "States consider adding nasal corticosteroid (e.g., fluticasone nasal spray) if rhinitis worsens",
+      "halfCredit": "Mentions rhinitis monitoring without addressing potential escalation",
+      "zeroCredit": "Rhinitis escalation plan absent"
     },
     {
       "id": "4C.3",
@@ -32430,11 +32430,11 @@
     },
     {
       "id": "4C.4",
-      "description": "States no changes to rhinitis therapy are indicated",
+      "description": "States current rhinitis therapy appropriate given adequate control with loratadine PRN",
       "points": 0.5,
-      "fullCredit": "States no changes to rhinitis therapy are indicated at this time",
-      "halfCredit": "States to continue therapy without the explicit no-change statement",
-      "zeroCredit": "Change decision not stated"
+      "fullCredit": "States loratadine PRN is appropriate given current rhinitis control",
+      "halfCredit": "States therapy unchanged without justifying appropriateness",
+      "zeroCredit": "Rhinitis appropriateness not addressed"
     },
     {
       "id": "4C.5",
@@ -41260,9 +41260,9 @@
       "id": "1D.4",
       "description": "Never smoker",
       "points": 0.4,
-      "fullCredit": "States never smoker",
-      "halfCredit": "States nonsmoker without former/never distinction",
-      "zeroCredit": "Omits"
+      "fullCredit": "States never smoker or has never used tobacco products",
+      "halfCredit": "States non-smoker without specifying lifetime never-smoker status",
+      "zeroCredit": "Tobacco status absent"
     },
     {
       "id": "1D.7",
@@ -41308,25 +41308,25 @@
       "id": "1E.2",
       "description": "Budesonide/formoterol dose listed (160/4.5 mcg)",
       "points": 0.3,
-      "fullCredit": "States 160/4.5 mcg",
-      "halfCredit": "States a dose, value imprecise",
-      "zeroCredit": "Incorrect dose listed"
+      "fullCredit": "States Trelegy (fluticasone/umeclidinium/vilanterol) 100/62.5/25 mcg",
+      "halfCredit": "States triple inhaler without naming all three components or dose",
+      "zeroCredit": "Maintenance inhaler absent or incorrect"
     },
     {
       "id": "1E.3",
-      "description": "Budesonide/formoterol regimen listed (2 inhalations twice daily)",
+      "description": "Trelegy regimen listed (1 inhalation daily)",
       "points": 0.3,
-      "fullCredit": "States 2 inhalations twice daily",
-      "halfCredit": "States twice daily, no inhalation count",
-      "zeroCredit": "Omits"
+      "fullCredit": "States Trelegy 1 inhalation once daily",
+      "halfCredit": "States daily without specifying 1 inhalation",
+      "zeroCredit": "Regimen absent"
     },
     {
       "id": "1E.5",
       "description": "Tiotropium regimen listed (2 inhalations daily)",
       "points": 0.25,
-      "fullCredit": "States 2 inhalations daily",
-      "halfCredit": "States once daily, no inhalation count",
-      "zeroCredit": "Omits"
+      "fullCredit": "Lists albuterol HFA as rescue inhaler with dose and frequency",
+      "halfCredit": "Lists rescue inhaler without specifying albuterol or frequency",
+      "zeroCredit": "Rescue inhaler absent"
     },
     {
       "id": "1E.6",
@@ -41348,33 +41348,33 @@
       "id": "1E.8",
       "description": "Fluticasone nasal spray listed as self-discontinued approximately 6 weeks ago",
       "points": 0.4,
-      "fullCredit": "States self-discontinued ~6 weeks ago",
-      "halfCredit": "Lists fluticasone nasal spray without discontinuation status",
-      "zeroCredit": "Omits"
+      "fullCredit": "States patient reports significant improvement in breathing, 0 exacerbations in 6 months",
+      "halfCredit": "States clinical improvement without quantifying exacerbation reduction",
+      "zeroCredit": "Clinical response to biologic therapy not documented"
     },
     {
       "id": "1E.9",
       "description": "Lisinopril listed by name and dose (20 mg PO daily)",
       "points": 0.3,
-      "fullCredit": "States lisinopril 20 mg PO daily",
-      "halfCredit": "States lisinopril without dose or route",
-      "zeroCredit": "Incorrect dose listed"
+      "fullCredit": "States no known drug allergies (NKDA)",
+      "halfCredit": "States no allergies without specifying drug class",
+      "zeroCredit": "Allergy status absent"
     },
     {
       "id": "1E.10",
       "description": "Calcium carbonate/vitamin D listed with regimen (1 tablet twice daily)",
       "points": 0.3,
-      "fullCredit": "States calcium carbonate/vitamin D 1 tablet twice daily",
-      "halfCredit": "Lists supplement, no dose or frequency",
-      "zeroCredit": "Omits"
+      "fullCredit": "Documents immunization status (influenza up to date)",
+      "halfCredit": "References vaccines without specifying current status",
+      "zeroCredit": "Vaccination status absent"
     },
     {
       "id": "1E.12",
       "description": "Allergy reaction type stated (rash)",
       "points": 0.3,
-      "fullCredit": "States rash",
-      "halfCredit": "States skin reaction, vague",
-      "zeroCredit": "Omits"
+      "fullCredit": "States no known drug allergies (NKDA)",
+      "halfCredit": "States no allergies without drug-specific qualifier",
+      "zeroCredit": "Allergy documentation absent"
     },
     {
       "id": "1E.13",
@@ -41572,17 +41572,17 @@
       "id": "2B.4",
       "description": "ACT score stated (20)",
       "points": 0.55,
-      "fullCredit": "States ACT score 20",
-      "halfCredit": "ACT stated, no numeric value",
-      "zeroCredit": "Omits"
+      "fullCredit": "Documents patient-reported symptom improvement (e.g., no exacerbations in 6 months, reduced albuterol use)",
+      "halfCredit": "States clinical improvement without documenting specific markers",
+      "zeroCredit": "Clinical response not documented"
     },
     {
       "id": "2B.5",
       "description": "ACT interpretation stated (improved asthma control)",
       "points": 0.4,
-      "fullCredit": "States improved asthma control",
-      "halfCredit": "States score improved, no interpretation",
-      "zeroCredit": "Omits"
+      "fullCredit": "States eosinophil count 50 cells/µL is significantly reduced from baseline (suggests mepolizumab response)",
+      "halfCredit": "Notes low eosinophil count without connecting to biologic response",
+      "zeroCredit": "Eosinophil interpretation absent"
     },
     {
       "id": "2B.6",
@@ -41684,25 +41684,25 @@
       "id": "3A.2",
       "description": "Status stated as significantly improved following initiation of ICS-containing therapy",
       "points": 0.5,
-      "fullCredit": "States significantly improved AND links to ICS initiation",
-      "halfCredit": "States improved, no link to therapy change",
-      "zeroCredit": "Omits"
+      "fullCredit": "States ACO is significantly improved following initiation of mepolizumab and Trelegy",
+      "halfCredit": "States improved without specifying biologic or triple inhaler context",
+      "zeroCredit": "Response status not stated"
     },
     {
       "id": "3A.3",
       "description": "ACT score improvement quantified (from 15 to 20)",
       "points": 0.6,
-      "fullCredit": "States ACT improved from 15 to 20",
-      "halfCredit": "States ACT improved, missing one value",
-      "zeroCredit": "Omits"
+      "fullCredit": "States 0 exacerbations in 6 months since mepolizumab initiation",
+      "halfCredit": "States exacerbation reduction without specifying zero or timeframe",
+      "zeroCredit": "Exacerbation response not documented"
     },
     {
       "id": "3A.4",
       "description": "CAT score improvement quantified (from 19 to 13)",
       "points": 0.6,
-      "fullCredit": "States CAT improved from 19 to 13",
-      "halfCredit": "States CAT improved, missing one value",
-      "zeroCredit": "Omits"
+      "fullCredit": "States reduced albuterol (rescue inhaler) use since mepolizumab initiation",
+      "halfCredit": "States rescue inhaler use is reduced without quantifying",
+      "zeroCredit": "Rescue inhaler frequency not documented"
     },
     {
       "id": "3A.5",
@@ -41732,17 +41732,17 @@
       "id": "3A.12",
       "description": "States initiation of ICS-containing therapy was appropriate based on clinical response",
       "points": 0.4,
-      "fullCredit": "States initiation confirmed as appropriate by response",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "fullCredit": "States continuation of mepolizumab and Trelegy is appropriate based on demonstrated clinical response",
+      "halfCredit": "States to continue biologic without citing clinical response rationale",
+      "zeroCredit": "Continuation rationale absent"
     },
     {
       "id": "3A.13",
       "description": "States insufficient evidence to escalate pulmonary therapy at this time",
       "points": 0.8,
-      "fullCredit": "States explicitly do not escalate / no evidence to support escalation",
-      "halfCredit": "States continue current therapy, no escalation rationale",
-      "zeroCredit": "Omits"
+      "fullCredit": "States no escalation is indicated; clinical goal is sustained remission on current regimen",
+      "halfCredit": "States no change without linking to remission or response goal",
+      "zeroCredit": "Escalation decision not addressed"
     },
     {
       "id": "3B.3",
@@ -41812,9 +41812,9 @@
       "id": "3C.1",
       "description": "Problem identified: eosinophilic airway inflammation",
       "points": 0.5,
-      "fullCredit": "Names eosinophilic airway inflammation as distinct problem",
-      "halfCredit": "Names elevated eosinophils without airway inflammation framing",
-      "zeroCredit": "Omits"
+      "fullCredit": "States problem as eosinophilic airway inflammation with eosinophils suppressed to 50 cells/µL",
+      "halfCredit": "States eosinophilia without noting suppression by mepolizumab",
+      "zeroCredit": "Eosinophilic inflammation not addressed"
     },
     {
       "id": "3C.2",
@@ -41836,17 +41836,17 @@
       "id": "3C.4",
       "description": "States consistent with persistent Type 2 airway inflammation",
       "points": 0.55,
-      "fullCredit": "States consistent with persistent Type 2 inflammation",
-      "halfCredit": "States type 2 present, no persistence qualifier",
-      "zeroCredit": "Omits"
+      "fullCredit": "States eosinophil level (50 cells/µL) suggests effective Type 2 inflammation suppression by mepolizumab",
+      "halfCredit": "States eosinophils suppressed without noting mepolizumab as mechanism",
+      "zeroCredit": "Mechanism of eosinophil suppression not addressed"
     },
     {
       "id": "3C.5",
       "description": "States current clinical improvement suggests eosinophilic inflammation is being appropriately addressed with current regimen",
       "points": 0.6,
-      "fullCredit": "States improvement suggests inflammation addressed by current regimen",
-      "halfCredit": "States ICS treats eosinophilia, no patient-specific link",
-      "zeroCredit": "Omits"
+      "fullCredit": "States current clinical improvement (0 exacerbations, reduced albuterol) confirms eosinophilic inflammation is being effectively managed with mepolizumab",
+      "halfCredit": "States clinical improvement without connecting to eosinophil suppression",
+      "zeroCredit": "Eosinophil management not assessed"
     },
     {
       "id": "3C.6",
@@ -41972,9 +41972,9 @@
       "id": "4A.2",
       "description": "Budesonide/formoterol regimen stated (2 puffs twice daily)",
       "points": 0.6,
-      "fullCredit": "States 2 puffs twice daily",
-      "halfCredit": "States twice daily, no puff count",
-      "zeroCredit": "Omits"
+      "fullCredit": "States to continue Trelegy (fluticasone/umeclidinium/vilanterol) 100/62.5/25 mcg once daily",
+      "halfCredit": "States continue triple inhaler without specifying Trelegy or dose",
+      "zeroCredit": "Maintenance inhaler continuation absent"
     },
     {
       "id": "4A.4",
@@ -42020,9 +42020,9 @@
       "id": "4B.2",
       "description": "Fluticasone nasal spray dose stated (1 spray in each nostril daily)",
       "points": 0.8,
-      "fullCredit": "States 1 spray each nostril daily",
-      "halfCredit": "States once daily, no spray count or nostril specification",
-      "zeroCredit": "Omits"
+      "fullCredit": "States to continue mepolizumab 100 mg SQ every 4 weeks",
+      "halfCredit": "States continue biologic without specifying dose or route",
+      "zeroCredit": "Biologic continuation absent from plan"
     },
     {
       "id": "4B.4",
@@ -42116,9 +42116,9 @@
       "id": "4D.1",
       "description": "Continue calcium carbonate/vitamin D supplementation stated",
       "points": 0.9,
-      "fullCredit": "States continue calcium carbonate/vitamin D",
-      "halfCredit": "States continue bone supplements without naming agents",
-      "zeroCredit": "Omits"
+      "fullCredit": "States to continue albuterol HFA 2 puffs every 4–6 hours PRN for rescue",
+      "halfCredit": "States continue rescue inhaler without specifying albuterol or frequency",
+      "zeroCredit": "Rescue inhaler plan absent"
     },
     {
       "id": "4E.1",
@@ -42172,9 +42172,9 @@
       "id": "4F.4",
       "description": "Evaluate response to restarting fluticasone nasal spray at follow-up stated",
       "points": 0.65,
-      "fullCredit": "States evaluate response to fluticasone nasal spray restart",
-      "halfCredit": "States evaluate allergy medication, no agent specified",
-      "zeroCredit": "Omits"
+      "fullCredit": "States to monitor for sustained biologic response: 0 exacerbations, continued low eosinophils, reduced rescue inhaler use",
+      "halfCredit": "States monitor response without specifying parameters",
+      "zeroCredit": "Biologic monitoring plan absent"
     },
     {
       "id": "4F.5",
@@ -42279,6 +42279,14 @@
       "fullCredit": "No major errors",
       "halfCredit": "1 minor error",
       "zeroCredit": "Major factual or medication error"
+    },
+    {
+      "id": "1E.4b",
+      "description": "Mepolizumab listed by name and dose (100 mg SQ every 4 weeks)",
+      "points": 0.6,
+      "fullCredit": "States mepolizumab 100 mg subcutaneous every 4 weeks",
+      "halfCredit": "States anti-IL-5 biologic without specifying dose or route",
+      "zeroCredit": "Biologic therapy absent from medication list"
     }
   ],
   "Week3_Patient_C_Tuesday": [
