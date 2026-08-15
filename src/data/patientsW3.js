@@ -23,9 +23,9 @@ const sarahTue = makeCase({
   },
   VITALS: { bp: '118/76', bpRepeat: '116/74', hr: '88', rr: '18', temp: '98.6°F', weight: '65 kg', height: "5'5\"", bmi: '23.9', flags: {} },
   LABS: [
-    { label: 'FEV1', value: '2.5', unit: 'L (74% pred)', flag: 'warn', note: 'Reversible post-bronchodilator (+15%)' },
-    { label: 'FEV1/FVC', value: '0.78', flag: 'normal' },
-    { label: 'FVC', value: '3.2', unit: 'L', flag: 'normal' }
+    { label: 'FEV1', value: '2.5', unit: 'L (78% pred)', flag: 'warn', note: 'Reversible post-bronchodilator (+15%)' },
+    { label: 'FEV1/FVC', value: '0.75', flag: 'warn' },
+    { label: 'FVC', value: '3.3', unit: 'L', flag: 'normal' }
   ],
   ALERTS: [
     { level: 'warn', text: 'Patient reports increased albuterol use — assess for uncontrolled asthma.' },
@@ -458,12 +458,22 @@ const mariaTue = makeCase({
     { id: 'w3c_exac', topic: 'Exacerbations', field: 'exacerbations', keywords: ['flare', 'infection', 'prednisone', 'hospital'], response: "I've had to go to urgent care three times in the last year for steroids and antibiotics. My breathing just gets so tight." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'w3c_a1', title: 'ACO Management', icon: 'Lungs', color: '7c3aed', questions: [{ key: 'q1', q: 'Why is LAMA monotherapy inappropriate for Maria?' }, { key: 'q2', q: 'How does her eosinophil count guide therapy?' }] },
+    { id: 'w3c_a1', title: 'ACO Management', icon: 'Lungs', color: '7c3aed', questions: [
+      { key: 'q1', q: 'Based on her frequent exacerbations and elevated eosinophils, what is the best biologic therapy?' },
+      { key: 'q2', q: 'Should Trelegy be continued?' }
+    ] },
+    { id: 'w3c_a2', title: 'Allergic Rhinitis', icon: 'Wind', color: '0d9488', questions: [
+      { key: 'q1', q: 'Is her current allergic rhinitis management adequate?' }
+    ] },
   ],
   PLAN_SECTIONS: [
     { id: 'w3c_p1', title: 'Plan', options: [
-      { key: 'o1', label: 'Escalate to ICS-containing therapy (e.g., ICS/LABA/LAMA triple therapy) due to asthma overlap, high eosinophils, and exacerbations', correct: true },
-      { key: 'o2', label: 'Add a second long-acting bronchodilator (LABA) without an ICS', correct: false },
+      { key: 'o1', label: 'Start mepolizumab (Nucala) injection and continue Trelegy', correct: true },
+      { key: 'o2', label: 'Switch Trelegy to Breztri (budesonide/glycopyrrolate/formoterol)', correct: false },
+    ] },
+    { id: 'w3c_p2', title: 'Allergic Rhinitis Plan', options: [
+      { key: 'o1', label: 'Continue cetirizine and fluticasone nasal spray', correct: true },
+      { key: 'o2', label: 'Discontinue cetirizine', correct: false },
     ] },
   ],
 })
