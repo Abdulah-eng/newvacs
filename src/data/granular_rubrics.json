@@ -41121,30 +41121,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1B.12",
-      "description": "States worsening allergy symptoms for past several weeks (congestion, postnasal drainage, rhinorrhea, sneezing)",
-      "points": 0.5,
-      "fullCredit": "States worsening allergy symptoms AND lists ≥3 of 4 symptoms",
-      "halfCredit": "States worsening allergy symptoms, lists &lt;3 symptoms",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.13",
-      "description": "States fluticasone nasal spray self-discontinued approximately 6 weeks ago",
-      "points": 0.45,
-      "fullCredit": "States fluticasone nasal spray self-discontinued ~6 weeks ago",
-      "halfCredit": "States discontinued, no agent or timeframe",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.14",
-      "description": "States progressive worsening of allergy symptoms after fluticasone discontinuation / patient believes breathing worsens when allergies uncontrolled",
-      "points": 0.55,
-      "fullCredit": "States both worsening since discontinuation AND link to breathing control",
-      "halfCredit": "States worsened, no causal link to discontinuation",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1C.1",
       "description": "PMH: asthma (onset childhood)",
       "points": 0.3,
@@ -41266,11 +41242,11 @@
     },
     {
       "id": "1E.2",
-      "description": "Budesonide/formoterol dose listed (160/4.5 mcg)",
+      "description": "Trelegy (fluticasone/umeclidinium/vilanterol) 100/62.5/25 mcg listed",
       "points": 0.3,
       "fullCredit": "States Trelegy (fluticasone/umeclidinium/vilanterol) 100/62.5/25 mcg",
-      "halfCredit": "States triple inhaler without naming all three components or dose",
-      "zeroCredit": "Maintenance inhaler absent or incorrect"
+      "halfCredit": "States triple therapy without listing all three components",
+      "zeroCredit": "Drug name or dose absent"
     },
     {
       "id": "1E.3",
@@ -41282,11 +41258,11 @@
     },
     {
       "id": "1E.5",
-      "description": "Tiotropium regimen listed (2 inhalations daily)",
+      "description": "Albuterol HFA listed as rescue inhaler with dose and frequency",
       "points": 0.25,
       "fullCredit": "Lists albuterol HFA as rescue inhaler with dose and frequency",
-      "halfCredit": "Lists rescue inhaler without specifying albuterol or frequency",
-      "zeroCredit": "Rescue inhaler absent"
+      "halfCredit": "Lists albuterol without dose or frequency",
+      "zeroCredit": "Albuterol not listed"
     },
     {
       "id": "1E.6",
@@ -41305,36 +41281,28 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1E.8",
-      "description": "Fluticasone nasal spray listed as self-discontinued approximately 6 weeks ago",
-      "points": 0.4,
-      "fullCredit": "States patient reports significant improvement in breathing, 0 exacerbations in 6 months",
-      "halfCredit": "States clinical improvement without quantifying exacerbation reduction",
-      "zeroCredit": "Clinical response to biologic therapy not documented"
-    },
-    {
       "id": "1E.9",
-      "description": "Lisinopril listed by name and dose (20 mg PO daily)",
+      "description": "No known drug allergies (NKDA)",
       "points": 0.3,
       "fullCredit": "States no known drug allergies (NKDA)",
-      "halfCredit": "States no allergies without specifying drug class",
+      "halfCredit": "States no allergies without specifying drug allergies",
       "zeroCredit": "Allergy status absent"
     },
     {
       "id": "1E.10",
-      "description": "Calcium carbonate/vitamin D listed with regimen (1 tablet twice daily)",
+      "description": "Documents influenza vaccine status (up to date)",
       "points": 0.3,
-      "fullCredit": "Documents immunization status (influenza up to date)",
-      "halfCredit": "References vaccines without specifying current status",
-      "zeroCredit": "Vaccination status absent"
+      "fullCredit": "States influenza vaccine up to date",
+      "halfCredit": "States vaccine without specifying influenza",
+      "zeroCredit": "Vaccine status absent"
     },
     {
       "id": "1E.12",
-      "description": "Allergy reaction type stated (rash)",
+      "description": "Allergy status listed (no known drug allergies)",
       "points": 0.3,
       "fullCredit": "States no known drug allergies (NKDA)",
-      "halfCredit": "States no allergies without drug-specific qualifier",
-      "zeroCredit": "Allergy documentation absent"
+      "halfCredit": "States no allergies without specifying drug allergies",
+      "zeroCredit": "Allergy status absent"
     },
     {
       "id": "1E.13",
@@ -41409,27 +41377,11 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1F.3",
-      "description": "States progressive worsening of allergy symptoms following fluticasone nasal spray discontinuation",
-      "points": 0.3,
-      "fullCredit": "States worsening after discontinuation with progressive qualifier",
-      "halfCredit": "States worsening, no temporal link to discontinuation",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1G.1",
       "description": "Patient remains motivated to improve respiratory control",
       "points": 0.6,
       "fullCredit": "States patient motivated to improve respiratory control",
       "halfCredit": "States patient engaged, no specific goal",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1G.3",
-      "description": "Patient self-discontinued nasal spray believing symptoms had improved and continued treatment unnecessary",
-      "points": 0.6,
-      "fullCredit": "States patient stopped due to symptom improvement belief and sense that treatment was unnecessary",
-      "halfCredit": "States patient stopped on their own, no rationale",
       "zeroCredit": "Omits"
     },
     {
@@ -41441,20 +41393,12 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1G.5",
-      "description": "Patient willing to restart fluticasone nasal spray / motivated to improve overall control",
-      "points": 0.6,
-      "fullCredit": "States patient willing to restart nasal spray",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "2A.1",
-      "description": "Blood pressure stated (124/72 mmHg)",
+      "description": "Blood pressure stated (128/80 mmHg)",
       "points": 0.6,
-      "fullCredit": "States 124/72 mmHg",
-      "halfCredit": "BP stated, value imprecise",
-      "zeroCredit": "Omits"
+      "fullCredit": "States 128/80 mmHg",
+      "halfCredit": "States systolic only or close approximation",
+      "zeroCredit": "BP absent"
     },
     {
       "id": "2A.2",
@@ -41466,11 +41410,11 @@
     },
     {
       "id": "2A.3",
-      "description": "Respiratory rate stated (16 breaths/min)",
+      "description": "Respiratory rate stated (18 breaths/min)",
       "points": 0.5,
-      "fullCredit": "States 16 breaths/min",
-      "halfCredit": "RR stated, no units",
-      "zeroCredit": "Omits"
+      "fullCredit": "States 18 breaths/min",
+      "halfCredit": "States rate without units",
+      "zeroCredit": "RR absent"
     },
     {
       "id": "2A.4",
@@ -41484,25 +41428,25 @@
       "id": "2A.5",
       "description": "Height stated (64 inches)",
       "points": 0.5,
-      "fullCredit": "States 64 inches",
-      "halfCredit": "Height stated, imprecise",
-      "zeroCredit": "Omits"
+      "fullCredit": "States 64 inches or 5'4\"",
+      "halfCredit": "States height without exact value",
+      "zeroCredit": "Height absent"
     },
     {
       "id": "2A.6",
-      "description": "BMI stated (26.9 kg/m²)",
+      "description": "BMI stated (26.5 kg/m²)",
       "points": 0.6,
-      "fullCredit": "States 26.9 kg/m²",
-      "halfCredit": "BMI stated, value imprecise",
-      "zeroCredit": "Omits"
+      "fullCredit": "States 26.5 kg/m²",
+      "halfCredit": "States overweight without numeric BMI",
+      "zeroCredit": "BMI absent"
     },
     {
       "id": "2A.7",
-      "description": "SpO2 stated (96% on room air)",
+      "description": "SpO2 stated (97% on room air)",
       "points": 0.8,
-      "fullCredit": "States 96% on room air",
-      "halfCredit": "States 96%, omits room air qualifier",
-      "zeroCredit": "Omits"
+      "fullCredit": "States 97% on room air",
+      "halfCredit": "States SpO2 value without room air qualifier",
+      "zeroCredit": "SpO2 absent"
     },
     {
       "id": "2B.1",
@@ -41530,59 +41474,43 @@
     },
     {
       "id": "2B.4",
-      "description": "ACT score stated (20)",
+      "description": "Documents patient-reported symptom improvement (no exacerbations in 6 months, minimal albuterol use)",
       "points": 0.55,
       "fullCredit": "Documents patient-reported symptom improvement (e.g., no exacerbations in 6 months, reduced albuterol use)",
-      "halfCredit": "States clinical improvement without documenting specific markers",
-      "zeroCredit": "Clinical response not documented"
+      "halfCredit": "States improvement without specifying exacerbation or albuterol use history",
+      "zeroCredit": "Symptom improvement not documented"
     },
     {
       "id": "2B.5",
-      "description": "ACT interpretation stated (improved asthma control)",
+      "description": "Eosinophil count 50 cells/µL is significantly reduced (suppressed by mepolizumab)",
       "points": 0.4,
       "fullCredit": "States eosinophil count 50 cells/µL is significantly reduced from baseline (suggests mepolizumab response)",
-      "halfCredit": "Notes low eosinophil count without connecting to biologic response",
-      "zeroCredit": "Eosinophil interpretation absent"
+      "halfCredit": "States eosinophils reduced without specifying 50 cells/µL",
+      "zeroCredit": "Eosinophil reduction not documented"
     },
     {
       "id": "2B.6",
-      "description": "CAT score stated (13)",
+      "description": "States patient reports zero exacerbations in 6 months since mepolizumab initiation",
       "points": 0.55,
-      "fullCredit": "States CAT score 13",
-      "halfCredit": "CAT stated, no numeric value",
-      "zeroCredit": "Omits"
+      "fullCredit": "States zero exacerbations in 6 months as objective marker of biologic response",
+      "halfCredit": "States improved exacerbation burden without the 6-month timeframe",
+      "zeroCredit": "Exacerbation history absent"
     },
     {
       "id": "2B.7",
-      "description": "CAT interpretation stated (improved symptom burden)",
+      "description": "States patient reports reduced albuterol rescue use since mepolizumab initiation",
       "points": 0.4,
-      "fullCredit": "States improved symptom burden",
-      "halfCredit": "States score improved, no interpretation",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2B.12",
-      "description": "Prior ACT score documented (15) and improvement from 15 to 20 noted",
-      "points": 0.55,
-      "fullCredit": "States prior ACT 15 and current ACT 20 (or delta)",
-      "halfCredit": "States ACT improved, no prior value",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2B.13",
-      "description": "Prior CAT score documented (19) and improvement from 19 to 13 noted",
-      "points": 0.55,
-      "fullCredit": "States prior CAT 19 and current CAT 13 (or delta)",
-      "halfCredit": "States CAT improved, no prior value",
-      "zeroCredit": "Omits"
+      "fullCredit": "States reduced albuterol use as marker of improved symptom burden",
+      "halfCredit": "States patient improved without specifying albuterol use",
+      "zeroCredit": "Albuterol use documentation absent"
     },
     {
       "id": "2B.14",
-      "description": "Objective section organized into clearly labeled subsections",
+      "description": "Objective section organized into labeled subsections",
       "points": 0.5,
-      "fullCredit": "≥4 labeled subsections present (PFT, CBC, ACT/CAT, Exacerbation Hx)",
-      "halfCredit": "2-3 labeled subsections",
-      "zeroCredit": "≤1 subsection or no labels"
+      "fullCredit": "≥3 labeled subsections present (e.g., Vitals, PFTs, Labs, Exacerbation History)",
+      "halfCredit": "Some labeled subsections present but incomplete",
+      "zeroCredit": "Objective section not organized or unlabeled"
     },
     {
       "id": "2C.1",
@@ -41705,14 +41633,6 @@
       "zeroCredit": "Escalation decision not addressed"
     },
     {
-      "id": "3B.3",
-      "description": "Symptom listed: nasal congestion",
-      "points": 0.35,
-      "fullCredit": "States nasal congestion",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "3B.4",
       "description": "Symptom listed: rhinorrhea",
       "points": 0.35,
@@ -41721,27 +41641,11 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "3B.5",
-      "description": "Symptom listed: postnasal drainage",
-      "points": 0.35,
-      "fullCredit": "States postnasal drainage",
-      "halfCredit": "States postnasal drip or drainage",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "3B.6",
       "description": "Symptom listed: sneezing",
       "points": 0.35,
       "fullCredit": "States sneezing",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3B.7",
-      "description": "States fluticasone nasal spray self-discontinued approximately 6 weeks ago as precipitating cause",
-      "points": 0.6,
-      "fullCredit": "States self-discontinuation ~6 weeks ago as precipitating factor",
-      "halfCredit": "States discontinued, no timing or causal framing",
       "zeroCredit": "Omits"
     },
     {
@@ -41930,11 +41834,11 @@
     },
     {
       "id": "4A.2",
-      "description": "Budesonide/formoterol regimen stated (2 puffs twice daily)",
+      "description": "States continue Trelegy (fluticasone/umeclidinium/vilanterol) 100/62.5/25 mcg 1 inhalation once daily",
       "points": 0.6,
-      "fullCredit": "States to continue Trelegy (fluticasone/umeclidinium/vilanterol) 100/62.5/25 mcg once daily",
-      "halfCredit": "States continue triple inhaler without specifying Trelegy or dose",
-      "zeroCredit": "Maintenance inhaler continuation absent"
+      "fullCredit": "States continue Trelegy 1 inhalation once daily",
+      "halfCredit": "States continue maintenance inhaler without specifying Trelegy or dose",
+      "zeroCredit": "Trelegy continuation absent"
     },
     {
       "id": "4A.4",
@@ -41975,14 +41879,6 @@
       "fullCredit": "States do not add new pulmonary medications / no escalation",
       "halfCredit": "States continue current regimen without no-add statement",
       "zeroCredit": "Adds new pulmonary medication"
-    },
-    {
-      "id": "4B.2",
-      "description": "Fluticasone nasal spray dose stated (1 spray in each nostril daily)",
-      "points": 0.8,
-      "fullCredit": "States to continue mepolizumab 100 mg SQ every 4 weeks",
-      "halfCredit": "States continue biologic without specifying dose or route",
-      "zeroCredit": "Biologic continuation absent from plan"
     },
     {
       "id": "4B.4",
@@ -42129,14 +42025,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "4F.4",
-      "description": "Evaluate response to restarting fluticasone nasal spray at follow-up stated",
-      "points": 0.65,
-      "fullCredit": "States to monitor for sustained biologic response: 0 exacerbations, continued low eosinophils, reduced rescue inhaler use",
-      "halfCredit": "States monitor response without specifying parameters",
-      "zeroCredit": "Biologic monitoring plan absent"
-    },
-    {
       "id": "4F.5",
       "description": "Continue longitudinal management of asthma-COPD overlap stated",
       "points": 0.55,
@@ -42247,6 +42135,14 @@
       "fullCredit": "States mepolizumab 100 mg subcutaneous every 4 weeks",
       "halfCredit": "States anti-IL-5 biologic without specifying dose or route",
       "zeroCredit": "Biologic therapy absent from medication list"
+    },
+    {
+      "id": "1F.3b",
+      "description": "States allergic rhinitis symptoms are well managed on cetirizine PRN",
+      "points": 0.3,
+      "fullCredit": "States rhinitis is controlled; patient uses cetirizine PRN",
+      "halfCredit": "States rhinitis controlled without naming cetirizine",
+      "zeroCredit": "Rhinitis management status absent"
     }
   ],
   "Week3_Patient_C_Tuesday": [
