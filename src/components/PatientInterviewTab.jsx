@@ -603,6 +603,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
                 { id: 'meds', label: 'MEDS', title: 'Medication History / Reconciliation', fields: ['currentMeds','adherence','otc','sideEffects'].map(k => c.INTERVIEW_FIELDS?.find(f => f.key === k) || { key: k, label: FIELD_LABELS[k] || k }) },
                 { id: 'sh', label: 'SH', title: 'Social History', fields: [c.INTERVIEW_FIELDS?.find(f => f.key === 'diet') || { key: 'diet', label: FIELD_LABELS.diet }, c.INTERVIEW_FIELDS?.find(f => f.key === 'exercise') || { key: 'exercise', label: FIELD_LABELS.exercise }, { key: 'tobacco', label: 'Tobacco use', type: 'select', options: ['None','Occasional','Moderate','Heavy','Former'] }, { key: 'alcohol', label: 'Alcohol use', type: 'select', options: ['None','Occasional','Moderate','Heavy','Former'] }, { key: 'caffeine', label: 'Caffeine', placeholder: 'e.g., 2 cups coffee/day' }] },
                 { id: 'fh', label: 'FH', title: 'Family History', fields: [c.INTERVIEW_FIELDS?.find(f => f.key === 'familyHistory') || { key: 'familyHistory', label: FIELD_LABELS.familyHistory }] },
+                { id: 'reported', label: '', title: 'Patient-Reported / Self-Management', fields: [] }
               ].map(g => {
                 if (g.id === 'reported') {
                   const isWeek3 = c?.ENCOUNTER?.week?.includes('3');

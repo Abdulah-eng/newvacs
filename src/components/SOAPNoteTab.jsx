@@ -123,7 +123,7 @@ export function SOAPNoteTab({ c, state, soap, onChange, onGraded }) {
               
               let items = c.PRECEPTOR?.checklist || []
               if (items.length === 0 && granularRubrics[rubricKey]) {
-                items = granularRubrics[rubricKey].map(r => r.criterion)
+                items = granularRubrics[rubricKey].map(r => r.description)
               }
               
               if (items.length === 0) {
