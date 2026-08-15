@@ -31509,14 +31509,6 @@
       "zeroCredit": "Not documented"
     },
     {
-      "id": "1C.7",
-      "description": "Documents brother with seasonal allergies (family history)",
-      "points": 0.3,
-      "fullCredit": "States brother has seasonal allergies in family history",
-      "halfCredit": "States family history of allergies without specifying brother",
-      "zeroCredit": "Not documented"
-    },
-    {
       "id": "1C.8",
       "description": "Notes allergic rhinitis remains well controlled",
       "points": 0.25,
@@ -34570,19 +34562,19 @@
     },
     {
       "id": "1A.7",
-      "description": "Prior therapy identified: SMART therapy",
+      "description": "Prior therapy identified: ICS monotherapy (budesonide HFA) and SABA PRN",
       "points": 0.45,
-      "fullCredit": "Names SMART therapy",
-      "halfCredit": "Names inhaler only, no SMART label",
-      "zeroCredit": "Omits"
+      "fullCredit": "Identifies prior therapy as daily budesonide (ICS) and PRN albuterol",
+      "halfCredit": "References prior therapy without naming budesonide HFA or ICS class",
+      "zeroCredit": "Prior therapy context absent"
     },
     {
       "id": "1A.8",
-      "description": "Prior condition context: uncontrolled asthma (status at time of initiation)",
+      "description": "Prior condition context: persistent asthma symptoms with exercise",
       "points": 0.3,
-      "fullCredit": "States uncontrolled asthma as prior status",
-      "halfCredit": "States asthma only",
-      "zeroCredit": "Omits"
+      "fullCredit": "States patient has persistent exercise-induced symptoms despite daily ICS use",
+      "halfCredit": "References exercise symptoms without daily ICS context",
+      "zeroCredit": "Not mentioned"
     },
     {
       "id": "1B.1",
@@ -34634,11 +34626,11 @@
     },
     {
       "id": "1B.7",
-      "description": "Current daytime symptom frequency: approximately 1-2 times weekly",
+      "description": "Current daytime symptom frequency: exercise-induced tightness/coughing",
       "points": 0.45,
-      "fullCredit": "States 1-2 times weekly",
-      "halfCredit": "States occasional, no frequency",
-      "zeroCredit": "Omits"
+      "fullCredit": "States patient experiences symptoms with exercise or activity",
+      "halfCredit": "States symptoms are frequent without the exercise context",
+      "zeroCredit": "Symptom frequency absent"
     },
     {
       "id": "1B.8",
@@ -34801,19 +34793,11 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1C.8",
-      "description": "Family history, brother: seasonal allergies",
-      "points": 0.35,
-      "fullCredit": "States brother has seasonal allergies",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1C.9",
-      "description": "Documents all three family members (mother, father, brother)",
+      "description": "Documents both family members (mother, father)",
       "points": 0.3,
-      "fullCredit": "Documents all three family members",
-      "halfCredit": "Documents 2 of 3",
+      "fullCredit": "Documents both family members",
+      "halfCredit": "Documents 1 of 2",
       "zeroCredit": "Omits"
     },
     {
@@ -34906,43 +34890,43 @@
     },
     {
       "id": "1E.1",
-      "description": "Budesonide/formoterol listed (both drug components named)",
+      "description": "Budesonide HFA listed as current maintenance medication",
       "points": 0.4,
-      "fullCredit": "Names budesonide/formoterol",
-      "halfCredit": "Names one component only",
-      "zeroCredit": "Omits"
+      "fullCredit": "Lists budesonide HFA (or daily budesonide inhaler) by name",
+      "halfCredit": "Lists ICS inhaler without naming budesonide HFA",
+      "zeroCredit": "Drug name absent"
     },
     {
       "id": "1E.2",
-      "description": "Budesonide/formoterol dose (160/4.5 mcg)",
+      "description": "Budesonide HFA dose (180 mcg)",
       "points": 0.4,
-      "fullCredit": "States 160/4.5 mcg",
-      "halfCredit": "States dose, imprecise",
-      "zeroCredit": "Incorrect"
+      "fullCredit": "States dose as 180 mcg",
+      "halfCredit": "States incorrect dose",
+      "zeroCredit": "Dose absent"
     },
     {
       "id": "1E.3",
-      "description": "Maintenance regimen: 1 inhalation twice daily",
+      "description": "Budesonide HFA regimen: twice daily / BID",
       "points": 0.3,
-      "fullCredit": "States 1 inhalation twice daily",
-      "halfCredit": "States twice daily, no inhalation count",
-      "zeroCredit": "Omits"
+      "fullCredit": "States twice daily or BID dosing",
+      "halfCredit": "States daily without specifying twice daily",
+      "zeroCredit": "Regimen absent"
     },
     {
       "id": "1E.4",
-      "description": "Reliever regimen: 1 inhalation as needed",
+      "description": "Albuterol HFA listed as current rescue medication",
       "points": 0.3,
-      "fullCredit": "States 1 inhalation as needed",
-      "halfCredit": "States PRN, no count",
-      "zeroCredit": "Omits"
+      "fullCredit": "Lists albuterol HFA by name",
+      "halfCredit": "Lists rescue inhaler without naming albuterol",
+      "zeroCredit": "Drug name absent"
     },
     {
       "id": "1E.5",
-      "description": "SMART therapy designation applied (maintenance + reliever roles of same inhaler)",
+      "description": "Albuterol HFA regimen: 2 puffs q4-6h PRN",
       "points": 0.4,
-      "fullCredit": "Labels as SMART therapy with dual maintenance and reliever roles",
-      "halfCredit": "Names SMART, no dual-role detail",
-      "zeroCredit": "Omits"
+      "fullCredit": "States 2 puffs every 4-6 hours as needed (PRN)",
+      "halfCredit": "States PRN without specifying puffs or frequency",
+      "zeroCredit": "Regimen absent"
     },
     {
       "id": "1E.6",
@@ -35810,43 +35794,43 @@
     },
     {
       "id": "4A.1",
-      "description": "Continue budesonide/formoterol 160/4.5 mcg inhaler (no change in drug or strength)",
+      "description": "Initiate budesonide/formoterol 160/4.5 mcg inhaler (switch to SMART therapy)",
       "points": 0.8,
-      "fullCredit": "States continue budesonide/formoterol 160/4.5 mcg",
-      "halfCredit": "States continue inhaler, no dose",
-      "zeroCredit": "Incorrect dose or new agent"
+      "fullCredit": "States plan to initiate budesonide/formoterol 160/4.5 mcg for SMART/MART therapy",
+      "halfCredit": "States plan to start ICS-LABA without specifying budesonide/formoterol or SMART",
+      "zeroCredit": "Plan does not address therapy escalation"
     },
     {
       "id": "4A.2",
-      "description": "Continue 1 inhalation twice daily as maintenance dose",
+      "description": "Prescribe SMART maintenance dose: 1 inhalation twice daily",
       "points": 0.5,
-      "fullCredit": "States 1 inhalation twice daily",
-      "halfCredit": "States twice daily, no inhalation count",
-      "zeroCredit": "Omits"
+      "fullCredit": "States SMART maintenance dose: 1 inhalation BID",
+      "halfCredit": "States BID maintenance without specifying 1 inhalation",
+      "zeroCredit": "Maintenance regimen absent"
     },
     {
       "id": "4A.3",
-      "description": "Continue 1 inhalation as needed for symptom relief",
+      "description": "Prescribe SMART reliever dose: 1 inhalation as needed for symptom relief",
       "points": 0.6,
-      "fullCredit": "States 1 inhalation as needed",
-      "halfCredit": "States PRN, no count",
-      "zeroCredit": "Omits"
+      "fullCredit": "States 1 inhalation as needed (PRN) for symptom relief",
+      "halfCredit": "States PRN reliever use without specifying 1 inhalation",
+      "zeroCredit": "Reliever regimen absent"
     },
     {
       "id": "4A.4",
-      "description": "States explicitly: do not escalate therapy at this time",
+      "description": "States explicitly: escalate therapy due to uncontrolled exercise symptoms",
       "points": 0.7,
-      "fullCredit": "States do not escalate / no step-up at this time",
-      "halfCredit": "—",
-      "zeroCredit": "Omits or recommends escalation"
+      "fullCredit": "States therapy escalation is indicated because of exercise-induced symptoms on current ICS monotherapy",
+      "halfCredit": "States escalation is indicated without clinical justification",
+      "zeroCredit": "Escalation rationale absent"
     },
     {
       "id": "4A.5",
-      "description": "Rationale for no escalation: patient meets well-controlled criteria per GINA (ACT 21)",
+      "description": "Rationale for escalation: patient is uncontrolled on current low-dose ICS alone (symptoms with activity)",
       "points": 0.6,
-      "fullCredit": "States well-controlled per GINA criteria as rationale for no escalation",
-      "halfCredit": "States no escalation, no rationale",
-      "zeroCredit": "Omits"
+      "fullCredit": "States low-dose ICS alone is insufficient due to persistent exercise symptoms (Partly/Uncontrolled asthma per GINA)",
+      "halfCredit": "States uncontrolled without referencing current low-dose ICS insufficiency",
+      "zeroCredit": "Escalation justification absent"
     },
     {
       "id": "4A.6",
@@ -37545,14 +37529,6 @@
       "description": "Family history, mother: hypertension",
       "points": 0.2,
       "fullCredit": "Lists mother hypertension",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.11",
-      "description": "Family history, brother: COPD",
-      "points": 0.4,
-      "fullCredit": "Lists brother COPD",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -39280,33 +39256,33 @@
     },
     {
       "id": "1B.15",
-      "description": "States actual frequency upon further questioning: 3–4 days per week",
+      "description": "States patient reports using tiotropium daily",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States patient reports daily compliance with tiotropium inhaler use",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
       "id": "1B.16",
-      "description": "States patient acknowledges missing several doses weekly",
+      "description": "States patient believes he is using the inhaler correctly",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States patient believes his technique is correct prior to demonstration",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
       "id": "1B.17",
-      "description": "States adherence barrier: forgetfulness",
+      "description": "Identifies inhaler technique error: patient blows into the mouthpiece",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States patient blows out into the mouthpiece of the HandiHaler device",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
       "id": "1B.18",
-      "description": "States adherence barrier: does not always notice difference when dose is skipped",
+      "description": "States patient blows out into the mouthpiece to blow medicine into lungs",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States patient incorrectly blows into the device thinking it forces the medicine in",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39328,9 +39304,9 @@
     },
     {
       "id": "1B.21",
-      "description": "States inhaler technique assessed as appropriate (no errors identified)",
+      "description": "States inhaler technique assessed as incorrect / identifies technique error",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States patient demonstrates incorrect inhaler technique (blowing instead of inhaling)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39360,9 +39336,9 @@
     },
     {
       "id": "1B.25",
-      "description": "Identifies discrepancy between initial self-report ('most days') and actual use (3–4 days/week)",
+      "description": "Identifies patient blows into device instead of breathing in deeply",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Notes patient blows into the device and needs correction",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39447,14 +39423,6 @@
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
-      "id": "1C.11",
-      "description": "States family history – Brother: COPD",
-      "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
-      "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
-      "zeroCredit": "Criterion absent or contains information not in the model note."
-    },
-    {
       "id": "1C.12",
       "description": "Notes PSH is limited to appendectomy (no prior pulmonary or cardiac surgeries)",
       "points": 0.25,
@@ -39474,14 +39442,6 @@
       "id": "1C.14",
       "description": "Notes patient has 3 active chronic conditions (COPD, hypertension, hyperlipidemia)",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
-      "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
-      "zeroCredit": "Criterion absent or contains information not in the model note."
-    },
-    {
-      "id": "1C.15",
-      "description": "Notes bilateral family history relevance: father and brother both have COPD",
-      "points": 0.5,
       "fullCredit": "All elements of this criterion are present and match the model note.",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
@@ -39776,9 +39736,9 @@
     },
     {
       "id": "2A.1",
-      "description": "States blood pressure value (130/76 mmHg)",
+      "description": "States blood pressure value (132/82 mmHg)",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States 132/82",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39808,25 +39768,25 @@
     },
     {
       "id": "2A.5",
-      "description": "States height value (70 inches)",
+      "description": "States height value (69 inches)",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States 69 inches",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
       "id": "2A.6",
-      "description": "States BMI value (28.1 kg/m²)",
+      "description": "States BMI value (26.0 kg/m²)",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States 26.0",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
       "id": "2A.7",
-      "description": "States SpO2 value (95%)",
+      "description": "States SpO2 value (97%)",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States 97%",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39896,25 +39856,25 @@
     },
     {
       "id": "2B.3",
-      "description": "States current CAT score value (16)",
+      "description": "States patient reports no improvement in dyspnea",
       "points": 0.75,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States patient reports no improvement in shortness of breath since starting LAMA",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
       "id": "2B.4",
-      "description": "States CAT score interpretation (persistent symptom burden with modest improvement from baseline)",
+      "description": "States patient reports persistent shortness of breath during daily activities",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States dyspnea persists during daily activities like climbing stairs or carrying groceries",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
       "id": "2B.5",
-      "description": "States baseline CAT score value for comparison (18)",
+      "description": "States patient uses rescue albuterol frequently",
       "points": 0.75,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States patient uses rescue albuterol 1-2 times daily",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39976,9 +39936,9 @@
     },
     {
       "id": "2C.3",
-      "description": "States CAT score ≥ 10 classifies patient as more symptomatic (GOLD Group B)",
+      "description": "States patient has significant symptom burden (persistent dyspnea)",
       "points": 0.75,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States persistent shortness of breath indicates high symptom burden (equivalent to CAT >= 10 / GOLD Group B)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39992,9 +39952,9 @@
     },
     {
       "id": "2C.5",
-      "description": "States CAT score trend: decreased from 18 to 16 (2-point improvement)",
+      "description": "States patient reports no improvement in breathing since previous visit",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States no clinical improvement in symptoms since LAMA initiation",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40016,9 +39976,9 @@
     },
     {
       "id": "2C.8",
-      "description": "Notes ABG not indicated given SpO2 95% at rest on room air",
+      "description": "Notes ABG not indicated given SpO2 97% at rest on room air",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States ABG not indicated with SpO2 97%",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40048,9 +40008,9 @@
     },
     {
       "id": "3A.4",
-      "description": "States CAT score improved from 18 to 16 as evidence of modest benefit from LABA/LAMA",
+      "description": "States LAMA (tiotropium) therapy has not provided clinical benefit due to incorrect use",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States tiotropium failed to improve symptoms because patient is using the device incorrectly",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40080,9 +40040,9 @@
     },
     {
       "id": "3A.8",
-      "description": "States GOLD 2026 uses CAT score in symptom assessment framework",
+      "description": "States GOLD 2026 uses symptom burden and exacerbation history in assessment framework",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Cites GOLD 2026 guidelines regarding symptom burden (dyspnea) and exacerbation history for Group B classification",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40120,9 +40080,9 @@
     },
     {
       "id": "3A.13",
-      "description": "States further assessment reveals substantial medication nonadherence as confounding factor",
+      "description": "States further assessment reveals incorrect inhaler technique as cause of persistent symptoms",
       "points": 0.75,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States persistent dyspnea is due to incorrect inhaler technique (blowing out instead of breathing in)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40168,25 +40128,25 @@
     },
     {
       "id": "3A.19",
-      "description": "Notes SpO2 95% on room air",
+      "description": "Notes SpO2 97% on room air",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States SpO2 97% on room air",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
       "id": "3A.20",
-      "description": "Notes inhaler technique assessed as appropriate (technique is not the adherence barrier)",
+      "description": "Notes inhaler technique is incorrect (patient blows into mouthpiece)",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States inhaler technique is incorrect due to exhalation into device",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
       "id": "3A.21",
-      "description": "Distinguishes suboptimal medication adherence from true LABA/LAMA treatment failure",
+      "description": "Distinguishes poor inhaler technique from true LAMA treatment failure",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States current symptoms represent technique failure, not tiotropium medication failure",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40208,9 +40168,9 @@
     },
     {
       "id": "3B.1",
-      "description": "Names problem: medication nonadherence",
+      "description": "Names problem: incorrect inhaler technique",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Identifies incorrect HandiHaler technique as an active problem",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40248,9 +40208,9 @@
     },
     {
       "id": "3B.8",
-      "description": "States current symptoms cannot be interpreted as treatment failure because medication has not been used consistently",
+      "description": "States current symptoms cannot be interpreted as LAMA treatment failure because of incorrect inhaler technique",
       "points": 0.75,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States medication effectiveness cannot be assessed due to critical technique error",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40264,9 +40224,9 @@
     },
     {
       "id": "3B.10",
-      "description": "Notes inhaler technique is appropriate (adherence problem is behavioral, not device-related)",
+      "description": "Notes patient blows into mouthpiece instead of inhaling deeply",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Describes the specific technique error (blowing out instead of breathing in deeply)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40288,9 +40248,9 @@
     },
     {
       "id": "3B.13",
-      "description": "Notes patient initially reported 'most days' use but actual use is 3–4 days/week (discrepancy identified on further questioning)",
+      "description": "Notes patient needs education on correct HandiHaler usage steps",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States patient requires step-by-step device use education",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40336,25 +40296,25 @@
     },
     {
       "id": "3C.4",
-      "description": "Identifies education need: importance of daily maintenance therapy",
+      "description": "Identifies education need: correct inhaler technique (breathing IN deeply and steadily)",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States patient needs education on breathing in deeply and steadily through mouthpiece",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
       "id": "3C.5",
-      "description": "Identifies education need: long-term nature of symptom improvement",
+      "description": "Identifies education need: do not blow into the mouthpiece",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States patient must be educated NEVER to blow into the mouthpiece",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
       "id": "3C.6",
-      "description": "Identifies education need: exacerbation prevention as a primary treatment goal",
+      "description": "Identifies education need: insert capsule, press button to pierce, and inhale",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States patient needs instruction on complete HandiHaler steps (piercing capsule, inhaling)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40648,9 +40608,9 @@
     },
     {
       "id": "4B.5",
-      "description": "Recommends adherence strategy: medication reminders",
+      "description": "Recommends technique correction: breathe in deeply and steadily",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Instructs patient to breathe in deeply and steadily from HandiHaler mouthpiece",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40752,9 +40712,9 @@
     },
     {
       "id": "4C.5",
-      "description": "Reviews importance of consistent medication use",
+      "description": "Reviews correct steps of HandiHaler use with patient",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Reviews and demonstrates proper HandiHaler steps",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40768,9 +40728,9 @@
     },
     {
       "id": "4C.7",
-      "description": "Tailors education to identified knowledge gap: unrealistic treatment expectations",
+      "description": "Instructs patient not to breathe out or blow into the mouthpiece",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Counsels patient to breathe out away from the device and inhale through mouthpiece",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40864,9 +40824,9 @@
     },
     {
       "id": "4F.1",
-      "description": "Plans to monitor CAT score",
+      "description": "Plans to monitor dyspnea and symptom control",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States plan to monitor patient-reported shortness of breath and albuterol use frequency",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40960,9 +40920,9 @@
     },
     {
       "id": "4G.4",
-      "description": "States plan to reassess CAT score at follow-up",
+      "description": "States plan to reassess symptoms and activity tolerance at follow-up",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States plan to reassess dyspnea, activity tolerance, and inhaler technique at follow-up",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -42555,42 +42515,10 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1C.4",
-      "description": "PMH: hypertension (diagnosed 15 years ago)",
-      "points": 0.4,
-      "fullCredit": "Lists hypertension with 15-year duration",
-      "halfCredit": "Lists hypertension, no duration",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.5",
-      "description": "PMH: osteopenia (diagnosed 3 years ago)",
-      "points": 0.4,
-      "fullCredit": "Lists osteopenia with 3-year duration",
-      "halfCredit": "Lists osteopenia, no duration",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.6",
-      "description": "PSH: cholecystectomy",
-      "points": 0.25,
-      "fullCredit": "Lists cholecystectomy",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1C.7",
       "description": "Family history, father: COPD",
       "points": 0.25,
       "fullCredit": "States father had COPD",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.8",
-      "description": "Family history, father: coronary artery disease",
-      "points": 0.25,
-      "fullCredit": "States father had coronary artery disease",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -42600,22 +42528,6 @@
       "points": 0.25,
       "fullCredit": "States mother had asthma",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.10",
-      "description": "Family history, mother: allergic rhinitis",
-      "points": 0.25,
-      "fullCredit": "States mother had allergic rhinitis",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.12",
-      "description": "Family history of asthma supports inherited atopic predisposition (at minimum two first-degree relatives with asthma)",
-      "points": 0.45,
-      "fullCredit": "Notes multiple first-degree relatives with asthma supporting atopic predisposition",
-      "halfCredit": "Notes family asthma, no atopic/predisposition framing",
       "zeroCredit": "Omits"
     },
     {
@@ -42644,27 +42556,11 @@
     },
     {
       "id": "1D.4",
-      "description": "Tobacco status: former smoker",
+      "description": "Tobacco status: never smoker",
       "points": 0.3,
-      "fullCredit": "States former smoker",
-      "halfCredit": "States nonsmoker without former/never distinction",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1D.5",
-      "description": "Smoking quantity: 30 pack-year history",
-      "points": 0.4,
-      "fullCredit": "States 30 pack-years",
-      "halfCredit": "States pack-years, imprecise number",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1D.6",
-      "description": "Tobacco cessation: quit 12 years ago",
-      "points": 0.4,
-      "fullCredit": "States quit 12 years ago",
-      "halfCredit": "States quit, no timeframe",
-      "zeroCredit": "Omits"
+      "fullCredit": "States never smoker or denies history of smoking",
+      "halfCredit": "States non-smoker without specifying never smoker",
+      "zeroCredit": "Tobacco status absent"
     },
     {
       "id": "1D.7",
@@ -42744,78 +42640,6 @@
       "points": 0.3,
       "fullCredit": "States q4–6h PRN",
       "halfCredit": "States PRN, no interval",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.7",
-      "description": "Fluticasone nasal spray listed",
-      "points": 0.35,
-      "fullCredit": "Names fluticasone nasal spray",
-      "halfCredit": "Names fluticasone without nasal/spray qualifier",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.8",
-      "description": "Fluticasone nasal spray dose/regimen: 1 spray each nostril daily",
-      "points": 0.3,
-      "fullCredit": "States 1 spray each nostril daily",
-      "halfCredit": "States daily, no per-nostril dose",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.9",
-      "description": "Lisinopril listed",
-      "points": 0.25,
-      "fullCredit": "Names lisinopril",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.10",
-      "description": "Lisinopril dose: 20 mg",
-      "points": 0.35,
-      "fullCredit": "States 20 mg",
-      "halfCredit": "—",
-      "zeroCredit": "Incorrect"
-    },
-    {
-      "id": "1E.11",
-      "description": "Lisinopril regimen: PO daily",
-      "points": 0.2,
-      "fullCredit": "States PO daily",
-      "halfCredit": "States daily, no route",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.12",
-      "description": "Calcium carbonate/vitamin D listed",
-      "points": 0.25,
-      "fullCredit": "Names calcium carbonate with vitamin D combination",
-      "halfCredit": "Names calcium, no vitamin D",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.13",
-      "description": "Calcium carbonate/vitamin D dose: 1 tablet twice daily",
-      "points": 0.3,
-      "fullCredit": "States 1 tablet twice daily",
-      "halfCredit": "States twice daily, no tablet quantity",
-      "zeroCredit": "Incorrect"
-    },
-    {
-      "id": "1E.14",
-      "description": "Allergy: sulfonamide antibiotics listed",
-      "points": 0.5,
-      "fullCredit": "States sulfonamide antibiotics",
-      "halfCredit": "States sulfa, no antibiotic qualifier",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.15",
-      "description": "Allergy reaction type: rash",
-      "points": 0.3,
-      "fullCredit": "States rash as reaction",
-      "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
@@ -43587,22 +43411,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "3G.1",
-      "description": "Problem identified: osteopenia",
-      "points": 0.4,
-      "fullCredit": "Names osteopenia as a distinct problem",
-      "halfCredit": "Mentions osteopenia without distinct problem framing",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3G.2",
-      "description": "Patient with osteopenia is particularly vulnerable to adverse effects of systemic corticosteroids",
-      "points": 0.4,
-      "fullCredit": "States osteopenia increases vulnerability to systemic corticosteroid effects",
-      "halfCredit": "States OCS effects without linking to osteopenia",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "3G.3",
       "description": "Improved respiratory disease control may reduce future systemic corticosteroid exposure and skeletal risk",
       "points": 0.4,
@@ -43692,27 +43500,19 @@
     },
     {
       "id": "4A.3",
-      "description": "Initiate budesonide/formoterol (Symbicort) — medication name and brand stated (acceptable ICS-formoterol alternatives per GINA 2025: beclometasone-formoterol [Fostair/Dupixent inhaler])",
+      "description": "Initiate ICS-containing therapy (e.g., ICS/LABA/LAMA triple therapy or Trelegy) due to asthma-COPD overlap",
       "points": 0.7,
-      "fullCredit": "Names budesonide/formoterol AND Symbicort",
-      "halfCredit": "Names one (generic or brand only)",
-      "zeroCredit": "Omits or names ICS-LABA without formoterol"
+      "fullCredit": "States plan to escalate to ICS-containing therapy due to asthma component and high eosinophils",
+      "halfCredit": "States start ICS without clinical justification",
+      "zeroCredit": "ICS initiation absent"
     },
     {
       "id": "4A.4",
-      "description": "Budesonide/formoterol strength: 160/4.5 mcg",
+      "description": "Initiate triple therapy (Trelegy daily) or beclometasone/formoterol/glycopyrrolate",
       "points": 0.6,
-      "fullCredit": "States 160/4.5 mcg",
-      "halfCredit": "States strength, imprecise",
-      "zeroCredit": "Incorrect strength or omits"
-    },
-    {
-      "id": "4A.5",
-      "description": "Budesonide/formoterol regimen: 2 puffs twice daily (maintenance)",
-      "points": 0.6,
-      "fullCredit": "States 2 puffs twice daily",
-      "halfCredit": "States twice daily, no puff count",
-      "zeroCredit": "Incorrect regimen or omits"
+      "fullCredit": "Recommends initiation of triple therapy (e.g., Trelegy 100/62.5/25 mcg once daily)",
+      "halfCredit": "Recommends dual maintenance therapy without LAMA or ICS component",
+      "zeroCredit": "Regimen absent"
     },
     {
       "id": "4A.6",
@@ -43793,30 +43593,6 @@
       "fullCredit": "States plan is consistent with GINA 2025 Track 1 or Step 3/4 maintenance approach",
       "halfCredit": "States guideline-consistent without GINA 2025 track reference",
       "zeroCredit": "Omits or explicitly contradicts GINA"
-    },
-    {
-      "id": "4A.16",
-      "description": "Appropriate that budesonide/formoterol was selected (ICS-formoterol required for MART per GINA; formoterol is the only ICS-LABA approved for MART)",
-      "points": 0.75,
-      "fullCredit": "States choice of formoterol-containing ICS-LABA is required for MART strategy",
-      "halfCredit": "States MART concept without formoterol-specific justification",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4B.1",
-      "description": "Continue fluticasone nasal spray",
-      "points": 0.5,
-      "fullCredit": "States continue fluticasone nasal spray",
-      "halfCredit": "States continue nasal spray, no drug name",
-      "zeroCredit": "Omits or discontinues"
-    },
-    {
-      "id": "4B.2",
-      "description": "Fluticasone nasal spray dose maintained: 1 spray each nostril daily",
-      "points": 0.4,
-      "fullCredit": "States 1 spray each nostril daily",
-      "halfCredit": "States continue current dose without specifics",
-      "zeroCredit": "Incorrect dose or omits"
     },
     {
       "id": "4B.3",
@@ -43947,27 +43723,11 @@
       "zeroCredit": "Monitoring plan omits major GINA domain"
     },
     {
-      "id": "4E.1",
-      "description": "Continue calcium carbonate/vitamin D supplementation",
-      "points": 0.7,
-      "fullCredit": "States continue calcium carbonate/vitamin D",
-      "halfCredit": "States continue calcium supplement, no vitamin D or specifics",
-      "zeroCredit": "Omits or discontinues"
-    },
-    {
       "id": "4E.2",
       "description": "Minimize future systemic corticosteroid exposure when possible",
       "points": 0.7,
       "fullCredit": "States minimize systemic corticosteroid exposure when possible",
       "halfCredit": "States minimize OCS, no when-possible qualifier",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4E.3",
-      "description": "Links OCS minimization to osteopenia management rationale",
-      "points": 0.6,
-      "fullCredit": "States OCS minimization is specifically relevant to osteopenia management",
-      "halfCredit": "States OCS minimization without linking to bone health",
       "zeroCredit": "Omits"
     },
     {
@@ -44461,38 +44221,6 @@
       "zeroCredit": "Allergic rhinitis absent from PMH"
     },
     {
-      "id": "1C.6",
-      "description": "Lists hypertension as PMH",
-      "points": 0.25,
-      "fullCredit": "'Hypertension' listed under PMH",
-      "halfCredit": "HTN mentioned only in medication context",
-      "zeroCredit": "Hypertension absent from PMH"
-    },
-    {
-      "id": "1C.7",
-      "description": "States hypertension diagnosed 15 years ago",
-      "points": 0.25,
-      "fullCredit": "'15 years ago' documented for hypertension",
-      "halfCredit": "Duration approximated",
-      "zeroCredit": "HTN duration absent"
-    },
-    {
-      "id": "1C.8",
-      "description": "Lists osteopenia as PMH",
-      "points": 0.25,
-      "fullCredit": "'Osteopenia' listed under PMH",
-      "halfCredit": "Osteopenia mentioned only in Assessment",
-      "zeroCredit": "Osteopenia absent from PMH"
-    },
-    {
-      "id": "1C.9",
-      "description": "States osteopenia diagnosed 3 years ago",
-      "points": 0.25,
-      "fullCredit": "'3 years ago' documented for osteopenia",
-      "halfCredit": "Duration approximated",
-      "zeroCredit": "Osteopenia duration absent"
-    },
-    {
       "id": "1C.10",
       "description": "States cholecystectomy as past surgical history",
       "points": 0.25,
@@ -44566,11 +44294,11 @@
     },
     {
       "id": "1C.19",
-      "description": "States patient is a former smoker",
+      "description": "States patient is a never smoker",
       "points": 0.25,
-      "fullCredit": "'Former smoker' documented",
-      "halfCredit": "Smoking status noted without former/current distinction",
-      "zeroCredit": "Smoking status absent"
+      "fullCredit": "States never smoker or denies history of smoking",
+      "halfCredit": "States non-smoker without specifying never smoker",
+      "zeroCredit": "Tobacco status absent"
     },
     {
       "id": "1C.20",
@@ -44630,26 +44358,26 @@
     },
     {
       "id": "1E.1",
-      "description": "Lists budesonide/formoterol (Symbicort) as current medication",
+      "description": "Trelegy (fluticasone/umeclidinium/vilanterol) listed as current maintenance medication",
       "points": 0.25,
-      "fullCredit": "'Budesonide/formoterol' or 'Symbicort' listed",
-      "halfCredit": "Generic or brand listed but not both",
-      "zeroCredit": "Medication absent"
+      "fullCredit": "Lists Trelegy by name",
+      "halfCredit": "Lists triple inhaler without naming Trelegy",
+      "zeroCredit": "Drug name absent"
     },
     {
       "id": "1E.2",
-      "description": "States budesonide/formoterol dose: 160/4.5 mcg",
+      "description": "Trelegy dose (100/62.5/25 mcg)",
       "points": 0.25,
-      "fullCredit": "'160/4.5 mcg' documented",
-      "halfCredit": "Strength approximated or range given",
+      "fullCredit": "States dose as 100/62.5/25 mcg",
+      "halfCredit": "States incorrect dose",
       "zeroCredit": "Dose absent"
     },
     {
       "id": "1E.3",
-      "description": "States budesonide/formoterol sig: 2 inhalations twice daily",
+      "description": "Trelegy sig: 1 inhalation daily",
       "points": 0.25,
-      "fullCredit": "'2 inhalations twice daily' documented",
-      "halfCredit": "Frequency stated without dose count, or vice versa",
+      "fullCredit": "States 1 inhalation once daily",
+      "halfCredit": "States daily sig without inhalation count",
       "zeroCredit": "Sig absent"
     },
     {
@@ -44683,70 +44411,6 @@
       "fullCredit": "'2 puffs every 4–6 hours as needed' documented",
       "halfCredit": "PRN documented without frequency or dose count",
       "zeroCredit": "Sig absent"
-    },
-    {
-      "id": "1E.8",
-      "description": "Lists fluticasone nasal spray as current medication",
-      "points": 0.25,
-      "fullCredit": "'Fluticasone nasal spray' documented",
-      "halfCredit": "'Nasal steroid' without specifying fluticasone",
-      "zeroCredit": "Medication absent"
-    },
-    {
-      "id": "1E.9",
-      "description": "States fluticasone nasal spray sig: 1 spray each nostril daily",
-      "points": 0.25,
-      "fullCredit": "'1 spray each nostril daily' documented",
-      "halfCredit": "Frequency without quantity or route",
-      "zeroCredit": "Sig absent"
-    },
-    {
-      "id": "1E.10",
-      "description": "Lists lisinopril as current medication",
-      "points": 0.25,
-      "fullCredit": "'Lisinopril' listed",
-      "halfCredit": "ACE inhibitor listed without drug name",
-      "zeroCredit": "Medication absent"
-    },
-    {
-      "id": "1E.11",
-      "description": "States lisinopril dose: 20 mg PO daily",
-      "points": 0.25,
-      "fullCredit": "'20 mg PO daily' documented",
-      "halfCredit": "Dose correct but route/frequency missing",
-      "zeroCredit": "Dose absent"
-    },
-    {
-      "id": "1E.12",
-      "description": "Lists calcium carbonate/vitamin D as current medication",
-      "points": 0.25,
-      "fullCredit": "'Calcium carbonate/vitamin D' or equivalent documented",
-      "halfCredit": "'Calcium supplement' without vitamin D specification",
-      "zeroCredit": "Medication absent"
-    },
-    {
-      "id": "1E.13",
-      "description": "States calcium carbonate/vitamin D sig: 1 tablet twice daily",
-      "points": 0.25,
-      "fullCredit": "'1 tablet twice daily' documented",
-      "halfCredit": "Frequency without dose count or formulation",
-      "zeroCredit": "Sig absent"
-    },
-    {
-      "id": "1E.14",
-      "description": "States allergy: sulfonamide antibiotics",
-      "points": 0.25,
-      "fullCredit": "'Sulfonamide antibiotics' listed as allergy",
-      "halfCredit": "'Sulfa drugs' without 'antibiotic' specification",
-      "zeroCredit": "Allergy absent"
-    },
-    {
-      "id": "1E.15",
-      "description": "States sulfonamide allergy reaction: rash",
-      "points": 0.25,
-      "fullCredit": "'Rash' documented as reaction",
-      "halfCredit": "Allergic reaction documented without specifying rash",
-      "zeroCredit": "Reaction type absent"
     },
     {
       "id": "1E.16",
@@ -44813,14 +44477,6 @@
       "zeroCredit": "Adherence absent"
     },
     {
-      "id": "1E.24",
-      "description": "States Symbicort brand name documented alongside generic",
-      "points": 0.25,
-      "fullCredit": "Both 'Symbicort' and 'budesonide/formoterol' listed",
-      "halfCredit": "Brand or generic only",
-      "zeroCredit": "Neither documented"
-    },
-    {
       "id": "1E.25",
       "description": "States Spiriva Respimat brand/formulation documented",
       "points": 0.25,
@@ -44846,11 +44502,11 @@
     },
     {
       "id": "1E.28",
-      "description": "Documents NKDA does not apply; sulfonamide allergy is the only documented allergy",
+      "description": "Documents no known drug allergies (NKDA)",
       "points": 0.25,
-      "fullCredit": "Single documented allergy (sulfonamides) noted with no NKDA",
-      "halfCredit": "Allergy section present but incomplete",
-      "zeroCredit": "Allergy section absent"
+      "fullCredit": "States no known drug allergies (NKDA)",
+      "halfCredit": "States no allergies without specifying drug allergies",
+      "zeroCredit": "Allergy status absent"
     },
     {
       "id": "1F.1",
@@ -45019,14 +44675,6 @@
       "fullCredit": "'95% on room air' documented",
       "halfCredit": "SpO2 value without 'on room air' qualifier",
       "zeroCredit": "SpO2 absent"
-    },
-    {
-      "id": "2A.8",
-      "description": "States blood pressure is within normal range (consistent with lisinopril goal)",
-      "points": 0.25,
-      "fullCredit": "BP interpretation documented or BP flagged as controlled",
-      "halfCredit": "BP value listed without interpretation",
-      "zeroCredit": "BP not interpreted"
     },
     {
       "id": "2A.9",
@@ -45221,14 +44869,6 @@
       "zeroCredit": "Not addressed"
     },
     {
-      "id": "2B.19",
-      "description": "Notes absence of bone density data despite osteopenia history (missing-but-expected)",
-      "points": 0.25,
-      "fullCredit": "DEXA or bone density flagged as not available",
-      "halfCredit": "Skeletal monitoring mentioned generally",
-      "zeroCredit": "Not addressed"
-    },
-    {
       "id": "2B.20",
       "description": "Notes IgE or FeNO not documented at this visit (missing-but-relevant for biologic workup)",
       "points": 0.25,
@@ -45317,14 +44957,6 @@
       "zeroCredit": "Not addressed"
     },
     {
-      "id": "2C.9",
-      "description": "States blood pressure 126/74 within normal range consistent with lisinopril control",
-      "points": 0.25,
-      "fullCredit": "BP interpretation in context of lisinopril therapy documented",
-      "halfCredit": "BP normal noted without treatment context",
-      "zeroCredit": "Not interpreted"
-    },
-    {
       "id": "2C.10",
       "description": "States cumulative OCS exposure (≥5 courses in 12 months) is high-risk for systemic adverse effects",
       "points": 0.25,
@@ -45354,14 +44986,6 @@
       "points": 0.25,
       "fullCredit": "IgE flagged as not available",
       "halfCredit": "IgE mentioned generally",
-      "zeroCredit": "Not flagged"
-    },
-    {
-      "id": "2C.14",
-      "description": "Flags missing bone density data despite osteopenia history and OCS exposure",
-      "points": 0.25,
-      "fullCredit": "DEXA / bone density monitoring gap flagged",
-      "halfCredit": "Bone health mentioned without data gap",
       "zeroCredit": "Not flagged"
     },
     {
@@ -45410,14 +45034,6 @@
       "points": 0.25,
       "fullCredit": "Lack of quantified rescue inhaler frequency noted",
       "halfCredit": "Rescue use addressed without quantification flag",
-      "zeroCredit": "Not addressed"
-    },
-    {
-      "id": "2C.21",
-      "description": "Notes renal function (BMP/CMP) not available (relevant to lisinopril monitoring)",
-      "points": 0.25,
-      "fullCredit": "Renal function gap noted for lisinopril monitoring",
-      "halfCredit": "Renal labs mentioned without flagging gap",
       "zeroCredit": "Not addressed"
     },
     {
@@ -45662,9 +45278,9 @@
     },
     {
       "id": "3A.28",
-      "description": "States current inhaled regimen: budesonide/formoterol 160/4.5 mcg (Symbicort) + tiotropium (Spiriva Respimat)",
+      "description": "States current inhaled regimen: Trelegy (fluticasone/umeclidinium/vilanterol) 100/62.5/25 mcg once daily",
       "points": 0.25,
-      "fullCredit": "Both agents named as optimized inhaled regimen base in Assessment",
+      "fullCredit": "States current maintenance therapy is Trelegy 1 inhalation once daily",
       "halfCredit": "One agent listed without the other",
       "zeroCredit": "Regimen not described in Assessment"
     },
@@ -46045,14 +45661,6 @@
       "zeroCredit": "Jitteriness absent"
     },
     {
-      "id": "3D.4",
-      "description": "States history of osteopenia places patient at increased risk for OCS-related skeletal complications",
-      "points": 0.25,
-      "fullCredit": "Osteopenia + OCS risk linkage documented",
-      "halfCredit": "Osteopenia noted without OCS risk linkage",
-      "zeroCredit": "Linkage absent"
-    },
-    {
       "id": "3D.5",
       "description": "References GINA 2025: minimizing systemic corticosteroid exposure is a major treatment goal in severe asthma",
       "points": 0.25,
@@ -46091,14 +45699,6 @@
       "fullCredit": "Listed fourth in Assessment",
       "halfCredit": "Listed fourth without priority statement",
       "zeroCredit": "Priority absent"
-    },
-    {
-      "id": "3D.10",
-      "description": "States compounding skeletal risk: osteopenia + repeated OCS courses",
-      "points": 0.25,
-      "fullCredit": "Both osteopenia and repeated OCS courses cited as compounding skeletal risk",
-      "halfCredit": "One factor without the other",
-      "zeroCredit": "Compounding risk absent"
     },
     {
       "id": "3D.11",
@@ -46165,28 +45765,12 @@
       "zeroCredit": "Status absent"
     },
     {
-      "id": "3E.3",
-      "description": "States significant improvement in allergic rhinitis symptoms since resumption of fluticasone nasal spray",
-      "points": 0.25,
-      "fullCredit": "'Significant improvement' + 'since resumption of fluticasone' documented",
-      "halfCredit": "Improvement noted without treatment attribution",
-      "zeroCredit": "Improvement absent"
-    },
-    {
       "id": "3E.4",
       "description": "States allergic rhinitis no longer a major contributor to current respiratory symptoms",
       "points": 0.25,
       "fullCredit": "'No longer a major contributor' documented",
       "halfCredit": "Rhinitis status improved without respiratory contribution conclusion",
       "zeroCredit": "Contribution conclusion absent"
-    },
-    {
-      "id": "3E.5",
-      "description": "States continued management with fluticasone nasal spray is appropriate",
-      "points": 0.25,
-      "fullCredit": "'Continue fluticasone nasal spray' or equivalent documented",
-      "halfCredit": "Management planned without explicit appropriateness statement",
-      "zeroCredit": "Management not addressed"
     },
     {
       "id": "3E.6",
@@ -46213,22 +45797,6 @@
       "zeroCredit": "Nuance absent"
     },
     {
-      "id": "3F.1",
-      "description": "States problem label: osteopenia",
-      "points": 0.25,
-      "fullCredit": "'Osteopenia' listed as problem #6",
-      "halfCredit": "Bone density mentioned without 'osteopenia' label",
-      "zeroCredit": "Label absent"
-    },
-    {
-      "id": "3F.2",
-      "description": "States patient has history of osteopenia (diagnosed 3 years ago)",
-      "points": 0.25,
-      "fullCredit": "History + 3-year diagnosis documented",
-      "halfCredit": "History noted without diagnosis timing",
-      "zeroCredit": "History absent from Assessment"
-    },
-    {
       "id": "3F.3",
       "description": "States patient at increased risk for adverse skeletal outcomes associated with repeated OCS exposure",
       "points": 0.25,
@@ -46245,44 +45813,12 @@
       "zeroCredit": "Chain absent"
     },
     {
-      "id": "3F.5",
-      "description": "States minimizing prednisone use is the primary osteopenia-related management goal at this time",
-      "points": 0.25,
-      "fullCredit": "'Minimize prednisone' as primary osteopenia goal documented",
-      "halfCredit": "OCS minimization mentioned without 'primary goal' framing",
-      "zeroCredit": "Goal absent"
-    },
-    {
-      "id": "3F.6",
-      "description": "States calcium carbonate/vitamin D supplementation is currently continued",
-      "points": 0.25,
-      "fullCredit": "Calcium/vitamin D continuation documented in Assessment",
-      "halfCredit": "Supplementation mentioned in Plan only",
-      "zeroCredit": "Not addressed in Assessment"
-    },
-    {
-      "id": "3F.7",
-      "description": "States osteopenia diagnosed 3 years ago (timeframe in Assessment)",
-      "points": 0.25,
-      "fullCredit": "'3 years ago' documented in Assessment",
-      "halfCredit": "Diagnosis timing mentioned in PMH only",
-      "zeroCredit": "Diagnosis timing absent from Assessment"
-    },
-    {
       "id": "3F.8",
       "description": "States this problem is ranked #6 in priority order",
       "points": 0.25,
       "fullCredit": "Listed sixth in Assessment",
       "halfCredit": "Listed sixth without priority label",
       "zeroCredit": "Priority absent"
-    },
-    {
-      "id": "3F.9",
-      "description": "States long-term high-dose ICS also contributes to osteopenia risk (GINA 2025: systemic ICS adverse effects)",
-      "points": 0.25,
-      "fullCredit": "ICS-related osteopenia risk documented per GINA 2025",
-      "halfCredit": "ICS risk mentioned without GINA reference",
-      "zeroCredit": "ICS risk absent"
     },
     {
       "id": "3F.10",
@@ -46406,27 +45942,19 @@
     },
     {
       "id": "4A.1",
-      "description": "States continue budesonide/formoterol (Symbicort)",
+      "description": "States continue Trelegy (fluticasone/umeclidinium/vilanterol) 100/62.5/25 mcg once daily",
       "points": 0.25,
-      "fullCredit": "'Continue budesonide/formoterol (Symbicort)' documented",
+      "fullCredit": "States to continue Trelegy once daily",
       "halfCredit": "Continue stated without drug name",
       "zeroCredit": "Drug absent from Plan"
     },
     {
       "id": "4A.2",
-      "description": "States budesonide/formoterol dose: 160/4.5 mcg",
+      "description": "States to refer for biologic therapy (anti-IL-5, e.g., mepolizumab) due to severe eosinophilic disease",
       "points": 0.25,
-      "fullCredit": "'160/4.5 mcg' documented",
+      "fullCredit": "Recommends mepolizumab 100 mg SQ every 4 weeks to target eosinophilic inflammation",
       "halfCredit": "Dose approximated or changed",
       "zeroCredit": "Dose absent"
-    },
-    {
-      "id": "4A.3",
-      "description": "States budesonide/formoterol sig: inhale 2 puffs twice daily",
-      "points": 0.25,
-      "fullCredit": "'2 puffs twice daily' documented",
-      "halfCredit": "Frequency correct but puff count absent",
-      "zeroCredit": "Sig absent"
     },
     {
       "id": "4A.4",
@@ -46613,14 +46141,6 @@
       "zeroCredit": "Step 5 absent from Plan"
     },
     {
-      "id": "4A.27",
-      "description": "States no change to maintenance ICS-LABA (Symbicort continues at same dose)",
-      "points": 0.25,
-      "fullCredit": "'Continue at same dose' explicitly documented",
-      "halfCredit": "Drug continued without confirming no dose change",
-      "zeroCredit": "Continuation absent"
-    },
-    {
       "id": "4A.28",
       "description": "States no change to LAMA (tiotropium continues at same dose)",
       "points": 0.25,
@@ -46757,22 +46277,6 @@
       "zeroCredit": "Integration absent"
     },
     {
-      "id": "4C.1",
-      "description": "States continue fluticasone nasal spray",
-      "points": 0.25,
-      "fullCredit": "'Continue fluticasone nasal spray' documented",
-      "halfCredit": "Drug continued without name",
-      "zeroCredit": "Drug absent from Plan"
-    },
-    {
-      "id": "4C.2",
-      "description": "States fluticasone nasal spray sig: 1 spray in each nostril daily",
-      "points": 0.25,
-      "fullCredit": "'1 spray each nostril daily' documented",
-      "halfCredit": "Frequency without dose count",
-      "zeroCredit": "Sig absent"
-    },
-    {
       "id": "4C.3",
       "description": "States continue allergen avoidance strategies",
       "points": 0.25,
@@ -46797,14 +46301,6 @@
       "zeroCredit": "GINA reference absent from Plan"
     },
     {
-      "id": "4C.6",
-      "description": "States fluticasone nasal spray dose/frequency unchanged from prior visit",
-      "points": 0.25,
-      "fullCredit": "'Unchanged' or 'same dose' documented",
-      "halfCredit": "Drug continued without confirming unchanged dose",
-      "zeroCredit": "Confirmation absent"
-    },
-    {
       "id": "4C.7",
       "description": "States patient satisfaction with allergic rhinitis control documented in Plan",
       "points": 0.25,
@@ -46821,28 +46317,12 @@
       "zeroCredit": "Non-pharmacologic framing absent"
     },
     {
-      "id": "4D.1",
-      "description": "States continue calcium carbonate/vitamin D supplementation",
-      "points": 0.25,
-      "fullCredit": "'Continue calcium carbonate/vitamin D' documented",
-      "halfCredit": "Supplement continued without specifying calcium carbonate",
-      "zeroCredit": "Drug absent from Plan"
-    },
-    {
       "id": "4D.2",
       "description": "States continue efforts to minimize systemic corticosteroid exposure",
       "points": 0.25,
       "fullCredit": "'Continue efforts to minimize OCS' documented",
       "halfCredit": "OCS minimization mentioned without 'continue efforts' framing",
       "zeroCredit": "Statement absent"
-    },
-    {
-      "id": "4D.3",
-      "description": "States calcium/vitamin D sig: 1 tablet twice daily (per current medication)",
-      "points": 0.25,
-      "fullCredit": "'1 tablet twice daily' documented",
-      "halfCredit": "Twice daily without tablet count",
-      "zeroCredit": "Sig absent"
     },
     {
       "id": "4D.4",
@@ -46853,36 +46333,12 @@
       "zeroCredit": "Linkage absent from Plan"
     },
     {
-      "id": "4D.5",
-      "description": "States no new pharmacologic agent added for osteopenia at this visit",
-      "points": 0.25,
-      "fullCredit": "'No new agent' or 'no change to osteopenia pharmacotherapy' documented",
-      "halfCredit": "Continuation noted without confirming no new agent",
-      "zeroCredit": "Not explicitly stated"
-    },
-    {
       "id": "4D.6",
       "description": "States DEXA monitoring or referral not added at this visit (consistent with note)",
       "points": 0.25,
       "fullCredit": "Absence of DEXA change documented",
       "halfCredit": "DEXA mentioned without status",
       "zeroCredit": "Not addressed in Plan"
-    },
-    {
-      "id": "4D.7",
-      "description": "States OCS minimization is the primary osteopenia pharmacologic intervention at this time",
-      "points": 0.25,
-      "fullCredit": "'OCS minimization = primary osteopenia intervention' framing documented",
-      "halfCredit": "OCS minimization mentioned without 'primary' framing",
-      "zeroCredit": "Not stated"
-    },
-    {
-      "id": "4D.8",
-      "description": "States patient education regarding calcium/vitamin D importance given corticosteroid exposure",
-      "points": 0.25,
-      "fullCredit": "Calcium/vitamin D importance counseling documented",
-      "halfCredit": "Supplementation continued without patient education element",
-      "zeroCredit": "Education absent"
     },
     {
       "id": "4E.1",

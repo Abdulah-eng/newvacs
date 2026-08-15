@@ -431,7 +431,7 @@ const mariaTue = makeCase({
     { name: 'Albuterol HFA', dose: '2 puffs', route: 'Inhaled', freq: 'q4-6h PRN', indication: 'Rescue', notes: '' },
   ],
   IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'History of asthma since childhood, COPD diagnosed 8 years ago. Reports 3 exacerbations requiring prednisone in the last 12 months.' }, { label: 'Social', value: 'Former smoker (30 pack-years, quit 12y ago).' }],
+  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'History of asthma since childhood, COPD diagnosed 8 years ago. Reports 3 exacerbations requiring prednisone in the last 12 months.' }, { label: 'Social', value: 'Never smoker' }],
   OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.60, FEV1 65% predicted with significant bronchodilator reversibility (+15%, +250mL)', flag: 'warn' }],
   INTERVIEW_FIELDS: [
     { key: 'exacerbations', label: 'Exacerbation History', placeholder: 'Tell me about the flare-ups' },
