@@ -110,7 +110,10 @@ const sarahWed = makeCase({
   PROBLEMS: [{ name: 'Asthma', detail: 'Partly controlled', flag: 'warn' }],
   MEDICATIONS: sarahTue.MEDICATIONS,
   IMMUNIZATIONS: sarahTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Patient reports improved daily adherence to ICS.' }],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: 'Patient reports improved daily adherence to ICS.' },
+    { label: 'Social history', value: 'Teacher. Non-smoker. Lives with husband and two kids.' }
+  ],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'symptoms', label: 'Current Symptoms', placeholder: 'How are the symptoms now?' },
@@ -174,7 +177,10 @@ const sarahThu = makeCase({
     { name: 'Budesonide/Formoterol (Symbicort)', dose: '160/4.5 mcg', route: 'Inhaled', freq: 'BID and PRN', indication: 'Asthma SMART therapy', notes: '' },
   ],
   IMMUNIZATIONS: sarahTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Follow-up after transitioning to SMART therapy.' }],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: 'Follow-up after transitioning to SMART therapy.' },
+    { label: 'Social history', value: 'Teacher. Non-smoker. Lives with husband and two kids.' }
+  ],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'control', label: 'Asthma Control', placeholder: 'Any symptoms or rescue use?' },
@@ -311,7 +317,10 @@ const bobWed = makeCase({
     { name: 'Tiotropium (Spiriva HandiHaler)', dose: '18 mcg', route: 'Inhaled', freq: 'daily', indication: 'COPD maintenance', notes: 'Newly started' },
   ],
   IMMUNIZATIONS: bobTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Patient reports no improvement in dyspnea since starting tiotropium.' }],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: 'Patient reports no improvement in dyspnea since starting tiotropium.' },
+    { label: 'Social history', value: 'Retired automotive mechanic. Married, lives with spouse. Former smoker (45 pack-years).' }
+  ],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'technique', label: 'Inhaler Technique', placeholder: 'Ask him to demonstrate how he uses the HandiHaler' },
@@ -363,7 +372,10 @@ const bobThu = makeCase({
   PROBLEMS: [{ name: 'COPD', detail: 'Well controlled on LAMA', flag: 'normal' }],
   MEDICATIONS: bobWed.MEDICATIONS,
   IMMUNIZATIONS: bobTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Dyspnea significantly improved. Walking further without stopping.' }],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: 'Dyspnea significantly improved. Walking further without stopping.' },
+    { label: 'Social history', value: 'Retired automotive mechanic. Married, lives with spouse. Former smoker (45 pack-years).' }
+  ],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'symptoms', label: 'Symptom check', placeholder: 'Any exacerbations or rescue use?' },
@@ -503,7 +515,10 @@ const mariaWed = makeCase({
     { name: 'Albuterol HFA', dose: '2 puffs', route: 'Inhaled', freq: 'q4-6h PRN', indication: 'Rescue', notes: '' },
   ],
   IMMUNIZATIONS: mariaTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'One moderate exacerbation treated with prednisone 4 weeks ago. Adherence and technique confirmed excellent in clinic today.' }],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: 'One moderate exacerbation treated with prednisone 4 weeks ago. Adherence and technique confirmed excellent in clinic today.' },
+    { label: 'Social history', value: 'Retired elementary school principal. Married, lives with spouse. Never smoker.' }
+  ],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Adherence / Technique', placeholder: 'Are you sure she is taking it?' },
@@ -565,7 +580,10 @@ const mariaThu = makeCase({
     { name: 'Mepolizumab', dose: '100 mg', route: 'SQ', freq: 'every 4 weeks', indication: 'Severe eosinophilic asthma/COPD', notes: '' },
   ],
   IMMUNIZATIONS: mariaTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Zero exacerbations in the last 6 months since starting mepolizumab.' }],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: 'Zero exacerbations in the last 6 months since starting mepolizumab.' },
+    { label: 'Social history', value: 'Retired elementary school principal. Married, lives with spouse. Never smoker.' }
+  ],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'update', label: 'Clinical Update', placeholder: 'How has she been feeling?' },

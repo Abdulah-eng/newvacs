@@ -31430,11 +31430,11 @@
     },
     {
       "id": "1B.13",
-      "description": "States symptoms resolved completely following treatment",
+      "description": "States patient denies any recent asthma exacerbations or flare-ups",
       "points": 0.3,
-      "fullCredit": "States symptoms resolved completely following prednisone course",
-      "halfCredit": "States symptoms improved without stating complete resolution",
-      "zeroCredit": "Resolution of exacerbation not documented"
+      "fullCredit": "States no exacerbations since last visit",
+      "halfCredit": "—",
+      "zeroCredit": "Exacerbation status absent"
     },
     {
       "id": "1B.15",
@@ -31462,11 +31462,11 @@
     },
     {
       "id": "1C.1",
-      "description": "Documents asthma diagnosis with onset age (age 8)",
+      "description": "Documents asthma diagnosis in PMH",
       "points": 0.4,
-      "fullCredit": "Lists asthma diagnosed at age 8",
-      "halfCredit": "Lists asthma without stating age of onset",
-      "zeroCredit": "Asthma not listed or onset absent"
+      "fullCredit": "Lists asthma in past medical history",
+      "halfCredit": "—",
+      "zeroCredit": "Asthma not listed"
     },
     {
       "id": "1C.2",
@@ -32094,11 +32094,11 @@
     },
     {
       "id": "3B.5",
-      "description": "States patient has returned to baseline symptom control since recovery",
+      "description": "States patient denies any oral corticosteroid (prednisone) use since last visit",
       "points": 0.55,
-      "fullCredit": "States patient has returned to baseline control since the exacerbation",
-      "halfCredit": "States patient improved without referencing baseline",
-      "zeroCredit": "Return to baseline not stated"
+      "fullCredit": "States no prednisone or oral steroid courses used",
+      "halfCredit": "—",
+      "zeroCredit": "Steroid use status absent"
     },
     {
       "id": "3C.1",
@@ -36380,19 +36380,19 @@
     },
     {
       "id": "1A.8",
-      "description": "Overall symptom trajectory: mild improvement since initial visit",
+      "description": "Overall symptom trajectory: significant improvement since previous visit",
       "points": 0.25,
-      "fullCredit": "States mild improvement since initial visit",
-      "halfCredit": "States improved, no qualifier",
-      "zeroCredit": "Omits"
+      "fullCredit": "States significant improvement in breathing / dyspnea",
+      "halfCredit": "States improved breathing without specifying significant",
+      "zeroCredit": "Symptom trajectory absent"
     },
     {
       "id": "1A.9",
-      "description": "Chief concern: persistent/recurrent COPD flare-ups despite therapy",
+      "description": "Chief concern: improved breathing since correct inhaler technique use",
       "points": 0.4,
-      "fullCredit": "States frustration with recurrent flare-ups",
-      "halfCredit": "States concern, no specificity",
-      "zeroCredit": "Omits"
+      "fullCredit": "States breathing is much better / improved since learning correct technique",
+      "halfCredit": "States breathing is better without technique context",
+      "zeroCredit": "Chief concern absent"
     },
     {
       "id": "1B.18",
@@ -36820,11 +36820,11 @@
     },
     {
       "id": "3C.1",
-      "description": "Problem identified: medication adherence — improved status",
+      "description": "Problem identified: inhaler technique — resolved/improved status",
       "points": 0.6,
-      "fullCredit": "States adherence improved / improved status",
-      "halfCredit": "States adherence addressed, no status",
-      "zeroCredit": "Omits"
+      "fullCredit": "States patient's inhaler technique is now correct or improved",
+      "halfCredit": "States technique is resolved without detail",
+      "zeroCredit": "Inhaler technique status absent"
     },
     {
       "id": "3C.7",
@@ -36844,11 +36844,11 @@
     },
     {
       "id": "3D.2",
-      "description": "Patient remains tobacco free (5 years since cessation)",
+      "description": "Patient remains tobacco free (10 years since cessation)",
       "points": 0.85,
-      "fullCredit": "States tobacco free for 5 years",
-      "halfCredit": "States tobacco free, no duration",
-      "zeroCredit": "Omits"
+      "fullCredit": "States tobacco free for 10 years",
+      "halfCredit": "States tobacco free without specifying 10 years",
+      "zeroCredit": "Tobacco cessation status absent"
     },
     {
       "id": "3D.3",
@@ -37036,19 +37036,19 @@
     },
     {
       "id": "4C.1",
-      "description": "Continue current medication reminder system",
+      "description": "States to continue monitoring inhaler technique at future visits",
       "points": 0.65,
-      "fullCredit": "States continue medication reminder system",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "fullCredit": "States to continue technique monitoring or verify correct device use",
+      "halfCredit": "States monitor inhaler without technique context",
+      "zeroCredit": "Technique monitoring absent"
     },
     {
       "id": "4C.3",
-      "description": "Encourage patient to continue incorporating inhaler into daily routine",
+      "description": "Encourage patient to continue correct daily maintenance inhaler use",
       "points": 0.6,
-      "fullCredit": "States continue incorporating inhaler into daily routine",
+      "fullCredit": "States to encourage daily maintenance inhaler use",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "Adherence encouragement absent"
     },
     {
       "id": "4D.1",
