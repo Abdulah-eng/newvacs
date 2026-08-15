@@ -31838,33 +31838,33 @@
     },
     {
       "id": "2A.1",
-      "description": "Records blood pressure (118/74 mmHg)",
+      "description": "Records blood pressure (118/76 mmHg)",
       "points": 0.65,
-      "fullCredit": "Records BP as 118/74 mmHg",
+      "fullCredit": "States 118/76",
       "halfCredit": "Records BP but omits units or transposes systolic/diastolic",
       "zeroCredit": "BP absent"
     },
     {
       "id": "2A.2",
-      "description": "Records heart rate (76 bpm)",
+      "description": "Records heart rate (88 bpm)",
       "points": 0.6,
-      "fullCredit": "Records HR as 76 bpm",
+      "fullCredit": "States 88",
       "halfCredit": "Records HR value without units",
       "zeroCredit": "HR absent"
     },
     {
       "id": "2A.3",
-      "description": "Records respiratory rate (16 bpm)",
+      "description": "Records respiratory rate (18 bpm)",
       "points": 0.6,
-      "fullCredit": "Records RR as 16 bpm (or breaths/min)",
+      "fullCredit": "States 18",
       "halfCredit": "Records RR value without units",
       "zeroCredit": "RR absent"
     },
     {
       "id": "2A.4",
-      "description": "Records weight (75 kg)",
+      "description": "Records weight (65 kg)",
       "points": 0.65,
-      "fullCredit": "Records weight as 75 kg",
+      "fullCredit": "States 65 kg",
       "halfCredit": "Records weight without units or in incorrect units without conversion",
       "zeroCredit": "Weight absent"
     },
@@ -31878,19 +31878,11 @@
     },
     {
       "id": "2A.6",
-      "description": "Records BMI (27.5 kg/m²)",
+      "description": "Records BMI (23.9 kg/m²)",
       "points": 0.65,
-      "fullCredit": "Records BMI as 27.5 kg/m²",
+      "fullCredit": "States 23.9",
       "halfCredit": "Records BMI value without units",
       "zeroCredit": "BMI absent"
-    },
-    {
-      "id": "2A.7",
-      "description": "Records SpO₂ value (99%)",
-      "points": 0.65,
-      "fullCredit": "Records SpO₂ as 99%",
-      "halfCredit": "Records SpO₂ without percentage symbol or qualifier",
-      "zeroCredit": "SpO₂ absent"
     },
     {
       "id": "2A.8",
@@ -31902,43 +31894,11 @@
     },
     {
       "id": "2B.1",
-      "description": "Records pre-bronchodilator FEV1/FVC ratio (0.77)",
+      "description": "Records pre-bronchodilator FEV1/FVC ratio (0.80)",
       "points": 0.8,
-      "fullCredit": "Records FEV1/FVC ratio as 0.77",
+      "fullCredit": "States 0.80",
       "halfCredit": "Records FEV1/FVC without the decimal or in incorrect format",
       "zeroCredit": "FEV1/FVC absent"
-    },
-    {
-      "id": "2B.2",
-      "description": "Records post-bronchodilator FEV1 improvement as percentage (8%)",
-      "points": 0.8,
-      "fullCredit": "Records post-BD FEV1 improvement as 8%",
-      "halfCredit": "References improvement without specifying 8%",
-      "zeroCredit": "Post-BD percentage absent"
-    },
-    {
-      "id": "2B.3",
-      "description": "Records post-bronchodilator absolute FEV1 improvement (160 mL)",
-      "points": 0.7,
-      "fullCredit": "Records absolute FEV1 improvement as 160 mL",
-      "halfCredit": "References absolute change without specifying 160 mL",
-      "zeroCredit": "Absolute improvement absent"
-    },
-    {
-      "id": "2B.4",
-      "description": "Notes absolute improvement does not meet GINA reversibility threshold (≥200 mL)",
-      "points": 0.8,
-      "fullCredit": "States 160 mL does not meet the GINA ≥200 mL threshold for reversibility",
-      "halfCredit": "States threshold not met without specifying the 200 mL value",
-      "zeroCredit": "Threshold comparison absent"
-    },
-    {
-      "id": "2B.5",
-      "description": "Notes percentage improvement does not meet GINA reversibility threshold (≥12%)",
-      "points": 0.8,
-      "fullCredit": "States 8% does not meet the GINA ≥12% threshold for reversibility",
-      "halfCredit": "States threshold not met without specifying the 12% value",
-      "zeroCredit": "Threshold comparison absent"
     },
     {
       "id": "2B.6",
@@ -31949,14 +31909,6 @@
       "zeroCredit": "PFT interpretation absent"
     },
     {
-      "id": "2B.7",
-      "description": "Records ACT score (22)",
-      "points": 0.75,
-      "fullCredit": "Records ACT score as 22",
-      "halfCredit": "References ACT without stating the score of 22",
-      "zeroCredit": "ACT score absent"
-    },
-    {
       "id": "2B.8",
       "description": "Interprets ACT score as well-controlled asthma",
       "points": 0.55,
@@ -31965,16 +31917,8 @@
       "zeroCredit": "ACT interpretation absent"
     },
     {
-      "id": "2B.9",
-      "description": "Notes ACT score improvement from baseline (16 to 22)",
-      "points": 0.6,
-      "fullCredit": "States ACT improved from 16 at baseline to 22 at current visit",
-      "halfCredit": "States ACT improved without citing both the baseline and current values",
-      "zeroCredit": "ACT comparison to baseline absent"
-    },
-    {
       "id": "2C.1",
-      "description": "Notes BMI value is consistent with overweight classification (27.5 kg/m²)",
+      "description": "Notes BMI value is consistent with healthy weight classification (23.9 kg/m²)",
       "points": 0.75,
       "fullCredit": "Notes BMI of 27.5 kg/m² is in the overweight range",
       "halfCredit": "Notes BMI without interpreting the classification",
@@ -32011,14 +31955,6 @@
       "fullCredit": "Labels Problem 1 as asthma, well controlled",
       "halfCredit": "States asthma is improved or stable without the term well controlled",
       "zeroCredit": "Control status not stated"
-    },
-    {
-      "id": "3A.2",
-      "description": "States ACT score improvement from 16 (baseline) to 22 (current)",
-      "points": 0.55,
-      "fullCredit": "States ACT improved from baseline of 16 to current 22",
-      "halfCredit": "States ACT improved without citing both scores",
-      "zeroCredit": "ACT comparison absent"
     },
     {
       "id": "3A.3",
@@ -32123,14 +32059,6 @@
       "fullCredit": "States FEV1/FVC of 0.77 is above the lower limit of normal/obstruction threshold",
       "halfCredit": "References FEV1/FVC without the specific value or threshold comparison",
       "zeroCredit": "FEV1/FVC not cited in assessment"
-    },
-    {
-      "id": "3A.17",
-      "description": "States post-BD FEV1 change (8%, 160 mL) does not meet GINA reversibility thresholds",
-      "points": 0.5,
-      "fullCredit": "States post-BD FEV1 of 8%/160 mL does not meet GINA criteria for significant reversibility",
-      "halfCredit": "States reversibility criteria not met without citing specific values",
-      "zeroCredit": "Reversibility assessment absent"
     },
     {
       "id": "3A.18",
@@ -33079,14 +33007,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1C.8",
-      "description": "Family history: no brother mentioned",
-      "points": 0.3,
-      "fullCredit": "States family history without mentioning brother",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1C.9",
       "description": "Patient knowledge deficit: does not understand controller vs. rescue distinction",
       "points": 0.4,
@@ -33480,9 +33400,9 @@
     },
     {
       "id": "2A.4",
-      "description": "Temperature: 98.2 degrees F",
+      "description": "Temperature: 98.6 degrees F",
       "points": 0.4,
-      "fullCredit": "States 98.2 F",
+      "fullCredit": "States 98.6 F",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33528,17 +33448,17 @@
     },
     {
       "id": "2B.1",
-      "description": "Pre-bronchodilator FEV1/FVC ratio: 0.78",
+      "description": "Pre-bronchodilator FEV1/FVC ratio: 0.75",
       "points": 0.8,
-      "fullCredit": "States 0.78",
+      "fullCredit": "States 0.75",
       "halfCredit": "States FEV1/FVC, value imprecise",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.2",
-      "description": "FEV1/FVC &lt;0.70 indicating airflow obstruction",
+      "description": "FEV1/FVC >=0.70 indicating no fixed airflow obstruction",
       "points": 0.7,
-      "fullCredit": "States FEV1/FVC &lt;0.70 confirms airflow obstruction",
+      "fullCredit": "States FEV1/FVC >=0.70 confirms no fixed airflow obstruction",
       "halfCredit": "States obstructed, no threshold",
       "zeroCredit": "Omits"
     },
@@ -33552,9 +33472,9 @@
     },
     {
       "id": "2B.4",
-      "description": "Absolute FEV1 improvement: 280 mL",
+      "description": "Absolute FEV1 improvement: 375 mL",
       "points": 0.8,
-      "fullCredit": "States 280 mL",
+      "fullCredit": "States 375 mL",
       "halfCredit": "States mL improvement, value imprecise",
       "zeroCredit": "Omits"
     },
@@ -33591,16 +33511,8 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "2B.9",
-      "description": "ACT score &lt;20 threshold for poorly controlled status",
-      "points": 0.5,
-      "fullCredit": "States ACT &lt;20 indicates poor control",
-      "halfCredit": "States ACT threshold, no numeric value",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "2C.1",
-      "description": "BMI confirmed consistent with documented height (65 in) and weight (76 kg)",
+      "description": "BMI confirmed consistent with documented height (65 in) and weight (65 kg)",
       "points": 0.7,
       "fullCredit": "BMI consistent with ht/wt",
       "halfCredit": "BMI stated, not reconciled with ht/wt",
@@ -33696,17 +33608,17 @@
     },
     {
       "id": "3A.8",
-      "description": "PFT evidence: post-bronchodilator FEV1 increase of 14%",
+      "description": "PFT evidence: post-bronchodilator FEV1 increase of 15%",
       "points": 0.4,
-      "fullCredit": "States 14% post-bronchodilator improvement",
+      "fullCredit": "States 15% post-bronchodilator improvement",
       "halfCredit": "States FEV1 improvement, no percentage",
       "zeroCredit": "Omits"
     },
     {
       "id": "3A.9",
-      "description": "PFT evidence: absolute FEV1 increase of 280 mL",
+      "description": "PFT evidence: absolute FEV1 increase of 375 mL",
       "points": 0.4,
-      "fullCredit": "States 280 mL absolute improvement",
+      "fullCredit": "States 375 mL absolute improvement",
       "halfCredit": "States absolute improvement, no value",
       "zeroCredit": "Omits"
     },
@@ -33784,9 +33696,9 @@
     },
     {
       "id": "3A.19",
-      "description": "FEV1/FVC &lt;0.70 confirms airflow limitation at time of assessment",
+      "description": "FEV1/FVC >=0.70 confirms no fixed airflow limitation at time of assessment",
       "points": 0.3,
-      "fullCredit": "States FEV1/FVC &lt;0.70 at this visit",
+      "fullCredit": "States FEV1/FVC >=0.70 confirms no fixed airflow limitation",
       "halfCredit": "States obstruction, no threshold referenced",
       "zeroCredit": "Omits"
     },
@@ -35266,9 +35178,9 @@
     },
     {
       "id": "2A.1",
-      "description": "Blood pressure value (120/76 mmHg)",
+      "description": "Blood pressure value (118/76 mmHg)",
       "points": 0.8,
-      "fullCredit": "States 120/76 mmHg",
+      "fullCredit": "States 118/76",
       "halfCredit": "BP stated, value imprecise",
       "zeroCredit": "Omits"
     },
@@ -35282,25 +35194,25 @@
     },
     {
       "id": "2A.3",
-      "description": "Heart rate (78 bpm)",
+      "description": "Heart rate (88 bpm)",
       "points": 0.6,
-      "fullCredit": "States 78 bpm",
+      "fullCredit": "States 88",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2A.4",
-      "description": "Respiratory rate (16 bpm)",
+      "description": "Respiratory rate (18 bpm)",
       "points": 0.35,
-      "fullCredit": "States 16 bpm",
+      "fullCredit": "States 18",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2A.5",
-      "description": "Weight (75 kg)",
+      "description": "Weight (65 kg)",
       "points": 0.5,
-      "fullCredit": "States 75 kg",
+      "fullCredit": "States 65 kg",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35314,26 +35226,18 @@
     },
     {
       "id": "2A.7",
-      "description": "BMI value (27.5 kg/m²)",
+      "description": "BMI value (23.9 kg/m²)",
       "points": 0.6,
-      "fullCredit": "States 27.5 kg/m²",
+      "fullCredit": "States 23.9",
       "halfCredit": "BMI stated, value imprecise",
       "zeroCredit": "Omits"
     },
     {
       "id": "2A.8",
-      "description": "BMI 27.5 kg/m² classified as overweight (not obese)",
+      "description": "BMI 23.9 kg/m² classified as healthy weight (18.5-24.9 kg/m²)",
       "points": 0.4,
-      "fullCredit": "States BMI 27.5 classified as overweight",
+      "fullCredit": "States healthy weight",
       "halfCredit": "States BMI, no classification",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2A.9",
-      "description": "SpO₂ value (99%)",
-      "points": 0.5,
-      "fullCredit": "States 99%",
-      "halfCredit": "States SpO₂, no value",
       "zeroCredit": "Omits"
     },
     {
@@ -35362,9 +35266,9 @@
     },
     {
       "id": "2B.1",
-      "description": "Pre-bronchodilator FEV1/FVC ratio stated (0.76)",
+      "description": "Pre-bronchodilator FEV1/FVC ratio stated (0.75)",
       "points": 0.7,
-      "fullCredit": "States FEV1/FVC 0.76",
+      "fullCredit": "States 0.75",
       "halfCredit": "States ratio, value imprecise",
       "zeroCredit": "Omits"
     },
@@ -35378,58 +35282,26 @@
     },
     {
       "id": "2B.3",
-      "description": "Post-bronchodilator FEV1 improvement stated (9%)",
+      "description": "Post-bronchodilator FEV1 improvement stated (15%)",
       "points": 0.7,
-      "fullCredit": "States 9% post-BD FEV1 improvement",
+      "fullCredit": "States 15%",
       "halfCredit": "States improvement, no percentage",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.4",
-      "description": "Absolute FEV1 improvement stated (180 mL)",
+      "description": "Absolute FEV1 improvement stated (375 mL)",
       "points": 0.7,
-      "fullCredit": "States 180 mL absolute improvement",
+      "fullCredit": "States 375 mL",
       "halfCredit": "States mL improvement, no value",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.5",
-      "description": "Post-BD values do not meet GINA reversibility threshold (requires ≥12% AND ≥200 mL)",
+      "description": "Post-BD values meet GINA reversibility threshold (requires ≥12% AND ≥200 mL)",
       "points": 0.7,
-      "fullCredit": "States 9% and 180 mL are below GINA reversibility threshold (≥12%, ≥200 mL)",
+      "fullCredit": "States meets threshold",
       "halfCredit": "States partial reversal, no threshold",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2B.6",
-      "description": "ACT score stated (21)",
-      "points": 0.7,
-      "fullCredit": "States ACT score of 21",
-      "halfCredit": "States ACT, no value",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2B.7",
-      "description": "ACT score 21 interpreted as well-controlled asthma",
-      "points": 0.7,
-      "fullCredit": "States ACT 21 = well-controlled asthma",
-      "halfCredit": "States controlled, no score",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2B.8",
-      "description": "ACT score improvement from prior visit documented (16 → 21)",
-      "points": 0.7,
-      "fullCredit": "States ACT improved from 16 to 21",
-      "halfCredit": "States improved, one value only",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2B.9",
-      "description": "ACT improvement quantified (+5 points)",
-      "points": 0.7,
-      "fullCredit": "States +5 point improvement",
-      "halfCredit": "States improved, no quantity",
       "zeroCredit": "Omits"
     },
     {
@@ -35442,19 +35314,11 @@
     },
     {
       "id": "2C.1",
-      "description": "BMI 27.5 kg/m² consistent with height (65 in) and weight (75 kg)",
+      "description": "BMI 23.9 kg/m² consistent with height (65 in) and weight (65 kg)",
       "points": 0.5,
       "fullCredit": "States BMI consistent with stated ht/wt",
       "halfCredit": "BMI stated, not reconciled",
       "zeroCredit": "Incorrect"
-    },
-    {
-      "id": "2C.2",
-      "description": "ACT trajectory: prior score 16, current score 21 (improving trend)",
-      "points": 0.5,
-      "fullCredit": "States ACT trajectory with both prior and current values",
-      "halfCredit": "States improving trend, one value",
-      "zeroCredit": "Omits"
     },
     {
       "id": "2C.3",
@@ -35511,14 +35375,6 @@
       "fullCredit": "States improved or near goal",
       "halfCredit": "States controlled or uncontrolled (binary)",
       "zeroCredit": "Incorrect"
-    },
-    {
-      "id": "3A.3",
-      "description": "ACT score 21 cited in support of well-controlled classification",
-      "points": 0.7,
-      "fullCredit": "References ACT 21 as supporting well-controlled",
-      "halfCredit": "States ACT, no classification",
-      "zeroCredit": "Omits"
     },
     {
       "id": "3A.4",
@@ -35593,14 +35449,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "3A.13",
-      "description": "ACT trajectory from prior visit documented: 16 → 21",
-      "points": 0.6,
-      "fullCredit": "States ACT improved from 16 to 21",
-      "halfCredit": "States improved, one value only",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "3A.14",
       "description": "Good adherence cited as contributor to improvement",
       "points": 0.4,
@@ -35621,14 +35469,6 @@
       "description": "Current therapy appears effective and well tolerated",
       "points": 0.4,
       "fullCredit": "States therapy effective and well tolerated",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.17",
-      "description": "Residual symptoms (1-2x/week) do not justify pharmacologic step-up",
-      "points": 0.3,
-      "fullCredit": "States residual symptoms do not justify step-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38086,25 +37926,25 @@
     },
     {
       "id": "2A.2",
-      "description": "Heart rate (80 bpm)",
+      "description": "Heart rate (76 bpm)",
       "points": 0.5,
-      "fullCredit": "States 80 bpm",
+      "fullCredit": "States 76",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2A.3",
-      "description": "Respiratory rate (18 bpm)",
+      "description": "Respiratory rate (20 bpm)",
       "points": 0.4,
-      "fullCredit": "States 18 bpm",
+      "fullCredit": "States 20",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2A.4",
-      "description": "Weight (89 kg)",
+      "description": "Weight (80 kg)",
       "points": 0.6,
-      "fullCredit": "States 89 kg",
+      "fullCredit": "States 80 kg",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38142,9 +37982,9 @@
     },
     {
       "id": "2B.1",
-      "description": "Post-bronchodilator FEV1/FVC value (0.58)",
+      "description": "Post-bronchodilator FEV1/FVC value (0.62)",
       "points": 0.9,
-      "fullCredit": "States 0.58",
+      "fullCredit": "States 0.62",
       "halfCredit": "FEV1/FVC stated, value imprecise",
       "zeroCredit": "Omits"
     },
@@ -38158,15 +37998,15 @@
     },
     {
       "id": "2B.3",
-      "description": "Post-bronchodilator FEV1 % predicted (62%)",
+      "description": "Post-bronchodilator FEV1 % predicted (58%)",
       "points": 0.9,
-      "fullCredit": "States 62% predicted",
+      "fullCredit": "States 58%",
       "halfCredit": "FEV1% stated, value imprecise",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.4",
-      "description": "FEV1 62% predicted classified as GOLD 2 airflow limitation (50–79% range)",
+      "description": "FEV1 58% predicted classified as GOLD 2 airflow limitation (50–79% range)",
       "points": 0.7,
       "fullCredit": "States consistent with GOLD 2 (50–79%)",
       "halfCredit": "States GOLD, no category or percentage",
@@ -38214,7 +38054,7 @@
     },
     {
       "id": "2C.1",
-      "description": "BMI consistent with documented height and weight (28.1 kg/m²)",
+      "description": "BMI consistent with documented height and weight (26.0 kg/m²)",
       "points": 0.6,
       "fullCredit": "BMI consistent with recorded height and weight",
       "halfCredit": "BMI stated, not reconciled with height/weight",
@@ -38318,7 +38158,7 @@
     },
     {
       "id": "3A.8",
-      "description": "Supports assessment with FEV1/FVC of 0.58 confirming obstruction",
+      "description": "Supports assessment with FEV1/FVC of 0.62 confirming obstruction",
       "points": 0.4,
       "fullCredit": "References FEV1/FVC 0.58",
       "halfCredit": "—",
@@ -38326,7 +38166,7 @@
     },
     {
       "id": "3A.9",
-      "description": "Supports assessment with FEV1 62% predicted (GOLD 2 airflow limitation)",
+      "description": "Supports assessment with FEV1 58% predicted (GOLD 2 airflow limitation)",
       "points": 0.5,
       "fullCredit": "References FEV1 62% predicted",
       "halfCredit": "States FEV1, no value",
@@ -39944,25 +39784,25 @@
     },
     {
       "id": "2A.2",
-      "description": "States heart rate value (78 bpm)",
+      "description": "States heart rate value (76 bpm)",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States 76",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
       "id": "2A.3",
-      "description": "States respiratory rate value (18 bpm)",
+      "description": "States respiratory rate value (20 bpm)",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States 20",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
       "id": "2A.4",
-      "description": "States weight value (89 kg)",
+      "description": "States weight value (80 kg)",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States 80 kg",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40048,9 +39888,9 @@
     },
     {
       "id": "2B.2",
-      "description": "States post-bronchodilator FEV1 percent predicted (63%)",
+      "description": "States post-bronchodilator FEV1 percent predicted (58%)",
       "points": 1,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States 58%",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40104,7 +39944,7 @@
     },
     {
       "id": "2B.9",
-      "description": "Notes FEV1 63% predicted falls within GOLD Grade 2 range (50–69% predicted)",
+      "description": "Notes FEV1 58% predicted falls within GOLD Grade 2 range (50–69% predicted)",
       "points": 0.5,
       "fullCredit": "All elements of this criterion are present and match the model note.",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
@@ -40312,7 +40152,7 @@
     },
     {
       "id": "3A.17",
-      "description": "Notes FEV1 63% predicted (GOLD Grade 2 severity)",
+      "description": "Notes FEV1 58% predicted (GOLD Grade 2 severity)",
       "points": 0.25,
       "fullCredit": "All elements of this criterion are present and match the model note.",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
@@ -41658,9 +41498,9 @@
     },
     {
       "id": "2A.2",
-      "description": "Heart rate stated (76 bpm)",
+      "description": "Heart rate stated (72 bpm)",
       "points": 0.5,
-      "fullCredit": "States 76 bpm",
+      "fullCredit": "States 72",
       "halfCredit": "HR stated, no units",
       "zeroCredit": "Omits"
     },
@@ -41674,9 +41514,9 @@
     },
     {
       "id": "2A.4",
-      "description": "Weight stated (71 kg)",
+      "description": "Weight stated (70 kg)",
       "points": 0.5,
-      "fullCredit": "States 71 kg",
+      "fullCredit": "States 70 kg",
       "halfCredit": "Weight stated, wrong units",
       "zeroCredit": "Omits"
     },
@@ -41706,17 +41546,17 @@
     },
     {
       "id": "2B.1",
-      "description": "Post-bronchodilator FEV1/FVC ratio stated (0.56)",
+      "description": "Post-bronchodilator FEV1/FVC ratio stated (0.60)",
       "points": 0.6,
-      "fullCredit": "States 0.56",
+      "fullCredit": "States 0.60",
       "halfCredit": "FEV1/FVC stated, value imprecise",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.2",
-      "description": "Post-bronchodilator FEV1 % predicted stated (63%)",
+      "description": "Post-bronchodilator FEV1 % predicted stated (66%)",
       "points": 0.6,
-      "fullCredit": "States 63% predicted",
+      "fullCredit": "States 66%",
       "halfCredit": "FEV1% stated, value imprecise",
       "zeroCredit": "Omits"
     },
@@ -41794,7 +41634,7 @@
     },
     {
       "id": "2C.2",
-      "description": "FEV1/FVC ratio of 0.56 confirms obstructive pattern (below 0.70 threshold per GOLD)",
+      "description": "FEV1/FVC ratio of 0.60 confirms obstructive pattern (below 0.70 threshold per GOLD)",
       "points": 0.7,
       "fullCredit": "States FEV1/FVC &lt;0.70 confirms obstruction",
       "halfCredit": "States low ratio, no threshold or implication",
@@ -41802,7 +41642,7 @@
     },
     {
       "id": "2C.3",
-      "description": "FEV1 63% predicted consistent with moderate airflow obstruction",
+      "description": "FEV1 66% predicted consistent with moderate airflow obstruction",
       "points": 0.7,
       "fullCredit": "States 63% predicted / moderate obstruction",
       "halfCredit": "States low FEV1, no severity classification",
@@ -43092,9 +42932,9 @@
     },
     {
       "id": "2A.2",
-      "description": "Heart rate (80 bpm)",
+      "description": "Heart rate (72 bpm)",
       "points": 0.3,
-      "fullCredit": "States 80 bpm",
+      "fullCredit": "States 72",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -43108,9 +42948,9 @@
     },
     {
       "id": "2A.4",
-      "description": "Weight (71 kg)",
+      "description": "Weight (70 kg)",
       "points": 0.4,
-      "fullCredit": "States 71 kg",
+      "fullCredit": "States 70 kg",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -45126,9 +44966,9 @@
     },
     {
       "id": "2A.2",
-      "description": "States heart rate: 78 bpm",
+      "description": "States heart rate: 72 bpm",
       "points": 0.25,
-      "fullCredit": "'78 bpm' documented",
+      "fullCredit": "States 72",
       "halfCredit": "Rate documented without units",
       "zeroCredit": "HR absent"
     },
@@ -45142,9 +44982,9 @@
     },
     {
       "id": "2A.4",
-      "description": "States weight: 71 kg",
+      "description": "States weight: 70 kg",
       "points": 0.25,
-      "fullCredit": "'71 kg' documented",
+      "fullCredit": "States 70 kg",
       "halfCredit": "Weight in other units without conversion",
       "zeroCredit": "Weight absent"
     },
@@ -45230,17 +45070,17 @@
     },
     {
       "id": "2B.1",
-      "description": "States post-bronchodilator FEV1/FVC: 0.56",
+      "description": "States post-bronchodilator FEV1/FVC: 0.55",
       "points": 0.25,
-      "fullCredit": "'Post-bronchodilator FEV1/FVC: 0.56' documented",
+      "fullCredit": "States 0.55",
       "halfCredit": "Ratio documented without 'post-bronchodilator' specification",
       "zeroCredit": "FEV1/FVC absent"
     },
     {
       "id": "2B.2",
-      "description": "States post-bronchodilator FEV1: 61% predicted",
+      "description": "States post-bronchodilator FEV1: 58% predicted",
       "points": 0.25,
-      "fullCredit": "'Post-bronchodilator FEV1: 61% predicted' documented",
+      "fullCredit": "States 58%",
       "halfCredit": "FEV1 value without % predicted context",
       "zeroCredit": "FEV1 absent"
     },
@@ -45254,17 +45094,17 @@
     },
     {
       "id": "2B.4",
-      "description": "States FEV1 of 61% predicted classifies as GOLD Grade 2 / moderate obstruction (50–79%)",
+      "description": "States FEV1 of 58% predicted classifies as GOLD Grade 2 / moderate obstruction (50–79%)",
       "points": 0.25,
-      "fullCredit": "GOLD Grade 2 or 'moderate obstruction' documented",
+      "fullCredit": "States 58%",
       "halfCredit": "Severity stated without GOLD grading",
       "zeroCredit": "FEV1 severity not classified"
     },
     {
       "id": "2B.5",
-      "description": "States absolute eosinophil count: 520 cells/μL",
+      "description": "States absolute eosinophil count: 420 cells/μL",
       "points": 0.25,
-      "fullCredit": "'520 cells/μL' documented",
+      "fullCredit": "States 420 cells/µL",
       "halfCredit": "Eosinophil count documented without units",
       "zeroCredit": "Eosinophil count absent"
     },
@@ -45414,15 +45254,15 @@
     },
     {
       "id": "2C.2",
-      "description": "States FEV1/FVC of 0.56 confirms obstructive pattern (&lt; 0.70 threshold per GOLD/GINA)",
+      "description": "States FEV1/FVC of 0.55 confirms obstructive pattern (< 0.70 threshold per GOLD/GINA)",
       "points": 0.25,
-      "fullCredit": "FEV1/FVC &lt; 0.70 interpretation documented",
+      "fullCredit": "States 0.55",
       "halfCredit": "Obstruction stated without ratio threshold",
       "zeroCredit": "Not addressed"
     },
     {
       "id": "2C.3",
-      "description": "States FEV1 61% predicted = GOLD Grade 2 moderate obstruction (50–79% range)",
+      "description": "States FEV1 58% predicted = GOLD Grade 2 moderate obstruction (50–79% range)",
       "points": 0.25,
       "fullCredit": "GOLD Grade 2 classification stated",
       "halfCredit": "Moderate obstruction without GOLD grading",
@@ -45430,7 +45270,7 @@
     },
     {
       "id": "2C.4",
-      "description": "States eosinophil count 520 cells/μL exceeds GINA threshold for biologic consideration (≥300 cells/μL)",
+      "description": "States eosinophil count 420 cells/μL exceeds GINA threshold for biologic consideration (≥300 cells/μL)",
       "points": 0.25,
       "fullCredit": "≥300 cells/μL threshold cited and 520 exceeds it",
       "halfCredit": "Eosinophil elevation noted without 300 threshold",
@@ -45630,7 +45470,7 @@
     },
     {
       "id": "3A.5",
-      "description": "States patient has persistent airflow obstruction (FEV1/FVC 0.56, FEV1 61%) as ACO component",
+      "description": "States patient has persistent airflow obstruction (FEV1/FVC 0.55, FEV1 58%) as ACO component",
       "points": 0.25,
       "fullCredit": "FEV1/FVC 0.56 and/or FEV1 61% cited in Assessment",
       "halfCredit": "Obstruction noted without specific values",
@@ -45638,7 +45478,7 @@
     },
     {
       "id": "3A.6",
-      "description": "States patient has elevated eosinophils (520 cells/μL) as evidence of eosinophilic phenotype",
+      "description": "States patient has elevated eosinophils (420 cells/μL) as evidence of eosinophilic phenotype",
       "points": 0.25,
       "fullCredit": "'520 cells/μL' cited in Assessment as phenotype evidence",
       "halfCredit": "Eosinophilia noted without count",
@@ -45758,7 +45598,7 @@
     },
     {
       "id": "3A.21",
-      "description": "States eosinophil count of 520 cells/μL exceeds threshold supporting biologic consideration",
+      "description": "States eosinophil count of 420 cells/μL exceeds threshold supporting biologic consideration",
       "points": 0.25,
       "fullCredit": "'520 cells/μL exceeds threshold' documented",
       "halfCredit": "Eosinophil elevation noted without threshold reference",
@@ -46014,7 +45854,7 @@
     },
     {
       "id": "3C.1",
-      "description": "States absolute eosinophil count: 520 cells/μL in Assessment",
+      "description": "States absolute eosinophil count: 420 cells/μL in Assessment",
       "points": 0.25,
       "fullCredit": "'520 cells/μL' cited in Assessment",
       "halfCredit": "Count mentioned without units",
@@ -46094,7 +45934,7 @@
     },
     {
       "id": "3C.11",
-      "description": "States eosinophil count 520 cells/μL exceeds threshold for biologic consideration",
+      "description": "States eosinophil count 420 cells/μL exceeds threshold for biologic consideration",
       "points": 0.25,
       "fullCredit": "520 &gt; threshold statement documented",
       "halfCredit": "Elevation noted without threshold comparison",
@@ -46734,7 +46574,7 @@
     },
     {
       "id": "4A.23",
-      "description": "States mepolizumab is preferred given eosinophilic phenotype (AEC 520) and MATINEE trial evidence",
+      "description": "States mepolizumab is preferred given eosinophilic phenotype (AEC 420) and MATINEE trial evidence",
       "points": 0.25,
       "fullCredit": "Preference rationale: eosinophilic phenotype + MATINEE trial documented",
       "halfCredit": "Preference stated without rationale",
