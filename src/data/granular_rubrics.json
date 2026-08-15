@@ -31429,60 +31429,12 @@
       "zeroCredit": "Not mentioned"
     },
     {
-      "id": "1B.8",
-      "description": "States exacerbation occurred approximately 6 weeks ago",
-      "points": 0.5,
-      "fullCredit": "States exacerbation occurred approximately 6 weeks prior to this visit",
-      "halfCredit": "States recent exacerbation without specifying 6-week timeframe",
-      "zeroCredit": "Exacerbation timing absent"
-    },
-    {
-      "id": "1B.9",
-      "description": "Identifies viral upper respiratory illness as exacerbation trigger",
-      "points": 0.45,
-      "fullCredit": "States viral upper respiratory infection as the trigger",
-      "halfCredit": "States viral illness without specifying upper respiratory",
-      "zeroCredit": "Trigger not identified"
-    },
-    {
-      "id": "1B.10",
-      "description": "Lists exacerbation symptoms (wheezing, chest tightness, shortness of breath)",
-      "points": 0.3,
-      "fullCredit": "Lists all three symptoms: wheezing, chest tightness, shortness of breath",
-      "halfCredit": "Lists at least one but not all three symptoms",
-      "zeroCredit": "Exacerbation symptoms absent"
-    },
-    {
-      "id": "1B.11",
-      "description": "States patient sought care at an urgent care clinic",
-      "points": 0.2,
-      "fullCredit": "States patient presented to an urgent care clinic",
-      "halfCredit": "States patient sought care without specifying urgent care setting",
-      "zeroCredit": "Care-seeking behavior not documented"
-    },
-    {
-      "id": "1B.12",
-      "description": "States treatment received was a 5-day course of prednisone",
-      "points": 0.55,
-      "fullCredit": "States 5-day prednisone course was given",
-      "halfCredit": "States prednisone was given without specifying 5-day duration",
-      "zeroCredit": "Treatment not documented"
-    },
-    {
       "id": "1B.13",
       "description": "States symptoms resolved completely following treatment",
       "points": 0.3,
       "fullCredit": "States symptoms resolved completely following prednisone course",
       "halfCredit": "States symptoms improved without stating complete resolution",
       "zeroCredit": "Resolution of exacerbation not documented"
-    },
-    {
-      "id": "1B.14",
-      "description": "States no additional exacerbations since that time",
-      "points": 0.35,
-      "fullCredit": "States no exacerbations have occurred since the event 6 weeks ago",
-      "halfCredit": "Implies stability without explicitly denying further exacerbations",
-      "zeroCredit": "Post-exacerbation course not documented"
     },
     {
       "id": "1B.15",
@@ -31845,28 +31797,12 @@
       "zeroCredit": "Rhinitis symptom status absent"
     },
     {
-      "id": "1F.5",
-      "description": "States no further exacerbations since the event 6 weeks ago",
-      "points": 0.3,
-      "fullCredit": "States no exacerbations since the event 6 weeks ago",
-      "halfCredit": "States no recent exacerbations without the 6-week reference",
-      "zeroCredit": "Not documented"
-    },
-    {
       "id": "1F.6",
       "description": "States no activity limitations present",
       "points": 0.25,
       "fullCredit": "States no activity limitations",
       "halfCredit": "Implies full activity without explicitly denying limitations",
       "zeroCredit": "Activity status absent"
-    },
-    {
-      "id": "1F.7",
-      "description": "States no urgent care or emergency department visits since exacerbation",
-      "points": 0.25,
-      "fullCredit": "States no urgent care or ED visits since the exacerbation",
-      "halfCredit": "States no ED visits without referencing urgent care, or vice versa",
-      "zeroCredit": "Not documented"
     },
     {
       "id": "1G.1",
@@ -31891,14 +31827,6 @@
       "fullCredit": "States patient has returned to full physical activity including hiking as a stated or implied goal",
       "halfCredit": "References return to activity without framing as a patient goal",
       "zeroCredit": "Activity goal not documented"
-    },
-    {
-      "id": "1G.4",
-      "description": "States patient appropriately sought care per action plan during exacerbation",
-      "points": 0.4,
-      "fullCredit": "States patient utilized action plan and sought appropriate care during exacerbation",
-      "halfCredit": "States patient sought care without connecting to action plan use",
-      "zeroCredit": "Action plan use during exacerbation not documented"
     },
     {
       "id": "1G.5",
@@ -32053,14 +31981,6 @@
       "zeroCredit": "BMI classification absent"
     },
     {
-      "id": "2C.2",
-      "description": "Notes single exacerbation in past 6 months as future exacerbation risk datapoint per GINA 2025",
-      "points": 0.7,
-      "fullCredit": "Notes exacerbation history as a GINA risk factor for future exacerbations",
-      "halfCredit": "Notes exacerbation without connecting it to GINA risk stratification",
-      "zeroCredit": "Exacerbation risk context absent"
-    },
-    {
       "id": "2C.3",
       "description": "Notes FEV1/FVC ratio (0.77) is above obstruction threshold (≥0.70)",
       "points": 0.7,
@@ -32139,14 +32059,6 @@
       "fullCredit": "States no activity limitation as meeting the GINA criterion",
       "halfCredit": "References activity without explicitly stating GINA criterion",
       "zeroCredit": "Activity criterion not cited"
-    },
-    {
-      "id": "3A.8",
-      "description": "States GINA future risk criterion is addressed (exacerbation history noted)",
-      "points": 0.45,
-      "fullCredit": "States future risk factors reviewed per GINA, including exacerbation history",
-      "halfCredit": "References future risk without connecting to GINA framework",
-      "zeroCredit": "Future risk not addressed"
     },
     {
       "id": "3A.9",
@@ -32261,92 +32173,12 @@
       "zeroCredit": "Neither addressed in assessment"
     },
     {
-      "id": "3B.1",
-      "description": "Identifies the exacerbation as triggered by a viral upper respiratory infection",
-      "points": 0.65,
-      "fullCredit": "States exacerbation was triggered by a viral upper respiratory infection",
-      "halfCredit": "States viral trigger without specifying upper respiratory",
-      "zeroCredit": "Trigger not identified in assessment"
-    },
-    {
-      "id": "3B.2",
-      "description": "States exacerbation occurred approximately 6 weeks ago",
-      "points": 0.55,
-      "fullCredit": "States exacerbation occurred approximately 6 weeks ago",
-      "halfCredit": "States recent exacerbation without specifying 6-week timeframe",
-      "zeroCredit": "Timing not stated in assessment"
-    },
-    {
-      "id": "3B.3",
-      "description": "States treatment was a short course of prednisone (5 days)",
-      "points": 0.65,
-      "fullCredit": "States patient received a 5-day prednisone course",
-      "halfCredit": "States oral corticosteroid given without specifying 5 days or prednisone",
-      "zeroCredit": "Treatment not stated in assessment"
-    },
-    {
-      "id": "3B.4",
-      "description": "States symptoms resolved completely following prednisone course",
-      "points": 0.55,
-      "fullCredit": "States symptoms resolved completely following prednisone treatment",
-      "halfCredit": "States symptoms improved without stating complete resolution",
-      "zeroCredit": "Resolution not documented in assessment"
-    },
-    {
       "id": "3B.5",
       "description": "States patient has returned to baseline symptom control since recovery",
       "points": 0.55,
       "fullCredit": "States patient has returned to baseline control since the exacerbation",
       "halfCredit": "States patient improved without referencing baseline",
       "zeroCredit": "Return to baseline not stated"
-    },
-    {
-      "id": "3B.6",
-      "description": "States no recurrent exacerbations have occurred since the event",
-      "points": 0.5,
-      "fullCredit": "States no further exacerbations have occurred since recovery",
-      "halfCredit": "Implies stability without explicitly denying further exacerbations",
-      "zeroCredit": "Not addressed in assessment"
-    },
-    {
-      "id": "3B.7",
-      "description": "States the exacerbation is temporally associated with acute viral illness, not ongoing poor control",
-      "points": 0.6,
-      "fullCredit": "States the event is temporally associated with acute viral illness rather than representing ongoing poor control",
-      "halfCredit": "Implies event was isolated without the temporal/viral distinction",
-      "zeroCredit": "Not differentiated in assessment"
-    },
-    {
-      "id": "3B.8",
-      "description": "States exacerbation history is an important component of GINA future risk assessment",
-      "points": 0.5,
-      "fullCredit": "States exacerbation history is a GINA future risk assessment component",
-      "halfCredit": "References exacerbation risk without citing GINA framework",
-      "zeroCredit": "Risk context not mentioned"
-    },
-    {
-      "id": "3B.9",
-      "description": "States a single viral-triggered exacerbation does not indicate treatment failure",
-      "points": 0.55,
-      "fullCredit": "States one viral-triggered exacerbation does not indicate treatment failure",
-      "halfCredit": "Implies no treatment change needed without the treatment failure statement",
-      "zeroCredit": "Not addressed"
-    },
-    {
-      "id": "3B.10",
-      "description": "States a single viral-triggered exacerbation does not require immediate pharmacologic escalation given otherwise good control",
-      "points": 0.6,
-      "fullCredit": "States escalation is not required given otherwise good control and single event",
-      "halfCredit": "States no escalation needed without referencing overall control as rationale",
-      "zeroCredit": "Escalation rationale not stated"
-    },
-    {
-      "id": "3B.11",
-      "description": "States patient demonstrates good symptom control and adherence in context of exacerbation assessment",
-      "points": 0.3,
-      "fullCredit": "States overall good control and adherence in the context of evaluating the exacerbation",
-      "halfCredit": "References adherence or control without the context of exacerbation evaluation",
-      "zeroCredit": "Not addressed"
     },
     {
       "id": "3C.1",
@@ -32443,22 +32275,6 @@
       "fullCredit": "States patient demonstrates appropriate understanding of asthma management plan",
       "halfCredit": "States patient is knowledgeable without specifying the plan understanding",
       "zeroCredit": "Plan understanding not assessed"
-    },
-    {
-      "id": "3D.4",
-      "description": "States patient appropriately sought medical evaluation during exacerbation",
-      "points": 0.6,
-      "fullCredit": "States patient appropriately sought medical evaluation during her exacerbation",
-      "halfCredit": "States patient went to urgent care without connecting it to appropriate action",
-      "zeroCredit": "Care-seeking behavior not assessed"
-    },
-    {
-      "id": "3D.5",
-      "description": "States patient utilized asthma action plan during exacerbation",
-      "points": 0.55,
-      "fullCredit": "States patient utilized her asthma action plan during the exacerbation",
-      "halfCredit": "References action plan use without the exacerbation context",
-      "zeroCredit": "Action plan use not assessed in this problem"
     },
     {
       "id": "3D.6",
@@ -32653,22 +32469,6 @@
       "zeroCredit": "Not listed"
     },
     {
-      "id": "4B.5",
-      "description": "Notes exacerbation history as ongoing monitoring parameter",
-      "points": 0.5,
-      "fullCredit": "Notes exacerbation frequency as an ongoing monitoring parameter",
-      "halfCredit": "References exacerbation monitoring without framing as ongoing",
-      "zeroCredit": "Not listed"
-    },
-    {
-      "id": "4B.6",
-      "description": "Notes single viral exacerbation does not require escalation in context of current plan",
-      "points": 0.5,
-      "fullCredit": "Notes the single viral exacerbation does not require pharmacologic escalation given current control",
-      "halfCredit": "States no escalation without the viral exacerbation context",
-      "zeroCredit": "Not addressed in plan"
-    },
-    {
       "id": "4B.7",
       "description": "States trigger avoidance discussed (viral illness context)",
       "points": 0.25,
@@ -32757,14 +32557,6 @@
       "zeroCredit": "Technique education absent"
     },
     {
-      "id": "4D.5",
-      "description": "States to discuss future exacerbation prevention",
-      "points": 0.5,
-      "fullCredit": "States to discuss future exacerbation prevention strategies",
-      "halfCredit": "References exacerbation without a prevention discussion plan",
-      "zeroCredit": "Exacerbation prevention discussion absent"
-    },
-    {
       "id": "4D.6",
       "description": "States to review asthma action plan use",
       "points": 0.5,
@@ -32819,14 +32611,6 @@
       "fullCredit": "Lists nighttime symptoms as a monitoring parameter",
       "halfCredit": "References sleep without naming nighttime symptoms explicitly",
       "zeroCredit": "Nighttime symptoms not listed"
-    },
-    {
-      "id": "4E.5",
-      "description": "Lists exacerbation frequency as monitoring parameter",
-      "points": 0.4,
-      "fullCredit": "Lists exacerbation frequency as a monitoring parameter",
-      "halfCredit": "References exacerbation history without framing as monitoring",
-      "zeroCredit": "Exacerbation monitoring not listed"
     },
     {
       "id": "4E.6",
@@ -32915,14 +32699,6 @@
       "fullCredit": "States asthma control will be reassessed at follow-up",
       "halfCredit": "States asthma will be monitored without specifying reassessment",
       "zeroCredit": "Reassessment plan absent"
-    },
-    {
-      "id": "4G.3",
-      "description": "States plan to reassess exacerbation history at follow-up",
-      "points": 0.45,
-      "fullCredit": "States exacerbation history will be reassessed at follow-up",
-      "halfCredit": "References exacerbation monitoring without the reassessment framing",
-      "zeroCredit": "Exacerbation history follow-up absent"
     },
     {
       "id": "4G.4",
@@ -33043,6 +32819,14 @@
       "fullCredit": "No major spelling, grammatical, or factual errors identified",
       "halfCredit": "One to two minor errors present",
       "zeroCredit": "Three or more errors or one major factual error"
+    },
+    {
+      "id": "1A.99",
+      "description": "Patient reports well controlled on SMART therapy, 0 symptoms",
+      "points": 0.5,
+      "fullCredit": "States well controlled",
+      "halfCredit": "",
+      "zeroCredit": "Omits"
     }
   ],
   "Week3_Patient_A_Tuesday": [
@@ -33160,9 +32944,9 @@
     },
     {
       "id": "1B.6",
-      "description": "Albuterol use frequency (approximately 1-2 times daily)",
+      "description": "Albuterol use frequency (4-5 times a week)",
       "points": 0.5,
-      "fullCredit": "States 1-2 times daily",
+      "fullCredit": "States 4-5 times a week",
       "halfCredit": "States daily use, no quantity",
       "zeroCredit": "Omits"
     },
@@ -33176,9 +32960,9 @@
     },
     {
       "id": "1B.8",
-      "description": "Nighttime awakenings due to asthma: frequency (2-3 nights per week)",
+      "description": "Nighttime awakenings due to asthma: frequency (approx once per week)",
       "points": 0.5,
-      "fullCredit": "States 2-3 nights per week",
+      "fullCredit": "States once per week",
       "halfCredit": "States nighttime awakenings, no frequency",
       "zeroCredit": "Omits"
     },
@@ -33256,9 +33040,9 @@
     },
     {
       "id": "1C.2",
-      "description": "Asthma diagnosis age (age 8)",
+      "description": "Asthma diagnosis: unsure of exact age / lifelong",
       "points": 0.35,
-      "fullCredit": "States diagnosed age 8",
+      "fullCredit": "Notes unsure of exact age",
       "halfCredit": "States childhood diagnosis, no age",
       "zeroCredit": "Omits"
     },
@@ -33275,14 +33059,6 @@
       "description": "PMH: seasonal allergies",
       "points": 0.25,
       "fullCredit": "Lists seasonal allergies",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.5",
-      "description": "PSH: none reported",
-      "points": 0.2,
-      "fullCredit": "States no surgical history",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33304,9 +33080,9 @@
     },
     {
       "id": "1C.8",
-      "description": "Family history: brother with seasonal allergies",
+      "description": "Family history: no brother mentioned",
       "points": 0.3,
-      "fullCredit": "States brother has seasonal allergies",
+      "fullCredit": "States family history without mentioning brother",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33680,17 +33456,17 @@
     },
     {
       "id": "2A.1",
-      "description": "Blood pressure: 122/78 mmHg",
+      "description": "Blood pressure: 118/76 mmHg",
       "points": 0.6,
-      "fullCredit": "States 122/78 mmHg",
+      "fullCredit": "States 118/76",
       "halfCredit": "BP stated, value imprecise",
       "zeroCredit": "Omits"
     },
     {
       "id": "2A.2",
-      "description": "Heart rate: 82 bpm",
+      "description": "Heart rate: 88 bpm",
       "points": 0.5,
-      "fullCredit": "States 82 bpm",
+      "fullCredit": "States 88",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33698,7 +33474,7 @@
       "id": "2A.3",
       "description": "Respiratory rate: 18 bpm",
       "points": 0.5,
-      "fullCredit": "States 18 bpm",
+      "fullCredit": "States 18",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33712,49 +33488,49 @@
     },
     {
       "id": "2A.5",
-      "description": "SpO2: 98% on room air",
+      "description": "SpO2: 97% on room air",
       "points": 0.6,
-      "fullCredit": "States 98% on room air",
+      "fullCredit": "States 97%",
       "halfCredit": "States SpO2, no room-air qualifier",
       "zeroCredit": "Omits"
     },
     {
       "id": "2A.6",
-      "description": "Weight: 76 kg",
+      "description": "Weight: 65 kg",
       "points": 0.5,
-      "fullCredit": "States 76 kg",
+      "fullCredit": "States 65 kg",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2A.7",
-      "description": "Height: 65 inches",
+      "description": "Height: 65 inches (5'5\")",
       "points": 0.4,
-      "fullCredit": "States 65 inches",
+      "fullCredit": "States 65 inches or 5'5\"",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2A.8",
-      "description": "BMI: 27.9 kg/m2",
+      "description": "BMI: 23.9 kg/m2",
       "points": 0.7,
-      "fullCredit": "States 27.9 kg/m2",
+      "fullCredit": "States 23.9 kg/m2",
       "halfCredit": "BMI stated, value imprecise",
       "zeroCredit": "Omits"
     },
     {
       "id": "2A.9",
-      "description": "BMI classification: overweight (25.0-29.9 kg/m2)",
+      "description": "BMI classification: healthy weight (18.5-24.9 kg/m2)",
       "points": 0.8,
-      "fullCredit": "States overweight or BMI in 25.0-29.9 range",
+      "fullCredit": "States healthy/normal weight",
       "halfCredit": "States overweight, no numeric range",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.1",
-      "description": "Pre-bronchodilator FEV1/FVC ratio: 0.69",
+      "description": "Pre-bronchodilator FEV1/FVC ratio: 0.78",
       "points": 0.8,
-      "fullCredit": "States FEV1/FVC 0.69",
+      "fullCredit": "States 0.78",
       "halfCredit": "States FEV1/FVC, value imprecise",
       "zeroCredit": "Omits"
     },
@@ -33768,9 +33544,9 @@
     },
     {
       "id": "2B.3",
-      "description": "Post-bronchodilator FEV1 improvement: 14%",
+      "description": "Post-bronchodilator FEV1 improvement: 15%",
       "points": 0.8,
-      "fullCredit": "States 14% improvement",
+      "fullCredit": "States 15%",
       "halfCredit": "States improvement, no percentage",
       "zeroCredit": "Omits"
     },
@@ -36795,146 +36571,10 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1B.1",
-      "description": "Continued exertional dyspnea acknowledged despite therapy",
-      "points": 0.25,
-      "fullCredit": "States continued exertional dyspnea",
-      "halfCredit": "States dyspnea, no qualifier",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.2",
-      "description": "Stair climbing identified as activity limited by dyspnea",
-      "points": 0.2,
-      "fullCredit": "States stair climbing",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.3",
-      "description": "Carrying groceries identified as activity limited by dyspnea",
-      "points": 0.15,
-      "fullCredit": "States carrying groceries",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.4",
-      "description": "Yard work identified as activity limited by dyspnea",
-      "points": 0.15,
-      "fullCredit": "States yard work",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.5",
-      "description": "Household projects identified as activity limited by dyspnea",
-      "points": 0.15,
-      "fullCredit": "States household projects",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.6",
-      "description": "Total number of COPD exacerbations since last visit: two",
-      "points": 0.5,
-      "fullCredit": "States two exacerbations",
-      "halfCredit": "States exacerbations, no count",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.7",
-      "description": "First exacerbation timing: approximately 10 weeks ago",
-      "points": 0.3,
-      "fullCredit": "States ~10 weeks ago",
-      "halfCredit": "States first exacerbation, no timing",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.8",
-      "description": "First exacerbation: treated with oral corticosteroids",
-      "points": 0.35,
-      "fullCredit": "States oral corticosteroids for first exacerbation",
-      "halfCredit": "States steroids, no route",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.9",
-      "description": "First exacerbation: additionally required antibiotics",
-      "points": 0.4,
-      "fullCredit": "States antibiotics required for first exacerbation",
-      "halfCredit": "States treatment, no antibiotic specificity",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.10",
-      "description": "Second exacerbation timing: approximately 4 weeks ago",
-      "points": 0.3,
-      "fullCredit": "States ~4 weeks ago",
-      "halfCredit": "States second exacerbation, no timing",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.11",
-      "description": "Second exacerbation: resulted in urgent care visit",
-      "points": 0.35,
-      "fullCredit": "States urgent care visit",
-      "halfCredit": "States visit, no setting",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.12",
-      "description": "Second exacerbation: treated with short course oral corticosteroids",
-      "points": 0.3,
-      "fullCredit": "States short course OCS for second exacerbation",
-      "halfCredit": "States steroids, no duration",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.13",
-      "description": "Denies hospitalization for either exacerbation",
-      "points": 0.3,
-      "fullCredit": "States no hospitalization",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.14",
-      "description": "Denies emergency department visits for either exacerbation",
-      "points": 0.4,
-      "fullCredit": "States no ED visits",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.15",
-      "description": "Reports full recovery from both exacerbations",
-      "points": 0.2,
-      "fullCredit": "States full recovery from both",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.16",
-      "description": "Adherence to umeclidinium/vilanterol: excellent (every day as prescribed)",
-      "points": 0.55,
-      "fullCredit": "States daily use every day as prescribed",
-      "halfCredit": "States adherence improved, no frequency",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.17",
-      "description": "Adherence improvement attributed to medication reminders and daily routine incorporation",
-      "points": 0.3,
-      "fullCredit": "States both reminders and routine incorporation",
-      "halfCredit": "States one strategy only",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1B.18",
-      "description": "Albuterol use frequency: approximately once daily",
+      "description": "Albuterol use frequency: weekly or less",
       "points": 0.35,
-      "fullCredit": "States ~once daily albuterol use",
+      "fullCredit": "States weekly or less",
       "halfCredit": "States uses albuterol, no frequency",
       "zeroCredit": "Omits"
     },
@@ -36947,14 +36587,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1C.2",
-      "description": "COPD diagnosis duration (4 years)",
-      "points": 0.25,
-      "fullCredit": "States 4 years",
-      "halfCredit": "States COPD, no duration",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1C.3",
       "description": "PMH: hypertension",
       "points": 0.2,
@@ -36963,34 +36595,10 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1C.4",
-      "description": "Hypertension duration (12 years)",
-      "points": 0.2,
-      "fullCredit": "States 12 years",
-      "halfCredit": "States HTN, no duration",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1C.5",
       "description": "PMH: hyperlipidemia",
       "points": 0.2,
       "fullCredit": "Lists hyperlipidemia",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.6",
-      "description": "Hyperlipidemia duration (10 years)",
-      "points": 0.2,
-      "fullCredit": "States 10 years",
-      "halfCredit": "States hyperlipidemia, no duration",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.7",
-      "description": "PSH: appendectomy",
-      "points": 0.3,
-      "fullCredit": "Lists appendectomy",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37003,43 +36611,11 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1C.9",
-      "description": "Family history — father: coronary artery disease",
-      "points": 0.25,
-      "fullCredit": "Lists father CAD",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1C.10",
       "description": "Family history — mother: hypertension",
       "points": 0.2,
       "fullCredit": "Lists mother hypertension",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.11",
-      "description": "Family history — brother: COPD",
-      "points": 0.25,
-      "fullCredit": "Lists brother COPD",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.12",
-      "description": "Patient concern: COPD progression noted",
-      "points": 0.2,
-      "fullCredit": "States concern about COPD progression",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.13",
-      "description": "Patient goal: reduce exacerbations AND maintain independence (both stated)",
-      "points": 0.3,
-      "fullCredit": "States reduce exacerbations and maintain independence",
-      "halfCredit": "States one goal only",
       "zeroCredit": "Omits"
     },
     {
@@ -37076,17 +36652,17 @@
     },
     {
       "id": "1D.5",
-      "description": "Pack-year history: 45 pack-years",
+      "description": "Pack-year history: approximately 30 pack-years",
       "points": 0.45,
-      "fullCredit": "States 45 pack-years",
+      "fullCredit": "States 30 pack-years",
       "halfCredit": "States smoking history, no quantity",
       "zeroCredit": "Omits"
     },
     {
       "id": "1D.6",
-      "description": "Cessation timing: quit 5 years ago",
+      "description": "Cessation timing: quit approximately 10 years ago",
       "points": 0.4,
-      "fullCredit": "States quit 5 years ago",
+      "fullCredit": "States 10 years ago",
       "halfCredit": "States quit, no timing",
       "zeroCredit": "Omits"
     },
@@ -37107,14 +36683,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1D.9",
-      "description": "Physical activity: limited by dyspnea",
-      "points": 0.45,
-      "fullCredit": "States physical activity limited by dyspnea",
-      "halfCredit": "States limited activity, no link to dyspnea",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1D.10",
       "description": "Medication access/affordability: denies current concerns",
       "points": 0.2,
@@ -37124,26 +36692,10 @@
     },
     {
       "id": "1E.1",
-      "description": "Umeclidinium/vilanterol (Anoro Ellipta) listed by brand and generic name",
+      "description": "Maintenance: Spiriva HandiHaler (tiotropium) 18 mcg daily",
       "points": 0.4,
-      "fullCredit": "States umeclidinium/vilanterol AND Anoro Ellipta",
+      "fullCredit": "States Spiriva/tiotropium",
       "halfCredit": "Names one component only",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.2",
-      "description": "Umeclidinium/vilanterol dose (62.5 mcg/25 mcg)",
-      "points": 0.35,
-      "fullCredit": "States 62.5 mcg/25 mcg",
-      "halfCredit": "Dose stated, imprecise",
-      "zeroCredit": "Incorrect"
-    },
-    {
-      "id": "1E.3",
-      "description": "Umeclidinium/vilanterol regimen (1 inhalation daily)",
-      "points": 0.25,
-      "fullCredit": "States 1 inhalation daily",
-      "halfCredit": "States daily, no inhalation count",
       "zeroCredit": "Omits"
     },
     {
@@ -37291,50 +36843,10 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1F.4",
-      "description": "Denies hospitalization for recent exacerbations",
-      "points": 0.3,
-      "fullCredit": "States no hospitalization for either exacerbation",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1F.5",
-      "description": "Denies emergency department visits for recent exacerbations",
-      "points": 0.3,
-      "fullCredit": "States no ED visits",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1F.6",
-      "description": "Full recovery reported following both exacerbations",
-      "points": 0.3,
-      "fullCredit": "States full recovery from both",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1F.7",
       "description": "No new medication adverse effects reported",
       "points": 0.3,
       "fullCredit": "States no new adverse effects",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1G.1",
-      "description": "Patient expresses concern about future COPD progression",
-      "points": 0.5,
-      "fullCredit": "States concern re COPD progression",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1G.2",
-      "description": "Patient goal: reduce frequency of future exacerbations",
-      "points": 0.5,
-      "fullCredit": "States goal to reduce exacerbations",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37355,123 +36867,43 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1G.5",
-      "description": "Patient reports feeling somewhat better but remains concerned",
-      "points": 0.5,
-      "fullCredit": "States partial improvement with ongoing concern",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2A.1",
-      "description": "Blood pressure value: 128/76 mmHg",
-      "points": 0.55,
-      "fullCredit": "States 128/76 mmHg",
-      "halfCredit": "BP stated, value imprecise",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2A.2",
-      "description": "Heart rate value: 82 bpm",
-      "points": 0.5,
-      "fullCredit": "States 82 bpm",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "2A.3",
-      "description": "Weight: 89 kg",
+      "description": "Weight: 80 kg",
       "points": 0.45,
-      "fullCredit": "States 89 kg",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2A.4",
-      "description": "Height: 70 inches",
-      "points": 0.5,
-      "fullCredit": "States 70 inches",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2A.5",
-      "description": "BMI: 28.1 kg/m²",
-      "points": 0.45,
-      "fullCredit": "States 28.1 kg/m²",
-      "halfCredit": "BMI stated, value imprecise",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2A.6",
-      "description": "Respiratory rate: 18 breaths/min",
-      "points": 0.5,
-      "fullCredit": "States 18 breaths/min",
+      "fullCredit": "States 80 kg",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2A.7",
-      "description": "SpO₂: 94% on room air",
+      "description": "SpO₂: 97%",
       "points": 0.55,
-      "fullCredit": "States 94% on room air",
+      "fullCredit": "States 97%",
       "halfCredit": "States SpO2, no qualifier",
       "zeroCredit": "Omits"
     },
     {
-      "id": "2A.8",
-      "description": "BMI interpretation: overweight (28.1 kg/m²)",
-      "points": 0.5,
-      "fullCredit": "States overweight or 28.1 kg/m²",
-      "halfCredit": "BMI stated, no category",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "2B.1",
-      "description": "Post-bronchodilator FEV1/FVC: 0.57 (confirms airflow obstruction)",
+      "description": "Post-bronchodilator FEV1/FVC: 0.62",
       "points": 1.1,
-      "fullCredit": "States 0.57 FEV1/FVC",
+      "fullCredit": "States 0.62",
       "halfCredit": "FEV1/FVC stated, no interpretation",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.2",
-      "description": "Post-bronchodilator FEV1: 60% predicted (GOLD spirometry classification)",
+      "description": "Post-bronchodilator FEV1: 58% predicted",
       "points": 1.1,
-      "fullCredit": "States 60% predicted",
+      "fullCredit": "States 58%",
       "halfCredit": "FEV1 stated, no % predicted",
       "zeroCredit": "Omits"
     },
     {
-      "id": "2B.3",
-      "description": "CAT score: 17",
-      "points": 1.1,
-      "fullCredit": "States CAT score of 17",
-      "halfCredit": "CAT stated, no value",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2B.4",
-      "description": "CAT score interpretation: persistent symptom burden despite maintenance therapy",
-      "points": 1.1,
-      "fullCredit": "States persistent symptom burden",
-      "halfCredit": "States score elevated, no interpretation",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "2B.5",
-      "description": "Absolute eosinophil count: 310 cells/µL",
+      "description": "Absolute eosinophil count: 150 cells/µL",
       "points": 1.1,
-      "fullCredit": "States 310 cells/µL",
+      "fullCredit": "States 150",
       "halfCredit": "Eosinophil count stated, no value",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2B.6",
-      "description": "Exacerbation history documented: 2 moderate exacerbations in past 3 months / 3 moderate in past 12 months",
-      "points": 1,
-      "fullCredit": "States both 3-month and 12-month exacerbation counts",
-      "halfCredit": "States exacerbation history, incomplete count",
       "zeroCredit": "Omits"
     },
     {
@@ -37484,114 +36916,18 @@
     },
     {
       "id": "2C.2",
-      "description": "FEV1 60% predicted classifies as GOLD spirometry Grade 2 (moderate)",
+      "description": "Post-bronchodilator FEV1: 58% predicted",
       "points": 0.7,
-      "fullCredit": "States GOLD Grade 2 / moderate obstruction",
+      "fullCredit": "States 58%",
       "halfCredit": "States moderate, no GOLD classification",
       "zeroCredit": "Omits"
     },
     {
-      "id": "2C.3",
-      "description": "CAT ≥ 10 confirms significant symptom burden (cut-point for treatment initiation)",
-      "points": 0.8,
-      "fullCredit": "States CAT ≥ 10 cut-point exceeded",
-      "halfCredit": "States elevated CAT, no threshold",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "2C.4",
-      "description": "Eosinophil count 310 cells/µL exceeds 300 cells/µL GOLD threshold for maximal ICS benefit",
+      "description": "Eosinophils: 150 cells/uL",
       "points": 0.8,
-      "fullCredit": "States ≥ 300 cells/µL threshold met",
+      "fullCredit": "States 150",
       "halfCredit": "States eosinophils elevated, no threshold",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2C.5",
-      "description": "Two moderate exacerbations in 3 months constitutes frequent exacerbator pattern on LABA/LAMA",
-      "points": 0.7,
-      "fullCredit": "States frequent exacerbator despite LABA/LAMA",
-      "halfCredit": "States exacerbations frequent, no regimen context",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2C.6",
-      "description": "No hospitalization for either recent exacerbation (moderate severity confirmed)",
-      "points": 0.7,
-      "fullCredit": "States no hospitalization, confirming moderate severity",
-      "halfCredit": "States no hospitalization, no severity context",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.1",
-      "description": "Problem identified: COPD with persistent symptoms and frequent exacerbations",
-      "points": 0.5,
-      "fullCredit": "Names COPD with persistent symptoms and frequent exacerbations",
-      "halfCredit": "Names COPD only",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.2",
-      "description": "Qualifies as established COPD (4-year history)",
-      "points": 0.55,
-      "fullCredit": "States established COPD with 4-year history",
-      "halfCredit": "States COPD, no duration",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.3",
-      "description": "States CAT score 17 as evidence of persistent symptom burden",
-      "points": 0.55,
-      "fullCredit": "States CAT 17 as evidence",
-      "halfCredit": "States CAT elevated, no value",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.4",
-      "description": "States 2 moderate exacerbations in past 3 months as evidence of treatment failure",
-      "points": 0.55,
-      "fullCredit": "States 2 exacerbations in 3 months",
-      "halfCredit": "States exacerbations, no timeframe",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.5",
-      "description": "States 3 moderate exacerbations in past 12 months",
-      "points": 0.5,
-      "fullCredit": "States 3 exacerbations in 12 months",
-      "halfCredit": "States exacerbations, no annual count",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.6",
-      "description": "States first exacerbation required OCS and antibiotics",
-      "points": 0.6,
-      "fullCredit": "States OCS and antibiotics for first exacerbation",
-      "halfCredit": "States treatment, one component only",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.7",
-      "description": "States second exacerbation required urgent care and OCS",
-      "points": 0.6,
-      "fullCredit": "States urgent care visit and OCS for second exacerbation",
-      "halfCredit": "States one component only",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.8",
-      "description": "Prior adherence barrier has been successfully resolved",
-      "points": 0.55,
-      "fullCredit": "States adherence barriers previously addressed and resolved",
-      "halfCredit": "States adherence improved, no context",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.9",
-      "description": "Current exacerbations represent true treatment failure, not implementation failure",
-      "points": 0.6,
-      "fullCredit": "States true treatment failure vs. implementation failure",
-      "halfCredit": "States treatment failure, no distinction",
       "zeroCredit": "Omits"
     },
     {
@@ -37600,14 +36936,6 @@
       "points": 0.55,
       "fullCredit": "Names GOLD 2026 Report",
       "halfCredit": "Cites GOLD, no year",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.11",
-      "description": "GOLD 2026 recommendation: escalate to ICS-containing therapy after exacerbations on LABA/LAMA",
-      "points": 0.55,
-      "fullCredit": "States GOLD 2026 recommendation to escalate to ICS on LABA/LAMA failure",
-      "halfCredit": "States escalate, no guideline",
       "zeroCredit": "Omits"
     },
     {
@@ -37627,66 +36955,26 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "3A.14",
-      "description": "Conclusion: escalation to single-inhaler triple therapy is warranted",
-      "points": 0.5,
-      "fullCredit": "States escalation to triple therapy warranted",
-      "halfCredit": "States escalate, no agent class",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.15",
-      "description": "Notes exertional dyspnea continues to limit meaningful daily activities",
-      "points": 0.5,
-      "fullCredit": "States meaningful activity limitation persists",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.16",
-      "description": "Both recent exacerbations required systemic corticosteroids",
-      "points": 0.5,
-      "fullCredit": "States both exacerbations required systemic corticosteroids",
-      "halfCredit": "States steroids, one exacerbation only",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.17",
-      "description": "Notes no hospitalizations, confirming moderate (not severe) exacerbation classification",
-      "points": 0.5,
-      "fullCredit": "States no hospitalizations, confirming moderate severity",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.18",
-      "description": "Recurrent exacerbations increase future progression risk",
-      "points": 0.2,
-      "fullCredit": "States exacerbations increase progression risk",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "3B.1",
-      "description": "Problem identified: elevated blood eosinophil count (310 cells/µL)",
+      "description": "Absolute eosinophil count: 150 cells/µL",
       "points": 0.65,
-      "fullCredit": "States 310 cells/µL as elevated eosinophil count",
+      "fullCredit": "States 150",
       "halfCredit": "States eosinophils elevated, no value",
       "zeroCredit": "Omits"
     },
     {
       "id": "3B.2",
-      "description": "States eosinophil count exceeds GOLD 2026 threshold of 300 cells/µL",
+      "description": "Absolute eosinophil count < 300 cells/µL",
       "points": 0.65,
-      "fullCredit": "States exceeds 300 cells/µL GOLD threshold",
+      "fullCredit": "Notes < 300",
       "halfCredit": "States elevated, no threshold",
       "zeroCredit": "Omits"
     },
     {
       "id": "3B.3",
-      "description": "Eosinophil count used to estimate likelihood of ICS response",
+      "description": "Eosinophils: 150 cells/uL",
       "points": 0.65,
-      "fullCredit": "States eosinophil count guides ICS response prediction",
+      "fullCredit": "States 150",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37700,50 +36988,10 @@
     },
     {
       "id": "3B.5",
-      "description": "GOLD 2026 recommendation: patients with eosinophils &gt; 300 cells/µL derive greatest benefit from ICS",
+      "description": "Absolute eosinophil count < 300 cells/µL",
       "points": 0.65,
-      "fullCredit": "States &gt; 300 cells/µL associated with greatest ICS exacerbation reduction",
+      "fullCredit": "Notes < 300",
       "halfCredit": "States ICS benefit, no threshold",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3B.6",
-      "description": "Eosinophil count supports ICS-containing escalation in context of recurrent exacerbations",
-      "points": 0.65,
-      "fullCredit": "States eosinophil count supports ICS escalation given exacerbation history",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3B.7",
-      "description": "Combination of recurrent exacerbations AND elevated eosinophils strengthens ICS indication",
-      "points": 0.65,
-      "fullCredit": "States both factors together strengthen indication",
-      "halfCredit": "States one factor only",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3B.8",
-      "description": "Elevated eosinophil count suggests Type 2 inflammatory pattern",
-      "points": 0.65,
-      "fullCredit": "States Type 2 inflammatory pattern",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3B.9",
-      "description": "Expected clinical benefit: reduction in exacerbation risk with ICS-containing regimen",
-      "points": 0.6,
-      "fullCredit": "States expected exacerbation risk reduction",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3B.10",
-      "description": "Conclusion: eosinophil count supports escalation to triple therapy",
-      "points": 0.6,
-      "fullCredit": "States eosinophil profile supports triple therapy escalation",
-      "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
@@ -37755,58 +37003,10 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "3C.2",
-      "description": "Prior visit: adherence described as 3–4 days per week (non-daily)",
-      "points": 0.65,
-      "fullCredit": "States 3–4 days per week at prior visit",
-      "halfCredit": "States adherence was poor, no frequency",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3C.3",
-      "description": "Current visit: patient reports daily adherence to umeclidinium/vilanterol",
-      "points": 0.65,
-      "fullCredit": "States daily adherence at current visit",
-      "halfCredit": "States adherence improved, no frequency",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3C.4",
-      "description": "Adherence improvement strategies implemented: medication reminders",
-      "points": 0.65,
-      "fullCredit": "States medication reminders implemented",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3C.5",
-      "description": "Adherence improvement strategies implemented: incorporation into daily routine",
-      "points": 0.65,
-      "fullCredit": "States incorporation into daily routine",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3C.6",
-      "description": "Conclusion: adherence no longer primary contributor to symptoms or exacerbations",
-      "points": 0.65,
-      "fullCredit": "States adherence no longer primary contributor",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "3C.7",
       "description": "Continued reinforcement of adherence strategies remains appropriate",
       "points": 0.65,
       "fullCredit": "States continued reinforcement appropriate",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3C.8",
-      "description": "Adherence confirmation essential before attributing exacerbations to treatment failure",
-      "points": 0.5,
-      "fullCredit": "States adherence must be confirmed before declaring treatment failure",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37924,33 +37124,17 @@
     },
     {
       "id": "4A.1",
-      "description": "Discontinues umeclidinium/vilanterol (Anoro Ellipta) 62.5 mcg/25 mcg",
+      "description": "Maintenance: Spiriva HandiHaler (tiotropium) 18 mcg daily",
       "points": 0.6,
-      "fullCredit": "States discontinue umeclidinium/vilanterol (Anoro Ellipta)",
+      "fullCredit": "States Spiriva/tiotropium",
       "halfCredit": "States discontinue dual bronchodilator, no agent named",
       "zeroCredit": "Omits"
     },
     {
-      "id": "4A.2",
-      "description": "Initiates fluticasone furoate/umeclidinium/vilanterol (Trelegy Ellipta) — agent name",
-      "points": 0.6,
-      "fullCredit": "States fluticasone furoate/umeclidinium/vilanterol or Trelegy Ellipta",
-      "halfCredit": "Names one component only",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4A.3",
-      "description": "Trelegy Ellipta dose: 100 mcg/62.5 mcg/25 mcg",
-      "points": 0.6,
-      "fullCredit": "States 100 mcg/62.5 mcg/25 mcg",
-      "halfCredit": "Dose stated, one component only",
-      "zeroCredit": "Incorrect"
-    },
-    {
       "id": "4A.4",
-      "description": "Trelegy Ellipta regimen: 1 puff by mouth once daily",
+      "description": "Albuterol use frequency: weekly or less",
       "points": 0.6,
-      "fullCredit": "States 1 puff by mouth once daily",
+      "fullCredit": "States weekly or less",
       "halfCredit": "States once daily, no route/puff count",
       "zeroCredit": "Omits"
     },
@@ -37971,34 +37155,10 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "4A.7",
-      "description": "Provide inhaler-specific education for Trelegy Ellipta administration",
-      "points": 0.6,
-      "fullCredit": "States inhaler-specific education for Trelegy Ellipta",
-      "halfCredit": "States provide education, no device specificity",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "4A.8",
       "description": "Review proper inhaler technique",
       "points": 0.6,
       "fullCredit": "States review inhaler technique",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4A.9",
-      "description": "Counsel patient to rinse mouth and spit after each Trelegy Ellipta dose to reduce oral candidiasis risk",
-      "points": 0.6,
-      "fullCredit": "States rinse mouth and spit after each dose for candidiasis prevention",
-      "halfCredit": "States rinse mouth, no spit instruction or rationale",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4A.10",
-      "description": "Discuss expected benefit: reduction in COPD exacerbations",
-      "points": 0.6,
-      "fullCredit": "States discuss exacerbation reduction",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38035,14 +37195,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "4B.3",
-      "description": "Encourage prompt evaluation for future COPD exacerbations",
-      "points": 0.6,
-      "fullCredit": "States encourage prompt evaluation",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "4B.4",
       "description": "Discuss infection prevention: vaccination strategies",
       "points": 0.6,
@@ -38067,26 +37219,10 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "4C.2",
-      "description": "Reinforce importance of daily Trelegy Ellipta use",
-      "points": 0.65,
-      "fullCredit": "States reinforce daily Trelegy Ellipta use",
-      "halfCredit": "States daily use important, no specific agent",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "4C.3",
       "description": "Encourage patient to continue incorporating inhaler into daily routine",
       "points": 0.6,
       "fullCredit": "States continue incorporating inhaler into daily routine",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4C.4",
-      "description": "Note that adherence success strategies should be maintained with new inhaler",
-      "points": 0.6,
-      "fullCredit": "States maintain adherence strategies with new inhaler",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38115,14 +37251,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "4E.1",
-      "description": "Monitor: CAT score at follow-up",
-      "points": 0.45,
-      "fullCredit": "States monitor CAT score",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "4E.2",
       "description": "Monitor: dyspnea symptoms",
       "points": 0.4,
@@ -38147,14 +37275,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "4E.5",
-      "description": "Monitor: COPD exacerbation frequency",
-      "points": 0.45,
-      "fullCredit": "States monitor exacerbation frequency",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "4E.6",
       "description": "Monitor: medication adherence",
       "points": 0.4,
@@ -38167,46 +37287,6 @@
       "description": "Monitor: inhaler technique",
       "points": 0.45,
       "fullCredit": "States monitor inhaler technique",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4E.8",
-      "description": "Monitor: oral candidiasis (ICS-related adverse effect)",
-      "points": 0.45,
-      "fullCredit": "States monitor oral candidiasis",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4E.9",
-      "description": "Monitor: dysphonia (ICS-related adverse effect)",
-      "points": 0.45,
-      "fullCredit": "States monitor dysphonia",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4E.10",
-      "description": "Monitor: pneumonia risk (ICS-related adverse effect)",
-      "points": 0.45,
-      "fullCredit": "States monitor pneumonia risk",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4E.11",
-      "description": "Monitor: overall triple therapy tolerability",
-      "points": 0.45,
-      "fullCredit": "States monitor triple therapy tolerability",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4E.12",
-      "description": "Rationale: ICS-containing therapy associated with increased oral candidiasis, hoarse voice, and pneumonia risk per GOLD 2026",
-      "points": 0.2,
-      "fullCredit": "States GOLD 2026 supports monitoring for ICS adverse effects",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38248,30 +37328,6 @@
       "points": 0.5,
       "fullCredit": "States ~3 months",
       "halfCredit": "States follow-up, no timing",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4G.2",
-      "description": "Assess response to Trelegy Ellipta at follow-up",
-      "points": 0.45,
-      "fullCredit": "States assess response to Trelegy Ellipta",
-      "halfCredit": "States assess medications, no agent",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4G.3",
-      "description": "Reassess CAT score and symptom burden at follow-up",
-      "points": 0.45,
-      "fullCredit": "States reassess CAT score AND symptom burden",
-      "halfCredit": "States reassess symptoms, no CAT",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4G.4",
-      "description": "Reassess COPD exacerbation frequency at follow-up",
-      "points": 0.45,
-      "fullCredit": "States reassess exacerbation frequency",
-      "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
@@ -40383,14 +39439,6 @@
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
     {
-      "id": "1B.14",
-      "description": "States initial self-report: patient taking umeclidinium/vilanterol 'most days'",
-      "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
-      "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
-      "zeroCredit": "Criterion absent or contains information not in the model note."
-    },
-    {
       "id": "1B.15",
       "description": "States actual frequency upon further questioning: 3–4 days per week",
       "points": 0.5,
@@ -40680,17 +39728,9 @@
     },
     {
       "id": "1E.1",
-      "description": "Lists umeclidinium/vilanterol (Anoro Ellipta) by name",
+      "description": "Maintenance: Spiriva HandiHaler (tiotropium) 18 mcg daily",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
-      "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
-      "zeroCredit": "Criterion absent or contains information not in the model note."
-    },
-    {
-      "id": "1E.2",
-      "description": "States umeclidinium/vilanterol dose and frequency (1 inhalation daily)",
-      "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States Spiriva/tiotropium",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40793,14 +39833,6 @@
     {
       "id": "1E.15",
       "description": "Notes 4 total active medications listed (medication reconciliation complete)",
-      "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
-      "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
-      "zeroCredit": "Criterion absent or contains information not in the model note."
-    },
-    {
-      "id": "1E.16",
-      "description": "Notes umeclidinium/vilanterol is a LABA/LAMA combination product",
       "points": 0.25,
       "fullCredit": "All elements of this criterion are present and match the model note.",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
@@ -41008,9 +40040,9 @@
     },
     {
       "id": "2B.1",
-      "description": "States post-bronchodilator FEV1/FVC ratio (0.58)",
+      "description": "FEV1/FVC ratio: 0.62",
       "points": 1,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States 0.62",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -41064,9 +40096,9 @@
     },
     {
       "id": "2B.8",
-      "description": "Notes FEV1/FVC ratio &lt; 0.70 confirms airflow obstruction per GOLD criteria",
+      "description": "FEV1/FVC ratio: 0.62",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States 0.62",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -41088,9 +40120,9 @@
     },
     {
       "id": "2C.1",
-      "description": "States FEV1/FVC &lt; 0.70 confirms obstructive pattern per GOLD 2026 diagnostic criteria",
+      "description": "FEV1/FVC ratio: 0.62",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States 0.62",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -41272,9 +40304,9 @@
     },
     {
       "id": "3A.16",
-      "description": "Notes FEV1/FVC 0.58 confirming airflow obstruction",
+      "description": "FEV1/FVC ratio: 0.62",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States 0.62",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -41346,22 +40378,6 @@
       "id": "3B.2",
       "description": "States nonadherence is contributing to persistent symptoms",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
-      "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
-      "zeroCredit": "Criterion absent or contains information not in the model note."
-    },
-    {
-      "id": "3B.3",
-      "description": "States actual frequency of umeclidinium/vilanterol use (3–4 days per week)",
-      "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
-      "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
-      "zeroCredit": "Criterion absent or contains information not in the model note."
-    },
-    {
-      "id": "3B.4",
-      "description": "States prescribed frequency of umeclidinium/vilanterol (daily)",
-      "points": 0.25,
       "fullCredit": "All elements of this criterion are present and match the model note.",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
@@ -41680,9 +40696,9 @@
     },
     {
       "id": "4A.1",
-      "description": "States continuation of umeclidinium/vilanterol (Anoro Ellipta) by name",
+      "description": "Maintenance: Spiriva HandiHaler (tiotropium) 18 mcg daily",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States Spiriva/tiotropium",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -42241,27 +41257,11 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1A.6",
-      "description": "Medication named for prior initiation: budesonide/formoterol (Symbicort)",
-      "points": 0.3,
-      "fullCredit": "Names budesonide/formoterol or Symbicort",
-      "halfCredit": "Names ICS without drug name",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1A.7",
       "description": "States significant improvement in respiratory symptoms since last visit",
       "points": 0.25,
       "fullCredit": "States significant improvement",
       "halfCredit": "States some improvement, no qualification",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1A.8",
-      "description": "No hospitalizations or ED visits reported",
-      "points": 0.25,
-      "fullCredit": "States no hospitalizations or ED visits",
-      "halfCredit": "States no hospitalizations, omits ED",
       "zeroCredit": "Omits"
     },
     {
@@ -42313,38 +41313,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1B.7",
-      "description": "Denies oral corticosteroids required for flare",
-      "points": 0.25,
-      "fullCredit": "States denies oral corticosteroids",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.8",
-      "description": "Denies antibiotics required for flare",
-      "points": 0.2,
-      "fullCredit": "States denies antibiotics",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.9",
-      "description": "Denies urgent care, emergency department, or hospitalization for flare",
-      "points": 0.25,
-      "fullCredit": "States denies all three care settings",
-      "halfCredit": "States denies hospitalization, omits urgent care/ED",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.10",
-      "description": "States excellent adherence to Symbicort and Spiriva",
-      "points": 0.35,
-      "fullCredit": "States excellent adherence to both inhalers",
-      "halfCredit": "States adherent, names only one inhaler",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1B.11",
       "description": "States demonstrates appropriate inhaler technique",
       "points": 0.3,
@@ -42393,51 +41361,11 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1C.3",
-      "description": "PMH: allergic rhinitis",
-      "points": 0.3,
-      "fullCredit": "Lists allergic rhinitis",
-      "halfCredit": "Lists rhinitis, no modifier 'allergic'",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.4",
-      "description": "PMH: hypertension (diagnosed 15 years ago)",
-      "points": 0.3,
-      "fullCredit": "States hypertension diagnosed 15 years ago",
-      "halfCredit": "States hypertension, no duration",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.5",
-      "description": "PMH: osteopenia (diagnosed 3 years ago)",
-      "points": 0.3,
-      "fullCredit": "States osteopenia diagnosed 3 years ago",
-      "halfCredit": "States osteopenia, no duration",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.6",
-      "description": "PSH: cholecystectomy",
-      "points": 0.3,
-      "fullCredit": "Lists cholecystectomy under PSH",
-      "halfCredit": "Lists cholecystectomy under PMH",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1C.7",
       "description": "Family history, father: COPD",
       "points": 0.25,
       "fullCredit": "States father with COPD",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.8",
-      "description": "Family history, father: coronary artery disease",
-      "points": 0.25,
-      "fullCredit": "States father with coronary artery disease",
-      "halfCredit": "States father with heart disease, no specification",
       "zeroCredit": "Omits"
     },
     {
@@ -42449,35 +41377,11 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1C.10",
-      "description": "Family history, mother: allergic rhinitis",
-      "points": 0.25,
-      "fullCredit": "States mother with allergic rhinitis",
-      "halfCredit": "States mother with allergies, no specificity",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.11",
-      "description": "Family history, sister: asthma",
-      "points": 0.25,
-      "fullCredit": "States sister with asthma",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1C.12",
       "description": "Asthma onset specified as childhood (not merely 'history of asthma')",
       "points": 0.25,
       "fullCredit": "States childhood onset explicitly",
       "halfCredit": "States long-standing, no childhood specification",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.13",
-      "description": "Duration or timeframe stated for all timed diagnoses (COPD 8 yrs, HTN 15 yrs, osteopenia 3 yrs)",
-      "points": 0.3,
-      "fullCredit": "Duration stated for all three timed diagnoses",
-      "halfCredit": "Duration stated for some but not all",
       "zeroCredit": "Omits"
     },
     {
@@ -42514,26 +41418,10 @@
     },
     {
       "id": "1D.4",
-      "description": "Tobacco status stated (former smoker)",
+      "description": "Never smoker",
       "points": 0.4,
-      "fullCredit": "States former smoker",
+      "fullCredit": "States never smoker",
       "halfCredit": "States nonsmoker without former/never distinction",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1D.5",
-      "description": "Smoking quantity stated (30 pack-years)",
-      "points": 0.5,
-      "fullCredit": "States 30 pack-year history",
-      "halfCredit": "States smoker, no pack-year quantification",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1D.6",
-      "description": "Smoking cessation duration stated (quit 12 years ago)",
-      "points": 0.4,
-      "fullCredit": "States quit 12 years ago",
-      "halfCredit": "States quit, no duration",
       "zeroCredit": "Omits"
     },
     {
@@ -42577,14 +41465,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1E.1",
-      "description": "Budesonide/formoterol (Symbicort) listed by brand and generic name",
-      "points": 0.3,
-      "fullCredit": "Lists both generic and brand names",
-      "halfCredit": "Lists one name only",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1E.2",
       "description": "Budesonide/formoterol dose listed (160/4.5 mcg)",
       "points": 0.3,
@@ -42598,14 +41478,6 @@
       "points": 0.3,
       "fullCredit": "States 2 inhalations twice daily",
       "halfCredit": "States twice daily, no inhalation count",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.4",
-      "description": "Tiotropium (Spiriva Respimat) listed by brand and generic name",
-      "points": 0.3,
-      "fullCredit": "Lists both generic and brand names",
-      "halfCredit": "Lists one name only",
       "zeroCredit": "Omits"
     },
     {
@@ -42654,14 +41526,6 @@
       "points": 0.3,
       "fullCredit": "States calcium carbonate/vitamin D 1 tablet twice daily",
       "halfCredit": "Lists supplement, no dose or frequency",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.11",
-      "description": "Allergy: sulfonamide antibiotics listed",
-      "points": 0.35,
-      "fullCredit": "States sulfonamide antibiotics",
-      "halfCredit": "States sulfa, no antibiotic specification",
       "zeroCredit": "Omits"
     },
     {
@@ -42753,51 +41617,11 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1F.4",
-      "description": "Denies oral corticosteroids for any respiratory episode in past 3 months",
-      "points": 0.25,
-      "fullCredit": "States denies oral corticosteroids for any episode",
-      "halfCredit": "States denies corticosteroids for this flare only",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1F.5",
-      "description": "Denies urgent care or emergency department visit in past 3 months",
-      "points": 0.25,
-      "fullCredit": "States denies urgent care and ED visits",
-      "halfCredit": "States denies one, omits other",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1F.6",
-      "description": "Denies hospitalization in past 3 months",
-      "points": 0.25,
-      "fullCredit": "States denies hospitalization",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1F.7",
-      "description": "Patient remains motivated to improve respiratory control and reduce future exacerbations",
-      "points": 0.25,
-      "fullCredit": "States patient remains motivated with specific goals named",
-      "halfCredit": "States patient motivated, no goals specified",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1G.1",
       "description": "Patient remains motivated to improve respiratory control",
       "points": 0.6,
       "fullCredit": "States patient motivated to improve respiratory control",
       "halfCredit": "States patient engaged, no specific goal",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1G.2",
-      "description": "Patient goal: reduce future exacerbations",
-      "points": 0.6,
-      "fullCredit": "States goal of reducing future exacerbations",
-      "halfCredit": "States wants fewer attacks, vague",
       "zeroCredit": "Omits"
     },
     {
@@ -42898,9 +41722,9 @@
     },
     {
       "id": "2B.3",
-      "description": "Absolute eosinophil count stated (380 cells/µL)",
+      "description": "Absolute eosinophil count: 50 cells/µL",
       "points": 0.55,
-      "fullCredit": "States 380 cells/µL",
+      "fullCredit": "States 50",
       "halfCredit": "Eosinophil count stated, no units",
       "zeroCredit": "Omits"
     },
@@ -42934,38 +41758,6 @@
       "points": 0.4,
       "fullCredit": "States improved symptom burden",
       "halfCredit": "States score improved, no interpretation",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2B.8",
-      "description": "Exacerbation history: one mild respiratory flare in past 3 months",
-      "points": 0.5,
-      "fullCredit": "States one mild flare in past 3 months",
-      "halfCredit": "States had a flare, no count/severity/interval",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2B.9",
-      "description": "Exacerbation history: no systemic corticosteroids used",
-      "points": 0.45,
-      "fullCredit": "States no systemic corticosteroids",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2B.10",
-      "description": "Exacerbation history: no antibiotics used",
-      "points": 0.4,
-      "fullCredit": "States no antibiotics",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "2B.11",
-      "description": "Exacerbation history: no hospitalization",
-      "points": 0.4,
-      "fullCredit": "States no hospitalization",
-      "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
@@ -43018,9 +41810,9 @@
     },
     {
       "id": "2C.4",
-      "description": "Eosinophil count of 380 cells/µL characterized as elevated Type 2 inflammatory biomarker",
+      "description": "Absolute eosinophil count: 50 cells/µL",
       "points": 0.6,
-      "fullCredit": "States elevated AND notes Type 2 significance",
+      "fullCredit": "States 50",
       "halfCredit": "States elevated, no Type 2 context",
       "zeroCredit": "Omits"
     },
@@ -43097,38 +41889,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "3A.8",
-      "description": "States no corticosteroid-treated exacerbations in follow-up period",
-      "points": 0.45,
-      "fullCredit": "States no OCS-treated exacerbations",
-      "halfCredit": "States no exacerbations requiring hospitalization only",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.9",
-      "description": "States no emergency department visits or hospitalizations in follow-up period",
-      "points": 0.35,
-      "fullCredit": "States no ED visits AND no hospitalizations",
-      "halfCredit": "States no hospitalizations, omits ED",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.10",
-      "description": "References GINA 2025: ICS-containing therapy is foundation of treatment for asthma features / reduces symptoms and exacerbation risk",
-      "points": 0.55,
-      "fullCredit": "Cites GINA 2025 and states ICS is foundation",
-      "halfCredit": "Cites GINA without specific principle",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.11",
-      "description": "States clinical response supports corticosteroid-responsive airway inflammation",
-      "points": 0.4,
-      "fullCredit": "States response confirms corticosteroid-responsive inflammation",
-      "halfCredit": "States ICS working, no mechanism stated",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "3A.12",
       "description": "States initiation of ICS-containing therapy was appropriate based on clinical response",
       "points": 0.4,
@@ -43142,30 +41902,6 @@
       "points": 0.8,
       "fullCredit": "States explicitly do not escalate / no evidence to support escalation",
       "halfCredit": "States continue current therapy, no escalation rationale",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3A.14",
-      "description": "Assessment integrates symptom data, score trends, and exacerbation history from current and prior visit",
-      "points": 0.6,
-      "fullCredit": "Uses specific data from both current and prior visit to support assessment",
-      "halfCredit": "Uses only current visit data",
-      "zeroCredit": "Omits comparative analysis"
-    },
-    {
-      "id": "3B.1",
-      "description": "Problem identified: uncontrolled allergic rhinitis",
-      "points": 0.5,
-      "fullCredit": "Names uncontrolled allergic rhinitis as distinct problem",
-      "halfCredit": "Names allergic rhinitis without 'uncontrolled' qualifier",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3B.2",
-      "description": "States allergic rhinitis is contributing to residual respiratory symptoms",
-      "points": 0.6,
-      "fullCredit": "States AR contributing to respiratory symptoms explicitly",
-      "halfCredit": "States nasal symptoms present, no respiratory link",
       "zeroCredit": "Omits"
     },
     {
@@ -43206,14 +41942,6 @@
       "points": 0.6,
       "fullCredit": "States self-discontinuation ~6 weeks ago as precipitating factor",
       "halfCredit": "States discontinued, no timing or causal framing",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3B.8",
-      "description": "References GINA 2025: allergic rhinitis is common comorbidity that may negatively affect asthma control",
-      "points": 0.8,
-      "fullCredit": "Cites GINA 2025 and states AR comorbidity impacts asthma",
-      "halfCredit": "Cites GINA without AR comorbidity principle",
       "zeroCredit": "Omits"
     },
     {
@@ -43258,9 +41986,9 @@
     },
     {
       "id": "3C.3",
-      "description": "Eosinophil count stated (380 cells/µL)",
+      "description": "Absolute eosinophil count: 50 cells/µL",
       "points": 0.5,
-      "fullCredit": "States 380 cells/µL",
+      "fullCredit": "States 50",
       "halfCredit": "States count, no units",
       "zeroCredit": "Omits"
     },
@@ -43305,35 +42033,11 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "3C.9",
-      "description": "Basis for withholding biologic: no severe or recurrent exacerbations despite optimized inhaled therapy / states continued monitoring appropriate",
-      "points": 0.75,
-      "fullCredit": "States both no severe/recurrent exacerbations AND continued monitoring",
-      "halfCredit": "States monitoring appropriate, no exacerbation basis",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3D.1",
-      "description": "Problem identified: recurrent exacerbation risk",
-      "points": 0.5,
-      "fullCredit": "Names recurrent exacerbation risk as distinct problem",
-      "halfCredit": "States exacerbation history without risk framing",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "3D.2",
       "description": "Status stated as improved",
       "points": 0.4,
       "fullCredit": "States improved",
       "halfCredit": "States better, no qualifier",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3D.3",
-      "description": "Prior exacerbation history stated: two corticosteroid-treated exacerbations in previous year",
-      "points": 0.65,
-      "fullCredit": "States two OCS-treated exacerbations in prior year",
-      "halfCredit": "States prior exacerbations, no count or treatment required",
       "zeroCredit": "Omits"
     },
     {
@@ -43345,38 +42049,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "3D.5",
-      "description": "States flare did not require systemic corticosteroids",
-      "points": 0.45,
-      "fullCredit": "States no systemic corticosteroids required",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3D.6",
-      "description": "States flare did not require antibiotics, urgent care, ED, or hospitalization",
-      "points": 0.45,
-      "fullCredit": "States no antibiotics AND no care escalation required",
-      "halfCredit": "States no hospitalization, omits other elements",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3D.7",
-      "description": "References GINA 2025 and GOLD 2026: reducing future exacerbation risk is a major treatment goal",
-      "points": 0.65,
-      "fullCredit": "Cites GINA 2025 AND GOLD 2026 and states exacerbation reduction as goal",
-      "halfCredit": "Cites one guideline only",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3D.8",
-      "description": "States current therapy is effectively reducing exacerbation burden",
-      "points": 0.55,
-      "fullCredit": "States current therapy effectively reduces exacerbation burden",
-      "halfCredit": "States therapy working, no exacerbation burden linkage",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "3D.9",
       "description": "States continued monitoring remains warranted",
       "points": 0.7,
@@ -43385,27 +42057,11 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "3E.1",
-      "description": "Problem identified: osteopenia",
-      "points": 0.6,
-      "fullCredit": "Names osteopenia as distinct problem",
-      "halfCredit": "Names bone health concern, no diagnosis",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "3E.2",
       "description": "States improvement in respiratory disease control may reduce long-term skeletal risk",
       "points": 0.7,
       "fullCredit": "States improved respiratory control linked to reduced skeletal risk",
       "halfCredit": "States less OCS exposure is good, no bone linkage",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "3E.3",
-      "description": "States reduction in future systemic corticosteroid exposure may reduce skeletal risk",
-      "points": 0.7,
-      "fullCredit": "States reduced future OCS exposure linked to bone protection",
-      "halfCredit": "States OCS has side effects, no bone specification",
       "zeroCredit": "Omits"
     },
     {
@@ -43465,14 +42121,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "3F.5",
-      "description": "States vaccination is important for exacerbation prevention",
-      "points": 0.45,
-      "fullCredit": "States vaccination reduces exacerbation risk",
-      "halfCredit": "States vaccination recommended, no exacerbation link",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "3F.6",
       "description": "States preventive care optimization remains appropriate",
       "points": 0.4,
@@ -43481,28 +42129,12 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "4A.1",
-      "description": "Continue budesonide/formoterol (Symbicort) 160/4.5 mcg explicitly stated",
-      "points": 0.75,
-      "fullCredit": "States continue budesonide/formoterol 160/4.5 mcg",
-      "halfCredit": "States continue Symbicort without dose",
-      "zeroCredit": "States discontinue or change"
-    },
-    {
       "id": "4A.2",
       "description": "Budesonide/formoterol regimen stated (2 puffs twice daily)",
       "points": 0.6,
       "fullCredit": "States 2 puffs twice daily",
       "halfCredit": "States twice daily, no puff count",
       "zeroCredit": "Omits"
-    },
-    {
-      "id": "4A.3",
-      "description": "Continue tiotropium (Spiriva Respimat) 2 inhalations daily explicitly stated",
-      "points": 0.75,
-      "fullCredit": "States continue tiotropium 2 inhalations daily",
-      "halfCredit": "States continue Spiriva without regimen",
-      "zeroCredit": "States discontinue or change"
     },
     {
       "id": "4A.4",
@@ -43545,27 +42177,11 @@
       "zeroCredit": "Adds new pulmonary medication"
     },
     {
-      "id": "4B.1",
-      "description": "Restart fluticasone nasal spray (acceptable: fluticasone propionate nasal spray; mometasone furoate nasal spray; budesonide nasal spray; triamcinolone acetonide nasal spray — any intranasal corticosteroid per GINA 2025 recommendation for allergic rhinitis comorbidity)",
-      "points": 1,
-      "fullCredit": "Names any intranasal corticosteroid",
-      "halfCredit": "States restart nasal spray without naming agent",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "4B.2",
       "description": "Fluticasone nasal spray dose stated (1 spray in each nostril daily)",
       "points": 0.8,
       "fullCredit": "States 1 spray each nostril daily",
       "halfCredit": "States once daily, no spray count or nostril specification",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4B.3",
-      "description": "Educate patient on chronic nature of allergic rhinitis",
-      "points": 0.8,
-      "fullCredit": "States educate on chronic nature of AR",
-      "halfCredit": "States counsel patient, no chronic nature content",
       "zeroCredit": "Omits"
     },
     {
@@ -43625,22 +42241,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "4C.5",
-      "description": "Monitor exacerbation frequency",
-      "points": 0.4,
-      "fullCredit": "States monitor exacerbation frequency",
-      "halfCredit": "States monitor flare-ups, vague",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4C.6",
-      "description": "Monitor allergic rhinitis symptoms",
-      "points": 0.5,
-      "fullCredit": "States monitor allergic rhinitis symptoms",
-      "halfCredit": "States monitor allergy, vague",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "4C.7",
       "description": "Monitor medication adherence",
       "points": 0.4,
@@ -43678,30 +42278,6 @@
       "points": 0.9,
       "fullCredit": "States continue calcium carbonate/vitamin D",
       "halfCredit": "States continue bone supplements without naming agents",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4D.2",
-      "description": "Continue efforts to minimize systemic corticosteroid exposure stated",
-      "points": 0.9,
-      "fullCredit": "States minimize systemic corticosteroid exposure",
-      "halfCredit": "States avoid steroids, vague",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4D.3",
-      "description": "States rationale connecting corticosteroid exposure reduction to bone health / reduced skeletal risk",
-      "points": 0.6,
-      "fullCredit": "States OCS reduction tied to bone health explicitly",
-      "halfCredit": "States OCS has bone risks, no patient-specific reduction goal",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "4D.4",
-      "description": "Osteopenia management plan present as explicitly labeled subsection in Plan",
-      "points": 0.6,
-      "fullCredit": "Osteopenia is a labeled Plan subsection",
-      "halfCredit": "Osteopenia management embedded in other section",
       "zeroCredit": "Omits"
     },
     {
@@ -43753,14 +42329,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "4F.3",
-      "description": "Reassess allergic rhinitis symptoms at follow-up stated",
-      "points": 0.55,
-      "fullCredit": "States reassess allergic rhinitis symptoms at next visit",
-      "halfCredit": "States reassess allergy, vague",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "4F.4",
       "description": "Evaluate response to restarting fluticasone nasal spray at follow-up stated",
       "points": 0.65,
@@ -43783,14 +42351,6 @@
       "fullCredit": "Follow-Up is a labeled Plan subsection",
       "halfCredit": "Follow-up information embedded in other sections",
       "zeroCredit": "Omits"
-    },
-    {
-      "id": "4F.7",
-      "description": "Follow-up agenda addresses all active problems from Assessment (ACO, AR, osteopenia, preventive care)",
-      "points": 0.6,
-      "fullCredit": "Follow-up agenda covers all 4 active problem areas",
-      "halfCredit": "Covers 2-3 areas",
-      "zeroCredit": "Covers ≤1 area"
     },
     {
       "id": "5A.1",
@@ -44131,14 +42691,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1C.1",
-      "description": "PMH: asthma (diagnosed during childhood)",
-      "points": 0.4,
-      "fullCredit": "Lists asthma with childhood onset",
-      "halfCredit": "Lists asthma, no childhood timing",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1C.2",
       "description": "PMH: COPD (diagnosed 8 years ago)",
       "points": 0.4,
@@ -44207,14 +42759,6 @@
       "description": "Family history, mother: allergic rhinitis",
       "points": 0.25,
       "fullCredit": "States mother had allergic rhinitis",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.11",
-      "description": "Family history, sister: asthma",
-      "points": 0.25,
-      "fullCredit": "States sister had asthma",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -44753,14 +43297,6 @@
       "fullCredit": "Names ACO or asthma-COPD overlap phenotype",
       "halfCredit": "Names two separate conditions without overlap framing",
       "zeroCredit": "Omits or names only one condition"
-    },
-    {
-      "id": "3A.2",
-      "description": "Asthma feature cited: longstanding history dating to childhood",
-      "points": 0.3,
-      "fullCredit": "States childhood-onset asthma history",
-      "halfCredit": "States asthma history, no childhood timeframe",
-      "zeroCredit": "Omits"
     },
     {
       "id": "3A.3",

@@ -9,7 +9,7 @@ export function shuffle(arr) {
 }
 
 export function buildAttempt(items) {
-  return shuffle(items).map(it => ({ ...it, options: shuffle(it.options) }))
+  return shuffle(items).map(it => ({ ...it }))
 }
 
 export function isCorrect(item, selectedKeys) {

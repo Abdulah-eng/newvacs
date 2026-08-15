@@ -169,7 +169,7 @@ export default function QuizEngine({ items, passThreshold, onRecord, onExit, onP
                   <span className={`mt-0.5 grid place-items-center w-5 h-5 shrink-0 ${multi ? 'rounded' : 'rounded-full'} border-2 ${iconCls}`}>
                     {on && <CheckCircle2 size={12} />}
                   </span>
-                  <span className={`text-[14px] text-slate-700 flex-1 ${isCrossed ? 'line-through' : ''}`}>{o.text}</span>
+                  <span className={`text-[14px] text-slate-700 flex-1 ${isCrossed ? 'line-through' : ''}`}><span className="font-semibold mr-1">{String(o.key).toUpperCase()}.</span> {o.text}</span>
                   {isChecked && correct && <CheckCircle2 size={16} className="text-teal shrink-0 mt-0.5" />}
                   {isChecked && on && !correct && <XCircle size={16} className="text-red-400 shrink-0 mt-0.5" />}
                 </button>

@@ -64,8 +64,13 @@ export async function POST(request) {
       { role: 'user', content: 'Grade the provided SOAP note based on the rubric and source set.' }
     ]
 
-    // Use a more capable model for grading if possible, but 4o-mini is fine for now
-    const result = await callJsonLlm(messages)
+    let result;
+    try {
+      result = await callJsonLlm(messages)
+    } catch (e) {
+      console.error('Grading LLM JSON Error:', e)
+      return NextResponse.json({ error: 'The AI grader failed to return a valid response (Unexpected end of JSON input). Please submit again.' }, { status: 500 })
+    }
 
     let maxTotal = 0
     granularRubric.forEach(item => { maxTotal += item.points })
