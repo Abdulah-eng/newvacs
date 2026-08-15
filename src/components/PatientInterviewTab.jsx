@@ -38,7 +38,13 @@ const FIELD_LABELS = {
   weightGoals: 'Weight / Goals',
   diseaseUnderstanding: 'Disease Understanding',
   concerns: 'Patient Concerns',
-  cost: 'Cost / Affordability'
+  cost: 'Cost / Affordability',
+  exacerbations: 'Recent Exacerbations',
+  inhalerTechnique: 'Inhaler Technique',
+  pfts: 'Pulmonary Function Tests',
+  eosinophils: 'Eosinophils / Labs',
+  immunizations: 'Immunizations',
+  respiratorySymptoms: 'Respiratory Symptoms'
 }
 
 // Voice state machine
@@ -597,8 +603,15 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
                 { id: 'meds', label: 'MEDS', title: 'Medication History / Reconciliation', fields: ['currentMeds','adherence','otc','sideEffects'].map(k => c.INTERVIEW_FIELDS?.find(f => f.key === k) || { key: k, label: FIELD_LABELS[k] || k }) },
                 { id: 'sh', label: 'SH', title: 'Social History', fields: [c.INTERVIEW_FIELDS?.find(f => f.key === 'diet') || { key: 'diet', label: FIELD_LABELS.diet }, c.INTERVIEW_FIELDS?.find(f => f.key === 'exercise') || { key: 'exercise', label: FIELD_LABELS.exercise }, { key: 'tobacco', label: 'Tobacco use', type: 'select', options: ['None','Occasional','Moderate','Heavy','Former'] }, { key: 'alcohol', label: 'Alcohol use', type: 'select', options: ['None','Occasional','Moderate','Heavy','Former'] }, { key: 'caffeine', label: 'Caffeine', placeholder: 'e.g., 2 cups coffee/day' }] },
                 { id: 'fh', label: 'FH', title: 'Family History', fields: [c.INTERVIEW_FIELDS?.find(f => f.key === 'familyHistory') || { key: 'familyHistory', label: FIELD_LABELS.familyHistory }] },
-                { id: 'reported', label: '', title: 'Patient-Reported / Self-Management', fields: ['homeBp','bpTechnique','glucoseMonitoring','weightGoals','diseaseUnderstanding','concerns','cost'].map(k => c.INTERVIEW_FIELDS?.find(f => f.key === k) || { key: k, label: FIELD_LABELS[k] || k }) }
-              ].map(g => (
+              ].map(g => {
+                if (g.id === 'reported') {
+                  const isWeek3 = c?.ENCOUNTER?.week?.includes('3');
+                  const reportedKeys = isWeek3 
+                    ? ['respiratorySymptoms', 'exacerbations', 'inhalerTechnique', 'pfts', 'immunizations', 'diseaseUnderstanding', 'concerns', 'cost']
+                    : ['homeBp','bpTechnique','glucoseMonitoring','weightGoals','diseaseUnderstanding','concerns','cost'];
+                  g.fields = reportedKeys.map(k => c.INTERVIEW_FIELDS?.find(f => f.key === k) || { key: k, label: FIELD_LABELS[k] || k });
+                }
+                return (
                 <div key={g.title}>
                   <div className="flex items-center gap-2 mb-2">
                     {g.label && <span className="inline-block px-1.5 py-0.5 bg-slate-100 text-slate-500 text-[9px] font-bold rounded tracking-wide">{g.label}</span>}
@@ -622,7 +635,8 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
                     })}
                   </div>
                 </div>
-              ))}
+                );
+              })}
             </div>
           </Card>
         </div>

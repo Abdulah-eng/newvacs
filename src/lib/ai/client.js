@@ -40,6 +40,9 @@ export async function callJsonLlm(messages, modelOverride = null) {
 
       let text = response.content.find(b => b.type === 'text')?.text || ''
       
+      // Strip out <think> tags if they exist (used by deepseek/reasoning models)
+      text = text.replace(/<think>[\s\S]*?<\/think>/g, '').trim()
+
       // Clean markdown code blocks just in case
       text = text.replace(/```json\n?/gi, '').replace(/```\n?/g, '').trim()
       
@@ -49,8 +52,22 @@ export async function callJsonLlm(messages, modelOverride = null) {
         return JSON.parse(cleaned)
       } catch (e) {
         // If it fails, try to extract JSON from conversational padding (common with Thinking models)
-        const startIndex = text.indexOf('{')
-        const endIndex = text.lastIndexOf('}')
+        const firstCurly = text.indexOf('{')
+        const lastCurly = text.lastIndexOf('}')
+        const firstSquare = text.indexOf('[')
+        const lastSquare = text.lastIndexOf(']')
+        
+        let startIndex = -1
+        let endIndex = -1
+        
+        if (firstCurly !== -1 && (firstSquare === -1 || firstCurly < firstSquare)) {
+            startIndex = firstCurly
+            endIndex = lastCurly
+        } else if (firstSquare !== -1) {
+            startIndex = firstSquare
+            endIndex = lastSquare
+        }
+
         if (startIndex !== -1 && endIndex !== -1 && endIndex > startIndex) {
           const jsonStr = text.substring(startIndex, endIndex + 1)
           try {

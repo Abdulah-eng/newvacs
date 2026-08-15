@@ -5,7 +5,7 @@ import { gradeSoap, gradeBand } from '../lib/grader'
 import { GRADING_RUBRICS } from '../data/cases'
 import {
   Wand2, Copy, Check, AlertTriangle, GraduationCap, CheckCircle2, Circle,
-  TrendingUp, ShieldAlert, Lightbulb,
+  TrendingUp, ShieldAlert, Lightbulb, ListChecks, ChevronDown, ChevronRight, ShieldCheck
 } from 'lucide-react'
 
 const SECTIONS = [
@@ -25,6 +25,7 @@ export function SOAPNoteTab({ c, state, soap, onChange, onGraded }) {
   const [loading, setLoading] = useState(false)
   const [result, setResult] = useState(null)
   const [copied, setCopied] = useState(false)
+  const [showRubric, setShowRubric] = useState(false)
 
   function generate() {
     const draft = generateSoapDraft(c, state)
@@ -93,7 +94,27 @@ export function SOAPNoteTab({ c, state, soap, onChange, onGraded }) {
           className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-4 py-2 text-[13px] font-semibold text-slate-700 hover:bg-slate-50 transition">
           {copied ? <><Check size={15} className="text-teal" /> Copied</> : <><Copy size={15} /> Copy note</>}
         </button>
+        <button onClick={() => setShowRubric(!showRubric)}
+          className={`inline-flex items-center gap-2 rounded-lg border px-4 py-2 text-[13px] font-semibold transition ${showRubric ? 'bg-navy text-white border-navy hover:bg-navydark' : 'bg-white border-slate-300 text-slate-700 hover:bg-slate-50'}`}>
+          <ListChecks size={15} /> Reference Rubric {showRubric ? <ChevronDown size={15} /> : <ChevronRight size={15} />}
+        </button>
       </div>
+
+      {showRubric && c.PRECEPTOR?.checklist && (
+        <div className="mb-4 rounded-xl border border-navy/20 bg-slate-50 shadow-sm p-4 animate-in slide-in-from-top-2">
+          <div className="flex items-center gap-2 mb-3">
+            <ListChecks size={18} className="text-navy" />
+            <h3 className="font-head text-[15px] text-navy">Grading Checklist (Reference)</h3>
+          </div>
+          <ul className="grid sm:grid-cols-2 gap-x-4 gap-y-2">
+            {c.PRECEPTOR.checklist.map((item, i) => (
+              <li key={i} className="flex items-start gap-2 text-[12px] text-slate-700">
+                <ShieldCheck size={14} className="text-teal mt-0.5 shrink-0" /> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       {result && <Feedback result={result} />}
 
