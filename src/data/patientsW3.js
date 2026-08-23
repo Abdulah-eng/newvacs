@@ -105,7 +105,7 @@ const sarahWed = makeCase({
     diseaseStates: ['Asthma'],
     learningObjectives: ['Escalate therapy per GINA guidelines (e.g., add LABA or switch to SMART therapy)'],
   },
-  VITALS: { ...sarahTue.VITALS, bp: '120/76', hr: '78', rr: '16', weight: '75 kg', spo2: '99%', bmi: '27.5' },
+  VITALS: { ...sarahTue.VITALS, bp: '120/76', hr: '76', rr: '16', weight: '75 kg', spo2: '99%', bmi: '27.5' },
   LABS: sarahTue.LABS,
   ALERTS: [{ level: 'warn', text: 'Asthma partly controlled — assess adherence and consider therapy escalation (add LABA).' }],
   PROBLEMS: [{ name: 'Asthma', detail: 'Partly controlled', flag: 'warn' }],
@@ -166,7 +166,7 @@ const sarahThu = makeCase({
     diseaseStates: ['Asthma'],
     learningObjectives: ['Assess asthma control on SMART therapy', 'Reinforce maintenance and reliever concept'],
   },
-  VITALS: { ...sarahTue.VITALS, bp: '120/76', hr: '78', rr: '16', weight: '75 kg', spo2: '99%', bmi: '27.5' },
+  VITALS: { ...sarahTue.VITALS, bp: '120/76', hr: '76', rr: '16', weight: '75 kg', spo2: '99%', bmi: '27.5' },
   LABS: [
     { label: 'FEV1', value: '2.9', unit: 'L (85% pred)', flag: 'normal' },
     { label: 'FEV1/FVC', value: '0.77', flag: 'normal' },
@@ -181,10 +181,10 @@ const sarahThu = makeCase({
   ],
   IMMUNIZATIONS: sarahTue.IMMUNIZATIONS,
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: 'Follow-up after transitioning to SMART therapy.' },
+    { label: 'HPI', value: 'Follow-up after transitioning to SMART therapy. History of a viral-triggered asthma exacerbation 6 weeks ago requiring an urgent-care visit and a 5-day course of prednisone. Denies any prior hospitalizations for asthma.' },
     { label: 'Social history', value: 'Teacher. Non-smoker. Lives with husband and two kids.' }
   ],
-  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.75, FEV1 78% predicted', flag: 'normal' }],
+  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.77, FEV1 85% predicted. Post-bronchodilator improvement of 8% / 160 mL.', flag: 'normal' }],
   INTERVIEW_FIELDS: [
     { key: 'control', label: 'Asthma Control', placeholder: 'Any symptoms or rescue use?' },
   ],
@@ -204,8 +204,12 @@ const sarahThu = makeCase({
 
     INTERVIEW_KNOWLEDGE: [
     { id: 'w3-sarah_t-thu_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
-    { id: 'w3-sarah_t-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take loratadine 10 mg PRN for seasonal allergies and a daily multivitamin." },
+    { id: 'w3-sarah_t-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take cetirizine 10 mg daily and use fluticasone nasal spray for my allergies. I also take a daily multivitamin." },
     { id: 'w3-sarah_t-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
+    { id: 'w3-sarah_t-thu_vacc', topic: 'Vaccinations', field: 'vaccines', keywords: ['vaccine', 'vaccines', 'shot', 'flu', 'pneumonia'], response: "I'm pretty sure I got my flu shot at the pharmacy, but you should check my chart." },
+    { id: 'w3-sarah_t-thu_drugs', topic: 'Recreational drugs', field: 'drugs', keywords: ['drugs', 'recreational', 'marijuana', 'weed', 'cocaine', 'illicit'], response: "I completely deny any recreational drug use." },
+    { id: 'w3-sarah_t-thu_psh', topic: 'Past Surgical History', field: 'psh', keywords: ['surgery', 'surgeries', 'surgical', 'operation', 'operations', 'appendectomy'], response: "I haven't had any surgeries or major procedures." },
+
     { id: 'w3-sarah_t-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
     { id: 'w3-sarah_t-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "I was diagnosed with asthma when I was 8 years old. My brother and sister both have asthma. My mother has asthma and allergic rhinitis. My father has high blood pressure." },
     { id: 'w3a3_ctrl', topic: 'Controlled', field: 'control', keywords: ['symptoms', 'rescue', 'use', 'feel'], response: "I use the Symbicort as my daily controller. I still have symptoms and need an extra puff for relief about 1 or 2 times a week. I wake up from asthma about once a month." },
