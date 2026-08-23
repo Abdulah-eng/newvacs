@@ -23,7 +23,7 @@ const sarahTue = makeCase({
   },
   VITALS: { bp: '118/76', bpRepeat: '116/74', hr: '88', rr: '18', temp: '98.6°F', weight: '65 kg', height: "5'5\"", bmi: '23.9', flags: {} },
   LABS: [
-    { label: 'FEV1', value: '2.5', unit: 'L (78% pred)', flag: 'warn', note: 'Reversible post-bronchodilator (+15%)' },
+    { label: 'FEV1', value: '2.5', unit: 'L (78% pred)', flag: 'warn', note: 'Reversible post-bronchodilator (+8% / 160 mL)' },
     { label: 'FEV1/FVC', value: '0.75', flag: 'warn' },
     { label: 'FVC', value: '3.3', unit: 'L', flag: 'normal' }
   ],
@@ -42,7 +42,7 @@ const sarahTue = makeCase({
   ],
   IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: 'Referred by PCP for asthma management due to increased albuterol refill requests.' },
+    { label: 'HPI', value: 'Referred by PCP. Patient had a viral-triggered asthma exacerbation 6 weeks ago requiring an urgent-care visit and a 5-day course of prednisone.' },
     { label: 'Social history', value: 'Teacher. Non-smoker. Lives with husband and two kids.' },
   ],
   OBJECTIVE_EXTRA: [
@@ -73,7 +73,7 @@ const sarahTue = makeCase({
     { id: 'w3-sarah_t-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take loratadine 10 mg PRN for seasonal allergies and a daily multivitamin." },
     { id: 'w3-sarah_t-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
     { id: 'w3-sarah_t-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
-    { id: 'w3-sarah_t-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My mother has asthma and allergic rhinitis. My father has high blood pressure." },
+    { id: 'w3-sarah_t-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "I was diagnosed with asthma when I was 8 years old. My mother has asthma and allergic rhinitis. My father has high blood pressure." },
     { id: 'w3a_albuterol', topic: 'Albuterol Overuse', field: 'albuterol', keywords: ['rescue', 'albuterol', 'how often', 'frequent'], response: "I've been using my albuterol about 4 or 5 times a week lately. It helps me breathe better." },
     { id: 'w3a_bud', topic: 'ICS Nonadherence', field: 'budesonide', keywords: ['budesonide', 'daily', 'controller', 'steroid'], response: "I only use the budesonide when I feel like a cold is coming on. I didn't think I needed it every day if my asthma wasn't bothering me." },
     { id: 'w3a_night', topic: 'Nighttime symptoms', field: 'nighttime', keywords: ['night', 'sleep', 'wake', 'waking'], response: "I wake up coughing maybe once a week. I usually take a puff of albuterol and go back to sleep." },
@@ -104,7 +104,7 @@ const sarahWed = makeCase({
     diseaseStates: ['Asthma'],
     learningObjectives: ['Escalate therapy per GINA guidelines (e.g., add LABA or switch to SMART therapy)'],
   },
-  VITALS: { ...sarahTue.VITALS },
+  VITALS: { ...sarahTue.VITALS, hr: '76', rr: '16', spo2: '99%' },
   LABS: sarahTue.LABS,
   ALERTS: [{ level: 'warn', text: 'Asthma partly controlled — assess adherence and consider therapy escalation (add LABA).' }],
   PROBLEMS: [{ name: 'Asthma', detail: 'Partly controlled', flag: 'warn' }],
@@ -114,7 +114,7 @@ const sarahWed = makeCase({
     { label: 'HPI', value: 'Patient reports improved daily adherence to ICS.' },
     { label: 'Social history', value: 'Teacher. Non-smoker. Lives with husband and two kids.' }
   ],
-  OBJECTIVE_EXTRA: [],
+  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.77, FEV1 85% predicted', flag: 'normal' }],
   INTERVIEW_FIELDS: [
     { key: 'symptoms', label: 'Current Symptoms', placeholder: 'How are the symptoms now?' },
     { key: 'adherence', label: 'ICS Adherence', placeholder: 'Still taking the daily inhaler?' },
@@ -139,7 +139,7 @@ const sarahWed = makeCase({
     { id: 'w3-sarah_t-wed_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take loratadine 10 mg PRN for seasonal allergies and a daily multivitamin." },
     { id: 'w3-sarah_t-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
     { id: 'w3-sarah_t-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
-    { id: 'w3-sarah_t-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My mother has asthma and allergic rhinitis. My father has high blood pressure." },
+    { id: 'w3-sarah_t-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "I was diagnosed with asthma when I was 8 years old. My mother has asthma and allergic rhinitis. My father has high blood pressure." },
     { id: 'w3a2_sym', topic: 'Exercise symptoms', field: 'symptoms', keywords: ['symptoms', 'breathe', 'exercise', 'run'], response: "I'm much better during the day, but when I try to run or play with the kids, I get tight and need the rescue inhaler." },
     { id: 'w3a2_adh', topic: 'Adherence', field: 'adherence', keywords: ['budesonide', 'every day', 'daily', 'take'], response: "Yes, I've been taking the budesonide every morning and night like you said." },
   ],
@@ -165,23 +165,23 @@ const sarahThu = makeCase({
     diseaseStates: ['Asthma'],
     learningObjectives: ['Assess asthma control on SMART therapy', 'Reinforce maintenance and reliever concept'],
   },
-  VITALS: { ...sarahTue.VITALS },
+  VITALS: { ...sarahTue.VITALS, hr: '76', rr: '16', spo2: '99%' },
   LABS: [
     { label: 'FEV1', value: '2.9', unit: 'L (85% pred)', flag: 'normal' },
-    { label: 'FEV1/FVC', value: '0.80', flag: 'normal' },
+    { label: 'FEV1/FVC', value: '0.77', flag: 'normal' },
     { label: 'FVC', value: '3.63', unit: 'L', flag: 'normal' }
   ],
   ALERTS: [{ level: 'info', text: 'Patient is due for routine vaccination review.' }],
   PROBLEMS: [{ name: 'Asthma', detail: 'Well controlled on SMART', flag: 'normal' }],
   MEDICATIONS: [
-    { name: 'Budesonide/Formoterol (Symbicort)', dose: '160/4.5 mcg', route: 'Inhaled', freq: 'BID and PRN', indication: 'Asthma SMART therapy', notes: '' },
+    { name: 'Budesonide/Formoterol (Symbicort)', dose: '160/4.5 mcg', route: 'Inhaled', freq: '1 inhalation BID and PRN', indication: 'Asthma SMART therapy', notes: '' },
   ],
   IMMUNIZATIONS: sarahTue.IMMUNIZATIONS,
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Follow-up after transitioning to SMART therapy.' },
     { label: 'Social history', value: 'Teacher. Non-smoker. Lives with husband and two kids.' }
   ],
-  OBJECTIVE_EXTRA: [],
+  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.75, FEV1 78% predicted', flag: 'normal' }],
   INTERVIEW_FIELDS: [
     { key: 'control', label: 'Asthma Control', placeholder: 'Any symptoms or rescue use?' },
   ],
@@ -204,8 +204,8 @@ const sarahThu = makeCase({
     { id: 'w3-sarah_t-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take loratadine 10 mg PRN for seasonal allergies and a daily multivitamin." },
     { id: 'w3-sarah_t-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
     { id: 'w3-sarah_t-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
-    { id: 'w3-sarah_t-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My mother has asthma and allergic rhinitis. My father has high blood pressure." },
-    { id: 'w3a3_ctrl', topic: 'Controlled', field: 'control', keywords: ['symptoms', 'rescue', 'use', 'feel'], response: "I use the Symbicort twice a day. I haven't needed to take any extra puffs in weeks, even when I exercise." },
+    { id: 'w3-sarah_t-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "I was diagnosed with asthma when I was 8 years old. My mother has asthma and allergic rhinitis. My father has high blood pressure." },
+    { id: 'w3a3_ctrl', topic: 'Controlled', field: 'control', keywords: ['symptoms', 'rescue', 'use', 'feel'], response: "I use the Symbicort twice a day. I use the Symbicort as my daily controller. I still have symptoms and need an extra puff for relief about 1 or 2 times a week. I wake up from asthma about once a month." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'w3a3_a1', title: 'SMART Therapy Maintenance', icon: 'CheckCircle', color: '10b981', questions: [{ key: 'q1', q: 'Is her asthma well controlled on the current regimen?' }] },
@@ -231,11 +231,11 @@ const bobTue = makeCase({
     diseaseStates: ['COPD', 'Hypertension', 'Hyperlipidemia'],
     learningObjectives: ['Identify missing maintenance therapy in symptomatic COPD', 'Assess cost and technique barriers'],
   },
-  VITALS: { bp: '132/82', bpRepeat: '130/80', hr: '76', rr: '20', temp: '98.4°F', weight: '80 kg', height: "5'9\"", bmi: '26.0', flags: { bp: 'warn', bpRepeat: 'warn' } },
+  VITALS: { bp: '132/82', bpRepeat: '130/80', hr: '76', rr: '20', temp: '98.4°F', weight: '80 kg', height: "5'9\"", bmi: '26.0', flags: {} },
   LABS: [
-    { label: 'Eosinophils', value: '150', unit: 'cells/µL', flag: 'normal' },
-    { label: 'FEV1', value: '1.8', unit: 'L (58% pred)', flag: 'warn' },
-    { label: 'FEV1/FVC', value: '0.62', flag: 'warn' },
+    { label: 'Eosinophils', value: '310', unit: 'cells/µL', flag: 'normal' },
+    { label: 'FEV1', value: '1.8', unit: 'L (60% pred)', flag: 'warn' },
+    { label: 'FEV1/FVC', value: '0.57', flag: 'warn' },
     { label: 'FVC', value: '2.9', unit: 'L', flag: 'warn' }
   ],
   ALERTS: [{ level: 'warn', text: 'Patient is highly symptomatic (mMRC 3) but not on a maintenance long-acting bronchodilator.' }],
@@ -250,8 +250,8 @@ const bobTue = makeCase({
     { name: 'Atorvastatin', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'HLD', notes: '' },
   ],
   IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Complains of shortness of breath. History of 1 COPD exacerbation treated with prednisone 6 months ago.' }, { label: 'Social', value: 'Former smoker (45 pack-years).' }],
-  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.62, FEV1 55% predicted', flag: 'warn' }],
+  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Complains of shortness of breath. History of 2 moderate COPD exacerbations in the past 3 months.' }, { label: 'Social', value: 'Former smoker (45 pack-years, quit 5 years ago).' }],
+  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.57, FEV1 60% predicted', flag: 'warn' }, { label: 'CAT Score', value: '17', flag: 'warn' }],
   INTERVIEW_FIELDS: [
     { key: 'maintenance', label: 'Maintenance Inhaler', placeholder: 'Was he prescribed a daily inhaler?' },
     { key: 'cost', label: 'Cost/Affordability', placeholder: 'Can he afford his meds?' },
@@ -275,7 +275,7 @@ const bobTue = makeCase({
     { id: 'w3-bob_j-tue_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w3-bob_j-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take occasional acetaminophen for joint aches, but no other over-the-counter medications or supplements." },
     { id: 'w3-bob_j-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink 1 to 2 beers on weekends while watching sports, but nothing during the week." },
-    { id: 'w3-bob_j-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 10 years ago, and I had about a 30 pack-year history before that." },
+    { id: 'w3-bob_j-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago, and I had a 45 pack-year history before that." },
     { id: 'w3-bob_j-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had severe emphysema/COPD and was a heavy smoker. My mother had high blood pressure." },
     { id: 'w3b_maint', topic: 'Maintenance therapy', field: 'maintenance', keywords: ['daily', 'inhaler', 'prescribed', 'tiotropium', 'spiriva', 'laba', 'lama'], response: "The doctor gave me a script for some combination inhaler a while back, but when I went to the pharmacy, it was $300. I left it there. I just use the albuterol." },
     { id: 'w3b_cost', topic: 'Cost barrier', field: 'cost', keywords: ['cost', 'afford', 'expensive', 'money', 'pay'], response: "Yeah, I can't afford hundreds of dollars for an inhaler on a fixed income. The albuterol is cheap, so I stick with that." },
@@ -314,14 +314,14 @@ const bobWed = makeCase({
   PROBLEMS: [{ name: 'COPD', detail: 'Symptomatic despite LAMA', flag: 'warn' }],
   MEDICATIONS: [
     ...bobTue.MEDICATIONS,
-    { name: 'Tiotropium (Spiriva HandiHaler)', dose: '18 mcg', route: 'Inhaled', freq: 'daily', indication: 'COPD maintenance', notes: 'Newly started' },
+    { name: 'Umeclidinium/Vilanterol (Anoro Ellipta)', dose: '62.5/25 mcg', route: 'Inhaled', freq: 'daily', indication: 'COPD maintenance', notes: 'Newly started' },
   ],
   IMMUNIZATIONS: bobTue.IMMUNIZATIONS,
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Patient reports no improvement in dyspnea since starting tiotropium.' },
-    { label: 'Social history', value: 'Retired automotive mechanic. Married, lives with spouse. Former smoker (45 pack-years).' }
+    { label: 'Social history', value: 'Retired automotive mechanic. Diagnosed with COPD 4 years ago. Married, lives with spouse. Former smoker (45 pack-years, quit 5 years ago).' }
   ],
-  OBJECTIVE_EXTRA: [],
+  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.77, FEV1 85% predicted', flag: 'normal' }],
   INTERVIEW_FIELDS: [
     { key: 'technique', label: 'Inhaler Technique', placeholder: 'Ask him to demonstrate how he uses the HandiHaler' },
   ],
@@ -341,7 +341,7 @@ const bobWed = makeCase({
     { id: 'w3-bob_j-wed_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w3-bob_j-wed_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take occasional acetaminophen for joint aches, but no other over-the-counter medications or supplements." },
     { id: 'w3-bob_j-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink 1 to 2 beers on weekends while watching sports, but nothing during the week." },
-    { id: 'w3-bob_j-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 10 years ago, and I had about a 30 pack-year history before that." },
+    { id: 'w3-bob_j-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago, and I had a 45 pack-year history before that." },
     { id: 'w3-bob_j-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had severe emphysema/COPD and was a heavy smoker. My mother had high blood pressure." },
     { id: 'w3b2_tech', topic: 'Inhaler technique', field: 'technique', keywords: ['show', 'demonstrate', 'how', 'use', 'technique', 'capsule'], response: "I put the pill in the device, press the button, and then breathe out into the mouthpiece really hard to blow the medicine into my lungs." },
   ],
@@ -369,14 +369,14 @@ const bobThu = makeCase({
   VITALS: { ...bobTue.VITALS },
   LABS: bobTue.LABS,
   ALERTS: [{ level: 'info', text: 'Patient is due for routine vaccination review.' }],
-  PROBLEMS: [{ name: 'COPD', detail: 'Well controlled on LAMA', flag: 'normal' }],
+  PROBLEMS: [{ name: 'COPD', detail: 'Frequent exacerbations, high symptom burden (CAT 17, eosinophils 310)', flag: 'normal' }],
   MEDICATIONS: bobWed.MEDICATIONS,
   IMMUNIZATIONS: bobTue.IMMUNIZATIONS,
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Dyspnea significantly improved. Walking further without stopping.' },
-    { label: 'Social history', value: 'Retired automotive mechanic. Married, lives with spouse. Former smoker (45 pack-years).' }
+    { label: 'Social history', value: 'Retired automotive mechanic. Diagnosed with COPD 4 years ago. Married, lives with spouse. Former smoker (45 pack-years, quit 5 years ago).' }
   ],
-  OBJECTIVE_EXTRA: [],
+  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.57, FEV1 60% predicted', flag: 'warn' }],
   INTERVIEW_FIELDS: [
     { key: 'symptoms', label: 'Symptom check', placeholder: 'Any exacerbations or rescue use?' },
   ],
@@ -396,16 +396,16 @@ const bobThu = makeCase({
     { id: 'w3-bob_j-thu_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w3-bob_j-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take occasional acetaminophen for joint aches, but no other over-the-counter medications or supplements." },
     { id: 'w3-bob_j-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink 1 to 2 beers on weekends while watching sports, but nothing during the week." },
-    { id: 'w3-bob_j-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 10 years ago, and I had about a 30 pack-year history before that." },
+    { id: 'w3-bob_j-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago, and I had a 45 pack-year history before that." },
     { id: 'w3-bob_j-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had severe emphysema/COPD and was a heavy smoker. My mother had high blood pressure." },
-    { id: 'w3b3_sym', topic: 'Symptoms', field: 'symptoms', keywords: ['exacerbation', 'rescue', 'albuterol', 'feel', 'breathing'], response: "I hardly touch the albuterol now. I can walk to the mailbox and back without stopping. No flare-ups." },
+    { id: 'w3b3_sym', topic: 'Symptoms', field: 'symptoms', keywords: ['exacerbation', 'rescue', 'albuterol', 'feel', 'breathing'], response: "I still use my albuterol almost every day, and I've had a couple of flare-ups recently." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'w3b3_a1', title: 'Clinical Status', icon: 'CheckCircle', color: '10b981', questions: [{ key: 'q1', q: 'Should therapy be escalated to LABA/LAMA?' }] },
   ],
   PLAN_SECTIONS: [
     { id: 'w3b3_p1', title: 'Plan', options: [
-      { key: 'o1', label: 'Continue LAMA, emphasize adherence and smoking cessation maintenance', correct: true },
+      { key: 'o1', label: 'Escalate to triple therapy (add ICS) due to recurrent exacerbations and elevated eosinophils', correct: true },
       { key: 'o2', label: 'Escalate to LABA/LAMA', correct: false },
     ] },
   ],
@@ -427,7 +427,6 @@ const mariaTue = makeCase({
   },
   VITALS: { bp: '128/80', bpRepeat: '126/78', hr: '72', rr: '18', temp: '98.6°F', weight: '70 kg', height: "5'4\"", bmi: '26.5', flags: {} },
   LABS: [
-    { label: 'Eosinophils', value: '6', unit: '%', flag: 'high', note: 'Elevated (eosinophilic phenotype)' },
     { label: 'Absolute Eosinophils', value: '420', unit: 'cells/µL', flag: 'high' },
     { label: 'FEV1', value: '1.45', unit: 'L (58% pred)', flag: 'warn', note: 'Post-bronchodilator' },
     { label: 'FEV1/FVC', value: '0.55', flag: 'warn', note: 'Post-bronchodilator (Pre-BD was 0.54)' },
@@ -502,7 +501,6 @@ const mariaWed = makeCase({
   },
   VITALS: { ...mariaTue.VITALS },
   LABS: [
-    { label: 'Eosinophils', value: '6', unit: '%', flag: 'high', note: 'Elevated (eosinophilic phenotype)' },
     { label: 'Absolute Eosinophils', value: '420', unit: 'cells/µL', flag: 'high' },
     { label: 'FEV1', value: '1.45', unit: 'L (58% pred)', flag: 'warn', note: 'Post-bronchodilator' },
     { label: 'FEV1/FVC', value: '0.55', flag: 'warn', note: 'Post-bronchodilator (Pre-BD was 0.54)' },
@@ -519,7 +517,7 @@ const mariaWed = makeCase({
     { label: 'HPI', value: 'One moderate exacerbation treated with prednisone 4 weeks ago. Adherence and technique confirmed excellent in clinic today.' },
     { label: 'Social history', value: 'Retired elementary school principal. Married, lives with spouse. Never smoker.' }
   ],
-  OBJECTIVE_EXTRA: [],
+  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.57, FEV1 60% predicted', flag: 'warn' }, { label: 'CAT Score', value: '17', flag: 'warn' }],
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Adherence / Technique', placeholder: 'Are you sure she is taking it?' },
   ],
