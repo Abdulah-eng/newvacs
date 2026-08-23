@@ -111,6 +111,7 @@ export function SnapshotTab({ c }) {
                     {l.flag === 'high' && <span className="text-red-600 text-[10px]">▲</span>}
                   </p>
                   <p className="text-[10px] text-slate-400 mt-0.5">Ref {l.ref || '—'} · {l.drawn || '06/09/2026 07:50'}</p>
+                  {l.note && <p className="text-[11px] text-slate-500 mt-0.5 italic">{l.note}</p>}
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-[13px] font-bold text-slate-800">
@@ -854,6 +855,7 @@ export function ObjectiveTab({ c }) {
                             {l.flag === 'high' && <span className="text-red-600 text-[10px]">▲</span>}
                           </p>
                           <p className="text-[10px] text-slate-400 mt-0.5">Ref {l.ref || '—'}</p>
+                          {l.note && <p className="text-[11px] text-slate-500 mt-0.5 italic">{l.note}</p>}
                         </div>
                         <div className="flex items-center gap-2">
                           <span className="text-[13px] font-bold text-slate-800">

@@ -480,16 +480,16 @@ const caseWed = {
 
   ALERTS: [
     { level: 'warn', text: 'NEW UACR 45 mg/g: moderately increased albuminuria — shifts priority toward kidney protection.' },
-    { level: 'warn', text: 'BP improved (134/82) but still above the <130/80 goal.' },
+    { level: 'warn', text: 'BP improved (134/82 from 146/92) but still above the <130/80 goal.' },
     { level: 'warn', text: 'A1C improved (7.5%) but above the usual <7% goal.' },
     { level: 'info', text: 'SGLT2 inhibitor and/or GLP-1 RA may now be appropriate — weigh cardiorenal + weight benefits.' },
   ],
 
   PROBLEMS: [
     { name: 'Type 2 diabetes mellitus', detail: 'A1C 7.5% (improved); on metformin 2000 mg', flag: 'warn' },
-    { name: 'Essential hypertension', detail: 'BP 134/82, home avg similar; on lisinopril 20 + HCTZ', flag: 'warn' },
+    { name: 'Essential hypertension', detail: 'BP 134/82 (prior 146/92), home avg similar; on lisinopril 20 + HCTZ', flag: 'warn' },
     { name: 'Moderately increased albuminuria', detail: 'UACR 45 mg/g (new finding)', flag: 'warn' },
-    { name: 'Hyperlipidemia', detail: 'LDL 78 on atorvastatin 20 mg', flag: 'normal' },
+    { name: 'Hyperlipidemia', detail: 'LDL 78 (prior 112) on atorvastatin 20 mg', flag: 'normal' },
     { name: 'Obesity', detail: 'BMI 33.8 (−2.5 kg)', flag: 'warn' },
     { name: 'Bilateral knee osteoarthritis', detail: 'Chronic', flag: 'normal' },
   ],
@@ -855,7 +855,7 @@ const caseThu = {
     { name: 'Type 2 diabetes mellitus', detail: 'A1C 7.1% (near goal); on metformin', flag: 'warn' },
     { name: 'Moderately increased albuminuria', detail: 'UACR 38 mg/g (persistent)', flag: 'warn' },
     { name: 'Essential hypertension', detail: 'BP 126/78 — at goal', flag: 'normal' },
-    { name: 'Hyperlipidemia', detail: 'LDL 70 on statin', flag: 'normal' },
+    { name: 'Hyperlipidemia', detail: 'LDL 70 (prior 112) on statin', flag: 'normal' },
     { name: 'Obesity', detail: 'BMI 32.7 (−5.5 kg total)', flag: 'warn' },
     { name: 'Bilateral knee osteoarthritis', detail: 'Chronic, stable', flag: 'normal' },
   ],
