@@ -86,9 +86,9 @@ const caseTue = {
   ],
 
   PROBLEMS: [
-    { name: 'Essential hypertension', icd10: 'I10', detail: 'Office BP rising; on lisinopril + HCTZ', flag: 'high', noted: '03/2016' },
-    { name: 'Type 2 diabetes mellitus', icd10: 'E11.9', detail: 'A1C 8.2% (trend up); on metformin XR', flag: 'high', noted: '07/2018', alert: 'Health maintenance: Nephropathy screening (UACR) overdue' },
-    { name: 'Hyperlipidemia', icd10: 'E78.5', detail: 'LDL 112, TG 223; not on statin', flag: 'warn', noted: '01/2019', alert: 'Health maintenance: Statin therapy not on file' },
+    { name: 'Essential hypertension', icd10: 'I10', detail: 'Office BP rising; on lisinopril + HCTZ', flag: 'high', noted: '03/2018' },
+    { name: 'Type 2 diabetes mellitus', icd10: 'E11.9', detail: 'A1C 8.2% (trend up); on metformin XR', flag: 'high', noted: '07/2022', alert: 'Health maintenance: Nephropathy screening (UACR) overdue' },
+    { name: 'Hyperlipidemia', icd10: 'E78.5', detail: 'LDL 112, TG 223; not on statin', flag: 'warn', noted: '01/2023', alert: 'Health maintenance: Statin therapy not on file' },
     { name: 'Obesity', icd10: 'E66.9', detail: 'BMI 34.8 kg/m²', flag: 'warn', noted: '09/2015' },
     { name: 'Bilateral knee osteoarthritis', icd10: 'M17.0', detail: 'Chronic; managed with PRN analgesia', flag: 'normal', noted: '11/2020' },
   ],
@@ -97,7 +97,7 @@ const caseTue = {
 
   // VISIBLE med list — ibuprofen intentionally absent (hidden OTC use).
   MEDICATIONS: [
-    { name: 'Metformin XR', dose: '1000 mg', route: 'PO', freq: 'Take 1 tablet by mouth once daily', indication: 'Type 2 diabetes', notes: 'Tolerating', start: '07/15/2018', prescriber: 'Dr. A. Whitfield', lastFilled: '05/20/2026', refills: '2' },
+    { name: 'Metformin XR', dose: '1000 mg', route: 'PO', freq: 'Take 1 tablet by mouth once daily with dinner', indication: 'Type 2 diabetes', notes: 'Tolerating', start: '07/15/2018', prescriber: 'Dr. A. Whitfield', lastFilled: '05/20/2026', refills: '2' },
     { name: 'Lisinopril', dose: '10 mg', route: 'PO', freq: 'Take 1 tablet by mouth once daily', indication: 'Hypertension', notes: '', start: '03/10/2016', prescriber: 'Dr. A. Whitfield', lastFilled: '05/20/2026', refills: '2' },
     { name: 'Hydrochlorothiazide', dose: '12.5 mg', route: 'PO', freq: 'Take 1 tablet by mouth once daily', indication: 'Hypertension', notes: '', start: '03/10/2016', prescriber: 'Dr. A. Whitfield', lastFilled: '05/20/2026', refills: '2' },
     { name: 'Acetaminophen', dose: '500 mg', route: 'PO', freq: 'Take 1 tablet by mouth every 6 hours as needed for pain', indication: 'Knee osteoarthritis', notes: 'As needed', start: '11/05/2020', prescriber: 'Dr. A. Whitfield', lastFilled: '04/10/2026', refills: '1' },
@@ -110,7 +110,7 @@ const caseTue = {
     { name: 'COVID-19 (2025–26)', status: 'Administered 09/30/2025', detail: 'IM - R deltoid - Lot CV5521 - Pfizer', flag: 'normal' },
     { name: 'Pneumococcal (PCV20)', status: 'Due — age/diabetes indicated', flag: 'warn' },
     { name: 'Zoster (Shingrix)', status: 'Due — age ≥50', flag: 'warn' },
-    { name: 'Tdap', status: 'Overdue — last 06/12/2015 (q10yr)', flag: 'high' },
+    { name: 'Tdap', status: 'Overdue — last 06/12/2015 (11 years ago)', flag: 'high' },
   ],
 
   SUBJECTIVE_DOCUMENTED: [
@@ -128,7 +128,7 @@ const caseTue = {
   },
 
   OBJECTIVE_EXTRA: [
-    { label: 'Documented home BP log', value: 'None on file', flag: 'missing' },
+    { label: 'Documented home BP log', value: 'Submitted; average ~144/90 mmHg', flag: 'warn' },
     { label: 'Documented SMBG log', value: 'None on file', flag: 'missing' },
     { label: 'UACR', value: 'Not obtained', flag: 'missing' },
   ],
@@ -166,9 +166,11 @@ const caseTue = {
   INTERVIEW_KNOWLEDGE: [
     { id: 'maria-tue_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'maria-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take ibuprofen 400 mg to 600 mg a few times a week for my knee stiffness, and I also take a daily multivitamin." },
-    { id: 'maria-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a small glass of wine on special family occasions or dinners, but that is about it." },
+    { id: 'maria-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I usually have 1 or 2 glasses of wine on the weekends, but I don't drink during the week." },
     { id: 'maria-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
     { id: 'maria-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had high blood pressure, type 2 diabetes, and had a heart attack at age 62. My mother had high blood pressure and type 2 diabetes, and suffered from diabetic kidney disease. My brother has type 2 diabetes." },
+    { id: 'maria-tue_surg', topic: 'Surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'gallbladder', 'cholecystectomy'], response: 'I had my gallbladder removed when I was 41. No other surgeries.' },
+    { id: 'maria-tue_duration', topic: 'Disease duration', field: 'pmh', keywords: ['how long', 'when were you diagnosed', 'duration', 'years'], response: 'I\'ve had high blood pressure for about 8 years, diabetes for 4 years, and high cholesterol for 3 years.' },
     { id: 'reason', topic: 'Reason for visit', field: null,
       keywords: ['why are you here', 'reason for', 'bring you in', 'what brings', 'referred', 'doctor send', 'visit today'],
       response: 'My doctor said my blood pressure and my diabetes numbers have been creeping up, so he wanted me to come talk with the pharmacist.' },
@@ -180,16 +182,16 @@ const caseTue = {
       response: "Most days I take them… but if I'm honest I probably miss them two or three times a week. Mornings are just chaotic getting out the door." },
     { id: 'currentMeds', topic: 'Current medications', field: 'currentMeds',
       keywords: ['what medicine', 'what medications', 'what are you taking', 'list your med', 'which pills', 'go over your med'],
-      response: "I take the metformin for the sugar, the lisinopril, and the little water pill for blood pressure. And I take Tylenol when my knees act up." },
+      response: "I take the metformin with dinner, and the lisinopril and water pill in the morning. And I take Tylenol when my knees act up." },
     { id: 'otc', topic: 'OTC / NSAIDs / supplements', field: 'otc',
       keywords: ['over the counter', 'otc', 'ibuprofen', 'advil', 'motrin', 'aleve', 'naproxen', 'pain reliever', 'supplement', 'vitamin', 'anything else you take', 'pain medicine'],
       response: "For my knees I usually take some ibuprofen — 400 or 600 — a few times a week. I don't really count that as a medicine though, it's just something I grab over the counter." },
     { id: 'sideEffects', topic: 'Side effects', field: 'sideEffects',
       keywords: ['side effect', 'bother you', 'tolerate', 'upset stomach', 'cough', 'problems with the med'],
-      response: "No, I don't think the pills bother me. I feel fine on them." },
+      response: "No, I don't think the pills bother me now. When I first started the metformin years ago, I did have some nausea and diarrhea for a few weeks, but that completely went away. I feel fine on them now." },
     { id: 'homeBp', topic: 'Home BP readings', field: 'homeBp',
       keywords: ['home blood pressure', 'check your blood pressure', 'bp at home', 'readings at home', 'monitor your pressure', 'numbers at home'],
-      response: "When I do check it at home, it's usually in the 140s over 90s, somewhere around there." },
+      response: "I check it occasionally. I started keeping a log, and my average is around 144 over 90." },
     { id: 'bpTechnique', topic: 'BP measurement technique', field: 'bpTechnique',
       keywords: ['how do you check', 'technique', 'sit when', 'arm position', 'cuff', 'before you check', 'cross your legs', 'rest before'],
       response: "I just check it whenever — sometimes right after I've been moving around the house. I usually have my legs crossed, and I'm honestly not sure the cuff is in the right spot." },
@@ -471,7 +473,7 @@ const caseWed = {
     { label: 'eGFR', value: '74', unit: 'mL/min/1.73m²', flag: 'normal' },
     { label: 'UACR', value: '45', unit: 'mg/g', flag: 'warn', note: 'NEW — moderately increased albuminuria (A2)' },
     { label: 'Total cholesterol', value: '170', unit: 'mg/dL', flag: 'normal' },
-    { label: 'LDL-C', value: '78', unit: 'mg/dL', flag: 'normal', note: 'Improved on statin' },
+    { label: 'LDL-C', value: '78', unit: 'mg/dL', flag: 'normal', note: 'Improved on statin (prior 112)' },
     { label: 'HDL-C', value: '45', unit: 'mg/dL', flag: 'normal' },
     { label: 'Triglycerides', value: '180', unit: 'mg/dL', flag: 'warn' },
   ],
@@ -509,11 +511,11 @@ const caseWed = {
     { name: 'COVID-19', status: 'Up to date', flag: 'normal' },
     { name: 'Pneumococcal (PCV)', status: 'Not documented', flag: 'missing' },
     { name: 'Zoster (Shingrix)', status: 'Not documented', flag: 'missing' },
-    { name: 'Tdap', status: 'Overdue', flag: 'warn' },
+    { name: 'Tdap', status: 'Overdue — last 06/12/2015 (11 years ago)', flag: 'warn' },
   ],
 
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'Interval history', value: 'Returns for 3-month follow-up after med adjustments. Reports feeling "a little better."' },
+    { label: 'Interval history', value: 'Returns for 3-month follow-up after med adjustments (prior office BP 146/92). Reports feeling "a little better."' },
     { label: 'Chief concern', value: 'Unsure whether she is "where she needs to be."' },
     { label: 'Documented symptoms', value: 'No new complaints documented at intake.' },
     { label: 'Home BP log', value: 'Submitted; average 134/82, technique appears appropriate.' },
@@ -565,7 +567,7 @@ const caseWed = {
       response: "I take the metformin with dinner, the blood pressure ones in the morning, and the cholesterol pill at night. I keep them all by the coffee maker so I remember." },
     { id: 'sideEffects', topic: 'Side effects', field: 'sideEffects',
       keywords: ['side effect', 'bother', 'tolerate', 'cough', 'stomach', 'dizzy', 'symptoms from the med'],
-      response: "No, I haven't noticed any side effects. The higher doses seem fine." },
+      response: "No, I haven't noticed any side effects on the new doses. And like I mentioned before, the stomach issues I had with metformin years ago never came back." },
     { id: 'homeBp', topic: 'Home BP readings', field: 'homeBp',
       keywords: ['home blood pressure', 'bp at home', 'readings at home', 'check your blood pressure', 'numbers at home', 'monitor'],
       response: "At home it's been running about 134 over 82 — somewhere in the high 120s to 140 on top. I've been writing them down." },

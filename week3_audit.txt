@@ -1,0 +1,2054 @@
+WEEK 3 COMPLETE UAT / QA BUG REPORT
+
+Asthma + Chronic Obstructive Pulmonary Disease Module
+
+Complete developer / IT handoff — all discrepancies identified in the Week 3 audit
+
+
+
+Report scopeThis is the comprehensive version requested for IT. It preserves the discrepancies identified in the original Week 3 Clinical and Operational Audit rather than filtering to only Tier 1 issues. The purpose is to distinguish true student-documentation omissions from source-data, grading-reference, UI/state, and technical bugs. The report does not invent missing patient information or silently reconcile conflicting values.
+
+
+
+Executive Summary
+
+The dominant finding is a likely source-to-grader synchronization/versioning problem. Across multiple Week 3 patients, the EMR and standardized-patient interview provide one clinical scenario while the grading reference expects materially different information. The discrepancies include medications, symptom frequency, exacerbations, smoking history, allergies, PMH/PSH/family history, eosinophils, spirometry, vitals, anthropometrics, disease-specific scores, and treatment rationale. This creates a situation in which a student can accurately document the patient presented in the system and still be marked incorrect.
+
+Separate from the clinical-data mismatch, the audit identified quiz answer-key/lettering problems, a grading submission JSON error, a Weekly Summary application error, and a quick-documentation/UI concern. These should be tracked as independent software defects.
+
+Most important developer questionAre the EMR, standardized-patient script, grading rubric, answer key, scoring engine, and clinical decision pathway all referencing the same patient/case version? The audit evidence strongly suggests they are not consistently synchronized.
+
+
+
+Priority Definitions
+
+CRITICAL / Tier 1 — Direct clinical-data contradiction, safety issue, grading blocker, or treatment-pathway contradiction.
+
+HIGH / Tier 2 — Missing/unsupported information, major objective-data mismatch, or grading criterion that cannot reasonably be satisfied from the student-facing case.
+
+MEDIUM — UI ambiguity, documentation-state problem, or lower-impact mismatch that still affects usability or grading reliability.
+
+LOW — Educational/UI refinement that does not independently block completion.
+
+
+
+1. MONDAY — QUIZ / GENERAL UI
+
+MON-01 — Answer key refers to answer letters that are not displayed  [MEDIUM]  Source audit item: Monday quiz
+
+Observed / patient-facing data
+
+The quiz answer choices are displayed without A/B/C/D labels.
+
+Expected / grading-reference data
+
+The answer key states the correct answer as a letter (for example, A).
+
+Impact on grading or workflow
+
+The learner cannot reliably determine which displayed option corresponds to the letter in the key.
+
+Recommended developer action
+
+Either display persistent A/B/C/D labels next to every answer choice or remove letter-based answer references and use stable option IDs/text.
+
+
+
+Screenshot evidence — answer choices are not visibly lettered
+
+
+
+
+
+MON-02 — Multi-select answer-key mapping is inconsistent  [HIGH]  Source audit item: Monday quiz
+
+Observed / patient-facing data
+
+The audit reports selecting the 1st, 2nd, and 4th answer choices while the key indicated A, B, and C. The issue was described as continuing across the quiz.
+
+Expected / grading-reference data
+
+The answer key should map to the actual selected option IDs/positions in the rendered question.
+
+Impact on grading or workflow
+
+A student may select the intended options but be graded against different options.
+
+Recommended developer action
+
+Audit the option-ID mapping for all 40 questions. Do not rely on positional letters if the frontend does not expose those letters.
+
+
+
+Screenshot evidence — answer-key mapping
+
+
+
+MON-03 — Answer-key lettering problem persists across the full 40-question quiz  [HIGH]  Source audit item: Monday quiz
+
+Observed / patient-facing data
+
+The audit specifically notes a persistent issue with correct lettering throughout the 40-question quiz.
+
+Expected / grading-reference data
+
+Every question should have a stable, visible option identifier and a matching answer-key identifier.
+
+Impact on grading or workflow
+
+This is potentially a systematic grading defect rather than an isolated question error.
+
+Recommended developer action
+
+Run an automated regression test across all 40 questions comparing rendered option IDs with stored answer-key IDs.
+
+
+
+Screenshot evidence — additional answer mapping
+
+
+
+
+
+MON-04 — Quick documentation may be too generic for asthma/COPD  [LOW]  Source audit item: Monday quick documentation
+
+Observed / patient-facing data
+
+The audit notes that the quick-documentation workflow includes items such as BP and blood glucose even though the Week 3 focus is asthma/COPD.
+
+Expected / grading-reference data
+
+Disease-specific documentation prompts should prioritize respiratory symptoms, exacerbations, inhaler use/technique, adherence, PFTs, eosinophils, immunizations, etc.
+
+Impact on grading or workflow
+
+Generic fields can add cognitive load and make the disease-specific workflow less focused.
+
+Recommended developer action
+
+Consider disease-specific quick-documentation templates while retaining general medical-history fields where appropriate.
+
+
+
+Screenshot evidence — quick documentation
+
+
+
+
+
+
+
+MON-05 — Rubric navigation could be easier while documenting  [LOW]  Source audit item: Monday grading rubric
+
+Observed / patient-facing data
+
+The audit notes that the rubric is useful but would be easier to use if it remained accessible after switching between tabs/workflow areas.
+
+Expected / grading-reference data
+
+The learner should be able to reference grading criteria without repeatedly losing their place in the documentation workflow.
+
+Impact on grading or workflow
+
+Usability issue; may contribute to missed rubric elements.
+
+Recommended developer action
+
+Consider a persistent rubric panel, expandable side panel, or stable second-pane view.
+
+
+
+Screenshot evidence — grading rubric
+
+
+
+
+
+2. TUESDAY — PATIENT CASE / GRADING MISMATCHES
+
+2.1 Sarah Thompson — Tuesday
+
+SAR-TUE-01 — Family-history information is not obtainable from the patient  [HIGH]  Source audit item: Sarah — Tuesday
+
+Observed / patient-facing data
+
+The patient could not provide the brother's relevant history when asked.
+
+Expected / grading-reference data
+
+The grading reference includes a specific brother/family-history element.
+
+Impact on grading or workflow
+
+The student cannot accurately document a fact the standardized patient cannot establish.
+
+Recommended developer action
+
+Only grade information traceable to the EMR or standardized-patient response. If the fact is required, add it to the patient script or chart.
+
+
+
+Sarah interview/rubric evidence
+
+
+
+SAR-TUE-02 — Objective values visible to the student do not match the answer key  [CRITICAL]  Source audit item: Sarah — Tuesday
+
+Observed / patient-facing data
+
+The audit found laboratory/vital values visible in the EMR that differ from the grading/reference values.
+
+Expected / grading-reference data
+
+The grading reference should use the exact values displayed in the student-facing EMR.
+
+Impact on grading or workflow
+
+A student can copy the EMR accurately and still lose points.
+
+Recommended developer action
+
+Use one authoritative case-data object for EMR display and grading.
+
+
+
+Sarah objective-data/reference evidence
+
+
+
+2.2 Maria Thompson — Tuesday
+
+MAR-TUE-01 — Reference expects information the patient cannot provide  [HIGH]  Source audit item: Maria — Tuesday
+
+Observed / patient-facing data
+
+Maria was unable to answer several questions that were subsequently deducted in grading.
+
+Expected / grading-reference data
+
+The grading key expects specific answers/history not established during the interview.
+
+Impact on grading or workflow
+
+The student is effectively graded on information that was unavailable.
+
+Recommended developer action
+
+Permit 'unknown/not assessed/not available' when the case does not establish a value; alternatively add the missing information to the scripted encounter.
+
+
+
+Maria interview evidence
+
+
+
+Maria interview/reference evidence
+
+
+
+Maria follow-up evidence
+
+
+
+Maria grading/reference evidence
+
+
+
+Maria additional grading/reference evidence
+
+
+
+
+
+3. WEDNESDAY — GRADING / OBJECTIVE-DATA / TECHNICAL ISSUES
+
+3.1 Sarah Thompson
+
+SAR-WED-01 — SOAP-note grading submission produces an error  [CRITICAL]  Source audit item: Sarah — Wednesday
+
+Observed / patient-facing data
+
+Submitting the SOAP note for grading produced an error during the audit; the audit notes the grading error occurred again.
+
+Expected / grading-reference data
+
+Submission should complete and return a grade/rubric result.
+
+Impact on grading or workflow
+
+Blocks the core assessment workflow.
+
+Recommended developer action
+
+Capture client/server logs, request and response payloads, JSON parsing errors, authentication/session state, and timeout behavior. Add graceful error handling.
+
+
+
+Sarah grading-submission error evidence
+
+
+
+SAR-WED-02 — Answer key does not match EMR labs/vitals  [CRITICAL]  Source audit item: Sarah — Wednesday
+
+Observed / patient-facing data
+
+Laboratory and vital-sign data visible in the EMR differ from values used by the answer key.
+
+Expected / grading-reference data
+
+The answer key should use the same objective data shown to the learner.
+
+Impact on grading or workflow
+
+Clinical assessment and grading can both be affected.
+
+Recommended developer action
+
+Synchronize the answer key to the authoritative EMR case data.
+
+
+
+Sarah objective-data/reference evidence
+
+
+
+3.2 Bob Jenkins
+
+BOB-WED-01 — Patient cannot provide information required by answer key  [HIGH]  Source audit item: Bob — Wednesday
+
+Observed / patient-facing data
+
+The patient was unable to answer questions that were marked incorrect in the grading key.
+
+Expected / grading-reference data
+
+The answer key expects information not established during the interview.
+
+Impact on grading or workflow
+
+Students cannot reasonably infer or document information they were never given.
+
+Recommended developer action
+
+Audit every rubric criterion for traceability to EMR, chart, preceptor-accessible data, or standardized-patient response.
+
+
+
+Bob interview evidence
+
+
+
+BOB-WED-02 — Maintenance inhaler in grading key differs from EMR  [CRITICAL]  Source audit item: Bob — Wednesday
+
+Observed / patient-facing data
+
+EMR medication list shows tiotropium (Spiriva HandiHaler) 18 mcg once daily.
+
+Expected / grading-reference data
+
+The grading key expects a different inhaler regimen, specifically umeclidinium/vilanterol (Anoro Ellipta) in the detailed audit.
+
+Impact on grading or workflow
+
+Medication selection directly changes the appropriate clinical assessment and plan.
+
+Recommended developer action
+
+Verify medication-list versioning and ensure the grading key is linked to the same medication list as the EMR.
+
+
+
+Bob medication/reference evidence
+
+
+
+BOB-WED-03 — Objective data are keyed incorrectly  [CRITICAL]  Source audit item: Bob — Wednesday
+
+Observed / patient-facing data
+
+The audit found that vitals/objective data in the EMR do not match values used by the answer key.
+
+Expected / grading-reference data
+
+Reference values should match the student-facing chart.
+
+Impact on grading or workflow
+
+A student documenting the EMR accurately may be graded incorrectly.
+
+Recommended developer action
+
+Use the EMR as source of truth or explicitly version-lock the grading reference to the same data set.
+
+
+
+Bob grading/reference evidence
+
+
+
+Bob clinical-data evidence
+
+
+
+3.3 Maria Thompson
+
+MAR-WED-01 — SOAP grading returns JSON parsing error  [CRITICAL]  Source audit item: Maria — Wednesday
+
+Observed / patient-facing data
+
+The grading process displayed “Unexpected end of JSON input.” The audit states this occurred on both submission attempts.
+
+Expected / grading-reference data
+
+Successful SOAP submission and grading result.
+
+Impact on grading or workflow
+
+Blocks the core grading workflow.
+
+Recommended developer action
+
+Inspect request/response JSON validity, serialization, empty/null response handling, API failures, and client parsing. Log the failing payload safely.
+
+
+
+Maria grading interface
+
+
+
+Maria grading/error evidence
+
+
+
+
+
+4. THURSDAY — SARAH THOMPSON: COMPLETE DISCREPANCY LIST
+
+The following items reproduce the detailed clinical/data contradictions identified in the audit after additional patient interviewing. These are especially important because they change asthma-control classification and future-risk assessment.
+
+SAR-THU-01 — Daytime asthma symptom frequency  [CRITICAL]  Source audit item: Source audit #1
+
+Observed / patient-facing data
+
+Patient: 0 daytime symptoms in the past 4 weeks.
+
+Expected / grading-reference data
+
+Grading/reference: 1–2 daytime symptoms per week.
+
+Impact on grading or workflow
+
+Direct contradiction affecting asthma-control classification.
+
+Recommended developer action
+
+Synchronize the patient script/reference and verify the intended longitudinal scenario.
+
+
+
+SAR-THU-02 — Reliever use  [CRITICAL]  Source audit item: Source audit #2
+
+Observed / patient-facing data
+
+Patient: no additional Symbicort puffs for quick relief.
+
+Expected / grading-reference data
+
+Reference: 1–2 reliever uses per week.
+
+Impact on grading or workflow
+
+Direct contradiction affecting control assessment.
+
+Recommended developer action
+
+Synchronize reliever-use history.
+
+
+
+SAR-THU-03 — Nighttime asthma symptoms  [CRITICAL]  Source audit item: Source audit #3
+
+Observed / patient-facing data
+
+Patient: no nighttime awakenings.
+
+Expected / grading-reference data
+
+Reference: approximately once monthly.
+
+Impact on grading or workflow
+
+Direct contradiction affecting control assessment.
+
+Recommended developer action
+
+Synchronize symptom history.
+
+
+
+SAR-THU-04 — Recent asthma exacerbation  [CRITICAL]  Source audit item: Source audit #4
+
+Observed / patient-facing data
+
+Patient: no exacerbations since the last visit.
+
+Expected / grading-reference data
+
+Reference: viral-triggered exacerbation approximately 6 weeks ago.
+
+Impact on grading or workflow
+
+Changes future-risk assessment.
+
+Recommended developer action
+
+Synchronize exacerbation history.
+
+
+
+SAR-THU-05 — Urgent-care / ED treatment  [CRITICAL]  Source audit item: Source audit #5
+
+Observed / patient-facing data
+
+Patient: no urgent care, ED visit, or steroids for an asthma flare.
+
+Expected / grading-reference data
+
+Reference: urgent-care visit for the exacerbation.
+
+Impact on grading or workflow
+
+Direct contradiction in care setting.
+
+Recommended developer action
+
+Synchronize exacerbation event and care setting.
+
+
+
+SAR-THU-06 — Systemic corticosteroid use  [CRITICAL]  Source audit item: Source audit #6
+
+Observed / patient-facing data
+
+Patient: no prednisone/systemic steroids.
+
+Expected / grading-reference data
+
+Reference: 5-day prednisone course.
+
+Impact on grading or workflow
+
+Direct medication/treatment-history contradiction.
+
+Recommended developer action
+
+Synchronize exacerbation treatment.
+
+
+
+SAR-THU-07 — Allergic-rhinitis medication  [HIGH]  Source audit item: Source audit #7
+
+Observed / patient-facing data
+
+Patient: loratadine 10 mg PRN.
+
+Expected / grading-reference data
+
+Reference: cetirizine 10 mg daily plus intranasal fluticasone.
+
+Impact on grading or workflow
+
+Medication-history discrepancy and different rhinitis-control assessment.
+
+Recommended developer action
+
+Synchronize medication list and allergic-rhinitis history.
+
+
+
+SAR-THU-08 — Symbicort dose/regimen  [CRITICAL]  Source audit item: Source audit #8
+
+Observed / patient-facing data
+
+Patient/EMR: 2 puffs BID.
+
+Expected / grading-reference data
+
+Reference: 1 inhalation BID + PRN.
+
+Impact on grading or workflow
+
+Potentially clinically significant dose/regimen discrepancy.
+
+Recommended developer action
+
+Verify the intended SMART regimen and ensure EMR, patient script, and grading key use the same dose.
+
+
+
+SAR-THU-09 — FEV1/FVC  [HIGH]  Source audit item: Source audit #9
+
+Observed / patient-facing data
+
+EMR: 0.80.
+
+Expected / grading-reference data
+
+Reference: 0.77.
+
+Impact on grading or workflow
+
+Conflicting PFT value.
+
+Recommended developer action
+
+Synchronize PFT data.
+
+
+
+SAR-THU-10 — Bronchodilator response  [HIGH]  Source audit item: Source audit #10
+
+Observed / patient-facing data
+
+EMR: post-bronchodilator response not documented.
+
+Expected / grading-reference data
+
+Reference: 8% / 160 mL improvement.
+
+Impact on grading or workflow
+
+Missing/conflicting PFT data.
+
+Recommended developer action
+
+Either expose the result in the EMR or remove it from grading if unavailable.
+
+
+
+SAR-THU-11 — Vital signs  [HIGH]  Source audit item: Source audit #11
+
+Observed / patient-facing data
+
+EMR: HR 88 bpm, RR 18/min, SpO2 97%.
+
+Expected / grading-reference data
+
+Reference: HR 76 bpm, RR 16/min, SpO2 99%.
+
+Impact on grading or workflow
+
+Conflicting objective measurements.
+
+Recommended developer action
+
+Synchronize vital-sign source data.
+
+
+
+SAR-THU-12 — Weight/BMI  [HIGH]  Source audit item: Source audit #12
+
+Observed / patient-facing data
+
+EMR: 65 kg; BMI 23.9.
+
+Expected / grading-reference data
+
+Reference: different weight/BMI values.
+
+Impact on grading or workflow
+
+Objective-data discrepancy.
+
+Recommended developer action
+
+Synchronize anthropometric data.
+
+
+
+SAR-THU-13 — Asthma diagnosis age/history  [HIGH]  Source audit item: Source audit #13
+
+Observed / patient-facing data
+
+Patient: unsure when first diagnosed; no specific age established.
+
+Expected / grading-reference data
+
+Reference expects asthma diagnosed at age 8.
+
+Impact on grading or workflow
+
+Unsupported reference history.
+
+Recommended developer action
+
+Do not deduct unless the age is available from the chart/script or explicitly elicited.
+
+
+
+SAR-THU-14 — Hospitalization/ED history  [HIGH]  Source audit item: Source audit #14
+
+Observed / patient-facing data
+
+Patient does not recall hospitalization/ED treatment for asthma.
+
+Expected / grading-reference data
+
+Reference contains a different historical scenario.
+
+Impact on grading or workflow
+
+Changes severity/risk history.
+
+Recommended developer action
+
+Synchronize longitudinal asthma history.
+
+
+
+SAR-THU-15 — Surgical history  [MEDIUM]  Source audit item: Source audit #15
+
+Observed / patient-facing data
+
+Patient does not recall prior surgeries.
+
+Expected / grading-reference data
+
+Reference expects a surgical-history entry.
+
+Impact on grading or workflow
+
+Unsupported history.
+
+Recommended developer action
+
+Only grade documented/available surgical history.
+
+
+
+SAR-THU-16 — Social history / vaccines / recreational drugs  [MEDIUM]  Source audit item: Source audit #16
+
+Observed / patient-facing data
+
+Patient could not provide work/living details or vaccine status; denies recreational drugs.
+
+Expected / grading-reference data
+
+Reference expects additional social history and potentially specific vaccine information.
+
+Impact on grading or workflow
+
+Student should not invent missing information.
+
+Recommended developer action
+
+Provide the information in the chart/script or grade documentation that the information was not available and requires verification.
+
+
+
+Sarah detailed grading/reference evidence
+
+
+
+Sarah reference/clinical-data evidence
+
+
+
+Sarah additional reference evidence
+
+
+
+
+
+5. THURSDAY — BOB JENKINS: COMPLETE DISCREPANCY LIST
+
+The audit identifies a particularly important case-definition conflict: the EMR describes Bob as well controlled on LAMA therapy, while the grading reference describes a patient with more symptoms/exacerbations and a rationale for escalation to triple therapy.
+
+BOB-THU-01 — Maintenance inhaler  [CRITICAL]  Source audit item: Source audit #1
+
+Observed / patient-facing data
+
+EMR/patient: tiotropium (Spiriva HandiHaler) 18 mcg once daily.
+
+Expected / grading-reference data
+
+Grading/reference: umeclidinium/vilanterol (Anoro Ellipta).
+
+Impact on grading or workflow
+
+Entire medication regimen and treatment rationale differ.
+
+Recommended developer action
+
+Verify the authoritative medication list and case version.
+
+
+
+BOB-THU-02 — Exacerbation history  [CRITICAL]  Source audit item: Source audit #2
+
+Observed / patient-facing data
+
+Patient: 0 exacerbations in the relevant interval.
+
+Expected / grading-reference data
+
+Reference: 2 moderate exacerbations in approximately 3 months.
+
+Impact on grading or workflow
+
+Changes COPD risk group and treatment selection.
+
+Recommended developer action
+
+Synchronize exacerbation history.
+
+
+
+BOB-THU-03 — Eosinophil count  [CRITICAL]  Source audit item: Source audit #3
+
+Observed / patient-facing data
+
+EMR: 150 cells/µL.
+
+Expected / grading-reference data
+
+Reference: 310 cells/µL.
+
+Impact on grading or workflow
+
+Changes eosinophil-based ICS/triple-therapy rationale.
+
+Recommended developer action
+
+Synchronize lab data.
+
+
+
+BOB-THU-04 — CAT score  [HIGH]  Source audit item: Source audit #4
+
+Observed / patient-facing data
+
+CAT was not obtained/documented in the student-facing information.
+
+Expected / grading-reference data
+
+Reference: CAT = 17.
+
+Impact on grading or workflow
+
+Student cannot invent a standardized score.
+
+Recommended developer action
+
+Make the CAT score accessible or explicitly allow 'not obtained.'
+
+
+
+BOB-THU-05 — Treatment recommendation is opposite  [CRITICAL]  Source audit item: Source audit #5
+
+Observed / patient-facing data
+
+EMR/program: continue LAMA; chart problem list states COPD is well controlled on LAMA.
+
+Expected / grading-reference data
+
+Reference: escalate to triple therapy.
+
+Impact on grading or workflow
+
+The same patient is being directed toward opposite clinical decisions.
+
+Recommended developer action
+
+Resolve source data before finalizing treatment logic or grading.
+
+
+
+BOB-THU-06 — Albuterol frequency  [CRITICAL]  Source audit item: Source audit #6
+
+Observed / patient-facing data
+
+Patient: approximately weekly or less.
+
+Expected / grading-reference data
+
+Reference: approximately daily.
+
+Impact on grading or workflow
+
+Changes symptom-burden interpretation.
+
+Recommended developer action
+
+Synchronize rescue-inhaler frequency.
+
+
+
+BOB-THU-07 — PFT values  [HIGH]  Source audit item: Source audit #7
+
+Observed / patient-facing data
+
+EMR: FEV1/FVC 0.62; FEV1 58% predicted.
+
+Expected / grading-reference data
+
+Reference: FEV1/FVC 0.57; FEV1 60% predicted.
+
+Impact on grading or workflow
+
+Conflicting objective data.
+
+Recommended developer action
+
+Synchronize PFT values.
+
+
+
+BOB-THU-08 — Vital signs/anthropometrics  [HIGH]  Source audit item: Source audit #8
+
+Observed / patient-facing data
+
+EMR and reference differ in BP, HR, weight, height, BMI, and SpO2.
+
+Expected / grading-reference data
+
+Reference uses a different objective dataset.
+
+Impact on grading or workflow
+
+Student can be graded against unavailable values.
+
+Recommended developer action
+
+Use one source-of-truth dataset.
+
+
+
+BOB-THU-09 — Smoking cessation timing  [HIGH]  Source audit item: Source audit #9
+
+Observed / patient-facing data
+
+Patient: quit approximately 10 years ago; approximately 30 pack-years documented.
+
+Expected / grading-reference data
+
+Reference: quit approximately 5 years ago and expects 45 pack-years in the detailed case.
+
+Impact on grading or workflow
+
+Direct smoking-history discrepancy.
+
+Recommended developer action
+
+Synchronize pack-year and quit-date fields.
+
+
+
+BOB-THU-10 — EMR problem-list/treatment-pathway contradiction  [CRITICAL]  Source audit item: Source audit #10
+
+Observed / patient-facing data
+
+EMR says “COPD — Well controlled on LAMA” and asks why continuing LAMA is appropriate.
+
+Expected / grading-reference data
+
+Grading feedback describes frequent exacerbations, CAT 17, eosinophils 310, and escalation to triple therapy.
+
+Impact on grading or workflow
+
+This is a program-level clinical pathway contradiction.
+
+Recommended developer action
+
+Verify that the clinical decision engine is reading the same patient data as the grading key.
+
+
+
+BOB-THU-11 — COPD diagnosis duration  [HIGH]  Source audit item: Source audit #22
+
+Observed / patient-facing data
+
+Patient/EMR interview did not establish duration.
+
+Expected / grading-reference data
+
+Reference: COPD diagnosed 4 years ago.
+
+Impact on grading or workflow
+
+Unsupported reference history.
+
+Recommended developer action
+
+Expose duration or do not deduct for its absence.
+
+
+
+BOB-THU-12 — Hypertension history/duration  [MEDIUM]  Source audit item: Source audit #23
+
+Observed / patient-facing data
+
+EMR contains lisinopril 20 mg daily, implying hypertension, but duration was not established in the interview.
+
+Expected / grading-reference data
+
+Reference expects hypertension and duration.
+
+Impact on grading or workflow
+
+Missing documentation rather than a true contradiction.
+
+Recommended developer action
+
+Allow documentation based on available evidence or provide the duration.
+
+
+
+BOB-THU-13 — Hyperlipidemia history/duration  [MEDIUM]  Source audit item: Source audit #24
+
+Observed / patient-facing data
+
+EMR contains atorvastatin 20 mg daily, implying hyperlipidemia, but duration was not established.
+
+Expected / grading-reference data
+
+Reference expects hyperlipidemia and duration.
+
+Impact on grading or workflow
+
+Missing documentation rather than a direct contradiction.
+
+Recommended developer action
+
+Provide/grade only the available history.
+
+
+
+BOB-THU-14 — Surgical history  [MEDIUM]  Source audit item: Source audit #25
+
+Observed / patient-facing data
+
+Patient/available SOAP does not establish appendectomy.
+
+Expected / grading-reference data
+
+Reference: appendectomy.
+
+Impact on grading or workflow
+
+Unsupported historical information.
+
+Recommended developer action
+
+Expose surgical history or do not deduct for its absence.
+
+
+
+BOB-THU-15 — Family history — father  [MEDIUM]  Source audit item: Source audit #26
+
+Observed / patient-facing data
+
+Patient: father with emphysema/COPD from smoking.
+
+Expected / grading-reference data
+
+Reference: father COPD and CAD.
+
+Impact on grading or workflow
+
+CAD is unsupported by the patient interview.
+
+Recommended developer action
+
+Only grade the information actually established.
+
+
+
+BOB-THU-16 — Family history — mother  [NONE / CONSISTENT]  Source audit item: Source audit #27
+
+Observed / patient-facing data
+
+Patient: mother with hypertension.
+
+Expected / grading-reference data
+
+Reference: mother with hypertension.
+
+Impact on grading or workflow
+
+No discrepancy identified.
+
+Recommended developer action
+
+No change required; included here for completeness.
+
+
+
+BOB-THU-17 — Family history — brother  [MEDIUM]  Source audit item: Source audit #28
+
+Observed / patient-facing data
+
+Brother COPD history not established in interview.
+
+Expected / grading-reference data
+
+Reference: brother with COPD.
+
+Impact on grading or workflow
+
+Unsupported reference information.
+
+Recommended developer action
+
+Provide it in source data or do not deduct.
+
+
+
+BOB-THU-18 — CAT score missing  [HIGH]  Source audit item: Source audit #29
+
+Observed / patient-facing data
+
+Reference requires CAT 17; score was not available to the student.
+
+Expected / grading-reference data
+
+CAT 17.
+
+Impact on grading or workflow
+
+Major standardized COPD assessment cannot be fabricated.
+
+Recommended developer action
+
+Expose score in EMR or provide a preceptor-accessible workflow.
+
+
+
+BOB-THU-19 — CAT interpretation  [HIGH]  Source audit item: Source audit #30
+
+Observed / patient-facing data
+
+No CAT score available, so CAT ≥10 and its interpretation cannot be documented accurately.
+
+Expected / grading-reference data
+
+Reference expects CAT 17 and persistent symptom burden.
+
+Impact on grading or workflow
+
+The grader requires a derived interpretation from a hidden value.
+
+Recommended developer action
+
+Do not require the interpretation unless the score is accessible.
+
+
+
+BOB-THU-20 — Exacerbation frequency over 3 months / 12 months  [CRITICAL]  Source audit item: Source audit #31
+
+Observed / patient-facing data
+
+Patient/EMR: zero exacerbations in the audited scenario.
+
+Expected / grading-reference data
+
+Reference: 2 exacerbations in ~3 months and 3 in 12 months.
+
+Impact on grading or workflow
+
+Case-definition conflict that changes treatment.
+
+Recommended developer action
+
+Synchronize longitudinal exacerbation history.
+
+
+
+BOB-THU-21 — Eosinophil-based ICS eligibility  [CRITICAL]  Source audit item: Source audit #32
+
+Observed / patient-facing data
+
+EMR: eosinophils 150 cells/µL.
+
+Expected / grading-reference data
+
+Reference: 310 cells/µL (≥300 threshold used for rationale).
+
+Impact on grading or workflow
+
+The grading rationale depends on a lab value not present in the EMR.
+
+Recommended developer action
+
+Synchronize eosinophil data.
+
+
+
+BOB-THU-22 — Combined exacerbation + eosinophil treatment rationale  [CRITICAL]  Source audit item: Source audit #33
+
+Observed / patient-facing data
+
+Actual case: no exacerbations + eosinophils 150.
+
+Expected / grading-reference data
+
+Reference: frequent exacerbations + eosinophils 310.
+
+Impact on grading or workflow
+
+Treatment recommendation is based on a completely different risk phenotype.
+
+Recommended developer action
+
+Resolve source-data mismatch before grading treatment rationale.
+
+
+
+BOB-THU-23 — GOLD 2026 treatment rationale  [CRITICAL]  Source audit item: Source audit #34
+
+Observed / patient-facing data
+
+Program/EMR supports continuing LAMA in the well-controlled scenario.
+
+Expected / grading-reference data
+
+Grading expects GOLD 2026 reasoning for triple-therapy escalation.
+
+Impact on grading or workflow
+
+Opposite clinical pathway is encoded for the same apparent patient.
+
+Recommended developer action
+
+Version-lock the treatment pathway to the patient case.
+
+
+
+BOB-THU-24 — Prior adherence barrier  [HIGH]  Source audit item: Source audit #35
+
+Observed / patient-facing data
+
+Patient currently reports essentially perfect adherence to Spiriva; prior 3–4 days/week adherence problem was not established in the available interview.
+
+Expected / grading-reference data
+
+Reference expects a prior adherence barrier followed by improvement.
+
+Impact on grading or workflow
+
+Student is graded on a historical behavior not established.
+
+Recommended developer action
+
+Add the historical question/answer or remove the grading requirement.
+
+
+
+BOB-THU-25 — Medication-reminder strategy  [MEDIUM]  Source audit item: Source audit #36
+
+Observed / patient-facing data
+
+Patient reports consistent use but no specific reminder/routine strategy was obtained.
+
+Expected / grading-reference data
+
+Reference expects documentation of reminder/routine strategies.
+
+Impact on grading or workflow
+
+Behavioral detail is unavailable.
+
+Recommended developer action
+
+Only grade it if the interview elicits it.
+
+
+
+BOB-THU-26 — Missing/unclear source-audit item #37  [MEDIUM]  Source audit item: Source audit #37 gap in original audit numbering
+
+Observed / patient-facing data
+
+The original audit numbering jumps from 36 to 38; no distinct #37 issue is clearly available in the retrieved source text.
+
+Expected / grading-reference data
+
+Expected: continuous issue numbering or a clearly identified #37.
+
+Impact on grading or workflow
+
+Creates traceability ambiguity for IT and makes it harder to confirm that every source finding was transferred.
+
+Recommended developer action
+
+Review the original audit for the intended #37 item and preserve its wording if one exists. Do not invent a replacement.
+
+
+
+BOB-THU-27 — Social history  [HIGH]  Source audit item: Source audit #38
+
+Observed / patient-facing data
+
+Marital status, living situation, occupation, and recreational drug use were not established in the interview used for grading.
+
+Expected / grading-reference data
+
+Reference expects these elements.
+
+Impact on grading or workflow
+
+Student is expected to document information not available.
+
+Recommended developer action
+
+Provide the data or grade 'not assessed/unknown.'
+
+
+
+BOB-THU-28 — Physical activity limitation  [HIGH]  Source audit item: Source audit #39
+
+Observed / patient-facing data
+
+Patient reports improved activity and less dyspnea.
+
+Expected / grading-reference data
+
+Reference expects ongoing activity limitation/dyspnea.
+
+Impact on grading or workflow
+
+Conflicting clinical picture.
+
+Recommended developer action
+
+Synchronize symptom/activity history.
+
+
+
+BOB-THU-29 — Concern about COPD progression  [MEDIUM]  Source audit item: Source audit #40
+
+Observed / patient-facing data
+
+Patient reports no major concern because he feels better.
+
+Expected / grading-reference data
+
+Reference expects concern about future COPD progression.
+
+Impact on grading or workflow
+
+Patient-centered goal/history mismatch.
+
+Recommended developer action
+
+Do not require a concern the patient did not express.
+
+
+
+BOB-THU-30 — Goal of reducing exacerbations  [MEDIUM]  Source audit item: Source audit #41
+
+Observed / patient-facing data
+
+Patient's stated goals: breathe comfortably, stay active, avoid getting winded, improve ability around the house/yard.
+
+Expected / grading-reference data
+
+Reference expects an explicit goal of reducing exacerbations.
+
+Impact on grading or workflow
+
+Reference-specific goal is not patient-reported.
+
+Recommended developer action
+
+Grade patient-stated goals; if an exacerbation-reduction goal is pedagogically required, explicitly ask it.
+
+
+
+Bob case/reference evidence
+
+
+
+Bob grading/reference evidence
+
+
+
+Bob module/clinical-pathway evidence
+
+
+
+Bob UI/reference evidence
+
+
+
+
+
+6. THURSDAY — MARIA THOMPSON: COMPLETE DISCREPANCY LIST
+
+MAR-THU-01 — Entire patient case does not match grading reference  [CRITICAL]  Source audit item: Source audit Tier 1 #1
+
+Observed / patient-facing data
+
+EMR/patient: Trelegy + mepolizumab; no exacerbations in 6 months; never smoker; NKDA; significant improvement.
+
+Expected / grading-reference data
+
+Reference: Symbicort + Spiriva; recent exacerbation(s); former smoker; sulfonamide allergy; uncontrolled allergic rhinitis; different PMH/family history and objective data.
+
+Impact on grading or workflow
+
+A student can accurately document the presented patient and still receive a low score because the rubric evaluates a different clinical scenario.
+
+Recommended developer action
+
+Treat this as a case/version synchronization defect. Verify EMR → standardized patient → rubric → scoring-engine mapping.
+
+
+
+MAR-THU-02 — Medication-list mismatch  [CRITICAL]  Source audit item: Source audit Tier 1 #2
+
+Observed / patient-facing data
+
+Patient: Trelegy + albuterol + mepolizumab.
+
+Expected / grading-reference data
+
+Reference: Symbicort + Spiriva + albuterol + other medications.
+
+Impact on grading or workflow
+
+Forces a different medication assessment/plan if the student follows the grading key.
+
+Recommended developer action
+
+Synchronize medication lists.
+
+
+
+MAR-THU-03 — Biologic-therapy mismatch  [CRITICAL]  Source audit item: Source audit Tier 1 #3
+
+Observed / patient-facing data
+
+Patient is receiving mepolizumab 100 mg every 4 weeks and reports significant improvement.
+
+Expected / grading-reference data
+
+Reference does not reflect the same existing-biologic treatment scenario.
+
+Impact on grading or workflow
+
+Assessment of biologic response, adherence, monitoring, and continuation becomes inconsistent.
+
+Recommended developer action
+
+Confirm whether the case is intended to evaluate biologic initiation, continuation, or response.
+
+
+
+MAR-THU-04 — Exacerbation-history mismatch  [CRITICAL]  Source audit item: Source audit Tier 1 #4
+
+Observed / patient-facing data
+
+Patient: 0 exacerbations in 6 months; no urgent care, ED, hospitalization, steroids, or antibiotics.
+
+Expected / grading-reference data
+
+Reference expects recent exacerbation(s) and prior exacerbation history.
+
+Impact on grading or workflow
+
+Changes severity/control and treatment recommendations.
+
+Recommended developer action
+
+Synchronize longitudinal exacerbation history.
+
+
+
+MAR-THU-05 — Smoking-history mismatch  [CRITICAL]  Source audit item: Source audit Tier 1 #5
+
+Observed / patient-facing data
+
+Patient: never smoked or used tobacco.
+
+Expected / grading-reference data
+
+Reference: former smoker with pack-year history.
+
+Impact on grading or workflow
+
+Direct contradiction in COPD risk history.
+
+Recommended developer action
+
+Synchronize tobacco history.
+
+
+
+MAR-THU-06 — Allergy-history mismatch  [CRITICAL]  Source audit item: Source audit Tier 1 #6
+
+Observed / patient-facing data
+
+Patient: no known medication or other allergies.
+
+Expected / grading-reference data
+
+Reference: sulfonamide allergy.
+
+Impact on grading or workflow
+
+Potential medication-safety issue and direct contradiction.
+
+Recommended developer action
+
+Synchronize allergy data at the source.
+
+
+
+MAR-THU-07 — Eosinophil-value mismatch  [CRITICAL]  Source audit item: Source audit Tier 1 #7
+
+Observed / patient-facing data
+
+EMR: 50 cells/µL, documented in the context of biologic therapy.
+
+Expected / grading-reference data
+
+Reference: 380 cells/µL.
+
+Impact on grading or workflow
+
+Changes phenotype/treatment rationale.
+
+Recommended developer action
+
+Synchronize laboratory data.
+
+
+
+MAR-THU-08 — Allergic-rhinitis status/treatment mismatch  [HIGH]  Source audit item: Source audit Tier 1 #8
+
+Observed / patient-facing data
+
+Patient: cetirizine PRN and saline spray; allergies doing okay.
+
+Expected / grading-reference data
+
+Reference: uncontrolled allergic rhinitis, stopped intranasal fluticasone, expected restart.
+
+Impact on grading or workflow
+
+Different diagnosis/control status and treatment plan.
+
+Recommended developer action
+
+Synchronize rhinitis history and medication list.
+
+
+
+MAR-THU-09 — PMH mismatch  [HIGH]  Source audit item: Source audit Tier 1 #9
+
+Observed / patient-facing data
+
+Patient reports ACO as primary known condition and does not recall other major medical issues.
+
+Expected / grading-reference data
+
+Reference includes additional conditions such as hypertension and osteopenia.
+
+Impact on grading or workflow
+
+Student is penalized for not documenting conditions not provided.
+
+Recommended developer action
+
+Only grade PMH that is available; alternatively provide the missing history.
+
+
+
+MAR-THU-10 — Surgical-history mismatch  [MEDIUM]  Source audit item: Source audit Tier 1 #10
+
+Observed / patient-facing data
+
+Patient does not recall prior surgeries.
+
+Expected / grading-reference data
+
+Reference: cholecystectomy.
+
+Impact on grading or workflow
+
+Student cannot accurately document the expected surgery from the available interview.
+
+Recommended developer action
+
+Expose surgical history or do not deduct for its absence.
+
+
+
+MAR-THU-11 — Family-history mismatch  [MEDIUM]  Source audit item: Source audit Tier 2 #11
+
+Observed / patient-facing data
+
+Patient: mother asthma; father chronic bronchitis/COPD.
+
+Expected / grading-reference data
+
+Reference additionally expects father CAD, mother allergic rhinitis, and other family-history details.
+
+Impact on grading or workflow
+
+Missing/unsupported expected family-history elements.
+
+Recommended developer action
+
+Only grade information available from the case.
+
+
+
+MAR-THU-12 — Social-history mismatch  [MEDIUM]  Source audit item: Source audit Tier 2 #12
+
+Observed / patient-facing data
+
+Marital status, living situation, occupation/retirement, and social support were not established.
+
+Expected / grading-reference data
+
+Reference expects these elements.
+
+Impact on grading or workflow
+
+Student is expected to document unavailable information.
+
+Recommended developer action
+
+Provide the information or accept unknown/not assessed.
+
+
+
+MAR-THU-13 — PFT mismatch  [HIGH]  Source audit item: Source audit Tier 2 #13
+
+Observed / patient-facing data
+
+EMR: FEV1/FVC 0.60; FEV1 1.65 L / 66% predicted; FVC 2.75 L.
+
+Expected / grading-reference data
+
+Reference expects different values.
+
+Impact on grading or workflow
+
+Objective clinical data used for assessment do not match grading data.
+
+Recommended developer action
+
+Synchronize PFT data.
+
+
+
+MAR-THU-14 — Vital-sign mismatch  [HIGH]  Source audit item: Source audit Tier 2 #14
+
+Observed / patient-facing data
+
+EMR and grading reference contain different BP, HR, RR, SpO2, weight, and BMI values.
+
+Expected / grading-reference data
+
+Reference uses a different objective dataset.
+
+Impact on grading or workflow
+
+Student may be graded against objective values not present in the chart.
+
+Recommended developer action
+
+Synchronize vitals and anthropometrics.
+
+
+
+MAR-THU-15 — ACT/CAT score missing or mismatched  [HIGH]  Source audit item: Source audit Tier 2 #15
+
+Observed / patient-facing data
+
+Actual patient encounter did not provide the numeric ACT/CAT scores expected by the reference.
+
+Expected / grading-reference data
+
+Reference expects specific scores and longitudinal comparisons.
+
+Impact on grading or workflow
+
+Student cannot accurately supply a numeric assessment without inventing information.
+
+Recommended developer action
+
+Collect the score in the workflow or allow 'not obtained.'
+
+
+
+MAR-THU-16 — Vaccination information unavailable  [MEDIUM]  Source audit item: Source audit Tier 2 #16
+
+Observed / patient-facing data
+
+Patient is unsure of vaccine status and expects the chart to contain it.
+
+Expected / grading-reference data
+
+Reference may expect specific vaccine gaps.
+
+Impact on grading or workflow
+
+Student should not invent vaccination history.
+
+Recommended developer action
+
+Expose immunization records or grade documentation that status needs verification.
+
+
+
+Maria case/reference evidence
+
+
+
+Maria case/reference evidence
+
+
+
+
+
+7. INDEPENDENT TECHNICAL / UI BUGS
+
+TECH-01 — “Unexpected end of JSON input” grading error  [CRITICAL]  Source audit item: Wednesday / Maria
+
+Observed / patient-facing data
+
+The grading workflow returns the exact JSON parsing error; the audit reports it occurred on both attempts.
+
+Expected / grading-reference data
+
+Successful submission should return a grade.
+
+Impact on grading or workflow
+
+Blocks grading independently of clinical-data issues.
+
+Recommended developer action
+
+Inspect API response validity, JSON serialization/parsing, null/empty response handling, authentication/session state, and client-side parsing. Add structured server-side logging and safe error handling.
+
+
+
+Grading interface evidence
+
+
+
+TECH-02 — Weekly Summary application error  [HIGH]  Source audit item: Weekly Summary
+
+Observed / patient-facing data
+
+Opening Weekly Summary produced an application error.
+
+Expected / grading-reference data
+
+Weekly Summary should load the student's weekly activity/results.
+
+Impact on grading or workflow
+
+Feature is inaccessible.
+
+Recommended developer action
+
+Check route/API response, authentication/session state, empty-state handling, and frontend rendering.
+
+
+
+Weekly Summary/application-error evidence
+
+
+
+TECH-03 — Answer-option IDs/letters are not stable between UI and key  [HIGH]  Source audit item: Quiz
+
+Observed / patient-facing data
+
+The visible choices are not lettered, while the answer key uses letters; multi-select mapping also appears inconsistent.
+
+Expected / grading-reference data
+
+Frontend option IDs and backend answer-key IDs must map one-to-one.
+
+Impact on grading or workflow
+
+Can create systematic false grading across the 40-question quiz.
+
+Recommended developer action
+
+Create an automated question-level regression test for all answer IDs and multi-select combinations.
+
+
+
+Quiz mapping evidence
+
+
+
+
+
+8. MATINEE / BIOLOGIC-THERAPY MODULE ALIGNMENT
+
+MAT-01 — Maria may not match a biologic-initiation question  [MEDIUM]  Source audit item: MATINEE activity
+
+Observed / patient-facing data
+
+Maria is already receiving mepolizumab 100 mg every 4 weeks, reports major improvement, zero exacerbations in 6 months, and minimal albuterol use.
+
+Expected / grading-reference data
+
+The educational objective emphasizes when biologic therapy is justified in eosinophilic COPD using eosinophilia plus exacerbation burden plus optimized inhaled therapy.
+
+Impact on grading or workflow
+
+If the question asks whether to START a biologic, Maria is not a clean initiation candidate within the scenario because she is already receiving one and is doing well. She may fit a continuation/response question.
+
+Recommended developer action
+
+Clarify whether the intended task is initiation, continuation, or response assessment, then align the selected patient scenario and grading key.
+
+
+
+Maria / MATINEE module evidence
+
+
+
+
+
+9. CROSS-CUTTING GRADING / SYSTEM DESIGN FINDINGS
+
+9.1 Source-of-truth / version-control defect
+
+EMR data, standardized-patient responses, grading reference, answer key, and clinical decision pathway should share an explicit case/version identifier. The repeated cross-patient contradictions strongly suggest that multiple components may be referencing different versions of the same scenario.
+
+9.2 Hidden-data grading
+
+If a fact is required for points, it should be visible in the student-facing EMR, available through the standardized-patient interview, or clearly obtainable through an authorized preceptor/chart request. Hidden values should not be required for full credit.
+
+9.3 Unknown/not assessed should be a valid state
+
+When the patient cannot answer a question or the chart does not provide the information, the system should support 'unknown,' 'not assessed,' or 'not available' rather than forcing the learner to invent a value.
+
+9.4 Clinical accuracy should outrank reference-string matching
+
+A SOAP note that accurately reflects the patient-facing case should not be marked incorrect because a hidden reference contains a different patient scenario.
+
+9.5 Objective data should be centralized
+
+Vitals, labs, PFTs, medication lists, allergies, histories, and scores should be stored once in an authoritative case object and consumed by the EMR, patient script, grading rubric, and clinical pathway.
+
+9.6 Patient goals should be patient-derived
+
+The grading key should not require a patient goal or concern that the patient did not express. If a specific goal is pedagogically required, the interview should explicitly ask it.
+
+9.7 Standardized scores should be accessible
+
+ACT/CAT scores should either be displayed in the EMR, explicitly obtainable from the preceptor/chart, or administered in the workflow. Students should not be expected to infer numeric scores.
+
+9.8 Clinical pathways must use the same inputs as grading
+
+For Bob, the EMR describes well-controlled COPD on LAMA while the reference expects escalation based on different exacerbation/eosinophil/CAT data. The treatment engine and grader should consume the same case data.
+
+10. RECOMMENDED IT / DEVELOPER ACCEPTANCE TESTS
+
+Create a unique case/version ID and verify it is identical across EMR, standardized patient, rubric, answer key, scoring engine, and clinical decision pathway.
+
+Field-by-field compare Sarah, Bob, and Maria source objects against grading-reference objects.
+
+Verify medications, doses, allergies, exacerbations, smoking history, PMH/PSH/FH/SH, PFTs, eosinophils, CAT/ACT, vitals, weight/BMI, and immunizations.
+
+Audit all 40 Monday quiz questions for visible option IDs and exact answer-key mapping.
+
+Test multi-select questions using first/middle/last combinations and confirm grading.
+
+Submit the same SOAP note repeatedly and confirm no JSON parsing error.
+
+Test grading with valid, empty, and malformed response scenarios and confirm safe error handling.
+
+Open Weekly Summary for a user with data and a user with no data; verify both states render correctly.
+
+Test that unavailable patient information can be documented as unknown/not assessed without penalty.
+
+Verify that a student copying EMR objective values receives credit when the grading reference is supposed to use those values.
+
+Verify that patient-stated goals are accepted without requiring hidden goals.
+
+Verify CAT/ACT scores are accessible before they become required grading elements.
+
+Verify treatment recommendations use the same patient data as the grading reference.
+
+Clarify MATINEE's intended biologic task: initiation vs continuation/response.
+
+Run a complete regression test across all three Week 3 patients after corrections.
+
+
+
+11. BUG SUMMARY FOR TICKETING
+
+Bug family
+
+Priority
+
+Scope
+
+Likely component
+
+Case/version synchronization
+
+CRITICAL
+
+Sarah, Bob, Maria
+
+Likely systemic
+
+Medication/reference mismatches
+
+CRITICAL
+
+Sarah, Bob, Maria
+
+Systemic
+
+Exacerbation-history mismatches
+
+CRITICAL
+
+Sarah, Bob, Maria
+
+Systemic
+
+Objective data mismatches
+
+CRITICAL/HIGH
+
+Sarah, Bob, Maria
+
+Systemic
+
+Allergy/smoking-history mismatches
+
+CRITICAL
+
+Bob/Maria + others
+
+Systemic
+
+Unavailable information required by rubric
+
+HIGH
+
+All patient cases
+
+Rubric/design
+
+Quiz answer-letter/option mapping
+
+HIGH
+
+Monday / 40 questions
+
+Frontend + scoring
+
+SOAP grading JSON error
+
+CRITICAL
+
+Sarah/Maria grading attempts
+
+Backend/API
+
+Weekly Summary application error
+
+HIGH
+
+Weekly Summary
+
+Frontend/API
+
+Quick documentation disease-state relevance
+
+LOW
+
+Monday
+
+UI/education
+
+MATINEE patient/objective alignment
+
+MEDIUM
+
+Maria
+
+Content/design
+
+
+
+12. SCREENSHOT EVIDENCE INDEX
+
+image25.png — Monday quiz — answer choices without visible letters
+
+image10.png — Monday quiz — answer-key mapping
+
+image1.png — Monday quiz — continued answer mapping
+
+image3.png — Quick documentation
+
+image12.png — Grading rubric
+
+image15.png — Sarah Tuesday interview/rubric
+
+image13.png — Sarah family-history evidence
+
+image26.png — Sarah objective-data/reference
+
+image5.png — Maria Tuesday interview
+
+image4.png — Maria interview/reference
+
+image22.png — Maria follow-up
+
+image23.png — Maria grading/reference
+
+image27.png — Maria module/reference / MATINEE evidence
+
+image29.png — Sarah grading error
+
+image6.png — Sarah objective-data/reference
+
+image16.png — Bob interview
+
+image8.png — Bob clinical data
+
+image20.png — Bob grading/reference
+
+image14.png — Bob medication/reference
+
+image24.png — Maria grading interface
+
+image2.png — Maria grading error
+
+image30.png — Sarah Thursday detailed reference
+
+image18.png — Sarah Thursday reference/clinical data
+
+image19.png — Sarah Thursday additional reference
+
+image11.png — Bob Thursday case/reference
+
+image9.png — Bob Thursday grading/reference
+
+image28.png — Bob module / Weekly Summary evidence
+
+image7.png — Bob UI/reference
+
+image21.png — Maria Thursday case/reference
+
+image17.png — Maria Thursday case/reference
+
+Final QA noteThis report intentionally preserves discrepancies rather than deciding which hidden value is 'correct.' The developer's task is to identify the authoritative case dataset and synchronize all dependent components. Where the source audit did not establish an exact expected value, this report says so rather than inventing one.
+
+
+

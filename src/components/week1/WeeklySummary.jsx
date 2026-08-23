@@ -28,9 +28,9 @@ export default function WeeklySummary({ week, onBack }) {
     return acc + Object.keys(st.discovered || {}).length
   }, 0)
 
-  const jc = loadCaseState(journal.id)
-  const jcAnswered = journal.questions.filter(q => (jc.responses?.[q.id] || '').trim().length > 0).length
-  const jcTotal = journal.questions.length
+  const jc = loadCaseState(journal?.id || 'none')
+  const jcAnswered = journal?.questions ? journal.questions.filter(q => (jc.responses?.[q.id] || '').trim().length > 0).length : 0
+  const jcTotal = journal?.questions?.length || 0
 
   // strengths / growth heuristics
   const strengths = []
@@ -106,7 +106,7 @@ export default function WeeklySummary({ week, onBack }) {
           <Stat icon={GraduationCap} label="Monday quiz (best)" value={quiz.bestScore ? `${quiz.bestScore}%` : '—'}
             sub={quiz.attempts.length ? `First ${quiz.firstScore ?? quiz.attempts[0]?.score}% · ${quiz.attempts.length} attempt${quiz.attempts.length === 1 ? '' : 's'}` : 'Not attempted'} good={quiz.bestScore >= 90} />
           <Stat icon={ClipboardList} label="Avg SOAP score" value={avg != null ? `${avg}%` : '—'} sub={`${gradedCount} of ${totalCases} cases graded`} good={avg != null && avg >= 65} />
-          <Stat icon={FlaskConical} label={`${journal.trial?.name || 'Journal'} journal club`} value={journalDone ? 'Complete' : `${jcAnswered}/${jcTotal}`} sub={journalDone ? 'All prompts answered' : 'In progress'} good={journalDone} />
+          <Stat icon={FlaskConical} label={`${journal?.trial?.name || 'Journal'} journal club`} value={journalDone ? 'Complete' : `${jcAnswered}/${jcTotal}`} sub={journalDone ? 'All prompts answered' : 'In progress'} good={journalDone} />
         </div>
 
         {/* SOAP matrix */}

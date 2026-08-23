@@ -82048,5 +82048,280 @@
       "halfCredit": "3–5 minor errors",
       "zeroCredit": "≥6 errors or any major factual error"
     }
+  ],
+  "Week4_Patient_A_Wednesday": [
+    {
+      "id": "W4-A-WED-S1",
+      "section": "Subjective",
+      "subsection": "Chief Concern",
+      "description": "Documents dizziness/lightheadedness upon standing as chief concern",
+      "points": 3
+    },
+    {
+      "id": "W4-A-WED-S2",
+      "section": "Subjective",
+      "subsection": "HPI - Context",
+      "description": "Notes dizziness onset after starting new GDMT medications",
+      "points": 2
+    },
+    {
+      "id": "W4-A-WED-S3",
+      "section": "Subjective",
+      "subsection": "HPI - Trigger",
+      "description": "Documents postural trigger: occurs when standing up or getting out of bed",
+      "points": 2
+    },
+    {
+      "id": "W4-A-WED-S4",
+      "section": "Subjective",
+      "subsection": "HPI - Resolution",
+      "description": "Documents self-limited nature: resolves after a few seconds",
+      "points": 2
+    },
+    {
+      "id": "W4-A-WED-S5",
+      "section": "Subjective",
+      "subsection": "HPI - HF Symptom Review",
+      "description": "Documents resolution of ankle edema since starting therapy",
+      "points": 2
+    },
+    {
+      "id": "W4-A-WED-S6",
+      "section": "Subjective",
+      "subsection": "Medications",
+      "description": "Accurately lists all current GDMT medications: Sacubitril/Valsartan 24/26 mg BID, Carvedilol 3.125 mg BID, Spironolactone 25 mg daily, Dapagliflozin 10 mg daily",
+      "points": 3
+    },
+    {
+      "id": "W4-A-WED-S7",
+      "section": "Subjective",
+      "subsection": "Medications",
+      "description": "Documents continued HCTZ 25 mg daily (contributing to orthostasis)",
+      "points": 2
+    },
+    {
+      "id": "W4-A-WED-S8",
+      "section": "Subjective",
+      "subsection": "Adherence",
+      "description": "Documents patient is taking all new medications as prescribed",
+      "points": 2
+    },
+    {
+      "id": "W4-A-WED-S9",
+      "section": "Subjective",
+      "subsection": "Social History",
+      "description": "Documents never smoker and occasional alcohol use",
+      "points": 1
+    },
+    {
+      "id": "W4-A-WED-S10",
+      "section": "Subjective",
+      "subsection": "Allergies",
+      "description": "Documents NKDA",
+      "points": 1
+    },
+    {
+      "id": "W4-A-WED-S11",
+      "section": "Subjective",
+      "subsection": "Family History",
+      "description": "Notes father with CAD/HF and mother with HTN",
+      "points": 1
+    },
+    {
+      "id": "W4-A-WED-S12",
+      "section": "Subjective",
+      "subsection": "OTC / Supplements",
+      "description": "Documents daily multivitamin, no other OTC medications",
+      "points": 1
+    },
+    {
+      "id": "W4-A-WED-S13",
+      "section": "Subjective",
+      "subsection": "Review of Systems",
+      "description": "Documents absence of chest pain, dyspnea at rest, or other concerning symptoms",
+      "points": 1
+    },
+    {
+      "id": "W4-A-WED-S14",
+      "section": "Subjective",
+      "subsection": "Symptom improvement",
+      "description": "Notes improvement in exertional tolerance or stair-climbing since last visit",
+      "points": 2
+    },
+    {
+      "id": "W4-A-WED-O1",
+      "section": "Objective",
+      "subsection": "Vitals",
+      "description": "Documents BP 106/68 (repeat 104/66) — low BP consistent with orthostasis risk",
+      "points": 3
+    },
+    {
+      "id": "W4-A-WED-O2",
+      "section": "Objective",
+      "subsection": "Vitals",
+      "description": "Documents HR 62 bpm",
+      "points": 2
+    },
+    {
+      "id": "W4-A-WED-O3",
+      "section": "Objective",
+      "subsection": "Weight",
+      "description": "Documents weight 101 kg (down 2 kg from baseline — fluid loss)",
+      "points": 2
+    },
+    {
+      "id": "W4-A-WED-O4",
+      "section": "Objective",
+      "subsection": "Labs - NT-proBNP",
+      "description": "Documents NT-proBNP 165 pg/mL (improved from 320 at baseline)",
+      "points": 3
+    },
+    {
+      "id": "W4-A-WED-O5",
+      "section": "Objective",
+      "subsection": "Labs - Electrolytes",
+      "description": "Documents K 4.5 mEq/L (normal), no hyperkalemia from MRA",
+      "points": 3
+    },
+    {
+      "id": "W4-A-WED-O6",
+      "section": "Objective",
+      "subsection": "Labs - Renal",
+      "description": "Documents SCr 1.08 mg/dL, eGFR 80 (acceptable change from baseline)",
+      "points": 3
+    },
+    {
+      "id": "W4-A-WED-O7",
+      "section": "Objective",
+      "subsection": "Trend interpretation",
+      "description": "Notes positive trend: NT-proBNP 320 → 165, weight down 2 kg, edema resolved",
+      "points": 2
+    },
+    {
+      "id": "W4-A-WED-O8",
+      "section": "Objective",
+      "subsection": "SpO2",
+      "description": "Documents SpO2 97%",
+      "points": 1
+    },
+    {
+      "id": "W4-A-WED-O9",
+      "section": "Objective",
+      "subsection": "RR",
+      "description": "Documents RR 16",
+      "points": 1
+    },
+    {
+      "id": "W4-A-WED-A1",
+      "section": "Assessment",
+      "subsection": "Problem 1 - HFrEF Treatment Response",
+      "description": "Identifies HFrEF as improving on GDMT (edema resolved, NT-proBNP improving)",
+      "points": 4
+    },
+    {
+      "id": "W4-A-WED-A2",
+      "section": "Assessment",
+      "subsection": "Problem 2 - Orthostatic Hypotension",
+      "description": "Correctly identifies orthostatic hypotension as the primary MTP",
+      "points": 4
+    },
+    {
+      "id": "W4-A-WED-A3",
+      "section": "Assessment",
+      "subsection": "Cause Identification",
+      "description": "Attributes orthostasis to volume depletion: Carvedilol + Sacubitril/Valsartan + HCTZ contributing to BP reduction",
+      "points": 4
+    },
+    {
+      "id": "W4-A-WED-A4",
+      "section": "Assessment",
+      "subsection": "GDMT Continuation Rationale",
+      "description": "Articulates that GDMT medications should not be stopped for mild orthostasis",
+      "points": 4
+    },
+    {
+      "id": "W4-A-WED-A5",
+      "section": "Assessment",
+      "subsection": "Non-GDMT Offender",
+      "description": "Identifies HCTZ as a non-GDMT diuretic that can be reduced/discontinued to relieve hypotension while preserving GDMT",
+      "points": 5
+    },
+    {
+      "id": "W4-A-WED-A6",
+      "section": "Assessment",
+      "subsection": "Clinical Reasoning",
+      "description": "Demonstrates understanding that the goal is to maintain all 4 GDMT pillars, not to reduce them",
+      "points": 4
+    },
+    {
+      "id": "W4-A-WED-A7",
+      "section": "Assessment",
+      "subsection": "NT-proBNP Trend",
+      "description": "Interprets improving NT-proBNP trend as evidence of treatment efficacy",
+      "points": 3
+    },
+    {
+      "id": "W4-A-WED-A8",
+      "section": "Assessment",
+      "subsection": "Safety Flag",
+      "description": "Notes the importance of monitoring renal function and electrolytes after adjusting diuretic therapy",
+      "points": 2
+    },
+    {
+      "id": "W4-A-WED-P1",
+      "section": "Plan",
+      "subsection": "Intervention - HCTZ",
+      "description": "Plans to discontinue or reduce HCTZ as primary intervention for orthostasis",
+      "points": 5
+    },
+    {
+      "id": "W4-A-WED-P2",
+      "section": "Plan",
+      "subsection": "GDMT Preservation",
+      "description": "Explicitly states continuing all 4 GDMT medications at current doses",
+      "points": 4
+    },
+    {
+      "id": "W4-A-WED-P3",
+      "section": "Plan",
+      "subsection": "Monitoring - BP",
+      "description": "Plans to recheck BP after diuretic adjustment (e.g., 2-4 week follow-up)",
+      "points": 3
+    },
+    {
+      "id": "W4-A-WED-P4",
+      "section": "Plan",
+      "subsection": "Monitoring - Labs",
+      "description": "Plans to monitor K+, SCr, and eGFR after medication change",
+      "points": 3
+    },
+    {
+      "id": "W4-A-WED-P5",
+      "section": "Plan",
+      "subsection": "Patient Counseling",
+      "description": "Counsels patient to rise slowly from bed/chair, hydrate adequately",
+      "points": 3
+    },
+    {
+      "id": "W4-A-WED-P6",
+      "section": "Plan",
+      "subsection": "Weight Monitoring",
+      "description": "Reinforces daily weight monitoring and when to call (3 lb/day, 5 lb/week)",
+      "points": 3
+    },
+    {
+      "id": "W4-A-WED-P7",
+      "section": "Plan",
+      "subsection": "GDMT Titration Goal",
+      "description": "Mentions future goal to up-titrate GDMT once orthostasis resolves and BP stabilizes",
+      "points": 2
+    },
+    {
+      "id": "W4-A-WED-P8",
+      "section": "Plan",
+      "subsection": "Follow-up",
+      "description": "Plans appropriate follow-up interval (1 month) for reassessment",
+      "points": 2
+    }
   ]
 }

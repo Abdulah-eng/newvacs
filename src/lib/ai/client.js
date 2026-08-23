@@ -21,8 +21,8 @@ export async function callJsonLlm(messages, modelOverride = null) {
 
   const baseModel = modelOverride || process.env.ANTHROPIC_MODEL || 'claude-sonnet-5'
   
-  // List of fallback models to try if the first one fails
-  const modelsToTry = [baseModel]
+  // List of fallback models to try if the first one fails (retry up to 3 times)
+  const modelsToTry = [baseModel, baseModel, baseModel]
   if (baseModel === 'llama-3.1-8b-instant') {
     modelsToTry.push('llama-3.3-70b-versatile')
     modelsToTry.push('mixtral-8x7b-32768')

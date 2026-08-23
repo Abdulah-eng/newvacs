@@ -125,7 +125,7 @@ export const MATINEE_JOURNAL = {
     },
     {
       id: "q5", title: "Best-Fit Patient",
-      prompt: "Which of this week's three patients is the best candidate for biologic therapy discussion? Connect your answer to MATINEE eligibility criteria.",
+      prompt: "Consider Maria at her Wednesday presentation (before initiating mepolizumab). Which of this week's three patients is the best candidate for biologic therapy discussion? Connect your answer to MATINEE eligibility criteria.",
       
     },
   ],

@@ -40,7 +40,7 @@ const michaelTue = makeCase({
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Referred for GDMT optimization following new nonischemic cardiomyopathy diagnosis. NYHA Class II symptoms.' },
     { label: 'Echocardiogram', value: 'LVEF 35%, mild LV dilation.' },
-    { label: 'Social history', value: 'Former smoker (quit 5 years ago). Occasional alcohol.' },
+    { label: 'Social history', value: 'Never smoker. Occasional alcohol.' },
   ],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
@@ -80,7 +80,7 @@ const michaelWed = makeCase({
   id: 'w4-michael_t4-wed',
   PATIENT: { ...michaelTue.PATIENT },
   ENCOUNTER: { week: 'Week 4', 
-    day: 'Wednesday', type: '1-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
+    day: 'Wednesday', type: '3-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I'm taking all the new pills, but I feel a bit dizzy when I stand up.",
     snapshotSummary: 'Michael was started on the 4 pillars. He is experiencing orthostatic hypotension.',
     diseaseStates: ['HFrEF'],
@@ -142,7 +142,7 @@ const michaelThu = makeCase({
   id: 'w4-michael_t4-thu',
   PATIENT: { ...michaelTue.PATIENT },
   ENCOUNTER: { week: 'Week 4', 
-    day: 'Thursday', type: '3-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
+    day: 'Thursday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I feel great. Do I still need to increase the doses?",
     snapshotSummary: 'Michael is doing well but is on starting doses of GDMT. Needs up-titration.',
     diseaseStates: ['HFrEF'],
@@ -326,7 +326,7 @@ const angelaThu = makeCase({
   id: 'w4-angela_b-thu',
   PATIENT: { ...angelaTue.PATIENT },
   ENCOUNTER: { week: 'Week 4', 
-    day: 'Thursday', type: '3-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
+    day: 'Thursday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I've been taking the blood thinner, and I haven't had any bleeding.",
     snapshotSummary: 'Angela successfully started Apixaban and is tolerating it well. Her HFrEF remains stable.',
     diseaseStates: ['AFib', 'HFrEF'],
@@ -398,10 +398,10 @@ const robertTue = makeCase({
     { label: 'eGFR', value: '38', unit: 'mL/min/1.73m²', flag: 'low' },
     { label: 'NT-proBNP', value: '165', unit: 'pg/mL', flag: 'high' }
   ],
-  ALERTS: [{ level: 'high', text: 'Patient meets criteria for Apixaban dose reduction (age ≥80 [no, he is 76], weight ≤60 kg [yes, 58 kg], SCr ≥1.5 [no, 1.4]). Wait, let me check the criteria again. Ah, he only meets ONE criterion (weight). So standard dose is correct! Let me re-evaluate.' }, { level: 'warn', text: 'Polypharmacy and CKD necessitate careful monitoring.' }],
+  ALERTS: [{ level: 'warn', text: 'Apixaban dose-reduction criteria: age ≥80 [No — age 76], weight ≤60 kg [Yes — 58 kg], SCr ≥1.5 mg/dL [No — SCr 1.82, but reduction requires ≥2 criteria]. Only ONE criterion met; standard dose 5 mg BID is correct.' }, { level: 'warn', text: 'CKD (eGFR 38) and polypharmacy require careful renal and electrolyte monitoring.' }],
   PROBLEMS: [
     { name: 'AFib', detail: 'On Apixaban 5 mg BID', flag: 'normal' },
-    { name: 'CKD', detail: 'SCr 1.4', flag: 'warn' },
+    { name: 'CKD', detail: 'SCr 1.82, eGFR 38', flag: 'warn' },
   ],
   MEDICATIONS: [
     { name: 'Sacubitril/Valsartan', dose: '97/103 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
@@ -417,7 +417,7 @@ const robertTue = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'questions', label: 'Patient Questions', placeholder: 'What does he want to know?' },
   ],
-    COUNSELING: [{ id: 'c1', title: 'Warfarin Monitoring', body: ["Warfarin requires regular INR checks to make sure your blood isn't too thick or too thin. Keep your diet consistent, especially with leafy greens like spinach."] }], GUIDING_QUESTIONS:
+    COUNSELING: [{ id: 'c1', title: 'Apixaban Dosing and Renal Monitoring', body: ["Your blood thinner, apixaban, is dosed based on your age, weight, and kidney function. At your weight of 58 kg you meet one of the three dose-reduction criteria, but two are required to reduce the dose—so 5 mg twice daily is the correct and most protective dose for you. Your kidney function will be checked at each visit."] }], GUIDING_QUESTIONS:
    [
     'Why is continuation of GDMT appropriate despite declining eGFR?',
     'What factors may contribute to CKD progression?',
@@ -543,7 +543,7 @@ const robertThu = makeCase({
       { key: 'o1', label: 'Continue current GDMT and anticoagulation regimens', correct: true },
     ] },
   ],
-  COUNSELING: [{ id: 'c1', title: 'Bridging Therapy', body: ["Because you have an upcoming procedure, we need to carefully pause your warfarin and use a short-acting injection to keep you safe from clots in the meantime."] }],
+  COUNSELING: [{ id: 'c1', title: 'Long-Term DOAC Management', body: ["You are doing an excellent job managing your medications. Staying on apixaban consistently is what keeps you protected from stroke. If you ever need a procedure, let us know in advance so we can discuss whether to temporarily pause it and when to restart it safely."] }],
 })
 
 export const W4_CASES = [michaelTue, michaelWed, michaelThu, angelaTue, angelaWed, angelaThu, robertTue, robertWed, robertThu]
