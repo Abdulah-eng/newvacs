@@ -253,7 +253,7 @@ const bobTue = makeCase({
     { name: 'Atorvastatin', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'HLD', notes: '' },
   ],
   IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Complains of shortness of breath. History of 2 moderate COPD exacerbations in the past 3 months.' }, { label: 'Social', value: 'Former smoker (45 pack-years, quit 5 years ago).' }],
+  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Complains of shortness of breath. History of 2 moderate COPD exacerbations in the past 3 months.' }, { label: 'Social', value: 'Married, lives with spouse. Retired automotive mechanic. Former smoker (45 pack-years, quit 5 years ago). Denies recreational drug use.' }],
   OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.57, FEV1 60% predicted', flag: 'warn' }, { label: 'CAT Score', value: '17', flag: 'warn' }],
   INTERVIEW_FIELDS: [
     { key: 'maintenance', label: 'Maintenance Inhaler', placeholder: 'Was he prescribed a daily inhaler?' },
