@@ -17,7 +17,7 @@ const michaelTue = makeCase({
     diseaseStates: ['HFrEF', 'Hypertension', 'Hyperlipidemia'],
     learningObjectives: ['Identify HFrEF and ACC/AHA stage', 'Initiate the 4 pillars of GDMT'],
   },
-  VITALS: { bp: '138/86', bpRepeat: '136/84', hr: '82', rr: '16', temp: '98.6°F', spo2: '96%', weight: '103 kg', height: "5'10\"", bmi: '32.6', vitalsTime: '06/23/2026 09:14', flags: {} },
+  VITALS: { bp: '138/86', bpRepeat: '136/84', hr: '82', rr: '16', temp: '98.6°F', spo2: '96%', weight: '102 kg', height: "5'10\"", bmi: '32.2', vitalsTime: '06/23/2026 09:14', flags: {} },
   LABS: [
     { label: 'NT-proBNP', value: '320', unit: 'pg/mL', flag: 'high' },
     { label: 'K', value: '4.2', unit: 'mEq/L', flag: 'normal' },
@@ -40,7 +40,7 @@ const michaelTue = makeCase({
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Referred for GDMT optimization following new nonischemic cardiomyopathy diagnosis. NYHA Class II symptoms.' },
     { label: 'Echocardiogram', value: 'LVEF 35%, mild LV dilation.' },
-    { label: 'Social history', value: 'Never smoker. Occasional alcohol.' },
+    { label: 'Social history', value: 'Former smoker (quit 5 years ago). Occasional alcohol.' },
   ],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
@@ -60,8 +60,10 @@ const michaelTue = makeCase({
     { id: 'w4-michael_t4-tue_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-michael_t4-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin, but no other over-the-counter medications or supplements." },
     { id: 'w4-michael_t4-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine or beer on special occasions." },
-    { id: 'w4-michael_t4-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
+    { id: 'w4-michael_t4-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago." },
     { id: 'w4-michael_t4-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had coronary artery disease and heart failure, and suffered a heart attack at age 64. My mother has high blood pressure." },
+    { id: 'w4-michael_t4-tue_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'spouse', 'wife'], response: "I am married and live with my wife. I work full-time as an accountant." },
+    { id: 'w4-michael_t4-tue_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "I don't check my blood pressure or weigh myself at home. Should I be doing that?" },
     { id: 'w4a_sym', topic: 'Symptoms', field: 'symptoms', keywords: ['swelling', 'breathe', 'shortness', 'stairs', 'edema'], response: "My ankles get a little puffy by the end of the day, and I get winded if I walk up a flight of stairs quickly." },
   ],
   ASSESSMENT_CARDS: [
@@ -123,8 +125,9 @@ const michaelWed = makeCase({
     { id: 'w4-michael_t4-wed_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-michael_t4-wed_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin, but no other over-the-counter medications or supplements." },
     { id: 'w4-michael_t4-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine or beer on special occasions." },
-    { id: 'w4-michael_t4-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
+    { id: 'w4-michael_t4-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago." },
     { id: 'w4-michael_t4-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had coronary artery disease and heart failure, and suffered a heart attack at age 64. My mother has high blood pressure." },
+    { id: 'w4-michael_t4-wed_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'spouse', 'wife'], response: "I am married and live with my wife. I work full-time as an accountant." },
     { id: 'w4a2_dizzy', topic: 'Orthostasis', field: 'dizziness', keywords: ['stand', 'dizzy', 'lightheaded', 'when'], response: "It's mostly when I get out of bed in the morning or stand up quickly from my desk. It passes after a few seconds." },
   ],
   ASSESSMENT_CARDS: [
@@ -184,8 +187,9 @@ const michaelThu = makeCase({
     { id: 'w4-michael_t4-thu_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-michael_t4-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin, but no other over-the-counter medications or supplements." },
     { id: 'w4-michael_t4-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine or beer on special occasions." },
-    { id: 'w4-michael_t4-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
+    { id: 'w4-michael_t4-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago." },
     { id: 'w4-michael_t4-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had coronary artery disease and heart failure, and suffered a heart attack at age 64. My mother has high blood pressure." },
+    { id: 'w4-michael_t4-thu_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'spouse', 'wife'], response: "I am married and live with my wife. I work full-time as an accountant." },
     { id: 'w4a3_titrate', topic: 'Titration', field: 'titration', keywords: ['why', 'increase', 'feel fine', 'dose'], response: "If I feel good, why do we need to mess with the doses? Can't we just leave it here?" },
   ],
   ASSESSMENT_CARDS: [
@@ -253,7 +257,8 @@ const angelaTue = makeCase({
     { id: 'w4-angela_b-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 glass of wine per week." },
     { id: 'w4-angela_b-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 8 years ago, and I had a 15 pack-year history before that." },
     { id: 'w4-angela_b-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My mother had atrial fibrillation and suffered a stroke at age 74. My father had high blood pressure and type 2 diabetes." },
-    { id: 'w4b_apix', topic: 'Cost Barrier', field: 'apixaban', keywords: ['apixaban', 'eliquis', 'cost', 'afford', 'stop', 'fill'], response: "That Eliquis is way too expensive. I'm on a fixed income, I can't pay $50 a month for it. So I just stopped taking it." },
+    { id: 'w4-angela_b-tue_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride'], response: "I live alone. I am a retired administrative assistant. Transportation can be difficult, I usually have to take the bus or get a ride." },
+    { id: 'w4b_apix', topic: 'Cost Barrier', field: 'apixaban', keywords: ['apixaban', 'eliquis', 'cost', 'afford', 'stop', 'fill', 'stretch', 'skip'], response: "That Eliquis is way too expensive. I'm on a fixed income, I can't pay $50 a month for it. I was trying to stretch it out by skipping doses around refill time, but I just ran out and stopped taking it completely." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'w4b_a1', title: 'Stroke Risk vs Cost', icon: 'AlertCircle', color: 'dc2626', questions: [{ key: 'q1', q: 'What is her CHA2DS2-VASc score and what does it mean?' }, { key: 'q2', q: 'How can you address the cost barrier?' }] },
@@ -270,9 +275,9 @@ const angelaWed = makeCase({
   id: 'w4-angela_b-wed',
   PATIENT: { ...angelaTue.PATIENT },
   ENCOUNTER: { week: 'Week 4', 
-    day: 'Wednesday', type: '1-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
-    chiefConcern: "I got the Eliquis approved through the foundation, but I'm scared to take it.",
-    snapshotSummary: 'Cost barrier resolved, but Angela is now expressing fear of bleeding from the anticoagulant.',
+    day: 'Wednesday', type: '3-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
+    chiefConcern: "I started the Eliquis, but I stopped because I got bruises and got scared.",
+    snapshotSummary: 'Cost barrier resolved, but Angela is now expressing fear of bleeding due to bruising and a friend\'s story.',
     diseaseStates: ['AFib'],
     learningObjectives: ['Address bleeding fears using shared decision-making', 'Calculate HAS-BLED'],
   },
@@ -288,10 +293,10 @@ const angelaWed = makeCase({
   PROBLEMS: [{ name: 'AFib', detail: 'Cost resolved, fear of bleeding', flag: 'warn' }],
   MEDICATIONS: angelaTue.MEDICATIONS,
   IMMUNIZATIONS: angelaTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Patient obtained Apixaban via patient assistance program but admits to not starting it yet due to fear.' }],
+  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Patient obtained Apixaban via patient assistance program but stopped taking it due to bruising and fear of major bleeding after a friend\'s anecdote.' }],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
-    { key: 'fear', label: 'Bleeding Fear', placeholder: 'What exactly is she afraid of?' },
+    { key: 'fear', label: 'Bleeding Fears', placeholder: 'What are her bleeding symptoms?' },
   ],
     COUNSELING: [{ id: 'c1', title: 'Starting DOACs', body: ["This blood thinner doesn't require routine blood checks like warfarin, but you must take it exactly as prescribed. Missing doses leaves you unprotected."] }], GUIDING_QUESTIONS:
    [
@@ -309,7 +314,8 @@ const angelaWed = makeCase({
     { id: 'w4-angela_b-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 glass of wine per week." },
     { id: 'w4-angela_b-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 8 years ago, and I had a 15 pack-year history before that." },
     { id: 'w4-angela_b-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My mother had atrial fibrillation and suffered a stroke at age 74. My father had high blood pressure and type 2 diabetes." },
-    { id: 'w4b2_fear', topic: 'Fear of bleeding', field: 'fear', keywords: ['afraid', 'scared', 'bleed', 'why', 'worry'], response: "My neighbor was on blood thinners and bled into his brain. I don't want that to happen to me. I already take so many meds, is this one really worth the risk?" },
+    { id: 'w4-angela_b-wed_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride'], response: "I live alone. I am a retired administrative assistant. Transportation can be difficult, I usually have to take the bus or get a ride." },
+    { id: 'w4b2_fear', topic: 'Fear of bleeding', field: 'fear', keywords: ['scared', 'bruise', 'bruising', 'bleed', 'bleeding', 'fear', 'friend'], response: "I took it for a few weeks, but then I noticed big bruises on my arms. My friend told me a story about someone who bled to death on these drugs. I haven't had any gum bleeding, nosebleeds, or blood in my stool, and I haven't gone to the ER, but the bruises terrified me." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'w4b2_a1', title: 'Risk/Benefit Discussion', icon: 'Scale', color: '0891b2', questions: [{ key: 'q1', q: 'How do you balance her HAS-BLED score against her CHA2DS2-VASc score in counseling?' }] },
@@ -364,7 +370,9 @@ const angelaThu = makeCase({
     { id: 'w4-angela_b-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 glass of wine per week." },
     { id: 'w4-angela_b-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 8 years ago, and I had a 15 pack-year history before that." },
     { id: 'w4-angela_b-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My mother had atrial fibrillation and suffered a stroke at age 74. My father had high blood pressure and type 2 diabetes." },
-    { id: 'w4b3_adh', topic: 'Adherence', field: 'adherence', keywords: ['take', 'miss', 'every day', 'routine'], response: "I set a pillbox like you suggested. I take the Eliquis every morning and night. No problems at all." },
+    { id: 'w4-angela_b-thu_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride'], response: "I live alone. I am a retired administrative assistant. Transportation can be difficult, I usually have to take the bus or get a ride." },
+    { id: 'w4-angela_b-thu_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "I don't have a blood pressure cuff or a scale at home. I just come in for checkups." },
+    { id: 'w4b3_adh', topic: 'Adherence', field: 'adherence', keywords: ['take', 'miss', 'every day', 'routine'], response: "Getting the Eliquis through the assistance program made it affordable, and your counseling helped me understand why I need it. I set a pillbox and I take it every morning and night. No problems at all." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'w4b3_a1', title: 'Maintenance', icon: 'CheckCircle', color: '10b981', questions: [{ key: 'q1', q: 'Is any change to therapy needed?' }] },
@@ -390,7 +398,7 @@ const robertTue = makeCase({
     diseaseStates: ['HFrEF', 'AFib', 'CKD', 'T2DM'],
     learningObjectives: ['Identify need for DOAC dose adjustment based on age, weight, and SCr'],
   },
-  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '58 kg', height: "5'7\"", bmi: '20.0', flags: {} },
+  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '82 kg', height: "5'7\"", bmi: '28.3', flags: {} },
   LABS: [
     { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '5.0', unit: 'mEq/L', flag: 'normal' },
@@ -398,7 +406,7 @@ const robertTue = makeCase({
     { label: 'eGFR', value: '38', unit: 'mL/min/1.73m²', flag: 'low' },
     { label: 'NT-proBNP', value: '165', unit: 'pg/mL', flag: 'high' }
   ],
-  ALERTS: [{ level: 'warn', text: 'Apixaban dose-reduction criteria: age ≥80 [No — age 76], weight ≤60 kg [Yes — 58 kg], SCr ≥1.5 mg/dL [No — SCr 1.82, but reduction requires ≥2 criteria]. Only ONE criterion met; standard dose 5 mg BID is correct.' }, { level: 'warn', text: 'CKD (eGFR 38) and polypharmacy require careful renal and electrolyte monitoring.' }],
+  ALERTS: [{ level: 'warn', text: 'Apixaban dose-reduction criteria: age ≥80 [No — age 76], weight ≤60 kg [No — 82 kg], SCr ≥1.5 mg/dL [Yes — SCr 1.82, but reduction requires ≥2 criteria]. Only ONE criterion met; standard dose 5 mg BID is correct.' }, { level: 'warn', text: 'CKD (eGFR 38) and polypharmacy require careful renal and electrolyte monitoring.' }],
   PROBLEMS: [
     { name: 'AFib', detail: 'On Apixaban 5 mg BID', flag: 'normal' },
     { name: 'CKD', detail: 'SCr 1.82, eGFR 38', flag: 'warn' },
@@ -417,7 +425,7 @@ const robertTue = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'questions', label: 'Patient Questions', placeholder: 'What does he want to know?' },
   ],
-    COUNSELING: [{ id: 'c1', title: 'Apixaban Dosing and Renal Monitoring', body: ["Your blood thinner, apixaban, is dosed based on your age, weight, and kidney function. At your weight of 58 kg you meet one of the three dose-reduction criteria, but two are required to reduce the dose—so 5 mg twice daily is the correct and most protective dose for you. Your kidney function will be checked at each visit."] }], GUIDING_QUESTIONS:
+    COUNSELING: [{ id: 'c1', title: 'Apixaban Dosing and Renal Monitoring', body: ["Your blood thinner, apixaban, is dosed based on your age, weight, and kidney function. With your kidney function (creatinine 1.82) you meet one of the three dose-reduction criteria, but two are required to reduce the dose—so 5 mg twice daily is the correct and most protective dose for you. Your kidney function will be checked at each visit."] }], GUIDING_QUESTIONS:
    [
     'Why is continuation of GDMT appropriate despite declining eGFR?',
     'What factors may contribute to CKD progression?',
@@ -433,14 +441,16 @@ const robertTue = makeCase({
     { id: 'w4-robert_j4-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe 1 to 2 drinks per month at social gatherings." },
     { id: 'w4-robert_j4-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 12 years ago, and I had a 25 pack-year history before that." },
     { id: 'w4-robert_j4-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had a heart attack at age 58. My mother had a stroke at age 72. My brother has coronary artery disease." },
-    { id: 'w4c_q', topic: 'Evidence question', field: 'questions', keywords: ['labs', 'kidney', 'creatinine', 'dose', 'apixaban'], response: "My creatinine is 1.4 and I weigh 58 kg. Shouldn't my Apixaban dose be lowered? I read online that older, lighter people need a lower dose." },
+    { id: 'w4-robert_j4-tue_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'spouse', 'wife', 'engineer', 'retired'], response: "I am a retired engineer. I live with my wife, she helps me manage everything." },
+    { id: 'w4-robert_j4-tue_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "Oh yes, I am very diligent. I check my blood pressure, heart rate, and weight at home every single day." },
+    { id: 'w4c_q', topic: 'Evidence question', field: 'questions', keywords: ['labs', 'kidney', 'creatinine', 'dose', 'apixaban'], response: "My creatinine is 1.82. Shouldn't my Apixaban dose be lowered? I read online that people with kidney problems need a lower dose." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'w4c_a1', title: 'Apixaban Dosing Criteria', icon: 'Scale', color: '13314f', questions: [{ key: 'q1', q: 'Does he meet TWO of the criteria for dose reduction (Age ≥80, Wt ≤60kg, SCr ≥1.5)?' }] },
   ],
   PLAN_SECTIONS: [
     { id: 'w4c_p1', title: 'Plan', options: [
-      { key: 'o1', label: 'Educate that he only meets ONE criterion (weight), so 5 mg BID is the correct and most protective dose', correct: true },
+      { key: 'o1', label: 'Educate that he only meets ONE criterion (SCr), so 5 mg BID is the correct and most protective dose', correct: true },
       { key: 'o2', label: 'Reduce Apixaban to 2.5 mg BID just to be safe', correct: false },
     ] },
   ],
@@ -456,7 +466,7 @@ const robertWed = makeCase({
     diseaseStates: ['AFib'],
     learningObjectives: ['Manage minor bleeding on DOACs', 'Apply AZALEA-TIMI 71 concepts regarding future Factor XI inhibitors'],
   },
-  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '58 kg', height: "5'7\"", bmi: '20.0', flags: {} },
+  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '82 kg', height: "5'7\"", bmi: '28.3', flags: {} },
   LABS: [
     { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal' },
@@ -488,6 +498,8 @@ const robertWed = makeCase({
     { id: 'w4-robert_j4-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe 1 to 2 drinks per month at social gatherings." },
     { id: 'w4-robert_j4-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 12 years ago, and I had a 25 pack-year history before that." },
     { id: 'w4-robert_j4-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had a heart attack at age 58. My mother had a stroke at age 72. My brother has coronary artery disease." },
+    { id: 'w4-robert_j4-wed_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'spouse', 'wife', 'engineer', 'retired'], response: "I am a retired engineer. I live with my wife, she helps me manage everything." },
+    { id: 'w4-robert_j4-wed_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "Oh yes, I am very diligent. I check my blood pressure, heart rate, and weight at home every single day." },
     { id: 'w4c2_bleed', topic: 'Epistaxis', field: 'nosebleeds', keywords: ['nose', 'bleed', 'epistaxis', 'severe', 'stop'], response: "They aren't huge gushers, they stop if I pinch my nose for a few minutes. But it makes me nervous. Is there a safer drug that won't make me bleed?" },
   ],
   ASSESSMENT_CARDS: [
@@ -506,12 +518,12 @@ const robertThu = makeCase({
   PATIENT: { ...robertTue.PATIENT },
   ENCOUNTER: { week: 'Week 4', 
     day: 'Thursday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
-    chiefConcern: "The nosebleeds stopped, and my heart failure feels very stable.",
-    snapshotSummary: 'Robert is stable on all GDMT and anticoagulation. Minor bleeding resolved.',
+    chiefConcern: "I had my colonoscopy 10 days ago, and I'm wondering if I still need this blood thinner.",
+    snapshotSummary: 'Robert is here for post-procedural follow-up after an elective screening colonoscopy 10 days ago. He questions the need for ongoing anticoagulation.',
     diseaseStates: ['HFrEF', 'AFib', 'CKD'],
-    learningObjectives: ['Recognize successful management of complex polypharmacy'],
+    learningObjectives: ['Assess bleeding risk vs stroke risk post-procedure', 'Reinforce indication for long-term anticoagulation'],
   },
-  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '58 kg', height: "5'7\"", bmi: '20.0', flags: {} },
+  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '82 kg', height: "5'7\"", bmi: '28.3', flags: {} },
   LABS: [
     { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal' },
@@ -519,13 +531,15 @@ const robertThu = makeCase({
     { label: 'eGFR', value: '40', unit: 'mL/min/1.73m²', flag: 'low' }
   ],
   ALERTS: [],
-  PROBLEMS: [{ name: 'Multi-morbidity', detail: 'Stable', flag: 'normal' }],
+  PROBLEMS: [{ name: 'AFib', detail: 'On Apixaban 5 mg BID', flag: 'normal' }],
   MEDICATIONS: robertTue.MEDICATIONS,
   IMMUNIZATIONS: robertTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'No further bleeding. No HF symptoms. Continues to review his labs and is satisfied.' }],
-  OBJECTIVE_EXTRA: [],
+  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Recent elective screening colonoscopy approximately 10 days ago.' }, { label: 'Past Surgical History', value: 'Recent screening colonoscopy with tubular adenoma removal.' }],
+  OBJECTIVE_EXTRA: [
+    { label: 'Gastroenterology Report', text: 'Colonoscopy (10 days ago): Two small tubular adenomas removed. No procedural complications. No post-procedural bleeding. Routine surveillance recommended by gastroenterology.' }
+  ],
   INTERVIEW_FIELDS: [
-    { key: 'satisfaction', label: 'Patient Satisfaction', placeholder: 'How is he feeling overall?' },
+    { key: 'colonoscopy', label: 'Colonoscopy follow-up', placeholder: 'What are his concerns?' },
   ],
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4-robert_j4-thu_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
@@ -533,17 +547,20 @@ const robertThu = makeCase({
     { id: 'w4-robert_j4-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe 1 to 2 drinks per month at social gatherings." },
     { id: 'w4-robert_j4-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 12 years ago, and I had a 25 pack-year history before that." },
     { id: 'w4-robert_j4-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had a heart attack at age 58. My mother had a stroke at age 72. My brother has coronary artery disease." },
-    { id: 'w4c3_sat', topic: 'Satisfaction', field: 'satisfaction', keywords: ['feel', 'labs', 'stable', 'happy'], response: "I feel great. Thank you for explaining the dosing rules to me. It makes sense, and I feel confident in the plan." },
+    { id: 'w4-robert_j4-thu_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'spouse', 'wife', 'engineer', 'retired'], response: "I am a retired engineer. I live with my wife, she helps me manage everything." },
+    { id: 'w4-robert_j4-thu_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "Oh yes, I am very diligent. I check my blood pressure, heart rate, and weight at home every single day." },
+    { id: 'w4c3_col', topic: 'Colonoscopy & Anticoagulation', field: 'colonoscopy', keywords: ['colonoscopy', 'polyp', 'adenoma', 'bleeding', 'stop', 'blood thinner'], response: "The gastroenterologist removed two polyps, but said everything went perfectly with no bleeding. Now that those polyps are gone, do I really still need to take Apixaban? Doesn't the success of the colonoscopy mean my bleeding risk is lower?" },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'w4c3_a1', title: 'Maintenance', icon: 'CheckCircle', color: '10b981', questions: [{ key: 'q1', q: 'Are any changes needed?' }] },
+    { id: 'w4c3_a1', title: 'Anticoagulation Reassessment', icon: 'ShieldAlert', color: 'dc2626', questions: [{ key: 'q1', q: 'Does a successful colonoscopy alter his stroke risk or the underlying indication for anticoagulation?' }] },
   ],
   PLAN_SECTIONS: [
     { id: 'w4c3_p1', title: 'Plan', options: [
-      { key: 'o1', label: 'Continue current GDMT and anticoagulation regimens', correct: true },
+      { key: 'o1', label: 'Reinforce that long-term anticoagulation remains indicated despite successful colonoscopy', correct: true },
+      { key: 'o2', label: 'Discontinue Apixaban since the bleeding source (polyps) was removed', correct: false },
     ] },
   ],
-  COUNSELING: [{ id: 'c1', title: 'Long-Term DOAC Management', body: ["You are doing an excellent job managing your medications. Staying on apixaban consistently is what keeps you protected from stroke. If you ever need a procedure, let us know in advance so we can discuss whether to temporarily pause it and when to restart it safely."] }],
+  COUNSELING: [{ id: 'c1', title: 'Long-Term Anticoagulation', body: ["It's great news that the colonoscopy went well and the polyps were removed. However, we take Apixaban to prevent strokes caused by your atrial fibrillation. The polyps were a potential bleeding risk, but removing them does not cure your atrial fibrillation or lower your stroke risk. Therefore, you must continue taking your blood thinner exactly as prescribed."] }],
 })
 
 export const W4_CASES = [michaelTue, michaelWed, michaelThu, angelaTue, angelaWed, angelaThu, robertTue, robertWed, robertThu]
