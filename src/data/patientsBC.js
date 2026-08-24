@@ -350,7 +350,7 @@ const jamesThu = makeCase({
 
 const lindaTue = makeCase({
   id: 'linda-tue',
-  PATIENT: { name: 'Linda Martinez', age: 68, sex: 'female', ethnicity: 'Hispanic/Latina', mrn: 'C-892110' },
+  PATIENT: { name: 'Linda Martinez', age: 68, sex: 'female', ethnicity: 'Hispanic/Latina', mrn: 'C-892110', allergiesSummary: 'Penicillin (Rash and hives)' },
   ENCOUNTER: {
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Advanced', difficultyTone: 'amber',
     chiefConcern: "My doctor told me my kidneys aren't doing as well as they should be, and honestly that's what worries me the most.",
@@ -381,6 +381,7 @@ const lindaTue = makeCase({
     { level: 'high', text: 'UACR 452 mg/g indicating severe albuminuria and high risk for CKD progression.' },
     { level: 'warn', text: 'LDL 92 mg/dL is above secondary prevention target for patient with prior STEMI.' },
   ],
+  ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash and hives', severity: 'Severe', type: 'Allergy', date: 'Childhood', source: 'Patient reported' }],
   PROBLEMS: [
     { name: 'Chronic Kidney Disease Stage 3a', detail: 'eGFR 52, UACR 452 (G3aA3)', flag: 'high' },
     { name: 'Secondary ASCVD Prevention', detail: 'Prior STEMI, LDL 92', flag: 'high' },
@@ -533,7 +534,7 @@ const lindaWed = makeCase({
   ],
   ALERTS: [{ level: 'info', text: 'UACR improved but remains severely increased. BP is now at goal. Identify the next therapeutic priority.' }],
   PROBLEMS: lindaTue.PROBLEMS,
-  ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash and hives (reported as child)' }],
+  ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash and hives', severity: 'Severe', type: 'Allergy', date: 'Childhood', source: 'Patient reported' }],
   IMMUNIZATIONS: lindaTue.IMMUNIZATIONS,
   MEDICATIONS: [
     { name: 'Lisinopril', dose: '40 mg', route: 'PO', freq: 'daily', indication: 'HTN / CKD', notes: 'Optimized at last visit' },
@@ -630,7 +631,7 @@ const lindaThu = makeCase({
   ],
   ALERTS: [{ level: 'info', text: 'Significant cumulative improvement. UACR reduced to A2 category. BP and LDL at goal.' }],
   PROBLEMS: lindaTue.PROBLEMS,
-  ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash and hives (reported as child)' }],
+  ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash and hives', severity: 'Severe', type: 'Allergy', date: 'Childhood', source: 'Patient reported' }],
   IMMUNIZATIONS: lindaTue.IMMUNIZATIONS,
   MEDICATIONS: [
     { name: 'Ezetimibe', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'ASCVD', notes: 'Added at last visit' },
