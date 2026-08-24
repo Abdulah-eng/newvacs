@@ -576,7 +576,7 @@ const robertThu = makeCase({
   IMMUNIZATIONS: robertTue.IMMUNIZATIONS,
   SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Recent elective screening colonoscopy approximately 10 days ago.' }, { label: 'Past Surgical History', value: 'Recent screening colonoscopy with tubular adenoma removal.' }],
   OBJECTIVE_EXTRA: [
-    { label: 'Gastroenterology Report', text: 'Colonoscopy (10 days ago): Two small tubular adenomas removed. No procedural complications. No post-procedural bleeding. Routine surveillance recommended by gastroenterology.' }
+    { label: 'Gastroenterology Report', value: 'Colonoscopy (10 days ago): Two small tubular adenomas removed. No procedural complications. No post-procedural bleeding. Routine surveillance recommended by gastroenterology.' }
   ],
   INTERVIEW_FIELDS: [
     { key: 'colonoscopy', label: 'Colonoscopy follow-up', placeholder: 'What are his concerns?' },
