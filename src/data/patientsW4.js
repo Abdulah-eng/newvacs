@@ -216,12 +216,18 @@ const angelaTue = makeCase({
     diseaseStates: ['HFrEF', 'AFib'],
     learningObjectives: ['Calculate CHA2DS2-VASc score', 'Identify cost nonadherence as a barrier to stroke prevention'],
   },
-  VITALS: { bp: '130/80', bpRepeat: '128/78', hr: '78', rr: '16', temp: '98.6°F', spo2: '97%', weight: '85 kg', height: "5'4\"", bmi: '32.1', flags: {} },
+  VITALS: { bp: '128/78', bpRepeat: '126/76', hr: '88', rr: '16', temp: '98.2°F', spo2: '98%', weight: '84 kg', height: "5'5\"", bmi: '30.8', flags: {} },
   LABS: [
     { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal' },
+    { label: 'BUN', value: '18', unit: 'mg/dL', flag: 'normal' },
     { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
     { label: 'eGFR', value: '72', unit: 'mL/min/1.73m²', flag: 'normal' },
+    { label: 'AST', value: '24', unit: 'U/L', flag: 'normal' },
+    { label: 'ALT', value: '21', unit: 'U/L', flag: 'normal' },
+    { label: 'WBC', value: '6.8', unit: 'x10³/mm³', flag: 'normal' },
+    { label: 'Hgb', value: '13.2', unit: 'g/dL', flag: 'normal' },
+    { label: 'Plt', value: '241', unit: 'x10³/mm³', flag: 'normal' },
     { label: 'NT-proBNP', value: '210', unit: 'pg/mL', flag: 'high' }
   ],
   ALERTS: [{ level: 'high', text: 'Patient has AFib with elevated stroke risk (CHA2DS2-VASc = 4) but is not taking her prescribed anticoagulant.' }],
@@ -281,17 +287,26 @@ const angelaWed = makeCase({
     diseaseStates: ['AFib'],
     learningObjectives: ['Address bleeding fears using shared decision-making', 'Calculate HAS-BLED'],
   },
-  VITALS: { bp: '130/80', bpRepeat: '128/78', hr: '78', rr: '16', temp: '98.6°F', spo2: '97%', weight: '85 kg', height: "5'4\"", bmi: '32.1', flags: {} },
+  VITALS: { bp: '126/76', bpRepeat: '124/74', hr: '84', rr: '16', temp: '98.1°F', spo2: '98%', weight: '84 kg', height: "5'5\"", bmi: '30.8', flags: {} },
   LABS: [
     { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '4.3', unit: 'mEq/L', flag: 'normal' },
+    { label: 'BUN', value: '17', unit: 'mg/dL', flag: 'normal' },
     { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
     { label: 'eGFR', value: '73', unit: 'mL/min/1.73m²', flag: 'normal' },
+    { label: 'WBC', value: '6.5', unit: 'x10³/mm³', flag: 'normal' },
+    { label: 'Hgb', value: '13.0', unit: 'g/dL', flag: 'normal' },
+    { label: 'Plt', value: '236', unit: 'x10³/mm³', flag: 'normal' },
     { label: 'NT-proBNP', value: '210', unit: 'pg/mL', flag: 'high' }
   ],
   ALERTS: [],
   PROBLEMS: [{ name: 'AFib', detail: 'Cost resolved, fear of bleeding', flag: 'warn' }],
-  MEDICATIONS: angelaTue.MEDICATIONS,
+  MEDICATIONS: [
+    { name: 'Sacubitril/Valsartan', dose: '49/51 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
+    { name: 'Metoprolol Succinate', dose: '50 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF/Rate control', notes: '' },
+    { name: 'Empagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
+    { name: 'Apixaban', dose: '5 mg', route: 'by mouth', freq: 'BID', indication: 'AFib stroke prevention', notes: 'Patient stopped taking recently' },
+  ],
   IMMUNIZATIONS: angelaTue.IMMUNIZATIONS,
   SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Patient obtained Apixaban via patient assistance program but stopped taking it due to bruising and fear of major bleeding after a friend\'s anecdote.' }],
   OBJECTIVE_EXTRA: [],
@@ -339,16 +354,27 @@ const angelaThu = makeCase({
     diseaseStates: ['AFib', 'HFrEF'],
     learningObjectives: ['Provide positive reinforcement and confirm adherence'],
   },
-  VITALS: { bp: '130/80', bpRepeat: '128/78', hr: '78', rr: '16', temp: '98.6°F', spo2: '97%', weight: '85 kg', height: "5'4\"", bmi: '32.1', flags: {} },
+  VITALS: { bp: '124/74', bpRepeat: '122/72', hr: '80', rr: '16', temp: '98.0°F', spo2: '98%', weight: '83 kg', height: "5'5\"", bmi: '30.5', flags: {} },
   LABS: [
     { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal' },
+    { label: 'BUN', value: '18', unit: 'mg/dL', flag: 'normal' },
     { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
-    { label: 'eGFR', value: '72', unit: 'mL/min/1.73m²', flag: 'normal' }
+    { label: 'eGFR', value: '72', unit: 'mL/min/1.73m²', flag: 'normal' },
+    { label: 'AST', value: '22', unit: 'U/L', flag: 'normal' },
+    { label: 'ALT', value: '24', unit: 'U/L', flag: 'normal' },
+    { label: 'WBC', value: '6.6', unit: 'x10³/mm³', flag: 'normal' },
+    { label: 'Hgb', value: '13.1', unit: 'g/dL', flag: 'normal' },
+    { label: 'Plt', value: '240', unit: 'x10³/mm³', flag: 'normal' }
   ],
   ALERTS: [],
   PROBLEMS: [{ name: 'AFib', detail: 'Anticoagulated successfully', flag: 'normal' }],
-  MEDICATIONS: angelaTue.MEDICATIONS,
+  MEDICATIONS: [
+    { name: 'Sacubitril/Valsartan', dose: '49/51 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
+    { name: 'Metoprolol Succinate', dose: '50 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF/Rate control', notes: '' },
+    { name: 'Empagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
+    { name: 'Apixaban', dose: '5 mg', route: 'by mouth', freq: 'BID', indication: 'AFib stroke prevention', notes: 'Taking as prescribed' },
+  ],
   IMMUNIZATIONS: angelaTue.IMMUNIZATIONS,
   SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Patient compliant with Apixaban. No bleeding events reported.' }],
   OBJECTIVE_EXTRA: [],
@@ -403,9 +429,14 @@ const robertTue = makeCase({
   LABS: [
     { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '5.0', unit: 'mEq/L', flag: 'normal' },
+    { label: 'BUN', value: '34', unit: 'mg/dL', flag: 'normal' },
     { label: 'SCr', value: '1.82', unit: 'mg/dL', flag: 'high' },
     { label: 'eGFR', value: '38', unit: 'mL/min/1.73m²', flag: 'low' },
-    { label: 'NT-proBNP', value: '165', unit: 'pg/mL', flag: 'high' }
+    { label: 'WBC', value: '6.4', unit: 'x10³/mm³', flag: 'normal' },
+    { label: 'Hgb', value: '13.5', unit: 'g/dL', flag: 'normal' },
+    { label: 'Plt', value: '228', unit: 'x10³/mm³', flag: 'normal' },
+    { label: 'NT-proBNP', value: '165', unit: 'pg/mL', flag: 'high' },
+    { label: 'HbA1c', value: '6.9', unit: '%', flag: 'normal' }
   ],
   ALERTS: [{ level: 'warn', text: 'Apixaban dose-reduction criteria: age ≥80 [No — age 76], weight ≤60 kg [No — 82 kg], SCr ≥1.5 mg/dL [Yes — SCr 1.82, but reduction requires ≥2 criteria]. Only ONE criterion met; standard dose 5 mg BID is correct.' }, { level: 'warn', text: 'CKD (eGFR 38) and polypharmacy require careful renal and electrolyte monitoring.' }],
   PROBLEMS: [
@@ -471,8 +502,12 @@ const robertWed = makeCase({
   LABS: [
     { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal' },
-    { label: 'SCr', value: '1.79', unit: 'mg/dL', flag: 'high' },
-    { label: 'eGFR', value: '39', unit: 'mL/min/1.73m²', flag: 'low' }
+    { label: 'BUN', value: '32', unit: 'mg/dL', flag: 'normal' },
+    { label: 'SCr', value: '1.79', mg: 'dL', flag: 'high' },
+    { label: 'eGFR', value: '39', unit: 'mL/min/1.73m²', flag: 'low' },
+    { label: 'WBC', value: '6.5', unit: 'x10³/mm³', flag: 'normal' },
+    { label: 'Hgb', value: '13.4', unit: 'g/dL', flag: 'normal' },
+    { label: 'Plt', value: '226', unit: 'x10³/mm³', flag: 'normal' }
   ],
   ALERTS: [],
   PROBLEMS: [{ name: 'AFib', detail: 'Minor epistaxis on DOAC', flag: 'warn' }],
@@ -528,8 +563,12 @@ const robertThu = makeCase({
   LABS: [
     { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal' },
     { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal' },
+    { label: 'BUN', value: '31', unit: 'mg/dL', flag: 'normal' },
     { label: 'SCr', value: '1.76', unit: 'mg/dL', flag: 'high' },
-    { label: 'eGFR', value: '40', unit: 'mL/min/1.73m²', flag: 'low' }
+    { label: 'eGFR', value: '40', unit: 'mL/min/1.73m²', flag: 'low' },
+    { label: 'WBC', value: '6.3', unit: 'x10³/mm³', flag: 'normal' },
+    { label: 'Hgb', value: '13.3', unit: 'g/dL', flag: 'normal' },
+    { label: 'Plt', value: '229', unit: 'x10³/mm³', flag: 'normal' }
   ],
   ALERTS: [],
   PROBLEMS: [{ name: 'AFib', detail: 'On Apixaban 5 mg BID', flag: 'normal' }],
