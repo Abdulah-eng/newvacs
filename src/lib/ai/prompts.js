@@ -33,7 +33,7 @@ Respond ONLY with a JSON object in this exact format:
 }`
 }
 
-export function buildSoapGradingPrompt({ studentSoap, hiddenInfoLog, granularRubric, patientName, visitDay }) {
+export function buildSoapGradingPrompt({ studentSoap, hiddenInfoLog, granularRubric, patientName, visitDay, chunkInfo = null }) {
   const rubricStr = granularRubric.map(r => {
     let s = `[${r.id}] (${r.points}pt) ${r.description} | F: ${r.fullCredit}`
     if (r.halfCredit && r.halfCredit !== '—') s += ` | H: ${r.halfCredit}`
@@ -41,8 +41,12 @@ export function buildSoapGradingPrompt({ studentSoap, hiddenInfoLog, granularRub
     return s
   }).join('\n')
 
-  return `You are the VACS SOAP note grader. Grade the student's structured SOAP note strictly against the provided granular rubric.
+  const chunkNote = chunkInfo
+    ? `\nIMPORTANT: ${chunkInfo}. Evaluate ONLY the rubric items listed below. Do NOT reference or evaluate any items outside this list.\n`
+    : ''
 
+  return `You are the VACS SOAP note grader. Grade the student's structured SOAP note strictly against the provided granular rubric.
+${chunkNote}
 INPUTS:
 - Patient: ${patientName}
 - Visit day: ${visitDay}
@@ -54,7 +58,7 @@ Note: F = Full Credit rule, H = Half Credit rule, Z = Zero Credit rule.
 ${rubricStr}
 
 RULES:
-1. You MUST evaluate the student's submission against EVERY SINGLE discrete input in the granular rubric.
+1. You MUST evaluate the student's submission against EVERY SINGLE discrete input in the granular rubric provided above.
 2. Assign FULL, HALF, or ZERO points based strictly on the F, H, and Z rules for each input.
 3. If an input is "Omits" or "Absent", give it 0 points.
 4. Output an array of itemized deductions. You do NOT need to output items where the student earned FULL credit. ONLY output items where the student lost points (HALF or ZERO credit).
