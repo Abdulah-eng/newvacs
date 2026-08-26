@@ -5,9 +5,9 @@ import { buildSoapGradingPrompt } from '../../../../lib/ai/prompts'
 import granularRubrics from '../../../../data/granular_rubrics.json'
 
 // Maximum rubric items to send in a single LLM call.
-// Maria C Wednesday has 352 items (~24k tokens) which exceeds output limits.
-// Chunking keeps each call well within safe output size.
-const RUBRIC_CHUNK_SIZE = 80
+// Keeping this at 60 ensures each chunk's JSON output stays well within
+// the model's safe output limit for all Week 3 rubrics (max 352 items).
+const RUBRIC_CHUNK_SIZE = 60
 
 
 const NAME_TO_LETTER = {
@@ -18,8 +18,11 @@ const NAME_TO_LETTER = {
   'Angela Rodriguez': 'B',
   'David Chen': 'C',
   'Sarah Thompson': 'A',
+  // Robert Jenkins is Patient B in Week 3.
+  // Both name variants must map to 'B' — the quoted nickname variant
+  // and the plain full name sent by the frontend (c.PATIENT.name).
   'Robert "Bob" Jenkins': 'B',
-  'Robert Jenkins': 'C',
+  'Robert Jenkins': 'B',
   'Maria Thompson': 'C',
   'Michael Thompson': 'A',
   'Angela Brooks': 'B',
