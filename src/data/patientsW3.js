@@ -35,19 +35,23 @@ const sarahTue = makeCase({
     { name: 'Allergic rhinitis', detail: 'On cetirizine and fluticasone nasal spray', flag: 'normal' },
   ],
   MEDICATIONS: [
-    { name: 'Albuterol HFA', dose: '2 puffs', route: 'Inhaled', freq: 'q4-6h PRN', indication: 'Asthma rescue', notes: 'Using frequently' },
-    { name: 'Budesonide HFA', dose: '180 mcg', route: 'Inhaled', freq: 'BID', indication: 'Asthma maintenance', notes: 'Active prescription' },
+    { name: 'Albuterol HFA', dose: '2 puffs', route: 'Inhaled', freq: 'q4-6h PRN', indication: 'Asthma rescue', notes: 'Using 1–2 times daily on most days' },
     { name: 'Cetirizine', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'Allergic rhinitis', notes: '' },
-    { name: 'Fluticasone nasal spray', dose: '1 spray/nostril', route: 'Intranasal', freq: 'daily', indication: 'Allergic rhinitis', notes: '' },
+    { name: 'Fluticasone nasal spray', dose: '1 spray/nostril', route: 'Intranasal', freq: 'daily', indication: 'Allergic rhinitis', notes: 'Not taking consistently' },
   ],
-  IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
+  IMMUNIZATIONS: [
+    { name: 'Influenza', status: 'Up to date', flag: 'normal' },
+    { name: 'COVID-19', status: 'Up to date', flag: 'normal' },
+    { name: 'Pneumococcal', status: 'Not documented', flag: 'warn' },
+    { name: 'Tdap', status: 'Overdue — last received >10 years ago', flag: 'warn' },
+  ],
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: 'Referred by PCP. Patient had a viral-triggered asthma exacerbation 6 weeks ago requiring an urgent-care visit and a 5-day course of prednisone.' },
+    { label: 'HPI', value: 'Referred by PCP. Symptoms of uncontrolled asthma worsening over several months (increasing albuterol use, nighttime awakenings, activity limitation). A viral-triggered asthma exacerbation 6 weeks ago required an urgent-care visit and a 5-day course of prednisone. No prior ICS controller prescribed before this visit.' },
     { label: 'Social history', value: 'Teacher. Non-smoker. Lives with husband and two kids.' },
   ],
   OBJECTIVE_EXTRA: [
-    { label: 'Spirometry', value: 'FEV1 78% predicted, FEV1/FVC 0.69', flag: 'normal' },
-    { label: 'ACT Score', value: 'Not yet administered', flag: 'warn' }
+    { label: 'Spirometry', value: 'FEV1 78% predicted, FEV1/FVC 0.69. Post-bronchodilator improvement +14% / +280 mL (meets GINA criteria ≥12% / ≥200 mL)', flag: 'normal' },
+    { label: 'ACT Score', value: '16 — Poorly controlled asthma', flag: 'warn' }
   ],
   INTERVIEW_FIELDS: [
     { key: 'albuterol', label: 'Rescue Inhaler Use', placeholder: 'How often does she use albuterol?' },
@@ -75,9 +79,11 @@ const sarahTue = makeCase({
     { id: 'w3-sarah_t-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
     { id: 'w3-sarah_t-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
     { id: 'w3-sarah_t-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "I was diagnosed with asthma when I was 8 years old. My brother and sister both have asthma. My mother has asthma and allergic rhinitis. My father has high blood pressure." },
-    { id: 'w3a_albuterol', topic: 'Albuterol Overuse', field: 'albuterol', keywords: ['rescue', 'albuterol', 'how often', 'frequent'], response: "I've been using my albuterol about 4 or 5 times a week lately. It helps me breathe better." },
-    { id: 'w3a_bud', topic: 'ICS Nonadherence', field: 'budesonide', keywords: ['budesonide', 'daily', 'controller', 'steroid'], response: "I only use the budesonide when I feel like a cold is coming on. I didn't think I needed it every day if my asthma wasn't bothering me." },
-    { id: 'w3a_night', topic: 'Nighttime symptoms', field: 'nighttime', keywords: ['night', 'sleep', 'wake', 'waking'], response: "I wake up coughing maybe once a week. I usually take a puff of albuterol and go back to sleep." },
+    { id: 'w3a_albuterol', topic: 'Albuterol Overuse', field: 'albuterol', keywords: ['rescue', 'albuterol', 'how often', 'frequent'], response: "I\'ve been using my albuterol about 1 to 2 times a day on most days, sometimes more. I even need it before I exercise and sometimes in the middle of the night." },
+    { id: 'w3a_bud', topic: 'ICS Nonadherence', field: 'budesonide', keywords: ['budesonide', 'daily', 'controller', 'steroid'], response: "I only use the budesonide when I feel like a cold is coming on. I didn't think I needed it every day if my asthma wasn\'t bothering me." },
+    { id: 'w3a_worse', topic: 'Worsening duration', field: 'worsening', keywords: ['how long', 'when did', 'getting worse', 'months', 'duration', 'worsen'], response: "Honestly, my breathing has been getting worse for several months. I\'ve been needing my rescue inhaler more and more. The flare-up six weeks ago was the worst it\'s been, but the symptoms were already building before that." },
+    { id: 'w3a_activity', topic: 'Activity limitation', field: 'activity', keywords: ['activity', 'exercise', 'hike', 'outdoor', 'limit', 'avoid', 'stairs'], response: "I\'ve had to avoid hiking and outdoor activities that I used to enjoy. I get short of breath climbing stairs and I\'ve had to slow down playing with my children too." },
+    { id: 'w3a_night', topic: 'Nighttime symptoms', field: 'nighttime', keywords: ['night', 'sleep', 'wake', 'waking'], response: "I wake up coughing and short of breath about 2 to 3 nights a week. I have to take my albuterol to get back to sleep." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'w3a_a1', title: 'Asthma Control Assessment', icon: 'Lungs', color: '0891b2',
@@ -107,15 +113,22 @@ const sarahWed = makeCase({
   },
   VITALS: { ...sarahTue.VITALS, bp: '120/76', hr: '76', rr: '16', weight: '75 kg', spo2: '99%', bmi: '27.5' },
   LABS: sarahTue.LABS,
-  ALERTS: [{ level: 'warn', text: 'Asthma partly controlled — assess adherence and consider therapy escalation (add LABA).' }],
+  ALERTS: [{ level: 'info', text: 'ACT 21 — Asthma well controlled on SMART therapy. Assess inhaler technique before considering any further escalation.' }],
   PROBLEMS: [{ name: 'Asthma', detail: 'Partly controlled', flag: 'warn' }],
-  MEDICATIONS: sarahTue.MEDICATIONS,
+  MEDICATIONS: [
+    { name: 'Budesonide/Formoterol (Symbicort)', dose: '160/4.5 mcg', route: 'Inhaled', freq: '1 inhalation BID + 1 inhalation PRN (SMART)', indication: 'Asthma SMART therapy', notes: 'Started at last visit' },
+    { name: 'Cetirizine', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'Allergic rhinitis', notes: '' },
+    { name: 'Fluticasone nasal spray', dose: '1 spray/nostril', route: 'Intranasal', freq: 'daily', indication: 'Allergic rhinitis', notes: 'Now taking consistently' },
+  ],
   IMMUNIZATIONS: sarahTue.IMMUNIZATIONS,
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Patient reports improved daily adherence to ICS. Experiences symptoms 2 days/week. ACT score is 21. Patient demonstrates increased self-management engagement and expresses willingness to continue the current regimen.' },
     { label: 'Social history', value: 'Teacher. Non-smoker. Lives with husband and two kids.' }
   ],
-  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.58, FEV1 63% predicted', flag: 'warn' }, { label: 'CAT Score', value: '16', flag: 'warn' }],
+  OBJECTIVE_EXTRA: [
+    { label: 'Spirometry', value: 'FEV1/FVC 0.76. Post-bronchodilator improvement +9% / +180 mL', flag: 'normal' },
+    { label: 'ACT Score', value: '21 — Improved from baseline ACT 16. Well-controlled range.', flag: 'normal' },
+  ],
   INTERVIEW_FIELDS: [
     { key: 'symptoms', label: 'Current Symptoms', placeholder: 'How are the symptoms now?' },
     { key: 'adherence', label: 'ICS Adherence', placeholder: 'Still taking the daily inhaler?' },
@@ -141,8 +154,10 @@ const sarahWed = makeCase({
     { id: 'w3-sarah_t-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
     { id: 'w3-sarah_t-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
     { id: 'w3-sarah_t-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "I was diagnosed with asthma when I was 8 years old. My brother and sister both have asthma. My mother has asthma and allergic rhinitis. My father has high blood pressure." },
-    { id: 'w3a2_sym', topic: 'Exercise symptoms', field: 'symptoms', keywords: ['symptoms', 'breathe', 'exercise', 'run'], response: "I'm much better during the day. I have symptoms about 2 days a week now when I exercise, and I take my rescue inhaler. My Asthma Control Test score was 21 today. I am much more engaged in managing my asthma and I'm definitely willing to continue my current regimen." },
-    { id: 'w3a2_adh', topic: 'Adherence', field: 'adherence', keywords: ['budesonide', 'every day', 'daily', 'take'], response: "Yes, I've been taking the budesonide every morning and night like you said." },
+    { id: 'w3a2_sym', topic: 'Exercise symptoms', field: 'symptoms', keywords: ['symptoms', 'breathe', 'exercise', 'run'], response: "I\'m much better overall. I only have symptoms 1 to 2 days a week now, mostly with exercise. My ACT score was 21 today, which is a big improvement. I\'m really committed to staying on this regimen." },
+    { id: 'w3a2_adh', topic: 'Adherence', field: 'adherence', keywords: ['budesonide', 'symbicort', 'every day', 'daily', 'take', 'miss'], response: "Yes, I\'ve been taking the Symbicort every morning and at night. I try not to miss it. Very few missed doses, maybe once." },
+    { id: 'w3a2_rhinitis', topic: 'Allergic rhinitis status', field: 'rhinitis', keywords: ['rhinitis', 'nasal', 'allergy', 'nose', 'sinus', 'fluticasone', 'spray', 'symptoms'], response: "My nasal symptoms are so much better since I started using the nasal spray every day. The sneezing and congestion are significantly improved compared to before." },
+    { id: 'w3a2_tech', topic: 'Inhaler technique', field: 'technique', keywords: ['show', 'demonstrate', 'technique', 'how', 'use', 'inhaler', 'steps'], response: "Sure. I just pick it up, shake it, put it in my mouth, and breathe in. I don\'t always breathe all the way out first before I inhale, and I usually just breathe normally after instead of holding my breath for 10 seconds." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'w3a2_a1', title: 'Therapy Escalation', icon: 'ArrowUpCircle', color: '13314f', questions: [{ key: 'q1', q: 'Since she is adherent but still symptomatic, what is the appropriate step-up therapy?' }] },
@@ -172,8 +187,8 @@ const sarahThu = makeCase({
     { label: 'FEV1/FVC', value: '0.77', flag: 'normal' },
     { label: 'FVC', value: '3.63', unit: 'L', flag: 'normal' }
   ],
-  ALERTS: [{ level: 'warn', text: 'Recurrent exacerbations despite dual bronchodilator therapy (LAMA/LABA). Consider ICS escalation based on eosinophil count.' }],
-  PROBLEMS: [{ name: 'Asthma', detail: 'Well controlled on SMART', flag: 'normal' }],
+  ALERTS: [{ level: 'info', text: 'ACT 22 — Asthma well controlled on SMART therapy. One viral-triggered exacerbation 6 weeks ago (OCS course) represents ongoing future risk despite current good control.' }],
+  PROBLEMS: [{ name: 'Asthma', detail: 'Well controlled on SMART (ACT 22). Note: one OCS-requiring exacerbation 6 weeks ago — ongoing future exacerbation risk', flag: 'normal' }],
   MEDICATIONS: [
     { name: 'Budesonide/Formoterol (Symbicort)', dose: '160/4.5 mcg', route: 'Inhaled', freq: '1 inhalation BID and PRN', indication: 'Asthma SMART therapy', notes: '' },
     { name: 'Cetirizine', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'Allergic rhinitis', notes: '' },
@@ -184,7 +199,10 @@ const sarahThu = makeCase({
     { label: 'HPI', value: 'Follow-up after transitioning to SMART therapy. History of a viral-triggered asthma exacerbation 6 weeks ago requiring an urgent-care visit and a 5-day course of prednisone. Denies any prior hospitalizations for asthma.' },
     { label: 'Social history', value: 'Teacher. Non-smoker. Lives with husband and two kids.' }
   ],
-  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.77, FEV1 85% predicted. Post-bronchodilator improvement of 8% / 160 mL.', flag: 'normal' }],
+  OBJECTIVE_EXTRA: [
+    { label: 'Spirometry', value: 'FEV1/FVC 0.77, FEV1 85% predicted. Post-bronchodilator improvement +8% / +160 mL.', flag: 'normal' },
+    { label: 'ACT Score', value: '22 — Well controlled. Trend: baseline ACT 16 → 21 → 22.', flag: 'normal' },
+  ],
   INTERVIEW_FIELDS: [
     { key: 'control', label: 'Asthma Control', placeholder: 'Any symptoms or rescue use?' },
   ],
@@ -204,7 +222,7 @@ const sarahThu = makeCase({
 
     INTERVIEW_KNOWLEDGE: [
     { id: 'w3-sarah_t-thu_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
-    { id: 'w3-sarah_t-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take cetirizine 10 mg daily and use fluticasone nasal spray for my allergies. I also take a daily multivitamin." },
+    { id: 'w3-sarah_t-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin', 'loratadine', 'cetirizine', 'allergy'], response: "I take cetirizine 10 mg every day and use fluticasone nasal spray daily for my allergies. I also take a daily multivitamin. I used to take loratadine PRN but switched to cetirizine daily." },
     { id: 'w3-sarah_t-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
     { id: 'w3-sarah_t-thu_vacc', topic: 'Vaccinations', field: 'vaccines', keywords: ['vaccine', 'vaccines', 'shot', 'flu', 'pneumonia'], response: "I'm pretty sure I got my flu shot at the pharmacy, but you should check my chart." },
     { id: 'w3-sarah_t-thu_drugs', topic: 'Recreational drugs', field: 'drugs', keywords: ['drugs', 'recreational', 'marijuana', 'weed', 'cocaine', 'illicit'], response: "I completely deny any recreational drug use." },
@@ -238,16 +256,16 @@ const bobTue = makeCase({
     diseaseStates: ['COPD', 'Hypertension', 'Hyperlipidemia'],
     learningObjectives: ['Identify missing maintenance therapy in symptomatic COPD', 'Assess cost and technique barriers'],
   },
-  VITALS: { bp: '132/82', bpRepeat: '130/80', hr: '76', rr: '20', temp: '98.4°F', weight: '80 kg', height: "5'9\"", bmi: '26.0', flags: {} },
+  VITALS: { bp: '132/78', bpRepeat: '130/76', hr: '80', rr: '18', temp: '98.4°F', weight: '89 kg', height: "5'10\"", bmi: '28.1', spo2: '95%', flags: {} },
   LABS: [
     { label: 'Eosinophils', value: '310', unit: 'cells/µL', flag: 'normal' },
-    { label: 'FEV1', value: '1.8', unit: 'L (60% pred)', flag: 'warn' },
-    { label: 'FEV1/FVC', value: '0.57', flag: 'warn' },
-    { label: 'FVC', value: '2.9', unit: 'L', flag: 'warn' }
+    { label: 'FEV1', value: '1.86', unit: 'L (62% pred)', flag: 'warn' },
+    { label: 'FEV1/FVC', value: '0.58', flag: 'warn' },
+    { label: 'FVC', value: '3.2', unit: 'L', flag: 'warn' }
   ],
-  ALERTS: [{ level: 'warn', text: 'Patient is highly symptomatic (mMRC 3) but not on a maintenance long-acting bronchodilator.' }],
+  ALERTS: [{ level: 'warn', text: 'Patient is highly symptomatic (mMRC not formally assessed) but is not on a maintenance long-acting bronchodilator. CAT score 18.' }],
   PROBLEMS: [
-    { name: 'COPD', detail: 'GOLD Group E', flag: 'high' },
+    { name: 'COPD', detail: 'GOLD Group B (CAT ≥10, ≤1 moderate exacerbation in past year, no hospitalization)', flag: 'warn' },
     { name: 'Hypertension', detail: 'Controlled', flag: 'normal' },
     { name: 'Hyperlipidemia', detail: 'Controlled', flag: 'normal' },
   ],
@@ -256,9 +274,17 @@ const bobTue = makeCase({
     { name: 'Lisinopril', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'HTN', notes: '' },
     { name: 'Atorvastatin', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'HLD', notes: '' },
   ],
-  IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Complains of shortness of breath. History of 2 moderate COPD exacerbations in the past 3 months.' }, { label: 'Social', value: 'Married, lives with spouse. Retired automotive mechanic. Former smoker (45 pack-years, quit 5 years ago). Denies recreational drug use.' }],
-  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.57, FEV1 60% predicted', flag: 'warn' }, { label: 'CAT Score', value: '17', flag: 'warn' }],
+  IMMUNIZATIONS: [
+    { name: 'Influenza', status: 'Up to date', flag: 'normal' },
+    { name: 'COVID-19', status: 'Up to date', flag: 'normal' },
+    { name: 'Pneumococcal', status: 'Not documented', flag: 'warn' },
+    { name: 'RSV', status: 'Not documented', flag: 'warn' },
+  ],
+  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Complains of shortness of breath on exertion. History of 1 moderate COPD exacerbation in the past 12 months, treated with oral corticosteroids and antibiotics without hospitalization. No maintenance bronchodilator therapy has been started despite ongoing symptoms.' }, { label: 'Social', value: 'Married, lives with spouse. Retired automotive mechanic. Former smoker (45 pack-years, quit 5 years ago). Denies recreational drug use.' }],
+  OBJECTIVE_EXTRA: [
+    { label: 'Spirometry', value: 'FEV1/FVC 0.58, FEV1 62% predicted (GOLD Grade 2 — Moderate)', flag: 'warn' },
+    { label: 'CAT Score', value: '18 — High symptom burden', flag: 'warn' },
+  ],
   INTERVIEW_FIELDS: [
     { key: 'maintenance', label: 'Maintenance Inhaler', placeholder: 'Was he prescribed a daily inhaler?' },
     { key: 'cost', label: 'Cost/Affordability', placeholder: 'Can he afford his meds?' },
@@ -284,7 +310,7 @@ const bobTue = makeCase({
     { id: 'w3-bob_j-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink 1 to 2 beers on weekends while watching sports, but nothing during the week." },
     { id: 'w3-bob_j-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago, and I had a 45 pack-year history before that." },
     { id: 'w3-bob_j_psh', topic: 'Past Surgical History', field: 'psh', keywords: ['surgery', 'surgeries', 'surgical', 'operation', 'operations', 'appendectomy'], response: "I had my appendix taken out a long time ago, but no other major surgeries." },
-    { id: 'w3-bob_j-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My brother has COPD. My father had coronary artery disease (CAD). My mother had high blood pressure." },
+    { id: 'w3-bob_j-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My brother has COPD. My father had both COPD and coronary artery disease (CAD). My mother had high blood pressure." },
     { id: 'w3b_maint', topic: 'Maintenance therapy', field: 'maintenance', keywords: ['daily', 'inhaler', 'prescribed', 'tiotropium', 'spiriva', 'laba', 'lama'], response: "The doctor gave me a script for some combination inhaler a while back, but when I went to the pharmacy, it was $300. I left it there. I just use the albuterol." },
     { id: 'w3b_cost', topic: 'Cost barrier', field: 'cost', keywords: ['cost', 'afford', 'expensive', 'money', 'pay'], response: "Yeah, I can't afford hundreds of dollars for an inhaler on a fixed income. The albuterol is cheap, so I stick with that." },
   ],
@@ -323,8 +349,8 @@ const bobWed = makeCase({
     { label: 'FEV1/FVC', value: '0.58', flag: 'warn' },
     { label: 'FVC', value: '3.1', unit: 'L', flag: 'warn' }
   ],
-  ALERTS: [{ level: 'warn', text: 'COPD symptoms persistent despite LAMA therapy — evaluate inhaler technique and device adherence.' }],
-  PROBLEMS: [{ name: 'COPD', detail: 'Symptomatic despite LAMA', flag: 'warn' }],
+  ALERTS: [{ level: 'warn', text: 'COPD symptoms persistent despite LAMA/LABA dual bronchodilator therapy (umeclidinium/vilanterol) — evaluate inhaler technique and device adherence before considering escalation.' }],
+  PROBLEMS: [{ name: 'COPD', detail: 'Symptomatic despite LAMA/LABA (Anoro Ellipta — dual bronchodilator)', flag: 'warn' }],
   MEDICATIONS: [
     ...bobTue.MEDICATIONS,
     { name: 'Umeclidinium/Vilanterol (Anoro Ellipta)', dose: '62.5/25 mcg', route: 'Inhaled', freq: 'daily', indication: 'COPD maintenance', notes: 'Newly started' },
@@ -334,7 +360,10 @@ const bobWed = makeCase({
     { label: 'HPI', value: 'Patient reports only mild, suboptimal improvement in dyspnea since starting umeclidinium/vilanterol (Anoro Ellipta) 62.5/25 mcg 1 inhalation daily. Denies any exacerbations, hospitalizations, or events requiring antibiotics or OCS. Patient has 3 chronic conditions: COPD (diagnosed 4 years ago), HTN (diagnosed 12 years ago, on lisinopril), and Hyperlipidemia (diagnosed 10 years ago). Past surgical history includes an appendectomy. Absence of diabetes or cardiac disease.' },
     { label: 'Social history', value: 'Married, lives with spouse. Retired automotive mechanic (occupational exposure). Former smoker (45 pack-years, quit 5 years ago). Denies recreational drug use.' }
   ],
-  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.58, FEV1 63% predicted', flag: 'warn' }, { label: 'CAT Score', value: '16', flag: 'warn' }],
+  OBJECTIVE_EXTRA: [
+    { label: 'Spirometry', value: 'FEV1/FVC 0.58, FEV1 63% predicted', flag: 'warn' },
+    { label: 'CAT Score', value: '16 — High symptom burden', flag: 'warn' },
+  ],
   INTERVIEW_FIELDS: [
     { key: 'technique', label: 'Inhaler Technique', placeholder: 'Ask him to demonstrate how he uses the HandiHaler' },
   ],
@@ -356,8 +385,9 @@ const bobWed = makeCase({
     { id: 'w3-bob_j-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink 1 to 2 beers on weekends while watching sports, but nothing during the week." },
     { id: 'w3-bob_j-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago, and I had a 45 pack-year history before that." },
     { id: 'w3-bob_j-wed_psh', topic: 'Past Surgical History', field: 'psh', keywords: ['surgery', 'surgeries', 'surgical', 'operation', 'operations', 'appendectomy'], response: "I had my appendix taken out a long time ago, but no other major surgeries." },
-    { id: 'w3-bob_j-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My brother has COPD. My father had coronary artery disease (CAD). My mother had high blood pressure." },
-    { id: 'w3b2_tech', topic: 'Inhaler technique', field: 'technique', keywords: ['show', 'demonstrate', 'how', 'use', 'technique', 'capsule'], response: "I slide the cover down until it clicks. Then I breathe out really hard straight into the mouthpiece, and then take a breath in." },
+    { id: 'w3-bob_j-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My brother has COPD. My father had both COPD and coronary artery disease (CAD). My mother had high blood pressure." },
+    { id: 'w3b2_adh', topic: 'Adherence', field: 'adherence', keywords: ['take', 'every day', 'daily', 'miss', 'forget', 'reminder', 'routine'], response: "I try to take it every day, but honestly I forget sometimes. I\'d say I probably take it about 3 or 4 days a week. I don\'t have a good reminder system set up yet." },
+    { id: 'w3b2_tech', topic: 'Inhaler technique', field: 'technique', keywords: ['show', 'demonstrate', 'how', 'use', 'technique', 'capsule', 'ellipta'], response: "I slide the cover down until it clicks. Then I breathe out really hard, blowing the air right into the mouthpiece, and then I take a breath in." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'w3b2_a1', title: 'Technique Assessment', icon: 'AlertTriangle', color: 'd97706', questions: [{ key: 'q1', q: 'What is wrong with his inhaler technique?' }] },
@@ -382,20 +412,29 @@ const bobThu = makeCase({
   },
   VITALS: { bp: '128/76', bpRepeat: '128/76', hr: '82', rr: '18', temp: '98.4°F', weight: '89 kg', height: "5'10\"", bmi: '28.1', spo2: '94%', flags: {} },
   LABS: [
-    { label: 'Eosinophils', value: '310', unit: 'cells/µL', flag: 'normal' },
-    { label: 'FEV1', value: '1.8', unit: 'L (63% pred)', flag: 'warn' },
-    { label: 'FEV1/FVC', value: '0.58', flag: 'warn' },
-    { label: 'FVC', value: '3.1', unit: 'L', flag: 'warn' }
+    { label: 'Eosinophils', value: '310', unit: 'cells/µL', flag: 'warn', note: 'Above 300 cells/µL threshold — favors ICS benefit per GOLD' },
+    { label: 'FEV1', value: '1.8', unit: 'L (60% pred)', flag: 'warn' },
+    { label: 'FEV1/FVC', value: '0.57', flag: 'warn' },
+    { label: 'FVC', value: '3.16', unit: 'L', flag: 'warn' }
   ],
-  ALERTS: [{ level: 'warn', text: 'Recurrent exacerbations despite dual bronchodilator therapy (LAMA/LABA). Consider ICS escalation based on eosinophil count.' }],
+  ALERTS: [{ level: 'warn', text: 'Recurrent exacerbations despite LAMA/LABA dual bronchodilator therapy (Anoro Ellipta). Eosinophils 310 cells/µL — consider ICS escalation (triple therapy) based on eosinophil count and frequent exacerbator pattern.' }],
   PROBLEMS: [{ name: 'COPD', detail: 'Frequent exacerbations, high symptom burden (CAT 17, eosinophils 310)', flag: 'high' }],
   MEDICATIONS: bobWed.MEDICATIONS,
-  IMMUNIZATIONS: bobTue.IMMUNIZATIONS,
+  IMMUNIZATIONS: [
+    { name: 'Influenza', status: 'Up to date', flag: 'normal' },
+    { name: 'COVID-19', status: 'Up to date', flag: 'normal' },
+    { name: 'Pneumococcal', status: 'Not documented', flag: 'warn' },
+    { name: 'RSV', status: 'Not documented', flag: 'warn' },
+  ],
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Patient reports persistent dyspnea and frequent albuterol use despite compliance with umeclidinium/vilanterol (Anoro Ellipta) 62.5/25 mcg 1 inhalation daily. History of 2 exacerbations in the past 3 months, and 3 exacerbations in the past 12 months. The first exacerbation was treated with OCS and antibiotics. The second exacerbation required an urgent care visit and OCS.' },
     { label: 'Social history', value: 'Married, lives with spouse. Retired automotive mechanic (occupational exposure). Former smoker (45 pack-years, quit 5 years ago). Denies recreational drug use.' }
   ],
-  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.57, FEV1 60% predicted', flag: 'warn' }, { label: 'CAT Score', value: '17', flag: 'warn' }],
+  OBJECTIVE_EXTRA: [
+    { label: 'Spirometry', value: 'FEV1/FVC 0.56, FEV1 61% predicted (post-bronchodilator)', flag: 'warn' },
+    { label: 'ACT Score', value: '17 — Partly controlled asthma component', flag: 'warn' },
+    { label: 'CAT Score', value: '15 — Moderate COPD symptom burden', flag: 'warn' },
+  ],
   INTERVIEW_FIELDS: [
     { key: 'symptoms', label: 'Symptom check', placeholder: 'Any exacerbations or rescue use?' },
   ],
@@ -417,7 +456,7 @@ const bobThu = makeCase({
     { id: 'w3-bob_j-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink 1 to 2 beers on weekends while watching sports, but nothing during the week." },
     { id: 'w3-bob_j-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago, and I had a 45 pack-year history before that." },
     { id: 'w3-bob_j-thu_psh', topic: 'Past Surgical History', field: 'psh', keywords: ['surgery', 'surgeries', 'surgical', 'operation', 'operations', 'appendectomy'], response: "I had my appendix taken out a long time ago, but no other major surgeries." },
-    { id: 'w3-bob_j-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My brother has COPD. My father had coronary artery disease (CAD). My mother had high blood pressure." },
+    { id: 'w3-bob_j-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My brother has COPD. My father had both COPD and coronary artery disease (CAD). My mother had high blood pressure." },
     { id: 'w3b3_sym', topic: 'Symptoms', field: 'symptoms', keywords: ['exacerbation', 'rescue', 'albuterol', 'feel', 'breathing'], response: "I still use my albuterol almost every day, and I've had a couple of flare-ups recently. I'm really starting to get worried that my lung function is dropping and my COPD is getting worse." },
     { id: 'w3b3_adherence', topic: 'Adherence', field: 'adherence', keywords: ['adherence', 'take', 'taking', 'miss', 'forget', 'every day', 'routine', 'reminder'], response: "I take the Anoro inhaler every single morning. I know I used to miss my old inhaler, only taking it 3 or 4 days a week, but now my wife puts it right next to my coffee mug as a reminder so I never forget." },
     { id: 'w3b3_goals', topic: 'Goals', field: 'goals', keywords: ['goal', 'goals', 'hope', 'want', 'expect'], response: "My main goal right now is just to stop having these exacerbations and stay out of the urgent care." },
@@ -439,7 +478,7 @@ const bobThu = makeCase({
 
 const mariaTue = makeCase({
   id: 'w3-maria_t-tue',
-  PATIENT: { name: 'Maria Thompson', age: 69, sex: 'female', ethnicity: 'Hispanic', mrn: 'W3-99211' },
+  PATIENT: { name: 'Maria Thompson', age: 69, sex: 'female', ethnicity: 'Hispanic', mrn: 'W3-99211', allergiesSummary: 'Sulfonamide antibiotics (Rash)' },
   ENCOUNTER: { week: 'Week 3', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I keep getting these chest infections and flare-ups.",
@@ -447,13 +486,14 @@ const mariaTue = makeCase({
     diseaseStates: ['Asthma-COPD Overlap', 'Allergic Rhinitis'],
     learningObjectives: ['Recognize ACO phenotype', 'Identify the mandatory role of ICS in patients with an asthma component'],
   },
-  VITALS: { bp: '128/80', bpRepeat: '126/78', hr: '72', rr: '18', temp: '98.6°F', weight: '70 kg', height: "5'4\"", bmi: '26.5', flags: {} },
+  VITALS: { bp: '126/74', bpRepeat: '124/72', hr: '80', rr: '18', temp: '98.6°F', weight: '71 kg', height: "5'4\"", bmi: '26.9', spo2: '95%', flags: {} },
   LABS: [
     { label: 'Absolute Eosinophils', value: '420', unit: 'cells/µL', flag: 'high' },
     { label: 'FEV1', value: '1.45', unit: 'L (58% pred)', flag: 'warn', note: 'Post-bronchodilator' },
     { label: 'FEV1/FVC', value: '0.55', flag: 'warn', note: 'Post-bronchodilator (Pre-BD was 0.54)' },
     { label: 'FVC', value: '2.63', unit: 'L', flag: 'warn' }
   ],
+  ALLERGIES: [{ substance: 'Sulfonamide antibiotics', reaction: 'Rash', severity: 'Moderate', type: 'Allergy', date: 'Past', source: 'Patient reported' }],
   ALERTS: [{ level: 'high', text: 'Patient has ACO and frequent exacerbations but is NOT on an inhaled corticosteroid.' }],
   PROBLEMS: [
     { name: 'Asthma-COPD Overlap (ACO)', detail: 'Frequent exacerbations (2 in past year)', flag: 'high' },
@@ -465,9 +505,22 @@ const mariaTue = makeCase({
     { name: 'Tiotropium (Spiriva)', dose: '2 inhalations', route: 'Inhaled', freq: 'daily', indication: 'COPD', notes: '' },
     { name: 'Albuterol HFA', dose: '2 puffs', route: 'Inhaled', freq: 'q4-6h PRN', indication: 'Rescue', notes: '' },
   ],
-  IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'History of asthma since childhood, COPD diagnosed 8 years ago. Past medical history includes Allergic Rhinitis, Hypertension, Osteopenia, and a Cholecystectomy. Reports 2 exacerbations requiring prednisone in the last 12 months.' }, { label: 'Social', value: 'Never smoker. Married, lives with spouse. Retired teacher. Drinks alcohol rarely. Denies recreational drug use.' }],
-  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.60, FEV1 65% predicted with significant bronchodilator reversibility (+15%, +250mL)', flag: 'warn' }],
+  IMMUNIZATIONS: [
+    { name: 'Influenza', status: 'Up to date', flag: 'normal' },
+    { name: 'COVID-19', status: 'Up to date', flag: 'normal' },
+    { name: 'Pneumococcal', status: 'Not documented', flag: 'warn' },
+    { name: 'RSV', status: 'Not documented', flag: 'warn' },
+    { name: 'Tdap', status: 'Overdue — last received >10 years ago', flag: 'warn' },
+  ],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: 'History of asthma since childhood, COPD diagnosed 8 years ago (ACO phenotype). Past medical history includes Allergic Rhinitis, Hypertension, Osteopenia, and Cholecystectomy. Allergy: sulfonamide antibiotics (rash). Reports 2 exacerbations in the past 12 months, both treated with oral corticosteroids and antibiotics in the outpatient setting — neither required hospitalization.' },
+    { label: 'Social', value: 'Former smoker (30 pack-years, quit 10 years ago). Married, lives with spouse. Retired teacher. Drinks alcohol rarely. Denies recreational drug use.' },
+  ],
+  OBJECTIVE_EXTRA: [
+    { label: 'Spirometry', value: 'Pre-BD FEV1/FVC 0.54 → Post-BD 0.55, FEV1 58% predicted. Bronchodilator reversibility: +15% / +260 mL (meets GINA criteria)', flag: 'warn' },
+    { label: 'ACT Score', value: '15 — Poorly controlled asthma', flag: 'warn' },
+    { label: 'CAT Score', value: '19 — High COPD symptom burden', flag: 'warn' },
+  ],
   INTERVIEW_FIELDS: [
     { key: 'exacerbations', label: 'Exacerbation History', placeholder: 'Tell me about the flare-ups' },
     { key: 'technique', label: 'Inhaler Technique & Concerns', placeholder: 'Show me your technique' },
@@ -486,14 +539,14 @@ const mariaTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
-    { id: 'w3-maria_t-tue_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
+    { id: 'w3-maria_t-tue_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'sulfonamide', 'codeine', 'reaction', 'rash', 'hives'], response: "Yes, I have a severe allergy to sulfonamide antibiotics — I get a terrible rash when I take them. My doctor told me to always mention this." },
     { id: 'w3-maria_t-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take cetirizine 10 mg PRN and use a saline nasal spray for allergic rhinitis. I have a lot of sneezing and nasal congestion that gets worse seasonally. I tried an inhaled steroid in the past but it didn't seem to help much." },
     { id: 'w3-maria_t-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink alcohol rarely, maybe a glass of wine a few times a year." },
-    { id: 'w3-maria_t-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
+    { id: 'w3-maria_t-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I smoked about a pack a day for 30 years before I quit 10 years ago. That\'s a 30 pack-year history." },
     { id: 'w3-maria_t-tue_drugs', topic: 'Recreational drugs', field: 'drugs', keywords: ['drugs', 'recreational', 'marijuana', 'weed', 'cocaine', 'illicit'], response: "I deny any recreational drug use." },
-    { id: 'w3-maria_t-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My mother had allergic rhinitis. My father had coronary artery disease (CAD). My sister has asthma." },
-    { id: 'w3c_tech', topic: 'Technique', field: 'technique', keywords: ['technique', 'use', 'show', 'worry', 'decline'], response: "I put the capsule in, pierce it, and breathe in deeply. I am really worried that these flare-ups are causing a progressive decline in my lung function, and I want to avoid being hospitalized." },
-    { id: 'w3c_exac', topic: 'Exacerbations', field: 'exacerbations', keywords: ['flare', 'infection', 'prednisone', 'hospital'], response: "I have symptoms on most days. I wake up at night from symptoms about twice a week. I have difficulty climbing stairs, walking uphill, and doing prolonged activities. I've had to go to urgent care 2 times in the last year for exacerbations and was hospitalized for one of them. I deny any recent hospitalizations or ED visits in the past month." },
+    { id: 'w3-maria_t-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had both COPD and coronary artery disease (CAD). My mother had asthma and allergic rhinitis. My sister also has asthma." },
+    { id: 'w3c_tech', topic: 'Technique', field: 'technique', keywords: ['technique', 'use', 'show', 'worry', 'decline', 'spiriva', 'respimat'], response: "I turn the base until it clicks, then press the button on the side to release the dose, and then I inhale slowly and deeply. I\'m really worried that these flare-ups are causing a progressive decline in my lung function, and I want to avoid being hospitalized." },
+    { id: 'w3c_exac', topic: 'Exacerbations', field: 'exacerbations', keywords: ['flare', 'infection', 'prednisone', 'hospital', 'exacerbation'], response: "I have symptoms on most days. I wake up at night from symptoms about twice a week. I have difficulty climbing stairs, walking uphill, and doing prolonged activities. I\'ve had 2 exacerbations in the past year — both times I was treated with prednisone and antibiotics at the clinic. Neither one required going to the hospital or the emergency room." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'w3c_a1', title: 'ACO Management', icon: 'Lungs', color: '7c3aed', questions: [
@@ -528,12 +581,12 @@ const mariaWed = makeCase({
   },
   VITALS: { ...mariaTue.VITALS },
   LABS: [
-    { label: 'Absolute Eosinophils', value: '420', unit: 'cells/µL', flag: 'high' },
-    { label: 'FEV1', value: '1.45', unit: 'L (58% pred)', flag: 'warn', note: 'Post-bronchodilator' },
-    { label: 'FEV1/FVC', value: '0.55', flag: 'warn', note: 'Post-bronchodilator (Pre-BD was 0.54)' },
-    { label: 'FVC', value: '2.63', unit: 'L', flag: 'warn' }
+    { label: 'Absolute Eosinophils', value: '520', unit: 'cells/µL', flag: 'high', note: 'Rising from baseline 420 — highly elevated, supports biologic candidacy' },
+    { label: 'FEV1', value: '1.52', unit: 'L (61% pred)', flag: 'warn', note: 'Post-bronchodilator' },
+    { label: 'FEV1/FVC', value: '0.56', flag: 'warn', note: 'Post-bronchodilator' },
+    { label: 'FVC', value: '2.71', unit: 'L', flag: 'warn' }
   ],
-  ALERTS: [{ level: 'high', text: 'Continued exacerbations despite optimized triple inhaled therapy.' }],
+  ALERTS: [{ level: 'high', text: 'Continued exacerbations despite optimized triple inhaled therapy. Eosinophils rising to 520 — strongly supports biologic (anti-IL-5) candidacy.' }],
   PROBLEMS: [{ name: 'ACO', detail: 'Exacerbating on triple therapy', flag: 'high' }],
   MEDICATIONS: [
     { name: 'Fluticasone/Umeclidinium/Vilanterol (Trelegy)', dose: '100/62.5/25 mcg', route: 'Inhaled', freq: 'daily', indication: 'ACO', notes: '' },
@@ -542,9 +595,13 @@ const mariaWed = makeCase({
   IMMUNIZATIONS: mariaTue.IMMUNIZATIONS,
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'One moderate exacerbation treated with prednisone 4 weeks ago. Adherence and technique confirmed excellent in clinic today.' },
-    { label: 'Social history', value: 'Retired elementary school principal. Married, lives with spouse. Never smoker.' }
+    { label: 'Social history', value: 'Former smoker (30 pack-years, quit 10 years ago). Retired elementary school principal. Married, lives with spouse.' },
   ],
-  OBJECTIVE_EXTRA: [{ label: 'Spirometry', value: 'FEV1/FVC 0.57, FEV1 60% predicted', flag: 'warn' }, { label: 'CAT Score', value: '17', flag: 'warn' }],
+  OBJECTIVE_EXTRA: [
+    { label: 'Spirometry', value: 'FEV1/FVC 0.56, FEV1 61% predicted (post-bronchodilator)', flag: 'warn' },
+    { label: 'ACT Score', value: '17 — Partly controlled asthma component', flag: 'warn' },
+    { label: 'CAT Score', value: '15 — Moderate COPD symptom burden', flag: 'warn' },
+  ],
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Adherence / Technique', placeholder: 'Are you sure she is taking it?' },
   ],
@@ -561,11 +618,11 @@ const mariaWed = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
-    { id: 'w3-maria_t-wed_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
+    { id: 'w3-maria_t-wed_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'sulfonamide', 'codeine', 'reaction', 'rash', 'hives'], response: "Yes, I have a severe allergy to sulfonamide antibiotics — I get a terrible rash when I take them." },
     { id: 'w3-maria_t-wed_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take cetirizine 10 mg PRN and use a saline nasal spray for allergic rhinitis. I have a lot of sneezing and nasal congestion that gets worse seasonally. I tried an inhaled steroid in the past but it didn't seem to help much." },
     { id: 'w3-maria_t-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink alcohol rarely, maybe a glass of wine a few times a year." },
-    { id: 'w3-maria_t-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
-    { id: 'w3-maria_t-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My mother had allergic rhinitis. My father had coronary artery disease (CAD). My sister has asthma." },
+    { id: 'w3-maria_t-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I smoked about a pack a day for 30 years before I quit 10 years ago." },
+    { id: 'w3-maria_t-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had both COPD and coronary artery disease (CAD). My mother had asthma and allergic rhinitis. My sister also has asthma." },
     { id: 'w3c2_adh', topic: 'Adherence verified', field: 'adherence', keywords: ['take', 'every day', 'daily', 'miss'], response: "I never miss a dose. I use it every morning exactly like you showed me. I even rinse my mouth after." },
   ],
   ASSESSMENT_CARDS: [
@@ -590,7 +647,8 @@ const mariaThu = makeCase({
     diseaseStates: ['ACO', 'Allergic Rhinitis', 'Hypertension', 'Osteopenia'],
     learningObjectives: ['Evaluate persistent exacerbations on ICS/LABA + LAMA', 'Assess biologic therapy candidacy'],
   },
-  VITALS: { bp: '130/80', bpRepeat: '130/80', hr: '76', rr: '18', temp: '98.6°F', weight: '70 kg', height: "5'4\"", bmi: '26.5', spo2: '94%', flags: {} },
+  ALLERGIES: [{ substance: 'Sulfonamide antibiotics', reaction: 'Rash', severity: 'Moderate', type: 'Allergy', date: 'Past', source: 'Patient reported' }],
+  VITALS: { bp: '124/72', bpRepeat: '122/70', hr: '76', rr: '16', temp: '98.6°F', weight: '71 kg', height: "5'4\"", bmi: '26.9', spo2: '96%', flags: {} },
   LABS: [
     { label: 'Absolute Eosinophils', value: '380', unit: 'cells/µL', flag: 'high' },
     { label: 'FEV1', value: '1.45', unit: 'L (58% pred)', flag: 'warn', note: 'Post-bronchodilator' },
@@ -613,7 +671,7 @@ const mariaThu = makeCase({
   IMMUNIZATIONS: mariaTue.IMMUNIZATIONS,
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Patient reports continued dyspnea and 2 exacerbations in the past 12 months (one requiring hospitalization) despite adherence to Symbicort and Spiriva. Allergic rhinitis is uncontrolled; patient stopped intranasal fluticasone. Denies missed doses.' },
-    { label: 'Social history', value: 'Retired teacher. Married, lives with spouse. Former smoker (30 pack-years, quit 10 years ago).' }
+    { label: 'Social history', value: 'Retired teacher. Married, lives with spouse. Former smoker (30 pack-years, quit 12 years ago).' }
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Spirometry', value: 'FEV1/FVC 0.57, FEV1 58% predicted', flag: 'warn' },
@@ -637,9 +695,9 @@ const mariaThu = makeCase({
     { id: 'w3-maria_t-thu_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I have a severe allergy to sulfonamide antibiotics. I get a terrible rash." },
     { id: 'w3-maria_t-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin', 'fluticasone', 'spray'], response: "I take cetirizine 10 mg PRN. I stopped the intranasal fluticasone because I kept forgetting to use it, and now my allergies are completely uncontrolled." },
     { id: 'w3-maria_t-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink alcohol rarely, maybe a glass of wine a few times a year." },
-    { id: 'w3-maria_t-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I smoked for 30 years before quitting 10 years ago." },
+    { id: 'w3-maria_t-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I smoked about a pack a day for 30 years. I quit 12 years ago. That\'s a 30 pack-year history." },
     { id: 'w3-maria_t-thu_psh', topic: 'Past Surgical History', field: 'psh', keywords: ['surgery', 'surgeries', 'surgical', 'operation', 'operations', 'cholecystectomy', 'gallbladder'], response: "I had my gallbladder removed (cholecystectomy) a few years ago." },
-    { id: 'w3-maria_t-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My mother had allergic rhinitis. My father had coronary artery disease (CAD). My sister has asthma." },
+    { id: 'w3-maria_t-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had both COPD and coronary artery disease (CAD). My mother had asthma and allergic rhinitis. My sister also has asthma." },
     { id: 'w3c3_upd', topic: 'Update', field: 'update', keywords: ['feel', 'breathing', 'exacerbation', 'flare'], response: "I'm using the Symbicort and Spiriva exactly as prescribed, but I still had a flare-up last month and my breathing feels tight. My allergies are also acting up badly since I stopped the nasal spray." },
     { id: 'w3c3_vacc', topic: 'Vaccinations', field: 'vaccines', keywords: ['vaccine', 'vaccines', 'shot', 'flu', 'pneumonia'], response: "I'm not entirely sure which vaccines I'm due for. You'd have to check my chart to see if I need a pneumonia or flu shot." },
   ],
