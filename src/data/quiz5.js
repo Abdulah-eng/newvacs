@@ -1090,7 +1090,7 @@ export const QUIZ_ITEMS = [
     "disease": "Tobacco Cessation",
     "concept_tag": "behavioral_health_overlap",
     "type": "ktype",
-    "stem": "Which statements are consistent with guideline-based tobacco cessation counseling?\n\nI. Tobacco use should be assessed routinely.II. Readiness to quit should guide the intervention.III. Follow-up should be arranged to support ongoing cessation efforts.",
+    "stem": "Which statements are consistent with guideline-based tobacco cessation counseling?\n\nI. Tobacco use should be assessed routinely.\n\nII. Readiness to quit should guide the intervention.\n\nIII. Follow-up should be arranged to support ongoing cessation efforts.",
     "options": [
       {
         "key": "a",
@@ -1218,7 +1218,7 @@ export const QUIZ_ITEMS = [
     "disease": "Integrated — Depression + Anxiety + Tobacco Cessation",
     "concept_tag": "guideline_concordant_patient_education",
     "type": "ktype",
-    "stem": "Which counseling points are appropriate for a patient receiving guideline-based care for depression, anxiety, and tobacco use disorder?\n\nI. Explain that remission, not just partial symptom improvement, is the goal of depression treatment.II. Explain that CBT may be used alone or with medication depending on severity and patient preference.III. Explain that tobacco cessation support can include behavioral counseling, readiness assessment, follow-up, and pharmacotherapy when appropriate.",
+    "stem": "Which counseling points are appropriate for a patient receiving guideline-based care for depression, anxiety, and tobacco use disorder?\n\nI. Explain that remission, not just partial symptom improvement, is the goal of depression treatment.\n\nII. Explain that CBT may be used alone or with medication depending on severity and patient preference.\n\nIII. Explain that tobacco cessation support can include behavioral counseling, readiness assessment, follow-up, and pharmacotherapy when appropriate.",
     "options": [
       {
         "key": "a",

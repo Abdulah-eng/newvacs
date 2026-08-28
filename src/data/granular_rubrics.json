@@ -62048,7 +62048,7 @@
     },
     {
       "id": "2A.1",
-      "description": "Blood pressure: 118/74 mmHg",
+      "description": "Blood pressure (118/74 mmHg)",
       "points": 0.7,
       "fullCredit": "States 118/74 mmHg",
       "halfCredit": "BP stated, imprecise",
@@ -62056,7 +62056,7 @@
     },
     {
       "id": "2A.2",
-      "description": "Heart rate: 70 bpm",
+      "description": "Heart rate (70 bpm)",
       "points": 0.4,
       "fullCredit": "States 70 bpm",
       "halfCredit": "-",
@@ -62064,7 +62064,7 @@
     },
     {
       "id": "2A.3",
-      "description": "Respiratory rate: 16 breaths/min",
+      "description": "Respiratory rate (16 breaths/min)",
       "points": 0.35,
       "fullCredit": "States 16 breaths/min",
       "halfCredit": "-",
@@ -62072,7 +62072,7 @@
     },
     {
       "id": "2A.4",
-      "description": "Temperature: 98.2°F",
+      "description": "Temperature (98.2°F)",
       "points": 0.35,
       "fullCredit": "States 98.2°F",
       "halfCredit": "-",
@@ -62080,7 +62080,7 @@
     },
     {
       "id": "2A.5",
-      "description": "Weight: 150 lbs",
+      "description": "Weight (150 lbs)",
       "points": 0.45,
       "fullCredit": "States 150 lbs",
       "halfCredit": "-",
@@ -62088,7 +62088,7 @@
     },
     {
       "id": "2A.6",
-      "description": "Height: 65 inches",
+      "description": "Height (65 inches)",
       "points": 0.35,
       "fullCredit": "States 65 inches",
       "halfCredit": "-",
@@ -62096,7 +62096,7 @@
     },
     {
       "id": "2A.7",
-      "description": "BMI: 25.0 kg/m²",
+      "description": "BMI (25.0 kg/m²)",
       "points": 0.5,
       "fullCredit": "States 25.0 kg/m²",
       "halfCredit": "BMI stated, imprecise",
@@ -62120,9 +62120,9 @@
     },
     {
       "id": "2A.10",
-      "description": "BMI of 25.0 kg/m² is within normal range (18.5–24.9) / borderline normal",
+      "description": "BMI of 25.0 kg/m² is within overweight range / borderline normal",
       "points": 0.3,
-      "fullCredit": "Interprets BMI as normal or borderline normal",
+      "fullCredit": "States overweight or borderline normal",
       "halfCredit": "-",
       "zeroCredit": "Omits"
     },
@@ -64082,9 +64082,9 @@
     },
     {
       "id": "2A.9",
-      "description": "All vital signs noted as within normal limits",
+      "description": "BMI classified as overweight (25.0-29.9 kg/m2)",
       "points": 0.25,
-      "fullCredit": "States vitals WNL",
+      "fullCredit": "States overweight",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -67382,9 +67382,9 @@
     },
     {
       "id": "1A.5",
-      "description": "Visit type stated (scheduled 6-month follow-up)",
+      "description": "Visit type stated (scheduled 3-month follow-up)",
       "points": 0.35,
-      "fullCredit": "States scheduled 6-month follow-up",
+      "fullCredit": "States scheduled 3-month follow-up",
       "halfCredit": "States follow-up, no interval",
       "zeroCredit": "Omits"
     },
@@ -67661,14 +67661,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1C.4",
-      "description": "PMH: Migraine Headaches",
-      "points": 0.3,
-      "fullCredit": "Lists migraine headaches",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1C.5",
       "description": "PSH: Cesarean section",
       "points": 0.5,
@@ -67842,30 +67834,6 @@
       "points": 0.35,
       "fullCredit": "States q8h PRN anxiety",
       "halfCredit": "States PRN, no interval",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.7",
-      "description": "Sumatriptan listed",
-      "points": 0.25,
-      "fullCredit": "Names sumatriptan",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.8",
-      "description": "Sumatriptan dose (50 mg)",
-      "points": 0.3,
-      "fullCredit": "States 50 mg",
-      "halfCredit": "—",
-      "zeroCredit": "Incorrect"
-    },
-    {
-      "id": "1E.9",
-      "description": "Sumatriptan regimen (PO as needed for migraine)",
-      "points": 0.25,
-      "fullCredit": "States PO PRN migraine",
-      "halfCredit": "States PRN, no indication",
       "zeroCredit": "Omits"
     },
     {
@@ -68432,7 +68400,7 @@
       "id": "3A.13",
       "description": "Cites ACP Living Clinical Guideline for continuation therapy",
       "points": 0.53,
-      "fullCredit": "Names ACP Living Clinical Guideline",
+      "fullCredit": "States no significant barriers to treatment",
       "halfCredit": "Cites guideline, no source",
       "zeroCredit": "Omits"
     },
@@ -69847,14 +69815,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1C.4",
-      "description": "PMH: Migraine Headaches",
-      "points": 0.25,
-      "fullCredit": "Lists migraine headaches",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1C.5",
       "description": "PSH: Cesarean section",
       "points": 0.35,
@@ -70052,30 +70012,6 @@
       "points": 0.4,
       "fullCredit": "States PO q8h PRN anxiety",
       "halfCredit": "States PRN, no interval or route",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.7",
-      "description": "Sumatriptan listed (name)",
-      "points": 0.25,
-      "fullCredit": "Names sumatriptan",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.8",
-      "description": "Sumatriptan dose (50 mg)",
-      "points": 0.3,
-      "fullCredit": "States 50 mg",
-      "halfCredit": "—",
-      "zeroCredit": "Incorrect"
-    },
-    {
-      "id": "1E.9",
-      "description": "Sumatriptan regimen (PO as needed for migraine)",
-      "points": 0.25,
-      "fullCredit": "States PO PRN migraine",
-      "halfCredit": "States PRN, no route or indication",
       "zeroCredit": "Omits"
     },
     {
@@ -71874,9 +71810,9 @@
     },
     {
       "id": "1B.13",
-      "description": "Estimates missing only one dose in past month",
+      "description": "Estimates missing only one dose in past month / taking perfectly for 3 weeks",
       "points": 0.35,
-      "fullCredit": "States ~1 missed dose/month",
+      "fullCredit": "States ~1 missed dose/month or 100% adherence for 3 weeks",
       "halfCredit": "States improved adherence, no estimate",
       "zeroCredit": "Omits"
     },
@@ -71925,14 +71861,6 @@
       "description": "PMH: Tobacco Use Disorder",
       "points": 0.25,
       "fullCredit": "Lists Tobacco Use Disorder",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1C.4",
-      "description": "PMH: Migraine Headaches",
-      "points": 0.25,
-      "fullCredit": "Lists migraine headaches",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -72137,30 +72065,6 @@
       "zeroCredit": "Omits"
     },
     {
-      "id": "1E.7",
-      "description": "Sumatriptan listed",
-      "points": 0.55,
-      "fullCredit": "Names sumatriptan",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1E.8",
-      "description": "Sumatriptan dose: 50 mg",
-      "points": 0.65,
-      "fullCredit": "States 50 mg",
-      "halfCredit": "States sumatriptan, no dose",
-      "zeroCredit": "Incorrect dose"
-    },
-    {
-      "id": "1E.9",
-      "description": "Sumatriptan regimen: PO as needed for migraine",
-      "points": 0.55,
-      "fullCredit": "States PO PRN migraine",
-      "halfCredit": "States PRN, no route/indication",
-      "zeroCredit": "Omits"
-    },
-    {
       "id": "1E.10",
       "description": "No known drug allergies documented",
       "points": 0.65,
@@ -72298,7 +72202,7 @@
     },
     {
       "id": "2A.1",
-      "description": "Blood pressure: 122/76 mmHg",
+      "description": "Blood pressure (122/76 mmHg)",
       "points": 0.6,
       "fullCredit": "States 122/76 mmHg",
       "halfCredit": "BP stated, value imprecise",
@@ -72306,7 +72210,7 @@
     },
     {
       "id": "2A.2",
-      "description": "Heart rate: 78 bpm",
+      "description": "Heart rate (78 bpm)",
       "points": 0.4,
       "fullCredit": "States 78 bpm",
       "halfCredit": "—",
@@ -72314,7 +72218,7 @@
     },
     {
       "id": "2A.3",
-      "description": "Respiratory rate: 16 breaths/min",
+      "description": "Respiratory rate (16 breaths/min)",
       "points": 0.3,
       "fullCredit": "States 16 breaths/min",
       "halfCredit": "—",
@@ -72322,7 +72226,7 @@
     },
     {
       "id": "2A.4",
-      "description": "Temperature: 98.1°F",
+      "description": "Temperature (98.1°F)",
       "points": 0.3,
       "fullCredit": "States 98.1°F",
       "halfCredit": "—",
@@ -72330,7 +72234,7 @@
     },
     {
       "id": "2A.5",
-      "description": "Weight: 174 lbs",
+      "description": "Weight (174 lbs)",
       "points": 0.4,
       "fullCredit": "States 174 lbs",
       "halfCredit": "—",
@@ -72338,7 +72242,7 @@
     },
     {
       "id": "2A.6",
-      "description": "Height: 64 inches",
+      "description": "Height (64 inches)",
       "points": 0.3,
       "fullCredit": "States 64 inches",
       "halfCredit": "—",
@@ -72346,7 +72250,7 @@
     },
     {
       "id": "2A.7",
-      "description": "BMI: 29.9 kg/m²",
+      "description": "BMI (29.9 kg/m²)",
       "points": 0.7,
       "fullCredit": "States 29.9 kg/m²",
       "halfCredit": "BMI stated, value imprecise",
@@ -72754,9 +72658,9 @@
     },
     {
       "id": "3C.4",
-      "description": "Patient estimates ~1 missed dose in past month",
+      "description": "Patient estimates ~1 missed dose in past month / taking perfectly for 3 weeks",
       "points": 0.55,
-      "fullCredit": "States approximately one missed dose/month",
+      "fullCredit": "States approximately one missed dose/month or 100% adherence for 3 weeks",
       "halfCredit": "States rare missed doses, no estimate",
       "zeroCredit": "Omits"
     },
