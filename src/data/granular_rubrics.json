@@ -65460,9 +65460,9 @@
     },
     {
       "id": "1B.1",
-      "description": "Overall status: reports feeling significantly better compared with initial visit",
+      "description": "Overall status: reports feeling a little better or somewhat better compared with initial visit",
       "points": 0.3,
-      "fullCredit": "States significantly better vs initial visit",
+      "fullCredit": "States a little better or somewhat better",
       "halfCredit": "States better, no initial-visit comparison",
       "zeroCredit": "Omits"
     },
@@ -77908,14 +77908,6 @@
       "points": 0.1,
       "fullCredit": "States woodworking for first time in many months",
       "halfCredit": "States resumed hobby",
-      "zeroCredit": "Omits"
-    },
-    {
-      "id": "1B.20",
-      "description": "Improved relationship with spouse; spending more time with her",
-      "points": 0.25,
-      "fullCredit": "States more time with spouse",
-      "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
