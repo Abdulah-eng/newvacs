@@ -6,7 +6,7 @@ import { GRADING_RUBRICS } from '../data/cases'
 import granularRubrics from '../data/granular_rubrics.json'
 import {
   Wand2, Copy, Check, AlertTriangle, GraduationCap, CheckCircle2, Circle,
-  TrendingUp, ShieldAlert, Lightbulb, ListChecks, ChevronDown, ChevronRight, ShieldCheck
+  TrendingUp, ShieldAlert, Lightbulb, ListChecks, ChevronDown, ChevronRight, ShieldCheck, FileDown
 } from 'lucide-react'
 
 const SECTIONS = [
@@ -140,7 +140,7 @@ export function SOAPNoteTab({ c, state, soap, onChange, onGraded }) {
         </div>
       )}
 
-      {result && <Feedback result={result} />}
+      {result && <Feedback result={result} patientName={c.PATIENT?.name} visitDay={c.ENCOUNTER?.day} weekLabel={c.ENCOUNTER?.week} />}
 
       <div className="mb-4 mt-4 flex items-start gap-2 rounded-lg border border-amber-300 bg-amber-50 px-3 py-2">
         <AlertTriangle size={16} className="text-amber-600 mt-0.5 shrink-0" />
@@ -169,7 +169,87 @@ export function SOAPNoteTab({ c, state, soap, onChange, onGraded }) {
   )
 }
 
-function Feedback({ result }) {
+function Feedback({ result, patientName, visitDay, weekLabel }) {
+  function downloadPdf() {
+    const deductionRows = (result.itemized_deductions || [])
+      .map(d => `<tr>
+        <td style="padding:6px 8px;border-bottom:1px solid #e2e8f0;color:#475569;font-size:12px;white-space:nowrap">${d.id}</td>
+        <td style="padding:6px 8px;border-bottom:1px solid #e2e8f0;font-size:12px">${d.reason}</td>
+        <td style="padding:6px 8px;border-bottom:1px solid #e2e8f0;font-size:12px;text-align:center;color:${d.awarded_points === 0 ? '#dc2626' : '#d97706'}">${d.awarded_points}/${d.max_points}</td>
+      </tr>`)
+      .join('')
+
+    const unsafeRows = (result.unsafe_flags || [])
+      .map(f => `<div style="margin-bottom:6px;font-size:12px"><strong>${f.recommendation}:</strong> ${f.explanation}</div>`)
+      .join('')
+
+    const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Feedback — ${patientName || 'Patient'} ${visitDay || ''}</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1e293b; background: #fff; padding: 32px; }
+    h1 { font-size: 20px; font-weight: 700; color: #0d2137; margin-bottom: 2px; }
+    .meta { font-size: 12px; color: #64748b; margin-bottom: 20px; }
+    .score-badge { display: inline-block; font-size: 28px; font-weight: 800; color: #0d9488; border: 3px solid #0d9488; border-radius: 50%; width: 64px; height: 64px; line-height: 58px; text-align: center; margin-bottom: 16px; }
+    .section { margin-bottom: 20px; }
+    .section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0d9488; margin-bottom: 6px; }
+    .section-title.amber { color: #b45309; }
+    .section-title.navy { color: #0d2137; }
+    .section-title.red { color: #dc2626; }
+    p { font-size: 13px; line-height: 1.6; color: #374151; }
+    table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+    th { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: #94a3b8; text-align: left; padding: 6px 8px; border-bottom: 2px solid #e2e8f0; }
+    th:last-child { text-align: center; }
+    hr { border: none; border-top: 1px solid #e2e8f0; margin: 16px 0; }
+    .disclaimer { font-size: 11px; color: #94a3b8; margin-top: 24px; border-top: 1px solid #e2e8f0; padding-top: 12px; }
+    @media print { body { padding: 16px; } }
+  </style>
+</head>
+<body>
+  <h1>AI Grading Feedback</h1>
+  <p class="meta">${weekLabel || ''} &nbsp;·&nbsp; ${patientName || 'Patient'} &nbsp;·&nbsp; ${visitDay || ''} &nbsp;·&nbsp; Generated ${new Date().toLocaleString()}</p>
+  <div class="score-badge">${result.total_score || 0}%</div>
+
+  ${unsafeRows ? `<div class="section"><div class="section-title red">⚠ Watch-outs (Unsafe Recommendations)</div>${unsafeRows}</div><hr/>` : ''}
+
+  <div class="section">
+    <div class="section-title">✓ Strengths</div>
+    <p>${result.strengths || '—'}</p>
+  </div>
+  <hr/>
+  <div class="section">
+    <div class="section-title amber">⬡ Opportunities to Improve</div>
+    <p>${result.improvement_guidance || '—'}</p>
+  </div>
+  ${
+    (result.itemized_deductions || []).length > 0 ? `
+  <hr/>
+  <div class="section">
+    <div class="section-title amber">Itemised Deductions</div>
+    <table>
+      <thead><tr><th>ID</th><th>Reason</th><th>Score</th></tr></thead>
+      <tbody>${deductionRows}</tbody>
+    </table>
+  </div>` : ''
+  }
+  <hr/>
+  <div class="section">
+    <div class="section-title navy">⚑ Gold Standard Comparison</div>
+    <p>${result.gold_standard_comparison || '—'}</p>
+  </div>
+
+  <p class="disclaimer">This is AI-generated formative feedback — a study aid. Use your preceptor's judgment as the final word.</p>
+</body>
+</html>`
+
+    const win = window.open('', '_blank', 'width=900,height=700')
+    win.document.write(html)
+    win.document.close()
+    win.onload = () => { win.focus(); win.print() }
+  }
   if (!result || result.empty) {
     return (
       <div className="rounded-xl border border-slate-200 bg-white shadow-sm p-5 text-center mt-4">
@@ -197,13 +277,20 @@ function Feedback({ result }) {
         <div className="grid place-items-center w-16 h-16 rounded-full bg-white shadow-sm shrink-0">
           <span className={`font-head text-2xl ${t.text}`}>{result.total_score || 0}%</span>
         </div>
-        <div>
+        <div className="flex-1">
           <div className="flex items-center gap-2">
             <h3 className="font-head text-lg text-navy">AI Feedback</h3>
             <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold ring-1 ${t.chip}`}>{band.label}</span>
           </div>
           <p className="text-[13px] text-slate-600 mt-0.5">{band.note}</p>
         </div>
+        <button
+          onClick={downloadPdf}
+          title="Download feedback as PDF"
+          className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-[12px] font-semibold text-slate-700 hover:bg-slate-50 hover:border-slate-400 transition shrink-0"
+        >
+          <FileDown size={14} /> Download PDF
+        </button>
       </div>
 
       {result.unsafe_flags && result.unsafe_flags.length > 0 && (
