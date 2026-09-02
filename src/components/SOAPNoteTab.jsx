@@ -171,12 +171,18 @@ export function SOAPNoteTab({ c, state, soap, onChange, onGraded }) {
 
 function Feedback({ result, patientName, visitDay, weekLabel }) {
   function downloadPdf() {
-    const deductionRows = (result.itemized_deductions || [])
-      .map(d => `<tr>
-        <td style="padding:6px 8px;border-bottom:1px solid #e2e8f0;color:#475569;font-size:12px;white-space:nowrap">${d.id}</td>
-        <td style="padding:6px 8px;border-bottom:1px solid #e2e8f0;font-size:12px">${d.reason}</td>
-        <td style="padding:6px 8px;border-bottom:1px solid #e2e8f0;font-size:12px;text-align:center;color:${d.awarded_points === 0 ? '#dc2626' : '#d97706'}">${d.awarded_points}/${d.max_points}</td>
-      </tr>`)
+    const deductions = result.itemized_deductions || []
+
+    const deductionLines = deductions
+      .map(d => {
+        const lost = d.max_points - d.awarded_points
+        const sign = lost > 0 ? `-${lost}` : `+${d.awarded_points}`
+        return `<div class="ded-row">
+          <span class="ded-id">[${d.id}]</span>
+          <span class="ded-pts" style="color:${d.awarded_points === 0 ? '#dc2626' : '#d97706'}">${sign} pts</span>
+          <span class="ded-reason">${d.reason}</span>
+        </div>`
+      })
       .join('')
 
     const unsafeRows = (result.unsafe_flags || [])
@@ -195,15 +201,16 @@ function Feedback({ result, patientName, visitDay, weekLabel }) {
     .meta { font-size: 12px; color: #64748b; margin-bottom: 20px; }
     .score-badge { display: inline-block; font-size: 28px; font-weight: 800; color: #0d9488; border: 3px solid #0d9488; border-radius: 50%; width: 64px; height: 64px; line-height: 58px; text-align: center; margin-bottom: 16px; }
     .section { margin-bottom: 20px; }
-    .section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0d9488; margin-bottom: 6px; }
+    .section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0d9488; margin-bottom: 8px; }
     .section-title.amber { color: #b45309; }
     .section-title.navy { color: #0d2137; }
     .section-title.red { color: #dc2626; }
     p { font-size: 13px; line-height: 1.6; color: #374151; }
-    table { width: 100%; border-collapse: collapse; margin-top: 8px; }
-    th { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: #94a3b8; text-align: left; padding: 6px 8px; border-bottom: 2px solid #e2e8f0; }
-    th:last-child { text-align: center; }
     hr { border: none; border-top: 1px solid #e2e8f0; margin: 16px 0; }
+    .ded-row { display: flex; gap: 8px; align-items: baseline; padding: 5px 0; border-bottom: 1px solid #f1f5f9; font-size: 12px; }
+    .ded-id { font-family: monospace; font-weight: 700; color: #475569; white-space: nowrap; min-width: 56px; }
+    .ded-pts { font-weight: 700; white-space: nowrap; min-width: 52px; }
+    .ded-reason { color: #374151; line-height: 1.5; }
     .disclaimer { font-size: 11px; color: #94a3b8; margin-top: 24px; border-top: 1px solid #e2e8f0; padding-top: 12px; }
     @media print { body { padding: 16px; } }
   </style>
@@ -224,17 +231,12 @@ function Feedback({ result, patientName, visitDay, weekLabel }) {
     <div class="section-title amber">⬡ Opportunities to Improve</div>
     <p>${result.improvement_guidance || '—'}</p>
   </div>
-  ${
-    (result.itemized_deductions || []).length > 0 ? `
+  ${deductions.length > 0 ? `
   <hr/>
   <div class="section">
-    <div class="section-title amber">Itemised Deductions</div>
-    <table>
-      <thead><tr><th>ID</th><th>Reason</th><th>Score</th></tr></thead>
-      <tbody>${deductionRows}</tbody>
-    </table>
-  </div>` : ''
-  }
+    <div class="section-title amber">Point Deductions (${deductions.length} item${deductions.length !== 1 ? 's' : ''})</div>
+    ${deductionLines}
+  </div>` : ''}
   <hr/>
   <div class="section">
     <div class="section-title navy">⚑ Gold Standard Comparison</div>
@@ -250,6 +252,7 @@ function Feedback({ result, patientName, visitDay, weekLabel }) {
     win.document.close()
     win.onload = () => { win.focus(); win.print() }
   }
+
   if (!result || result.empty) {
     return (
       <div className="rounded-xl border border-slate-200 bg-white shadow-sm p-5 text-center mt-4">
