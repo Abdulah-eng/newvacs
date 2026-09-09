@@ -5,9 +5,9 @@ import { buildSoapGradingPrompt } from '../../../../lib/ai/prompts'
 import granularRubrics from '../../../../data/granular_rubrics.json'
 
 // Maximum rubric items to send in a single LLM call.
-// Keeping this at 60 ensures each chunk's JSON output stays well within
-// the model's safe output limit for all Week 3 rubrics (max 352 items).
-const RUBRIC_CHUNK_SIZE = 60
+// At 70 items per chunk the JSON output stays well within the model's safe
+// output limit while keeping the total number of parallel chunks low.
+const RUBRIC_CHUNK_SIZE = 70
 
 
 const NAME_TO_LETTER = {
@@ -76,7 +76,8 @@ export async function POST(request) {
     let result;
     try {
       if (granularRubric.length > RUBRIC_CHUNK_SIZE) {
-        // Large rubric: grade in chunks to avoid LLM output truncation
+        // Large rubric: grade in parallel chunks to avoid LLM output truncation
+        // and to prevent sequential timeouts on very large rubrics (e.g. 352 items).
         result = await gradeInChunks(messages, granularRubric, studentSoap, hiddenInfoLog, patientName, visitDay)
       } else {
         result = await callJsonLlm(messages)
@@ -112,6 +113,7 @@ export async function POST(request) {
       strengths: result.strengths || '',
       improvement_guidance: result.improvement_guidance || '',
       missed_items: missedItems,
+      itemized_deductions: result.itemized_deductions || [],
       unsafe_flags: result.unsafe_flags || []
     }
 
@@ -127,7 +129,12 @@ export const maxDuration = 300;
 
 /**
  * For rubrics with more than RUBRIC_CHUNK_SIZE items, split into chunks
- * and grade each chunk separately, then merge the deductions.
+ * and grade ALL chunks in parallel (Promise.all), then merge the results.
+ *
+ * Why parallel?  Sequential grading of the largest rubrics (e.g. 352-item
+ * Week3_Patient_C_Wednesday → 6 chunks) was taking ~9 minutes because each
+ * LLM call waited for the previous one to finish.  Running all chunks at once
+ * reduces wall-clock time to a single LLM round-trip (~60–90 s).
  */
 async function gradeInChunks(originalMessages, fullRubric, studentSoap, hiddenInfoLog, patientName, visitDay) {
   const chunks = []
@@ -135,29 +142,34 @@ async function gradeInChunks(originalMessages, fullRubric, studentSoap, hiddenIn
     chunks.push(fullRubric.slice(i, i + RUBRIC_CHUNK_SIZE))
   }
 
+  // Fire all chunk LLM calls simultaneously
+  const chunkResults = await Promise.all(
+    chunks.map((chunk, idx) => {
+      const chunkPrompt = buildSoapGradingPrompt({
+        studentSoap,
+        hiddenInfoLog,
+        granularRubric: chunk,
+        patientName,
+        visitDay,
+        chunkInfo: `(Rubric chunk ${idx + 1} of ${chunks.length} — evaluate ONLY the ${chunk.length} items provided)`
+      })
+
+      const chunkMessages = [
+        { role: 'system', content: chunkPrompt },
+        { role: 'user', content: `Grade the SOAP note against rubric chunk ${idx + 1} of ${chunks.length}.` }
+      ]
+
+      return callJsonLlm(chunkMessages)
+    })
+  )
+
+  // Merge results from all chunks
   const allDeductions = []
   const allStrengths = []
   const allGuidance = []
   const allUnsafeFlags = []
 
-  for (let idx = 0; idx < chunks.length; idx++) {
-    const chunk = chunks[idx]
-    const chunkPrompt = buildSoapGradingPrompt({
-      studentSoap,
-      hiddenInfoLog,
-      granularRubric: chunk,
-      patientName,
-      visitDay,
-      chunkInfo: `(Rubric chunk ${idx + 1} of ${chunks.length} — evaluate ONLY the ${chunk.length} items provided)`
-    })
-
-    const chunkMessages = [
-      { role: 'system', content: chunkPrompt },
-      { role: 'user', content: `Grade the SOAP note against rubric chunk ${idx + 1} of ${chunks.length}.` }
-    ]
-
-    const chunkResult = await callJsonLlm(chunkMessages)
-
+  for (const chunkResult of chunkResults) {
     if (chunkResult.itemized_deductions && Array.isArray(chunkResult.itemized_deductions)) {
       allDeductions.push(...chunkResult.itemized_deductions)
     }
@@ -175,3 +187,4 @@ async function gradeInChunks(originalMessages, fullRubric, studentSoap, hiddenIn
     unsafe_flags: allUnsafeFlags
   }
 }
+
