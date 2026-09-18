@@ -492,10 +492,12 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
   const timerColor = timeLeft === 0 ? 'bg-red-100 text-red-700' : timeLeft < 300 ? 'bg-amber-100 text-amber-700 animate-pulse' : 'bg-slate-100 text-slate-600'
   const statusMap = { [VS.IDLE]: 'Tap phone to start session', [VS.LISTENING]: '?? Listening… speak freely', [VS.SPEAKING]: '?? Recording…', [VS.PROCESSING]: '? Processing…', [VS.PATIENT]: '?? Patient speaking…', [VS.DISABLED]: 'Session expired' }
 
+  const pronoun = c?.PATIENT?.sex === 'male' ? 'he' : 'she'
+
   return (
     <div>
       <div className="flex items-center justify-between mb-4">
-        <SectionTitle sub="Interview the standardized patient — she won't volunteer hidden facts unless you ask">Patient Interview</SectionTitle>
+        <SectionTitle sub={`Interview the standardized patient — ${pronoun} won't volunteer hidden facts unless you ask`}>Patient Interview</SectionTitle>
         <div className="flex items-center gap-4">
           <div className={'px-3 py-1.5 rounded-md text-[12px] font-bold ' + timerColor}>
             ? {Math.floor(timeLeft / 60)}:{(timeLeft % 60).toString().padStart(2,'0')}

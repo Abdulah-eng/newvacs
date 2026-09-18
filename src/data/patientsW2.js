@@ -68,6 +68,8 @@ const michaelTue = makeCase({
     { label: 'Family history', value: 'Father MI at 61, HLD, HTN; mother HTN, HLD — strong premature ASCVD history.' },
   ],
   OBJECTIVE_EXTRA: [
+    { label: 'Body Surface Area (Mosteller)', value: '2.26 m²', flag: 'normal' },
+    { label: '10-Year ASCVD Risk Score', value: '11.8% — Intermediate/High risk', flag: 'high' },
     { label: 'Home BP log', value: '5-day average ≈ 136/83 mmHg', flag: 'warn' },
   ],
   INTERVIEW_FIELDS: [
@@ -169,6 +171,7 @@ const michaelTue = makeCase({
 const michaelWed = makeCase({
   id: 'w2-michael-wed',
   IMMUNIZATIONS: michaelTue.IMMUNIZATIONS,
+  ALLERGIES: michaelTue.ALLERGIES,
   PATIENT: michaelTue.PATIENT,
   ENCOUNTER: { week: 'Week 2', 
     day: 'Wednesday', type: '3-month follow-up', difficulty: 'Core', difficultyTone: 'teal',
@@ -200,6 +203,10 @@ const michaelWed = makeCase({
     { name: 'Atorvastatin', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'Hyperlipidemia', notes: 'Intensified' },
   ],
   SUBJECTIVE_DOCUMENTED: [{ label: 'Interval history', value: 'Tolerating atorvastatin 20 mg without muscle symptoms. Reduced ibuprofen substantially but still uses it ~weekly.' }],
+  OBJECTIVE_EXTRA: [
+    { label: 'Body Surface Area (Mosteller)', value: '2.23 m²', flag: 'normal' },
+    { label: '10-Year ASCVD Risk Score', value: '10.7% — Improved', flag: 'normal' }
+  ],
   INTERVIEW_FIELDS: [
     { key: 'otc', label: 'NSAID use now', placeholder: 'How much ibuprofen remains…' },
     { key: 'diseaseUnderstanding', label: 'Kidney understanding', placeholder: 'His belief about eGFR vs albuminuria…' },
@@ -220,7 +227,8 @@ const michaelWed = makeCase({
     { id: 'w2-michael-wed_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take ibuprofen or acetaminophen occasionally for my knee stiffness, and a daily multivitamin." },
     { id: 'w2-michael-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink alcohol occasionally—maybe 1 to 2 drinks per month at family gatherings or dinners." },
     { id: 'w2-michael-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago, and I had about a 10 pack-year history before that." },
-    { id: 'w2-michael-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling', 'family', 'dad', 'mom', 'relatives', 'hereditary'], response: "My father had type 2 diabetes and high blood pressure, and passed away from a stroke at age 68. My mother has high blood pressure and high cholesterol. My brother also has type 2 diabetes. No one in my family has had kidney disease, end-stage kidney disease (ESKD), or dialysis." },    { id: 'w2-michael-wed_marital', topic: 'Marital status', field: 'familyHistory', keywords: ['marital', 'married', 'wife', 'spouse'], response: "I am married and live with my wife." },
+    { id: 'w2-michael-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling', 'family', 'dad', 'mom', 'relatives', 'hereditary'], response: "My father had type 2 diabetes and high blood pressure, and passed away from a stroke at age 68. My mother has high blood pressure and high cholesterol. My brother also has type 2 diabetes. No one in my family has had kidney disease, end-stage kidney disease (ESKD), or dialysis." },
+    { id: 'w2-michael-wed_marital', topic: 'Marital status', field: 'familyHistory', keywords: ['marital', 'married', 'wife', 'spouse'], response: "I am married and live with my wife." },
     { id: 'w2-michael-wed_occupation', topic: 'Occupation', field: 'exercise', keywords: ['job', 'work', 'occupation', 'manager', 'warehouse'], response: "I work as a warehouse manager." },
 
     { id: 'w2-michael-wed_psh', topic: 'Past surgical history', field: 'psh', keywords: ['surgery', 'surgeries', 'operation', 'appendectomy', 'surgical', 'appendix', 'procedure'], response: "I had an appendectomy when I was 27, but no other surgeries." },
@@ -278,6 +286,7 @@ const michaelWed = makeCase({
 const michaelThu = makeCase({
   id: 'w2-michael-thu',
   IMMUNIZATIONS: michaelTue.IMMUNIZATIONS,
+  ALLERGIES: michaelTue.ALLERGIES,
   PATIENT: michaelTue.PATIENT,
   ENCOUNTER: { week: 'Week 2', 
     day: 'Thursday', type: 'six-month follow-up', difficulty: 'Advanced', difficultyTone: 'amber',
@@ -305,6 +314,10 @@ const michaelThu = makeCase({
   PROBLEMS: michaelTue.PROBLEMS,
   MEDICATIONS: michaelWed.MEDICATIONS,
   SUBJECTIVE_DOCUMENTED: [{ label: 'Interval history', value: 'Rare ibuprofen (1–2×/month); much more aware of kidney-affecting meds. Pleased with progress; puzzled the proteinuria has not resolved.' }],
+  OBJECTIVE_EXTRA: [
+    { label: 'Body Surface Area (Mosteller)', value: '2.21 m²', flag: 'normal' },
+    { label: '10-Year ASCVD Risk Score', value: '9.8% — Improved', flag: 'normal' }
+  ],
   INTERVIEW_FIELDS: [
     { key: 'diseaseUnderstanding', label: 'Expectations re: albuminuria', placeholder: 'What he expects proteinuria to do…' },
     { key: 'weightGoals', label: 'Ongoing goals', placeholder: 'Weight, lifestyle, prevention…' },
@@ -314,7 +327,8 @@ const michaelThu = makeCase({
     { id: 'w2-michael-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take ibuprofen or acetaminophen occasionally for my knee stiffness, and a daily multivitamin." },
     { id: 'w2-michael-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink alcohol occasionally—maybe 1 to 2 drinks per month at family gatherings or dinners." },
     { id: 'w2-michael-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago, and I had about a 10 pack-year history before that." },
-    { id: 'w2-michael-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling', 'family', 'dad', 'mom', 'relatives', 'hereditary'], response: "My father had type 2 diabetes and high blood pressure, and passed away from a stroke at age 68. My mother has high blood pressure and high cholesterol. My brother also has type 2 diabetes. No one in my family has had kidney disease, end-stage kidney disease (ESKD), or dialysis." },    { id: 'w2-michael-thu_marital', topic: 'Marital status', field: 'familyHistory', keywords: ['marital', 'married', 'wife', 'spouse'], response: "I am married and live with my wife." },
+    { id: 'w2-michael-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling', 'family', 'dad', 'mom', 'relatives', 'hereditary'], response: "My father had type 2 diabetes and high blood pressure, and passed away from a stroke at age 68. My mother has high blood pressure and high cholesterol. My brother also has type 2 diabetes. No one in my family has had kidney disease, end-stage kidney disease (ESKD), or dialysis." },
+    { id: 'w2-michael-thu_marital', topic: 'Marital status', field: 'familyHistory', keywords: ['marital', 'married', 'wife', 'spouse'], response: "I am married and live with my wife." },
     { id: 'w2-michael-thu_occupation', topic: 'Occupation', field: 'exercise', keywords: ['job', 'work', 'occupation', 'manager', 'warehouse'], response: "I work as a warehouse manager." },
 
     { id: 'w2-michael-thu_psh', topic: 'Past surgical history', field: 'psh', keywords: ['surgery', 'surgeries', 'operation', 'appendectomy', 'surgical', 'appendix', 'procedure'], response: "I had an appendectomy when I was 27, but no other surgeries." },
@@ -417,7 +431,9 @@ const angelaTue = makeCase({
     { label: 'Social history', value: 'Retired teacher, widowed, lives alone. Medicare Part D. Convenience/high-sodium diet. Walks <1×/week. Never smoker. Occasional alcohol.' },
     { label: 'Family history', value: 'Father MI at 63; mother CKD; sister HLD/HTN.' },
   ],
-  OBJECTIVE_EXTRA: [{ label: 'Rosuvastatin fill history', value: 'Prescribed ~6 months ago — no claims on record', flag: 'missing' }],
+  OBJECTIVE_EXTRA: [
+    { label: 'Body Surface Area (Mosteller)', value: '2.08 m²', flag: 'normal' },
+    { label: '10-Year ASCVD Risk Score', value: '14.5% — High risk', flag: 'high' },{ label: 'Rosuvastatin fill history', value: 'Prescribed ~6 months ago — no claims on record', flag: 'missing' }],
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Statin history (never started?)', placeholder: 'Prior prescriptions, unfilled meds…' },
     { key: 'cost', label: 'Cost / access barrier', placeholder: 'Affordability, embarrassment, insurance…' },
@@ -508,6 +524,7 @@ const angelaTue = makeCase({
 const angelaWed = makeCase({
   id: 'w2-angela-wed',
   IMMUNIZATIONS: angelaTue.IMMUNIZATIONS,
+  ALLERGIES: angelaTue.ALLERGIES,
   PATIENT: angelaTue.PATIENT,
   ENCOUNTER: { week: 'Week 2', 
     day: 'Wednesday', type: '3-month follow-up', difficulty: 'Core', difficultyTone: 'teal',
@@ -540,6 +557,10 @@ const angelaWed = makeCase({
   ],
   ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash (childhood)' }],
   SUBJECTIVE_DOCUMENTED: [{ label: 'Interval history', value: 'Started rosuvastatin, taking it consistently (1–2 missed doses in 3 months). Reassured by affordability and no serious side effects.' }],
+  OBJECTIVE_EXTRA: [
+    { label: 'Body Surface Area (Mosteller)', value: '2.07 m²', flag: 'normal' },
+    { label: '10-Year ASCVD Risk Score', value: '14.5% — High risk', flag: 'high' }
+  ],
   INTERVIEW_FIELDS: [
     { key: 'sideEffects', label: 'Did she start it / tolerability', placeholder: 'Initiation, side effects…' },
     { key: 'cost', label: 'Affordability now', placeholder: 'Is it sustainable?' },
@@ -609,6 +630,7 @@ const angelaWed = makeCase({
 const angelaThu = makeCase({
   id: 'w2-angela-thu',
   IMMUNIZATIONS: angelaTue.IMMUNIZATIONS,
+  ALLERGIES: angelaTue.ALLERGIES,
   PATIENT: angelaTue.PATIENT,
   ENCOUNTER: { week: 'Week 2', 
     day: 'Thursday', type: 'six-month follow-up', difficulty: 'Advanced', difficultyTone: 'amber',
@@ -637,6 +659,10 @@ const angelaThu = makeCase({
   MEDICATIONS: angelaWed.MEDICATIONS,
   ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash (childhood)' }],
   SUBJECTIVE_DOCUMENTED: [{ label: 'Interval history', value: 'Adherent (misses ~1×/month), confident with medications, walking ~4×/week, improved diet and gradual weight loss.' }],
+  OBJECTIVE_EXTRA: [
+    { label: 'Body Surface Area (Mosteller)', value: '2.05 m²', flag: 'normal' },
+    { label: '10-Year ASCVD Risk Score', value: '13.2% — Improved', flag: 'normal' }
+  ],
   INTERVIEW_FIELDS: [
     { key: 'concerns', label: 'Confidence / adherence', placeholder: 'How she feels about the regimen…' },
     { key: 'weightGoals', label: 'Goals & lifestyle', placeholder: 'Weight, activity, prevention…' },
@@ -779,6 +805,8 @@ const davidTue = makeCase({
     { label: 'Family history', value: 'Father MI at 58 + T2DM; mother T2DM + CKD; brother CAD.' },
   ],
   OBJECTIVE_EXTRA: [
+    { label: 'Body Surface Area (Mosteller)', value: '2.24 m²', flag: 'normal' },
+    { label: '10-Year ASCVD Risk Score', value: '22.0% — Very high risk', flag: 'high' },
     { label: 'Prior finerenone recommendation', value: 'Recommended by another provider; patient declined — not on med list', flag: 'missing' },
     { label: 'Home BP log', value: '7-day average ≈ 136/80 mmHg', flag: 'warn' },
   ],
@@ -871,6 +899,7 @@ const davidTue = makeCase({
 const davidWed = makeCase({
   id: 'w2-david-wed',
   IMMUNIZATIONS: davidTue.IMMUNIZATIONS,
+  ALLERGIES: davidTue.ALLERGIES,
   PATIENT: davidTue.PATIENT,
   ENCOUNTER: { week: 'Week 2', 
     day: 'Wednesday', type: '3-month follow-up', difficulty: 'Advanced', difficultyTone: 'amber',
@@ -905,7 +934,9 @@ const davidWed = makeCase({
     { name: 'Amlodipine', dose: '5 mg', route: 'PO', freq: 'daily', indication: 'HTN', notes: '' },
     { name: 'Finerenone', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'CKD / albuminuria', notes: 'Started' },
   ],
-  OBJECTIVE_EXTRA: [{ label: 'Home BP log', value: '7-day average ≈ 131/77 mmHg (range 126–136/74–80)', flag: 'normal' }],
+  OBJECTIVE_EXTRA: [
+    { label: 'Body Surface Area (Mosteller)', value: '2.23 m²', flag: 'normal' },
+    { label: '10-Year ASCVD Risk Score', value: '20.5% — High risk', flag: 'high' },{ label: 'Home BP log', value: '7-day average ≈ 131/77 mmHg (range 126–136/74–80)', flag: 'normal' }],
   SUBJECTIVE_DOCUMENTED: [{ label: 'Interval history', value: 'Initiated finerenone, good adherence (1 missed dose). No symptoms of hyperkalemia. Noticed the eGFR decrease and remains somewhat worried about potassium.' }],
   INTERVIEW_FIELDS: [
     { key: 'potassium', label: 'Potassium worry / symptoms', placeholder: 'Concerns, symptoms…' },
@@ -976,6 +1007,7 @@ const davidWed = makeCase({
 const davidThu = makeCase({
   id: 'w2-david-thu',
   IMMUNIZATIONS: davidTue.IMMUNIZATIONS,
+  ALLERGIES: davidTue.ALLERGIES,
   PATIENT: davidTue.PATIENT,
   ENCOUNTER: { week: 'Week 2', 
     day: 'Thursday', type: '2nd 3-month follow-up', difficulty: 'Advanced', difficultyTone: 'amber',
@@ -1003,7 +1035,9 @@ const davidThu = makeCase({
   ALERTS: [{ level: 'info', text: 'Marked albuminuria reduction, normalized potassium, stable kidney function on combination cardiorenal therapy.' }],
   PROBLEMS: davidTue.PROBLEMS,
   MEDICATIONS: davidWed.MEDICATIONS,
-  OBJECTIVE_EXTRA: [{ label: 'Home BP log', value: '7-day average ≈ 127/75 mmHg (range 122–132/72–78)', flag: 'normal' }],
+  OBJECTIVE_EXTRA: [
+    { label: 'Body Surface Area (Mosteller)', value: '2.21 m²', flag: 'normal' },
+    { label: '10-Year ASCVD Risk Score', value: '18.7% — Improved', flag: 'normal' },{ label: 'Home BP log', value: '7-day average ≈ 127/75 mmHg (range 122–132/72–78)', flag: 'normal' }],
   SUBJECTIVE_DOCUMENTED: [{ label: 'Interval history', value: 'Adherent to the full regimen (<1 missed dose/month). Potassium concerns resolved after reviewing repeat labs. Understands and endorses the strategy.' }],
   INTERVIEW_FIELDS: [
     { key: 'understanding', label: 'Understanding / endorsement', placeholder: 'His grasp of the strategy…' },
