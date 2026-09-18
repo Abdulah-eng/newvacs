@@ -365,7 +365,7 @@ const bobWed = makeCase({
     { label: 'CAT Score', value: '16 — High symptom burden', flag: 'warn' },
   ],
   INTERVIEW_FIELDS: [
-    { key: 'technique', label: 'Inhaler Technique', placeholder: 'Ask him to demonstrate how he uses the HandiHaler' },
+    { key: 'technique', label: 'Inhaler Technique', placeholder: 'Ask him to demonstrate how he uses the Anoro Ellipta' },
   ],
     COUNSELING: [
     { id: 'c1', title: 'Pulmonary Rehabilitation & Maintenance', body: [

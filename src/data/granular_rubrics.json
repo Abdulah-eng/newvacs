@@ -31657,7 +31657,7 @@
       "description": "Lists cetirizine by name",
       "points": 0.25,
       "fullCredit": "Lists cetirizine (or Zyrtec) by name",
-      "halfCredit": "Lists an antihistamine without naming loratadine",
+      "halfCredit": "Lists an antihistamine without naming cetirizine",
       "zeroCredit": "Drug name absent"
     },
     {
@@ -31750,9 +31750,9 @@
     },
     {
       "id": "1E.18",
-      "description": "Lists both active medications",
+      "description": "Lists both active medications: budesonide/formoterol and cetirizine",
       "points": 0.35,
-      "fullCredit": "Both medications listed: budesonide/formoterol and loratadine",
+      "fullCredit": "Both medications listed: budesonide/formoterol and cetirizine",
       "halfCredit": "One of two medications listed",
       "zeroCredit": "No medications listed"
     },
@@ -32110,10 +32110,10 @@
     },
     {
       "id": "3C.2",
-      "description": "States patient uses loratadine PRN for rhinitis management",
+      "description": "States patient uses cetirizine daily + fluticasone nasal spray for rhinitis management",
       "points": 0.55,
-      "fullCredit": "States loratadine PRN as the current rhinitis management strategy",
-      "halfCredit": "States antihistamine PRN without naming loratadine",
+      "fullCredit": "States cetirizine daily + fluticasone nasal spray daily",
+      "halfCredit": "States antihistamine PRN without naming cetirizine",
       "zeroCredit": "Rhinitis medication not documented"
     },
     {
@@ -32398,10 +32398,10 @@
     },
     {
       "id": "4C.1",
-      "description": "States to continue loratadine 10 mg PO PRN for rhinitis",
+      "description": "States to continue cetirizine 10 mg PO daily + fluticasone nasal spray for rhinitis",
       "points": 0.6,
-      "fullCredit": "States continue loratadine 10 mg PRN",
-      "halfCredit": "States continue antihistamine without naming loratadine or specifying PRN",
+      "fullCredit": "States continue cetirizine 10 mg daily + fluticasone nasal spray daily",
+      "halfCredit": "States continue antihistamine without naming cetirizine or specifying PRN",
       "zeroCredit": "Rhinitis medication plan absent"
     },
     {
@@ -32422,9 +32422,9 @@
     },
     {
       "id": "4C.4",
-      "description": "States current rhinitis therapy appropriate given adequate control with loratadine PRN",
+      "description": "States current rhinitis therapy appropriate given adequate control with cetirizine and fluticasone nasal spray",
       "points": 0.5,
-      "fullCredit": "States loratadine PRN is appropriate given current rhinitis control",
+      "fullCredit": "States cetirizine and fluticasone nasal spray appropriate given current rhinitis control",
       "halfCredit": "States therapy unchanged without justifying appropriateness",
       "zeroCredit": "Rhinitis appropriateness not addressed"
     },
@@ -36516,9 +36516,9 @@
     },
     {
       "id": "1E.1",
-      "description": "Maintenance: Spiriva HandiHaler (tiotropium) 18 mcg daily",
+      "description": "Maintenance: Umeclidinium/Vilanterol (Anoro Ellipta) 62.5/25 mcg daily",
       "points": 0.4,
-      "fullCredit": "States Spiriva/tiotropium",
+      "fullCredit": "States Anoro Ellipta (umeclidinium/vilanterol)",
       "halfCredit": "Names one component only",
       "zeroCredit": "Omits"
     },
@@ -36692,9 +36692,9 @@
     },
     {
       "id": "2A.3",
-      "description": "Weight: 80 kg",
+      "description": "Weight: 89 kg",
       "points": 0.45,
-      "fullCredit": "States 80 kg",
+      "fullCredit": "States 89 kg",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36724,9 +36724,9 @@
     },
     {
       "id": "2B.5",
-      "description": "Absolute eosinophil count: 150 cells/µL",
+      "description": "Absolute eosinophil count: 310 cells/µL",
       "points": 1.1,
-      "fullCredit": "States 150",
+      "fullCredit": "States 310 cells/µL",
       "halfCredit": "Eosinophil count stated, no value",
       "zeroCredit": "Omits"
     },
@@ -36748,9 +36748,9 @@
     },
     {
       "id": "2C.4",
-      "description": "Eosinophils: 150 cells/uL",
+      "description": "Eosinophils: 310 cells/uL (above 300 cells/µL threshold favoring ICS escalation)",
       "points": 0.8,
-      "fullCredit": "States 150",
+      "fullCredit": "States 310 cells/µL",
       "halfCredit": "States eosinophils elevated, no threshold",
       "zeroCredit": "Omits"
     },
@@ -36780,25 +36780,25 @@
     },
     {
       "id": "3B.1",
-      "description": "Absolute eosinophil count: 150 cells/µL",
+      "description": "Absolute eosinophil count: 310 cells/µL",
       "points": 0.65,
-      "fullCredit": "States 150",
+      "fullCredit": "States 310 cells/µL",
       "halfCredit": "States eosinophils elevated, no value",
       "zeroCredit": "Omits"
     },
     {
       "id": "3B.2",
-      "description": "Absolute eosinophil count < 300 cells/µL",
+      "description": "Absolute eosinophil count ≥ 300 cells/µL favoring ICS benefit per GOLD 2026",
       "points": 0.65,
-      "fullCredit": "Notes < 300",
+      "fullCredit": "Notes ≥ 300 cells/µL threshold favoring ICS escalation (Trelegy Ellipta)",
       "halfCredit": "States elevated, no threshold",
       "zeroCredit": "Omits"
     },
     {
       "id": "3B.3",
-      "description": "Eosinophils: 150 cells/uL",
+      "description": "Eosinophils: 310 cells/uL",
       "points": 0.65,
-      "fullCredit": "States 150",
+      "fullCredit": "States 310 cells/µL",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36812,9 +36812,9 @@
     },
     {
       "id": "3B.5",
-      "description": "Absolute eosinophil count < 300 cells/µL",
+      "description": "Absolute eosinophil count ≥ 300 cells/µL threshold",
       "points": 0.65,
-      "fullCredit": "Notes < 300",
+      "fullCredit": "Notes ≥ 300 cells/µL threshold",
       "halfCredit": "States ICS benefit, no threshold",
       "zeroCredit": "Omits"
     },
@@ -36948,9 +36948,9 @@
     },
     {
       "id": "4A.1",
-      "description": "Maintenance: Spiriva HandiHaler (tiotropium) 18 mcg daily",
+      "description": "Escalate maintenance therapy to Trelegy Ellipta (fluticasone/umeclidinium/vilanterol) 100/62.5/25 mcg daily",
       "points": 0.6,
-      "fullCredit": "States Spiriva/tiotropium",
+      "fullCredit": "States Trelegy Ellipta 100/62.5/25 mcg daily",
       "halfCredit": "States discontinue dual bronchodilator, no agent named",
       "zeroCredit": "Omits"
     },
@@ -39256,9 +39256,9 @@
     },
     {
       "id": "1B.15",
-      "description": "States patient reports using tiotropium daily",
+      "description": "States patient reports using umeclidinium/vilanterol (Anoro Ellipta) daily",
       "points": 0.5,
-      "fullCredit": "States patient reports daily compliance with tiotropium inhaler use",
+      "fullCredit": "States patient reports daily compliance with Anoro Ellipta inhaler use",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39272,9 +39272,9 @@
     },
     {
       "id": "1B.17",
-      "description": "Identifies inhaler technique error: patient blows into the mouthpiece",
+      "description": "Identifies inhaler technique error: patient fails to open cover completely / exhales into device",
       "points": 0.25,
-      "fullCredit": "States patient blows out into the mouthpiece of the HandiHaler device",
+      "fullCredit": "States patient demonstrates technique error with Anoro Ellipta device",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39528,9 +39528,9 @@
     },
     {
       "id": "1E.1",
-      "description": "Maintenance: Spiriva HandiHaler (tiotropium) 18 mcg daily",
+      "description": "Maintenance: Umeclidinium/Vilanterol (Anoro Ellipta) 62.5/25 mcg daily",
       "points": 0.25,
-      "fullCredit": "States Spiriva/tiotropium",
+      "fullCredit": "States Anoro Ellipta (umeclidinium/vilanterol) 62.5/25 mcg daily",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40008,9 +40008,9 @@
     },
     {
       "id": "3A.4",
-      "description": "States LAMA (tiotropium) therapy has not provided clinical benefit due to incorrect use",
+      "description": "States LAMA/LABA (Anoro Ellipta) therapy has not provided full clinical benefit due to sub-optimal inhaler technique",
       "points": 0.5,
-      "fullCredit": "States tiotropium failed to improve symptoms because patient is using the device incorrectly",
+      "fullCredit": "States Anoro Ellipta failed to achieve full benefit due to technique errors",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40144,9 +40144,9 @@
     },
     {
       "id": "3A.21",
-      "description": "Distinguishes poor inhaler technique from true LAMA treatment failure",
+      "description": "Distinguishes poor inhaler technique from true LAMA/LABA treatment failure",
       "points": 0.5,
-      "fullCredit": "States current symptoms represent technique failure, not tiotropium medication failure",
+      "fullCredit": "States current symptoms represent technique failure, not Anoro Ellipta medication failure",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40168,9 +40168,9 @@
     },
     {
       "id": "3B.1",
-      "description": "Names problem: incorrect inhaler technique",
+      "description": "Names problem: suboptimal Anoro Ellipta inhaler technique",
       "points": 0.25,
-      "fullCredit": "Identifies incorrect HandiHaler technique as an active problem",
+      "fullCredit": "Identifies incorrect Anoro Ellipta technique as an active problem",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40248,9 +40248,9 @@
     },
     {
       "id": "3B.13",
-      "description": "Notes patient needs education on correct HandiHaler usage steps",
+      "description": "Notes patient needs education on correct Anoro Ellipta usage steps",
       "points": 0.5,
-      "fullCredit": "States patient requires step-by-step device use education",
+      "fullCredit": "States patient requires step-by-step Anoro Ellipta device use education",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40312,9 +40312,9 @@
     },
     {
       "id": "3C.6",
-      "description": "Identifies education need: insert capsule, press button to pierce, and inhale",
+      "description": "Identifies education need: slide cover down until it clicks, inhale deeply, hold breath 3-4 seconds",
       "points": 0.5,
-      "fullCredit": "States patient needs instruction on complete HandiHaler steps (piercing capsule, inhaling)",
+      "fullCredit": "States patient needs instruction on complete Anoro Ellipta steps (clicking cover open, deep steady inhalation, breath hold)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40496,9 +40496,9 @@
     },
     {
       "id": "4A.1",
-      "description": "Maintenance: Spiriva HandiHaler (tiotropium) 18 mcg daily",
+      "description": "Maintenance: Umeclidinium/Vilanterol (Anoro Ellipta) 62.5/25 mcg daily",
       "points": 0.5,
-      "fullCredit": "States Spiriva/tiotropium",
+      "fullCredit": "States Anoro Ellipta (umeclidinium/vilanterol) 62.5/25 mcg daily",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40608,9 +40608,9 @@
     },
     {
       "id": "4B.5",
-      "description": "Recommends technique correction: breathe in deeply and steadily",
+      "description": "Recommends technique correction: slide cover until click, breathe out away from inhaler, inhale deeply and hold breath",
       "points": 0.5,
-      "fullCredit": "Instructs patient to breathe in deeply and steadily from HandiHaler mouthpiece",
+      "fullCredit": "Instructs patient to slide cover until click and inhale deeply from Anoro Ellipta mouthpiece",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40712,9 +40712,9 @@
     },
     {
       "id": "4C.5",
-      "description": "Reviews correct steps of HandiHaler use with patient",
+      "description": "Reviews correct steps of Anoro Ellipta use with patient",
       "points": 0.5,
-      "fullCredit": "Reviews and demonstrates proper HandiHaler steps",
+      "fullCredit": "Reviews and demonstrates proper Anoro Ellipta device steps",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
