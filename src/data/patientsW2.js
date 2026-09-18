@@ -94,7 +94,7 @@ const michaelTue = makeCase({
     { id: 'w2-michael-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take ibuprofen or acetaminophen occasionally for my knee stiffness, and a daily multivitamin." },
     { id: 'w2-michael-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink alcohol occasionally—maybe 1 to 2 drinks per month at family gatherings or dinners." },
     { id: 'w2-michael-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago, and I had about a 10 pack-year history before that." },
-    { id: 'w2-michael-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling', 'family', 'dad', 'mom', 'relatives', 'hereditary'], response: "My father had type 2 diabetes and high blood pressure, and passed away from a stroke at age 68. My mother has high blood pressure and high cholesterol. My brother also has type 2 diabetes. No one in my family has had kidney disease, end-stage kidney disease (ESKD), or dialysis." },
+    { id: 'w2-michael-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling', 'family', 'dad', 'mom', 'relatives', 'hereditary'], response: "My father had high blood pressure and high cholesterol, and had a heart attack (myocardial infarction) at age 61. My mother has high blood pressure and high cholesterol. My brother has type 2 diabetes." },
     { id: 'w2-michael-tue_psh', topic: 'Past surgical history', field: 'psh', keywords: ['surgery', 'surgeries', 'operation', 'appendectomy', 'surgical', 'appendix', 'procedure'], response: "I had an appendectomy when I was 27, but no other surgeries." },
     { id: 'w2-michael-tue_hosp', topic: 'Hospitalization / ED visits', field: 'hospitalization', keywords: ['hospital', 'hospitalization', 'admit', 'admission', 'emergency room', 'hospitalized', 'admitted', 'admissions'], response: "No, I haven't had any recent hospitalizations or emergency room visits." },
     { id: 'w2-michael-tue_marital', topic: 'Marital status', field: 'familyHistory', keywords: ['marital', 'married', 'wife', 'spouse'], response: "I am married and live with my wife." },
@@ -196,7 +196,12 @@ const michaelWed = makeCase({
     { label: 'UACR', value: '102', unit: 'mg/g', flag: 'warn', note: 'Improved from 118' },
   ],
   ALERTS: [{ level: 'info', text: 'LDL and albuminuria both improving on intensified statin + reduced NSAID use.' }],
-  PROBLEMS: michaelTue.PROBLEMS,
+  PROBLEMS: [
+    { name: 'Hyperlipidemia', detail: 'LDL-C 96 mg/dL (improved from 132 on Atorvastatin 20 mg)', flag: 'warn' },
+    { name: 'Chronic kidney disease, G2A2', detail: 'eGFR 78, UACR 102 (A2)', flag: 'warn' },
+    { name: 'Essential hypertension', detail: 'BP 132/80 mmHg', flag: 'warn' },
+    { name: 'Obesity', detail: 'BMI 31.9', flag: 'warn' },
+  ],
   MEDICATIONS: [
     { name: 'Lisinopril', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'HTN / kidney', notes: '' },
     { name: 'Hydrochlorothiazide', dose: '25 mg', route: 'PO', freq: 'daily', indication: 'HTN', notes: '' },
@@ -227,7 +232,7 @@ const michaelWed = makeCase({
     { id: 'w2-michael-wed_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take ibuprofen or acetaminophen occasionally for my knee stiffness, and a daily multivitamin." },
     { id: 'w2-michael-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink alcohol occasionally—maybe 1 to 2 drinks per month at family gatherings or dinners." },
     { id: 'w2-michael-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago, and I had about a 10 pack-year history before that." },
-    { id: 'w2-michael-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling', 'family', 'dad', 'mom', 'relatives', 'hereditary'], response: "My father had type 2 diabetes and high blood pressure, and passed away from a stroke at age 68. My mother has high blood pressure and high cholesterol. My brother also has type 2 diabetes. No one in my family has had kidney disease, end-stage kidney disease (ESKD), or dialysis." },
+    { id: 'w2-michael-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling', 'family', 'dad', 'mom', 'relatives', 'hereditary'], response: "My father had high blood pressure and high cholesterol, and had a heart attack (myocardial infarction) at age 61. My mother has high blood pressure and high cholesterol. My brother has type 2 diabetes." },
     { id: 'w2-michael-wed_marital', topic: 'Marital status', field: 'familyHistory', keywords: ['marital', 'married', 'wife', 'spouse'], response: "I am married and live with my wife." },
     { id: 'w2-michael-wed_occupation', topic: 'Occupation', field: 'exercise', keywords: ['job', 'work', 'occupation', 'manager', 'warehouse'], response: "I work as a warehouse manager." },
 
@@ -311,7 +316,12 @@ const michaelThu = makeCase({
     { label: 'UACR', value: '98', unit: 'mg/g', flag: 'warn', note: 'Trend 118 → 102 → 98' },
   ],
   ALERTS: [{ level: 'info', text: 'Sustained improvement across LDL, BP, weight, and albuminuria.' }],
-  PROBLEMS: michaelTue.PROBLEMS,
+  PROBLEMS: [
+    { name: 'Hyperlipidemia', detail: 'LDL-C 84 mg/dL (well-controlled on Atorvastatin 20 mg)', flag: 'normal' },
+    { name: 'Chronic kidney disease, G2A2', detail: 'eGFR 77, UACR 98 (A2)', flag: 'warn' },
+    { name: 'Essential hypertension', detail: 'BP 130/78 mmHg', flag: 'normal' },
+    { name: 'Obesity', detail: 'BMI 31.3', flag: 'warn' },
+  ],
   MEDICATIONS: michaelWed.MEDICATIONS,
   SUBJECTIVE_DOCUMENTED: [{ label: 'Interval history', value: 'Rare ibuprofen (1–2×/month); much more aware of kidney-affecting meds. Pleased with progress; puzzled the proteinuria has not resolved.' }],
   OBJECTIVE_EXTRA: [
@@ -327,7 +337,7 @@ const michaelThu = makeCase({
     { id: 'w2-michael-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take ibuprofen or acetaminophen occasionally for my knee stiffness, and a daily multivitamin." },
     { id: 'w2-michael-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink alcohol occasionally—maybe 1 to 2 drinks per month at family gatherings or dinners." },
     { id: 'w2-michael-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago, and I had about a 10 pack-year history before that." },
-    { id: 'w2-michael-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling', 'family', 'dad', 'mom', 'relatives', 'hereditary'], response: "My father had type 2 diabetes and high blood pressure, and passed away from a stroke at age 68. My mother has high blood pressure and high cholesterol. My brother also has type 2 diabetes. No one in my family has had kidney disease, end-stage kidney disease (ESKD), or dialysis." },
+    { id: 'w2-michael-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling', 'family', 'dad', 'mom', 'relatives', 'hereditary'], response: "My father had high blood pressure and high cholesterol, and had a heart attack (myocardial infarction) at age 61. My mother has high blood pressure and high cholesterol. My brother has type 2 diabetes." },
     { id: 'w2-michael-thu_marital', topic: 'Marital status', field: 'familyHistory', keywords: ['marital', 'married', 'wife', 'spouse'], response: "I am married and live with my wife." },
     { id: 'w2-michael-thu_occupation', topic: 'Occupation', field: 'exercise', keywords: ['job', 'work', 'occupation', 'manager', 'warehouse'], response: "I work as a warehouse manager." },
 
@@ -377,7 +387,7 @@ const michaelThu = makeCase({
 
 const angelaTue = makeCase({
   id: 'w2-angela-tue',
-  PATIENT: { name: 'Angela Rodriguez', age: 66, sex: 'female', ethnicity: 'Hispanic/Latina', mrn: 'B2-990812' },
+  PATIENT: { name: 'Angela Rodriguez', age: 66, sex: 'female', ethnicity: 'Hispanic/Latina', mrn: 'B2-990812', allergiesSummary: 'Penicillin (Rash)' },
   ENCOUNTER: { week: 'Week 2', 
     day: 'Tuesday', type: 'initial collaborative practice management', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I came to check on my blood pressure and cholesterol, and my doctor said we should talk about my kidneys too.",
@@ -549,7 +559,12 @@ const angelaWed = makeCase({
     { label: 'UACR', value: '160', unit: 'mg/g', flag: 'warn', note: 'Stable (A2)' },
   ],
   ALERTS: [{ level: 'info', text: 'Marked LDL reduction after fixing the cost barrier; statin well tolerated.' }],
-  PROBLEMS: angelaTue.PROBLEMS,
+  PROBLEMS: [
+    { name: 'Hyperlipidemia', detail: 'LDL-C 89 mg/dL (improved on Rosuvastatin 20 mg)', flag: 'normal' },
+    { name: 'Chronic kidney disease, G3aA2', detail: 'eGFR 53, UACR 160 (A2)', flag: 'warn' },
+    { name: 'Essential hypertension', detail: 'BP 136/82 mmHg', flag: 'warn' },
+    { name: 'Obesity', detail: 'BMI 35.9', flag: 'warn' },
+  ],
   MEDICATIONS: [
     { name: 'Losartan', dose: '50 mg', route: 'PO', freq: 'daily', indication: 'HTN / kidney', notes: '' },
     { name: 'Amlodipine', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'HTN', notes: '' },
@@ -655,7 +670,12 @@ const angelaThu = makeCase({
     { label: 'UACR', value: '155', unit: 'mg/g', flag: 'warn', note: '165 → 160 → 155' },
   ],
   ALERTS: [{ level: 'info', text: 'Sustained LDL reduction, improving BP, stable kidney function.' }],
-  PROBLEMS: angelaTue.PROBLEMS,
+  PROBLEMS: [
+    { name: 'Hyperlipidemia', detail: 'LDL-C 78 mg/dL (at goal on Rosuvastatin 20 mg)', flag: 'normal' },
+    { name: 'Chronic kidney disease, G3aA2', detail: 'eGFR 54, UACR 155 (A2)', flag: 'warn' },
+    { name: 'Essential hypertension', detail: 'BP 132/80 mmHg (controlled)', flag: 'normal' },
+    { name: 'Obesity', detail: 'BMI 35.2', flag: 'warn' },
+  ],
   MEDICATIONS: angelaWed.MEDICATIONS,
   ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash (childhood)' }],
   SUBJECTIVE_DOCUMENTED: [{ label: 'Interval history', value: 'Adherent (misses ~1×/month), confident with medications, walking ~4×/week, improved diet and gradual weight loss.' }],
@@ -925,7 +945,12 @@ const davidWed = makeCase({
     { label: 'UACR', value: '390', unit: 'mg/g', flag: 'high', note: 'Improved from 520' },
   ],
   ALERTS: [{ level: 'warn', text: 'Potassium 5.1 and a small eGFR dip after finerenone — interpret in context; do not reflexively discontinue.' }],
-  PROBLEMS: davidTue.PROBLEMS,
+  PROBLEMS: [
+    { name: 'Hyperlipidemia', detail: 'LDL-C 82 mg/dL, controlled', flag: 'normal' },
+    { name: 'Chronic kidney disease, G3bA3', detail: 'eGFR 40, UACR 390 (improved from 520)', flag: 'high' },
+    { name: 'Type 2 diabetes', detail: 'A1C 7.0%', flag: 'warn' },
+    { name: 'Essential hypertension', detail: 'BP 132/78 mmHg', flag: 'warn' },
+  ],
   MEDICATIONS: [
     { name: 'Metformin ER', dose: '1000 mg', route: 'PO', freq: 'BID', indication: 'T2DM', notes: '' },
     { name: 'Empagliflozin', dose: '25 mg', route: 'PO', freq: 'daily', indication: 'Cardiorenal', notes: '' },
@@ -1010,7 +1035,7 @@ const davidThu = makeCase({
   ALLERGIES: davidTue.ALLERGIES,
   PATIENT: davidTue.PATIENT,
   ENCOUNTER: { week: 'Week 2', 
-    day: 'Thursday', type: '2nd 3-month follow-up', difficulty: 'Advanced', difficultyTone: 'amber',
+    day: 'Thursday', type: 'six-month follow-up', difficulty: 'Advanced', difficultyTone: 'amber',
     chiefConcern: "My potassium settled and the protein keeps dropping. This makes sense now.",
     snapshotSummary: 'Six months in. Albuminuria down from 520 to 290, potassium normalized, kidney function stable — the combination cardiorenal strategy is working. Consolidate and set long-term monitoring.',
     diseaseStates: ['Type 2 Diabetes', 'CKD G3bA3', 'Hyperlipidemia', 'Hypertension'],
@@ -1033,7 +1058,12 @@ const davidThu = makeCase({
     { label: 'UACR', value: '290', unit: 'mg/g', flag: 'high', note: '520 → 390 → 290' },
   ],
   ALERTS: [{ level: 'info', text: 'Marked albuminuria reduction, normalized potassium, stable kidney function on combination cardiorenal therapy.' }],
-  PROBLEMS: davidTue.PROBLEMS,
+  PROBLEMS: [
+    { name: 'Hyperlipidemia', detail: 'LDL-C 74 mg/dL, controlled', flag: 'normal' },
+    { name: 'Chronic kidney disease, G3bA3', detail: 'eGFR 41, UACR 290 (A3, improved)', flag: 'high' },
+    { name: 'Type 2 diabetes', detail: 'A1C 6.9%', flag: 'normal' },
+    { name: 'Essential hypertension', detail: 'BP 128/76 mmHg', flag: 'normal' },
+  ],
   MEDICATIONS: davidWed.MEDICATIONS,
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.21 m²', flag: 'normal' },
