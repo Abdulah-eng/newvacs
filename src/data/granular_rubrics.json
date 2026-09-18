@@ -41194,9 +41194,9 @@
     },
     {
       "id": "1D.4",
-      "description": "Never smoker",
+      "description": "Former smoker (30 pack-years, quit 12 years ago)",
       "points": 0.4,
-      "fullCredit": "States never smoker or has never used tobacco products",
+      "fullCredit": "States former smoker, 30 pack-years, quit 12 years ago or has never used tobacco products",
       "halfCredit": "States non-smoker without specifying lifetime never-smoker status",
       "zeroCredit": "Tobacco status absent"
     },
@@ -41402,9 +41402,9 @@
     },
     {
       "id": "2A.2",
-      "description": "Heart rate stated (72 bpm)",
+      "description": "Heart rate stated (76 bpm)",
       "points": 0.5,
-      "fullCredit": "States 72",
+      "fullCredit": "States 76",
       "halfCredit": "HR stated, no units",
       "zeroCredit": "Omits"
     },
@@ -41418,9 +41418,9 @@
     },
     {
       "id": "2A.4",
-      "description": "Weight stated (70 kg)",
+      "description": "Weight stated (71 kg)",
       "points": 0.5,
-      "fullCredit": "States 70 kg",
+      "fullCredit": "States 71 kg",
       "halfCredit": "Weight stated, wrong units",
       "zeroCredit": "Omits"
     },
@@ -41474,9 +41474,9 @@
     },
     {
       "id": "2B.4",
-      "description": "Documents patient-reported symptom improvement (no exacerbations in 6 months, minimal albuterol use)",
+      "description": "Documents patient-reported continued dyspnea with 2 exacerbations in the past 12 months (one hospitalization) and frequent albuterol use",
       "points": 0.55,
-      "fullCredit": "Documents patient-reported symptom improvement (e.g., no exacerbations in 6 months, reduced albuterol use)",
+      "fullCredit": "Documents patient-reported symptom improvement (e.g., two exacerbations in 12 months, one hospitalization, reduced albuterol use)",
       "halfCredit": "States improvement without specifying exacerbation or albuterol use history",
       "zeroCredit": "Symptom improvement not documented"
     },
@@ -41490,9 +41490,9 @@
     },
     {
       "id": "2B.6",
-      "description": "States patient reports zero exacerbations in 6 months since mepolizumab initiation",
+      "description": "States patient reports two exacerbations in the past 12 months documented (one requiring hospitalization)",
       "points": 0.55,
-      "fullCredit": "States zero exacerbations in 6 months as objective marker of biologic response",
+      "fullCredit": "States two exacerbations in 12 months, one with hospitalization as objective marker of biologic response",
       "halfCredit": "States improved exacerbation burden without the 6-month timeframe",
       "zeroCredit": "Exacerbation history absent"
     },
@@ -41578,9 +41578,9 @@
     },
     {
       "id": "3A.3",
-      "description": "ACT score improvement quantified (from 15 to 20)",
+      "description": "ACT score documented (14 — poorly controlled)",
       "points": 0.6,
-      "fullCredit": "States 0 exacerbations in 6 months since mepolizumab initiation",
+      "fullCredit": "ACT 14 (poorly controlled) documented with trend from prior visit",
       "halfCredit": "States exacerbation reduction without specifying zero or timeframe",
       "zeroCredit": "Exacerbation response not documented"
     },
@@ -42452,9 +42452,9 @@
     },
     {
       "id": "1D.4",
-      "description": "Tobacco status: never smoker",
+      "description": "Tobacco status: former smoker (30 pack-years, quit 12 years ago)",
       "points": 0.3,
-      "fullCredit": "States never smoker or denies history of smoking",
+      "fullCredit": "States former smoker, 30 pack-years, quit 12 years ago or denies history of smoking",
       "halfCredit": "States non-smoker without specifying never smoker",
       "zeroCredit": "Tobacco status absent"
     },
@@ -42660,9 +42660,9 @@
     },
     {
       "id": "2A.2",
-      "description": "Heart rate (72 bpm)",
+      "description": "Heart rate (80 bpm)",
       "points": 0.3,
-      "fullCredit": "States 72",
+      "fullCredit": "States 80",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -42676,9 +42676,9 @@
     },
     {
       "id": "2A.4",
-      "description": "Weight (70 kg)",
+      "description": "Weight (71 kg)",
       "points": 0.4,
-      "fullCredit": "States 70 kg",
+      "fullCredit": "States 71 kg",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -43846,9 +43846,9 @@
     },
     {
       "id": "1A.4",
-      "description": "States visit type (6-month follow-up)",
+      "description": "States visit type (3-month follow-up)",
       "points": 0.25,
-      "fullCredit": "'6-month follow-up' documented",
+      "fullCredit": "'3-month follow-up' documented",
       "halfCredit": "'Follow-up' without time interval specified",
       "zeroCredit": "Visit type absent"
     },
@@ -43878,9 +43878,9 @@
     },
     {
       "id": "1A.8",
-      "description": "States overall respiratory symptom status is significantly improved vs. six months ago",
+      "description": "States overall respiratory symptom status is significantly improved vs. the prior visit",
       "points": 0.25,
-      "fullCredit": "'Significantly improved compared to six months ago' documented",
+      "fullCredit": "'Significantly improved compared to prior visit ago' documented",
       "halfCredit": "Improvement noted without comparison timeframe",
       "zeroCredit": "Status absent"
     },
@@ -43926,9 +43926,9 @@
     },
     {
       "id": "1B.6",
-      "description": "States three respiratory exacerbations during the previous three months",
+      "description": "States one respiratory exacerbation (prednisone-treated) in the past month",
       "points": 0.25,
-      "fullCredit": "'Three exacerbations' and 'previous three months' both documented",
+      "fullCredit": "'One exacerbation' + 'past month' + 'prednisone' or 'systemic corticosteroid' documented",
       "halfCredit": "Number or timeframe documented but not both",
       "zeroCredit": "Exacerbation count absent"
     },
@@ -43966,25 +43966,25 @@
     },
     {
       "id": "1B.11",
-      "description": "States excellent adherence to Symbicort",
+      "description": "States excellent adherence to Trelegy Ellipta",
       "points": 0.25,
-      "fullCredit": "'Excellent adherence to Symbicort' or budesonide/formoterol documented",
+      "fullCredit": "'Excellent adherence to Trelegy Ellipta' or budesonide/formoterol documented",
       "halfCredit": "Adherence mentioned without drug specification",
       "zeroCredit": "Symbicort adherence absent"
     },
     {
       "id": "1B.12",
-      "description": "States excellent adherence to Spiriva",
+      "description": "States excellent adherence to Trelegy Ellipta (single-inhaler triple therapy)",
       "points": 0.25,
-      "fullCredit": "'Excellent adherence to Spiriva' or tiotropium documented",
+      "fullCredit": "'Excellent adherence to Trelegy Ellipta (single-inhaler triple therapy)' or tiotropium documented",
       "halfCredit": "Adherence mentioned without drug specification",
       "zeroCredit": "Spiriva adherence absent"
     },
     {
       "id": "1B.13",
-      "description": "States excellent adherence to fluticasone nasal spray",
+      "description": "States excellent adherence to albuterol rescue inhaler only as needed",
       "points": 0.25,
-      "fullCredit": "'Excellent adherence to fluticasone nasal spray' documented",
+      "fullCredit": "'Excellent adherence to albuterol rescue inhaler' documented",
       "halfCredit": "Adherence to nasal spray implied",
       "zeroCredit": "Fluticasone nasal spray adherence absent"
     },
@@ -44006,9 +44006,9 @@
     },
     {
       "id": "1B.16",
-      "description": "States allergic rhinitis symptoms significantly improved since restarting fluticasone nasal spray",
+      "description": "States allergic rhinitis symptoms significantly improved since restarting Trelegy Ellipta",
       "points": 0.25,
-      "fullCredit": "'Significantly improved' + 'since restarting fluticasone' documented",
+      "fullCredit": "'Trelegy Ellipta — excellent adherence' or 'no missed doses' documented",
       "halfCredit": "Improvement noted without attributing to fluticasone",
       "zeroCredit": "Rhinitis improvement not mentioned"
     },
@@ -44190,9 +44190,9 @@
     },
     {
       "id": "1C.19",
-      "description": "States patient is a never smoker",
+      "description": "States patient is a former smoker (30 pack-years, quit 12 years ago)",
       "points": 0.25,
-      "fullCredit": "States never smoker or denies history of smoking",
+      "fullCredit": "States former smoker, 30 pack-years, quit 12 years ago or denies history of smoking",
       "halfCredit": "States non-smoker without specifying never smoker",
       "zeroCredit": "Tobacco status absent"
     },
@@ -44278,9 +44278,9 @@
     },
     {
       "id": "1E.4",
-      "description": "Lists tiotropium (Spiriva Respimat) as current medication",
+      "description": "Lists fluticasone/umeclidinium/vilanterol (Trelegy Ellipta) as current medication",
       "points": 0.25,
-      "fullCredit": "'Tiotropium' or 'Spiriva Respimat' listed",
+      "fullCredit": "'Tiotropium' or 'Trelegy Ellipta Respimat' listed",
       "halfCredit": "Generic or brand listed but not both",
       "zeroCredit": "Medication absent"
     },
@@ -44374,9 +44374,9 @@
     },
     {
       "id": "1E.25",
-      "description": "States Spiriva Respimat brand/formulation documented",
+      "description": "States Trelegy Ellipta brand/formulation documented",
       "points": 0.25,
-      "fullCredit": "'Spiriva Respimat' documented (mist inhaler specification)",
+      "fullCredit": "'Trelegy Ellipta 100/62.5/25 mcg' documented (mist inhaler specification)",
       "halfCredit": "'Spiriva' without Respimat formulation type",
       "zeroCredit": "Brand name absent"
     },
@@ -44526,9 +44526,9 @@
     },
     {
       "id": "2A.2",
-      "description": "States heart rate: 72 bpm",
+      "description": "States heart rate: 80 bpm",
       "points": 0.25,
-      "fullCredit": "States 72",
+      "fullCredit": "States 80",
       "halfCredit": "Rate documented without units",
       "zeroCredit": "HR absent"
     },
@@ -44542,9 +44542,9 @@
     },
     {
       "id": "2A.4",
-      "description": "States weight: 70 kg",
+      "description": "States weight: 71 kg",
       "points": 0.25,
-      "fullCredit": "States 70 kg",
+      "fullCredit": "States 71 kg",
       "halfCredit": "Weight in other units without conversion",
       "zeroCredit": "Weight absent"
     },
@@ -44726,9 +44726,9 @@
     },
     {
       "id": "2B.14",
-      "description": "States three moderate exacerbations in past 3 months requiring systemic corticosteroids",
+      "description": "States one moderate exacerbation in past month requiring systemic corticosteroids (prednisone)",
       "points": 0.25,
-      "fullCredit": "'Three exacerbations' + '3 months' + 'systemic corticosteroids' documented",
+      "fullCredit": "'One exacerbation' + 'past month' + 'systemic corticosteroids' or 'prednisone' documented",
       "halfCredit": "Count or timeframe without both",
       "zeroCredit": "Exacerbation data absent from Objective"
     },
@@ -45206,9 +45206,9 @@
     },
     {
       "id": "3A.32",
-      "description": "States 6-month follow-up context confirms disease progression (more exacerbations requiring escalation)",
+      "description": "States 3-month follow-up context confirms disease progression (continued exacerbations requiring escalation)",
       "points": 0.25,
-      "fullCredit": "6-month follow-up progression context documented",
+      "fullCredit": "3-month follow-up progression context documented",
       "halfCredit": "Follow-up context mentioned without progression implication",
       "zeroCredit": "Follow-up context absent"
     },
@@ -45854,9 +45854,9 @@
     },
     {
       "id": "4A.4",
-      "description": "States continue tiotropium (Spiriva Respimat)",
+      "description": "States continue fluticasone/umeclidinium/vilanterol (Trelegy Ellipta)",
       "points": 0.25,
-      "fullCredit": "'Continue tiotropium (Spiriva Respimat)' documented",
+      "fullCredit": "'Continue tiotropium (Trelegy Ellipta Respimat)' documented",
       "halfCredit": "Continue stated without drug name",
       "zeroCredit": "Drug absent from Plan"
     },

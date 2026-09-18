@@ -502,19 +502,22 @@ const mariaTue = makeCase({
     { name: 'Osteopenia', detail: 'Stable', flag: 'normal' },
   ],
   MEDICATIONS: [
-    { name: 'Tiotropium (Spiriva)', dose: '2 inhalations', route: 'Inhaled', freq: 'daily', indication: 'COPD', notes: '' },
+    { name: 'Tiotropium (Spiriva Respimat)', dose: '2.5 mcg', route: 'Inhaled', freq: '2 puffs daily', indication: 'COPD (ACO)', notes: '' },
     { name: 'Albuterol HFA', dose: '2 puffs', route: 'Inhaled', freq: 'q4-6h PRN', indication: 'Rescue', notes: '' },
+    { name: 'Fluticasone propionate nasal spray', dose: '50 mcg/spray, 2 sprays/nostril', route: 'Intranasal', freq: 'daily', indication: 'Allergic rhinitis', notes: 'Inconsistent use reported' },
+    { name: 'Lisinopril', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'Hypertension', notes: '' },
+    { name: 'Calcium carbonate', dose: '500 mg', route: 'PO', freq: 'BID with meals', indication: 'Osteopenia prevention', notes: 'Also contains vitamin D 400 IU per tablet' },
   ],
   IMMUNIZATIONS: [
     { name: 'Influenza', status: 'Up to date', flag: 'normal' },
     { name: 'COVID-19', status: 'Up to date', flag: 'normal' },
-    { name: 'Pneumococcal', status: 'Not documented', flag: 'warn' },
+    { name: 'PCV20 (Pneumococcal)', status: 'Received', flag: 'normal' },
     { name: 'RSV', status: 'Not documented', flag: 'warn' },
     { name: 'Tdap', status: 'Overdue — last received >10 years ago', flag: 'warn' },
   ],
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'History of asthma since childhood, COPD diagnosed 8 years ago (ACO phenotype). Past medical history includes Allergic Rhinitis, Hypertension, Osteopenia, and Cholecystectomy. Allergy: sulfonamide antibiotics (rash). Reports 2 exacerbations in the past 12 months, both treated with oral corticosteroids and antibiotics in the outpatient setting — neither required hospitalization.' },
-    { label: 'Social', value: 'Former smoker (30 pack-years, quit 10 years ago). Married, lives with spouse. Retired teacher. Drinks alcohol rarely. Denies recreational drug use.' },
+    { label: 'Social', value: 'Former smoker (30 pack-years, quit 12 years ago). Married, lives with spouse. Retired elementary-school principal. Drinks alcohol rarely. Denies recreational drug use.' },
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Spirometry', value: 'Pre-BD FEV1/FVC 0.54 → Post-BD 0.55, FEV1 58% predicted. Bronchodilator reversibility: +15% / +260 mL (meets GINA criteria)', flag: 'warn' },
@@ -540,9 +543,9 @@ const mariaTue = makeCase({
 
   INTERVIEW_KNOWLEDGE: [
     { id: 'w3-maria_t-tue_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'sulfonamide', 'codeine', 'reaction', 'rash', 'hives'], response: "Yes, I have a severe allergy to sulfonamide antibiotics — I get a terrible rash when I take them. My doctor told me to always mention this." },
-    { id: 'w3-maria_t-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take cetirizine 10 mg PRN and use a saline nasal spray for allergic rhinitis. I have a lot of sneezing and nasal congestion that gets worse seasonally. I tried an inhaled steroid in the past but it didn't seem to help much." },
+    { id: 'w3-maria_t-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin', 'calcium', 'vitamin d', 'lisinopril', 'blood pressure', 'nasal'], response: "I take cetirizine 10 mg PRN and sometimes use a saline nasal spray. I also use fluticasone nasal spray for my rhinitis when I remember to. I take lisinopril 10 mg once a day for blood pressure and calcium carbonate with vitamin D twice a day with meals for my bone health." },
     { id: 'w3-maria_t-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink alcohol rarely, maybe a glass of wine a few times a year." },
-    { id: 'w3-maria_t-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I smoked about a pack a day for 30 years before I quit 10 years ago. That\'s a 30 pack-year history." },
+    { id: 'w3-maria_t-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I smoked about a pack a day for 30 years before I quit 12 years ago. That\'s a 30 pack-year history." },
     { id: 'w3-maria_t-tue_drugs', topic: 'Recreational drugs', field: 'drugs', keywords: ['drugs', 'recreational', 'marijuana', 'weed', 'cocaine', 'illicit'], response: "I deny any recreational drug use." },
     { id: 'w3-maria_t-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had both COPD and coronary artery disease (CAD). My mother had asthma and allergic rhinitis. My sister also has asthma." },
     { id: 'w3c_tech', topic: 'Technique', field: 'technique', keywords: ['technique', 'use', 'show', 'worry', 'decline', 'spiriva', 'respimat'], response: "I turn the base until it clicks, then press the button on the side to release the dose, and then I inhale slowly and deeply. I\'m really worried that these flare-ups are causing a progressive decline in my lung function, and I want to avoid being hospitalized." },
@@ -593,9 +596,10 @@ const mariaWed = makeCase({
     { name: 'Albuterol HFA', dose: '2 puffs', route: 'Inhaled', freq: 'q4-6h PRN', indication: 'Rescue', notes: '' },
   ],
   IMMUNIZATIONS: mariaTue.IMMUNIZATIONS,
+  ALLERGIES: mariaTue.ALLERGIES,
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: 'One moderate exacerbation treated with prednisone 4 weeks ago. Adherence and technique confirmed excellent in clinic today.' },
-    { label: 'Social history', value: 'Former smoker (30 pack-years, quit 10 years ago). Retired elementary school principal. Married, lives with spouse.' },
+    { label: 'HPI', value: 'One moderate exacerbation treated with prednisone 4 weeks ago. Adherence and technique confirmed excellent in clinic today. Patient is on Trelegy Ellipta 100/62.5/25 mcg daily + albuterol PRN.' },
+    { label: 'Social history', value: 'Former smoker (30 pack-years, quit 12 years ago). Retired elementary-school principal. Married, lives with spouse.' },
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Spirometry', value: 'FEV1/FVC 0.56, FEV1 61% predicted (post-bronchodilator)', flag: 'warn' },
@@ -621,7 +625,8 @@ const mariaWed = makeCase({
     { id: 'w3-maria_t-wed_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'sulfonamide', 'codeine', 'reaction', 'rash', 'hives'], response: "Yes, I have a severe allergy to sulfonamide antibiotics — I get a terrible rash when I take them." },
     { id: 'w3-maria_t-wed_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take cetirizine 10 mg PRN and use a saline nasal spray for allergic rhinitis. I have a lot of sneezing and nasal congestion that gets worse seasonally. I tried an inhaled steroid in the past but it didn't seem to help much." },
     { id: 'w3-maria_t-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink alcohol rarely, maybe a glass of wine a few times a year." },
-    { id: 'w3-maria_t-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I smoked about a pack a day for 30 years before I quit 10 years ago." },
+    { id: 'w3-maria_t-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I smoked about a pack a day for 30 years before I quit 12 years ago. That\'s a 30 pack-year history." },
+    { id: 'w3-maria_t-wed_tech', topic: 'Inhaler technique', field: 'technique', keywords: ['technique', 'trelegy', 'inhaler', 'show', 'demonstrate', 'how', 'ellipta', 'use', 'steps'], response: "I open the cover by sliding it down until I hear a click, which loads the dose. Then I breathe out fully away from the inhaler, seal my lips around the mouthpiece, and breathe in steadily and deeply. I hold my breath for about 5 seconds, then close the cover. I rinse my mouth with water afterward every time." },
     { id: 'w3-maria_t-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had both COPD and coronary artery disease (CAD). My mother had asthma and allergic rhinitis. My sister also has asthma." },
     { id: 'w3c2_adh', topic: 'Adherence verified', field: 'adherence', keywords: ['take', 'every day', 'daily', 'miss'], response: "I never miss a dose. I use it every morning exactly like you showed me. I even rinse my mouth after." },
   ],
@@ -667,11 +672,13 @@ const mariaThu = makeCase({
     { name: 'Tiotropium (Spiriva Respimat)', dose: '2.5 mcg', route: 'Inhaled', freq: '2 puffs daily', indication: 'ACO', notes: '' },
     { name: 'Albuterol HFA', dose: '2 puffs', route: 'Inhaled', freq: 'q4-6h PRN', indication: 'Rescue', notes: '' },
     { name: 'Cetirizine', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'Allergic rhinitis', notes: '' },
+    { name: 'Calcium carbonate', dose: '500 mg', route: 'PO', freq: 'BID with meals', indication: 'Osteopenia prevention', notes: 'Contains vitamin D 400 IU per tablet' },
+    { name: 'Lisinopril', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'Hypertension', notes: '' },
   ],
   IMMUNIZATIONS: mariaTue.IMMUNIZATIONS,
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Patient reports continued dyspnea and 2 exacerbations in the past 12 months (one requiring hospitalization) despite adherence to Symbicort and Spiriva. Allergic rhinitis is uncontrolled; patient stopped intranasal fluticasone. Denies missed doses.' },
-    { label: 'Social history', value: 'Retired teacher. Married, lives with spouse. Former smoker (30 pack-years, quit 12 years ago).' }
+    { label: 'Social history', value: 'Retired elementary-school principal. Married, lives with spouse. Former smoker (30 pack-years, quit 12 years ago).' }
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Spirometry', value: 'FEV1/FVC 0.57, FEV1 58% predicted', flag: 'warn' },
@@ -696,6 +703,7 @@ const mariaThu = makeCase({
     { id: 'w3-maria_t-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin', 'fluticasone', 'spray'], response: "I take cetirizine 10 mg PRN. I stopped the intranasal fluticasone because I kept forgetting to use it, and now my allergies are completely uncontrolled." },
     { id: 'w3-maria_t-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink alcohol rarely, maybe a glass of wine a few times a year." },
     { id: 'w3-maria_t-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I smoked about a pack a day for 30 years. I quit 12 years ago. That\'s a 30 pack-year history." },
+    { id: 'w3-maria_t-thu_tech', topic: 'Inhaler technique', field: 'technique', keywords: ['technique', 'symbicort', 'spiriva', 'inhaler', 'show', 'demonstrate', 'how', 'respimat', 'ellipta', 'use', 'steps', 'correct'], response: "For the Symbicort, I shake it, breathe out fully, put it in my mouth and press the canister while breathing in slowly and deeply, then hold for 10 seconds. For the Spiriva Respimat, I turn the base until it clicks, press the button on the side to release the dose, and inhale slowly and deeply. I rinse my mouth after both inhalers." },
     { id: 'w3-maria_t-thu_psh', topic: 'Past Surgical History', field: 'psh', keywords: ['surgery', 'surgeries', 'surgical', 'operation', 'operations', 'cholecystectomy', 'gallbladder'], response: "I had my gallbladder removed (cholecystectomy) a few years ago." },
     { id: 'w3-maria_t-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had both COPD and coronary artery disease (CAD). My mother had asthma and allergic rhinitis. My sister also has asthma." },
     { id: 'w3c3_upd', topic: 'Update', field: 'update', keywords: ['feel', 'breathing', 'exacerbation', 'flare'], response: "I'm using the Symbicort and Spiriva exactly as prescribed, but I still had a flare-up last month and my breathing feels tight. My allergies are also acting up badly since I stopped the nasal spray." },
