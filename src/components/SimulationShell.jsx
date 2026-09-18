@@ -110,6 +110,16 @@ export default function SimulationShell({ caseData, onExit }) {
   const P = caseData.PATIENT
   const groups = ['Chart', 'Workspace', 'Teaching']
 
+  const formattedAllergies = useMemo(() => {
+    if (caseData?.ALLERGIES && Array.isArray(caseData.ALLERGIES) && caseData.ALLERGIES.length > 0) {
+      const activeAllergies = caseData.ALLERGIES.filter(a => a.substance && !a.substance.toLowerCase().includes('no known'))
+      if (activeAllergies.length > 0) {
+        return activeAllergies.map(a => `${a.substance}${a.reaction && a.reaction !== '—' ? ` (${a.reaction})` : ''}`).join(', ')
+      }
+    }
+    return P?.allergiesSummary || 'No known drug allergies (NKDA)'
+  }, [caseData?.ALLERGIES, P?.allergiesSummary])
+
   return (
     <div className="min-h-screen bg-slate-100 flex flex-col">
       {/* Patient banner */}
@@ -132,7 +142,7 @@ export default function SimulationShell({ caseData, onExit }) {
                     {P.age} yo {P.sex} · {P.ethnicity} · MRN {P.mrn} · DOB {P.dob || '03/12/1972'}
                   </p>
                   <p className="text-[13px] text-slate-300 mt-0.5 font-medium">
-                    PCP: {P.pcp || 'Dr. Johnson'} · Pharmacy: {P.pharmacy || 'Walgreens'} · Language: {P.language || 'English'} · Allergies: {P.allergiesSummary || 'No known drug allergies (NKDA)'}
+                    PCP: {P.pcp || 'Dr. Johnson'} · Pharmacy: {P.pharmacy || 'Walgreens'} · Language: {P.language || 'English'} · Allergies: {formattedAllergies}
                   </p>
                 </div>
               </div>
