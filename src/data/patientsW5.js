@@ -36,7 +36,11 @@ const sarahTue = makeCase({
     { name: 'Tobacco Use', detail: 'Current smoker, 5 cigs/day', flag: 'warn' },
   ],
   MEDICATIONS: [],
-  IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
+  IMMUNIZATIONS: [
+    { name: 'Influenza', status: 'Up to date', flag: 'normal' },
+    { name: 'COVID-19', status: 'Up to date', flag: 'normal' },
+    { name: 'Tdap', status: 'Up to date', flag: 'normal' }
+  ],
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Reports persistent low mood, decreased motivation, fatigue, and frequent worrying for 4-5 months.' },
     { label: 'Scores', value: 'PHQ-9: 13 (Moderate). GAD-7: 8 (Mild).' },
@@ -193,7 +197,7 @@ const sarahThu = makeCase({
     { id: 'w5-sarah_m-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 to 2 alcoholic beverages weekly when socializing with friends." },
     { id: 'w5-sarah_m-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I quit smoking completely about 6 weeks ago and have remained tobacco free since then. I'm proud that I've been smoke-free for 6 weeks now and feel comfortable with my progress." },
     { id: 'w5-sarah_m-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My mother has Major Depressive Disorder and was successfully treated with sertraline. My father has high blood pressure. My maternal grandmother has Generalized Anxiety Disorder." },
-    { id: 'w5-sarah_m-thu_exercise', topic: 'Exercise / Hiking', field: 'exercise', keywords: ['exercise', 'hiking', 'hike', 'walk', 'husband', 'spouse', 'activity'], response: "I've been feeling great and have actually resumed going on hikes with my husband on weekends." },
+    { id: 'w5-sarah_m-thu_exercise', topic: 'Exercise / Hiking', field: 'exercise', keywords: ['exercise', 'hiking', 'hike', 'walk', 'husband', 'spouse', 'activity'], response: "I've been feeling great and have actually resumed going on hikes on weekends." },
     { id: 'w5-sarah_m-thu_trigger', topic: 'Smoking triggers', field: 'tobacco', keywords: ['trigger', 'triggers', 'stress', 'work', 'stressful'], response: "I still occasionally feel the urge or craving when work stress builds up, but I have not had any cigarettes since I quit." },
     { id: 'w5a3_tob', topic: 'Tobacco plan', field: 'tobacco', keywords: ['quit', 'smoke', 'how', 'prevent', 'relapse', 'cravings'], response: "I've been smoke-free for 6 weeks, but I want to make sure I don't start again. I want to talk about how to prevent relapse." },
   ],
@@ -242,7 +246,11 @@ const jessicaTue = makeCase({
     { name: 'Sertraline', dose: '100 mg', route: 'PO', freq: 'daily', indication: 'MDD/GAD', notes: '' },
     { name: 'Hydroxyzine', dose: '25 mg', route: 'PO', freq: 'q8h PRN', indication: 'Anxiety', notes: '' },
   ],
-  IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
+  IMMUNIZATIONS: [
+    { name: 'Influenza', status: 'Up to date', flag: 'normal' },
+    { name: 'COVID-19', status: 'Up to date', flag: 'normal' },
+    { name: 'Tdap', status: 'Up to date', flag: 'normal' }
+  ],
   SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Referred for treatment optimization due to lack of efficacy of Sertraline 100 mg over the last 3 months.' }, { label: 'Social', value: 'Divorced, single mother of two. Medical receptionist. Current smoker (10 cigs/day, 20 years). Occasional alcohol.' }],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
@@ -284,7 +292,7 @@ const jessicaWed = makeCase({
   id: 'w5-jessica_r-wed',
   PATIENT: { ...jessicaTue.PATIENT },
   ENCOUNTER: { week: 'Week 5', 
-    day: 'Wednesday', type: '1-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
+    day: 'Wednesday', type: '3-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I've been taking it every day now. It's helping, but slowly.",
     snapshotSummary: 'Jessica has improved her adherence. Her symptoms are improving but she expects faster results.',
     diseaseStates: ['MDD', 'GAD'],
@@ -435,7 +443,11 @@ const davidTue = makeCase({
     { name: 'Hydroxyzine', dose: '25 mg', route: 'PO', freq: 'q8h PRN', indication: 'Anxiety', notes: '' },
     { name: 'Lisinopril', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'HTN', notes: '' },
   ],
-  IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
+  IMMUNIZATIONS: [
+    { name: 'Influenza', status: 'Up to date', flag: 'normal' },
+    { name: 'COVID-19', status: 'Up to date', flag: 'normal' },
+    { name: 'Tdap', status: 'Up to date', flag: 'normal' }
+  ],
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Patient reports severe emotional exhaustion, social withdrawal, and anhedonia. Prior failed trials: Escitalopram 20mg (16wks), Sertraline 150mg (6mos). Adherence confirmed.' },
     { label: 'Social history', value: 'Current smoker (~half pack per day). Prior tobacco use (~1 pack per day). Occasional alcohol.' },
@@ -482,7 +494,7 @@ const davidWed = makeCase({
   id: 'w5-david_c-wed',
   PATIENT: { ...davidTue.PATIENT },
   ENCOUNTER: { week: 'Week 5', 
-    day: 'Wednesday', type: '1-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
+    day: 'Wednesday', type: '3-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "The nasal spray is intense, but the fog is starting to lift.",
     snapshotSummary: 'David was referred and started on Esketamine nasal spray at a specialized center while continuing Venlafaxine. He is experiencing dissociation but improving mood.',
     diseaseStates: ['TRD'],

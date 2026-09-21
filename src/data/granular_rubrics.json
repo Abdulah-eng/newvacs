@@ -61368,9 +61368,9 @@
     },
     {
       "id": "1A.2",
-      "description": "Patient age stated (29 years)",
+      "description": "Patient age stated (54 years)",
       "points": 0.25,
-      "fullCredit": "States 29 years",
+      "fullCredit": "States 54 years",
       "halfCredit": "Age stated, imprecise",
       "zeroCredit": "Omits"
     },
@@ -61392,10 +61392,10 @@
     },
     {
       "id": "1A.5",
-      "description": "Visit type stated (scheduled 6-month follow-up)",
+      "description": "Visit type stated (scheduled 12-week follow-up)",
       "points": 0.3,
-      "fullCredit": "States scheduled 6-month follow-up",
-      "halfCredit": "States follow-up, no interval",
+      "fullCredit": "States scheduled 12-week follow-up",
+      "halfCredit": "States follow-up without interval",
       "zeroCredit": "Omits"
     },
     {
@@ -62048,17 +62048,17 @@
     },
     {
       "id": "2A.1",
-      "description": "Blood pressure (118/74 mmHg)",
+      "description": "Blood pressure (116/72 mmHg)",
       "points": 0.7,
-      "fullCredit": "States 118/74 mmHg",
+      "fullCredit": "States 116/72 mmHg",
       "halfCredit": "BP stated, imprecise",
       "zeroCredit": "Omits"
     },
     {
       "id": "2A.2",
-      "description": "Heart rate (70 bpm)",
+      "description": "Heart rate (72 bpm)",
       "points": 0.4,
-      "fullCredit": "States 70 bpm",
+      "fullCredit": "States 72 bpm",
       "halfCredit": "-",
       "zeroCredit": "Omits"
     },
@@ -62072,17 +62072,17 @@
     },
     {
       "id": "2A.4",
-      "description": "Temperature (98.2°F)",
+      "description": "Temperature (98.1°F)",
       "points": 0.35,
-      "fullCredit": "States 98.2°F",
+      "fullCredit": "States 98.1°F",
       "halfCredit": "-",
       "zeroCredit": "Omits"
     },
     {
       "id": "2A.5",
-      "description": "Weight (150 lbs)",
+      "description": "Weight (151 lbs)",
       "points": 0.45,
-      "fullCredit": "States 150 lbs",
+      "fullCredit": "States 151 lbs",
       "halfCredit": "-",
       "zeroCredit": "Omits"
     },
@@ -62096,9 +62096,9 @@
     },
     {
       "id": "2A.7",
-      "description": "BMI (25.0 kg/m²)",
+      "description": "BMI (25.1 kg/m²)",
       "points": 0.5,
-      "fullCredit": "States 25.0 kg/m²",
+      "fullCredit": "States 25.1 kg/m²",
       "halfCredit": "BMI stated, imprecise",
       "zeroCredit": "Omits"
     },
@@ -62240,9 +62240,9 @@
     },
     {
       "id": "2C.2",
-      "description": "PHQ-9 at 3-month follow-up: 7",
+      "description": "PHQ-9 at 4-week follow-up: 8",
       "points": 0.4,
-      "fullCredit": "States PHQ-9 = 7 at 3 months",
+      "fullCredit": "States PHQ-9 = 8 at 4-week follow-up",
       "halfCredit": "States prior PHQ-9, imprecise",
       "zeroCredit": "Omits"
     },
@@ -62258,7 +62258,7 @@
       "id": "2C.4",
       "description": "PHQ-9 progressive improvement trend noted across three time points",
       "points": 0.5,
-      "fullCredit": "States progressive improvement from 13 → 7 → 2",
+      "fullCredit": "States progressive improvement from 13 → 8 → 2",
       "halfCredit": "States improved, no values",
       "zeroCredit": "Omits"
     },
@@ -62280,9 +62280,9 @@
     },
     {
       "id": "2C.7",
-      "description": "GAD-7 at 3-month follow-up: 4",
+      "description": "GAD-7 at 4-week follow-up: 5",
       "points": 0.3,
-      "fullCredit": "States GAD-7 = 4 at 3 months",
+      "fullCredit": "States GAD-7 = 5 at 4-week follow-up",
       "halfCredit": "States prior GAD-7, imprecise",
       "zeroCredit": "Omits"
     },
@@ -62298,7 +62298,7 @@
       "id": "2C.9",
       "description": "GAD-7 improvement trend noted across three time points",
       "points": 0.3,
-      "fullCredit": "States improvement from 8 → 4 → 1",
+      "fullCredit": "States improvement from 8 → 5 → 1",
       "halfCredit": "States improved, no values",
       "zeroCredit": "Omits"
     },
@@ -62336,9 +62336,9 @@
     },
     {
       "id": "3A.4",
-      "description": "Notes scheduled 6-month follow-up context",
+      "description": "Notes scheduled 12-week follow-up context",
       "points": 0.2,
-      "fullCredit": "States 6-month follow-up context",
+      "fullCredit": "States 12-week follow-up context",
       "halfCredit": "-",
       "zeroCredit": "Omits"
     },
@@ -62384,7 +62384,7 @@
     },
     {
       "id": "3A.10",
-      "description": "PHQ-9 trend: 13 (initial) → 7 (3-month) → 2 (current)",
+      "description": "PHQ-9 trend: 13 (initial) → 8 (4-week) → 2 (current)",
       "points": 0.7,
       "fullCredit": "States all three PHQ-9 values with time points",
       "halfCredit": "States trend without all three values",
@@ -62528,7 +62528,7 @@
     },
     {
       "id": "3B.6",
-      "description": "GAD-7 trend: 8 (initial) → 4 (3-month) → 1 (current)",
+      "description": "GAD-7 trend: 8 (initial) → 5 (4-week) → 1 (current)",
       "points": 0.7,
       "fullCredit": "States all three GAD-7 values with time points",
       "halfCredit": "States trend without all three values",
@@ -63394,9 +63394,9 @@
   "Week5_Patient_A_Tuesday": [
     {
       "id": "1A.1",
-      "description": "Patient age stated (29 years)",
+      "description": "Patient age stated (54 years)",
       "points": 0.2,
-      "fullCredit": "States 29 years",
+      "fullCredit": "States 54 years",
       "halfCredit": "Age stated, imprecise",
       "zeroCredit": "Omits"
     },
@@ -65388,9 +65388,9 @@
     },
     {
       "id": "1A.2",
-      "description": "Patient age stated (29 years)",
+      "description": "Patient age stated (54 years)",
       "points": 0.2,
-      "fullCredit": "States 29 years",
+      "fullCredit": "States 54 years",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -65412,10 +65412,10 @@
     },
     {
       "id": "1A.5",
-      "description": "Visit type stated (scheduled 3-month follow-up)",
+      "description": "Visit type stated (scheduled 4-week follow-up)",
       "points": 0.3,
-      "fullCredit": "States scheduled 3-month follow-up",
-      "halfCredit": "States follow-up, no interval",
+      "fullCredit": "States scheduled 4-week follow-up",
+      "halfCredit": "States follow-up without interval",
       "zeroCredit": "Omits"
     },
     {
@@ -66172,9 +66172,9 @@
     },
     {
       "id": "2B.10",
-      "description": "PHQ-9 current score (7)",
+      "description": "PHQ-9 current score (8)",
       "points": 0.6,
-      "fullCredit": "States PHQ-9 of 7",
+      "fullCredit": "States PHQ-9 of 8",
       "halfCredit": "States PHQ-9 obtained, no value",
       "zeroCredit": "Omits"
     },
@@ -66196,9 +66196,9 @@
     },
     {
       "id": "2B.13",
-      "description": "GAD-7 current score (4)",
+      "description": "GAD-7 current score (5)",
       "points": 0.6,
-      "fullCredit": "States GAD-7 of 4",
+      "fullCredit": "States GAD-7 of 5",
       "halfCredit": "States GAD-7 obtained, no value",
       "zeroCredit": "Omits"
     },
@@ -66212,9 +66212,9 @@
     },
     {
       "id": "2B.15",
-      "description": "GAD-7 current interpretation: minimal anxiety",
+      "description": "GAD-7 current interpretation: mild anxiety",
       "points": 0.4,
-      "fullCredit": "States minimal anxiety",
+      "fullCredit": "States mild anxiety",
       "halfCredit": "States improved, no interpretation category",
       "zeroCredit": "Omits"
     },
@@ -66236,47 +66236,47 @@
     },
     {
       "id": "2C.1",
-      "description": "PHQ-9 percent reduction calculated and stated (~46%)",
+      "description": "PHQ-9 percent reduction calculated and stated (~38%)",
       "points": 0.65,
-      "fullCredit": "States ~46% reduction in PHQ-9",
+      "fullCredit": "States ~38% reduction in PHQ-9",
       "halfCredit": "States PHQ-9 improved, no percent",
       "zeroCredit": "Omits"
     },
     {
       "id": "2C.2",
-      "description": "PHQ-9 trend direction and interpretation: 13 → 7 = clinically meaningful response",
+      "description": "PHQ-9 trend direction and interpretation: 13 → 8 = clinically meaningful response",
       "points": 0.65,
-      "fullCredit": "States PHQ-9 decreased 13→7, labels as response",
+      "fullCredit": "States PHQ-9 decreased 13→8, labels as response",
       "halfCredit": "Notes decrease, no specific values or label",
       "zeroCredit": "Omits"
     },
     {
       "id": "2C.3",
-      "description": "GAD-7 trend: 8 → 4 noted and interpreted",
+      "description": "GAD-7 trend: 8 → 5 noted and interpreted",
       "points": 0.55,
-      "fullCredit": "States GAD-7 decreased from 8 to 4",
+      "fullCredit": "States GAD-7 decreased from 8 to 5",
       "halfCredit": "Notes decrease, no specific values",
       "zeroCredit": "Omits"
     },
     {
       "id": "2C.4",
-      "description": "PHQ-9 of 7 does not meet remission threshold (remission = PHQ-9 ≤ 4)",
+      "description": "PHQ-9 of 8 does not meet remission threshold (remission = PHQ-9 ≤ 4)",
       "points": 0.65,
-      "fullCredit": "States PHQ-9 7 does not meet remission threshold (≤4)",
+      "fullCredit": "States PHQ-9 8 does not meet remission threshold (≤4)",
       "halfCredit": "States not in remission, no threshold cited",
       "zeroCredit": "Omits"
     },
     {
       "id": "2C.5",
-      "description": "GAD-7 of 4 consistent with minimal anxiety category",
+      "description": "GAD-7 of 5 consistent with mild anxiety category",
       "points": 0.5,
-      "fullCredit": "States GAD-7 4 in minimal anxiety range",
+      "fullCredit": "States GAD-7 5 in mild anxiety range",
       "halfCredit": "States low anxiety, no category",
       "zeroCredit": "Omits"
     },
     {
       "id": "2C.6",
-      "description": "BMI value (25.1) consistent with documented height (65 in) and weight (151 lbs)",
+      "description": "BMI value (25.1) consistent with documented height (65 in) and weight (150 lbs)",
       "points": 0.5,
       "fullCredit": "BMI consistent with documented height and weight",
       "halfCredit": "BMI noted, no reconciliation",
@@ -66332,17 +66332,17 @@
     },
     {
       "id": "3A.5",
-      "description": "PHQ-9 improvement cited: 13 at baseline to 7 today",
+      "description": "PHQ-9 improvement cited: 13 at baseline to 8 today",
       "points": 0.6,
-      "fullCredit": "States PHQ-9 improved from 13 to 7",
+      "fullCredit": "States PHQ-9 improved from 13 to 8",
       "halfCredit": "States PHQ-9 improved, no values",
       "zeroCredit": "Omits"
     },
     {
       "id": "3A.6",
-      "description": "Approximately 46% reduction in PHQ-9 symptom burden cited",
+      "description": "Approximately 38% reduction in PHQ-9 symptom burden cited",
       "points": 0.6,
-      "fullCredit": "States ~46% PHQ-9 reduction",
+      "fullCredit": "States ~38% PHQ-9 reduction",
       "halfCredit": "States PHQ-9 improved, no percent",
       "zeroCredit": "Omits"
     },
@@ -66476,9 +66476,9 @@
     },
     {
       "id": "3B.4",
-      "description": "GAD-7 improvement cited: 8 to 4",
+      "description": "GAD-7 improvement cited: 8 to 5",
       "points": 0.7,
-      "fullCredit": "States GAD-7 improved from 8 to 4",
+      "fullCredit": "States GAD-7 improved from 8 to 5",
       "halfCredit": "States GAD-7 improved, no values",
       "zeroCredit": "Omits"
     },
@@ -66532,9 +66532,9 @@
     },
     {
       "id": "3B.11",
-      "description": "GAD-7 of 4 categorized as minimal anxiety per validated instrument interpretation",
+      "description": "GAD-7 of 5 categorized as mild anxiety per validated instrument interpretation",
       "points": 0.45,
-      "fullCredit": "States minimal anxiety category for GAD-7 of 4",
+      "fullCredit": "States mild anxiety category for GAD-7 of 5",
       "halfCredit": "States low/improving, no category",
       "zeroCredit": "Omits"
     },
@@ -66548,9 +66548,9 @@
     },
     {
       "id": "3B.16",
-      "description": "GAD-7 score of 4 at current visit below the 8 at initial visit — threshold for minimal anxiety achieved",
+      "description": "GAD-7 score of 5 at current visit below the 8 at initial visit — threshold for mild anxiety maintained",
       "points": 0.8,
-      "fullCredit": "States GAD-7 of 4 represents minimal anxiety, below initial visit GAD-7 of 8",
+      "fullCredit": "States GAD-7 of 5 represents mild anxiety, below initial visit GAD-7 of 8",
       "halfCredit": "States GAD-7 improved, no comparison to initial visit threshold",
       "zeroCredit": "Omits"
     },
@@ -71674,17 +71674,17 @@
     },
     {
       "id": "1A.3",
-      "description": "Encounter setting stated (ambulatory care behavioral health clinic)",
+      "description": "Encounter setting stated (ambulatory care ambulatory care clinic or behavioral health clinic)",
       "points": 0.3,
-      "fullCredit": "Names behavioral health clinic",
-      "halfCredit": "Names clinic, no behavioral health",
+      "fullCredit": "Names ambulatory care clinic or behavioral health clinic",
+      "halfCredit": "States clinic type",
       "zeroCredit": "Omits"
     },
     {
       "id": "1A.4",
-      "description": "Visit type stated (3-month follow-up)",
+      "description": "Visit type stated (1-month follow-up)",
       "points": 0.4,
-      "fullCredit": "States 3-month follow-up",
+      "fullCredit": "States 1-month follow-up",
       "halfCredit": "States follow-up, no interval",
       "zeroCredit": "Omits"
     },
@@ -73684,9 +73684,9 @@
     },
     {
       "id": "1B.18",
-      "description": "Significant improvement in relationship with spouse; no longer isolates socially",
+      "description": "Significant improvement in family and social relationships; no longer isolates socially",
       "points": 0.4,
-      "fullCredit": "States improved spousal relationship and reduced social isolation",
+      "fullCredit": "States improved family/social relationships and reduced social isolation",
       "halfCredit": "States improved relationship, only one aspect",
       "zeroCredit": "Omits"
     },
@@ -73828,17 +73828,17 @@
     },
     {
       "id": "1D.1",
-      "description": "Marital status: married",
+      "description": "Marital status: separated (working on reconciliation)",
       "points": 0.3,
-      "fullCredit": "States married",
+      "fullCredit": "States separated or notes progress in family relationships",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "1D.2",
-      "description": "Living situation: lives with spouse",
+      "description": "Living situation: lives alone or with family",
       "points": 0.3,
-      "fullCredit": "States lives with spouse",
+      "fullCredit": "States lives alone or notes improved family/social situation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -74348,9 +74348,9 @@
     },
     {
       "id": "2C.1",
-      "description": "Current PHQ-9 score stated (4)",
+      "description": "Current PHQ-9 score stated (3)",
       "points": 0.5,
-      "fullCredit": "States PHQ-9 of 4",
+      "fullCredit": "States PHQ-9 of 3",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -74374,15 +74374,15 @@
       "id": "2C.4",
       "description": "PHQ-9 current interpretation: minimal depressive symptoms",
       "points": 0.35,
-      "fullCredit": "States PHQ-9 of 4 = minimal depressive symptoms",
+      "fullCredit": "States PHQ-9 of 3 = minimal depressive symptoms",
       "halfCredit": "States score, no interpretation",
       "zeroCredit": "Omits"
     },
     {
       "id": "2C.5",
-      "description": "Current GAD-7 score stated (3)",
+      "description": "Current GAD-7 score stated (4)",
       "points": 0.4,
-      "fullCredit": "States GAD-7 of 3",
+      "fullCredit": "States GAD-7 of 4",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -74406,7 +74406,7 @@
       "id": "2C.8",
       "description": "GAD-7 current interpretation: minimal anxiety symptoms",
       "points": 0.35,
-      "fullCredit": "States GAD-7 of 3 = minimal anxiety symptoms",
+      "fullCredit": "States GAD-7 of 4 = minimal anxiety symptoms",
       "halfCredit": "States score, no interpretation",
       "zeroCredit": "Omits"
     },
@@ -74436,15 +74436,15 @@
     },
     {
       "id": "3A.3",
-      "description": "Supports remission with current PHQ-9 of 4",
+      "description": "Supports remission with current PHQ-9 of 3",
       "points": 0.6,
-      "fullCredit": "References current PHQ-9 of 4",
+      "fullCredit": "References current PHQ-9 of 3",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "3A.4",
-      "description": "PHQ-9 trajectory stated: 21 → 12 → 4",
+      "description": "PHQ-9 trajectory stated: 21 → 12 → 3",
       "points": 0.7,
       "fullCredit": "States all three PHQ-9 values in progression",
       "halfCredit": "States trajectory without all three values",
@@ -74452,9 +74452,9 @@
     },
     {
       "id": "3A.5",
-      "description": "PHQ-9 of 4 interpreted as consistent with remission",
+      "description": "PHQ-9 of 3 interpreted as consistent with remission",
       "points": 0.55,
-      "fullCredit": "States PHQ-9 of 4 is consistent with remission",
+      "fullCredit": "States PHQ-9 of 3 is consistent with remission",
       "halfCredit": "States score, no remission interpretation",
       "zeroCredit": "Omits"
     },
@@ -74580,15 +74580,15 @@
     },
     {
       "id": "3B.3",
-      "description": "Supports assessment with current GAD-7 of 3",
+      "description": "Supports assessment with current GAD-7 of 4",
       "points": 0.5,
-      "fullCredit": "References current GAD-7 of 3",
+      "fullCredit": "References current GAD-7 of 4",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "3B.4",
-      "description": "GAD-7 trajectory stated: 18 → 9 → 3",
+      "description": "GAD-7 trajectory stated: 18 → 9 → 4",
       "points": 0.6,
       "fullCredit": "States all three GAD-7 values in progression",
       "halfCredit": "States trajectory without all three values",
@@ -74596,9 +74596,9 @@
     },
     {
       "id": "3B.5",
-      "description": "GAD-7 of 3 interpreted as minimal anxiety symptoms",
+      "description": "GAD-7 of 4 interpreted as minimal anxiety symptoms",
       "points": 0.45,
-      "fullCredit": "States GAD-7 of 3 = minimal anxiety symptoms",
+      "fullCredit": "States GAD-7 of 4 = minimal anxiety symptoms",
       "halfCredit": "States score, no interpretation",
       "zeroCredit": "Omits"
     },
@@ -74716,9 +74716,9 @@
     },
     {
       "id": "3C.8",
-      "description": "Protective factor: supportive spouse",
+      "description": "Protective factors: restored hopefulness and enjoyment, treatment engagement, family re-engagement",
       "points": 0.35,
-      "fullCredit": "Lists supportive spouse as protective factor",
+      "fullCredit": "Lists restored hopefulness/enjoyment and/or treatment engagement and/or family re-engagement as protective factors",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -75124,9 +75124,9 @@
     },
     {
       "id": "4C.3",
-      "description": "Encourage patient to discuss symptom changes with spouse",
+      "description": "Encourage patient to maintain open communication with family and support network",
       "points": 0.4,
-      "fullCredit": "States encourage discussion of symptom changes with spouse",
+      "fullCredit": "States encourage communication with family/support network",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -75758,10 +75758,10 @@
     },
     {
       "id": "1B.13",
-      "description": "Functional impairment: ceased hiking and woodworking due to anhedonia",
+      "description": "Reports enjoyment of hobbies (fishing, watching sports, or other named activities)",
       "points": 0.2,
-      "fullCredit": "Names hobbies (hiking/woodworking) and cessation",
-      "halfCredit": "States stopped hobbies, no specifics",
+      "fullCredit": "States any named hobby currently enjoyed by patient",
+      "halfCredit": "States hobbies in general terms",
       "zeroCredit": "Omits"
     },
     {
@@ -75934,17 +75934,17 @@
     },
     {
       "id": "1D.1",
-      "description": "Marital status: married, lives with spouse",
+      "description": "Marital status: separated (lives alone)",
       "points": 0.25,
-      "fullCredit": "States married and lives with spouse",
-      "halfCredit": "States married only",
+      "fullCredit": "States separated or lives alone",
+      "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "1D.2",
-      "description": "Employment: works full-time as an information technology manager",
+      "description": "Living situation: lives alone",
       "points": 0.3,
-      "fullCredit": "States full-time IT manager",
+      "fullCredit": "States lives alone",
       "halfCredit": "States employed, no role",
       "zeroCredit": "Omits"
     },
@@ -78048,11 +78048,11 @@
     },
     {
       "id": "1B.38",
-      "description": "Denies medication adverse effects",
+      "description": "Esketamine adverse effects documented (transient dissociation, dizziness, BP elevation during treatment — expected and monitored)",
       "points": 0.2,
-      "fullCredit": "States denies adverse effects",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "fullCredit": "Documents transient dissociation and/or dizziness and/or BP elevation as known/expected esketamine effects",
+      "halfCredit": "Mentions adverse effects without full detail",
+      "zeroCredit": "Omits or falsely denies esketamine adverse effects"
     },
     {
       "id": "1C.1",
@@ -78128,17 +78128,17 @@
     },
     {
       "id": "1D.1",
-      "description": "Marital status: married",
+      "description": "Marital status: separated (lives alone)",
       "points": 0.2,
-      "fullCredit": "States married",
+      "fullCredit": "States separated or lives alone",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "1D.2",
-      "description": "Living situation: lives with spouse",
+      "description": "Living situation: lives alone",
       "points": 0.25,
-      "fullCredit": "States lives with spouse",
+      "fullCredit": "States lives alone",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -78408,11 +78408,11 @@
     },
     {
       "id": "1F.8",
-      "description": "Denies medication adverse effects",
+      "description": "Esketamine adverse effects acknowledged as expected and clinic-monitored (no false denial)",
       "points": 0.4,
-      "fullCredit": "States denies adverse effects",
-      "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "fullCredit": "States adverse effects monitored and expected in clinic; does not falsely deny them",
+      "halfCredit": "Acknowledges adverse effects without full context",
+      "zeroCredit": "Falsely denies adverse effects when patient reports them"
     },
     {
       "id": "1G.1",
@@ -79064,9 +79064,9 @@
     },
     {
       "id": "3C.10",
-      "description": "Protective factors: supportive spouse, improved hopefulness, engagement in treatment, future-oriented thinking (≥3)",
+      "description": "Protective factors: hopefulness, engagement in treatment, future-oriented thinking, support network (≥3)",
       "points": 0.55,
-      "fullCredit": "Lists ≥3 specific protective factors",
+      "fullCredit": "Lists ≥3 specific protective factors (hopefulness, treatment engagement, future-oriented thinking, re-engagement with family/hobbies)",
       "halfCredit": "Lists &lt;3",
       "zeroCredit": "Omits"
     },
@@ -79584,9 +79584,9 @@
     },
     {
       "id": "4C.3",
-      "description": "Encourage discussion of symptom changes with spouse",
+      "description": "Encourage patient to discuss symptom changes with a trusted support person or family member",
       "points": 0.35,
-      "fullCredit": "States discuss symptom changes with spouse",
+      "fullCredit": "States encourage discussion of symptom changes with trusted support person or family",
       "halfCredit": "States discuss with family",
       "zeroCredit": "Omits"
     },
