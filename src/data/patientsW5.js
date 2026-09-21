@@ -466,6 +466,7 @@ const davidTue = makeCase({
   ],
 
   INTERVIEW_KNOWLEDGE: [
+        { id: 'w5-david_c-tue_hobbies', topic: 'Hobbies / Interests', field: 'hobbies', keywords: ['hobby', 'hobbies', 'interest', 'interests', 'free time', 'fun', 'enjoy', 'do for fun', 'truck', 'fishing', 'sports', 'pastime'], response: "I used to like fishing and working on my truck, but honestly I haven't had the energy or interest in much of anything lately." },
     { id: 'w5-david_c-tue_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w5-david_c-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take melatonin 3 mg nightly for sleep, but I do not take other herbal supplements." },
     { id: 'w5-david_c-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink occasionally—about 1 drink per month." },

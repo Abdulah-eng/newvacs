@@ -75758,9 +75758,9 @@
     },
     {
       "id": "1B.13",
-      "description": "Hobbies / Interests: fishing and watching sports",
+      "description": "Hobbies / Interests: fishing, working on truck, or sports",
       "points": 0.2,
-      "fullCredit": "States fishing and/or watching sports",
+      "fullCredit": "States fishing, working on truck, and/or watching sports",
       "halfCredit": "States hobbies in general terms",
       "zeroCredit": "Omits"
     },
@@ -75998,9 +75998,9 @@
     },
     {
       "id": "1D.9",
-      "description": "Hobbies / Interests: fishing and watching sports",
+      "description": "Hobbies / Interests: fishing, working on truck, or sports",
       "points": 0.3,
-      "fullCredit": "States fishing and/or watching sports",
+      "fullCredit": "States fishing, working on truck, and/or watching sports",
       "halfCredit": "States withdrawal only",
       "zeroCredit": "Omits"
     },
@@ -76254,9 +76254,9 @@
     },
     {
       "id": "1G.5",
-      "description": "Hobbies / Interests: fishing and watching sports",
+      "description": "Hobbies / Interests: fishing, working on truck, or sports",
       "points": 0.35,
-      "fullCredit": "States fishing and/or watching sports",
+      "fullCredit": "States fishing, working on truck, and/or watching sports",
       "halfCredit": "States return to hobbies, no specifics",
       "zeroCredit": "Omits"
     },
@@ -76862,9 +76862,9 @@
     },
     {
       "id": "3D.4",
-      "description": "Hobbies / Interests: fishing and watching sports",
+      "description": "Hobbies / Interests: fishing, working on truck, or sports",
       "points": 0.25,
-      "fullCredit": "States fishing and/or watching sports",
+      "fullCredit": "States fishing, working on truck, and/or watching sports",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
