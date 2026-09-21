@@ -1,0 +1,586 @@
+WEEK 5 UAT / QA BUG REPORT
+Major Depressive Disorder + Generalized Anxiety Disorder + Tobacco Cessation Module
+Developer / IT handoff — clinical data, patient-case mapping, grading, UI, and technical issues
+Purpose of this report
+This report translates the Week 5 clinical/student audit into developer-facing QA findings. The goal is to identify discrepancies between the information available to the student through the patient interview and EHR and the information expected by the grading/reference system.
+The report focuses on issues that may affect clinical accuracy, student experience, grading reliability, case consistency, and usability. Each issue is organized by encounter and patient and identifies the observed behavior, expected behavior, potential impact, and recommended correction.
+Screenshot evidence should be placed immediately after the corresponding issue whenever available.
+Most important overall finding
+The most significant Week 5 issue is a recurring mismatch between the student-visible patient encounter/EHR and the information contained in the grading key. In multiple cases, students are being evaluated against information that the patient did not provide, information that directly contradicts the patient response, or objective data that differ from the values displayed in the EHR.
+This creates a grading environment in which a student can accurately document the patient encounter and still lose points because the grading system is using a different version of the patient's history, symptoms, medication use, adherence, vitals, laboratory data, or follow-up status.
+A second major concern is that several rubric items require students to document information that is not obtainable from the patient-facing encounter, such as unavailable laboratory values, unreported social history, undisclosed psychiatric symptoms, or historical diagnoses/procedures that the patient specifically denies or does not report.
+Executive Summary
+Patient-facing EHR information does not consistently match the grading key.
+Multiple tobacco-use histories conflict between the EHR and standardized-patient responses.
+Vitals used by the grading system do not consistently match the vitals displayed in the student-facing Vitals tab.
+Students are deducted for laboratory documentation even when no laboratory values are available in the chart.
+Students are being graded on information the patient did not provide, including social history, prior therapy, medical conditions, psychiatric symptoms, medication discontinuation, and medication adherence.
+Several grading criteria appear to expect the patient to provide a specific answer rather than grading the student's documentation of the actual patient response.
+Multiple patients have medication-history discrepancies between the patient interview, medication list, previous encounters, and grading key.
+Follow-up interval information is inconsistent between the patient chart and grading key.
+Patient demographic information is internally inconsistent.
+Some grading criteria appear to deduct points for details that were not clinically required or were not stated by the patient.
+These issues create a risk that students will be penalized for accurately documenting the information available during the encounter.
+Priority Summary / Suggested Ticket List
+Monday — Knowledge Quiz
+W5-01 — Knowledge-quiz answer choices are difficult to read [LOW] Current / observed
+The answer choices for the Monday knowledge quiz are displayed closely together without sufficient spacing between options I–IV. This makes the question visually difficult to read and can make it harder for students to distinguish where one answer choice ends and the next begins.
+Expected / grading reference
+Answer choices should have sufficient vertical spacing and visual separation so that each option can be easily identified.
+Why this is a problem
+This is primarily a usability issue rather than a clinical or grading error. Poor formatting can increase cognitive load and may make students more likely to misread or accidentally select an answer.
+Recommended fix
+Add consistent vertical spacing between answer choices I–IV. Consider using standard list formatting, increased line height, and/or indentation for each response option. Verify readability on both desktop and smaller screens.
+Screenshot evidence:
+Tuesday — Initial Visit — Sarah Mitchell
+W5-02 — Living situation, exercise, diet, insurance is not available from the patient [MEDIUM]
+Current / observed
+When asked about her living situation, Sarah does not provide specific details and indicates that she has not really thought through or does not have specific information regarding her living arrangement.
+Expected / grading reference
+The grading rubric should not require a specific living situation if the patient does not provide one.
+Why this is a problem
+Students should not be penalized for failing to document information that cannot be obtained during the encounter. If home support is an intended learning objective, the patient script needs to provide a response that can reasonably be documented.
+Recommended fix
+Either provide a scripted response regarding living situation or allow “unknown/not provided/not documented” to receive full credit.
+Screenshot evidence:
+W5-07 — Tobacco-use history is internally inconsistent [HIGH] Current / observed
+The EHR contains conflicting tobacco information. The subjective/social-history section identifies Sarah as a “Never smoker,” while the active problem list identifies “Tobacco Use — Current smoker, 5 cigs/day.” During the patient interview, Sarah reports currently smoking approximately 5 cigarettes per day and smoking for approximately 8 years.
+Expected / grading reference
+The student-facing EHR and patient interview should contain a consistent current tobacco history.
+Why this is a problem
+Tobacco status is clinically relevant to smoking-cessation assessment and treatment. The discrepancy can cause students to document the correct current smoking history while the EHR displays contradictory information.
+Recommended fix
+Update the patient record to reflect current smoking of approximately 5 cigarettes/day for
+approximately 8 years. Remove or correct the inaccurate “Never smoker” entry. Tobacco status should ideally be stored as one structured field and rendered consistently throughout the case.
+Screenshot evidence:
+W5-08 — Vitals in grading key do not match student-visible Vitals tab [HIGH] Current / observed
+The grading reference contains incorrect vital-sign values. The values displayed in the patient-facing Vitals tab match the values documented by the student in the SOAP note.
+Expected / grading reference
+The grading system should evaluate the vital signs actually available to the student.
+Why this is a problem
+This creates an objective grading mismatch. A student can correctly document the vitals displayed in the EHR and still lose points because the grading key contains different values.
+Recommended fix
+Use the student-visible Vitals tab as the source of truth. Synchronize the grading key with those values and add an automated validation that compares objective data in the rubric against the student-facing encounter before publication.
+Screenshot evidence:
+W5-09 — Student is graded on laboratory values that are not available [HIGH] Current / observed
+The student is deducted for failing to document laboratory values, but no corresponding laboratory values are available in the patient chart.
+Expected / grading reference
+Students should only be graded on laboratory values that are available in the student-facing encounter.
+Why this is a problem
+This creates an impossible grading requirement and can directly reduce a student's score despite accurate documentation.
+Recommended fix
+Either add the required laboratory values to the student-visible Labs section or remove the laboratory documentation requirement from the grading rubric.
+Screenshot evidence:
+W5-10 — Student is penalized for not documenting a previous smoking-cessation attempt that the patient denied [HIGH]
+Current / observed
+The student is deducted for failing to document a prior “quiet”/quit attempt. During the patient interview, Sarah states that she has not tried to quit before.
+Expected / grading reference
+The grading key should reflect the patient's actual response. If the patient has never attempted to quit, the student should not be required to document a previous attempt.
+Why this is a problem
+This is a direct mismatch between the patient response and grading expectation. The student cannot be expected to document a history that the patient specifically denied.
+Recommended fix
+Update the grading key to accept documentation that the patient has no previous quit attempts. If a prior quit attempt is intended to be part of the case, update the patient script accordingly.
+Screenshot evidence:
+Tuesday — Initial Visit — Jessica Ramirez
+W5-11 — Tobacco history conflicts between chart and patient interview [HIGH] Current / observed
+The patient chart identifies Jessica as a “never smoker,” while Jessica reports that she is a
+current smoker with approximately 20 years of smoking history.
+Expected / grading reference
+The EHR and standardized-patient interview should contain the same tobacco history.
+Why this is a problem
+Tobacco history is clinically important for risk assessment and smoking-cessation counseling. The student may correctly document current smoking based on the interview while the EHR provides contradictory information.
+Recommended fix
+Correct the tobacco history in the EHR and synchronize all patient-facing sections and grading references.
+Screenshot evidence:
+W5-12 — Missed-dose frequency does not match grading key [HIGH] Current / observed
+Jessica states that she misses approximately 3–4 doses per week. The student's SOAP note reflects this patient-reported frequency, but the grading system deducts points for documenting the “incorrect amount of missed doses” because the key expects 2–3 doses per week.
+Expected / grading reference
+The grading system should match the exact adherence information provided by the patient.
+Why this is a problem
+The student's documentation appears to accurately reflect the standardized-patient response. Penalizing the student for documenting 3–4 missed doses when that is what the patient stated undermines grading reliability.
+Recommended fix
+Update the grading reference to 3–4 missed doses per week, or change the patient script if 2–3 doses per week is the intended case value.
+Screenshot evidence:
+W5-13 — Student is graded on medication discontinuation that the patient never reported [HIGH]
+Current / observed
+The patient does not state that she discontinued either medication or provide a reason for discontinuation. The student is nevertheless deducted for failing to document medication discontinuation and the reason for it.
+Expected / grading reference
+The grading rubric should only require medication discontinuation when it is established in the patient interview, EHR, or other student-visible information.
+Why this is a problem
+Students should not be expected to infer or invent medication discontinuation. This is particularly problematic when medication adherence is itself being assessed.
+Recommended fix
+Remove the discontinuation requirement unless it is explicitly stated by the patient. If discontinuation is intended, add it clearly to the patient script and/or medication history.
+Screenshot evidence:
+W5-15 — Vitals in grading key do not match student-visible Vitals tab [HIGH]
+Current / observed
+The grading reference lists incorrect vital-sign values, while the values in the Vitals tab match the values documented by the student.
+Expected / grading reference
+The grading system should use the objective values available to the student.
+Why this is a problem
+A student may correctly document the EHR values and still be penalized due to a grading-key mismatch.
+Recommended fix
+Synchronize the grading key with the student-visible Vitals tab and implement automated objective-data validation.
+Screenshot evidence:
+W5-16 — Student is graded on unavailable laboratory values [HIGH] Current / observed
+The student is deducted for not documenting laboratory values, although no laboratory values are available in the patient chart.
+Expected / grading reference
+Only available laboratory values should be included as required grading elements.
+Why this is a problem
+This creates an impossible documentation requirement and can produce an inaccurate student grade.
+Recommended fix
+Add the required labs to the student-facing chart or remove the lab requirement from the rubric.
+Screenshot evidence:
+Tuesday — Initial Visit — David Carter
+W5-17 — Living situation cannot be established [MEDIUM] Current / observed
+David is unable to state whether he lives by himself or with others.
+Expected / grading reference
+The rubric should not require a specific living arrangement when the patient cannot provide one.
+Why this is a problem
+Living situation can be clinically relevant to home support and monitoring, but the student cannot accurately document information the patient does not know or provide.
+Recommended fix
+Either provide a scripted response or allow “unknown/not provided” without deduction.
+Screenshot evidence:
+W5-18 — Prior CBT history conflicts with patient report [HIGH]
+Current / observed
+David states that he has never seen a therapist or sought counseling for his depression and anxiety. The grading key states that he previously completed CBT therapy.
+Expected / grading reference
+The patient-facing history and grading key should contain the same psychiatric treatment history.
+Why this is a problem
+This can cause a student to be penalized for accurately documenting the patient's reported history. It also affects clinical treatment planning because previous psychotherapy exposure may influence future recommendations.
+Recommended fix
+Determine the intended case history and synchronize the patient script, EHR, and grading key. If previous CBT is intended, the patient should disclose it during the encounter.
+Screenshot evidence:
+W5-19 — Medical history conflicts with hidden grading information [CRITICAL] Current / observed
+When asked about other medical conditions, David states that he has no conditions other than those listed in his chart. The grading key expects the student to identify additional history of obstructive sleep apnea with CPAP use and a previous cholecystectomy.
+Expected / grading reference
+Additional diagnoses, procedures, or medical devices should be discoverable through the student-facing EHR or patient interview if they are required for grading.
+Why this is a problem
+The student cannot reasonably be expected to identify medical history that the patient denies and that is not otherwise available in the chart. This can also affect clinical decision-making and medication assessment.
+Recommended fix
+If OSA/CPAP and cholecystectomy are intended to be part of the case, add them to the EHR and/or patient script. Otherwise, remove them from the grading key.
+Screenshot evidence:
+W5-20 — Patient-reported medication response conflicts with grading key [HIGH]
+Current / observed
+David reports no improvement in symptoms despite proper adherence to both escitalopram and sertraline. The grading key states that he has had a partial response with some improvement.
+Expected / grading reference
+The grading key should reflect the response reported by the patient during the encounter.
+Why this is a problem
+Medication efficacy and symptom response are central to antidepressant assessment. A discrepancy can lead students toward an incorrect assessment and can result in grading based on information that was not available.
+Recommended fix
+Align the patient response and grading key. If partial improvement is intended, modify the standardized-patient response accordingly.
+Screenshot evidence:
+W5-21 — Vitals in grading key do not match student-visible Vitals tab [HIGH] Current / observed
+The grading reference lists vital signs that differ from the values displayed in the patient-facing Vitals tab. The student's SOAP note matches the values available in the Vitals tab.
+Expected / grading reference
+The grader should evaluate the values available to the student.
+Why this is a problem
+This is an objective-data grading mismatch.
+Recommended fix
+Synchronize the grading key with the student-visible Vitals tab and establish one source of truth for objective data.
+Screenshot evidence:
+W5-22 — Student is graded on laboratory values that are unavailable [HIGH] Current / observed
+The student is deducted for not documenting laboratory values, but no corresponding labs are available in the chart.
+Expected / grading reference
+The student should only be evaluated on laboratory values available during the encounter.
+Why this is a problem
+The grading criterion cannot be satisfied from the available patient information.
+Recommended fix
+Add the required labs to the case or remove the grading requirement.
+Screenshot evidence:
+Wednesday — 4-Week Follow-Up — Patient A: Sarah Mitchell
+W5-23 — Student is penalized for patient-reported mood improvement [HIGH] Current / observed
+The student is counted off because the patient states an “incorrect” amount of improvement in
+mood.
+Expected / grading reference
+The student's grade should reflect the patient's actual response during the encounter.
+Why this is a problem
+The student does not control the standardized patient's response. If the patient reports a particular degree of improvement, accurately documenting that response should not result in a deduction simply because it differs from the hidden key.
+Recommended fix
+Synchronize the patient script and grading key. The rubric should grade whether the student accurately documented the patient's response rather than requiring a predetermined response that differs from the encounter.
+Screenshot evidence:
+W5-24 — Smoking triggers conflict between patient response and grading key [HIGH] Current / observed
+Sarah states that she does not have specific triggers for smoking. The grading key states that she has a strong correlation between work-related stress and smoking.
+Expected / grading reference
+The grading key should reflect the trigger information actually provided by the patient.
+Why this is a problem
+Smoking triggers are clinically relevant to cessation counseling. Students should not be required to document a trigger that the patient denies.
+Recommended fix
+Either modify the patient script so that Sarah identifies work-related stress as a trigger, or update the grading key to accept documentation that no specific triggers were identified.
+Screenshot evidence:
+W5-25 — Vitals in grading key do not match student-visible Vitals tab [HIGH]
+Current / observed
+The grading reference contains vital values that differ from those available in the patient-facing Vitals tab. The student's SOAP documentation matches the student-visible values.
+Expected / grading reference
+The grading system should evaluate the objective data shown to the student.
+Recommended fix
+Synchronize the grading key and Vitals tab and implement automated validation.
+Screenshot evidence:
+W5-26 — Student is graded on unavailable laboratory values [HIGH] Current / observed
+The student is deducted for failing to document laboratory values that are not available in the chart.
+Expected / grading reference
+Only student-accessible laboratory data should be required.
+Recommended fix
+Add the laboratory data to the encounter or remove the requirement from the rubric.
+Screenshot evidence:
+Wednesday — 4-Week Follow-Up — Patient B: Jessica Ramirez
+W5-27 — Student is penalized for patient-reported mood improvement [HIGH] Current / observed
+The student is counted off because Jessica reports a degree of mood improvement that differs
+from the grading key.
+Expected / grading reference
+The grading key should reflect the response given by the patient.
+Why this is a problem
+The student cannot control the standardized patient's response. Accurate documentation of the patient's stated response should not be treated as an error.
+Recommended fix
+Synchronize the patient script and grading key and grade documentation against the actual patient response.
+Screenshot evidence:
+W5-28 — Vitals in grading key do not match student-visible Vitals tab [HIGH]
+Current / observed
+The grading reference lists incorrect vital values, while the Vitals tab contains the values documented by the student.
+Expected / grading reference
+The grader should use the student-visible objective values.
+Recommended fix
+Correct the grading key and establish the Vitals tab as the source of truth.
+Screenshot evidence:
+W5-29 — Student is graded on unavailable laboratory values [HIGH] Current / observed
+The student is deducted for failing to document laboratory values that are not available in the chart.
+Expected / grading reference
+Only available laboratory values should be required.
+Recommended fix
+Add the required labs or remove the laboratory documentation criterion.
+Screenshot evidence:
+W5-30 — Sertraline adherence conflicts between patient report and grading key [HIGH] Current / observed
+Jessica states that she has taken sertraline 100% of the time for the past 3 weeks. The grading key states that she continues to miss some doses.
+Expected / grading reference
+The grading key should match the adherence information provided by the patient during the encounter.
+Why this is a problem
+Medication adherence is a major component of evaluating antidepressant effectiveness. Incorrectly grading the patient's adherence can change the student's clinical assessment of whether treatment has been adequately tried.
+Recommended fix
+Update either the patient response or grading key so both reflect the same adherence history.
+Screenshot evidence:
+Wednesday — 4-Week Follow-Up — Patient C: David Carter
+W5-31 — Patient-reported symptom improvement conflicts with grading key [HIGH] Current / observed
+David reports little improvement in symptoms and states that he still does not feel 100% like
+himself. The grading key states that this is the best he has felt in years and that he has experienced significant symptom improvement.
+Expected / grading reference
+The grading key should reflect the patient's actual symptom response.
+Why this is a problem
+Symptom improvement determines how the student should assess treatment effectiveness and
+make recommendations. The discrepancy can lead to an incorrect clinical assessment and inaccurate grading.
+Recommended fix
+Align the standardized-patient response with the grading key or revise the grading key to reflect the actual patient response.
+Screenshot evidence:
+W5-32 — Aripiprazole use is present in key but not documented in patient-facing case [HIGH]
+Current / observed
+There is no documentation in the patient-facing encounter indicating that David is taking aripiprazole, but the grading key states that he is taking aripiprazole.
+Expected / grading reference
+Medication therapy used for grading should be visible in the patient's medication list, EHR, or patient interview.
+Why this is a problem
+Medication reconciliation cannot be accurately performed when the grading system expects a medication that the student has no way to identify.
+Recommended fix
+Add aripiprazole to the student-visible medication list and/or patient script if it is intended to be part of the case. Otherwise, remove it from the grading key.
+Screenshot evidence:
+W5-33 — Grading expects a concern that the patient does not express [HIGH] Current / observed
+When prompted, David does not express concern about the therapy or treatment not having a lasting benefit. The grading key states that concerns regarding temporary resolution of symptoms should be addressed.
+Expected / grading reference
+The rubric should distinguish between a concern that the patient actually expresses and counseling that the student may proactively provide.
+Why this is a problem
+The student should not be penalized for failing to document a concern that the patient did not express. If proactive counseling about recurrence is a learning objective, the rubric should assess whether the student provided appropriate counseling rather than requiring documentation that the patient had a specific concern.
+Recommended fix
+Clarify whether the objective is patient concern identification or appropriate counseling. Modify the patient script and grading logic accordingly.
+Screenshot evidence:
+W5-34 — Vitals in grading key do not match student-visible Vitals tab [HIGH] Current / observed
+The grading key lists different vital values from those displayed in the patient-facing Vitals tab. The student's documentation matches the student-visible values.
+Expected / grading reference
+The grading system should use the values accessible to the student.
+Recommended fix
+Synchronize the objective data and implement automated key-to-EMR validation.
+Screenshot evidence:
+W5-35 — Student is graded on unavailable laboratory values [HIGH] Current / observed
+The student is deducted for not documenting laboratory values that are not available in the chart.
+Expected / grading reference
+Only laboratory values available to the student should be graded.
+Recommended fix
+Add the required labs or remove the laboratory requirement.
+Screenshot evidence:
+Thursday — Follow-Up Visits
+Patient A = Sarah Mitchell: 3-month follow-up Patient B = Jessica Ramirez: 3-month follow-up Patient C = David Carter: 6-month follow-up
+Thursday — Patient A: Sarah Mitchell
+W5-36 — Contradictory tobacco-cessation responses within the same encounter [CRITICAL]
+Current / observed
+When asked about tobacco use, Sarah initially states that she quit smoking 6 weeks ago, feels comfortable with her progress, and reports no triggers. Later in the same conversation, she states that she would like to start talking about quitting smoking during this visit.
+Expected / grading reference
+The patient's smoking status and cessation status should be internally consistent within the same encounter.
+Why this is a problem
+This creates substantial ambiguity about whether Sarah is currently smoking, has recently quit, or is contemplating quitting. Tobacco status directly affects the clinical assessment and counseling plan.
+Recommended fix
+Determine the intended clinical state for the encounter and revise the patient script so that all responses are consistent. If the contradiction is intentional and intended to test clarification skills, the rubric should explicitly reward the student for identifying and reconciling the discrepancy rather than grading one predetermined response as correct.
+Screenshot evidence:
+W5-37 — Patient age does not match date of birth [HIGH] Current / observed
+Sarah's demographic information lists her as 29 years old, while the birth date in the chart is
+03/12/1972.
+Expected / grading reference
+The displayed age should be automatically calculated from the patient's date of birth or otherwise match the stored demographic data.
+Why this is a problem
+Age is clinically relevant and may affect risk assessment, screening recommendations, medication considerations, and student documentation. An internally inconsistent demographic record can also undermine confidence in the accuracy of the case.
+Recommended fix
+Establish date of birth as the authoritative source and automatically calculate/display age. Verify all demographic fields against the source patient record.
+Screenshot evidence:
+W5-38 — Student is penalized for details not established by the patient [MEDIUM] Current / observed
+The student identifies important clinical factors and symptom improvement but loses points for additional details such as describing hiking “with husband” or documenting “improvement of social engagement.” These details were not necessarily established by the patient in the encounter.
+Expected / grading reference
+The rubric should prioritize clinically relevant information that was available to the student rather than requiring incidental details that were not explicitly provided.
+Why this is a problem
+Overly specific grading requirements can penalize students who accurately summarize the
+encounter but use different wording or appropriately omit details that were not clinically significant.
+Recommended fix
+Review the rubric and distinguish between essential clinical elements and optional narrative details. Accept equivalent documentation when the underlying clinical information is accurately captured.
+Screenshot evidence:
+W5-39 — Tobacco triggers conflict with patient report [HIGH] Current / observed
+Sarah reports no triggers or cravings related to stress. The grading key states that she continues to experience smoking triggers from occasional work-related stress.
+Expected / grading reference
+The grading key should match the patient's current report of triggers and cravings.
+Why this is a problem
+Smoking triggers are directly relevant to relapse prevention and cessation counseling. Requiring documentation of a trigger the patient denies can lead to inaccurate clinical documentation.
+Recommended fix
+Synchronize the patient script and grading key. If work-related stress is intended to remain a trigger, the patient should report this during the encounter.
+Screenshot evidence:
+W5-40 — Student is graded on unavailable laboratory values [HIGH] Current / observed
+The student is deducted for not including laboratory values even though no corresponding values are available in the chart.
+Expected / grading reference
+Only student-accessible laboratory values should be required.
+Recommended fix
+Add the required labs to the student-facing encounter or remove the grading requirement.
+Screenshot evidence:
+Thursday — Patient B: Jessica Ramirez
+W5-41 — Follow-up interval conflicts between patient chart and grading key [HIGH]
+Current / observed
+Jessica's chart identifies the encounter as a 3-month follow-up, while the grading key identifies it as a 6-month follow-up.
+Expected / grading reference
+The encounter interval should be consistent across the patient-facing interface, EHR, grading key, and workflow configuration.
+Why this is a problem
+The follow-up interval determines what information and clinical changes would reasonably be expected at the encounter. A mismatch can result in the student being graded against the wrong clinical context.
+Recommended fix
+Use a single encounter-interval field to drive the display, EHR, rubric, and grading context. Add regression testing for all follow-up encounters.
+Screenshot evidence:
+W5-42 — Migraine/sumatriptan history conflicts with current patient report and medication chart [HIGH]
+Current / observed
+Previous answer-key information states that Jessica has migraines and takes sumatriptan. During the current encounter, Jessica states that she does not have migraines, and sumatriptan is not listed in her current medication chart.
+Expected / grading reference
+The current medication list and patient history should accurately reflect the patient's current clinical status.
+Why this is a problem
+This creates a medication-reconciliation and problem-list discrepancy. Students may document the current patient report and medication list correctly but be penalized for not documenting a historical condition that the patient currently denies.
+Recommended fix
+Determine whether migraine/sumatriptan is intended to remain an active condition/medication. If not, remove it from the grading key and update the historical case data. If it is intended to remain active, ensure it appears consistently in the medication and problem lists and that the patient script supports it.
+Screenshot evidence:
+W5-43 — Barriers to care conflict between patient report and grading key [HIGH]
+Current / observed
+Jessica states that she has no barriers to receiving care, while the grading key states that she has barriers to care.
+Expected / grading reference
+The grading key should reflect the patient's stated barriers, or the patient script should be revised if barriers are intended to be present.
+Why this is a problem
+Access-to-care assessment is clinically relevant. Students should not be required to document barriers that the patient explicitly denies.
+Recommended fix
+Align the patient response and grading key. If there are intended barriers, specify them in the patient interview.
+Screenshot evidence:
+W5-44 — Vitals in grading key do not match student-visible Vitals tab [HIGH] Current / observed
+The grading reference lists vital values that differ from those available in the Vitals tab. The student's SOAP note matches the student-visible values.
+Expected / grading reference
+The grading system should use the objective values shown to the student.
+Recommended fix
+Correct the grading key and establish one source of truth for encounter vitals.
+Screenshot evidence:
+W5-45 — Student is graded on unavailable laboratory values [HIGH]
+Current / observed
+The student is deducted for failing to include laboratory values, although no corresponding labs are available in the patient chart.
+Expected / grading reference
+Only available laboratory values should be required.
+Recommended fix
+Add the necessary laboratory data or remove the criterion from the grading rubric.
+Screenshot evidence:
+Thursday — Patient C: David Carter
+W5-46 — Aripiprazole use is not documented in the patient-facing case [HIGH] Current / observed
+There is no documentation indicating that David is taking aripiprazole, but the grading key states that he is taking the medication.
+Expected / grading reference
+All medications that are required for grading should be visible in the EHR or patient interview.
+Why this is a problem
+This can cause students to miss a medication that they have no reasonable way to identify and can interfere with medication reconciliation and treatment assessment.
+Recommended fix
+Add aripiprazole to the patient-facing medication list/script if intended. Otherwise, remove the medication from the grading key.
+Screenshot evidence:
+W5-47 — Vitals in grading key do not match student-visible Vitals tab [HIGH] Current / observed
+The grading reference contains vital values that differ from the values displayed in the Vitals tab.
+Expected / grading reference
+The grading system should evaluate the objective data presented to the student.
+Recommended fix
+Synchronize the grading key and EHR and implement automated objective-data validation.
+Screenshot evidence:
+W5-48 — Student is graded on unavailable laboratory values [HIGH]
+Current / observed
+The student is deducted for not documenting laboratory values even though the relevant laboratory values are not available in the chart.
+Expected / grading reference
+Only laboratory information available to the student should be included in the grading criteria.
+Recommended fix
+Add the required labs to the student-visible encounter or remove the laboratory requirement.
+Screenshot evidence:
+Cross-Cutting Grading Logic Concerns
+Key distinction for the developer
+The Week 5 audit demonstrates a recurring distinction between accurate student documentation and matching a predetermined hidden reference answer.
+These should not be treated as equivalent.
+Patient responses should be the source of truth
+When the standardized patient gives a specific response, the student should be evaluated on whether the SOAP note accurately reflects that response.
+Examples from this audit include:
+Sarah reporting no specific smoking triggers while the key expects work-related stress triggers.
+Jessica reporting 3–4 missed doses per week while the key expects 2–3.
+Jessica reporting 100% sertraline adherence for 3 weeks while the key expects continued missed doses.
+David reporting little improvement while the key expects significant improvement.
+David denying previous CBT while the key expects previous CBT.
+Sarah denying previous quit attempts while the key expects a prior attempt.
+Information unavailable to the student should not be graded as an omission
+If the patient does not provide a value and the EHR does not contain it, the student should be able to document:
+“Unknown”
+“Not provided”
+“Not assessed”
+“Not documented”
+“Patient unable to recall”
+without losing points solely because the hidden reference contains a specific answer.
+Objective data must have one source of truth
+The repeated vital-sign discrepancies strongly suggest that objective data may exist in multiple locations or versions.
+The system should have one authoritative encounter object for:
+Vitals
+Laboratory values
+Weight
+Medication list
+Medication adherence
+Diagnoses
+Tobacco status
+Follow-up interval
+Relevant medical history
+The EHR and grading engine should both reference the same data.
+Do not grade students on unavailable laboratory values
+The same laboratory issue occurs repeatedly across Sarah, Jessica, and David.
+If no laboratory values are displayed in the student-facing chart, the rubric should not require the student to document them.
+Clinical assessment should not be based on hidden patient information
+Information such as OSA/CPAP use, previous CBT, cholecystectomy, medication use, migraine history, or other clinical history should be available to the student if it is required for the assessment.
+Distinguish documentation from clinical reasoning
+The rubric should differentiate between:
+Documentation requirement:
+“Document the patient's stated smoking triggers.” and
+Clinical reasoning requirement:
+“Recommend appropriate strategies for managing smoking triggers.”
+The first requires a patient response. The second can assess the student's clinical reasoning.
+Do not require exact wording
+If a student captures the correct clinical meaning, equivalent wording should receive credit. For example, the rubric should generally recognize equivalent documentation of:
+No known smoking triggers
+Patient denies specific smoking triggers
+No identifiable triggers reported
+Patient does not associate smoking with specific triggers provided that the underlying clinical information is equivalent.
+Recommended Developer / QA Fix Plan
+Create one versioned source-of-truth encounter object for every patient and visit.
+Ensure the EHR, standardized-patient script, grading key, and SOAP grading engine reference the same patient/version ID.
+Synchronize tobacco status across the problem list, social history, patient interview, and grading reference.
+Synchronize all medication histories across the medication list, patient interview, previous encounter history, and grading key.
+Use the student-visible Vitals tab as the authoritative source for vital-sign grading.
+Remove laboratory requirements when no corresponding laboratory data are available to the student.
+Add automated validation comparing every graded objective value against the student-visible EHR before a case is released.
+Make unavailable-information fields grading-aware so students can receive full credit for documenting “unknown/not provided/not documented” when appropriate.
+Ensure psychiatric symptom requirements are explicitly assessed during the patient interview if they are intended to be graded.
+Make medication-adherence grading match the patient's stated adherence during the encounter.
+Make patient-reported symptom improvement the source of truth for grading documentation.
+Review all hidden-reference information that conflicts with the standardized-patient script.
+Correct demographic inconsistencies, including Sarah's age/date-of-birth discrepancy.
+Correct encounter interval inconsistencies, including Jessica's 3-month versus 6-month designation.
+Review whether historical conditions/medications such as migraines, sumatriptan, OSA, CPAP, CBT, and aripiprazole are intended to remain active.
+Add automated checks for contradictory patient responses within a single encounter.
+Distinguish required clinical documentation from optional narrative details such as “with husband” or specific social-engagement wording.
+Add regression testing for every patient at every encounter interval.
+Improve Monday quiz formatting by adding spacing between answer choices.
+Suggested QA Acceptance Criteria
+A student is not penalized for accurately documenting a standardized-patient response that differs from a previous or hidden reference.
+Every required clinical-history item is available through either the student-facing EHR or patient interview.
+Every graded laboratory value is visible to the student before SOAP submission.
+Every graded vital sign exactly matches the student-facing Vitals tab.
+Medication adherence in the grading key matches the patient's stated adherence.
+Medication discontinuation is only graded when discontinuation is established in the patient-facing encounter.
+Psychiatric symptom denials are only required when the patient was actually asked and provided the response.
+Patient-reported symptom improvement is graded based on the patient's actual response.
+Tobacco status is internally consistent across the problem list, social history, patient interview, and grading key.
+Patient demographic information, including age and date of birth, is internally consistent.
+Follow-up interval is identical across the encounter header, EHR, patient case, and grading rubric.
+Historical diagnoses and medications required for grading are visible to the student.
+Procedure or medication-history information cannot be required solely from hidden grading data.
+Equivalent clinical wording receives credit when the intended clinical meaning is preserved.
+Students receive credit for documenting “unknown/not provided/not documented” when the patient does not provide the information and no EHR information is available.
+Contradictory patient responses within a single encounter are either corrected or intentionally designed and explicitly reflected in the rubric.
+Knowledge-quiz answer choices have sufficient visual spacing for easy reading.
+A pre-publication QA check identifies conflicts among EHR data, SP script, grading key, and rubric before the case is released.
+Final QA Assessment
+The Week 5 audit demonstrates a broad source-of-truth and grading-alignment problem
+rather than isolated student-documentation errors.
+The recurring pattern is that the student-facing encounter and the grading key are sometimes functioning as though they represent different versions of the same patient. In several instances, the student accurately documents information directly obtained from the patient or displayed in the EHR, but the grading system expects different information.
+This is particularly important for clinical education because students are being trained to make decisions based on the information available during an encounter. If the grading system rewards a hidden answer rather than the information actually presented to the student, the platform may unintentionally teach students to prioritize the expected answer over accurate patient assessment.
+The highest-priority corrective action should therefore be to establish a single,
+version-controlled source of truth connecting the patient script, EHR, grading key, rubric, and objective clinical data.
+The grading engine should then evaluate the student's documentation against the patient information actually available during that encounter, rather than against information that is hidden, contradictory, or unavailable.
+Final QA Note
+This report intentionally does not assume that the hidden grading reference is correct simply because it contains a specific value. The primary QA question is whether the student had a reasonable opportunity to obtain the information being graded.
+Where the patient-facing EHR and standardized-patient interview provide one set of information and the grading key provides another, the discrepancy should be resolved before the case is released. Where information is unavailable, students should not be penalized for documenting that it was unknown, not provided, or not assessed.
+The recommended end state is a synchronized case in which the patient script, EHR, grading rubric, answer key, objective data, and encounter metadata all represent the same patient at the same point in time.
+
+--- TABLE ---
+ID | Area | Issue | Priority | Primary impact
+W5-01 | UI / Quiz | Knowledge-quiz answer choices are difficult to read due to lack of spacing | LOW | Student usability
+W5-02 | Patient history | Sarah's living situation is unavailable but may be expected by grading | MEDIUM | Grading reliability
+W5-03 | Patient history | Sarah's diet information is unavailable but may be expected by grading | MEDIUM | Grading reliability
+
+--- TABLE ---
+W5-04 | Patient history | Sarah's exercise information is unavailable but may be expected by grading | MEDIUM | Grading reliability
+W5-05 | Patient history | Sarah's sleep duration is unavailable despite sleep difficulty being reported | MEDIUM | Clinical documentation / grading
+W5-06 | Financial history | Sarah's medication-cost/insurance information is not established | MEDIUM | Clinical assessment / grading
+W5-07 | Tobacco history | Sarah's EHR lists both “Never smoker” and current smoking | HIGH | Clinical accuracy / chart reconciliation
+W5-08 | Objective data | Sarah's grading vitals do not match student-visible vitals | HIGH | Grading reliability
+W5-09 | Laboratory data | Sarah is graded on labs that are not available | HIGH | Grading reliability
+W5-10 | Smoking history | Sarah is penalized for not documenting a previous quit attempt the patient denied | HIGH | Grading reliability
+W5-11 | Tobacco history | Jessica's chart says “never smoked” despite current smoking history | HIGH | Clinical accuracy
+W5-12 | Medication adherence | Jessica's documented missed-dose frequency does not match grading key | HIGH | Grading reliability
+W5-13 | Medication history | Jessica is graded on medication discontinuation that the patient never reported | HIGH | Grading reliability
+W5-14 | Psychiatric assessment | Jessica is graded on denial of SI/HI/psychosis that was not provided by the patient | HIGH | Clinical documentation / grading
+W5-15 | Objective data | Jessica's grading vitals do not match student-visible vitals | HIGH | Grading reliability
+W5-16 | Laboratory data | Jessica is graded on labs that are not available | HIGH | Grading reliability
+
+--- TABLE ---
+W5-17 | Social history | David cannot provide living situation information | MEDIUM | Clinical assessment / grading
+W5-18 | Psychiatric history | David denies prior therapy but key states previous CBT | HIGH | Clinical accuracy / grading
+W5-19 | Medical history | David denies additional conditions but key expects OSA/CPAP and cholecystectomy | CRITICAL | Clinical history / grading
+W5-20 | Medication efficacy | David reports no improvement but key expects partial response | HIGH | Clinical assessment / grading
+W5-21 | Objective data | David's grading vitals do not match student-visible vitals | HIGH | Grading reliability
+W5-22 | Laboratory data | David is graded on labs that are not available | HIGH | Grading reliability
+W5-23 | Patient response | Sarah's reported mood improvement conflicts with key | HIGH | Grading reliability
+W5-24 | Tobacco cessation | Sarah denies smoking triggers but key expects work-related stress trigger | HIGH | Clinical assessment / grading
+W5-25 | Objective data | Sarah's 4-week follow-up grading vitals do not match student-visible vitals | HIGH | Grading reliability
+W5-26 | Laboratory data | Sarah is graded on unavailable laboratory values | HIGH | Grading reliability
+W5-27 | Patient response | Jessica's reported mood improvement conflicts with key | HIGH | Grading reliability
+W5-28 | Objective data | Jessica's 4-week follow-up grading vitals do not match student-visible vitals | HIGH | Grading reliability
+W5-29 | Laboratory data | Jessica is graded on unavailable laboratory values | HIGH | Grading reliability
+
+--- TABLE ---
+W5-30 | Medication adherence | Jessica's sertraline adherence conflicts with grading key | HIGH | Clinical assessment / grading
+W5-31 | Patient response | David's reported symptom improvement conflicts with key | HIGH | Clinical assessment / grading
+W5-32 | Medication history | David's aripiprazole use is not documented in the patient-facing case | HIGH | Medication reconciliation / grading
+W5-33 | Patient concerns | David does not express concern about temporary symptom resolution but key expects this | HIGH | Grading reliability
+W5-34 | Objective data | David's 4-week grading vitals do not match student-visible vitals | HIGH | Grading reliability
+W5-35 | Laboratory data | David is graded on unavailable laboratory values | HIGH | Grading reliability
+W5-36 | Tobacco history | Sarah gives contradictory smoking/cessation responses during the same encounter | CRITICAL | Clinical accuracy / case consistency
+W5-37 | Demographics | Sarah's stated age does not match the birth date in the chart | HIGH | Clinical accuracy / EHR integrity
+W5-38 | Grading specificity | Sarah is penalized for undocumented details such as hiking with husband/social engagement | MEDIUM | Grading reliability
+W5-39 | Tobacco cessation | Sarah denies triggers/cravings but key expects work-stress triggers | HIGH | Clinical assessment / grading
+W5-40 | Laboratory data | Sarah is graded on unavailable laboratory values | HIGH | Grading reliability
+W5-41 | Encounter metadata | Jessica's chart identifies 3-month follow-up while key identifies 6-month follow-up | HIGH | Workflow / grading context
+
+--- TABLE ---
+W5-42 | Medication history | Jessica's migraine/sumatriptan history conflicts with current patient report and medication list | HIGH | Medication reconciliation
+W5-43 | Access to care | Jessica denies barriers to care while key expects barriers | HIGH | Clinical assessment / grading
+W5-44 | Objective data | Jessica's grading vitals do not match student-visible vitals | HIGH | Grading reliability
+W5-45 | Laboratory data | Jessica is graded on unavailable laboratory values | HIGH | Grading reliability
+W5-46 | Medication history | David's aripiprazole use is not documented in the patient-facing case | HIGH | Medication reconciliation / grading
+W5-47 | Objective data | David's 3/6-month grading vitals do not match student-visible vitals | HIGH | Grading reliability
+W5-48 | Laboratory data | David is graded on unavailable laboratory values | HIGH | Grading reliability

@@ -135,7 +135,7 @@ export default function QuizEngine({ items, passThreshold, onRecord, onExit, onP
         </div>
         <p className="text-[15px] text-slate-800 leading-relaxed whitespace-pre-line mb-4">{cleanStem}</p>
 
-        <div className="space-y-2">
+        <div className="space-y-3">
           {item.options.map(o => {
             const on = selected.includes(o.key)
             const isCrossed = crossed[item.id]?.[o.key]

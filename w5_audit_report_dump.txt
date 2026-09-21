@@ -1,0 +1,589 @@
+VACS AUDIT ISSUE REPORT
+David Carter • Tuesday / Wednesday / Thursday • Week 5
+Executive Issue Matrix
+Root causes are grouped to avoid inflating the issue count. Individual screenshot pairs appear in the evidence section.
+PAIR DC-01A  DC-01 • Treatment plan / follow-up synchronization
+Tuesday: live Plan selects esketamine pathway while grader requires SGA augmentation
+Priority: HIGH   •   System / grader synchronization defect
+PAIR DC-01B  DC-01 • Treatment plan / follow-up synchronization
+Tuesday: live follow-up interval conflicts with grader-required ~3 months
+Priority: HIGH   •   Plan-module / grader synchronization defect
+PAIR DC-02  DC-02 • Encounter-stage synchronization
+Wednesday: live encounter is 1-Month Follow-up; grader expects 3 months
+Priority: HIGH   •   Encounter-stage synchronization defect
+PAIR DC-03  DC-03 • Medication-safety contradiction
+Wednesday: patient reports esketamine adverse effects; grader expects them denied
+Priority: HIGH   •   Clinical-data / grader contradiction
+PAIR DC-04  DC-04 • Clinical score synchronization
+Thursday: PHQ-9 and GAD-7 are reversed in grader expectations
+Priority: HIGH   •   Objective clinical-data synchronization defect
+PAIR DC-05A  DC-05 • AI-patient vs hidden reference mismatch
+Tuesday: living situation / spouse expectation contradicts actual patient answer
+Priority: MED-HIGH   •   AI-patient / reference case-version mismatch
+PAIR DC-05B  DC-05 • AI-patient vs hidden reference mismatch
+Tuesday: hobby details differ from hidden grader expectations
+Priority: MED-HIGH   •   AI-patient / reference case-version mismatch
+PAIR DC-05C  DC-05 • AI-patient vs hidden reference mismatch
+Wednesday: patient does not provide living/work details; grader expects spouse/employment facts
+Priority: MED-HIGH   •   AI-patient / reference case-version mismatch
+PAIR DC-05D  DC-05 • AI-patient vs hidden reference mismatch
+Thursday: CBT participation not recalled, but grader expects continued participation
+Priority: MED-HIGH   •   AI-patient / reference case-version mismatch
+PAIR DC-06A  DC-06 • Missing objective data required by grader
+Tuesday: COVID-19 / Tdap status is not displayed, but grader deducts for omission
+Priority: MEDIUM   •   Missing-data / workflow problem
+PAIR DC-06B  DC-06 • Missing objective data required by grader
+Wednesday: grader requires current GAD-7 trajectory not displayed in live chart
+Priority: MEDIUM   •   Missing-data / workflow problem
+PAIR DC-06C  DC-06 • Missing objective data required by grader
+Thursday: COVID-19 / Tdap status is not displayed, but grader deducts for omission
+Priority: MEDIUM   •   Missing-data / workflow problem
+PAIR DC-07A  DC-07 • Diagnostic terminology synchronization
+Tuesday: live Problem List says Treatment-Resistant Depression; grader requires recurrent MDD
+Priority: MEDIUM   •   Problem-list / grader terminology mismatch
+PAIR DC-07B  DC-07 • Diagnostic terminology synchronization
+Thursday: live Problem List says TRD in remission; grader penalizes TRD terminology
+Priority: MEDIUM   •   Problem-list / grader terminology mismatch
+Separated Student Documentation Opportunities
+These deductions may represent note/interview completeness opportunities rather than software defects, unless retesting shows the workflow prevents the information from being obtained.
+Developer Recommendations
+1. Source-of-truth synchronization: drive visit stage, current clinical scores, diagnoses, treatment options, and follow-up intervals from one case-state object used by both the student-facing UI and grader.
+2. Patient-version-aware grading: score subjective content against the actual AI-patient responses from the current encounter, not a static hidden biography that may belong to another case version.
+3. Objective-data availability guard: do not score a measured value (vaccine status, GAD-7, etc.) unless the value is actually available in the live workflow.
+4. Clinical safety guard: never reward a false denial when the current EMR/patient reports an adverse effect or safety symptom.
+5. Terminology aliasing: treat live problem-list labels and intended formal diagnoses as accepted equivalents when clinically compatible, or update the live chart to the intended terminology.
+6. Retest each root cause across Tuesday → Wednesday → Thursday to ensure case progression and longitudinal trends remain internally consistent.
+Evidence Sources Reviewed
+David Carter EMR Tuesday.pdf (live EMR + AI-patient interview + live Plan)
+David Carter EMR Wednesday.pdf (live EMR + AI-patient interview + live Plan)
+David Carter EMR Thursday.pdf (live EMR + AI-patient interview + live Plan)
+AI Feedback David Carter Tuesday.pdf
+AI Feedback David Carter Wednesday.pdf
+AI Feedback David Carter Thursday.pdf
+Issue-specific screenshots supplied by the auditor, including the additional Tuesday follow-up and Wednesday living/adverse-effect/GAD-7 evidence captures.
+VACS DEVELOPER ISSUE REPORT
+Jessica Ramirez - Tuesday Initial Visit through Thursday 3-Month Follow-up
+Prepared from live VACS EMR, actual AI-patient interview responses, and AI-grader feedback
+Audit date: 2026-09-07
+Executive Summary
+Four grouped root-cause issues are supported. The report intentionally does not convert routine SOAP-writing opportunities into software bugs. Repeated deductions caused by the same underlying mismatch are grouped under one issue.
+Evidence Integrity Note
+Excluded evidence - uploaded JR-named screenshot displays Sarah Mitchell, not Jessica Ramirez.
+Corrected canonical evidence - Jessica Ramirez Wednesday live EMR header: 1-Month Follow-up, Ambulatory care clinic.
+JR-01 - Visit-stage synchronization mismatch
+Finding
+The live Jessica Ramirez Wednesday encounter is explicitly labeled 'Wednesday - 1-Month Follow-up.' The AI grader deducts points because it expects a 3-month follow-up. This is an explicit visit-stage conflict, not a calendar-arithmetic discrepancy, and is reportable under the VACS static-simulation rules.
+Why this is a defect
+The student documented the visit stage shown in the live system.
+The grader applies a different encounter stage and penalizes the correct live-case documentation.
+Visit stage drives longitudinal interpretation of response, adherence, and prior screening scores; a stage mismatch can propagate downstream grading errors.
+Reproduction
+1.  Open Jessica Ramirez's Wednesday encounter.
+2.  Observe the live header: 'Wednesday - 1-Month Follow-up.'
+3.  Document the encounter as a 1-month follow-up in the SOAP note.
+4.  Submit to the AI grader.
+5.  Observe deduction [1A.4] stating that 3-month follow-up was expected.
+Expected vs. Actual
+Developer acceptance criteria
+Grader and student-facing encounter must resolve to the same visit-stage identifier.
+A SOAP note matching the live encounter stage must receive no visit-stage deduction.
+Historical score labels and longitudinal treatment-stage logic must derive from the same encounter version.
+Issue-specific evidence
+JR-01 Evidence A - Jessica Ramirez Wednesday live EMR: 1-Month Follow-up.
+JR-01 Evidence B - AI grader expects a 3-month follow-up.
+JR-02 - AI grader uses hidden/alternate patient history
+Finding
+Across all three encounters, the grader expects patient-history facts that the AI patient did not provide and in several cases explicitly contradicted. The deductions therefore arise from a different hidden/reference case state rather than from a student omission. These examples are grouped as one root cause.
+Confirmed conflict examples
+Why this is a defect
+The VACS student should document what the patient actually says, including uncertainty or lack of recall.
+Replacing an actual patient answer with hidden rubric history would require fabrication.
+The issue recurs across unrelated history domains and multiple encounters, which is consistent with stale or alternate case-version data rather than isolated SOAP omissions.
+Surgery history and treatment history can materially affect clinical reasoning; false documentation creates a patient-safety and data-integrity risk.
+Reproduction
+1.  Ask the neutral interview questions shown in the attached evidence.
+2.  Document the patient's actual answer without importing hidden facts.
+3.  Submit the SOAP note to the AI grader.
+4.  Observe deductions that require different psychotherapy, surgical, medication-duration, or patient-goal facts.
+Expected vs. Actual
+Developer acceptance criteria
+The AI patient and grader must use the same case-version history for each encounter.
+If the patient answers 'I don't recall' or denies a history item, the grader must not require an undisclosed contradictory fact.
+No points should require the student to invent psychotherapy attendance, surgery, treatment duration, medication timing, or patient goals.
+If a reference mismatch is detected, surface it as a data synchronization error rather than a documentation deduction.
+Issue-specific evidence
+JR-02 Evidence 1A - Tuesday patient does not recall therapy.
+JR-02 Evidence 1B - Tuesday grader expects two psychotherapy appointments.
+JR-02 Evidence 2A - Wednesday patient does not recall counseling/therapy.
+JR-02 Evidence 2B - Wednesday grader expects five virtual sessions and explicitly references hidden data.
+JR-02 Evidence 3A - Thursday patient does not recall formal counseling/CBT.
+JR-02 Evidence 3B - Thursday grader expects continued virtual CBT.
+JR-02 Evidence 4A - Tuesday patient reports 3 months of sertraline.
+JR-02 Evidence 4B - Tuesday grader expects approximately 1 year.
+JR-02 Evidence 5A - Tuesday patient denies/recollects no surgeries or procedures.
+JR-02 Evidence 5B - Tuesday grader expects a cesarean section.
+JR-02 Evidence 6A - Thursday patient's stated concern is whether she can stop sertraline.
+JR-02 Evidence 6B - Thursday grader expects an explicit goal of maintaining mental-health gains.
+JR-03 - Grader requires objective data not visible in live workflow
+Finding
+The Tuesday live EMR exposes sertraline and hydroxyzine as current medications and shows influenza as the visible immunization entry. The grader deducts for missing COVID-19 and Tdap vaccination status. The full Tuesday grader feedback also states that a third medication is missing. Those facts are not supported by the supplied live EMR or actual AI-patient answers.
+Why this is a defect
+Immunization registry status and the authoritative medication list are objective workflow data; the student should not invent them.
+If COVID-19/Tdap or another medication is required for grading, that information must be exposed in the live student-facing workflow.
+Penalizing absent objective data creates an incentive to fabricate chart information.
+Expected vs. Actual
+Developer acceptance criteria
+Every objective grader-required fact is visible in the live EMR/workflow for that encounter.
+Unknown or unavailable vaccine status is not penalized as a documentation omission.
+Medication-count expectations match the live medication list and the AI-patient medication reconciliation.
+A retest using only live-visible data receives no missing-data deduction.
+Issue-specific evidence
+JR-03 Evidence A - Tuesday live EMR: two current medications and influenza shown in the immunization panel.
+JR-03 Evidence B - AI grader deducts for missing Tdap vaccination status.
+JR-03 Evidence C - AI grader deducts for missing COVID-19 vaccination status.
+JR-04 - Encounter-setting mismatch
+Finding
+The live Wednesday encounter identifies the setting as 'Ambulatory care clinic.' The AI grader deducts because 'behavioral health clinic' was not documented. The student's note should match the live encounter metadata.
+Expected vs. Actual
+Developer acceptance criteria
+Encounter-setting metadata is sourced from one canonical case object shared by UI and grader.
+Documenting 'Ambulatory care clinic' for this live encounter incurs no deduction.
+If the intended setting is behavioral health clinic, the live header and all downstream case data must be updated together.
+Issue-specific evidence
+JR-04 Evidence A - Live Wednesday encounter: Ambulatory care clinic.
+JR-04 Evidence B - AI grader expects behavioral health clinic.
+Items Not Classified as VACS Defects
+The following grader comments are useful SOAP optimization opportunities but are not, on the current evidence, software/data defects. They should not be included as separate developer bugs unless a future retest shows the workflow makes them impossible to document.
+Patient name or visit-framing omissions when the note simply did not state information that was visible.
+Failure to label suicide risk as 'low risk' despite a complete negative safety screen.
+Failure to interpret PHQ-9/GAD-7 severity, vitals, renal/hepatic/TSH results, or the metabolic panel.
+Failure to name guidelines, motivational interviewing, or specific tobacco-cessation pharmacotherapy options.
+Use of kg/feet-inches rather than the grader-preferred pounds/inches.
+Insufficient counseling detail, problem-plan mapping, or explicit follow-up monitoring language.
+Clinical follow-up interval preferences unless the grader and live encounter explicitly label different visit stages. The confirmed Wednesday 1-month vs 3-month conflict remains JR-01.
+Retest Plan After Fix
+Source Inventory
+Live/student-facing VACS EMR: Jessica Ramirez Tuesday, Wednesday, and Thursday PDFs.
+AI-patient interview: embedded in the corresponding live encounter PDFs and preserved in issue-specific screenshots.
+Master grading rubric/reference: not independently supplied for this audit.
+AI-grader feedback: Tuesday, Wednesday, and Thursday grader PDFs plus issue-specific screenshots.
+Prior issue tracking context: used only to organize retesting; not treated as independent proof.
+Developer Triage Recommendation
+END OF REPORT
+VACS Developer Issue Report
+Sarah Mitchell - AI Grader / Live Case Synchronization Audit
+Report date: September 7, 2026
+Prepared under the VACS audit rules: live EMR, AI-patient interview, master/reference, and AI-grader feedback are treated as separate evidence sources.
+Executive Summary
+The audit confirms that several deductions arise from conflicts between the student-facing VACS case and the AI grader, rather than from ordinary SOAP-writing omissions. The strongest evidence shows explicit visit-stage mismatches, different objective values, and patient-state expectations that contradict actual AI-patient answers.
+Audit Rules Applied
+The live/student-facing EMR establishes the objective data the student can see.
+The AI-patient interview establishes subjective information the patient actually provides, including uncertainty or “I do not know” responses.
+AI-grader feedback is evidence of what the grader rewarded, deducted, or expected; it is not automatically patient truth.
+No independent Sarah Mitchell master grading rubric was supplied with this report. Grader-only expected facts therefore remain grader expectations unless independently verified.
+The student should never invent measured objective values or replace actual patient answers with hidden grader/reference facts.
+Deductions are grouped by root cause rather than reported as dozens of separate bugs.
+Routine SOAP omissions remain student documentation opportunities and are not classified as software defects.
+Static simulation age/date arithmetic is not reported as a bug. Age-related deductions are intentionally excluded as standalone issues. Only explicit visit-stage conflicts are treated as synchronization defects.
+Evidence Source Separation
+Root Cause 1 - Grader/Reference Case Version Is Not Synchronized With the Live Encounter
+Why this is reportable under VACS rules: These are not static-calendar arithmetic differences. The live encounter and grader explicitly identify different visit stages, and the grader also expects objective measurements that differ from the student-facing EMR.
+1A. Wednesday encounter-stage mismatch
+Evidence 1A-1. Live VACS header: Wednesday - 4-Week Follow-up.
+Evidence 1A-2. AI grader deducts because it expects a 3-month follow-up.
+1B. Thursday encounter-stage mismatch
+Evidence 1B-1. Live VACS header: Thursday - 12-Week Follow-up.
+Evidence 1B-2. AI grader deducts because it expects a 6-month follow-up.
+1C. Wednesday PHQ-9 / GAD-7 objective-value mismatch
+Evidence 1C-1. Live chart documents PHQ-9 8 and GAD-7 5.
+Evidence 1C-2. Grader expects PHQ-9 7 and GAD-7 4.
+1D. Thursday blood-pressure objective-value mismatch
+Evidence 1D-1. AI grader expects BP 118/74 rather than the documented live BP.
+Evidence 1D-2. Live Thursday vital-sign panel, including BP 116/72 and repeat 114/70.
+Reproduction / expected behavior
+Open the affected Wednesday or Thursday Sarah Mitchell encounter.
+Document the exact encounter stage and objective values displayed in the live chart.
+Submit/grade the SOAP note.
+Observe that the grader deducts points using a different encounter stage or different objective values.
+Expected: The grader should evaluate the same case version and exact objective values shown to the student.
+Actual: The grader uses conflicting stage/value expectations.
+Developer investigation: Verify encounter-to-rubric IDs, cached case versions, and objective-data bindings for Wednesday and Thursday. Confirm that the grader receives the same encounter state rendered in the student-facing chart.
+Root Cause 2 - AI Grader Overrides Actual AI-Patient State With Hidden/Reference Facts
+2A. Tuesday living-situation conflict
+Evidence 2A-1. AI grader expects the patient to live with a spouse.
+2B. Wednesday CBT state conflicts with grader expectations
+Evidence 2B-1. AI grader penalizes starting CBT because it expects an existing regimen.
+Reproduction / expected behavior
+Ask the AI patient a neutral question about living situation, prior treatment, or CBT participation.
+Document the answer exactly as provided, including uncertainty or non-participation.
+Submit/grade the SOAP note.
+Observe a deduction when the grader expects a different hidden/reference history.
+Expected: The grader should treat the actual AI-patient response as the valid subjective source for that encounter.
+Actual: The grader can require a conflicting reference fact, creating pressure to overwrite the patient’s answer.
+Developer investigation: Verify that grader patient-history fields are populated from the current AI-patient state or are tolerant of valid patient-specific responses when the simulation intentionally permits uncertainty.
+Root Cause 3 - AI Feedback Is Internally Inconsistent About CBT
+Evidence 3-1. Deduction expects continuation of an existing CBT regimen.
+Evidence 3-2. Same feedback says not to imply continuation because CBT has not started.
+Expected: If CBT has not started, the grader should consistently accept initiation/referral language and should not award points that require prior CBT participation or CBT-derived benefits.
+Actual: The feedback contains mutually incompatible requirements.
+Developer investigation: Review CBT-status branching and rubric dependencies. Ensure that “continue CBT” criteria are disabled when the current patient state is “not in CBT.”
+Items Intentionally Not Reported as Confirmed Bugs
+Age discrepancy (live VACS displays 54 while grader expects 29): not reported as a standalone bug under the VACS static-simulation age/date rule. The report does not calculate age from DOB/current date or assert that the patient “should” be another age.
+Routine SOAP omissions: missing interpretive statements, guideline citations, fuller monitoring language, problem-list wording, or supported counseling detail remain documentation opportunities, not software bugs.
+Sertraline 25 mg vs 50 mg starting-dose watch-out: treated as a clinical/rubric judgment issue, not a confirmed software/data defect in this report.
+Missing historical scores, vaccine data, or other objective information: not classified as a confirmed workflow defect unless the live system is retested and the required data are verified as unavailable to the student.
+Static calendar-date arithmetic and follow-up interval math are not reported. Only the explicit Wednesday 4-week vs grader 3-month and Thursday 12-week vs grader 6-month stage conflicts are included.
+Evidence Quality Notes and Remaining Capture
+Recommended Additional Screenshot (only if pursuing the Thursday internal-feedback contradiction)
+Capture the Thursday AI-feedback strengths sentence stating that the vital signs/CMP were accurately transcribed.
+Pair that with the existing SM_Thursday_ISS02_AI_Vitals.png deduction and the live SM_Thursday_ISS02_EMR_Vitals.png screenshot.
+Do not create a new interview screenshot for this issue.
+Recommended Developer Ticket Summary
+Recommended priority: High
+Rationale: The defects directly reward documentation that conflicts with the live EMR or actual AI patient. This undermines grading validity and can train students to invent or overwrite patient data.
+Acceptance Criteria
+Wednesday SOAP notes documenting “4-week follow-up” are not penalized when the live encounter is labeled 4-week follow-up.
+Thursday SOAP notes documenting “12-week follow-up” are not penalized when the live encounter is labeled 12-week follow-up.
+The grader accepts Wednesday PHQ-9 8 and GAD-7 5 when those are the values displayed in the current live chart.
+The grader accepts Thursday BP 116/72 and repeat 114/70 when those are the values displayed in the current live chart.
+Actual AI-patient answers such as “lives alone” and “not currently in CBT” are not replaced by contradictory hidden expectations.
+CBT feedback is internally consistent: when CBT has not started, the grader evaluates initiation/referral language rather than requiring continuation or CBT-derived benefits.
+No fix requires students to invent objective values or patient history.
+Evidence File Index
+Final Audit Statement
+The student should never have to invent information to satisfy the grader. For Sarah Mitchell, the current evidence demonstrates that some deductions can only be avoided by contradicting the live encounter, measured objective values, or actual AI-patient responses. Those deductions should be corrected at the grader/reference synchronization layer rather than “fixed” by changing accurate clinical documentation.
+
+--- TABLE ---
+Audit scope | Live VACS EMR, AI-patient interview, AI-grader feedback, and issue-specific screenshot evidence.
+Grader results | Tuesday 49.3% • Wednesday 46.7% • Thursday 46.0%.
+Evidence rule | Live EMR controls objective facts; AI patient controls elicited subjective facts; grader feedback shows what was deducted. Hidden/reference values do not replace student-facing evidence.
+Overall determination | Multiple deductions are attributable to case synchronization, unavailable objective data, or grader expectations that conflict with the live workflow. Student documentation opportunities are separated from system issues.
+
+--- TABLE ---
+Key audit principle  The student should never have to invent information or contradict the live EMR / actual AI-patient answer to satisfy the grader.
+
+--- TABLE ---
+ID | Priority | Root cause | Evidence summary | Audit classification
+DC-01 | HIGH | Treatment plan / follow-up synchronization | Tuesday live Plan selects advanced therapy/esketamine and 2–4 week follow-up; grader requires SGA augmentation/aripiprazole and ~3 months. | Treatment-changing mismatch; grader and student-facing Plan are not aligned.
+DC-02 | HIGH | Wednesday encounter-stage mismatch | Live header says 1-Month Follow-up; grader expects 3-month follow-up. | Explicit visit-stage synchronization defect.
+DC-03 | HIGH | Esketamine adverse-effect contradiction | Wednesday chart/patient report dizziness, dissociation/detachment and transient BP elevation; grader deducts for documenting rather than denying them. | Medication-safety contradiction; changing note to satisfy grader would falsify live data.
+DC-04 | HIGH | Thursday clinical score mismatch | Live chart and patient report PHQ-9 3 / GAD-7 4; grader expects PHQ-9 4 / GAD-7 3. | Objective score synchronization defect.
+DC-05 | MED-HIGH | AI-patient vs hidden reference history | Living situation, hobbies, CBT and other subjective details are graded against facts the patient did not provide or contradicted. | Case-version / patient-reference mismatch.
+DC-06 | MEDIUM | Unavailable objective data required by grader | COVID/Tdap and Wednesday GAD-7 are deducted despite not being displayed in the current workflow. | Missing-data/workflow issue; student must not invent objective values.
+DC-07 | MEDIUM | Diagnostic terminology synchronization | Live Problem List uses TRD / TRD in remission; grader penalizes this in favor of recurrent MDD terminology. | Problem-list vs grader terminology mismatch.
+
+--- TABLE ---
+Evidence hierarchy  Objective measured values and workflow facts come from the live EMR; subjective history comes from the AI patient. The master/reference may be stale or wrong. AI feedback is evidence of grader behavior, not independent proof that the expected fact is correct.
+
+--- TABLE ---
+LIVE VACS PLAN Tuesday live EMR Location: Plan • page 16 | AI-GRADER DEDUCTION Tuesday AI Feedback Deduction code(s): [4A.3], [4A.4], [4A.5] Location: Feedback • page 8
+
+--- TABLE ---
+AUDIT CONCLUSION: The student-facing Plan explicitly selects referral for advanced therapy (e.g., esketamine) while the grader penalizes the note for not initiating an SGA/aripiprazole. This is a treatment-changing synchronization defect, not a routine documentation omission. RETEST PASS CRITERIA: After correction, a note that accurately follows the selected live Plan should not be penalized for failing to choose a conflicting hidden treatment path.
+
+--- TABLE ---
+LIVE VACS PLAN Tuesday live EMR Location: Plan • page 16 • Follow-up box | AI-GRADER DEDUCTION Tuesday AI Feedback Deduction code(s): [4G.1] Location: Feedback • page 10
+
+--- TABLE ---
+AUDIT CONCLUSION: The live Plan directs follow-up in 2–4 weeks, but the grader deducts for anything other than approximately 3 months. The student should be allowed to document the live workflow timing. RETEST PASS CRITERIA: Grader should accept the live Plan follow-up interval or the live Plan should be changed to match the intended grading standard.
+
+--- TABLE ---
+LIVE ENCOUNTER HEADER Wednesday live EMR Location: Header / Snapshot • page 1 | AI-GRADER DEDUCTION Wednesday AI Feedback Deduction code(s): [1A.4] Location: Feedback • page 4
+
+--- TABLE ---
+AUDIT CONCLUSION: This is an explicit visit-stage mismatch across sources. It is reportable under the VACS static-simulation rule because the labels themselves conflict; no calendar arithmetic is involved. RETEST PASS CRITERIA: Grader and live header must display/expect the same visit stage.
+
+--- TABLE ---
+AI-PATIENT EVIDENCE Wednesday Patient Interview Location: Patient Interview • page 12 | AI-GRADER DEDUCTION Wednesday AI Feedback Deduction code(s): [1B.38] (also [1F.8] on page 5) Location: Feedback • page 4
+
+--- TABLE ---
+AUDIT CONCLUSION: The patient explicitly reports dizziness, feeling detached/dissociated, and transient BP spikes during treatment; the live chart HPI also notes transient dissociation/dizziness. Penalizing accurate documentation because the rubric expects denial is unsafe. RETEST PASS CRITERIA: Accurate documentation of the actual reported adverse effects should receive credit; the grader must not require a false denial.
+
+--- TABLE ---
+LIVE EMR EVIDENCE Thursday live EMR Location: Subjective → Documented from chart • page 2 | AI-GRADER DEDUCTION Thursday AI Feedback Deduction code(s): [2C.1] PHQ-9; [2C.5] GAD-7 (related [3A.3], [3B.3]) Location: Feedback • page 5
+
+--- TABLE ---
+AUDIT CONCLUSION: The live chart documents PHQ-9 = 3 and GAD-7 = 4, while the grader expects PHQ-9 = 4 and GAD-7 = 3. The live objective values must control. RETEST PASS CRITERIA: Grader should accept PHQ-9 3 / GAD-7 4 and preserve the same values across Subjective, Objective, Assessment and scoring rules.
+
+--- TABLE ---
+AI-PATIENT EVIDENCE Tuesday Patient Interview Location: Patient Interview • page 11 | AI-GRADER DEDUCTION Tuesday AI Feedback Deduction code(s): [1D.1] (related [1D.10]) Location: Feedback • page 5
+
+--- TABLE ---
+AUDIT CONCLUSION: The patient says he lives alone and separated from his wife about two years ago. The grader expects married/living-with-spouse information. Subjective patient data must not be overwritten by hidden reference facts. RETEST PASS CRITERIA: Grader should accept the actual patient answer or mark the rubric element unavailable rather than penalizing accurate documentation.
+
+--- TABLE ---
+AI-PATIENT EVIDENCE Tuesday Patient Interview Location: Patient Interview • page 8 | AI-GRADER DEDUCTION Tuesday AI Feedback Deduction code(s): [1B.13] Location: Feedback • page 4
+
+--- TABLE ---
+AUDIT CONCLUSION: The patient identifies fishing and watching sports; the grader expects hiking/woodworking. This is not a student omission when the patient supplied different facts. RETEST PASS CRITERIA: Any accurately documented hobby response elicited from the current AI patient should be graded against the current patient version.
+
+--- TABLE ---
+AI-PATIENT EVIDENCE Wednesday Patient Interview Location: Patient Interview • page 13 | AI-GRADER DEDUCTION Wednesday AI Feedback Deduction code(s): [1D.1], [1D.2], [1D.3] Location: Feedback • page 5
+
+--- TABLE ---
+AUDIT CONCLUSION: The patient says he does not recall or want to provide the living/work specifics. The grader nevertheless expects marital/living/employment facts. Under the audit rules, uncertainty/refusal is valid patient data and must not be replaced by hidden answers. RETEST PASS CRITERIA: Grader should not deduct for hidden subjective facts the patient does not provide after a neutral question.
+
+--- TABLE ---
+AI-PATIENT EVIDENCE Thursday Patient Interview Location: Patient Interview • page 9 | AI-GRADER DEDUCTION Thursday AI Feedback Deduction code(s): [1B.19] (related [1B.20], [3B.7], [3B.11]) Location: Feedback • page 4
+
+--- TABLE ---
+AUDIT CONCLUSION: The patient explicitly does not recall CBT details. The grader expects continued CBT and specific CBT benefits. The student must preserve the patient’s uncertainty rather than import hidden rubric history. RETEST PASS CRITERIA: The grader should credit accurate “does not recall” documentation when that is the actual interview response.
+
+--- TABLE ---
+LIVE EMR EVIDENCE Tuesday live EMR Location: Objective → Immunizations • page 3 | AI-GRADER DEDUCTION Tuesday AI Feedback Deduction code(s): [1E.12], [1E.13] Location: Feedback • page 5
+
+--- TABLE ---
+AUDIT CONCLUSION: The student-facing immunization card displays influenza only. COVID-19 and Tdap are objective chart data; the student should not invent statuses that are not visible. RETEST PASS CRITERIA: Either expose the required vaccine statuses in the live workflow or remove/conditionalize the deductions.
+
+--- TABLE ---
+LIVE EMR EVIDENCE Wednesday live EMR Location: Subjective / current chart • page 2 | AI-GRADER DEDUCTION Wednesday AI Feedback Deduction code(s): [2C.5], [2C.6], [2C.7], [2C.8] Location: Feedback • page 6
+
+--- TABLE ---
+AUDIT CONCLUSION: The current chart visibly provides PHQ-9 = 12 but does not display a current GAD-7 = 9. A measured clinical score belongs in the EMR/workflow and should not be invented from the rubric. RETEST PASS CRITERIA: Expose the current GAD-7 and its valid prior values if the grader requires them, or stop deducting for unavailable scores.
+
+--- TABLE ---
+LIVE EMR EVIDENCE Thursday live EMR Location: Objective → Immunizations • page 2 | AI-GRADER DEDUCTION Thursday AI Feedback Deduction code(s): [1E.15], [1E.16] Location: Feedback • page 5
+
+--- TABLE ---
+AUDIT CONCLUSION: As on Tuesday, the visible immunization card shows influenza only. Required objective immunization statuses should be available to the student before they can be graded. RETEST PASS CRITERIA: Expose COVID-19/Tdap status or remove the deductions when the live workflow does not provide those values.
+
+--- TABLE ---
+LIVE EMR EVIDENCE Tuesday live EMR Location: Problem List • page 6 | AI-GRADER DEDUCTION Tuesday AI Feedback Deduction code(s): [1C.1] (related [3A.1], [3A.2], [3A.4]) Location: Feedback • page 5
+
+--- TABLE ---
+AUDIT CONCLUSION: The note used the diagnosis terminology visible in the chart. If the intended diagnosis is “MDD, recurrent,” the live Problem List and grading terminology should be synchronized or treated as accepted aliases. RETEST PASS CRITERIA: Accept TRD terminology shown in the live chart, or update the live chart to the intended formal diagnosis before grading.
+
+--- TABLE ---
+LIVE EMR EVIDENCE Thursday live EMR Location: Problem List • page 5 | AI-GRADER DEDUCTION Thursday AI Feedback Deduction code(s): [1A.6] (related [1C.1], [3A.1]) Location: Feedback • page 4
+
+--- TABLE ---
+AUDIT CONCLUSION: The live problem list explicitly labels TRD in remission, while the grader expects severe recurrent MDD terminology. The student should not be penalized for reproducing the live chart diagnosis. RETEST PASS CRITERIA: Synchronize live diagnosis labels with the rubric or score accepted terminology equivalently.
+
+--- TABLE ---
+Demographics / encounter context  Age, sex, clinic setting, provider role, and visit context are visible in the interface and can be explicitly documented.
+
+--- TABLE ---
+Interpretation of objective data  Statements such as vitals WNL, renal/hepatic interpretation, BMI classification, metabolic monitoring rationale, or standardized score interpretation can be added without contradicting the live case.
+
+--- TABLE ---
+Guideline / education detail  Guideline citations, relapse-prevention counseling, adherence education, motivational interviewing language, and monitoring details are ordinary documentation opportunities when clinically appropriate.
+
+--- TABLE ---
+Tuesday suicide-risk completion  The patient disclosed passive SI but intent, means, preparatory behavior, prior attempts, and protective factors were not fully established. Neutral follow-up questions were needed; those denials should not be fabricated.
+
+--- TABLE ---
+Tobacco readiness / triggers  If readiness, triggers, or cessation confidence were not elicited, the correct audit response is to ask neutral follow-ups—not to import hidden rubric answers.
+
+--- TABLE ---
+Medication details  If a current medication route or other patient-reported element is not known, clarify it rather than assuming it.
+
+--- TABLE ---
+Final audit determination  The strongest reportable defects are the Tuesday treatment-path mismatch, Wednesday visit-stage mismatch, Wednesday adverse-effect contradiction, and Thursday PHQ-9/GAD-7 reversal. These are direct cases where following the grader would conflict with the live VACS workflow or actual patient data.
+
+--- TABLE ---
+Audit principle The student should never have to invent information to satisfy the grader. Live EMR objective data and actual AI-patient answers control the student-facing case. AI-grader expectations are evidence of grader behavior, not automatic truth.
+
+--- TABLE ---
+Scope note No independently supplied master rubric/reference was available for this report. Any 'hidden data' or expected history mentioned by the AI grader is therefore treated only as grader/reference behavior and is not imported into the live case.
+
+--- TABLE ---
+ID | Issue | Severity | Affected | Audit result
+JR-01 | Visit-stage synchronization mismatch | HIGH | Wednesday | Confirmed
+JR-02 | AI grader uses hidden/alternate patient history | HIGH | Tue/Wed/Thu | Confirmed
+JR-03 | Grader requires objective data not visible in live workflow | HIGH | Tuesday | Confirmed for vaccine data; third-medication subclaim supported by full grader PDF
+JR-04 | Encounter-setting mismatch | MEDIUM | Wednesday | Confirmed
+
+--- TABLE ---
+Excluded uploaded screenshot The uploaded file JR_Wednesday_ISSUE01_VisitStage_LiveEMR_01.png shows a different patient (Sarah Mitchell) and a 4-Week Follow-up. It is not valid evidence for Jessica Ramirez and is excluded from JR-01. This report uses a corrected crop from Jessica Ramirez's canonical Wednesday EMR, which shows 'Wednesday - 1-Month Follow-up' and 'Ambulatory care clinic.' The wrong-patient screenshot is not classified as a VACS defect because its origin cannot be established as a live-system display from the supplied evidence.
+
+--- TABLE ---
+Severity | HIGH
+Classification | System/data/grader synchronization defect
+Affected encounter(s) | Wednesday
+Status | Confirmed from current live EMR / AI-patient / AI-grader evidence unless otherwise noted
+
+--- TABLE ---
+Live EMR | Jessica Ramirez - Wednesday - 1-Month Follow-up; Ambulatory care clinic.
+AI-patient interview | No patient answer can redefine the system encounter stage; not used to override the live header.
+Master rubric/reference | Not independently supplied.
+AI grader | [1A.4] deducts because the note states '1-month follow-up' instead of the expected '3-month follow-up.'
+
+--- TABLE ---
+Expected | The grader uses the same visit-stage metadata as the live Jessica Ramirez encounter and accepts '1-Month Follow-up.'
+Actual | The grader expects '3-month follow-up' and deducts for the live-system stage.
+
+--- TABLE ---
+Severity | HIGH
+Classification | System/data/grader case-version mismatch
+Affected encounter(s) | Tuesday, Wednesday, Thursday
+Status | Confirmed from current live EMR / AI-patient / AI-grader evidence unless otherwise noted
+
+--- TABLE ---
+Encounter/domain | Actual AI-patient answer | AI-grader expectation | Audit result
+Tuesday - psychotherapy | Does not recall doing therapy; not totally sure. | Two psychotherapy appointments attended. | Conflict
+Wednesday - psychotherapy | Does not recall counseling/therapy sessions. | 5 virtual CBT sessions; grader states hidden data indicates therapy occurred. | Conflict
+Thursday - psychotherapy | Does not recall formal counseling/CBT. | Continued virtual CBT participation. | Conflict
+Tuesday - sertraline duration | Patient states 3 months at 100 mg. | Expected ~1 year. | Conflict
+Tuesday - surgery | Patient denies/recollects no surgeries or procedures. | Cesarean section history. | Conflict
+Thursday - treatment goal | Asks whether she can stop sertraline because she feels much better. | Explicit goal of maintaining mental-health gains. | Conflict
+
+--- TABLE ---
+Expected | Grader rewards documentation consistent with the actual AI-patient response and preserves uncertainty. Hidden/reference facts are not required unless exposed to the student.
+Actual | Grader penalizes accurate patient-reported history and expects hidden or alternate-version facts.
+
+--- TABLE ---
+Severity | HIGH
+Classification | Missing-data/workflow-to-grader mismatch
+Affected encounter(s) | Tuesday
+Status | Confirmed from current live EMR / AI-patient / AI-grader evidence unless otherwise noted
+
+--- TABLE ---
+Live EMR | Current medications shown: sertraline 100 mg PO daily and hydroxyzine 25 mg PO q8h PRN. Immunization panel visibly lists influenza as up to date.
+AI-patient interview | Patient reports sertraline and hydroxyzine; vaccination history is uncertain rather than supplying measured/registry status.
+Master rubric/reference | Not independently supplied.
+AI grader | Deducts for undocumented COVID-19 and Tdap vaccination status; full feedback also claims a third medication is missing.
+
+--- TABLE ---
+Expected | Either expose the required vaccination/medication data in the live workflow or remove the corresponding grader requirement when the data are unavailable.
+Actual | The grader requires COVID-19/Tdap and an additional medication despite the supplied student-facing evidence not showing those items.
+
+--- TABLE ---
+Severity | MEDIUM
+Classification | System metadata/reference mismatch
+Affected encounter(s) | Wednesday
+Status | Confirmed from current live EMR / AI-patient / AI-grader evidence unless otherwise noted
+
+--- TABLE ---
+Live EMR | Ambulatory care clinic.
+AI-patient interview | Not a source for encounter-setting metadata.
+Master rubric/reference | Not independently supplied.
+AI grader | [1A.3] deducts because 'behavioral health clinic' was not documented.
+
+--- TABLE ---
+Expected | The grader accepts the encounter setting shown in the live VACS header.
+Actual | The grader expects a different clinic type and penalizes live-consistent documentation.
+
+--- TABLE ---
+Issue | Retest action | Pass condition | Evidence to save
+JR-01 | Document Wednesday exactly as 1-Month Follow-up. | No stage deduction; grader longitudinal logic matches Wednesday stage. | Live header + grader result.
+JR-02 | Repeat the same neutral history questions and document the AI patient's actual answers. | No hidden-history deductions for CBT, surgery, sertraline duration, or goals. | Full interview + issue-specific conflict pairs + grader result.
+JR-03 | Document only live-visible meds/immunizations; leave unavailable objective data unknown. | No penalty for nonvisible objective data, or required data are exposed in the live UI. | Medication/immunization panel + grader result.
+JR-04 | Document Ambulatory care clinic exactly as shown. | No clinic-setting deduction. | Live header + grader result.
+
+--- TABLE ---
+Most likely common failure mode (hypothesis, not proven) The pattern is consistent with the grader being bound to a stale or alternate Jessica Ramirez case version while the student-facing EMR/AI patient is serving a different version. Verify case-version IDs and encounter-stage metadata across the EMR UI, AI-patient service, reference rubric, and grader payload before patching individual rubric items.
+
+--- TABLE ---
+AUDIT STATUS Overall finding: Confirmed multi-source grader synchronization defects are present. Affected encounters: Tuesday initial visit, Wednesday 4-week follow-up, Thursday 12-week follow-up. Priority: High - current grading can penalize students for accurately documenting live EMR values or actual AI-patient answers. Root-cause grouping: Three developer-facing issues are reported below; individual deduction codes are not inflated into separate bugs.
+
+--- TABLE ---
+Root cause | Affected days | Status | Primary risk
+1. Grader/reference case version mismatch | Wednesday, Thursday | Confirmed | Wrong visit stage and wrong objective values are scored as “correct.”
+2. Grader overrides actual AI-patient state | Tuesday, Wednesday | Confirmed | Student must contradict patient to satisfy hidden expectations.
+3. AI feedback is internally inconsistent | Wednesday | Confirmed | Mutually incompatible CBT instructions cannot both be satisfied.
+
+--- TABLE ---
+Live EMR | Sarah Mitchell EMR Tuesday.pdf; Sarah Mitchell EMR Wednesday.pdf; Sarah Mitchell EMR Thursday.pdf. Used for visible objective values, encounter labels, medication lists, and charted case content.
+AI-patient interview | Interview content contained in each live-case PDF. Used only for patient-reported history and preferences. Individual interview answers are not manually recaptured for issue-specific evidence.
+Master/reference | No independently supplied Sarah Mitchell master rubric is available in this report. Grader “expected” values are not treated as automatic truth.
+AI-grader feedback | AI Feedback Sarah Mitchell Tuesday(1).pdf; AI feedback Sarah Mitchell Wednesday.pdf; AI feedback Sarah Mitchell Thursday.pdf. Used to prove deductions, expectations, and internal feedback behavior.
+Issue screenshots | Current screenshots supplied by the auditor are used as focused current evidence. One ambiguous/mismatched screenshot is excluded pending recapture; see Evidence Quality Notes.
+
+--- TABLE ---
+GRADING CONTEXT (not itself a defect) Tuesday: 51.7% Wednesday: 49.9% Thursday: 60.4%
+
+--- TABLE ---
+CONFIRMED | HIGH PRIORITY
+
+--- TABLE ---
+Affected days | Wednesday and Thursday
+Category | Case-version / objective-data / grader-reference synchronization
+Suspected cause | The grader appears to be evaluating a stale or different Sarah Mitchell case version. This is a developer hypothesis, not independently proven.
+Student impact | A student can accurately copy the live case and still lose points because the grader expects a different visit stage or different measured objective values.
+
+--- TABLE ---
+Live VACS | Wednesday - 4-Week Follow-up.
+AI grader | Deducts because it expected a scheduled 3-month follow-up interval.
+Classification | Confirmed synchronization problem.
+Source references | Sarah Mitchell EMR Wednesday.pdf (live header); AI feedback Sarah Mitchell Wednesday.pdf (deduction [1A.5]).
+
+--- TABLE ---
+Live VACS | Thursday - 12-Week Follow-up.
+AI grader | Deducts because it expected a 6-month follow-up interval.
+Classification | Confirmed synchronization problem.
+Source references | Sarah Mitchell EMR Thursday.pdf (live header); AI feedback Sarah Mitchell Thursday.pdf (deduction [1A.5]).
+
+--- TABLE ---
+Live VACS | Documented-from-chart HPI shows PHQ-9 = 8 (Mild) and GAD-7 = 5 (Mild).
+AI grader | Deducts because it says the “correct” current values are PHQ-9 = 7 and GAD-7 = 4.
+Classification | Confirmed objective-data/grader mismatch.
+Safety principle | The student must use the live values and must not invent 7 or 4 to satisfy the grader.
+
+--- TABLE ---
+Live VACS | Office BP 116/72 mmHg; repeat BP 114/70 mmHg. The same live panel shows HR 72 bpm, Temp 98.1°F, weight 68.5 kg, BMI 25.1.
+AI grader | Deducts because it expects BP 118/74 mmHg. The full feedback also contains additional expected vital values that differ from the live case.
+Classification | Confirmed objective-data/grader mismatch.
+Student impact | The only way to satisfy the grader would be to replace live measured values with unsupported values.
+
+--- TABLE ---
+CONFIRMED | HIGH PRIORITY
+
+--- TABLE ---
+Affected days | Tuesday and Wednesday
+Category | AI-patient / grader-reference synchronization
+Core defect | The student is penalized for documenting the patient’s actual answer or current therapy state when the grader expects a different hidden/reference fact.
+VACS rule | Actual AI-patient answers, including uncertainty, are valid patient data and must not be replaced with rubric-only facts.
+
+--- TABLE ---
+“Honestly, I live alone in my house in the suburbs, so I don’t really have anyone close by helping me with this stuff day to day.” AI-patient interview evidence: Sarah Mitchell EMR Tuesday.pdf, interview section (full interview source).
+
+--- TABLE ---
+Student-facing answer | Patient says she lives alone.
+AI grader | Deducts because the note states the patient lives alone rather than with a spouse.
+Classification | Confirmed grader/patient-answer conflict.
+Evidence handling | Do not manually recapture the interview answer. In the final audit package, reference the corresponding frame from the full sequential patient-interview screenshot set.
+
+--- TABLE ---
+“I haven’t really started anything like that - I’m not currently doing any counseling or CBT sessions. Just the medication so far.” AI-patient interview evidence: Sarah Mitchell EMR Wednesday.pdf, interview section (full interview source).
+
+--- TABLE ---
+Patient state | CBT/counseling has not started.
+AI grader | One criterion penalizes the plan for discussing starting CBT instead of continuing an existing CBT regimen.
+Classification | Confirmed grader/patient-state conflict.
+Correct student behavior | Document the patient’s actual therapy status and offer/initiate CBT if clinically appropriate; do not fabricate ongoing CBT participation.
+
+--- TABLE ---
+CONFIRMED
+
+--- TABLE ---
+Affected day | Wednesday
+Category | Internal grader logic inconsistency
+Core defect | The same feedback simultaneously says CBT has not started and should be described as initiation, while a deduction penalizes the student for not continuing CBT.
+Student impact | No single SOAP statement can satisfy both instructions without becoming factually inconsistent with the patient interview.
+
+--- TABLE ---
+VACS EVIDENCE DISCIPLINE The following deductions may be frustrating or score-reducing, but they are not promoted to software issues without stronger current evidence.
+
+--- TABLE ---
+Full patient interviews | Keep the entire Tuesday/Wednesday/Thursday interviews as the canonical sequential screenshot sets. Do not recapture individual answers solely for an issue report. Reference the exact existing interview frame number when assembling the final evidence package.
+Full grader feedback | Keep each complete AI-feedback set from score/top feedback through all deductions and final comments. Issue-specific grader screenshots are supplemental evidence only.
+Thursday internal-vitals screenshot | SM_Thursday_ISS05_AI_Vitals_Internal_Contradiction_01.png was reviewed but excluded from proof because the visible text does not clearly establish the intended Thursday “accurately transcribed vitals” statement. Recapture the actual Thursday strengths statement before using that contradiction as a separate developer finding.
+Evidence sufficiency | Current evidence is sufficient for the three confirmed root-cause issues above. Do not create one ticket per deduction code.
+
+--- TABLE ---
+Suggested title Sarah Mitchell - AI grader appears bound to stale/inconsistent case state, causing deductions for correct live encounter stages, objective values, and AI-patient answers
+
+--- TABLE ---
+Filename | Used for | Disposition
+SM_Wednesday_ISS01_EMR_Visit_Stage.png | Wednesday live visit stage | Used
+SM_Wednesday_ISS01_AI_Visit_Stage.png | Wednesday grader visit-stage deduction | Used
+SM_Thursday_ISS01_EMR_Visit_Stage.png | Thursday live visit stage | Used
+SM_Thursday_ISS01_AI_Visit_Stage.png | Thursday grader visit-stage deduction | Used
+SM_Wednesday_ISS02_EMR_PHQ9_GAD7.png | Wednesday live PHQ-9/GAD-7 | Used
+SM_Wednesday_ISS02_AI_PHQ9_GAD7.png | Wednesday grader score mismatch | Used
+SM_Thursday_ISS02_EMR_Vitals.png | Thursday live vital signs | Used
+SM_Thursday_ISS02_AI_Vitals.png | Thursday grader BP mismatch | Used
+SM_Tuesday_ISS03_AI_Patient_Answer_Conflict.png | Tuesday grader living-situation expectation | Used; patient answer referenced from full interview source
+SM_Wednesday_ISS03_AI_CBT_Conflict.png | Wednesday grader CBT continuation expectation | Used
+SM_Wednesday_ISS05_AI_CBT_Internal_Contradiction_01.png | Wednesday grader statement that CBT has not started | Used
+SM_Thursday_ISS05_AI_Vitals_Internal_Contradiction_01.png | Intended Thursday internal contradiction | Excluded pending recapture/verification
