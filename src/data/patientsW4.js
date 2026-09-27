@@ -128,25 +128,34 @@ const michaelWed = makeCase({
   ],
   ALERTS: [],
   PROBLEMS: [
-    { name: 'HFrEF', detail: 'On GDMT x 3 months, experiencing orthostatic hypotension. HCTZ may be contributing.', flag: 'warn' },
-    { name: 'Hypertension', detail: 'BP low due to GDMT + HCTZ — consider HCTZ discontinuation', flag: 'warn' },
+    { name: 'Orthostatic Hypotension (Primary MTP)', detail: 'Volume depletion from HCTZ + Carvedilol + Sacubitril/Valsartan. Target HCTZ for discontinuation while preserving GDMT.', flag: 'high' },
+    { name: 'HFrEF', detail: 'On 4-pillar GDMT x 3 months. Ankle edema resolved, weight down 2 kg (103 -> 101 kg), NT-proBNP improved (320 -> 165 pg/mL).', flag: 'normal' },
+    { name: 'Hypertension', detail: 'BP low due to GDMT + HCTZ — discontinue HCTZ to raise BP headroom for GDMT maintenance', flag: 'warn' },
   ],
   MEDICATIONS: [
-    { name: 'Sacubitril/Valsartan (Entresto)', dose: '24/26 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
-    { name: 'Carvedilol', dose: '3.125 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
-    { name: 'Spironolactone', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
-    { name: 'Dapagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
-    { name: 'Hydrochlorothiazide', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HTN', notes: 'Review need — may be contributing to orthostasis' },
+    { name: 'Sacubitril/Valsartan (Entresto)', dose: '24/26 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'Continue current dose' },
+    { name: 'Carvedilol', dose: '3.125 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'Continue current dose' },
+    { name: 'Spironolactone', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: 'Continue current dose' },
+    { name: 'Dapagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: 'Continue current dose' },
+    { name: 'Hydrochlorothiazide', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HTN', notes: 'Non-GDMT diuretic — target for discontinuation to relieve orthostasis' },
     { name: 'Atorvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'HLD', notes: '' },
   ],
   IMMUNIZATIONS: michaelTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: '3-Month Follow-Up. Reports dizziness upon standing since starting the new medications. Residual shortness of breath improved. Edema has resolved.' }],
-  OBJECTIVE_EXTRA: [],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: '3-Month Follow-Up. Reports dizziness upon standing since starting the new medications. Dizziness is postural (standing up from desk or bed) and self-limited, resolving after a few seconds. Ankle edema has completely resolved and residual shortness of breath with stair-climbing has significantly improved. Denies chest pain, resting dyspnea, orthopnea, paroxysmal nocturnal dyspnea, or emergency department visits.' },
+    { label: 'Social History', value: 'Married, lives with wife. Works full-time as an accountant. Former smoker (20 pack-year history, quit 5 years ago). Drinks 1-2 alcoholic beverages on weekends.' },
+    { label: 'Family History', value: 'Father had CAD/HF/HTN and MI at age 62. Mother has T2DM.' },
+    { label: 'OTC & Allergies', value: 'Daily multivitamin. Denies other OTC medications or herbal supplements. NKDA.' },
+    { label: 'Past Surgical History', value: 'Appendectomy at age 24.' }
+  ],
+  OBJECTIVE_EXTRA: [
+    { label: 'Objective Trend Analysis', value: 'Weight: 101 kg (2 kg fluid reduction from baseline 103 kg; edema resolved). NT-proBNP: 165 pg/mL (significantly improved from baseline 320 pg/mL). SCr: 1.08 mg/dL / eGFR 80 (stable change from baseline 1.0 / 88). BP: 106/68 mmHg (repeat 104/66 mmHg) — low BP consistent with orthostatic risk.' }
+  ],
   INTERVIEW_FIELDS: [
     { key: 'dizziness', label: 'Dizziness Assessment', placeholder: 'When does he feel dizzy?' },
   ],
-    COUNSELING: [{ id: 'c1', title: 'Fluid Management', body: ["Monitoring your daily weight is critical. If you gain 3 pounds in a day or 5 pounds in a week, call the clinic right away so we can adjust your water pill."] }], GUIDING_QUESTIONS:
-   [
+  COUNSELING: [{ id: 'c1', title: 'Fluid Management & Orthostasis', body: ["Rise slowly from bed or sitting position. Sit on the edge of the bed for a moment before standing. Drink adequate fluids. Monitor daily weight each morning after voiding; call clinic if weight increases by 3 lbs in 1 day or 5 lbs in 1 week."] }], 
+  GUIDING_QUESTIONS: [
     'What findings demonstrate treatment success?',
     'Why is MRA therapy appropriate today?',
     'Should mild orthostatic symptoms change management?',
@@ -154,7 +163,6 @@ const michaelWed = makeCase({
     'Why is BNP trending useful?',
     'What is the next long-term goal?'
   ],
-
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4-michael_t4-wed_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-michael_t4-wed_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin, but no other over-the-counter medications or supplements." },
@@ -167,13 +175,65 @@ const michaelWed = makeCase({
     { id: 'w4-michael_t4-wed_surgery', topic: 'Surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'appendix', 'appendectomy'], response: "Yes, I had my appendix out when I was 24. That's the only surgery I've had." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'w4a2_a1', title: 'Orthostasis Management', icon: 'AlertTriangle', color: 'd97706', questions: [{ key: 'q1', q: 'How can we improve his blood pressure to allow continued GDMT titration?' }] },
+    { 
+      id: 'w4a2_a1', 
+      title: 'Orthostasis & Primary Medication Therapy Problem', 
+      icon: 'AlertTriangle', 
+      color: 'd97706', 
+      questions: [
+        { 
+          key: 'q1', 
+          q: 'What is the primary medication therapy problem and its contributing causes?',
+          defaultAnswer: 'Orthostatic hypotension identified as the primary medication therapy problem, attributed to volume depletion and additive BP lowering from Carvedilol, Sacubitril/Valsartan, and Hydrochlorothiazide (HCTZ).'
+        },
+        { 
+          key: 'q2', 
+          q: 'Why should GDMT be preserved rather than stopped or reduced?',
+          defaultAnswer: 'Guideline-directed medical therapy (Sacubitril/Valsartan, Carvedilol, Spironolactone, Dapagliflozin) provides proven mortality and hospitalization benefits in HFrEF. GDMT should NOT be stopped or reduced for mild orthostasis; instead, target the non-GDMT diuretic (HCTZ 25 mg daily) for discontinuation.'
+        }
+      ] 
+    },
+    {
+      id: 'w4a2_a2',
+      title: 'HFrEF Efficacy & Biomarker Trend',
+      icon: 'Heart',
+      color: '13314f',
+      questions: [
+        {
+          key: 'q3',
+          q: 'What findings demonstrate treatment efficacy on 4-pillar GDMT?',
+          defaultAnswer: 'HFrEF is clinically improving on 4-pillar GDMT, evidenced by complete resolution of peripheral edema, 2 kg fluid weight reduction (103 kg -> 101 kg), and significant NT-proBNP improvement from baseline 320 pg/mL to 165 pg/mL.'
+        },
+        {
+          key: 'q4',
+          q: 'What safety monitoring is required after diuretic adjustment?',
+          defaultAnswer: 'Serum potassium (4.5 mEq/L) and renal function (SCr 1.08 mg/dL, eGFR 80 mL/min/1.73m²) are stable. Monitor blood pressure, renal function, and electrolytes in 2 to 4 weeks after stopping HCTZ.'
+        }
+      ]
+    }
   ],
   PLAN_SECTIONS: [
-    { id: 'w4a2_p1', title: 'Plan', options: [
-      { key: 'o1', label: 'Discontinue HCTZ to reduce volume depletion and lower BP burden, allowing GDMT to continue', correct: true },
-      { key: 'o2', label: 'Stop Carvedilol and Sacubitril/Valsartan', correct: false },
-    ] },
+    { 
+      id: 'w4a2_p1', 
+      title: 'Medication Adjustments & GDMT Continuation', 
+      options: [
+        { key: 'o1', label: 'Discontinue Hydrochlorothiazide (HCTZ) 25 mg PO daily to reduce volume depletion and lower BP burden, relieving orthostasis', correct: true },
+        { key: 'o2', label: 'Continue all 4 GDMT pillars at current doses: Sacubitril/Valsartan 24/26 mg PO BID, Carvedilol 3.125 mg PO BID, Spironolactone 25 mg PO daily, Dapagliflozin 10 mg PO daily, Atorvastatin 40 mg PO daily', correct: true },
+        { key: 'o3', label: 'Stop Carvedilol and Sacubitril/Valsartan', correct: false },
+      ] 
+    },
+    {
+      id: 'w4a2_p2',
+      title: 'Monitoring & Follow-Up Plan',
+      options: [
+        { key: 'o4', label: 'Recheck blood pressure and orthostatic vitals in 2 to 4 weeks following HCTZ discontinuation', correct: true },
+        { key: 'o5', label: 'Monitor basic metabolic panel (potassium, SCr, eGFR) and CBC at 2-4 week follow-up to ensure medication safety', correct: true },
+        { key: 'o6', label: 'Counsel patient on orthostatic precautions: rise slowly from bed/chair, sit at bedside before standing, maintain oral hydration', correct: true },
+        { key: 'o7', label: 'Reinforce daily weight tracking (same scale, morning after voiding) and instruct to call clinic if weight increases by >=3 lbs in 1 day or >=5 lbs in 1 week', correct: true },
+        { key: 'o8', label: 'Re-evaluate BP at next visit with goal to resume up-titration of Carvedilol and Sacubitril/Valsartan toward target guideline doses once orthostasis resolves', correct: true },
+        { key: 'o9', label: 'Schedule follow-up visit in 2 to 4 weeks (1 month) for reassessment', correct: true },
+      ]
+    }
   ],
 })
 
@@ -196,30 +256,34 @@ const michaelThu = makeCase({
     { label: 'eGFR', value: '75', unit: 'mL/min/1.73m²', flag: 'normal', labDate: '12/24/2026 07:50' }
   ],
   ALERTS: [],
-  // FIXED: Problem list updated to reflect HFimpEF with repeat LVEF
-  PROBLEMS: [{ name: 'HFrEF → HFimpEF', detail: 'LVEF improved from 35% (baseline) to 45% (repeat echo). On starting doses of GDMT — up-titration required.', flag: 'warn' }],
+  PROBLEMS: [
+    { name: 'HFrEF → HFimpEF', detail: 'LVEF improved from 35% (baseline) to 45% (repeat echo). On starting doses of GDMT — up-titration required.', flag: 'warn' },
+    { name: 'Hypertension', detail: 'Controlled on current GDMT regimen', flag: 'normal' },
+    { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg', flag: 'normal' }
+  ],
   MEDICATIONS: [
-    { name: 'Sacubitril/Valsartan (Entresto)', dose: '24/26 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'Starting dose — needs titration to target' },
-    { name: 'Carvedilol', dose: '3.125 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'Starting dose — needs titration to target' },
-    { name: 'Spironolactone', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
-    { name: 'Dapagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
+    { name: 'Sacubitril/Valsartan (Entresto)', dose: '24/26 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'Starting dose — needs titration to target 97/103 mg BID' },
+    { name: 'Carvedilol', dose: '3.125 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'Starting dose — titrate to 6.25 mg BID today, target 25 mg BID' },
+    { name: 'Spironolactone', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: 'Continue target dose' },
+    { name: 'Dapagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: 'Continue target dose' },
     { name: 'Atorvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'HLD', notes: '' },
   ],
   IMMUNIZATIONS: michaelTue.IMMUNIZATIONS,
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: '6-Month Follow-Up. Dizziness resolved after stopping HCTZ. No significant HF symptoms. Feels great.' },
-    // FIXED: Repeat echocardiogram data exposed per rubric
-    { label: 'Repeat Echocardiogram (6-Month)', value: 'LVEF improved from 35% to 45%. Consistent with Heart Failure with Improved Ejection Fraction (HFimpEF).' },
+    { label: 'HPI', value: '6-Month Follow-Up. Dizziness completely resolved following HCTZ discontinuation. Reports excellent energy, no peripheral edema, and no shortness of breath. Denies chest pain, orthopnea, paroxysmal nocturnal dyspnea, or emergency department visits. Asks why medication doses need to be increased if he feels great.' },
+    { label: 'Social History', value: 'Married, lives with wife. Works full-time as an accountant. Former smoker (20 pack-year history, quit 5 years ago). Drinks 1-2 alcoholic beverages on weekends.' },
+    { label: 'Family History', value: 'Father had CAD/HF/HTN and MI at age 62. Mother has T2DM.' },
+    { label: 'OTC & Allergies', value: 'Daily multivitamin. Denies other OTC medications or herbal supplements. NKDA.' },
+    { label: 'Past Surgical History', value: 'Appendectomy at age 24.' }
   ],
-  // FIXED: Objective extra exposes repeat echo
   OBJECTIVE_EXTRA: [
-    { label: 'Repeat Echocardiogram (6-Month)', value: 'LVEF 45% (improved from baseline LVEF 35%). Mild LV dilation reduced. No significant valvular abnormalities.' }
+    { label: 'Repeat Echocardiogram (6-Month)', value: 'LVEF 45% (significantly improved from baseline LVEF 35%). Mild LV dilation reduced. No significant valvular abnormalities. Consistent with Heart Failure with Improved Ejection Fraction (HFimpEF).' }
   ],
   INTERVIEW_FIELDS: [
     { key: 'titration', label: 'Medication Education', placeholder: 'Explain why doses need to increase' },
   ],
-    COUNSELING: [{ id: 'c1', title: 'Beta Blocker Titration', body: ["We are slowly increasing your beta blocker. You might feel a little more tired for a few days, but this medication is proven to strengthen your heart over the long term."] }], GUIDING_QUESTIONS:
-   [
+  COUNSELING: [{ id: 'c1', title: 'Beta Blocker Titration & HFimpEF', body: ["We are slowly increasing your beta blocker. Even though your ejection fraction improved to 45%, stopping or holding your heart medications can cause your heart muscle to weaken again. Target doses provide maximum long-term protection."] }], 
+  GUIDING_QUESTIONS: [
     'What findings support a diagnosis of HFimpEF?',
     'Should GDMT be continued after EF improves?',
     'Why is discontinuation of therapy potentially harmful?',
@@ -227,7 +291,6 @@ const michaelThu = makeCase({
     'What counseling should be provided regarding medication duration?',
     'What is the major educational pearl of this encounter?'
   ],
-
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4-michael_t4-thu_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-michael_t4-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin, but no other over-the-counter medications or supplements." },
@@ -240,13 +303,63 @@ const michaelThu = makeCase({
     { id: 'w4a3_titrate', topic: 'Titration', field: 'titration', keywords: ['why', 'increase', 'feel fine', 'dose'], response: "If I feel good, why do we need to mess with the doses? Can't we just leave it here?" },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'w4a3_a1', title: 'Target Doses', icon: 'ArrowUpCircle', color: '13314f', questions: [{ key: 'q1', q: 'Why is it important to increase the doses of Carvedilol and Entresto?' }] },
+    { 
+      id: 'w4a3_a1', 
+      title: 'HFimpEF Diagnosis & Lifelong GDMT Rationale', 
+      icon: 'ArrowUpCircle', 
+      color: '13314f', 
+      questions: [
+        { 
+          key: 'q1', 
+          q: 'What is the updated diagnosis based on repeat echocardiogram and clinical course?',
+          defaultAnswer: 'Heart Failure with Improved Ejection Fraction (HFimpEF). Repeat echocardiogram shows LVEF improved from baseline 35% to 45% on 4-pillar GDMT with complete resolution of orthostasis.'
+        },
+        { 
+          key: 'q2', 
+          q: 'Should GDMT be stopped or reduced now that LVEF has improved to 45%?',
+          defaultAnswer: 'No. EF improvement reflects treatment success, NOT a cure. Discontinuing or holding GDMT leads to relapse of LV dysfunction, clinical deterioration, and increased mortality. All 4 GDMT pillars must be maintained lifelong.'
+        }
+      ] 
+    },
+    {
+      id: 'w4a3_a2',
+      title: 'Dose Titration Rationale & Hemodynamic Safety',
+      icon: 'Heart',
+      color: '10b981',
+      questions: [
+        {
+          key: 'q3',
+          q: 'Why is dose titration required if the patient is asymptomatic and feels great?',
+          defaultAnswer: 'Current doses (Carvedilol 3.125 mg BID, Sacubitril/Valsartan 24/26 mg BID) are starting doses. Clinical trials demonstrate that target doses (Carvedilol 25 mg BID, Sacubitril/Valsartan 97/103 mg BID) provide maximum long-term mortality and HF hospitalization reduction.'
+        },
+        {
+          key: 'q4',
+          q: 'Is it hemodynamically and renally safe to titrate Carvedilol today?',
+          defaultAnswer: 'Yes. BP 122/78 mmHg (repeat 120/76), HR 70 bpm, SCr 1.2 mg/dL, eGFR 75 mL/min/1.73m², K 4.8 mEq/L, and NT-proBNP 92 pg/mL confirm hemodynamic and renal stability with no orthostasis.'
+        }
+      ]
+    }
   ],
   PLAN_SECTIONS: [
-    { id: 'w4a3_p1', title: 'Plan', options: [
-      { key: 'o1', label: 'Educate that target doses provide maximum mortality benefit; titrate Carvedilol to 6.25 mg BID', correct: true },
-      { key: 'o2', label: 'Leave doses as they are since he is asymptomatic', correct: false },
-    ] },
+    { 
+      id: 'w4a3_p1', 
+      title: 'Medication Adjustments & GDMT Titration', 
+      options: [
+        { key: 'o1', label: 'Titrate Carvedilol from 3.125 mg PO BID to 6.25 mg PO BID today', correct: true },
+        { key: 'o2', label: 'Continue Sacubitril/Valsartan 24/26 mg PO BID, Spironolactone 25 mg PO daily, Dapagliflozin 10 mg PO daily, Atorvastatin 40 mg PO daily', correct: true },
+        { key: 'o3', label: 'Leave doses as they are since he is asymptomatic', correct: false },
+      ] 
+    },
+    {
+      id: 'w4a3_p2',
+      title: 'Patient Education, Monitoring & Follow-Up',
+      options: [
+        { key: 'o4', label: 'Educate patient that LVEF improvement reflects treatment success, not cure. Reinforce lifelong GDMT adherence and explain that target doses provide maximum mortality benefit', correct: true },
+        { key: 'o5', label: 'Monitor BP, HR, SCr, eGFR, and potassium in 2 to 4 weeks following beta-blocker titration', correct: true },
+        { key: 'o6', label: 'Reinforce daily weight tracking (same scale, morning after voiding) and instruct to call clinic if weight increases by >=3 lbs in 1 day or >=5 lbs in 1 week', correct: true },
+        { key: 'o7', label: 'Schedule follow-up visit in 2 to 4 weeks (1 month) for clinical reassessment and next titration step', correct: true },
+      ]
+    }
   ],
 })
 
@@ -374,30 +487,35 @@ const angelaWed = makeCase({
     { label: 'NT-proBNP', value: '210', unit: 'pg/mL', flag: 'high', labDate: '12/09/2026 07:50' }
   ],
   ALERTS: [],
-  // FIXED: Problem list expanded to full active diagnoses
   PROBLEMS: [
-    { name: 'Persistent Nonvalvular AFib', detail: 'Cost barrier resolved. Patient stopped Apixaban due to bruising fear.', flag: 'warn' },
-    { name: 'HFrEF', detail: 'LVEF 35%. Stable on GDMT.', flag: 'normal' },
-    { name: 'Hypertension', detail: 'Controlled', flag: 'normal' },
+    { name: 'Persistent Nonvalvular AFib (Stroke Risk MTP)', detail: 'CHA2DS2-VASc 4. High stroke risk. Cost barrier resolved via PAP, but patient stopped Apixaban due to minor bruising and fear of bleeding after friend\'s anecdote.', flag: 'high' },
+    { name: 'HFrEF', detail: 'LVEF 35%. Stable on 3-pillar GDMT.', flag: 'normal' },
+    { name: 'Hypertension', detail: 'Controlled on GDMT', flag: 'normal' },
     { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg', flag: 'normal' },
   ],
-  // FIXED: Atorvastatin added to Wednesday medication list
   MEDICATIONS: [
     { name: 'Sacubitril/Valsartan', dose: '49/51 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
     { name: 'Metoprolol Succinate', dose: '50 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF/Rate control', notes: '' },
     { name: 'Empagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
-    { name: 'Apixaban', dose: '5 mg', route: 'by mouth', freq: 'BID', indication: 'AFib stroke prevention', notes: 'Patient stopped recently due to bruising fear' },
+    { name: 'Apixaban', dose: '5 mg', route: 'by mouth', freq: 'BID', indication: 'AFib stroke prevention', notes: 'Patient stopped recently due to minor bruising fear — resume immediately' },
     { name: 'Atorvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'HLD', notes: '' },
   ],
   IMMUNIZATIONS: angelaTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: '3-Month Follow-Up. Patient obtained Apixaban via patient assistance program but stopped taking it due to bruising and fear of major bleeding after a friend\'s anecdote.' }],
-  OBJECTIVE_EXTRA: [],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: '3-Month Follow-Up. Patient obtained Apixaban via Patient Assistance Program. She took it for several weeks but independently stopped taking it after noticing small non-painful bruises on her arms and legs and hearing a friend\'s anecdote about bleeding to death on blood thinners. Bruises were self-limited and resolved. Denies nosebleeds, gum bleeding, hematuria, melena, or ER visits/hospitalizations.' },
+    { label: 'Social History', value: 'Lives alone on fixed income. Retired administrative assistant. Cost barrier resolved via PAP. Transportation via bus/family ride. Former smoker (15 pack-year history, quit 8 years ago). Drinks 1 glass of wine per week.' },
+    { label: 'Family History', value: 'Father had ischemic stroke at age 70. Mother had heart failure. Sister has hypertension.' },
+    { label: 'OTC & Allergies', value: 'Tylenol PRN for headaches/body aches; avoids aspirin and NSAIDs. NKDA.' },
+    { label: 'Past Surgical History', value: 'Cholecystectomy (prior gallbladder removal).' }
+  ],
+  OBJECTIVE_EXTRA: [
+    { label: 'Objective Trend Analysis', value: 'Weight: 84 kg (stable). BMI: 30.8 kg/m² (Class I Obesity). BP 126/76 mmHg (repeat 124/74 mmHg) — controlled. Hgb 13.0 g/dL, Plt 236k, SCr 1.0 mg/dL, eGFR 73 mL/min/1.73m² (stable).' }
+  ],
   INTERVIEW_FIELDS: [
     { key: 'fear', label: 'Bleeding Fears', placeholder: 'What are her bleeding symptoms?' },
   ],
-  // FIXED: Counseling corrected to DOAC-specific (no warfarin INR language)
-  COUNSELING: [{ id: 'c1', title: 'Apixaban Safety Counseling', body: ["Apixaban does not require routine blood monitoring like warfarin. However, you must take it exactly as prescribed. Missing doses leaves you unprotected against stroke. Minor bruising is an expected side effect and does not mean the medication is dangerous."] }], GUIDING_QUESTIONS:
-   [
+  COUNSELING: [{ id: 'c1', title: 'Apixaban Safety & Shared Decision Making', body: ["Apixaban does not require routine blood monitoring like warfarin. However, you must take it exactly as prescribed. Missing doses leaves you unprotected against stroke. Minor bruising is an expected side effect and does not mean the medication is dangerous."] }], 
+  GUIDING_QUESTIONS: [
     'Why is minor bruising managed differently than major bleeding?',
     'Why is continuation of apixaban appropriate?',
     'What factors contributed to nonadherence?',
@@ -405,28 +523,69 @@ const angelaWed = makeCase({
     'How does shared decision-making improve outcomes?',
     'What is the major teaching pearl of this encounter?'
   ],
-
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4-angela_b-wed_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-angela_b-wed_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take Tylenol PRN for occasional headaches or body aches, but I avoid aspirin and NSAIDs." },
     { id: 'w4-angela_b-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 glass of wine per week." },
     { id: 'w4-angela_b-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 8 years ago, and I had a 15 pack-year history before that." },
-    // FIXED: Family history synchronized to rubric
     { id: 'w4-angela_b-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had a stroke at age 70. My mother had heart failure. My sister has high blood pressure." },
     { id: 'w4-angela_b-wed_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride', 'income', 'fixed', 'cost', 'afford'], response: "I live alone on a fixed income. I am retired. The assistance program resolved the cost issue for Eliquis. Transportation can still be difficult — I usually take the bus or get a ride." },
-    // FIXED: Surgery entry added for Wednesday
     { id: 'w4-angela_b-wed_surgery', topic: 'Past surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'gallbladder', 'cholecystectomy'], response: "Yes, I had my gallbladder removed several years ago. That's the only surgery I've had." },
     { id: 'w4b2_bruise', topic: 'Bruising Symptoms', field: 'bleeding', keywords: ['bruise', 'bruising', 'bleed', 'bleeding', 'symptoms', 'nosebleed', 'gums'], response: "I noticed some small bruises on my arms and legs without even bumping into anything. They weren't painful and went away on their own. I haven't had any gum bleeding, nosebleeds, or blood in my stool, and I haven't gone to the ER, but seeing bruises scared me." },
     { id: 'w4b2_fear', topic: 'Fear of bleeding', field: 'fear', keywords: ['scared', 'fear', 'afraid', 'stop', 'why', 'friend'], response: "My friend told me a terrifying story about someone who bled to death on these exact blood thinners. Combined with the bruises I got, I panicked and stopped taking it." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'w4b2_a1', title: 'Risk/Benefit Discussion', icon: 'Scale', color: '0891b2', questions: [{ key: 'q1', q: 'How do you balance her HAS-BLED score against her CHA2DS2-VASc score in counseling?' }] },
+    { 
+      id: 'w4b2_a1', 
+      title: 'Stroke Risk vs Bleeding Risk & Adherence', 
+      icon: 'Scale', 
+      color: '0891b2', 
+      questions: [
+        { 
+          key: 'q1', 
+          q: 'How do you balance her CHA2DS2-VASc score vs HAS-BLED score in addressing her nonadherence?',
+          defaultAnswer: 'CHA2DS2-VASc score = 4 (Female, HTN, HFrEF, Age 64), placing her at high risk for ischemic stroke. HAS-BLED score evaluated. Apixaban 5 mg BID is strongly indicated per 2023 ACC/AHA AFib guidelines. Nonadherence due to fear of bleeding must be addressed via shared decision-making; minor cutaneous bruising does not warrant stopping DOAC.'
+        },
+        { 
+          key: 'q2', 
+          q: 'What is the status of her medication access and reason for stopping Apixaban?',
+          defaultAnswer: 'Prior cost barrier successfully resolved via Patient Assistance Program. Patient independently stopped Apixaban due to minor bruising and fear of bleeding after a friend\'s anecdote. Reassurance and education on minor vs major bleeding will restore adherence.'
+        }
+      ] 
+    },
+    {
+      id: 'w4b2_a2',
+      title: 'HFrEF & Preventive Care Status',
+      icon: 'Heart',
+      color: '10b981',
+      questions: [
+        {
+          key: 'q3',
+          q: 'What is the status of her HFrEF and preventive health gaps?',
+          defaultAnswer: 'HFrEF (LVEF 35%) stable on GDMT 3 pillars (Sacubitril/Valsartan 49/51 mg BID, Metoprolol Succinate 50 mg daily, Empagliflozin 10 mg daily). Controlled HTN and hyperlipidemia. Preventive care: Pneumococcal completed; Shingrix series initiated (dose #2 due); Tdap overdue.'
+        }
+      ]
+    }
   ],
   PLAN_SECTIONS: [
-    { id: 'w4b2_p1', title: 'Plan', options: [
-      { key: 'o1', label: 'Acknowledge fear, explain that stroke risk from AFib without anticoagulation outweighs bleeding risk with Apixaban', correct: true },
-      { key: 'o2', label: 'Agree to stop Apixaban since she is fearful', correct: false },
-    ] },
+    { 
+      id: 'w4b2_p1', 
+      title: 'Anticoagulation & Shared Decision-Making', 
+      options: [
+        { key: 'o1', label: 'Resume Apixaban 5 mg PO BID immediately for stroke prevention per 2023 ACC/AHA AFib guidelines', correct: true },
+        { key: 'o2', label: 'Acknowledge patient fears, explain that stroke risk without anticoagulation far outweighs bleeding risk. Reassure that minor cutaneous bruising is expected and non-dangerous. Counsel on warning signs of major bleeding (dark stools, hematuria, severe headache) requiring immediate evaluation', correct: true },
+        { key: 'o3', label: 'Agree to stop Apixaban since she is fearful', correct: false },
+      ] 
+    },
+    {
+      id: 'w4b2_p2',
+      title: 'GDMT Maintenance, Monitoring & Preventive Care',
+      options: [
+        { key: 'o4', label: 'Continue Sacubitril/Valsartan 49/51 mg PO BID, Metoprolol Succinate 50 mg PO daily, Empagliflozin 10 mg PO daily, Atorvastatin 40 mg PO daily', correct: true },
+        { key: 'o5', label: 'Monitor CBC (Hgb, Plt), renal function (SCr, eGFR), bleeding signs, and medication adherence at follow-up', correct: true },
+        { key: 'o6', label: 'Administer Shingrix dose #2 and Tdap vaccine. Schedule follow-up visit in 1 to 3 months', correct: true },
+      ]
+    }
   ],
 })
 
@@ -455,14 +614,12 @@ const angelaThu = makeCase({
     { label: 'Plt', value: '240', unit: 'x10³/mm³', flag: 'normal', labDate: '03/09/2027 07:50' }
   ],
   ALERTS: [],
-  // FIXED: Problem list expanded to full active diagnoses
   PROBLEMS: [
-    { name: 'Persistent Nonvalvular AFib', detail: 'Anticoagulated successfully on Apixaban.', flag: 'normal' },
-    { name: 'HFrEF', detail: 'LVEF 35%. Stable on GDMT.', flag: 'normal' },
+    { name: 'Persistent Nonvalvular AFib', detail: 'Anticoagulated successfully on Apixaban 5 mg BID with 100% adherence and no bleeding.', flag: 'normal' },
+    { name: 'HFrEF', detail: 'LVEF 35%. Stable on 3-pillar GDMT.', flag: 'normal' },
     { name: 'Hypertension', detail: 'Controlled', flag: 'normal' },
     { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg', flag: 'normal' },
   ],
-  // FIXED: Atorvastatin added to Thursday medication list
   MEDICATIONS: [
     { name: 'Sacubitril/Valsartan', dose: '49/51 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
     { name: 'Metoprolol Succinate', dose: '50 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF/Rate control', notes: '' },
@@ -471,14 +628,21 @@ const angelaThu = makeCase({
     { name: 'Atorvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'HLD', notes: '' },
   ],
   IMMUNIZATIONS: angelaTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: '6-Month Follow-Up. Patient compliant with Apixaban. No significant bleeding events reported.' }],
-  OBJECTIVE_EXTRA: [],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: '6-Month Follow-Up. Patient compliant with Apixaban 5 mg BID twice daily using a pillbox. Reports no significant bleeding events, nosebleeds, or easy bruising. Stable mild fatigue, no chest pain, resting dyspnea, orthopnea, or PND.' },
+    { label: 'Social History', value: 'Lives alone, retired administrative assistant. Transportation barriers managed with family support and bus. Fixed income access maintained via assistance program.' },
+    { label: 'Family History', value: 'Father had stroke at age 70. Mother had heart failure. Sister has hypertension.' },
+    { label: 'OTC & Allergies', value: 'Tylenol PRN for occasional headaches; avoids aspirin and NSAIDs. NKDA.' },
+    { label: 'Past Surgical History', value: 'Cholecystectomy.' }
+  ],
+  OBJECTIVE_EXTRA: [
+    { label: 'Objective Trend Analysis', value: 'Weight 83 kg (stable), BMI 30.5 kg/m² (Class I Obesity), BP 124/74 mmHg (repeat 122/72), HR 80 bpm. SCr 1.0, eGFR 72, Hgb 13.1 g/dL, Plt 240k.' }
+  ],
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Adherence Check', placeholder: 'Check on her daily routine' },
   ],
-  // FIXED: Counseling updated — DOAC-specific (no warfarin INR language)
-  COUNSELING: [{ id: 'c1', title: 'Bleeding Precautions', body: ["You may bruise more easily on this medication. If you experience severe headaches, blood in your urine or stool, or bleeding that won't stop, go to the emergency room. You do not need routine blood monitoring like warfarin patients do."] }], GUIDING_QUESTIONS:
-   [
+  COUNSELING: [{ id: 'c1', title: 'Bleeding Precautions & Maintenance', body: ["You may bruise more easily on this medication. If you experience severe headaches, blood in your urine or stool, or bleeding that won't stop, go to the emergency room. You do not need routine blood monitoring like warfarin patients do."] }], 
+  GUIDING_QUESTIONS: [
     'What was the primary success demonstrated during this encounter?',
     'Why was continuation of anticoagulation appropriate?',
     'What barriers were successfully addressed?',
@@ -486,28 +650,68 @@ const angelaThu = makeCase({
     'What pharmacist interventions contributed most to success?',
     'What is the major teaching pearl of Patient B?'
   ],
-
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4-angela_b-thu_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-angela_b-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take Tylenol PRN for occasional headaches or body aches, but I avoid aspirin and NSAIDs." },
     { id: 'w4-angela_b-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 glass of wine per week." },
     { id: 'w4-angela_b-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 8 years ago, and I had a 15 pack-year history before that." },
-    // FIXED: Family history synchronized to rubric
     { id: 'w4-angela_b-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had a stroke at age 70. My mother had heart failure. My sister has high blood pressure." },
     { id: 'w4-angela_b-thu_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride'], response: "I live alone. I am a retired administrative assistant. Transportation can still be difficult — I usually take the bus or get a ride, but I've managed to make all my appointments." },
     { id: 'w4-angela_b-thu_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "I don't have a blood pressure cuff or a scale at home. I just come in for checkups." },
-    // FIXED: Surgery entry added for Thursday
     { id: 'w4-angela_b-thu_surgery', topic: 'Past surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'gallbladder', 'cholecystectomy'], response: "Yes, I had my gallbladder removed several years ago. That's the only surgery I've had." },
     { id: 'w4b3_adh', topic: 'Adherence', field: 'adherence', keywords: ['take', 'miss', 'every day', 'routine'], response: "Getting the Eliquis through the assistance program made it affordable, and your counseling helped me understand why I need it. I set a pillbox and I take it every morning and night. No problems at all." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'w4b3_a1', title: 'Maintenance', icon: 'CheckCircle', color: '10b981', questions: [{ key: 'q1', q: 'Is any change to therapy needed?' }] },
+    { 
+      id: 'w4b3_a1', 
+      title: 'Therapy Maintenance & Disease Stability', 
+      icon: 'CheckCircle', 
+      color: '10b981', 
+      questions: [
+        { 
+          key: 'q1', 
+          q: 'Is any change to therapy needed for AFib or HFrEF at this visit?',
+          defaultAnswer: 'No medication changes needed. Persistent AFib is stable and stroke-protected on Apixaban 5 mg BID. HFrEF (LVEF 35%) is stable on 3-pillar GDMT (Sacubitril/Valsartan, Metoprolol Succinate, Empagliflozin). Blood pressure (124/74 mmHg) and HR (80 bpm) are well controlled.'
+        },
+        { 
+          key: 'q2', 
+          q: 'What progress has been made in self-management and health literacy?',
+          defaultAnswer: 'Patient demonstrates excellent adherence to Apixaban with no bleeding events reported. Health literacy and comfort communicating with providers have improved significantly. Fixed income access remains stable.'
+        }
+      ] 
+    },
+    {
+      id: 'w4b3_a2',
+      title: 'Preventive Care Status',
+      icon: 'ShieldAlert',
+      color: '13314f',
+      questions: [
+        {
+          key: 'q3',
+          q: 'What preventive health actions are required today?',
+          defaultAnswer: 'Pneumococcal vaccine completed. Shingrix series dose #2 due today. Tdap vaccine overdue and recommended.'
+        }
+      ]
+    }
   ],
   PLAN_SECTIONS: [
-    { id: 'w4b3_p1', title: 'Plan', options: [
-      { key: 'o1', label: 'Continue current therapy, praise adherence', correct: true },
-      { key: 'o2', label: 'Decrease Apixaban dose to 2.5 mg BID since she is stable', correct: false },
-    ] },
+    { 
+      id: 'w4b3_p1', 
+      title: 'Medication Maintenance & Adherence Reinforcement', 
+      options: [
+        { key: 'o1', label: 'Continue Apixaban 5 mg PO BID, Sacubitril/Valsartan 49/51 mg PO BID, Metoprolol Succinate 50 mg PO daily, Empagliflozin 10 mg PO daily, Atorvastatin 40 mg PO daily', correct: true },
+        { key: 'o2', label: 'Praise patient for excellent medication adherence and reinforce shared decision-making approach', correct: true },
+        { key: 'o3', label: 'Decrease Apixaban dose to 2.5 mg BID since she is stable', correct: false },
+      ] 
+    },
+    {
+      id: 'w4b3_p2',
+      title: 'Monitoring & Preventive Care',
+      options: [
+        { key: 'o4', label: 'Continue routine monitoring of medication adherence, bleeding/stroke symptoms, renal function (SCr, eGFR), CBC, and medication affordability', correct: true },
+        { key: 'o5', label: 'Administer Shingrix dose #2 and Tdap vaccine. Schedule follow-up in 3 to 6 months', correct: true },
+      ]
+    }
   ],
 })
 
@@ -626,7 +830,6 @@ const robertWed = makeCase({
     { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal', labDate: '12/09/2026 07:50' },
     { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal', labDate: '12/09/2026 07:50' },
     { label: 'BUN', value: '32', unit: 'mg/dL', flag: 'normal', labDate: '12/09/2026 07:50' },
-    // FIXED: SCr unit corrected (was missing unit field in Wednesday)
     { label: 'SCr', value: '1.38', unit: 'mg/dL', flag: 'normal', labDate: '12/09/2026 07:50' },
     { label: 'eGFR', value: '45', unit: 'mL/min/1.73m²', flag: 'low', labDate: '12/09/2026 07:50' },
     { label: 'WBC', value: '6.5', unit: 'x10³/mm³', flag: 'normal', labDate: '12/09/2026 07:50' },
@@ -634,23 +837,29 @@ const robertWed = makeCase({
     { label: 'Plt', value: '226', unit: 'x10³/mm³', flag: 'normal', labDate: '12/09/2026 07:50' }
   ],
   ALERTS: [],
-  // FIXED: Problem list expanded
   PROBLEMS: [
-    { name: 'AFib', detail: 'Minor epistaxis on Apixaban. No major bleeding. Continuation appropriate.', flag: 'warn' },
-    { name: 'CKD Stage 3', detail: 'SCr 1.38 mg/dL, eGFR 45. Stable.', flag: 'warn' },
-    { name: 'HFrEF', detail: 'Stable on GDMT', flag: 'normal' },
+    { name: 'AFib (Minor Bleeding MTP)', detail: 'Minor self-limited epistaxis on Apixaban 5 mg BID. Continuation appropriate as stroke risk (CHA2DS2-VASc 4) outweighs minor bleeding risk.', flag: 'warn' },
+    { name: 'CKD Stage 3a', detail: 'SCr 1.38 mg/dL, eGFR 45 mL/min/1.73m². Stable.', flag: 'warn' },
+    { name: 'HFrEF', detail: 'Stable on GDMT 4 pillars.', flag: 'normal' },
     { name: 'T2DM', detail: 'Controlled. HbA1c 6.9%', flag: 'normal' },
+    { name: 'Coronary Artery Disease', detail: 'On Rosuvastatin 40 mg', flag: 'normal' },
   ],
   MEDICATIONS: robertTue.MEDICATIONS,
   IMMUNIZATIONS: robertTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: '3-Month Follow-Up. Reports two episodes of nosebleeds in the past month, resolving with 5 minutes of pressure. No ER visits. No hemoptysis, hematuria, or GI bleeding.' }],
-  OBJECTIVE_EXTRA: [],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: '3-Month Follow-Up. Reports two minor episodes of epistaxis (nosebleeds) in the past month, resolving within 5 minutes of direct nasal compression. Denies ER visits, hospitalizations, hemoptysis, hematuria, black/tarry stools, or major bleeding. Questions if a safer blood thinner exists.' },
+    { label: 'Social History', value: 'Retired engineer. Lives with wife. Former smoker (25 pack-year history, quit 12 years ago). Rarely drinks alcohol (1-2 drinks/month). Diligent with home BP, HR, and weight tracking.' },
+    { label: 'Family History', value: 'Father had MI at age 58. Mother had stroke at age 72. Brother has CAD.' },
+    { label: 'OTC & Allergies', value: 'Daily multivitamin. Avoids OTC NSAIDs/aspirin unless approved. NKDA.' }
+  ],
+  OBJECTIVE_EXTRA: [
+    { label: 'Objective Trend Analysis', value: 'Weight 58 kg (stable), BMI 20.0, BP 120/70 mmHg (repeat 118/68), HR 68 bpm. SCr 1.38 mg/dL, eGFR 45 mL/min/1.73m² (stable CKD 3a). Hgb 13.4 g/dL, Plt 226k (normal).' }
+  ],
   INTERVIEW_FIELDS: [
     { key: 'nosebleeds', label: 'Bleeding details', placeholder: 'How severe are the bleeds?' },
   ],
-  // FIXED: Counseling corrected — removed warfarin/INR language (not applicable to DOAC patient)
-  COUNSELING: [{ id: 'c1', title: 'Minor Bleeding on DOACs', body: ["Nosebleeds and easy bruising are known side effects of Apixaban. These minor bleeds should be managed locally — pinch your nose for 5-10 minutes, stay upright, and avoid blowing your nose. The stroke risk from stopping your blood thinner is far greater than the risk from these minor bleeds. If you ever have blood in your urine, black/tarry stools, or bleeding that won't stop in 15 minutes, call us or go to the ER immediately."] }], GUIDING_QUESTIONS:
-   [
+  COUNSELING: [{ id: 'c1', title: 'Minor Bleeding on DOACs & Local Management', body: ["Nosebleeds and easy bruising are known side effects of Apixaban. These minor bleeds should be managed locally — pinch your nose firmly for 10-15 minutes, stay upright, and avoid blowing your nose. The stroke risk from stopping your blood thinner is far greater than the risk from these minor bleeds."] }], 
+  GUIDING_QUESTIONS: [
     'Why is bridging generally unnecessary in this patient?',
     'What factors influence interruption timing?',
     'What are the risks of unnecessary bridging?',
@@ -658,8 +867,6 @@ const robertWed = makeCase({
     'How does CKD influence anticoagulation management?',
     'What is the major teaching pearl of this encounter?'
   ],
-
-  // FIXED: INTERVIEW_KNOWLEDGE indentation corrected
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4-robert_j4-wed_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-robert_j4-wed_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin. I avoid other over-the-counter pain relievers unless my doctor approves them." },
@@ -671,13 +878,56 @@ const robertWed = makeCase({
     { id: 'w4c2_bleed', topic: 'Epistaxis', field: 'nosebleeds', keywords: ['nose', 'bleed', 'epistaxis', 'severe', 'stop'], response: "They aren't huge gushers, they stop if I pinch my nose for a few minutes. But it makes me nervous. Is there a safer drug that won't make me bleed?" },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'w4c2_a1', title: 'Minor Bleeding Management', icon: 'Droplet', color: 'dc2626', questions: [{ key: 'q1', q: 'How should you manage this minor bleeding?' }, { key: 'q2', q: 'How does AZALEA-TIMI 71 address his desire for a "safer" drug?' }] },
+    { 
+      id: 'w4c2_a1', 
+      title: 'Epistaxis Management & DOAC Rationale', 
+      icon: 'Droplet', 
+      color: 'dc2626', 
+      questions: [
+        { 
+          key: 'q1', 
+          q: 'How should minor epistaxis be managed in this patient on Apixaban?',
+          defaultAnswer: 'Continue Apixaban 5 mg PO BID. Minor self-limited epistaxis (resolving in 5 minutes with pressure) does NOT warrant stopping DOAC therapy, as stroke risk (CHA2DS2-VASc = 4) far outweighs minor bleeding risk. Counsel on local compression measures.'
+        },
+        { 
+          key: 'q2', 
+          q: 'How does AZALEA-TIMI 71 address his desire for a "safer" blood thinner?',
+          defaultAnswer: 'Discuss that emerging Factor XI inhibitors (such as abelacimab studied in AZALEA-TIMI 71) represent future investigational therapies designed to decouple stroke prevention from bleeding risk, but are not yet commercially available.'
+        }
+      ] 
+    },
+    {
+      id: 'w4c2_a2',
+      title: 'Comorbidities & Renal Monitoring',
+      icon: 'Scale',
+      color: '13314f',
+      questions: [
+        {
+          key: 'q3',
+          q: 'What is the status of his CKD Stage 3a and HFrEF?',
+          defaultAnswer: 'CKD Stage 3a (SCr 1.38 mg/dL, eGFR 45 mL/min/1.73m²) is stable; Apixaban 5 mg BID remains correct (meets only 1 of 3 dose reduction criteria). HFrEF stable on GDMT. Monitor renal function and CBC.'
+        }
+      ]
+    }
   ],
   PLAN_SECTIONS: [
-    { id: 'w4c2_p1', title: 'Plan', options: [
-      { key: 'o1', label: 'Continue Apixaban, counsel on local epistaxis measures. Discuss that future therapies (Factor XI inhibitors, AZALEA trial) are being studied to decouple thrombosis from bleeding risk, but aren\'t available yet.', correct: true },
-      { key: 'o2', label: 'Stop Apixaban immediately', correct: false },
-    ] },
+    { 
+      id: 'w4c2_p1', 
+      title: 'Anticoagulation & Local Epistaxis Measures', 
+      options: [
+        { key: 'o1', label: 'Continue Apixaban 5 mg PO BID. Counsel patient on local epistaxis measures: sit upright, lean forward slightly, pinch nasal bridge firmly for 10-15 minutes. Reassure that minor epistaxis does not warrant stopping Apixaban.', correct: true },
+        { key: 'o2', label: 'Discuss that future Factor XI inhibitors (AZALEA-TIMI 71 trial) are being studied to decouple thrombosis from bleeding risk, but are not yet commercially available', correct: true },
+        { key: 'o3', label: 'Stop Apixaban immediately', correct: false },
+      ] 
+    },
+    {
+      id: 'w4c2_p2',
+      title: 'GDMT Maintenance & Monitoring',
+      options: [
+        { key: 'o4', label: 'Continue Sacubitril/Valsartan 97/103 mg PO BID, Metoprolol Succinate 100 mg PO daily, Spironolactone 25 mg PO daily, Empagliflozin 10 mg PO daily, Rosuvastatin 40 mg PO daily', correct: true },
+        { key: 'o5', label: 'Monitor renal function (SCr, eGFR), potassium, CBC (Hgb, Plt), and bleeding symptoms at follow-up in 1 to 3 months', correct: true },
+      ]
+    }
   ],
 })
 
@@ -704,22 +954,27 @@ const robertThu = makeCase({
     { label: 'Plt', value: '229', unit: 'x10³/mm³', flag: 'normal', labDate: '03/09/2027 07:50' }
   ],
   ALERTS: [],
-  // FIXED: Problem list expanded
   PROBLEMS: [
-    { name: 'AFib', detail: 'On Apixaban 5 mg BID. Continuation appropriate post-colonoscopy.', flag: 'normal' },
-    { name: 'CKD Stage 3', detail: 'SCr 1.35 mg/dL, eGFR 46. Stable.', flag: 'warn' },
+    { name: 'AFib (Post-Colonoscopy Anticoagulation Reassessment)', detail: 'On Apixaban 5 mg BID. Continuation indicated lifelong despite successful removal of colonic polyps.', flag: 'normal' },
+    { name: 'CKD Stage 3a', detail: 'SCr 1.35 mg/dL, eGFR 46 mL/min/1.73m². Stable.', flag: 'warn' },
     { name: 'HFrEF', detail: 'Stable on GDMT', flag: 'normal' },
     { name: 'T2DM', detail: 'Controlled', flag: 'normal' },
   ],
   MEDICATIONS: robertTue.MEDICATIONS,
   IMMUNIZATIONS: robertTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Recent elective screening colonoscopy approximately 10 days ago.' }, { label: 'Past Surgical History', value: 'Recent screening colonoscopy with tubular adenoma removal.' }],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: '6-Month Follow-Up. Recent elective screening colonoscopy 10 days ago with successful removal of two small tubular adenomas. Apixaban was held 48 hours prior and resumed 24 hours post-procedure per protocol with no bleeding complications. Patient asks if he can discontinue Apixaban now that the polyps were removed.' },
+    { label: 'Social History', value: 'Retired engineer. Lives with wife. Former smoker (25 pack-years, quit 12 years ago). Rarely drinks alcohol.' },
+    { label: 'Family History', value: 'Father MI at 58, mother stroke at 72, brother CAD.' },
+    { label: 'OTC & Allergies', value: 'Daily multivitamin. Avoids PRN NSAIDs. NKDA.' }
+  ],
   OBJECTIVE_EXTRA: [
     { label: 'Gastroenterology Report', value: 'Colonoscopy (10 days ago): Two small tubular adenomas removed. No procedural complications. No post-procedural bleeding. Routine surveillance recommended by gastroenterology.' }
   ],
   INTERVIEW_FIELDS: [
     { key: 'colonoscopy', label: 'Colonoscopy follow-up', placeholder: 'What are his concerns?' },
   ],
+  COUNSELING: [{ id: 'c1', title: 'Long-Term Anticoagulation Rationale', body: ["It's great news that the colonoscopy went well and the polyps were removed. However, we take Apixaban to prevent strokes caused by your atrial fibrillation. The polyps were a potential bleeding risk, but removing them does not cure your atrial fibrillation or lower your stroke risk. Therefore, you must continue taking your blood thinner exactly as prescribed."] }],
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4-robert_j4-thu_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-robert_j4-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin. I avoid other over-the-counter pain relievers unless my doctor approves them." },
@@ -732,15 +987,52 @@ const robertThu = makeCase({
     { id: 'w4c3_peri', topic: 'Peri-procedure Anticoagulation', field: 'perioperative', keywords: ['stop', 'hold', 'before', 'resume', 'restart', 'after', 'procedure'], response: "I stopped the Apixaban two days before the colonoscopy like my cardiologist told me to. Since there was no bleeding, they told me to restart it the day after the procedure, which I did." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'w4c3_a1', title: 'Anticoagulation Reassessment', icon: 'ShieldAlert', color: 'dc2626', questions: [{ key: 'q1', q: 'Does a successful colonoscopy alter his stroke risk or the underlying indication for anticoagulation?' }] },
+    { 
+      id: 'w4c3_a1', 
+      title: 'Post-Colonoscopy Anticoagulation Reassessment', 
+      icon: 'ShieldAlert', 
+      color: 'dc2626', 
+      questions: [
+        { 
+          key: 'q1', 
+          q: 'Does a successful colonoscopy alter his stroke risk or the underlying indication for anticoagulation?',
+          defaultAnswer: 'No. Successful polyp removal eliminates the local lesion that could bleed, but does NOT alter the underlying stroke risk from persistent atrial fibrillation (CHA2DS2-VASc = 4). Apixaban 5 mg BID remains indicated for lifelong stroke prevention.'
+        },
+        { 
+          key: 'q2', 
+          q: 'What is the overall stability of his chronic conditions?',
+          defaultAnswer: 'Persistent AFib, HFrEF, CKD Stage 3a, T2DM, and CAD are all clinically stable on current medical therapy. Peri-procedural hold and resumption of Apixaban was executed appropriately without bleeding or thromboembolic events.'
+        }
+      ] 
+    }
   ],
   PLAN_SECTIONS: [
-    { id: 'w4c3_p1', title: 'Plan', options: [
-      { key: 'o1', label: 'Reinforce that long-term anticoagulation remains indicated despite successful colonoscopy', correct: true },
-      { key: 'o2', label: 'Discontinue Apixaban since the bleeding source (polyps) was removed', correct: false },
-    ] },
+    { 
+      id: 'w4c3_p1', 
+      title: 'Anticoagulation Reassurance & GDMT Maintenance', 
+      options: [
+        { key: 'o1', label: 'Reinforce that long-term anticoagulation with Apixaban 5 mg PO BID remains indicated despite successful colonoscopy and polyp removal', correct: true },
+        { key: 'o2', label: 'Continue Sacubitril/Valsartan 97/103 mg PO BID, Metoprolol Succinate 100 mg PO daily, Spironolactone 25 mg PO daily, Empagliflozin 10 mg PO daily, Rosuvastatin 40 mg PO daily', correct: true },
+        { key: 'o3', label: 'Discontinue Apixaban since the bleeding source (polyps) was removed', correct: false },
+      ] 
+    },
+    {
+      id: 'w4c3_p2',
+      title: 'Monitoring & Follow-Up',
+      options: [
+        { key: 'o4', label: 'Monitor renal function (SCr, eGFR), CBC, medication adherence, and HF symptoms', correct: true },
+        { key: 'o5', label: 'Schedule follow-up in 3 to 6 months for routine chronic disease monitoring', correct: true },
+      ]
+    }
   ],
-  COUNSELING: [{ id: 'c1', title: 'Long-Term Anticoagulation', body: ["It's great news that the colonoscopy went well and the polyps were removed. However, we take Apixaban to prevent strokes caused by your atrial fibrillation. The polyps were a potential bleeding risk, but removing them does not cure your atrial fibrillation or lower your stroke risk. Therefore, you must continue taking your blood thinner exactly as prescribed."] }],
+  GUIDING_QUESTIONS: [
+    'Why is continuation of GDMT appropriate despite declining eGFR?',
+    'What factors may contribute to CKD progression?',
+    'Why is potassium monitoring important?',
+    'What is the significance of the BNP trend?',
+    'How should dialysis concerns be addressed?',
+    'What is the major teaching pearl of this encounter?'
+  ],
 })
 
 export const W4_CASES = [michaelTue, michaelWed, michaelThu, angelaTue, angelaWed, angelaThu, robertTue, robertWed, robertThu]

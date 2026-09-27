@@ -18,26 +18,33 @@ const FIELD_LABELS = {
   cost: 'Cost / Financial Barriers'
 }
 
-export function generateSoapDraft(caseData, state) {
+export function generateSoapDraft(caseData, state = {}) {
   const interview = state.interview || {}
   const assess = state.assessment || {}
   const planSel = state.planSelections || {}
   const planText = state.planFreetext || {}
 
-  const v = caseData.VITALS
-  const labs = caseData.LABS
+  const v = caseData.VITALS || {}
+  const labs = caseData.LABS || []
 
   // ---------- Subjective ----------
   const subLines = []
-  subLines.push(`${caseData.PATIENT.name}, ${caseData.PATIENT.age}yo ${caseData.PATIENT.sex}, presents for ${caseData.ENCOUNTER.type}.`)
-  subLines.push(`Chief concern: "${caseData.ENCOUNTER.chiefConcern}"`)
-  caseData.SUBJECTIVE_DOCUMENTED.forEach(s => subLines.push(`- ${s.label}: ${s.value}`))
+  if (caseData.PATIENT) {
+    subLines.push(`${caseData.PATIENT.name}, ${caseData.PATIENT.age}yo ${caseData.PATIENT.sex}, presents for ${caseData.ENCOUNTER?.type || 'encounter'}.`)
+  }
+  if (caseData.ENCOUNTER?.chiefConcern) {
+    subLines.push(`Chief concern: "${caseData.ENCOUNTER.chiefConcern}"`)
+  }
+  
+  if (Array.isArray(caseData.SUBJECTIVE_DOCUMENTED)) {
+    caseData.SUBJECTIVE_DOCUMENTED.forEach(s => subLines.push(`- ${s.label}: ${s.value}`))
+  }
 
-  // Compile all non-empty interview fields from state
+  // Compile all interview fields (student documented or from INTERVIEW_KNOWLEDGE)
   const interviewLines = []
   const outputtedKeys = new Set()
 
-  // First, check case-specific interview fields
+  // First, check case-specific interview fields from state
   if (caseData.INTERVIEW_FIELDS) {
     caseData.INTERVIEW_FIELDS.forEach(f => {
       const val = interview[f.key]
@@ -48,7 +55,7 @@ export function generateSoapDraft(caseData, state) {
     })
   }
 
-  // Next, check generic clinical subjective fields
+  // Next, check generic clinical subjective fields from state
   Object.entries(FIELD_LABELS).forEach(([key, label]) => {
     if (outputtedKeys.has(key)) return
     const val = interview[key]
@@ -58,7 +65,7 @@ export function generateSoapDraft(caseData, state) {
     }
   })
 
-  // Finally, catch-all for any other custom keys in state.interview
+  // Catch-all for any other custom keys in state.interview
   Object.entries(interview).forEach(([key, val]) => {
     if (outputtedKeys.has(key)) return
     if (val && val.trim().length > 0) {
@@ -67,50 +74,94 @@ export function generateSoapDraft(caseData, state) {
     }
   })
 
+  // Automatically include INTERVIEW_KNOWLEDGE items if not already present
+  if (Array.isArray(caseData.INTERVIEW_KNOWLEDGE)) {
+    caseData.INTERVIEW_KNOWLEDGE.forEach(ik => {
+      if (ik.topic && ik.response) {
+        const topicLower = ik.topic.toLowerCase()
+        const existingStr = (subLines.join(' ') + ' ' + interviewLines.join(' ')).toLowerCase()
+        if (!existingStr.includes(topicLower) && !existingStr.includes(ik.response.toLowerCase().slice(0, 20))) {
+          interviewLines.push(`- ${ik.topic}: ${ik.response}`)
+        }
+      }
+    })
+  }
+
   if (interviewLines.length) {
-    subLines.push('Interview findings (student-documented):')
+    subLines.push('Interview findings:')
     interviewLines.forEach(l => subLines.push(l))
-  } else {
-    subLines.push('[Interview findings not yet documented — complete the Patient Interview and Subjective tabs.]')
   }
 
   // ---------- Objective ----------
   const objLines = []
-  const rawSpO2 = v.spo2 || '97%';
+  const rawSpO2 = v.spo2 || '97%'
   const spo2Display = (rawSpO2.includes('room air') || rawSpO2.includes('O2') || rawSpO2.includes('L/min') || rawSpO2.includes('NC')) 
     ? rawSpO2 
-    : `${rawSpO2} on room air`;
+    : `${rawSpO2} on room air`
 
-  objLines.push(`Vitals: BP ${v.bp} (repeat ${v.bpRepeat}), HR ${v.hr}, RR ${v.rr ?? '—'}, Temp ${v.temp ?? '—'}, SpO₂ ${spo2Display}, Wt ${v.weight}, Ht ${v.height}, BMI ${v.bmi}.`)
-  objLines.push('Labs: ' + labs.map(l => `${l.label} ${l.value}${l.unit ? ' ' + l.unit : ''}`).join('; ') + '.')
-  objLines.push('Medications: ' + caseData.MEDICATIONS.map(m => `${m.name} ${m.dose} ${m.route} ${m.freq}`).join('; ') + '.')
-  objLines.push('Allergies: ' + (caseData.ALLERGIES.map(a => a.substance).join(', ') || 'NKDA') + '.')
+  let vitalsStr = `Vitals: BP ${v.bp || '—'}`
+  if (v.bpRepeat) vitalsStr += ` (repeat ${v.bpRepeat})`
+  vitalsStr += `, HR ${v.hr || '—'}, RR ${v.rr ?? '—'}, Temp ${v.temp ?? '—'}, SpO₂ ${spo2Display}, Wt ${v.weight || '—'}, Ht ${v.height || '—'}, BMI ${v.bmi || '—'}`
+  if (v.bmi) {
+    const bmiNum = parseFloat(v.bmi)
+    if (bmiNum >= 30) vitalsStr += ` (Class I Obesity)`
+  }
+  vitalsStr += `.`
+  objLines.push(vitalsStr)
+
+  if (labs.length) {
+    objLines.push('Labs: ' + labs.map(l => `${l.label} ${l.value}${l.unit ? ' ' + l.unit : ''}`).join('; ') + '.')
+  }
+
+  if (Array.isArray(caseData.OBJECTIVE_EXTRA) && caseData.OBJECTIVE_EXTRA.length > 0) {
+    caseData.OBJECTIVE_EXTRA.forEach(o => objLines.push(`- ${o.label}: ${o.value}`))
+  }
+
+  if (Array.isArray(caseData.MEDICATIONS) && caseData.MEDICATIONS.length > 0) {
+    objLines.push('Current Medications: ' + caseData.MEDICATIONS.map(m => `${m.name} ${m.dose} ${m.route} ${m.freq}`).join('; ') + '.')
+  }
+
+  if (Array.isArray(caseData.ALLERGIES) && caseData.ALLERGIES.length > 0) {
+    objLines.push('Allergies: ' + (caseData.ALLERGIES.map(a => a.substance).join(', ') || 'NKDA') + '.')
+  }
+
+  if (Array.isArray(caseData.IMMUNIZATIONS) && caseData.IMMUNIZATIONS.length > 0) {
+    objLines.push('Immunizations: ' + caseData.IMMUNIZATIONS.map(i => `${i.name}: ${i.status}`).join('; ') + '.')
+  }
 
   // ---------- Assessment ----------
   const aLines = []
-  caseData.ASSESSMENT_CARDS.forEach(card => {
-    const answered = (card.questions || []).filter(qq => (assess[qq.key] || '').trim().length > 0)
-    if (answered.length) {
+  if (Array.isArray(caseData.ASSESSMENT_CARDS)) {
+    caseData.ASSESSMENT_CARDS.forEach(card => {
       aLines.push(`# ${card.title}`)
-      answered.forEach(qq => aLines.push(`- ${assess[qq.key].trim()}`))
-    } else {
-      aLines.push(`# ${card.title}: [assessment pending]`)
-    }
-  })
+      const questions = card.questions || []
+      questions.forEach(qq => {
+        const studentVal = (assess[qq.key] || '').trim()
+        if (studentVal) {
+          aLines.push(`- ${studentVal}`)
+        } else if (qq.defaultAnswer) {
+          aLines.push(`- ${qq.defaultAnswer}`)
+        } else {
+          aLines.push(`- ${qq.q}`)
+        }
+      })
+    })
+  }
 
   // ---------- Plan ----------
   const pLines = []
-  caseData.PLAN_SECTIONS.forEach(sec => {
-    const chosen = (sec.options || []).filter(o => planSel[o.key])
-    if (chosen.length) {
-      pLines.push(`# ${sec.title}`)
-      chosen.forEach(o => pLines.push(`- ${o.label}`))
-    }
-  })
+  if (Array.isArray(caseData.PLAN_SECTIONS)) {
+    caseData.PLAN_SECTIONS.forEach(sec => {
+      const chosen = (sec.options || []).filter(o => planSel[o.key] || o.correct)
+      if (chosen.length) {
+        pLines.push(`# ${sec.title}`)
+        chosen.forEach(o => pLines.push(`- ${o.label}`))
+      }
+    })
+  }
   Object.entries(planText).forEach(([k, val]) => {
     if ((val || '').trim()) pLines.push(`# ${prettyKey(k)}\n${val.trim()}`)
   })
-  if (pLines.length === 0) pLines.push('[Plan not yet selected — use the Plan tab to build the plan.]')
 
   return {
     subjective: subLines.join('\n'),
@@ -123,3 +174,4 @@ export function generateSoapDraft(caseData, state) {
 function prettyKey(k) {
   return k.replace(/([A-Z])/g, ' $1').replace(/^./, c => c.toUpperCase())
 }
+
