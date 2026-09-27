@@ -1,0 +1,1064 @@
+WEEK 4
+VACS AI Patient & Grading Issue Report
+Patient A: Michael Thompson
+Final Clinical and Operational Audit
+Purpose: This report lists only confirmed system and data problems found by comparing the AI patient interview, the EMR screen shown to the student, the official Patient A answer key, and the AI grader. SOAP writing suggestions and personal review notes are excluded. Repeated problems are listed under each visit when they can affect grading independently.
+Quick Guide for Non-Clinical Readers
+Term
+Plain language meaning
+AI patient
+The simulated patient the student interviews.
+EMR
+The electronic patient chart shown to the student.
+Grader / rubric
+The AI scoring system and the facts it expects.
+Answer key
+The official source document describing the intended patient state for that visit.
+HFrEF
+Heart failure with reduced ejection fraction.
+HFimpEF
+Heart failure with improved ejection fraction after treatment.
+GDMT
+Guideline directed medical therapy for heart failure.
+LVEF
+Left ventricular ejection fraction, a measure of heart pumping function.
+BNP / NT proBNP
+Related but different blood tests used to assess heart failure related cardiac strain.
+HCTZ
+Hydrochlorothiazide, a diuretic used for blood pressure or fluid management.
+Final Review Summary
+This Patient A review contains 26 grouped findings across all 3 Week 4 visits. Only confirmed conflicts or missing information problems are included. Repeated issues are kept under each visit when they can affect grading independently. The overall pattern is a longitudinal synchronization failure: Tuesday and Thursday graders largely follow the official answer key, while Wednesday largely follows an alternate live case.
+Encounter
+Grouped issues
+Patient A – Michael Thompson – Tuesday Initial Visit
+10
+Patient A – Michael Thompson – Wednesday 3-Month Follow-Up
+8
+Patient A – Michael Thompson – Thursday 6-Month Follow-Up
+8
+Patient A – Michael Thompson – Tuesday Initial Visit
+10 confirmed system/data issues are included for this visit. Items are grouped so one underlying problem is not counted multiple times just because it caused several grader deductions.
+#
+Issue
+Problem type
+1
+Symptom duration, fatigue, and exercise tolerance returned by the AI
+patient do not match the grader case.
+AI patient and grader disagree
+2
+Hydrochlorothiazide restroom access adherence barrier required by the grader is directly denied by the AI patient.
+AI patient and grader disagree
+3
+Appendectomy required by the grader contradicts the AI patient surgical
+history.
+AI patient and grader disagree
+4
+Family history and paternal myocardial infarction age differ from the grader case.
+AI patient and grader disagree
+5
+Smoking exposure and alcohol use required by the grader are not returned by the AI patient.
+AI patient and grader disagree
+6
+Two Tuesday EMR screens show incompatible vital signs and
+anthropometric data for Michael.
+Internal EMR contradiction
+7
+The grader requires a third vital sign set that does not match the primary Tuesday vitals table.
+EMR and grader disagree
+8
+Potassium and cardiac biomarker data are not synchronized across the live
+EMR and grader.
+EMR and grader disagree
+9
+Exact laboratory, lipid, and echocardiogram data required by the grader are not available in the live EMR.
+Required information is unavailable
+10
+Preventive care and referral details required by the grader are not fully exposed to the student.
+Required information is unavailable
+Issue 1. Symptom duration, fatigue, and exercise tolerance returned by the AI patient do not match the grader case
+What the student saw or heard: When directly asked when symptoms began and how they changed, Michael says he cannot give an exact start date and describes the symptoms as something that gradually crept up on him. He reports that his energy has been about the same and that he can perform normal work and household activities, with windedness mainly when he climbs stairs quickly.
+What the grader expected: The grader and official Tuesday answer key require approximately 6 months of gradually worsening symptoms, fatigue as a positive symptom, reduced exercise tolerance, decreased physical activity, and an initial belief that the symptoms were due to aging, weight gain, or reduced fitness.
+Why this is a problem: The student asked the relevant symptom questions, but the AI patient returned a milder and less specific symptom history than the facts used for grading. Documenting the hidden 6-month course, fatigue, or reduced exercise tolerance would require replacing the fresh patient response with information the patient did not provide.
+Suggested fix: Synchronize the Tuesday symptom history across the AI patient, answer key, and grader. If the 6-month course, fatigue, reduced exercise tolerance, and initial symptom attribution are graded, the AI patient should return those facts when the student asks the matching questions.
+Evidence: Tuesday AI patient interview.
+Michael describes the live symptom history and cannot provide the intended 6-month timeline.
+Grader evidence: Tuesday grading feedback.
+The grader requires the hidden symptom duration, fatigue, reduced exercise tolerance, and attribution details.
+Issue 2. Hydrochlorothiazide restroom access adherence barrier required by the grader is directly denied by the AI patient
+What the student saw or heard: Michael is specifically asked whether he ever skips or delays the water pill because of urination, work, travel, or restroom access. He states that he takes it every day as prescribed and that restroom access has not been a problem.
+What the grader expected: The grader requires Michael to occasionally skip hydrochlorothiazide when he expects limited restroom access and deducts because the SOAP note documents the patient denial instead.
+Why this is a problem: This is a direct contradiction after the exact adherence barrier was queried. The student should not create an adherence problem that the AI patient explicitly denies.
+Suggested fix: Align hydrochlorothiazide adherence behavior across the AI patient, answer key, and grader. If restroom access is an intended barrier, the AI patient should disclose it when asked directly.
+Evidence: Tuesday AI patient interview.
+Michael states that he takes the water pill every day and restroom access has not been an issue.
+Grader evidence: Tuesday grading feedback.
+The grader requires the opposite hydrochlorothiazide adherence history.
+Issue 3. Appendectomy required by the grader contradicts the AI patient surgical history
+What the student saw or heard: When asked whether he has had any surgeries or procedures, Michael states that he cannot think of any prior surgery or procedure.
+What the grader expected: The official Master Profile and grader require an appendectomy at age 24 and deduct when prior surgery is denied.
+Why this is a problem: A surgical history is a patient specific fact. The student should not document an appendectomy after the simulated patient denies prior surgery.
+Suggested fix: Persist the intended appendectomy history in the AI patient memory and visible chart. If appendectomy is graded, the patient should disclose it when asked about past surgery or procedures.
+Evidence: Tuesday AI patient interview.
+Michael denies prior surgeries or procedures.
+Answer key evidence: Patient A Master Profile.
+The official Master Profile includes appendectomy at age 24.
+Issue 4. Family history and paternal myocardial infarction age differ from the grader case
+What the student saw or heard: Michael reports that his father had coronary artery disease, heart failure, and a heart attack at age
+64. He reports that his mother has hypertension.
+What the grader expected: The grader and Master Profile require paternal hypertension with myocardial infarction at age 62 and maternal type 2 diabetes mellitus.
+Why this is a problem: The student asked for family history and documented the response provided. Substituting a different myocardial infarction age and different parental diagnoses would make the SOAP note inconsistent with the interview.
+Suggested fix: Use one persistent family history across the Master Profile, AI patient, EMR, and grader. The same family history should be returned on every encounter when the student asks for it.
+Evidence: Tuesday AI patient interview.
+Michael gives paternal MI at age 64 and maternal hypertension.
+Answer key evidence: Tuesday official answer key.
+The intended family history is paternal hypertension and MI at age 62 with maternal type 2 diabetes.
+Issue 5. Smoking exposure and alcohol use required by the grader are not returned by the AI patient
+What the student saw or heard: Michael reports that he is a former smoker who quit about 5 years ago but cannot remember the amount he previously smoked. He describes alcohol use as rare, usually a glass of wine or beer on special occasions.
+What the grader expected: The grader and answer key require a 20-pack year smoking history and 1 to 2 alcoholic beverages on weekends.
+Why this is a problem: The student can document former smoking and occasional alcohol use, but the exact pack year exposure and weekend drinking pattern are not available from the live interview. Adding them would require inventing patient history.
+Suggested fix: Synchronize tobacco exposure and alcohol quantity/frequency across the AI patient and grader. If exact pack years and weekend drinking are graded, the patient should return those details when directly asked.
+Evidence: Tuesday AI patient interview.
+Michael cannot quantify prior smoking exposure and describes rare special occasion alcohol use.
+Answer key evidence: Tuesday official answer key.
+The answer key requires 20 pack years and 1 to 2 alcoholic beverages on weekends.
+Issue 6. Two Tuesday EMR screens show incompatible vital signs and anthropometric data for Michael
+What the student saw or heard: One Tuesday Vitals table shows BP 138/86 mmHg, repeat BP 136/84 mmHg, HR 82 bpm, weight 102 kg, height 5 feet 10 inches, and BMI 32.2 kg/m2. A separate Tuesday Key vitals screen supplied from the same Patient A encounter shows BP 128/78 mmHg, repeat BP 126/76 mmHg, HR 88 bpm, weight 84 kg, height 5 feet 5 inches, and BMI 30.8 kg/m2.
+What the grader expected: The grader expects yet another Tuesday objective state based on the official answer key. This issue is present even before comparing the student data with the grader because the student facing Tuesday evidence itself is internally inconsistent.
+Why this is a problem: Two different heights, weights, heart rates, and blood pressures cannot represent the same patient at the same encounter timestamp. The difference is too large to be explained by rounding or repeat measurement.
+Suggested fix: Identify which Tuesday objective dataset is intended and remove the other one from the Patient A encounter. All Tuesday widgets should read from the same vital sign and anthropometric source.
+Evidence: Tuesday detailed Vitals table.
+One Tuesday screen shows BP 138/86, HR 82, weight 102 kg, height 5 feet 10 inches, and BMI 32.2.
+Evidence: Tuesday Key vitals panel.
+A second Tuesday screen shows BP 128/78, HR 88, weight 84 kg, height 5 feet 5 inches, and BMI 30.8.
+Issue 7. The grader requires a third vital sign set that does not match the primary Tuesday vitals table
+What the student saw or heard: The primary Tuesday Vitals table shows office BP 138/86 mmHg, repeat BP 136/84 mmHg, respiratory rate 16/min, temperature 98.6 F, and SpO2 96%.
+What the grader expected: The grader and official answer key expect office BP 138/84 mmHg, respiratory rate 18/min, temperature
+98.4 F, and SpO2 98% on room air.
+Why this is a problem: The student is penalized for transcribing objective values exactly as displayed in the main Tuesday Vitals table. Combined with the second conflicting Key vitals panel, the grader effectively introduces a third objective state.
+Suggested fix: Choose one Tuesday vital sign dataset and update every EMR widget and the grader together. The grader should compare the SOAP note against the exact values displayed to the student.
+Evidence: Tuesday primary Vitals table.
+The primary Tuesday Vitals screen displays BP 138/86, RR 16, temperature 98.6 F, and SpO2 96%.
+Answer key evidence: Tuesday intended vital signs.
+The official answer key begins the intended Tuesday vital sign set.
+Grader evidence: Tuesday grading feedback.
+The grader expects the answer key values rather than the primary live Vitals table.
+Issue 8. Potassium and cardiac biomarker data are not synchronized across the live EMR and grader
+What the student saw or heard: The live laboratory panel reports potassium 4.2 mEq/L and NT proBNP 320 pg/mL.
+What the grader expected: The grader and official answer key expect potassium 4.3 mEq/L and BNP 320 pg/mL.
+Why this is a problem: Potassium can affect medication safety decisions, and BNP and NT proBNP are related but distinct laboratory tests. The student should not be penalized for using the displayed potassium value or exact biomarker name.
+Suggested fix: Synchronize potassium and the natriuretic peptide assay across the answer key, live laboratory panel, educational prompts, trends, and grader. Use one exact test name and one exact value.
+Evidence: Tuesday live laboratory panel.
+The live EMR displays potassium 4.2 mEq/L and NT proBNP 320 pg/mL. Answer key evidence: Tuesday laboratory data.
+The official answer key uses BNP 320 pg/mL and a different potassium value from the live panel.
+Issue 9. Exact laboratory, lipid, and echocardiogram data required by the grader are not available in the live EMR
+What the student saw or heard: The live CMP panel exposes only potassium, serum creatinine, and eGFR. The Lipid Panel screen says that no results are available for the visit, and the Missing / Needed Labs screen also shows no results. The visible echocardiogram information shows LVEF 35% and mild LV dilation but does not display the complete intended valvular statement.
+What the grader expected: The grader and answer key require sodium, BUN, glucose, AST, ALT, full lipid values, and no significant valvular abnormalities, among other objective facts.
+Why this is a problem: These are exact objective values and findings. A student cannot safely infer or invent them when the student facing panels do not display them.
+Suggested fix: Expose every objective fact that is used for grading or remove hidden values from the rubric. If a test is intentionally unavailable, the grader should accept documentation that the result is unavailable.
+Evidence: Tuesday live objective panels.
+The live CMP is incomplete and the lipid and Missing / Needed Labs panels show no results.
+Answer key evidence: Tuesday intended laboratory and echocardiogram data.
+The official answer key contains BNP, full lipid values, and the intended echocardiogram interpretation.
+Issue 10. Preventive care and referral details required by the grader are not fully exposed to the student
+What the student saw or heard: The live immunization panel displays influenza as up to date but does not display the full COVID, pneumococcal, Shingrix, and Tdap history used by the grader. The visible encounter identifies an ambulatory care clinic and says the patient was referred for GDMT optimization after a new nonischemic cardiomyopathy diagnosis, but it does not clearly identify the exact primary care referral pathway and cardiology clinic qualifier required by the grader.
+What the grader expected: The grader expects COVID primary series status, pneumococcal status, Shingrix status, a Tdap interval, PCP referral, progressive dyspnea and reduced exercise tolerance as referral triggers, and an ambulatory care cardiology clinic setting.
+Why this is a problem: These are chart facts rather than clinical interpretations. The student should not have to infer a referral source, clinic type, or vaccine history that is not visible.
+Suggested fix: Display the complete graded immunization record and the exact referral source, referral reason, and clinic setting in the student facing encounter. Otherwise remove those exact facts from grading.
+Evidence: Tuesday live immunization panel.
+Only influenza is visible in the live Tuesday immunization section.
+Answer key evidence: Tuesday intended referral and preventive care information.
+The official answer key defines the referral and clinic context.
+Answer key evidence: Tuesday immunization and social history.
+The official answer key contains the additional preventive care information.
+Patient A – Michael Thompson – Wednesday 3-Month Follow-Up
+8 confirmed system/data issues are included for this visit. Items are grouped so one underlying problem is not counted multiple times just because it caused several grader deductions.
+#
+Issue
+Problem type
+1
+The live medication and GDMT state does not match the official Wednesday case.
+Answer key and live case disagree
+2
+Symptom response and functional status returned by the AI patient do not
+match the official follow up history.
+AI patient and answer key
+disagree
+3
+Home blood pressure and weight monitoring expected by the answer key are not present in the live AI patient.
+AI patient and answer key disagree
+4
+Adherence and lifestyle progress in the answer key are not returned by the live AI patient.
+AI patient and answer key disagree
+5
+Visible Wednesday vital signs and weight differ from the official answer key while the grader accepts the live values.
+Answer key and grader disagree
+6
+The grader requires a 2 kg weight decrease that is supported by neither the live baseline nor the answer key.
+Grader trend calculation mismatch
+7
+BNP and NT proBNP naming is inconsistent across the Wednesday
+sources.
+Terminology / data mismatch
+8
+Three month follow up vitals and laboratory results reuse the baseline timestamps.
+Longitudinal data integrity issue
+Issue 1. The live medication and GDMT state does not match the official Wednesday case
+What the student saw or heard: The live Wednesday EMR and AI patient show sacubitril/valsartan 24/26 mg twice daily, carvedilol
+3.125 mg twice daily, spironolactone 25 mg daily, dapagliflozin 10 mg daily, hydrochlorothiazide 25 mg daily, and atorvastatin 40 mg daily. The live clinical problem is symptomatic orthostasis while the patient is already receiving all four foundational HFrEF classes.
+What the grader expected: The official Wednesday answer key expects sacubitril/valsartan 49/51 mg twice daily, metoprolol succinate 50 mg daily, empagliflozin 10 mg daily, atorvastatin 40 mg daily, and specifically states that the patient is not yet receiving an MRA. The intended learning task is to evaluate spironolactone initiation. The Wednesday grader, however, praises the alternate live regimen and hydrochlorothiazide discontinuation.
+Why this is a problem: The official case and the live/grader case represent different stages of treatment and lead to different clinical decisions. A student cannot simultaneously initiate an MRA and discontinue nonessential blood pressure therapy because the MRA is already present in the live case.
+Suggested fix: Choose one Wednesday longitudinal state and update the answer key, live EMR, AI patient, and grader together. The medication list and learning objective should be identical across components.
+Evidence: Wednesday live medication list.
+The live Wednesday EMR shows all four foundational HFrEF classes plus hydrochlorothiazide.
+Answer key evidence: Wednesday intended medication list.
+The official Wednesday answer key uses a different regimen and no MRA. Grader evidence: Wednesday AI feedback.
+The grader accepts the live orthostasis and hydrochlorothiazide discontinuation scenario.
+Issue 2. Symptom response and functional status returned by the AI patient do not match the official follow up history
+What the student saw or heard: The live AI patient reports that edema is completely gone, he has not noticed shortness of breath lately, stairs are fine, and he can perform usual activities without meaningful fatigue or dyspnea. His primary problem is brief positional dizziness.
+What the grader expected: The official answer key expects improvement but persistent mild symptoms: residual shortness of breath with more strenuous exertion, improved but not fully normal exercise tolerance, walking about 20 to 30 minutes most days, improved stair tolerance, and occasional mild dizziness.
+Why this is a problem: The follow up visit is supposed to assess change from baseline. The live patient is substantially more improved than the intended case, which changes NYHA interpretation and the rationale for titration.
+Suggested fix: Carry the intended longitudinal symptom state into the Wednesday AI patient. The same degree of improvement and residual limitation should appear in the answer key, interview, and grader.
+Evidence: Wednesday AI patient interview.
+The live patient reports near complete symptom resolution apart from positional dizziness.
+Evidence: Wednesday AI patient interview.
+The live patient reports stairs are fine and edema is gone.
+Answer key evidence: Wednesday intended symptom history.
+The answer key expects residual exertional symptoms and walking 20 to 30 minutes most days.
+Issue 3. Home blood pressure and weight monitoring expected by the answer key are not present in the live AI patient
+What the student saw or heard: Michael states that he is not consistently weighing himself and does not have a routine for home blood pressure or pulse monitoring, so he cannot provide typical readings.
+What the grader expected: The answer key requires daily stable weights, regular home blood pressure monitoring with an average of 120/74 mmHg, and average home heart rate of 66 bpm.
+Why this is a problem: The student directly asked about home monitoring. The required daily routine and numeric averages cannot be documented when the patient says the routine does not exist.
+Suggested fix: Synchronize home monitoring behavior across the follow up AI patient, visible chart, and answer key. If averages are graded, make the log or averages available to the student.
+Evidence: Wednesday AI patient interview.
+Michael reports inconsistent weights and no home BP or pulse routine.
+Answer key evidence: Wednesday home monitoring log.
+The answer key requires daily stable weights and specific home BP and HR averages.
+Issue 4. Adherence and lifestyle progress in the answer key are not returned by the live AI patient
+What the student saw or heard: The live patient reports that he cannot recall missing doses and denies barriers. He says he has made no specific dietary changes and no specific exercise or activity changes since the previous visit.
+What the grader expected: The official answer key requires occasional missed evening sacubitril/valsartan doses about once every 1 to 2 weeks, walking 20 to 30 minutes most days, and active efforts to reduce sodium and read food labels.
+Why this is a problem: These details are used to grade adherence and self-management progress. The student cannot report improvement or a missed dose pattern that the patient explicitly does not provide.
+Suggested fix: Persist the intended adherence and lifestyle history into the Wednesday AI patient. If the grader values a specific missed dose frequency or sodium and exercise progress, those facts should be returned by the patient when asked.
+Evidence: Wednesday AI patient interview.
+The patient reports consistent adherence without a recalled missed dose pattern.
+Evidence: Wednesday AI patient interview.
+The patient reports no specific diet or exercise changes.
+Answer key evidence: Wednesday intended social and lifestyle progress.
+The answer key requires weekend alcohol use, walking most days, and sodium reduction.
+Issue 5. Visible Wednesday vital signs and weight differ from the official answer key while the grader accepts the live values
+What the student saw or heard: The live EMR shows BP 106/68 mmHg, repeat BP 104/66 mmHg, HR 62 bpm, temperature 98.6 F, SpO2 97%, and weight 101 kg.
+What the grader expected: The official Wednesday answer key expects BP 118/72 mmHg, HR 68 bpm, temperature 98.2 F, SpO2 98% on room air, and weight 99 kg. The Wednesday grader nevertheless treats the live low blood pressure and orthostasis state as the correct case.
+Why this is a problem: These are not trivial differences. They determine whether GDMT should be titrated, held, or deescalated. The answer key and grader should not point to different objective states.
+Suggested fix: Create one Wednesday objective dataset and use it for the answer key, live EMR, and grader. Regression testing should compare the exact values before release.
+Evidence: Wednesday live vital signs.
+The live Wednesday EMR shows the low blood pressure orthostasis state.
+Answer key evidence: Wednesday intended vital signs.
+The official answer key lists different BP, HR, temperature, and weight values.
+Grader evidence: Wednesday AI feedback.
+The grader praises the live orthostasis assessment rather than the official answer key state.
+Issue 6. The grader requires a 2 kg weight decrease that is supported by neither the live baseline nor the answer key
+What the student saw or heard: The live Tuesday weight is 102 kg, and the live Wednesday weight is 101 kg, which represents a 1 kg decrease.
+What the grader expected: The Wednesday grader deducts because the SOAP note does not describe 101 kg as a 2 kg decrease from baseline. The official answer key also does not support that value because it lists 102 kg on Tuesday and 99 kg on Wednesday, which would be a 3 kg decrease.
+Why this is a problem: The required trend matches neither available data source. This suggests a stale or third baseline value in the grading logic and makes the trend deduction impossible to reproduce.
+Suggested fix: Calculate trend values from the same encounter dataset shown to the student. Add automated checks that compare the baseline and follow up values used by the grader before a trend-based deduction is generated.
+Evidence: Tuesday live baseline weight.
+The live Tuesday weight is 102 kg.
+Evidence: Wednesday live follow up weight.
+The live Wednesday weight is 101 kg.
+Grader evidence: Wednesday AI feedback.
+The grader states that 101 kg should be interpreted as a 2 kg decrease.
+Issue 7. BNP and NT proBNP naming is inconsistent across the Wednesday sources
+What the student saw or heard: The live Wednesday laboratory panel identifies NT proBNP 165 pg/mL, and the grader also refers to NT proBNP 165 pg/mL with baseline NT proBNP 320 pg/mL.
+What the grader expected: The official Wednesday answer key uses BNP 165 pg/mL with prior BNP 320 pg/mL, and the Guiding Question asks why BNP trending is useful.
+Why this is a problem: BNP and NT proBNP are related but different assays. Reusing the same numeric values while changing the test name creates educational and grading ambiguity.
+Suggested fix: Choose one natriuretic peptide assay for the case and use the exact same name in all visits, answer keys, laboratory panels, educational questions, trends, and grader rules.
+Evidence: Wednesday live cardiac biomarker panel.
+The live Wednesday EMR identifies NT proBNP 165 pg/mL.
+Evidence: Wednesday Guiding Question.
+The educational prompt asks about BNP trending.
+Answer key evidence: Wednesday intended laboratory data.
+The official answer key also uses BNP rather than NT proBNP.
+Issue 8. Three month follow up vitals and laboratory results reuse the baseline timestamps
+What the student saw or heard: The Wednesday encounter is labeled a 3 month follow up, but the vital sign table still uses 06/23/2026 at 09:14, the same timestamp used on Tuesday. The Wednesday laboratory values also use the same 06/09/2026 at 07:50 collection time as the Tuesday baseline despite different potassium, creatinine, eGFR, and NT proBNP results.
+What the grader expected: The answer key treats Wednesday as a true 3 month longitudinal follow up with new objective data and trends.
+Why this is a problem: Different measurements cannot all come from the same exact encounter time and the same exact laboratory specimen. The static metadata makes valid longitudinal trends clinically impossible as displayed.
+Suggested fix: Assign encounter specific vital sign dates and separate laboratory collection dates for the 3-month visit. Trend logic should reference dated results rather than reusing baseline timestamps.
+Evidence: longitudinal vital sign timestamps.
+Tuesday, Wednesday, and Thursday use the same vital sign timestamp despite different values.
+Evidence: longitudinal laboratory timestamps.
+The biomarker and renal values change while the collection timestamp remains identical.
+Patient A – Michael Thompson – Thursday 6-Month Follow-Up
+8 confirmed system/data issues are included for this visit. Items are grouped so one underlying problem is not counted multiple times just because it caused several grader deductions.
+#
+Issue
+Problem type
+1
+HFimpEF and repeat LVEF improvement required by the grader are not visible in the live Thursday case.
+Required information is unavailable
+2
+Medication agents and doses in the live Thursday EMR do not match the grader case.
+EMR and grader disagree
+3
+Thursday vital signs and weight in the live EMR differ from the values used by the grader.
+EMR and grader disagree
+4
+Daily home monitoring, sodium restriction, and activity required by the grader conflict with the AI patient.
+AI patient and grader disagree
+5
+Surgical, family, smoking, and alcohol history again conflict with the
+persistent grader case.
+AI patient and grader disagree
+6
+Thursday preventive care updates required by the answer key are not exposed in the live immunization panel.
+Required information is unavailable
+7
+The same Thursday encounter is labeled both a 6 Month Follow Up and an Initial Ambulatory Care Pharmacist Visit.
+Internal EMR contradiction
+8
+Six month follow up vitals and laboratory results continue to reuse baseline
+timestamps.
+Longitudinal data integrity issue
+Issue 1. HFimpEF and repeat LVEF improvement required by the grader are not visible in the live Thursday case
+What the student saw or heard: The live Thursday problem list states HFrEF, stable, requires GDMT titration. The live evidence shows NT proBNP 92 pg/mL but does not display a repeat LVEF of 45% or a visible prior to current EF trend. The patient asks whether doses still need to be increased rather than whether medications can be stopped because the EF improved.
+What the grader expected: The official answer key and grader require HFimpEF with LVEF improving from 35% to 45%, interpretation of improved systolic function, and counseling that treatment success does not mean cure.
+Why this is a problem: HFimpEF requires objective EF improvement. A student should not diagnose HFimpEF or document LVEF 45% when the repeat echocardiogram is not visible in the live chart.
+Suggested fix: Expose the repeat echocardiogram and the 35% to 45% EF trend in the Thursday live EMR before grading HFimpEF. If the live HFrEF titration case is intended instead, update the answer key and grader to that case.
+Evidence: Thursday live cardiac data.
+The live Thursday encounter shows NT proBNP 92 pg/mL without the required repeat EF evidence.
+Answer key evidence: Thursday intended BNP and repeat echocardiogram data.
+The official answer key contains BNP 92 and repeat LVEF 45% from a previous 35%.
+Grader evidence: Thursday grading feedback.
+The grader requires the hidden EF trend and HFimpEF interpretation.
+Issue 2. Medication agents and doses in the live Thursday EMR do not match the grader case
+What the student saw or heard: The live Thursday medication list shows sacubitril/valsartan 24/26 mg twice daily, carvedilol 3.125 mg twice daily, spironolactone 25 mg daily, dapagliflozin 10 mg daily, and atorvastatin 40 mg daily.
+What the grader expected: The official answer key and grader expect sacubitril/valsartan 97/103 mg twice daily, metoprolol succinate 100 mg daily, empagliflozin 10 mg daily, spironolactone 25 mg daily, and atorvastatin 40 mg daily.
+Why this is a problem: The student is penalized for accurately documenting the live medication list. The differences are clinically important because they change dose optimization, heart rate control, tolerability, and counseling.
+Suggested fix: Make the Thursday EMR and grader use the same maintenance regimen. If the answer key regimen is intended, update the live medication list and AI patient medication memory to those exact agents and doses.
+Evidence: Thursday live medication list.
+The live Thursday EMR displays low dose Entresto, carvedilol, dapagliflozin, spironolactone, and atorvastatin.
+Answer key evidence: Thursday intended medication list.
+The official answer key uses high dose Entresto, metoprolol succinate, and empagliflozin.
+Grader evidence: Thursday grading feedback.
+The grader deducts for the live medication names and doses.
+Issue 3. Thursday vital signs and weight in the live EMR differ from the values used by the grader
+What the student saw or heard: The live Thursday EMR shows BP 122/78 mmHg, repeat BP 120/76 mmHg, HR 70 bpm, temperature 98.6 F, SpO2 97%, weight 101 kg, and BMI 31.9 kg/m2.
+What the grader expected: The answer key and grader expect BP 112/68 mmHg, HR 62 bpm, temperature 98.1 F, SpO2 98% on room air, weight 97 kg, and BMI 30.7 kg/m2.
+Why this is a problem: The SOAP note uses the actual visible objective measurements but is penalized for not using hidden values. These differences also affect decisions about further GDMT titration and tolerability.
+Suggested fix: Synchronize Thursday vitals and anthropometrics across the live EMR, answer key, and grader. Objective data should be graded against the exact values displayed to the student.
+Evidence: Thursday live vital signs.
+The live Thursday EMR shows BP 122/78, HR 70, weight 101 kg, and BMI 31.9.
+Answer key evidence: Thursday intended vital signs.
+The official answer key lists a different BP, HR, temperature, and weight state.
+Grader evidence: Thursday grading feedback.
+The grader requires the different hidden vital signs and weight.
+Issue 4. Daily home monitoring, sodium restriction, and activity required by the grader conflict with the AI patient
+What the student saw or heard: Michael states that he does not regularly weigh himself at home, cannot describe day to day weight changes, has not been given a specific sodium or fluid goal, has not made major lifestyle changes, and does not have a structured exercise routine.
+What the grader expected: The answer key and grader require stable daily weights, home BP and HR monitoring, active sodium restriction, improved dietary habits, and walking 30 to 40 minutes most days.
+Why this is a problem: The student asked about each of these self-management behaviors and documented the responses returned by the AI patient. Adding a daily routine or sodium goal would require inventing data.
+Suggested fix: Persist the intended maintenance behaviors in the Thursday AI patient memory and visible chart. If daily weights, sodium restriction, and regular walking are graded, the patient should report them when directly asked.
+Evidence: Thursday patient interview: home weight monitoring.
+Michael states that he does not weigh himself regularly at home.
+Evidence: Thursday patient interview: sodium and fluid goals.
+Michael states that he has not been given a specific sodium or fluid target.
+Evidence: Thursday patient interview: lifestyle change.
+Michael reports no major lifestyle change or structured exercise routine.
+Answer key evidence: Thursday intended home monitoring and lifestyle state.
+The answer key requires daily stable weights and specific home BP and HR values.
+Issue 5. Surgical, family, smoking, and alcohol history again conflict with the persistent grader case
+What the student saw or heard: The Thursday AI patient again reports no recalled surgery, father with coronary artery disease, heart failure, and myocardial infarction at age 64, mother with hypertension, former smoking without a recalled amount, and rare alcohol limited to special occasions.
+What the grader expected: The persistent official case requires appendectomy at age 24, father with hypertension and myocardial infarction at age 62, mother with type 2 diabetes, 20 pack years of smoking, and 1 to 2 alcoholic drinks on weekends. The grader deducts for the live alternate history.
+Why this is a problem: These are stable historical facts and should not change by visit. The repeated contradiction confirms that different case versions are persisting across components.
+Suggested fix: Use one persistent Patient A history object for all visits. Surgical, family, tobacco, and alcohol history should be loaded from the same source into the AI patient, chart, answer key, and grader.
+Evidence: Thursday patient interview: surgery.
+Michael again denies prior surgery or procedures.
+Evidence: Thursday AI patient interview.
+Michael gives the alternate family and medication history.
+Evidence: Thursday AI patient interview.
+Michael gives the alternate smoking and alcohol history.
+Answer key evidence: official persistent history.
+The Master Profile contains the intended appendectomy and persistent patient history.
+Issue 6. Thursday preventive care updates required by the answer key are not exposed in the live immunization panel
+What the student saw or heard: The live Thursday immunization section shows influenza as up to date and does not display the new pneumococcal vaccine or Shingrix dose described in the official follow up case.
+What the grader expected: The Thursday answer key states that pneumococcal vaccine was received since the last visit and Shingrix dose number 1 was received. The grader also deducts for missing preventive care items.
+Why this is a problem: The student cannot document interval vaccine updates that are not visible in the chart and are not provided by the patient.
+Suggested fix: Expose the Thursday preventive care updates in the live immunization panel if they are part of the case. If the panel remains limited to influenza, remove the hidden vaccine requirements from grading.
+Evidence: Thursday live immunization panel.
+The live Thursday panel displays influenza only.
+Answer key evidence: Thursday intended immunization updates.
+The official answer key lists pneumococcal vaccination and Shingrix dose number 1 since the previous visit.
+Issue 7. The same Thursday encounter is labeled both a 6 Month Follow Up and an Initial Ambulatory Care Pharmacist Visit
+What the student saw or heard: The encounter header identifies Thursday as a 6 Month Follow Up. Inside the Subjective section, the documented history metadata says Initial Ambulatory Care Pharmacist Visit.
+What the grader expected: The official answer key defines the encounter as the scheduled 6 month follow up and maintenance phase assessment.
+Why this is a problem: The visit stage determines how the student interprets treatment history, longitudinal response, medication titration, and expected follow up data. Two stage labels within the same encounter are internally contradictory.
+Suggested fix: Change the Subjective metadata to 6 Month Follow Up or clearly label it as historical information from an earlier visit if that is the intended design.
+Evidence: Thursday encounter header.
+The live header identifies Thursday as a 6 Month Follow Up.
+Evidence: Thursday Subjective metadata.
+The same encounter labels the documented history as an Initial Ambulatory Care Pharmacist Visit.
+Issue 8. Six month follow up vitals and laboratory results continue to reuse baseline timestamps
+What the student saw or heard: The Thursday encounter is labeled a 6 month follow up but the vital signs again use 06/23/2026 at 09:14 and the laboratory results again use 06/09/2026 at 07:50, the same timestamps used on earlier encounters despite different values.
+What the grader expected: The official answer key presents Thursday as a later maintenance visit with new laboratory and clinical trend data.
+Why this is a problem: One recorded time and one laboratory specimen cannot produce multiple different result sets across months. The unchanged timestamps break the longitudinal record and make trend interpretation unreliable.
+Suggested fix: Assign encounter specific dates and laboratory collection times for the 6-month visit. All trend logic should use those actual dated results.
+Evidence: longitudinal vital sign timestamps.
+All three visits use the same vital sign timestamp despite different values.
+Evidence: longitudinal laboratory timestamps.
+All three visits use the same laboratory collection timestamp despite changing results.
+Patient An Overall Pattern
+Summary for developer handoff
+The official answer key itself presents a coherent intended progression from newly diagnosed HFrEF on Tuesday, to partial GDMT with MRA still missing on Wednesday, to HFimpEF on optimized long-term therapy on Thursday. The live VACS components do not consistently render or grade that progression. Tuesday and Thursday graders largely follow the official answer key while the live EMR and AI patient use a different patient state. Wednesday is different because the live EMR, AI patient, and grader largely agree with one another but use an alternate state that conflicts with the official Wednesday answer key.
+Suggested system level fix: Create one canonical longitudinal Patient A state for each encounter and require the EMR renderer, AI patient memory, teaching prompts, answer key, and grader to load that same version. Add automated comparison tests for medications, symptoms, vitals, labs, problem list, preventive care, historical data, and encounter timestamps before release.
+Source Materials Reviewed
+Official Patient A Master Profile and official Tuesday, Wednesday, and Thursday answer keys from the uploaded answer key ZIP.
+Tuesday live EMR screenshots, full AI patient interview, SOAP source, and AI grader feedback.
+Wednesday live EMR screenshots, full AI patient interview, SOAP source, and AI grader feedback.
+Thursday live EMR screenshots, full AI patient interview, SOAP source, and AI grader feedback.
+Only confirmed conflicts or unavailable information problems are counted as issues. Routine SOAP writing opportunities are not counted as VACS defects.
+WEEK 4
+VACS AI Patient & Grading Issue Report Patient B: Angela Brooks
+Clinical and Operational Audit
+PurposeThis report lists confirmed or strongly supported VACS system, data synchronization, and grading conflicts for Patient B, Angela Brooks. It separates software or data problems from ordinary SOAP documentation opportunities. The student facing EMR, AI patient interview, rubric or grader reference, and grader feedback are treated as separate evidence sources.PurposeThis report lists confirmed or strongly supported VACS system, data synchronization, and grading conflicts for Patient B, Angela Brooks. It separates software or data problems from ordinary SOAP documentation opportunities. The student facing EMR, AI patient interview, rubric or grader reference, and grader feedback are treated as separate evidence sources.
+Purpose
+This report lists confirmed or strongly supported VACS system, data synchronization, and grading conflicts for Patient B, Angela Brooks. It separates software or data problems from ordinary SOAP documentation opportunities. The student facing EMR, AI patient interview, rubric or grader reference, and grader feedback are treated as separate evidence sources.
+Purpose
+This report lists confirmed or strongly supported VACS system, data synchronization, and grading conflicts for Patient B, Angela Brooks. It separates software or data problems from ordinary SOAP documentation opportunities. The student facing EMR, AI patient interview, rubric or grader reference, and grader feedback are treated as separate evidence sources.
+Quick Guide for Non-Clinical Readers
+Term
+Plain language meaning
+AI patient
+The simulated patient the student interviews.
+EMR
+The electronic patient chart shown to the student.
+Grader / rubric
+The AI scoring system and the facts it expects.
+AFib
+Atrial fibrillation, an irregular heart rhythm.
+HFrEF
+Heart failure with reduced ejection fraction.
+LVEF
+The percentage used to describe how strongly the left ventricle pumps.
+DOAC
+A direct oral anticoagulant, such as apixaban.
+CBC
+Complete blood count.
+NT proBNP
+A blood marker used in heart failure assessment.
+Current Draft Review Summary
+This working draft contains 26 grouped system and data findings across Angela Brooks' three Week 4 encounters. Repeated conflicts are retained under each visit when they can independently affect the student experience or grading. Ordinary SOAP writing improvements are not counted as system defects.
+Encounter
+Grouped issues in current draft
+Tuesday Initial Visit
+6
+Wednesday 3 Month Follow Up
+10
+Thursday 6 Month Follow Up
+10
+Draft note: the Thursday section can still be updated when the final screenshot set is supplied. The current report is intentionally built from evidence already provided.
+Patient B – Angela Brooks – Tuesday Initial Visit
+6 grouped system or data issues are included in this working draft for this visit. Items are grouped so one underlying problem is not counted multiple times only because it produced several rubric deductions.
+#
+Issue
+Problem type
+1
+Patient age conflicts with the displayed date of birth
+Internal EMR inconsistency
+2
+The AI patient and grader use different adherence, cost, palpitation, and medication understanding histories
+AI patient and grader disagree
+3
+Past medical, surgical, and family history returned by the AI patient does not match the grader reference
+AI patient and grader disagree
+4
+Atorvastatin 40 mg daily is required by the grader but is absent from the live medication list and patient reconciliation
+EMR and AI patient vs grader
+5
+The grader requires clinical values and examination findings that are not visible in the student facing EMR
+Required information is unavailable
+6
+Vaccine statuses expected by the grader are not supported by the AI patient or visible EMR
+Required information is unavailable
+Issue 1. Patient age conflicts with the displayed date of birth
+What the student saw or heard: The Tuesday header identifies Angela as 64 years old while also displaying a date of birth of 03/12/1972. The encounter data are dated June 2026.
+What the grader or rubric expected: The rubric consistently grades Angela as a 64-year-old woman.
+Why this is a problem: A March 1972 date of birth corresponds to age 54 in June 2026, not age 64. The chart therefore contains two incompatible demographic facts. Age can affect clinical risk calculations and medication decisions, so the student should not have to decide which demographic field is authoritative.
+Suggested fix: Correct either the age or date of birth and use the same demographic value across every Week 4 encounter and grader reference.
+Evidence – Tuesday EMR header displays both age 64 and DOB 03/12/1972.
+Issue 2. The AI patient and grader use different adherence, cost, palpitation, and medication understanding histories
+What the student saw or heard: Angela reports that Eliquis costs about $50 per month, she tried to stretch the supply, then ran out and stopped it completely. She says the other heart failure medicines are taken pretty regularly. She reports occasional fluttering or an irregular beat and clearly states that Eliquis is intended to reduce stroke risk from AFib.
+What the grader or rubric expected: The grader expects apixaban and sacubitril/valsartan doses to be missed about 2 to 3 times per week, expects both medications to be expensive, expects denial of significant palpitations, and expects a knowledge gap about apixaban and stroke prevention.
+Why this is a problem: The student is penalized for preserving the interview. Complete anticoagulant discontinuation is clinically different from intermittent missed doses, and documented understanding of stroke prevention is the opposite of the expected knowledge deficit.
+Suggested fix: Choose one Tuesday history and synchronize the AI patient, EMR, and grader. If the grader version is intended, the AI patient must return those answers when directly asked.
+Evidence – Tuesday interview shows Eliquis cost related discontinuation and the patient stating that AFib treatment lowers stroke risk.
+Issue 3. Past medical, surgical, and family history returned by the AI patient does not match the grader reference
+What the student saw or heard: Angela names atrial fibrillation and heart failure as her known conditions, denies any prior surgeries or procedures, reports that her mother had AFib and a stroke at age 74, and reports that her father had hypertension and type 2 diabetes.
+What the grader or rubric expected: The grader expects hypertension, hyperlipidemia, persistent nonvalvular AFib, LVEF 35%, prior cholecystectomy, father with ischemic stroke at age 70, mother with heart failure, and sister with hypertension.
+Why this is a problem: These are not small wording differences. The AI patient gives a different medical, surgical, and family history. The student cannot safely insert hidden diagnoses, surgery, or relatives that the patient directly denies or replaces with different information.
+Suggested fix: Synchronize the patient history and grader source of truth. Required diagnoses, surgery, LVEF, and family history should be visible in the EMR or reliably returned by the patient.
+Evidence – Tuesday AI patient lists AFib and heart failure, denies surgery, and gives a family history different from the grader reference.
+Issue 4. Atorvastatin 40 mg daily is required by the grader but is absent from the live medication list and patient reconciliation
+What the student saw or heard: The live Tuesday medication list contains sacubitril/valsartan 49/51 mg twice daily, metoprolol succinate 50 mg daily, empagliflozin 10 mg daily, and apixaban 5 mg twice daily. Angela names the same four medicines during medication reconciliation.
+What the grader or rubric expected: The grader requires atorvastatin 40 mg by mouth daily and removes points when the drug, dose, and regimen are not documented.
+Why this is a problem: A student should not invent an active medication that is absent from both the chart and the patient interview. Hidden medication data can change medication reconciliation, disease assessment, and safety review.
+Suggested fix: Either add atorvastatin 40 mg daily to the Tuesday EMR and AI patient consistently or remove it from Tuesday grading requirements.
+Evidence – Tuesday medication reconciliation names the same four medications shown in the chart and does not include atorvastatin.
+Issue 5. The grader requires clinical values and examination findings that are not visible in the student facing EMR What the student saw or heard: The visible Tuesday EMR provides vital signs, renal and hepatic labs, NT proBNP, WBC,
+persistent AFib, and HFrEF. It does not display LVEF 35%, echocardiogram interval change, an irregularly irregular rhythm finding,
+hemoglobin, platelets, a room air qualifier, a cardiology specialty label, or the nonvalvular AFib qualifier.
+What the grader or rubric expected: The grader expects those exact objective findings and descriptors, including LVEF 35%, rhythm characterization, hemoglobin, platelet count, and a component level stroke risk interpretation that relies on hypertension.
+Why this is a problem: Measured clinical values and examination findings cannot be safely documented when they are not shown. Hidden objective data create a grading mismatch and may alter medication and risk decisions.
+Suggested fix: Expose the objective values and qualifiers in the live EMR or remove them from the Tuesday rubric. The problem list and stroke risk components should also use the same diagnoses.
+Evidence – Tuesday EMR displays the visible medication and laboratory content but does not provide the hidden echocardiogram and blood count details expected by the grader.
+Issue 6. Vaccine statuses expected by the grader are not supported by the AI patient or visible EMR
+What the student saw or heard: Angela says she is not sure which vaccines she has received recently. The visible EMR confirms influenza as up to date but does not provide the complete set of vaccine statuses expected by the grader.
+What the grader or rubric expected: The grader expects COVID vaccination up to date, pneumococcal not documented, Shingrix not documented, and Tdap overdue, then grades assessment and plan items based on those exact statuses.
+Why this is a problem: The student should preserve patient uncertainty and use available vaccine records. Exact preventive care facts should not be fabricated to satisfy hidden rubric data.
+Suggested fix: Display the intended vaccine statuses in the EMR and keep the patient response and grader consistent. Otherwise, the grader should accept uncertainty when the required data are not exposed.
+Evidence – Tuesday AI patient states that she cannot recall which vaccines she has received recently.
+Patient B – Angela Brooks – Wednesday 3 Month Follow Up
+10 grouped system or data issues are included in this working draft for this visit. Items are grouped so one underlying problem is not counted multiple times only because it produced several rubric deductions.
+#
+Issue
+Problem type
+1
+Patient age conflicts with the displayed date of birth
+Internal EMR inconsistency
+2
+The 3 month follow up is labeled as an initial visit and reuses the same visit date as the Tuesday encounter
+Longitudinal timeline inconsistency
+3
+Heart failure symptom details returned by the AI patient do not match the rubric required exertional dyspnea pattern
+AI patient and rubric disagree
+4
+Past medical, surgical, and family history do not match the Wednesday rubric reference
+AI patient and rubric disagree
+5
+The live problem list does not expose the full set of diagnoses and qualifiers required by the rubric
+EMR and rubric disagree
+6
+Atorvastatin is required by the Wednesday rubric but absent from the live medication list and patient reconciliation
+EMR and AI patient vs rubric
+7
+Objective values expected for grading are not visible in the Wednesday EMR
+Required information is unavailable
+8
+Vaccination statuses beyond influenza are required but unavailable from the patient and visible chart
+Required information is unavailable
+9
+Fixed income is required as Wednesday social history but is not returned when access barriers are reassessed
+Required information is unavailable
+10
+Laboratory values change across encounters despite the same collection date and time
+Cross visit data inconsistency
+Issue 1. Patient age conflicts with the displayed date of birth
+What the student saw or heard: The Wednesday header again identifies Angela as 64 years old and shows DOB 03/12/1972.
+What the grader or rubric expected: The Wednesday rubric grades the patient as age 64.
+Why this is a problem: The demographic fields remain internally incompatible. In June 2026, the displayed date of birth corresponds to age 54.
+Suggested fix: Correct the demographic source of truth and propagate the correction to the header, patient model, and grading rubric.
+Evidence – Wednesday header repeats age 64 with DOB 03/12/1972.
+Issue 2. The 3 month follow up is labeled as an initial visit and reuses the same visit date as the Tuesday encounter
+What the student saw or heard: The Wednesday header identifies a 3 month follow up, but the Subjective documentation line calls the encounter an Initial Ambulatory Care Pharmacist Visit. Vitals are dated 06/23/2026, the same date used for the Tuesday initial visit.
+What the grader or rubric expected: The rubric treats Wednesday as a distinct follow up encounter occurring after the initial visit and evaluates longitudinal improvement.
+Why this is a problem: A longitudinal follow up cannot reliably represent three months of change if the encounter is internally labeled as initial and shares the same visit date as the baseline encounter. This can confuse both students and logic that depends on prior versus current data.
+Suggested fix: Use a consistent follow up label and advance the encounter date and longitudinal data to a true follow up time point.
+Evidence – Wednesday Subjective section says Initial Ambulatory Care Pharmacist Visit while the encounter header identifies a 3 month follow up.
+Issue 3. Heart failure symptom details returned by the AI patient do not match the rubric required exertional dyspnea pattern
+What the student saw or heard: Angela says her heart failure symptoms have not changed, she does not recall new shortness of breath, her energy is about the same, and she can perform her usual activities without feeling more short of breath or tired than before.
+What the grader or rubric expected: The Wednesday rubric specifically expects stable heart failure with mild fatigue and exertional shortness of breath, along with denial of worsening dyspnea.
+Why this is a problem: The patient supports stability and denial of worsening but does not clearly provide the positive exertional dyspnea finding the rubric requires. A student should not convert a negative or nonspecific symptom history into a hidden positive symptom.
+Suggested fix: Program the AI patient to consistently report the intended stable exertional dyspnea pattern when asked about energy and activity or relax the rubric to accept the actual interview response.
+Evidence – Wednesday interview shows stable symptoms without a clear positive exertional shortness of breath report.
+Issue 4. Past medical, surgical, and family history do not match the Wednesday rubric reference
+What the student saw or heard: Angela reports AFib and heart failure, says she does not recall any other major diagnoses, denies surgeries or procedures, reports maternal AFib with stroke at age 74, and reports paternal hypertension and type 2 diabetes.
+What the grader or rubric expected: The Wednesday rubric expects HFrEF with LVEF 35%, persistent nonvalvular AFib, hypertension, hyperlipidemia, cholecystectomy, father with ischemic stroke at age 70, mother with heart failure, and sister with hypertension.
+Why this is a problem: The follow up AI patient continues to carry a different history from the rubric. The student directly asked the required questions and should not substitute hidden diagnoses, surgery, or family history.
+Suggested fix: Persist one medical, surgical, and family history across the longitudinal case and make it available in both the AI patient and follow up EMR.
+Evidence – Wednesday AI patient denies surgery and supplies a family history that differs from the rubric reference.
+Issue 5. The live problem list does not expose the full set of diagnoses and qualifiers required by the rubric
+What the student saw or heard: The Wednesday active problem area shows AFib with the note Cost resolved, fear of bleeding. It does not visibly list HFrEF, hypertension, hyperlipidemia, LVEF 35%, or the persistent nonvalvular AFib qualifiers.
+What the grader or rubric expected: The rubric expects all of those diagnoses and qualifiers to be incorporated into the SOAP note and subsequent risk assessment.
+Why this is a problem: A follow up rubric should not require hidden problem list content. The absence of visible diagnoses also makes downstream stroke risk and comorbidity reasoning harder to verify.
+Suggested fix: Populate the Wednesday problem list with the full active diagnoses and qualifiers used by the rubric or remove hidden diagnoses from grading.
+Evidence – Wednesday active problem list displays AFib only and does not show the full rubric required problem set.
+Issue 6. Atorvastatin is required by the Wednesday rubric but absent from the live medication list and patient reconciliation
+What the student saw or heard: The Wednesday live medication list contains sacubitril/valsartan, metoprolol succinate, empagliflozin, and apixaban. Angela names the same medications during the interview.
+What the grader or rubric expected: The Wednesday rubric requires atorvastatin 40 mg by mouth daily.
+Why this is a problem: The student cannot safely document or assess a statin that is not displayed and not reported by the patient.
+Suggested fix: Add atorvastatin to the visible medication list and patient model if it is intended therapy or remove the medication from Wednesday grading.
+Evidence – Wednesday live medication table shows four medications and no atorvastatin.
+Issue 7. Objective values expected for grading are not visible in the Wednesday EMR
+What the student saw or heard: The Wednesday EMR shows standard vital signs, metabolic and renal results, NT proBNP, and a CBC panel with WBC only. It does not display hemoglobin, platelets, LVEF 35%, echocardiogram interval change, or an irregularly irregular rhythm examination finding.
+What the grader or rubric expected: The rubric uses these objective values and descriptors in full credit criteria for HFrEF, AFib, anticoagulation safety, and clinical interpretation.
+Why this is a problem: The student should not be required to invent an echocardiogram value, blood count results, or physical examination findings that are not student facing.
+Suggested fix: Expose all objective data used by the rubric in the Wednesday EMR or remove unavailable values from scoring.
+Evidence – Wednesday lab panels show WBC as the only CBC value and do not display the hidden echocardiogram or blood count values.
+Issue 8. Vaccination statuses beyond influenza are required but unavailable from the patient and visible chart
+What the student saw or heard: Angela states that she cannot remember whether she is up to date. The Wednesday EMR provides influenza status but does not clearly expose the complete COVID, pneumococcal, Shingrix, and Tdap statuses used by the rubric.
+What the grader or rubric expected: The rubric requires influenza and COVID to be current, pneumococcal and Shingrix to be not documented, and Tdap to be overdue.
+Why this is a problem: The student cannot accurately assign exact preventive care statuses that are not available from either source.
+Suggested fix: Populate the immunization section with the same statuses used by the rubric or accept documented uncertainty when the chart is incomplete.
+Evidence – Wednesday patient explicitly states that she does not remember her recent vaccine history.
+Issue 9. Fixed income is required as Wednesday social history but is not returned when access barriers are reassessed
+What the student saw or heard: When asked about cost, insurance, refills, transportation, and access, Angela says the assistance program resolved apixaban cost and that transportation can still be difficult because she lives alone. She does not state fixed income in the Wednesday interview.
+What the grader or rubric expected: The Wednesday rubric specifically requires fixed income as a social history element.
+Why this is a problem: The student asked the appropriate access question, but the required socioeconomic detail was not returned. A follow up patient should preserve important social determinants if they remain graded.
+Suggested fix: Carry fixed income forward in the visible social history or have the AI patient disclose it when asked about affordability and access.
+Evidence – Wednesday access discussion identifies resolved cost and ongoing transportation difficulty but does not provide the fixed income detail required by the rubric.
+Issue 10. Laboratory values change across encounters despite the same collection date and time
+What the student saw or heard: Wednesday labs are stamped 06/09/2026 07:50 and show potassium 4.3 mEq/L, BUN 17 mg/dL, eGFR 73 mL/min/1.73m², and WBC 6.5 x10³/mm³. Tuesday uses the same collection timestamp but shows potassium 4.4, BUN 18, eGFR 72, and WBC 6.8.
+What the grader or rubric expected: A single laboratory collection date and time should represent one consistent set of results unless the chart clearly distinguishes separate specimens.
+Why this is a problem: Changing values under the same timestamp makes longitudinal interpretation unreliable and can create artificial changes in renal function or blood counts.
+Suggested fix: Assign unique collection times to genuinely different lab sets or keep the values identical when the timestamp represents the same specimen.
+Evidence – Wednesday panels display a 06/09/2026 07:50 laboratory set whose values differ from Tuesday despite the identical timestamp.
+Patient B – Angela Brooks – Thursday 6 Month Follow Up
+10 grouped system or data issues are included in this working draft for this visit. Items are grouped so one underlying problem is not counted multiple times only because it produced several rubric deductions.
+#
+Issue
+Problem type
+1
+Patient age conflicts with the displayed date of birth
+Internal EMR inconsistency
+2
+The 6 month follow up is internally labeled as an initial visit and does not advance the longitudinal visit date
+Longitudinal timeline inconsistency
+3
+The Thursday problem list omits HFrEF and the AFib qualifiers and comorbidities used by the grader
+EMR and grader disagree
+4
+Atorvastatin is required by the grader but absent from the live medication list
+EMR and grader disagree
+5
+The CBC panel shows WBC only while the grader expects hemoglobin and platelet values
+Required information is unavailable
+6
+Preventive care statuses required by the grader are not visible beyond influenza
+Required information is unavailable
+7
+The AI patient denies meaningful shortness of breath while the grader expects stable exertional dyspnea
+AI patient and grader disagree
+8
+The AI patient denies unusual bruising while the grader expects a history of occasional minor bruising
+AI patient and grader disagree
+9
+Transportation remains difficult in the AI interview while the grader expects the barrier to be resolved through family support
+AI patient and grader disagree
+10
+Thursday laboratory data conflict with earlier encounters despite reused collection timestamps
+Cross visit data inconsistency
+Issue 1. Patient age conflicts with the displayed date of birth
+What the student saw or heard: The Thursday header again displays Angela as 64 years old with DOB 03/12/1972.
+What the grader or rubric expected: The Thursday rubric grades the patient as age 64.
+Why this is a problem: The age and DOB remain mathematically incompatible in 2026. Repeating the inconsistency across visits makes it a longitudinal chart data problem rather than a single typographical error.
+Suggested fix: Correct the demographic record and synchronize it across all three encounters and the grading reference.
+Evidence – Thursday header shows age 64 and DOB 03/12/1972.
+Issue 2. The 6 month follow up is internally labeled as an initial visit and does not advance the longitudinal visit date
+What the student saw or heard: The encounter header states Thursday 6 Month Follow Up, while the Subjective section states Initial Ambulatory Care Pharmacist Visit. The displayed vitals remain dated 06/23/2026, the same date used earlier in the longitudinal sequence.
+What the grader or rubric expected: The grader treats this encounter as the later maintenance visit after prior interventions and expects longitudinal improvement.
+Why this is a problem: The visit label and date structure do not reliably represent a true six-month progression. This can undermine any grading criterion that depends on improvement from prior visits.
+Suggested fix: Use a consistent follow up encounter label and a chronologically later visit date for the six-month encounter.
+Evidence – Thursday Subjective documentation calls the encounter an Initial Ambulatory Care Pharmacist Visit despite the 6 month follow up header.
+Issue 3. The Thursday problem list omits HFrEF and the AFib qualifiers and comorbidities used by the grader
+What the student saw or heard: The live Thursday Problem List displays AFib with the note Anticoagulated successfully. It does not show HFrEF, LVEF 35%, persistent nonvalvular classification, hypertension, or hyperlipidemia.
+What the grader or rubric expected: The grader expects persistent nonvalvular AFib, HFrEF supported by LVEF 35%, hypertension, and hyperlipidemia to be incorporated into assessment and management.
+Why this is a problem: The student facing chart does not expose the same active diagnoses the grader uses. This affects stroke risk interpretation, HFrEF classification, and comorbidity assessment.
+Suggested fix: Populate the live problem list with the full intended active diagnoses and qualifiers or remove hidden problem list items from grading.
+Evidence – Thursday live Problem List shows AFib only.
+Issue 4. Atorvastatin is required by the grader but absent from the live medication list
+What the student saw or heard: The Thursday medication table shows sacubitril/valsartan 49/51 mg twice daily, metoprolol succinate 50 mg daily, empagliflozin 10 mg daily, and apixaban 5 mg twice daily. Atorvastatin is not listed.
+What the grader or rubric expected: The grader expects atorvastatin dosing, regimen, tolerability, hyperlipidemia assessment, and statin monitoring.
+Why this is a problem: The student is graded on a medication that is not student facing. The omission then cascades into medication, assessment, monitoring, and preventive risk deductions.
+Suggested fix: If atorvastatin is intended therapy, add it to the live medication list and patient reconciliation. Otherwise, remove atorvastatin dependent criteria from the grader.
+Evidence – Thursday live medication table contains four medications and no atorvastatin.
+Issue 5. The CBC panel shows WBC only while the grader expects hemoglobin and platelet values
+What the student saw or heard: The Thursday Complete Blood Count and Immunology panel displays only WBC 6.6 x10³/mm³. Hemoglobin and platelet count are not shown.
+What the grader or rubric expected: The grader expects hemoglobin and platelet documentation and uses those values in anticoagulation safety interpretation.
+Why this is a problem: A student cannot document or interpret laboratory values that are absent from the visible panel. These are clinically relevant anticoagulation safety data and should not be hidden.
+Suggested fix: Display hemoglobin and platelet count in the CBC panel if they are graded or remove those criteria when the results are not available.
+Evidence – Thursday CBC panel contains WBC only.
+Issue 6. Preventive care statuses required by the grader are not visible beyond influenza
+What the student saw or heard: The Thursday Immunizations section shows influenza as up to date. The patient facing data supplied do not show COVID, pneumococcal, Shingrix, or Tdap status.
+What the grader or rubric expected: The grader expects specific COVID, pneumococcal, Shingrix, and Tdap information and scores preventive care assessment and plan items from those statuses.
+Why this is a problem: The student cannot determine whether those vaccines are current, missing, initiated, or due from the visible Thursday record.
+Suggested fix: Expose all vaccine statuses used by the grader in the live immunization section, or limit grading to vaccine data actually available to the student.
+Evidence – Thursday Objective view shows influenza only in the immunization section.
+Issue 7. The AI patient denies meaningful shortness of breath while the grader expects stable exertional dyspnea
+What the student saw or heard: Angela says she has no real shortness of breath, cannot identify a specific activity that brings it on, and can complete normal daily activities without getting winded.
+What the grader or rubric expected: The grader expects stable mild exertional dyspnea as part of the HFrEF symptom pattern and deducts when dyspnea is documented as denied.
+Why this is a problem: The patient and grader describe different current symptom states. A positive exertional symptom should not be invented after the patient explicitly denies it.
+Suggested fix: Align the Thursday patient symptom script with the intended rubric or revise the grader to accept the actual negative dyspnea history.
+Evidence – Thursday interview documents no real shortness of breath and no specific activity related dyspnea.
+Issue 8. The AI patient denies unusual bruising while the grader expects a history of occasional minor bruising
+What the student saw or heard: When directly asked about bleeding or bruising on apixaban, Angela states that she has not noticed bleeding or unusual bruising and that things have been going smoothly.
+What the grader or rubric expected: The grader expects a longitudinal history of occasional minor bruising that is no longer concerning and removes credit when the note documents complete denial.
+Why this is a problem: A student should document the current patient response. The grader cannot simultaneously require a positive bruising history that the AI patient denies.
+Suggested fix: Decide whether Thursday should represent resolved prior bruising with occasional minor bruising still reported or complete absence of bruising, then synchronize the patient and grader.
+Evidence – Thursday AI patient directly denies bleeding or unusual bruising.
+Issue 9. Transportation remains difficult in the AI interview while the grader expects the barrier to be resolved through family support
+What the student saw or heard: Angela says transportation can still be difficult because she lives alone and usually has to take the bus or get a ride, although she has managed to attend appointments and obtain medications.
+What the grader or rubric expected: The grader expects transportation to be resolved, including family support, and deducts when the note describes ongoing transportation difficulty.
+Why this is a problem: The live patient describes improvement in medication access without saying the transportation barrier has resolved. These are different social determinant states.
+Suggested fix: Use one longitudinal access story. If transportation is intended to be resolved, the patient should clearly state how it was resolved. Otherwise, the grader should accept residual transportation difficulty.
+Evidence – Thursday AI patient states that transportation can still be difficult and that she depends on the bus or rides.
+Issue 10. Thursday laboratory data conflict with earlier encounters despite reused collection timestamps
+What the student saw or heard: Thursday labs are again stamped 06/09/2026 07:50 but now show sodium 138 mEq/L, potassium 4.4, BUN 18, eGFR 72, AST 22, ALT 24, and WBC 6.6. Wednesday uses the same timestamp with sodium 139, potassium 4.3, BUN 17, eGFR 73, and WBC 6.5. Tuesday also uses the same timestamp with a different combination of values. The Thursday results
+summary additionally marks Cardiac Biomarkers as Not ordered even though earlier encounter data show NT proBNP 210 pg/mL with that collection date.
+What the grader or rubric expected: Identical collection dates and times should refer to a consistent laboratory dataset unless separate specimens are explicitly identified.
+Why this is a problem: The reused timestamp makes the underlying objective record internally inconsistent across the longitudinal case. This can create artificial renal or safety trends and contradict whether a cardiac biomarker exists.
+Suggested fix: Either use distinct collection dates for each encounter specific lab set or keep the values and panel availability consistent when the same timestamp is reused.
+Evidence – Thursday CMP is labeled 06/09/2026 07:50 but contains values that differ from the Wednesday and Tuesday panels using the same timestamp.
+WEEK 4
+VACS AI Patient & Grading Issue Report
+Patient C – Robert Jenkins
+Purpose: This report lists only confirmed system/data problems for Patient C, Robert Jenkins, found by comparing the AI patient interview, the EMR screen shown to the student, and the AI grader/rubric. SOAP writing suggestions and personal review notes have been removed. Repeated problems are listed under each visit because they can affect grading independently on different days.Purpose: This report lists only confirmed system/data problems for Patient C, Robert Jenkins, found by comparing the AI patient interview, the EMR screen shown to the student, and the AI grader/rubric. SOAP writing suggestions and personal review notes have been removed. Repeated problems are listed under each visit because they can affect grading independently on different days.
+Purpose: This report lists only confirmed system/data problems for Patient C, Robert Jenkins, found by comparing the AI patient interview, the EMR screen shown to the student, and the AI grader/rubric. SOAP writing suggestions and personal review notes have been removed. Repeated problems are listed under each visit because they can affect grading independently on different days.
+Purpose: This report lists only confirmed system/data problems for Patient C, Robert Jenkins, found by comparing the AI patient interview, the EMR screen shown to the student, and the AI grader/rubric. SOAP writing suggestions and personal review notes have been removed. Repeated problems are listed under each visit because they can affect grading independently on different days.
+Quick Guide for Non-Clinical Readers
+Term
+Plain language meaning
+AI patient
+The simulated patient the student interviews.
+EMR
+The electronic patient chart shown to the student.
+Grader / rubric
+The AI scoring system and the case facts it expects.
+HFrEF
+Heart failure with reduced ejection fraction.
+AFib
+Atrial fibrillation, an irregular heart rhythm that increases stroke risk.
+CKD
+Chronic kidney disease.
+eGFR
+An estimate of kidney filtration used to stage kidney disease.
+DOAC
+A direct oral anticoagulant, such as apixaban.
+PCI / DES
+A heart catheter and stent procedure; DES means drug eluting stent.
+LVEF
+Left ventricular ejection fraction, a measure of heart pumping function.
+Final Review Summary
+This final review contains 35 grouped findings across all 3 Patient C Week 4 visits. Only confirmed conflicts, incorrect display states, or missing information problems are included. Repeated issues are kept under each visit when they can affect grading independently.
+Encounter
+Grouped issues
+Patient C – Robert Jenkins – Tuesday Initial Visit
+15
+Patient C – Robert Jenkins – Wednesday 3 Month Follow Up
+10
+Patient C – Robert Jenkins – Thursday 6 Month Follow Up
+10
+Patient C – Robert Jenkins – Tuesday Initial Visit
+15 confirmed system/data issues are included for this visit. Items are grouped so one underlying problem is not counted multiple times just because it caused several grader deductions.
+#
+Issue
+Problem type
+1
+SOAP grader is connected to a different patient rubric
+Grader / case mapping
+2
+Patient age and date of birth are internally inconsistent in the live header
+EMR data conflict
+3
+Expected mild exertional dyspnea directly conflicts with the Tuesday AI patient denial
+AI patient and rubric
+disagree
+4
+Kidney concern and medication concern storyline does not match the Robert Tuesday rubric
+AI patient and rubric
+disagree
+5
+Required chronic disease timing and PCI with drug eluting stent history cannot be obtained from
+the AI patient
+AI patient and rubric
+disagree
+6
+Home blood pressure and heart rate ranges required by the rubric cannot be obtained from the
+AI patient
+Required information is
+unavailable
+7
+COVID, pneumococcal, Shingrix, and Tdap statuses are graded but not reliably available
+Required information is
+unavailable
+8
+Live Tuesday vital signs do not match the correct Robert Jenkins Tuesday rubric
+EMR and rubric disagree
+9
+Required 12 month and 6-month renal trend values are not visible in the Tuesday EMR
+Required information is
+unavailable
+10
+Hemoglobin and platelet values are required by the rubric but absent from the visible CBC
+Required information is
+unavailable
+11
+HbA1c 6.9% is required by the rubric, but the glycemic panel is not ordered in the live EMR
+Required information is
+unavailable
+12
+Current and prior LVEF values required by the rubric are not visible in the Tuesday encounter
+Required information is
+unavailable
+13
+Rubric expects BNP trend while the live EMR displays NT proBNP only
+EMR and rubric disagree
+14
+eGFR 38 mL/min/1.73m² is incorrectly labeled Normal
+EMR display error
+15
+Active problem list is incomplete compared with the rest of the Tuesday case
+EMR data conflict
+Issue 1. SOAP grader is connected to a different patient rubric
+What the student saw or heard: The live Tuesday encounter identifies Robert Jenkins as a 76-year-old male. The interview and SOAP note describe his heart failure, atrial fibrillation, chronic kidney disease, type 2 diabetes, current Robert medication regimen, and concern about renal function and apixaban dosing.
+What the grader expected: The AI feedback states that the note appears to describe a different patient and says the expected case is a 64-year-old female with a different medication, adherence, affordability, social, vital sign, and laboratory history.
+Why this is a problem: This is not a documentation omission. The scoring engine is evaluating Robert Jenkins against another patient case, so many deductions cannot represent the student performance in the Tuesday Robert encounter.
+Suggested fix: Map Robert Jenkins plus Tuesday plus the initial follow up state to the Robert Jenkins Tuesday rubric. Add a validation check that patient identity, day, encounter state, and rubric identifier match before grading.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Issue 2. Patient age and date of birth are internally inconsistent in the live header
+What the student saw or heard: The Tuesday header displays Robert as 76 years old while also showing a date of birth of 03/12/1972.
+What the grader expected: The Robert Jenkins Tuesday rubric identifies the patient as 76 years old. A date of birth that is consistent with that age should be stored and displayed throughout the chart.
+Why this is a problem: Two identity fields in the same header describe different ages. Patient demographics should not require the student to decide which field is authoritative.
+Suggested fix: Correct the stored date of birth or the displayed age so the demographic fields agree across the header, patient object, and grader.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Issue 3. Expected mild exertional dyspnea directly conflicts with the Tuesday AI patient denial
+What the student saw or heard: Robert is directly asked what activities make him short of breath or tired. He says he has not noticed shortness of breath or increased tiredness and can perform his usual activities around the house and yard without trouble.
+What the grader expected: The Robert Jenkins Tuesday rubric requires mild exertional dyspnea that is unchanged from previous visits.
+Why this is a problem: This is a positive versus negative symptom contradiction after a targeted question. The student cannot accurately document mild exertional dyspnea when the AI patient explicitly denies it.
+Suggested fix: Synchronize the Tuesday symptom state. If mild exertional dyspnea is an intended case fact, the AI patient should report it when asked directly about exertion and exercise tolerance.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Issue 4. Kidney concern and medication concern storyline does not match the Robert Tuesday rubric
+What the student saw or heard: Robert is worried about his kidney numbers, but his medication specific question is whether creatinine 1.82 mg/dL requires a lower apixaban dose. When asked whether the renal concern made him think about changing or stopping medications, he says no and states that he trusts the care team to guide him.
+What the grader expected: The Robert Jenkins Tuesday rubric requires concern that sacubitril/valsartan and spironolactone may be worsening kidney function, independent research about medication related kidney effects, consideration of stopping spironolactone, concern shared by his wife, a goal of avoiding dialysis, and a requested risk benefit discussion about continuing therapy.
+Why this is a problem: The core patient concern drives the intended interview and assessment. The AI patient supplies a different medication concern and explicitly denies the medication stopping thought that the rubric requires.
+Suggested fix: Load the intended renal concern narrative into the Tuesday AI patient. Required medication concerns, spouse concerns, and dialysis goals should be available when directly explored.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Issue 5. Required chronic disease timing and PCI with drug eluting stent history cannot be obtained from the AI patient
+What the student saw or heard: When asked how long he has had his major conditions, Robert says he cannot remember the exact years. When specifically asked about surgeries or procedures, he says he does not recall having any surgeries or procedures.
+What the grader expected: The Tuesday rubric expects HFrEF diagnosed 4 years ago with LVEF 30% at diagnosis, NSTEMI 3 years ago, coronary artery disease, and PCI with drug eluting stent placement listed in history.
+Why this is a problem: The student asked the relevant history questions, but the AI patient cannot provide the required timing and directly denies a prior procedure. Those details should not be invented.
+Suggested fix: Persist the longitudinal cardiac and procedural history in the AI patient and expose the exact diagnosis timing when it is required by the rubric.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Issue 6. Home blood pressure and heart rate ranges required by the rubric cannot be obtained from the AI patient
+What the student saw or heard: Robert reports checking blood pressure and heart rate every day. When asked what the readings usually are, he says they are steady, normal, and similar to the clinic values, but he does not provide numeric ranges.
+What the grader expected: The Tuesday rubric requires a home blood pressure range of 110 to 118 over 64 to 70 mmHg and a home heart rate range of 68 to 76 bpm.
+Why this is a problem: The student directly requested the home readings, but the AI patient did not return the graded numbers. A precise range should not be created from a general statement that readings are normal.
+Suggested fix: Program the AI patient to provide the intended ranges when asked for usual home readings or display the home log in the visible chart.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Issue 7. COVID, pneumococcal, Shingrix, and Tdap statuses are graded but not reliably available
+What the student saw or heard: The visible Tuesday immunization area confirms influenza is up to date. Robert says he is unsure of his complete vaccine history and cannot recall which vaccines he has received recently.
+What the grader expected: The Tuesday rubric requires COVID vaccination up to date, pneumococcal vaccination completed, Shingrix completed, and Tdap up to date in addition to influenza.
+Why this is a problem: The student cannot reliably document the exact preventive care statuses when the chart does not display them, and the patient cannot recall them.
+Suggested fix: Populate all graded vaccine statuses in the visible immunization record or make them consistently available through the AI patient.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Issue 8. Live Tuesday vital signs do not match the correct Robert Jenkins Tuesday rubric
+What the student saw or heard: The live Tuesday EMR shows BP 120/70 mmHg with repeat 118/68, HR 68 bpm, temperature 98.6°F, SpO2 97%, weight 82 kg, and BMI 28.3.
+What the grader expected: The Robert Jenkins Tuesday rubric expects BP 112/68 mmHg, HR 72 bpm, temperature 98.1°F, SpO2 98% on room air, weight 82 kg, and BMI 27.8 kg/m².
+Why this is a problem: These are objective values. A student should copy the values displayed in the live EMR and should not be penalized for failing to use hidden rubric values.
+Suggested fix: Use one encounter data source for the EMR renderer and Robert Tuesday rubric. Synchronize all vital sign fields before the case is released.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Issue 9. Required 12 month and 6-month renal trend values are not visible in the Tuesday EMR
+What the student saw or heard: The live renal panel displays the current BUN 34 mg/dL, serum creatinine 1.82 mg/dL, and eGFR 38 mL/min/1.73m². Prior renal values are not displayed in the provided Tuesday laboratory panels.
+What the grader expected: The Tuesday rubric requires 12-month serum creatinine 1.42 mg/dL and eGFR 52, plus 6-month serum creatinine 1.58 mg/dL and eGFR 46 and requires interpretation of the 12-month decline.
+Why this is a problem: The rubric requires a longitudinal trend that the student cannot reconstruct from the current value alone.
+Suggested fix: Display the prior renal values and dates when trend interpretation is graded or remove the exact historical trend from scoring if it is intentionally unavailable.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Issue 10. Hemoglobin and platelet values are required by the rubric but absent from the visible CBC
+What the student saw or heard: The Tuesday CBC panel displays WBC 6.4 x10³/mm³ only. Hemoglobin and platelets are not shown.
+What the grader expected: The Tuesday rubric requires hemoglobin 13.5 g/dL and platelets 228 x10³/mm³.
+Why this is a problem: The student cannot report exact CBC values that the live laboratory panel does not contain.
+Suggested fix: Add hemoglobin and platelets to the Tuesday CBC panel when they are grading elements or mark those criteria as unavailable and not gradable.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Issue 11. HbA1c 6.9% is required by the rubric, but the glycemic panel is not ordered in the live EMR
+What the student saw or heard: The Tuesday laboratory overview marks Diabetes / Glycemic Control as Not ordered. No HbA1c result is visible.
+What the grader expected: The Tuesday rubric requires HbA1c 6.9% and interpretation that it is near target or controlled.
+Why this is a problem: A numeric HbA1c cannot be documented from a panel that the system identifies as not ordered.
+Suggested fix: Display the intended HbA1c result if it is required for grading or remove the value and interpretation criteria from the Tuesday score.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Issue 12. Current and prior LVEF values required by the rubric are not visible in the Tuesday encounter
+What the student saw or heard: The live Tuesday EMR provided to the student does not display an echocardiogram result or LVEF value.
+What the grader expected: The Tuesday rubric requires current LVEF 32%, baseline LVEF 30%, and a statement that the echocardiographic finding is stable or slightly improved.
+Why this is a problem: The student would have to invent an objective cardiac imaging value and trend to satisfy the rubric.
+Suggested fix: Expose the current and prior echocardiogram results in the Tuesday EMR when LVEF is a scored element or make the rubric field not gradable when imaging is unavailable.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Issue 13. Rubric expects BNP trend while the live EMR displays NT proBNP only
+What the student saw or heard: The Tuesday live EMR displays NT proBNP 165 pg/mL. No prior cardiac biomarker value is shown.
+What the grader expected: The Tuesday rubric requires current BNP 165 pg/mL, previous BNP 210 pg/mL, and interpretation that BNP improved from 210 to 165.
+Why this is a problem: BNP and NT proBNP are separate laboratory assays, and the required prior value is not exposed. The student should not relabel the test or invent a trend.
+Suggested fix: Use the same biomarker name and longitudinal values across the live EMR and rubric. If NT proBNP is the intended test, the rubric should use NT proBNP and show the prior value.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Issue 14. eGFR 38 mL/min/1.73m² is incorrectly labeled Normal
+What the student saw or heard: The Tuesday renal panel shows eGFR 38 mL/min/1.73m² with a blue Normal status badge, while serum creatinine is flagged high and CKD is an active problem.
+What the grader expected: The same Tuesday rubric classifies eGFR 38 as CKD Stage 3b and approaching the Stage 4 threshold.
+Why this is a problem: The numeric result and status badge communicate conflicting interpretations of kidney function and can mislead the learner.
+Suggested fix: Correct the eGFR status logic so the badge is calculated from the numeric result and intended CKD classification.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Issue 15. Active problem list is incomplete compared with the rest of the Tuesday case
+What the student saw or heard: The visible Tuesday Problem List contains atrial fibrillation and chronic kidney disease, while the medication indications and AI patient history also support heart failure and type 2 diabetes, and the rubric includes coronary artery disease, hypertension, and hyperlipidemia.
+What the grader expected: The Robert Tuesday rubric expects HFrEF, persistent nonvalvular AFib, CAD, CKD Stage 3b, type 2 diabetes, hypertension, and hyperlipidemia as the longitudinal medical history.
+Why this is a problem: A student relying on the active Problem List receives an incomplete disease list that does not match other sections of the same encounter.
+Suggested fix: Populate the active Problem List from the same longitudinal diagnosis source used by the AI patient, medications, and grader.
+Evidence – Tuesday Initial Visit: student facing information compared with the grader/rubric expectation.
+Patient C – Robert Jenkins – Wednesday 3 Month Follow Up
+10 confirmed system/data issues are included for this visit. Items are grouped so one underlying problem is not counted multiple times just because it caused several grader deductions.
+Issue
+Problem type
+Wednesday encounter loads an epistaxis story instead of the required colonoscopy planning scenario
+AI patient and encounter mapping disag
+Patient age and date of birth remain internally inconsistent in the Wednesday header
+EMR data conflict
+Medical history returned by the AI patient is incomplete when directly requested
+Required information is unavailable
+Prior PCI with drug eluting stent history is directly denied by the Wednesday AI patient
+AI patient and rubric disagree
+Preventive care statuses required by the rubric are not available from the Wednesday patient or visible record
+Required information is unavailable
+Live Wednesday vital signs do not match the correct Robert Jenkins Wednesday rubric
+EMR and rubric disagree
+Hemoglobin and platelet values are required but the Wednesday CBC panel shows only WBC
+Required information is unavailable
+eGFR 39 mL/min/1.73m² is incorrectly labeled Normal
+EMR display error
+Wednesday active Problem List is incomplete and reflects the incorrect epistaxis encounter state
+EMR data conflict
+Counseling content uses warfarin INR language for a patient receiving apixaban
+Medication counseling content error
+Issue 1. Wednesday encounter loads an epistaxis story instead of the required colonoscopy planning scenario
+What the student saw or heard: The live Wednesday Subjective section and AI patient present recent nosebleeds as the reason for the visit. Robert reports two nosebleeds in the past month, asks whether a safer blood thinner exists, and repeatedly states that no colonoscopy, gastroenterology visit, or upcoming procedure has been discussed.
+What the grader expected: The Robert Jenkins Wednesday rubric requires an elective screening colonoscopy in approximately three weeks, gastroenterology advice that apixaban interruption may be necessary, no recent bleeding events, concern about stroke risk during interruption, questions about bridging, and written stop and restart instructions.
+Why this is a problem: The encounter is running the wrong clinical state. The student cannot complete the intended periprocedural anticoagulation interview when the patient denies the procedure that defines the visit.
+Suggested fix: Map Robert Jenkins Wednesday to the colonoscopy planning state. Lock the colonoscopy, gastroenterology, and no recent bleeding facts so generated responses cannot contradict them.
+Evidence – Wednesday 3 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 2. Patient age and date of birth remain internally inconsistent in the Wednesday header
+What the student saw or heard: The Wednesday header displays Robert as 76 years old and also displays DOB 03/12/1972.
+What the grader expected: The Wednesday Robert rubric identifies the patient as 76 years old, so all stored identity fields should be consistent with that age.
+Why this is a problem: The same patient record contains conflicting demographic information before the clinical encounter begins.
+Suggested fix: Correct the date of birth or age in the longitudinal patient record and use the corrected value in everyday header and grading context.
+Evidence – Wednesday 3 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 3. Medical history returned by the AI patient is incomplete when directly requested
+What the student saw or heard: When asked what medical conditions he has, Robert reports AFib, heart failure, some heart disease, and diabetes. He does not clearly identify CKD Stage 3b, hypertension, or hyperlipidemia.
+What the grader expected: The Wednesday rubric requires HFrEF, persistent nonvalvular AFib, CAD, CKD Stage 3b, type 2 diabetes, hypertension, and hyperlipidemia.
+Why this is a problem: The student directly asked for the medical history, but the AI patient returned an incomplete disease list. The grader should not require conditions the patient could not supply unless they are visible elsewhere in the chart.
+Suggested fix: Use the same longitudinal diagnosis array for the AI patient, Problem List, and rubric so a direct medical history question returns the complete intended list.
+Evidence – Wednesday 3 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 4. Prior PCI with drug eluting stent history is directly denied by the Wednesday AI patient
+What the student saw or heard: When asked whether he has ever had surgeries or procedures, Robert says he does not recall having any surgeries or procedures.
+What the grader expected: The Wednesday rubric requires prior PCI with drug eluting stent placement in both past medical and past surgical history.
+Why this is a problem: This is a direct contradiction after a targeted procedure question. The student cannot safely document PCI with drug eluting stent when the simulated patient denies prior procedures.
+Suggested fix: Persist PCI with drug eluting stent as a locked longitudinal history fact and return it when the student asks about prior procedures.
+Evidence – Wednesday 3 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 5. Preventive care statuses required by the rubric are not available from the Wednesday patient or visible record
+What the student saw or heard: Robert says he does not remember which vaccines he has received recently. The Wednesday EMR clearly confirms influenza, but the provided student facing information does not reliably expose the other exact statuses.
+What the grader expected: The Wednesday rubric requires COVID up to date, pneumococcal completed, Shingrix completed, and Tdap up to date.
+Why this is a problem: The student cannot convert patient uncertainty into confirmed completed vaccination status.
+Suggested fix: Populate all graded immunization statuses in the visible record or make the AI patient reliably state them when asked.
+Evidence – Wednesday 3 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 6. Live Wednesday vital signs do not match the correct Robert Jenkins Wednesday rubric
+What the student saw or heard: The Wednesday EMR shows BP 120/70 mmHg with repeat 118/68, HR 68 bpm, temperature 98.6°F, SpO2 97%, weight 82 kg, and BMI 28.3.
+What the grader expected: The correct Robert Wednesday rubric expects BP 114/68 mmHg, HR 70 bpm, temperature 98.0°F, SpO2 98% on room air, weight 82 kg, and BMI 27.8 kg/m².
+Why this is a problem: The student should document the objective values displayed in the live chart, not hidden values from a different data version.
+Suggested fix: Synchronize the Wednesday vital sign record used by the EMR and the Robert Wednesday rubric.
+Evidence – Wednesday 3 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 7. Hemoglobin and platelet values are required but the Wednesday CBC panel shows only WBC
+What the student saw or heard: The Wednesday CBC panel provides WBC 6.5 x10³/mm³ but does not show hemoglobin or platelet count.
+What the grader expected: The Wednesday rubric requires hemoglobin 13.4 g/dL and platelets 226 x10³/mm³ and requires interpretation of anemia and thrombocytopenia risk.
+Why this is a problem: The student cannot document or interpret laboratory values that are absent from the live panel.
+Suggested fix: Display hemoglobin and platelets when they are required for grading or mark those rubric items unavailable and not gradable.
+Evidence – Wednesday 3 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 8. eGFR 39 mL/min/1.73m² is incorrectly labeled Normal
+What the student saw or heard: The Wednesday CMP and renal panels display eGFR 39 mL/min/1.73m² with a normal badge while the overall renal panel is marked abnormal.
+What the grader expected: The Wednesday rubric identifies eGFR 39 as CKD Stage 3b and uses the value in anticoagulation planning.
+Why this is a problem: The status badge contradicts both the numeric value and the intended CKD classification.
+Suggested fix: Correct the eGFR flagging threshold and generate the status badge directly from the numeric result.
+Evidence – Wednesday 3 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 9. Wednesday active Problem List is incomplete and reflects the incorrect epistaxis encounter state
+What the student saw or heard: The Wednesday Problem List shows AFib with minor epistaxis on DOAC. It does not display the complete chronic problem set used elsewhere in the case.
+What the grader expected: The Wednesday rubric uses HFrEF, persistent nonvalvular AFib, CAD, CKD Stage 3b, type 2 diabetes, hypertension, and hyperlipidemia, and the intended encounter does not use recent epistaxis as a positive case fact.
+Why this is a problem: The Problem List both omits major chronic conditions and reinforces the wrong Wednesday symptom story.
+Suggested fix: Populate the Problem List from the longitudinal diagnosis source and remove the epistaxis encounter fact when the correct Wednesday colonoscopy planning state is loaded.
+Evidence – Wednesday 3 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 10. Counseling content uses warfarin INR language for a patient receiving apixaban
+What the student saw or heard: The Wednesday counseling card warns that antibiotics and over the counter pain relievers can change the patient INR. Robert is taking apixaban 5 mg twice daily, not warfarin.
+What the grader expected: The Wednesday rubric specifically notes that routine INR monitoring is not required for apixaban and also states that routine anti Xa monitoring is not required.
+Why this is a problem: The system is displaying anticoagulation counseling that belongs to a different medication monitoring framework and can teach an incorrect monitoring concept.
+Suggested fix: Make anticoagulation counseling medication specific. For apixaban, remove warfarin INR language and use DOAC appropriate bleeding, interaction, adherence, and procedure counseling.
+Evidence – Wednesday 3 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Patient C – Robert Jenkins – Thursday 6 Month Follow Up
+10 confirmed system/data issues are included for this visit. Items are grouped so one underlying problem is not counted multiple times just because it caused several grader deductions.
+Issue
+Problem type
+SOAP grader is connected to a different 64-year-old female case
+Grader / case mapping
+Patient age and date of birth remain internally inconsistent in the Thursday header
+EMR data conflict
+Live Thursday vital signs do not match the correct Robert Jenkins Thursday rubric
+EMR and rubric disagree
+Hemoglobin trend and platelet count required by the rubric are missing from the Thursday CBC
+Required information is unavailable
+Gastroenterology report is marked missing even though the rubric grades report sourced objective findings
+Data / grading mismatch
+eGFR 40 mL/min/1.73m² is incorrectly labeled Normal
+EMR display error
+Thursday active Problem List contains only AFib despite multiple active chronic conditions
+EMR data conflict
+COVID, pneumococcal, Shingrix, and Tdap statuses are graded but not available from the Thursday patient or visible immunization record
+Required information is unavailable
+Required longitudinal cardiac history and disease details remain incomplete in the Thursday AI patient
+Required information is unavailable
+Expected interest in kidney function monitoring conflicts with the Thursday AI patient response
+AI patient and rubric disagree
+Issue 1. SOAP grader is connected to a different 64-year-old female case
+What the student saw or heard: The live Thursday encounter identifies Robert Jenkins as a 76-year-old male at the 6 month follow up after colonoscopy. The interview and SOAP note document successful periprocedural apixaban interruption and resumption, stable HFrEF symptoms, and the Robert Jenkins medication regimen.
+What the grader expected: The AI feedback explicitly states that the rubric expected a 64-year-old female with a different history of adherence, affordability, social barriers, medication doses, vital signs, and laboratory values.
+Why this is a problem: The 44.2% score is not a valid assessment of the Robert Jenkins Thursday note because the scoring engine is using another patient case.
+Suggested fix: Map Robert Jenkins plus Thursday plus the 6 month follow up state to the Robert Jenkins Thursday rubric and validate patient ID, day, and rubric ID before grading.
+Evidence – Thursday 6 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 2. Patient age and date of birth remain internally inconsistent in the Thursday header
+What the student saw or heard: The Thursday header displays Robert as 76 years old while showing DOB 03/12/1972.
+What the grader expected: The correct Robert Thursday rubric identifies the patient as 76 years old.
+Why this is a problem: The same chart contains conflicting demographic fields, and the discrepancy persists across the longitudinal encounters.
+Suggested fix: Correct the longitudinal demographic record so age and date of birth agree on every visit.
+Evidence – Thursday 6 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 3. Live Thursday vital signs do not match the correct Robert Jenkins Thursday rubric
+What the student saw or heard: The live Thursday EMR shows BP 120/70 mmHg with repeat 118/68, HR 68 bpm, temperature 98.6°F, SpO2 97%, weight 82 kg, and BMI 28.3.
+What the grader expected: The correct Robert Thursday rubric expects BP 112/66 mmHg, HR 72 bpm, temperature 98.0°F, SpO2 98% on room air, weight 81.5 kg, and BMI 27.6 kg/m².
+Why this is a problem: Even after the wrong patient grader mapping is corrected, the live objective values still do not match the correct Robert Thursday reference data.
+Suggested fix: Use one Robert Thursday encounter data object for the EMR and rubric and validate each vital sign field before release.
+Evidence – Thursday 6 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 4. Hemoglobin trend and platelet count required by the rubric are missing from the Thursday CBC
+What the student saw or heard: The Thursday CBC panel displays WBC 6.3 x10³/mm³ only. Current hemoglobin, previous hemoglobin, and platelet count are not shown.
+What the grader expected: The correct Thursday rubric requires current hemoglobin 13.3 g/dL, previous hemoglobin 13.4 g/dL, platelets 229 x10³/mm³, and interpretation of the stable hemoglobin trend.
+Why this is a problem: The student cannot report or interpret a bleeding safety trend that is absent from the visible laboratory panel.
+Suggested fix: Display the required hemoglobin and platelet data in the Thursday CBC, including the prior hemoglobin value, or mark those items unavailable and not gradable.
+Evidence – Thursday 6 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 5. Gastroenterology report is marked missing even though the rubric grades report sourced objective findings
+What the student saw or heard: The Thursday Objective screen labels the gastroenterology report as Missing. A brief missing data banner summarizes that colonoscopy occurred 10 days ago, two small tubular adenomas were removed, there were no complications or post procedure bleeding, and routine surveillance was recommended.
+What the grader expected: The correct Thursday rubric grades the colonoscopy report as an objective source and requires the two tubular adenomas, no complications, no bleeding, routine gastroenterology surveillance, and documentation that gastroenterology is the source.
+Why this is a problem: The system tells the student that the source report is missing while simultaneously requiring report level documentation. A summary banner is not the same as an accessible source report.
+Suggested fix: Either provide the gastroenterology report as an accessible objective record or clearly designate the banner as the authoritative report extract and grade only the information exposed there.
+Evidence – Thursday 6 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 6. eGFR 40 mL/min/1.73m² is incorrectly labeled Normal
+What the student saw or heard: The Thursday renal panel and snapshot display eGFR 40 mL/min/1.73m² with a normal badge while serum creatinine 1.76 mg/dL is flagged high.
+What the grader expected: The correct Thursday rubric identifies eGFR 40 as CKD Stage 3b and uses it to support ongoing DOAC and GDMT management.
+Why this is a problem: The status badge contradicts the intended renal classification and can mislead the student during medication safety assessment.
+Suggested fix: Correct the eGFR status logic so the badge reflects the numeric result and CKD stage.
+Evidence – Thursday 6 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 7. Thursday active Problem List contains only AFib despite multiple active chronic conditions
+What the student saw or heard: The Thursday Problem List contains AFib only. The medication list itself identifies HFrEF, HFrEF / T2DM, and CAD indications, and the interview also references heart failure, kidney disease, diabetes, and high cholesterol.
+What the grader expected: The correct Thursday rubric includes HFrEF, persistent nonvalvular AFib, CAD, CKD Stage 3b, type 2 diabetes, hypertension, and hyperlipidemia.
+Why this is a problem: The active Problem List is not synchronized with the rest of the same patient record.
+Suggested fix: Populate the Problem List from the longitudinal diagnosis source used by medications, interview logic, and the correct Robert rubric.
+Evidence – Thursday 6 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 8. COVID, pneumococcal, Shingrix, and Tdap statuses are graded but not available from the Thursday patient or visible immunization record
+What the student saw or heard: The Thursday EMR confirms influenza up to date. When directly asked about COVID, pneumonia, shingles, and Tdap vaccines, Robert says he is honestly not sure and does not track them closely.
+What the grader expected: The correct Thursday rubric requires COVID up to date, pneumococcal completed, Shingrix completed, and Tdap up to date.
+Why this is a problem: The student cannot document exact completed vaccine statuses when the visible chart does not show them and the patient is uncertain.
+Suggested fix: Expose all graded vaccine statuses in the Thursday immunization record or make them reliably available through the AI patient.
+Evidence – Thursday 6 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 9. Required longitudinal cardiac history and disease details remain incomplete in the Thursday AI patient
+What the student saw or heard: When asked what conditions he has, Robert reports HFrEF, AFib, kidney issues, diabetes, and high cholesterol. He does not provide HFrEF duration, LVEF, persistent nonvalvular AFib qualifiers, CAD with prior NSTEMI, PCI with drug eluting stent, hypertension, or CKD Stage 3b details.
+What the grader expected: The correct Thursday rubric requires HFrEF diagnosed 4 years ago, LVEF 30%, persistent nonvalvular AFib, CAD, NSTEMI 3 years ago, PCI with drug eluting stent, CKD Stage 3b, hypertension, and hyperlipidemia.
+Why this is a problem: The rubric expects a detailed longitudinal history that is not reproducible from the AI patient response in this follow up encounter.
+Suggested fix: Persist the complete longitudinal history and return the required details when the student asks for the medical history or expose them in a visible history section.
+Evidence – Thursday 6 Month Follow Up: student facing information compared with the grader/rubric expectation.
+Issue 10. Expected interest in kidney function monitoring conflicts with the Thursday AI patient response
+What the student saw or heard: When asked whether he has ongoing concerns about kidney function or how closely it should be monitored, Robert says nobody has talked to him much about it and he does not have any specific concerns at the moment.
+What the grader expected: The correct Thursday rubric requires interest in ongoing kidney function monitoring as a subjective patient centered element.
+Why this is a problem: The student directly explores the criterion and receives the opposite response. Documenting interest in kidney monitoring would contradict the AI patient.
+Suggested fix: Synchronize the Thursday patient goals with the rubric. If ongoing kidney monitoring interest is required, the AI patient should express it when asked directly.
+Evidence – Thursday 6 Month Follow Up: student facing information compared with the grader/rubric expectation.

@@ -13,34 +13,56 @@ const michaelTue = makeCase({
   ENCOUNTER: { week: 'Week 4', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Foundational', difficultyTone: 'teal',
     chiefConcern: "The cardiologist said my heart muscle is weak and I need to start new medications.",
-    snapshotSummary: 'Newly diagnosed HFrEF (LVEF 35%). Currently only on lisinopril and HCTZ for hypertension. Needs initiation of GDMT.',
+    snapshotSummary: 'Newly diagnosed HFrEF (LVEF 35%). Referred by PCP for progressive dyspnea and reduced exercise tolerance. Ambulatory care cardiology clinic. Needs initiation of GDMT.',
     diseaseStates: ['HFrEF', 'Hypertension', 'Hyperlipidemia'],
     learningObjectives: ['Identify HFrEF and ACC/AHA stage', 'Initiate the 4 pillars of GDMT'],
+    visitDate: '09/09/2026',
   },
-  VITALS: { bp: '138/86', bpRepeat: '136/84', hr: '82', rr: '16', temp: '98.6°F', spo2: '96%', weight: '102 kg', height: "5'10\"", bmi: '32.2', vitalsTime: '06/23/2026 09:14', flags: {} },
+  // FIXED: Vitals synchronized to rubric (BP 138/84, Temp 98.4°F, SpO2 98% on room air, RR 18)
+  VITALS: { bp: '138/84', bpRepeat: '136/82', hr: '82', rr: '18', temp: '98.4°F', spo2: '98%', spo2Qualifier: 'on room air', weight: '102 kg', height: "5'10\"", bmi: '32.2', vitalsTime: '09/09/2026 09:14', flags: {} },
   LABS: [
-    { label: 'NT-proBNP', value: '320', unit: 'pg/mL', flag: 'high' },
-    { label: 'K', value: '4.2', unit: 'mEq/L', flag: 'normal' },
-    { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
-    { label: 'eGFR', value: '88', unit: 'mL/min/1.73m²', flag: 'normal' },
+    // FIXED: BNP label (not NT-proBNP) per rubric; K synchronized to 4.3 mEq/L per rubric
+    { label: 'BNP', value: '320', unit: 'pg/mL', flag: 'high', labDate: '09/09/2026 07:50' },
+    { label: 'K', value: '4.3', unit: 'mEq/L', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'eGFR', value: '88', unit: 'mL/min/1.73m²', flag: 'normal', labDate: '09/09/2026 07:50' },
+    // FIXED: Added full CMP and lipid panel as rubric requires
+    { label: 'Na', value: '140', unit: 'mEq/L', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'BUN', value: '16', unit: 'mg/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'Glucose', value: '98', unit: 'mg/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'AST', value: '22', unit: 'U/L', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'ALT', value: '20', unit: 'U/L', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'LDL', value: '118', unit: 'mg/dL', flag: 'high', labDate: '09/09/2026 07:50' },
+    { label: 'HDL', value: '42', unit: 'mg/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'TG', value: '162', unit: 'mg/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'Total Chol', value: '192', unit: 'mg/dL', flag: 'borderline', labDate: '09/09/2026 07:50' },
   ],
   ALERTS: [
     { level: 'warn', text: 'HFrEF (LVEF 35%) not on optimal GDMT. Missing evidence-based beta blocker, MRA, and SGLT2i. Lisinopril can be optimized.' },
   ],
   PROBLEMS: [
-    { name: 'Heart Failure with Reduced Ejection Fraction (HFrEF)', detail: 'LVEF 35%, NYHA Class II', flag: 'high' },
+    { name: 'Heart Failure with Reduced Ejection Fraction (HFrEF)', detail: 'LVEF 35%, mild LV dilation, no significant valvular abnormalities. NYHA Class II.', flag: 'high' },
     { name: 'Hypertension', detail: 'Currently on Lisinopril and HCTZ', flag: 'normal' },
+    { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg', flag: 'normal' },
   ],
   MEDICATIONS: [
     { name: 'Lisinopril', dose: '20 mg', route: 'by mouth', freq: 'daily', indication: 'HTN', notes: '' },
     { name: 'Hydrochlorothiazide', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HTN', notes: '' },
     { name: 'Atorvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'HLD', notes: '' },
   ],
-  IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
+  // FIXED: Complete immunization panel added per rubric requirements
+  IMMUNIZATIONS: [
+    { name: 'Influenza', status: 'Up to date', flag: 'normal' },
+    { name: 'COVID-19', status: 'Up to date (primary series completed)', flag: 'normal' },
+    { name: 'Pneumococcal', status: 'Not documented', flag: 'warn' },
+    { name: 'Shingrix', status: 'Not documented', flag: 'warn' },
+    { name: 'Tdap', status: 'Last documented approximately 9 years ago (overdue)', flag: 'warn' },
+  ],
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: 'Referred for GDMT optimization following new nonischemic cardiomyopathy diagnosis. NYHA Class II symptoms.' },
-    { label: 'Echocardiogram', value: 'LVEF 35%, mild LV dilation.' },
-    { label: 'Social history', value: 'Former smoker (quit 5 years ago). Occasional alcohol.' },
+    { label: 'HPI', value: 'Referred by primary care provider for progressive dyspnea and reduced exercise tolerance. New nonischemic cardiomyopathy diagnosis with LVEF 35%. Ambulatory care cardiology clinic.' },
+    { label: 'Echocardiogram', value: 'LVEF 35%, mild LV dilation, no significant valvular abnormalities.' },
+    { label: 'Social history', value: 'Former smoker (20 pack-year history, quit approximately 5 years ago). Drinks 1-2 alcoholic beverages on weekends.' },
+    { label: 'Past Surgical History', value: 'Appendectomy at age 24.' },
   ],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
@@ -59,12 +81,20 @@ const michaelTue = makeCase({
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4-michael_t4-tue_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-michael_t4-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin, but no other over-the-counter medications or supplements." },
-    { id: 'w4-michael_t4-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine or beer on special occasions." },
-    { id: 'w4-michael_t4-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago." },
-    { id: 'w4-michael_t4-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had coronary artery disease and heart failure, and suffered a heart attack at age 64. My mother has high blood pressure." },
+    // FIXED: Alcohol synchronized to rubric (1-2 drinks on weekends)
+    { id: 'w4-michael_t4-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 to 2 drinks on the weekends, usually a glass of wine or beer." },
+    // FIXED: Tobacco synchronized to rubric (20 pack-years)
+    { id: 'w4-michael_t4-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago. I smoked about a pack a day for 20 years, so I guess that's about 20 pack-years." },
+    // FIXED: Family history synchronized to rubric (father: HTN + MI at age 62; mother: T2DM)
+    { id: 'w4-michael_t4-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had hypertension and suffered a heart attack at age 62. My mother has type 2 diabetes." },
     { id: 'w4-michael_t4-tue_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'spouse', 'wife'], response: "I am married and live with my wife. I work full-time as an accountant." },
     { id: 'w4-michael_t4-tue_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "I don't check my blood pressure or weigh myself at home. Should I be doing that?" },
-    { id: 'w4a_sym', topic: 'Symptoms', field: 'symptoms', keywords: ['swelling', 'breathe', 'shortness', 'stairs', 'edema'], response: "My ankles get a little puffy by the end of the day, and I get winded if I walk up a flight of stairs quickly." },
+    // FIXED: Symptoms updated — 6-month gradual course, fatigue, reduced exercise tolerance per rubric
+    { id: 'w4a_sym', topic: 'Symptoms', field: 'symptoms', keywords: ['swelling', 'breathe', 'shortness', 'stairs', 'edema', 'tired', 'fatigue', 'exercise', 'energy', 'when', 'start'], response: "It's been gradually getting worse over about the last 6 months. I just thought it was my age, weight gain, or being out of shape. I get winded climbing stairs and I've noticed I'm more tired than usual. My exercise tolerance has gone down. My ankles get a little puffy by the end of the day." },
+    // FIXED: HCTZ adherence — no restroom barrier (grader should accept this, not penalize)
+    { id: 'w4-michael_t4-tue_hctz', topic: 'HCTZ adherence', field: 'hctzAdherence', keywords: ['water pill', 'hydrochlorothiazide', 'hctz', 'restroom', 'bathroom', 'skip', 'miss', 'urination'], response: "I take the water pill every day as prescribed. Restroom access hasn't really been a problem for me." },
+    // FIXED: Surgical history — appendectomy at 24 per rubric
+    { id: 'w4-michael_t4-tue_surgery', topic: 'Surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'appendix', 'appendectomy'], response: "Yes, I had my appendix out when I was 24. That's the only surgery I've had." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'w4a_a1', title: 'GDMT Initiation', icon: 'Heart', color: '13314f', questions: [{ key: 'q1', q: 'Which medications should be added or changed to establish the 4 pillars of HFrEF GDMT?' }] },
@@ -84,29 +114,33 @@ const michaelWed = makeCase({
   ENCOUNTER: { week: 'Week 4', 
     day: 'Wednesday', type: '3-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I'm taking all the new pills, but I feel a bit dizzy when I stand up.",
-    snapshotSummary: 'Michael was started on the 4 pillars. He is experiencing orthostatic hypotension.',
+    snapshotSummary: 'Michael was started on the 4 pillars. He is experiencing orthostatic hypotension. HCTZ discontinuation is the key management step.',
     diseaseStates: ['HFrEF'],
     learningObjectives: ['Manage GDMT side effects (orthostasis)', 'Adjust non-GDMT meds to facilitate GDMT tolerance'],
+    visitDate: '09/24/2026',
   },
-  VITALS: { bp: '106/68', bpRepeat: '104/66', hr: '62', rr: '16', temp: '98.6°F', spo2: '97%', weight: '101 kg', height: "5'10\"", bmi: '31.9', flags: { bp: 'warn' } },
+  VITALS: { bp: '106/68', bpRepeat: '104/66', hr: '62', rr: '16', temp: '98.6°F', spo2: '97%', weight: '101 kg', height: "5'10\"", bmi: '31.9', vitalsTime: '09/24/2026 09:14', flags: { bp: 'warn' } },
   LABS: [
-    { label: 'NT-proBNP', value: '165', unit: 'pg/mL', flag: 'high' },
-    { label: 'K', value: '4.5', unit: 'mEq/L', flag: 'normal' },
-    { label: 'SCr', value: '1.08', unit: 'mg/dL', flag: 'normal' },
-    { label: 'eGFR', value: '80', unit: 'mL/min/1.73m²', flag: 'normal' }
+    { label: 'NT-proBNP', value: '165', unit: 'pg/mL', flag: 'high', labDate: '09/24/2026 07:50' },
+    { label: 'K', value: '4.5', unit: 'mEq/L', flag: 'normal', labDate: '09/24/2026 07:50' },
+    { label: 'SCr', value: '1.08', unit: 'mg/dL', flag: 'normal', labDate: '09/24/2026 07:50' },
+    { label: 'eGFR', value: '80', unit: 'mL/min/1.73m²', flag: 'normal', labDate: '09/24/2026 07:50' }
   ],
   ALERTS: [],
-  PROBLEMS: [{ name: 'HFrEF', detail: 'On GDMT, experiencing orthostasis', flag: 'warn' }],
+  PROBLEMS: [
+    { name: 'HFrEF', detail: 'On GDMT x 3 months, experiencing orthostatic hypotension. HCTZ may be contributing.', flag: 'warn' },
+    { name: 'Hypertension', detail: 'BP low due to GDMT + HCTZ — consider HCTZ discontinuation', flag: 'warn' },
+  ],
   MEDICATIONS: [
     { name: 'Sacubitril/Valsartan (Entresto)', dose: '24/26 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
     { name: 'Carvedilol', dose: '3.125 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
     { name: 'Spironolactone', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
     { name: 'Dapagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
-    { name: 'Hydrochlorothiazide', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HTN', notes: '' },
+    { name: 'Hydrochlorothiazide', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HTN', notes: 'Review need — may be contributing to orthostasis' },
     { name: 'Atorvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'HLD', notes: '' },
   ],
   IMMUNIZATIONS: michaelTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Reports dizziness upon standing since starting the new medications. Edema has resolved.' }],
+  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: '3-Month Follow-Up. Reports dizziness upon standing since starting the new medications. Residual shortness of breath improved. Edema has resolved.' }],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'dizziness', label: 'Dizziness Assessment', placeholder: 'When does he feel dizzy?' },
@@ -124,11 +158,13 @@ const michaelWed = makeCase({
   INTERVIEW_KNOWLEDGE: [
     { id: 'w4-michael_t4-wed_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-michael_t4-wed_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin, but no other over-the-counter medications or supplements." },
-    { id: 'w4-michael_t4-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine or beer on special occasions." },
-    { id: 'w4-michael_t4-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago." },
-    { id: 'w4-michael_t4-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had coronary artery disease and heart failure, and suffered a heart attack at age 64. My mother has high blood pressure." },
+    { id: 'w4-michael_t4-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 to 2 drinks on the weekends, usually a glass of wine or beer." },
+    { id: 'w4-michael_t4-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago. I had about a 20 pack-year history." },
+    { id: 'w4-michael_t4-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had hypertension and suffered a heart attack at age 62. My mother has type 2 diabetes." },
     { id: 'w4-michael_t4-wed_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'spouse', 'wife'], response: "I am married and live with my wife. I work full-time as an accountant." },
+    { id: 'w4-michael_t4-wed_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "I have been trying to weigh myself but not consistently. I don't have a home blood pressure cuff yet." },
     { id: 'w4a2_dizzy', topic: 'Orthostasis', field: 'dizziness', keywords: ['stand', 'dizzy', 'lightheaded', 'when'], response: "It's mostly when I get out of bed in the morning or stand up quickly from my desk. It passes after a few seconds." },
+    { id: 'w4-michael_t4-wed_surgery', topic: 'Surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'appendix', 'appendectomy'], response: "Yes, I had my appendix out when I was 24. That's the only surgery I've had." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'w4a2_a1', title: 'Orthostasis Management', icon: 'AlertTriangle', color: 'd97706', questions: [{ key: 'q1', q: 'How can we improve his blood pressure to allow continued GDMT titration?' }] },
@@ -147,29 +183,38 @@ const michaelThu = makeCase({
   ENCOUNTER: { week: 'Week 4', 
     day: 'Thursday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I feel great. Do I still need to increase the doses?",
-    snapshotSummary: 'Michael is doing well but is on starting doses of GDMT. Needs up-titration.',
-    diseaseStates: ['HFrEF'],
-    learningObjectives: ['Recognize the need to titrate GDMT to target doses, not just starting doses'],
+    snapshotSummary: 'Michael is doing well on GDMT with improved EF (now 45% — HFimpEF). Needs up-titration to target doses. Key teaching: treatment success ≠ cure.',
+    diseaseStates: ['HFrEF', 'HFimpEF'],
+    learningObjectives: ['Recognize need to titrate GDMT to target doses', 'Understand HFimpEF and why therapy continues despite EF improvement'],
+    visitDate: '12/24/2026',
   },
-  VITALS: { bp: '122/78', bpRepeat: '120/76', hr: '70', rr: '16', temp: '98.6°F', spo2: '97%', weight: '101 kg', height: "5'10\"", bmi: '31.9', flags: {} },
+  VITALS: { bp: '122/78', bpRepeat: '120/76', hr: '70', rr: '16', temp: '98.6°F', spo2: '97%', weight: '101 kg', height: "5'10\"", bmi: '31.9', vitalsTime: '12/24/2026 09:14', flags: {} },
   LABS: [
-    { label: 'NT-proBNP', value: '92', unit: 'pg/mL', flag: 'normal' },
-    { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal' },
-    { label: 'SCr', value: '1.2', unit: 'mg/dL', flag: 'normal' },
-    { label: 'eGFR', value: '75', unit: 'mL/min/1.73m²', flag: 'normal' }
+    { label: 'NT-proBNP', value: '92', unit: 'pg/mL', flag: 'normal', labDate: '12/24/2026 07:50' },
+    { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal', labDate: '12/24/2026 07:50' },
+    { label: 'SCr', value: '1.2', unit: 'mg/dL', flag: 'normal', labDate: '12/24/2026 07:50' },
+    { label: 'eGFR', value: '75', unit: 'mL/min/1.73m²', flag: 'normal', labDate: '12/24/2026 07:50' }
   ],
   ALERTS: [],
-  PROBLEMS: [{ name: 'HFrEF', detail: 'Stable, requires GDMT titration', flag: 'warn' }],
+  // FIXED: Problem list updated to reflect HFimpEF with repeat LVEF
+  PROBLEMS: [{ name: 'HFrEF → HFimpEF', detail: 'LVEF improved from 35% (baseline) to 45% (repeat echo). On starting doses of GDMT — up-titration required.', flag: 'warn' }],
   MEDICATIONS: [
-    { name: 'Sacubitril/Valsartan (Entresto)', dose: '24/26 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
-    { name: 'Carvedilol', dose: '3.125 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
+    { name: 'Sacubitril/Valsartan (Entresto)', dose: '24/26 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'Starting dose — needs titration to target' },
+    { name: 'Carvedilol', dose: '3.125 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'Starting dose — needs titration to target' },
     { name: 'Spironolactone', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
     { name: 'Dapagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
     { name: 'Atorvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'HLD', notes: '' },
   ],
   IMMUNIZATIONS: michaelTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Dizziness resolved after stopping HCTZ. No HF symptoms. Feels great.' }],
-  OBJECTIVE_EXTRA: [],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: '6-Month Follow-Up. Dizziness resolved after stopping HCTZ. No significant HF symptoms. Feels great.' },
+    // FIXED: Repeat echocardiogram data exposed per rubric
+    { label: 'Repeat Echocardiogram (6-Month)', value: 'LVEF improved from 35% to 45%. Consistent with Heart Failure with Improved Ejection Fraction (HFimpEF).' },
+  ],
+  // FIXED: Objective extra exposes repeat echo
+  OBJECTIVE_EXTRA: [
+    { label: 'Repeat Echocardiogram (6-Month)', value: 'LVEF 45% (improved from baseline LVEF 35%). Mild LV dilation reduced. No significant valvular abnormalities.' }
+  ],
   INTERVIEW_FIELDS: [
     { key: 'titration', label: 'Medication Education', placeholder: 'Explain why doses need to increase' },
   ],
@@ -183,13 +228,15 @@ const michaelThu = makeCase({
     'What is the major educational pearl of this encounter?'
   ],
 
-    INTERVIEW_KNOWLEDGE: [
+  INTERVIEW_KNOWLEDGE: [
     { id: 'w4-michael_t4-thu_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-michael_t4-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin, but no other over-the-counter medications or supplements." },
-    { id: 'w4-michael_t4-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine or beer on special occasions." },
-    { id: 'w4-michael_t4-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago." },
-    { id: 'w4-michael_t4-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had coronary artery disease and heart failure, and suffered a heart attack at age 64. My mother has high blood pressure." },
+    { id: 'w4-michael_t4-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 to 2 drinks on the weekends, usually a glass of wine or beer." },
+    { id: 'w4-michael_t4-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago. I had about a 20 pack-year history." },
+    { id: 'w4-michael_t4-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had hypertension and suffered a heart attack at age 62. My mother has type 2 diabetes." },
     { id: 'w4-michael_t4-thu_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'spouse', 'wife'], response: "I am married and live with my wife. I work full-time as an accountant." },
+    { id: 'w4-michael_t4-thu_surgery', topic: 'Surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'appendix', 'appendectomy'], response: "Yes, I had my appendix out when I was 24. That's the only surgery I've had." },
+    { id: 'w4-michael_t4-thu_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "I've been weighing myself daily and logging it. My weight has been stable around 101 kg." },
     { id: 'w4a3_titrate', topic: 'Titration', field: 'titration', keywords: ['why', 'increase', 'feel fine', 'dose'], response: "If I feel good, why do we need to mess with the doses? Can't we just leave it here?" },
   ],
   ASSESSMENT_CARDS: [
@@ -208,42 +255,64 @@ const michaelThu = makeCase({
 
 const angelaTue = makeCase({
   id: 'w4-angela_b-tue',
-  PATIENT: { name: 'Angela Brooks', age: 64, sex: 'female', ethnicity: 'Black', mrn: 'W4-22091' },
+  PATIENT: { name: 'Angela Brooks', age: 64, dob: '03/12/1962', sex: 'female', ethnicity: 'Black', mrn: 'W4-22091' },
   ENCOUNTER: { week: 'Week 4', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I have so many pills, and they cost too much.",
-    snapshotSummary: 'Angela has HFrEF and Persistent AFib. She was prescribed Apixaban for stroke prevention but is not taking it due to cost.',
-    diseaseStates: ['HFrEF', 'AFib'],
+    snapshotSummary: 'Angela has HFrEF (LVEF 35%) and Persistent Nonvalvular AFib. She was prescribed Apixaban for stroke prevention but is not taking it due to cost. CHA2DS2-VASc = 4.',
+    diseaseStates: ['HFrEF', 'AFib', 'Hypertension', 'Hyperlipidemia'],
     learningObjectives: ['Calculate CHA2DS2-VASc score', 'Identify cost nonadherence as a barrier to stroke prevention'],
+    visitDate: '09/09/2026',
   },
-  VITALS: { bp: '128/78', bpRepeat: '126/76', hr: '88', rr: '16', temp: '98.2°F', spo2: '98%', weight: '84 kg', height: "5'5\"", bmi: '30.8', flags: {} },
+  VITALS: { bp: '128/78', bpRepeat: '126/76', hr: '88', rr: '16', temp: '98.2°F', spo2: '98%', weight: '84 kg', height: "5'5\"", bmi: '30.8', vitalsTime: '09/09/2026 09:14', flags: {} },
   LABS: [
-    { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal' },
-    { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal' },
-    { label: 'BUN', value: '18', unit: 'mg/dL', flag: 'normal' },
-    { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
-    { label: 'eGFR', value: '72', unit: 'mL/min/1.73m²', flag: 'normal' },
-    { label: 'AST', value: '24', unit: 'U/L', flag: 'normal' },
-    { label: 'ALT', value: '21', unit: 'U/L', flag: 'normal' },
-    { label: 'WBC', value: '6.8', unit: 'x10³/mm³', flag: 'normal' },
-    { label: 'Hgb', value: '13.2', unit: 'g/dL', flag: 'normal' },
-    { label: 'Plt', value: '241', unit: 'x10³/mm³', flag: 'normal' },
-    { label: 'NT-proBNP', value: '210', unit: 'pg/mL', flag: 'high' }
+    { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'BUN', value: '18', unit: 'mg/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'eGFR', value: '72', unit: 'mL/min/1.73m²', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'AST', value: '24', unit: 'U/L', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'ALT', value: '21', unit: 'U/L', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'WBC', value: '6.8', unit: 'x10³/mm³', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'Hgb', value: '13.2', unit: 'g/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'Plt', value: '241', unit: 'x10³/mm³', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'NT-proBNP', value: '210', unit: 'pg/mL', flag: 'high', labDate: '09/09/2026 07:50' }
   ],
   ALERTS: [{ level: 'high', text: 'Patient has AFib with elevated stroke risk (CHA2DS2-VASc = 4) but is not taking her prescribed anticoagulant.' }],
+  // FIXED: Problem list expanded to include all active diagnoses
   PROBLEMS: [
-    { name: 'Persistent AFib', detail: 'CHA2DS2-VASc 4. High stroke risk.', flag: 'high' },
-    { name: 'HFrEF', detail: 'Stable on GDMT', flag: 'normal' },
+    { name: 'Persistent Nonvalvular AFib', detail: 'CHA2DS2-VASc 4. High stroke risk. Apixaban not being taken.', flag: 'high' },
+    { name: 'HFrEF', detail: 'LVEF 35%. Stable on GDMT.', flag: 'normal' },
+    { name: 'Hypertension', detail: 'Controlled on current regimen', flag: 'normal' },
+    { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg', flag: 'normal' },
   ],
+  // FIXED: Atorvastatin added to medication list
   MEDICATIONS: [
     { name: 'Sacubitril/Valsartan', dose: '49/51 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
     { name: 'Metoprolol Succinate', dose: '50 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF/Rate control', notes: '' },
     { name: 'Empagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
-    { name: 'Apixaban', dose: '5 mg', route: 'by mouth', freq: 'BID', indication: 'AFib stroke prevention', notes: 'No recent fills' },
+    { name: 'Apixaban', dose: '5 mg', route: 'by mouth', freq: 'BID', indication: 'AFib stroke prevention', notes: 'No recent fills — patient reports cost barrier' },
+    { name: 'Atorvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'HLD', notes: '' },
   ],
-  IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Referred for medication adherence and cost review.' }, { label: 'Social history', value: 'Former smoker. Occasional alcohol.' }],
-  OBJECTIVE_EXTRA: [{ label: 'Pharmacy Claims', value: 'Apixaban last filled 4 months ago.', flag: 'missing' }],
+  // FIXED: Full immunization panel added
+  IMMUNIZATIONS: [
+    { name: 'Influenza', status: 'Up to date', flag: 'normal' },
+    { name: 'COVID-19', status: 'Up to date', flag: 'normal' },
+    { name: 'Pneumococcal', status: 'Not documented', flag: 'warn' },
+    { name: 'Shingrix', status: 'Not documented', flag: 'warn' },
+    { name: 'Tdap', status: 'Overdue', flag: 'warn' },
+  ],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: 'Referred for medication adherence and cost review. Known HFrEF (LVEF 35%) and persistent nonvalvular AFib.' },
+    { label: 'Social history', value: 'Lives alone on fixed income. Retired administrative assistant. Transportation difficult. Former smoker (15 pack-year history, quit ~8 years ago).' },
+    // FIXED: Surgical and family history added per rubric
+    { label: 'Past Surgical History', value: 'Cholecystectomy (prior).' },
+    { label: 'Family History', value: 'Father: ischemic stroke at age 70. Mother: heart failure. Sister: hypertension.' },
+  ],
+  OBJECTIVE_EXTRA: [
+    { label: 'Pharmacy Claims', value: 'Apixaban last filled 4 months ago.', flag: 'missing' },
+    { label: 'Echocardiogram (on file)', value: 'LVEF 35%. Persistent nonvalvular AFib. Irregularly irregular rhythm on exam.' },
+  ],
   INTERVIEW_FIELDS: [
     { key: 'apixaban', label: 'Apixaban Adherence', placeholder: 'Why did she stop the Eliquis?' },
   ],
@@ -262,8 +331,12 @@ const angelaTue = makeCase({
     { id: 'w4-angela_b-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take Tylenol PRN for occasional headaches or body aches, but I avoid aspirin and NSAIDs." },
     { id: 'w4-angela_b-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 glass of wine per week." },
     { id: 'w4-angela_b-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 8 years ago, and I had a 15 pack-year history before that." },
-    { id: 'w4-angela_b-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My mother had atrial fibrillation and suffered a stroke at age 74. My father had high blood pressure and type 2 diabetes." },
-    { id: 'w4-angela_b-tue_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride'], response: "I live alone. I am a retired administrative assistant. Transportation can be difficult, I usually have to take the bus or get a ride." },
+    // FIXED: Family history synchronized to rubric (father: stroke at 70; mother: HF; sister: HTN)
+    { id: 'w4-angela_b-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had a stroke at age 70. My mother had heart failure. My sister has high blood pressure." },
+    // FIXED: Social history enriched with fixed income and transportation detail
+    { id: 'w4-angela_b-tue_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride', 'income', 'fixed'], response: "I live alone on a fixed income. I am a retired administrative assistant. Transportation can be difficult, I usually have to take the bus or get a ride." },
+    // FIXED: Surgical history added per rubric (cholecystectomy)
+    { id: 'w4-angela_b-tue_surgery', topic: 'Past surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'gallbladder', 'cholecystectomy'], response: "Yes, I had my gallbladder removed several years ago. That's the only surgery I've had." },
     { id: 'w4b_apix', topic: 'Cost Barrier', field: 'apixaban', keywords: ['apixaban', 'eliquis', 'cost', 'afford', 'stop', 'fill', 'stretch', 'skip'], response: "That Eliquis is way too expensive. I'm on a fixed income, I can't pay $50 a month for it. I was trying to stretch it out by skipping doses around refill time, but I just ran out and stopped taking it completely." },
   ],
   ASSESSMENT_CARDS: [
@@ -283,37 +356,47 @@ const angelaWed = makeCase({
   ENCOUNTER: { week: 'Week 4', 
     day: 'Wednesday', type: '3-Month Follow-up', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I started the Eliquis, but I stopped because I got bruises and got scared.",
-    snapshotSummary: 'Cost barrier resolved, but Angela is now expressing fear of bleeding due to bruising and a friend\'s story.',
+    snapshotSummary: 'Cost barrier resolved via patient assistance program, but Angela stopped Apixaban due to bruising and fear of bleeding.',
     diseaseStates: ['AFib'],
     learningObjectives: ['Address bleeding fears using shared decision-making', 'Calculate HAS-BLED'],
+    visitDate: '12/09/2026',
   },
-  VITALS: { bp: '126/76', bpRepeat: '124/74', hr: '84', rr: '16', temp: '98.1°F', spo2: '98%', weight: '84 kg', height: "5'5\"", bmi: '30.8', flags: {} },
+  VITALS: { bp: '126/76', bpRepeat: '124/74', hr: '84', rr: '16', temp: '98.1°F', spo2: '98%', weight: '84 kg', height: "5'5\"", bmi: '30.8', vitalsTime: '12/09/2026 09:14', flags: {} },
   LABS: [
-    { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal' },
-    { label: 'K', value: '4.3', unit: 'mEq/L', flag: 'normal' },
-    { label: 'BUN', value: '17', unit: 'mg/dL', flag: 'normal' },
-    { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
-    { label: 'eGFR', value: '73', unit: 'mL/min/1.73m²', flag: 'normal' },
-    { label: 'WBC', value: '6.5', unit: 'x10³/mm³', flag: 'normal' },
-    { label: 'Hgb', value: '13.0', unit: 'g/dL', flag: 'normal' },
-    { label: 'Plt', value: '236', unit: 'x10³/mm³', flag: 'normal' },
-    { label: 'NT-proBNP', value: '210', unit: 'pg/mL', flag: 'high' }
+    { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal', labDate: '12/09/2026 07:50' },
+    { label: 'K', value: '4.3', unit: 'mEq/L', flag: 'normal', labDate: '12/09/2026 07:50' },
+    { label: 'BUN', value: '17', unit: 'mg/dL', flag: 'normal', labDate: '12/09/2026 07:50' },
+    { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal', labDate: '12/09/2026 07:50' },
+    { label: 'eGFR', value: '73', unit: 'mL/min/1.73m²', flag: 'normal', labDate: '12/09/2026 07:50' },
+    { label: 'WBC', value: '6.5', unit: 'x10³/mm³', flag: 'normal', labDate: '12/09/2026 07:50' },
+    { label: 'Hgb', value: '13.0', unit: 'g/dL', flag: 'normal', labDate: '12/09/2026 07:50' },
+    { label: 'Plt', value: '236', unit: 'x10³/mm³', flag: 'normal', labDate: '12/09/2026 07:50' },
+    { label: 'NT-proBNP', value: '210', unit: 'pg/mL', flag: 'high', labDate: '12/09/2026 07:50' }
   ],
   ALERTS: [],
-  PROBLEMS: [{ name: 'AFib', detail: 'Cost resolved, fear of bleeding', flag: 'warn' }],
+  // FIXED: Problem list expanded to full active diagnoses
+  PROBLEMS: [
+    { name: 'Persistent Nonvalvular AFib', detail: 'Cost barrier resolved. Patient stopped Apixaban due to bruising fear.', flag: 'warn' },
+    { name: 'HFrEF', detail: 'LVEF 35%. Stable on GDMT.', flag: 'normal' },
+    { name: 'Hypertension', detail: 'Controlled', flag: 'normal' },
+    { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg', flag: 'normal' },
+  ],
+  // FIXED: Atorvastatin added to Wednesday medication list
   MEDICATIONS: [
     { name: 'Sacubitril/Valsartan', dose: '49/51 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
     { name: 'Metoprolol Succinate', dose: '50 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF/Rate control', notes: '' },
     { name: 'Empagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
-    { name: 'Apixaban', dose: '5 mg', route: 'by mouth', freq: 'BID', indication: 'AFib stroke prevention', notes: 'Patient stopped taking recently' },
+    { name: 'Apixaban', dose: '5 mg', route: 'by mouth', freq: 'BID', indication: 'AFib stroke prevention', notes: 'Patient stopped recently due to bruising fear' },
+    { name: 'Atorvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'HLD', notes: '' },
   ],
   IMMUNIZATIONS: angelaTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Patient obtained Apixaban via patient assistance program but stopped taking it due to bruising and fear of major bleeding after a friend\'s anecdote.' }],
+  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: '3-Month Follow-Up. Patient obtained Apixaban via patient assistance program but stopped taking it due to bruising and fear of major bleeding after a friend\'s anecdote.' }],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'fear', label: 'Bleeding Fears', placeholder: 'What are her bleeding symptoms?' },
   ],
-    COUNSELING: [{ id: 'c1', title: 'Starting DOACs', body: ["This blood thinner doesn't require routine blood checks like warfarin, but you must take it exactly as prescribed. Missing doses leaves you unprotected."] }], GUIDING_QUESTIONS:
+  // FIXED: Counseling corrected to DOAC-specific (no warfarin INR language)
+  COUNSELING: [{ id: 'c1', title: 'Apixaban Safety Counseling', body: ["Apixaban does not require routine blood monitoring like warfarin. However, you must take it exactly as prescribed. Missing doses leaves you unprotected against stroke. Minor bruising is an expected side effect and does not mean the medication is dangerous."] }], GUIDING_QUESTIONS:
    [
     'Why is minor bruising managed differently than major bleeding?',
     'Why is continuation of apixaban appropriate?',
@@ -328,8 +411,11 @@ const angelaWed = makeCase({
     { id: 'w4-angela_b-wed_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take Tylenol PRN for occasional headaches or body aches, but I avoid aspirin and NSAIDs." },
     { id: 'w4-angela_b-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 glass of wine per week." },
     { id: 'w4-angela_b-wed_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 8 years ago, and I had a 15 pack-year history before that." },
-    { id: 'w4-angela_b-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My mother had atrial fibrillation and suffered a stroke at age 74. My father had high blood pressure and type 2 diabetes." },
-    { id: 'w4-angela_b-wed_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride'], response: "I live alone. I am a retired administrative assistant. Transportation can be difficult, I usually have to take the bus or get a ride." },
+    // FIXED: Family history synchronized to rubric
+    { id: 'w4-angela_b-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had a stroke at age 70. My mother had heart failure. My sister has high blood pressure." },
+    { id: 'w4-angela_b-wed_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride', 'income', 'fixed', 'cost', 'afford'], response: "I live alone on a fixed income. I am retired. The assistance program resolved the cost issue for Eliquis. Transportation can still be difficult — I usually take the bus or get a ride." },
+    // FIXED: Surgery entry added for Wednesday
+    { id: 'w4-angela_b-wed_surgery', topic: 'Past surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'gallbladder', 'cholecystectomy'], response: "Yes, I had my gallbladder removed several years ago. That's the only surgery I've had." },
     { id: 'w4b2_bruise', topic: 'Bruising Symptoms', field: 'bleeding', keywords: ['bruise', 'bruising', 'bleed', 'bleeding', 'symptoms', 'nosebleed', 'gums'], response: "I noticed some small bruises on my arms and legs without even bumping into anything. They weren't painful and went away on their own. I haven't had any gum bleeding, nosebleeds, or blood in my stool, and I haven't gone to the ER, but seeing bruises scared me." },
     { id: 'w4b2_fear', topic: 'Fear of bleeding', field: 'fear', keywords: ['scared', 'fear', 'afraid', 'stop', 'why', 'friend'], response: "My friend told me a terrifying story about someone who bled to death on these exact blood thinners. Combined with the bruises I got, I panicked and stopped taking it." },
   ],
@@ -353,35 +439,45 @@ const angelaThu = makeCase({
     snapshotSummary: 'Angela successfully started Apixaban and is tolerating it well. Her HFrEF remains stable.',
     diseaseStates: ['AFib', 'HFrEF'],
     learningObjectives: ['Provide positive reinforcement and confirm adherence'],
+    visitDate: '03/09/2027',
   },
-  VITALS: { bp: '124/74', bpRepeat: '122/72', hr: '80', rr: '16', temp: '98.0°F', spo2: '98%', weight: '83 kg', height: "5'5\"", bmi: '30.5', flags: {} },
+  VITALS: { bp: '124/74', bpRepeat: '122/72', hr: '80', rr: '16', temp: '98.0°F', spo2: '98%', weight: '83 kg', height: "5'5\"", bmi: '30.5', vitalsTime: '03/09/2027 09:14', flags: {} },
   LABS: [
-    { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal' },
-    { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal' },
-    { label: 'BUN', value: '18', unit: 'mg/dL', flag: 'normal' },
-    { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal' },
-    { label: 'eGFR', value: '72', unit: 'mL/min/1.73m²', flag: 'normal' },
-    { label: 'AST', value: '22', unit: 'U/L', flag: 'normal' },
-    { label: 'ALT', value: '24', unit: 'U/L', flag: 'normal' },
-    { label: 'WBC', value: '6.6', unit: 'x10³/mm³', flag: 'normal' },
-    { label: 'Hgb', value: '13.1', unit: 'g/dL', flag: 'normal' },
-    { label: 'Plt', value: '240', unit: 'x10³/mm³', flag: 'normal' }
+    { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'BUN', value: '18', unit: 'mg/dL', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'eGFR', value: '72', unit: 'mL/min/1.73m²', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'AST', value: '22', unit: 'U/L', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'ALT', value: '24', unit: 'U/L', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'WBC', value: '6.6', unit: 'x10³/mm³', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'Hgb', value: '13.1', unit: 'g/dL', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'Plt', value: '240', unit: 'x10³/mm³', flag: 'normal', labDate: '03/09/2027 07:50' }
   ],
   ALERTS: [],
-  PROBLEMS: [{ name: 'AFib', detail: 'Anticoagulated successfully', flag: 'normal' }],
+  // FIXED: Problem list expanded to full active diagnoses
+  PROBLEMS: [
+    { name: 'Persistent Nonvalvular AFib', detail: 'Anticoagulated successfully on Apixaban.', flag: 'normal' },
+    { name: 'HFrEF', detail: 'LVEF 35%. Stable on GDMT.', flag: 'normal' },
+    { name: 'Hypertension', detail: 'Controlled', flag: 'normal' },
+    { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg', flag: 'normal' },
+  ],
+  // FIXED: Atorvastatin added to Thursday medication list
   MEDICATIONS: [
     { name: 'Sacubitril/Valsartan', dose: '49/51 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
     { name: 'Metoprolol Succinate', dose: '50 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF/Rate control', notes: '' },
     { name: 'Empagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
     { name: 'Apixaban', dose: '5 mg', route: 'by mouth', freq: 'BID', indication: 'AFib stroke prevention', notes: 'Taking as prescribed' },
+    { name: 'Atorvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'HLD', notes: '' },
   ],
   IMMUNIZATIONS: angelaTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Patient compliant with Apixaban. No bleeding events reported.' }],
+  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: '6-Month Follow-Up. Patient compliant with Apixaban. No significant bleeding events reported.' }],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Adherence Check', placeholder: 'Check on her daily routine' },
   ],
-    COUNSELING: [{ id: 'c1', title: 'Bleeding Precautions', body: ["You may bruise more easily on this medication. If you experience severe headaches, blood in your urine or stool, or bleeding that won't stop, go to the emergency room."] }], GUIDING_QUESTIONS:
+  // FIXED: Counseling updated — DOAC-specific (no warfarin INR language)
+  COUNSELING: [{ id: 'c1', title: 'Bleeding Precautions', body: ["You may bruise more easily on this medication. If you experience severe headaches, blood in your urine or stool, or bleeding that won't stop, go to the emergency room. You do not need routine blood monitoring like warfarin patients do."] }], GUIDING_QUESTIONS:
    [
     'What was the primary success demonstrated during this encounter?',
     'Why was continuation of anticoagulation appropriate?',
@@ -391,14 +487,17 @@ const angelaThu = makeCase({
     'What is the major teaching pearl of Patient B?'
   ],
 
-    INTERVIEW_KNOWLEDGE: [
+  INTERVIEW_KNOWLEDGE: [
     { id: 'w4-angela_b-thu_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-angela_b-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take Tylenol PRN for occasional headaches or body aches, but I avoid aspirin and NSAIDs." },
     { id: 'w4-angela_b-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 glass of wine per week." },
     { id: 'w4-angela_b-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 8 years ago, and I had a 15 pack-year history before that." },
-    { id: 'w4-angela_b-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My mother had atrial fibrillation and suffered a stroke at age 74. My father had high blood pressure and type 2 diabetes." },
-    { id: 'w4-angela_b-thu_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride'], response: "I live alone. I am a retired administrative assistant. Transportation can be difficult, I usually have to take the bus or get a ride." },
+    // FIXED: Family history synchronized to rubric
+    { id: 'w4-angela_b-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had a stroke at age 70. My mother had heart failure. My sister has high blood pressure." },
+    { id: 'w4-angela_b-thu_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride'], response: "I live alone. I am a retired administrative assistant. Transportation can still be difficult — I usually take the bus or get a ride, but I've managed to make all my appointments." },
     { id: 'w4-angela_b-thu_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "I don't have a blood pressure cuff or a scale at home. I just come in for checkups." },
+    // FIXED: Surgery entry added for Thursday
+    { id: 'w4-angela_b-thu_surgery', topic: 'Past surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'gallbladder', 'cholecystectomy'], response: "Yes, I had my gallbladder removed several years ago. That's the only surgery I've had." },
     { id: 'w4b3_adh', topic: 'Adherence', field: 'adherence', keywords: ['take', 'miss', 'every day', 'routine'], response: "Getting the Eliquis through the assistance program made it affordable, and your counseling helped me understand why I need it. I set a pillbox and I take it every morning and night. No problems at all." },
   ],
   ASSESSMENT_CARDS: [
@@ -417,42 +516,63 @@ const angelaThu = makeCase({
 
 const robertTue = makeCase({
   id: 'w4-robert_j4-tue',
-  PATIENT: { name: 'Robert Jenkins', age: 76, sex: 'male', ethnicity: 'White', mrn: 'W4-90088' },
+  // FIXED: DOB added; weight corrected to 58 kg per rubric; SCr corrected to 1.4 mg/dL per rubric
+  PATIENT: { name: 'Robert Jenkins', age: 76, dob: '07/19/1950', sex: 'male', ethnicity: 'White', mrn: 'W4-90088' },
   ENCOUNTER: { week: 'Week 4', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I like to review my labs. My kidney numbers seem worse.",
-    snapshotSummary: 'Robert has complex multi-morbidity. He is 76, weighs 58 kg, and has a SCr of 1.4 mg/dL. He is on Apixaban 5 mg BID, which is inappropriately dosed for his renal/age/weight profile.',
+    snapshotSummary: 'Robert has complex multi-morbidity (HFrEF, AFib, CKD Stage 3, T2DM). He is 76, weighs 58 kg, and SCr is 1.4 mg/dL (eGFR 44). He meets only ONE Apixaban dose-reduction criterion (SCr ≥1.5? No — SCr is 1.4, so actually ZERO criteria met). Standard 5 mg BID is correct.',
     diseaseStates: ['HFrEF', 'AFib', 'CKD', 'T2DM'],
     learningObjectives: ['Identify need for DOAC dose adjustment based on age, weight, and SCr'],
+    visitDate: '09/09/2026',
   },
-  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '82 kg', height: "5'7\"", bmi: '28.3', flags: {} },
+  // FIXED: Weight 58 kg per rubric; vitalsTime added
+  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '58 kg', height: "5'7\"", bmi: '20.0', vitalsTime: '09/09/2026 09:14', flags: {} },
   LABS: [
-    { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal' },
-    { label: 'K', value: '5.0', unit: 'mEq/L', flag: 'normal' },
-    { label: 'BUN', value: '34', unit: 'mg/dL', flag: 'normal' },
-    { label: 'SCr', value: '1.82', unit: 'mg/dL', flag: 'high' },
-    { label: 'eGFR', value: '38', unit: 'mL/min/1.73m²', flag: 'low' },
-    { label: 'WBC', value: '6.4', unit: 'x10³/mm³', flag: 'normal' },
-    { label: 'Hgb', value: '13.5', unit: 'g/dL', flag: 'normal' },
-    { label: 'Plt', value: '228', unit: 'x10³/mm³', flag: 'normal' },
-    { label: 'NT-proBNP', value: '165', unit: 'pg/mL', flag: 'high' },
-    { label: 'HbA1c', value: '6.9', unit: '%', flag: 'normal' }
+    // FIXED: SCr 1.4 mg/dL per rubric; eGFR adjusted accordingly; labDate added
+    { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'K', value: '5.0', unit: 'mEq/L', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'BUN', value: '34', unit: 'mg/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'SCr', value: '1.4', unit: 'mg/dL', flag: 'high', labDate: '09/09/2026 07:50' },
+    { label: 'eGFR', value: '44', unit: 'mL/min/1.73m²', flag: 'low', labDate: '09/09/2026 07:50' },
+    { label: 'WBC', value: '6.4', unit: 'x10³/mm³', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'Hgb', value: '13.5', unit: 'g/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'Plt', value: '228', unit: 'x10³/mm³', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'NT-proBNP', value: '165', unit: 'pg/mL', flag: 'high', labDate: '09/09/2026 07:50' },
+    { label: 'HbA1c', value: '6.9', unit: '%', flag: 'normal', labDate: '09/09/2026 07:50' }
   ],
-  ALERTS: [{ level: 'warn', text: 'Apixaban dose-reduction criteria: age ≥80 [No — age 76], weight ≤60 kg [No — 82 kg], SCr ≥1.5 mg/dL [Yes — SCr 1.82, but reduction requires ≥2 criteria]. Only ONE criterion met; standard dose 5 mg BID is correct.' }, { level: 'warn', text: 'CKD (eGFR 38) and polypharmacy require careful renal and electrolyte monitoring.' }],
+  // FIXED: Alert corrected to reflect SCr 1.4 (does NOT meet ≥1.5 criterion)
+  ALERTS: [{ level: 'warn', text: 'Apixaban dose-reduction criteria (age ≥80, Wt ≤60kg, SCr ≥1.5 mg/dL): Age 76 [No]; Weight 58 kg [Yes — ≤60kg]; SCr 1.4 [No — <1.5]. Only ONE criterion met. Standard dose 5 mg BID is correct.' }, { level: 'warn', text: 'CKD Stage 3 (eGFR 44) and polypharmacy require careful renal and electrolyte monitoring.' }],
+  // FIXED: Problem list expanded to include all active diagnoses
   PROBLEMS: [
-    { name: 'AFib', detail: 'On Apixaban 5 mg BID', flag: 'normal' },
-    { name: 'CKD', detail: 'SCr 1.82, eGFR 38', flag: 'warn' },
+    { name: 'AFib', detail: 'On Apixaban 5 mg BID — standard dose confirmed appropriate', flag: 'normal' },
+    { name: 'CKD Stage 3', detail: 'SCr 1.4 mg/dL, eGFR 44. Monitor K and renal function.', flag: 'warn' },
+    { name: 'HFrEF', detail: 'Stable on maximally tolerated GDMT', flag: 'normal' },
+    { name: 'T2DM', detail: 'HbA1c 6.9%. Well controlled.', flag: 'normal' },
+    { name: 'Coronary Artery Disease', detail: 'On Rosuvastatin 40 mg', flag: 'normal' },
   ],
   MEDICATIONS: [
     { name: 'Sacubitril/Valsartan', dose: '97/103 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: '' },
     { name: 'Metoprolol Succinate', dose: '100 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
     { name: 'Spironolactone', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: '' },
     { name: 'Empagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF/T2DM', notes: '' },
-    { name: 'Apixaban', dose: '5 mg', route: 'by mouth', freq: 'BID', indication: 'AFib', notes: '' },
+    { name: 'Apixaban', dose: '5 mg', route: 'by mouth', freq: 'BID', indication: 'AFib', notes: 'Standard dose — meets only 1 of 3 dose-reduction criteria (weight)' },
     { name: 'Rosuvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'CAD', notes: '' },
   ],
-  IMMUNIZATIONS: [{ name: 'Influenza', status: 'Up to date', flag: 'normal' }],
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Highly engaged patient. Reviews all labs. Excellent adherence.' }, { label: 'Social history', value: 'Former smoker. Occasional alcohol.' }],
+  // FIXED: Full immunization panel added
+  IMMUNIZATIONS: [
+    { name: 'Influenza', status: 'Up to date', flag: 'normal' },
+    { name: 'COVID-19', status: 'Up to date', flag: 'normal' },
+    { name: 'Pneumococcal', status: 'Up to date (received PPSV23 and PCV20)', flag: 'normal' },
+    { name: 'Shingrix', status: 'Series completed', flag: 'normal' },
+    { name: 'Tdap', status: 'Overdue', flag: 'warn' },
+  ],
+  // FIXED: Full SUBJECTIVE_DOCUMENTED with all components per rubric
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: 'Highly engaged patient who reviews all labs. Excellent medication adherence. CKD Stage 3 on multi-drug GDMT. Questioned if SCr 1.4 mg/dL warrants Apixaban dose reduction.' },
+    { label: 'Social history', value: 'Former smoker (25 pack-year history, quit ~12 years ago). Rarely drinks alcohol. Retired engineer. Lives with wife who assists with management.' },
+    { label: 'Family History', value: 'Father: MI at age 58. Mother: stroke at age 72. Brother: CAD.' },
+  ],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'questions', label: 'Patient Questions', placeholder: 'What does he want to know?' },
@@ -467,7 +587,8 @@ const robertTue = makeCase({
     'What is the major teaching pearl of this encounter?'
   ],
 
-    INTERVIEW_KNOWLEDGE: [
+  // FIXED: INTERVIEW_KNOWLEDGE indentation corrected; counseling matches SCr 1.4, not 1.82
+  INTERVIEW_KNOWLEDGE: [
     { id: 'w4-robert_j4-tue_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-robert_j4-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin. I avoid other over-the-counter pain relievers unless my doctor approves them." },
     { id: 'w4-robert_j4-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe 1 to 2 drinks per month at social gatherings." },
@@ -475,7 +596,8 @@ const robertTue = makeCase({
     { id: 'w4-robert_j4-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had a heart attack at age 58. My mother had a stroke at age 72. My brother has coronary artery disease." },
     { id: 'w4-robert_j4-tue_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'spouse', 'wife', 'engineer', 'retired'], response: "I am a retired engineer. I live with my wife, she helps me manage everything." },
     { id: 'w4-robert_j4-tue_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "Oh yes, I am very diligent. I check my blood pressure, heart rate, and weight at home every single day." },
-    { id: 'w4c_q', topic: 'Evidence question', field: 'questions', keywords: ['labs', 'kidney', 'creatinine', 'dose', 'apixaban'], response: "My creatinine is 1.82. Shouldn't my Apixaban dose be lowered? I read online that people with kidney problems need a lower dose." },
+    // FIXED: Patient question updated to match corrected SCr 1.4
+    { id: 'w4c_q', topic: 'Evidence question', field: 'questions', keywords: ['labs', 'kidney', 'creatinine', 'dose', 'apixaban'], response: "My creatinine is 1.4. Does that affect my Apixaban dose? I read online that people with kidney problems sometimes need a lower dose." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'w4c_a1', title: 'Apixaban Dosing Criteria', icon: 'Scale', color: '13314f', questions: [{ key: 'q1', q: 'Does he meet TWO of the criteria for dose reduction (Age ≥80, Wt ≤60kg, SCr ≥1.5)?' }] },
@@ -494,31 +616,40 @@ const robertWed = makeCase({
   ENCOUNTER: { week: 'Week 4', 
     day: 'Wednesday', type: '3-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I've had a few nosebleeds recently. I'm worried about this blood thinner.",
-    snapshotSummary: 'Robert is experiencing minor epistaxis on Apixaban. He is questioning the risk-benefit tradeoff.',
+    snapshotSummary: 'Robert is experiencing minor epistaxis on Apixaban. He is questioning the risk-benefit tradeoff. AZALEA-TIMI 71 concept introduced.',
     diseaseStates: ['AFib'],
     learningObjectives: ['Manage minor bleeding on DOACs', 'Apply AZALEA-TIMI 71 concepts regarding future Factor XI inhibitors'],
+    visitDate: '12/09/2026',
   },
-  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '82 kg', height: "5'7\"", bmi: '28.3', flags: {} },
+  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '58 kg', height: "5'7\"", bmi: '20.0', vitalsTime: '12/09/2026 09:14', flags: {} },
   LABS: [
-    { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal' },
-    { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal' },
-    { label: 'BUN', value: '32', unit: 'mg/dL', flag: 'normal' },
-    { label: 'SCr', value: '1.79', mg: 'dL', flag: 'high' },
-    { label: 'eGFR', value: '39', unit: 'mL/min/1.73m²', flag: 'low' },
-    { label: 'WBC', value: '6.5', unit: 'x10³/mm³', flag: 'normal' },
-    { label: 'Hgb', value: '13.4', unit: 'g/dL', flag: 'normal' },
-    { label: 'Plt', value: '226', unit: 'x10³/mm³', flag: 'normal' }
+    { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal', labDate: '12/09/2026 07:50' },
+    { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal', labDate: '12/09/2026 07:50' },
+    { label: 'BUN', value: '32', unit: 'mg/dL', flag: 'normal', labDate: '12/09/2026 07:50' },
+    // FIXED: SCr unit corrected (was missing unit field in Wednesday)
+    { label: 'SCr', value: '1.38', unit: 'mg/dL', flag: 'normal', labDate: '12/09/2026 07:50' },
+    { label: 'eGFR', value: '45', unit: 'mL/min/1.73m²', flag: 'low', labDate: '12/09/2026 07:50' },
+    { label: 'WBC', value: '6.5', unit: 'x10³/mm³', flag: 'normal', labDate: '12/09/2026 07:50' },
+    { label: 'Hgb', value: '13.4', unit: 'g/dL', flag: 'normal', labDate: '12/09/2026 07:50' },
+    { label: 'Plt', value: '226', unit: 'x10³/mm³', flag: 'normal', labDate: '12/09/2026 07:50' }
   ],
   ALERTS: [],
-  PROBLEMS: [{ name: 'AFib', detail: 'Minor epistaxis on DOAC', flag: 'warn' }],
+  // FIXED: Problem list expanded
+  PROBLEMS: [
+    { name: 'AFib', detail: 'Minor epistaxis on Apixaban. No major bleeding. Continuation appropriate.', flag: 'warn' },
+    { name: 'CKD Stage 3', detail: 'SCr 1.38 mg/dL, eGFR 45. Stable.', flag: 'warn' },
+    { name: 'HFrEF', detail: 'Stable on GDMT', flag: 'normal' },
+    { name: 'T2DM', detail: 'Controlled. HbA1c 6.9%', flag: 'normal' },
+  ],
   MEDICATIONS: robertTue.MEDICATIONS,
   IMMUNIZATIONS: robertTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Reports two episodes of nosebleeds in the past month, resolving with 5 minutes of pressure. No ER visits.' }],
+  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: '3-Month Follow-Up. Reports two episodes of nosebleeds in the past month, resolving with 5 minutes of pressure. No ER visits. No hemoptysis, hematuria, or GI bleeding.' }],
   OBJECTIVE_EXTRA: [],
   INTERVIEW_FIELDS: [
     { key: 'nosebleeds', label: 'Bleeding details', placeholder: 'How severe are the bleeds?' },
   ],
-    COUNSELING: [{ id: 'c1', title: 'Interactions and Diet', body: ["Many antibiotics and over-the-counter pain relievers can drastically change your INR. Always ask the pharmacist before starting any new medication or supplement."] }], GUIDING_QUESTIONS:
+  // FIXED: Counseling corrected — removed warfarin/INR language (not applicable to DOAC patient)
+  COUNSELING: [{ id: 'c1', title: 'Minor Bleeding on DOACs', body: ["Nosebleeds and easy bruising are known side effects of Apixaban. These minor bleeds should be managed locally — pinch your nose for 5-10 minutes, stay upright, and avoid blowing your nose. The stroke risk from stopping your blood thinner is far greater than the risk from these minor bleeds. If you ever have blood in your urine, black/tarry stools, or bleeding that won't stop in 15 minutes, call us or go to the ER immediately."] }], GUIDING_QUESTIONS:
    [
     'Why is bridging generally unnecessary in this patient?',
     'What factors influence interruption timing?',
@@ -528,7 +659,8 @@ const robertWed = makeCase({
     'What is the major teaching pearl of this encounter?'
   ],
 
-    INTERVIEW_KNOWLEDGE: [
+  // FIXED: INTERVIEW_KNOWLEDGE indentation corrected
+  INTERVIEW_KNOWLEDGE: [
     { id: 'w4-robert_j4-wed_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'w4-robert_j4-wed_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin. I avoid other over-the-counter pain relievers unless my doctor approves them." },
     { id: 'w4-robert_j4-wed_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe 1 to 2 drinks per month at social gatherings." },
@@ -558,20 +690,27 @@ const robertThu = makeCase({
     snapshotSummary: 'Robert is here for post-procedural follow-up after an elective screening colonoscopy 10 days ago. He questions the need for ongoing anticoagulation.',
     diseaseStates: ['HFrEF', 'AFib', 'CKD'],
     learningObjectives: ['Assess bleeding risk vs stroke risk post-procedure', 'Reinforce indication for long-term anticoagulation'],
+    visitDate: '03/09/2027',
   },
-  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '82 kg', height: "5'7\"", bmi: '28.3', flags: {} },
+  VITALS: { bp: '120/70', bpRepeat: '118/68', hr: '68', rr: '16', temp: '98.6°F', spo2: '97%', weight: '58 kg', height: "5'7\"", bmi: '20.0', vitalsTime: '03/09/2027 09:14', flags: {} },
   LABS: [
-    { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal' },
-    { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal' },
-    { label: 'BUN', value: '31', unit: 'mg/dL', flag: 'normal' },
-    { label: 'SCr', value: '1.76', unit: 'mg/dL', flag: 'high' },
-    { label: 'eGFR', value: '40', unit: 'mL/min/1.73m²', flag: 'low' },
-    { label: 'WBC', value: '6.3', unit: 'x10³/mm³', flag: 'normal' },
-    { label: 'Hgb', value: '13.3', unit: 'g/dL', flag: 'normal' },
-    { label: 'Plt', value: '229', unit: 'x10³/mm³', flag: 'normal' }
+    { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'BUN', value: '31', unit: 'mg/dL', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'SCr', value: '1.35', unit: 'mg/dL', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'eGFR', value: '46', unit: 'mL/min/1.73m²', flag: 'low', labDate: '03/09/2027 07:50' },
+    { label: 'WBC', value: '6.3', unit: 'x10³/mm³', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'Hgb', value: '13.3', unit: 'g/dL', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'Plt', value: '229', unit: 'x10³/mm³', flag: 'normal', labDate: '03/09/2027 07:50' }
   ],
   ALERTS: [],
-  PROBLEMS: [{ name: 'AFib', detail: 'On Apixaban 5 mg BID', flag: 'normal' }],
+  // FIXED: Problem list expanded
+  PROBLEMS: [
+    { name: 'AFib', detail: 'On Apixaban 5 mg BID. Continuation appropriate post-colonoscopy.', flag: 'normal' },
+    { name: 'CKD Stage 3', detail: 'SCr 1.35 mg/dL, eGFR 46. Stable.', flag: 'warn' },
+    { name: 'HFrEF', detail: 'Stable on GDMT', flag: 'normal' },
+    { name: 'T2DM', detail: 'Controlled', flag: 'normal' },
+  ],
   MEDICATIONS: robertTue.MEDICATIONS,
   IMMUNIZATIONS: robertTue.IMMUNIZATIONS,
   SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Recent elective screening colonoscopy approximately 10 days ago.' }, { label: 'Past Surgical History', value: 'Recent screening colonoscopy with tubular adenoma removal.' }],
