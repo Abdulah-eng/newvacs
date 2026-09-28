@@ -11,7 +11,7 @@ const michaelTue = makeCase({
   id: 'w4-michael_t4-tue',
   PATIENT: { name: 'Michael Thompson', age: 58, sex: 'male', ethnicity: 'White', mrn: 'W4-51004' },
   ENCOUNTER: { week: 'Week 4', 
-    day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Foundational', difficultyTone: 'teal',
+    day: 'Tuesday', type: 'Initial Ambulatory Care Cardiology Clinic Visit', difficulty: 'Foundational', difficultyTone: 'teal',
     chiefConcern: "The cardiologist said my heart muscle is weak and I need to start new medications. Does this mean my heart is going to stop?",
     snapshotSummary: 'Newly diagnosed HFrEF (LVEF 35%). Referred by PCP for progressive dyspnea and reduced exercise tolerance. Ambulatory care cardiology clinic. Needs initiation of GDMT.',
     diseaseStates: ['HFrEF', 'Hypertension', 'Hyperlipidemia'],
@@ -26,7 +26,7 @@ const michaelTue = makeCase({
     { label: 'eGFR', value: '88', unit: 'mL/min/1.73m²', flag: 'normal', labDate: '09/09/2026 07:50' },
     { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal', labDate: '09/09/2026 07:50' },
     { label: 'BUN', value: '17', unit: 'mg/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
-    { label: 'Glucose', value: '98', unit: 'mg/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'Glucose', value: '102', unit: 'mg/dL', flag: 'borderline', labDate: '09/09/2026 07:50' },
     { label: 'AST', value: '24', unit: 'U/L', flag: 'normal', labDate: '09/09/2026 07:50' },
     { label: 'ALT', value: '26', unit: 'U/L', flag: 'normal', labDate: '09/09/2026 07:50' },
     { label: 'LDL-C', value: '101', unit: 'mg/dL', flag: 'borderline', labDate: '09/09/2026 07:50' },
@@ -40,11 +40,11 @@ const michaelTue = makeCase({
   PROBLEMS: [
     { name: 'Heart Failure with Reduced Ejection Fraction (HFrEF)', detail: 'LVEF 35%, mild LV dilation, no significant valvular abnormalities. NYHA Class II, ACC/AHA Stage C.', flag: 'high' },
     { name: 'Hypertension', detail: 'On Lisinopril 20 mg and HCTZ 25 mg (BP 138/84 mmHg)', flag: 'normal' },
-    { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg daily (LDL 118 mg/dL)', flag: 'normal' },
+    { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg daily (LDL-C 101 mg/dL)', flag: 'normal' },
   ],
   MEDICATIONS: [
     { name: 'Lisinopril', dose: '20 mg', route: 'by mouth', freq: 'daily', indication: 'HTN', notes: 'Discontinue — requires 36-hour washout before ARNI initiation' },
-    { name: 'Hydrochlorothiazide', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HTN', notes: 'High adherence, no restroom access barrier' },
+    { name: 'Hydrochlorothiazide', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HTN', notes: 'Adherence maintained daily' },
     { name: 'Atorvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'HLD', notes: 'Cardiovascular risk reduction' },
   ],
   IMMUNIZATIONS: [
@@ -55,7 +55,7 @@ const michaelTue = makeCase({
     { name: 'Tdap', status: 'Last documented approximately 9 years ago (overdue)', flag: 'warn' },
   ],
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: '58-year-old male referred by primary care provider for progressive exertional dyspnea, fatigue, reduced exercise tolerance, and intermittent lower extremity ankle edema over the past 6 months. New nonischemic cardiomyopathy diagnosis with LVEF 35%. Denies chest pain, palpitations, syncope, orthopnea, paroxysmal nocturnal dyspnea (PND), recent hospitalizations, or recent emergency department visits. Reports high overall medication adherence across all current agents (Lisinopril 20 mg daily, HCTZ 25 mg daily); explicitly denies any restroom access barrier to HCTZ. Patient expresses anxiety regarding diagnosis, fearing that heart failure means his heart will stop working. Has limited understanding of heart failure, ejection fraction, home monitoring, and long-term disease management with no prior formal HF education. Stated goal is to understand heart failure, treatment options, and therapy goals.' },
+    { label: 'HPI', value: '58-year-old male referred by primary care provider for progressive exertional dyspnea, fatigue, reduced exercise tolerance, and intermittent lower extremity ankle edema over the past 6 months at the ambulatory care cardiology clinic. Patient initially attributed symptoms to aging, weight gain, and reduced fitness / being out of shape. New nonischemic cardiomyopathy diagnosis with LVEF 35%. Denies chest pain, palpitations, syncope, orthopnea, paroxysmal nocturnal dyspnea (PND), recent hospitalizations, or recent emergency department visits. Notes absence of home blood pressure monitoring and home weight tracking. Reports high overall medication adherence across all current agents (Lisinopril 20 mg daily, HCTZ 25 mg daily). Patient expresses anxiety regarding diagnosis, fearing that heart failure means his heart will stop working. Has limited understanding of heart failure, ejection fraction, home monitoring, and long-term disease management with no prior formal HF education. Stated goal is to understand heart failure, treatment options, and therapy goals.' },
     { label: 'Review of Systems (ROS)', value: 'Cardiovascular: Denies chest pain, palpitations, syncope, orthopnea, or paroxysmal nocturnal dyspnea (PND). Respiratory: Reports exertional dyspnea and reduced exercise tolerance. Musculoskeletal/Edema: Intermittent ankle edema noted.' },
     { label: 'Past Medical History', value: 'Hypertension (HTN), Hyperlipidemia (HLD), Obesity (Class I Obesity via BMI 32.2 kg/m²).' },
     { label: 'Social History', value: 'Married, lives with wife. Works full-time as an accountant. Former smoker (20 pack-year history, quit 5 years ago). Drinks 1–2 alcoholic beverages on weekends. Denies illicit drug use.' },
@@ -64,7 +64,7 @@ const michaelTue = makeCase({
     { label: 'Past Surgical History', value: 'Appendectomy at age 24.' }
   ],
   OBJECTIVE_EXTRA: [
-    { label: 'Echocardiogram & Lab Interpretations', value: 'First Echocardiogram documented (no prior LVEF for comparison): LVEF 35%, mild left ventricular dilation, no significant valvular abnormalities. Laboratory Interpretations: BNP 320 pg/mL is elevated (supporting HFrEF diagnosis); NT-proBNP not obtained (only BNP reported). Serum potassium (4.3 mEq/L) is acceptable for GDMT initiation. Renal function (SCr 1.0 mg/dL, eGFR 88 mL/min/1.73m²) is adequate for GDMT initiation. LFTs (AST 22 U/L, ALT 20 U/L) are within normal limits (confirming statin and GDMT safety). Glucose (98 mg/dL) is normal/borderline. LDL-C (118 mg/dL) contextualized on current Atorvastatin 40 mg daily. TSH/thyroid studies not documented (noted as missing in initial HF workup). Office blood pressure (138/84 mmHg) is slightly above traditional HTN goals but remains adequate for GDMT initiation and titration.' }
+    { label: 'Echocardiogram & Lab Interpretations', value: 'First Echocardiogram documented (no prior LVEF for comparison): LVEF 35%, mild left ventricular dilation, no significant valvular abnormalities. Laboratory Interpretations: BNP 320 pg/mL is elevated (supporting HFrEF diagnosis); NT-proBNP not obtained (only BNP reported). Serum potassium (4.3 mEq/L) meets safety threshold criteria for GDMT initiation. Renal function (SCr 1.0 mg/dL, eGFR 88 mL/min/1.73m²) meets safety threshold criteria for GDMT initiation. LFTs (AST 24 U/L, ALT 26 U/L) are within normal reference limits (confirming statin and GDMT safety). Glucose (102 mg/dL) is in the borderline elevated / pre-diabetic range. LDL-C (101 mg/dL) contextualized on current Atorvastatin 40 mg daily. TSH/thyroid studies not documented (noted as missing in initial HF workup). Office blood pressure (138/84 mmHg) is slightly above traditional HTN goals but meets safety criteria for GDMT initiation and titration.' }
   ],
   INTERVIEW_FIELDS: [
     { key: 'symptoms', label: 'Heart Failure Symptoms & Psychosocial Context', placeholder: 'Describe symptoms, fears, and education needs' },
@@ -86,9 +86,9 @@ const michaelTue = makeCase({
     { id: 'w4-michael_t4-tue_illicit', topic: 'Illicit drug use', field: 'illicit', keywords: ['illicit', 'drug', 'marijuana', 'cocaine', 'street'], response: "I do not use any illicit drugs or street substances." },
     { id: 'w4-michael_t4-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had hypertension and suffered a heart attack at age 62. My mother has hypertension and type 2 diabetes." },
     { id: 'w4-michael_t4-tue_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'spouse', 'wife'], response: "I am married and live with my wife. I work full-time as an accountant." },
-    { id: 'w4-michael_t4-tue_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "I don't check my blood pressure or weigh myself at home. Should I be doing that?" },
-    { id: 'w4a_sym', topic: 'Symptoms', field: 'symptoms', keywords: ['swelling', 'breathe', 'shortness', 'stairs', 'edema', 'tired', 'fatigue', 'exercise', 'energy', 'when', 'start'], response: "It's been gradually getting worse over about the last 6 months. I get winded climbing stairs and I'm more tired than usual. My ankles get a little puffy by the end of the day." },
-    { id: 'w4-michael_t4-tue_hctz', topic: 'HCTZ adherence', field: 'hctzAdherence', keywords: ['water pill', 'hydrochlorothiazide', 'hctz', 'restroom', 'bathroom', 'skip', 'miss', 'urination'], response: "I take the water pill every day as prescribed. Restroom access hasn't really been a problem for me." },
+    { id: 'w4-michael_t4-tue_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "I don't check my blood pressure or weigh myself at home. Notes absence of home blood pressure or home weight monitoring." },
+    { id: 'w4a_sym', topic: 'Symptoms', field: 'symptoms', keywords: ['swelling', 'breathe', 'shortness', 'stairs', 'edema', 'tired', 'fatigue', 'exercise', 'energy', 'when', 'start'], response: "It's been gradually getting worse over about the last 6 months. I initially attributed my symptoms to aging, weight gain, and being out of shape. I get winded climbing stairs and I'm more tired than usual. My ankles get a little puffy by the end of the day." },
+    { id: 'w4-michael_t4-tue_hctz', topic: 'HCTZ adherence', field: 'hctzAdherence', keywords: ['water pill', 'hydrochlorothiazide', 'hctz', 'restroom', 'bathroom', 'skip', 'miss', 'urination'], response: "I take the water pill every day as prescribed." },
     { id: 'w4-michael_t4-tue_fear', topic: 'Patient fear and understanding', field: 'fears', keywords: ['fear', 'stop', 'heart stop', 'die', 'understand', 'scared'], response: "The doctor said my heart muscle is weak. Does this mean my heart is going to stop working? I really want to understand what is happening and what these medications do." },
     { id: 'w4-michael_t4-tue_surgery', topic: 'Surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'appendix', 'appendectomy'], response: "Yes, I had my appendix out when I was 24. That's the only surgery I've had." },
   ],
@@ -102,12 +102,12 @@ const michaelTue = makeCase({
         { 
           key: 'q1', 
           q: 'What is the primary diagnosis, clinical classification, and supporting evidence?',
-          defaultAnswer: 'Newly diagnosed Heart Failure with Reduced Ejection Fraction (HFrEF), NYHA Class II, ACC/AHA Stage C. Supporting evidence includes LVEF 35% with mild left ventricular dilation (first echocardiogram, no prior LVEF for comparison), elevated BNP 320 pg/mL (supporting HFrEF diagnosis; NT-proBNP not obtained), exertional dyspnea, fatigue, reduced exercise tolerance, and intermittent lower extremity ankle edema. TSH/thyroid studies not documented in initial workup.'
+          defaultAnswer: 'Newly diagnosed Heart Failure with Reduced Ejection Fraction (HFrEF), NYHA Class II, ACC/AHA Stage C. Patient initially attributed symptoms to aging, weight gain, and reduced fitness. Supporting evidence includes LVEF 35% with mild left ventricular dilation (first echocardiogram, no prior LVEF for comparison), elevated BNP 320 pg/mL (supporting HFrEF diagnosis; NT-proBNP not obtained), exertional dyspnea, fatigue, reduced exercise tolerance, and intermittent lower extremity ankle edema. TSH/thyroid studies not documented in initial workup.'
         },
         { 
           key: 'q2', 
           q: 'Why is current therapy inadequate, and what guideline recommendations support GDMT initiation?',
-          defaultAnswer: 'Current regimen (Lisinopril 20 mg PO daily and Hydrochlorothiazide 25 mg PO daily) does not represent contemporary guideline-directed medical therapy (GDMT) for HFrEF. Patient is not currently on ARNI therapy, an evidence-based beta blocker (Carvedilol or Metoprolol Succinate), an MRA (Spironolactone), or an SGLT2 inhibitor (Dapagliflozin or Empagliflozin). Per 2022 AHA/ACC/HFSA Heart Failure Guidelines, all symptomatic HFrEF patients should receive foundational 4-pillar GDMT to achieve four core goals: reduce mortality, reduce heart failure hospitalizations, improve symptoms, and slow disease progression. Serum potassium (4.3 mEq/L), renal function (SCr 1.0 mg/dL, eGFR 88 mL/min/1.73m²), LFTs (AST 22 U/L, ALT 20 U/L), and blood pressure (138/84 mmHg) are acceptable and adequate for comprehensive GDMT initiation.'
+          defaultAnswer: 'Current regimen (Lisinopril 20 mg PO daily and Hydrochlorothiazide 25 mg PO daily) does not represent contemporary guideline-directed medical therapy (GDMT) for HFrEF. Patient is not currently on ARNI therapy, an evidence-based beta blocker (Carvedilol or Metoprolol Succinate), an MRA (Spironolactone), or an SGLT2 inhibitor (Dapagliflozin or Empagliflozin). Per 2022 AHA/ACC/HFSA Heart Failure Guidelines, all symptomatic HFrEF patients should receive foundational 4-pillar GDMT to achieve four core goals: reduce mortality, reduce heart failure hospitalizations, improve symptoms, and slow disease progression. Serum potassium (4.3 mEq/L), renal function (SCr 1.0 mg/dL, eGFR 88 mL/min/1.73m²), LFTs (AST 24 U/L, ALT 26 U/L), and blood pressure (138/84 mmHg) meet safety threshold criteria for comprehensive GDMT initiation.'
         }
       ] 
     },
@@ -120,7 +120,7 @@ const michaelTue = makeCase({
         {
           key: 'q3',
           q: 'What is the status of hypertension and its relationship to GDMT initiation?',
-          defaultAnswer: 'Hypertension is present with office BP 138/84 mmHg (repeat 136/82 mmHg), which is slightly above traditional hypertension goals but remains adequate for GDMT initiation and titration. Initiation of ARNI (Sacubitril/Valsartan) and evidence-based beta blocker (Carvedilol) will provide additional blood pressure lowering. Plan for BP reassessment during GDMT optimization.'
+          defaultAnswer: 'Hypertension is present with office BP 138/84 mmHg (repeat 136/82 mmHg), which is slightly above traditional hypertension goals but meets safety criteria for GDMT initiation and titration. Initiation of ARNI (Sacubitril/Valsartan) and evidence-based beta blocker (Carvedilol) will provide additional blood pressure lowering. Plan for BP reassessment during GDMT optimization.'
         }
       ]
     },
@@ -178,35 +178,36 @@ const michaelTue = makeCase({
       title: 'Patient Education & Self-Management Plan',
       options: [
         { key: 'o10', label: 'Educate patient regarding heart failure diagnosis, ejection fraction, expected treatment goals, and medication benefits per 2022 AHA/ACC/HFSA guidelines', correct: true },
-        { key: 'o11', label: 'Address patient anxiety: reassure patient that heart failure means weakened pumping, not that the heart will stop working', correct: true },
-        { key: 'o12', label: 'Educate regarding daily weight monitoring: encourage patient to purchase or utilize a home scale (same scale, morning after voiding; instruct to contact healthcare team if weight increases >=3 lbs in 1 day or >=5 lbs in 1 week)', correct: true },
-        { key: 'o13', label: 'Educate regarding sodium restriction and importance of medication adherence', correct: true },
-        { key: 'o14', label: 'Review signs and symptoms of worsening HF and discuss when to contact the healthcare team', correct: true }
+        { key: 'o11', label: 'Review rationale for guideline-directed medical therapy (GDMT) with patient (including mortality and hospitalization reduction)', correct: true },
+        { key: 'o12', label: 'Address patient anxiety: reassure patient that heart failure means weakened pumping, not that the heart will stop working', correct: true },
+        { key: 'o13', label: 'Educate regarding daily weight monitoring: encourage patient to purchase or utilize a home scale (same scale, morning after voiding; instruct to contact healthcare team if weight increases >=3 lbs in 1 day or >=5 lbs in 1 week)', correct: true },
+        { key: 'o14', label: 'Educate regarding sodium restriction and importance of medication adherence', correct: true },
+        { key: 'o15', label: 'Review signs and symptoms of worsening HF and discuss when to contact the healthcare team', correct: true }
       ]
     },
     {
       id: 'w4a1_p4',
       title: 'Dedicated Monitoring Subsection',
       options: [
-        { key: 'o15', label: 'Monitor blood pressure, heart rate, weight, dyspnea, exercise tolerance, edema, renal function (SCr, eGFR), serum potassium, and medication adherence', correct: true },
-        { key: 'o16', label: 'Repeat basic metabolic panel (BMP) in approximately 1 to 2 weeks after therapy initiation to recheck renal function and potassium', correct: true }
+        { key: 'o16', label: 'Monitor blood pressure, heart rate, weight, dyspnea, exercise tolerance, edema, renal function (SCr, eGFR), serum potassium, and medication adherence', correct: true },
+        { key: 'o17', label: 'Repeat basic metabolic panel (BMP) in approximately 1 to 2 weeks after therapy initiation to recheck renal function and potassium', correct: true }
       ]
     },
     {
       id: 'w4a1_p5',
       title: 'Preventive Care Optimization Plan',
       options: [
-        { key: 'o17', label: 'Review vaccination history at future visits', correct: true },
-        { key: 'o18', label: 'Recommend Pneumococcal vaccination per current ACIP recommendations', correct: true },
-        { key: 'o19', label: 'Assess need for Shingrix vaccination and plan Tdap booster update when due', correct: true }
+        { key: 'o18', label: 'Review vaccination history at future visits', correct: true },
+        { key: 'o19', label: 'Recommend Pneumococcal vaccination per current ACIP recommendations', correct: true },
+        { key: 'o20', label: 'Assess need for Shingrix vaccination and plan Tdap booster update when due', correct: true }
       ]
     },
     {
       id: 'w4a1_p6',
       title: 'Follow-Up Subsection',
       options: [
-        { key: 'o20', label: 'Schedule follow-up visit in approximately 4 to 6 weeks for tolerability assessment, laboratory monitoring, and further GDMT optimization/titration', correct: true },
-        { key: 'o21', label: 'Future visits will focus on progressive implementation of all four foundational HFrEF medication classes', correct: true }
+        { key: 'o21', label: 'Schedule follow-up visit in approximately 4 to 6 weeks for tolerability assessment, laboratory monitoring, and further GDMT optimization/titration', correct: true },
+        { key: 'o22', label: 'Future visits will focus on progressive implementation of all four foundational HFrEF medication classes', correct: true }
       ]
     }
   ],
