@@ -116,8 +116,11 @@ export function SOAPNoteTab({ c, state, soap, onChange, onGraded }) {
           </div>
           <ul className="grid sm:grid-cols-2 gap-x-4 gap-y-2">
             {(() => {
-              const weekId = c.ENCOUNTER.week.split(' ')[1]
-              const letter = NAME_TO_LETTER[c.PATIENT.name]
+              const weekId = String(c.ENCOUNTER.week.split(' ')[1])
+              let letter = NAME_TO_LETTER[c.PATIENT.name]
+              if (weekId === '4' && c.PATIENT.name.includes('Robert')) {
+                letter = 'C'
+              }
               const visitDay = c.ENCOUNTER.day
               const rubricKey = `Week${weekId}_Patient_${letter}_${visitDay}`
               

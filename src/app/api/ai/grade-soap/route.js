@@ -31,6 +31,14 @@ const NAME_TO_LETTER = {
   'David Carter': 'C',
 }
 
+function getPatientLetter(patientName, weekId) {
+  const w = String(weekId || '')
+  if (w === '4' && patientName && patientName.includes('Robert')) {
+    return 'C'
+  }
+  return NAME_TO_LETTER[patientName] || 'A'
+}
+
 export async function POST(request) {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
@@ -51,7 +59,7 @@ export async function POST(request) {
       visitDay
     } = body
 
-    const letter = NAME_TO_LETTER[patientName]
+    const letter = getPatientLetter(patientName, weekId)
     const key = `Week${weekId}_Patient_${letter}_${visitDay}`
     const granularRubric = granularRubrics[key]
 
