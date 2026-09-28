@@ -241,48 +241,59 @@ const michaelThu = makeCase({
   id: 'w4-michael_t4-thu',
   PATIENT: { ...michaelTue.PATIENT },
   ENCOUNTER: { week: 'Week 4', 
-    day: 'Thursday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
-    chiefConcern: "I feel great. Do I still need to increase the doses?",
-    snapshotSummary: 'Michael is doing well on GDMT with improved EF (now 45% — HFimpEF). Needs up-titration to target doses. Key teaching: treatment success ≠ cure.',
-    diseaseStates: ['HFrEF', 'HFimpEF'],
-    learningObjectives: ['Recognize need to titrate GDMT to target doses', 'Understand HFimpEF and why therapy continues despite EF improvement'],
+    day: 'Thursday', type: 'Routine Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
+    chiefConcern: "I feel great and my heart function improved. Can I stop taking these medications?",
+    snapshotSummary: 'Michael presents to the ambulatory care cardiology clinic for a routine 6-month follow-up after GDMT optimization. EF improved from 35% to 45% (HFimpEF). Asks about discontinuing medications now that he feels well.',
+    diseaseStates: ['HFrEF', 'HFimpEF', 'Hypertension', 'Hyperlipidemia'],
+    learningObjectives: ['Recognize HFimpEF and why GDMT is maintained lifelong', 'Understand treatment success vs cure in heart failure'],
     visitDate: '12/24/2026',
   },
-  VITALS: { bp: '122/78', bpRepeat: '120/76', hr: '70', rr: '16', temp: '98.6°F', spo2: '97%', weight: '101 kg', height: "5'10\"", bmi: '31.9', vitalsTime: '12/24/2026 09:14', flags: {} },
+  VITALS: { bp: '112/68', bpRepeat: '114/70', hr: '62', rr: '16', temp: '98.1°F', spo2: '98%', spo2Qualifier: 'on room air', weight: '97 kg', height: "5'10\"", bmi: '30.7', vitalsTime: '12/24/2026 09:14', flags: {} },
   LABS: [
     { label: 'NT-proBNP', value: '92', unit: 'pg/mL', flag: 'normal', labDate: '12/24/2026 07:50' },
+    { label: 'Na', value: '137', unit: 'mEq/L', flag: 'normal', labDate: '12/24/2026 07:50' },
     { label: 'K', value: '4.8', unit: 'mEq/L', flag: 'normal', labDate: '12/24/2026 07:50' },
+    { label: 'BUN', value: '20', unit: 'mg/dL', flag: 'normal', labDate: '12/24/2026 07:50' },
     { label: 'SCr', value: '1.2', unit: 'mg/dL', flag: 'normal', labDate: '12/24/2026 07:50' },
-    { label: 'eGFR', value: '75', unit: 'mL/min/1.73m²', flag: 'normal', labDate: '12/24/2026 07:50' }
+    { label: 'eGFR', value: '75', unit: 'mL/min/1.73m²', flag: 'normal', labDate: '12/24/2026 07:50' },
+    { label: 'AST', value: '23', unit: 'U/L', flag: 'normal', labDate: '12/24/2026 07:50' },
+    { label: 'ALT', value: '24', unit: 'U/L', flag: 'normal', labDate: '12/24/2026 07:50' }
   ],
   ALERTS: [],
   PROBLEMS: [
-    { name: 'HFrEF → HFimpEF', detail: 'LVEF improved from 35% (baseline) to 45% (repeat echo). On starting doses of GDMT — up-titration required.', flag: 'warn' },
-    { name: 'Hypertension', detail: 'Controlled on current GDMT regimen', flag: 'normal' },
-    { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg', flag: 'normal' }
+    { name: 'Heart Failure with Reduced Ejection Fraction (HFrEF) → HFimpEF', detail: 'LVEF improved from baseline 35% to 45% on 4-pillar GDMT. Fully optimized regimen.', flag: 'normal' },
+    { name: 'Hypertension', detail: 'Controlled on current HF regimen (office BP 112/68, home 115/70)', flag: 'normal' },
+    { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg daily for CV risk reduction', flag: 'normal' }
   ],
   MEDICATIONS: [
-    { name: 'Sacubitril/Valsartan (Entresto)', dose: '24/26 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'Starting dose — needs titration to target 97/103 mg BID' },
-    { name: 'Carvedilol', dose: '3.125 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'Starting dose — titrate to 6.25 mg BID today, target 25 mg BID' },
-    { name: 'Spironolactone', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: 'Continue target dose' },
-    { name: 'Dapagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: 'Continue target dose' },
-    { name: 'Atorvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'HLD', notes: '' },
+    { name: 'Sacubitril/Valsartan (Entresto)', dose: '97/103 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'Target dose achieved' },
+    { name: 'Metoprolol Succinate', dose: '100 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: 'Target dose achieved (extended-release)' },
+    { name: 'Empagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: 'Target dose achieved' },
+    { name: 'Spironolactone', dose: '25 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: 'Most recently added GDMT agent (target dose)' },
+    { name: 'Atorvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'HLD', notes: 'Cardiovascular risk reduction' },
   ],
-  IMMUNIZATIONS: michaelTue.IMMUNIZATIONS,
+  IMMUNIZATIONS: [
+    { name: 'Influenza', status: 'Up to date (received)', flag: 'normal' },
+    { name: 'COVID-19', status: 'Up to date (received)', flag: 'normal' },
+    { name: 'Pneumococcal', status: 'Received (completed since previous visit)', flag: 'normal' },
+    { name: 'Shingrix', status: 'Dose #1 received (Dose #2 pending / due in 2-6 months)', flag: 'warn' },
+    { name: 'Tdap', status: 'Up to date (due for booster in ~1 year)', flag: 'normal' },
+  ],
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: '6-Month Follow-Up. Dizziness completely resolved following HCTZ discontinuation. Reports excellent energy, no peripheral edema, and no shortness of breath. Denies chest pain, orthopnea, paroxysmal nocturnal dyspnea, or emergency department visits. Asks why medication doses need to be increased if he feels great.' },
-    { label: 'Social History', value: 'Married, lives with wife. Works full-time as an accountant. Former smoker (20 pack-year history, quit 5 years ago). Drinks 1-2 alcoholic beverages on weekends.' },
+    { label: 'HPI', value: '58-year-old male presents for a routine 6-month follow-up at the ambulatory care cardiology clinic following 6 months of GDMT initiation. Reports marked improvement in exercise tolerance and energy; activities previously causing dyspnea are now easier. Walks for 30–40 minutes most days with only occasional fatigue during strenuous exertion. Dizziness and peripheral edema have completely resolved; weight is stable. Denies chest pain, orthopnea, paroxysmal nocturnal dyspnea (PND), palpitations, syncope, emergency department visits, or hospitalizations since last visit. Excellent medication adherence and good tolerability. Ongoing sodium reduction efforts reported. Asks if medications can be discontinued now that he feels well and heart function has improved.' },
+    { label: 'Past Medical History', value: 'Heart Failure with Reduced Ejection Fraction (HFrEF, baseline LVEF 35%), Hypertension (HTN), Hyperlipidemia (HLD).' },
+    { label: 'Social History', value: 'Married, lives with wife. Works full-time as an accountant. Former smoker (20 pack-year history, quit 5 years ago). Drinks 1–2 alcoholic beverages on weekends. Denies illicit drug use. Maintains regular physical activity (walking 30-40 min most days).' },
     { label: 'Family History', value: 'Father had CAD/HF/HTN and MI at age 62. Mother has hypertension (HTN) and type 2 diabetes.' },
     { label: 'OTC & Allergies', value: 'Daily multivitamin. Denies other OTC medications or herbal supplements. NKDA.' },
     { label: 'Past Surgical History', value: 'Appendectomy at age 24.' }
   ],
   OBJECTIVE_EXTRA: [
-    { label: 'Repeat Echocardiogram (6-Month)', value: 'LVEF 45% (significantly improved from baseline LVEF 35%). Mild LV dilation reduced. No significant valvular abnormalities. Consistent with Heart Failure with Improved Ejection Fraction (HFimpEF).' }
+    { label: 'Objective Trend & Home Vitals', value: 'Repeat Echocardiogram (6-Month): LVEF 45% (significantly improved from baseline LVEF 35%). Mild LV dilation reduced. Consistent with Heart Failure with Improved Ejection Fraction (HFimpEF). NT-proBNP downward trend: baseline 320 pg/mL → previous 165 pg/mL → current 92 pg/mL. Home BP average: 115/70 mmHg, Home HR average: 64 bpm. Weight: 97 kg (BMI 30.7 kg/m²).' }
   ],
   INTERVIEW_FIELDS: [
-    { key: 'titration', label: 'Medication Education', placeholder: 'Explain why doses need to increase' },
+    { key: 'discontinuation', label: 'Medication Education & Discontinuation Query', placeholder: 'Address patient question about stopping medications' },
   ],
-  COUNSELING: [{ id: 'c1', title: 'Beta Blocker Titration & HFimpEF', body: ["We are slowly increasing your beta blocker. Even though your ejection fraction improved to 45%, stopping or holding your heart medications can cause your heart muscle to weaken again. Target doses provide maximum long-term protection."] }], 
+  COUNSELING: [{ id: 'c1', title: 'HFimpEF & Lifelong GDMT Adherence', body: ["Your ejection fraction improved to 45% because the medications are working (treatment success, not a cure). Discontinuing or reducing GDMT can cause heart failure relapse and worsening heart function. All 4 GDMT pillars must be maintained lifelong."] }], 
   GUIDING_QUESTIONS: [
     'What findings support a diagnosis of HFimpEF?',
     'Should GDMT be continued after EF improves?',
@@ -296,46 +307,68 @@ const michaelThu = makeCase({
     { id: 'w4-michael_t4-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin, but no other over-the-counter medications or supplements." },
     { id: 'w4-michael_t4-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink about 1 to 2 drinks on the weekends, usually a glass of wine or beer." },
     { id: 'w4-michael_t4-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago. I had about a 20 pack-year history." },
+    { id: 'w4-michael_t4-thu_illicit', topic: 'Illicit drug use', field: 'illicit', keywords: ['illicit', 'drug', 'marijuana', 'cocaine', 'street'], response: "I do not use any illicit drugs or street substances." },
     { id: 'w4-michael_t4-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had hypertension and suffered a heart attack at age 62. My mother has hypertension and type 2 diabetes." },
     { id: 'w4-michael_t4-thu_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'spouse', 'wife'], response: "I am married and live with my wife. I work full-time as an accountant." },
     { id: 'w4-michael_t4-thu_surgery', topic: 'Surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'appendix', 'appendectomy'], response: "Yes, I had my appendix out when I was 24. That's the only surgery I've had." },
-    { id: 'w4-michael_t4-thu_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "I've been weighing myself daily and logging it. My weight has been stable around 101 kg." },
-    { id: 'w4a3_titrate', topic: 'Titration', field: 'titration', keywords: ['why', 'increase', 'feel fine', 'dose'], response: "If I feel good, why do we need to mess with the doses? Can't we just leave it here?" },
+    { id: 'w4-michael_t4-thu_monitor', topic: 'Home monitoring', field: 'monitoring', keywords: ['monitor', 'home', 'blood pressure', 'bp', 'heart rate', 'hr', 'weight', 'scale', 'weigh', 'daily'], response: "I weigh myself daily (stable at 97 kg). My home blood pressure averages 115/70 mmHg with a heart rate of 64 bpm." },
+    { id: 'w4a3_discontinue', topic: 'Medication Discontinuation Query', field: 'discontinuation', keywords: ['stop', 'discontinue', 'feel good', 'cure', 'why keep taking'], response: "Since my ejection fraction improved to 45% and I feel great, do I still need to take all these heart medications?" },
   ],
   ASSESSMENT_CARDS: [
     { 
       id: 'w4a3_a1', 
-      title: 'HFimpEF Diagnosis & Lifelong GDMT Rationale', 
+      title: 'Heart Failure with Improved Ejection Fraction (HFimpEF)', 
       icon: 'ArrowUpCircle', 
       color: '13314f', 
       questions: [
         { 
           key: 'q1', 
           q: 'What is the updated diagnosis based on repeat echocardiogram and clinical course?',
-          defaultAnswer: 'Heart Failure with Improved Ejection Fraction (HFimpEF). Repeat echocardiogram shows LVEF improved from baseline 35% to 45% on 4-pillar GDMT with complete resolution of orthostasis.'
+          defaultAnswer: 'Heart Failure with Improved Ejection Fraction (HFimpEF). 58-year-old male with HFrEF (baseline LVEF 35%) shows significant clinical improvement with repeat echocardiogram LVEF 45%, marked exercise tolerance improvement (walking 30-40 min), complete resolution of edema, stable weight (97 kg), and NT-proBNP downward trend from baseline 320 pg/mL to previous 165 pg/mL to current 92 pg/mL. No HF hospitalizations or ED visits since GDMT initiation. Excellent adherence and therapy tolerated without adverse effects.'
         },
         { 
           key: 'q2', 
           q: 'Should GDMT be stopped or reduced now that LVEF has improved to 45%?',
-          defaultAnswer: 'No. EF improvement reflects treatment success, NOT a cure. Discontinuing or holding GDMT leads to relapse of LV dysfunction, clinical deterioration, and increased mortality. All 4 GDMT pillars must be maintained lifelong.'
+          defaultAnswer: 'No. Clinical scenario is identified as HFimpEF, NOT resolution or cure of disease. Per ACC/AHA guidelines, improvement reflects treatment success. Discontinuing or reducing GDMT carries high risk of recurrent LV dysfunction, worsening symptoms, HF hospitalization, and increased mortality. Spironolactone was the most recently added agent, completing the fully optimized 4-pillar GDMT regimen (Sacubitril/Valsartan, Metoprolol Succinate, Empagliflozin, Spironolactone). Primary focus of visit is maintenance, adherence reinforcement, and monitoring. All 4 GDMT pillars must be maintained lifelong at current target doses.'
         }
       ] 
     },
     {
       id: 'w4a3_a2',
-      title: 'Dose Titration Rationale & Hemodynamic Safety',
+      title: 'Hypertension',
       icon: 'Heart',
       color: '10b981',
       questions: [
         {
           key: 'q3',
-          q: 'Why is dose titration required if the patient is asymptomatic and feels great?',
-          defaultAnswer: 'Current doses (Carvedilol 3.125 mg BID, Sacubitril/Valsartan 24/26 mg BID) are starting doses. Clinical trials demonstrate that target doses (Carvedilol 25 mg BID, Sacubitril/Valsartan 97/103 mg BID) provide maximum long-term mortality and HF hospitalization reduction.'
-        },
+          q: 'What is the status and management of hypertension?',
+          defaultAnswer: 'Hypertension is controlled. Office BP 112/68 mmHg and home average BP 115/70 mmHg are within acceptable target range, supporting continuation of current therapy. BP is well-controlled through the current 4-pillar HF regimen (Sacubitril/Valsartan and Metoprolol Succinate) without requiring separate antihypertensive agents. No medication changes or dose adjustments needed for HTN at this visit.'
+        }
+      ]
+    },
+    {
+      id: 'w4a3_a3',
+      title: 'Hyperlipidemia',
+      icon: 'Activity',
+      color: '6366f1',
+      questions: [
         {
           key: 'q4',
-          q: 'Is it hemodynamically and renally safe to titrate Carvedilol today?',
-          defaultAnswer: 'Yes. BP 122/78 mmHg (repeat 120/76), HR 70 bpm, SCr 1.2 mg/dL, eGFR 75 mL/min/1.73m², K 4.8 mEq/L, and NT-proBNP 92 pg/mL confirm hemodynamic and renal stability with no orthostasis.'
+          q: 'What is the status and rationale for hyperlipidemia management?',
+          defaultAnswer: 'Hyperlipidemia is stable on appropriate statin therapy (Atorvastatin 40 mg PO daily) for cardiovascular risk reduction. Statin is well tolerated without reported adverse effects. Lipid panel was not obtained at this visit. Continued statin therapy at 40 mg daily is appropriate with no dose change needed.'
+        }
+      ]
+    },
+    {
+      id: 'w4a3_a4',
+      title: 'Preventive Care / Health Maintenance',
+      icon: 'ShieldCheck',
+      color: '059669',
+      questions: [
+        {
+          key: 'q5',
+          q: 'What is the status of preventive care and remaining health maintenance needs?',
+          defaultAnswer: 'Prior preventive care gaps have been successfully addressed: Pneumococcal vaccination documented as received and Shingrix series initiated (Dose #1 received). Influenza and COVID-19 vaccines are up to date with no further action needed. Remaining preventive needs include Shingrix Dose #2 completion (due in 2-6 months) and Tdap booster update when due (~1 year).'
         }
       ]
     }
@@ -343,21 +376,63 @@ const michaelThu = makeCase({
   PLAN_SECTIONS: [
     { 
       id: 'w4a3_p1', 
-      title: 'Medication Adjustments & GDMT Titration', 
+      title: 'Heart Failure with Improved Ejection Fraction (HFimpEF) Management', 
       options: [
-        { key: 'o1', label: 'Titrate Carvedilol from 3.125 mg PO BID to 6.25 mg PO BID today', correct: true },
-        { key: 'o2', label: 'Continue Sacubitril/Valsartan 24/26 mg PO BID, Spironolactone 25 mg PO daily, Dapagliflozin 10 mg PO daily, Atorvastatin 40 mg PO daily', correct: true },
-        { key: 'o3', label: 'Leave doses as they are since he is asymptomatic', correct: false },
+        { key: 'o1', label: 'Continue Sacubitril/Valsartan 97/103 mg PO twice daily (ARNI target dose)', correct: true },
+        { key: 'o2', label: 'Continue Metoprolol Succinate 100 mg PO daily (Beta-blocker target dose)', correct: true },
+        { key: 'o3', label: 'Continue Empagliflozin 10 mg PO daily (SGLT2i target dose)', correct: true },
+        { key: 'o4', label: 'Continue Spironolactone 25 mg PO daily (MRA target dose)', correct: true },
+        { key: 'o5', label: 'Continue all four GDMT agents explicitly despite improvement in ejection fraction (no new additions or dose changes at this visit)', correct: true },
+        { key: 'o6', label: 'Discontinue GDMT because EF improved', correct: false }
       ] 
     },
     {
       id: 'w4a3_p2',
-      title: 'Patient Education, Monitoring & Follow-Up',
+      title: 'Hypertension Management',
       options: [
-        { key: 'o4', label: 'Educate patient that LVEF improvement reflects treatment success, not cure. Reinforce lifelong GDMT adherence and explain that target doses provide maximum mortality benefit', correct: true },
-        { key: 'o5', label: 'Monitor BP, HR, SCr, eGFR, and potassium in 2 to 4 weeks following beta-blocker titration', correct: true },
-        { key: 'o6', label: 'Reinforce daily weight tracking (same scale, morning after voiding) and instruct to call clinic if weight increases by >=3 lbs in 1 day or >=5 lbs in 1 week', correct: true },
-        { key: 'o7', label: 'Schedule follow-up visit in 2 to 4 weeks (1 month) for clinical reassessment and next titration step', correct: true },
+        { key: 'o7', label: 'Continue current HF regimen for BP management (office BP 112/68 mmHg, home BP 115/70 mmHg at goal)', correct: true },
+        { key: 'o8', label: 'No new antihypertensive initiated and no dose change needed', correct: true },
+        { key: 'o9', label: 'Monitor blood pressure at routine follow-up', correct: true }
+      ]
+    },
+    {
+      id: 'w4a3_p3',
+      title: 'Hyperlipidemia Management',
+      options: [
+        { key: 'o10', label: 'Continue Atorvastatin 40 mg PO daily for ongoing cardiovascular risk reduction (no dose change or statin switch)', correct: true }
+      ]
+    },
+    {
+      id: 'w4a3_p4',
+      title: 'Preventive Care / Health Maintenance Plan',
+      options: [
+        { key: 'o11', label: 'Complete Shingrix series by administering Dose #2 in 2 to 6 months', correct: true },
+        { key: 'o12', label: 'Update Tdap booster when due in approximately 1 year', correct: true },
+        { key: 'o13', label: 'Continue routine preventive health maintenance (Influenza and COVID-19 current)', correct: true }
+      ]
+    },
+    {
+      id: 'w4a3_p5',
+      title: 'Patient Education, Counseling & Lifestyle',
+      options: [
+        { key: 'o14', label: 'Educate patient on HFimpEF concept: explain that LVEF improvement (35% to 45%) reflects treatment success, NOT a cure', correct: true },
+        { key: 'o15', label: 'Address patient question regarding medication discontinuation: explicitly reinforce that stopping or reducing GDMT causes relapse of LV dysfunction and hospitalization risk', correct: true },
+        { key: 'o16', label: 'Cite guideline evidence supporting lifelong GDMT continuation in HFimpEF', correct: true },
+        { key: 'o17', label: 'Reinforce daily weight tracking (same scale, morning after voiding; call clinic if weight increases >=3 lbs in 1 day or >=5 lbs in 1 week)', correct: true },
+        { key: 'o18', label: 'Discuss sodium restriction and ongoing dietary lifestyle modifications', correct: true },
+        { key: 'o19', label: 'Educate on recognition of worsening heart failure symptoms (shortness of breath, swelling, fatigue)', correct: true },
+        { key: 'o20', label: 'Reinforce importance of routine follow-up despite feeling well', correct: true }
+      ]
+    },
+    {
+      id: 'w4a3_p6',
+      title: 'Monitoring & Follow-Up Plan',
+      options: [
+        { key: 'o21', label: 'Monitor blood pressure, heart rate, daily weight, and heart failure symptoms', correct: true },
+        { key: 'o22', label: 'Monitor renal function (SCr, eGFR) and serum potassium periodically', correct: true },
+        { key: 'o23', label: 'Monitor medication adherence and quality of life', correct: true },
+        { key: 'o24', label: 'Repeat laboratory monitoring as clinically indicated and consider repeat echocardiogram per cardiology follow-up plan', correct: true },
+        { key: 'o25', label: 'Schedule routine longitudinal follow-up in approximately 3 to 6 months for ongoing monitoring', correct: true }
       ]
     }
   ],
