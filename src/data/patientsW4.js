@@ -552,39 +552,39 @@ const angelaTue = makeCase({
   ENCOUNTER: { week: 'Week 4', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Cardiology Clinic Visit', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I have so many pills, and they cost too much.",
-    snapshotSummary: 'Angela has HFrEF (LVEF 35%) and Persistent Nonvalvular AFib. Prescribed Apixaban for stroke prevention but skipping doses due to cost barrier. CHA2DS2-VASc = 4.',
+    snapshotSummary: 'Angela has HFrEF (LVEF 35%) and Persistent Nonvalvular AFib. Prescribed Apixaban for stroke prevention but skipping doses due to cost barrier. CHA2DS2-VASc = 3.',
     diseaseStates: ['HFrEF', 'AFib', 'Hypertension', 'Hyperlipidemia'],
     learningObjectives: ['Calculate CHA2DS2-VASc score', 'Identify cost nonadherence as a barrier to stroke prevention', 'Formulate access and adherence interventions'],
     visitDate: '09/09/2026',
   },
-  VITALS: { bp: '134/82', bpRepeat: '132/80', hr: '84', rr: '18', temp: '98.4°F', spo2: '98%', weight: '88 kg', height: "5'4\"", bmi: '33.6', vitalsTime: '09/09/2026 09:14', flags: { bmi: 'warn' } },
+  VITALS: { bp: '128/78', bpRepeat: '126/76', hr: '88', rr: '16', temp: '98.2°F', spo2: '98%', weight: '84 kg', height: "5'5\"", bmi: '30.8', vitalsTime: '09/09/2026 09:14', flags: { bmi: 'warn' } },
   LABS: [
-    { label: 'Na', value: '140', unit: 'mEq/L', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal', labDate: '09/09/2026 07:50' },
     { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal', labDate: '09/09/2026 07:50' },
     { label: 'BUN', value: '18', unit: 'mg/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
-    { label: 'SCr', value: '1.1', unit: 'mg/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
-    { label: 'eGFR', value: '68', unit: 'mL/min/1.73m²', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'eGFR', value: '72', unit: 'mL/min/1.73m²', flag: 'normal', labDate: '09/09/2026 07:50' },
     { label: 'Glucose', value: '106', unit: 'mg/dL', flag: 'borderline', labDate: '09/09/2026 07:50' },
-    { label: 'AST', value: '22', unit: 'U/L', flag: 'normal', labDate: '09/09/2026 07:50' },
-    { label: 'ALT', value: '20', unit: 'U/L', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'AST', value: '24', unit: 'U/L', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'ALT', value: '21', unit: 'U/L', flag: 'normal', labDate: '09/09/2026 07:50' },
     { label: 'WBC', value: '6.8', unit: 'x10³/mm³', flag: 'normal', labDate: '09/09/2026 07:50' },
     { label: 'Hgb', value: '13.2', unit: 'g/dL', flag: 'normal', labDate: '09/09/2026 07:50' },
-    { label: 'Plt', value: '240', unit: 'x10³/mm³', flag: 'normal', labDate: '09/09/2026 07:50' },
-    { label: 'BNP', value: '280', unit: 'pg/mL', flag: 'high', labDate: '09/09/2026 07:50' }
+    { label: 'Plt', value: '241', unit: 'x10³/mm³', flag: 'normal', labDate: '09/09/2026 07:50' },
+    { label: 'BNP', value: '210', unit: 'pg/mL', flag: 'high', labDate: '09/09/2026 07:50' }
   ],
-  ALERTS: [{ level: 'high', text: 'Patient has Persistent Nonvalvular AFib with elevated stroke risk (CHA2DS2-VASc = 4) and nonadherence to Apixaban due to cost.' }],
+  ALERTS: [{ level: 'high', text: 'Patient has Persistent Nonvalvular AFib with elevated stroke risk (CHA2DS2-VASc = 3) and nonadherence to Apixaban due to cost.' }],
   PROBLEMS: [
-    { name: 'Persistent Nonvalvular Atrial Fibrillation', detail: 'CHA2DS2-VASc = 4 (HF, HTN, Female sex, Age 64). Elevated stroke risk. Apixaban 5 mg BID skipped 2-3x/week due to cost barrier.', flag: 'high' },
-    { name: 'Heart Failure with Reduced Ejection Fraction (HFrEF)', detail: 'LVEF 35%, NYHA Class II. On 3 GDMT pillars (Sacubitril/Valsartan, Metoprolol Succinate, Empagliflozin). Evening Sacubitril/Valsartan doses missed 2-3x/week due to cost.', flag: 'normal' },
-    { name: 'Hypertension', detail: 'On GDMT, BP 134/82 mmHg', flag: 'normal' },
+    { name: 'Persistent Nonvalvular Atrial Fibrillation', detail: 'CHA2DS2-VASc = 3 (HF +1, HTN +1, Female sex +1; Age 64 does not meet ≥65 criterion). Elevated stroke risk. Apixaban 5 mg BID skipped 2-3x/week due to cost barrier.', flag: 'high' },
+    { name: 'Heart Failure with Reduced Ejection Fraction (HFrEF)', detail: 'LVEF 35%, NYHA Class II. On 3 GDMT pillars (Sacubitril/Valsartan 49/51 mg BID, Metoprolol Succinate 50 mg daily, Empagliflozin 10 mg daily). Evening Sacubitril/Valsartan doses missed 2-3x/week due to cost.', flag: 'normal' },
+    { name: 'Hypertension', detail: 'On GDMT, BP 128/78 mmHg (repeat 126/76 mmHg)', flag: 'normal' },
     { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg daily', flag: 'normal' },
-    { name: 'Obesity Class I', detail: 'BMI 33.6 kg/m²', flag: 'warn' },
+    { name: 'Obesity Class I', detail: 'BMI 30.8 kg/m²', flag: 'warn' },
   ],
   MEDICATIONS: [
-    { name: 'Sacubitril/Valsartan', dose: '24/26 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'Missed evening doses 2-3x/week due to cost barrier' },
+    { name: 'Sacubitril/Valsartan', dose: '49/51 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'Missed evening doses 2-3x/week due to cost barrier — standard target dose 49/51 mg BID' },
     { name: 'Metoprolol Succinate', dose: '50 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF / Rate control', notes: 'Adherence maintained' },
     { name: 'Empagliflozin', dose: '10 mg', route: 'by mouth', freq: 'daily', indication: 'HFrEF', notes: 'Adherence maintained' },
-    { name: 'Apixaban', dose: '5 mg', route: 'by mouth', freq: 'BID', indication: 'AFib stroke prevention', notes: 'Skipped 2-3x/week due to cost barrier — standard non-reduced dose is appropriate' },
+    { name: 'Apixaban', dose: '5 mg', route: 'by mouth', freq: 'BID', indication: 'AFib stroke prevention', notes: 'Skipped 2-3x/week due to cost barrier; patient stretches supply toward the end of the month before refill date' },
     { name: 'Atorvastatin', dose: '40 mg', route: 'by mouth', freq: 'daily', indication: 'HLD', notes: 'Cardiovascular risk reduction' },
   ],
   IMMUNIZATIONS: [
@@ -595,16 +595,16 @@ const angelaTue = makeCase({
     { name: 'Tdap', status: 'Last documented ~11 years ago (overdue)', flag: 'warn' },
   ],
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: '64-year-old female presents to the ambulatory care cardiology clinic for an initial visit regarding medication adherence, cost barriers, and disease management. Known HFrEF (LVEF 35%) and persistent nonvalvular atrial fibrillation (AFib). Patient reports feeling generally stable overall, but experiences mild fatigue and occasional exertional shortness of breath / dyspnea on exertion. Reports awareness of irregular heartbeat, but denies significant palpitations, worsening symptoms, chest pain, syncope, recent falls, significant lower extremity edema, recent emergency department visits, or recent hospitalizations. Initial self-report indicates taking medications "for the most part," but further history reveals she misses evening doses of Sacubitril/Valsartan 24/26 mg BID 2–3 times per week and skips or rations Apixaban 5 mg BID 2–3 times per week due to financial hardship. Patient identifies both Sacubitril/Valsartan and Apixaban / Eliquis as prohibitively expensive. Patient feels overwhelmed by the total number of medications and expresses a limited understanding of specific drug purposes, displaying a distinct knowledge gap regarding Apixaban\'s stroke-prevention indication in AFib (viewing it only generically as a "blood thinner"). Occasional transportation difficulty is noted and linked directly to refill difficulty. Patient explicitly states strong motivation to improve medication adherence, better understand her therapies, and improve her overall health.' },
+    { label: 'HPI', value: '64-year-old female presents to the ambulatory care cardiology clinic for an initial visit regarding medication adherence, cost barriers, and disease management. Known HFrEF (LVEF 35%) and persistent nonvalvular atrial fibrillation (AFib). Patient reports feeling generally stable overall, but experiences mild fatigue and occasional exertional shortness of breath / dyspnea on exertion. Reports awareness of irregular heartbeat, but denies significant palpitations, worsening symptoms, chest pain, syncope, recent falls, significant lower extremity edema, recent emergency department visits, or recent hospitalizations. Initial self-report indicates taking medications "for the most part," but further history reveals she misses evening doses of Sacubitril/Valsartan 49/51 mg BID 2–3 times per week and skips or rations Apixaban 5 mg BID 2–3 times per week, specifically stretching her supply toward the end of the month before her refill date due to financial hardship. Patient identifies both Sacubitril/Valsartan and Apixaban / Eliquis as prohibitively expensive. Patient feels overwhelmed by the total number of medications and expresses a limited understanding of specific drug purposes, displaying a distinct knowledge gap regarding both stroke prevention and anticoagulation purpose in AFib (viewing Apixaban only generically as a "blood thinner"). Occasional transportation difficulty is noted and linked directly to refill difficulty. Patient explicitly states strong motivation to improve medication adherence, better understand her therapies, and improve her overall health.' },
     { label: 'Review of Systems (ROS)', value: 'Cardiovascular: Reports awareness of irregular heartbeat. Denies chest pain, significant palpitations, syncope, orthopnea, or paroxysmal nocturnal dyspnea (PND). Respiratory: Reports mild fatigue and occasional exertional shortness of breath / dyspnea; denies resting dyspnea or worsening respiratory symptoms. Musculoskeletal/Edema: Denies significant lower extremity edema or recent falls. General: Denies recent ED visits or hospitalizations.' },
-    { label: 'Past Medical History', value: 'Heart Failure with Reduced Ejection Fraction (HFrEF, LVEF 35%), Persistent Nonvalvular Atrial Fibrillation (AFib), Hypertension (HTN), Hyperlipidemia (HLD), Class I Obesity (BMI 33.6 kg/m²).' },
+    { label: 'Past Medical History', value: 'Heart Failure with Reduced Ejection Fraction (HFrEF, LVEF 35%), Persistent Nonvalvular Atrial Fibrillation (AFib), Hypertension (HTN), Hyperlipidemia (HLD), Class I Obesity (BMI 30.8 kg/m²).' },
     { label: 'Social History', value: 'Lives alone on a fixed income as a retired administrative assistant. Experiences occasional transportation difficulty (relying on public transit/bus or rides from relatives), which directly impacts medication refill timeliness. Former smoker (15 pack-year smoking history, quit ~8 years ago). Drinks 1 glass of wine per week. Denies illicit drug use.' },
     { label: 'Family History', value: 'Father: suffered an ischemic stroke at age 70. Mother: history of heart failure. Sister: history of hypertension. No additional relevant surgical or family history beyond documented.' },
     { label: 'OTC & Allergies', value: 'Tylenol (acetaminophen) PRN for occasional minor aches; explicitly avoids PRN NSAIDs and aspirin. No known drug allergies (NKDA).' },
     { label: 'Past Surgical History', value: 'Cholecystectomy (gallbladder removal) several years ago. No additional relevant surgical history.' }
   ],
   OBJECTIVE_EXTRA: [
-    { label: 'Echocardiogram & Lab Interpretations', value: 'Echocardiogram (on file): LVEF 35%, persistent nonvalvular AFib, no significant interval change from prior imaging. Physical Exam: Irregularly irregular cardiac rhythm, clear lungs, no peripheral edema. Laboratory Interpretations: BNP 280 pg/mL contextualized for stable known HFrEF (elevated but stable/non-acute). Serum potassium (4.4 mEq/L) is normal and supports continued RAAS inhibitor / GDMT therapy. Renal function (SCr 1.1 mg/dL, eGFR 68 mL/min/1.73m²) is interpreted as preserved/adequate, supporting current GDMT and full-dose Apixaban (5 mg BID). LFTs (AST 22 U/L, ALT 20 U/L) are explicitly noted as within normal limits. CBC (WBC 6.8, Hgb 13.2 g/dL, Plt 240k) is explicitly noted as without significant abnormalities. Absence of routine anticoagulation monitoring lab (INR/anti-Xa) noted as expected and unnecessary for DOAC therapy. CHA2DS2-VASc score calculated as 4 (Heart Failure +1, Hypertension +1, Female sex +1, Age 64 = +1 [or Age 65-74 component]; total score 4).' }
+    { label: 'Echocardiogram & Lab Interpretations', value: 'Echocardiogram (on file): LVEF 35%, persistent nonvalvular AFib, no significant interval change from prior imaging. Physical Exam: Irregularly irregular cardiac rhythm, clear lungs, no peripheral edema. Laboratory Interpretations: BNP 210 pg/mL contextualized for stable known HFrEF (elevated but stable/non-acute). Serum potassium (4.4 mEq/L) is normal and supports continued RAAS inhibitor / GDMT therapy. Renal function (SCr 1.0 mg/dL, eGFR 72 mL/min/1.73m²) and hepatic function (AST 24 U/L, ALT 21 U/L) are explicitly linked together as preserved and within normal limits, fully supporting the current medication regimen, GDMT, and full-dose Apixaban (5 mg BID). CBC (WBC 6.8, Hgb 13.2 g/dL, Plt 241k) is explicitly noted as without significant abnormalities. Absence of routine anticoagulation monitoring lab (INR/anti-Xa) noted as expected and unnecessary for DOAC therapy. CHA2DS2-VASc score calculated as 3 (Heart Failure +1, Hypertension +1, Female sex +1; Age 64 does not meet the ≥65 age criterion for a point; total score 3).' }
   ],
   INTERVIEW_FIELDS: [
     { key: 'apixaban', label: 'Apixaban Adherence & Cost', placeholder: 'Describe cost barriers and rationing behavior' },
@@ -626,7 +626,7 @@ const angelaTue = makeCase({
     { id: 'w4-angela_b-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had an ischemic stroke at age 70. My mother had heart failure. My sister has high blood pressure. There is no other major family history." },
     { id: 'w4-angela_b-tue_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride', 'income', 'fixed'], response: "I live alone on a fixed income as a retired administrative assistant. Occasional transportation difficulty makes getting to the pharmacy hard." },
     { id: 'w4-angela_b-tue_surgery', topic: 'Past surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'gallbladder', 'cholecystectomy'], response: "Yes, I had my gallbladder removed (cholecystectomy) several years ago. No other surgeries." },
-    { id: 'w4b_apix', topic: 'Cost Barrier & Rationing', field: 'apixaban', keywords: ['apixaban', 'eliquis', 'cost', 'afford', 'stop', 'fill', 'stretch', 'skip', 'miss'], response: "Sacubitril/Valsartan and Eliquis are so expensive on my fixed income. I try taking my pills for the most part, but I skip my evening Sacubitril/Valsartan dose 2-3 times a week and stretch my Eliquis by skipping doses 2-3 times a week. I really want to improve my adherence and health if I can afford them." },
+    { id: 'w4b_apix', topic: 'Cost Barrier & Rationing', field: 'apixaban', keywords: ['apixaban', 'eliquis', 'cost', 'afford', 'stop', 'fill', 'stretch', 'skip', 'miss'], response: "Sacubitril/Valsartan and Eliquis are so expensive on my fixed income. I try taking my pills for the most part, but I skip my evening Sacubitril/Valsartan dose 2-3 times a week and stretch my Eliquis by skipping doses 2-3 times a week toward the end of the month before my refill date. I really want to improve my adherence and health if I can afford them." },
   ],
   ASSESSMENT_CARDS: [
     { 
@@ -638,7 +638,7 @@ const angelaTue = makeCase({
         { 
           key: 'q1', 
           q: 'What is the clinical status of HFrEF and current GDMT implementation?',
-          defaultAnswer: 'Heart Failure with Reduced Ejection Fraction (HFrEF, LVEF 35%, NYHA Class II) is clinically stable with nonadherence caveat. Patient reports mild fatigue and occasional exertional dyspnea, but denies worsening symptoms, chest pain, syncope, orthopnea, PND, edema, ED visits, or hospitalizations. Patient is currently prescribed 3 GDMT pillars: Sacubitril/Valsartan 24/26 mg BID, Metoprolol Succinate 50 mg daily, and Empagliflozin 10 mg daily. However, Sacubitril/Valsartan evening doses are missed 2–3 times per week due to cost barriers, making it impossible to distinguish true treatment failure from inadequate drug exposure. Serum potassium (4.4 mEq/L), renal function (eGFR 68 mL/min/1.73m²), and blood pressure (134/82 mmHg) support future GDMT optimization once adherence is established. Therapy escalation should be withheld at this time until adherence barriers are resolved. Reassessment planned in 4 to 6 weeks. BNP 280 pg/mL is contextualized as elevated but stable/non-acute for known HFrEF.'
+          defaultAnswer: 'Heart Failure with Reduced Ejection Fraction (HFrEF, LVEF 35%, NYHA Class II) is clinically stable with nonadherence caveat. Patient reports mild fatigue and occasional exertional dyspnea, but denies worsening symptoms, chest pain, syncope, orthopnea, PND, edema, ED visits, or hospitalizations. Patient is currently prescribed 3 GDMT pillars: Sacubitril/Valsartan 49/51 mg BID, Metoprolol Succinate 50 mg daily, and Empagliflozin 10 mg daily. However, Sacubitril/Valsartan evening doses are missed 2–3 times per week due to cost barriers, making it impossible to distinguish true treatment failure from inadequate drug exposure. Both renal function (eGFR 72 mL/min/1.73m², SCr 1.0 mg/dL) and hepatic function (AST 24 U/L, ALT 21 U/L) together with serum potassium (4.4 mEq/L) and blood pressure (128/78 mmHg) support current medication regimen and future GDMT optimization once adherence is established. Therapy escalation should be withheld at this time until adherence barriers are resolved. Reassessment planned in 4 to 6 weeks. BNP 210 pg/mL is contextualized as elevated but stable/non-acute for known HFrEF.'
         }
       ] 
     },
@@ -651,7 +651,7 @@ const angelaTue = makeCase({
         { 
           key: 'q2', 
           q: 'What is the stroke risk score and anticoagulation management strategy?',
-          defaultAnswer: 'Persistent Nonvalvular Atrial Fibrillation with high thromboembolic risk. CHA2DS2-VASc score is explicitly calculated as 4 (Heart Failure +1, Hypertension +1, Female sex +1, Age 64 = +1; total score ≥3), indicating a clear indication for long-term oral anticoagulation. Apixaban nonadherence (skipping/rationing doses 2–3 times per week due to cost) is identified as the single most clinically concerning finding in this encounter, dramatically increasing stroke risk. Patient exhibits limited understanding of Apixaban\'s stroke-prevention purpose and is unaware of the severe thromboembolic consequences of missed anticoagulant doses. Apixaban 5 mg PO BID is confirmed as the appropriate non-reduced dose, as criteria for dose reduction (must meet 2 of: age ≥80, weight ≤60 kg, SCr ≥1.5 mg/dL) are not met (age 64, weight 88 kg, SCr 1.1 mg/dL, eGFR 68 mL/min/1.73m²). Cost barriers must be resolved to enable full DOAC adherence before considering any change to anticoagulation strategy; inappropriate substitution with Warfarin is NOT recommended due to monitoring burden and guideline DOAC preference.'
+          defaultAnswer: 'Persistent Nonvalvular Atrial Fibrillation with high thromboembolic risk. CHA2DS2-VASc score is explicitly calculated as 3 (Heart Failure +1, Hypertension +1, Female sex +1; Age 64 does not meet the ≥65 age criterion for a point; total score 3 ≥2), indicating a clear indication for long-term oral anticoagulation. Apixaban nonadherence (skipping/rationing doses 2–3 times per week toward the end of the month before refill date due to cost) is identified as the single most clinically concerning finding in this encounter, dramatically increasing stroke risk. Patient exhibits limited understanding of both stroke prevention and anticoagulation purpose, unaware of the severe thromboembolic consequences of missed anticoagulant doses. Apixaban 5 mg PO BID is confirmed as the appropriate non-reduced dose, as criteria for dose reduction (must meet 2 of: age ≥80, weight ≤60 kg, SCr ≥1.5 mg/dL) are not met (age 64, weight 84 kg, SCr 1.0 mg/dL, eGFR 72 mL/min/1.73m²). Cost barriers must be resolved to enable full DOAC adherence before considering any change to anticoagulation strategy; inappropriate substitution with Warfarin is NOT recommended due to monitoring burden and guideline DOAC preference.'
         }
       ] 
     },
@@ -664,7 +664,7 @@ const angelaTue = makeCase({
         { 
           key: 'q3', 
           q: 'What financial and logistical barriers impact medication therapy?',
-          defaultAnswer: 'Medication access and cost barriers identified as a major medication therapy problem directly causing nonadherence. Patient is retired on a fixed income, living alone, with both Sacubitril/Valsartan and Apixaban identified as prohibitively expensive. Occasional transportation difficulty further impairs timely prescription refills. Comprehensive access interventions are required: prescription insurance coverage review, manufacturer patient assistance program (PAP) enrollment, copay assistance evaluation, mail-order pharmacy exploration, transportation resource identification, and social work referral.'
+          defaultAnswer: 'Medication access and cost barriers identified as a major medication therapy problem directly causing nonadherence. Patient is retired on a fixed income, living alone, with both Sacubitril/Valsartan 49/51 mg BID and Apixaban 5 mg BID identified as prohibitively expensive. Occasional transportation difficulty further impairs timely prescription refills. Comprehensive access interventions are required: prescription insurance coverage review, manufacturer patient assistance program (PAP) enrollment, copay assistance evaluation, mail-order pharmacy exploration, transportation resource identification, and social work referral.'
         }
       ] 
     },
@@ -677,7 +677,7 @@ const angelaTue = makeCase({
         { 
           key: 'q4', 
           q: 'What knowledge gaps exist and how do they impact clinical care?',
-          defaultAnswer: 'Health literacy deficit and medication knowledge gap identified as a distinct clinical problem. Patient expresses feeling overwhelmed by the medication regimen and has limited understanding of heart failure, AFib, stroke prevention, and specific drug indications. This knowledge deficit directly contributes to medication rationing behavior. Structured education on disease states, therapy goals, and medication benefits will enhance long-term adherence and engagement. Medication changes are not warranted based on knowledge gaps alone.'
+          defaultAnswer: 'Health literacy deficit and medication knowledge gap identified as a distinct clinical problem. Patient expresses feeling overwhelmed by the medication regimen and has limited understanding of heart failure, AFib, stroke prevention, and anticoagulation purpose as distinct understanding gaps. This knowledge deficit directly contributes to medication rationing behavior. Structured education on disease states, therapy goals, and medication benefits will enhance long-term adherence and engagement. Medication changes are not warranted based on knowledge gaps alone.'
         }
       ] 
     },
@@ -700,11 +700,11 @@ const angelaTue = makeCase({
       id: 'w4b_p1', 
       title: 'HFrEF Guideline-Directed Medical Therapy (GDMT) Strategy', 
       options: [
-        { key: 'o1', label: 'Continue Sacubitril/Valsartan 24/26 mg PO twice daily (ARNI pillar)', correct: true },
+        { key: 'o1', label: 'Continue Sacubitril/Valsartan 49/51 mg PO twice daily (ARNI target maintenance dose)', correct: true },
         { key: 'o2', label: 'Continue Metoprolol Succinate 50 mg PO daily (Beta-blocker pillar)', correct: true },
         { key: 'o3', label: 'Continue Empagliflozin 10 mg PO daily (SGLT2i pillar)', correct: true },
         { key: 'o4', label: 'Avoid intensifying heart failure therapy at this time; defer GDMT titration until cost and adherence barriers are resolved and reassessed in 4 to 6 weeks', correct: true },
-        { key: 'o5', label: 'Recognize current labs (renal eGFR 68, K 4.4 mEq/L, BP 134/82 mmHg) as supportive of future GDMT optimization once adherence is confirmed', correct: true }
+        { key: 'o5', label: 'Recognize current labs (renal eGFR 72 mL/min/1.73m², K 4.4 mEq/L, LFTs WNL, BP 128/78 mmHg) as supportive of current regimen and future GDMT optimization once adherence is confirmed', correct: true }
       ] 
     },
     { 
@@ -713,7 +713,7 @@ const angelaTue = makeCase({
       options: [
         { key: 'o6', label: 'Continue Apixaban 5 mg PO twice daily (do NOT discontinue, do NOT reduce dose, and do NOT switch to Warfarin)', correct: true },
         { key: 'o7', label: 'Confirm Apixaban 5 mg PO BID is the appropriate non-reduced dose (dose reduction criteria not met)', correct: true },
-        { key: 'o8', label: 'Educate patient on AFib disease state, stroke risk, anticoagulation purpose, and the critical importance of 100% adherence to prevent thromboembolic stroke', correct: true },
+        { key: 'o8', label: 'Educate patient on AFib disease state, stroke risk, stroke prevention, and anticoagulation purpose, emphasizing 100% adherence to prevent thromboembolic stroke', correct: true },
         { key: 'o9', label: 'Warn patient regarding the serious thromboembolic consequences of missed or skipped anticoagulant doses', correct: true }
       ] 
     },
@@ -721,7 +721,7 @@ const angelaTue = makeCase({
       id: 'w4b_p3', 
       title: 'Comprehensive Access & Cost Mitigation Plan', 
       options: [
-        { key: 'o10', label: 'Assess prescription insurance coverage and formulary options for Sacubitril/Valsartan and Apixaban', correct: true },
+        { key: 'o10', label: 'Assess prescription insurance coverage and formulary options for Sacubitril/Valsartan 49/51 mg BID and Apixaban 5 mg BID', correct: true },
         { key: 'o11', label: 'Submit applications for manufacturer Patient Assistance Programs (PAP) and evaluate copay assistance eligibility', correct: true },
         { key: 'o12', label: 'Explore mail-order pharmacy options and arrange community transportation assistance resources', correct: true },
         { key: 'o13', label: 'Refer patient to clinic social work and medication access coordinator services', correct: true }
@@ -731,7 +731,7 @@ const angelaTue = makeCase({
       id: 'w4b_p4', 
       title: 'Structured Patient Education & Communication Plan', 
       options: [
-        { key: 'o14', label: 'Provide structured education on heart failure, atrial fibrillation, stroke prevention, and the specific purpose of each prescribed medication', correct: true },
+        { key: 'o14', label: 'Provide structured education on heart failure, atrial fibrillation, stroke prevention, anticoagulation purpose, and the specific purpose of each prescribed medication', correct: true },
         { key: 'o15', label: 'Utilize the teach-back method to verify patient understanding of stroke risk and adherence importance', correct: true }
       ] 
     },
@@ -740,7 +740,7 @@ const angelaTue = makeCase({
       title: 'Comprehensive Monitoring Plan (8 Parameters)', 
       options: [
         { key: 'o16', label: 'Monitor HF symptoms (fatigue, exertional dyspnea, edema)', correct: true },
-        { key: 'o17', label: 'Monitor blood pressure, heart rate, medication adherence, pharmacy refill history, bleeding symptoms, stroke warning signs, and renal function (SCr, eGFR)', correct: true }
+        { key: 'o17', label: 'Monitor blood pressure, heart rate, medication adherence, pharmacy refill history, bleeding symptoms, stroke warning signs, and routine renal function (SCr, eGFR)', correct: true }
       ] 
     },
     { 
@@ -784,14 +784,14 @@ const angelaWed = makeCase({
     { label: 'Plt', value: '236', unit: 'x10³/mm³', flag: 'normal', labDate: '12/09/2026 07:50' },
     { label: 'NT-proBNP', value: '210', unit: 'pg/mL', flag: 'high', labDate: '12/09/2026 07:50' }
   ],
-  ALERTS: [{ level: 'high', text: 'Patient independently stopped Apixaban 5 mg BID due to minor cutaneous bruising. Elevated stroke risk (CHA2DS2-VASc = 4) warrants immediate resumption.' }],
+  ALERTS: [{ level: 'high', text: 'Patient independently stopped Apixaban 5 mg BID due to minor cutaneous bruising. Elevated stroke risk (CHA2DS2-VASc = 3) warrants immediate resumption.' }],
   PROBLEMS: [
-    { name: 'Persistent Nonvalvular Atrial Fibrillation', detail: 'CHA2DS2-VASc = 4. High stroke risk. Discontinued Apixaban several weeks ago due to minor bruising fear.', flag: 'high' },
+    { name: 'Persistent Nonvalvular Atrial Fibrillation', detail: 'CHA2DS2-VASc = 3. High stroke risk. Discontinued Apixaban several weeks ago due to minor bruising fear.', flag: 'high' },
     { name: 'Anticoagulation Nonadherence & Knowledge Deficit', detail: 'Knowledge gap regarding minor vs major bleeding and stroke risk magnitude.', flag: 'high' },
     { name: 'Heart Failure with Reduced Ejection Fraction (HFrEF)', detail: 'LVEF 35%. Stable HF symptoms (mild fatigue, exertional dyspnea). On 3-pillar GDMT.', flag: 'normal' },
     { name: 'Hypertension', detail: 'Controlled on GDMT', flag: 'normal' },
     { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg daily', flag: 'normal' },
-    { name: 'Preventive Care Gaps', detail: 'Pneumococcal and Shingrix vaccinations not documented; deferred to future visit.', flag: 'warn' },
+    { name: 'Preventive Care Gaps', detail: 'Pneumococcal and Shingrix (age-appropriate ≥50 years) vaccinations not documented; deferred to future visit.', flag: 'warn' },
   ],
   MEDICATIONS: [
     { name: 'Sacubitril/Valsartan', dose: '49/51 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'Improved adherence' },
@@ -804,12 +804,12 @@ const angelaWed = makeCase({
     { name: 'Influenza', status: 'Up to date (received)', flag: 'normal' },
     { name: 'COVID-19', status: 'Up to date (received)', flag: 'normal' },
     { name: 'Pneumococcal', status: 'Not documented (care gap)', flag: 'warn' },
-    { name: 'Shingrix', status: 'Not documented (care gap)', flag: 'warn' },
-    { name: 'Tdap', status: 'Last documented ~11 years ago (overdue)', flag: 'warn' },
+    { name: 'Shingrix', status: 'Not documented (care gap, age-appropriate for ≥50 years)', flag: 'warn' },
+    { name: 'Tdap', status: 'Last documented ~11 years ago (overdue, needs booster)', flag: 'warn' },
   ],
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: '3-Month Follow-Up at the ambulatory care cardiology clinic. Patient successfully enrolled in Patient Assistance Program for Apixaban, resolving financial cost barriers. However, patient reports she independently discontinued Apixaban 5 mg BID several weeks ago after noticing small, non-painful cutaneous bruises on her arms and legs (lasting several weeks before resolving) and hearing a friend\'s anecdote about bleeding to death on blood thinners. Reports improved adherence to Sacubitril/Valsartan since last visit. Patient reports HF symptoms (mild fatigue, exertional dyspnea) are stable. Denies worsening dyspnea, lower extremity edema, chest pain, syncope, orthopnea, paroxysmal nocturnal dyspnea (PND), hemoptysis, hematochezia, melena, ED visits, hospitalizations, or major bleeding. Patient demonstrates a lack of understanding of Apixaban\'s stroke-prevention purpose and stroke risk magnitude. Expresses desire to understand minor vs major bleeding distinction and states willingness to continue anticoagulation therapy with better understanding and clinic guidance.' },
-    { label: 'Review of Systems (ROS)', value: 'Cardiovascular: Denies chest pain, syncope, orthopnea, PND, or major bleeding. Respiratory: Denies worsening dyspnea or hemoptysis. Gastrointestinal: Denies hematochezia or melena. Musculoskeletal/Edema: Denies lower extremity edema. General: Denies ED visits or hospitalizations.' },
+    { label: 'HPI', value: '3-Month Follow-Up at the ambulatory care cardiology clinic. Patient successfully enrolled in Patient Assistance Program for Apixaban, resolving financial cost barriers. However, patient reports she independently discontinued Apixaban 5 mg BID several weeks ago after noticing small, non-painful cutaneous bruises on her arms and legs (lasting several weeks before resolving) and hearing a friend\'s anecdote about bleeding to death on blood thinners. Reports that the bruising specifically did not require medical evaluation or emergency care. Reports improved adherence to Sacubitril/Valsartan since last visit due to improved affordability. Patient reports HF symptoms (mild fatigue, exertional dyspnea) are stable. Denies worsening dyspnea, lower extremity edema, chest pain, syncope, orthopnea, paroxysmal nocturnal dyspnea (PND), hemoptysis, hematuria, hematochezia, melena, ED visits, hospitalizations, or major bleeding. Patient now understands Apixaban\'s stroke-prevention purpose as a foundation, but lacks understanding of the true magnitude of her stroke risk without anticoagulation. Expresses desire to understand minor vs major bleeding distinction and states willingness to continue anticoagulation therapy with better understanding and clinic guidance.' },
+    { label: 'Review of Systems (ROS)', value: 'Cardiovascular: Denies chest pain, syncope, orthopnea, PND, or major bleeding. Respiratory: Denies worsening dyspnea or hemoptysis. Gastrointestinal: Denies hematochezia or melena. Genitourinary: Denies hematuria. Musculoskeletal/Edema: Denies lower extremity edema. Skin: Reports minor cutaneous bruising on arms/legs that resolved and specifically did not require medical evaluation. General: Denies ED visits or hospitalizations.' },
     { label: 'Past Medical History', value: 'Heart Failure with Reduced Ejection Fraction (HFrEF, LVEF 35%), Persistent Nonvalvular Atrial Fibrillation (AFib), Hypertension (HTN), Hyperlipidemia (HLD), Obesity.' },
     { label: 'Social History', value: 'Lives alone on fixed income, retired administrative assistant. Cost barrier resolved via PAP. Transportation via bus or family rides. Former smoker (15 pack-year history, quit ~8 years ago). Drinks 1 glass of wine per week. Denies illicit drug use.' },
     { label: 'Family History', value: 'Father: ischemic stroke at age 70. Mother: heart failure. Sister: hypertension.' },
@@ -817,12 +817,12 @@ const angelaWed = makeCase({
     { label: 'Past Surgical History', value: 'Cholecystectomy (gallbladder removal).' }
   ],
   OBJECTIVE_EXTRA: [
-    { label: 'Objective Trend Analysis & Lab Interpretations', value: 'Physical Exam: Cardiac rhythm is irregularly irregular on exam. Vital signs: BP 126/76 mmHg (repeat 124/74 mmHg), HR 84 bpm (irregularly irregular), Wt 84 kg (stable), BMI 30.8 kg/m². Laboratory Interpretations: Baseline Hgb 13.2 g/dL → Current Hgb 13.0 g/dL (quantified stable Hgb, no drop, providing objective evidence against major bleeding). Platelet count 236k is normal, confirming absence of thrombocytopenia. Serum potassium (4.3 mEq/L) and Na (139 mEq/L) are normal. Renal function (SCr 1.0 mg/dL, eGFR 73 mL/min/1.73m²) is interpreted as preserved/adequate renal function, confirming Apixaban dose-reduction criteria are not met and supporting full-dose Apixaban 5 mg BID. CMP is otherwise unremarkable. Routine anti-Xa and INR monitoring noted as unnecessary for Apixaban DOAC therapy. Immunizations: Pneumococcal and Shingrix are documented as NOT completed / care gaps in Objective data.' }
+    { label: 'Objective Data & Laboratory Panel', value: 'Physical Exam: Cardiac rhythm is irregularly irregular on exam. Vital signs: BP 126/76 mmHg (repeat 124/74 mmHg), HR 84 bpm (irregularly irregular), Wt 84 kg (stable), BMI 30.8 kg/m². Laboratory Data: Baseline Hgb 13.2 g/dL, current Hgb 13.0 g/dL (within normal limits). Platelet count 236 x10³/mm³ (within normal limits). Serum sodium 139 mEq/L, potassium 4.3 mEq/L, BUN 17 mg/dL, SCr 1.0 mg/dL, eGFR 73 mL/min/1.73m², NT-proBNP 210 pg/mL (all within normal limits). CMP is otherwise unremarkable. Routine anti-Xa and INR tests not performed. Immunizations: Pneumococcal, Shingrix, and Tdap documented as uncompleted / care gaps.' }
   ],
   INTERVIEW_FIELDS: [
     { key: 'fear', label: 'Bruising & Bleeding Fear Assessment', placeholder: 'Assess bleeding symptoms and friend anecdote' },
   ],
-  COUNSELING: [{ id: 'c1', title: 'Apixaban Resumption & Bleeding Education', body: ["Minor bruising is expected with blood thinners and does not mean you are having dangerous bleeding. Your blood count (Hgb 13.0 g/dL) is stable, proving there is no internal bleeding. Because your stroke risk is high (CHA2DS2-VASc = 4), resuming Apixaban 5 mg twice daily is essential. Contact our clinic before ever stopping a medication."] }],
+  COUNSELING: [{ id: 'c1', title: 'Apixaban Resumption & Bleeding Education', body: ["Minor bruising is expected with blood thinners and does not mean you are having dangerous bleeding. Your blood count (Hgb 13.0 g/dL) is stable, proving there is no internal bleeding. Because your stroke risk is high (CHA2DS2-VASc = 3), resuming Apixaban 5 mg twice daily is essential. Contact our clinic before ever stopping a medication."] }],
   GUIDING_QUESTIONS: [
     'Why is resuming Apixaban 5 mg BID indicated?',
     'How does stable Hgb 13.0 g/dL rule out major bleeding?',
@@ -839,7 +839,7 @@ const angelaWed = makeCase({
     { id: 'w4-angela_b-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had an ischemic stroke at age 70. My mother had heart failure. My sister has high blood pressure." },
     { id: 'w4-angela_b-wed_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride', 'income', 'fixed', 'cost', 'afford'], response: "I live alone on a fixed income. The assistance program resolved the cost issue for Eliquis. Transportation can still be difficult." },
     { id: 'w4-angela_b-wed_surgery', topic: 'Past surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'gallbladder', 'cholecystectomy'], response: "Yes, I had my gallbladder removed (cholecystectomy) several years ago." },
-    { id: 'w4b2_bruise', topic: 'Bruising Symptoms', field: 'bleeding', keywords: ['bruise', 'bruising', 'bleed', 'bleeding', 'symptoms', 'nosebleed', 'gums', 'stool', 'urine'], response: "I noticed small bruises on my arms and legs for several weeks without bumping into anything. They went away on their own. I deny nosebleeds, gum bleeding, hemoptysis, hematochezia, melena, ER visits, hospitalizations, or major bleeding. I want to understand minor vs major bleeding and I am willing to resume Eliquis if guided." },
+    { id: 'w4b2_bruise', topic: 'Bruising Symptoms', field: 'bleeding', keywords: ['bruise', 'bruising', 'bleed', 'bleeding', 'symptoms', 'nosebleed', 'gums', 'stool', 'urine', 'hematuria'], response: "I noticed small bruises on my arms and legs for several weeks without bumping into anything. They went away on their own and did not require any medical attention or emergency visit. I deny nosebleeds, gum bleeding, hemoptysis, hematuria, hematochezia, melena, ER visits, hospitalizations, or major bleeding. I want to understand minor vs major bleeding and I am willing to resume Eliquis if guided." },
     { id: 'w4b2_fear', topic: 'Fear of bleeding', field: 'fear', keywords: ['scared', 'fear', 'afraid', 'stop', 'why', 'friend'], response: "My friend told me a story about someone bleeding to death on blood thinners. Combined with the bruises, I panicked and stopped taking it. I didn't realize how high my stroke risk is." },
   ],
   ASSESSMENT_CARDS: [
@@ -852,7 +852,7 @@ const angelaWed = makeCase({
         { 
           key: 'q1', 
           q: 'What is the stroke risk vs bleeding risk evaluation and anticoagulation recommendation?',
-          defaultAnswer: 'Persistent Nonvalvular Atrial Fibrillation with high thromboembolic risk. CHA2DS2-VASc score = 4 (Heart Failure +1, Hypertension +1, Female sex +1, Age 64 = +1), indicating high stroke risk. Patient independently stopped Apixaban several weeks ago due to minor cutaneous bruising and fear after a friend\'s bleeding anecdote. Current lab evaluation shows baseline Hgb 13.2 g/dL → current Hgb 13.0 g/dL (quantified stable Hgb, no significant drop, ruling out major bleeding) and normal platelet count (236k). Patient denies major bleeding, hemoptysis, hematochezia, melena, or hospitalizations. Preserved renal function (eGFR 73 mL/min/1.73m², SCr 1.0 mg/dL) confirms Apixaban dose-reduction criteria are not met, supporting full-dose Apixaban 5 mg PO BID. Per 2023 ACC/AHA AFib guidelines, DOAC therapy is strongly preferred over VKAs (Warfarin), and no switch is warranted. Resuming full-dose Apixaban 5 mg PO BID immediately is indicated; do NOT reduce dose or discontinue anticoagulation.'
+          defaultAnswer: 'Persistent Nonvalvular Atrial Fibrillation with high thromboembolic risk. CHA2DS2-VASc score = 3 (Heart Failure +1, Hypertension +1, Female sex +1; Age 64 does not meet ≥65 criterion), indicating high stroke risk. Patient independently stopped Apixaban several weeks ago due to minor cutaneous bruising and fear after a friend\'s bleeding anecdote. Given her specific CHA2DS2-VASc score of 3 and low bleeding risk profile (stable Hgb 13.0 g/dL compared to baseline 13.2 g/dL ruling out major bleeding, normal platelet count 236k ruling out thrombocytopenia), stroke-prevention benefits far outweigh minor bleeding risks. Patient denies major bleeding, hemoptysis, hematuria, hematochezia, melena, or hospitalizations. Preserved renal function (eGFR 73 mL/min/1.73m², SCr 1.0 mg/dL) confirms Apixaban dose-reduction criteria are not met, supporting full-dose Apixaban 5 mg PO BID. Per 2023 ACC/AHA AFib guidelines, DOAC therapy is strongly preferred over VKAs (Warfarin), and no switch is warranted. Resuming full-dose Apixaban 5 mg PO BID immediately is indicated; do NOT reduce dose or discontinue anticoagulation.'
         }
       ] 
     },
@@ -865,7 +865,7 @@ const angelaWed = makeCase({
         { 
           key: 'q2', 
           q: 'What is the status of HFrEF and GDMT stability?',
-          defaultAnswer: 'Heart Failure with Reduced Ejection Fraction (HFrEF, LVEF 35%) is clinically stable on 3-pillar GDMT (Sacubitril/Valsartan 49/51 mg BID, Metoprolol Succinate 50 mg daily, Empagliflozin 10 mg daily). Patient reports stable HF symptoms (mild fatigue, exertional dyspnea) and denies decompensation negatives (orthopnea, PND, edema, ED visits, or hospitalizations). Absence of HF decompensation despite missed anticoagulant doses confirms clinical stability. No urgent therapy modification or dose uptitration is planned today; primary focus is maintaining stability and reinforcing adherence.'
+          defaultAnswer: 'Heart Failure with Reduced Ejection Fraction (HFrEF, LVEF 35%) is clinically stable on 3-pillar GDMT (Sacubitril/Valsartan 49/51 mg BID, Metoprolol Succinate 50 mg daily, Empagliflozin 10 mg daily). Improved adherence to Sacubitril/Valsartan 49/51 mg BID is directly causally linked to improved medication affordability achieved through Patient Assistance Program (PAP) enrollment. Patient reports stable HF symptoms (mild fatigue, exertional dyspnea) and denies decompensation negatives (chest pain, orthopnea, PND, edema, ED visits, or hospitalizations). Absence of HF decompensation despite missed anticoagulant doses confirms clinical stability. No urgent therapy modification or dose uptitration is planned today; primary focus is maintaining stability and reinforcing adherence.'
         }
       ] 
     },
@@ -878,7 +878,7 @@ const angelaWed = makeCase({
         { 
           key: 'q3', 
           q: 'What knowledge deficit caused nonadherence and what interventions are needed?',
-          defaultAnswer: 'Knowledge gap and health literacy deficit regarding anticoagulation identified as a distinct problem. Patient lacks understanding of AFib, stroke risk magnitude, and the distinction between minor cutaneous bruising and major bleeding. Friend\'s anecdote was inappropriately prioritized over individualized clinical risk assessment. Patient-centered communication and the teach-back method are essential interventions to restore confidence and achieve long-term adherence.'
+          defaultAnswer: 'Knowledge gap and health literacy deficit regarding anticoagulation identified as a distinct problem. Patient understands Apixaban\'s stroke-prevention purpose as a foundation, but lacks understanding of AFib stroke risk magnitude and the distinction between minor cutaneous bruising and major bleeding. The knowledge deficit regarding stroke risk magnitude and minor vs major bleeding directly causally led to her decision to self-discontinue Apixaban therapy upon experiencing minor bruising. Friend\'s anecdote was inappropriately prioritized over individualized clinical risk assessment. Health literacy and understanding are improving but still affecting medication decisions. This health literacy gap is an ongoing problem warranting additional structured education at today\'s visit. Patient-centered communication and the teach-back method are essential interventions to restore confidence and achieve long-term adherence.'
         }
       ] 
     },
@@ -891,7 +891,7 @@ const angelaWed = makeCase({
         { 
           key: 'q4', 
           q: 'What is the status of preventive care vaccinations?',
-          defaultAnswer: 'Preventive care gaps identified as a distinct problem: Pneumococcal and Shingrix vaccinations remain uncompleted / care gaps per Objective documentation. Given that today\'s visit focus is anticoagulation adherence and education, vaccine administration is deferred to a future follow-up visit.'
+          defaultAnswer: 'Preventive care gaps identified as a distinct problem: Pneumococcal, Shingrix (age-appropriate for adults ≥50 years old; patient is 64), and Tdap booster (overdue) vaccinations remain uncompleted / care gaps per Objective documentation. Given that today\'s visit focus is anticoagulation adherence and education, vaccine administration is deferred to a future follow-up visit.'
         }
       ] 
     }
@@ -904,46 +904,47 @@ const angelaWed = makeCase({
         { key: 'o1', label: 'Resume Apixaban 5 mg PO twice daily immediately (do NOT reduce dose, do NOT discontinue anticoagulation, and confirm no switch to Warfarin is warranted)', correct: true },
         { key: 'o2', label: 'Cite eGFR 73 mL/min/1.73m² and absence of dose-reduction criteria to justify full-dose Apixaban 5 mg BID', correct: true },
         { key: 'o3', label: 'Educate patient on AFib disease state, stroke risk, anticoagulation purpose, and adherence importance per 2023 ACC/AHA guidelines (DOAC class preference over VKAs)', correct: true },
-        { key: 'o4', label: 'Use shared decision-making with confidence-building framing to address bleeding fears', correct: true },
-        { key: 'o5', label: 'Instruct patient to contact clinic before making any future medication changes or self-adjusting doses', correct: true }
+        { key: 'o4', label: 'Specifically educate patient on the serious clinical risks of self-adjusting or skipping anticoagulant doses', correct: true },
+        { key: 'o5', label: 'Use shared decision-making with confidence-building framing to address bleeding fears', correct: true },
+        { key: 'o6', label: 'Instruct patient to contact clinic before making any future medication changes or self-adjusting doses', correct: true }
       ] 
     },
     { 
       id: 'w4b2_p2', 
       title: 'HFrEF GDMT Maintenance Strategy', 
       options: [
-        { key: 'o6', label: 'Continue Sacubitril/Valsartan 49/51 mg PO BID, Metoprolol Succinate 50 mg PO daily, Empagliflozin 10 mg PO daily, and Atorvastatin 40 mg PO daily', correct: true },
-        { key: 'o7', label: 'Reinforce adherence to HFrEF regimen and confirm no dose uptitration is planned today due to adherence/stability focus', correct: true }
+        { key: 'o7', label: 'Continue Sacubitril/Valsartan 49/51 mg PO BID, Metoprolol Succinate 50 mg PO daily, Empagliflozin 10 mg PO daily, and Atorvastatin 40 mg PO daily', correct: true },
+        { key: 'o8', label: 'Reinforce adherence to HFrEF regimen and confirm no dose uptitration is planned today due to adherence/stability focus', correct: true }
       ] 
     },
     { 
       id: 'w4b2_p3', 
       title: 'Patient Counseling & Teach-Back Education Plan', 
       options: [
-        { key: 'o8', label: 'Counsel patient distinguishing minor cutaneous bruising (expected, non-dangerous) from major bleeding warning signs (dark stools, hematuria, severe headache)', correct: true },
-        { key: 'o9', label: 'Utilize teach-back method to verify patient understanding of stroke risk, minor vs major bleeding, and clinic contact instructions', correct: true },
-        { key: 'o10', label: 'Employ patient-centered language approach to build patient confidence in long-term anticoagulation', correct: true }
+        { key: 'o9', label: 'Counsel patient distinguishing minor cutaneous bruising (expected, non-dangerous) from major bleeding warning signs (dark stools, hematuria, severe headache)', correct: true },
+        { key: 'o10', label: 'Utilize teach-back method to verify patient understanding of stroke risk, minor vs major bleeding, and clinic contact instructions', correct: true },
+        { key: 'o11', label: 'Employ patient-centered language approach to build patient confidence in long-term anticoagulation', correct: true }
       ] 
     },
     { 
       id: 'w4b2_p4', 
       title: 'Monitoring Plan (7 Parameters)', 
       options: [
-        { key: 'o11', label: 'Monitor Apixaban adherence specifically, bruising/bleeding signs, stroke warning signs, HF symptoms, routine renal function (SCr, eGFR), CBC (as clinically indicated), and patient understanding/confidence', correct: true }
+        { key: 'o12', label: 'Monitor Apixaban adherence specifically, bruising/bleeding signs, stroke warning signs, HF symptoms, routine renal function (SCr, eGFR), CBC (as clinically indicated), and patient understanding/confidence', correct: true }
       ] 
     },
     { 
       id: 'w4b2_p5', 
       title: 'Preventive Care Plan', 
       options: [
-        { key: 'o12', label: 'Review vaccination history at future follow-up visit; plan deferred Pneumococcal and Shingrix administration at next visit', correct: true }
+        { key: 'o13', label: 'Review vaccination history at future follow-up visit; assess need for Tdap booster and plan deferred Pneumococcal and Shingrix administration at next visit', correct: true }
       ] 
     },
     { 
       id: 'w4b2_p6', 
       title: 'Follow-Up Plan', 
       options: [
-        { key: 'o13', label: 'Schedule follow-up visit in 4 to 6 weeks (guideline-aligned window) to reassess patient understanding, confidence, Apixaban adherence, and HF symptom stability', correct: true }
+        { key: 'o14', label: 'Schedule follow-up visit in 4 to 6 weeks (guideline-aligned window) to reassess patient understanding, confidence, Apixaban adherence, bleeding concerns explicitly, and HF symptom stability', correct: true }
       ] 
     }
   ]
@@ -960,26 +961,26 @@ const angelaThu = makeCase({
     learningObjectives: ['Confirm longitudinal adherence and therapy maintenance', 'Address patient questions regarding lifelong medication duration', 'Execute preventive care updates'],
     visitDate: '03/09/2027',
   },
-  VITALS: { bp: '124/74', bpRepeat: '122/72', hr: '80', rr: '16', temp: '98.0°F', spo2: '98%', weight: '83 kg', height: "5'5\"", bmi: '30.5', vitalsTime: '03/09/2027 09:14', flags: {} },
+  VITALS: { bp: '124/74', bpRepeat: '122/72', hr: '80', rr: '16', temp: '98.0°F', spo2: '98%', weight: '84 kg', height: "5'5\"", bmi: '30.8', vitalsTime: '03/09/2027 09:14', flags: {} },
   LABS: [
-    { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal', labDate: '03/09/2027 07:50' },
     { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal', labDate: '03/09/2027 07:50' },
     { label: 'BUN', value: '18', unit: 'mg/dL', flag: 'normal', labDate: '03/09/2027 07:50' },
     { label: 'SCr', value: '1.0', unit: 'mg/dL', flag: 'normal', labDate: '03/09/2027 07:50' },
     { label: 'eGFR', value: '72', unit: 'mL/min/1.73m²', flag: 'normal', labDate: '03/09/2027 07:50' },
-    { label: 'AST', value: '22', unit: 'U/L', flag: 'normal', labDate: '03/09/2027 07:50' },
-    { label: 'ALT', value: '24', unit: 'U/L', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'AST', value: '24', unit: 'U/L', flag: 'normal', labDate: '03/09/2027 07:50' },
+    { label: 'ALT', value: '21', unit: 'U/L', flag: 'normal', labDate: '03/09/2027 07:50' },
     { label: 'WBC', value: '6.6', unit: 'x10³/mm³', flag: 'normal', labDate: '03/09/2027 07:50' },
     { label: 'Hgb', value: '13.1', unit: 'g/dL', flag: 'normal', labDate: '03/09/2027 07:50' },
-    { label: 'Plt', value: '240', unit: 'x10³/mm³', flag: 'normal', labDate: '03/09/2027 07:50' }
+    { label: 'Plt', value: '241', unit: 'x10³/mm³', flag: 'normal', labDate: '03/09/2027 07:50' }
   ],
   ALERTS: [],
   PROBLEMS: [
-    { name: 'Persistent Nonvalvular Atrial Fibrillation', detail: 'CHA2DS2-VASc = 4. Anticoagulated on Apixaban 5 mg BID with 100% adherence and no bleeding. Lifelong therapy indicated.', flag: 'normal' },
+    { name: 'Persistent Nonvalvular Atrial Fibrillation', detail: 'CHA2DS2-VASc = 3. Clinically stable. Anticoagulated on Apixaban 5 mg BID with 100% adherence and no bleeding. Lifelong therapy indicated.', flag: 'normal' },
     { name: 'Heart Failure with Reduced Ejection Fraction (HFrEF)', detail: 'LVEF 35%. Stable HF symptoms (mild fatigue, exertional dyspnea). On 3-pillar GDMT.', flag: 'normal' },
-    { name: 'Hypertension', detail: 'Controlled on GDMT (BP 124/74, goal <130/80 mmHg)', flag: 'normal' },
-    { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg daily (LDL goal <70 mg/dL)', flag: 'normal' },
-    { name: 'Preventive Care Optimization', detail: 'Pneumococcal completed; Shingrix dose #2 due; Tdap booster due.', flag: 'normal' },
+    { name: 'Hypertension', detail: 'Controlled on GDMT (BP 124/74, goal <130/80 mmHg). No medication changes needed today.', flag: 'normal' },
+    { name: 'Hyperlipidemia', detail: 'On Atorvastatin 40 mg daily (LDL goal <70 mg/dL). No medication changes needed today.', flag: 'normal' },
+    { name: 'Preventive Care Optimization', detail: 'Pneumococcal completed; Shingrix dose #2 administered today; Tdap booster administered today.', flag: 'normal' },
   ],
   MEDICATIONS: [
     { name: 'Sacubitril/Valsartan', dose: '49/51 mg', route: 'by mouth', freq: 'BID', indication: 'HFrEF', notes: 'ARNI pillar — adherence 100%' },
@@ -996,16 +997,16 @@ const angelaThu = makeCase({
     { name: 'Tdap', status: 'Administered today (up to date)', flag: 'normal' },
   ],
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: '64-year-old female presents for a routine 6-month follow-up at the ambulatory care cardiology clinic. Patient reports 100% medication adherence to Apixaban 5 mg BID twice daily using a daily pillbox, with no intentionally skipped doses. Patient reports that prior bruising fears and knowledge barriers have completely resolved, and she now describes occasional minor bruising as resolved and no longer concerning. Can identify bleeding and stroke warning signs. Reports feeling increased confidence in managing her health and communicating with healthcare providers. Reports HF symptoms (mild fatigue, occasional exertional dyspnea) are unchanged and stable. Denies resting dyspnea, orthopnea, paroxysmal nocturnal dyspnea (PND), syncope, lower extremity edema, emergency department visits, or hospitalizations since last visit. Patient explicitly asks about the expected long-term duration of anticoagulation and heart failure therapies.' },
-    { label: 'Review of Systems (ROS)', value: 'Cardiovascular: Denies syncope, orthopnea, PND, or major bleeding. Respiratory: Reports stable exertional dyspnea; denies resting dyspnea. Musculoskeletal/Edema: Denies lower extremity edema. General: Denies ED visits or hospitalizations.' },
+    { label: 'HPI', value: '64-year-old female presents for a routine 6-month follow-up at the ambulatory care cardiology clinic. Patient reports 100% medication adherence to Apixaban 5 mg BID twice daily using a daily pillbox, with no intentionally skipped doses. Patient states prior counseling and education helped her understand medication necessity, directly improving her adherence to 100%. Patient demonstrates clear understanding of Apixaban\'s specific role in reducing stroke risk by preventing blood clot formation in persistent AFib. Patient reports that prior bruising fears and knowledge barriers have completely resolved, and she now describes occasional minor bruising as resolved and no longer concerning. Can identify bleeding and stroke warning signs. Reports feeling increased confidence in managing her health and communicating with healthcare providers. Reports HF symptoms (mild fatigue, occasional exertional dyspnea) are unchanged and stable. Denies chest pain, resting dyspnea, orthopnea, paroxysmal nocturnal dyspnea (PND), syncope, lower extremity edema, emergency department visits, or hospitalizations since last visit. Patient explicitly asks about the expected long-term duration of anticoagulation and heart failure therapies.' },
+    { label: 'Review of Systems (ROS)', value: 'Cardiovascular: Denies chest pain, syncope, orthopnea, PND, or major bleeding. Respiratory: Reports stable exertional dyspnea; denies chest pain or resting dyspnea. Musculoskeletal/Edema: Denies lower extremity edema. General: Denies ED visits or hospitalizations.' },
     { label: 'Past Medical History', value: 'Heart Failure with Reduced Ejection Fraction (HFrEF, LVEF 35%), Persistent Nonvalvular Atrial Fibrillation (AFib), Hypertension (HTN), Hyperlipidemia (HLD), Obesity.' },
-    { label: 'Social History', value: 'Lives alone, retired administrative assistant. Transportation managed with bus and family rides. Fixed income access maintained via assistance program enrollment. Former smoker (15 pack-years, quit 8 years ago). Drinks 1 glass of wine per week. Denies illicit drug use.' },
+    { label: 'Social History', value: 'Lives alone, retired administrative assistant. Transportation barriers have been successfully resolved and improved via family support and public bus transit. Fixed income access maintained via assistance program enrollment. Former smoker (15 pack-years, quit 8 years ago). Drinks 1 glass of wine per week. Denies illicit drug use.' },
     { label: 'Family History', value: 'Father: ischemic stroke at age 70. Mother: heart failure. Sister: hypertension. Family history explicitly linked to patient\'s elevated stroke and heart failure risk.' },
     { label: 'OTC & Allergies', value: 'Tylenol PRN for occasional headaches; avoids aspirin and NSAIDs. NKDA.' },
     { label: 'Past Surgical History', value: 'Cholecystectomy (prior gallbladder removal).' }
   ],
   OBJECTIVE_EXTRA: [
-    { label: 'Objective Trend & Lab Interpretations', value: 'Physical Exam: Cardiac rhythm is irregularly irregular on exam. Vital signs: BP 124/74 mmHg (repeat 122/72 mmHg, goal <130/80 mmHg), HR 80 bpm (controlled on Metoprolol Succinate), Wt 83 kg (stable), BMI 30.5 kg/m². Laboratory Interpretations: CBC (WBC 6.6, Hgb 13.1 g/dL, Plt 240k) is explicitly noted as within normal limits. Liver enzymes (AST 22 U/L, ALT 24 U/L) are explicitly noted as within normal limits, supporting continued Atorvastatin safety. Renal function (SCr 1.0 mg/dL, eGFR 72 mL/min/1.73m²) is interpreted as adequate renal function, supporting continued Apixaban 5 mg BID and GDMT. Absence of BNP/NT-proBNP noted as a missing data gap for stability assessment. Routine INR monitoring noted as unnecessary given DOAC (Apixaban) use. CHA2DS2-VASc score calculated as 4 (Heart Failure +1, HTN +1, Female +1, Age 64 = +1), confirming indication for lifelong anticoagulation. Apixaban dose-reduction criteria (age ≥80, weight ≤60 kg, SCr ≥1.5 mg/dL) are NOT met.' }
+    { label: 'Objective Trend & Lab Interpretations', value: 'Physical Exam: Cardiac rhythm is irregularly irregular on exam. Vital signs: BP 128/78 mmHg (repeat 126/76 mmHg, goal <130/80 mmHg), HR 88 bpm (controlled on Metoprolol Succinate), Wt 84 kg (stable), BMI 30.8 kg/m². Laboratory Interpretations: CBC (WBC 6.6, Hgb 13.1 g/dL, Plt 241k) is explicitly noted as within normal limits. Both renal function (SCr 1.0 mg/dL, eGFR 72 mL/min/1.73m²) and hepatic function (AST 24 U/L, ALT 21 U/L) are explicitly linked together as within normal limits, supporting continued full-dose Apixaban 5 mg BID, Atorvastatin safety, and GDMT. Absence of BNP/NT-proBNP noted as a missing data gap for stability assessment. Routine INR monitoring noted as unnecessary given DOAC (Apixaban) use. CHA2DS2-VASc score calculated as 3 (Heart Failure +1, HTN +1, Female +1; Age 64 does not meet ≥65 criterion), confirming indication for long-term oral anticoagulation. Apixaban dose-reduction criteria (age ≥80, weight ≤60 kg, SCr ≥1.5 mg/dL) are NOT met.' }
   ],
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Longitudinal Adherence & Duration Query', placeholder: 'Assess pillbox routine and answer duration questions' },
@@ -1025,7 +1026,7 @@ const angelaThu = makeCase({
     { id: 'w4-angela_b-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 8 years ago, and I had a 15 pack-year history before that." },
     { id: 'w4-angela_b-thu_illicit', topic: 'Illicit drug use', field: 'illicit', keywords: ['illicit', 'drug', 'marijuana', 'cocaine', 'street'], response: "I do not use any illicit drugs or street substances." },
     { id: 'w4-angela_b-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had an ischemic stroke at age 70. My mother had heart failure. My sister has high blood pressure. This family history reinforces my own stroke and heart failure risks." },
-    { id: 'w4-angela_b-thu_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride'], response: "I live alone, retired administrative assistant. Assistance program keeps my medication affordable. Family and bus help with rides." },
+    { id: 'w4-angela_b-thu_social', topic: 'Social history', field: 'socialHistory', keywords: ['live', 'marital', 'married', 'job', 'work', 'employ', 'living', 'transport', 'drive', 'alone', 'bus', 'ride'], response: "I live alone, retired administrative assistant. Assistance program keeps my medication affordable. Family support and bus rides have resolved my transportation barriers." },
     { id: 'w4-angela_b-thu_surgery', topic: 'Past surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'gallbladder', 'cholecystectomy'], response: "Yes, I had my gallbladder removed (cholecystectomy)." },
     { id: 'w4b3_adh', topic: 'Longitudinal Adherence & Duration Query', field: 'adherence', keywords: ['take', 'miss', 'every day', 'routine', 'how long', 'duration', 'stop'], response: "I use a pillbox and take all my medications every morning and night without missing any. My minor bruising resolved and doesn't bother me. I feel confident managing my health. How long do I need to keep taking Eliquis and these heart failure pills? Are they lifelong?" },
   ],
@@ -1039,7 +1040,7 @@ const angelaThu = makeCase({
         { 
           key: 'q1', 
           q: 'What is the stroke risk assessment and long-term anticoagulation strategy?',
-          defaultAnswer: 'Persistent Nonvalvular Atrial Fibrillation with elevated thromboembolic risk (CHA2DS2-VASc = 4). Patient demonstrates 100% adherence to Apixaban 5 mg PO BID via daily pillbox with complete resolution of prior bruising fears and knowledge deficit barriers (recognizing minor bruising as expected and non-concerning). eGFR 72 mL/min/1.73m², SCr 1.0 mg/dL, and weight 83 kg confirm Apixaban dose-reduction criteria are not met. Per 2023 ACC/AHA AFib guidelines, DOAC therapy (Apixaban 5 mg BID) is preferred over VKAs (Warfarin) and is indicated for lifelong stroke prevention. Prior pharmacist interventions successfully resolved cost and fear barriers. Patient question regarding medication duration requires clear education on the chronic nature of AFib and lifelong anticoagulation rationale.'
+          defaultAnswer: 'Persistent Nonvalvular Atrial Fibrillation is clinically stable with elevated thromboembolic risk (CHA2DS2-VASc = 3; Heart Failure +1, HTN +1, Female +1; Age 64 does not meet ≥65 criterion). Patient demonstrates 100% adherence to Apixaban 5 mg PO BID via daily pillbox with complete resolution of prior bruising fears and knowledge deficit barriers (recognizing minor bruising as expected and non-concerning). Patient now fully understands the purpose and clinical rationale of anticoagulation therapy in preventing thromboembolic stroke. Both renal function (SCr 1.0 mg/dL, eGFR 72 mL/min/1.73m²) and hepatic function (AST 24 U/L, ALT 21 U/L) together with weight 84 kg confirm Apixaban dose-reduction criteria are not met, supporting continued full-dose Apixaban 5 mg PO BID. Per 2023 ACC/AHA AFib guidelines, DOAC therapy (Apixaban 5 mg BID) is preferred over VKAs (Warfarin) and is indicated for lifelong stroke prevention. Prior pharmacist interventions successfully resolved cost and fear barriers. A shared decision-making approach is appropriate for long-term anticoagulation and HF therapy management. Patient question regarding medication duration requires clear education on the chronic nature of AFib and lifelong anticoagulation rationale.'
         }
       ] 
     },
@@ -1052,7 +1053,7 @@ const angelaThu = makeCase({
         { 
           key: 'q2', 
           q: 'What is the status of HFrEF and GDMT maintenance?',
-          defaultAnswer: 'Heart Failure with Reduced Ejection Fraction (HFrEF, LVEF 35%) is clinically stable on 3-pillar GDMT (Sacubitril/Valsartan 49/51 mg BID [ARNI], Metoprolol Succinate 50 mg daily [Beta-blocker], Empagliflozin 10 mg daily [SGLT2i]). Patient reports stable HF symptoms (mild fatigue, exertional dyspnea) and denies decompensation negatives (chest pain, resting dyspnea, orthopnea, PND, edema, ED visits, or hospitalizations). Improved adherence directly links to clinical HF stability. Absence of BNP/NT-proBNP is noted as missing expected data for objective stability assessment. Heart rate 80 bpm is well controlled on Metoprolol Succinate rate control in HFrEF. Continued 3-pillar GDMT is indicated long term.'
+          defaultAnswer: 'Heart Failure with Reduced Ejection Fraction (HFrEF, LVEF 35%) is clinically stable on 3-pillar GDMT (Sacubitril/Valsartan 49/51 mg BID [ARNI], Metoprolol Succinate 50 mg daily [Beta-blocker], Empagliflozin 10 mg daily [SGLT2i]). Patient reports stable HF symptoms (mild fatigue, exertional dyspnea) and denies decompensation negatives (chest pain, resting dyspnea, orthopnea, PND, edema, ED visits, or hospitalizations). Within the HFrEF assessment, adherence maintenance, symptom monitoring, and self-management reinforcement are framed as the primary clinical foci. Improved adherence directly links to clinical HF stability. Absence of BNP/NT-proBNP is noted as missing expected data for objective stability assessment. Heart rate 88 bpm is controlled on Metoprolol Succinate rate control in HFrEF. Continued 3-pillar GDMT is indicated long term.'
         }
       ] 
     },
@@ -1065,7 +1066,7 @@ const angelaThu = makeCase({
         { 
           key: 'q3', 
           q: 'What progress has been made in access, literacy, and self-management?',
-          defaultAnswer: 'Cost and access barriers have been successfully resolved via Patient Assistance Program (PAP) enrollment, serving as the primary driver of adherence improvement. However, fixed income status remains an ongoing vulnerability warranting periodic reassessment. Health literacy and communication comfort have improved significantly, enabling the patient to avoid independent medication changes. Pharmacist interventions successfully resolved prior medication therapy problems. Continued reinforcement of self-management education is indicated.'
+          defaultAnswer: 'Cost and access barriers have been successfully resolved via Patient Assistance Program (PAP) enrollment, serving as the primary driver of adherence improvement. Transportation barriers have been explicitly resolved and improved via family support and public bus transit. Periodic reassessment of fixed income financial status is indicated due to ongoing chronic lifelong medication needs. Improvements in health literacy and communication confidence directly causally led to 100% medication adherence, enabling the patient to avoid independent medication changes. Pharmacist interventions successfully resolved prior medication therapy problems. Continued reinforcement of self-management education is indicated.'
         }
       ] 
     },
@@ -1078,7 +1079,7 @@ const angelaThu = makeCase({
         { 
           key: 'q4', 
           q: 'What is the status of ongoing comorbidities and preventive care?',
-          defaultAnswer: 'Hypertension is controlled (office BP 124/74 mmHg, goal <130/80 mmHg). Hyperlipidemia is stable on Atorvastatin 40 mg daily for CV risk reduction in HFrEF/AFib. Preventive care progress recognized: Pneumococcal vaccination completed; Shingrix Dose #2 and Tdap booster administered at today\'s visit. Influenza and COVID-19 vaccines are up to date with no further action needed.'
+          defaultAnswer: 'Hypertension is controlled (office BP 128/78 mmHg, goal <130/80 mmHg). Hyperlipidemia is stable on Atorvastatin 40 mg daily for CV risk reduction in HFrEF/AFib. No medication changes are needed for hypertension or hyperlipidemia at today\'s visit. Preventive care progress recognized: Pneumococcal vaccination completed since prior visit; Shingrix Dose #2 and Tdap booster were administered at today\'s visit. Influenza and COVID-19 vaccines are up to date with no further action needed.'
         }
       ] 
     }
@@ -1089,60 +1090,62 @@ const angelaThu = makeCase({
       title: 'Persistent Nonvalvular AFib Long-Term Anticoagulation Plan', 
       options: [
         { key: 'o1', label: 'Continue Apixaban 5 mg PO twice daily for long-term/lifelong stroke prevention per 2023 ACC/AHA AFib guidelines (DOAC preference over VKAs; confirm Warfarin is not indicated)', correct: true },
-        { key: 'o2', label: 'Reinforce 100% anticoagulation adherence using daily pillbox', correct: true },
-        { key: 'o3', label: 'Review major bleeding warning signs (dark stools, hematuria, severe headache) and distinguish minor cutaneous bruising', correct: true },
-        { key: 'o4', label: 'Address patient duration question: educate on chronic AFib nature and explain lifelong anticoagulation rationale', correct: true },
-        { key: 'o5', label: 'Encourage patient to contact healthcare team before making any future medication changes', correct: true }
+        { key: 'o2', label: 'Continue a shared decision-making approach to long-term anticoagulation and heart failure therapy management', correct: true },
+        { key: 'o3', label: 'Reinforce 100% anticoagulation adherence using daily pillbox', correct: true },
+        { key: 'o4', label: 'Review major bleeding warning signs (dark stools, hematuria, severe headache) and distinguish minor cutaneous bruising', correct: true },
+        { key: 'o5', label: 'Address patient duration question: educate on chronic AFib nature and explain lifelong anticoagulation rationale', correct: true },
+        { key: 'o6', label: 'Encourage patient to contact healthcare team before making any future medication changes', correct: true }
       ] 
     },
     { 
       id: 'w4b3_p2', 
       title: 'HFrEF 3-Pillar GDMT Long-Term Strategy', 
       options: [
-        { key: 'o6', label: 'Continue Sacubitril/Valsartan 49/51 mg PO BID (ARNI pillar with guideline class rationale)', correct: true },
-        { key: 'o7', label: 'Continue Metoprolol Succinate 50 mg PO daily (Beta-blocker pillar with guideline class rationale)', correct: true },
-        { key: 'o8', label: 'Continue Empagliflozin 10 mg PO daily (SGLT2i pillar with guideline class rationale)', correct: true },
-        { key: 'o9', label: 'Maintain current stable GDMT doses without uptitration today', correct: true }
+        { key: 'o7', label: 'Continue Sacubitril/Valsartan 49/51 mg PO BID (ARNI pillar per 2022 AHA/ACC/HFSA Heart Failure Guideline to reduce mortality and HF hospitalizations)', correct: true },
+        { key: 'o8', label: 'Continue Metoprolol Succinate 50 mg PO daily (Beta-blocker pillar per 2022 AHA/ACC/HFSA Heart Failure Guideline to reduce mortality and HF hospitalizations)', correct: true },
+        { key: 'o9', label: 'Continue Empagliflozin 10 mg PO daily (SGLT2i pillar per 2022 AHA/ACC/HFSA Heart Failure Guideline to reduce mortality and HF hospitalizations)', correct: true },
+        { key: 'o10', label: 'Maintain current stable GDMT doses without uptitration today', correct: true }
       ] 
     },
     { 
       id: 'w4b3_p3', 
       title: 'Hyperlipidemia & Comorbidity Management', 
       options: [
-        { key: 'o10', label: 'Continue Atorvastatin 40 mg PO daily for CV risk reduction in HFrEF and AFib (LDL goal <70 mg/dL)', correct: true }
+        { key: 'o11', label: 'Continue Atorvastatin 40 mg PO daily for CV risk reduction in HFrEF and AFib (LDL goal <70 mg/dL); confirm no medication changes needed for HTN or HLD today', correct: true }
       ] 
     },
     { 
       id: 'w4b3_p4', 
       title: 'Patient Education & Self-Management Counseling', 
       options: [
-        { key: 'o11', label: 'Educate patient on chronic nature of AFib and HFrEF, reinforcing lifelong need for both anticoagulation and 3-pillar GDMT', correct: true },
-        { key: 'o12', label: 'Review heart failure self-management principles (monitoring fatigue, exertional dyspnea, edema)', correct: true },
-        { key: 'o13', label: 'Praise patient for excellent adherence and encourage ongoing open communication before self-altering medications', correct: true }
+        { key: 'o12', label: 'Educate patient on chronic nature of AFib and HFrEF, reinforcing lifelong need for both anticoagulation and 3-pillar GDMT', correct: true },
+        { key: 'o13', label: 'Review heart failure self-management principles (monitoring fatigue, exertional dyspnea, edema)', correct: true },
+        { key: 'o14', label: 'Praise patient for excellent adherence and encourage ongoing open communication before self-altering medications', correct: true }
       ] 
     },
     { 
       id: 'w4b3_p5', 
-      title: 'Longitudinal Monitoring Plan (8 Parameters)', 
+      title: 'Longitudinal & DOAC Safety Monitoring Plan', 
       options: [
-        { key: 'o14', label: 'Monitor HF symptoms (fatigue, dyspnea, edema), blood pressure (goal <130/80), heart rate, medication adherence, quality of life / patient-reported outcomes, renal function (SCr, eGFR), periodic liver function (given Atorvastatin), and medication affordability', correct: true },
-        { key: 'o15', label: 'Confirm routine INR monitoring is unnecessary given DOAC (Apixaban) use', correct: true }
+        { key: 'o15', label: 'Monitor HF symptoms (fatigue, dyspnea, edema), blood pressure (goal <130/80), heart rate, medication adherence, quality of life, renal function (SCr, eGFR linked to ARNI/SGLT2i safety), CBC (monitoring for DOAC safety), bleeding symptoms, stroke warning signs, periodic liver function (given Atorvastatin), and medication affordability', correct: true },
+        { key: 'o16', label: 'Confirm routine INR monitoring is unnecessary given DOAC (Apixaban) use', correct: true }
       ] 
     },
     { 
       id: 'w4b3_p6', 
       title: 'Preventive Care Administration Plan', 
       options: [
-        { key: 'o16', label: 'Administer Shingrix Dose #2 today to complete the 2-dose series', correct: true },
-        { key: 'o17', label: 'Administer Tdap booster vaccine today', correct: true },
-        { key: 'o18', label: 'Confirm Influenza and COVID-19 vaccinations are up to date with no further action needed', correct: true }
+        { key: 'o17', label: 'Administer Shingrix Dose #2 today to complete the 2-dose series', correct: true },
+        { key: 'o18', label: 'Administer Tdap booster vaccine today', correct: true },
+        { key: 'o19', label: 'Confirm Influenza and COVID-19 vaccinations are up to date with no further action needed', correct: true },
+        { key: 'o20', label: 'Confirm continuation of routine preventive health maintenance and screening', correct: true }
       ] 
     },
     { 
       id: 'w4b3_p7', 
       title: 'Follow-Up Plan', 
       options: [
-        { key: 'o19', label: 'Schedule routine follow-up visit in 3 to 6 months for ongoing monitoring of adherence, HF symptom stability, patient understanding, and medication access', correct: true }
+        { key: 'o21', label: 'Schedule routine follow-up visit in 3 to 6 months for ongoing monitoring of adherence, HF symptom stability, patient understanding, bleeding symptoms, stroke warning signs, and medication access', correct: true }
       ] 
     }
   ]
