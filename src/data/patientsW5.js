@@ -1669,5 +1669,1450 @@ const sarahThu = makeCase({
   ]
 })
 
-export const W5_CASES = [sarahTue, sarahWed, sarahThu]
+
+/* ============================ JESSICA RAMIREZ (B) ============================ */
+// MDD + GAD + Non-adherence (Financial Barrier) + Tobacco Use.
+
+const jessicaTue = makeCase({
+  "id": "w5-jessica_r-tue",
+  "PATIENT": {
+    "name": "Jessica Ramirez",
+    "age": 42,
+    "dob": "11/03/1983",
+    "sex": "female",
+    "ethnicity": "Hispanic / Latina",
+    "mrn": "W5-20441"
+  },
+  "ENCOUNTER": {
+    "week": "Week 5",
+    "day": "Tuesday",
+    "type": "Initial 6-Week Follow-Up Visit",
+    "difficulty": "Intermediate",
+    "difficultyTone": "blue",
+    "chiefConcern": "I've been feeling so down and overwhelmed. My doctor prescribed Zoloft 6 weeks ago, but the copay was $45 at the pharmacy and I just couldn't afford it every month, so I only take it once or twice a week when things get really bad.",
+    "snapshotSummary": "Jessica is a 42-year-old female medical receptionist with MDD (PHQ-9 = 16) and GAD (GAD-7 = 14) presenting for follow-up. She reports pseudo-treatment failure due to non-adherence driven by financial barrier ($45 copay). Requires switching to $4 generic sertraline 50 mg daily, pill alarm adherence support, and tobacco cessation counseling.",
+    "diseaseStates": [
+      "MDD",
+      "GAD",
+      "Non-adherence (Financial)",
+      "Tobacco Use Disorder"
+    ],
+    "learningObjectives": [
+      "Recognize cost-driven non-adherence masquerading as antidepressant treatment failure",
+      "Transition patient to $4 generic sertraline 50 mg daily",
+      "Implement pill alarm adherence strategies",
+      "Counsel on tobacco cessation in contemplative stage"
+    ],
+    "visitDate": "09/09/2026"
+  },
+  "VITALS": {
+    "bp": "122/78 mmHg",
+    "bpRepeat": "120/76 mmHg",
+    "hr": "72 bpm",
+    "rr": "16 breaths/min",
+    "temp": "98.4°F",
+    "weight": "145 lbs",
+    "height": "64 inches",
+    "bmi": "24.9 kg/m²",
+    "vitalsTime": "09/09/2026 10:15",
+    "flags": {
+      "bmi": "normal"
+    }
+  },
+  "LABS": [
+    { "label": "Sodium", "value": "140", "unit": "mEq/L", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "Potassium", "value": "4.1", "unit": "mEq/L", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "Chloride", "value": "102", "unit": "mEq/L", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "Bicarbonate", "value": "25", "unit": "mEq/L", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "BUN", "value": "13", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "Serum Creatinine", "value": "0.7", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73m²", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "Glucose", "value": "88", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "TSH", "value": "1.8", "unit": "mIU/L", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "AST", "value": "18", "unit": "U/L", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "ALT", "value": "16", "unit": "U/L", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "WBC", "value": "5.8", "unit": "x10³/μL", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "Hgb", "value": "13.1", "unit": "g/dL", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "Plt", "value": "240", "unit": "x10³/μL", "flag": "normal", "labDate": "09/09/2026 08:00" }
+  ],
+  "ALERTS": [
+    {
+      "level": "high",
+      "text": "Pseudo-treatment failure: Patient has not been taking Sertraline 50 mg daily consistently due to a $45/month copay ($4 generic available). PHQ-9 = 16 (Moderate-Severe), GAD-7 = 14 (Moderate)."
+    },
+    {
+      "level": "info",
+      "text": "Tobacco Use Disorder (smokes 6 cigarettes/day for stress, contemplative stage). Motivational interviewing recommended."
+    }
+  ],
+  "PROBLEMS": [
+    {
+      "name": "1. Major Depressive Disorder (MDD) — Moderate-Severe, Non-adherent",
+      "detail": "PHQ-9 = 16. Symptom duration 6 months. Pseudo-treatment failure driven by financial non-adherence ($45 copay, takes 1-2 doses/week).",
+      "flag": "high"
+    },
+    {
+      "name": "2. Generalized Anxiety Disorder (GAD) — Moderate, Non-adherent",
+      "detail": "GAD-7 = 14. Persistent worry and tension. Non-adherent to prescribed SSRI secondary to cost.",
+      "flag": "high"
+    },
+    {
+      "name": "3. Non-adherence (Financial Barrier) — Active",
+      "detail": "Takes Sertraline 50 mg only 1-2 times per week due to $45/month copay at retail pharmacy.",
+      "flag": "warn"
+    },
+    {
+      "name": "4. Tobacco Use Disorder — Active, Contemplative Stage",
+      "detail": "Smokes 6 cigarettes/day for 6 years (1.8 pack-years). Contemplative stage of change.",
+      "flag": "info"
+    }
+  ],
+  "MEDICATIONS": [
+    {
+      "name": "Sertraline",
+      "dose": "50 mg",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "MDD / GAD",
+      "notes": "Prescribed 6 weeks ago; patient taking only 1-2 times per week due to $45 copay barrier."
+    },
+    {
+      "name": "Ethinyl estradiol / Norgestimate",
+      "dose": "0.035 mg / 0.25 mg",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "Contraception",
+      "notes": "Oral contraceptive pill."
+    }
+  ],
+  "IMMUNIZATIONS": [
+    { "name": "Influenza", "status": "Up to date (received)", "flag": "normal" },
+    { "name": "COVID-19", "status": "Up to date (received)", "flag": "normal" },
+    { "name": "Tdap", "status": "Up to date (received)", "flag": "normal" }
+  ],
+  "SUBJECTIVE_DOCUMENTED": [
+    {
+      "label": "HPI",
+      "value": "42-year-old female medical receptionist presenting for 6-week follow-up of MDD and GAD. Reports persistent low mood, anhedonia, fatigue, poor sleep (5 hours/night), and persistent worry. When asked about medication use, reveals she has only been taking Sertraline 50 mg 1 to 2 times per week because the monthly copay at her pharmacy was $45, which she could not afford. Explains she was embarrassed to tell her doctor. Denies side effects when taking the medication. Denies prior history of mania, hypomania, psychosis, or panic attacks."
+    },
+    {
+      "label": "Review of Systems (ROS) & Safety Assessment",
+      "value": "Psychiatric ROS & Safety: Explicitly denies suicidal ideation (SI), denies plan, denies intent, denies suicide attempts (low risk). Denies homicidal ideation (HI), denies self-harm. Denies hallucinations, delusions, mania."
+    },
+    {
+      "label": "Scores & Screening Tools",
+      "value": "PHQ-9 score: 16 (Moderate-Severe Depression). GAD-7 score: 14 (Moderate Anxiety)."
+    },
+    {
+      "label": "Past Medical History",
+      "value": "MDD, GAD, Tobacco Use Disorder. Denies prior surgeries."
+    },
+    {
+      "label": "Social History",
+      "value": "Works as a medical receptionist. Married, lives with husband and two teenage children. Smokes 6 cigarettes/day for 6 years (1.8 pack-years). Contemplative stage of change regarding tobacco cessation. Drinks 1 glass of wine on weekends. Denies illicit drug use."
+    },
+    {
+      "label": "Family History",
+      "value": "Father: HTN. Mother: MDD (responded well to sertraline)."
+    }
+  ],
+  "OBJECTIVE_EXTRA": {
+    "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'anxious and down'. Affect: mood-congruent, constricted. Speech: normal rate and volume. Thought process: goal-directed, logical. Thought content: no SI/HI, no delusions. Perceptions: no hallucinations. Cognition: intact. Insight/Judgment: good."
+  },
+  "INTERVIEW_KNOWLEDGE": {
+    "financial": "I was paying $45 a month at the retail pharmacy and couldn't keep up with that cost, so I saved the pills for days when I felt worst.",
+    "adherence": "I only take Sertraline once or twice a week. I know I was supposed to take it daily, but the money was tight.",
+    "generic_option": "If there's a $4 generic at the retail pharmacy or mail order, that would be amazing! I can easily afford $4 a month.",
+    "tobacco": "I smoke about 6 cigarettes a day. It helps me calm down when I feel overwhelmed at work, but I know I should quit eventually."
+  },
+  "INTERVIEW_FIELDS": [
+    { "field": "financial", "label": "Reason for non-adherence & cost barrier ($45 copay)" },
+    { "field": "adherence", "label": "Actual medication taking pattern (1-2x/week)" },
+    { "field": "generic_option", "label": "Acceptability of $4 generic option" },
+    { "field": "tobacco", "label": "Tobacco use quantity and readiness to quit" }
+  ],
+  "COUNSELING": [
+    "Counsel on daily adherence importance for SSRI therapeutic efficacy (takes 4-6 weeks of consistent daily use).",
+    "Transition to $4 generic sertraline 50 mg daily at target pharmacy.",
+    "Recommend setting a daily phone alarm or pill organizer to maintain 100% adherence.",
+    "Motivational interviewing for tobacco cessation (contemplative stage)."
+  ],
+  "ASSESSMENT_CARDS": [
+    {
+      "id": "w5b_tue_a1",
+      "title": "1. MDD & GAD Pseudo-Treatment Failure (Cost-Driven Non-Adherence)",
+      "icon": "Brain",
+      "color": "13314f",
+      "questions": [
+        {
+          "key": "q1",
+          "q": "What is the assessment of MDD/GAD status and non-adherence?",
+          "defaultAnswer": "MDD (PHQ-9 = 16, Moderate-Severe) and GAD (GAD-7 = 14, Moderate) showing lack of response. However, this is a pseudo-treatment failure driven by financial non-adherence ($45 copay, taking sertraline 50 mg only 1-2 times/week). True efficacy cannot be evaluated without 4-6 weeks of consistent daily adherence."
+        }
+      ]
+    },
+    {
+      "id": "w5b_tue_a2",
+      "title": "2. Tobacco Use Disorder (Contemplative Stage)",
+      "icon": "Cigarette",
+      "color": "13314f",
+      "questions": [
+        {
+          "key": "q2",
+          "q": "What is the tobacco status and stage of change?",
+          "defaultAnswer": "Active Tobacco Use Disorder (6 cigarettes/day). Patient is in contemplative stage of change (recognizes need to quit but not ready to set a quit date today)."
+        }
+      ]
+    }
+  ],
+  "PLAN_SECTIONS": [
+    {
+      "id": "w5b_tue_p1",
+      "title": "1. Pharmacotherapy & Adherence Optimization Plan",
+      "options": [
+        {
+          "key": "o1",
+          "label": "Transition patient to generic Sertraline 50 mg PO daily available on $4 generic prescription program to resolve financial barrier",
+          "correct": true
+        },
+        {
+          "key": "o2",
+          "label": "Counsel patient on necessity of strict daily adherence (takes 4-6 weeks of uninterrupted daily use for full antidepressant/anxiolytic effect)",
+          "correct": true
+        },
+        {
+          "key": "o3",
+          "label": "Implement adherence strategies: set a daily smartphone alarm and use a 7-day pill organizer",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "w5b_tue_p2",
+      "title": "2. Tobacco Cessation Counseling Plan",
+      "options": [
+        {
+          "key": "o4",
+          "label": "Provide motivational interviewing for tobacco cessation (5 Rs: Relevance, Risks, Rewards, Roadblocks, Repetition) for contemplative stage of change",
+          "correct": true
+        },
+        {
+          "key": "o5",
+          "label": "Reassess readiness to quit at next follow-up visit in 6 weeks",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "w5b_tue_p3",
+      "title": "3. Follow-Up Plan",
+      "options": [
+        {
+          "key": "o6",
+          "label": "Schedule follow-up visit in 6 weeks to evaluate clinical response to 100% adherent Sertraline 50 mg daily",
+          "correct": true
+        }
+      ]
+    }
+  ]
+})
+
+const jessicaWed = makeCase({
+  "id": "w5-jessica_r-wed",
+  "PATIENT": {
+    "name": "Jessica Ramirez",
+    "age": 42,
+    "dob": "11/03/1983",
+    "sex": "female",
+    "ethnicity": "Hispanic / Latina",
+    "mrn": "W5-20441"
+  },
+  "ENCOUNTER": {
+    "week": "Week 5",
+    "day": "Wednesday",
+    "type": "6-Week Follow-Up Visit (Post-Adherence Optimization)",
+    "difficulty": "Intermediate",
+    "difficultyTone": "blue",
+    "chiefConcern": "I've been taking the $4 generic Sertraline 50 mg every single day with my phone alarm! I definitely feel less anxious and my mood is better, though I still have days where I feel pretty down.",
+    "snapshotSummary": "Jessica returns for a 6-week follow-up after switching to $4 generic sertraline 50 mg daily. Reports 100% adherence. Partial response: PHQ-9 reduced from 16 to 10 (mild-moderate), GAD-7 reduced from 14 to 8 (mild). No side effects. Plan: Titrate sertraline 50 mg to 100 mg daily for target remission. Tobacco: Preparation stage, set quit date.",
+    "diseaseStates": [
+      "MDD (Partial Response)",
+      "GAD (Partial Response)",
+      "Tobacco Use Disorder (Preparation Stage)"
+    ],
+    "learningObjectives": [
+      "Assess partial antidepressant response",
+      "Titrate Sertraline 50 mg to 100 mg daily for remission target",
+      "Assist patient in setting a tobacco quit date"
+    ],
+    "visitDate": "10/21/2026"
+  },
+  "VITALS": {
+    "bp": "120/76 mmHg",
+    "bpRepeat": "118/74 mmHg",
+    "hr": "70 bpm",
+    "rr": "15 breaths/min",
+    "temp": "98.2°F",
+    "weight": "144 lbs",
+    "height": "64 inches",
+    "bmi": "24.7 kg/m²",
+    "vitalsTime": "10/21/2026 09:30",
+    "flags": {
+      "bmi": "normal"
+    }
+  },
+  "LABS": [
+    { "label": "Sodium", "value": "140", "unit": "mEq/L", "flag": "normal", "labDate": "10/21/2026 08:00" },
+    { "label": "Potassium", "value": "4.2", "unit": "mEq/L", "flag": "normal", "labDate": "10/21/2026 08:00" },
+    { "label": "Chloride", "value": "101", "unit": "mEq/L", "flag": "normal", "labDate": "10/21/2026 08:00" },
+    { "label": "Bicarbonate", "value": "24", "unit": "mEq/L", "flag": "normal", "labDate": "10/21/2026 08:00" },
+    { "label": "BUN", "value": "12", "unit": "mg/dL", "flag": "normal", "labDate": "10/21/2026 08:00" },
+    { "label": "Serum Creatinine", "value": "0.7", "unit": "mg/dL", "flag": "normal", "labDate": "10/21/2026 08:00" },
+    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73m²", "flag": "normal", "labDate": "10/21/2026 08:00" },
+    { "label": "Glucose", "value": "86", "unit": "mg/dL", "flag": "normal", "labDate": "10/21/2026 08:00" }
+  ],
+  "ALERTS": [
+    {
+      "level": "warn",
+      "text": "Partial response to Sertraline 50 mg daily with 100% adherence over 6 weeks: PHQ-9 = 10 (down from 16), GAD-7 = 8 (down from 14). Guideline-recommended action: Titrate Sertraline to 100 mg daily."
+    },
+    {
+      "level": "info",
+      "text": "Tobacco Use Disorder: Patient is now in Preparation stage of change and ready to set a quit date."
+    }
+  ],
+  "PROBLEMS": [
+    {
+      "name": "1. Major Depressive Disorder (MDD) — Partial Response",
+      "detail": "PHQ-9 = 10 (improved from 16). Residual depressive symptoms warrant dose titration.",
+      "flag": "warn"
+    },
+    {
+      "name": "2. Generalized Anxiety Disorder (GAD) — Partial Response",
+      "detail": "GAD-7 = 8 (improved from 14). Anxiety symptoms reduced but residual mild worry remains.",
+      "flag": "warn"
+    },
+    {
+      "name": "3. Tobacco Use Disorder — Preparation Stage",
+      "detail": "Smokes 4 cigarettes/day (down from 6). Ready to set a quit date within 2 weeks.",
+      "flag": "info"
+    }
+  ],
+  "MEDICATIONS": [
+    {
+      "name": "Generic Sertraline",
+      "dose": "50 mg",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "MDD / GAD",
+      "notes": "100% adherent on $4 program; partial response; well tolerated."
+    },
+    {
+      "name": "Ethinyl estradiol / Norgestimate",
+      "dose": "0.035 mg / 0.25 mg",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "Contraception",
+      "notes": "Oral contraceptive pill."
+    }
+  ],
+  "IMMUNIZATIONS": [
+    { "name": "Influenza", "status": "Up to date (received)", "flag": "normal" },
+    { "name": "COVID-19", "status": "Up to date (received)", "flag": "normal" },
+    { "name": "Tdap", "status": "Up to date (received)", "flag": "normal" }
+  ],
+  "SUBJECTIVE_DOCUMENTED": [
+    {
+      "label": "HPI",
+      "value": "42-year-old female presenting for 6-week follow-up after starting generic Sertraline 50 mg daily ($4 program). Confirms 100% daily adherence using smartphone alarm. Reports notable improvement in mood, energy, and work anxiety. However, residual depressive symptoms persist (occasional low mood, mild fatigue, sleep onset delay). Tolerating medication well with no GI distress, sexual dysfunction, or insomnia."
+    },
+    {
+      "label": "Review of Systems (ROS) & Safety Assessment",
+      "value": "Psychiatric ROS: Denies SI, denies plan, denies intent (low risk). Denies HI, denies self-harm, denies mania, hypomania, or psychosis."
+    },
+    {
+      "label": "Scores & Screening Tools",
+      "value": "PHQ-9 score: 10 (Mild-Moderate Depression, down from 16). GAD-7 score: 8 (Mild Anxiety, down from 14)."
+    },
+    {
+      "label": "Social History",
+      "value": "Smokes 4 cigarettes/day (down from 6). Expresses readiness to set a quit date within the next 30 days (Preparation stage)."
+    }
+  ],
+  "OBJECTIVE_EXTRA": {
+    "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'improving, brighter'. Affect: full range, congruent. Speech: normal. Thought process: logical, goal-directed. Cognition: intact."
+  },
+  "INTERVIEW_KNOWLEDGE": {
+    "adherence_confirm": "I haven't missed a single dose of Sertraline 50 mg since we switched to the $4 program 6 weeks ago.",
+    "side_effects": "No side effects at all — no stomach upset, no headaches, no sleep issues.",
+    "quit_date": "I'm ready to quit smoking! I want to set a quit date for 2 weeks from today."
+  },
+  "INTERVIEW_FIELDS": [
+    { "field": "adherence_confirm", "label": "Confirmation of 100% adherence" },
+    { "field": "side_effects", "label": "Medication tolerability check" },
+    { "field": "quit_date", "label": "Tobacco quit date agreement" }
+  ],
+  "COUNSELING": [
+    "Educate on rationale for titrating Sertraline 50 mg → 100 mg daily to achieve full remission.",
+    "Counsel on maintaining 100% adherence and monitoring for transient GI side effects.",
+    "Confirm tobacco quit date (2 weeks out) and discuss behavioral coping strategies & NRT options."
+  ],
+  "ASSESSMENT_CARDS": [
+    {
+      "id": "w5b_wed_a1",
+      "title": "1. MDD & GAD Partial Response Evaluation",
+      "icon": "Brain",
+      "color": "13314f",
+      "questions": [
+        {
+          "key": "q1",
+          "q": "What is the assessment of treatment response and titration strategy?",
+          "defaultAnswer": "MDD (PHQ-9 = 10) and GAD (GAD-7 = 8) show partial response to 6 weeks of 100% adherent Sertraline 50 mg daily. Per ACP and VA/DoD guidelines, partial response with good tolerability warrants dose titration to Sertraline 100 mg daily to achieve full clinical remission."
+        }
+      ]
+    },
+    {
+      "id": "w5b_wed_a2",
+      "title": "2. Tobacco Cessation (Preparation Stage)",
+      "icon": "Cigarette",
+      "color": "13314f",
+      "questions": [
+        {
+          "key": "q2",
+          "q": "What is the tobacco status and intervention plan?",
+          "defaultAnswer": "Active Tobacco Use Disorder (4 cigs/day), now in Preparation stage of change. Patient is motivated and ready to set a target quit date within 2 weeks."
+        }
+      ]
+    }
+  ],
+  "PLAN_SECTIONS": [
+    {
+      "id": "w5b_wed_p1",
+      "title": "1. Sertraline Dose Titration Plan",
+      "options": [
+        {
+          "key": "o1",
+          "label": "Increase Sertraline from 50 mg PO daily to target dose of 100 mg PO daily to target full remission of MDD and GAD",
+          "correct": true
+        },
+        {
+          "key": "o2",
+          "label": "Counsel patient on expected 2-4 week timeline for onset of additional therapeutic response from dose increase",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "w5b_wed_p2",
+      "title": "2. Tobacco Cessation Plan (Preparation Stage)",
+      "options": [
+        {
+          "key": "o3",
+          "label": "Establish target tobacco quit date within 2 weeks",
+          "correct": true
+        },
+        {
+          "key": "o4",
+          "label": "Provide behavioral counseling for tobacco cessation: identify smoking triggers, substitute healthy coping strategies, remove ash trays and cigarettes from home/car",
+          "correct": true
+        },
+        {
+          "key": "o5",
+          "label": "Offer OTC Nicotine Replacement Therapy (NRT patch 14 mg/24hr or NRT gum 2 mg) as pharmacotherapy option for quit date",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "w5b_wed_p3",
+      "title": "3. Follow-Up Plan",
+      "options": [
+        {
+          "key": "o6",
+          "label": "Schedule follow-up visit in 6 weeks to evaluate remission status on Sertraline 100 mg daily and tobacco cessation outcome",
+          "correct": true
+        }
+      ]
+    }
+  ]
+})
+
+const jessicaThu = makeCase({
+  "id": "w5-jessica_r-thu",
+  "PATIENT": {
+    "name": "Jessica Ramirez",
+    "age": 42,
+    "dob": "11/03/1983",
+    "sex": "female",
+    "ethnicity": "Hispanic / Latina",
+    "mrn": "W5-20441"
+  },
+  "ENCOUNTER": {
+    "week": "Week 5",
+    "day": "Thursday",
+    "type": "12-Week Follow-Up Visit (Remission & Maintenance)",
+    "difficulty": "Intermediate",
+    "difficultyTone": "blue",
+    "chiefConcern": "I feel fantastic! Sertraline 100 mg daily has completely brought me back to my normal self, and I haven't smoked a single cigarette in 4 weeks!",
+    "snapshotSummary": "Jessica presents for a 12-week follow-up (6 weeks post Sertraline titration to 100 mg daily). Full remission achieved: PHQ-9 = 3 (remission), GAD-7 = 3 (remission). Successfully quit smoking 4 weeks ago (tobacco cessation early remission). Plan: Continue Sertraline 100 mg daily for maintenance (minimum 6-12 months), relapse prevention counseling, reinforce tobacco abstinence.",
+    "diseaseStates": [
+      "MDD (Full Remission)",
+      "GAD (Full Remission)",
+      "Tobacco Cessation (Early Remission)"
+    ],
+    "learningObjectives": [
+      "Confirm full MDD/GAD remission",
+      "Establish maintenance therapy plan (minimum 6-12 months per ACP/VA-DoD)",
+      "Counsel on relapse prevention and tobacco abstinence maintenance"
+    ],
+    "visitDate": "12/02/2026"
+  },
+  "VITALS": {
+    "bp": "118/74 mmHg",
+    "bpRepeat": "116/72 mmHg",
+    "hr": "68 bpm",
+    "rr": "14 breaths/min",
+    "temp": "98.0°F",
+    "weight": "143 lbs",
+    "height": "64 inches",
+    "bmi": "24.5 kg/m²",
+    "vitalsTime": "12/02/2026 10:00",
+    "flags": {
+      "bmi": "normal"
+    }
+  },
+  "LABS": [
+    { "label": "Sodium", "value": "139", "unit": "mEq/L", "flag": "normal", "labDate": "12/02/2026 08:00" },
+    { "label": "Potassium", "value": "4.1", "unit": "mEq/L", "flag": "normal", "labDate": "12/02/2026 08:00" },
+    { "label": "Chloride", "value": "100", "unit": "mEq/L", "flag": "normal", "labDate": "12/02/2026 08:00" },
+    { "label": "Bicarbonate", "value": "25", "unit": "mEq/L", "flag": "normal", "labDate": "12/02/2026 08:00" },
+    { "label": "BUN", "value": "11", "unit": "mg/dL", "flag": "normal", "labDate": "12/02/2026 08:00" },
+    { "label": "Serum Creatinine", "value": "0.7", "unit": "mg/dL", "flag": "normal", "labDate": "12/02/2026 08:00" },
+    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73m²", "flag": "normal", "labDate": "12/02/2026 08:00" }
+  ],
+  "ALERTS": [
+    {
+      "level": "info",
+      "text": "Full clinical remission achieved: PHQ-9 = 3, GAD-7 = 3. Continue Sertraline 100 mg daily for maintenance phase (minimum 6-12 months)."
+    },
+    {
+      "level": "info",
+      "text": "Tobacco Cessation: Successful abstinence for 4 weeks (early remission status). Support continued tobacco-free lifestyle."
+    }
+  ],
+  "PROBLEMS": [
+    {
+      "name": "1. Major Depressive Disorder (MDD) — In Full Remission",
+      "detail": "PHQ-9 = 3. Complete resolution of depressive symptoms.",
+      "flag": "normal"
+    },
+    {
+      "name": "2. Generalized Anxiety Disorder (GAD) — In Full Remission",
+      "detail": "GAD-7 = 3. Complete resolution of anxiety symptoms.",
+      "flag": "normal"
+    },
+    {
+      "name": "3. Tobacco Use Disorder — Early Remission",
+      "detail": "Abstinent 4 weeks. Continuing relapse prevention and lifestyle support.",
+      "flag": "normal"
+    }
+  ],
+  "MEDICATIONS": [
+    {
+      "name": "Generic Sertraline",
+      "dose": "100 mg",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "MDD / GAD",
+      "notes": "100% adherent; full remission; excellent tolerability."
+    },
+    {
+      "name": "Ethinyl estradiol / Norgestimate",
+      "dose": "0.035 mg / 0.25 mg",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "Contraception",
+      "notes": "Oral contraceptive pill."
+    }
+  ],
+  "IMMUNIZATIONS": [
+    { "name": "Influenza", "status": "Up to date (received)", "flag": "normal" },
+    { "name": "COVID-19", "status": "Up to date (received)", "flag": "normal" },
+    { "name": "Tdap", "status": "Up to date (received)", "flag": "normal" }
+  ],
+  "SUBJECTIVE_DOCUMENTED": [
+    {
+      "label": "HPI",
+      "value": "42-year-old female presenting for 12-week follow-up (6 weeks after Sertraline titration to 100 mg daily). Reports resolution of depressive and anxiety symptoms. Energy, concentration, sleep, and work performance returned to baseline. Denies any medication side effects. Successfully quit tobacco 4 weeks ago on designated quit date and reports zero cravings over past 2 weeks."
+    },
+    {
+      "label": "Review of Systems (ROS) & Safety Assessment",
+      "value": "Psychiatric ROS: Explicitly denies SI, denies plan, denies intent (low risk). Denies HI, denies self-harm, denies mania or psychosis."
+    },
+    {
+      "label": "Scores & Screening Tools",
+      "value": "PHQ-9 score: 3 (Full Remission). GAD-7 score: 3 (Full Remission)."
+    },
+    {
+      "label": "Social History",
+      "value": "Quit smoking 4 weeks ago. Uses deep breathing and walking for stress management. Drinks 1 glass of wine occasionally."
+    }
+  ],
+  "OBJECTIVE_EXTRA": {
+    "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'euthymic, great'. Affect: bright, full range. Speech: normal. Thought process: logical. Cognition: intact."
+  },
+  "INTERVIEW_KNOWLEDGE": {
+    "remission_status": "I feel 100% back to my old self. I'm enjoying work, spending time with family, and sleeping great.",
+    "tobacco_abstinence": "I haven't smoked a single cigarette in 4 weeks! The cravings were tough at first, but now I don't even think about it.",
+    "duration_question": "How long should I stay on Sertraline 100 mg daily now that I'm feeling better?"
+  },
+  "INTERVIEW_FIELDS": [
+    { "field": "remission_status", "label": "Subjective remission confirmation" },
+    { "field": "tobacco_abstinence", "label": "4-week tobacco abstinence validation" },
+    { "field": "duration_question", "label": "Maintenance therapy duration inquiry" }
+  ],
+  "COUNSELING": [
+    "Educate patient that antidepressant maintenance therapy must continue for at least 6-12 months post-remission to prevent relapse.",
+    "Warn against abrupt discontinuation of Sertraline (risk of discontinuation syndrome and depressive relapse).",
+    "Congratulate on 4 weeks of tobacco abstinence and reinforce long-term relapse prevention strategies."
+  ],
+  "ASSESSMENT_CARDS": [
+    {
+      "id": "w5b_thu_a1",
+      "title": "1. Full Remission Assessment & Maintenance Duration Rationale",
+      "icon": "Brain",
+      "color": "13314f",
+      "questions": [
+        {
+          "key": "q1",
+          "q": "What is the assessment of remission and duration of maintenance therapy?",
+          "defaultAnswer": "MDD (PHQ-9 = 3) and GAD (GAD-7 = 3) are in full clinical remission on Sertraline 100 mg daily. Per ACP and VA/DoD clinical practice guidelines, maintenance antidepressant pharmacotherapy must be continued at the effective therapeutic dose (100 mg daily) for a minimum of 6 to 12 months following initial remission to prevent relapse."
+        }
+      ]
+    },
+    {
+      "id": "w5b_thu_a2",
+      "title": "2. Tobacco Cessation Early Remission Status",
+      "icon": "Cigarette",
+      "color": "13314f",
+      "questions": [
+        {
+          "key": "q2",
+          "q": "What is the tobacco cessation status and relapse prevention plan?",
+          "defaultAnswer": "Tobacco Use Disorder in early remission (4 weeks of confirmed tobacco abstinence). Relapse risk remains elevated during early remission (< 12 months), requiring continued behavioral reinforcement and coping strategy maintenance."
+        }
+      ]
+    }
+  ],
+  "PLAN_SECTIONS": [
+    {
+      "id": "w5b_thu_p1",
+      "title": "1. Maintenance Pharmacotherapy Plan",
+      "options": [
+        {
+          "key": "o1",
+          "label": "CONTINUE Sertraline 100 mg PO daily for maintenance therapy for a minimum of 6 to 12 months post-remission per ACP/VA-DoD guidelines",
+          "correct": true
+        },
+        {
+          "key": "o2",
+          "label": "Explicitly counsel patient on the risk of depressive relapse and antidepressant discontinuation syndrome if medication is abruptly stopped",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "w5b_thu_p2",
+      "title": "2. Relapse Prevention & Tobacco Abstinence Plan",
+      "options": [
+        {
+          "key": "o3",
+          "label": "Congratulate patient on 4 weeks of tobacco abstinence; reinforce stress-management coping strategies and triggers for relapse prevention",
+          "correct": true
+        },
+        {
+          "key": "o4",
+          "label": "Provide education on early warning signs of depressive/anxiety relapse (sleep disturbance, persistent low mood, loss of interest, irritability)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "w5b_thu_p3",
+      "title": "3. Follow-Up & Longitudinal Monitoring Plan",
+      "options": [
+        {
+          "key": "o5",
+          "label": "Schedule follow-up visit in 3 to 6 months for longitudinal maintenance monitoring, repeating PHQ-9 and GAD-7 assessments",
+          "correct": true
+        }
+      ]
+    }
+  ]
+})
+
+
+/* ============================ DAVID CARTER (C) ============================ */
+// Severe TRD + Severe GAD + Passive SI + Tobacco Use.
+
+const davidTue = makeCase({
+  "id": "w5-david_c-tue",
+  "PATIENT": {
+    "name": "David Carter",
+    "age": 48,
+    "dob": "08/22/1977",
+    "sex": "male",
+    "ethnicity": "White",
+    "mrn": "W5-30882"
+  },
+  "ENCOUNTER": {
+    "week": "Week 5",
+    "day": "Tuesday",
+    "type": "Initial TRD & Safety Evaluation Clinic Visit",
+    "difficulty": "Advanced",
+    "difficultyTone": "purple",
+    "chiefConcern": "I've tried Sertraline up to 150 mg and Cymbalta 60 mg in the past with no luck, and now I've been on Effexor XR 150 mg for 8 weeks and still feel completely hopeless, exhausted, and anxious. Sometimes I think my family would be better off without me.",
+    "snapshotSummary": "David is a 48-year-old male accountant presenting with Treatment-Resistant Depression (TRD, PHQ-9 = 21, severe), Severe GAD (GAD-7 = 18), Tobacco Use Disorder (15 cigs/day), and passive SI. Failed sertraline and duloxetine; failing venlafaxine XR 150 mg daily. Requires safety planning (firearm lethal means offsite, 988 lifeline), augmentation with Aripiprazole 2 mg daily, and tobacco motivational interviewing.",
+    "diseaseStates": [
+      "Severe MDD (TRD)",
+      "Severe GAD",
+      "Passive Suicidal Ideation",
+      "Tobacco Use Disorder"
+    ],
+    "learningObjectives": [
+      "Evaluate Treatment-Resistant Depression (TRD) after two prior antidepressant trial failures",
+      "Conduct comprehensive suicide risk assessment and lethal means safety planning",
+      "Select second-generation antipsychotic augmentation (Aripiprazole 2 mg daily) for TRD",
+      "Assess tobacco cessation readiness"
+    ],
+    "visitDate": "09/09/2026"
+  },
+  "VITALS": {
+    "bp": "128/82 mmHg",
+    "bpRepeat": "126/80 mmHg",
+    "hr": "78 bpm",
+    "rr": "16 breaths/min",
+    "temp": "98.4°F",
+    "weight": "185 lbs",
+    "height": "70 inches",
+    "bmi": "26.5 kg/m²",
+    "vitalsTime": "09/09/2026 11:00",
+    "flags": {
+      "bmi": "warn"
+    }
+  },
+  "LABS": [
+    { "label": "Sodium", "value": "139", "unit": "mEq/L", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "Potassium", "value": "4.3", "unit": "mEq/L", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "Chloride", "value": "101", "unit": "mEq/L", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "Bicarbonate", "value": "24", "unit": "mEq/L", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "BUN", "value": "14", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "Serum Creatinine", "value": "0.9", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73m²", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "Glucose (fasting)", "value": "94", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "TSH", "value": "2.0", "unit": "mIU/L", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "AST", "value": "22", "unit": "U/L", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "ALT", "value": "20", "unit": "U/L", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "WBC", "value": "6.5", "unit": "x10³/μL", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "Hgb", "value": "14.2", "unit": "g/dL", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "Plt", "value": "260", "unit": "x10³/μL", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "Total Cholesterol", "value": "190", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "Triglycerides", "value": "140", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "HDL-C", "value": "48", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "LDL-C", "value": "114", "unit": "mg/dL", "flag": "warn", "labDate": "09/09/2026 08:30" }
+  ],
+  "ALERTS": [
+    {
+      "level": "high",
+      "text": "Treatment-Resistant Depression (TRD) with Severe Depression (PHQ-9 = 21) and Severe Anxiety (GAD-7 = 18). Failed Sertraline 150 mg (inadequate response/tolerability) and Duloxetine 60 mg (no benefit). Currently failing Venlafaxine XR 150 mg daily x 8 weeks."
+    },
+    {
+      "level": "high",
+      "text": "Passive Suicidal Ideation present ('everyone would be better off without me'). Suicide risk assessment indicates LOW to MODERATE acute risk (no active plan/intent). Immediate safety plan and lethal means counseling required."
+    },
+    {
+      "level": "info",
+      "text": "Tobacco Use Disorder: Smokes 15 cigarettes/day for 20 years (15 pack-years). Contemplative stage."
+    }
+  ],
+  "PROBLEMS": [
+    {
+      "name": "1. Major Depressive Disorder (MDD) — Severe, Treatment-Resistant",
+      "detail": "PHQ-9 = 21. Failed sertraline and duloxetine; inadequate response to venlafaxine XR 150 mg daily x 8 weeks.",
+      "flag": "high"
+    },
+    {
+      "name": "2. Generalized Anxiety Disorder (GAD) — Severe",
+      "detail": "GAD-7 = 18. Severe persistent worry, panic-like tension, sleep disturbance.",
+      "flag": "high"
+    },
+    {
+      "name": "3. Passive Suicidal Ideation — Active",
+      "detail": "Passive SI ('family better off without me'). Low-to-moderate risk; no active plan or intent. Firearms at home require offsite transfer.",
+      "flag": "high"
+    },
+    {
+      "name": "4. Tobacco Use Disorder — Active, Contemplative Stage",
+      "detail": "Smokes 15 cigarettes/day for 20 years (15 pack-years). Contemplative stage.",
+      "flag": "warn"
+    },
+    {
+      "name": "5. Overweight",
+      "detail": "BMI 26.5 kg/m².",
+      "flag": "info"
+    }
+  ],
+  "MEDICATIONS": [
+    {
+      "name": "Venlafaxine XR",
+      "dose": "150 mg",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "MDD / GAD",
+      "notes": "100% adherent for 8 weeks; inadequate response; failing single-agent SNRI."
+    },
+    {
+      "name": "Lisinopril",
+      "dose": "10 mg",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "Hypertension",
+      "notes": "BP well controlled."
+    }
+  ],
+  "IMMUNIZATIONS": [
+    { "name": "Influenza", "status": "Up to date (received)", "flag": "normal" },
+    { "name": "COVID-19", "status": "Up to date (received)", "flag": "normal" },
+    { "name": "Tdap", "status": "Up to date (received)", "flag": "normal" }
+  ],
+  "SUBJECTIVE_DOCUMENTED": [
+    {
+      "label": "HPI",
+      "value": "48-year-old male accountant referred by PCP for severe resistant depression and anxiety. Reports 9-month history of severe depressed mood, total anhedonia, severe insomnia (3-4 hours sleep/night with early morning awakening), profound fatigue, feelings of worthlessness and excessive guilt, and severe difficulty concentrating. Treatment history: Failed Sertraline 150 mg daily x 12 weeks (inadequate response, diarrhea), failed Duloxetine 60 mg daily x 10 weeks (no response). Currently on Venlafaxine XR 150 mg daily x 8 weeks with confirmed 100% adherence but persistent severe symptoms (PHQ-9 = 21, GAD-7 = 18)."
+    },
+    {
+      "label": "Review of Systems (ROS) & Safety Assessment",
+      "value": "Suicide Risk & Safety: Patient acknowledges passive suicidal ideation ('I feel like a burden and think my family would be better off without me'). Explicitly denies active suicidal intent, denies specific plan, and denies prior suicide attempts. Lethal Means Safety: Patient owns hunting firearms stored at home; agrees to have brother temporarily store all firearms and ammunition locked offsite. Provided 988 Suicide & Crisis Lifeline contact information."
+    },
+    {
+      "label": "Scores & Screening Tools",
+      "value": "PHQ-9 score: 21 (Severe Depression). GAD-7 score: 18 (Severe Anxiety)."
+    },
+    {
+      "label": "Past Medical History",
+      "value": "MDD (TRD), GAD, HTN, Tobacco Use Disorder. Denies prior surgeries or psychiatric hospitalizations."
+    },
+    {
+      "label": "Social History",
+      "value": "Accountant. Married, lives with wife and daughter. Smokes 15 cigarettes/day x 20 years (15 pack-years). Contemplative stage of change regarding tobacco cessation. Drinks 1-2 beers on weekends. Denies illicit drugs."
+    },
+    {
+      "label": "Family History",
+      "value": "Father: MDD and Alcohol Use Disorder. Mother: HTN."
+    }
+  ],
+  "OBJECTIVE_EXTRA": {
+    "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'depressed, overwhelmed'. Affect: blunted, tearful at times. Speech: slowed rate, low tone. Thought process: goal-directed, delayed latency. Thought content: passive SI present, worthlessness, no active plan/intent, no HI. Cognition: intact but slow processing."
+  },
+  "INTERVIEW_KNOWLEDGE": {
+    "passive_si": "I don't have a plan to hurt myself, but I just wake up wishing I didn't have to face another day. Everyone would be better off without me.",
+    "lethal_means": "I have two hunting rifles at home in a safe. My brother can take them and keep them locked at his house today.",
+    "prior_trials": "I took Sertraline 150 mg for 3 months (didn't help and gave me stomach issues) and Cymbalta 60 mg for 2.5 months (no change at all).",
+    "current_adherence": "I take my Effexor XR 150 mg every single morning with breakfast. I haven't missed a dose."
+  },
+  "INTERVIEW_FIELDS": [
+    { "field": "passive_si", "label": "Suicidal ideation intent & plan evaluation" },
+    { "field": "lethal_means", "label": "Firearm and lethal means safety agreement" },
+    { "field": "prior_trials", "label": "Detailed antidepressant trial history & failure confirmation" },
+    { "field": "current_adherence", "label": "Venlafaxine XR adherence validation" }
+  ],
+  "COUNSELING": [
+    "Develop written Suicide Safety Plan including warning signs, coping strategies, family support, and 988 Crisis Lifeline.",
+    "Counsel on lethal means restriction: confirm firearms moved offsite to brother's house.",
+    "Educate on Aripiprazole 2 mg daily augmentation rationale for TRD and expected onset (1-2 weeks).",
+    "Counsel on monitoring for akathisia (motor restlessness), weight changes, and metabolic parameters.",
+    "Motivational interviewing for tobacco cessation (contemplative stage)."
+  ],
+  "ASSESSMENT_CARDS": [
+    {
+      "id": "w5c_tue_a1",
+      "title": "1. Severe Treatment-Resistant Depression (TRD) & Augmentation Rationale",
+      "icon": "Brain",
+      "color": "13314f",
+      "questions": [
+        {
+          "key": "q1",
+          "q": "What is the evaluation of TRD and justification for SGA augmentation?",
+          "defaultAnswer": "Major Depressive Disorder, Severe (PHQ-9 = 21) meeting criteria for Treatment-Resistant Depression (TRD) following failure of ≥2 adequate antidepressant trials from different classes (Sertraline [SSRI], Duloxetine [SNRI], and partial/non-response to Venlafaxine XR 150 mg daily [SNRI] x 8 weeks). Per APA, VA/DoD, and CANMAT guidelines, augmentation with a second-generation antipsychotic (Aripiprazole 2 mg PO daily) is a first-line evidence-based strategy to enhance response without switching agents."
+        }
+      ]
+    },
+    {
+      "id": "w5c_tue_a2",
+      "title": "2. Comprehensive Suicide Risk Assessment & Safety Plan",
+      "icon": "ShieldAlert",
+      "color": "13314f",
+      "questions": [
+        {
+          "key": "q2",
+          "q": "What is the suicide risk level and safety management plan?",
+          "defaultAnswer": "Passive suicidal ideation present ('family better off without me') without active plan or intent; overall suicide risk assessed as LOW to MODERATE. Requires immediate safety planning: (1) lethal means restriction (moving firearms offsite), (2) providing 988 Suicide & Crisis Lifeline, and (3) establishing emergency contact protocols."
+        }
+      ]
+    },
+    {
+      "id": "w5c_tue_a3",
+      "title": "3. Tobacco Use Disorder (Contemplative Stage)",
+      "icon": "Cigarette",
+      "color": "13314f",
+      "questions": [
+        {
+          "key": "q3",
+          "q": "What is the tobacco cessation plan?",
+          "defaultAnswer": "Active Tobacco Use Disorder (15 cigs/day, 15 pack-years), contemplative stage. Motivational interviewing recommended."
+        }
+      ]
+    }
+  ],
+  "PLAN_SECTIONS": [
+    {
+      "id": "w5c_tue_p1",
+      "title": "1. TRD Pharmacotherapy Augmentation Plan",
+      "options": [
+        {
+          "key": "o1",
+          "label": "Initiate Aripiprazole 2 mg PO daily as low-dose SGA augmentation to current Venlafaxine XR 150 mg PO daily for Treatment-Resistant Depression",
+          "correct": true
+        },
+        {
+          "key": "o2",
+          "label": "Continue Venlafaxine XR 150 mg PO daily (do not discontinue or switch SNRI while initiating augmentation)",
+          "correct": true
+        },
+        {
+          "key": "o3",
+          "label": "Monitor for Aripiprazole side effects, specifically akathisia (motor restlessness), extrapyramidal symptoms (EPS), weight gain, and metabolic changes (baseline lipids/glucose on file)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "w5c_tue_p2",
+      "title": "2. Suicide Risk & Lethal Means Safety Plan",
+      "options": [
+        {
+          "key": "o4",
+          "label": "Formulate comprehensive written Suicide Safety Plan: identify personal warning signs, internal coping strategies, family support contacts, and emergency resources",
+          "correct": true
+        },
+        {
+          "key": "o5",
+          "label": "Provide 988 Suicide & Crisis Lifeline contact information and clinic emergency contact number",
+          "correct": true
+        },
+        {
+          "key": "o6",
+          "label": "Enforce lethal means safety: counsel and confirm transfer of all household firearms and ammunition locked offsite to brother's residence",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "w5c_tue_p3",
+      "title": "3. Tobacco Cessation Counseling Plan",
+      "options": [
+        {
+          "key": "o7",
+          "label": "Provide motivational interviewing for tobacco cessation (contemplative stage); reassess readiness at next visit",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "w5c_tue_p4",
+      "title": "4. Follow-Up Plan",
+      "options": [
+        {
+          "key": "o8",
+          "label": "Schedule close follow-up visit in 6 weeks (with telephone safety check-in at 1-2 weeks) to monitor SI, mood response, and aripiprazole tolerability",
+          "correct": true
+        }
+      ]
+    }
+  ]
+})
+
+const davidWed = makeCase({
+  "id": "w5-david_c-wed",
+  "PATIENT": {
+    "name": "David Carter",
+    "age": 48,
+    "dob": "08/22/1977",
+    "sex": "male",
+    "ethnicity": "White",
+    "mrn": "W5-30882"
+  },
+  "ENCOUNTER": {
+    "week": "Week 5",
+    "day": "Wednesday",
+    "type": "6-Week Follow-Up Visit (Post-Augmentation Evaluation)",
+    "difficulty": "Advanced",
+    "difficultyTone": "purple",
+    "chiefConcern": "Adding the Abilify 2 mg to my Effexor has made a huge difference. I'm sleeping better, I actually felt motivated to work on my yard this weekend, and those thoughts of everyone being better off without me are completely gone.",
+    "snapshotSummary": "David returns for a 6-week follow-up after augmenting Venlafaxine XR 150 mg daily with Aripiprazole 2 mg daily. Marked clinical response: PHQ-9 decreased from 21 to 12 (moderate), GAD-7 decreased from 18 to 9 (mild). Suicidal ideation completely RESOLVED. Tolerating combo well without akathisia or EPS. Plan: Continue combination therapy.",
+    "diseaseStates": [
+      "Severe MDD (TRD, Partial Response)",
+      "GAD (Response)",
+      "SI (Resolved)",
+      "Tobacco Use Disorder"
+    ],
+    "learningObjectives": [
+      "Evaluate clinical response to SGA augmentation in TRD",
+      "Confirm complete resolution of suicidal ideation",
+      "Assess aripiprazole tolerability (akathisia, weight, EPS)",
+      "Maintain stable combination pharmacotherapy"
+    ],
+    "visitDate": "10/21/2026"
+  },
+  "VITALS": {
+    "bp": "124/80 mmHg",
+    "bpRepeat": "122/78 mmHg",
+    "hr": "74 bpm",
+    "rr": "15 breaths/min",
+    "temp": "98.2°F",
+    "weight": "186 lbs",
+    "height": "70 inches",
+    "bmi": "26.7 kg/m²",
+    "vitalsTime": "10/21/2026 11:15",
+    "flags": {
+      "bmi": "warn"
+    }
+  },
+  "LABS": [
+    { "label": "Sodium", "value": "140", "unit": "mEq/L", "flag": "normal", "labDate": "10/21/2026 08:30" },
+    { "label": "Potassium", "value": "4.2", "unit": "mEq/L", "flag": "normal", "labDate": "10/21/2026 08:30" },
+    { "label": "Chloride", "value": "101", "unit": "mEq/L", "flag": "normal", "labDate": "10/21/2026 08:30" },
+    { "label": "Bicarbonate", "value": "24", "unit": "mEq/L", "flag": "normal", "labDate": "10/21/2026 08:30" },
+    { "label": "BUN", "value": "13", "unit": "mg/dL", "flag": "normal", "labDate": "10/21/2026 08:30" },
+    { "label": "Serum Creatinine", "value": "0.9", "unit": "mg/dL", "flag": "normal", "labDate": "10/21/2026 08:30" },
+    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73m²", "flag": "normal", "labDate": "10/21/2026 08:30" },
+    { "label": "Glucose (fasting)", "value": "95", "unit": "mg/dL", "flag": "normal", "labDate": "10/21/2026 08:30" }
+  ],
+  "ALERTS": [
+    {
+      "level": "info",
+      "text": "Significant clinical response to Venlafaxine XR 150 mg + Aripiprazole 2 mg daily: PHQ-9 improved to 12 (down from 21), GAD-7 improved to 9 (down from 18)."
+    },
+    {
+      "level": "info",
+      "text": "Suicidal Ideation: Completely RESOLVED (PHQ-9 Item 9 = 0). Passive SI absent."
+    }
+  ],
+  "PROBLEMS": [
+    {
+      "name": "1. Major Depressive Disorder (MDD) — Treatment Response",
+      "detail": "PHQ-9 = 12 (down from 21). Significant clinical improvement on augmentation therapy.",
+      "flag": "warn"
+    },
+    {
+      "name": "2. Generalized Anxiety Disorder (GAD) — Treatment Response",
+      "detail": "GAD-7 = 9 (down from 18). Mild residual anxiety.",
+      "flag": "warn"
+    },
+    {
+      "name": "3. Suicidal Ideation — Fully Resolved",
+      "detail": "PHQ-9 Item 9 = 0. Passive SI absent.",
+      "flag": "normal"
+    },
+    {
+      "name": "4. Tobacco Use Disorder — Active",
+      "detail": "Smokes 10 cigarettes/day (down from 15). Preparing to set quit date.",
+      "flag": "info"
+    }
+  ],
+  "MEDICATIONS": [
+    {
+      "name": "Venlafaxine XR",
+      "dose": "150 mg",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "MDD / GAD",
+      "notes": "100% adherent."
+    },
+    {
+      "name": "Aripiprazole",
+      "dose": "2 mg",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "TRD Augmentation",
+      "notes": "100% adherent; well tolerated; no akathisia or EPS."
+    },
+    {
+      "name": "Lisinopril",
+      "dose": "10 mg",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "Hypertension",
+      "notes": "BP well controlled."
+    }
+  ],
+  "IMMUNIZATIONS": [
+    { "name": "Influenza", "status": "Up to date (received)", "flag": "normal" },
+    { "name": "COVID-19", "status": "Up to date (received)", "flag": "normal" },
+    { "name": "Tdap", "status": "Up to date (received)", "flag": "normal" }
+  ],
+  "SUBJECTIVE_DOCUMENTED": [
+    {
+      "label": "HPI",
+      "value": "48-year-old male presenting for 6-week follow-up after starting low-dose Aripiprazole 2 mg daily augmentation with Venlafaxine XR 150 mg daily. Reports substantial reduction in depressive and anxiety symptoms. Energy improved, sleep increased to 6-7 hours nightly, concentration restored. Explicitly reports complete resolution of passive suicidal ideation; no longer feels like a burden. Denies restlessness, akathisia, muscle stiffness, tremors, excessive sedation, or increased appetite."
+    },
+    {
+      "label": "Review of Systems (ROS) & Safety Assessment",
+      "value": "Psychiatric ROS: Explicitly denies suicidal ideation (SI = 0), denies plan, denies intent (low risk). Denies HI, denies self-harm, denies mania, hypomania, or psychosis."
+    },
+    {
+      "label": "Scores & Screening Tools",
+      "value": "PHQ-9 score: 12 (Moderate, down from 21). GAD-7 score: 9 (Mild, down from 18). Item 9 (SI): 0."
+    },
+    {
+      "label": "Social History",
+      "value": "Smokes 10 cigarettes/day (down from 15). Expresses interest in reducing further."
+    }
+  ],
+  "OBJECTIVE_EXTRA": {
+    "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'much better, hopeful'. Affect: full range, congruent. Speech: normal rate and volume. Motor: no akathisia, no tremor, no rigidity, normal gait. Cognition: intact."
+  },
+  "INTERVIEW_KNOWLEDGE": {
+    "response_confirm": "The combination of Effexor 150 and Abilify 2 mg is working really well. I feel light years better than 6 weeks ago.",
+    "si_status": "No suicidal thoughts at all. I am looking forward to the future and planning a family vacation.",
+    "akathisia_check": "No restlessness or feeling like I need to pace around. I feel physically fine."
+  },
+  "INTERVIEW_FIELDS": [
+    { "field": "response_confirm", "label": "Subjective response confirmation" },
+    { "field": "si_status", "label": "Suicidal ideation resolution check" },
+    { "field": "akathisia_check", "label": "Akathisia and EPS screening" }
+  ],
+  "COUNSELING": [
+    "Counsel patient on importance of continuing stable combination therapy (Venlafaxine XR 150 mg + Aripiprazole 2 mg daily).",
+    "Reinforce safety plan and confirm firearms remain stored safely offsite.",
+    "Encourage continued tobacco reduction and discuss setting a quit date."
+  ],
+  "ASSESSMENT_CARDS": [
+    {
+      "id": "w5c_wed_a1",
+      "title": "1. TRD Response Assessment & Combination Therapy Rationale",
+      "icon": "Brain",
+      "color": "13314f",
+      "questions": [
+        {
+          "key": "q1",
+          "q": "What is the assessment of SGA augmentation efficacy and ongoing plan?",
+          "defaultAnswer": "MDD (PHQ-9 = 12, 9-point reduction) and GAD (GAD-7 = 9, 9-point reduction) show robust clinical response to 6 weeks of Aripiprazole 2 mg daily augmentation with Venlafaxine XR 150 mg daily. Suicidal ideation is fully resolved (Item 9 = 0). Given significant response and excellent tolerability (no akathisia/EPS), current combination therapy should be maintained without dose adjustment."
+        }
+      ]
+    },
+    {
+      "id": "w5c_wed_a2",
+      "title": "2. Suicide Safety Maintenance",
+      "icon": "ShieldAlert",
+      "color": "13314f",
+      "questions": [
+        {
+          "key": "q2",
+          "q": "What is the ongoing safety status?",
+          "defaultAnswer": "Suicidal ideation resolved. Safety plan remains active; firearms remain stored offsite."
+        }
+      ]
+    }
+  ],
+  "PLAN_SECTIONS": [
+    {
+      "id": "w5c_wed_p1",
+      "title": "1. Combination Pharmacotherapy Maintenance Plan",
+      "options": [
+        {
+          "key": "o1",
+          "label": "CONTINUE Venlafaxine XR 150 mg PO daily in combination with Aripiprazole 2 mg PO daily for TRD maintenance",
+          "correct": true
+        },
+        {
+          "key": "o2",
+          "label": "Maintain current Aripiprazole dose of 2 mg PO daily given excellent therapeutic response and absence of side effects",
+          "correct": true
+        },
+        {
+          "key": "o3",
+          "label": "Continue routine monitoring for akathisia, EPS, weight changes, and metabolic parameters at future visits",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "w5c_wed_p2",
+      "title": "2. Safety Maintenance & Tobacco Reduction Plan",
+      "options": [
+        {
+          "key": "o4",
+          "label": "Reconfirm resolution of suicidal ideation and maintain active Suicide Safety Plan with emergency contact numbers",
+          "correct": true
+        },
+        {
+          "key": "o5",
+          "label": "Encourage continued tobacco reduction (10 cigs/day); provide behavioral strategies to support preparation for quit date",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "w5c_wed_p3",
+      "title": "3. Follow-Up Plan",
+      "options": [
+        {
+          "key": "o6",
+          "label": "Schedule follow-up visit in 6 weeks to evaluate full remission target on combination therapy",
+          "correct": true
+        }
+      ]
+    }
+  ]
+})
+
+const davidThu = makeCase({
+  "id": "w5-david_c-thu",
+  "PATIENT": {
+    "name": "David Carter",
+    "age": 48,
+    "dob": "08/22/1977",
+    "sex": "male",
+    "ethnicity": "White",
+    "mrn": "W5-30882"
+  },
+  "ENCOUNTER": {
+    "week": "Week 5",
+    "day": "Thursday",
+    "type": "12-Week Follow-Up Visit (TRD Remission & Maintenance)",
+    "difficulty": "Advanced",
+    "difficultyTone": "purple",
+    "chiefConcern": "I haven't felt this good in years. My PHQ-9 score is 3, I'm fully back at work and enjoying life, and I'm down to only 2 cigarettes a day!",
+    "snapshotSummary": "David presents for 12-week follow-up (6 weeks post stable combo therapy). Full remission achieved: PHQ-9 = 3 (remission), GAD-7 = 4 (remission), SI absent (Item 9 = 0). Smokes 2 cigs/day (in preparation to quit). Plan: CONTINUE Venlafaxine XR 150 mg + Aripiprazole 2 mg daily for long-term TRD maintenance (minimum 12-24 months per APA/VA-DoD), relapse prevention.",
+    "diseaseStates": [
+      "Severe MDD (TRD, Full Remission)",
+      "GAD (Full Remission)",
+      "SI (Resolved)",
+      "Tobacco Use Disorder (Preparation Stage)"
+    ],
+    "learningObjectives": [
+      "Confirm full remission in Treatment-Resistant Depression",
+      "Establish long-term maintenance duration for TRD (at least 12-24 months per guidelines)",
+      "Counsel on relapse prevention and ongoing metabolic monitoring"
+    ],
+    "visitDate": "12/02/2026"
+  },
+  "VITALS": {
+    "bp": "122/78 mmHg",
+    "bpRepeat": "120/76 mmHg",
+    "hr": "72 bpm",
+    "rr": "14 breaths/min",
+    "temp": "98.0°F",
+    "weight": "186 lbs",
+    "height": "70 inches",
+    "bmi": "26.7 kg/m²",
+    "vitalsTime": "12/02/2026 11:30",
+    "flags": {
+      "bmi": "warn"
+    }
+  },
+  "LABS": [
+    { "label": "Sodium", "value": "139", "unit": "mEq/L", "flag": "normal", "labDate": "12/02/2026 08:30" },
+    { "label": "Potassium", "value": "4.2", "unit": "mEq/L", "flag": "normal", "labDate": "12/02/2026 08:30" },
+    { "label": "Chloride", "value": "100", "unit": "mEq/L", "flag": "normal", "labDate": "12/02/2026 08:30" },
+    { "label": "Bicarbonate", "value": "25", "unit": "mEq/L", "flag": "normal", "labDate": "12/02/2026 08:30" },
+    { "label": "BUN", "value": "12", "unit": "mg/dL", "flag": "normal", "labDate": "12/02/2026 08:30" },
+    { "label": "Serum Creatinine", "value": "0.9", "unit": "mg/dL", "flag": "normal", "labDate": "12/02/2026 08:30" },
+    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73m²", "flag": "normal", "labDate": "12/02/2026 08:30" },
+    { "label": "Glucose (fasting)", "value": "95", "unit": "mg/dL", "flag": "normal", "labDate": "12/02/2026 08:30" },
+    { "label": "Total Cholesterol", "value": "188", "unit": "mg/dL", "flag": "normal", "labDate": "12/02/2026 08:30" },
+    { "label": "Triglycerides", "value": "138", "unit": "mg/dL", "flag": "normal", "labDate": "12/02/2026 08:30" }
+  ],
+  "ALERTS": [
+    {
+      "level": "info",
+      "text": "Full clinical remission achieved for Severe TRD: PHQ-9 = 3, GAD-7 = 4. Passive SI completely absent."
+    },
+    {
+      "level": "info",
+      "text": "TRD Long-Term Maintenance: Continue Venlafaxine XR 150 mg + Aripiprazole 2 mg daily for at least 12-24 months per guidelines."
+    }
+  ],
+  "PROBLEMS": [
+    {
+      "name": "1. Major Depressive Disorder (TRD) — Full Remission",
+      "detail": "PHQ-9 = 3. Full remission achieved on combo therapy.",
+      "flag": "normal"
+    },
+    {
+      "name": "2. Generalized Anxiety Disorder (GAD) — Full Remission",
+      "detail": "GAD-7 = 4. Full remission achieved.",
+      "flag": "normal"
+    },
+    {
+      "name": "3. Suicidal Ideation — Fully Resolved",
+      "detail": "PHQ-9 Item 9 = 0. SI absent.",
+      "flag": "normal"
+    },
+    {
+      "name": "4. Tobacco Use Disorder — Active, Preparation Stage",
+      "detail": "Smokes 2 cigarettes/day (down from 15). Setting final quit date.",
+      "flag": "info"
+    }
+  ],
+  "MEDICATIONS": [
+    {
+      "name": "Venlafaxine XR",
+      "dose": "150 mg",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "MDD / GAD",
+      "notes": "100% adherent."
+    },
+    {
+      "name": "Aripiprazole",
+      "dose": "2 mg",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "TRD Augmentation Maintenance",
+      "notes": "100% adherent; excellent tolerability."
+    },
+    {
+      "name": "Lisinopril",
+      "dose": "10 mg",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "Hypertension",
+      "notes": "BP well controlled."
+    }
+  ],
+  "IMMUNIZATIONS": [
+    { "name": "Influenza", "status": "Up to date (received)", "flag": "normal" },
+    { "name": "COVID-19", "status": "Up to date (received)", "flag": "normal" },
+    { "name": "Tdap", "status": "Up to date (received)", "flag": "normal" }
+  ],
+  "SUBJECTIVE_DOCUMENTED": [
+    {
+      "label": "HPI",
+      "value": "48-year-old male presenting for 12-week follow-up on combination Venlafaxine XR 150 mg daily + Aripiprazole 2 mg daily. Reports complete remission of depressive and anxiety symptoms. Sleeping 7-8 hours per night, energy excellent, fully functioning at work as an accountant. SI remains completely absent. Tolerating combo therapy without any side effects."
+    },
+    {
+      "label": "Review of Systems (ROS) & Safety Assessment",
+      "value": "Psychiatric ROS: Explicitly denies suicidal ideation (SI = 0), denies plan, denies intent (low risk). Denies HI, denies self-harm, denies mania or psychosis."
+    },
+    {
+      "label": "Scores & Screening Tools",
+      "value": "PHQ-9 score: 3 (Full Remission). GAD-7 score: 4 (Full Remission). Item 9 (SI): 0."
+    },
+    {
+      "label": "Social History",
+      "value": "Smokes 2 cigarettes/day (down from 15). Setting quit date for next week."
+    }
+  ],
+  "OBJECTIVE_EXTRA": {
+    "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'euthymic, optimistic'. Affect: bright, full range. Speech: normal. Motor: normal, no EPS/akathisia. Cognition: intact."
+  },
+  "INTERVIEW_KNOWLEDGE": {
+    "trd_remission": "I feel like I have my life back. The combination of Effexor and Abilify saved my life.",
+    "maintenance_inquiry": "How long do I need to keep taking Abilify with my Effexor?",
+    "tobacco_near_quit": "I'm down to 2 cigarettes a day and ready to quit completely next week."
+  },
+  "INTERVIEW_FIELDS": [
+    { "field": "trd_remission", "label": "Full TRD remission validation" },
+    { "field": "maintenance_inquiry", "label": "TRD maintenance duration question" },
+    { "field": "tobacco_near_quit", "label": "Final tobacco quit date plan" }
+  ],
+  "COUNSELING": [
+    "Educate patient that for Treatment-Resistant Depression (TRD), maintenance combination therapy should continue for at least 12 to 24 months (or longer) post-remission to prevent severe relapse.",
+    "Warn against self-discontinuation of either Venlafaxine XR or Aripiprazole.",
+    "Reinforce relapse warning signs and maintain annual fasting glucose/lipid monitoring."
+  ],
+  "ASSESSMENT_CARDS": [
+    {
+      "id": "w5c_thu_a1",
+      "title": "1. TRD Full Remission & Long-Term Maintenance Rationale",
+      "icon": "Brain",
+      "color": "13314f",
+      "questions": [
+        {
+          "key": "q1",
+          "q": "What is the assessment of remission and maintenance therapy duration for TRD?",
+          "defaultAnswer": "MDD (PHQ-9 = 3) and GAD (GAD-7 = 4) are in full clinical remission on combination Venlafaxine XR 150 mg daily + Aripiprazole 2 mg daily. Because the patient has Treatment-Resistant Depression (failed ≥2 prior trials), clinical guidelines (APA, VA/DoD, CANMAT) recommend continuing successful augmentation maintenance therapy for a minimum of 12 to 24 months (or indefinitely) post-remission to prevent high-risk depressive relapse."
+        }
+      ]
+    },
+    {
+      "id": "w5c_thu_a2",
+      "title": "2. Suicide Risk & Relapse Prevention Monitoring",
+      "icon": "ShieldAlert",
+      "color": "13314f",
+      "questions": [
+        {
+          "key": "q2",
+          "q": "What is the long-term safety and monitoring plan?",
+          "defaultAnswer": "Suicidal ideation remains fully resolved (Item 9 = 0). Continue routine safety monitoring and periodic metabolic laboratory evaluation (fasting lipids/glucose)."
+        }
+      ]
+    }
+  ],
+  "PLAN_SECTIONS": [
+    {
+      "id": "w5c_thu_p1",
+      "title": "1. Long-Term TRD Maintenance Pharmacotherapy Plan",
+      "options": [
+        {
+          "key": "o1",
+          "label": "CONTINUE combination maintenance therapy: Venlafaxine XR 150 mg PO daily + Aripiprazole 2 mg PO daily for a minimum of 12 to 24 months post-remission per TRD clinical practice guidelines",
+          "correct": true
+        },
+        {
+          "key": "o2",
+          "label": "Counsel patient on vital importance of adhering to both medications and risks of relapse if either agent is stopped prematurely",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "w5c_thu_p2",
+      "title": "2. Patient Education & Relapse Prevention Plan",
+      "options": [
+        {
+          "key": "o3",
+          "label": "Educate patient on early warning signs of depressive relapse (sleep changes, low mood, anxiety, fatigue) and instruct to contact clinic immediately if symptoms re-emerge",
+          "correct": true
+        },
+        {
+          "key": "o4",
+          "label": "Support final tobacco quit date transition (currently 2 cigs/day); provide encouragement and NRT options if needed",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "w5c_thu_p3",
+      "title": "3. Longitudinal Monitoring & Follow-Up Plan",
+      "options": [
+        {
+          "key": "o5",
+          "label": "Schedule follow-up visit in 3 to 6 months for ongoing TRD maintenance monitoring",
+          "correct": true
+        },
+        {
+          "key": "o6",
+          "label": "Order annual metabolic laboratory monitoring (fasting plasma glucose, A1C, lipid panel) for long-term Aripiprazole safety",
+          "correct": true
+        }
+      ]
+    }
+  ]
+})
+
+export const W5_CASES = [sarahTue, sarahWed, sarahThu, jessicaTue, jessicaWed, jessicaThu, davidTue, davidWed, davidThu]
+
 export const W5_RUBRICS = {}
