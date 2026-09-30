@@ -117,14 +117,14 @@ const sarahTue = makeCase({
     },
     {
       "label": "AST",
-      "value": "22",
+      "value": "19",
       "unit": "U/L",
       "flag": "normal",
       "labDate": "09/09/2026 07:50"
     },
     {
       "label": "ALT",
-      "value": "24",
+      "value": "18",
       "unit": "U/L",
       "flag": "normal",
       "labDate": "09/09/2026 07:50"
@@ -132,7 +132,7 @@ const sarahTue = makeCase({
     {
       "label": "WBC",
       "value": "6.2",
-      "unit": "x10³/mm³",
+      "unit": "x10³/μL",
       "flag": "normal",
       "labDate": "09/09/2026 07:50"
     },
@@ -145,8 +145,8 @@ const sarahTue = makeCase({
     },
     {
       "label": "Plt",
-      "value": "245",
-      "unit": "x10³/mm³",
+      "value": "255",
+      "unit": "x10³/μL",
       "flag": "normal",
       "labDate": "09/09/2026 07:50"
     }
@@ -158,28 +158,28 @@ const sarahTue = makeCase({
     },
     {
       "level": "info",
-      "text": "Patient is in the contemplative stage of change for tobacco cessation (smokes 5 cigarettes/day for stress management, not ready to set a quit date today). Motivational interviewing recommended per USPSTF Grade A recommendation."
+      "text": "Patient is in the contemplative stage of change for tobacco cessation (smokes 5 cigarettes/day for stress management, no prior quit attempts, not ready to set a quit date today). Motivational interviewing recommended per USPSTF Grade A recommendation."
     }
   ],
   "PROBLEMS": [
     {
       "name": "1. Major Depressive Disorder (MDD) — Newly Diagnosed, Moderate Severity",
-      "detail": "PHQ-9 = 13 (Moderate). Symptom duration 4-5 months with low mood, anhedonia, fatigue, impaired concentration, and functional impairment. Treatment-naïve.",
+      "detail": "PHQ-9 = 13 (Moderate). Symptom duration 4-5 months with low mood, anhedonia, reduced motivation for hobbies and social activities, fatigue, impaired concentration, and functional impairment. Treatment-naïve.",
       "flag": "high"
     },
     {
       "name": "2. Generalized Anxiety Disorder (GAD) — Newly Diagnosed, Mild Severity",
-      "detail": "GAD-7 = 8 (Mild). Persistent worry, racing thoughts, restlessness, and sleep disruption linked to work stress. Treatment-naïve.",
+      "detail": "GAD-7 = 8 (Mild). Persistent worry, racing thoughts, restlessness, and sleep disruption linked specifically to work performance and meeting expectations. Treatment-naïve.",
       "flag": "high"
     },
     {
       "name": "3. Tobacco Use Disorder — Active, Contemplative Stage",
-      "detail": "Current smoker, 5 cigarettes/day (2 pack-year history) used for stress management. Contemplative stage; not ready to set a quit date today.",
+      "detail": "Current smoker, 5 cigarettes/day (8-year history, 2 pack-years) used for stress management. No prior tobacco quit attempts and no prior periods of abstinence. Contemplative stage; not ready to set a quit date today.",
       "flag": "warn"
     },
     {
       "name": "4. Insomnia — Secondary to MDD and GAD",
-      "detail": "Restless sleep, 5-6 hours/night, difficulty turning off thoughts after work. Secondary to psychiatric illness.",
+      "detail": "Restless, insufficient sleep (5-6 hours per night), unable to get restful or adequate sleep despite feeling exhausted. Secondary to psychiatric illness.",
       "flag": "warn"
     },
     {
@@ -189,6 +189,14 @@ const sarahTue = makeCase({
     }
   ],
   "MEDICATIONS": [
+    {
+      "name": "Daily multivitamin",
+      "dose": "1 tablet",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "Nutritional supplement",
+      "notes": "OTC daily multivitamin."
+    },
     {
       "name": "Ibuprofen",
       "dose": "200 mg",
@@ -218,7 +226,7 @@ const sarahTue = makeCase({
   "SUBJECTIVE_DOCUMENTED": [
     {
       "label": "HPI",
-      "value": "54-year-old female full-time elementary school teacher referred by her Primary Care Physician (PCP) for an initial evaluation at the ambulatory behavioral health clinic regarding worsening symptoms over the past 4 to 5 months. Patient attributes initial symptom onset to work stress and burnout. Reports persistent low mood occurring most days, emotional exhaustion, profound fatigue, and anhedonia (reduced interest and pleasure in previously enjoyed activities, specifically stopping her regular reading and weekend hiking with her husband). Reports restless sleep (5 to 6 hours per night with difficulty turning off thoughts after work), difficulty concentrating at work (struggling to complete lesson plans, taking significantly longer to grade papers), and noticeable occupational functioning impairment (feeling overwhelmed by daily teaching duties). Reports persistent anxiety, difficulty controlling anxious thoughts, racing thoughts after work, and interpersonal relationship impact (feeling distant from her husband, who encouraged today's evaluation). Confirms treatment-naïve status for psychiatric pharmacotherapy (no prior antidepressant use) and treatment-naïve status for psychotherapy (no prior counseling)."
+      "value": "54-year-old female full-time elementary school teacher referred by her Primary Care Physician (PCP) for an initial evaluation at the ambulatory behavioral health clinic regarding worsening symptoms over the past 4 to 5 months. Patient attributes initial symptom onset to work stress and burnout. Reports persistent low mood occurring most days, emotional exhaustion, profound fatigue, anhedonia (reduced interest and pleasure in previously enjoyed activities, specifically stopping her regular reading and weekend hiking), and reduced motivation for hobbies and social activities. Reports restless, insufficient sleep (5 to 6 hours per night), unable to get restful or adequate sleep despite feeling exhausted, with difficulty turning off thoughts after work. Reports difficulty concentrating at work (struggling to complete lesson plans, taking significantly longer to grade papers), and noticeable occupational functioning impairment (feeling overwhelmed by daily teaching duties). Reports persistent anxiety, difficulty controlling anxious thoughts, racing thoughts after work, with anxiety linked specifically to work performance and meeting expectations. Reports interpersonal relationship impact (feeling distant from her husband, who encouraged today's evaluation). Confirms treatment-naïve status for psychiatric pharmacotherapy (no prior antidepressant use) and treatment-naïve status for psychotherapy (no prior counseling)."
     },
     {
       "label": "Review of Systems (ROS) & Safety Assessment",
@@ -234,7 +242,7 @@ const sarahTue = makeCase({
     },
     {
       "label": "Social History",
-      "value": "Full-time elementary school teacher. Married, lives with husband (who encouraged evaluation and serves as primary support system). Current smoker (5 cigarettes per day for 8 years = 2 pack-year smoking history), citing stress management as the primary reason for smoking. Contemplative stage of change regarding tobacco cessation: willing to quit eventually but not ready to set a quit date today. Drinks alcohol rarely (1 glass of wine 1–2 times per month). Denies illicit drug use. Exercises: regular walking and weekend hiking with husband."
+      "value": "Full-time elementary school teacher. Marital status & living situation: single (lives alone in suburban house; maintains supportive relationship with husband who encouraged evaluation). Current smoker (5 cigarettes per day for 8 years = 2 pack-year smoking history), citing stress management as the primary reason for smoking. Reports no previous tobacco quit attempts and no prior periods of tobacco abstinence. Contemplative stage of change regarding tobacco cessation: willing to quit eventually but not ready to set a quit date today. Drinks alcohol: 1-2 beverages weekly (1 glass of wine 1-2 times per week). Denies illicit drug use. Exercises: occasional walking, reduced secondary to fatigue and motivation."
     },
     {
       "label": "Family History",
@@ -242,7 +250,7 @@ const sarahTue = makeCase({
     },
     {
       "label": "OTC & Allergies",
-      "value": "Ibuprofen 200 mg PO PRN (takes 1–2 tablets PRN for occasional tension headaches). Confirms absence of any prescription medications. No known drug allergies (NKDA)."
+      "value": "Daily multivitamin 1 tab PO daily. Ibuprofen 200 mg PO PRN (takes 1–2 tablets PRN for occasional tension headaches). Confirms absence of any prescription medications. No known drug allergies (NKDA)."
     },
     {
       "label": "Patient Concerns & Education Needs",
@@ -252,7 +260,7 @@ const sarahTue = makeCase({
   "OBJECTIVE_EXTRA": [
     {
       "label": "Objective Examination & Diagnostic Panel",
-      "value": "Vital Signs: BP 118/74 mmHg (repeat 116/74 mmHg), HR 76 bpm, RR 16 breaths/min, Temp 98.2°F, Weight 152 lbs (69 kg), Height 65 inches (5 ft 5 in), BMI 25.3 kg/m² (classified as overweight / borderline). All vital signs are within normal limits. Laboratory Findings: Sodium 139 mEq/L, Potassium 4.2 mEq/L, Chloride 101 mEq/L, Bicarbonate 24 mEq/L, BUN 12 mg/dL, Serum Creatinine 0.8 mg/dL, eGFR >90 mL/min/1.73m², Glucose 92 mg/dL, TSH 2.1 mIU/L (interpreted as within normal limits), AST 22 U/L, ALT 24 U/L, WBC 6.2 x10³/mm³, Hgb 13.4 g/dL, Plt 245 x10³/mm³. Overall metabolic, hepatic, renal, hematologic, and thyroid panels are completely within normal limits, explicitly demonstrating a very low probability of a medical etiology for her mood and anxiety symptoms. Screening Scores: PHQ-9 = 13 (Moderate Depression), GAD-7 = 8 (Mild Anxiety). Suicide Risk Assessment: Low risk, explicit denial of SI, denial of suicide plan, and denial of prior suicide attempts."
+      "value": "Vital Signs: BP 118/74 mmHg (repeat 116/74 mmHg), HR 76 bpm, RR 16 breaths/min, Temp 98.2°F, Weight 152 lbs (69 kg), Height 65 inches (5 ft 5 in), BMI 25.3 kg/m² (classified as overweight / borderline, 25.0-29.9 kg/m²). All vital signs are within normal limits. Laboratory Findings: Sodium 139 mEq/L, Potassium 4.2 mEq/L, Chloride 101 mEq/L, Bicarbonate 24 mEq/L, BUN 12 mg/dL, Serum Creatinine 0.8 mg/dL, eGFR >90 mL/min/1.73m², Glucose 92 mg/dL, TSH 2.1 mIU/L (interpreted as within normal limits), AST 19 U/L, ALT 18 U/L, WBC 6.2 x10³/μL, Hgb 13.4 g/dL, Plt 255 x10³/μL. Overall metabolic, hepatic, renal, hematologic, and thyroid panels are completely within normal limits (unremarkable), explicitly demonstrating that an untreated medical etiology is less likely for her mood and anxiety symptoms. Screening Scores: PHQ-9 = 13 (Moderate Depression), GAD-7 = 8 (Mild Anxiety). Suicide Risk Assessment: Low risk, explicit denial of SI, denial of suicide plan, and denial of prior suicide attempts."
     }
   ],
   "INTERVIEW_FIELDS": [
@@ -307,9 +315,10 @@ const sarahTue = makeCase({
         "herb",
         "vitamin",
         "ibuprofen",
-        "tylenol"
+        "tylenol",
+        "multivitamin"
       ],
-      "response": "I take over-the-counter Ibuprofen 200 mg occasionally for headaches—maybe 1 or 2 pills a month. I don't take any prescription medications or herbal supplements."
+      "response": "I take a daily multivitamin. I also take over-the-counter Ibuprofen 200 mg occasionally for headaches—maybe 1 or 2 pills a month. I don't take any prescription medications."
     },
     {
       "id": "w5-sarah_m-tue_alc",
@@ -322,7 +331,7 @@ const sarahTue = makeCase({
         "wine",
         "liquor"
       ],
-      "response": "I drink alcohol rarely—maybe a glass of wine once or twice a month."
+      "response": "I drink 1-2 alcoholic beverages weekly—about 1 glass of wine once or twice a week."
     },
     {
       "id": "w5-sarah_m-tue_tobacco",
@@ -338,7 +347,7 @@ const sarahTue = makeCase({
         "vaping",
         "nicotine"
       ],
-      "response": "I smoke about 5 cigarettes a day and have for about 8 years. It helps me manage stress. I know I should quit eventually, but with all the stress at work right now, I'm not ready to set a quit date today."
+      "response": "I smoke about 5 cigarettes a day and have for about 8 years. It helps me manage stress. I have never tried to quit before (no previous quit attempts). I know I should quit eventually, but with all the stress at work right now, I'm not ready to set a quit date today."
     },
     {
       "id": "w5-sarah_m-tue_illicit",
@@ -376,15 +385,18 @@ const sarahTue = makeCase({
         "live",
         "marital",
         "married",
+        "single",
         "job",
         "work",
         "employ",
         "living",
         "husband",
         "teacher",
-        "school"
+        "school",
+        "house",
+        "alone"
       ],
-      "response": "I'm a full-time elementary school teacher. I live with my husband, who has been very supportive and actually encouraged me to come to clinic today."
+      "response": "I'm a full-time elementary school teacher. Marital status: single (lives alone in a suburban house; maintains supportive relationship with my husband who encouraged me to come to clinic today)."
     },
     {
       "id": "w5-sarah_m-tue_safety",
@@ -429,7 +441,7 @@ const sarahTue = makeCase({
         {
           "key": "q1",
           "q": "What is the diagnostic evaluation, severity, and treatment rationale for MDD?",
-          "defaultAnswer": "Major Depressive Disorder (MDD), newly diagnosed, moderate severity (PHQ-9 = 13). Symptom duration 4 to 5 months, characterized by persistent low mood, anhedonia (loss of interest in reading and hiking), emotional exhaustion, profound fatigue, restless sleep, impaired concentration, and significant occupational and interpersonal functioning impairment. Bipolar disorder, psychosis, and substance-induced mood disorder are explicitly ruled out based on history and ROS. Normal lab findings (TSH 2.1 mIU/L, CMP, CBC) rule out a medical etiology (such as hypothyroidism). Single-agent SSRI therapy with Sertraline is strongly indicated per ACP Living Clinical Guidelines and VA/DoD MDD Guidelines. Remission (target PHQ-9 <5), not merely partial improvement, is the primary treatment goal. Rationale for Sertraline: mother's successful treatment response to Sertraline provides strong genetic/familial response rationale; dual efficacy for comorbid GAD; favorable safety and tolerability profile."
+          "defaultAnswer": "Major Depressive Disorder (MDD), newly diagnosed, moderate severity (PHQ-9 = 13). Symptom duration 4 to 5 months, characterized by persistent low mood, anhedonia (loss of interest in reading and hiking), reduced motivation for hobbies and social activities, emotional exhaustion, profound fatigue, restless insufficient sleep, impaired concentration, and significant occupational and interpersonal functioning impairment. Bipolar disorder, psychosis, and substance-induced mood disorder are explicitly ruled out based on history and ROS. Normal lab findings (TSH 2.1 mIU/L, CMP, CBC) support that an untreated medical etiology is less likely. Single-agent SSRI therapy with Sertraline is strongly indicated per ACP Living Clinical Guidelines and VA/DoD MDD Guidelines. Remission (target PHQ-9 <5), not merely partial improvement, is the primary treatment goal. Rationale for Sertraline: mother's successful treatment response to Sertraline provides strong genetic/familial response rationale; dual efficacy for comorbid GAD; favorable safety and tolerability profile."
         }
       ]
     },
@@ -442,7 +454,7 @@ const sarahTue = makeCase({
         {
           "key": "q2",
           "q": "What is the diagnostic evaluation, severity, and treatment strategy for GAD?",
-          "defaultAnswer": "Generalized Anxiety Disorder (GAD), newly diagnosed, mild severity (GAD-7 = 8). Characterized by persistent worry, difficulty controlling anxious thoughts, racing thoughts after work, restlessness, and sleep disruption linked to work performance and stress. Anxiety symptoms are closely intertwined with her depressive syndrome burden, but are characterized as milder than depression. Single-agent SSRI therapy with Sertraline is indicated per VA/DoD Anxiety Guidelines and JAMA 2026 Review (SSRIs/SNRIs first-line for GAD; paroxetine, escitalopram, duloxetine, venlafaxine also acceptable; benzodiazepines not recommended). A single SSRI agent effectively treats both MDD and GAD without needing polypharmacy. Long-term symptom control and functional recovery are primary goals."
+          "defaultAnswer": "Generalized Anxiety Disorder (GAD), newly diagnosed, mild severity (GAD-7 = 8). Characterized by persistent worry, difficulty controlling anxious thoughts, racing thoughts after work, restlessness, and sleep disruption linked specifically to work performance and meeting expectations. Anxiety symptoms are closely intertwined with her depressive syndrome burden, but are characterized as milder than depression. Single-agent SSRI therapy with Sertraline is indicated per VA/DoD Anxiety Guidelines and JAMA 2026 Review (SSRIs/SNRIs first-line for GAD; paroxetine, escitalopram, duloxetine, venlafaxine also acceptable; benzodiazepines not recommended). A single SSRI agent effectively treats both MDD and GAD without needing polypharmacy. Long-term symptom control and functional recovery are primary goals."
         }
       ]
     },
@@ -455,7 +467,7 @@ const sarahTue = makeCase({
         {
           "key": "q3",
           "q": "What is the tobacco use status and behavioral counseling approach?",
-          "defaultAnswer": "Tobacco Use Disorder, active nicotine dependence. Smokes 5 cigarettes per day for 8 years (2 pack-year history), citing stress relief and management as the primary reason for smoking. Patient is in the contemplative stage of change: acknowledges health benefits and expresses desire to quit eventually, but is not ready to establish a quit date today due to current work stress. Per USPSTF Grade A recommendation and VA/DoD Tobacco Cessation CPG 2026, behavioral counseling using motivational interviewing is the recommended initial approach. Smoking is linked to underlying anxiety symptoms. Cessation pharmacotherapy (varenicline, bupropion SR, NRT) is declined/deferred at this time since patient is not yet ready to quit; readiness will be reassessed at future visits."
+          "defaultAnswer": "Tobacco Use Disorder, active nicotine dependence. Smokes 5 cigarettes per day for 8 years (2 pack-year history), citing stress relief and management as the primary reason for smoking. Patient reports no previous tobacco quit attempts and no prior periods of tobacco abstinence. Patient is in the contemplative stage of change: acknowledges health benefits and expresses desire to quit eventually, but is not ready to establish a quit date today due to current work stress. Per USPSTF Grade A recommendation and VA/DoD Tobacco Cessation CPG 2026, behavioral counseling using motivational interviewing is the recommended initial approach. Smoking is linked to underlying anxiety symptoms. Cessation pharmacotherapy (varenicline, bupropion SR, NRT) is declined/deferred at this time since patient is not yet ready to quit; readiness will be reassessed at future visits."
         }
       ]
     },
@@ -468,7 +480,7 @@ const sarahTue = makeCase({
         {
           "key": "q4",
           "q": "What is the etiology and management strategy for insomnia?",
-          "defaultAnswer": "Insomnia (restless sleep, 5–6 hours per night, difficulty turning off thoughts after work), classified as secondary to underlying MDD and GAD. Sleep-specific pharmacotherapy is NOT indicated. Successful treatment of depression and anxiety with SSRI therapy and CBT is expected to improve sleep quality. Non-pharmacologic sleep hygiene recommendations provided: maintain a consistent sleep schedule, limit caffeine intake, avoid screens before bed, and practice relaxation techniques. Sleep quality will be monitored as psychiatric conditions improve."
+          "defaultAnswer": "Insomnia (restless, insufficient sleep, 5–6 hours per night, unable to get restful sleep despite feeling exhausted), classified as secondary to underlying MDD and GAD. Sleep-specific pharmacotherapy is NOT indicated. Successful treatment of depression and anxiety with SSRI therapy and CBT is expected to improve sleep quality. Non-pharmacologic sleep hygiene recommendations provided: maintain a consistent sleep schedule, limit caffeine intake, avoid screens before bed, and practice relaxation techniques. Sleep quality will be monitored as psychiatric conditions improve."
         }
       ]
     },
@@ -524,7 +536,7 @@ const sarahTue = makeCase({
         },
         {
           "key": "o6",
-          "label": "Provide counseling on stress management techniques, relaxation techniques, and sleep hygiene (consistent sleep schedule, limit afternoon caffeine, avoid screens before bed)",
+          "label": "Provide counseling on stress management techniques, relaxation techniques, sleep hygiene (consistent sleep schedule, limit afternoon caffeine, avoid screens before bed), and counsel on the evidence-based benefits of Cognitive Behavioral Therapy (CBT) specifically for anxiety treatment",
           "correct": true
         },
         {
@@ -545,7 +557,7 @@ const sarahTue = makeCase({
         },
         {
           "key": "o9",
-          "label": "Discuss relationship between smoking and stress management; review health benefits of complete cessation; acknowledge patient is in contemplative stage and not ready to set a quit date today",
+          "label": "Discuss relationship between smoking and stress management; review health benefits of complete cessation; acknowledge no previous quit attempts reported; connect tobacco cessation efforts directly to broader long-term behavioral health goals and stress management",
           "correct": true
         },
         {
@@ -571,7 +583,7 @@ const sarahTue = makeCase({
         },
         {
           "key": "o13",
-          "label": "Emphasize that patient education improves treatment engagement, adherence, and clinical outcomes",
+          "label": "Educate patient explicitly on the critical importance of follow-up, reinforcing that regular visits are needed to titrate medication and monitor progress to improve treatment engagement and outcomes",
           "correct": true
         }
       ]
@@ -582,7 +594,7 @@ const sarahTue = makeCase({
       "options": [
         {
           "key": "o14",
-          "label": "Schedule follow-up visit in approximately 4 weeks to evaluate treatment response, medication adherence, tolerability, and safety",
+          "label": "Schedule follow-up visit in approximately 3 months (with initial 4-week check-in specified for medication titration and tolerability monitoring)",
           "correct": true
         },
         {
@@ -592,7 +604,12 @@ const sarahTue = makeCase({
         },
         {
           "key": "o16",
-          "label": "Monitor suicidal ideation, mood, anxiety, sleep quality, occupational functioning, interpersonal functioning, and tobacco cessation readiness at follow-up",
+          "label": "Assess need for dose adjustment at follow-up based on symptom response; monitor suicidal ideation, mood, anxiety, sleep quality, occupational functioning, interpersonal functioning, and tobacco cessation readiness",
+          "correct": true
+        },
+        {
+          "key": "o17",
+          "label": "Confirm that future visits will focus on achieving full symptom remission and optimizing antidepressant therapy, and that continued behavioral health counseling will continue longitudinally",
           "correct": true
         }
       ]
@@ -635,7 +652,7 @@ const sarahWed = makeCase({
     "bpRepeat": "114/70 mmHg",
     "hr": "72 bpm",
     "rr": "16 breaths/min",
-    "temp": "98.0°F",
+    "temp": "98.1°F",
     "weight": "151 lbs",
     "height": "65 inches",
     "bmi": "25.1 kg/m²",
@@ -660,6 +677,13 @@ const sarahWed = makeCase({
       "labDate": "10/07/2026 07:50"
     },
     {
+      "label": "BUN",
+      "value": "12",
+      "unit": "mg/dL",
+      "flag": "normal",
+      "labDate": "10/07/2026 07:50"
+    },
+    {
       "label": "Serum Creatinine",
       "value": "0.8",
       "unit": "mg/dL",
@@ -674,15 +698,22 @@ const sarahWed = makeCase({
       "labDate": "10/07/2026 07:50"
     },
     {
+      "label": "Glucose",
+      "value": "91",
+      "unit": "mg/dL",
+      "flag": "normal",
+      "labDate": "10/07/2026 07:50"
+    },
+    {
       "label": "AST",
-      "value": "22",
+      "value": "20",
       "unit": "U/L",
       "flag": "normal",
       "labDate": "10/07/2026 07:50"
     },
     {
       "label": "ALT",
-      "value": "24",
+      "value": "18",
       "unit": "U/L",
       "flag": "normal",
       "labDate": "10/07/2026 07:50"
@@ -723,7 +754,15 @@ const sarahWed = makeCase({
       "route": "by mouth",
       "freq": "daily",
       "indication": "MDD / GAD",
-      "notes": "Target starting dose — 100% adherence, well tolerated (nausea resolved). Increase to 100 mg daily."
+      "notes": "Target starting dose — missed one dose in past month (otherwise excellent adherence), well tolerated (initial nausea resolved). Increase to 100 mg daily."
+    },
+    {
+      "name": "Daily multivitamin",
+      "dose": "1 tablet",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "Nutritional supplement",
+      "notes": "OTC daily multivitamin."
     },
     {
       "name": "Ibuprofen",
@@ -754,7 +793,7 @@ const sarahWed = makeCase({
   "SUBJECTIVE_DOCUMENTED": [
     {
       "label": "HPI",
-      "value": "54-year-old female presents for a 4-week follow-up visit at the ambulatory behavioral health clinic to evaluate treatment response following initiation of Sertraline (titrated from 25 mg daily to 50 mg daily) and CBT referral. Patient reports feeling overall improved, noting 'more good days than bad days.' Reports improved energy, improved concentration, improved sleep (falling asleep more easily, sleeping 6 to 7 hours per night), and improved enjoyment of activities (resumed regular reading, went hiking once with her husband). Attended 2 CBT sessions and reports CBT has been extremely beneficial for learning to challenge negative thoughts and manage stress. However, patient reports residual depressive symptoms: persistent occasional fatigue, low motivation, incomplete return to baseline functioning, and intermittent work-related stress. Reports anxiety symptoms are significantly improved: less worrying, no longer feeling overwhelmed by worry, and fewer racing thoughts. Reports 100% medication adherence (0 missed doses). Sertraline has been well tolerated; initial mild nausea completely resolved after the first week. Reduced tobacco consumption from 5 to 2 cigarettes per day, attributing reduction directly to decreased stress and improved coping strategies learned in CBT."
+      "value": "54-year-old female presents for a 4-week follow-up visit at the ambulatory behavioral health clinic to evaluate treatment response following initiation of Sertraline (titrated from 25 mg daily to 50 mg daily) and CBT referral. Patient attributes overall symptom improvement directly to the combination of Sertraline therapy and CBT attendance together, noting 'more good days than bad days.' Reports improved energy, improved concentration, improved sleep (falling asleep more easily, sleeping 6 to 7 hours per night), and improved enjoyment of activities (resumed regular reading, went hiking once with her husband). Attended 4 CBT sessions and reports CBT has been extremely beneficial for learning to challenge negative thoughts and manage stress. However, patient reports residual depressive symptoms: persistent occasional fatigue, low motivation, incomplete return to baseline functioning, and intermittent work-related stress. Reports anxiety symptoms are significantly improved: less worrying, no longer feeling overwhelmed by worry, and fewer racing thoughts. Reports excellent adherence (missed one dose in past month). Sertraline has been well tolerated; initial mild nausea completely resolved after the first week. Reduced tobacco consumption from 5 to 2 cigarettes per day, attributing reduction directly to decreased stress and improved coping strategies learned in CBT."
     },
     {
       "label": "Review of Systems (ROS) & Safety Assessment",
@@ -770,7 +809,7 @@ const sarahWed = makeCase({
     },
     {
       "label": "Social History",
-      "value": "Full-time elementary school teacher. Married, lives with husband (who notes positive mood changes). Reduced tobacco use from 5 to 2 cigarettes per day, attributed to stress reduction and CBT coping skills. Contemplative stage of change; not yet ready to set a quit date today. Rare alcohol use. Denies illicit drug use. Resumed regular walking and weekend hiking with husband."
+      "value": "Full-time elementary school teacher. Marital status & living situation: single (lives alone in suburban house; maintains supportive relationship with husband who notes positive mood changes). Reduced tobacco use from 5 to 2 cigarettes per day (previously 5 cigs/day), attributed to stress reduction and CBT coping skills. Contemplative stage of change; not yet ready to set a quit date today. Drinks alcohol: 1-2 alcoholic beverages weekly. Denies illicit drug use. Exercises: walking several times weekly and resumed occasional hiking."
     },
     {
       "label": "Family History",
@@ -778,7 +817,7 @@ const sarahWed = makeCase({
     },
     {
       "label": "OTC & Allergies",
-      "value": "Ibuprofen 200 mg PO PRN for occasional headaches. NKDA."
+      "value": "Daily multivitamin 1 tab PO daily. Ibuprofen 200 mg PO PRN for occasional headaches. NKDA."
     },
     {
       "label": "Patient Education & Goals",
@@ -788,7 +827,7 @@ const sarahWed = makeCase({
   "OBJECTIVE_EXTRA": [
     {
       "label": "Objective Examination & Clinical Trends",
-      "value": "Vital Signs: BP 116/72 mmHg (repeat 114/70 mmHg), HR 72 bpm, RR 16 breaths/min, Temp 98.0°F, Weight 151 lbs (68.5 kg), Height 65 inches (5 ft 5 in), BMI 25.1 kg/m² (borderline overweight). All vital signs are within normal limits with no acute safety concerns. Laboratory Data: Sodium 139 mEq/L, Potassium 4.2 mEq/L, Serum Creatinine 0.8 mg/dL, eGFR >90 mL/min/1.73m², AST 22 U/L, ALT 24 U/L. Comprehensive metabolic, renal, and hepatic panels demonstrate no clinically significant abnormalities, confirming safety for Sertraline dose escalation. Longitudinal Assessment Score Trends: PHQ-9 trend: 13 (initial visit) -> 8 (current visit), representing a ~38.5% reduction. Clinically meaningful response, but patient remains symptomatic (PHQ-9 8) and is not in remission. GAD-7 trend: 8 (initial visit) -> 5 (current visit), confirming maintained mild anxiety threshold and near-remission status."
+      "value": "Vital Signs: BP 116/72 mmHg (repeat 114/70 mmHg), HR 72 bpm, RR 16 breaths/min, Temp 98.1°F, Weight 151 lbs (68.5 kg), Height 65 inches (5 ft 5 in), BMI 25.1 kg/m² (borderline overweight). All vital signs are within normal limits with no acute safety concerns. Laboratory Data: Sodium 139 mEq/L, Potassium 4.2 mEq/L, BUN 12 mg/dL, Serum Creatinine 0.8 mg/dL, eGFR >90 mL/min/1.73m², Glucose 91 mg/dL, AST 20 U/L, ALT 18 U/L. Comprehensive metabolic, renal, and hepatic panels demonstrate no clinically significant abnormalities, confirming safety for Sertraline dose escalation. Longitudinal Assessment Score Trends: PHQ-9 baseline 13 -> current 8 (~38.5% reduction, mild depression). GAD-7 baseline 8 -> current 5 (mild anxiety). Suicide Risk: explicit denial of SI, plan, attempts, self-harm; overall low risk."
     }
   ],
   "INTERVIEW_FIELDS": [
@@ -842,9 +881,10 @@ const sarahWed = makeCase({
         "supplement",
         "herb",
         "vitamin",
-        "ibuprofen"
+        "ibuprofen",
+        "multivitamin"
       ],
-      "response": "I take Ibuprofen 200 mg occasionally for headaches. I've been taking Sertraline 50 mg every single day without missing any doses."
+      "response": "I take a daily multivitamin. I take Ibuprofen 200 mg occasionally for headaches. I've missed only one dose of Sertraline 50 mg in the past month."
     },
     {
       "id": "w5-sarah_m-wed_alc",
@@ -857,7 +897,7 @@ const sarahWed = makeCase({
         "wine",
         "liquor"
       ],
-      "response": "Rarely, maybe 1 glass of wine a month."
+      "response": "I drink 1-2 alcoholic beverages weekly—about 1 glass of wine a week."
     },
     {
       "id": "w5-sarah_m-wed_tobacco",
@@ -873,7 +913,7 @@ const sarahWed = makeCase({
         "vaping",
         "nicotine"
       ],
-      "response": "I've cut down from 5 cigarettes a day to just 2 cigarettes a day! Feeling less stressed and using the CBT breathing exercises really helped. I'm not quite ready to set a quit date today, but I'm feeling much more confident."
+      "response": "I've cut down from 5 cigarettes a day to 2 cigarettes a day! Feeling less stressed and using the CBT breathing exercises really helped. I'm not quite ready to set a quit date today, but I'm feeling much more confident."
     },
     {
       "id": "w5-sarah_m-wed_social",
@@ -883,14 +923,17 @@ const sarahWed = makeCase({
         "live",
         "marital",
         "married",
+        "single",
         "job",
         "work",
         "employ",
         "living",
         "husband",
-        "teacher"
+        "teacher",
+        "alone",
+        "house"
       ],
-      "response": "I'm working as an elementary school teacher. I live with my husband. We went hiking last weekend for the first time in months."
+      "response": "I'm working as an elementary school teacher. Marital status: single (lives alone in suburban house; maintains supportive relationship with my husband). We went hiking last weekend."
     },
     {
       "id": "w5-sarah_m-wed_cbt",
@@ -904,7 +947,7 @@ const sarahWed = makeCase({
         "thought",
         "negative"
       ],
-      "response": "I've attended 2 CBT sessions so far, and it's been extremely helpful. I'm learning to recognize negative thought patterns and challenge them when I get stressed at work."
+      "response": "I've attended 4 CBT sessions so far, and it's been extremely helpful. I'm learning to recognize negative thought patterns and challenge them when I get stressed at work."
     },
     {
       "id": "w5-sarah_m-wed_progress",
@@ -919,7 +962,7 @@ const sarahWed = makeCase({
         "fatigue",
         "motivation"
       ],
-      "response": "I'm definitely feeling better overall—more good days than bad. I'm sleeping 6-7 hours, falling asleep easier, reading again, and my anxiety is much less. But I still feel tired sometimes and lack motivation on some days."
+      "response": "I'm definitely feeling better overall—more good days than bad. I'm sleeping 6-7 hours, falling asleep easier, reading again, and my anxiety is much less. Both occupational and interpersonal functioning have noticeably improved. But I still feel tired sometimes and lack motivation on some days."
     }
   ],
   "ASSESSMENT_CARDS": [
@@ -932,7 +975,7 @@ const sarahWed = makeCase({
         {
           "key": "q1",
           "q": "What is the clinical evaluation of treatment response and dose optimization strategy?",
-          "defaultAnswer": "Major Depressive Disorder (MDD), improved status, partial response (not in remission). PHQ-9 score improved from 13 (initial) to 8 (current), representing a ~38.5% reduction and clinically meaningful partial response. Patient reports noticeable improvements in mood ('more good days than bad days'), energy, concentration, sleep (falling asleep easier, 6–7 hours/night), and enjoyment of activities (resumed reading, went hiking with husband). Excellent medication adherence (100% compliant, 0 missed doses), minimal adverse effects (initial nausea resolved), and active CBT engagement (attended 2 sessions with substantial cognitive restructuring benefit). However, residual depressive symptoms persist: persistent occasional fatigue, low motivation, and incomplete return to baseline functioning. ACP Living Clinical Guidelines and VA/DoD MDD Guidelines explicitly mandate that **remission (PHQ-9 <=4 / <5), not merely partial response, is the primary treatment goal**. Given residual symptoms after ~4 weeks on target starting dose (50 mg daily) with excellent tolerability and adherence, **sertraline dose escalation to 100 mg PO daily is indicated** to optimize therapeutic response and target full remission."
+          "defaultAnswer": "Major Depressive Disorder (MDD), improved status, partial response (not in remission). PHQ-9 score improved from 13 (initial) to 8 (current), representing a ~38.5% reduction and clinically meaningful partial response. Patient attributes overall improvement directly to the combination of Sertraline therapy and CBT attendance together. Patient reports noticeable improvements in mood ('more good days than bad days'), energy, concentration, sleep (falling asleep easier, 6–7 hours/night), and enjoyment of activities (resumed reading, went hiking with husband). Both occupational and interpersonal functioning have noticeably improved (referencing husband's observations and return to work function). Excellent medication adherence (missed one dose in past month), minimal adverse effects (initial nausea resolved), and active CBT engagement (attended 4 sessions with substantial cognitive restructuring benefit). However, residual depressive symptoms persist after ~3 months of total treatment / 4-week target dose optimization timeframe: persistent occasional fatigue, low motivation, and incomplete return to baseline functioning. ACP Living Clinical Guidelines and VA/DoD MDD Guidelines explicitly mandate that **remission (PHQ-9 <=4 / <5), not merely partial response, is the primary treatment goal**. Given residual symptoms after ~4 weeks on target starting dose (50 mg daily) with excellent tolerability and adherence, **sertraline dose escalation to 100 mg PO daily is indicated** to optimize therapeutic response and target full remission."
         }
       ]
     },
@@ -988,7 +1031,7 @@ const sarahWed = makeCase({
         },
         {
           "key": "o2",
-          "label": "Document dose escalation rationale: significant partial improvement achieved, residual fatigue/motivation symptoms persist, remission (PHQ-9 <=4 / <5) has not yet been achieved, medication is well tolerated, and 100% adherence is demonstrated",
+          "label": "Document dose escalation rationale: significant partial improvement achieved, residual fatigue/motivation symptoms persist, remission (PHQ-9 <=4 / <5) has not yet been achieved, medication is well tolerated, and 100% adherence (missed only 1 dose) is demonstrated",
           "correct": true
         },
         {
@@ -998,7 +1041,7 @@ const sarahWed = makeCase({
         },
         {
           "key": "o4",
-          "label": "Educate patient on difference between response and remission, rationale for dose escalation, expected 2 to 4 week timeline for additional improvement, continued adherence importance, and potential adverse effects after dose increase",
+          "label": "Educate patient on difference between response and remission, rationale for dose escalation, expected 2 to 4 week timeline for additional improvement, continued adherence importance, and monitor for adverse effects specifically related to the sertraline dose increase to 100 mg daily",
           "correct": true
         }
       ]
@@ -1040,7 +1083,7 @@ const sarahWed = makeCase({
         },
         {
           "key": "o10",
-          "label": "State explicitly that patient is not yet ready to establish a quit date; withhold cessation pharmacotherapy (varenicline, bupropion SR, NRT per VA/DoD Tobacco CPG 2026) while behavioral approach is ongoing; reassess readiness at next visit",
+          "label": "State explicitly that patient is not yet ready to establish a quit date; discuss future smoking cessation strategies (outlining potential future pharmacotherapy options [varenicline, bupropion SR, NRT] and behavioral techniques for when patient is ready to quit); withhold cessation pharmacotherapy at this visit while behavioral approach is ongoing; reassess readiness at next visit",
           "correct": true
         }
       ]
@@ -1058,11 +1101,11 @@ const sarahWed = makeCase({
     },
     {
       "id": "w5b_p5",
-      "title": "5. Comprehensive Monitoring Plan (12 Parameters)",
+      "title": "5. Comprehensive Monitoring Plan (12 Parameters — MDD, GAD, Tobacco)",
       "options": [
         {
           "key": "o12",
-          "label": "Monitor PHQ-9 score, GAD-7 score, mood, energy, motivation, sleep quality, medication adherence, medication adverse effects, suicidal ideation, tobacco use, occupational functioning, and interpersonal functioning (covers all active problems)",
+          "label": "Monitor PHQ-9 score, GAD-7 score, mood, energy, motivation, sleep quality, medication adherence, medication adverse effects (specifically monitoring tolerability after dose increase), suicidal ideation, tobacco use, occupational functioning, and interpersonal functioning (explicitly mapping to all active problems: MDD, GAD, Tobacco Use Disorder)",
           "correct": true
         }
       ]
@@ -1083,7 +1126,7 @@ const sarahWed = makeCase({
         },
         {
           "key": "o15",
-          "label": "Evaluate maintenance therapy planning, tobacco cessation progression, and relapse prevention strategies at future visit",
+          "label": "Evaluate maintenance therapy planning, tobacco cessation progression, and relapse prevention strategies at future visit (explicitly referencing MDD, GAD, and Tobacco Use Disorder)",
           "correct": true
         }
       ]
@@ -1107,8 +1150,8 @@ const sarahThu = makeCase({
     "type": "12-Week Follow-Up Ambulatory Behavioral Health Clinic Visit",
     "difficulty": "Advanced",
     "difficultyTone": "7c3aed",
-    "chiefConcern": "I feel fantastic—my mood is back to normal, I'm sleeping great, and I actually quit smoking 6 weeks ago! Do I still need to keep taking Sertraline?",
-    "snapshotSummary": "Sarah presents for a 12-week follow-up after Sertraline 100 mg daily optimization and CBT completion. Achieved full remission (PHQ-9 = 2, GAD-7 = 1) and complete smoking cessation (6 weeks tobacco-free, early remission). Asks if Sertraline can be stopped. Maintenance therapy for >=6-9 months post-remission indicated per ACP and VA/DoD guidelines.",
+    "chiefConcern": "I feel fantastic—my mood is back to normal, I'm sleeping great, and I actually quit smoking 6 weeks ago! Do I still need to keep taking Sertraline and going to therapy?",
+    "snapshotSummary": "Sarah presents for a 12-week follow-up after Sertraline 100 mg daily optimization and CBT completion. Achieved full remission (PHQ-9 = 2, GAD-7 = 1) and complete smoking cessation (6 weeks tobacco-free, early remission). Asks if Sertraline and therapy can be stopped. Maintenance therapy for >=6-9 months post-remission indicated per ACP and VA/DoD guidelines.",
     "diseaseStates": [
       "MDD",
       "GAD",
@@ -1124,12 +1167,12 @@ const sarahThu = makeCase({
   "VITALS": {
     "bp": "116/72 mmHg",
     "bpRepeat": "114/70 mmHg",
-    "hr": "70 bpm",
+    "hr": "72 bpm",
     "rr": "16 breaths/min",
-    "temp": "98.0°F",
-    "weight": "150 lbs",
+    "temp": "98.1°F",
+    "weight": "151 lbs",
     "height": "65 inches",
-    "bmi": "25.0 kg/m²",
+    "bmi": "25.1 kg/m²",
     "vitalsTime": "12/09/2026 09:14",
     "flags": {
       "bmi": "warn"
@@ -1145,8 +1188,15 @@ const sarahThu = makeCase({
     },
     {
       "label": "Potassium",
-      "value": "4.2",
+      "value": "4.1",
       "unit": "mEq/L",
+      "flag": "normal",
+      "labDate": "12/09/2026 07:50"
+    },
+    {
+      "label": "BUN",
+      "value": "12",
+      "unit": "mg/dL",
       "flag": "normal",
       "labDate": "12/09/2026 07:50"
     },
@@ -1166,21 +1216,21 @@ const sarahThu = makeCase({
     },
     {
       "label": "AST",
-      "value": "22",
+      "value": "19",
       "unit": "U/L",
       "flag": "normal",
       "labDate": "12/09/2026 07:50"
     },
     {
       "label": "ALT",
-      "value": "24",
+      "value": "18",
       "unit": "U/L",
       "flag": "normal",
       "labDate": "12/09/2026 07:50"
     },
     {
       "label": "Glucose",
-      "value": "92",
+      "value": "90",
       "unit": "mg/dL",
       "flag": "normal",
       "labDate": "12/09/2026 07:50"
@@ -1214,7 +1264,7 @@ const sarahThu = makeCase({
     },
     {
       "name": "4. Behavioral Health Knowledge Deficit — Improving",
-      "detail": "Patient asks if medication can be stopped now that she feels well. Needs education on maintenance treatment rationale, remission vs cure, and relapse warning signs.",
+      "detail": "Patient asks if medication and ongoing therapy remain necessary now that she feels well. Needs education on maintenance treatment rationale, remission vs cure, and relapse warning signs.",
       "flag": "info"
     }
   ],
@@ -1226,6 +1276,14 @@ const sarahThu = makeCase({
       "freq": "daily",
       "indication": "MDD / GAD",
       "notes": "Optimized maintenance dose — 100% adherence, excellent tolerability, zero adverse effects. Continue long-term."
+    },
+    {
+      "name": "Daily multivitamin",
+      "dose": "1 tablet",
+      "route": "by mouth",
+      "freq": "daily",
+      "indication": "Nutritional supplement",
+      "notes": "OTC daily multivitamin."
     },
     {
       "name": "Ibuprofen",
@@ -1256,7 +1314,7 @@ const sarahThu = makeCase({
   "SUBJECTIVE_DOCUMENTED": [
     {
       "label": "HPI",
-      "value": "54-year-old female presents for a 12-week follow-up visit (post-initiation and optimization of treatment) at the ambulatory behavioral health clinic. Patient reports feeling 'fantastic' with a complete return of mood to baseline. Denies feelings of sadness, overwhelm, or exhaustion. Attributes improvement directly to Sertraline dose increase to 100 mg daily combined with CBT completion. Reports normal energy levels, improved concentration, good motivation, and full restoration of enjoyment in activities (reading regularly, hiking weekly with her husband). Reports improved social engagement and excellent work performance as an elementary school teacher, denying feeling overwhelmed. Reports significant anxiety improvement, denying excessive worry, racing thoughts, or persistent anxiety, noting only occasional normal work stress. Reports excellent sleep quality (7 to 8 hours per night) and denies insomnia. Reports 100% medication adherence (zero missed doses) and denies any medication adverse effects. Completed 8 CBT sessions with major benefit in stress management, relaxation techniques, and cognitive restructuring. Successfully quit smoking approximately 6 weeks ago (tobacco-free for 6 weeks, occasional cravings during stress managed with CBT deep breathing exercises; explicitly denies any smoking relapse). Patient expresses gratitude for treatment success, but explicitly asks whether ongoing medication and therapy remain necessary now that she feels completely well, expressing concern about potential future depression recurrence."
+      "value": "54-year-old female presents for a 12-week follow-up visit (post-initiation and optimization of treatment) at the ambulatory behavioral health clinic. Patient reports feeling 'fantastic' with a complete return of mood to baseline. Denies feelings of sadness, overwhelm, or exhaustion. Attributes improvement directly to Sertraline dose increase to 100 mg daily combined with CBT completion. Reports normal energy levels, improved concentration, good motivation, and full restoration of enjoyment in activities (reading regularly, hiking weekly with her husband). Reports feeling productive and able to concentrate throughout the day. Reports improved social engagement and excellent work performance as an elementary school teacher, denying feeling overwhelmed. Reports significant anxiety improvement, denying excessive worry, racing thoughts, or persistent anxiety, noting only occasional normal work stress. Reports excellent sleep quality (7 to 8 hours per night) and denies insomnia. Reports 100% medication adherence (zero missed doses) and denies any medication adverse effects. Completed 8 CBT sessions with major benefit in stress management, relaxation techniques, and cognitive restructuring. Successfully quit smoking approximately 6 weeks ago (tobacco-free for 6 weeks, occasional cravings during stress managed with CBT deep breathing exercises; explicitly denies any smoking relapse). Patient expresses gratitude for treatment success, but explicitly asks whether ongoing medication and ongoing therapy/CBT remain necessary now that she feels completely well, expressing concern about potential future depression recurrence."
     },
     {
       "label": "Review of Systems (ROS) & Safety Assessment",
@@ -1272,7 +1330,7 @@ const sarahThu = makeCase({
     },
     {
       "label": "Social History",
-      "value": "Full-time elementary school teacher. Married, lives with husband (who provides strong support and participates in outdoor activities). Tobacco Use Disorder in Early Remission: quit smoking 6 weeks ago, tobacco-free for 6 weeks, occasional stress cravings managed with CBT skills, zero relapse. Rare alcohol use. Denies illicit drug use. Exercises regularly: walking and weekly hiking with husband."
+      "value": "Full-time elementary school teacher. Marital status & living situation: single (lives alone in suburban house; hiking with spouse/husband). Tobacco Use Disorder in Early Remission: quit smoking 6 weeks ago, tobacco-free for 6 weeks, occasional stress cravings managed with CBT skills, zero relapse. Alcohol: 1-2 alcoholic beverages weekly (1 glass of wine weekly). Denies illicit drug use. Exercises regularly: walking and weekly hiking with husband."
     },
     {
       "label": "Family History",
@@ -1280,17 +1338,17 @@ const sarahThu = makeCase({
     },
     {
       "label": "OTC & Allergies",
-      "value": "Ibuprofen 200 mg PO PRN for occasional headaches. Confirms no additional prescription medications used. NKDA."
+      "value": "Daily multivitamin 1 tab PO daily. Ibuprofen 200 mg PO PRN for occasional headaches. Confirms no additional prescription medications used. NKDA."
     },
     {
       "label": "Patient Questions & Knowledge Deficit",
-      "value": "Patient expresses gratitude for recovery, but asks if ongoing medication is necessary now that she feels well. Expresses concern about future depression recurrence. Represents a knowledge deficit regarding maintenance therapy and relapse prevention."
+      "value": "Patient expresses gratitude for recovery, but asks if ongoing medication and ongoing therapy/CBT remain necessary now that she feels well. Expresses concern about future depression recurrence. Represents a knowledge deficit regarding maintenance therapy and relapse prevention."
     }
   ],
   "OBJECTIVE_EXTRA": [
     {
       "label": "Objective Examination & Longitudinal Diagnostic Panel",
-      "value": "Vital Signs: BP 116/72 mmHg (repeat 114/70 mmHg, well controlled), HR 70 bpm, RR 16 breaths/min, Temp 98.0°F, Weight 150 lbs (68 kg), Height 65 inches (5 ft 5 in), BMI 25.0 kg/m² (borderline overweight). All vital signs are within normal limits. Laboratory Findings: Sodium 139 mEq/L, Potassium 4.2 mEq/L, Serum Creatinine 0.8 mg/dL, eGFR >90 mL/min/1.73m² (adequate renal function for current medications), Glucose 92 mg/dL (within normal range), AST 22 U/L, ALT 24 U/L (normal hepatic transaminases confirming Sertraline safety). Comprehensive metabolic panel is completely free of clinically significant abnormalities. Screening Score Trends across 3 Visits: PHQ-9 trend: 13 (initial visit) -> 8 (4-week visit) -> 2 (current visit), confirming progressive improvement and full clinical remission (PHQ-9 2 = minimal depressive symptoms). GAD-7 trend: 8 (initial visit) -> 5 (4-week visit) -> 1 (current visit), confirming minimal anxiety symptoms (GAD-7 1 = minimal anxiety)."
+      "value": "Vital Signs: BP 116/72 mmHg (repeat 114/70 mmHg, well controlled), HR 72 bpm, RR 16 breaths/min, Temp 98.1°F, Weight 151 lbs (68 kg), Height 65 inches (5 ft 5 in), BMI 25.1 kg/m² (borderline overweight). All vital signs are within normal limits. Laboratory Findings: Sodium 139 mEq/L, Potassium 4.1 mEq/L, BUN 12 mg/dL, Serum Creatinine 0.8 mg/dL, eGFR >90 mL/min/1.73m² (adequate renal function for current medications), Glucose 90 mg/dL (within normal range), AST 19 U/L, ALT 18 U/L (normal hepatic transaminases confirming Sertraline safety). Comprehensive metabolic panel is completely free of clinically significant abnormalities; no laboratory data missing from expected monitoring panel. Screening Score Trends across 3 Visits: PHQ-9 trend: 13 (initial visit) -> 8 (4-week visit) -> 2 (current visit), confirming progressive improvement and full clinical remission (PHQ-9 2 = minimal depressive symptoms). GAD-7 trend: 8 (initial visit) -> 5 (4-week visit) -> 1 (current visit), confirming minimal anxiety symptoms (GAD-7 1 = minimal anxiety)."
     }
   ],
   "INTERVIEW_FIELDS": [
@@ -1344,9 +1402,10 @@ const sarahThu = makeCase({
         "supplement",
         "herb",
         "vitamin",
-        "ibuprofen"
+        "ibuprofen",
+        "multivitamin"
       ],
-      "response": "I take Ibuprofen 200 mg occasionally for headaches. I've taken Sertraline 100 mg every single day with zero missed doses and no side effects."
+      "response": "I take a daily multivitamin. I take Ibuprofen 200 mg occasionally for headaches. I've taken Sertraline 100 mg every single day with zero missed doses and no side effects."
     },
     {
       "id": "w5-sarah_m-thu_alc",
@@ -1359,7 +1418,7 @@ const sarahThu = makeCase({
         "wine",
         "liquor"
       ],
-      "response": "Rarely, maybe a glass of wine once a month."
+      "response": "I drink 1-2 alcoholic beverages weekly—about a glass of wine once a week."
     },
     {
       "id": "w5-sarah_m-thu_tobacco",
@@ -1385,14 +1444,17 @@ const sarahThu = makeCase({
         "live",
         "marital",
         "married",
+        "single",
         "job",
         "work",
         "employ",
         "living",
         "husband",
-        "teacher"
+        "teacher",
+        "alone",
+        "house"
       ],
-      "response": "I'm teaching full-time, feeling great at work and not overwhelmed. My husband and I go hiking every weekend and I'm reading regularly again."
+      "response": "I'm teaching full-time, feeling great at work and not overwhelmed. Marital status: single (lives alone in suburban house; hiking with my spouse/husband). My husband and I go hiking every weekend and I'm reading regularly again."
     },
     {
       "id": "w5-sarah_m-thu_cbt",
@@ -1418,9 +1480,10 @@ const sarahThu = makeCase({
         "duration",
         "cure",
         "recurrence",
-        "necessary"
+        "necessary",
+        "therapy"
       ],
-      "response": "I feel fantastic and my mood is completely back to normal. Do I really need to keep taking Sertraline 100 mg every day now that I feel well? What if my depression comes back in the future?"
+      "response": "I feel fantastic and my mood is completely back to normal. Do I really need to keep taking Sertraline 100 mg every day and going to ongoing therapy/CBT now that I feel well? What if my depression comes back in the future?"
     }
   ],
   "ASSESSMENT_CARDS": [
@@ -1433,7 +1496,7 @@ const sarahThu = makeCase({
         {
           "key": "q1",
           "q": "What clinical findings confirm remission and what is the guideline-based continuation therapy plan?",
-          "defaultAnswer": "Major Depressive Disorder (MDD), in full clinical remission, stable on maintenance therapy. PHQ-9 score is 2 (minimal/no depressive symptoms), demonstrating a progressive improvement trend across all 3 visits (initial 13 -> 4-week 8 -> current 2). Sertraline 100 mg PO daily and CBT completion cited as primary drivers of resolution of depressive symptoms. Patient demonstrates complete return to baseline functioning: mood back to normal, normal energy, excellent concentration, good motivation, restored enjoyment in hobbies (reading, weekly hiking), improved social engagement, excellent work performance, and absence of distress or functional impairment. Excellent medication adherence (100% compliant, 0 missed doses), excellent tolerability (zero adverse effects), and meaningful CBT engagement documented. Guidelines cited: ACP Living Clinical Guideline recommends continuation therapy for >=4 to 9 months post-remission; VA/DoD MDD Guideline recommends continuation therapy for >=6 months post-remission. Premature discontinuation carries a high risk of depressive relapse. Rationale for continuing Sertraline 100 mg PO daily: full remission achieved, excellent tolerability, excellent adherence, high likelihood of continued benefit. No dose change or medication switch warranted. Patient question regarding stopping treatment is identified as a knowledge deficit; education focus must address maintenance treatment expectations and relapse prevention."
+          "defaultAnswer": "Major Depressive Disorder (MDD), in full clinical remission, stable on maintenance therapy. PHQ-9 score is 2 (minimal/no depressive symptoms), demonstrating a progressive improvement trend across all 3 visits (initial 13 -> 4-week 8 -> current 2). Sertraline 100 mg PO daily and CBT completion cited as primary drivers of resolution of depressive symptoms. Patient demonstrates complete return to baseline functioning: mood back to normal, normal energy, excellent concentration, good motivation, restored enjoyment in hobbies (reading, weekly hiking), improved social engagement, feeling productive and able to concentrate throughout the day, excellent work performance, and absence of distress or functional impairment. Excellent medication adherence (100% compliant, 0 missed doses), excellent tolerability (zero adverse effects), and meaningful CBT engagement documented. Guidelines cited: ACP Living Clinical Guideline recommends continuation therapy for >=4 to 9 months post-remission; VA/DoD MDD Guideline recommends continuation therapy for >=6 months post-remission. Premature discontinuation carries a high risk of depressive relapse. Rationale for continuing Sertraline 100 mg PO daily: full remission achieved, excellent tolerability, excellent adherence, high likelihood of continued benefit. No dose change or medication switch warranted. Patient question regarding stopping medication and ongoing therapy is identified as a knowledge deficit; education focus must address maintenance treatment expectations and relapse prevention."
         }
       ]
     },
@@ -1459,7 +1522,7 @@ const sarahThu = makeCase({
         {
           "key": "q3",
           "q": "What is the smoking cessation status and ongoing relapse prevention plan?",
-          "defaultAnswer": "Tobacco Use Disorder, in early remission, successful smoking cessation. Patient successfully quit smoking approximately 6 weeks ago and has remained completely tobacco-free with zero smoking relapse. Occasional cravings during stress are acknowledged and effectively managed using CBT deep breathing skills. Patient is highly motivated to maintain abstinence. Improved mental health and coping strategies identified as key contributors. Six weeks of tobacco abstinence constitutes **Early Remission** (sustained remission requires >=12 months). Early phase carries elevated relapse risk; continued behavioral counseling and support appropriate per USPSTF guidelines for tobacco cessation. FDA-approved pharmacotherapy options (NRT patch/gum/lozenge, bupropion SR, varenicline) were not initiated because behavioral approach achieved successful cessation, but remain available if relapse occurs. Reinforcement of cessation success and relapse prevention strategies planned for future visits."
+          "defaultAnswer": "Tobacco Use Disorder, in early remission, successful smoking cessation. Patient successfully quit smoking approximately 6 weeks ago and has remained completely tobacco-free with zero smoking relapse. Occasional cravings during stress are acknowledged and effectively managed using CBT deep breathing skills. Patient is highly motivated to maintain abstinence. Improved mental health and coping strategies identified as key contributors. Six weeks of tobacco abstinence constitutes **Early Remission** (sustained remission requires >=12 months). Early phase carries elevated relapse risk; continued behavioral counseling and support appropriate per USPSTF guidelines for tobacco cessation. FDA-approved pharmacotherapy options (NRT patch/gum/lozenge, bupropion SR, varenicline) were not initiated because behavioral approach achieved successful cessation, but remain available if relapse occurs. Reinforcement of cessation success, maintaining coping techniques as an ongoing strategy beyond craving management, and relapse prevention strategies planned for future visits."
         }
       ]
     },
@@ -1472,7 +1535,7 @@ const sarahThu = makeCase({
         {
           "key": "q4",
           "q": "How are patient questions regarding maintenance duration and relapse prevention addressed?",
-          "defaultAnswer": "Behavioral Health Knowledge Deficit, improving status. Patient demonstrates improved understanding of depression, anxiety, medication therapy, and behavioral health management. However, patient has specific questions regarding duration of therapy and whether treatment remains necessary now that she feels completely well, expressing concern about potential future depression recurrence. Additional education regarding maintenance treatment expectations, distinction between remission and permanent cure, and relapse prevention is appropriate. Topics directly linked to patient's specific questions: explaining maintenance duration (>=6-9 months), educating on relapse warning signs, instructing prompt contact if symptoms recur, and emphasizing that education improves long-term adherence and reduces recurrence risk. Documented as an active, ongoing concern."
+          "defaultAnswer": "Behavioral Health Knowledge Deficit, improving status. Patient demonstrates improved understanding of depression, anxiety, medication therapy, and behavioral health management. However, patient has specific questions regarding duration of therapy and whether ongoing medication and ongoing therapy/CBT remain necessary now that she feels completely well, expressing concern about potential future depression recurrence. Additional education regarding maintenance treatment expectations, distinction between remission and permanent cure, and relapse prevention is appropriate. Topics directly linked to patient's specific questions: explaining maintenance duration (>=6-9 months), educating on relapse warning signs, instructing prompt contact if symptoms recur, and emphasizing that education improves long-term adherence and reduces recurrence risk. Documented as an active, ongoing concern. No other active psychiatric or behavioral health problems exist beyond the four listed (MDD, GAD, Tobacco Use Disorder, Knowledge Deficit)."
         }
       ]
     }
@@ -1546,7 +1609,7 @@ const sarahThu = makeCase({
         },
         {
           "key": "o11",
-          "label": "Provide counseling on common triggers for relapse and stress-management strategies for craving management",
+          "label": "Provide counseling on common triggers for relapse, stress-management strategies for craving management, and explicitly counsel on the importance of maintaining coping techniques as an ongoing strategy beyond craving management",
           "correct": true
         },
         {
@@ -1579,7 +1642,7 @@ const sarahThu = makeCase({
     },
     {
       "id": "w5c_p5",
-      "title": "5. Follow-Up & Longitudinal Monitoring Plan",
+      "title": "5. Follow-Up & Longitudinal Monitoring Plan (All 5 Focus Areas)",
       "options": [
         {
           "key": "o16",
@@ -1598,7 +1661,7 @@ const sarahThu = makeCase({
         },
         {
           "key": "o19",
-          "label": "Monitor mood, anxiety symptoms, sleep quality, functional status, and signs of relapse; future visits will focus on maintaining remission, preventing relapse, supporting tobacco abstinence, and long-term behavioral health recovery",
+          "label": "Monitor mood, anxiety symptoms, sleep quality, functional status, and signs of relapse; explicitly enumerate all five future visit focus areas: (1) maintaining remission, (2) preventing relapse, (3) reinforcing coping strategies, (4) supporting tobacco abstinence, and (5) long-term behavioral health recovery",
           "correct": true
         }
       ]
