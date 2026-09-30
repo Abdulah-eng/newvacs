@@ -381,7 +381,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
           diseaseStates: c.ENCOUNTER.diseaseStates, patientId: c.id, visitDay: c.ENCOUNTER.day,
           patientMasterProfile: c.PATIENT,
           dailyCaseFacts: { vitals: c.VITALS, labs: c.LABS, problems: c.PROBLEMS, meds: c.MEDICATIONS, subjective: c.SUBJECTIVE_DOCUMENTED },
-          aiQaGuide: c.INTERVIEW_KNOWLEDGE, hiddenInfoMap: c.INTERVIEW_KNOWLEDGE.filter(k => k.field)
+          aiQaGuide: c.INTERVIEW_KNOWLEDGE, hiddenInfoMap: Array.isArray(c.INTERVIEW_KNOWLEDGE) ? c.INTERVIEW_KNOWLEDGE.filter(k => k.field) : [],
         })
       })
       const reply = await res.json()
@@ -459,11 +459,13 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
             fields.push('sideEffects')
           }
           
-          c.INTERVIEW_KNOWLEDGE.forEach(k => {
-            if (k.field && k.keywords?.some(kw => combined.includes(kw.toLowerCase()))) {
-              fields.push(k.field)
-            }
-          })
+          if (Array.isArray(c.INTERVIEW_KNOWLEDGE)) {
+            c.INTERVIEW_KNOWLEDGE.forEach(k => {
+              if (k.field && k.keywords?.some(kw => combined.includes(kw.toLowerCase()))) {
+                fields.push(k.field)
+              }
+            })
+          }
         }
         
         fields = [...new Set(fields)]
@@ -488,7 +490,7 @@ export function PatientInterviewTab({ c, chat, interview, discovered, onAsk, onF
     } 
   }
 
-  const discoveredTopics = c.INTERVIEW_KNOWLEDGE.filter(k => k.field && discovered[k.field])
+  const discoveredTopics = Array.isArray(c.INTERVIEW_KNOWLEDGE) ? c.INTERVIEW_KNOWLEDGE.filter(k => k.field && discovered[k.field]) : []
   const timerColor = timeLeft === 0 ? 'bg-red-100 text-red-700' : timeLeft < 300 ? 'bg-amber-100 text-amber-700 animate-pulse' : 'bg-slate-100 text-slate-600'
   const statusMap = { [VS.IDLE]: 'Tap phone to start session', [VS.LISTENING]: '?? Listening… speak freely', [VS.SPEAKING]: '?? Recording…', [VS.PROCESSING]: '? Processing…', [VS.PATIENT]: '?? Patient speaking…', [VS.DISABLED]: 'Session expired' }
 

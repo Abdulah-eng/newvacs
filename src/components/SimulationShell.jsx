@@ -39,7 +39,8 @@ const EMPTY = {
   confidence: {}, planSelections: {}, planFreetext: {}, soap: {}, preceptorUnlocked: false,
 }
 
-export default function SimulationShell({ caseData, onExit }) {
+// Inner component — only rendered when caseData is guaranteed non-null
+function SimulationShellInner({ caseData, onExit }) {
   const [state, setState] = useState(() => ({ ...EMPTY, ...loadCaseState(caseData.id) }))
   const [active, setActive] = useState('snapshot')
 
@@ -290,4 +291,20 @@ export default function SimulationShell({ caseData, onExit }) {
       </div>
     </div>
   )
+}
+
+// Public export — guards against undefined caseData before mounting inner component
+export default function SimulationShell({ caseData, onExit }) {
+  if (!caseData) {
+    console.error('[SimulationShell] caseData is undefined — check that the case ID exists in CASE_BY_ID')
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-slate-100">
+        <div className="text-center p-8">
+          <p className="text-slate-600 font-semibold mb-2">Case not found</p>
+          <button onClick={onExit} className="text-sm text-teal underline">Go back</button>
+        </div>
+      </div>
+    )
+  }
+  return <SimulationShellInner caseData={caseData} onExit={onExit} />
 }

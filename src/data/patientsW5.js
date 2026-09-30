@@ -1,6 +1,6 @@
-import { makeCase } from './caseFactory.js'
+﻿import { makeCase } from './caseFactory.js'
 
-// WEEK 5 — Depression + Anxiety + Tobacco Cessation
+// WEEK 5 â€” Depression + Anxiety + Tobacco Cessation
 // Patients: Sarah Mitchell (A), Jessica Ramirez (B), David Carter (C)
 // Case ids are namespaced 'w5-<patient>-<day>'
 
@@ -42,10 +42,10 @@ const sarahTue = makeCase({
     "bpRepeat": "116/74 mmHg",
     "hr": "76 bpm",
     "rr": "16 breaths/min",
-    "temp": "98.2°F",
+    "temp": "98.2Â°F",
     "weight": "152 lbs",
     "height": "65 inches",
-    "bmi": "25.3 kg/m²",
+    "bmi": "25.3 kg/mÂ²",
     "vitalsTime": "09/09/2026 09:14",
     "flags": {
       "bmi": "warn"
@@ -97,7 +97,7 @@ const sarahTue = makeCase({
     {
       "label": "eGFR",
       "value": ">90",
-      "unit": "mL/min/1.73m²",
+      "unit": "mL/min/1.73mÂ²",
       "flag": "normal",
       "labDate": "09/09/2026 07:50"
     },
@@ -132,7 +132,7 @@ const sarahTue = makeCase({
     {
       "label": "WBC",
       "value": "6.2",
-      "unit": "x10³/μL",
+      "unit": "x10Â³/Î¼L",
       "flag": "normal",
       "labDate": "09/09/2026 07:50"
     },
@@ -146,7 +146,7 @@ const sarahTue = makeCase({
     {
       "label": "Plt",
       "value": "255",
-      "unit": "x10³/μL",
+      "unit": "x10Â³/Î¼L",
       "flag": "normal",
       "labDate": "09/09/2026 07:50"
     }
@@ -163,27 +163,27 @@ const sarahTue = makeCase({
   ],
   "PROBLEMS": [
     {
-      "name": "1. Major Depressive Disorder (MDD) — Newly Diagnosed, Moderate Severity",
-      "detail": "PHQ-9 = 13 (Moderate). Symptom duration 4-5 months with low mood, anhedonia, reduced motivation for hobbies and social activities, fatigue, impaired concentration, and functional impairment. Treatment-naïve.",
+      "name": "1. Major Depressive Disorder (MDD) â€” Newly Diagnosed, Moderate Severity",
+      "detail": "PHQ-9 = 13 (Moderate). Symptom duration 4-5 months with low mood, anhedonia, reduced motivation for hobbies and social activities, fatigue, impaired concentration, and functional impairment. Treatment-naÃ¯ve.",
       "flag": "high"
     },
     {
-      "name": "2. Generalized Anxiety Disorder (GAD) — Newly Diagnosed, Mild Severity",
-      "detail": "GAD-7 = 8 (Mild). Persistent worry, racing thoughts, restlessness, and sleep disruption linked specifically to work performance and meeting expectations. Treatment-naïve.",
+      "name": "2. Generalized Anxiety Disorder (GAD) â€” Newly Diagnosed, Mild Severity",
+      "detail": "GAD-7 = 8 (Mild). Persistent worry, racing thoughts, restlessness, and sleep disruption linked specifically to work performance and meeting expectations. Treatment-naÃ¯ve.",
       "flag": "high"
     },
     {
-      "name": "3. Tobacco Use Disorder — Active, Contemplative Stage",
+      "name": "3. Tobacco Use Disorder â€” Active, Contemplative Stage",
       "detail": "Current smoker, 5 cigarettes/day (8-year history, 2 pack-years) used for stress management. No prior tobacco quit attempts and no prior periods of abstinence. Contemplative stage; not ready to set a quit date today.",
       "flag": "warn"
     },
     {
-      "name": "4. Insomnia — Secondary to MDD and GAD",
+      "name": "4. Insomnia â€” Secondary to MDD and GAD",
       "detail": "Restless, insufficient sleep (5-6 hours per night), unable to get restful or adequate sleep despite feeling exhausted. Secondary to psychiatric illness.",
       "flag": "warn"
     },
     {
-      "name": "5. Behavioral Health Knowledge Deficit — Active",
+      "name": "5. Behavioral Health Knowledge Deficit â€” Active",
       "detail": "Patient expresses anxiety regarding antidepressant weight gain, personality changes, and medication dependence, but is open to treatment with explanation.",
       "flag": "info"
     }
@@ -226,7 +226,7 @@ const sarahTue = makeCase({
   "SUBJECTIVE_DOCUMENTED": [
     {
       "label": "HPI",
-      "value": "54-year-old female full-time elementary school teacher referred by her Primary Care Physician (PCP) for an initial evaluation at the ambulatory behavioral health clinic regarding worsening symptoms over the past 4 to 5 months. Patient attributes initial symptom onset to work stress and burnout. Reports persistent low mood occurring most days, emotional exhaustion, profound fatigue, anhedonia (reduced interest and pleasure in previously enjoyed activities, specifically stopping her regular reading and weekend hiking), and reduced motivation for hobbies and social activities. Reports restless, insufficient sleep (5 to 6 hours per night), unable to get restful or adequate sleep despite feeling exhausted, with difficulty turning off thoughts after work. Reports difficulty concentrating at work (struggling to complete lesson plans, taking significantly longer to grade papers), and noticeable occupational functioning impairment (feeling overwhelmed by daily teaching duties). Reports persistent anxiety, difficulty controlling anxious thoughts, racing thoughts after work, with anxiety linked specifically to work performance and meeting expectations. Reports interpersonal relationship impact (feeling distant from her husband, who encouraged today's evaluation). Confirms treatment-naïve status for psychiatric pharmacotherapy (no prior antidepressant use) and treatment-naïve status for psychotherapy (no prior counseling)."
+      "value": "54-year-old female full-time elementary school teacher referred by her Primary Care Physician (PCP) for an initial evaluation at the ambulatory behavioral health clinic regarding worsening symptoms over the past 4 to 5 months. Patient attributes initial symptom onset to work stress and burnout. Reports persistent low mood occurring most days, emotional exhaustion, profound fatigue, anhedonia (reduced interest and pleasure in previously enjoyed activities, specifically stopping her regular reading and weekend hiking), and reduced motivation for hobbies and social activities. Reports restless, insufficient sleep (5 to 6 hours per night), unable to get restful or adequate sleep despite feeling exhausted, with difficulty turning off thoughts after work. Reports difficulty concentrating at work (struggling to complete lesson plans, taking significantly longer to grade papers), and noticeable occupational functioning impairment (feeling overwhelmed by daily teaching duties). Reports persistent anxiety, difficulty controlling anxious thoughts, racing thoughts after work, with anxiety linked specifically to work performance and meeting expectations. Reports interpersonal relationship impact (feeling distant from her husband, who encouraged today's evaluation). Confirms treatment-naÃ¯ve status for psychiatric pharmacotherapy (no prior antidepressant use) and treatment-naÃ¯ve status for psychotherapy (no prior counseling)."
     },
     {
       "label": "Review of Systems (ROS) & Safety Assessment",
@@ -250,7 +250,7 @@ const sarahTue = makeCase({
     },
     {
       "label": "OTC & Allergies",
-      "value": "Daily multivitamin 1 tab PO daily. Ibuprofen 200 mg PO PRN (takes 1–2 tablets PRN for occasional tension headaches). Confirms absence of any prescription medications. No known drug allergies (NKDA)."
+      "value": "Daily multivitamin 1 tab PO daily. Ibuprofen 200 mg PO PRN (takes 1â€“2 tablets PRN for occasional tension headaches). Confirms absence of any prescription medications. No known drug allergies (NKDA)."
     },
     {
       "label": "Patient Concerns & Education Needs",
@@ -260,7 +260,7 @@ const sarahTue = makeCase({
   "OBJECTIVE_EXTRA": [
     {
       "label": "Objective Examination & Diagnostic Panel",
-      "value": "Vital Signs: BP 118/74 mmHg (repeat 116/74 mmHg), HR 76 bpm, RR 16 breaths/min, Temp 98.2°F, Weight 152 lbs (69 kg), Height 65 inches (5 ft 5 in), BMI 25.3 kg/m² (classified as overweight / borderline, 25.0-29.9 kg/m²). All vital signs are within normal limits. Laboratory Findings: Sodium 139 mEq/L, Potassium 4.2 mEq/L, Chloride 101 mEq/L, Bicarbonate 24 mEq/L, BUN 12 mg/dL, Serum Creatinine 0.8 mg/dL, eGFR >90 mL/min/1.73m², Glucose 92 mg/dL, TSH 2.1 mIU/L (interpreted as within normal limits), AST 19 U/L, ALT 18 U/L, WBC 6.2 x10³/μL, Hgb 13.4 g/dL, Plt 255 x10³/μL. Overall metabolic, hepatic, renal, hematologic, and thyroid panels are completely within normal limits (unremarkable), explicitly demonstrating that an untreated medical etiology is less likely for her mood and anxiety symptoms. Screening Scores: PHQ-9 = 13 (Moderate Depression), GAD-7 = 8 (Mild Anxiety). Suicide Risk Assessment: Low risk, explicit denial of SI, denial of suicide plan, and denial of prior suicide attempts."
+      "value": "Vital Signs: BP 118/74 mmHg (repeat 116/74 mmHg), HR 76 bpm, RR 16 breaths/min, Temp 98.2Â°F, Weight 152 lbs (69 kg), Height 65 inches (5 ft 5 in), BMI 25.3 kg/mÂ² (classified as overweight / borderline, 25.0-29.9 kg/mÂ²). All vital signs are within normal limits. Laboratory Findings: Sodium 139 mEq/L, Potassium 4.2 mEq/L, Chloride 101 mEq/L, Bicarbonate 24 mEq/L, BUN 12 mg/dL, Serum Creatinine 0.8 mg/dL, eGFR >90 mL/min/1.73mÂ², Glucose 92 mg/dL, TSH 2.1 mIU/L (interpreted as within normal limits), AST 19 U/L, ALT 18 U/L, WBC 6.2 x10Â³/Î¼L, Hgb 13.4 g/dL, Plt 255 x10Â³/Î¼L. Overall metabolic, hepatic, renal, hematologic, and thyroid panels are completely within normal limits (unremarkable), explicitly demonstrating that an untreated medical etiology is less likely for her mood and anxiety symptoms. Screening Scores: PHQ-9 = 13 (Moderate Depression), GAD-7 = 8 (Mild Anxiety). Suicide Risk Assessment: Low risk, explicit denial of SI, denial of suicide plan, and denial of prior suicide attempts."
     }
   ],
   "INTERVIEW_FIELDS": [
@@ -318,7 +318,7 @@ const sarahTue = makeCase({
         "tylenol",
         "multivitamin"
       ],
-      "response": "I take a daily multivitamin. I also take over-the-counter Ibuprofen 200 mg occasionally for headaches—maybe 1 or 2 pills a month. I don't take any prescription medications."
+      "response": "I take a daily multivitamin. I also take over-the-counter Ibuprofen 200 mg occasionally for headachesâ€”maybe 1 or 2 pills a month. I don't take any prescription medications."
     },
     {
       "id": "w5-sarah_m-tue_alc",
@@ -331,7 +331,7 @@ const sarahTue = makeCase({
         "wine",
         "liquor"
       ],
-      "response": "I drink 1-2 alcoholic beverages weekly—about 1 glass of wine once or twice a week."
+      "response": "I drink 1-2 alcoholic beverages weeklyâ€”about 1 glass of wine once or twice a week."
     },
     {
       "id": "w5-sarah_m-tue_tobacco",
@@ -434,7 +434,7 @@ const sarahTue = makeCase({
   "ASSESSMENT_CARDS": [
     {
       "id": "w5a_a1",
-      "title": "1. Major Depressive Disorder (MDD) — Newly Diagnosed, Moderate Severity",
+      "title": "1. Major Depressive Disorder (MDD) â€” Newly Diagnosed, Moderate Severity",
       "icon": "Brain",
       "color": "13314f",
       "questions": [
@@ -447,7 +447,7 @@ const sarahTue = makeCase({
     },
     {
       "id": "w5a_a2",
-      "title": "2. Generalized Anxiety Disorder (GAD) — Newly Diagnosed, Mild Severity",
+      "title": "2. Generalized Anxiety Disorder (GAD) â€” Newly Diagnosed, Mild Severity",
       "icon": "Activity",
       "color": "dc2626",
       "questions": [
@@ -460,7 +460,7 @@ const sarahTue = makeCase({
     },
     {
       "id": "w5a_a3",
-      "title": "3. Tobacco Use Disorder — Active, Contemplative Stage",
+      "title": "3. Tobacco Use Disorder â€” Active, Contemplative Stage",
       "icon": "Flame",
       "color": "d97706",
       "questions": [
@@ -473,27 +473,27 @@ const sarahTue = makeCase({
     },
     {
       "id": "w5a_a4",
-      "title": "4. Insomnia — Secondary to MDD and GAD",
+      "title": "4. Insomnia â€” Secondary to MDD and GAD",
       "icon": "Moon",
       "color": "6366f1",
       "questions": [
         {
           "key": "q4",
           "q": "What is the etiology and management strategy for insomnia?",
-          "defaultAnswer": "Insomnia (restless, insufficient sleep, 5–6 hours per night, unable to get restful sleep despite feeling exhausted), classified as secondary to underlying MDD and GAD. Sleep-specific pharmacotherapy is NOT indicated. Successful treatment of depression and anxiety with SSRI therapy and CBT is expected to improve sleep quality. Non-pharmacologic sleep hygiene recommendations provided: maintain a consistent sleep schedule, limit caffeine intake, avoid screens before bed, and practice relaxation techniques. Sleep quality will be monitored as psychiatric conditions improve."
+          "defaultAnswer": "Insomnia (restless, insufficient sleep, 5â€“6 hours per night, unable to get restful sleep despite feeling exhausted), classified as secondary to underlying MDD and GAD. Sleep-specific pharmacotherapy is NOT indicated. Successful treatment of depression and anxiety with SSRI therapy and CBT is expected to improve sleep quality. Non-pharmacologic sleep hygiene recommendations provided: maintain a consistent sleep schedule, limit caffeine intake, avoid screens before bed, and practice relaxation techniques. Sleep quality will be monitored as psychiatric conditions improve."
         }
       ]
     },
     {
       "id": "w5a_a5",
-      "title": "5. Behavioral Health Knowledge Deficit — Active",
+      "title": "5. Behavioral Health Knowledge Deficit â€” Active",
       "icon": "BookOpen",
       "color": "0891b2",
       "questions": [
         {
           "key": "q5",
           "q": "What knowledge gaps exist and how do they impact engagement?",
-          "defaultAnswer": "Behavioral Health Knowledge Deficit identified as an active problem. Patient displays limited understanding of MDD, GAD, treatment expectations, and antidepressant medications. Harbors specific concerns regarding medication dependence, core personality changes, and weight gain. Patient is open to treatment once clear evidence-based explanations are provided. Education regarding medication onset (2–6 weeks), adherence importance, non-addictive nature of SSRIs, and treatment goals will improve patient engagement, confidence, and long-term adherence."
+          "defaultAnswer": "Behavioral Health Knowledge Deficit identified as an active problem. Patient displays limited understanding of MDD, GAD, treatment expectations, and antidepressant medications. Harbors specific concerns regarding medication dependence, core personality changes, and weight gain. Patient is open to treatment once clear evidence-based explanations are provided. Education regarding medication onset (2â€“6 weeks), adherence importance, non-addictive nature of SSRIs, and treatment goals will improve patient engagement, confidence, and long-term adherence."
         }
       ]
     }
@@ -515,7 +515,7 @@ const sarahTue = makeCase({
         },
         {
           "key": "o3",
-          "label": "Educate patient on expected 2 to 6 week onset of therapeutic benefit, importance of strict daily adherence, expected treatment duration (≥6 to 9 months post-remission per ACP and VA/DoD guidelines), and target goal of full remission (PHQ-9 <5)",
+          "label": "Educate patient on expected 2 to 6 week onset of therapeutic benefit, importance of strict daily adherence, expected treatment duration (â‰¥6 to 9 months post-remission per ACP and VA/DoD guidelines), and target goal of full remission (PHQ-9 <5)",
           "correct": true
         },
         {
@@ -652,10 +652,10 @@ const sarahWed = makeCase({
     "bpRepeat": "114/70 mmHg",
     "hr": "72 bpm",
     "rr": "16 breaths/min",
-    "temp": "98.1°F",
+    "temp": "98.1Â°F",
     "weight": "151 lbs",
     "height": "65 inches",
-    "bmi": "25.1 kg/m²",
+    "bmi": "25.1 kg/mÂ²",
     "vitalsTime": "10/07/2026 09:14",
     "flags": {
       "bmi": "warn"
@@ -693,7 +693,7 @@ const sarahWed = makeCase({
     {
       "label": "eGFR",
       "value": ">90",
-      "unit": "mL/min/1.73m²",
+      "unit": "mL/min/1.73mÂ²",
       "flag": "normal",
       "labDate": "10/07/2026 07:50"
     },
@@ -727,22 +727,22 @@ const sarahWed = makeCase({
   ],
   "PROBLEMS": [
     {
-      "name": "1. Major Depressive Disorder (MDD) — Improved, Partial Response (Not in Remission)",
+      "name": "1. Major Depressive Disorder (MDD) â€” Improved, Partial Response (Not in Remission)",
       "detail": "PHQ-9 improved from 13 (initial) to 8 (current), ~38.5% reduction. Clinically meaningful response, but residual fatigue and low motivation persist. Increase Sertraline to 100 mg daily to target remission.",
       "flag": "high"
     },
     {
-      "name": "2. Generalized Anxiety Disorder (GAD) — Significantly Improved, Near Remission",
+      "name": "2. Generalized Anxiety Disorder (GAD) â€” Significantly Improved, Near Remission",
       "detail": "GAD-7 improved from 8 (initial) to 5 (current, mild anxiety). Less excessive worrying; improved coping. Sertraline dose escalation for MDD will optimize GAD control.",
       "flag": "normal"
     },
     {
-      "name": "3. Tobacco Use Disorder — Improving, Contemplative Stage",
+      "name": "3. Tobacco Use Disorder â€” Improving, Contemplative Stage",
       "detail": "Reduced smoking from 5 to 2 cigarettes/day, attributed to stress reduction and CBT coping skills. Meaningful progress; not yet ready to set a quit date.",
       "flag": "warn"
     },
     {
-      "name": "4. Behavioral Health Knowledge Deficit — Improving",
+      "name": "4. Behavioral Health Knowledge Deficit â€” Improving",
       "detail": "Patient verbalizes treatment as a process; needs education on response vs remission distinction and dose escalation rationale.",
       "flag": "info"
     }
@@ -754,7 +754,7 @@ const sarahWed = makeCase({
       "route": "by mouth",
       "freq": "daily",
       "indication": "MDD / GAD",
-      "notes": "Target starting dose — missed one dose in past month (otherwise excellent adherence), well tolerated (initial nausea resolved). Increase to 100 mg daily."
+      "notes": "Target starting dose â€” missed one dose in past month (otherwise excellent adherence), well tolerated (initial nausea resolved). Increase to 100 mg daily."
     },
     {
       "name": "Daily multivitamin",
@@ -827,7 +827,7 @@ const sarahWed = makeCase({
   "OBJECTIVE_EXTRA": [
     {
       "label": "Objective Examination & Clinical Trends",
-      "value": "Vital Signs: BP 116/72 mmHg (repeat 114/70 mmHg), HR 72 bpm, RR 16 breaths/min, Temp 98.1°F, Weight 151 lbs (68.5 kg), Height 65 inches (5 ft 5 in), BMI 25.1 kg/m² (borderline overweight). All vital signs are within normal limits with no acute safety concerns. Laboratory Data: Sodium 139 mEq/L, Potassium 4.2 mEq/L, BUN 12 mg/dL, Serum Creatinine 0.8 mg/dL, eGFR >90 mL/min/1.73m², Glucose 91 mg/dL, AST 20 U/L, ALT 18 U/L. Comprehensive metabolic, renal, and hepatic panels demonstrate no clinically significant abnormalities, confirming safety for Sertraline dose escalation. Longitudinal Assessment Score Trends: PHQ-9 baseline 13 -> current 8 (~38.5% reduction, mild depression). GAD-7 baseline 8 -> current 5 (mild anxiety). Suicide Risk: explicit denial of SI, plan, attempts, self-harm; overall low risk."
+      "value": "Vital Signs: BP 116/72 mmHg (repeat 114/70 mmHg), HR 72 bpm, RR 16 breaths/min, Temp 98.1Â°F, Weight 151 lbs (68.5 kg), Height 65 inches (5 ft 5 in), BMI 25.1 kg/mÂ² (borderline overweight). All vital signs are within normal limits with no acute safety concerns. Laboratory Data: Sodium 139 mEq/L, Potassium 4.2 mEq/L, BUN 12 mg/dL, Serum Creatinine 0.8 mg/dL, eGFR >90 mL/min/1.73mÂ², Glucose 91 mg/dL, AST 20 U/L, ALT 18 U/L. Comprehensive metabolic, renal, and hepatic panels demonstrate no clinically significant abnormalities, confirming safety for Sertraline dose escalation. Longitudinal Assessment Score Trends: PHQ-9 baseline 13 -> current 8 (~38.5% reduction, mild depression). GAD-7 baseline 8 -> current 5 (mild anxiety). Suicide Risk: explicit denial of SI, plan, attempts, self-harm; overall low risk."
     }
   ],
   "INTERVIEW_FIELDS": [
@@ -842,7 +842,7 @@ const sarahWed = makeCase({
       "id": "c1",
       "title": "Sertraline Dose Escalation to 100 mg Daily",
       "body": [
-        "You have made wonderful progress on Sertraline 50 mg—your depression score dropped from 13 to 8, and your anxiety dropped from 8 to 5. However, because you still have some fatigue and low motivation, our goal is full remission (a PHQ-9 score under 5). Increasing Sertraline to 100 mg daily per clinical guidelines is safe, well-tolerated, and will help you achieve full recovery over the next 2 to 4 weeks."
+        "You have made wonderful progress on Sertraline 50 mgâ€”your depression score dropped from 13 to 8, and your anxiety dropped from 8 to 5. However, because you still have some fatigue and low motivation, our goal is full remission (a PHQ-9 score under 5). Increasing Sertraline to 100 mg daily per clinical guidelines is safe, well-tolerated, and will help you achieve full recovery over the next 2 to 4 weeks."
       ]
     }
   ],
@@ -897,7 +897,7 @@ const sarahWed = makeCase({
         "wine",
         "liquor"
       ],
-      "response": "I drink 1-2 alcoholic beverages weekly—about 1 glass of wine a week."
+      "response": "I drink 1-2 alcoholic beverages weeklyâ€”about 1 glass of wine a week."
     },
     {
       "id": "w5-sarah_m-wed_tobacco",
@@ -962,26 +962,26 @@ const sarahWed = makeCase({
         "fatigue",
         "motivation"
       ],
-      "response": "I'm definitely feeling better overall—more good days than bad. I'm sleeping 6-7 hours, falling asleep easier, reading again, and my anxiety is much less. Both occupational and interpersonal functioning have noticeably improved. But I still feel tired sometimes and lack motivation on some days."
+      "response": "I'm definitely feeling better overallâ€”more good days than bad. I'm sleeping 6-7 hours, falling asleep easier, reading again, and my anxiety is much less. Both occupational and interpersonal functioning have noticeably improved. But I still feel tired sometimes and lack motivation on some days."
     }
   ],
   "ASSESSMENT_CARDS": [
     {
       "id": "w5b_a1",
-      "title": "1. Major Depressive Disorder (MDD) — Improved, Partial Response (Not in Remission)",
+      "title": "1. Major Depressive Disorder (MDD) â€” Improved, Partial Response (Not in Remission)",
       "icon": "Brain",
       "color": "13314f",
       "questions": [
         {
           "key": "q1",
           "q": "What is the clinical evaluation of treatment response and dose optimization strategy?",
-          "defaultAnswer": "Major Depressive Disorder (MDD), improved status, partial response (not in remission). PHQ-9 score improved from 13 (initial) to 8 (current), representing a ~38.5% reduction and clinically meaningful partial response. Patient attributes overall improvement directly to the combination of Sertraline therapy and CBT attendance together. Patient reports noticeable improvements in mood ('more good days than bad days'), energy, concentration, sleep (falling asleep easier, 6–7 hours/night), and enjoyment of activities (resumed reading, went hiking with husband). Both occupational and interpersonal functioning have noticeably improved (referencing husband's observations and return to work function). Excellent medication adherence (missed one dose in past month), minimal adverse effects (initial nausea resolved), and active CBT engagement (attended 4 sessions with substantial cognitive restructuring benefit). However, residual depressive symptoms persist after ~3 months of total treatment / 4-week target dose optimization timeframe: persistent occasional fatigue, low motivation, and incomplete return to baseline functioning. ACP Living Clinical Guidelines and VA/DoD MDD Guidelines explicitly mandate that **remission (PHQ-9 <=4 / <5), not merely partial response, is the primary treatment goal**. Given residual symptoms after ~4 weeks on target starting dose (50 mg daily) with excellent tolerability and adherence, **sertraline dose escalation to 100 mg PO daily is indicated** to optimize therapeutic response and target full remission."
+          "defaultAnswer": "Major Depressive Disorder (MDD), improved status, partial response (not in remission). PHQ-9 score improved from 13 (initial) to 8 (current), representing a ~38.5% reduction and clinically meaningful partial response. Patient attributes overall improvement directly to the combination of Sertraline therapy and CBT attendance together. Patient reports noticeable improvements in mood ('more good days than bad days'), energy, concentration, sleep (falling asleep easier, 6â€“7 hours/night), and enjoyment of activities (resumed reading, went hiking with husband). Both occupational and interpersonal functioning have noticeably improved (referencing husband's observations and return to work function). Excellent medication adherence (missed one dose in past month), minimal adverse effects (initial nausea resolved), and active CBT engagement (attended 4 sessions with substantial cognitive restructuring benefit). However, residual depressive symptoms persist after ~3 months of total treatment / 4-week target dose optimization timeframe: persistent occasional fatigue, low motivation, and incomplete return to baseline functioning. ACP Living Clinical Guidelines and VA/DoD MDD Guidelines explicitly mandate that **remission (PHQ-9 <=4 / <5), not merely partial response, is the primary treatment goal**. Given residual symptoms after ~4 weeks on target starting dose (50 mg daily) with excellent tolerability and adherence, **sertraline dose escalation to 100 mg PO daily is indicated** to optimize therapeutic response and target full remission."
         }
       ]
     },
     {
       "id": "w5b_a2",
-      "title": "2. Generalized Anxiety Disorder (GAD) — Significantly Improved, Near Remission",
+      "title": "2. Generalized Anxiety Disorder (GAD) â€” Significantly Improved, Near Remission",
       "icon": "Activity",
       "color": "059669",
       "questions": [
@@ -994,7 +994,7 @@ const sarahWed = makeCase({
     },
     {
       "id": "w5b_a3",
-      "title": "3. Tobacco Use Disorder — Improving, Contemplative Stage",
+      "title": "3. Tobacco Use Disorder â€” Improving, Contemplative Stage",
       "icon": "Flame",
       "color": "d97706",
       "questions": [
@@ -1007,7 +1007,7 @@ const sarahWed = makeCase({
     },
     {
       "id": "w5b_a4",
-      "title": "4. Behavioral Health Knowledge Deficit — Improving",
+      "title": "4. Behavioral Health Knowledge Deficit â€” Improving",
       "icon": "BookOpen",
       "color": "0891b2",
       "questions": [
@@ -1052,7 +1052,7 @@ const sarahWed = makeCase({
       "options": [
         {
           "key": "o5",
-          "label": "Continue Sertraline therapy as outlined in MDD plan — no additional GAD-specific pharmacotherapy added (SSRIs/SNRIs first-line per JAMA 2026 Review; avoid long-term benzodiazepines)",
+          "label": "Continue Sertraline therapy as outlined in MDD plan â€” no additional GAD-specific pharmacotherapy added (SSRIs/SNRIs first-line per JAMA 2026 Review; avoid long-term benzodiazepines)",
           "correct": true
         },
         {
@@ -1101,7 +1101,7 @@ const sarahWed = makeCase({
     },
     {
       "id": "w5b_p5",
-      "title": "5. Comprehensive Monitoring Plan (12 Parameters — MDD, GAD, Tobacco)",
+      "title": "5. Comprehensive Monitoring Plan (12 Parameters â€” MDD, GAD, Tobacco)",
       "options": [
         {
           "key": "o12",
@@ -1150,7 +1150,7 @@ const sarahThu = makeCase({
     "type": "12-Week Follow-Up Ambulatory Behavioral Health Clinic Visit",
     "difficulty": "Advanced",
     "difficultyTone": "7c3aed",
-    "chiefConcern": "I feel fantastic—my mood is back to normal, I'm sleeping great, and I actually quit smoking 6 weeks ago! Do I still need to keep taking Sertraline and going to therapy?",
+    "chiefConcern": "I feel fantasticâ€”my mood is back to normal, I'm sleeping great, and I actually quit smoking 6 weeks ago! Do I still need to keep taking Sertraline and going to therapy?",
     "snapshotSummary": "Sarah presents for a 12-week follow-up after Sertraline 100 mg daily optimization and CBT completion. Achieved full remission (PHQ-9 = 2, GAD-7 = 1) and complete smoking cessation (6 weeks tobacco-free, early remission). Asks if Sertraline and therapy can be stopped. Maintenance therapy for >=6-9 months post-remission indicated per ACP and VA/DoD guidelines.",
     "diseaseStates": [
       "MDD",
@@ -1169,10 +1169,10 @@ const sarahThu = makeCase({
     "bpRepeat": "114/70 mmHg",
     "hr": "72 bpm",
     "rr": "16 breaths/min",
-    "temp": "98.1°F",
+    "temp": "98.1Â°F",
     "weight": "151 lbs",
     "height": "65 inches",
-    "bmi": "25.1 kg/m²",
+    "bmi": "25.1 kg/mÂ²",
     "vitalsTime": "12/09/2026 09:14",
     "flags": {
       "bmi": "warn"
@@ -1210,7 +1210,7 @@ const sarahThu = makeCase({
     {
       "label": "eGFR",
       "value": ">90",
-      "unit": "mL/min/1.73m²",
+      "unit": "mL/min/1.73mÂ²",
       "flag": "normal",
       "labDate": "12/09/2026 07:50"
     },
@@ -1248,22 +1248,22 @@ const sarahThu = makeCase({
   ],
   "PROBLEMS": [
     {
-      "name": "1. Major Depressive Disorder (MDD) — In Full Remission, Stable on Maintenance Therapy",
+      "name": "1. Major Depressive Disorder (MDD) â€” In Full Remission, Stable on Maintenance Therapy",
       "detail": "PHQ-9 = 2 (minimal/no depression; trend 13 -> 8 -> 2). Full return to baseline functioning. Continue Sertraline 100 mg PO daily maintenance for >=6-9 months per ACP and VA/DoD guidelines.",
       "flag": "normal"
     },
     {
-      "name": "2. Generalized Anxiety Disorder (GAD) — In Full Remission / Minimal Symptoms, Well Controlled",
+      "name": "2. Generalized Anxiety Disorder (GAD) â€” In Full Remission / Minimal Symptoms, Well Controlled",
       "detail": "GAD-7 = 1 (minimal anxiety; trend 8 -> 5 -> 1). Occasional normal work stress without excessive worry. Continue Sertraline 100 mg PO daily.",
       "flag": "normal"
     },
     {
-      "name": "3. Tobacco Use Disorder — In Early Remission, Successful Smoking Cessation",
+      "name": "3. Tobacco Use Disorder â€” In Early Remission, Successful Smoking Cessation",
       "detail": "Tobacco-free for 6 weeks with zero smoking relapse. Occasional cravings during stress managed with CBT skills. Early remission phase (<12 months).",
       "flag": "normal"
     },
     {
-      "name": "4. Behavioral Health Knowledge Deficit — Improving",
+      "name": "4. Behavioral Health Knowledge Deficit â€” Improving",
       "detail": "Patient asks if medication and ongoing therapy remain necessary now that she feels well. Needs education on maintenance treatment rationale, remission vs cure, and relapse warning signs.",
       "flag": "info"
     }
@@ -1275,7 +1275,7 @@ const sarahThu = makeCase({
       "route": "by mouth",
       "freq": "daily",
       "indication": "MDD / GAD",
-      "notes": "Optimized maintenance dose — 100% adherence, excellent tolerability, zero adverse effects. Continue long-term."
+      "notes": "Optimized maintenance dose â€” 100% adherence, excellent tolerability, zero adverse effects. Continue long-term."
     },
     {
       "name": "Daily multivitamin",
@@ -1348,7 +1348,7 @@ const sarahThu = makeCase({
   "OBJECTIVE_EXTRA": [
     {
       "label": "Objective Examination & Longitudinal Diagnostic Panel",
-      "value": "Vital Signs: BP 116/72 mmHg (repeat 114/70 mmHg, well controlled), HR 72 bpm, RR 16 breaths/min, Temp 98.1°F, Weight 151 lbs (68 kg), Height 65 inches (5 ft 5 in), BMI 25.1 kg/m² (borderline overweight). All vital signs are within normal limits. Laboratory Findings: Sodium 139 mEq/L, Potassium 4.1 mEq/L, BUN 12 mg/dL, Serum Creatinine 0.8 mg/dL, eGFR >90 mL/min/1.73m² (adequate renal function for current medications), Glucose 90 mg/dL (within normal range), AST 19 U/L, ALT 18 U/L (normal hepatic transaminases confirming Sertraline safety). Comprehensive metabolic panel is completely free of clinically significant abnormalities; no laboratory data missing from expected monitoring panel. Screening Score Trends across 3 Visits: PHQ-9 trend: 13 (initial visit) -> 8 (4-week visit) -> 2 (current visit), confirming progressive improvement and full clinical remission (PHQ-9 2 = minimal depressive symptoms). GAD-7 trend: 8 (initial visit) -> 5 (4-week visit) -> 1 (current visit), confirming minimal anxiety symptoms (GAD-7 1 = minimal anxiety)."
+      "value": "Vital Signs: BP 116/72 mmHg (repeat 114/70 mmHg, well controlled), HR 72 bpm, RR 16 breaths/min, Temp 98.1Â°F, Weight 151 lbs (68 kg), Height 65 inches (5 ft 5 in), BMI 25.1 kg/mÂ² (borderline overweight). All vital signs are within normal limits. Laboratory Findings: Sodium 139 mEq/L, Potassium 4.1 mEq/L, BUN 12 mg/dL, Serum Creatinine 0.8 mg/dL, eGFR >90 mL/min/1.73mÂ² (adequate renal function for current medications), Glucose 90 mg/dL (within normal range), AST 19 U/L, ALT 18 U/L (normal hepatic transaminases confirming Sertraline safety). Comprehensive metabolic panel is completely free of clinically significant abnormalities; no laboratory data missing from expected monitoring panel. Screening Score Trends across 3 Visits: PHQ-9 trend: 13 (initial visit) -> 8 (4-week visit) -> 2 (current visit), confirming progressive improvement and full clinical remission (PHQ-9 2 = minimal depressive symptoms). GAD-7 trend: 8 (initial visit) -> 5 (4-week visit) -> 1 (current visit), confirming minimal anxiety symptoms (GAD-7 1 = minimal anxiety)."
     }
   ],
   "INTERVIEW_FIELDS": [
@@ -1363,7 +1363,7 @@ const sarahThu = makeCase({
       "id": "c1",
       "title": "Maintenance Therapy & Relapse Prevention Rationale",
       "body": [
-        "Congratulations on reaching full remission and staying tobacco-free for 6 weeks! Feeling completely well is the exact goal of treatment. However, depression remission is not a permanent cure—stopping Sertraline now carries a high risk of relapse. Clinical guidelines from ACP and VA/DoD recommend continuing Sertraline 100 mg PO daily for at least 6 to 9 months post-remission to protect your recovery."
+        "Congratulations on reaching full remission and staying tobacco-free for 6 weeks! Feeling completely well is the exact goal of treatment. However, depression remission is not a permanent cureâ€”stopping Sertraline now carries a high risk of relapse. Clinical guidelines from ACP and VA/DoD recommend continuing Sertraline 100 mg PO daily for at least 6 to 9 months post-remission to protect your recovery."
       ]
     }
   ],
@@ -1418,7 +1418,7 @@ const sarahThu = makeCase({
         "wine",
         "liquor"
       ],
-      "response": "I drink 1-2 alcoholic beverages weekly—about a glass of wine once a week."
+      "response": "I drink 1-2 alcoholic beverages weeklyâ€”about a glass of wine once a week."
     },
     {
       "id": "w5-sarah_m-thu_tobacco",
@@ -1489,7 +1489,7 @@ const sarahThu = makeCase({
   "ASSESSMENT_CARDS": [
     {
       "id": "w5c_a1",
-      "title": "1. Major Depressive Disorder (MDD) — In Full Remission, Stable on Maintenance Therapy",
+      "title": "1. Major Depressive Disorder (MDD) â€” In Full Remission, Stable on Maintenance Therapy",
       "icon": "ShieldCheck",
       "color": "10b981",
       "questions": [
@@ -1502,7 +1502,7 @@ const sarahThu = makeCase({
     },
     {
       "id": "w5c_a2",
-      "title": "2. Generalized Anxiety Disorder (GAD) — In Full Remission / Minimal Symptoms, Well Controlled",
+      "title": "2. Generalized Anxiety Disorder (GAD) â€” In Full Remission / Minimal Symptoms, Well Controlled",
       "icon": "CheckCircle",
       "color": "059669",
       "questions": [
@@ -1515,7 +1515,7 @@ const sarahThu = makeCase({
     },
     {
       "id": "w5c_a3",
-      "title": "3. Tobacco Use Disorder — In Early Remission, Successful Smoking Cessation",
+      "title": "3. Tobacco Use Disorder â€” In Early Remission, Successful Smoking Cessation",
       "icon": "Flame",
       "color": "059669",
       "questions": [
@@ -1528,7 +1528,7 @@ const sarahThu = makeCase({
     },
     {
       "id": "w5c_a4",
-      "title": "4. Behavioral Health Knowledge Deficit — Improving",
+      "title": "4. Behavioral Health Knowledge Deficit â€” Improving",
       "icon": "BookOpen",
       "color": "0891b2",
       "questions": [
@@ -1710,10 +1710,10 @@ const jessicaTue = makeCase({
     "bpRepeat": "120/76 mmHg",
     "hr": "72 bpm",
     "rr": "16 breaths/min",
-    "temp": "98.4°F",
+    "temp": "98.4Â°F",
     "weight": "145 lbs",
     "height": "64 inches",
-    "bmi": "24.9 kg/m²",
+    "bmi": "24.9 kg/mÂ²",
     "vitalsTime": "09/09/2026 10:15",
     "flags": {
       "bmi": "normal"
@@ -1726,14 +1726,14 @@ const jessicaTue = makeCase({
     { "label": "Bicarbonate", "value": "25", "unit": "mEq/L", "flag": "normal", "labDate": "09/09/2026 08:00" },
     { "label": "BUN", "value": "13", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:00" },
     { "label": "Serum Creatinine", "value": "0.7", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:00" },
-    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73m²", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73mÂ²", "flag": "normal", "labDate": "09/09/2026 08:00" },
     { "label": "Glucose", "value": "88", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:00" },
     { "label": "TSH", "value": "1.8", "unit": "mIU/L", "flag": "normal", "labDate": "09/09/2026 08:00" },
     { "label": "AST", "value": "18", "unit": "U/L", "flag": "normal", "labDate": "09/09/2026 08:00" },
     { "label": "ALT", "value": "16", "unit": "U/L", "flag": "normal", "labDate": "09/09/2026 08:00" },
-    { "label": "WBC", "value": "5.8", "unit": "x10³/μL", "flag": "normal", "labDate": "09/09/2026 08:00" },
+    { "label": "WBC", "value": "5.8", "unit": "x10Â³/Î¼L", "flag": "normal", "labDate": "09/09/2026 08:00" },
     { "label": "Hgb", "value": "13.1", "unit": "g/dL", "flag": "normal", "labDate": "09/09/2026 08:00" },
-    { "label": "Plt", "value": "240", "unit": "x10³/μL", "flag": "normal", "labDate": "09/09/2026 08:00" }
+    { "label": "Plt", "value": "240", "unit": "x10Â³/Î¼L", "flag": "normal", "labDate": "09/09/2026 08:00" }
   ],
   "ALERTS": [
     {
@@ -1747,22 +1747,22 @@ const jessicaTue = makeCase({
   ],
   "PROBLEMS": [
     {
-      "name": "1. Major Depressive Disorder (MDD) — Moderate-Severe, Non-adherent",
+      "name": "1. Major Depressive Disorder (MDD) â€” Moderate-Severe, Non-adherent",
       "detail": "PHQ-9 = 16. Symptom duration 6 months. Pseudo-treatment failure driven by financial non-adherence ($45 copay, takes 1-2 doses/week).",
       "flag": "high"
     },
     {
-      "name": "2. Generalized Anxiety Disorder (GAD) — Moderate, Non-adherent",
+      "name": "2. Generalized Anxiety Disorder (GAD) â€” Moderate, Non-adherent",
       "detail": "GAD-7 = 14. Persistent worry and tension. Non-adherent to prescribed SSRI secondary to cost.",
       "flag": "high"
     },
     {
-      "name": "3. Non-adherence (Financial Barrier) — Active",
+      "name": "3. Non-adherence (Financial Barrier) â€” Active",
       "detail": "Takes Sertraline 50 mg only 1-2 times per week due to $45/month copay at retail pharmacy.",
       "flag": "warn"
     },
     {
-      "name": "4. Tobacco Use Disorder — Active, Contemplative Stage",
+      "name": "4. Tobacco Use Disorder â€” Active, Contemplative Stage",
       "detail": "Smokes 6 cigarettes/day for 6 years (1.8 pack-years). Contemplative stage of change.",
       "flag": "info"
     }
@@ -1819,12 +1819,92 @@ const jessicaTue = makeCase({
   "OBJECTIVE_EXTRA": {
     "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'anxious and down'. Affect: mood-congruent, constricted. Speech: normal rate and volume. Thought process: goal-directed, logical. Thought content: no SI/HI, no delusions. Perceptions: no hallucinations. Cognition: intact. Insight/Judgment: good."
   },
-  "INTERVIEW_KNOWLEDGE": {
-    "financial": "I was paying $45 a month at the retail pharmacy and couldn't keep up with that cost, so I saved the pills for days when I felt worst.",
-    "adherence": "I only take Sertraline once or twice a week. I know I was supposed to take it daily, but the money was tight.",
-    "generic_option": "If there's a $4 generic at the retail pharmacy or mail order, that would be amazing! I can easily afford $4 a month.",
-    "tobacco": "I smoke about 6 cigarettes a day. It helps me calm down when I feel overwhelmed at work, but I know I should quit eventually."
-  },
+  "INTERVIEW_KNOWLEDGE": [
+    {
+      "id": "w5-jessica_r-tue_ik_financial",
+      "topic": "Reason for non-adherence & cost barrier ($45 copay)",
+      "field": "financial",
+      "keywords": [
+        "financial",
+        "reason",
+        "for",
+        "non",
+        "adherence",
+        "cost",
+        "barrier",
+        "copay",
+        "afford",
+        "money",
+        "pay",
+        "expensive",
+        "dollar",
+        "45",
+        "price"
+      ],
+      "response": "I was paying $45 a month at the retail pharmacy and couldn't keep up with that cost, so I saved the pills for days when I felt worst."
+    },
+    {
+      "id": "w5-jessica_r-tue_ik_adherence",
+      "topic": "Actual medication taking pattern (1-2x/week)",
+      "field": "adherence",
+      "keywords": [
+        "adherence",
+        "actual",
+        "medication",
+        "taking",
+        "pattern",
+        "week",
+        "adhere",
+        "take",
+        "miss",
+        "skip",
+        "forget",
+        "daily",
+        "pill",
+        "dose",
+        "regularly"
+      ],
+      "response": "I only take Sertraline once or twice a week. I know I was supposed to take it daily, but the money was tight."
+    },
+    {
+      "id": "w5-jessica_r-tue_ik_generic_option",
+      "topic": "Acceptability of $4 generic option",
+      "field": "generic_option",
+      "keywords": [
+        "generic_option",
+        "acceptability",
+        "generic",
+        "option",
+        "program",
+        "mail",
+        "cheap",
+        "switch",
+        "4"
+      ],
+      "response": "If there's a $4 generic at the retail pharmacy or mail order, that would be amazing! I can easily afford $4 a month."
+    },
+    {
+      "id": "w5-jessica_r-tue_ik_tobacco",
+      "topic": "Tobacco use quantity and readiness to quit",
+      "field": "tobacco",
+      "keywords": [
+        "tobacco",
+        "use",
+        "quantity",
+        "and",
+        "readiness",
+        "quit",
+        "smoke",
+        "smoking",
+        "cigarette",
+        "cigar",
+        "vape",
+        "craving",
+        "abstinence"
+      ],
+      "response": "I smoke about 6 cigarettes a day. It helps me calm down when I feel overwhelmed at work, but I know I should quit eventually."
+    }
+  ],
   "INTERVIEW_FIELDS": [
     { "field": "financial", "label": "Reason for non-adherence & cost barrier ($45 copay)" },
     { "field": "adherence", "label": "Actual medication taking pattern (1-2x/week)" },
@@ -1952,10 +2032,10 @@ const jessicaWed = makeCase({
     "bpRepeat": "118/74 mmHg",
     "hr": "70 bpm",
     "rr": "15 breaths/min",
-    "temp": "98.2°F",
+    "temp": "98.2Â°F",
     "weight": "144 lbs",
     "height": "64 inches",
-    "bmi": "24.7 kg/m²",
+    "bmi": "24.7 kg/mÂ²",
     "vitalsTime": "10/21/2026 09:30",
     "flags": {
       "bmi": "normal"
@@ -1968,7 +2048,7 @@ const jessicaWed = makeCase({
     { "label": "Bicarbonate", "value": "24", "unit": "mEq/L", "flag": "normal", "labDate": "10/21/2026 08:00" },
     { "label": "BUN", "value": "12", "unit": "mg/dL", "flag": "normal", "labDate": "10/21/2026 08:00" },
     { "label": "Serum Creatinine", "value": "0.7", "unit": "mg/dL", "flag": "normal", "labDate": "10/21/2026 08:00" },
-    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73m²", "flag": "normal", "labDate": "10/21/2026 08:00" },
+    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73mÂ²", "flag": "normal", "labDate": "10/21/2026 08:00" },
     { "label": "Glucose", "value": "86", "unit": "mg/dL", "flag": "normal", "labDate": "10/21/2026 08:00" }
   ],
   "ALERTS": [
@@ -1983,17 +2063,17 @@ const jessicaWed = makeCase({
   ],
   "PROBLEMS": [
     {
-      "name": "1. Major Depressive Disorder (MDD) — Partial Response",
+      "name": "1. Major Depressive Disorder (MDD) â€” Partial Response",
       "detail": "PHQ-9 = 10 (improved from 16). Residual depressive symptoms warrant dose titration.",
       "flag": "warn"
     },
     {
-      "name": "2. Generalized Anxiety Disorder (GAD) — Partial Response",
+      "name": "2. Generalized Anxiety Disorder (GAD) â€” Partial Response",
       "detail": "GAD-7 = 8 (improved from 14). Anxiety symptoms reduced but residual mild worry remains.",
       "flag": "warn"
     },
     {
-      "name": "3. Tobacco Use Disorder — Preparation Stage",
+      "name": "3. Tobacco Use Disorder â€” Preparation Stage",
       "detail": "Smokes 4 cigarettes/day (down from 6). Ready to set a quit date within 2 weeks.",
       "flag": "info"
     }
@@ -2042,18 +2122,82 @@ const jessicaWed = makeCase({
   "OBJECTIVE_EXTRA": {
     "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'improving, brighter'. Affect: full range, congruent. Speech: normal. Thought process: logical, goal-directed. Cognition: intact."
   },
-  "INTERVIEW_KNOWLEDGE": {
-    "adherence_confirm": "I haven't missed a single dose of Sertraline 50 mg since we switched to the $4 program 6 weeks ago.",
-    "side_effects": "No side effects at all — no stomach upset, no headaches, no sleep issues.",
-    "quit_date": "I'm ready to quit smoking! I want to set a quit date for 2 weeks from today."
-  },
+  "INTERVIEW_KNOWLEDGE": [
+    {
+      "id": "w5-jessica_r-wed_ik_adherence_confirm",
+      "topic": "Confirmation of 100% adherence",
+      "field": "adherence_confirm",
+      "keywords": [
+        "adherence_confirm",
+        "confirmation",
+        "100%",
+        "adherence",
+        "adhere",
+        "take",
+        "miss",
+        "skip",
+        "forget",
+        "daily",
+        "pill",
+        "dose",
+        "regularly"
+      ],
+      "response": "I haven't missed a single dose of Sertraline 50 mg since we switched to the $4 program 6 weeks ago."
+    },
+    {
+      "id": "w5-jessica_r-wed_ik_side_effects",
+      "topic": "Medication tolerability check",
+      "field": "side_effects",
+      "keywords": [
+        "side_effects",
+        "medication",
+        "tolerability",
+        "check",
+        "side effect",
+        "stomach",
+        "headache",
+        "sleep",
+        "bother",
+        "adverse",
+        "suicide",
+        "die",
+        "hurt",
+        "kill",
+        "end",
+        "wish",
+        "better off",
+        "wishing"
+      ],
+      "response": "No side effects at all â€” no stomach upset, no headaches, no sleep issues."
+    },
+    {
+      "id": "w5-jessica_r-wed_ik_quit_date",
+      "topic": "Tobacco quit date agreement",
+      "field": "quit_date",
+      "keywords": [
+        "quit_date",
+        "tobacco",
+        "quit",
+        "date",
+        "agreement",
+        "smoke",
+        "smoking",
+        "cigarette",
+        "cigar",
+        "vape",
+        "craving",
+        "abstinence"
+      ],
+      "response": "I'm ready to quit smoking! I want to set a quit date for 2 weeks from today."
+    }
+  ],
   "INTERVIEW_FIELDS": [
     { "field": "adherence_confirm", "label": "Confirmation of 100% adherence" },
     { "field": "side_effects", "label": "Medication tolerability check" },
     { "field": "quit_date", "label": "Tobacco quit date agreement" }
   ],
   "COUNSELING": [
-    "Educate on rationale for titrating Sertraline 50 mg → 100 mg daily to achieve full remission.",
+    "Educate on rationale for titrating Sertraline 50 mg â†’ 100 mg daily to achieve full remission.",
     "Counsel on maintaining 100% adherence and monitoring for transient GI side effects.",
     "Confirm tobacco quit date (2 weeks out) and discuss behavioral coping strategies & NRT options."
   ],
@@ -2172,10 +2316,10 @@ const jessicaThu = makeCase({
     "bpRepeat": "116/72 mmHg",
     "hr": "68 bpm",
     "rr": "14 breaths/min",
-    "temp": "98.0°F",
+    "temp": "98.0Â°F",
     "weight": "143 lbs",
     "height": "64 inches",
-    "bmi": "24.5 kg/m²",
+    "bmi": "24.5 kg/mÂ²",
     "vitalsTime": "12/02/2026 10:00",
     "flags": {
       "bmi": "normal"
@@ -2188,7 +2332,7 @@ const jessicaThu = makeCase({
     { "label": "Bicarbonate", "value": "25", "unit": "mEq/L", "flag": "normal", "labDate": "12/02/2026 08:00" },
     { "label": "BUN", "value": "11", "unit": "mg/dL", "flag": "normal", "labDate": "12/02/2026 08:00" },
     { "label": "Serum Creatinine", "value": "0.7", "unit": "mg/dL", "flag": "normal", "labDate": "12/02/2026 08:00" },
-    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73m²", "flag": "normal", "labDate": "12/02/2026 08:00" }
+    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73mÂ²", "flag": "normal", "labDate": "12/02/2026 08:00" }
   ],
   "ALERTS": [
     {
@@ -2202,17 +2346,17 @@ const jessicaThu = makeCase({
   ],
   "PROBLEMS": [
     {
-      "name": "1. Major Depressive Disorder (MDD) — In Full Remission",
+      "name": "1. Major Depressive Disorder (MDD) â€” In Full Remission",
       "detail": "PHQ-9 = 3. Complete resolution of depressive symptoms.",
       "flag": "normal"
     },
     {
-      "name": "2. Generalized Anxiety Disorder (GAD) — In Full Remission",
+      "name": "2. Generalized Anxiety Disorder (GAD) â€” In Full Remission",
       "detail": "GAD-7 = 3. Complete resolution of anxiety symptoms.",
       "flag": "normal"
     },
     {
-      "name": "3. Tobacco Use Disorder — Early Remission",
+      "name": "3. Tobacco Use Disorder â€” Early Remission",
       "detail": "Abstinent 4 weeks. Continuing relapse prevention and lifestyle support.",
       "flag": "normal"
     }
@@ -2261,11 +2405,73 @@ const jessicaThu = makeCase({
   "OBJECTIVE_EXTRA": {
     "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'euthymic, great'. Affect: bright, full range. Speech: normal. Thought process: logical. Cognition: intact."
   },
-  "INTERVIEW_KNOWLEDGE": {
-    "remission_status": "I feel 100% back to my old self. I'm enjoying work, spending time with family, and sleeping great.",
-    "tobacco_abstinence": "I haven't smoked a single cigarette in 4 weeks! The cravings were tough at first, but now I don't even think about it.",
-    "duration_question": "How long should I stay on Sertraline 100 mg daily now that I'm feeling better?"
-  },
+  "INTERVIEW_KNOWLEDGE": [
+    {
+      "id": "w5-jessica_r-thu_ik_remission_status",
+      "topic": "Subjective remission confirmation",
+      "field": "remission_status",
+      "keywords": [
+        "remission_status",
+        "subjective",
+        "remission",
+        "confirmation",
+        "better",
+        "feel",
+        "normal",
+        "100%",
+        "back",
+        "trd",
+        "suicide",
+        "die",
+        "hurt",
+        "kill",
+        "end",
+        "wish",
+        "better off",
+        "wishing"
+      ],
+      "response": "I feel 100% back to my old self. I'm enjoying work, spending time with family, and sleeping great."
+    },
+    {
+      "id": "w5-jessica_r-thu_ik_tobacco_abstinence",
+      "topic": "4-week tobacco abstinence validation",
+      "field": "tobacco_abstinence",
+      "keywords": [
+        "tobacco_abstinence",
+        "week",
+        "tobacco",
+        "abstinence",
+        "validation",
+        "smoke",
+        "smoking",
+        "cigarette",
+        "cigar",
+        "vape",
+        "quit",
+        "craving"
+      ],
+      "response": "I haven't smoked a single cigarette in 4 weeks! The cravings were tough at first, but now I don't even think about it."
+    },
+    {
+      "id": "w5-jessica_r-thu_ik_duration_question",
+      "topic": "Maintenance therapy duration inquiry",
+      "field": "duration_question",
+      "keywords": [
+        "duration_question",
+        "maintenance",
+        "therapy",
+        "duration",
+        "inquiry",
+        "long",
+        "continue",
+        "stay",
+        "how long",
+        "months",
+        "keep taking"
+      ],
+      "response": "How long should I stay on Sertraline 100 mg daily now that I'm feeling better?"
+    }
+  ],
   "INTERVIEW_FIELDS": [
     { "field": "remission_status", "label": "Subjective remission confirmation" },
     { "field": "tobacco_abstinence", "label": "4-week tobacco abstinence validation" },
@@ -2392,10 +2598,10 @@ const davidTue = makeCase({
     "bpRepeat": "126/80 mmHg",
     "hr": "78 bpm",
     "rr": "16 breaths/min",
-    "temp": "98.4°F",
+    "temp": "98.4Â°F",
     "weight": "185 lbs",
     "height": "70 inches",
-    "bmi": "26.5 kg/m²",
+    "bmi": "26.5 kg/mÂ²",
     "vitalsTime": "09/09/2026 11:00",
     "flags": {
       "bmi": "warn"
@@ -2408,14 +2614,14 @@ const davidTue = makeCase({
     { "label": "Bicarbonate", "value": "24", "unit": "mEq/L", "flag": "normal", "labDate": "09/09/2026 08:30" },
     { "label": "BUN", "value": "14", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:30" },
     { "label": "Serum Creatinine", "value": "0.9", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:30" },
-    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73m²", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73mÂ²", "flag": "normal", "labDate": "09/09/2026 08:30" },
     { "label": "Glucose (fasting)", "value": "94", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:30" },
     { "label": "TSH", "value": "2.0", "unit": "mIU/L", "flag": "normal", "labDate": "09/09/2026 08:30" },
     { "label": "AST", "value": "22", "unit": "U/L", "flag": "normal", "labDate": "09/09/2026 08:30" },
     { "label": "ALT", "value": "20", "unit": "U/L", "flag": "normal", "labDate": "09/09/2026 08:30" },
-    { "label": "WBC", "value": "6.5", "unit": "x10³/μL", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "WBC", "value": "6.5", "unit": "x10Â³/Î¼L", "flag": "normal", "labDate": "09/09/2026 08:30" },
     { "label": "Hgb", "value": "14.2", "unit": "g/dL", "flag": "normal", "labDate": "09/09/2026 08:30" },
-    { "label": "Plt", "value": "260", "unit": "x10³/μL", "flag": "normal", "labDate": "09/09/2026 08:30" },
+    { "label": "Plt", "value": "260", "unit": "x10Â³/Î¼L", "flag": "normal", "labDate": "09/09/2026 08:30" },
     { "label": "Total Cholesterol", "value": "190", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:30" },
     { "label": "Triglycerides", "value": "140", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:30" },
     { "label": "HDL-C", "value": "48", "unit": "mg/dL", "flag": "normal", "labDate": "09/09/2026 08:30" },
@@ -2437,28 +2643,28 @@ const davidTue = makeCase({
   ],
   "PROBLEMS": [
     {
-      "name": "1. Major Depressive Disorder (MDD) — Severe, Treatment-Resistant",
+      "name": "1. Major Depressive Disorder (MDD) â€” Severe, Treatment-Resistant",
       "detail": "PHQ-9 = 21. Failed sertraline and duloxetine; inadequate response to venlafaxine XR 150 mg daily x 8 weeks.",
       "flag": "high"
     },
     {
-      "name": "2. Generalized Anxiety Disorder (GAD) — Severe",
+      "name": "2. Generalized Anxiety Disorder (GAD) â€” Severe",
       "detail": "GAD-7 = 18. Severe persistent worry, panic-like tension, sleep disturbance.",
       "flag": "high"
     },
     {
-      "name": "3. Passive Suicidal Ideation — Active",
+      "name": "3. Passive Suicidal Ideation â€” Active",
       "detail": "Passive SI ('family better off without me'). Low-to-moderate risk; no active plan or intent. Firearms at home require offsite transfer.",
       "flag": "high"
     },
     {
-      "name": "4. Tobacco Use Disorder — Active, Contemplative Stage",
+      "name": "4. Tobacco Use Disorder â€” Active, Contemplative Stage",
       "detail": "Smokes 15 cigarettes/day for 20 years (15 pack-years). Contemplative stage.",
       "flag": "warn"
     },
     {
       "name": "5. Overweight",
-      "detail": "BMI 26.5 kg/m².",
+      "detail": "BMI 26.5 kg/mÂ².",
       "flag": "info"
     }
   ],
@@ -2514,12 +2720,94 @@ const davidTue = makeCase({
   "OBJECTIVE_EXTRA": {
     "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'depressed, overwhelmed'. Affect: blunted, tearful at times. Speech: slowed rate, low tone. Thought process: goal-directed, delayed latency. Thought content: passive SI present, worthlessness, no active plan/intent, no HI. Cognition: intact but slow processing."
   },
-  "INTERVIEW_KNOWLEDGE": {
-    "passive_si": "I don't have a plan to hurt myself, but I just wake up wishing I didn't have to face another day. Everyone would be better off without me.",
-    "lethal_means": "I have two hunting rifles at home in a safe. My brother can take them and keep them locked at his house today.",
-    "prior_trials": "I took Sertraline 150 mg for 3 months (didn't help and gave me stomach issues) and Cymbalta 60 mg for 2.5 months (no change at all).",
-    "current_adherence": "I take my Effexor XR 150 mg every single morning with breakfast. I haven't missed a dose."
-  },
+  "INTERVIEW_KNOWLEDGE": [
+    {
+      "id": "w5-david_c-tue_ik_passive_si",
+      "topic": "Suicidal ideation intent & plan evaluation",
+      "field": "passive_si",
+      "keywords": [
+        "passive_si",
+        "suicidal",
+        "ideation",
+        "intent",
+        "plan",
+        "evaluation",
+        "suicide",
+        "die",
+        "hurt",
+        "kill",
+        "end",
+        "wish",
+        "better off",
+        "wishing"
+      ],
+      "response": "I don't have a plan to hurt myself, but I just wake up wishing I didn't have to face another day. Everyone would be better off without me."
+    },
+    {
+      "id": "w5-david_c-tue_ik_lethal_means",
+      "topic": "Firearm and lethal means safety agreement",
+      "field": "lethal_means",
+      "keywords": [
+        "lethal_means",
+        "firearm",
+        "and",
+        "lethal",
+        "means",
+        "safety",
+        "agreement",
+        "rifle",
+        "gun",
+        "safe",
+        "weapon",
+        "home",
+        "brother",
+        "lock"
+      ],
+      "response": "I have two hunting rifles at home in a safe. My brother can take them and keep them locked at his house today."
+    },
+    {
+      "id": "w5-david_c-tue_ik_prior_trials",
+      "topic": "Detailed antidepressant trial history & failure confirmation",
+      "field": "prior_trials",
+      "keywords": [
+        "prior_trials",
+        "detailed",
+        "antidepressant",
+        "trial",
+        "history",
+        "failure",
+        "confirmation",
+        "prior",
+        "past",
+        "failed",
+        "sertraline",
+        "cymbalta",
+        "effexor"
+      ],
+      "response": "I took Sertraline 150 mg for 3 months (didn't help and gave me stomach issues) and Cymbalta 60 mg for 2.5 months (no change at all)."
+    },
+    {
+      "id": "w5-david_c-tue_ik_current_adherence",
+      "topic": "Venlafaxine XR adherence validation",
+      "field": "current_adherence",
+      "keywords": [
+        "current_adherence",
+        "venlafaxine",
+        "adherence",
+        "validation",
+        "adhere",
+        "take",
+        "miss",
+        "skip",
+        "forget",
+        "daily",
+        "pill",
+        "dose",
+        "regularly"
+      ],
+      "response": "I take my Effexor XR 150 mg every single morning with breakfast. I haven't missed a dose."
+    }
+  ],
   "INTERVIEW_FIELDS": [
     { "field": "passive_si", "label": "Suicidal ideation intent & plan evaluation" },
     { "field": "lethal_means", "label": "Firearm and lethal means safety agreement" },
@@ -2543,7 +2831,7 @@ const davidTue = makeCase({
         {
           "key": "q1",
           "q": "What is the evaluation of TRD and justification for SGA augmentation?",
-          "defaultAnswer": "Major Depressive Disorder, Severe (PHQ-9 = 21) meeting criteria for Treatment-Resistant Depression (TRD) following failure of ≥2 adequate antidepressant trials from different classes (Sertraline [SSRI], Duloxetine [SNRI], and partial/non-response to Venlafaxine XR 150 mg daily [SNRI] x 8 weeks). Per APA, VA/DoD, and CANMAT guidelines, augmentation with a second-generation antipsychotic (Aripiprazole 2 mg PO daily) is a first-line evidence-based strategy to enhance response without switching agents."
+          "defaultAnswer": "Major Depressive Disorder, Severe (PHQ-9 = 21) meeting criteria for Treatment-Resistant Depression (TRD) following failure of â‰¥2 adequate antidepressant trials from different classes (Sertraline [SSRI], Duloxetine [SNRI], and partial/non-response to Venlafaxine XR 150 mg daily [SNRI] x 8 weeks). Per APA, VA/DoD, and CANMAT guidelines, augmentation with a second-generation antipsychotic (Aripiprazole 2 mg PO daily) is a first-line evidence-based strategy to enhance response without switching agents."
         }
       ]
     },
@@ -2679,10 +2967,10 @@ const davidWed = makeCase({
     "bpRepeat": "122/78 mmHg",
     "hr": "74 bpm",
     "rr": "15 breaths/min",
-    "temp": "98.2°F",
+    "temp": "98.2Â°F",
     "weight": "186 lbs",
     "height": "70 inches",
-    "bmi": "26.7 kg/m²",
+    "bmi": "26.7 kg/mÂ²",
     "vitalsTime": "10/21/2026 11:15",
     "flags": {
       "bmi": "warn"
@@ -2695,7 +2983,7 @@ const davidWed = makeCase({
     { "label": "Bicarbonate", "value": "24", "unit": "mEq/L", "flag": "normal", "labDate": "10/21/2026 08:30" },
     { "label": "BUN", "value": "13", "unit": "mg/dL", "flag": "normal", "labDate": "10/21/2026 08:30" },
     { "label": "Serum Creatinine", "value": "0.9", "unit": "mg/dL", "flag": "normal", "labDate": "10/21/2026 08:30" },
-    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73m²", "flag": "normal", "labDate": "10/21/2026 08:30" },
+    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73mÂ²", "flag": "normal", "labDate": "10/21/2026 08:30" },
     { "label": "Glucose (fasting)", "value": "95", "unit": "mg/dL", "flag": "normal", "labDate": "10/21/2026 08:30" }
   ],
   "ALERTS": [
@@ -2710,22 +2998,22 @@ const davidWed = makeCase({
   ],
   "PROBLEMS": [
     {
-      "name": "1. Major Depressive Disorder (MDD) — Treatment Response",
+      "name": "1. Major Depressive Disorder (MDD) â€” Treatment Response",
       "detail": "PHQ-9 = 12 (down from 21). Significant clinical improvement on augmentation therapy.",
       "flag": "warn"
     },
     {
-      "name": "2. Generalized Anxiety Disorder (GAD) — Treatment Response",
+      "name": "2. Generalized Anxiety Disorder (GAD) â€” Treatment Response",
       "detail": "GAD-7 = 9 (down from 18). Mild residual anxiety.",
       "flag": "warn"
     },
     {
-      "name": "3. Suicidal Ideation — Fully Resolved",
+      "name": "3. Suicidal Ideation â€” Fully Resolved",
       "detail": "PHQ-9 Item 9 = 0. Passive SI absent.",
       "flag": "normal"
     },
     {
-      "name": "4. Tobacco Use Disorder — Active",
+      "name": "4. Tobacco Use Disorder â€” Active",
       "detail": "Smokes 10 cigarettes/day (down from 15). Preparing to set quit date.",
       "flag": "info"
     }
@@ -2782,11 +3070,71 @@ const davidWed = makeCase({
   "OBJECTIVE_EXTRA": {
     "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'much better, hopeful'. Affect: full range, congruent. Speech: normal rate and volume. Motor: no akathisia, no tremor, no rigidity, normal gait. Cognition: intact."
   },
-  "INTERVIEW_KNOWLEDGE": {
-    "response_confirm": "The combination of Effexor 150 and Abilify 2 mg is working really well. I feel light years better than 6 weeks ago.",
-    "si_status": "No suicidal thoughts at all. I am looking forward to the future and planning a family vacation.",
-    "akathisia_check": "No restlessness or feeling like I need to pace around. I feel physically fine."
-  },
+  "INTERVIEW_KNOWLEDGE": [
+    {
+      "id": "w5-david_c-wed_ik_response_confirm",
+      "topic": "Subjective response confirmation",
+      "field": "response_confirm",
+      "keywords": [
+        "response_confirm",
+        "subjective",
+        "response",
+        "confirmation",
+        "working",
+        "better",
+        "combination",
+        "abilify",
+        "effexor"
+      ],
+      "response": "The combination of Effexor 150 and Abilify 2 mg is working really well. I feel light years better than 6 weeks ago."
+    },
+    {
+      "id": "w5-david_c-wed_ik_si_status",
+      "topic": "Suicidal ideation resolution check",
+      "field": "si_status",
+      "keywords": [
+        "si_status",
+        "suicidal",
+        "ideation",
+        "resolution",
+        "check",
+        "suicide",
+        "die",
+        "hurt",
+        "kill",
+        "end",
+        "wish",
+        "better off",
+        "wishing"
+      ],
+      "response": "No suicidal thoughts at all. I am looking forward to the future and planning a family vacation."
+    },
+    {
+      "id": "w5-david_c-wed_ik_akathisia_check",
+      "topic": "Akathisia and EPS screening",
+      "field": "akathisia_check",
+      "keywords": [
+        "akathisia_check",
+        "akathisia",
+        "and",
+        "eps",
+        "screening",
+        "suicide",
+        "die",
+        "hurt",
+        "kill",
+        "end",
+        "wish",
+        "better off",
+        "wishing",
+        "restless",
+        "pacing",
+        "move",
+        "feet"
+      ],
+      "response": "No restlessness or feeling like I need to pace around. I feel physically fine."
+    }
+  ],
   "INTERVIEW_FIELDS": [
     { "field": "response_confirm", "label": "Subjective response confirmation" },
     { "field": "si_status", "label": "Suicidal ideation resolution check" },
@@ -2913,10 +3261,10 @@ const davidThu = makeCase({
     "bpRepeat": "120/76 mmHg",
     "hr": "72 bpm",
     "rr": "14 breaths/min",
-    "temp": "98.0°F",
+    "temp": "98.0Â°F",
     "weight": "186 lbs",
     "height": "70 inches",
-    "bmi": "26.7 kg/m²",
+    "bmi": "26.7 kg/mÂ²",
     "vitalsTime": "12/02/2026 11:30",
     "flags": {
       "bmi": "warn"
@@ -2929,7 +3277,7 @@ const davidThu = makeCase({
     { "label": "Bicarbonate", "value": "25", "unit": "mEq/L", "flag": "normal", "labDate": "12/02/2026 08:30" },
     { "label": "BUN", "value": "12", "unit": "mg/dL", "flag": "normal", "labDate": "12/02/2026 08:30" },
     { "label": "Serum Creatinine", "value": "0.9", "unit": "mg/dL", "flag": "normal", "labDate": "12/02/2026 08:30" },
-    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73m²", "flag": "normal", "labDate": "12/02/2026 08:30" },
+    { "label": "eGFR", "value": ">90", "unit": "mL/min/1.73mÂ²", "flag": "normal", "labDate": "12/02/2026 08:30" },
     { "label": "Glucose (fasting)", "value": "95", "unit": "mg/dL", "flag": "normal", "labDate": "12/02/2026 08:30" },
     { "label": "Total Cholesterol", "value": "188", "unit": "mg/dL", "flag": "normal", "labDate": "12/02/2026 08:30" },
     { "label": "Triglycerides", "value": "138", "unit": "mg/dL", "flag": "normal", "labDate": "12/02/2026 08:30" }
@@ -2946,22 +3294,22 @@ const davidThu = makeCase({
   ],
   "PROBLEMS": [
     {
-      "name": "1. Major Depressive Disorder (TRD) — Full Remission",
+      "name": "1. Major Depressive Disorder (TRD) â€” Full Remission",
       "detail": "PHQ-9 = 3. Full remission achieved on combo therapy.",
       "flag": "normal"
     },
     {
-      "name": "2. Generalized Anxiety Disorder (GAD) — Full Remission",
+      "name": "2. Generalized Anxiety Disorder (GAD) â€” Full Remission",
       "detail": "GAD-7 = 4. Full remission achieved.",
       "flag": "normal"
     },
     {
-      "name": "3. Suicidal Ideation — Fully Resolved",
+      "name": "3. Suicidal Ideation â€” Fully Resolved",
       "detail": "PHQ-9 Item 9 = 0. SI absent.",
       "flag": "normal"
     },
     {
-      "name": "4. Tobacco Use Disorder — Active, Preparation Stage",
+      "name": "4. Tobacco Use Disorder â€” Active, Preparation Stage",
       "detail": "Smokes 2 cigarettes/day (down from 15). Setting final quit date.",
       "flag": "info"
     }
@@ -3018,11 +3366,74 @@ const davidThu = makeCase({
   "OBJECTIVE_EXTRA": {
     "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'euthymic, optimistic'. Affect: bright, full range. Speech: normal. Motor: normal, no EPS/akathisia. Cognition: intact."
   },
-  "INTERVIEW_KNOWLEDGE": {
-    "trd_remission": "I feel like I have my life back. The combination of Effexor and Abilify saved my life.",
-    "maintenance_inquiry": "How long do I need to keep taking Abilify with my Effexor?",
-    "tobacco_near_quit": "I'm down to 2 cigarettes a day and ready to quit completely next week."
-  },
+  "INTERVIEW_KNOWLEDGE": [
+    {
+      "id": "w5-david_c-thu_ik_trd_remission",
+      "topic": "Full TRD remission validation",
+      "field": "trd_remission",
+      "keywords": [
+        "trd_remission",
+        "full",
+        "trd",
+        "remission",
+        "validation",
+        "better",
+        "feel",
+        "normal",
+        "100%",
+        "back",
+        "suicide",
+        "die",
+        "hurt",
+        "kill",
+        "end",
+        "wish",
+        "better off",
+        "wishing"
+      ],
+      "response": "I feel like I have my life back. The combination of Effexor and Abilify saved my life."
+    },
+    {
+      "id": "w5-david_c-thu_ik_maintenance_inquiry",
+      "topic": "TRD maintenance duration question",
+      "field": "maintenance_inquiry",
+      "keywords": [
+        "maintenance_inquiry",
+        "trd",
+        "maintenance",
+        "duration",
+        "question",
+        "long",
+        "continue",
+        "stay",
+        "how long",
+        "months",
+        "keep taking"
+      ],
+      "response": "How long do I need to keep taking Abilify with my Effexor?"
+    },
+    {
+      "id": "w5-david_c-thu_ik_tobacco_near_quit",
+      "topic": "Final tobacco quit date plan",
+      "field": "tobacco_near_quit",
+      "keywords": [
+        "tobacco_near_quit",
+        "final",
+        "tobacco",
+        "quit",
+        "date",
+        "plan",
+        "smoke",
+        "smoking",
+        "cigarette",
+        "cigar",
+        "vape",
+        "craving",
+        "abstinence"
+      ],
+      "response": "I'm down to 2 cigarettes a day and ready to quit completely next week."
+    }
+  ],
   "INTERVIEW_FIELDS": [
     { "field": "trd_remission", "label": "Full TRD remission validation" },
     { "field": "maintenance_inquiry", "label": "TRD maintenance duration question" },
@@ -3043,7 +3454,7 @@ const davidThu = makeCase({
         {
           "key": "q1",
           "q": "What is the assessment of remission and maintenance therapy duration for TRD?",
-          "defaultAnswer": "MDD (PHQ-9 = 3) and GAD (GAD-7 = 4) are in full clinical remission on combination Venlafaxine XR 150 mg daily + Aripiprazole 2 mg daily. Because the patient has Treatment-Resistant Depression (failed ≥2 prior trials), clinical guidelines (APA, VA/DoD, CANMAT) recommend continuing successful augmentation maintenance therapy for a minimum of 12 to 24 months (or indefinitely) post-remission to prevent high-risk depressive relapse."
+          "defaultAnswer": "MDD (PHQ-9 = 3) and GAD (GAD-7 = 4) are in full clinical remission on combination Venlafaxine XR 150 mg daily + Aripiprazole 2 mg daily. Because the patient has Treatment-Resistant Depression (failed â‰¥2 prior trials), clinical guidelines (APA, VA/DoD, CANMAT) recommend continuing successful augmentation maintenance therapy for a minimum of 12 to 24 months (or indefinitely) post-remission to prevent high-risk depressive relapse."
         }
       ]
     },
