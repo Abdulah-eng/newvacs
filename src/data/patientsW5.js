@@ -3043,176 +3043,147 @@ export const W5_CASES = [
     "id": "w5-david_c-tue",
     "PATIENT": {
       "name": "David Carter",
-      "age": 48,
+      "age": 51,
       "sex": "male",
-      "ethnicity": "White",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       "mrn": "W5-30882",
-      "setting": "Ambulatory care clinic",
-      "dob": "08/22/1977"
+      "setting": "Ambulatory Behavioral Health Clinic"
     },
     "ENCOUNTER": {
       "day": "Tuesday",
       "week": "Week 5",
-      "type": "Initial TRD & Safety Evaluation Clinic Visit",
-      "chiefConcern": "I've tried Sertraline up to 150 mg and Cymbalta 60 mg in the past with no luck, and now I've been on Effexor XR 150 mg for 8 weeks and still feel completely hopeless, exhausted, and anxious. Sometimes I think my family would be better off without me.",
-      "snapshotSummary": "David is a 48-year-old male accountant presenting with Treatment-Resistant Depression (TRD, PHQ-9 = 21, severe), Severe GAD (GAD-7 = 18), Tobacco Use Disorder (15 cigs/day), and passive SI. Failed sertraline and duloxetine; failing venlafaxine XR 150 mg daily. Requires safety planning (firearm lethal means offsite, 988 lifeline), augmentation with Aripiprazole 2 mg daily, and tobacco motivational interviewing.",
+      "type": "TRD & Safety Evaluation - Ambulatory Behavioral Health Clinic",
+      "chiefConcern": "I've tried so many depression meds and nothing works long-term. I wake up every day wishing I didn't have to face another day. Everyone would be better off without me.",
+      "snapshotSummary": "David is a 51-year-old male IT manager (separated, lives alone) referred for collaborative management of severe recurrent MDD / Treatment-Resistant Depression (PHQ-9 = 21) and severe GAD (GAD-7 = 18). Has failed trials of Escitalopram 20 mg (8 wks), Sertraline 150 mg (6 mos), Duloxetine 60 mg (10 wks), and current Venlafaxine XR 150 mg (12 wks). Expresses passive SI (Item 9 = 1) without active plan/intent. Lethal means safety plan executed (hunting rifles placed in brother's gun safe; 988 Lifeline provided). Plan: Initiate Aripiprazole 2 mg daily augmentation to Venlafaxine XR 150 mg per APA/VA-DoD guidelines.",
       "difficulty": "Advanced",
       "difficultyTone": "purple",
       "diseaseStates": [
-        "Severe MDD (TRD)",
+        "Recurrent Severe MDD (Treatment-Resistant Depression)",
         "Severe GAD",
-        "Passive Suicidal Ideation",
-        "Tobacco Use Disorder"
+        "Passive Suicidal Ideation (Low Imminent Risk)",
+        "Tobacco Use Disorder (~1 pack/day)"
       ],
       "learningObjectives": [
-        "Evaluate Treatment-Resistant Depression (TRD) after two prior antidepressant trial failures",
-        "Conduct comprehensive suicide risk assessment and lethal means safety planning",
-        "Select second-generation antipsychotic augmentation (Aripiprazole 2 mg daily) for TRD",
-        "Assess tobacco cessation readiness"
+        "Evaluate Treatment-Resistant Depression (TRD) after multiple adequate antidepressant failures",
+        "Perform comprehensive suicide risk evaluation and execute lethal means safety plan",
+        "Initiate evidence-based augmentation therapy with Aripiprazole 2 mg PO daily",
+        "Address tobacco use disorder and social determinants of health"
       ],
       "visitDate": "09/09/2026"
     },
     "VITALS": {
-      "bp": "128/82 mmHg",
-      "bpRepeat": "126/80 mmHg",
-      "hr": "78 bpm",
+      "bp": "126/80 mmHg",
+      "bpRepeat": "122/78 mmHg",
+      "hr": "84 bpm",
       "rr": "16 breaths/min",
-      "temp": "98.4Â°F",
-      "weight": "185 lbs",
-      "height": "70 inches",
-      "bmi": "26.5 kg/mÂ²",
+      "temp": "98.3°F",
+      "weight": "211 lbs",
+      "height": "71 inches",
+      "bmi": "29.5 kg/m²",
       "flags": {
-        "bmi": "warn"
+        "bmi": "overweight"
       },
       "extras": [],
-      "vitalsTime": "09/09/2026 11:00"
+      "vitalsTime": "09/09/2026 11:30"
     },
     "LABS": [
       {
         "label": "Sodium",
-        "value": "139",
+        "value": "140",
         "unit": "mEq/L",
         "flag": "normal",
-        "labDate": "09/09/2026 08:30"
+        "labDate": "09/09/2026 08:00"
       },
       {
         "label": "Potassium",
-        "value": "4.3",
+        "value": "4.1",
         "unit": "mEq/L",
         "flag": "normal",
-        "labDate": "09/09/2026 08:30"
+        "labDate": "09/09/2026 08:00"
       },
       {
         "label": "Chloride",
-        "value": "101",
+        "value": "102",
         "unit": "mEq/L",
         "flag": "normal",
-        "labDate": "09/09/2026 08:30"
+        "labDate": "09/09/2026 08:00"
       },
       {
         "label": "Bicarbonate",
-        "value": "24",
+        "value": "25",
         "unit": "mEq/L",
         "flag": "normal",
-        "labDate": "09/09/2026 08:30"
+        "labDate": "09/09/2026 08:00"
       },
       {
         "label": "BUN",
-        "value": "14",
+        "value": "16",
         "unit": "mg/dL",
         "flag": "normal",
-        "labDate": "09/09/2026 08:30"
+        "labDate": "09/09/2026 08:00"
       },
       {
         "label": "Serum Creatinine",
-        "value": "0.9",
+        "value": "1.0",
         "unit": "mg/dL",
         "flag": "normal",
-        "labDate": "09/09/2026 08:30"
+        "labDate": "09/09/2026 08:00"
       },
       {
         "label": "eGFR",
-        "value": ">90",
-        "unit": "mL/min/1.73mÂ²",
+        "value": "89",
+        "unit": "mL/min/1.73m²",
         "flag": "normal",
-        "labDate": "09/09/2026 08:30"
+        "labDate": "09/09/2026 08:00"
       },
       {
-        "label": "Glucose (fasting)",
-        "value": "94",
+        "label": "Glucose",
+        "value": "99",
         "unit": "mg/dL",
         "flag": "normal",
-        "labDate": "09/09/2026 08:30"
+        "labDate": "09/09/2026 08:00"
       },
       {
         "label": "TSH",
-        "value": "2.0",
+        "value": "1.8",
         "unit": "mIU/L",
         "flag": "normal",
-        "labDate": "09/09/2026 08:30"
+        "labDate": "09/09/2026 08:00"
       },
       {
         "label": "AST",
-        "value": "22",
+        "value": "24",
         "unit": "U/L",
         "flag": "normal",
-        "labDate": "09/09/2026 08:30"
+        "labDate": "09/09/2026 08:00"
       },
       {
         "label": "ALT",
-        "value": "20",
+        "value": "26",
         "unit": "U/L",
         "flag": "normal",
-        "labDate": "09/09/2026 08:30"
+        "labDate": "09/09/2026 08:00"
       },
       {
         "label": "WBC",
-        "value": "6.5",
-        "unit": "x10Â³/Î¼L",
+        "value": "6.2",
+        "unit": "x10³/μL",
         "flag": "normal",
-        "labDate": "09/09/2026 08:30"
+        "labDate": "09/09/2026 08:00"
       },
       {
         "label": "Hgb",
-        "value": "14.2",
+        "value": "14.5",
         "unit": "g/dL",
         "flag": "normal",
-        "labDate": "09/09/2026 08:30"
+        "labDate": "09/09/2026 08:00"
       },
       {
         "label": "Plt",
-        "value": "260",
-        "unit": "x10Â³/Î¼L",
+        "value": "250",
+        "unit": "x10³/μL",
         "flag": "normal",
-        "labDate": "09/09/2026 08:30"
-      },
-      {
-        "label": "Total Cholesterol",
-        "value": "190",
-        "unit": "mg/dL",
-        "flag": "normal",
-        "labDate": "09/09/2026 08:30"
-      },
-      {
-        "label": "Triglycerides",
-        "value": "140",
-        "unit": "mg/dL",
-        "flag": "normal",
-        "labDate": "09/09/2026 08:30"
-      },
-      {
-        "label": "HDL-C",
-        "value": "48",
-        "unit": "mg/dL",
-        "flag": "normal",
-        "labDate": "09/09/2026 08:30"
-      },
-      {
-        "label": "LDL-C",
-        "value": "114",
-        "unit": "mg/dL",
-        "flag": "warn",
-        "labDate": "09/09/2026 08:30"
+        "labDate": "09/09/2026 08:00"
       }
     ],
     "ALERTS": [
@@ -3269,11 +3240,19 @@ export const W5_CASES = [
         "route": "by mouth",
         "freq": "daily",
         "indication": "MDD / GAD",
-        "notes": "100% adherent for 8 weeks; inadequate response; failing single-agent SNRI."
+        "notes": "Current trial x 12 weeks; 100% adherent; mild anxiety benefit but persistent severe depressive symptoms."
+      },
+      {
+        "name": "Hydroxyzine",
+        "dose": "25 mg",
+        "route": "by mouth",
+        "freq": "every 8 hours as needed",
+        "indication": "Anxiety PRN",
+        "notes": "Prescribed for acute anxiety; well tolerated."
       },
       {
         "name": "Lisinopril",
-        "dose": "10 mg",
+        "dose": "20 mg",
         "route": "by mouth",
         "freq": "daily",
         "indication": "Hypertension",
@@ -3300,27 +3279,27 @@ export const W5_CASES = [
     "SUBJECTIVE_DOCUMENTED": [
       {
         "label": "HPI",
-        "value": "48-year-old male accountant referred by PCP for severe resistant depression and anxiety. Reports 9-month history of severe depressed mood, total anhedonia, severe insomnia (3-4 hours sleep/night with early morning awakening), profound fatigue, feelings of worthlessness and excessive guilt, and severe difficulty concentrating. Treatment history: Failed Sertraline 150 mg daily x 12 weeks (inadequate response, diarrhea), failed Duloxetine 60 mg daily x 10 weeks (no response). Currently on Venlafaxine XR 150 mg daily x 8 weeks with confirmed 100% adherence but persistent severe symptoms (PHQ-9 = 21, GAD-7 = 18)."
+        "value": "51-year-old male IT manager (separated, living alone) presenting for initial evaluation in behavioral health clinic for severe recurrent MDD (~1 year progressive worsening) and severe GAD despite multiple antidepressant trials: Escitalopram 20 mg (8 wks), Sertraline 150 mg (6 mos, stopped for GI distress), Duloxetine 60 mg (10 wks), and current Venlafaxine XR 150 mg daily (12 wks). Reports persistent profound sadness, total anhedonia, severe fatigue, low motivation, social withdrawal, loss of interest in hobbies (woodworking, hiking), and excessive worry impairing work performance. Reports passive SI ('wake up wishing I didn't face another day'). Explicitly denies active intent, plan, or desire to die ('I don't want to die, I'm just tired of feeling this way'). Lethal means safety assessment: owns two hunting rifles stored in home safe; agreed to have brother take rifles and keep them locked at his house today. Provided 988 Suicide & Crisis Lifeline."
       },
       {
         "label": "Review of Systems (ROS) & Safety Assessment",
-        "value": "Suicide Risk & Safety: Patient acknowledges passive suicidal ideation ('I feel like a burden and think my family would be better off without me'). Explicitly denies active suicidal intent, denies specific plan, and denies prior suicide attempts. Lethal Means Safety: Patient owns hunting firearms stored at home; agrees to have brother temporarily store all firearms and ammunition locked offsite. Provided 988 Suicide & Crisis Lifeline contact information."
+        "value": "Psychiatric ROS & Safety: Explicitly denies active suicidal intent, denies active plan, denies suicide attempts, denies preparatory behaviors, denies self-harm (low imminent risk; does not meet criteria for emergency hospitalization). Denies homicidal ideation (HI). Denies mania, hypomania, psychosis, panic attacks."
       },
       {
         "label": "Scores & Screening Tools",
-        "value": "PHQ-9 score: 21 (Severe Depression). GAD-7 score: 18 (Severe Anxiety)."
+        "value": "PHQ-9 score: 21 (Severe Depression). GAD-7 score: 18 (Severe Anxiety). Item 9 (SI): 1 (Passive ideation)."
       },
       {
-        "label": "Past Medical History",
-        "value": "MDD (TRD), GAD, HTN, Tobacco Use Disorder. Denies prior surgeries or psychiatric hospitalizations."
+        "label": "Past Medical History & Surgeries",
+        "value": "PMH: Recurrent MDD (TRD), GAD, Hypertension, Obstructive Sleep Apnea (OSA on CPAP), Tobacco Use Disorder. PSH: Cholecystectomy (prior gallbladder surgery)."
       },
       {
         "label": "Social History",
-        "value": "Accountant. Married, lives with wife and daughter. Smokes 15 cigarettes/day x 20 years (15 pack-years). Contemplative stage of change regarding tobacco cessation. Drinks 1-2 beers on weekends. Denies illicit drugs."
+        "value": "IT Manager. Separated from wife, lives alone. Smokes ~1 pack/day (20 cigarettes/day) for 25 years (25 pack-years). Uses cigarettes as coping mechanism for emotional distress. Not ready for quit attempt due to depression severity. Drinks 1-2 beers on weekends. Denies illicit drug use. Immunizations up to date (Influenza, COVID-19, Tdap). NKDA."
       },
       {
         "label": "Family History",
-        "value": "Father: MDD and Alcohol Use Disorder. Mother: HTN."
+        "value": "Mother: MDD. Father: Alcohol Use Disorder. Brother: MDD."
       }
     ],
     "OBJECTIVE_EXTRA": {
@@ -3574,106 +3553,133 @@ export const W5_CASES = [
     "id": "w5-david_c-wed",
     "PATIENT": {
       "name": "David Carter",
-      "age": 48,
+      "age": 51,
       "sex": "male",
-      "ethnicity": "White",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       "mrn": "W5-30882",
-      "setting": "Ambulatory care clinic",
-      "dob": "08/22/1977"
+      "setting": "Ambulatory Behavioral Health Clinic"
     },
     "ENCOUNTER": {
       "day": "Wednesday",
       "week": "Week 5",
-      "type": "6-Week Follow-Up Visit (Post-Augmentation Evaluation)",
-      "chiefConcern": "Adding the Abilify 2 mg to my Effexor has made a huge difference. I'm sleeping better, I actually felt motivated to work on my yard this weekend, and those thoughts of everyone being better off without me are completely gone.",
-      "snapshotSummary": "David returns for a 6-week follow-up after augmenting Venlafaxine XR 150 mg daily with Aripiprazole 2 mg daily. Marked clinical response: PHQ-9 decreased from 21 to 12 (moderate), GAD-7 decreased from 18 to 9 (mild). Suicidal ideation completely RESOLVED. Tolerating combo well without akathisia or EPS. Plan: Continue combination therapy.",
+      "type": "6-Week Follow-Up Visit (Post-TRD Augmentation)",
+      "chiefConcern": "The combination of Venlafaxine XR 150 mg and Aripiprazole 2 mg is working remarkably well! My mood and energy are so much better, suicidal thoughts are completely gone, and I feel hopeful for the first time in years.",
+      "snapshotSummary": "David returns for 6-week follow-up post Aripiprazole 2 mg daily augmentation to Venlafaxine XR 150 mg daily. Demonstrates clinically meaningful improvement: PHQ-9 reduced from 21 to 12 (moderate), GAD-7 reduced from 18 to 9 (mild-moderate), SI completely resolved (Item 9 = 0). Tolerating well with no akathisia or sedation. Smokes ~half pack/day (10 cigarettes/day, down from 20). Plan: CONTINUE Venlafaxine XR 150 mg + Aripiprazole 2 mg daily per APA/VA-DoD guidelines; continue CBT; reinforce tobacco reduction.",
       "difficulty": "Advanced",
       "difficultyTone": "purple",
       "diseaseStates": [
-        "Severe MDD (TRD, Partial Response)",
-        "GAD (Response)",
+        "Recurrent MDD (Partial Response / Improving)",
+        "GAD (Partial Response / Mild-Moderate)",
         "SI (Resolved)",
-        "Tobacco Use Disorder"
+        "Tobacco Use Disorder (Preparation Stage)"
       ],
       "learningObjectives": [
-        "Evaluate clinical response to SGA augmentation in TRD",
-        "Confirm complete resolution of suicidal ideation",
-        "Assess aripiprazole tolerability (akathisia, weight, EPS)",
-        "Maintain stable combination pharmacotherapy"
+        "Assess therapeutic response to atypical antipsychotic augmentation in TRD",
+        "Screen for EPS/akathisia and metabolic changes from Aripiprazole 2 mg daily",
+        "Confirm resolution of suicidal ideation and reinforce safety plan",
+        "Support ongoing smoking reduction and CBT engagement"
       ],
       "visitDate": "10/21/2026"
     },
     "VITALS": {
-      "bp": "124/80 mmHg",
+      "bp": "126/80 mmHg",
       "bpRepeat": "122/78 mmHg",
-      "hr": "74 bpm",
-      "rr": "15 breaths/min",
-      "temp": "98.2Â°F",
-      "weight": "186 lbs",
-      "height": "70 inches",
-      "bmi": "26.7 kg/mÂ²",
+      "hr": "78 bpm",
+      "rr": "16 breaths/min",
+      "temp": "98.1°F",
+      "weight": "216 lbs",
+      "height": "71 inches",
+      "bmi": "30.1 kg/m²",
       "flags": {
-        "bmi": "warn"
+        "bmi": "obese"
       },
       "extras": [],
-      "vitalsTime": "10/21/2026 11:15"
+      "vitalsTime": "10/21/2026 11:30"
     },
     "LABS": [
       {
         "label": "Sodium",
-        "value": "140",
+        "value": "139",
         "unit": "mEq/L",
         "flag": "normal",
-        "labDate": "10/21/2026 08:30"
+        "labDate": "10/21/2026 08:00"
       },
       {
         "label": "Potassium",
-        "value": "4.2",
+        "value": "4.0",
         "unit": "mEq/L",
         "flag": "normal",
-        "labDate": "10/21/2026 08:30"
+        "labDate": "10/21/2026 08:00"
       },
       {
         "label": "Chloride",
         "value": "101",
         "unit": "mEq/L",
         "flag": "normal",
-        "labDate": "10/21/2026 08:30"
+        "labDate": "10/21/2026 08:00"
       },
       {
         "label": "Bicarbonate",
         "value": "24",
         "unit": "mEq/L",
         "flag": "normal",
-        "labDate": "10/21/2026 08:30"
+        "labDate": "10/21/2026 08:00"
       },
       {
         "label": "BUN",
-        "value": "13",
+        "value": "16",
         "unit": "mg/dL",
         "flag": "normal",
-        "labDate": "10/21/2026 08:30"
+        "labDate": "10/21/2026 08:00"
       },
       {
         "label": "Serum Creatinine",
-        "value": "0.9",
+        "value": "1.0",
         "unit": "mg/dL",
         "flag": "normal",
-        "labDate": "10/21/2026 08:30"
+        "labDate": "10/21/2026 08:00"
       },
       {
         "label": "eGFR",
-        "value": ">90",
-        "unit": "mL/min/1.73mÂ²",
+        "value": "89",
+        "unit": "mL/min/1.73m²",
         "flag": "normal",
-        "labDate": "10/21/2026 08:30"
+        "labDate": "10/21/2026 08:00"
       },
       {
         "label": "Glucose (fasting)",
-        "value": "95",
+        "value": "101",
+        "unit": "mg/dL",
+        "flag": "warn",
+        "labDate": "10/21/2026 08:00"
+      },
+      {
+        "label": "Total Cholesterol",
+        "value": "188",
         "unit": "mg/dL",
         "flag": "normal",
-        "labDate": "10/21/2026 08:30"
+        "labDate": "10/21/2026 08:00"
+      },
+      {
+        "label": "Triglycerides",
+        "value": "176",
+        "unit": "mg/dL",
+        "flag": "warn",
+        "labDate": "10/21/2026 08:00"
+      },
+      {
+        "label": "LDL-C",
+        "value": "106",
+        "unit": "mg/dL",
+        "flag": "normal",
+        "labDate": "10/21/2026 08:00"
+      },
+      {
+        "label": "HDL-C",
+        "value": "45",
+        "unit": "mg/dL",
+        "flag": "normal",
+        "labDate": "10/21/2026 08:00"
       }
     ],
     "ALERTS": [
@@ -3721,7 +3727,7 @@ export const W5_CASES = [
         "route": "by mouth",
         "freq": "daily",
         "indication": "MDD / GAD",
-        "notes": "100% adherent."
+        "notes": "100% adherent; continued combination therapy."
       },
       {
         "name": "Aripiprazole",
@@ -3729,11 +3735,19 @@ export const W5_CASES = [
         "route": "by mouth",
         "freq": "daily",
         "indication": "TRD Augmentation",
-        "notes": "100% adherent; well tolerated; no akathisia or EPS."
+        "notes": "Initiated 6 weeks ago; 100% adherent; well tolerated with no EPS or akathisia."
+      },
+      {
+        "name": "Hydroxyzine",
+        "dose": "25 mg",
+        "route": "by mouth",
+        "freq": "every 8 hours as needed",
+        "indication": "Anxiety PRN",
+        "notes": "Used occasionally for anxiety spikes."
       },
       {
         "name": "Lisinopril",
-        "dose": "10 mg",
+        "dose": "20 mg",
         "route": "by mouth",
         "freq": "daily",
         "indication": "Hypertension",
@@ -3760,19 +3774,27 @@ export const W5_CASES = [
     "SUBJECTIVE_DOCUMENTED": [
       {
         "label": "HPI",
-        "value": "48-year-old male presenting for 6-week follow-up after starting low-dose Aripiprazole 2 mg daily augmentation with Venlafaxine XR 150 mg daily. Reports substantial reduction in depressive and anxiety symptoms. Energy improved, sleep increased to 6-7 hours nightly, concentration restored. Explicitly reports complete resolution of passive suicidal ideation; no longer feels like a burden. Denies restlessness, akathisia, muscle stiffness, tremors, excessive sedation, or increased appetite."
+        "value": "51-year-old male IT manager (separated, living alone) presenting for 6-week follow-up after adding Aripiprazole 2 mg daily to Venlafaxine XR 150 mg daily. Reports marked improvement in mood, energy, sleep, concentration, and motivation. Resumed woodworking projects and yard work for first time in months. Expresses feeling hopeful for first time in years ('I don't feel trapped anymore'). Suicidal ideation completely resolved. Denies restlessness, akathisia, muscle stiffness, or sedation."
       },
       {
         "label": "Review of Systems (ROS) & Safety Assessment",
-        "value": "Psychiatric ROS: Explicitly denies suicidal ideation (SI = 0), denies plan, denies intent (low risk). Denies HI, denies self-harm, denies mania, hypomania, or psychosis."
+        "value": "Psychiatric ROS: Explicitly denies active or passive suicidal ideation (SI = 0), denies plan, denies intent, denies desire to die, denies preparatory behaviors (low risk). Denies HI, denies self-harm, denies mania, hypomania, psychosis, panic attacks."
       },
       {
         "label": "Scores & Screening Tools",
-        "value": "PHQ-9 score: 12 (Moderate, down from 21). GAD-7 score: 9 (Mild, down from 18). Item 9 (SI): 0."
+        "value": "PHQ-9 score: 12 (Moderate Depression, down from 21). GAD-7 score: 9 (Mild-Moderate Anxiety, down from 18). Item 9 (SI): 0."
+      },
+      {
+        "label": "Past Medical History & Surgeries",
+        "value": "PMH: Recurrent MDD (TRD), GAD, Hypertension, OSA on CPAP, Tobacco Use Disorder. PSH: Cholecystectomy."
       },
       {
         "label": "Social History",
-        "value": "Smokes 10 cigarettes/day (down from 15). Expresses interest in reducing further."
+        "value": "IT Manager. Separated, lives alone. Smokes ~10 cigarettes/day (down from ~20). Interested in further smoking reduction. Attends CBT sessions. Immunizations up to date. NKDA."
+      },
+      {
+        "label": "Family History",
+        "value": "Mother: MDD. Father: AUD. Brother: MDD."
       }
     ],
     "OBJECTIVE_EXTRA": {
@@ -3968,45 +3990,44 @@ export const W5_CASES = [
     "id": "w5-david_c-thu",
     "PATIENT": {
       "name": "David Carter",
-      "age": 48,
+      "age": 51,
       "sex": "male",
-      "ethnicity": "White",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       "mrn": "W5-30882",
-      "setting": "Ambulatory care clinic",
-      "dob": "08/22/1977"
+      "setting": "Ambulatory Behavioral Health Clinic"
     },
     "ENCOUNTER": {
       "day": "Thursday",
       "week": "Week 5",
       "type": "12-Week Follow-Up Visit (TRD Remission & Maintenance)",
-      "chiefConcern": "I haven't felt this good in years. My PHQ-9 score is 3, I'm fully back at work and enjoying life, and I'm down to only 2 cigarettes a day!",
-      "snapshotSummary": "David presents for 12-week follow-up (6 weeks post stable combo therapy). Full remission achieved: PHQ-9 = 3 (remission), GAD-7 = 4 (remission), SI absent (Item 9 = 0). Smokes 2 cigs/day (in preparation to quit). Plan: CONTINUE Venlafaxine XR 150 mg + Aripiprazole 2 mg daily for long-term TRD maintenance (minimum 12-24 months per APA/VA-DoD), relapse prevention.",
+      "chiefConcern": "I haven't felt this good in years. My PHQ-9 score is 3, I'm fully back at work, enjoying woodworking and hiking, and I'm down to only 3 cigarettes a day!",
+      "snapshotSummary": "David presents for 12-week follow-up (6 weeks post stable combo therapy). Full remission achieved: PHQ-9 = 3 (minimal symptoms), GAD-7 = 4 (minimal symptoms), SI absent (Item 9 = 0). Smokes ~3 cigarettes/day (near abstinence / preparation stage). Plan: CONTINUE Venlafaxine XR 150 mg + Aripiprazole 2 mg daily for long-term TRD maintenance (minimum 12-24 months per APA/VA-DoD guidelines), continue CBT, reinforce tobacco cessation, annual metabolic monitoring.",
       "difficulty": "Advanced",
       "difficultyTone": "purple",
       "diseaseStates": [
-        "Severe MDD (TRD, Full Remission)",
-        "GAD (Full Remission)",
+        "Severe MDD (TRD, Full Remission - Minimal Symptoms)",
+        "GAD (Full Remission - Minimal Symptoms)",
         "SI (Resolved)",
-        "Tobacco Use Disorder (Preparation Stage)"
+        "Tobacco Use Disorder (Near Abstinence / Preparation Stage)"
       ],
       "learningObjectives": [
         "Confirm full remission in Treatment-Resistant Depression",
-        "Establish long-term maintenance duration for TRD (at least 12-24 months per guidelines)",
-        "Counsel on relapse prevention and ongoing metabolic monitoring"
+        "Establish long-term maintenance duration for TRD (at least 12-24 months per APA/VA-DoD guidelines)",
+        "Counsel on relapse prevention, CBT continuation, and ongoing metabolic monitoring"
       ],
       "visitDate": "12/02/2026"
     },
     "VITALS": {
-      "bp": "122/78 mmHg",
+      "bp": "124/78 mmHg",
       "bpRepeat": "120/76 mmHg",
-      "hr": "72 bpm",
-      "rr": "14 breaths/min",
-      "temp": "98.0Â°F",
-      "weight": "186 lbs",
-      "height": "70 inches",
-      "bmi": "26.7 kg/mÂ²",
+      "hr": "74 bpm",
+      "rr": "16 breaths/min",
+      "temp": "98.2°F",
+      "weight": "218 lbs",
+      "height": "71 inches",
+      "bmi": "30.4 kg/m²",
       "flags": {
-        "bmi": "warn"
+        "bmi": "obese"
       },
       "extras": [],
       "vitalsTime": "12/02/2026 11:30"
@@ -4014,73 +4035,101 @@ export const W5_CASES = [
     "LABS": [
       {
         "label": "Sodium",
-        "value": "139",
+        "value": "140",
         "unit": "mEq/L",
         "flag": "normal",
-        "labDate": "12/02/2026 08:30"
+        "labDate": "12/02/2026 08:00"
       },
       {
         "label": "Potassium",
-        "value": "4.2",
+        "value": "4.1",
         "unit": "mEq/L",
         "flag": "normal",
-        "labDate": "12/02/2026 08:30"
+        "labDate": "12/02/2026 08:00"
       },
       {
         "label": "Chloride",
         "value": "100",
         "unit": "mEq/L",
         "flag": "normal",
-        "labDate": "12/02/2026 08:30"
+        "labDate": "12/02/2026 08:00"
       },
       {
         "label": "Bicarbonate",
         "value": "25",
         "unit": "mEq/L",
         "flag": "normal",
-        "labDate": "12/02/2026 08:30"
+        "labDate": "12/02/2026 08:00"
       },
       {
         "label": "BUN",
-        "value": "12",
+        "value": "15",
         "unit": "mg/dL",
         "flag": "normal",
-        "labDate": "12/02/2026 08:30"
+        "labDate": "12/02/2026 08:00"
       },
       {
         "label": "Serum Creatinine",
-        "value": "0.9",
+        "value": "1.0",
         "unit": "mg/dL",
         "flag": "normal",
-        "labDate": "12/02/2026 08:30"
+        "labDate": "12/02/2026 08:00"
       },
       {
         "label": "eGFR",
-        "value": ">90",
-        "unit": "mL/min/1.73mÂ²",
+        "value": "88",
+        "unit": "mL/min/1.73m²",
         "flag": "normal",
-        "labDate": "12/02/2026 08:30"
+        "labDate": "12/02/2026 08:00"
       },
       {
         "label": "Glucose (fasting)",
-        "value": "95",
+        "value": "99",
         "unit": "mg/dL",
         "flag": "normal",
-        "labDate": "12/02/2026 08:30"
+        "labDate": "12/02/2026 08:00"
+      },
+      {
+        "label": "AST",
+        "value": "22",
+        "unit": "U/L",
+        "flag": "normal",
+        "labDate": "12/02/2026 08:00"
+      },
+      {
+        "label": "ALT",
+        "value": "24",
+        "unit": "U/L",
+        "flag": "normal",
+        "labDate": "12/02/2026 08:00"
       },
       {
         "label": "Total Cholesterol",
         "value": "188",
         "unit": "mg/dL",
         "flag": "normal",
-        "labDate": "12/02/2026 08:30"
+        "labDate": "12/02/2026 08:00"
       },
       {
         "label": "Triglycerides",
-        "value": "138",
+        "value": "176",
+        "unit": "mg/dL",
+        "flag": "warn",
+        "labDate": "12/02/2026 08:00"
+      },
+      {
+        "label": "LDL-C",
+        "value": "106",
         "unit": "mg/dL",
         "flag": "normal",
-        "labDate": "12/02/2026 08:30"
+        "labDate": "12/02/2026 08:00"
+      },
+      {
+        "label": "HDL-C",
+        "value": "45",
+        "unit": "mg/dL",
+        "flag": "normal",
+        "labDate": "12/02/2026 08:00"
       }
     ],
     "ALERTS": [
@@ -4128,7 +4177,7 @@ export const W5_CASES = [
         "route": "by mouth",
         "freq": "daily",
         "indication": "MDD / GAD",
-        "notes": "100% adherent."
+        "notes": "100% adherent; full remission."
       },
       {
         "name": "Aripiprazole",
@@ -4136,11 +4185,19 @@ export const W5_CASES = [
         "route": "by mouth",
         "freq": "daily",
         "indication": "TRD Augmentation Maintenance",
-        "notes": "100% adherent; excellent tolerability."
+        "notes": "100% adherent; full remission; excellent tolerability."
+      },
+      {
+        "name": "Hydroxyzine",
+        "dose": "25 mg",
+        "route": "by mouth",
+        "freq": "every 8 hours as needed",
+        "indication": "Anxiety PRN",
+        "notes": "Rarely needed."
       },
       {
         "name": "Lisinopril",
-        "dose": "10 mg",
+        "dose": "20 mg",
         "route": "by mouth",
         "freq": "daily",
         "indication": "Hypertension",
@@ -4167,19 +4224,27 @@ export const W5_CASES = [
     "SUBJECTIVE_DOCUMENTED": [
       {
         "label": "HPI",
-        "value": "48-year-old male presenting for 12-week follow-up on combination Venlafaxine XR 150 mg daily + Aripiprazole 2 mg daily. Reports complete remission of depressive and anxiety symptoms. Sleeping 7-8 hours per night, energy excellent, fully functioning at work as an accountant. SI remains completely absent. Tolerating combo therapy without any side effects."
+        "value": "51-year-old male IT manager (separated, living alone) presenting for 12-week follow-up (6 weeks on stable combination Venlafaxine XR 150 mg daily + Aripiprazole 2 mg daily). Reports sustained full remission of depressive and anxiety symptoms. Sleeping 7-8 hours per night, energy excellent, fully functioning at work with high productivity. Resumed woodworking and hiking hobbies. SI remains completely absent. Attends CBT regularly. Tolerating combo therapy with zero side effects."
       },
       {
         "label": "Review of Systems (ROS) & Safety Assessment",
-        "value": "Psychiatric ROS: Explicitly denies suicidal ideation (SI = 0), denies plan, denies intent (low risk). Denies HI, denies self-harm, denies mania or psychosis."
+        "value": "Psychiatric ROS: Explicitly denies suicidal ideation (SI = 0), denies plan, denies intent, denies desire to die, denies self-harm, denies panic attacks, mania, or psychosis."
       },
       {
         "label": "Scores & Screening Tools",
-        "value": "PHQ-9 score: 3 (Full Remission). GAD-7 score: 4 (Full Remission). Item 9 (SI): 0."
+        "value": "PHQ-9 score: 3 (Minimal depressive symptoms / Remission, down from 21 initial and 12 at 3-mo). GAD-7 score: 4 (Minimal anxiety symptoms / Remission, down from 18 initial and 9 at 3-mo). Item 9 (SI): 0."
+      },
+      {
+        "label": "Past Medical History & Surgeries",
+        "value": "PMH: Recurrent MDD (TRD, Full Remission), GAD (Full Remission), Hypertension, OSA on CPAP, Tobacco Use Disorder. PSH: Cholecystectomy."
       },
       {
         "label": "Social History",
-        "value": "Smokes 2 cigarettes/day (down from 15). Setting quit date for next week."
+        "value": "Full-time IT manager. Separated, lives alone. Smokes ~3 cigarettes/day (down from ~20). Preparing to set quit date next week. Enjoys woodworking and hiking. Denies illicit drugs. Immunizations up to date. NKDA."
+      },
+      {
+        "label": "Family History",
+        "value": "Mother: MDD. Father: AUD. Brother: MDD."
       }
     ],
     "OBJECTIVE_EXTRA": {
