@@ -1777,8 +1777,9 @@ export const W5_CASES = [
       ],
       "learningObjectives": [
         "Recognize cost-driven non-adherence masquerading as antidepressant treatment failure",
-        "Transition patient to $4 generic sertraline 50 mg daily",
-        "Implement pill alarm adherence strategies",
+        "Transition patient to $4 generic sertraline 100 mg daily to resolve financial barrier",
+        "Counsel on hydroxyzine 25 mg PO q8h PRN as adjunctive anxiolytic",
+        "Implement pill alarm adherence strategies and educate on onset timeline",
         "Counsel on tobacco cessation in contemplative stage"
       ],
       "visitDate": "09/09/2026"
@@ -2245,9 +2246,10 @@ export const W5_CASES = [
         "Tobacco Use Disorder (Preparation Stage)"
       ],
       "learningObjectives": [
-        "Assess partial antidepressant response",
-        "Titrate Sertraline 50 mg to 100 mg daily for remission target",
-        "Assist patient in setting a tobacco quit date"
+        "Assess partial antidepressant response on established goal dose (Sertraline 100 mg daily)",
+        "Support continuation of Sertraline 100 mg daily for full remission target per ACP/VA-DoD guidelines",
+        "Reinforce virtual CBT participation and adherence habits",
+        "Assist patient in setting a tobacco quit date (~5 cigarettes/day)"
       ],
       "visitDate": "10/21/2026"
     },
