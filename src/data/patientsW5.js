@@ -3049,20 +3049,21 @@ export const W5_CASES = [
       "sex": "male",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       "mrn": "W5-30882",
-      "setting": "Ambulatory Behavioral Health Clinic"
+      "setting": "Collaborative Practice Pharmacist-Led Ambulatory Behavioral Health Clinic"
     },
     "ENCOUNTER": {
       "day": "Tuesday",
       "week": "Week 5",
-      "type": "TRD & Safety Evaluation - Ambulatory Behavioral Health Clinic",
+      "type": "Collaborative Practice Management / TRD & Safety Evaluation",
       "chiefConcern": "I've tried so many depression meds and nothing works long-term. I wake up every day wishing I didn't have to face another day. Everyone would be better off without me.",
-      "snapshotSummary": "David is a 51-year-old male IT manager (separated, lives alone) referred for collaborative management of severe recurrent MDD / Treatment-Resistant Depression (PHQ-9 = 21) and severe GAD (GAD-7 = 18). Has failed trials of Escitalopram 20 mg (8 wks), Sertraline 150 mg (6 mos), Duloxetine 60 mg (10 wks), and current Venlafaxine XR 150 mg (12 wks). Expresses passive SI (Item 9 = 1) without active plan/intent. Lethal means safety plan executed (hunting rifles placed in brother's gun safe; 988 Lifeline provided). Plan: Initiate Aripiprazole 2 mg daily augmentation to Venlafaxine XR 150 mg per APA/VA-DoD guidelines.",
+      "snapshotSummary": "David is a 51-year-old male IT manager (separated, lives alone) referred for collaborative practice pharmacist-led management of severe recurrent MDD / Treatment-Resistant Depression (PHQ-9 = 21) and severe GAD (GAD-7 = 18). Has failed trials of Escitalopram 20 mg (16 wks, partial response), Sertraline 150 mg (6 mos, minimal improvement/GI distress), Duloxetine 60 mg (10 wks, no response), and current Venlafaxine XR 150 mg (12 wks, mild anxiety benefit but persistent severe depression). Expresses passive SI (Item 9 = 1) without active plan/intent. Lethal means safety plan executed (hunting rifles placed in brother's gun safe; 988 Lifeline provided). Plan: Initiate Aripiprazole 2 mg daily augmentation to Venlafaxine XR 150 mg per APA/VA-DoD/CANMAT guidelines.",
       "difficulty": "Advanced",
       "difficultyTone": "purple",
       "diseaseStates": [
         "Recurrent Severe MDD (Treatment-Resistant Depression)",
         "Severe GAD",
         "Passive Suicidal Ideation (Low Imminent Risk)",
+        "Hypertension",
         "Tobacco Use Disorder (~1 pack/day)"
       ],
       "learningObjectives": [
@@ -3074,12 +3075,12 @@ export const W5_CASES = [
       "visitDate": "09/09/2026"
     },
     "VITALS": {
-      "bp": "126/80 mmHg",
-      "bpRepeat": "122/78 mmHg",
+      "bp": "128/82 mmHg",
+      "bpRepeat": "124/78 mmHg",
       "hr": "84 bpm",
       "rr": "16 breaths/min",
       "temp": "98.3°F",
-      "weight": "211 lbs",
+      "weight": "211 lbs (96 kg)",
       "height": "71 inches",
       "bmi": "29.5 kg/m²",
       "flags": {
@@ -3091,7 +3092,7 @@ export const W5_CASES = [
     "LABS": [
       {
         "label": "Sodium",
-        "value": "140",
+        "value": "139",
         "unit": "mEq/L",
         "flag": "normal",
         "labDate": "09/09/2026 08:00"
@@ -3250,7 +3251,7 @@ export const W5_CASES = [
         "route": "by mouth",
         "freq": "every 8 hours as needed",
         "indication": "Anxiety PRN",
-        "notes": "Prescribed for acute anxiety; well tolerated."
+        "notes": "Prescribed for acute anxiety spikes; well tolerated."
       },
       {
         "name": "Lisinopril",
@@ -3281,7 +3282,7 @@ export const W5_CASES = [
     "SUBJECTIVE_DOCUMENTED": [
       {
         "label": "HPI",
-        "value": "51-year-old male IT manager (separated, living alone) presenting for initial evaluation in behavioral health clinic for severe recurrent MDD (~1 year progressive worsening) and severe GAD despite multiple antidepressant trials: Escitalopram 20 mg (8 wks), Sertraline 150 mg (6 mos, stopped for GI distress), Duloxetine 60 mg (10 wks), and current Venlafaxine XR 150 mg daily (12 wks). Reports persistent profound sadness, total anhedonia, severe fatigue, low motivation, social withdrawal, loss of interest in hobbies (woodworking, hiking), and excessive worry impairing work performance. Reports passive SI ('wake up wishing I didn't face another day'). Explicitly denies active intent, plan, or desire to die ('I don't want to die, I'm just tired of feeling this way'). Lethal means safety assessment: owns two hunting rifles stored in home safe; agreed to have brother take rifles and keep them locked at his house today. Provided 988 Suicide & Crisis Lifeline."
+        "value": "51-year-old male IT manager (separated, living alone) presenting for collaborative practice pharmacist-led evaluation in ambulatory behavioral health clinic for severe recurrent MDD (~1 year progressive worsening) and severe GAD despite multiple antidepressant trials: Escitalopram 20 mg (16 wks, partial response), Sertraline 150 mg (6 mos, minimal response / GI distress), Duloxetine 60 mg (10 wks, no response), and current Venlafaxine XR 150 mg daily (12 wks, mild anxiety benefit but persistent severe depression). Reports persistent profound sadness, total anhedonia, severe fatigue, hopelessness, emotional exhaustion, difficulty concentrating, sleep disturbance, social withdrawal, loss of interest in hobbies (fishing, working on his truck, watching sports), and excessive worry impairing work performance (needs more time to complete tasks). Reports marital separation with emotional isolation. Reports passive SI ('wake up wishing I didn't face another day'). Explicitly denies active intent, plan, or desire to die ('I don't want to die, I'm just tired of feeling this way'). Lethal means safety assessment: owns two hunting rifles stored in home safe; agreed to have brother take rifles and keep them locked at his house today. Provided 988 Suicide & Crisis Lifeline."
       },
       {
         "label": "Review of Systems (ROS) & Safety Assessment",
@@ -3297,11 +3298,11 @@ export const W5_CASES = [
       },
       {
         "label": "Social History",
-        "value": "IT Manager. Separated from wife, lives alone. Smokes ~1 pack/day (20 cigarettes/day) for 25 years (25 pack-years). Uses cigarettes as coping mechanism for emotional distress. Not ready for quit attempt due to depression severity. Drinks 1-2 beers on weekends. Denies illicit drug use. Immunizations up to date (Influenza, COVID-19, Tdap). NKDA."
+        "value": "Full-time IT Manager. Separated from wife, lives alone. Smokes ~1 pack/day (20 cigarettes/day) for 25 years (25 pack-years). Uses cigarettes as coping mechanism for emotional distress. Not ready for quit attempt due to depression severity. Drinks 1-2 beers on weekends. Minimal exercise (walks occasionally). Denies illicit drug use. Immunizations up to date (Influenza, COVID-19, Tdap). NKDA."
       },
       {
         "label": "Family History",
-        "value": "Mother: MDD. Father: Alcohol Use Disorder. Brother: MDD."
+        "value": "Mother: MDD. Father: Alcohol Use Disorder. Brother: MDD (familial pattern of major depressive disorder)."
       }
     ],
     "OBJECTIVE_EXTRA": {
@@ -3559,20 +3560,21 @@ export const W5_CASES = [
       "sex": "male",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       "mrn": "W5-30882",
-      "setting": "Ambulatory Behavioral Health Clinic"
+      "setting": "Collaborative Practice Pharmacist-Led Ambulatory Behavioral Health Clinic"
     },
     "ENCOUNTER": {
       "day": "Wednesday",
       "week": "Week 5",
-      "type": "6-Week Follow-Up Visit (Post-TRD Augmentation)",
+      "type": "Collaborative Practice Management / 6-Week Follow-Up (Post-TRD Augmentation)",
       "chiefConcern": "The combination of Venlafaxine XR 150 mg and Aripiprazole 2 mg is working remarkably well! My mood and energy are so much better, suicidal thoughts are completely gone, and I feel hopeful for the first time in years.",
-      "snapshotSummary": "David returns for 6-week follow-up post Aripiprazole 2 mg daily augmentation to Venlafaxine XR 150 mg daily. Demonstrates clinically meaningful improvement: PHQ-9 reduced from 21 to 12 (moderate), GAD-7 reduced from 18 to 9 (mild-moderate), SI completely resolved (Item 9 = 0). Tolerating well with no akathisia or sedation. Smokes ~half pack/day (10 cigarettes/day, down from 20). Plan: CONTINUE Venlafaxine XR 150 mg + Aripiprazole 2 mg daily per APA/VA-DoD guidelines; continue CBT; reinforce tobacco reduction.",
+      "snapshotSummary": "David returns for 6-week follow-up post Aripiprazole 2 mg daily augmentation to Venlafaxine XR 150 mg daily. Demonstrates clinically meaningful improvement: PHQ-9 reduced from 21 to 12 (moderate), GAD-7 reduced from 18 to 9 (mild-moderate), SI completely resolved (Item 9 = 0). Tolerating well with no akathisia or sedation. Smokes ~half pack/day (10 cigarettes/day, down from 20). Plan: CONTINUE Venlafaxine XR 150 mg + Aripiprazole 2 mg daily per APA/VA-DoD/CANMAT guidelines; continue CBT; reinforce tobacco reduction.",
       "difficulty": "Advanced",
       "difficultyTone": "purple",
       "diseaseStates": [
-        "Recurrent MDD (Partial Response / Improving)",
+        "Recurrent Severe MDD (Partial Response / Improving)",
         "GAD (Partial Response / Mild-Moderate)",
         "SI (Resolved)",
+        "Hypertension",
         "Tobacco Use Disorder (Preparation Stage)"
       ],
       "learningObjectives": [
@@ -3589,7 +3591,7 @@ export const W5_CASES = [
       "hr": "78 bpm",
       "rr": "16 breaths/min",
       "temp": "98.1°F",
-      "weight": "216 lbs",
+      "weight": "216 lbs (98 kg)",
       "height": "71 inches",
       "bmi": "30.1 kg/m²",
       "flags": {
@@ -3657,28 +3659,28 @@ export const W5_CASES = [
       },
       {
         "label": "Total Cholesterol",
-        "value": "188",
+        "value": "190",
         "unit": "mg/dL",
         "flag": "normal",
         "labDate": "10/21/2026 08:00"
       },
       {
         "label": "Triglycerides",
-        "value": "176",
+        "value": "181",
         "unit": "mg/dL",
         "flag": "warn",
         "labDate": "10/21/2026 08:00"
       },
       {
         "label": "LDL-C",
-        "value": "106",
+        "value": "109",
         "unit": "mg/dL",
         "flag": "normal",
         "labDate": "10/21/2026 08:00"
       },
       {
         "label": "HDL-C",
-        "value": "45",
+        "value": "43",
         "unit": "mg/dL",
         "flag": "normal",
         "labDate": "10/21/2026 08:00"
@@ -3745,7 +3747,7 @@ export const W5_CASES = [
         "route": "by mouth",
         "freq": "every 8 hours as needed",
         "indication": "Anxiety PRN",
-        "notes": "Used occasionally for anxiety spikes."
+        "notes": "Prescribed for acute anxiety spikes; used occasionally."
       },
       {
         "name": "Lisinopril",
@@ -3776,7 +3778,7 @@ export const W5_CASES = [
     "SUBJECTIVE_DOCUMENTED": [
       {
         "label": "HPI",
-        "value": "51-year-old male IT manager (separated, living alone) presenting for 6-week follow-up after adding Aripiprazole 2 mg daily to Venlafaxine XR 150 mg daily. Reports marked improvement in mood, energy, sleep, concentration, and motivation. Resumed woodworking projects and yard work for first time in months. Expresses feeling hopeful for first time in years ('I don't feel trapped anymore'). Suicidal ideation completely resolved. Denies restlessness, akathisia, muscle stiffness, or sedation."
+        "value": "51-year-old male IT manager (separated, living alone) presenting for 6-week follow-up after adding Aripiprazole 2 mg daily to Venlafaxine XR 150 mg daily. Reports marked improvement in mood, energy, sleep, concentration, and motivation. Resumed fishing, working on his truck, and watching sports for first time in months. Expresses feeling hopeful for first time in years ('I don't feel trapped anymore'). Suicidal ideation completely resolved. Denies restlessness, akathisia, muscle stiffness, or sedation."
       },
       {
         "label": "Review of Systems (ROS) & Safety Assessment",
@@ -3792,11 +3794,11 @@ export const W5_CASES = [
       },
       {
         "label": "Social History",
-        "value": "IT Manager. Separated, lives alone. Smokes ~10 cigarettes/day (down from ~20). Interested in further smoking reduction. Attends CBT sessions. Immunizations up to date. NKDA."
+        "value": "Full-time IT Manager. Separated, lives alone. Smokes ~10 cigarettes/day (down from ~20). Interested in further smoking reduction. Attends CBT sessions. Walks regularly. Immunizations up to date. NKDA."
       },
       {
         "label": "Family History",
-        "value": "Mother: MDD. Father: AUD. Brother: MDD."
+        "value": "Mother: MDD. Father: AUD. Brother: MDD (familial MDD pattern)."
       }
     ],
     "OBJECTIVE_EXTRA": {
@@ -3996,25 +3998,26 @@ export const W5_CASES = [
       "sex": "male",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       "mrn": "W5-30882",
-      "setting": "Ambulatory Behavioral Health Clinic"
+      "setting": "Collaborative Practice Pharmacist-Led Ambulatory Behavioral Health Clinic"
     },
     "ENCOUNTER": {
       "day": "Thursday",
       "week": "Week 5",
-      "type": "12-Week Follow-Up Visit (TRD Remission & Maintenance)",
-      "chiefConcern": "I haven't felt this good in years. My PHQ-9 score is 3, I'm fully back at work, enjoying woodworking and hiking, and I'm down to only 3 cigarettes a day!",
-      "snapshotSummary": "David presents for 12-week follow-up (6 weeks post stable combo therapy). Full remission achieved: PHQ-9 = 3 (minimal symptoms), GAD-7 = 4 (minimal symptoms), SI absent (Item 9 = 0). Smokes ~3 cigarettes/day (near abstinence / preparation stage). Plan: CONTINUE Venlafaxine XR 150 mg + Aripiprazole 2 mg daily for long-term TRD maintenance (minimum 12-24 months per APA/VA-DoD guidelines), continue CBT, reinforce tobacco cessation, annual metabolic monitoring.",
+      "type": "Collaborative Practice Management / 12-Week Follow-Up (TRD Remission & Maintenance)",
+      "chiefConcern": "I haven't felt this good in years. My PHQ-9 score is 3, I'm fully back at work, enjoying fishing, working on my truck, and watching sports, and I'm down to only 3 cigarettes a day!",
+      "snapshotSummary": "David presents for 12-week follow-up (6 weeks post stable combo therapy). Full remission achieved: PHQ-9 = 3 (minimal symptoms), GAD-7 = 4 (minimal symptoms), SI absent (Item 9 = 0). Smokes ~3 cigarettes/day (near abstinence / preparation stage). Plan: CONTINUE Venlafaxine XR 150 mg + Aripiprazole 2 mg daily for long-term TRD maintenance (minimum 12-24 months per APA/VA-DoD/CANMAT guidelines), continue CBT, reinforce tobacco cessation, annual metabolic monitoring.",
       "difficulty": "Advanced",
       "difficultyTone": "purple",
       "diseaseStates": [
-        "Severe MDD (TRD, Full Remission - Minimal Symptoms)",
+        "Severe Recurrent MDD (TRD, Full Remission - Minimal Symptoms)",
         "GAD (Full Remission - Minimal Symptoms)",
         "SI (Resolved)",
+        "Hypertension",
         "Tobacco Use Disorder (Near Abstinence / Preparation Stage)"
       ],
       "learningObjectives": [
         "Confirm full remission in Treatment-Resistant Depression",
-        "Establish long-term maintenance duration for TRD (at least 12-24 months per APA/VA-DoD guidelines)",
+        "Establish long-term maintenance duration for TRD (at least 12-24 months per APA/VA-DoD/CANMAT guidelines)",
         "Counsel on relapse prevention, CBT continuation, and ongoing metabolic monitoring"
       ],
       "visitDate": "12/02/2026"
@@ -4025,7 +4028,7 @@ export const W5_CASES = [
       "hr": "74 bpm",
       "rr": "16 breaths/min",
       "temp": "98.2°F",
-      "weight": "218 lbs",
+      "weight": "218 lbs (99 kg)",
       "height": "71 inches",
       "bmi": "30.4 kg/m²",
       "flags": {
@@ -4195,7 +4198,7 @@ export const W5_CASES = [
         "route": "by mouth",
         "freq": "every 8 hours as needed",
         "indication": "Anxiety PRN",
-        "notes": "Rarely needed."
+        "notes": "Prescribed for acute anxiety spikes; rarely needed."
       },
       {
         "name": "Lisinopril",
@@ -4226,7 +4229,7 @@ export const W5_CASES = [
     "SUBJECTIVE_DOCUMENTED": [
       {
         "label": "HPI",
-        "value": "51-year-old male IT manager (separated, living alone) presenting for 12-week follow-up (6 weeks on stable combination Venlafaxine XR 150 mg daily + Aripiprazole 2 mg daily). Reports sustained full remission of depressive and anxiety symptoms. Sleeping 7-8 hours per night, energy excellent, fully functioning at work with high productivity. Resumed woodworking and hiking hobbies. SI remains completely absent. Attends CBT regularly. Tolerating combo therapy with zero side effects."
+        "value": "51-year-old male IT manager (separated, living alone) presenting for 12-week follow-up (6 weeks on stable combination Venlafaxine XR 150 mg daily + Aripiprazole 2 mg daily). Reports sustained full remission of depressive and anxiety symptoms. Sleeping 7-8 hours per night, energy excellent, fully functioning at work with high productivity. Resumed fishing, working on his truck, and watching sports. SI remains completely absent. Attends CBT regularly. Tolerating combo therapy with zero side effects."
       },
       {
         "label": "Review of Systems (ROS) & Safety Assessment",
@@ -4242,11 +4245,11 @@ export const W5_CASES = [
       },
       {
         "label": "Social History",
-        "value": "Full-time IT manager. Separated, lives alone. Smokes ~3 cigarettes/day (down from ~20). Preparing to set quit date next week. Enjoys woodworking and hiking. Denies illicit drugs. Immunizations up to date. NKDA."
+        "value": "Full-time IT manager. Separated, lives alone. Smokes ~3 cigarettes/day (down from ~20). Preparing to set quit date next week. Enjoys fishing, working on his truck, and watching sports. Walks regularly. Denies illicit drugs. Immunizations up to date. NKDA."
       },
       {
         "label": "Family History",
-        "value": "Mother: MDD. Father: AUD. Brother: MDD."
+        "value": "Mother: MDD. Father: AUD. Brother: MDD (familial MDD pattern)."
       }
     ],
     "OBJECTIVE_EXTRA": {
