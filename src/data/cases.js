@@ -456,105 +456,111 @@ const caseWed = {
     type: '3-Month Ambulatory Care Follow-Up',
     week: 'Week 1 — Wednesday',
     length: '30-minute collaborative practice visit',
+    setting: 'Collaborative Practice Ambulatory Care Pharmacy Clinic',
     difficulty: 'Intermediate APPE Student',
     difficultyTone: 'amber',
-    diseaseStates: ['Hypertension', 'Type 2 Diabetes', 'Albuminuria / CKD risk', 'Hyperlipidemia'],
-    chiefConcern: 'I think things are getting a little better, but I’m not sure if I’m where I need to be yet.',
+    diseaseStates: ['Hypertension', 'Type 2 Diabetes', 'Albuminuria / CKD Risk', 'Hyperlipidemia', 'Obesity', 'Cardiovascular Risk Reduction'],
+    chiefConcern: "I think things are getting a little better, but I'm not sure if I'm where I need to be yet.",
     snapshotSummary:
-      '3-month follow-up after medication adjustments. BP and A1C improved but remain above goal; first UACR returns elevated. Decision point on kidney/cardiovascular-protective therapy.',
+      '3-month collaborative practice follow-up visit after medication adjustments. Focus on cardiorenal and cardiovascular risk reduction. BP improved to 136/84 mmHg, A1C improved to 7.5%, LDL-C improved to 78 mg/dL, weight reduced by 2.5 kg. UACR now available at 45 mg/g (Category A2).',
     learningObjectives: [
-      'Interpret partial treatment response without treating it as failure',
-      'Recognize moderately increased albuminuria and its impact on therapy choice',
-      'Weigh SGLT2 inhibitor vs GLP-1 RA for cardiorenal and weight benefit',
-      'Continue adherence/lifestyle support and renal monitoring',
-    ],
-    priorChanges: [
-      'Lisinopril increased 10 → 20 mg daily',
-      'Metformin XR increased 1000 → 2000 mg daily',
-      'Atorvastatin 20 mg daily initiated',
-      'UACR ordered; lifestyle + adherence interventions begun',
+      'Interpret interval changes in blood pressure, A1C, lipids, and weight',
+      'Classify and respond to newly resulted moderately increased albuminuria (UACR 45 mg/g, Category A2)',
+      'Evaluate therapeutic momentum: decide between observation vs. pharmacologic intensification',
+      'Address residual medication nonadherence and health maintenance gaps',
     ],
   },
 
   VITALS: {
-    bp: '136/84 mmHg', bpRepeat: '134/82 mmHg', hr: '76 bpm', rr: '16',
-    temp: '98.4 °F', weight: '89.5 kg', height: `5'4"`, bmi: '33.8 kg/m²',
-    flags: { bp: 'warn', bpRepeat: 'warn', bmi: 'warn', hr: 'normal' },
-    extras: [
-      { label: 'Weight change', value: '−2.5 kg since prior visit', flag: 'normal' },
-      { label: 'Home BP average', value: '134/82 mmHg (documented)', flag: 'warn' },
-      { label: 'Home BP range', value: '128–140 / 78–86 mmHg', flag: 'warn' },
-      { label: 'Home BP technique', value: 'Appears appropriate per log', flag: 'normal' },
-    ],
+    bp: '136/84 mmHg',
+    bpRepeat: '134/82 mmHg',
+    hr: '76 bpm',
+    rr: '16',
+    temp: '98.4 °F',
+    weight: '89.5 kg',
+    height: "5'4\" (64 inches)",
+    bmi: '33.8 kg/m²',
+    flags: { bp: 'high', bpRepeat: 'high', bmi: 'high', hr: 'normal' },
+    extras: [],
   },
 
   LABS: [
-    { label: 'A1C', value: '7.5', unit: '%', flag: 'warn', note: 'Improved from 8.2%' },
-    { label: 'Na', value: '138', unit: 'mmol/L', flag: 'normal' },
-    { label: 'K', value: '4.4', unit: 'mmol/L', flag: 'normal' },
-    { label: 'SCr', value: '0.95', unit: 'mg/dL', flag: 'normal', note: 'Slight rise (expected after ACEi titration)' },
-    { label: 'eGFR', value: '74', unit: 'mL/min/1.73m²', flag: 'normal' },
-    { label: 'UACR', value: '45', unit: 'mg/g', flag: 'warn', note: 'NEW — moderately increased albuminuria (A2)' },
-    { label: 'Total cholesterol', value: '170', unit: 'mg/dL', flag: 'normal' },
-    { label: 'LDL-C', value: '78', unit: 'mg/dL', flag: 'normal', note: 'Improved on statin (prior 112)' },
-    { label: 'HDL-C', value: '45', unit: 'mg/dL', flag: 'normal' },
-    { label: 'Triglycerides', value: '180', unit: 'mg/dL', flag: 'warn' },
+    { label: 'A1C', value: '7.5', unit: '%', flag: 'high', note: 'Previous 8.2% (0.7% absolute reduction; improved but above goal)' },
+    { label: 'Glucose', value: '142', unit: 'mg/dL', flag: 'high' },
+    { label: 'Na', value: '139', unit: 'mmol/L', flag: 'normal' },
+    { label: 'K', value: '4.3', unit: 'mmol/L', flag: 'normal', note: 'Serum potassium stable and normal following lisinopril 20 mg titration' },
+    { label: 'Cl', value: '102', unit: 'mmol/L', flag: 'normal' },
+    { label: 'CO2', value: '25', unit: 'mmol/L', flag: 'normal' },
+    { label: 'BUN', value: '17', unit: 'mg/dL', flag: 'normal' },
+    { label: 'SCr', value: '0.9', unit: 'mg/dL', flag: 'normal', note: 'Renal function stable and preserved following lisinopril 20 mg titration' },
+    { label: 'eGFR', value: '82', unit: 'mL/min/1.73m²', flag: 'normal', note: 'eGFR 82 mL/min/1.73m² indicates adequate, preserved renal function' },
+    { label: 'UACR', value: '45', unit: 'mg/g', flag: 'warn', note: 'UACR now resulted and available at 45 mg/g (previously unavailable/unobtained at initial visit). Value indicates Category A2 (moderately increased albuminuria, 30–299 mg/g), confirming early diabetic kidney involvement and increased cardiovascular risk despite preserved eGFR.' },
+    { label: 'Total cholesterol', value: '158', unit: 'mg/dL', flag: 'normal' },
+    { label: 'Triglycerides', value: '160', unit: 'mg/dL', flag: 'normal' },
+    { label: 'HDL-C', value: '48', unit: 'mg/dL', flag: 'normal' },
+    { label: 'LDL-C', value: '78', unit: 'mg/dL', flag: 'normal', note: 'Prior baseline LDL-C 112 mg/dL; 30.4% reduction consistent with expected moderate-intensity statin efficacy on atorvastatin 20 mg daily' },
   ],
 
   ALERTS: [
-    { level: 'warn', text: 'NEW UACR 45 mg/g: moderately increased albuminuria — shifts priority toward kidney protection.' },
-    { level: 'warn', text: 'BP improved (134/82 from 146/92) but still above the <130/80 goal.' },
-    { level: 'warn', text: 'A1C improved (7.5%) but above the usual <7% goal.' },
-    { level: 'info', text: 'SGLT2 inhibitor and/or GLP-1 RA may now be appropriate — weigh cardiorenal + weight benefits.' },
+    { type: 'info', text: 'UACR now resulted: 45 mg/g — Category A2 (moderately increased albuminuria). Early kidney involvement identified.' },
+    { type: 'success', text: 'LDL-C improved from 112 to 78 mg/dL on atorvastatin 20 mg. A1C improved from 8.2% to 7.5%. BP improved to 134/82 mmHg.' },
   ],
 
   PROBLEMS: [
-    { name: 'Type 2 diabetes mellitus', detail: 'A1C 7.5% (improved); on metformin 2000 mg', flag: 'warn' },
-    { name: 'Essential hypertension', detail: 'BP 134/82 (prior 146/92), home avg similar; on lisinopril 20 + HCTZ', flag: 'warn' },
-    { name: 'Moderately increased albuminuria', detail: 'UACR 45 mg/g (new finding)', flag: 'warn' },
-    { name: 'Hyperlipidemia', detail: 'LDL 78 (prior 112) on atorvastatin 20 mg', flag: 'normal' },
-    { name: 'Obesity', detail: 'BMI 33.8 (−2.5 kg)', flag: 'warn' },
-    { name: 'Bilateral knee osteoarthritis', detail: 'Chronic', flag: 'normal' },
+    { name: 'Essential hypertension', status: 'Improved but above goal' },
+    { name: 'Type 2 diabetes mellitus', status: 'Improved but above goal' },
+    { name: 'Moderately increased albuminuria (Category A2)', status: 'New finding / early DKD risk' },
+    { name: 'Hyperlipidemia / primary ASCVD prevention', status: 'Improved on statin' },
+    { name: 'Obesity (Class I)', status: 'Improving (-2.5 kg)' },
+    { name: 'Medication adherence', status: 'Improved (residual evening gap)' },
+    { name: 'Preventive care gaps', status: 'Immunizations due' },
   ],
 
-  ALLERGIES: [{ substance: 'No known drug allergies (NKDA)', reaction: '—' }],
+  ALLERGIES: [],
 
-  // Ibuprofen now reconciled into the visible list (was uncovered last visit).
   MEDICATIONS: [
-    { name: 'Metformin XR', dose: '2000 mg', route: 'PO', freq: 'once daily', indication: 'Type 2 diabetes', notes: 'Titrated up' },
-    { name: 'Lisinopril', dose: '20 mg', route: 'PO', freq: 'once daily', indication: 'Hypertension / kidney protection', notes: 'Titrated up' },
-    { name: 'Hydrochlorothiazide', dose: '12.5 mg', route: 'PO', freq: 'once daily', indication: 'Hypertension', notes: '' },
-    { name: 'Atorvastatin', dose: '20 mg', route: 'PO', freq: 'once daily', indication: 'ASCVD prevention (diabetes)', notes: 'Newly started' },
-    { name: 'Acetaminophen', dose: '500 mg', route: 'PO', freq: 'PRN pain', indication: 'Knee OA', notes: '' },
-    { name: 'Ibuprofen', dose: '400–600 mg', route: 'PO', freq: 'PRN pain', indication: 'Knee OA (OTC)', notes: 'Now reconciled — counsel re: BP/kidney' },
+    { name: 'Metformin XR', dose: '2000 mg', route: 'PO', freq: 'daily with dinner', indication: 'Type 2 diabetes' },
+    { name: 'Lisinopril', dose: '20 mg', route: 'PO', freq: 'daily in morning', indication: 'Hypertension / renal protection' },
+    { name: 'Hydrochlorothiazide', dose: '12.5 mg', route: 'PO', freq: 'daily in morning', indication: 'Hypertension' },
+    { name: 'Atorvastatin', dose: '20 mg', route: 'PO', freq: 'daily at bedtime', indication: 'Hyperlipidemia / primary ASCVD prevention' },
+    { name: 'Acetaminophen', dose: '500 mg', route: 'PO', freq: 'PRN knee pain', indication: 'Bilateral knee osteoarthritis' },
   ],
 
   IMMUNIZATIONS: [
-    { name: 'Influenza', status: 'Current', flag: 'normal' },
-    { name: 'COVID-19', status: 'Up to date', flag: 'normal' },
-    { name: 'Pneumococcal (PCV)', status: 'Not documented', flag: 'missing' },
-    { name: 'Zoster (Shingrix)', status: 'Not documented', flag: 'missing' },
-    { name: 'Tdap', status: 'Overdue — last 06/12/2015 (11 years ago)', flag: 'warn' },
+    { name: 'COVID-19', status: 'Up to date (updated booster received)' },
+    { name: 'Influenza', status: 'Up to date (current season received)' },
+    { name: 'PCV20 (Pneumococcal)', status: 'Not documented / indicated and due' },
+    { name: 'Shingrix (Herpes Zoster)', status: 'Not documented / indicated and due (age >=50)' },
+    { name: 'Tdap', status: 'Overdue (last received 11 years ago; booster recommended)' },
   ],
 
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'Interval history', value: 'Returns for 3-month follow-up after med adjustments (prior office BP 146/92). Reports feeling "a little better."' },
-    { label: 'Chief concern', value: 'Unsure whether she is "where she needs to be."' },
-    { label: 'Documented symptoms', value: 'No new complaints documented at intake.' },
-    { label: 'Home BP log', value: 'Submitted; average 134/82, technique appears appropriate.' },
+    { label: 'Reason for referral & setting', value: '3-month follow-up for diabetes and hypertension management in Collaborative Practice Ambulatory Care Pharmacy Clinic, focusing on overarching cardiorenal and cardiovascular risk reduction.' },
+    { label: 'Chief Complaint (CC)', value: 'Reports feeling "a little better," but uncertain if numbers are where they need to be.' },
+    { label: 'PMH', value: 'Essential hypertension (8 years), type 2 diabetes mellitus (4 years), hyperlipidemia (3 years), Obesity (Class I), and bilateral knee osteoarthritis.' },
+    { label: 'Past Surgical History (PSH)', value: 'Cholecystectomy (gallbladder removal at age 41). No other surgeries.' },
+    { label: 'Family History', value: 'Father: hypertension, type 2 diabetes, myocardial infarction (MI) at age 62; Mother: hypertension, type 2 diabetes, diabetic kidney disease (DKD); Brother: type 2 diabetes.' },
+    { label: 'Allergies', value: 'No known drug allergies (NKDA).' },
+    { label: 'General wellness & symptom review', value: 'Patient reports feeling generally well overall and acknowledges interval progress. Explicitly denies hypoglycemia symptoms (no shakiness, sweating, confusion, or lightheadedness). Tolerating current regimen well; explicitly denies medication-related adverse effects including cough (denies lisinopril cough), myalgias/muscle pain (denies statin-associated muscle symptoms), or symptomatic hypotension/dizziness.' },
+    { label: 'Medication adherence & routine', value: 'Medication adherence has improved substantially: patient now misses morning doses only ~once weekly (versus 2–3 times weekly previously). If a dose is missed, it is usually the evening cholesterol pill (atorvastatin). Patient keeps morning medications by the coffee maker as an effective reminder strategy. Explicitly denies intentional nonadherence (never intentionally skips or stops pills).' },
+    { label: 'Social History', value: 'Occupation: Elementary school administrative assistant. Marital/living status: Married, lives with husband. Tobacco status: Never smoker (denies any history of tobacco use). Alcohol use status: Uses alcohol (1–2 glasses of wine on weekends). Recreational drug use: Explicitly denies recreational or illicit drug use.' },
+    { label: 'Diet, lifestyle & home monitoring', value: 'Walking program increased to 4 days per week for 20 minutes each (~80 minutes/week toward >=150 min/week target). Significantly reduced sugar-sweetened beverages (sweet tea down to ~once weekly). Cooking at home regularly instead of dining out. Intermittent home blood pressure monitoring (3–4 days/week) shows readings running in the 130s/80s (average ~134/82 mmHg) with appropriate measurement technique (resting first, feet flat, uncrossed legs). Home fasting blood glucose monitoring averages 130–150 mg/dL in the mornings.' },
+    { label: 'Review of Systems (ROS)', value: 'Cardiovascular/Pulmonary/Neurologic: Explicitly denies chest pain, shortness of breath, palpitations, dizziness, syncope, lower extremity edema, severe headaches, and acute vision changes.' },
+    { label: 'Patient Goals & Motivators', value: 'Patient acknowledges progress and expresses satisfaction that numbers are improving, but expresses disappointment at not having lost more weight (~5 lbs / 2.5 kg lost); highly motivated for further weight loss. Remains deeply concerned about protecting kidney function linked to mother\'s history of diabetic kidney disease, though acknowledges limited understanding of urine protein / albuminuria. Open to once-weekly injectable therapy (GLP-1 receptor agonist) if beneficial for weight and glycemic control, and open to kidney-protective medications (SGLT2 inhibitor).' },
   ],
 
   OBJECTIVE_EXTRA: [
-    { label: 'General', value: 'Well-appearing, no acute distress.' },
-    { label: 'Documented SMBG log', value: 'Not submitted at intake', flag: 'missing' },
-    { label: 'Albuminuria understanding', value: 'Not documented', flag: 'missing' },
-    { label: 'Preference re: injectable therapy', value: 'Not documented', flag: 'missing' },
+    { label: 'Weight change & BMI', value: 'Current weight 89.5 kg (197.3 lbs), baseline 92 kg (202.8 lbs), documenting a 2.5 kg (5.5 lb) weight loss over 3 months. BMI 33.8 kg/m² (BMI reconciled with height/weight: Class I Obesity).' },
+    { label: 'Home BP corroboration', value: 'Home blood pressure log reviewed: average 134/82 mmHg with proper technique, corroborating current office BP (136/84 mmHg, repeat 134/82 mmHg; improved from initial visit 146/92 mmHg, but remaining slightly above <130/80 mmHg goal).' },
+    { label: 'Glycemic comparison & trend', value: 'Current A1C 7.5%, previous baseline 8.2% (0.7% absolute reduction, demonstrating glycemic improvement on metformin XR 2000 mg titration and lifestyle modification, though remaining above the <7.0% goal). Home fasting glucose improved to 130–150 mg/dL (prior 160–180 mg/dL).' },
+    { label: 'Renal function & UACR result', value: 'Urine albumin-to-creatinine ratio (UACR) now resulted and available at 45 mg/g (previously unobtained/unavailable at initial visit). Value indicates Category A2 (moderately increased albuminuria, 30–299 mg/g), confirming early diabetic kidney involvement and increased cardiovascular risk despite preserved eGFR. Renal function and potassium are stable and adequate following lisinopril 20 mg titration: SCr 0.9 mg/dL, eGFR 82 mL/min/1.73m² (preserved renal function), serum potassium 4.3 mmol/L (stable within normal limits).' },
+    { label: 'Lipid panel response', value: 'Lipid panel demonstrates favorable response on atorvastatin 20 mg daily: Total cholesterol 158 mg/dL, Triglycerides 160 mg/dL, HDL-C 48 mg/dL, LDL-C 78 mg/dL (improved from baseline 112 mg/dL, representing a 30.4% reduction consistent with expected moderate-intensity statin efficacy [30–49%]).' },
+    { label: 'Immunization status', value: 'COVID-19 and Influenza up to date. Gaps noted: PCV20 (pneumococcal) indicated and due; recombinant zoster vaccine (Shingrix) indicated and due (age >=50); Tdap booster overdue (last received 11 years ago).' },
   ],
 
   INTERVIEW_FIELDS: [
-    { key: 'adherence', label: 'Medication adherence', placeholder: 'Improved? Which med missed most often?' },
-    { key: 'currentMeds', label: 'Medication routine', placeholder: 'When/how does she take each med?' },
-    { key: 'sideEffects', label: 'Side effects', placeholder: 'Any new symptoms on titrated doses?' },
+    { key: 'adherence', label: 'Medication adherence', placeholder: 'Doses missed per week now…' },
+    { key: 'sideEffects', label: 'Side effects / tolerability', placeholder: 'Any adverse effects with higher doses?' },
     { key: 'homeBp', label: 'Home BP readings', placeholder: 'Confirm values and technique…' },
     { key: 'glucoseMonitoring', label: 'Home glucose monitoring', placeholder: 'Typical fasting values now…' },
     { key: 'diet', label: 'Diet changes', placeholder: 'Sweet tea, cooking at home, restaurant meals…' },
@@ -566,6 +572,7 @@ const caseWed = {
     { key: 'concerns', label: 'Concerns & goals', placeholder: 'Kidney worries, weight, etc.' },
     { key: 'cost', label: 'Cost / access', placeholder: 'Any refill or cost barriers?' },
   ],
+
   GUIDING_QUESTIONS: [
     'Why did you choose to intensify therapy or not intensify therapy today?',
     'What does a UACR of 45 mg/g tell you about this patient\'s future risk?',
@@ -576,7 +583,6 @@ const caseWed = {
     'What additional goals remain unmet?',
     'If you only looked at today\'s numbers and ignored the trends, what mistake might you make?'
   ],
-
 
   INTERVIEW_KNOWLEDGE: [
     { id: 'reason', topic: 'Reason for visit', field: null,
@@ -645,70 +651,184 @@ const caseWed = {
   ],
 
   ASSESSMENT_CARDS: [
-    { id: 't2dm', title: 'Type 2 Diabetes', icon: 'Droplet', color: '0d9488', questions: [
-      { key: 'dm_partial', q: 'A1C dropped 8.2% → 7.5%. Is this success, failure, or partial response? Why?' },
-      { key: 'dm_goal', q: 'Where does she stand relative to a typical <7% goal?' },
-      { key: 'dm_agent', q: 'Given albuminuria and obesity, which agent class adds the most value now?' },
-      { key: 'dm_metf', q: 'Should metformin continue at 2000 mg? Any renal concern at eGFR 74?' },
-      { key: 'dm_monitor', q: 'What monitoring continues for diabetes at this stage?' },
-    ]},
-    { id: 'kidney', title: 'Albuminuria / CKD Risk', icon: 'FlaskConical', color: '0891b2', questions: [
-      { key: 'kid_interp', q: 'How do you interpret UACR 45 mg/g with a normal eGFR?' },
-      { key: 'kid_priority', q: 'How does albuminuria change your therapeutic priorities?' },
-      { key: 'kid_acei', q: 'Is the ACE inhibitor appropriate, and what do you monitor on it?' },
-      { key: 'kid_sglt2', q: 'What is the rationale for an SGLT2 inhibitor here?' },
-    ]},
-    { id: 'htn', title: 'Hypertension', icon: 'HeartPulse', color: '13314f', questions: [
-      { key: 'htn_resp', q: 'BP improved to 134/82. At goal? What does the home average tell you?' },
-      { key: 'htn_next', q: 'Is additional antihypertensive therapy needed yet? What are the options?' },
-      { key: 'htn_renal', q: 'How do you monitor renal function/potassium after the ACEi increase?' },
-    ]},
-    { id: 'lipid', title: 'Hyperlipidemia / ASCVD', icon: 'Activity', color: 'dc2626', questions: [
-      { key: 'lip_resp', q: 'LDL fell to 78 on atorvastatin. Continue, change, or stop?' },
-      { key: 'lip_tg', q: 'How do you interpret residual TG 180?' },
-    ]},
-    { id: 'obesity', title: 'Obesity / Lifestyle', icon: 'Scale', color: 'ca8a04', questions: [
-      { key: 'ob_progress', q: 'How do you frame −2.5 kg so it reinforces rather than discourages?' },
-      { key: 'ob_synergy', q: 'How could a weight-beneficial agent align with her stated goals?' },
-    ]},
+    {
+      id: 'htn',
+      title: 'Essential hypertension',
+      icon: 'HeartPulse',
+      color: '13314f',
+      questions: [
+        {
+          key: 'htn_eval',
+          q: 'Blood pressure status, goal, and contributing factors:',
+          defaultAnswer: 'Status: Improved but above goal (office BP 136/84 mmHg, repeat 134/82 mmHg; home average ~134/82 mmHg corroborates office findings; improved from baseline 146/92 mmHg). Goal: <130/80 mmHg per 2025 AHA/ACC Hypertension Guideline. Blood pressure improvement is directly attributed to lisinopril dose escalation to 20 mg daily, improved medication adherence (~once weekly missed dose vs. 2–3 times weekly previously), improved measurement technique (resting prior, feet flat, uncrossed legs), regular physical activity (walking 4 days/week), and dietary sodium reduction (reduced restaurant meals and sweet tea). Renal function (SCr 0.9 mg/dL, eGFR 82 mL/min/1.73m²) and serum potassium (4.3 mmol/L) remain completely stable following ACE inhibitor uptitration. The newly identified presence of persistent albuminuria (UACR 45 mg/g) strongly reinforces the critical need for strict blood pressure optimization (<130/80 mmHg) to slow kidney disease progression. Given significant recent improvement and active adherence/lifestyle momentum, it is clinically justified to continue observation and hold immediate pharmacologic escalation, reassessing control at the next encounter.'
+        }
+      ]
+    },
+    {
+      id: 't2dm',
+      title: 'Type 2 diabetes mellitus',
+      icon: 'Droplet',
+      color: '0d9488',
+      questions: [
+        {
+          key: 'dm_eval',
+          q: 'Glycemic status, goal, and contributing factors:',
+          defaultAnswer: 'Status: Improved but above goal (A1C decreased from 8.2% to 7.5%, a 0.7% absolute reduction; home fasting blood glucose improved from 160–180 mg/dL to 130–150 mg/dL). Goal: <7.0% per ADA 2026 Standards of Care. Improvement is directly attributed to metformin XR dose optimization to 2000 mg daily, improved medication adherence, substantial reduction in sugar-sweetened beverages (sweet tea), increased walking, and modest weight loss (2.5 kg). Metformin XR 2000 mg daily is well tolerated with no GI side effects, and renal function is entirely adequate (eGFR 82 mL/min/1.73m²).'
+        }
+      ]
+    },
+    {
+      id: 'kidney',
+      title: 'Moderately increased albuminuria / early DKD risk',
+      icon: 'FlaskConical',
+      color: '0891b2',
+      questions: [
+        {
+          key: 'kid_eval',
+          q: 'UACR interpretation, cardiorenal implications, and therapeutic strategy:',
+          defaultAnswer: 'Status: UACR now resulted and available at 45 mg/g (previously unobtained at intake visit), confirming Category A2 (moderately increased albuminuria, 30–299 mg/g). This finding demonstrates early diabetic kidney involvement despite preserved eGFR (82 mL/min/1.73m²) and normal serum creatinine (0.9 mg/dL). Persistent albuminuria carries substantial long-term risks of chronic kidney disease progression to kidney failure as well as significantly increased cardiovascular event risk. Confirms the essential indication for continuing ACE inhibitor therapy (lisinopril 20 mg daily) for renal and cardiorenal protection. Highlights the increasing importance of strict blood pressure control (<130/80 mmHg) and identifies a clear need for patient education regarding albuminuria, kidney preservation, and avoiding OTC NSAIDs.'
+        }
+      ]
+    },
+    {
+      id: 'lipid',
+      title: 'Hyperlipidemia / primary ASCVD prevention',
+      icon: 'ShieldAlert',
+      color: 'd97706',
+      questions: [
+        {
+          key: 'lip_eval',
+          q: 'Lipid response, efficacy assessment, and cardiovascular risk:',
+          defaultAnswer: 'Status: Improved on atorvastatin 20 mg daily (LDL-C decreased from baseline 112 mg/dL to 78 mg/dL, representing a 30.4% reduction consistent with expected moderate-intensity statin efficacy [30–49% reduction]). The patient remains at elevated long-term cardiovascular risk despite the absence of established clinical ASCVD due to multiple contributing risk factors: type 2 diabetes mellitus, essential hypertension, obesity, persistent albuminuria (A2), and a strong family history of premature CAD (father MI at age 62). Therapy is well tolerated without myalgias or muscle symptoms.'
+        }
+      ]
+    },
+    {
+      id: 'obesity',
+      title: 'Obesity (Class I, BMI 33.8 kg/m²)',
+      icon: 'Scale',
+      color: '4f46e5',
+      questions: [
+        {
+          key: 'obe_eval',
+          q: 'Obesity status, weight trajectory, and cardiometabolic impact:',
+          defaultAnswer: 'Status: Improving. Weight reduced by 2.5 kg (from 92 kg to 89.5 kg; BMI 34.8 to 33.8 kg/m²). This weight loss directly contributed to the observed improvements in blood pressure and glycemic control. However, Class I obesity continues to contribute to ongoing cardiometabolic and cardiorenal risk, and continued lifestyle intervention is strongly warranted. The patient expresses disappointment at the modest loss but remains highly motivated for further weight loss and receptive to weight-beneficial pharmacotherapy.'
+        }
+      ]
+    },
+    {
+      id: 'adherence',
+      title: 'Medication adherence (improved with residual gap)',
+      icon: 'CheckCircle',
+      color: '10b981',
+      questions: [
+        {
+          key: 'adh_eval',
+          q: 'Adherence pattern, impact, and counseling need:',
+          defaultAnswer: 'Status: Substantially improved from 2–3 missed doses weekly to approximately once weekly. This improvement directly underlies the observed clinical gains in BP and A1C. However, residual nonadherence remains present (predominantly the evening atorvastatin dose), which contributes to persistent blood pressure and glycemic elevations above target. Clinicians must avoid labeling current therapy ineffective before fully optimizing adherence; continued adherence counseling, reminder strategies, and evening dosing routines are warranted.'
+        }
+      ]
+    },
+    {
+      id: 'preventive',
+      title: 'Preventive care gaps & health maintenance',
+      icon: 'ShieldPlus',
+      color: '8b5cf6',
+      questions: [
+        {
+          key: 'prev_eval',
+          q: 'Immunization gaps and health maintenance needs:',
+          defaultAnswer: 'Status: Incomplete immunizations. Pneumococcal conjugate vaccination (PCV20) is indicated for adults with diabetes mellitus; recombinant zoster vaccine (Shingrix 2-dose series) is indicated for adults >=50 years; Tdap booster is overdue (11 years since last tetanus immunization). Recommend addressing preventive care gaps at this visit or scheduling for near-term follow-up.'
+        }
+      ]
+    },
   ],
 
   PLAN_SECTIONS: [
-    { id: 'dm_plan', title: 'Diabetes plan', options: [
-      { key: 'd1', label: 'Continue metformin XR 2000 mg daily', correct: true },
-      { key: 'd2', label: 'Add an SGLT2 inhibitor for cardiorenal protection', correct: true },
-      { key: 'd3', label: 'Consider a GLP-1 RA for glycemia + weight (per preference)', correct: true },
-      { key: 'd4', label: 'Conclude treatment is failing and start basal insulin', correct: false },
-      { key: 'd5', label: 'Stop metformin because A1C is not <7%', correct: false },
-    ]},
-    { id: 'kidney_plan', title: 'Kidney protection plan', options: [
-      { key: 'k1', label: 'Continue ACE inhibitor; monitor SCr and K', correct: true },
-      { key: 'k2', label: 'SGLT2 inhibitor for albuminuria/CKD protection', correct: true },
-      { key: 'k3', label: 'Recheck UACR to confirm/track albuminuria', correct: true },
-      { key: 'k4', label: 'Stop the ACE inhibitor because UACR is elevated', correct: false },
-    ]},
-    { id: 'htn_plan', title: 'Hypertension plan', options: [
-      { key: 'h1', label: 'Continue current antihypertensives; reinforce home monitoring', correct: true },
-      { key: 'h2', label: 'Reassess BP after any SGLT2 addition (mild BP lowering)', correct: true },
-      { key: 'h3', label: 'Add two new BP agents today regardless of response', correct: false },
-    ]},
-    { id: 'lipid_plan', title: 'Lipid / ASCVD plan', options: [
-      { key: 'l1', label: 'Continue atorvastatin 20 mg (good response)', correct: true },
-      { key: 'l2', label: 'Stop the statin now that LDL is 78', correct: false },
-    ]},
-    { id: 'life_plan', title: 'Lifestyle / weight plan', options: [
-      { key: 'lf1', label: 'Reinforce and praise progress (sweet tea, cooking, walking)', correct: true },
-      { key: 'lf2', label: 'Set next realistic activity/diet goals', correct: true },
-      { key: 'lf3', label: 'Tell her the weight loss is too slow to matter', correct: false },
-    ]},
-    { id: 'mon_plan', title: 'Monitoring plan', options: [
-      { key: 'm1', label: 'Recheck BMP (K, SCr) and UACR; A1C in ~3 months', correct: true },
-      { key: 'm2', label: 'No further labs needed', correct: false },
-    ]},
-    { id: 'fu_plan', title: 'Follow-up plan', options: [
-      { key: 'f1', label: 'Follow up ~3 months (sooner if new agent started)', correct: true },
-      { key: 'f2', label: 'Return in 1 year', correct: false },
-    ]},
+    {
+      id: 'htn_plan',
+      title: 'Hypertension plan',
+      options: [
+        { key: 'h1', label: 'Continue lisinopril 20 mg PO daily in the morning', correct: true },
+        { key: 'h2', label: 'Continue hydrochlorothiazide 12.5 mg PO daily in the morning', correct: true },
+        { key: 'h3', label: 'Reinforce medication adherence strategies under the hypertension plan', correct: true },
+        { key: 'h4', label: 'Reinforce home blood pressure monitoring 3–4 times weekly with a written log', correct: true },
+        { key: 'h5', label: 'Hold immediate pharmacologic escalation today to observe full response to recent titration and lifestyle modifications', correct: true },
+        { key: 'h6', label: 'Condition future antihypertensive intensification on blood pressure remaining above target (<130/80 mmHg) at next visit', correct: true },
+        { key: 'h7', label: 'Provide dietary sodium reduction counseling (DASH diet principles, <2,000 mg/day)', correct: true },
+      ]
+    },
+    {
+      id: 'dm_plan',
+      title: 'Diabetes plan',
+      options: [
+        { key: 'd1', label: 'Continue metformin XR 2000 mg PO daily with dinner', correct: true },
+        { key: 'd2', label: 'Continue self-monitoring of blood glucose (SMBG) 3–4 times weekly fasting', correct: true },
+        { key: 'd3', label: 'Repeat A1C in ~3 months to assess trajectory toward <7.0% goal', correct: true },
+        { key: 'd4', label: 'Condition future add-on therapy (GLP-1 RA or SGLT2 inhibitor) on unmet glycemic goals (A1C >7.0% at next visit)', correct: true },
+      ]
+    },
+    {
+      id: 'kidney_plan',
+      title: 'Albuminuria & diabetic kidney disease risk plan',
+      options: [
+        { key: 'k1', label: 'Continue lisinopril 20 mg PO daily for renal and cardiorenal protection', correct: true },
+        { key: 'k2', label: 'Educate patient regarding albuminuria, early kidney involvement, and the protective role of ACE inhibitors and BP control', correct: true },
+        { key: 'k3', label: 'Repeat UACR annually or sooner (in 6–12 months) to confirm and track albuminuria trajectory', correct: true },
+      ]
+    },
+    {
+      id: 'lipid_plan',
+      title: 'Lipid & primary ASCVD prevention plan',
+      options: [
+        { key: 'l1', label: 'Continue atorvastatin 20 mg PO daily at bedtime', correct: true },
+        { key: 'l2', label: 'Reinforce medication adherence specifically for lipid therapy (evening dosing strategies)', correct: true },
+        { key: 'l3', label: 'Repeat lipid panel in ~6–12 months to monitor long-term efficacy and adherence', correct: true },
+      ]
+    },
+    {
+      id: 'life_plan',
+      title: 'Lifestyle & weight management plan',
+      options: [
+        { key: 'lf1', label: 'Continue regular walking program progressing toward >=150 minutes/week moderate activity', correct: true },
+        { key: 'lf2', label: 'Continue reduction in sugar-sweetened beverages (sweet tea) and restaurant meal frequency', correct: true },
+        { key: 'lf3', label: 'Encourage further weight loss via balanced nutrition and activity', correct: true },
+        { key: 'lf4', label: 'Explicitly tie continued weight loss and lifestyle modifications to blood pressure and glycemic benefits', correct: true },
+      ]
+    },
+    {
+      id: 'adh_plan',
+      title: 'Medication adherence optimization plan',
+      options: [
+        { key: 'a1', label: 'Continue established reminder strategies (pill placement by coffee maker for morning medications)', correct: true },
+        { key: 'a2', label: 'Recommend a medication organizer (pill box) if missed doses persist', correct: true },
+        { key: 'a3', label: 'Discuss reminder strategies for evening medications (focusing on atorvastatin at bedtime, e.g., toothbrush pairing)', correct: true },
+      ]
+    },
+    {
+      id: 'imm_plan',
+      title: 'Preventive care & immunization plan',
+      options: [
+        { key: 'i1', label: 'Verify vaccination history in state registry', correct: true },
+        { key: 'i2', label: 'Recommend pneumococcal conjugate vaccination (PCV20) for adult with diabetes mellitus', correct: true },
+        { key: 'i3', label: 'Recommend recombinant zoster vaccine (Shingrix 2-dose series) for adult >=50 years', correct: true },
+        { key: 'i4', label: 'Recommend Tdap booster vaccination given 11-year interval since last tetanus toxoid dose', correct: true },
+      ]
+    },
+    {
+      id: 'fu_plan',
+      title: 'Follow-up & monitoring plan',
+      options: [
+        { key: 'f1', label: 'Follow up in 3 months for collaborative ambulatory care visit', correct: true },
+        { key: 'f2', label: 'Obtain repeat A1C prior to next encounter', correct: true },
+        { key: 'f3', label: 'Obtain repeat BMP (serum creatinine, eGFR, potassium) prior to next visit', correct: true },
+        { key: 'f4', label: 'Explicitly review home blood pressure log and measurement technique at next visit', correct: true },
+        { key: 'f5', label: 'Explicitly review medication adherence patterns at the follow-up visit', correct: true },
+        { key: 'f6', label: 'Review lifestyle progress, dietary habits, and weight trajectory toward goals at next encounter', correct: true },
+        { key: 'f7', label: 'Reassess need for therapy intensification (GLP-1 RA or SGLT2i) if A1C or BP remain above goal', correct: true },
+        { key: 'f8', label: 'Monitor response and tolerability of current pharmacotherapy regimen', correct: true },
+      ]
+    },
   ],
 
   PLAN_FREETEXT: [
@@ -716,17 +836,6 @@ const caseWed = {
     { key: 'followUp', label: 'Follow-up plan', placeholder: 'Timing and what to recheck…' },
     { key: 'questionsPatient', label: 'Questions for the patient', placeholder: 'Preferences, barriers to clarify…' },
     { key: 'questionsProvider', label: 'Questions for provider / preceptor', placeholder: 'Agent selection, formulary, etc.' },
-  ],
-
-  GUIDING_QUESTIONS: [
-    'Why did you choose to intensify therapy or not intensify therapy today?',
-    'What does a UACR of 45 mg/g tell you about this patient\'s future risk?',
-    'How does albuminuria change your treatment priorities?',
-    'Why isn\'t a normal creatinine enough to rule out diabetic kidney disease?',
-    'What therapies may become appropriate if albuminuria persists?',
-    'What evidence suggests the current treatment plan is working?',
-    'What additional goals remain unmet?',
-    'If you only looked at today\'s numbers and ignored the trends, what mistake might you make?'
   ],
 
   COUNSELING: [
@@ -812,9 +921,7 @@ const caseWed = {
     'You are Maria Gonzalez at a 3-month follow-up. You feel cautiously encouraged but unsure if you are "where you need to be." You are friendly and cooperative. Speak plainly, never clinically. Do NOT volunteer hidden details (which med you miss, exact home values, diet changes, weight feelings, kidney understanding, injection preference) unless specifically asked. You are motivated by weight loss and frightened about your kidneys because of your mother. Keep answers short and natural.',
 }
 
-// ----------------------------------------------------------------------------
-// CASE 3 — THURSDAY — 6-Month Follow-Up (Advanced)
-// ----------------------------------------------------------------------------
+
 const caseThu = {
   id: 'maria-thu',
   PATIENT: PATIENT_MASTER,
