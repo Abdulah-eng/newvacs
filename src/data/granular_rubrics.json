@@ -16532,10 +16532,10 @@
     },
     {
       "id": "1B.6",
-      "description": "Walks 4-5 days/week, 30-40 min/session",
+      "description": "Walks 4-5 days/week or trying to maintain regular walks (or working toward routine without strict daily schedule)",
       "points": 0.6,
-      "fullCredit": "States 4-5 days/week, 30-40 min",
-      "halfCredit": "States more active, no detail",
+      "fullCredit": "States walking 4-5 days/week (or reports patient walks when able / working toward regular walking routine without strict daily schedule)",
+      "halfCredit": "Vague physical activity statement",
       "zeroCredit": "Omits"
     },
     {
@@ -17612,10 +17612,10 @@
     },
     {
       "id": "3F.4",
-      "description": "Attributes to dietary changes + increased physical activity",
+      "description": "Attributes weight change to dietary changes, increased physical activity, or gradual lifestyle change",
       "points": 0.5,
-      "fullCredit": "Names both contributors",
-      "halfCredit": "Names one",
+      "fullCredit": "Attributes to dietary changes and/or increased activity, or reinforces ongoing lifestyle progress",
+      "halfCredit": "Names one factor or documents weight change without causal context",
       "zeroCredit": "Omits"
     },
     {
@@ -18286,10 +18286,10 @@
     },
     {
       "id": "1C.2",
-      "description": "Hypertension duration (8 years)",
+      "description": "Hypertension duration (8 years or uncertain per patient)",
       "points": 0.2,
-      "fullCredit": "States 8 years",
-      "halfCredit": "—",
+      "fullCredit": "States 8 years (or documents patient uncertain / several years per chart)",
+      "halfCredit": "States prolonged/several years without number",
       "zeroCredit": "Omits"
     },
     {
@@ -18302,10 +18302,10 @@
     },
     {
       "id": "1C.4",
-      "description": "Hyperlipidemia duration (5 years)",
+      "description": "Hyperlipidemia duration (5 years or uncertain per patient)",
       "points": 0.2,
-      "fullCredit": "States 5 years",
-      "halfCredit": "—",
+      "fullCredit": "States 5 years (or documents patient uncertain / several years per chart)",
+      "halfCredit": "States prolonged/several years without number",
       "zeroCredit": "Omits"
     },
     {
@@ -20936,10 +20936,10 @@
     },
     {
       "id": "3F.4",
-      "description": "Attributes to increased activity + dietary modifications",
+      "description": "Attributes weight change to dietary modifications, increased activity, or notes multifactorial / unclear causation",
       "points": 0.5,
-      "fullCredit": "Names both contributors",
-      "halfCredit": "Names one",
+      "fullCredit": "Attributes weight change to dietary modifications/activity OR notes multifactorial/unclear causation and reinforces lifestyle goals",
+      "halfCredit": "Names one factor or documents weight change without causal context",
       "zeroCredit": "Omits"
     },
     {
@@ -21056,9 +21056,9 @@
     },
     {
       "id": "4A.6",
-      "description": "No further statin intensification given favorable response",
+      "description": "No further statin intensification given favorable response (or reinforces adherence with conditional escalation plan)",
       "points": 0.4,
-      "fullCredit": "States holding intensification",
+      "fullCredit": "States holding intensification (or reinforces adherence with conditional escalation plan if needed)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -22130,9 +22130,9 @@
     },
     {
       "id": "2B.17",
-      "description": "ASCVD risk improvement (17.4% to 13.2%)",
+      "description": "ASCVD risk improvement (13.2% vs baseline 14.5% or 17.4%)",
       "points": 0.4,
-      "fullCredit": "States improvement with values",
+      "fullCredit": "States improvement to 13.2% from baseline (14.5% or 17.4%) or states current 13.2% with prior comparison",
       "halfCredit": "States improved, no values",
       "zeroCredit": "Omits"
     },
@@ -22154,10 +22154,10 @@
     },
     {
       "id": "2C.3",
-      "description": "UACR progressively improving but remains A2",
+      "description": "UACR trend (165->160->155 mg/g): small downward trend or persistent A2 albuminuria",
       "points": 0.6,
-      "fullCredit": "States improving yet still A2",
-      "halfCredit": "States improved only",
+      "fullCredit": "States improving/downward trend yet still A2 (or cautiously notes persistent A2 albuminuria with minor downward trend / uncertain clinical significance)",
+      "halfCredit": "States improved only or notes A2 only",
       "zeroCredit": "Omits"
     },
     {
@@ -22250,9 +22250,9 @@
     },
     {
       "id": "3A.9",
-      "description": "Documents ASCVD risk improvement (17.4% to 13.2%)",
+      "description": "Documents ASCVD risk improvement (13.2% vs baseline 14.5% or 17.4%)",
       "points": 0.5,
-      "fullCredit": "States change with values",
+      "fullCredit": "Documents ASCVD risk improvement to 13.2% from baseline (14.5% or 17.4%) or documents ongoing risk reduction",
       "halfCredit": "States improved, no values",
       "zeroCredit": "Omits"
     },
@@ -22418,9 +22418,9 @@
     },
     {
       "id": "3C.7",
-      "description": "Defers intensification at this visit",
+      "description": "Defers intensification at this visit (or continues current regimen / conditional plan)",
       "points": 0.3,
-      "fullCredit": "States deferral",
+      "fullCredit": "States deferral (or maintains current regimen / conditional plan)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -22698,9 +22698,9 @@
     },
     {
       "id": "4A.5",
-      "description": "No further statin intensification given sustained response",
+      "description": "No further statin intensification given sustained response (or continues current regimen / conditional plan)",
       "points": 0.5,
-      "fullCredit": "States holding intensification",
+      "fullCredit": "States holding intensification (or maintains current regimen / conditional plan)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -25034,7 +25034,7 @@
       "points": 0.5,
       "fullCredit": "Notes rosuvastatin 20 mg PO daily was successfully initiated with good adherence and tolerance (or confirms appropriate single-statin therapy)",
       "halfCredit": "Notes statin initiated, no dose/tolerance",
-      "zeroCredit": "Omits / still lists simvastatin"
+      "zeroCredit": "Omits / statin initiation not confirmed"
     },
     {
       "id": "1E.11",
@@ -25366,10 +25366,10 @@
     },
     {
       "id": "2B.16",
-      "description": "ASCVD risk improvement (17.4% to 14.5%)",
+      "description": "ASCVD risk trend (14.5% vs baseline 14.5% or 17.4%)",
       "points": 0.4,
-      "fullCredit": "States improvement with values",
-      "halfCredit": "States improved, no values",
+      "fullCredit": "States ASCVD risk 14.5% (or notes improvement from baseline 17.4% to 14.5%, or stable high risk at 14.5%)",
+      "halfCredit": "States improved/stable, no values",
       "zeroCredit": "Omits"
     },
     {
@@ -25486,10 +25486,10 @@
     },
     {
       "id": "3A.9",
-      "description": "Documents ASCVD risk improvement (17.4% to 14.5%)",
+      "description": "Documents ASCVD risk (14.5% or improvement from 17.4% baseline)",
       "points": 0.5,
-      "fullCredit": "States change with values",
-      "halfCredit": "States improved, no values",
+      "fullCredit": "Documents ASCVD risk 14.5% (or improvement from 17.4% to 14.5%, or persistent elevated risk requiring therapy)",
+      "halfCredit": "States improved/stable, no values",
       "zeroCredit": "Omits"
     },
     {
@@ -25694,9 +25694,9 @@
     },
     {
       "id": "3D.7",
-      "description": "Defers intensification at this visit",
+      "description": "Defers intensification at this visit (or discusses shared decision-making / conditional intensification)",
       "points": 0.3,
-      "fullCredit": "States deferral",
+      "fullCredit": "States deferral (or discusses shared decision-making / conditional intensification if LDL target not met)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -25950,9 +25950,9 @@
     },
     {
       "id": "4A.5",
-      "description": "No further statin intensification given favorable response",
+      "description": "No further statin intensification given favorable response (or conditional escalation plan)",
       "points": 0.3,
-      "fullCredit": "States holding intensification",
+      "fullCredit": "States holding intensification (or maintains rosuvastatin with conditional escalation plan if LDL remains elevated)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -28842,10 +28842,10 @@
     },
     {
       "id": "3A.10",
-      "description": "Cites KDIGO 2024 CKD Guideline",
+      "description": "Cites KDIGO 2024 CKD Guideline (or applies KDIGO staging criteria)",
       "points": 0.4,
-      "fullCredit": "Names KDIGO 2024",
-      "halfCredit": "Cites guideline, no source",
+      "fullCredit": "Names KDIGO 2024 (or cites guideline-directed CKD management / applies KDIGO staging criteria)",
+      "halfCredit": "Cites guideline or staging without source name",
       "zeroCredit": "Omits"
     },
     {
@@ -30676,10 +30676,10 @@
     },
     {
       "id": "3C.2",
-      "description": "Status: controlled",
+      "description": "Status: improved / controlled on rosuvastatin (or working toward stricter <70 mg/dL target in diabetes/CKD)",
       "points": 0.5,
-      "fullCredit": "States controlled",
-      "halfCredit": "—",
+      "fullCredit": "States improved/controlled on rosuvastatin (or notes substantial progress toward goal <70 mg/dL)",
+      "halfCredit": "States improved without target context",
       "zeroCredit": "Incorrect"
     },
     {
@@ -30740,9 +30740,9 @@
     },
     {
       "id": "3D.3",
-      "description": "LDL-C controlled (82 mg/dL) on rosuvastatin",
+      "description": "LDL-C (82 mg/dL) improved/controlled on rosuvastatin (or notes progress toward stricter <70 mg/dL goal with conditional ezetimibe consideration)",
       "points": 0.6,
-      "fullCredit": "States LDL controlled on statin",
+      "fullCredit": "States LDL improved/controlled on statin (or notes substantial progress toward <70 mg/dL goal with plan to recheck or conditionally consider ezetimibe)",
       "halfCredit": "States LDL only",
       "zeroCredit": "Omits"
     },

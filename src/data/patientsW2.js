@@ -13,15 +13,22 @@ import { makeCase } from './caseFactory.js'
 const michaelTue = makeCase({
   id: 'w2-michael-tue',
   PATIENT: { name: 'Michael Turner', age: 58, sex: 'male', ethnicity: 'Non-Hispanic White', mrn: 'A2-510042' },
-  ENCOUNTER: { week: 'Week 2', 
-    day: 'Tuesday', type: 'initial collaborative practice management', difficulty: 'Core', difficultyTone: 'teal',
+  ENCOUNTER: { 
+    week: 'Week 2', 
+    day: 'Tuesday', 
+    type: 'initial collaborative practice management', 
+    difficulty: 'Core', 
+    difficultyTone: 'teal',
+    setting: 'ambulatory care pharmacy clinic',
+    referralSource: 'primary care provider (PCP)',
     chiefConcern: "My doctor sent me over about my cholesterol and some protein in my urine.",
     snapshotSummary: 'CKD G2A2 with preserved eGFR but persistent albuminuria, above-goal LDL on a low-dose statin, and HTN. The chart looks mild — but a nephrotoxic OTC and missed statin doses are hiding in plain sight.',
-    diseaseStates: ['Hyperlipidemia', 'CKD G2A2', 'Hypertension'],
+    diseaseStates: ['Hyperlipidemia', 'CKD G2A2', 'Hypertension', 'Obesity', 'Preventive Care'],
     learningObjectives: [
       'Recognize CKD by albuminuria even when eGFR is preserved (stage G2A2)',
       'Uncover an undisclosed nephrotoxic OTC (NSAID) and statin nonadherence',
       'Intensify lipid therapy to an appropriate intensity for a high-risk patient',
+      'Address blood pressure, obesity, and immunization gaps',
     ],
   },
   VITALS: { bp: '136/84', bpRepeat: '134/82', hr: '72', rr: '16', temp: '98.4°F', weight: '103 kg', height: "5'10\"", bmi: '32.6',
@@ -31,10 +38,10 @@ const michaelTue = makeCase({
     { label: 'K', value: '4.5', unit: 'mEq/L', flag: 'normal' },
     { label: 'SCr', value: '1.08', unit: 'mg/dL', flag: 'normal' },
     { label: 'eGFR', value: '79', unit: 'mL/min/1.73m²', flag: 'normal', note: 'Preserved (G2)' },
-    { label: 'AST', value: '24', unit: 'U/L', flag: 'normal' },
-    { label: 'ALT', value: '27', unit: 'U/L', flag: 'normal' },
+    { label: 'AST', value: '24', unit: 'U/L', flag: 'normal', note: 'Normal baseline for statin therapy' },
+    { label: 'ALT', value: '27', unit: 'U/L', flag: 'normal', note: 'Normal baseline for statin therapy' },
     { label: 'Total cholesterol', value: '214', unit: 'mg/dL', flag: 'high' },
-    { label: 'LDL-C', value: '132', unit: 'mg/dL', flag: 'high', note: 'Above goal for his risk' },
+    { label: 'LDL-C', value: '132', unit: 'mg/dL', flag: 'high', note: 'Above goal for his cardiorenal risk' },
     { label: 'HDL-C', value: '42', unit: 'mg/dL', flag: 'normal' },
     { label: 'Triglycerides', value: '196', unit: 'mg/dL', flag: 'high' },
     { label: 'UACR', value: '118', unit: 'mg/g', flag: 'warn', note: 'Moderately increased (A2); prior 105 mg/g documented 4 months ago' },
@@ -48,11 +55,13 @@ const michaelTue = makeCase({
     { name: 'Chronic kidney disease, G2A2', detail: 'eGFR 79, UACR 118 (A2)', flag: 'warn' },
     { name: 'Essential hypertension', detail: 'BP mid-130s/80s', flag: 'warn' },
     { name: 'Obesity', detail: 'BMI 32.6', flag: 'warn' },
+    { name: 'Chronic NSAID exposure', detail: 'OTC Ibuprofen several times weekly for knee pain', flag: 'warn' },
+    { name: 'Preventive care gaps', detail: 'Immunizations due: PCV20, Shingrix, Tdap overdue', flag: 'warn' }
   ],
   MEDICATIONS: [
     { name: 'Lisinopril', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'HTN / kidney protection', notes: '' },
     { name: 'Hydrochlorothiazide', dose: '25 mg', route: 'PO', freq: 'daily', indication: 'HTN', notes: '' },
-    { name: 'Atorvastatin', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'Hyperlipidemia', notes: 'Target: LDL < 70' },
+    { name: 'Atorvastatin', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'Hyperlipidemia', notes: 'Target: LDL < 70 mg/dL' },
   ],
   ALLERGIES: [{ substance: 'No known drug allergies', reaction: '—' }],
   IMMUNIZATIONS: [
@@ -63,9 +72,12 @@ const michaelTue = makeCase({
     { name: 'Tdap', status: 'Overdue (last documented 12 years ago)', flag: 'warn' }
   ],
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: 'Referred for persistent LDL-C elevation despite statin therapy and newly identified persistent albuminuria. Feels well; questions why more treatment is needed.' },
-    { label: 'Social history', value: 'Warehouse manager (formerly accountant). Former smoker (quit ~5–6 years ago, ~10–20 pack-years). Occasional alcohol (1–2 drinks/month or weekly). Frequent restaurant/processed meals. Largely sedentary.' },
-    { label: 'Family history', value: 'Father MI at 61, HLD, HTN; mother HTN, HLD — positive family history of ASCVD (note: MI at age 61 does not meet criteria for premature ASCVD in a male relative [<55], but remains clinically relevant).' },
+    { label: 'HPI', value: '58-year-old male referred by his primary care provider (PCP) for initial collaborative practice management of persistent LDL-C elevation (132 mg/dL) despite statin therapy, essential hypertension, and newly identified persistent albuminuria (UACR 118 mg/g). Reports feeling generally well overall aside from mild occasional fatigue after long warehouse shifts and chronic, intermittent bilateral knee pain and stiffness.' },
+    { label: 'Past Medical History', value: 'Essential hypertension (diagnosed 8 years ago), hyperlipidemia (diagnosed 5 years ago), and chronic kidney disease Stage G2A2 (identified ~4 months ago).' },
+    { label: 'Review of Systems', value: 'Denies chest pain, shortness of breath, palpitations, dizziness, syncope, lower extremity edema, gross hematuria, or changes in urinary frequency.' },
+    { label: 'Social history', value: 'Warehouse manager (formerly accountant). Former smoker (quit 5 years ago, ~10 pack-year history). Occasional alcohol (1–2 drinks per month). Denies recreational drug use. Largely sedentary (walks 0–1x/week). Diet includes frequent restaurant and processed meals (3–4x/week); does not monitor sodium or read nutrition labels.' },
+    { label: 'Family history', value: 'Father had MI at age 61, hypertension, and hyperlipidemia (positive family history of ASCVD; does not meet criteria for premature ASCVD in a male relative [<55]). Mother has hypertension and hyperlipidemia. Brother has type 2 diabetes. Denies family history of ESKD, dialysis, or chronic kidney disease.' },
+    { label: 'Patient Goals & Concerns', value: 'Very concerned about future kidney failure after seeing a close friend require hemodialysis. Strongly motivated to reduce cardiovascular risk, prevent CKD progression, and achieve gradual weight loss.' },
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.26 m²', flag: 'normal' },
@@ -91,17 +103,30 @@ const michaelTue = makeCase({
 
   INTERVIEW_KNOWLEDGE: [
     { id: 'w2-michael-tue_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
-    { id: 'w2-michael-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take ibuprofen or acetaminophen occasionally for my knee stiffness, and a daily multivitamin." },
+    { id: 'w2-michael-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take ibuprofen for knee pain, and a daily multivitamin." },
     { id: 'w2-michael-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink alcohol occasionally—maybe 1 to 2 drinks per month at family gatherings or dinners." },
     { id: 'w2-michael-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I quit about 5 years ago, and I had about a 10 pack-year history before that." },
+    { id: 'w2-michael-tue_drugs', topic: 'Recreational drug use', field: 'social', keywords: ['drug', 'illicit', 'marijuana', 'cocaine', 'recreational', 'substance'], response: "I have never used recreational drugs or illicit substances in my life." },
     { id: 'w2-michael-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling', 'family', 'dad', 'mom', 'relatives', 'hereditary'], response: "My father had high blood pressure and high cholesterol, and had a heart attack (myocardial infarction) at age 61. My mother has high blood pressure and high cholesterol. My brother has type 2 diabetes." },
+    { id: 'w2-michael-tue_fh_eskd', topic: 'Family history of kidney disease', field: 'familyHistory', keywords: ['kidney disease', 'dialysis', 'eskd', 'renal failure', 'family kidney'], response: "No, nobody in my family has ever had chronic kidney disease, gone on dialysis, or had kidney failure." },
     { id: 'w2-michael-tue_psh', topic: 'Past surgical history', field: 'psh', keywords: ['surgery', 'surgeries', 'operation', 'appendectomy', 'surgical', 'appendix', 'procedure'], response: "I had an appendectomy when I was 27, but no other surgeries." },
     { id: 'w2-michael-tue_hosp', topic: 'Hospitalization / ED visits', field: 'hospitalization', keywords: ['hospital', 'hospitalization', 'admit', 'admission', 'emergency room', 'hospitalized', 'admitted', 'admissions'], response: "No, I haven't had any recent hospitalizations or emergency room visits." },
     { id: 'w2-michael-tue_marital', topic: 'Marital status', field: 'familyHistory', keywords: ['marital', 'married', 'wife', 'spouse'], response: "I am married and live with my wife." },
     { id: 'w2-michael-tue_occupation', topic: 'Occupation', field: 'exercise', keywords: ['job', 'work', 'occupation', 'manager', 'warehouse', 'accountant'], response: "I work as a warehouse manager, though my background was in accounting." },
+    { id: 'w2-michael-tue_ref', topic: 'Referral source and reason', field: 'hpi', keywords: ['refer', 'referred', 'pcp', 'primary care', 'doctor', 'why are you here', 'sent'], response: "My primary care doctor (PCP) referred me over for follow-up because my cholesterol remains high on atorvastatin and my lab test showed protein in my urine." },
+    { id: 'w2-michael-tue_fatigue', topic: 'Fatigue and general symptoms', field: 'symptoms', keywords: ['fatigue', 'tired', 'energy', 'weakness'], response: "I feel generally fine day-to-day. I do notice some mild occasional fatigue after long shifts on my feet at the warehouse, but nothing severe." },
+    { id: 'w2-michael-tue_knee', topic: 'Knee stiffness and pain', field: 'symptoms', keywords: ['knee', 'joint', 'stiffness', 'arthritis', 'pain'], response: "I have had chronic, intermittent bilateral knee pain and stiffness for several years, which flares up when standing for long periods at work." },
+    { id: 'w2-michael-tue_ros', topic: 'Review of systems negatives', field: 'symptoms', keywords: ['chest pain', 'short of breath', 'shortness of breath', 'palpitations', 'dizziness', 'syncope', 'edema', 'hematuria', 'urinary', 'frequency', 'swelling'], response: "I deny any chest pain, shortness of breath, palpitations, dizziness, syncope or fainting, lower extremity leg swelling or edema, gross hematuria (blood in urine), or urinary frequency changes." },
+    { id: 'w2-michael-tue_fin', topic: 'Financial and adherence barriers', field: 'cost', keywords: ['cost', 'afford', 'money', 'expensive', 'copay', 'financial'], response: "No, cost is not a barrier at all. My generic copays through work insurance are very low, so I have no financial trouble getting my prescriptions." },
+    { id: 'w2-michael-tue_skip', topic: 'Intentional statin skipping', field: 'adherence', keywords: ['on purpose', 'intentional', 'stop taking', 'why do you miss'], response: "No, I never intentionally skip my atorvastatin. I take it at bedtime and just get tired or forget to take it two or three nights a week." },
+    { id: 'w2-michael-tue_nsaid_harm', topic: 'NSAID awareness', field: 'otc', keywords: ['harm', 'kidney', 'blood pressure', 'aware', 'nsaid effect', 'know'], response: "I honestly was completely unaware that over-the-counter ibuprofen could raise blood pressure or harm kidney function. I assumed OTC pain relievers were completely safe." },
+    { id: 'w2-michael-tue_pmh_dur', topic: 'Disease durations', field: 'pmh', keywords: ['how long', 'duration', 'diagnosed', 'when did you get', 'years'], response: "I have had high blood pressure for about 8 years and high cholesterol for roughly 5 years. The kidney protein issue was just found a few months ago." },
+    { id: 'w2-michael-tue_sodium', topic: 'Dietary sodium and food habits', field: 'diet', keywords: ['salt', 'sodium', 'label', 'restaurant', 'fast food', 'processed'], response: "We eat out at restaurants 3 to 4 times a week, and I do not monitor dietary sodium or look at food nutrition labels." },
+    { id: 'w2-michael-tue_concerns_dialysis', topic: 'Dialysis and kidney fear', field: 'concerns', keywords: ['fear', 'dialysis', 'kidney failure', 'friend', 'worry'], response: "A close friend of mine went on hemodialysis recently and it really impacted his life. Seeing that made me very concerned about developing kidney failure, and I want to avoid anything like that." },
+    { id: 'w2-michael-tue_goals', topic: 'Cardiovascular and kidney goals', field: 'weightGoals', keywords: ['goal', 'cardiovascular', 'heart', 'kidney', 'prevention'], response: "My goals are to reduce my cardiovascular risk, prevent my kidney disease from progressing, and lose some weight so I can stay healthy." },
     { id: 'a_nsaid', topic: 'OTC ibuprofen (nephrotoxic)', field: 'otc',
       keywords: ['ibuprofen', 'advil', 'motrin', 'nsaid', 'pain', 'knee', 'arthritis', 'otc', 'over the counter', 'supplement'],
-      response: "Oh — I take ibuprofen for my knees, a few times a week. Usually 1 to 2 over-the-counter tablets (about 200–400 mg) PRN. It's just over-the-counter, so I didn't think it counted as a medication." },
+      response: "Oh — I take ibuprofen for my knees, several times a week. Usually 1 to 2 over-the-counter tablets (about 200–400 mg) PRN. It's just over-the-counter, so I didn't think it counted as a medication." },
     { id: 'a_adh', topic: 'Statin nonadherence', field: 'adherence',
       keywords: ['miss', 'forget', 'adherence', 'atorvastatin', 'cholesterol medicine', 'every day', 'skip', 'take it'],
       response: "I take the cholesterol one at night… mostly. I probably miss it two or three times a week if I'm honest — I just forget." },
@@ -116,30 +141,148 @@ const michaelTue = makeCase({
       response: "My doctor asked me to log my home readings for 5 days before this visit, so I brought that in—it averaged around 136/83 mmHg. Otherwise, I don't check very consistently on my own." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'a_hld', title: 'Hyperlipidemia / ASCVD risk', icon: 'Droplet', color: '13314f',
+    { 
+      id: 'a_hld', 
+      title: 'Hyperlipidemia / Elevated Cardiovascular Risk', 
+      icon: 'Droplet', 
+      color: '13314f',
       questions: [
-        { key: 'a_hld_q1', q: 'Is atorvastatin 10 mg the right intensity given his LDL, CKD, and family history?' },
-        { key: 'a_hld_q2', q: 'How does missing the statin 2–3×/week change your read on the LDL of 132?' },
-      ] },
-    { id: 'a_ckd', title: 'CKD G2A2 & nephrotoxins', icon: 'FlaskConical', color: '0891b2',
+        { 
+          key: 'a_hld_eval', 
+          q: 'Evaluation of lipid control, cardiovascular risk, and statin intensity:', 
+          defaultAnswer: 'Control status: Suboptimal control. Current LDL-C is 132 mg/dL on atorvastatin 10 mg PO daily, which remains elevated above the treatment threshold. Calculated 10-year ASCVD risk score is 11.8%, placing him at elevated/intermediate-to-high cardiovascular risk. In addition, the patient exhibits multiple key ASCVD risk-enhancing conditions: chronic kidney disease (CKD G2A2 is an established risk enhancer per 2026 AHA/ACC Cholesterol Guidelines), essential hypertension, Class I obesity (BMI 32.6 kg/m²), former tobacco use (10 pack-years, quit 5 years ago), and positive family history of cardiovascular disease (father had MI at age 61). Medication nonadherence contributes to elevated LDL-C (misses evening doses 2–3 times weekly due to forgetting), but current statin intensity (atorvastatin 10 mg, low-to-moderate intensity) is inadequate for his risk profile. Indicated for statin intensification to high-intensity therapy (atorvastatin 40 mg PO daily, or titrating 20–40 mg daily) with adherence counseling and routine support to achieve goal LDL-C <70 mg/dL (or ≥50% reduction) per 2026 AHA/ACC Cholesterol Guidelines.' 
+        }
+      ] 
+    },
+    { 
+      id: 'a_ckd', 
+      title: 'Chronic Kidney Disease, Stage G2A2 & Nephrotoxin Risk', 
+      icon: 'FlaskConical', 
+      color: '0891b2',
       questions: [
-        { key: 'a_ckd_q1', q: 'How is he CKD G2A2 with an eGFR of 79? What does the UACR add?' },
-        { key: 'a_ckd_q2', q: 'What is the significance of his frequent ibuprofen use?' },
-      ] },
+        { 
+          key: 'a_ckd_eval', 
+          q: 'Evaluation of CKD staging, progression risk, and NSAID nephrotoxicity:', 
+          defaultAnswer: 'Status: CKD Stage G2A2, stable renal filtration but persistent elevated albuminuria and progression risk. Classified using dual-axis staging: Stage G2 derived from preserved eGFR of 79 mL/min/1.73m² (SCr 1.08 mg/dL) and Category A2 derived from moderately increased albuminuria with UACR 118 mg/g. Persistence of albuminuria is confirmed across two distinct measurements (previous UACR 105 mg/g documented 4 months ago, increasing slightly to 118 mg/g today), confirming chronicity. Per KDIGO 2024 CKD Guidelines, eGFR and albuminuria independently predict CKD progression and cardiovascular events; persistent albuminuria signifies ongoing glomerular and microvascular kidney damage despite preserved filtration. Progression risk factors include ongoing hypertension, Class I obesity, and chronic nephrotoxin exposure (frequent OTC ibuprofen 400–600 mg). Chronic NSAID use contributes directly to blood pressure elevation, impairs renal autoregulation, blunts ACE inhibitor antiproteinuric efficacy, and accelerates CKD progression. Strict NSAID avoidance and safer analgesia with acetaminophen are strongly indicated per KDIGO 2024 nephrotoxin avoidance guidelines.' 
+        }
+      ] 
+    },
+    { 
+      id: 'a_htn', 
+      title: 'Essential Hypertension', 
+      icon: 'HeartPulse', 
+      color: '13314f',
+      questions: [
+        { 
+          key: 'a_htn_eval', 
+          q: 'Evaluation of blood pressure control, target, and management strategy:', 
+          defaultAnswer: 'Status: Essential hypertension, near goal but above treatment target. Office BP is 136/84 mmHg (repeat 134/82 mmHg); 5-day home BP log average of 136/83 mmHg is consistent with and corroborates office measurements. Blood pressure treatment target is <130/80 mmHg per 2025 AHA/ACC Hypertension Guidelines in CKD (with systolic <120 mmHg considered when standardized office measurement is well-tolerated per KDIGO 2024). Sustained BP elevation accelerates albuminuria, renal decline, and ASCVD risk. Current 2-drug antihypertensive regimen (lisinopril 20 mg PO daily and hydrochlorothiazide 25 mg PO daily) is well-tolerated with stable renal function (SCr 1.08 mg/dL, eGFR 79) and normal potassium (4.5 mEq/L). Immediate pharmacologic BP intensification is deferred today; priority is placed on stopping nephrotoxic NSAIDs, reinforcing medication adherence, and dietary sodium restriction, reassessing BP at next visit.' 
+        }
+      ] 
+    },
+    { 
+      id: 'a_obesity', 
+      title: 'Obesity (Class I, BMI 32.6 kg/m²)', 
+      icon: 'Scale', 
+      color: 'ca8a04',
+      questions: [
+        { 
+          key: 'a_ob_eval', 
+          q: 'Evaluation of obesity, cardiometabolic impact, and weight loss goals:', 
+          defaultAnswer: 'Classification: Weight 103 kg, height 5\'10" (70 inches), BMI 32.6 kg/m², classifying as Class I Obesity (BMI consistent with height and weight). Obesity directly contributes to cardiovascular risk, exacerbates essential hypertension, increases intraglomerular hyperfiltration, and raises CKD progression risk. Per 2026 AHA/ACC and KDIGO 2024 lifestyle guidelines, modest 5–10% weight reduction provides dual benefits in lowering blood pressure, reducing intraglomerular pressure/albuminuria, and improving lipid profiles. The patient is highly motivated to lose weight, providing an excellent intervention opportunity for structured lifestyle counseling.' 
+        }
+      ] 
+    },
+    { 
+      id: 'a_prevent', 
+      title: 'Preventive Care & Health Maintenance Gaps', 
+      icon: 'Heart', 
+      color: '7c3aed',
+      questions: [
+        { 
+          key: 'a_prev_eval', 
+          q: 'Evaluation of immunization status and preventive health needs:', 
+          defaultAnswer: 'Status: Preventive care and immunization gaps identified from objective EMR records. Adults with CKD and elevated cardiovascular risk have increased susceptibility to vaccine-preventable infections: Pneumococcal conjugate vaccination (PCV20) is indicated for CKD; Recombinant Zoster vaccine (Shingrix 2-dose series) is indicated for age ≥50; and Tdap booster is overdue (last dose 12 years ago, exceeding the 10-year booster window per CDC guidelines). Recommend verifying immunization registry history and administering indicated vaccines.' 
+        }
+      ] 
+    },
   ],
   PLAN_SECTIONS: [
-    { id: 'a_p_hld', title: 'Lipid / ASCVD plan', options: [
-      { key: 'a_hld_o1', label: 'Intensify atorvastatin (e.g., to 20–40 mg) toward a high-intensity, guideline-appropriate dose', correct: true },
-      { key: 'a_hld_o2', label: 'Address adherence first — confirm he is actually taking the statin', correct: true },
-      { key: 'a_hld_o3', label: 'Stop the statin because LDL is "only" 132', correct: false },
-      { key: 'a_hld_o4', label: 'Recheck a lipid panel in ~3 months', correct: true },
-    ] },
-    { id: 'a_p_ckd', title: 'CKD / kidney-protection plan', options: [
-      { key: 'a_ckd_o1', label: 'Counsel to stop the NSAID; suggest acetaminophen for knee pain', correct: true },
-      { key: 'a_ckd_o2', label: 'Continue the ACE inhibitor for albuminuria/kidney protection', correct: true },
-      { key: 'a_ckd_o3', label: 'Stop the ACE inhibitor because eGFR is "normal"', correct: false },
-      { key: 'a_ckd_o4', label: 'Repeat UACR and renal function in ~3 months', correct: true },
-    ] },
+    { 
+      id: 'a_p_hld', 
+      title: 'Lipid / ASCVD plan', 
+      options: [
+        { key: 'a_hld_o1', label: 'Intensify atorvastatin to 40 mg PO once daily at bedtime (or titrate 20–40 mg toward high-intensity dose) per 2026 AHA/ACC Cholesterol Guidelines', correct: true },
+        { key: 'a_hld_o2', label: 'Treatment target: LDL-C <70 mg/dL (or >=50% reduction from baseline)', correct: true },
+        { key: 'a_hld_o3', label: 'Counsel on medication adherence: recommend pill organizer, smartphone reminder, and pairing statin dose with bedtime routine', correct: true },
+        { key: 'a_hld_o4', label: 'Educate patient on the relationship between CKD and elevated cardiovascular risk, and how statin therapy provides cardiovascular protection', correct: true },
+        { key: 'a_hld_o5', label: 'Recheck lipid panel in 6-12 weeks to assess therapeutic response, adherence, and statin tolerance', correct: true },
+        { key: 'a_hld_o6', label: 'Stop the statin because LDL is "only" 132', correct: false },
+      ] 
+    },
+    { 
+      id: 'a_p_ckd', 
+      title: 'CKD & renoprotective plan', 
+      options: [
+        { key: 'a_ckd_o1', label: 'Continue lisinopril 20 mg PO once daily for renal and cardiovascular protection (reduces intraglomerular pressure and albuminuria)', correct: true },
+        { key: 'a_ckd_o2', label: 'Educate patient on CKD staging (G2A2) and the clinical significance of albuminuria as a marker of kidney and vascular health', correct: true },
+        { key: 'a_ckd_o3', label: 'Discuss comprehensive strategy to reduce kidney disease progression risk factors (blood pressure optimization, NSAID avoidance, weight control)', correct: true },
+        { key: 'a_ckd_o4', label: 'Repeat spot UACR and renal function (CMP) in ~3 months', correct: true },
+        { key: 'a_ckd_o5', label: 'Stop the ACE inhibitor because eGFR is "normal"', correct: false },
+      ] 
+    },
+    { 
+      id: 'a_p_htn', 
+      title: 'Hypertension plan', 
+      options: [
+        { key: 'a_htn_o1', label: 'Continue lisinopril 20 mg PO once daily', correct: true },
+        { key: 'a_htn_o2', label: 'Continue hydrochlorothiazide 25 mg PO once daily in the morning', correct: true },
+        { key: 'a_htn_o3', label: 'Blood pressure treatment target: <130/80 mmHg per 2025 AHA/ACC Hypertension Guidelines in CKD (KDIGO <120 SBP when tolerated)', correct: true },
+        { key: 'a_htn_o4', label: 'Recommend continued home blood pressure monitoring (HBPM) >=3-4 days/week and maintain a written log; counsel on proper measurement technique (sit quietly 5 min, feet flat, uncrossed legs, arm supported at heart level)', correct: true },
+        { key: 'a_htn_o5', label: 'Defer immediate third antihypertensive agent pending NSAID cessation, dietary sodium restriction, and adherence reinforcement', correct: true },
+      ] 
+    },
+    { 
+      id: 'a_p_nsaid', 
+      title: 'Pain management & nephrotoxin avoidance plan', 
+      options: [
+        { key: 'a_nsaid_o1', label: 'Discontinue frequent OTC ibuprofen use to avoid drug-induced nephrotoxicity and blood pressure elevation', correct: true },
+        { key: 'a_nsaid_o2', label: 'Educate on CKD-specific NSAID risks: acute kidney injury, blunted ACE inhibitor/diuretic efficacy, fluid retention, and accelerated CKD progression', correct: true },
+        { key: 'a_nsaid_o3', label: 'Recommend acetaminophen (Tylenol) 500-650 mg PO every 6 hours PRN as first-line therapy for knee osteoarthritis (maximum 3000 mg/day)', correct: true },
+        { key: 'a_nsaid_o4', label: 'Explore non-pharmacologic joint support: low-impact walking, quadriceps strengthening, weight reduction, and warm compresses; conditional referral to PCP if pain persists', correct: true },
+      ] 
+    },
+    { 
+      id: 'a_p_life', 
+      title: 'Lifestyle & weight management plan', 
+      options: [
+        { key: 'a_life_o1', label: 'Encourage progression toward >=150 minutes/week of moderate-intensity aerobic physical activity (e.g., brisk walking 30 min, 5 days/week)', correct: true },
+        { key: 'a_life_o2', label: 'Counsel on dietary sodium reduction (<2000-2300 mg/day) and tie lifestyle changes to blood pressure lowering benefit', correct: true },
+        { key: 'a_life_o3', label: 'Recommend reducing restaurant meal and takeout frequency, replacing with home-prepared meals', correct: true },
+        { key: 'a_life_o4', label: 'Counsel on increasing dietary fruit and vegetable intake and choosing whole grains', correct: true },
+        { key: 'a_life_o5', label: 'Discuss weight-loss benefits for kidney and cardiovascular health, setting an initial target of 5-10% (5-10 kg) gradual weight reduction', correct: true },
+      ] 
+    },
+    { 
+      id: 'a_p_prevent', 
+      title: 'Preventive care / immunization plan', 
+      options: [
+        { key: 'a_prev_o1', label: 'Verify state immunization registry history', correct: true },
+        { key: 'a_prev_o2', label: 'Recommend Pneumococcal conjugate vaccination (PCV20) for CKD risk', correct: true },
+        { key: 'a_prev_o3', label: 'Recommend Recombinant Zoster vaccine (Shingrix) 2-dose series (dose 1 today, dose 2 in 2-6 months) for age >=50', correct: true },
+        { key: 'a_prev_o4', label: 'Administer Tdap booster today (overdue >10 years per CDC schedule)', correct: true },
+      ] 
+    },
+    { 
+      id: 'a_p_followup', 
+      title: 'Follow-up & monitoring plan', 
+      options: [
+        { key: 'a_foll_o1', label: 'Schedule comprehensive collaborative practice follow-up visit in 3 months', correct: true },
+        { key: 'a_foll_o2', label: 'Order pre-visit laboratory testing: Comprehensive Metabolic Panel (CMP: SCr, eGFR, BUN, electrolytes, AST, ALT), spot UACR, and fasting lipid panel', correct: true },
+        { key: 'a_foll_o3', label: 'Obtain repeat office blood pressure readings and review home BP log before next visit', correct: true },
+        { key: 'a_foll_o4', label: 'Reassess medication adherence, pill organizer routine, tolerability of intensified statin, and knee pain at follow-up', correct: true },
+      ] 
+    },
   ],
   GUIDING_QUESTIONS: [
     'Why does this patient meet criteria for CKD despite having an eGFR of 79 mL/min/1.73m²?',
@@ -396,13 +539,16 @@ const angelaTue = makeCase({
   PATIENT: { name: 'Angela Rodriguez', age: 66, sex: 'female', ethnicity: 'Hispanic/Latina', mrn: 'B2-990812', allergiesSummary: 'Penicillin (Rash)' },
   ENCOUNTER: { week: 'Week 2', 
     day: 'Tuesday', type: 'initial collaborative practice management', difficulty: 'Core', difficultyTone: 'teal',
+    setting: 'ambulatory care pharmacy clinic',
+    referralSource: 'primary care provider (PCP)',
     chiefConcern: "I came to check on my blood pressure and cholesterol, and my doctor said we should talk about my kidneys too.",
     snapshotSummary: 'CKD G3aA2 with a significant drop in eGFR over the past year, elevated LDL-C on no therapy, and stage 1 HTN. She was prescribed rosuvastatin 6 months ago but never started it.',
-    diseaseStates: ['Hyperlipidemia', 'CKD G3aA2', 'Hypertension'],
+    diseaseStates: ['Hyperlipidemia', 'CKD G3aA2', 'Hypertension', 'Obesity', 'Preventive Care'],
     learningObjectives: [
       'Understand CKD risk stratification and staging (G3aA2)',
       'Uncover a patient access barrier (cost) and fear of adverse effects (SAMS)',
       'Address clinical inertia by initiating a guideline-directed high-intensity statin',
+      'Address blood pressure, obesity, and immunization gaps',
     ],
   },
   VITALS: { bp: '138/84', bpRepeat: '136/82', hr: '74', rr: '16', temp: '98.6°F', weight: '96 kg', height: "5'4\"", bmi: '36.3',
@@ -412,8 +558,8 @@ const angelaTue = makeCase({
     { label: 'K', value: '4.6', unit: 'mEq/L', flag: 'normal' },
     { label: 'SCr', value: '1.20', unit: 'mg/dL', flag: 'normal' },
     { label: 'eGFR', value: '53', unit: 'mL/min/1.73m²', flag: 'warn', note: 'Moderate drop (G3a)' },
-    { label: 'AST', value: '22', unit: 'U/L', flag: 'normal' },
-    { label: 'ALT', value: '21', unit: 'U/L', flag: 'normal' },
+    { label: 'AST', value: '22', unit: 'U/L', flag: 'normal', note: 'Normal baseline for statin safety' },
+    { label: 'ALT', value: '21', unit: 'U/L', flag: 'normal', note: 'Normal baseline for statin safety' },
     { label: 'Total cholesterol', value: '234', unit: 'mg/dL', flag: 'high' },
     { label: 'LDL-C', value: '148', unit: 'mg/dL', flag: 'high', note: 'Significantly elevated' },
     { label: 'HDL-C', value: '46', unit: 'mg/dL', flag: 'normal' },
@@ -429,6 +575,8 @@ const angelaTue = makeCase({
     { name: 'Chronic kidney disease, G3aA2', detail: 'eGFR 53, UACR 165 (A2)', flag: 'warn' },
     { name: 'Essential hypertension', detail: 'BP mid-130s/80s', flag: 'warn' },
     { name: 'Obesity', detail: 'BMI 36.3', flag: 'warn' },
+    { name: 'Therapeutic inertia secondary to non-initiation', detail: 'Prescribed rosuvastatin 20 mg unstarted due to cost/fears', flag: 'warn' },
+    { name: 'Preventive care gaps', detail: 'Immunizations due: PCV20, Shingrix, Tdap overdue', flag: 'warn' }
   ],
   MEDICATIONS: [
     { name: 'Losartan', dose: '50 mg', route: 'PO', freq: 'daily', indication: 'HTN / kidney protection', notes: '' },
@@ -443,14 +591,17 @@ const angelaTue = makeCase({
     { name: 'Tdap', status: 'Overdue (last documented 12 years ago)', flag: 'warn' }
   ],
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: 'Referred for persistently elevated LDL-C despite prior recommendation to intensify therapy. Pleasant, engaged; avoids volunteering concerns.' },
-    { label: 'Social history', value: 'Retired teacher, widowed, lives alone. Medicare Part D. Convenience/high-sodium diet. Walks <1×/week. Never smoker. Occasional alcohol.' },
-    { label: 'Family history', value: 'Father MI at 63; mother CKD; sister HLD/HTN.' },
+    { label: 'HPI', value: '64-year-old female referred by her primary care provider (PCP) for initial collaborative practice management of uncontrolled hyperlipidemia (LDL-C 148 mg/dL), essential hypertension, and chronic kidney disease Stage G3aA2. Reports taking active blood pressure medications (losartan 50 mg, amlodipine 10 mg) faithfully as prescribed with no skipped or stretched doses. Rosuvastatin 20 mg PO daily was prescribed 6 months ago but never initiated due to out-of-pocket cost concerns on a fixed income, embarrassment discussing affordability with her doctor, and fear of statin-associated muscle aches.' },
+    { label: 'Past Medical & Surgical History', value: 'Essential hypertension (diagnosed 15 years ago), hyperlipidemia (diagnosed 12 years ago), and chronic kidney disease Stage G3aA2 (newly identified). Surgical history: cholecystectomy (~10 years ago) and total abdominal hysterectomy at age 45.' },
+    { label: 'Review of Systems', value: 'Denies chest pain, shortness of breath, palpitations, syncope, lower extremity edema, gross hematuria, or urinary complaints. Reports occasional mild fatigue and occasional nighttime leg cramping.' },
+    { label: 'Social history', value: 'Retired elementary school teacher, widowed, lives independently in her own home. Never smoker. Rare alcohol use (holiday wine). Denies recreational drug use. Diet consists of frequent convenience/packaged foods with elevated sodium; sedentary lifestyle.' },
+    { label: 'Family history', value: 'Father had hypertension, hyperlipidemia, and myocardial infarction at age 63. Mother had hypertension, chronic kidney disease, and stroke at age 72. Sister has hypertension and hyperlipidemia.' },
+    { label: 'Patient Goals & Values', value: 'Deeply values maintaining independent living in her home. Primary health goals are avoiding future dialysis and protecting her kidneys and cardiovascular health.' },
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.08 m²', flag: 'normal' },
     { label: '10-Year ASCVD Risk Score', value: '14.5% — High risk', flag: 'high' },
-    { label: 'Rosuvastatin fill history', value: 'Prescribed ~6 months ago — no claims on record', flag: 'missing' }
+    { label: 'Rosuvastatin fill history', value: 'Prescribed ~6 months ago — no claims on record (unstarted)', flag: 'warn' }
   ],
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Statin history (never started?)', placeholder: 'Prior prescriptions, unfilled meds…' },
@@ -474,9 +625,17 @@ const angelaTue = makeCase({
     { id: 'w2-angela-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take Calcium 600 mg plus Vitamin D3 daily for bone health, and Tylenol occasionally for mild pain." },
     { id: 'w2-angela-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
     { id: 'w2-angela-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
+    { id: 'w2-angela-tue_drugs', topic: 'Recreational drug use', field: 'social', keywords: ['drug', 'illicit', 'marijuana', 'cocaine', 'recreational', 'substance'], response: "I have never used illicit drugs or recreational substances." },
     { id: 'w2-angela-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling', 'family', 'dad', 'mom', 'relatives', 'hereditary'], response: "My father had high blood pressure, high cholesterol, and had a heart attack at age 63. My mother had high blood pressure and chronic kidney disease, and she suffered a stroke at age 72. My sister also has high cholesterol and high blood pressure." },
     { id: 'w2-angela-tue_psh', topic: 'Past surgical history', field: 'psh', keywords: ['surgery', 'surgeries', 'operation', 'cholecystectomy', 'hysterectomy', 'gallbladder', 'uterus', 'surgical', 'procedure'], response: "I had my gallbladder removed (cholecystectomy) about 10 years ago, and I also had a total abdominal hysterectomy when I was 45." },
     { id: 'w2-angela-tue_hosp', topic: 'Hospitalization / ED visits', field: 'hospitalization', keywords: ['hospital', 'hospitalization', 'admit', 'admission', 'emergency room', 'hospitalized', 'admitted', 'admissions'], response: "No, I have not had any recent hospitalizations or emergency department visits." },
+    { id: 'w2-angela-tue_ref', topic: 'Referral source and trigger', field: 'hpi', keywords: ['refer', 'referred', 'pcp', 'primary care', 'doctor', 'why are you here', 'sent'], response: "My primary care provider (PCP) referred me here for comprehensive evaluation of my cardiovascular risk and elevated cholesterol, and to review my kidney numbers." },
+    { id: 'w2-angela-tue_adherence_active', topic: 'Adherence to active blood pressure pills', field: 'adherence', keywords: ['adherence', 'take pills', 'regularly', 'losartan', 'amlodipine', 'stretch', 'skip'], response: "I take my blood pressure pills (losartan and amlodipine) faithfully every morning as prescribed. I never skip or stretch those doses." },
+    { id: 'w2-angela-tue_rosuv_dose', topic: 'Rosuvastatin prior prescription dose', field: 'adherence', keywords: ['rosuvastatin', 'dose', 'how much', 'strength', 'prescribed'], response: "My doctor originally prescribed rosuvastatin 20 mg once daily about 6 months ago, but with the cost and my worries about muscle aches, I never started taking it." },
+    { id: 'w2-angela-tue_cost_comm', topic: 'Cost anxiety and provider communication', field: 'cost', keywords: ['cost', 'afford', 'expensive', 'copay', 'fixed income', 'embarrassed', 'talk'], response: "I was very uncertain if I could afford the ongoing copays on my fixed retirement income, and I felt too embarrassed to bring up the price with my doctor at the time." },
+    { id: 'w2-angela-tue_ros', topic: 'Review of systems pertinent negatives', field: 'symptoms', keywords: ['chest pain', 'short of breath', 'shortness of breath', 'palpitations', 'syncope', 'edema', 'hematuria', 'urinary', 'complaints', 'swelling'], response: "Review of systems: I deny having any chest pain, shortness of breath, heart palpitations, syncope or fainting spells, swelling in my legs or feet (edema), blood in my urine (gross hematuria), or urinary complaints." },
+    { id: 'w2-angela-tue_indep', topic: 'Independent living value', field: 'goals', keywords: ['independent', 'living', 'alone', 'mobility', 'value'], response: "Living independently on my own in my home is something I value deeply. Staying healthy, mobile, and avoiding disability is very important to me." },
+    { id: 'w2-angela-tue_hbpm', topic: 'Home blood pressure readings', field: 'homeBp', keywords: ['home bp', 'check at home', 'cuff', 'readings', 'log'], response: "I check my blood pressure at home occasionally, maybe once a week or every couple of weeks. When I check, it's usually around 140/85 mmHg, but I haven't kept a written log." },
     { id: 'b_statin', topic: 'Rosuvastatin never started', field: 'adherence',
       keywords: ['rosuvastatin', 'prescribed', 'never started', 'new', 'cholesterol medication', 'unfilled', 'previous', 'change', 'pick up'],
       response: "My doctor prescribed rosuvastatin about six months ago… but I never started it. I'm sorry — I felt embarrassed to bring it up." },
@@ -493,29 +652,135 @@ const angelaTue = makeCase({
       response: "I check my blood pressure every once in a while, but I don't keep a written log." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'b_hld', title: 'Hyperlipidemia & access', icon: 'Droplet', color: '13314f',
+    { 
+      id: 'b_hld', 
+      title: 'Hyperlipidemia & Therapeutic Inertia (Non-Initiation)', 
+      icon: 'Droplet', 
+      color: '13314f',
       questions: [
-        { key: 'b_hld_q1', q: 'Why is her LDL still 148 — pharmacology or access?' },
-        { key: 'b_hld_q2', q: 'What statin intensity does a CKD G3a patient with this LDL warrant?' },
-      ] },
-    { id: 'b_ckd', title: 'CKD G3aA2 & BP', icon: 'FlaskConical', color: '0891b2',
+        { 
+          key: 'b_hld_eval', 
+          q: 'Evaluation of untreated hyperlipidemia, ASCVD risk, and non-initiation barriers:', 
+          defaultAnswer: 'Status: Untreated severe hyperlipidemia with markedly elevated LDL-C of 148 mg/dL (Total Chol 234–238 mg/dL, Triglycerides 185–200 mg/dL, HDL-C 41–46 mg/dL). Baseline 10-year ASCVD risk is high at 14.5%–17.4%. Key ASCVD risk-enhancing conditions include CKD G3aA2, essential hypertension, Class II obesity (BMI 36.3 kg/m²), and advanced age (64 years). Absent statin therapy is clearly inadequate for this high-risk patient. Crucially, this reflects therapeutic inertia secondary to patient non-initiation rather than inappropriate prescribing or pharmacologic failure: rosuvastatin 20 mg PO daily was prescribed 6 months ago but never initiated due to unaddressed patient barriers (financial anxiety on fixed retirement income and fear of statin-associated muscle symptoms). Cost-related non-initiation represents a major threat to long-term cardiovascular and renal disease control. Clinical strategy must resolve these barriers through reassuring adverse effect counseling (actual low incidence of severe myopathy, protocol for managing aches), identifying affordable generic pharmacy options ($4–$10/month), and shared decision-making to successfully initiate guideline-directed high-intensity statin therapy (rosuvastatin 20 mg PO daily) targeting LDL-C <70–100 mg/dL (or ≥50% reduction) per 2026 AHA/ACC Cholesterol Guidelines.' 
+        }
+      ] 
+    },
+    { 
+      id: 'b_ckd', 
+      title: 'Chronic Kidney Disease, Stage G3aA2', 
+      icon: 'FlaskConical', 
+      color: '0891b2',
       questions: [
-        { key: 'b_ckd_q1', q: 'How does CKD change her cardiovascular risk and lipid targets?' },
-        { key: 'b_ckd_q2', q: 'Is her BP at goal? What is appropriate here?' },
-      ] },
+        { 
+          key: 'b_ckd_eval', 
+          q: 'Evaluation of CKD staging, cardiorenal risk, and renoprotection:', 
+          defaultAnswer: 'Status: CKD Stage G3aA2, stable but at elevated cardiorenal risk. Dual-axis classification: Stage G3a derived from moderately-to-severely decreased eGFR of 53–54 mL/min/1.73m² (SCr 1.18–1.20 mg/dL) and Category A2 derived from persistent moderately increased albuminuria with UACR 165 mg/g (supported by prior UACR 152 mg/g documented 5 months ago, confirming chronicity and slightly worsening trend). Cites KDIGO 2024 CKD Guidelines: reduced eGFR and persistent albuminuria independently and synergistically predict CKD progression, end-stage kidney disease, and cardiovascular events. Combined risk demonstrates that continued, proactive cardiorenal risk reduction remains essential. Active ARB therapy (losartan 50 mg daily) provides vital renoprotective antiproteinuric effects and intraglomerular pressure reduction. AST (20–22 U/L) and ALT (19–21 U/L) are completely within normal limits, establishing safe baseline liver function prior to statin initiation.' 
+        }
+      ] 
+    },
+    { 
+      id: 'b_htn', 
+      title: 'Essential Hypertension', 
+      icon: 'HeartPulse', 
+      color: '13314f',
+      questions: [
+        { 
+          key: 'b_htn_eval', 
+          q: 'Evaluation of blood pressure control, target, and management strategy:', 
+          defaultAnswer: 'Status: Essential hypertension, above treatment goal. Office BP is 138/84 mmHg (repeat 136/82 mmHg; ref 142/86, 140/84 mmHg); occasional home BP readings (~140/85 mmHg) corroborate in-office elevation. Blood pressure target is <130/80 mmHg per 2025 AHA/ACC Hypertension Guidelines in CKD (with KDIGO systolic target <120 mmHg when standardized measurement is tolerated). Contributing factors include high-sodium convenience food intake and lack of regular physical activity. Active regimen (losartan 50 mg PO daily and amlodipine 10 mg PO daily) is well-tolerated. Defer immediate pharmacologic intensification today to prevent polypharmacy and avoid confusing side-effect profiles while initiating rosuvastatin; prioritize establishing regular home BP monitoring, sodium restriction, and adherence assessment, reassessing BP for potential losartan titration to 100 mg at follow-up.' 
+        }
+      ] 
+    },
+    { 
+      id: 'b_obesity', 
+      title: 'Obesity (Class II, BMI 36.3 kg/m²)', 
+      icon: 'Scale', 
+      color: 'ca8a04',
+      questions: [
+        { 
+          key: 'b_ob_eval', 
+          q: 'Evaluation of obesity, cardiorenal impact, and lifestyle intervention:', 
+          defaultAnswer: 'Classification: Weight 96 kg, height 5\'4" (64 inches, 1.6256 m), reconciles arithmetically to BMI 36.3 kg/m², classifying as Class II Obesity. Obesity directly contributes to cardiovascular risk, exacerbates essential hypertension, increases intraglomerular hyperfiltration, and accelerates CKD progression. Per 2026 AHA/ACC and KDIGO 2024 guidelines, modest 5–10% weight loss provides substantial cardiorenal benefits. Patient is motivated to maintain independent living; structured lifestyle modifications focusing on fresh meal preparation, dietary sodium reduction, and regular walking are indicated.' 
+        }
+      ] 
+    },
+    { 
+      id: 'b_prevent', 
+      title: 'Preventive Care & Health Maintenance Gaps', 
+      icon: 'Heart', 
+      color: '7c3aed',
+      questions: [
+        { 
+          key: 'b_prev_eval', 
+          q: 'Evaluation of immunization status and preventive health needs:', 
+          defaultAnswer: 'Status: Preventive care and immunization gaps identified. Adults with CKD G3a and elevated ASCVD risk have increased susceptibility to vaccine-preventable infections. Indicated immunizations: Pneumococcal conjugate vaccination (PCV20) for CKD; Recombinant Zoster vaccine (Shingrix 2-dose series) for age ≥50; and Tdap booster is overdue (>10-year booster interval per CDC guidelines). Recommend verifying state immunization registry and administering indicated vaccines.' 
+        }
+      ] 
+    },
   ],
   PLAN_SECTIONS: [
-    { id: 'b_p_hld', title: 'Lipid plan', options: [
-      { key: 'b_hld_o1', label: 'Initiate a high-intensity statin (rosuvastatin) after confirming affordability', correct: true },
-      { key: 'b_hld_o2', label: 'Reconcile the med list — confirm she is not taking rosuvastatin', correct: true },
-      { key: 'b_hld_o3', label: 'Re-prescribe a brand she already said she can’t afford, without addressing cost', correct: false },
-      { key: 'b_hld_o4', label: 'Address the cost barrier (insurance coverage, assistance) and the statin fear', correct: true },
-    ] },
-    { id: 'b_p_bp', title: 'BP / kidney plan', options: [
-      { key: 'b_bp_o1', label: 'Continue ARB for kidney protection; optimize BP toward goal', correct: true },
-      { key: 'b_bp_o2', label: 'Start a home BP monitoring routine', correct: true },
-      { key: 'b_bp_o3', label: 'Stop the ARB because eGFR is 54', correct: false },
-    ] },
+    { 
+      id: 'b_p_hld', 
+      title: 'Lipid / Statin initiation plan', 
+      options: [
+        { key: 'b_hld_o1', label: 'Initiate rosuvastatin 20 mg PO once daily at bedtime per 2026 AHA/ACC Cholesterol Guidelines', correct: true },
+        { key: 'b_hld_o2', label: 'Treatment target: LDL-C <70-100 mg/dL (or >=50% reduction from baseline 148 mg/dL)', correct: true },
+        { key: 'b_hld_o3', label: 'Discuss statin benefits and reassure patient regarding low incidence of severe adverse effects; establish plan to report any muscle aches', correct: true },
+        { key: 'b_hld_o4', label: 'Tie statin choice and high-intensity dosing directly to high ASCVD risk score and CKD G3aA2 risk-enhancer status', correct: true },
+        { key: 'b_hld_o5', label: 'Order repeat lipid panel in 6-12 weeks to evaluate response and tolerability', correct: true },
+        { key: 'b_hld_o6', label: 'Re-prescribe an unaffordable brand without addressing cost', correct: false },
+      ] 
+    },
+    { 
+      id: 'b_p_access', 
+      title: 'Affordability & access plan', 
+      options: [
+        { key: 'b_acc_o1', label: 'Identify affordable pharmacy options: navigate Medicare Part D low-cost generic copays ($4-$10/month) or $4 retail generic formularies', correct: true },
+        { key: 'b_acc_o2', label: 'Encourage open, regular communication about prescription affordability concerns to prevent cost-related non-initiation', correct: true },
+      ] 
+    },
+    { 
+      id: 'b_p_bp', 
+      title: 'Chronic kidney disease & antihypertensive plan', 
+      options: [
+        { key: 'b_bp_o1', label: 'Continue losartan 50 mg PO once daily for renal and cardiovascular protection (reduces intraglomerular pressure and albuminuria)', correct: true },
+        { key: 'b_bp_o2', label: 'Continue amlodipine 10 mg PO once daily for essential hypertension control', correct: true },
+        { key: 'b_bp_o3', label: 'Blood pressure treatment target: <130/80 mmHg per 2025 AHA/ACC Hypertension Guidelines (KDIGO <120 SBP when tolerated)', correct: true },
+        { key: 'b_bp_o4', label: 'Order repeat spot UACR, serum creatinine, and CMP in 6-12 weeks to monitor renal function and albuminuria', correct: true },
+        { key: 'b_bp_o5', label: 'Recommend initiating structured home blood pressure monitoring (HBPM) >=3-4 days/week and recording a written log', correct: true },
+        { key: 'b_bp_o6', label: 'Stop the ARB because eGFR is 53-54', correct: false },
+      ] 
+    },
+    { 
+      id: 'b_p_life', 
+      title: 'Lifestyle & weight management plan', 
+      options: [
+        { key: 'b_life_o1', label: 'Recommend increasing physical activity: initiate regular walking program, progressing toward >=150 minutes/week of moderate exercise', correct: true },
+        { key: 'b_life_o2', label: 'Counsel on dietary sodium reduction (<2000 mg/day) by cutting down on packaged convenience foods and salty processed items', correct: true },
+        { key: 'b_life_o3', label: 'Counsel on increasing fresh produce (fruits and vegetables) and home-cooked meals', correct: true },
+        { key: 'b_life_o4', label: 'Establish realistic weight-loss goal of 5-10% (5-10 kg) to lower blood pressure, reduce intraglomerular hyperfiltration, and decrease CV risk', correct: true },
+      ] 
+    },
+    { 
+      id: 'b_p_prevent', 
+      title: 'Preventive care / immunization plan', 
+      options: [
+        { key: 'b_prev_o1', label: 'Verify state immunization registry records', correct: true },
+        { key: 'b_prev_o2', label: 'Recommend Pneumococcal conjugate vaccination (PCV20) for CKD', correct: true },
+        { key: 'b_prev_o3', label: 'Recommend Recombinant Zoster vaccine (Shingrix) 2-dose series (dose 1 today, dose 2 in 2-6 months) for age >=50', correct: true },
+        { key: 'b_prev_o4', label: 'Administer Tdap booster today (overdue per CDC guidelines)', correct: true },
+      ] 
+    },
+    { 
+      id: 'b_p_followup', 
+      title: 'Follow-up & monitoring plan', 
+      options: [
+        { key: 'b_foll_o1', label: 'Schedule follow-up visit in 6-8 weeks', correct: true },
+        { key: 'b_foll_o2', label: 'Order pre-visit laboratory testing: CMP (renal function, electrolytes, LFTs), spot UACR, and fasting lipid panel', correct: true },
+        { key: 'b_foll_o3', label: 'Reassess medication initiation, affordability, and statin tolerability at follow-up visit', correct: true },
+        { key: 'b_foll_o4', label: 'Review home blood pressure log and reassess office BP for potential losartan titration to 100 mg', correct: true },
+      ] 
+    },
   ],
   GUIDING_QUESTIONS: [
     'What is the difference between nonadherence and noninitiation?',
@@ -783,16 +1048,19 @@ const davidTue = makeCase({
   PATIENT: { name: 'David Chen', age: 62, sex: 'male', ethnicity: 'East Asian', mrn: 'C2-441098' },
   ENCOUNTER: { week: 'Week 2', 
     day: 'Tuesday', type: 'initial collaborative practice management', difficulty: 'Advanced', difficultyTone: 'amber',
-    chiefConcern: "My pharmacist wanted me to follow up about adding a new kidney protector medication.",
+    setting: 'ambulatory care pharmacy clinic',
+    referralSource: 'primary care provider (PCP)',
+    chiefConcern: "My doctor referred me to discuss my kidney numbers and diabetes.",
     snapshotSummary: 'CKD G3bA3 with severe albuminuria and high cardiorenal risk. He declined finerenone previously due to potassium concerns. He is already on ACEi, SGLT2i, and statin.',
-    diseaseStates: ['Hyperlipidemia', 'CKD G3bA3', 'Hypertension', 'T2D'],
+    diseaseStates: ['Type 2 Diabetes', 'CKD G3bA3', 'Hyperlipidemia', 'Hypertension', 'Obesity', 'Preventive Care'],
     learningObjectives: [
       'Recognize CKD risk stage (G3bA3) and the need for combination therapy',
       'Address student/patient hyperkalemia concerns with real-world clinical evidence',
       'Overcome patient hesitation by explaining the cardiorenal benefits of finerenone',
+      'Manage diabetes, lipids, blood pressure, obesity, and immunization gaps',
     ],
   },
-  VITALS: { bp: '138/82', bpRepeat: '136/80', hr: '72', weight: '102 kg', height: "5'10\"", bmi: '32.3',
+  VITALS: { bp: '138/82', bpRepeat: '136/80', hr: '72', rr: '16', temp: '98.4°F', weight: '102 kg', height: "5'10\"", bmi: '32.3',
     flags: { bp: 'warn', bpRepeat: 'warn', bmi: 'warn' } },
   LABS: [
     { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal' },
@@ -804,7 +1072,7 @@ const davidTue = makeCase({
     { label: 'AST', value: '24', unit: 'U/L', flag: 'normal' },
     { label: 'ALT', value: '22', unit: 'U/L', flag: 'normal' },
     { label: 'Total cholesterol', value: '172', unit: 'mg/dL', flag: 'normal' },
-    { label: 'LDL-C', value: '88', unit: 'mg/dL', flag: 'normal' },
+    { label: 'LDL-C', value: '88', unit: 'mg/dL', flag: 'normal', note: 'Target <70 for very high risk' },
     { label: 'HDL-C', value: '43', unit: 'mg/dL', flag: 'normal' },
     { label: 'Triglycerides', value: '178', unit: 'mg/dL', flag: 'normal' },
     { label: 'UACR', value: '520', unit: 'mg/g', flag: 'high', note: 'Severely increased (A3); prior 505 mg/g documented 4 months ago' },
@@ -814,16 +1082,18 @@ const davidTue = makeCase({
     { level: 'warn', text: 'Diabetes co-management — A1C is near goal at 7.2%.' },
   ],
   PROBLEMS: [
-    { name: 'Hyperlipidemia', detail: 'LDL-C 88 mg/dL, controlled', flag: 'normal' },
-    { name: 'Chronic kidney disease, G3bA3', detail: 'eGFR 42, UACR 520 (A3)', flag: 'high' },
-    { name: 'Type 2 diabetes', detail: 'A1C 7.2%', flag: 'warn' },
-    { name: 'Essential hypertension', detail: 'BP mid-130s/80s', flag: 'warn' },
+    { name: 'Chronic kidney disease, G3bA3', detail: 'eGFR 42, UACR 520 (A3), high cardiorenal risk', flag: 'high' },
+    { name: 'Type 2 diabetes mellitus with CKD', detail: 'A1C 7.2%, controlled with residual renal risk', flag: 'warn' },
+    { name: 'Hyperlipidemia / ASCVD risk', detail: 'LDL-C 88 mg/dL, 10-year risk 22.0%', flag: 'normal' },
+    { name: 'Essential hypertension', detail: 'BP mid-130s/80s, above goal', flag: 'warn' },
+    { name: 'Obesity', detail: 'BMI 32.3', flag: 'warn' },
+    { name: 'Preventive care gaps', detail: 'Immunizations due: PCV20, Shingrix, Tdap overdue', flag: 'warn' }
   ],
   MEDICATIONS: [
-    { name: 'Metformin ER', dose: '1000 mg', route: 'PO', freq: 'BID', indication: 'T2DM', notes: '' },
+    { name: 'Metformin ER', dose: '1000 mg', route: 'PO', freq: 'BID', indication: 'T2DM', notes: 'Monitor renal function / eGFR' },
     { name: 'Empagliflozin', dose: '25 mg', route: 'PO', freq: 'daily', indication: 'T2D / cardiorenal', notes: '' },
     { name: 'Lisinopril', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'HTN / kidney protection', notes: '' },
-    { name: 'Rosuvastatin', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'Hyperlipidemia / ASCVD risk', notes: '' },
+    { name: 'Rosuvastatin', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'Hyperlipidemia / ASCVD risk', notes: 'Target: LDL < 70 mg/dL' },
     { name: 'Amlodipine', dose: '5 mg', route: 'PO', freq: 'daily', indication: 'HTN', notes: '' },
   ],
   ALLERGIES: [{ substance: 'No known drug allergies', reaction: '—' }],
@@ -832,17 +1102,20 @@ const davidTue = makeCase({
     { name: 'COVID-19', status: 'Up to date', flag: 'normal' },
     { name: 'Pneumococcal', status: 'None documented', flag: 'warn' },
     { name: 'Herpes zoster (Shingrix)', status: 'None documented', flag: 'warn' },
-    { name: 'Tdap', status: 'Overdue', flag: 'warn' }
+    { name: 'Tdap', status: 'Overdue (last documented >10 years ago)', flag: 'warn' }
   ],
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: 'Established T2DM/CKD patient, highly analytical, requests the rationale before agreeing to changes. Excellent adherence to current regimen.' },
-    { label: 'Social history', value: 'Electrical engineer, married. Never smoker. Attempts a diabetic diet; walks ~3×/week.' },
-    { label: 'Family history', value: 'Father MI at 58 + T2DM; mother T2DM + CKD; brother CAD.' },
+    { label: 'HPI', value: '62-year-old male referred by his primary care provider (PCP) for initial collaborative practice management of Type 2 diabetes with chronic kidney disease Stage G3bA3 and elevated cardiovascular risk, specifically addressing persistent severe albuminuria (UACR 520 mg/g) and progression risk despite dual foundational therapy (ACE inhibitor + SGLT2 inhibitor). Highly analytical, follows lab trends in patient portal, and researches medical literature online. Excellent adherence to current medications; denies hypoglycemia. Previously declined finerenone recommendation due to hyperkalemia concerns, pill burden, and wanting clear clinical trial evidence.' },
+    { label: 'Past Medical & Surgical History', value: 'Type 2 diabetes mellitus (12 years), essential hypertension (10 years), hyperlipidemia (8 years), and chronic kidney disease Stage G3bA3 (3 years). Surgical history is completely negative (denies prior surgeries). Denies recent hospitalizations or emergency department visits.' },
+    { label: 'Review of Systems', value: 'Denies chest pain, palpitations, syncope, lower extremity edema, gross hematuria, or voiding complaints/dysuria. Notes occasional nocturia (1-2x/night) and mild occasional fatigue after demanding work weeks.' },
+    { label: 'Social history', value: 'Electrical engineer, married, lives with wife. Never smoker. Moderate alcohol (1-2 glasses red wine per week). Denies recreational drug use. Walks ~3 days/week. Attempts diabetic diet with occasional dietary lapses when working late.' },
+    { label: 'Family history', value: 'Father had MI at age 58 and type 2 diabetes. Mother has type 2 diabetes and chronic kidney disease. Brother has coronary artery disease (coronary bypass surgery at age 58).' },
+    { label: 'Patient Goals & Concerns', value: 'Deeply concerned about chronic kidney disease progression; identifies progression to end-stage kidney disease requiring hemodialysis as his greatest health-related fear. Highly motivated to preserve kidney function with evidence-based therapy.' },
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.24 m²', flag: 'normal' },
     { label: '10-Year ASCVD Risk Score', value: '22.0% — Very high risk', flag: 'high' },
-    { label: 'Prior finerenone recommendation', value: 'Recommended by another provider; patient declined — not on med list', flag: 'missing' },
+    { label: 'Prior finerenone recommendation', value: 'Recommended previously; patient hesitated/declined due to potassium concerns', flag: 'warn' },
     { label: 'Home BP log', value: '7-day average ≈ 136/80 mmHg', flag: 'warn' },
   ],
   INTERVIEW_FIELDS: [
@@ -864,9 +1137,18 @@ const davidTue = makeCase({
     { id: 'w2-david-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take CoQ10 100 mg daily, Fish Oil 1000 mg daily, and a daily multivitamin." },
     { id: 'w2-david-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink moderately—about 1 to 2 glasses of red wine per week with dinner." },
     { id: 'w2-david-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
+    { id: 'w2-david-tue_drugs', topic: 'Recreational drug use', field: 'social', keywords: ['drug', 'illicit', 'marijuana', 'cocaine', 'recreational', 'substance'], response: "I have never used illicit drugs or recreational substances." },
     { id: 'w2-david-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had a heart attack at age 58 and also had type 2 diabetes. My mother has type 2 diabetes and chronic kidney disease. My brother has coronary artery disease and had bypass surgery at age 58." },
     { id: 'w2-david-tue_social', topic: 'Social history', field: 'hpiNarrative', keywords: ['married', 'marital', 'live', 'alone', 'partner', 'spouse', 'job', 'work', 'occupation', 'engineer', 'retire'], response: "I am married and we live together at home. I work as an electrical engineer — I analyze problems for a living, which is probably why I ask so many questions about my health!" },
     { id: 'w2-david-tue_fatigue', topic: 'Fatigue and systemic symptoms', field: 'symptoms', keywords: ['fatigue', 'tired', 'energy', 'symptom', 'weakness'], response: "I feel mostly fine day-to-day. I might notice a little mild fatigue after a demanding work week, but no severe tiredness, shortness of breath, or weakness." },
+    { id: 'w2-david-tue_nocturia', topic: 'Nocturia and voiding', field: 'symptoms', keywords: ['nocturia', 'urinate at night', 'voiding', 'urination', 'wake up to pee'], response: "I occasionally get up once or twice at night to urinate (nocturia), but I have no burning, difficulty, or painful urination." },
+    { id: 'w2-david-tue_ros', topic: 'Review of systems pertinent negatives', field: 'symptoms', keywords: ['chest pain', 'short of breath', 'palpitations', 'syncope', 'edema', 'hematuria', 'swelling'], response: "Review of systems: I deny having any chest pain, heart palpitations, syncope or fainting spells, swelling in my legs or feet (edema), blood in my urine (gross hematuria), or voiding complaints." },
+    { id: 'w2-david-tue_surg', topic: 'Surgical history', field: 'psh', keywords: ['surgery', 'surgeries', 'operation', 'procedure'], response: "I have never had any surgeries in my life; my surgical history is completely negative." },
+    { id: 'w2-david-tue_hosp', topic: 'Hospitalization / ED visits', field: 'hospitalization', keywords: ['hospital', 'hospitalization', 'admit', 'admission', 'emergency room', 'hospitalized', 'admitted', 'admissions'], response: "No, I have not had any hospitalizations or emergency department visits in recent years." },
+    { id: 'w2-david-tue_pmh_dur', topic: 'Condition durations', field: 'pmh', keywords: ['how long', 'duration', 'diagnosed', 'years', 'history'], response: "I have had type 2 diabetes for about 12 years, high blood pressure for 10 years, and high cholesterol for 8 years. My chronic kidney disease Stage G3bA3 was diagnosed about 3 years ago." },
+    { id: 'w2-david-tue_info_seeking', topic: 'Information seeking and research', field: 'why', keywords: ['research', 'online', 'portal', 'labs', 'read', 'studies'], response: "I follow all my laboratory trends very closely in the patient portal and I read medical studies and research articles online about kidney disease and my medications." },
+    { id: 'w2-david-tue_concerns_dialysis', topic: 'Dialysis fear and prognosis concerns', field: 'concerns', keywords: ['dialysis', 'kidney failure', 'fear', 'prognosis', 'future', 'scared'], response: "My mother had diabetes and kidney disease, and knowing how severe kidney failure can be, progressing to end-stage kidney disease and needing dialysis is honestly my greatest health-related fear. I want to do whatever works to protect my kidneys." },
+    { id: 'w2-david-tue_diet_lapses', topic: 'Dietary habits and lapses', field: 'diet', keywords: ['diet', 'carbohydrate', 'eating', 'lapses', 'late'], response: "I try to follow a diabetic diet and watch carbohydrates, but when work gets demanding at the engineering firm, I occasionally have dietary lapses." },
     { id: 'w2-david-tue_exer', topic: 'Physical activity', field: 'exercise', keywords: ['exercise', 'walk', 'activity', 'active', 'gym', 'sport', 'run', 'physical', 'routine'], response: "I try to stay active. I typically walk about 3 days a week, sometimes more. I keep it moderate — nothing too intense." },
     { id: 'w2-david-tue_bp', topic: 'Home BP log', field: 'homeBp', keywords: ['home', 'check', 'blood pressure at home', 'monitor', 'log', 'cuff', 'readings', 'average'], response: "I check my blood pressure at home regularly and keep a written log. My home readings usually average around 136/80 mmHg." },
     { id: 'c_fin', topic: 'Declined finerenone', field: 'finerenone',
@@ -883,29 +1165,180 @@ const davidTue = makeCase({
       response: "I'm an engineer — I want to understand the evidence. If you can show me why it helps my kidneys, I'll seriously consider it." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'c_ckd', title: 'Residual cardiorenal risk', icon: 'FlaskConical', color: 'dc2626',
+    { 
+      id: 'c_ckd', 
+      title: 'Chronic Kidney Disease, Stage G3bA3 & Cardiorenal Residual Risk', 
+      icon: 'FlaskConical', 
+      color: 'dc2626',
       questions: [
-        { key: 'c_ckd_q1', q: 'Why is severe albuminuria persisting despite ACEi + SGLT2i? What does that signal?' },
-        { key: 'c_ckd_q2', q: 'How does CONFIDENCE support adding finerenone to his SGLT2i?' },
-      ] },
-    { id: 'c_comm', title: 'Patient-centered persuasion', icon: 'HeartPulse', color: '13314f',
+        { 
+          key: 'c_ckd_eval', 
+          q: 'Evaluation of CKD staging, severe albuminuria chronicity, and finerenone indication:', 
+          defaultAnswer: 'Status: CKD Stage G3bA3, high risk for kidney failure progression and major cardiovascular events. Classified using dual-axis staging: Stage G3b derived from moderately-to-severely decreased eGFR of 42 mL/min/1.73m² (SCr 1.82 mg/dL) and Category A3 derived from severely increased albuminuria with UACR 520 mg/g. Persistence of severe albuminuria is established across two distinct measurements (previous UACR 505 mg/g documented 4 months ago, and 520 mg/g today), confirming chronicity. Citing KDIGO 2024 CKD Guidelines, eGFR and albuminuria independently and synergistically predict CKD progression and cardiovascular mortality; the combined impact of reduced eGFR and persistent severe A3 albuminuria markedly amplifies long-term risk for kidney failure. Persistent severe albuminuria despite maximally tolerated foundational therapy (lisinopril 20 mg PO daily and empagliflozin 25 mg PO daily) indicates unaddressed residual cardiorenal risk. Guideline-directed management warrants adding non-steroidal mineralocorticoid receptor antagonist (nsMRA) therapy with finerenone 10–20 mg PO daily, supported by the CONFIDENCE, FIDELIO-DKD, and FIGARO-DKD clinical trials.' 
+        }
+      ] 
+    },
+    { 
+      id: 'c_dm', 
+      title: 'Type 2 Diabetes Mellitus with CKD (Reasonable Glycemic Control)', 
+      icon: 'Droplet', 
+      color: '0d9488',
       questions: [
-        { key: 'c_comm_q1', q: 'How will you address his hyperkalemia concern with monitoring rather than avoidance?' },
-        { key: 'c_comm_q2', q: 'How do you give an analytical patient the "why" he needs?' },
-      ] },
+        { 
+          key: 'c_dm_eval', 
+          q: 'Evaluation of glycemic control, metformin renal dosing, and cardiorenal endpoints:', 
+          defaultAnswer: 'Status: Type 2 diabetes mellitus with CKD, reasonably controlled glycemic status with persistent cardiorenal risk. Current A1C is 7.2% (fasting blood glucose 136 mg/dL), near individualized goal of <7.0% per ADA 2026 and KDIGO 2024 guidelines. Adherence to metformin ER 1000 mg BID and empagliflozin 25 mg daily is confirmed with zero hypoglycemia. Citing KDIGO 2024 guidelines, diabetes management in CKD extends beyond glycemic control to cardiorenal risk reduction; persistent severe albuminuria represents unaddressed risk beyond glucose levels. Regarding metformin renal dosing, either continuing Metformin ER 1000 mg BID with eGFR monitoring OR reducing to 1000 mg total daily (500 mg BID) per ADA/KDIGO consensus for eGFR 30–44 mL/min/1.73m² is acceptable.' 
+        }
+      ] 
+    },
+    { 
+      id: 'c_comm', 
+      title: 'Patient-Centered Persuasion & Hyperkalemia Management Plan', 
+      icon: 'HeartPulse', 
+      color: '13314f',
+      questions: [
+        { 
+          key: 'c_comm_eval', 
+          q: 'Addressing analytical persuasion, hyperkalemia safety, and trial evidence:', 
+          defaultAnswer: 'Management Strategy: Patient is a highly analytical electrical engineer who previously declined finerenone due to hyperkalemia fears, pill burden, and lack of clear evidence. For analytical patients, providing robust clinical trial evidence (the CONFIDENCE trial demonstrating dual SGLT2i + finerenone combination achieves significantly greater albuminuria reduction without compounding adverse events) is the key intervention. Hyperkalemia is a managed risk rather than an avoidance reason: baseline serum potassium is 4.8 mEq/L (acceptable for initiation <5.0 mEq/L per KDIGO 2024). Reassure patient by establishing scheduled potassium and eGFR monitoring (at 4 weeks post-initiation) and providing dietary potassium counseling. Discuss medication affordability and manufacturer copay assistance to alleviate financial concerns.' 
+        }
+      ] 
+    },
+    { 
+      id: 'c_hld', 
+      title: 'Hyperlipidemia & ASCVD Risk (Controlled LDL on Rosuvastatin 20 mg)', 
+      icon: 'ShieldAlert', 
+      color: 'd97706',
+      questions: [
+        { 
+          key: 'c_hld_eval', 
+          q: 'Evaluation of lipid control, ASCVD risk score, and risk enhancers:', 
+          defaultAnswer: 'Status: Hyperlipidemia, controlled on high-intensity statin. Current LDL-C is 88 mg/dL (Total Chol 172 mg/dL, HDL 43 mg/dL, Triglycerides 178 mg/dL) on rosuvastatin 20 mg PO daily. Calculated 10-year ASCVD risk is 22.0%, placing him at very high cardiovascular risk. Per 2026 AHA/ACC Cholesterol Guidelines, key risk-enhancing conditions include type 2 diabetes mellitus, CKD Stage G3bA3 with severe albuminuria, essential hypertension, Class I obesity (BMI 32.3 kg/m²), and positive family history of premature CAD (brother coronary bypass at age 58). Continuing high-intensity rosuvastatin 20 mg daily is appropriate, targeting LDL-C <70 mg/dL for very high-risk cardiorenal disease.' 
+        }
+      ] 
+    },
+    { 
+      id: 'c_htn', 
+      title: 'Essential Hypertension', 
+      icon: 'HeartPulse', 
+      color: '13314f',
+      questions: [
+        { 
+          key: 'c_htn_eval', 
+          q: 'Evaluation of blood pressure control, target, and management strategy:', 
+          defaultAnswer: 'Status: Essential hypertension, above treatment target. Office BP is 138/82 mmHg (repeat 136/80 mmHg); 7-day home BP log average of 136/80 mmHg corroborates office readings. Blood pressure target is <130/80 mmHg per 2025 AHA/ACC Hypertension Guidelines in CKD (with KDIGO systolic target <120 mmHg when standardized measurement is tolerated). Active regimen includes lisinopril 20 mg PO daily and amlodipine 5 mg PO daily. Defer immediate third antihypertensive escalation today while introducing finerenone, which provides modest complementary blood pressure reduction (2–4 mmHg systolic) alongside its antiproteinuric benefits; re-evaluate BP at follow-up.' 
+        }
+      ] 
+    },
+    { 
+      id: 'c_obesity', 
+      title: 'Obesity (Class I, BMI 32.3 kg/m²)', 
+      icon: 'Scale', 
+      color: 'ca8a04',
+      questions: [
+        { 
+          key: 'c_ob_eval', 
+          q: 'Evaluation of obesity, cardiometabolic impact, and lifestyle intervention:', 
+          defaultAnswer: 'Classification: Weight 102 kg, height 5\'10" (70 inches), BMI 32.3 kg/m², classifying as Class I Obesity. Obesity directly contributes to cardiovascular disease, insulin resistance, and elevated intraglomerular pressure, accelerating CKD progression. Per 2026 AHA/ACC and KDIGO 2024 lifestyle guidelines, modest 5–10% weight loss provides dual benefits for glycemic, blood pressure, and renal endpoints. Patient walks 3 days/week; continue lifestyle intervention focusing on walking and dietary adjustments.' 
+        }
+      ] 
+    },
+    { 
+      id: 'c_prevent', 
+      title: 'Preventive Care & Health Maintenance Gaps', 
+      icon: 'Heart', 
+      color: '7c3aed',
+      questions: [
+        { 
+          key: 'c_prev_eval', 
+          q: 'Evaluation of immunization status and preventive health needs:', 
+          defaultAnswer: 'Status: Preventive care and immunization gaps identified. Adults with CKD G3bA3 and type 2 diabetes have high vulnerability to vaccine-preventable infections: Pneumococcal conjugate vaccination (PCV20) is indicated for CKD/diabetes; Recombinant Zoster vaccine (Shingrix 2-dose series) is indicated for age ≥50; and Tdap booster is overdue per CDC Adult Immunization Schedule. Recommend verifying immunization registry and administering indicated vaccines.' 
+        }
+      ] 
+    },
   ],
   PLAN_SECTIONS: [
-    { id: 'c_p_renal', title: 'Cardiorenal plan', options: [
-      { key: 'c_o1', label: 'Initiate finerenone for residual albuminuria despite ACEi + SGLT2i (CONFIDENCE-supported)', correct: true },
-      { key: 'c_o2', label: 'Counsel the hyperkalemia plan: baseline + scheduled potassium monitoring, dietary guidance', correct: true },
-      { key: 'c_o3', label: 'Continue foundational ACEi, SGLT2i, statin, and metformin (with eGFR monitoring or renal dose reduction to 1000 mg/day)', correct: true },
-      { key: 'c_o4', label: 'Stop the SGLT2i before starting finerenone', correct: false },
-    ] },
-    { id: 'c_p_edu', title: 'Education / monitoring', options: [
-      { key: 'c_o5', label: 'Explain the rationale and evidence (combination cardiorenal protection) to address his questions', correct: true },
-      { key: 'c_o6', label: 'Schedule potassium + eGFR recheck after initiation', correct: true },
-      { key: 'c_o7', label: 'Avoid finerenone permanently because potassium might rise', correct: false },
-    ] },
+    { 
+      id: 'c_p_renal', 
+      title: 'Cardiorenal & Finerenone plan', 
+      options: [
+        { key: 'c_o1', label: 'Initiate finerenone 10 mg PO once daily (with food or without) for residual severe albuminuria despite ACEi + SGLT2i, supported by CONFIDENCE and KDIGO 2024 guidelines', correct: true },
+        { key: 'c_o2', label: 'Continue foundational cardiorenal therapy: continue lisinopril 20 mg PO once daily, continue empagliflozin 25 mg PO once daily, continue rosuvastatin 20 mg PO once daily', correct: true },
+        { key: 'c_o3', label: 'Continue metformin ER 1000 mg BID with eGFR monitoring OR reduce to 1000 mg total daily (500 mg BID) per ADA/KDIGO renal dose consensus for eGFR 30-44 mL/min/1.73m²', correct: true },
+        { key: 'c_o4', label: 'Order serum potassium and eGFR/SCr recheck at 4 weeks post-initiation (withhold or adjust if potassium >5.5 mEq/L)', correct: true },
+        { key: 'c_o5', label: 'Order repeat spot UACR in 3-4 months to assess albuminuria reduction target (>=30% reduction from baseline)', correct: true },
+        { key: 'c_o6', label: 'Stop the SGLT2i before starting finerenone', correct: false },
+      ] 
+    },
+    { 
+      id: 'c_p_dm', 
+      title: 'Diabetes management plan', 
+      options: [
+        { key: 'c_dm_o1', label: 'Continue empagliflozin 25 mg PO once daily and metformin ER (1000 mg BID or 500 mg BID)', correct: true },
+        { key: 'c_dm_o2', label: 'Individualized glycemic target: A1C <7.0% per ADA 2026 / KDIGO 2024 standards', correct: true },
+        { key: 'c_dm_o3', label: 'Continue dietary modifications and fasting glucose monitoring', correct: true },
+        { key: 'c_dm_o4', label: 'Order repeat A1C in 3 months', correct: true },
+      ] 
+    },
+    { 
+      id: 'c_p_hld', 
+      title: 'Hyperlipidemia / ASCVD plan', 
+      options: [
+        { key: 'c_hld_o1', label: 'Continue rosuvastatin 20 mg PO once daily at bedtime', correct: true },
+        { key: 'c_hld_o2', label: 'Reinforce cardiovascular and renal risk reduction benefits of high-intensity statin therapy', correct: true },
+        { key: 'c_hld_o3', label: 'Treatment target: LDL-C <70 mg/dL per 2026 AHA/ACC Guidelines for very high ASCVD risk', correct: true },
+        { key: 'c_hld_o4', label: 'Order repeat lipid panel in 3-6 months', correct: true },
+      ] 
+    },
+    { 
+      id: 'c_p_htn', 
+      title: 'Hypertension plan', 
+      options: [
+        { key: 'c_htn_o1', label: 'Continue lisinopril 20 mg PO once daily', correct: true },
+        { key: 'c_htn_o2', label: 'Continue amlodipine 5 mg PO once daily', correct: true },
+        { key: 'c_htn_o3', label: 'Blood pressure treatment target: <130/80 mmHg per 2025 AHA/ACC Hypertension Guidelines in CKD (KDIGO <120 SBP when tolerated)', correct: true },
+        { key: 'c_htn_o4', label: 'Continue structured home blood pressure monitoring (HBPM) and maintain written log', correct: true },
+        { key: 'c_htn_o5', label: 'Re-evaluate BP control at follow-up after finerenone initiation', correct: true },
+      ] 
+    },
+    { 
+      id: 'c_p_persuasion', 
+      title: 'Patient persuasion & hyperkalemia education plan', 
+      options: [
+        { key: 'c_pers_o1', label: 'Provide analytical clinical trial data (CONFIDENCE trial) explaining that combining finerenone with an SGLT2i provides additive albuminuria reduction and kidney protection', correct: true },
+        { key: 'c_pers_o2', label: 'Counsel on scheduled potassium monitoring (baseline 4.8 mEq/L, recheck in 4 weeks) to manage hyperkalemia risk safely', correct: true },
+        { key: 'c_pers_o3', label: 'Provide dietary potassium education (avoiding salt substitutes containing potassium chloride, moderating high-potassium foods)', correct: true },
+        { key: 'c_pers_o4', label: 'Discuss medication affordability, insurance coverage navigation, and copay assistance programs to address pill burden and cost concerns', correct: true },
+      ] 
+    },
+    { 
+      id: 'c_p_life', 
+      title: 'Lifestyle & weight management plan', 
+      options: [
+        { key: 'c_life_o1', label: 'Continue structured walking program, progressing toward >=150 minutes/week of moderate physical activity', correct: true },
+        { key: 'c_life_o2', label: 'Reinforce diabetic dietary modifications: moderate carbohydrate intake, consistent meal timing, and avoid high-sodium processed foods', correct: true },
+        { key: 'c_life_o3', label: 'Encourage gradual 5-7% weight reduction to improve insulin sensitivity and lower intraglomerular pressure', correct: true },
+      ] 
+    },
+    { 
+      id: 'c_p_prevent', 
+      title: 'Preventive care / immunization plan', 
+      options: [
+        { key: 'c_prev_o1', label: 'Recommend Pneumococcal conjugate vaccination (PCV20) for CKD and diabetes', correct: true },
+        { key: 'c_prev_o2', label: 'Recommend Recombinant Zoster vaccine (Shingrix) 2-dose series (dose 1 today, dose 2 in 2-6 months) for age >=50', correct: true },
+        { key: 'c_prev_o3', label: 'Recommend Tdap booster (overdue per CDC guidelines)', correct: true },
+      ] 
+    },
+    { 
+      id: 'c_p_followup', 
+      title: 'Follow-up & monitoring plan', 
+      options: [
+        { key: 'c_foll_o1', label: 'Schedule safety lab follow-up in 4 weeks for serum potassium and renal panel (BMP)', correct: true },
+        { key: 'c_foll_o2', label: 'Schedule comprehensive follow-up visit in 3 months', correct: true },
+        { key: 'c_foll_o3', label: 'Order pre-visit laboratory testing: CMP (electrolytes, BUN, SCr, eGFR, LFTs), spot UACR, A1C, and fasting lipid panel', correct: true },
+        { key: 'c_foll_o4', label: 'Review 7-day home BP log and reassess finerenone tolerability, adherence, and willingness to sustain therapy', correct: true },
+      ] 
+    },
   ],
   GUIDING_QUESTIONS: [
     'Why is this patient considered high risk despite reasonable A1C and LDL-C values?',

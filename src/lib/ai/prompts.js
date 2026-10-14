@@ -73,6 +73,8 @@ RULES:
 13. Angela Rodriguez has never taken or been prescribed simvastatin in her active chart; rosuvastatin was prescribed ~6 months ago but unstarted due to cost/fears. Do NOT require simvastatin in medication history or a discontinuation plan for simvastatin, and award FULL CREDIT for reconciling active meds (losartan, amlodipine) and initiating/starting rosuvastatin with affordability counseling.
 14. Michael Turner reports being a warehouse manager, ~10–20 pack-years (quit ~5–6y ago), 1–2 drinks/month or occasional, largely sedentary or walking 0–2x/week, and no current home BP log on follow-up. Do NOT penalize accurate student reporting of these patient-disclosed social and behavioral facts.
 15. For Angela Rodriguez Tuesday objective data, accept either EMR baseline values (BP 138/84, Na 139, K 4.6, SCr 1.20, eGFR 53, ASCVD 14.5%) or reference set (BP 142/86, Na 138, K 4.7, SCr 1.18, eGFR 54, ASCVD 17.4%).
+16. For Angela Rodriguez Wednesday and Thursday ASCVD risk, accept either baseline comparison to 14.5% or 17.4%, or documenting current risk (14.5% on Wed, 13.2% on Thu). Award FULL CREDIT.
+17. For patient denials, commitments, or uncertainty (e.g. David Chen denying fatigue or cost barrier on Tue, David Chen committed to therapy on Thu, Angela Rodriguez uncertain condition durations or denying cramps, Michael Turner uncertain condition durations or denying home BP log on follow-up), award FULL CREDIT for accurately documenting the patient's actual disclosures, denials, or uncertainty; do not penalize students for not documenting contradicted symptoms or barriers.
 
 Respond ONLY with a JSON object in this exact format:
 {
