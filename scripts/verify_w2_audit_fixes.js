@@ -22,7 +22,8 @@ try {
     assert(c.ALLERGIES.some(a => a.substance.toLowerCase().includes('penicillin')));
   });
   assert(chartTabs.includes('activeAllergies.length > 0'));
-  assert(chartTabs.includes('Allergies: ${activeAllergies.map(a => a.substance).join(", ")} — no active drug conflicts'));
+  assert(chartTabs.includes('Allergy check active: Documented'));
+  assert(chartTabs.includes('no active drug conflicts'));
   console.log('✅ V01: Penicillin allergy properly exposed and displayed in safety banner without false NKDA');
   passed++;
 } catch (e) { console.error('❌ V01 failed:', e.message); }

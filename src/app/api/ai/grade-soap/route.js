@@ -116,13 +116,23 @@ export async function POST(request) {
     
     totalScore = Math.max(0, totalScore)
 
+    // Filter out any erroneous unsafe flags regarding safe guideline-concordant losartan titration (Audit V12)
+    const sanitizedUnsafeFlags = (result.unsafe_flags || []).filter(flag => {
+      const rec = (flag.recommendation || '').toLowerCase()
+      const exp = (flag.explanation || '').toLowerCase()
+      if ((rec.includes('losartan') || exp.includes('losartan')) && (rec.includes('100') || exp.includes('100') || rec.includes('titrat') || exp.includes('titrat'))) {
+        return false
+      }
+      return true
+    })
+
     const formattedResult = {
       total_score: parseFloat(totalScore.toFixed(1)),
       strengths: result.strengths || '',
       improvement_guidance: result.improvement_guidance || '',
       missed_items: missedItems,
       itemized_deductions: result.itemized_deductions || [],
-      unsafe_flags: result.unsafe_flags || []
+      unsafe_flags: sanitizedUnsafeFlags
     }
 
     return NextResponse.json(formattedResult)

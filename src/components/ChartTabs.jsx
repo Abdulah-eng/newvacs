@@ -473,13 +473,23 @@ export function MedicationsTab({ c }) {
               Discontinued ({discontinuedMeds.length})
             </button>
           </div>
-          <div className="text-[11px] text-slate-400 flex items-center gap-1">
-            <span className="text-slate-300">✓</span> Allergy/interaction check active · {(() => {
-              const activeAllergies = (c.ALLERGIES || []).filter(a => a.substance && !a.substance.toLowerCase().includes("no known") && a.substance.toUpperCase() !== "NKDA")
+          <div className="text-[11px] flex items-center gap-1.5">
+            {(() => {
+              const rawAllergies = c.ALLERGIES || (c.MED_HISTORY && c.MED_HISTORY.allergies) || []
+              const activeAllergies = (Array.isArray(rawAllergies) ? rawAllergies : []).filter(a => a.substance && !a.substance.toLowerCase().includes("no known") && a.substance.toUpperCase() !== "NKDA")
               if (activeAllergies.length > 0) {
-                return `Allergies: ${activeAllergies.map(a => a.substance).join(", ")} — no active drug conflicts`
+                return (
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-50 text-amber-800 font-medium ring-1 ring-amber-200">
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                    Allergy check active: Documented {activeAllergies.map(a => `${a.substance}${a.reaction && a.reaction !== '—' ? ` (${a.reaction})` : ''}`).join(', ')} — no active drug conflicts
+                  </span>
+                )
               }
-              return 'NKDA — no conflicts'
+              return (
+                <span className="text-slate-400 flex items-center gap-1">
+                  <span className="text-slate-300">✓</span> Allergy/interaction check active · NKDA — no conflicts
+                </span>
+              )
             })()}
           </div>
         </div>
@@ -926,12 +936,14 @@ export function ObjectiveTab({ c }) {
           </div>
           <div className="p-4 space-y-2">
             {c.OBJECTIVE_EXTRA.map((o, i) => {
-              const isMissing = o.flag === 'missing'
+              const valStr = (o.value || '').trim()
+              const isAbsent = !valStr || /^(none|missing|not (obtained|checked|recorded|available|measured)|pending)/i.test(valStr)
+              const isMissing = o.flag === 'missing' && isAbsent
               if (isMissing) {
                 return (
                   <div key={i} className="flex items-start gap-2 rounded-lg border border-dashed border-amber-300 bg-amber-50 px-3 py-2 text-[13px] text-amber-900">
                     <span className="font-bold shrink-0 text-amber-700">Missing →</span>
-                    <span>{o.label}: {o.value}</span>
+                    <span>{o.label}: {valStr || 'Not obtained'}</span>
                   </div>
                 )
               }
@@ -940,7 +952,7 @@ export function ObjectiveTab({ c }) {
                   <span className="font-medium text-slate-600">{o.label}</span>
                   <div className="flex items-center gap-2">
                     <span className="font-bold text-slate-800">{o.value}</span>
-                    {o.flag && o.flag !== 'normal' && <FlagPill flag={o.flag} />}
+                    {o.flag && o.flag !== 'normal' && o.flag !== 'missing' && <FlagPill flag={o.flag} />}
                   </div>
                 </div>
               )
