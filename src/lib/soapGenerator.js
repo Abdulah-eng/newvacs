@@ -30,7 +30,11 @@ export function generateSoapDraft(caseData, state = {}) {
   // ---------- Subjective ----------
   const subLines = []
   if (caseData.PATIENT) {
-    subLines.push(`${caseData.PATIENT.name}, ${caseData.PATIENT.age}yo ${caseData.PATIENT.sex}, presents for ${caseData.ENCOUNTER?.type || 'encounter'}.`)
+    const eth = caseData.PATIENT.ethnicity ? `${caseData.PATIENT.ethnicity} ` : ''
+    const setting = caseData.ENCOUNTER?.setting
+      ? ` in ${caseData.ENCOUNTER.setting}`
+      : ' in an ambulatory care pharmacy clinic'
+    subLines.push(`${caseData.PATIENT.name}, ${caseData.PATIENT.age}yo ${eth}${caseData.PATIENT.sex}, presents for ${caseData.ENCOUNTER?.type || 'encounter'}${setting}.`)
   }
   if (caseData.ENCOUNTER?.chiefConcern) {
     subLines.push(`Chief concern: "${caseData.ENCOUNTER.chiefConcern}"`)
@@ -99,12 +103,30 @@ export function generateSoapDraft(caseData, state = {}) {
     ? rawSpO2 
     : `${rawSpO2} on room air`
 
+  let heightDisplay = v.height || '—'
+  if (v.height && v.height.includes("'")) {
+    const m = v.height.match(/(\d+)'(\d+)/)
+    if (m) {
+      const totalInches = parseInt(m[1], 10) * 12 + parseInt(m[2], 10)
+      if (!v.height.includes('inches')) {
+        heightDisplay = `${v.height} (${totalInches} inches)`
+      }
+    }
+  }
   let vitalsStr = `Vitals: BP ${v.bp || '—'}`
   if (v.bpRepeat) vitalsStr += ` (repeat ${v.bpRepeat})`
-  vitalsStr += `, HR ${v.hr || '—'}, RR ${v.rr ?? '—'}, Temp ${v.temp ?? '—'}, SpO₂ ${spo2Display}, Wt ${v.weight || '—'}, Ht ${v.height || '—'}, BMI ${v.bmi || '—'}`
+  vitalsStr += `, HR ${v.hr || '—'}, RR ${v.rr ?? '—'}, Temp ${v.temp ?? '—'}, SpO₂ ${spo2Display}, Wt ${v.weight || '—'}, Ht ${heightDisplay}, BMI ${v.bmi || '—'}`
   if (v.bmi) {
     const bmiNum = parseFloat(v.bmi)
-    if (bmiNum >= 30) vitalsStr += ` (Class I Obesity)`
+    let bmiClass = ''
+    if (bmiNum >= 40) bmiClass = 'Class III Obesity'
+    else if (bmiNum >= 35) bmiClass = 'Class II Obesity'
+    else if (bmiNum >= 30) bmiClass = 'Class I Obesity'
+    else if (bmiNum >= 25) bmiClass = 'Overweight'
+    else if (bmiNum >= 18.5) bmiClass = 'Normal weight'
+    if (bmiClass) {
+      vitalsStr += ` (BMI reconciled with height/weight: ${bmiClass})`
+    }
   }
   vitalsStr += `.`
   objLines.push(vitalsStr)
@@ -121,8 +143,11 @@ export function generateSoapDraft(caseData, state = {}) {
     objLines.push('Current Medications: ' + caseData.MEDICATIONS.map(m => `${m.name} ${m.dose} ${m.route} ${m.freq}`).join('; ') + '.')
   }
 
-  if (Array.isArray(caseData.ALLERGIES) && caseData.ALLERGIES.length > 0) {
-    objLines.push('Allergies: ' + (caseData.ALLERGIES.map(a => a.substance).join(', ') || 'NKDA') + '.')
+  if (Array.isArray(caseData.ALLERGIES)) {
+    const allergyStr = caseData.ALLERGIES.length > 0 
+      ? caseData.ALLERGIES.map(a => `${a.substance || a.name || a}${a.reaction ? ' (' + a.reaction + ')' : ''}`).join(', ')
+      : 'No known drug allergies (NKDA)'
+    objLines.push('Allergies: ' + allergyStr + '.')
   }
 
   if (Array.isArray(caseData.IMMUNIZATIONS) && caseData.IMMUNIZATIONS.length > 0) {
@@ -132,8 +157,9 @@ export function generateSoapDraft(caseData, state = {}) {
   // ---------- Assessment ----------
   const aLines = []
   if (Array.isArray(caseData.ASSESSMENT_CARDS)) {
-    caseData.ASSESSMENT_CARDS.forEach(card => {
-      aLines.push(`# ${card.title}`)
+    caseData.ASSESSMENT_CARDS.forEach((card, idx) => {
+      const titleClean = card.title.replace(/^\d+[\.\)]\s*/, '')
+      aLines.push(`# ${idx + 1}. ${titleClean}`)
       const questions = card.questions || []
       questions.forEach(qq => {
         const studentVal = (assess[qq.key] || '').trim()
@@ -151,10 +177,11 @@ export function generateSoapDraft(caseData, state = {}) {
   // ---------- Plan ----------
   const pLines = []
   if (Array.isArray(caseData.PLAN_SECTIONS)) {
-    caseData.PLAN_SECTIONS.forEach(sec => {
+    caseData.PLAN_SECTIONS.forEach((sec, idx) => {
       const chosen = (sec.options || []).filter(o => planSel[o.key] || o.correct)
       if (chosen.length) {
-        pLines.push(`# ${sec.title}`)
+        const titleClean = sec.title.replace(/^\d+[\.\)]\s*/, '')
+        pLines.push(`# ${idx + 1}. ${titleClean}`)
         chosen.forEach(o => pLines.push(`- ${o.label}`))
       }
     })

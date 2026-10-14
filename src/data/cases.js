@@ -36,6 +36,7 @@ const caseTue = {
   ENCOUNTER: {
     day: 'Tuesday',
     type: 'Initial Ambulatory Care Pharmacist Visit',
+    setting: 'Collaborative Practice Ambulatory Care Pharmacy Clinic',
     week: 'Week 1 — Tuesday',
     length: '30-minute collaborative practice visit',
     difficulty: 'Foundational APPE Student',
@@ -43,7 +44,7 @@ const caseTue = {
     diseaseStates: ['Hypertension', 'Type 2 Diabetes', 'Hyperlipidemia', 'Obesity'],
     chiefConcern: 'My doctor said my blood pressure and diabetes numbers have been creeping up and wanted me to come talk with you.',
     snapshotSummary:
-      'Maria is presenting for initial ambulatory care pharmacy management of hypertension and type 2 diabetes. PCP referred her for persistent elevated office BP and worsening glycemic control.',
+      'Maria is presenting for initial ambulatory care pharmacy management of hypertension and type 2 diabetes in an ambulatory care pharmacy clinic. PCP referred her for persistent elevated office BP and worsening glycemic control.',
     learningObjectives: [
       'Classify BP and identify treatment goal in a patient with diabetes',
       'Assess adherence and measurement technique before intensifying therapy',
@@ -56,26 +57,26 @@ const caseTue = {
     bp: '146/92 mmHg', bpRepeat: '144/90 mmHg', hr: '78 bpm', rr: '16',
     temp: '98.2 °F', weight: '92 kg', height: `5'4"`, bmi: '34.8 kg/m²',
     flags: { bp: 'high', bpRepeat: 'high', bmi: 'high', hr: 'normal' },
-    extras: [], // home BP is NOT documented yet — must be obtained on interview
+    extras: [],
   },
 
   LABS: [
-    { label: 'A1C', value: '8.2', unit: '%', flag: 'high', ref: '4.0–5.6 %', note: 'Prior 7.6% (6 mo), 7.3% (12 mo) — upward trend' },
+    { label: 'A1C', value: '8.2', unit: '%', flag: 'high', ref: '4.0–5.6 %', note: 'Prior 7.6% (6 mo), 7.3% (12 mo) — upward worsening trend across three time points' },
     { label: 'Glucose', value: '176', unit: 'mg/dL', flag: 'high', ref: '70–99 mg/dL' },
     { label: 'Na', value: '138', unit: 'mmol/L', flag: 'normal', ref: '135–145 mmol/L' },
-    { label: 'K', value: '4.2', unit: 'mmol/L', flag: 'normal', ref: '3.5–5.0 mmol/L' },
+    { label: 'K', value: '4.2', unit: 'mmol/L', flag: 'normal', ref: '3.5–5.0 mmol/L', note: 'Normal, acceptable for ACE inhibitor escalation' },
     { label: 'Cl', value: '101', unit: 'mmol/L', flag: 'normal', ref: '98–107 mmol/L' },
     { label: 'CO2', value: '26', unit: 'mmol/L', flag: 'normal', ref: '22–29 mmol/L' },
     { label: 'BUN', value: '16', unit: 'mg/dL', flag: 'normal', ref: '7–20 mg/dL' },
     { label: 'SCr', value: '0.88', unit: 'mg/dL', flag: 'normal', ref: '0.6–1.1 mg/dL' },
-    { label: 'eGFR', value: '79', unit: 'mL/min/1.73m²', flag: 'normal', ref: '≥60 mL/min/1.73m²' },
+    { label: 'eGFR', value: '79', unit: 'mL/min/1.73m²', flag: 'normal', ref: '≥60 mL/min/1.73m²', note: 'Adequate preserved renal function (≥60)' },
     { label: 'AST', value: '22', unit: 'U/L', flag: 'normal', ref: '7–56 U/L' },
     { label: 'ALT', value: '24', unit: 'U/L', flag: 'normal', ref: '7–56 U/L' },
     { label: 'Total cholesterol', value: '201', unit: 'mg/dL', flag: 'high', ref: '<200 mg/dL' },
-    { label: 'LDL-C', value: '112', unit: 'mg/dL', flag: 'high', ref: '<100 mg/dL' },
+    { label: 'LDL-C', value: '112', unit: 'mg/dL', flag: 'high', ref: '<100 mg/dL', note: 'Informs elevated ASCVD risk' },
     { label: 'HDL-C', value: '44', unit: 'mg/dL', flag: 'normal', ref: '>40 mg/dL' },
     { label: 'Triglycerides', value: '223', unit: 'mg/dL', flag: 'high', ref: '<150 mg/dL' },
-    { label: 'UACR', value: 'No result on file', unit: '', flag: 'missing', ref: '<30 mg/g', note: 'Never obtained — order at this visit' },
+    { label: 'UACR', value: 'No result on file', unit: '', flag: 'missing', ref: '<30 mg/g', note: 'Never obtained — annual screening indicated per ADA 2026/KDIGO' },
   ],
 
   ALERTS: [
@@ -95,7 +96,6 @@ const caseTue = {
 
   ALLERGIES: [{ substance: 'No known drug allergies (NKDA)', reaction: '—' }],
 
-  // VISIBLE med list — ibuprofen intentionally absent (hidden OTC use).
   MEDICATIONS: [
     { name: 'Metformin XR', dose: '1000 mg', route: 'PO', freq: 'Take 1 tablet by mouth once daily with dinner', indication: 'Type 2 diabetes', notes: 'Tolerating', start: '07/15/2018', prescriber: 'Dr. A. Whitfield', lastFilled: '05/20/2026', refills: '2' },
     { name: 'Lisinopril', dose: '10 mg', route: 'PO', freq: 'Take 1 tablet by mouth once daily', indication: 'Hypertension', notes: '', start: '03/10/2016', prescriber: 'Dr. A. Whitfield', lastFilled: '05/20/2026', refills: '2' },
@@ -107,17 +107,24 @@ const caseTue = {
 
   IMMUNIZATIONS: [
     { name: 'Influenza (2025–26)', status: 'Administered 10/14/2025', detail: 'IM - L deltoid - Lot FL7732 - Sanofi', flag: 'normal' },
-    { name: 'COVID-19 (2025–26)', status: 'Administered 09/30/2025', detail: 'IM - R deltoid - Lot CV5521 - Pfizer', flag: 'normal' },
-    { name: 'Pneumococcal (PCV20)', status: 'Due — age/diabetes indicated', flag: 'warn' },
-    { name: 'Zoster (Shingrix)', status: 'Due — age ≥50', flag: 'warn' },
-    { name: 'Tdap', status: 'Overdue — last 06/12/2015 (11 years ago)', flag: 'high' },
+    { name: 'COVID-19 (2025–26)', status: 'Administered 09/30/2025 (primary series confirmed complete; booster received)', detail: 'IM - R deltoid - Lot CV5521 - Pfizer', flag: 'normal' },
+    { name: 'Pneumococcal (PCV20)', status: 'Due — age 54 with diabetes indicated per CDC schedule', flag: 'warn' },
+    { name: 'Zoster (Shingrix)', status: 'Due — age ≥50 (2-dose series indicated)', flag: 'warn' },
+    { name: 'Tdap', status: 'Overdue — last administered 06/12/2015 (11 years ago; >10-year booster interval)', flag: 'high' },
   ],
 
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'Reason for referral', value: 'PCP referral for persistently elevated office BP and worsening glycemic control.' },
+    { label: 'Reason for referral', value: 'PCP referral for persistently elevated office BP and worsening glycemic control in an ambulatory care pharmacy clinic.' },
     { label: 'Chief Complaint (CC)', value: 'Reports doctor noted BP and diabetes "numbers creeping up."' },
-    { label: 'PMH', value: 'HTN, T2DM, hyperlipidemia, obesity, bilateral knee OA.' },
-    { label: 'Documented symptoms', value: 'No acute complaints documented at intake.' },
+    { label: 'PMH', value: 'Essential hypertension (8 years), type 2 diabetes mellitus (4 years), hyperlipidemia (3 years), Class I obesity, bilateral knee osteoarthritis.' },
+    { label: 'Past Surgical History (PSH)', value: 'Cholecystectomy (gallbladder removal at age 41). No other surgical history.' },
+    { label: 'Family History', value: 'Father: hypertension, type 2 diabetes, myocardial infarction (MI) at age 62; Mother: hypertension, type 2 diabetes, diabetic kidney disease (DKD); Brother: type 2 diabetes.' },
+    { label: 'Allergies', value: 'No known drug allergies (NKDA).' },
+    { label: 'General wellness & symptoms', value: 'Patient reports feeling generally well overall aside from chronic conditions and knee stiffness; no acute complaints documented at intake.' },
+    { label: 'Medication adherence & monitoring', value: 'Patient misses morning doses 2–3 times per week due to chaotic mornings and busy schedule/forgetfulness; explicitly denies intentional nonadherence (never intentionally skips or stops pills). Tolerating current regimen well; prior metformin GI intolerance (nausea and diarrhea upon initiation years ago) is now completely resolved. Intermittent home blood pressure monitoring (1–2 times per week) reveals readings typically in the 140s/90s range (average ~144/90 mmHg) with improper measurement technique (crossing legs, checking right after moving around, unverified cuff placement).' },
+    { label: 'Social History', value: 'Occupation: Elementary school administrative assistant. Marital/living status: Married, lives with husband. Tobacco status: Never smoker (denies tobacco use). Alcohol use status: Uses alcohol (1–2 glasses of wine on weekends). Recreational drug use: Explicitly denies recreational or illicit drug use.' },
+    { label: 'Review of Systems (ROS)', value: 'Cardiovascular/Pulmonary/Neurologic: Explicitly denies chest pain, shortness of breath, palpitations, dizziness, syncope, severe headaches, lower extremity edema, and acute vision changes.' },
+    { label: 'Patient Goals & Motivators', value: 'Expresses concern about future diabetes complications, linking concern to family history of mother\'s diabetic kidney disease (fear of diabetic kidney disease). Stated patient goals include improved glycemic control (lower blood sugar / A1C), blood pressure control (<130/80 mmHg), weight loss (highly motivated to lose weight), avoiding future insulin therapy (fear of insulin), and protecting kidney function.' },
   ],
 
   PHYSICAL_EXAM: {
@@ -128,13 +135,15 @@ const caseTue = {
   },
 
   OBJECTIVE_EXTRA: [
-    { label: 'Documented home BP log', value: 'Submitted; average ~144/90 mmHg', flag: 'warn' },
-    { label: 'Documented SMBG log', value: 'None on file', flag: 'missing' },
-    { label: 'UACR', value: 'Not obtained', flag: 'missing' },
+    { label: 'Documented home BP log', value: 'Submitted; average ~144/90 mmHg, which is consistent with and corroborates elevated office BP readings (146/92, repeat 144/90 mmHg).', flag: 'warn' },
+    { label: 'A1C trend data', value: 'Current A1C 8.2% (prior values: 7.6% at 6 months ago, 7.3% at 12 months ago; demonstrating an upward/worsening trajectory over the past 12 months across three time points).', flag: 'high' },
+    { label: 'Renal function interpretation', value: 'eGFR 79 mL/min/1.73m² and SCr 0.88 mg/dL demonstrate adequate and preserved renal function, which permits metformin titration and ACE inhibitor escalation.', flag: 'normal' },
+    { label: 'Serum Potassium interpretation', value: 'Serum potassium 4.2 mmol/L is normal and acceptable for ACE inhibitor escalation.', flag: 'normal' },
+    { label: 'UACR status & guideline significance', value: 'Not obtained / no result on file. Declarative interpretation: Absent albuminuria data limits complete diabetic kidney disease risk assessment; annual UACR screening is strongly indicated per ADA 2026 and KDIGO guidelines.', flag: 'missing' },
+    { label: 'Lipid panel ASCVD interpretation', value: 'Total cholesterol 201 mg/dL, LDL-C 112 mg/dL, HDL-C 44 mg/dL, Triglycerides 223 mg/dL available to inform elevated ASCVD risk in diabetes, indicating statin therapy.', flag: 'warn' },
+    { label: 'Documented SMBG log', value: 'None on file; reports checking fasting blood sugars 1-2 times per week at home, typically ranging 160–180 mg/dL.', flag: 'missing' },
   ],
 
-  // Editable fields the student fills in from the interview. `field` links to a
-  // discovered indicator when the matching interview topic is uncovered.
   INTERVIEW_FIELDS: [
     { key: 'currentMeds', label: 'Current medication use / doses', placeholder: 'What is she actually taking, and how?' },
     { key: 'adherence', label: 'Medication adherence', placeholder: 'Missed doses? How often? Barriers?' },
@@ -162,12 +171,16 @@ const caseTue = {
     'What would you monitor after increasing lisinopril?'
   ],
 
-
   INTERVIEW_KNOWLEDGE: [
     { id: 'maria-tue_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'maria-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take ibuprofen 400 mg to 600 mg a few times a week for my knee stiffness, and I also take a daily multivitamin." },
     { id: 'maria-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I usually have 1 or 2 glasses of wine on the weekends, but I don't drink during the week." },
     { id: 'maria-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
+    { id: 'maria-tue_drugs', topic: 'Recreational drug use', field: 'social', keywords: ['drug', 'illicit', 'marijuana', 'weed', 'cocaine', 'substance', 'recreational'], response: "I have never used recreational drugs or illicit substances in my life." },
+    { id: 'maria-tue_wellness', topic: 'General health status', field: 'symptoms', keywords: ['generally', 'overall', 'how do you feel overall', 'well', 'feeling'], response: "Overall, I feel generally well aside from my chronic conditions and my knees being stiff when walking." },
+    { id: 'maria-tue_intentional', topic: 'Intentional adherence', field: 'adherence', keywords: ['intentionally', 'on purpose', 'stop', 'quit', 'skip on purpose'], response: "No, I never intentionally skip or stop my pills. I just get rushed in the morning and forget them two or three times a week." },
+    { id: 'maria-tue_ros', topic: 'Review of systems', field: 'symptoms', keywords: ['chest pain', 'short of breath', 'palpitations', 'dizziness', 'syncope', 'headache', 'edema', 'vision', 'ros'], response: "I deny having any chest pain, shortness of breath, palpitations, dizziness, syncope, severe headaches, leg swelling, or vision changes." },
+    { id: 'maria-tue_glycemic_goal', topic: 'Glycemic control goals', field: 'concerns', keywords: ['glycemic goal', 'sugar goal', 'a1c goal', 'lower sugar'], response: "My goal is to achieve improved glycemic control and lower my A1C so I can protect my health and stay off insulin." },
     { id: 'maria-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had high blood pressure, type 2 diabetes, and had a heart attack at age 62. My mother had high blood pressure and type 2 diabetes, and suffered from diabetic kidney disease. My brother has type 2 diabetes." },
     { id: 'maria-tue_surg', topic: 'Surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'gallbladder', 'cholecystectomy'], response: 'I had my gallbladder removed when I was 41. No other surgeries.' },
     { id: 'maria-tue_duration', topic: 'Disease duration', field: 'pmh', keywords: ['how long', 'when were you diagnosed', 'duration', 'years'], response: 'I\'ve had high blood pressure for about 8 years, diabetes for 4 years, and high cholesterol for 3 years.' },
@@ -176,10 +189,10 @@ const caseTue = {
       response: 'My doctor said my blood pressure and my diabetes numbers have been creeping up, so he wanted me to come talk with the pharmacist.' },
     { id: 'symptoms', topic: 'Symptoms', field: 'sideEffects',
       keywords: ['symptom', 'how do you feel', 'feeling', 'chest pain', 'dizzy', 'headache', 'short of breath', 'swelling', 'any problems'],
-      response: "Honestly I feel okay — no chest pain or anything like that. I get tired sometimes, and my knees bother me, but that's about it." },
+      response: "Honestly I feel generally well overall — no chest pain, shortness of breath, palpitations, dizziness, syncope, headaches, or vision changes. I get tired sometimes, and my knees bother me, but that's about it." },
     { id: 'adherence', topic: 'Medication adherence', field: 'adherence',
       keywords: ['miss', 'forget', 'adheren', 'take them every', 'remember to take', 'skip', 'consistent', 'every day'],
-      response: "Most days I take them… but if I'm honest I probably miss them two or three times a week. Mornings are just chaotic getting out the door." },
+      response: "Most days I take them… but if I'm honest I probably miss them two or three times a week. Mornings are just chaotic getting out the door. I never skip on purpose though." },
     { id: 'currentMeds', topic: 'Current medications', field: 'currentMeds',
       keywords: ['what medicine', 'what medications', 'what are you taking', 'list your med', 'which pills', 'go over your med'],
       response: "I take the metformin with dinner, and the lisinopril and water pill in the morning. And I take Tylenol when my knees act up." },
@@ -188,7 +201,7 @@ const caseTue = {
       response: "For my knees I usually take some ibuprofen — 400 or 600 — a few times a week. I don't really count that as a medicine though, it's just something I grab over the counter." },
     { id: 'sideEffects', topic: 'Side effects', field: 'sideEffects',
       keywords: ['side effect', 'bother you', 'tolerate', 'upset stomach', 'cough', 'problems with the med'],
-      response: "No, I don't think the pills bother me now. When I first started the metformin years ago, I did have some nausea and diarrhea for a few weeks, but that completely went away. I feel fine on them now." },
+      response: "No, I don't think the pills bother me now. When I first started the metformin years ago, I did have some nausea and diarrhea for a few weeks, but that completely went away. I feel fine on them now and tolerate the regimen well." },
     { id: 'homeBp', topic: 'Home BP readings', field: 'homeBp',
       keywords: ['home blood pressure', 'check your blood pressure', 'bp at home', 'readings at home', 'monitor your pressure', 'numbers at home'],
       response: "I check it occasionally. I started keeping a log, and my average is around 144 over 90." },
@@ -215,7 +228,7 @@ const caseTue = {
       response: "My mom had diabetes and ended up with kidney problems. That really scares me." },
     { id: 'social', topic: 'Social history', field: null,
       keywords: ['smoke', 'alcohol', 'drink alcohol', 'tobacco', 'work', 'social', 'live with', 'married', 'job'],
-      response: "I don't smoke, and I rarely drink. I work at the elementary school office, and I'm married — my husband's supportive." },
+      response: "I don't smoke, and I rarely drink. I work at the elementary school office, and I'm married — my husband's supportive. I never use recreational drugs." },
     { id: 'cost', topic: 'Cost / access', field: 'cost',
       keywords: ['cost', 'afford', 'insurance', 'pay for', 'refill', 'pharmacy pick up', 'expensive'],
       response: "No, cost isn't really a problem — I have insurance through work." },
@@ -227,88 +240,108 @@ const caseTue = {
       response: "The A1C? I hear the doctor say the number but I really don't know what it actually means." },
     { id: 'concerns', topic: 'Concerns & goals', field: 'concerns',
       keywords: ['worry', 'worried', 'concern', 'afraid', 'scared', 'insulin', 'kidney', 'fear', 'goals for your health'],
-      response: "I'm scared I'll end up on insulin someday. And I worry about my kidneys — I don't want what happened to my mom to happen to me." },
+      response: "I'm scared I'll end up on insulin someday. And I worry about my kidneys — I don't want what happened to my mom to happen to me. My goal is to get my sugar and pressure under control." },
     { id: 'followup', topic: 'Follow-up', field: null,
       keywords: ['follow up', 'come back', 'next visit', 'see you again', 'schedule'],
       response: "Sure, I can come back whenever you need me to." },
   ],
 
   ASSESSMENT_CARDS: [
-    { id: 'htn', title: 'Essential hypertension', icon: 'HeartPulse', color: '13314f', questions: [
-      { key: 'htn_class', q: 'How is her office BP classified, and what is her target given diabetes?' },
-      { key: 'htn_adhere', q: 'What should you assess about adherence and technique before intensifying therapy?' },
-      { key: 'htn_contrib', q: 'What contributors (lifestyle, OTC) might be raising her BP?' },
-      { key: 'htn_reg', q: 'Is her current 2-drug regimen optimized? What are the options?' },
-      { key: 'htn_monitor', q: 'What monitoring is needed if you change ACEi/diuretic dosing?' },
+    { id: 'htn', title: 'Essential hypertension (Uncontrolled, Above Goal)', icon: 'HeartPulse', color: '13314f', questions: [
+      { key: 'htn_class', q: 'How is her office BP classified, and what is her target given diabetes?', defaultAnswer: 'Control status: Uncontrolled Stage 2 hypertension. Office BP readings of 146/92 mmHg and repeat 144/90 mmHg are above goal. The blood pressure goal is <130/80 mmHg tied to her diabetes comorbidity per the 2025 AHA/ACC Hypertension Guideline. Home BP log average (~144/90 mmHg) is similarly elevated and corroborates office readings.' },
+      { key: 'htn_contrib', q: 'What contributors (lifestyle, OTC) might be raising her BP?', defaultAnswer: 'Key contributors to uncontrolled blood pressure include medication nonadherence (misses morning doses 2-3 times per week due to chaotic mornings), improper home BP measurement technique (crosses legs, rests inadequately, uncertain cuff position), Class I obesity (BMI 34.8 kg/m²), high dietary sodium and frequent restaurant meals (3-4 times per week) with daily sweet tea, and frequent OTC NSAID use (ibuprofen 400-600 mg multiple times weekly).' },
+      { key: 'htn_reg', q: 'Is her current 2-drug regimen optimized? What are the options?', defaultAnswer: 'Current two-drug regimen (lisinopril 10 mg PO daily and hydrochlorothiazide 12.5 mg PO daily) is tolerated without adverse effects. Preserved renal function (eGFR 79 mL/min/1.73m²) and acceptable serum potassium (4.2 mmol/L) permit and support titration of lisinopril to 20 mg PO daily.' },
+      { key: 'htn_nsaid', q: 'How does her OTC NSAID use affect blood pressure and kidney risk?', defaultAnswer: 'Frequent OTC ibuprofen use contributes directly to elevated blood pressure, reduces the antihypertensive efficacy of ACE inhibitors and diuretics, and increases future renal risk. Advise limiting/stopping ibuprofen and explore alternative pain strategies, recommending acetaminophen as first-line therapy.' },
     ]},
-    { id: 't2dm', title: 'Type 2 diabetes mellitus', icon: 'Droplet', color: '0d9488', questions: [
-      { key: 'dm_goal', q: 'Is her A1C at an appropriate individualized goal? What is the trend?' },
-      { key: 'dm_metf', q: 'Can metformin be optimized given her dose and renal function?' },
-      { key: 'dm_uacr', q: 'What key piece of data is missing for diabetes monitoring?' },
-      { key: 'dm_lifestyle', q: 'How are diet, activity, and monitoring affecting glycemic control?' },
-      { key: 'dm_next', q: 'What would you reassess before adding another glucose-lowering agent?' },
+    { id: 't2dm', title: 'Type 2 diabetes mellitus (Uncontrolled, Above Goal)', icon: 'Droplet', color: '0d9488', questions: [
+      { key: 'dm_goal', q: 'Is her A1C at an appropriate individualized goal? What is the trend?', defaultAnswer: 'Control status: Uncontrolled type 2 diabetes mellitus. Current A1C is 8.2% (fasting glucose 176 mg/dL, home SMBG 160-180 mg/dL), demonstrating a worsening upward trend compared to prior values of 7.6% at 6 months ago and 7.3% at 12 months ago across three time points. Individualized A1C goal is <7% per ADA 2026 Standards of Care.' },
+      { key: 'dm_contrib', q: 'How are diet, activity, and monitoring affecting glycemic control?', defaultAnswer: 'Contributors to poor glycemic control include medication nonadherence (missed doses), Class I obesity, physical inactivity (walks only 1-2 times per week for 15 min), dietary habits (regular sweet tea, restaurant meals), and inconsistent glucose monitoring (checks only 1-2 times per week).' },
+      { key: 'dm_metf', q: 'Can metformin be optimized given her dose and renal function?', defaultAnswer: 'Metformin XR 1000 mg PO daily is a submaximal dose. Preserved renal function (eGFR 79 mL/min/1.73m²) permits titration toward the target dose of 2000 mg PO daily. Plan logic: optimize metformin to maximal tolerated dose before adding new antihyperglycemic agents.' },
+      { key: 'dm_next', q: 'What would you reassess before adding another glucose-lowering agent?', defaultAnswer: 'Future escalation plan: If glycemic goals (A1C <7%) remain unmet at 3-month follow-up despite metformin optimization and adherence reinforcement, consider adding a GLP-1 receptor agonist (e.g., semaglutide, dulaglutide) or SGLT2 inhibitor (e.g., empagliflozin, dapagliflozin), specifically justified by her obesity/weight reduction needs and cardiorenal risk, conditioned on failure to achieve goal after metformin optimization.' },
     ]},
-    { id: 'lipid', title: 'Hyperlipidemia', icon: 'Activity', color: 'dc2626', questions: [
-      { key: 'lip_statin', q: 'Does a 54-year-old with diabetes have a statin indication? Why?' },
-      { key: 'lip_values', q: 'How do you interpret her LDL and triglycerides?' },
-      { key: 'lip_intensity', q: 'What statin intensity would you consider and why?' },
-      { key: 'lip_monitor', q: 'What baseline/monitoring labs are relevant for statin therapy?' },
+    { id: 'kidney', title: 'Diabetic Kidney Disease Screening & Renal Risk (Dual Risk)', icon: 'FlaskConical', color: '0891b2', questions: [
+      { key: 'kid_dual', q: 'What is her renal risk given diabetes and hypertension?', defaultAnswer: 'Patient has significant dual risk for diabetic kidney disease due to concurrent type 2 diabetes and hypertension. Current renal function is preserved with eGFR 79 mL/min/1.73m² and SCr 0.88 mg/dL.' },
+      { key: 'kid_uacr', q: 'Why is UACR important here, and what is the next step?', defaultAnswer: 'UACR has never been obtained; absent albuminuria data limits complete diabetic kidney disease risk assessment. Annual UACR screening is strongly recommended per ADA 2026 and KDIGO guidelines. ACE inhibitor therapy (lisinopril) supports renoprotection and reduces intraglomerular pressure.' },
     ]},
-    { id: 'obesity', title: 'Obesity', icon: 'Scale', color: 'ca8a04', questions: [
-      { key: 'ob_bmi', q: 'How does her BMI affect BP, glucose, and overall risk?' },
-      { key: 'ob_motivation', q: 'What did the interview reveal about her motivation and barriers?' },
-      { key: 'ob_plan', q: 'What realistic lifestyle targets would you set with her?' },
+    { id: 'lipid', title: 'Hyperlipidemia / Primary ASCVD Prevention (Evidence-Based Care Gap)', icon: 'Activity', color: 'dc2626', questions: [
+      { key: 'lip_statin', q: 'Does a 54-year-old with diabetes have a statin indication? Why?', defaultAnswer: 'Patient is not currently on statin therapy, which represents an evidence-based care gap for primary ASCVD prevention. ADA 2026 Standards of Care recommend at least moderate-intensity (or high-intensity) statin therapy for all patients aged 40-75 with diabetes for primary prevention, independent of baseline LDL-C.' },
+      { key: 'lip_risk', q: 'What ASCVD risk enhancers are present?', defaultAnswer: 'Patient has multiple ASCVD risk enhancers: hypertension, obesity, elevated triglycerides (223 mg/dL, LDL-C 112 mg/dL), and family history of premature cardiovascular disease (father had MI at age 62). Statin initiation with atorvastatin 20 mg (or 40 mg) daily is indicated with adverse effect counseling and a repeat lipid panel in 6-12 weeks.' },
     ]},
-    { id: 'kidney', title: 'Kidney Risk / Albuminuria', icon: 'FlaskConical', color: '0891b2', questions: [
-      { key: 'kid_uacr', q: 'Why is UACR important here, and what is the next step?' },
-      { key: 'kid_nsaid', q: 'How does her hidden NSAID use affect kidney and BP risk?' },
-      { key: 'kid_acei', q: 'How does ACE inhibitor therapy fit into kidney protection?' },
+    { id: 'obesity', title: 'Obesity (Class I, BMI 34.8 kg/m²)', icon: 'Scale', color: 'ca8a04', questions: [
+      { key: 'ob_bmi', q: 'How does her BMI affect BP, glucose, and overall risk?', defaultAnswer: 'BMI 34.8 kg/m² (weight 92 kg, height 5\'4\") classifies as Class I Obesity. Obesity directly contributes to hypertension, insulin resistance, and elevated cardiovascular risk. Obesity influences antihyperglycemic medication selection, prioritizing weight-beneficial agents (metformin, GLP-1 RA). Modest 5-7% weight reduction provides dual benefits for both blood pressure and glycemic control.' },
     ]},
-    { id: 'prevent', title: 'Preventive Care', icon: 'Heart', color: '7c3aed', questions: [
-      { key: 'prev_imm', q: 'Which immunizations are due or undocumented?' },
-      { key: 'prev_gaps', q: 'What preventive gaps should be addressed at this visit?' },
+    { id: 'nsaid', title: 'Hidden OTC NSAID Use & Knee Osteoarthritis', icon: 'AlertTriangle', color: 'ea580c', questions: [
+      { key: 'nsaid_assess', q: 'How should knee pain and NSAID use be managed?', defaultAnswer: 'Frequent OTC ibuprofen use contributes to elevated blood pressure, reduced antihypertensive efficacy, and increased future renal risk. Recommend exploring alternative pain management strategies: limit ibuprofen, recommend acetaminophen as first-line pain therapy (up to 3000 mg/day), and provide a conditional referral to PCP for osteoarthritis management if knee pain worsens.' },
+    ]},
+    { id: 'prevent', title: 'Preventive Care & Immunization Gaps', icon: 'Heart', color: '7c3aed', questions: [
+      { key: 'prev_gaps', q: 'What preventive gaps should be addressed at this visit?', defaultAnswer: 'Preventive care gaps identified from objective records: Pneumococcal conjugate vaccination (PCV20) is indicated for age 54 with diabetes; Recombinant Zoster vaccine (Shingrix) 2-dose series is indicated for age ≥50; and Tdap booster is overdue (last dose received 11 years ago, exceeding the 10-year booster interval per CDC Adult Immunization Schedule).' },
     ]},
   ],
 
   PLAN_SECTIONS: [
     { id: 'htn_plan', title: 'Hypertension plan', options: [
-      { key: 'h1', label: 'Assess and reinforce adherence and home BP technique before intensifying', correct: true },
-      { key: 'h2', label: 'Increase lisinopril to 20 mg daily', correct: true },
-      { key: 'h3', label: 'Initiate home BP monitoring with correct technique', correct: true },
+      { key: 'h_cont', label: 'Continue hydrochlorothiazide 12.5 mg PO once daily', correct: true },
+      { key: 'h2', label: 'Increase lisinopril to 20 mg PO once daily', correct: true },
+      { key: 'h_tech', label: 'Educate on proper home BP monitoring technique (rest 5 min, feet flat, uncrossed legs, arm supported at heart level, proper cuff placement)', correct: true },
+      { key: 'h_freq', label: 'Recommend home BP monitoring >=3-4 days/week and maintain a written log of readings to review at follow-up', correct: true },
+      { key: 'h_nsaid', label: 'Advise limiting NSAID use (ibuprofen) to avoid BP elevation and reduce renal risk', correct: true },
+      { key: 'h_bmp', label: 'Order BMP (serum creatinine, BUN, potassium) in 2-4 weeks after ACE inhibitor dose titration', correct: true },
+      { key: 'h_target', label: 'Blood pressure treatment goal: <130/80 mmHg per 2025 AHA/ACC Hypertension Guideline', correct: true },
       { key: 'h4', label: 'Immediately add a fourth antihypertensive today', correct: false },
       { key: 'h5', label: 'Stop the ACE inhibitor because BP is still high', correct: false },
     ]},
     { id: 'dm_plan', title: 'Diabetes plan', options: [
-      { key: 'd1', label: 'Increase metformin XR toward 2000 mg daily as tolerated', correct: true },
-      { key: 'd2', label: 'Order UACR', correct: true },
-      { key: 'd3', label: 'Reinforce SMBG and lifestyle; recheck A1C in ~3 months', correct: true },
+      { key: 'd1', label: 'Increase metformin XR toward target 2000 mg PO daily with dinner (titrate to 1500 mg daily for 1-2 weeks, then 2000 mg daily as tolerated)', correct: true },
+      { key: 'd_gi', label: 'Counsel patient on potential gastrointestinal adverse effects of metformin dose escalation (nausea, diarrhea) and emphasize taking with meals', correct: true },
+      { key: 'd_smbg', label: 'Encourage fasting self-monitoring of blood glucose (SMBG) >=3-4 times weekly and log readings', correct: true },
+      { key: 'd_uacr', label: 'Order urine albumin-to-creatinine ratio (UACR) spot urine test at this visit to screen for albuminuria per ADA 2026 / KDIGO guidelines', correct: true },
+      { key: 'd_goal', label: 'Individualized glycemic goal: A1C <7% per ADA 2026 Standards of Care', correct: true },
+      { key: 'd_addon', label: 'Plan future add-on therapy if glycemic goals unmet at 3 months despite metformin optimization: GLP-1 RA (e.g., semaglutide, dulaglutide) or SGLT2 inhibitor (e.g., empagliflozin, dapagliflozin), conditioned on failure to achieve goal', correct: true },
       { key: 'd4', label: 'Start basal insulin today', correct: false },
       { key: 'd5', label: 'Stop metformin due to A1C rise', correct: false },
     ]},
-    { id: 'lipid_plan', title: 'Lipid / ASCVD plan', options: [
-      { key: 'l1', label: 'Initiate a statin (e.g., atorvastatin) given diabetes age 40–75', correct: true },
-      { key: 'l2', label: 'Counsel on statin benefit and monitoring', correct: true },
+    { id: 'kidney_plan', title: 'Diabetic kidney disease screening & monitoring plan', options: [
+      { key: 'k_uacr', label: 'Order UACR spot test at this visit to address missing albuminuria screening gap per ADA/KDIGO recommendations', correct: true },
+      { key: 'k_acei', label: 'Continue lisinopril supporting renal protective antiproteinuric effects and intraglomerular pressure reduction', correct: true },
+      { key: 'k_bmp', label: 'Recheck BMP (SCr, eGFR, potassium) in 2-4 weeks after lisinopril titration', correct: true },
+      { key: 'k_avoid', label: 'Avoid nephrotoxic agents including frequent OTC NSAIDs', correct: true },
+    ]},
+    { id: 'lipid_plan', title: 'Lipid / primary ASCVD prevention plan', options: [
+      { key: 'l1', label: 'Initiate statin therapy for primary ASCVD prevention in diabetes: Atorvastatin 20 mg (or 40 mg) PO once daily at bedtime per ADA 2026 guidelines', correct: true },
+      { key: 'l_counsel', label: 'Educate patient on potential statin adverse effects (myalgias, muscle soreness) and emphasize cardiovascular risk reduction benefits', correct: true },
+      { key: 'l_repeat', label: 'Repeat fasting lipid panel in 6-12 weeks (before next visit) to assess LDL reduction and therapy response', correct: true },
       { key: 'l3', label: 'Defer all lipid therapy until BP is controlled', correct: false },
       { key: 'l4', label: 'Start a fibrate first-line for TG 223', correct: false },
     ]},
-    { id: 'life_plan', title: 'Lifestyle / weight plan', options: [
-      { key: 'lf1', label: 'Set a realistic, patient-centered weight goal', correct: true },
-      { key: 'lf2', label: 'DASH-style diet, reduce sweet tea and sodium', correct: true },
-      { key: 'lf3', label: 'Gradually increase walking within knee tolerance', correct: true },
+    { id: 'life_plan', title: 'Lifestyle & weight management plan', options: [
+      { key: 'lf_act', label: 'Recommend >=150 minutes/week of moderate-intensity physical activity (gradually increase walking within knee tolerance)', correct: true },
+      { key: 'lf_veg', label: 'Recommend increasing vegetable intake and dietary fiber', correct: true },
+      { key: 'lf_rest', label: 'Recommend reducing restaurant meal frequency (cut dining out from 3-4x/week) and preparing more home-cooked meals', correct: true },
+      { key: 'lf_dash', label: 'Adopt DASH-style diet: reduce sodium intake and replace sweet tea with water to eliminate sugary beverages', correct: true },
+      { key: 'lf_wt', label: 'Set a realistic 5-7% weight loss target (~5-7 kg), reinforcing that weight loss produces dual benefits for both blood pressure and glycemic control', correct: true },
       { key: 'lf4', label: 'Recommend a strict 1200-kcal diet immediately', correct: false },
     ]},
-    { id: 'mon_plan', title: 'Monitoring plan', options: [
-      { key: 'm1', label: 'Recheck BMP (K, SCr) after ACEi titration', correct: true },
-      { key: 'm2', label: 'A1C in ~3 months; UACR result review', correct: true },
-      { key: 'm3', label: 'No additional monitoring needed', correct: false },
+    { id: 'pain_plan', title: 'Knee osteoarthritis & pain management plan', options: [
+      { key: 'p_limit', label: 'Recommend limiting/stopping OTC ibuprofen use to reduce blood pressure elevation and renal risk', correct: true },
+      { key: 'p_tylenol', label: 'Recommend acetaminophen (500-1000 mg PO every 6 hours PRN, maximum 3000 mg/day) as first-line pain therapy for knee osteoarthritis', correct: true },
+      { key: 'p_ref', label: 'Conditional PCP referral: refer to PCP for dedicated osteoarthritis evaluation/physical therapy if knee pain worsens or remains uncontrolled', correct: true },
+      { key: 'p_ratio', label: 'Tie pain management plan to blood pressure control and renal risk reduction rationale', correct: true },
     ]},
-    { id: 'imm_plan', title: 'Immunizations / preventive care plan', options: [
-      { key: 'i1', label: 'Address pneumococcal and Tdap (overdue ~11 yr)', correct: true },
-      { key: 'i2', label: 'Offer Shingrix per age eligibility', correct: true },
+    { id: 'imm_plan', title: 'Immunizations & preventive care plan', options: [
+      { key: 'i_verify', label: 'Verify immunization history in state registry', correct: true },
+      { key: 'i_pcv', label: 'Recommend Pneumococcal conjugate vaccination (PCV20) single dose for diabetes indication', correct: true },
+      { key: 'i_shing', label: 'Recommend Recombinant Zoster vaccine (Shingrix) 2-dose series (0 and 2-6 months) for age ≥50', correct: true },
+      { key: 'i_tdap', label: 'Recommend Tdap booster today (overdue, 11 years since last dose in 2015) per CDC Adult Immunization Schedule', correct: true },
       { key: 'i3', label: 'No vaccines indicated', correct: false },
     ]},
-    { id: 'fu_plan', title: 'Follow-up plan', options: [
-      { key: 'f1', label: 'Follow up ~1 month after medication adjustment', correct: true },
+    { id: 'fu_plan', title: 'Follow-up & monitoring plan', options: [
+      { key: 'f_bmp', label: 'BMP lab check (serum creatinine, potassium) in 2-4 weeks after ACE inhibitor titration', correct: true },
+      { key: 'f_fu', label: 'Follow up in 3 months for comprehensive clinic visit', correct: true },
+      { key: 'f_lip', label: 'Repeat lipid panel before next visit (at 6-12 weeks)', correct: true },
+      { key: 'f_rev_bp', label: 'Review home BP log at follow-up visit', correct: true },
+      { key: 'f_rev_bg', label: 'Review glucose monitoring data and repeat A1C at follow-up visit', correct: true },
+      { key: 'f_rev_adh', label: 'Review medication adherence at follow-up visit', correct: true },
+      { key: 'f_rev_resp', label: 'Review response to therapy and evaluate UACR result at follow-up visit', correct: true },
       { key: 'f2', label: 'Return in 1 year', correct: false },
     ]},
   ],
@@ -320,21 +353,10 @@ const caseTue = {
     { key: 'questionsProvider', label: 'Questions for provider / preceptor', placeholder: 'Collaborative practice items to confirm…' },
   ],
 
-  GUIDING_QUESTIONS: [
-    'What factors contributed to this patient\'s uncontrolled blood pressure?',
-    'Why did you choose medication intensification rather than adherence intervention alone?',
-    'What additional information is needed before fully evaluating kidney risk?',
-    'Why does diabetes change your blood pressure goal?',
-    'Why is statin therapy indicated even though this patient has never had a heart attack or stroke?',
-    'What would make your treatment plan difficult for this patient to follow?',
-    'How would you explain A1C to this patient in plain language?',
-    'What would you monitor after increasing lisinopril?'
-  ],
-
   COUNSELING: [
     { id: 'bp', title: 'Blood pressure', body: [
-      'Your blood pressure is a bit high right now. Our goal is to get the top number under about 130 and the bottom under 80.',
-      'Taking your pills the same time every day — like with breakfast — helps a lot.',
+      'Your blood pressure is a bit high right now. Our goal is to get the top number under about 130 and the bottom under 80 per guidelines.',
+      'Taking your pills the same time every day — like with breakfast — helps a lot. We will also avoid skipping doses.',
       'We’ll also work on checking it correctly at home so the numbers are accurate.',
     ]},
     { id: 'homebp', title: 'Home BP monitoring', body: [
@@ -380,23 +402,23 @@ const caseTue = {
       'NSAID use can blunt antihypertensive response and add kidney risk.',
     ],
     plan: [
-      'Reinforce adherence + correct home BP technique; start a home BP log.',
-      'Increase lisinopril to 20 mg daily; recheck BMP (K, SCr) after titration.',
-      'Increase metformin XR toward 2000 mg daily as tolerated; order UACR; recheck A1C in ~3 months.',
-      'Initiate moderate-intensity statin (e.g., atorvastatin 20 mg).',
-      'DASH-style diet, reduce sweet tea/sodium, gradual walking within knee tolerance.',
-      'Address pneumococcal, Tdap (overdue), Shingrix; follow up in ~1 month.',
+      'Titrate lisinopril to 20 mg daily; continue HCTZ 12.5 mg; recheck BMP in 2–4 weeks.',
+      'Titrate metformin XR toward 2000 mg daily; order UACR; SMBG 3-4x weekly.',
+      'Initiate atorvastatin 20 mg daily; repeat lipid panel in 6–12 weeks.',
+      'Address knee pain with acetaminophen first-line; limit ibuprofen.',
+      'Set physical activity (>=150 min/wk), vegetable intake, and weight loss goals.',
+      'Address overdue vaccines (PCV20, Shingrix, Tdap).',
+      'Follow up in 3 months.',
     ],
     pearls: [
-      'Always assess adherence and measurement technique BEFORE intensifying therapy.',
-      'Ask specifically about OTC products — patients often don’t consider ibuprofen a "medication."',
-      'A rising A1C trend is more informative than a single value.',
-      'In diabetes, statin indication is driven by age/diabetes, not just LDL.',
+      'Never assume high office BP means true treatment failure until adherence and technique are verified.',
+      'Patients often omit OTC NSAIDs from medication lists; always ask directly.',
+      'In diabetes, statin therapy is an evidence-based quality measure, not just a response to high LDL.',
     ],
     mistakes: [
-      'Adding a new antihypertensive before checking adherence and home BP technique.',
-      'Missing the hidden NSAID use entirely (only found by interview).',
-      'Overlooking the missing UACR.',
+      'Adding a third antihypertensive before confirming adherence or optimizing current doses.',
+      'Switching from metformin to insulin without exploring dose optimization and barriers.',
+      'Failing to order a baseline UACR.',
       'Failing to recognize the statin indication.',
       'Treating the A1C number in isolation without the trend or lifestyle context.',
     ],
@@ -421,6 +443,7 @@ const caseTue = {
   INTERVIEW_SYSTEM_PROMPT:
     'You are Maria Gonzalez, a 54-year-old friendly, polite, cooperative woman with hypertension, type 2 diabetes, obesity, and knee arthritis. You want to be healthier but feel overwhelmed by conflicting information and sometimes minimize unhealthy habits out of embarrassment. Speak in plain, conversational, non-clinical language. Never use guideline or clinical terminology. Do NOT volunteer hidden facts (missed doses, ibuprofen use, poor BP technique, infrequent glucose checks, diet, fears) unless the student specifically asks about that topic. Keep answers short and natural.',
 }
+
 
 // ----------------------------------------------------------------------------
 // CASE 2 — WEDNESDAY — 3-Month Ambulatory Care Follow-Up
