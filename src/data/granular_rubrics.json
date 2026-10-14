@@ -26,9 +26,9 @@
     },
     {
       "id": "1A.4",
-      "description": "Visit type: scheduled follow-up",
+      "description": "Visit type: scheduled 6-month follow-up / final follow-up",
       "points": 0.4,
-      "fullCredit": "States scheduled follow-up",
+      "fullCredit": "States 6-month follow-up / final follow-up / scheduled follow-up",
       "halfCredit": "States visit, no type",
       "zeroCredit": "Omits"
     },
@@ -1474,9 +1474,9 @@
     },
     {
       "id": "4D.1",
-      "description": "Continue atorvastatin 20 mg daily",
+      "description": "Continue statin therapy (atorvastatin 20 mg or 40 mg daily)",
       "points": 0.9,
-      "fullCredit": "States continue atorvastatin 20 mg",
+      "fullCredit": "States continue atorvastatin (20 mg or 40 mg daily)",
       "halfCredit": "States continue, no dose",
       "zeroCredit": "Omits"
     },
@@ -1796,9 +1796,9 @@
     },
     {
       "id": "1B.2",
-      "description": "Endorses mild fatigue",
+      "description": "Endorses fatigue (mild / intermittent / tired sometimes)",
       "points": 0.3,
-      "fullCredit": "States mild fatigue",
+      "fullCredit": "States fatigue (mild, intermittent, tired sometimes, or tired a lot)",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
@@ -2460,10 +2460,10 @@
     },
     {
       "id": "2A.7",
-      "description": "Home blood pressure log average (~146/91 mmHg)",
+      "description": "Home blood pressure log average (~144/90 mmHg or ~146/91 mmHg)",
       "points": 0.7,
-      "fullCredit": "States ~146/91 mmHg",
-      "halfCredit": "Notes home log, no average",
+      "fullCredit": "States ~144/90 mmHg (or ~146/91 mmHg)",
+      "halfCredit": "Notes home log, no average or close value",
       "zeroCredit": "Omits"
     },
     {
@@ -2956,9 +2956,9 @@
     },
     {
       "id": "3D.4",
-      "description": "States ADA 2026 statin recommendation for diabetes age 40-75",
+      "description": "States ADA 2026 statin recommendation for diabetes age 40-75 (moderate- or high-intensity based on ASCVD risk factors)",
       "points": 0.7,
-      "fullCredit": "States ADA 40-75 statin rec",
+      "fullCredit": "States ADA 40-75 statin rec (moderate or high intensity)",
       "halfCredit": "States statin rec, no age band",
       "zeroCredit": "Omits"
     },
@@ -3332,17 +3332,17 @@
     },
     {
       "id": "4D.1",
-      "description": "Initiate a moderate-intensity statin (acceptable: atorvastatin 10-20 mg, rosuvastatin 5-10 mg, simvastatin 20-40 mg, pravastatin 40-80 mg, lovastatin 40 mg, or pitavastatin 1-4 mg)",
+      "description": "Initiate statin therapy: moderate-intensity (e.g. atorvastatin 10-20 mg, rosuvastatin 5-10 mg) or high-intensity (e.g. atorvastatin 40-80 mg, rosuvastatin 20-40 mg) given diabetes + multiple ASCVD risk factors",
       "points": 0.9,
-      "fullCredit": "Any moderate-intensity statin named",
+      "fullCredit": "Appropriate moderate- or high-intensity statin named (e.g., atorvastatin 20-40 mg daily)",
       "halfCredit": "States statin, no intensity/agent",
       "zeroCredit": "Omits"
     },
     {
       "id": "4D.2",
-      "description": "Specifies atorvastatin 20 mg daily",
+      "description": "Specifies atorvastatin (20 mg or 40 mg daily)",
       "points": 0.6,
-      "fullCredit": "States atorvastatin 20 mg",
+      "fullCredit": "States atorvastatin (20 mg or 40 mg daily)",
       "halfCredit": "States atorvastatin, no dose",
       "zeroCredit": "Omits"
     },
@@ -3678,9 +3678,9 @@
     },
     {
       "id": "1A.4",
-      "description": "Visit type: scheduled 3-month follow-up",
+      "description": "Visit type: scheduled 3-month follow-up (or ambulatory care follow-up)",
       "points": 0.5,
-      "fullCredit": "States scheduled 3-month follow-up",
+      "fullCredit": "States 3-month follow-up / scheduled follow-up",
       "halfCredit": "States follow-up, no interval",
       "zeroCredit": "Omits"
     },
@@ -3750,9 +3750,9 @@
     },
     {
       "id": "1B.4",
-      "description": "Reports improved consistency with home BP monitoring",
+      "description": "Reports home BP monitoring (logs readings ~134/84 mmHg or improved consistency)",
       "points": 0.4,
-      "fullCredit": "States improved HBPM consistency",
+      "fullCredit": "States home BP log / readings (~134/84 mmHg) or improved consistency",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
@@ -4318,9 +4318,9 @@
     },
     {
       "id": "1G.1",
-      "description": "Expresses satisfaction with overall progress",
+      "description": "Patient sentiment: acknowledges progress (or expresses satisfaction / feels making progress though cautious)",
       "points": 0.4,
-      "fullCredit": "States satisfaction",
+      "fullCredit": "States making progress / satisfied / cautious about progress",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
@@ -5222,9 +5222,9 @@
     },
     {
       "id": "4D.1",
-      "description": "Continue atorvastatin 20 mg daily",
+      "description": "Continue statin therapy (atorvastatin 20 mg or 40 mg daily)",
       "points": 0.8,
-      "fullCredit": "States continue atorvastatin 20 mg",
+      "fullCredit": "States continue statin therapy (atorvastatin 20 mg or 40 mg daily)",
       "halfCredit": "States continue, no dose",
       "zeroCredit": "Omits"
     },
@@ -5536,7 +5536,7 @@
     },
     {
       "id": "1A.4",
-      "description": "Setting: ambulatory care pharmacy clinic",
+      "description": "Setting: ambulatory care clinic / pharmacy clinic",
       "points": 0.3,
       "fullCredit": "Names clinic setting",
       "halfCredit": "\u2014",
@@ -5640,10 +5640,10 @@
     },
     {
       "id": "1B.8",
-      "description": "Checks blood pressure several times weekly",
+      "description": "Checks blood pressure at home (1 to 2 times weekly or several times weekly, average ~126/78)",
       "points": 0.3,
-      "fullCredit": "States several times weekly",
-      "halfCredit": "\u2014",
+      "fullCredit": "States 1-2 times weekly (or several times weekly), average ~126/78 mmHg",
+      "halfCredit": "States checks BP, no frequency/value",
       "zeroCredit": "Omits"
     },
     {
@@ -6304,9 +6304,9 @@
     },
     {
       "id": "2B.5",
-      "description": "Sodium (139 mEq/L)",
+      "description": "Sodium (138 mEq/L)",
       "points": 0.3,
-      "fullCredit": "States 139 mEq/L",
+      "fullCredit": "States 138 mEq/L (or 138-139 mEq/L)",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
@@ -6960,9 +6960,9 @@
     },
     {
       "id": "3H.3",
-      "description": "Pneumococcal vaccination recommended for adults &gt;=65 if not completed",
+      "description": "Pneumococcal vaccination recommended for adults age >=50 (CDC) or with chronic medical conditions",
       "points": 0.3,
-      "fullCredit": "States pneumococcal age criterion",
+      "fullCredit": "States pneumococcal recommendation (age >=50 / chronic conditions)",
       "halfCredit": "Names pneumococcal, no criterion",
       "zeroCredit": "Omits"
     },
@@ -7378,17 +7378,17 @@
     },
     {
       "id": "1A.3",
-      "description": "Visit type: initial collaborative practice management",
+      "description": "Visit type: initial collaborative practice management / ambulatory care visit",
       "points": 0.4,
-      "fullCredit": "States initial co-management",
+      "fullCredit": "States initial collaborative management / ambulatory care visit",
       "halfCredit": "States visit, no type",
       "zeroCredit": "Omits"
     },
     {
       "id": "1A.4",
-      "description": "Setting: ambulatory care pharmacy clinic",
+      "description": "Setting: ambulatory care clinic / pharmacy clinic",
       "points": 0.3,
-      "fullCredit": "Names clinic setting",
+      "fullCredit": "Names ambulatory care / pharmacy clinic setting",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
@@ -7418,17 +7418,17 @@
     },
     {
       "id": "1A.8",
-      "description": "Referral trigger: persistent blood pressure elevation",
+      "description": "Referral trigger: blood pressure elevation / management",
       "points": 0.3,
-      "fullCredit": "States BP trigger",
+      "fullCredit": "States BP elevation / management trigger",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
     {
       "id": "1A.9",
-      "description": "Referral trigger: worsening glycemic control",
+      "description": "Referral trigger: glycemic control / diabetes management",
       "points": 0.3,
-      "fullCredit": "States glycemic trigger",
+      "fullCredit": "States glycemic / diabetes trigger",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
@@ -7458,10 +7458,10 @@
     },
     {
       "id": "1B.4",
-      "description": "Frustrated BP/diabetes remain above goal despite multiple medications",
+      "description": "Frustrated / concerned that BP and blood sugar remain elevated or are creeping up",
       "points": 0.3,
-      "fullCredit": "States this frustration",
-      "halfCredit": "\u2014",
+      "fullCredit": "States frustration / concern about numbers or medication count",
+      "halfCredit": "Notes general concern",
       "zeroCredit": "Omits"
     },
     {
@@ -7490,18 +7490,18 @@
     },
     {
       "id": "1B.8",
-      "description": "Did not notify physician or pharmacy of cost barrier",
+      "description": "Cost barrier: did not pick up empagliflozin / delays refills due to cost",
       "points": 0.4,
-      "fullCredit": "States failure to notify",
-      "halfCredit": "\u2014",
+      "fullCredit": "Documents cost barrier / missed fill / non-initiation due to price",
+      "halfCredit": "Mentions cost",
       "zeroCredit": "Omits"
     },
     {
       "id": "1B.9",
-      "description": "Assumed no alternative options were available",
+      "description": "Medication stretching / skipping doses or delaying refills when money is tight",
       "points": 0.3,
-      "fullCredit": "States this assumption",
-      "halfCredit": "\u2014",
+      "fullCredit": "Documents medication stretching / skipping / delayed refills",
+      "halfCredit": "Mentions adherence issue",
       "zeroCredit": "Omits"
     },
     {
@@ -7522,10 +7522,10 @@
     },
     {
       "id": "1B.12",
-      "description": "Embarrassment regarding finances / initially minimized concerns",
+      "description": "Financial concerns / fixed income after retirement",
       "points": 0.3,
-      "fullCredit": "States embarrassment/minimization",
-      "halfCredit": "\u2014",
+      "fullCredit": "States financial concern / fixed income / cost barrier",
+      "halfCredit": "Mentions finances",
       "zeroCredit": "Omits"
     },
     {
@@ -8034,26 +8034,26 @@
     },
     {
       "id": "1G.2",
-      "description": "Goal: maintain health and independence throughout retirement",
+      "description": "Patient goals: desires better health, retirement independence, and avoiding insulin/injections",
       "points": 0.6,
-      "fullCredit": "States this goal",
-      "halfCredit": "\u2014",
+      "fullCredit": "States goals (better health, avoiding insulin/shots, staying independent)",
+      "halfCredit": "Mentions goals generally",
       "zeroCredit": "Omits"
     },
     {
       "id": "1G.3",
-      "description": "Concern about suffering a stroke",
+      "description": "Concerns about cardiovascular events / stroke or diabetes complications",
       "points": 0.5,
-      "fullCredit": "States stroke concern",
-      "halfCredit": "\u2014",
+      "fullCredit": "States stroke / CV / diabetes complication concerns",
+      "halfCredit": "Mentions general concern",
       "zeroCredit": "Omits"
     },
     {
       "id": "1G.4",
-      "description": "Links stroke concern to father's history",
+      "description": "Family history of stroke / diabetes noted as a motivator",
       "points": 0.4,
-      "fullCredit": "Links to father's stroke",
-      "halfCredit": "\u2014",
+      "fullCredit": "Links motivation/concern to family history (father's stroke/diabetes)",
+      "halfCredit": "Notes family history",
       "zeroCredit": "Omits"
     },
     {
@@ -8554,10 +8554,10 @@
     },
     {
       "id": "3D.2",
-      "description": "Identifies as the most significant medication-related problem",
+      "description": "Identifies medication affordability / access as primary barrier or significant medication-related problem",
       "points": 0.6,
-      "fullCredit": "States primacy of this problem",
-      "halfCredit": "\u2014",
+      "fullCredit": "Identifies affordability/access as primary barrier or key medication-related problem",
+      "halfCredit": "Mentions cost barrier",
       "zeroCredit": "Omits"
     },
     {
@@ -8730,49 +8730,49 @@
     },
     {
       "id": "3G.1",
-      "description": "Problem identified: health literacy deficit",
+      "description": "Problem identified: medication access barrier / non-adherence due to cost",
       "points": 0.5,
-      "fullCredit": "Names the problem",
-      "halfCredit": "\u2014",
+      "fullCredit": "Identifies cost barrier / access issue / non-adherence",
+      "halfCredit": "Identifies adherence issue",
       "zeroCredit": "Omits"
     },
     {
       "id": "3G.2",
-      "description": "Limited understanding of A1C",
+      "description": "Limited understanding of A1C or blood glucose targets",
       "points": 0.4,
-      "fullCredit": "States A1C knowledge gap",
+      "fullCredit": "Notes A1C / blood glucose knowledge gap or need for education",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
     {
       "id": "3G.3",
-      "description": "Limited understanding of medication purpose",
+      "description": "Opportunity for education on medication purpose and disease management",
       "points": 0.4,
-      "fullCredit": "States medication-purpose gap",
+      "fullCredit": "Notes need for education on medications / disease control",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
     {
       "id": "3G.4",
-      "description": "Limited understanding of empagliflozin's role",
+      "description": "Non-initiation of empagliflozin due to cost barrier ($500/mo copay)",
       "points": 0.4,
-      "fullCredit": "States empagliflozin-role gap",
+      "fullCredit": "States empagliflozin unobtained / unaffordable",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
     {
       "id": "3G.5",
-      "description": "Incorrectly assumed medication was optional due to cost",
+      "description": "Patient needs affordable alternative or copay assistance program",
       "points": 0.4,
-      "fullCredit": "States this misconception",
+      "fullCredit": "Identifies need for cost assistance / affordable generic alternative",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
     {
       "id": "3G.6",
-      "description": "Did not understand importance of reporting affordability barriers",
+      "description": "Education on communicating affordability barriers with healthcare team",
       "points": 0.4,
-      "fullCredit": "States this gap",
+      "fullCredit": "States need to address/communicate affordability barriers",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
@@ -9244,7 +9244,7 @@
     },
     {
       "id": "1A.4",
-      "description": "Setting: ambulatory care pharmacy clinic",
+      "description": "Setting: ambulatory care clinic / pharmacy clinic",
       "points": 0.3,
       "fullCredit": "Names clinic setting",
       "halfCredit": "\u2014",
@@ -10724,9 +10724,9 @@
     },
     {
       "id": "4C.3",
-      "description": "Repeat lipid panel in ~6-12 months",
+      "description": "Repeat lipid panel in ~4-12 weeks (if dose adjusted) or ~6-12 months (for maintenance)",
       "points": 0.7,
-      "fullCredit": "States lipid panel 6-12 months",
+      "fullCredit": "States repeat lipid panel at 4-12 weeks (post-titration) or 6-12 months (maintenance)",
       "halfCredit": "Repeat lipids, no timing",
       "zeroCredit": "Omits"
     },
@@ -11038,9 +11038,9 @@
     },
     {
       "id": "1A.3",
-      "description": "Visit type: scheduled follow-up",
+      "description": "Visit type: final follow-up / scheduled follow-up / ambulatory care visit",
       "points": 0.4,
-      "fullCredit": "States scheduled follow-up",
+      "fullCredit": "States final follow-up / scheduled follow-up",
       "halfCredit": "States visit, no type",
       "zeroCredit": "Omits"
     },
@@ -11342,10 +11342,10 @@
     },
     {
       "id": "1D.3",
-      "description": "Tobacco status (never smoker)",
+      "description": "Tobacco status (former smoker: 1 pack/day x 20 years, quit 10 years ago)",
       "points": 0.4,
-      "fullCredit": "States never smoker",
-      "halfCredit": "States nonsmoker, no never/former",
+      "fullCredit": "States former smoker (quit 10 years ago)",
+      "halfCredit": "States former smoker, no pack-years/duration",
       "zeroCredit": "Omits"
     },
     {
@@ -12832,9 +12832,9 @@
     },
     {
       "id": "1A.3",
-      "description": "Visit type: initial collaborative practice management",
+      "description": "Visit type: initial collaborative practice management / ambulatory care visit",
       "points": 0.4,
-      "fullCredit": "States initial co-management",
+      "fullCredit": "States initial visit / collaborative management",
       "halfCredit": "States visit, no type",
       "zeroCredit": "Omits"
     },
@@ -12944,9 +12944,9 @@
     },
     {
       "id": "1B.6",
-      "description": "Glucose monitoring frequency (several times weekly)",
+      "description": "Glucose monitoring frequency (regularly / pretty regularly or several times weekly)",
       "points": 0.3,
-      "fullCredit": "States several times weekly",
+      "fullCredit": "States regularly / pretty regularly (or several times weekly)",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
@@ -13168,10 +13168,10 @@
     },
     {
       "id": "1D.3",
-      "description": "Tobacco status (never smoker)",
+      "description": "Tobacco status (former smoker: 1 pack/day x 20 years, quit 10 years ago)",
       "points": 0.4,
-      "fullCredit": "States never smoker",
-      "halfCredit": "States nonsmoker, no never/former",
+      "fullCredit": "States former smoker (quit 10 years ago)",
+      "halfCredit": "States former smoker, no pack-years/duration",
       "zeroCredit": "Omits"
     },
     {
@@ -14658,9 +14658,9 @@
     },
     {
       "id": "1A.3",
-      "description": "Visit type: scheduled follow-up",
+      "description": "Visit type: first follow-up / scheduled follow-up / ambulatory care visit",
       "points": 0.4,
-      "fullCredit": "States scheduled follow-up",
+      "fullCredit": "States follow-up visit / scheduled follow-up",
       "halfCredit": "States visit, no type",
       "zeroCredit": "Omits"
     },
@@ -14794,9 +14794,9 @@
     },
     {
       "id": "1B.9",
-      "description": "Glucose monitoring frequency (several times weekly)",
+      "description": "Glucose monitoring frequency (regularly / pretty regularly or several times weekly)",
       "points": 0.3,
-      "fullCredit": "States several times weekly",
+      "fullCredit": "States regularly / pretty regularly (or several times weekly)",
       "halfCredit": "\u2014",
       "zeroCredit": "Omits"
     },
@@ -14994,10 +14994,10 @@
     },
     {
       "id": "1D.3",
-      "description": "Tobacco status (never smoker)",
+      "description": "Tobacco status (former smoker: 1 pack/day x 20 years, quit 10 years ago)",
       "points": 0.4,
-      "fullCredit": "States never smoker",
-      "halfCredit": "States nonsmoker, no never/former",
+      "fullCredit": "States former smoker (quit 10 years ago)",
+      "halfCredit": "States former smoker, no pack-years/duration",
       "zeroCredit": "Omits"
     },
     {

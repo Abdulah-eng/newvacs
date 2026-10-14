@@ -474,7 +474,13 @@ export function MedicationsTab({ c }) {
             </button>
           </div>
           <div className="text-[11px] text-slate-400 flex items-center gap-1">
-            <span className="text-slate-300">✓</span> Allergy/interaction check active · NKDA — no conflicts
+            <span className="text-slate-300">✓</span> Allergy/interaction check active · {(() => {
+              const activeAllergies = (c.ALLERGIES || []).filter(a => a.substance && !a.substance.toLowerCase().includes("no known") && a.substance.toUpperCase() !== "NKDA")
+              if (activeAllergies.length > 0) {
+                return `Allergies: ${activeAllergies.map(a => a.substance).join(", ")} — no active drug conflicts`
+              }
+              return 'NKDA — no conflicts'
+            })()}
           </div>
         </div>
 
