@@ -547,76 +547,301 @@ const jamesThu = makeCase({
   PATIENT: jamesTue.PATIENT,
   ENCOUNTER: {
     day: 'Thursday', type: '6-Month Follow-Up', difficulty: 'Advanced', difficultyTone: 'amber',
+    setting: 'Collaborative Practice Ambulatory Care Pharmacy Clinic',
     chiefConcern: "Things are going pretty well, but I still worry about keeping everything affordable.",
-    snapshotSummary: 'Second 3-month follow-up (6 months total). BP is now controlled and A1C is near goal. Patient expresses increased confidence but retains long-term affordability worries.',
-    diseaseStates: ['Type 2 Diabetes', 'Hypertension'],
-    learningObjectives: ['Evaluate long-term response', 'Develop contingency plans for future access barriers', 'Reinforce chronic disease self-management'],
+    snapshotSummary: '62-year-old male presenting for scheduled 6-month follow-up (final follow-up) in an ambulatory care pharmacy clinic under collaborative practice agreement. BP is controlled (128/80 mmHg, repeat 126/78 mmHg) and A1C near goal (7.1%), weight down 5.5 kg total, and empagliflozin access maintained without difficulty. Focus on long-term disease maintenance, proactive affordability surveillance, and closing preventive care gaps.',
+    diseaseStates: ['Type 2 Diabetes', 'Hypertension', 'Hyperlipidemia', 'Medication Access & Affordability', 'Medication Adherence', 'Obesity', 'Health Literacy', 'Preventive Care Gaps'],
+    learningObjectives: ['Evaluate long-term response across cardiorenal and metabolic parameters', 'Develop proactive contingency plans for future access barriers', 'Reinforce chronic disease self-management, adherence, and lifestyle', 'Address preventive care gaps including adult immunizations'],
   },
-  VITALS: { bp: '128/80', bpRepeat: '126/78', hr: '74', rr: '16', temp: '98.2°F', weight: '95.5 kg', height: "5'10\"", bmi: '30.2',
-    flags: { bp: 'normal', bpRepeat: 'normal' } },
+  VITALS: { bp: '128/80', bpRepeat: '126/78', hr: '74', rr: '16', temp: '98.2°F', weight: '95.5 kg', height: "5'10\" (70 inches)", bmi: '30.2',
+    flags: { bp: 'normal', bpRepeat: 'normal' },
+    extras: [
+      { label: 'Total weight change', value: '−5.5 kg total weight reduction since baseline visit (baseline 101 kg to current 95.5 kg; BMI 32.1 to 30.2 kg/m², reconciled as Class I Obesity)', flag: 'normal' },
+      { label: 'Home BP average', value: '~126/78 mmHg (corroborates office BP, at goal <130/80 mmHg)', flag: 'normal' },
+      { label: 'Fasting home glucose', value: '120–140 mg/dL', flag: 'normal' },
+    ]
+  },
   LABS: [
-    { label: 'A1C', value: '7.1', unit: '%', flag: 'warn', note: 'Improved from 7.9% and baseline 8.8%' },
+    { label: 'A1C', value: '7.1', unit: '%', flag: 'warn', note: 'Prior 7.9% at 3 months; baseline 8.8% — downward trend across three time points: 8.8% → 7.9% → 7.1%' },
     { label: 'Na', value: '138', unit: 'mEq/L', flag: 'normal' },
-    { label: 'K', value: '4.3', unit: 'mEq/L', flag: 'normal' },
-    { label: 'SCr', value: '1.00', unit: 'mg/dL', flag: 'normal' },
-    { label: 'eGFR', value: '85', unit: 'mL/min/1.73m²', flag: 'normal' },
-    { label: 'UACR', value: '16', unit: 'mg/g', flag: 'normal' },
+    { label: 'K', value: '4.3', unit: 'mEq/L', flag: 'normal', note: 'Potassium stable on lisinopril 20 mg + HCTZ 25 mg' },
+    { label: 'SCr', value: '1.00', unit: 'mg/dL', flag: 'normal', note: 'Stable and preserved renal function' },
+    { label: 'eGFR', value: '85', unit: 'mL/min/1.73m²', flag: 'normal', note: 'Stable and preserved renal function' },
+    { label: 'UACR', value: '16', unit: 'mg/g', flag: 'normal', note: 'UACR low/normal and stable (<30 mg/g)' },
     { label: 'Total cholesterol', value: '165', unit: 'mg/dL', flag: 'normal' },
-    { label: 'LDL-C', value: '72', unit: 'mg/dL', flag: 'normal' },
+    { label: 'LDL-C', value: '72', unit: 'mg/dL', flag: 'normal', note: 'Baseline 103 mg/dL — sustained statin response and LDL-C improvement on atorvastatin 20 mg daily' },
     { label: 'HDL-C', value: '44', unit: 'mg/dL', flag: 'normal' },
     { label: 'TG', value: '170', unit: 'mg/dL', flag: 'normal' },
   ],
-  ALERTS: [{ level: 'info', text: 'Significant longitudinal improvement. BP controlled, A1C near goal. Weight reduced by 5.5 kg.' }],
+  ALERTS: [{ level: 'info', text: 'Significant longitudinal improvement. BP controlled, A1C near goal. Weight reduced by 5.5 kg total from baseline.' }],
   PROBLEMS: [
-    { name: 'Type 2 diabetes mellitus', detail: 'A1C 7.1% (near goal)', flag: 'normal' },
-    { name: 'Hypertension', detail: 'BP 128/80 (at goal)', flag: 'normal' },
-    { name: 'Hyperlipidemia', detail: 'LDL 72 (at goal on atorvastatin)', flag: 'normal' },
-    { name: 'Obesity', detail: 'BMI 30.2 (−5.5 kg total)', flag: 'warn' },
+    { name: 'Type 2 diabetes mellitus', detail: 'A1C 7.1% (downward trend: 8.8% → 7.9% → 7.1%, near goal <7%)', flag: 'normal' },
+    { name: 'Essential hypertension', detail: 'BP 128/80 (repeat 126/78, home ~126/78) — controlled and at goal <130/80', flag: 'normal' },
+    { name: 'Hyperlipidemia', detail: 'LDL 72 (baseline 103) on atorvastatin 20 mg — sustained statin response', flag: 'normal' },
+    { name: 'Class I Obesity', detail: 'BMI 30.2 (−5.5 kg total loss from baseline 101 kg)', flag: 'warn' },
+    { name: 'Medication access & affordability', detail: 'Empagliflozin access maintained; long-term contingency planning', flag: 'normal' },
+    { name: 'Medication adherence', detail: 'Consistent daily use; stretching resolved', flag: 'normal' },
+    { name: 'Gastroesophageal reflux disease (GERD)', detail: 'Managed on omeprazole 20 mg daily', flag: 'normal' },
   ],
-  MEDICATIONS: jamesTue.MEDICATIONS,
-  IMMUNIZATIONS: jamesTue.IMMUNIZATIONS,
-  IMMUNIZATIONS: jamesTue.IMMUNIZATIONS,
-  SUBJECTIVE_DOCUMENTED: [{ label: 'Interval history', value: 'Excellent adherence. Walking 5 days/week. Sustained dietary improvements.' }],
+  MEDICATIONS: [
+    { name: 'Metformin XR', dose: '1000 mg', route: 'PO', freq: 'BID with meals', indication: 'Type 2 diabetes', notes: 'Taking consistently, well tolerated' },
+    { name: 'Empagliflozin', dose: '10 mg', route: 'PO', freq: 'daily in morning', indication: 'Type 2 diabetes / cardiorenal', notes: 'Taking consistently without difficulty, well tolerated' },
+    { name: 'Lisinopril', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'Hypertension', notes: 'Taking consistently, well tolerated' },
+    { name: 'Hydrochlorothiazide', dose: '25 mg', route: 'PO', freq: 'daily in morning', indication: 'Hypertension', notes: 'Taking consistently, well tolerated' },
+    { name: 'Atorvastatin', dose: '20 mg', route: 'PO', freq: 'daily at bedtime', indication: 'Hyperlipidemia / ASCVD prevention', notes: 'Taking consistently, well tolerated' },
+    { name: 'Omeprazole', dose: '20 mg', route: 'PO', freq: 'daily before breakfast', indication: 'GERD', notes: 'Taking consistently' },
+  ],
+  IMMUNIZATIONS: [
+    { name: 'Influenza', status: 'Current season up to date', flag: 'normal' },
+    { name: 'COVID-19', status: 'Up to date with current booster', flag: 'normal' },
+    { name: 'Pneumococcal (PCV20)', status: 'Not documented — recommended per CDC Adult Immunization Schedule for diabetes age 19-64', flag: 'missing' },
+    { name: 'Zoster (Shingrix series)', status: 'Not documented — 2-dose series recommended for age >=50', flag: 'missing' },
+    { name: 'Tdap booster', status: 'Last received >10 years ago — overdue for booster per CDC schedule', flag: 'warn' },
+  ],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'General wellness & symptoms', value: 'Patient states he feels better than in several years with greatly improved energy and physical function.' },
+    { label: 'Medication adherence & access', value: 'Denies recurrence of stretching doses, delayed refills, or cost-related missed doses; reports consistent daily medication use without difficulty. Takes empagliflozin 10 mg daily consistently without adverse effects and believes empagliflozin contributed significantly to his clinical improvement.' },
+    { label: 'Health literacy & confidence', value: 'Expresses greatly increased confidence in managing his chronic conditions; understands medication purposes (metformin and empagliflozin for blood sugar, kidney, and heart protection; lisinopril and HCTZ for blood pressure and kidney protection; atorvastatin for cholesterol and stroke prevention).' },
+    { label: 'Dietary improvements', value: 'Sustained dietary improvements including specific reduction of sugary beverages and sweet tea, active portion control, and increased home-prepared meals.' },
+    { label: 'Physical activity', value: 'Walking 5 days per week with session duration of 25 to 30 minutes each time.' },
+    { label: 'Past Medical History (PMH)', value: 'Type 2 diabetes mellitus (diagnosed 10 years ago), essential hypertension (diagnosed 12 years ago), hyperlipidemia (diagnosed 8 years ago), obesity (Class I, BMI 30.2 kg/m²), and Gastroesophageal Reflux Disease (GERD, managed on omeprazole 20 mg daily).' },
+    { label: 'Social History', value: 'Occupation: Recently retired truck driver living with wife on fixed income. Tobacco: Former smoker (1 pack/day for 20 years, quit 10 years ago). Alcohol: 1-2 beers on weekends. Recreational drugs: Explicitly denies recreational or illicit drug use.' },
+    { label: 'Review of Systems (ROS)', value: 'Cardiovascular/Pulmonary/Neurologic/Endocrine/GU: Explicitly denies chest pain, shortness of breath, heart palpitations, dizziness, syncope, severe headaches, and visual changes. Explicitly denies hypoglycemia symptoms, denies UTI or dysuria symptoms, and denies other medication adverse effects.' },
+    { label: 'Patient Goals & Motivations', value: 'Highly motivated to maintain independence through retirement, prevent a stroke like his father had at age 71, and avoid future insulin therapy.' },
+    { label: 'Long-term Affordability Concern', value: 'Expresses lingering anxiety about future insurance changes or benefit cliffs, fearing loss of affordable access to empagliflozin.' },
+  ],
+  OBJECTIVE_EXTRA: [
+    { label: 'Total weight change', value: 'Current weight 95.5 kg (−5.5 kg total weight reduction since baseline visit from 101 kg; BMI 30.2 kg/m², reconciled as Class I Obesity).' },
+    { label: 'A1C downward trend', value: 'A1C downward trend across three time points: baseline 8.8% → 3-month 7.9% → 6-month 7.1% (near individualized goal <7.0%).' },
+    { label: 'BP longitudinal trend', value: 'Baseline 152/94 mmHg → 3-month 138/86 mmHg → 6-month 128/80 mmHg (repeat 126/78 mmHg); home BP average ~126/78 mmHg corroborates office readings and achieves goal <130/80 mmHg.' },
+    { label: 'UACR interpretation', value: 'UACR 16 mg/g confirms low, normal, and stable albumin excretion (<30 mg/g).' },
+    { label: 'Renal & Electrolyte stability', value: 'SCr 1.00 mg/dL, eGFR 85 mL/min/1.73m² (stable and preserved renal function); serum potassium 4.3 mEq/L (stable on lisinopril 20 mg + HCTZ 25 mg).' },
+    { label: 'Lipid response', value: 'LDL-C improved from baseline 103 mg/dL to 72 mg/dL on atorvastatin 20 mg daily, reflecting sustained statin response and adherence.' },
+    { label: 'Immunization status', value: 'PCV20, recombinant zoster vaccine series (Shingrix), and Tdap booster remain open per CDC Adult Immunization Schedule.' },
+  ],
   INTERVIEW_FIELDS: [
     { key: 'cost', label: 'Long-term Access', placeholder: 'Insurance or coverage worries?' },
+    { key: 'adherence', label: 'Medication Adherence', placeholder: 'Consistency, stretching, missed doses?' },
+    { key: 'diet', label: 'Diet & Nutrition', placeholder: 'Sweet drinks, portion control, cooking?' },
+    { key: 'exercise', label: 'Physical Activity', placeholder: 'Walking frequency and duration?' },
+    { key: 'symptoms', label: 'Review of Systems', placeholder: 'Chest pain, SOB, dizziness, hypoglycemia?' },
+    { key: 'goals', label: 'Patient Goals', placeholder: 'Retirement independence, avoiding insulin?' },
   ],
-  GUIDING_QUESTIONS: [
-    'What was the primary intervention that improved this patient\'s outcomes?',
-    'Why did this patient\'s A1C improve?',
-    'Would you intensify diabetes therapy today? Why or why not?',
-    'Would you intensify hypertension therapy today? Why or why not?',
-    'How should affordability be monitored in future visits?',
-    'What evidence supports improved adherence?',
-    'What remaining opportunities for optimization exist?',
-    'What lessons from this case can be applied to future ambulatory care patients?'
-  ],
-
   INTERVIEW_KNOWLEDGE: [
     { id: 'james-thu_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I do not have any known drug or food allergies." },
     { id: 'james-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a daily multivitamin and acetaminophen occasionally for my joint aches. I do not take any other supplements." },
     { id: 'james-thu_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I drink 1 to 2 beers on weekends while watching sports, but I never drink during the week." },
     { id: 'james-thu_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I am a former smoker. I smoked about a pack a day for 20 years, but I quit 10 years ago." },
-    { id: 'james-thu_social', topic: 'Social / Lifestyle', field: 'social', keywords: ['live with', 'marital', 'work', 'job', 'retired', 'truck driver'], response: 'I am a recently retired truck driver. I live with my wife on a fixed income.' },
+    { id: 'james-thu_social', topic: 'Social / Lifestyle', field: 'social', keywords: ['live with', 'marital', 'work', 'job', 'retired', 'truck driver'], response: 'I am a recently retired truck driver. I live with my wife on a fixed income. I have never used recreational drugs in my life.' },
     { id: 'james-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had high blood pressure, type 2 diabetes, and had a stroke at age 71. My mother had high blood pressure and high cholesterol. My sister has type 2 diabetes." },
     { id: 'james-thu_surg', topic: 'Surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'appendix', 'appendectomy', 'knee', 'arthroscopy'], response: 'I had my appendix out when I was 19, and a knee scope surgery on my right knee when I was 51.' },
     { id: 'james-thu_homebp', topic: 'Home BP monitoring', field: 'homeBp', keywords: ['home blood pressure', 'bp at home', 'check your blood pressure', 'monitor', 'log', 'average'], response: 'I check my blood pressure at home 1 to 2 times a week. Things have really improved — my readings are usually in the 120s over 70s now. My average is about 126 over 78.' },
     { id: 'james-thu_homebg', topic: 'Home glucose monitoring', field: 'glucoseMonitoring', keywords: ['blood sugar', 'glucose', 'check your sugar', 'fasting', 'finger stick', 'meter'], response: 'I check my blood sugar a few times a week. My fasting numbers have really improved — they are usually in the 120 to 140 range now.' },
-    { id: 'james-thu_duration', topic: 'Disease duration', field: 'pmh', keywords: ['how long', 'when were you diagnosed', 'duration', 'years'], response: 'I\'ve had high blood pressure for about 12 years, diabetes for 10 years, and high cholesterol for 8 years.' },
+    { id: 'james-thu_duration', topic: 'Disease duration', field: 'pmh', keywords: ['how long', 'when were you diagnosed', 'duration', 'years', 'gerd'], response: 'I have had high blood pressure for about 12 years, diabetes for 10 years, high cholesterol for 8 years, and acid reflux (GERD) which is controlled on omeprazole.' },
+    { id: 'james-thu_wellness', topic: 'General wellness and adherence', field: 'adherence', keywords: ['feel', 'better', 'years', 'energy', 'stretching', 'delay', 'miss'], response: "I feel better than in several years! I take all my pills every day now. No more stretching pills, no delayed refills, and no missed doses. Taking empagliflozin consistently without difficulty has made a huge difference." },
+    { id: 'james-thu_lifestyle', topic: 'Diet and physical activity details', field: 'diet', keywords: ['diet', 'eat', 'soda', 'sweet tea', 'beverage', 'portion', 'cook', 'walk', 'minutes'], response: "I cut out regular soda and sweet tea completely. My wife and I cook at home almost every night with strict portion control. I also walk 5 days a week for 25 to 30 minutes each session." },
+    { id: 'james-thu_ros', topic: 'Review of systems', field: 'symptoms', keywords: ['ros', 'chest pain', 'short of breath', 'palpitations', 'dizziness', 'syncope', 'headache', 'vision', 'uti', 'hypoglycemia'], response: "I have no chest pain, no shortness of breath, no heart palpitations, no dizziness, no syncope, no severe headaches, and no visual changes. I have had no low blood sugar episodes, no urinary tract infections, and no side effects from any of my medications." },
+    { id: 'james-thu_goals', topic: 'Patient goals and motivations', field: 'goals', keywords: ['goal', 'motivation', 'retire', 'independence', 'insulin', 'stroke'], response: "My primary goals are to maintain my independence through retirement, avoid insulin shots at all costs, and prevent a stroke like my father had." },
     { id: 'bth_cost', topic: 'Fear of Losing Access', field: 'cost', keywords: ['worry', 'insurance', 'future', 'change'],
-      response: "Things are okay right now, but I still worry about what happens if my insurance changes again. I'd hate to finally get things under control and then have to stop." },
+      response: "Things are okay right now, but I still worry about what happens if my insurance changes again. I'd hate to finally get things under control and then have to stop because I can't afford empagliflozin." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'bth_a', title: 'Long-term Planning', icon: 'CheckCircle', color: '10b981', questions: [
-      { key: 'bth_q1', q: 'How do you transition from acute optimization to long-term maintenance?' },
-    ] },
+    {
+      id: 't2dm',
+      title: 'Type 2 diabetes mellitus',
+      icon: 'Droplet',
+      color: '0d9488',
+      questions: [
+        {
+          key: 'dm_eval',
+          q: 'Glycemic status, trend, contributing factors, and goal:',
+          defaultAnswer: 'Status: Significantly improved, near goal. Documents A1C improvement across three time points: baseline 8.8% → 3-month 7.9% → 6-month 7.1%. Glycemic goal is A1C <7.0% per ADA 2026 Standards of Care. Attributes improvement to resolution of initial access barriers, empagliflozin 10 mg initiation, improved adherence, increased health literacy, and sustained lifestyle modification. Patient is approaching target with a favorable clinical trajectory. Current therapy (Metformin XR 1,000 mg twice daily + Empagliflozin 10 mg daily) is effective and well tolerated without hypoglycemia or adverse effects. Continue adherence, monitoring, and lifestyle reinforcement.'
+        }
+      ]
+    },
+    {
+      id: 'htn',
+      title: 'Essential hypertension',
+      icon: 'HeartPulse',
+      color: '13314f',
+      questions: [
+        {
+          key: 'htn_eval',
+          q: 'Blood pressure control status, office and home measurements, and contributors:',
+          defaultAnswer: 'Status: Controlled. Documents office BP at goal (128/80 mmHg, repeat 126/78 mmHg); home BP average (~126/78 mmHg) corroborates office measurements. States BP goal <130/80 mmHg for diabetes per 2025 ACC/AHA and ADA 2026 guidelines; confirms patient is meeting the evidence-based goal. Attributes control to adherence, resolution of medication stretching, consistent therapy, 5.5 kg weight reduction, sodium reduction, and regular walking 5 days/week. Documents current regimen (lisinopril 20 mg + HCTZ 25 mg daily), well tolerated with stable renal function (eGFR 85 mL/min/1.73m²) and stable potassium (K 4.3 mEq/L). No further antihypertensive intensification warranted; continue HBPM and lifestyle to maintain control.'
+        }
+      ]
+    },
+    {
+      id: 'ascvd_lipids',
+      title: 'Hyperlipidemia / Primary ASCVD prevention',
+      icon: 'ShieldAlert',
+      color: 'd97706',
+      questions: [
+        {
+          key: 'ascvd_eval',
+          q: 'Lipid control status, trend, statin intensity, and cardiovascular risk:',
+          defaultAnswer: 'Status: Improved. Documents LDL-C improvement from baseline 103 mg/dL to 72 mg/dL on atorvastatin 20 mg daily. States at least moderate-intensity statin recommendation for diabetes age 40–75 per ADA 2026 and 2018 ACC-AHA Cholesterol Guidelines, with consideration of high-intensity statin (atorvastatin 40–80 mg) given multiple ASCVD risk enhancers (hypertension, obesity, former 20 pack-year tobacco use, family history of premature stroke in father at age 71, and long-standing diabetes). Attributes LDL reduction to improved adherence after access resolution. Atorvastatin 20 mg produces a favorable and well-tolerated response; continue statin, adherence, and lifestyle for multi-component CV risk reduction.'
+        }
+      ]
+    },
+    {
+      id: 'access_affordability',
+      title: 'Medication access & affordability surveillance',
+      icon: 'DollarSign',
+      color: '059669',
+      questions: [
+        {
+          key: 'acc_eval',
+          q: 'Access status, barrier resolution, and long-term dependency:',
+          defaultAnswer: 'Status: Improved, requires long-term planning. Initial access barrier successfully addressed via patient assistance program / copay card. Maintained empagliflozin access with zero refill delays and no stretching. Resolution is associated with improvements across clinical parameters (A1C, BP, LDL) and self-management. Long-term disease control depends on sustained medication access; established proactive annual coverage review and contingency protocol.'
+        }
+      ]
+    },
+    {
+      id: 'adherence',
+      title: 'Medication adherence',
+      icon: 'CheckCircle2',
+      color: '2563eb',
+      questions: [
+        {
+          key: 'adh_eval',
+          q: 'Adherence trajectory, baseline recall, and reinforcement:',
+          defaultAnswer: 'Status: Controlled. Adherence improved dramatically since initial visit. Recalls baseline barriers (delayed refills pending pension check, stretching pills to every other day, uninitiated empagliflozin due to cost). Now reports consistent daily use with only rare missed doses and no ongoing cost-related adherence barriers. Clinical improvements directly support reported adherence; continue adherence reinforcement.'
+        }
+      ]
+    },
+    {
+      id: 'obesity',
+      title: 'Class I obesity & lifestyle modifications',
+      icon: 'Scale',
+      color: 'ca8a04',
+      questions: [
+        {
+          key: 'obe_eval',
+          q: 'Obesity status, weight loss amount, and chronic disease framing:',
+          defaultAnswer: 'Status: Improving. Documents weight loss of ~5.5 kg since initial encounter (101 kg to 95.5 kg; BMI 32.1 to 30.2 kg/m²). Manage obesity as a chronic disease per ADA 2026. Attributes weight loss to sustained lifestyle modification (portion control, walking 25–30 min 5 days/wk, eliminating sugary beverages) plus empagliflozin. Continue lifestyle counseling to reduce ongoing cardiometabolic risk.'
+        }
+      ]
+    },
+    {
+      id: 'health_literacy',
+      title: 'Health literacy & disease understanding',
+      icon: 'BookOpen',
+      color: '6366f1',
+      questions: [
+        {
+          key: 'lit_eval',
+          q: 'Health literacy trajectory, baseline recall, and residual needs:',
+          defaultAnswer: 'Status: Significantly improved compared with initial encounter. Recalls baseline deficits (not understanding A1C, not knowing medication purposes, not communicating financial distress). Now shows improved understanding of management, adherence, and monitoring. Patient actively participates with greater self-management confidence. Residual education needs include long-term cardiovascular risk, kidney protection, and cardiorenal benefits of SGLT2 inhibitors.'
+        }
+      ]
+    },
+    {
+      id: 'preventive_care',
+      title: 'Preventive care gaps & immunizations',
+      icon: 'ShieldPlus',
+      color: '8b5cf6',
+      questions: [
+        {
+          key: 'prev_eval',
+          q: 'Immunization gaps and recommendations:',
+          defaultAnswer: 'Status: Open immunization gaps identified. Adult immunizations are framed as an essential component of comprehensive chronic disease management. Open gaps include: pneumococcal conjugate vaccine (PCV20) indicated for diabetes age 19–64; recombinant zoster vaccine series (Shingrix, 2 doses) indicated for age >=50; and Tdap booster overdue (>10-year interval) per CDC Adult Immunization Schedule.'
+        }
+      ]
+    },
   ],
   PLAN_SECTIONS: [
-    { id: 'bth_p', title: 'Plan', options: [
-      { key: 'bth_o1', label: 'Continue current effective therapy', correct: true },
-      { key: 'bth_o2', label: 'Develop contingency plan for future insurance changes', correct: true },
-      { key: 'bth_o3', label: 'Discontinue empagliflozin because he is near goal', correct: false },
-    ] },
+    {
+      id: 'dm_plan',
+      title: 'Type 2 diabetes mellitus plan',
+      options: [
+        { key: 'dp1', label: 'Continue metformin XR 1000 mg PO twice daily with meals', correct: true },
+        { key: 'dp2', label: 'Continue empagliflozin 10 mg PO daily in the morning', correct: true },
+        { key: 'dp3', label: 'Reinforce adherence and lifestyle modification', correct: true },
+        { key: 'dp4', label: 'Repeat A1C in ~3–6 months to monitor trajectory toward <7.0% goal', correct: true },
+        { key: 'dp5', label: 'Continue monitoring for SGLT2 inhibitor adverse effects (mycotic genital infections, volume depletion, UTI symptoms)', correct: true },
+      ]
+    },
+    {
+      id: 'htn_plan',
+      title: 'Essential hypertension plan',
+      options: [
+        { key: 'hp1', label: 'Continue lisinopril 20 mg PO daily', correct: true },
+        { key: 'hp2', label: 'Continue hydrochlorothiazide 25 mg PO daily', correct: true },
+        { key: 'hp3', label: 'Maintain blood pressure goal <130/80 mmHg; hold further antihypertensive intensification given well-tolerated, at-goal BP', correct: true },
+        { key: 'hp4', label: 'Continue home blood pressure monitoring (HBPM) 1–2 times weekly with log review', correct: true },
+        { key: 'hp5', label: 'Repeat BMP (serum creatinine, eGFR, potassium) in 6–12 months as clinically appropriate', correct: true },
+      ]
+    },
+    {
+      id: 'ascvd_plan',
+      title: 'Hyperlipidemia & ASCVD risk reduction plan',
+      options: [
+        { key: 'ap1', label: 'Continue atorvastatin 20 mg PO daily at bedtime', correct: true },
+        { key: 'ap2', label: 'Reinforce cardiovascular risk reduction strategies and consistent statin adherence', correct: true },
+        { key: 'ap3', label: 'Repeat lipid panel in ~6–12 months', correct: true },
+      ]
+    },
+    {
+      id: 'access_plan',
+      title: 'Medication access & affordability surveillance plan',
+      options: [
+        { key: 'ac1', label: 'Review insurance coverage annually to anticipate changes in copays or formulary tiers', correct: true },
+        { key: 'ac2', label: 'Educate patient to report future cost concerns or coverage disruptions promptly before skipping doses', correct: true },
+        { key: 'ac3', label: 'Continue active monitoring of medication affordability at all future visits', correct: true },
+      ]
+    },
+    {
+      id: 'adherence_plan',
+      title: 'Medication adherence plan',
+      options: [
+        { key: 'ad1', label: 'Continue current effective adherence strategies', correct: true },
+        { key: 'ad2', label: 'Reinforce importance of consistent daily medication administration without stretching', correct: true },
+        { key: 'ad3', label: 'Encourage continued use of reminder systems and 7-day pill organizer if needed', correct: true },
+      ]
+    },
+    {
+      id: 'life_plan',
+      title: 'Lifestyle modification & obesity plan',
+      options: [
+        { key: 'lp1', label: 'Continue walking program 25–30 minutes 5 days/week', correct: true },
+        { key: 'lp2', label: 'Encourage progression toward long-term exercise goals of >=150 minutes/week moderate-intensity physical activity', correct: true },
+        { key: 'lp3', label: 'Continue dietary improvements: home-cooked meals and avoidance of sugary drinks / sweet tea', correct: true },
+        { key: 'lp4', label: 'Reinforce portion control strategies', correct: true },
+        { key: 'lp5', label: 'Link lifestyle habits directly to cardiometabolic and blood pressure risk reduction', correct: true },
+      ]
+    },
+    {
+      id: 'edu_plan',
+      title: 'Patient education & disease understanding plan',
+      options: [
+        { key: 'ep1', label: 'Continue patient-centered education on chronic disease self-management', correct: true },
+        { key: 'ep2', label: 'Discuss cardiovascular and renal protective benefits of empagliflozin beyond blood sugar lowering', correct: true },
+        { key: 'ep3', label: 'Reinforce importance of long-term disease monitoring and follow-up', correct: true },
+      ]
+    },
+    {
+      id: 'imm_plan',
+      title: 'Preventive care & immunization plan',
+      options: [
+        { key: 'ip1', label: 'Recommend and administer pneumococcal conjugate vaccine (PCV20) if not previously administered', correct: true },
+        { key: 'ip2', label: 'Recommend recombinant zoster vaccination series (Shingrix): dose 1 today, dose 2 in 2–6 months', correct: true },
+        { key: 'ip3', label: 'Recommend and administer Tdap booster today (overdue >10 years)', correct: true },
+      ]
+    },
+    {
+      id: 'fu_plan',
+      title: 'Follow-up & monitoring timeline',
+      options: [
+        { key: 'fp1', label: 'Schedule follow-up visit in ~3–6 months', correct: true },
+        { key: 'fp2', label: 'Repeat A1C prior to next visit', correct: true },
+        { key: 'fp3', label: 'Review home blood pressure monitoring log at follow-up', correct: true },
+        { key: 'fp4', label: 'Review home glucose monitoring log at follow-up', correct: true },
+      ]
+    },
   ],
+  PLAN_FREETEXT: [],
   GUIDING_QUESTIONS: [
     'What was the primary intervention that improved this patient\'s outcomes?',
     'Why did this patient\'s A1C improve?',
@@ -637,10 +862,6 @@ const jamesThu = makeCase({
     checklist: ['Recognized BP at goal', 'Reinforced lifestyle changes', 'Addressed long-term affordability concerns'],
   },
 })
-
-/* ============================ LINDA MARTINEZ (C) ============================ */
-// Phenotype: CKD Stage 3a + Severe Albuminuria + T2DM + HTN + ASCVD (Prior STEMI) + Obesity.
-// Tuesday: Initial. Wednesday: 1st Follow-up. Thursday: 2nd Follow-up.
 
 const lindaTue = makeCase({
   id: 'linda-tue',
@@ -1173,64 +1394,87 @@ const lindaThu = makeCase({
   PATIENT: lindaTue.PATIENT,
   ENCOUNTER: {
     day: 'Thursday', type: 'Final Follow-Up', difficulty: 'Advanced', difficultyTone: 'amber',
+    setting: 'Collaborative Practice Ambulatory Care Pharmacy Clinic',
     chiefConcern: "I finally feel like I have a handle on all of this.",
-    snapshotSummary: 'Final follow-up. Patient has received comprehensive cardiorenal optimization. Focus on transition of care and long-term maintenance.',
-    diseaseStates: ['Chronic Kidney Disease', 'Type 2 Diabetes', 'Hypertension', 'Secondary ASCVD Prevention', 'Obesity'],
-    learningObjectives: ['Develop long-term comprehensive care plan', 'Ensure safe transition of care', 'Summarize cumulative interventions'],
+    snapshotSummary: '68-year-old female presenting for scheduled 6-month follow-up (final follow-up / transition of care) in an ambulatory care pharmacy clinic under collaborative practice agreement for management of CKD Stage 3a with improving albuminuria (reclassified from A3 to A2), type 2 diabetes mellitus near goal (A1C 7.2%), controlled hypertension (124/76 mmHg), and secondary ASCVD prevention (prior STEMI s/p PCI/DES, LDL 63 mg/dL on atorvastatin 80 mg + ezetimibe 10 mg). Focus on transition of care, comprehensive maintenance care plan, and lifelong cardiorenal monitoring.',
+    diseaseStates: ['Chronic Kidney Disease Stage 3a', 'Type 2 Diabetes Mellitus', 'Essential Hypertension', 'Secondary ASCVD Prevention', 'Obesity', 'Health Literacy', 'Preventive Care Gap'],
+    learningObjectives: ['Develop long-term comprehensive maintenance care plan', 'Ensure safe transition of care to primary care', 'Summarize cumulative cardiorenal and secondary prevention optimization'],
   },
-  VITALS: { bp: '124/76', bpRepeat: '122/74', hr: '68', rr: '16', temp: '98.6°F', weight: '92 kg', height: "5'5\"", bmi: '33.8',
-    flags: { bp: 'normal', bpRepeat: 'normal' } },
+  VITALS: { bp: '124/76', bpRepeat: '122/74', hr: '68', rr: '16', temp: '98.6°F', weight: '92 kg', height: "5'5\" (65 inches)", bmi: '33.8',
+    flags: { bp: 'normal', bpRepeat: 'normal' },
+    extras: [
+      { label: 'Total weight change', value: '−4.0 kg total loss from baseline (baseline 96 kg to current 92 kg; BMI 35.2 to 33.8 kg/m², reconciled as Class I Obesity)', flag: 'normal' },
+      { label: 'Home BP average', value: '~123/75 mmHg (corroborates office BP, at maintenance goal <130/80 mmHg)', flag: 'normal' },
+      { label: 'Fasting home glucose', value: '120–140 mg/dL', flag: 'normal' },
+    ]
+  },
   LABS: [
-    { label: 'A1C', value: '7.2', unit: '%', flag: 'warn', note: 'Trend: 8.2% → 7.9% → 7.2% (near goal <7%)' },
+    { label: 'A1C', value: '7.2', unit: '%', flag: 'warn', note: 'Trend across three time points: 8.2% → 7.9% → 7.2% (near goal <7.0%)' },
     { label: 'Na', value: '140', unit: 'mEq/L', flag: 'normal' },
-    { label: 'K', value: '4.7', unit: 'mEq/L', flag: 'normal' },
-    { label: 'SCr', value: '1.28', unit: 'mg/dL', flag: 'high' },
-    { label: 'eGFR', value: '49', unit: 'mL/min/1.73m²', flag: 'warn' },
-    { label: 'UACR', value: '210', unit: 'mg/g', flag: 'warn', note: 'Trend: 452 → 330 → 210 mg/g. Now A2 (moderately increased)' },
+    { label: 'K', value: '4.7', unit: 'mEq/L', flag: 'normal', note: 'Potassium stable on lisinopril 40 mg PO daily' },
+    { label: 'SCr', value: '1.28', unit: 'mg/dL', flag: 'high', note: 'Stable renal function on maximal lisinopril 40 mg + empagliflozin 10 mg' },
+    { label: 'eGFR', value: '49', unit: 'mL/min/1.73m²', flag: 'warn', note: 'Corresponds to CKD Stage G3a (mildly to moderately decreased)' },
+    { label: 'UACR', value: '210', unit: 'mg/g', flag: 'warn', note: 'Trend across three time points: 452 → 330 → 210 mg/g (53.5% reduction); reclassified from Category A3 to Category A2 (moderately increased albuminuria, 30-300 mg/g)' },
     { label: 'Total cholesterol', value: '152', unit: 'mg/dL', flag: 'normal' },
-    { label: 'LDL-C', value: '63', unit: 'mg/dL', flag: 'normal', note: 'At secondary prevention goal (<70 mg/dL); prior 92 mg/dL baseline' },
+    { label: 'LDL-C', value: '63', unit: 'mg/dL', flag: 'normal', note: 'Trend across three time points: 92 → 76 → 63 mg/dL; achieved secondary prevention goal <70 mg/dL on atorvastatin 80 mg + ezetimibe 10 mg' },
     { label: 'HDL-C', value: '47', unit: 'mg/dL', flag: 'normal' },
     { label: 'TG', value: '160', unit: 'mg/dL', flag: 'normal' },
   ],
-  ALERTS: [{ level: 'info', text: 'Significant cumulative improvement. UACR reduced to A2 category. BP and LDL at goal.' }],
+  ALERTS: [{ level: 'info', text: 'Significant cumulative improvement. UACR reduced to A2 category. BP and LDL at secondary prevention goal.' }],
   PROBLEMS: [
-    { name: 'Chronic Kidney Disease Stage 3a', detail: 'eGFR 49, UACR 210 (G3aA2, improved from 452)', flag: 'warn' },
-    { name: 'Secondary ASCVD Prevention', detail: 'Prior STEMI, LDL 63 (at goal <70)', flag: 'normal' },
-    { name: 'Type 2 diabetes mellitus', detail: 'A1C 7.2% (near goal)', flag: 'normal' },
-    { name: 'Hypertension', detail: 'BP 124/76 (at goal <130/80)', flag: 'normal' },
-    { name: 'Obesity', detail: 'BMI 33.8 (−4 kg total)', flag: 'warn' },
+    { name: 'Chronic Kidney Disease Stage G3a with persistent albuminuria', detail: 'eGFR 49, UACR 210 mg/g (reclassified to A2, 53.5% reduction from baseline 452)', flag: 'warn' },
+    { name: 'Secondary ASCVD Prevention', detail: 'Prior STEMI s/p PCI/DES 3 years ago; LDL 63 mg/dL (at goal <70 mg/dL on atorvastatin 80 + ezetimibe 10)', flag: 'normal' },
+    { name: 'Type 2 diabetes mellitus', detail: 'A1C 7.2% (trend: 8.2% → 7.9% → 7.2%, near goal <7.0%)', flag: 'normal' },
+    { name: 'Essential hypertension', detail: 'BP 124/76 (repeat 122/74, home ~123/75) — controlled and at goal <130/80', flag: 'normal' },
+    { name: 'Class I Obesity', detail: 'BMI 33.8 (−4.0 kg total loss from baseline 96 kg)', flag: 'warn' },
+    { name: 'Health literacy & long-term disease understanding', detail: 'Significantly improved understanding of CKD, albuminuria, CVD, and risk reduction vs cure', flag: 'normal' },
+    { name: 'Gastroesophageal reflux disease (GERD)', detail: 'Managed on omeprazole 20 mg daily', flag: 'normal' },
   ],
   OBJECTIVE_EXTRA: [
-    { label: 'Cardiovascular history', value: 'STEMI 3 years ago with PCI and DES placement.', flag: 'normal' },
+    { label: 'Total weight change', value: 'Current weight 92 kg (−4.0 kg total loss from baseline 96 kg; BMI 33.8 kg/m², reconciled as Class I Obesity).' },
+    { label: 'A1C longitudinal trend', value: 'A1C downward trend across three time points: baseline 8.2% → 3-month 7.9% → 6-month 7.2% (near individualized goal <7.0%).' },
+    { label: 'UACR longitudinal trend', value: 'UACR downward trend across three time points: baseline 452 mg/g → 3-month 330 mg/g → 6-month 210 mg/g (53.5% cumulative reduction); reclassified from Category A3 (severely increased) to Category A2 (moderately increased albuminuria, 30–300 mg/g).' },
+    { label: 'BP longitudinal trend', value: 'Baseline 142/84 mmHg → 3-month 128/78 mmHg → 6-month 124/76 mmHg (repeat 122/74 mmHg); home BP log average ~123/75 mmHg corroborates office readings and achieves maintenance goal <130/80 mmHg.' },
+    { label: 'LDL-C longitudinal trend', value: 'LDL-C downward trend across three time points: baseline 92 mg/dL → 3-month 76 mg/dL → 6-month 63 mg/dL; achieved secondary prevention target <70 mg/dL on intensified atorvastatin 80 mg daily + ezetimibe 10 mg daily.' },
+    { label: 'Renal & Electrolyte stability', value: 'SCr 1.28 mg/dL, eGFR 49 mL/min/1.73m² (CKD Stage G3a, stable kidney function); serum potassium 4.7 mEq/L (stable on lisinopril 40 mg daily).' },
+    { label: 'Preventive care status', value: 'Influenza, COVID-19, PCV20, and Shingrix (2 doses) are complete; Tdap booster is overdue (>10-year interval) per CDC Adult Immunization Schedule.' },
   ],
   ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash and hives', severity: 'Severe', type: 'Allergy', date: 'Childhood', source: 'Patient reported' }],
-  IMMUNIZATIONS: lindaTue.IMMUNIZATIONS,
-  MEDICATIONS: [
-    { name: 'Ezetimibe', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'ASCVD', notes: 'Added at last visit' },
-    { name: 'Metformin XR', dose: '1000 mg', route: 'PO', freq: 'BID', indication: 'T2DM', notes: '' },
-    { name: 'Empagliflozin', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'T2DM / cardiorenal', notes: '' },
-    { name: 'Semaglutide', dose: '1 mg', route: 'SQ', freq: 'weekly', indication: 'T2DM / obesity', notes: 'Uptitrated from 0.5 mg at last visit' },
-    { name: 'Lisinopril', dose: '40 mg', route: 'PO', freq: 'daily', indication: 'HTN / CKD', notes: 'Optimized at prior visit' },
-    { name: 'Metoprolol Succinate', dose: '50 mg', route: 'PO', freq: 'daily', indication: 'ASCVD', notes: '' },
-    { name: 'Atorvastatin', dose: '80 mg', route: 'PO', freq: 'daily', indication: 'ASCVD', notes: 'Intensified from 40 mg at last visit' },
-    { name: 'Aspirin', dose: '81 mg', route: 'PO', freq: 'daily', indication: 'ASCVD', notes: '' },
-    { name: 'Omeprazole', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'GERD', notes: '' },
+  IMMUNIZATIONS: [
+    { name: 'Influenza', status: 'Current season up to date', flag: 'normal' },
+    { name: 'COVID-19', status: 'Up to date with current booster', flag: 'normal' },
+    { name: 'PCV20', status: 'Received at age 65 (complete)', flag: 'normal' },
+    { name: 'Shingrix', status: 'Series complete (2 doses received)', flag: 'normal' },
+    { name: 'Tdap booster', status: 'Last received 11 years ago — overdue for booster (>10-year interval) per CDC Adult Immunization Schedule', flag: 'warn' },
   ],
-  SUBJECTIVE_DOCUMENTED: [{ label: 'Interval history', value: 'Feels much more confident. Understands her conditions and medication purposes.' }],
+  MEDICATIONS: [
+    { name: 'Lisinopril', dose: '40 mg', route: 'PO', freq: 'daily', indication: 'HTN / CKD renoprotection', notes: 'Optimized at prior visit, well tolerated' },
+    { name: 'Empagliflozin', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'T2DM / cardiorenal protection', notes: 'Well tolerated' },
+    { name: 'Metformin XR', dose: '1000 mg', route: 'PO', freq: 'BID with meals', indication: 'T2DM', notes: 'Well tolerated' },
+    { name: 'Semaglutide', dose: '1 mg', route: 'SQ', freq: 'weekly', indication: 'T2DM / obesity', notes: 'Uptitrated from 0.5 mg at last visit, well tolerated' },
+    { name: 'Metoprolol Succinate', dose: '50 mg', route: 'PO', freq: 'daily', indication: 'Secondary ASCVD / post-STEMI', notes: 'Well tolerated' },
+    { name: 'Atorvastatin', dose: '80 mg', route: 'PO', freq: 'daily at bedtime', indication: 'Secondary ASCVD prevention', notes: 'Intensified from 40 mg to 80 mg at last visit, well tolerated without myalgias' },
+    { name: 'Ezetimibe', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'Secondary ASCVD prevention', notes: 'Added at last visit, well tolerated' },
+    { name: 'Aspirin', dose: '81 mg', route: 'PO', freq: 'daily', indication: 'Secondary ASCVD antiplatelet', notes: 'Taking consistently' },
+    { name: 'Omeprazole', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'GERD', notes: 'Taking consistently' },
+  ],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'Managed chronic conditions', value: 'Managed for Type 2 diabetes mellitus (diagnosed 15 years ago), Essential hypertension (diagnosed 18 years ago), Chronic Kidney Disease Stage 3a (CKD Stage G3a) with improving albuminuria, Hyperlipidemia, Secondary ASCVD prevention (prior STEMI 3 years ago s/p PCI with DES), and Class I Obesity.' },
+    { label: 'Medication adherence & tolerability', value: 'Reports excellent medication adherence (takes all prescribed chronic medications consistently without missed doses); explicitly denies missed doses, denies financial or access concerns, and denies medication adverse effects.' },
+    { label: 'Health literacy & disease understanding', value: 'Expresses understanding specific to kidney disease, albuminuria, and cardiovascular risk. Demonstrates understanding that although her lab values have improved significantly, her risk for future complications (CKD progression, recurrent myocardial infarction / cardiovascular events) remains elevated and requires lifelong vigilance.' },
+    { label: 'Social History', value: 'Occupation: Retired elementary school teacher. Marital/living status: Married, lives with husband; assists with grandchildren childcare multiple days per week. Tobacco: Former smoker (1 pack/day for 20 years, quit 10 years ago). Alcohol: Rare (small glass of wine on holidays). Recreational drugs: Explicitly denies recreational or illicit drug use.' },
+    { label: 'Review of Systems (ROS)', value: 'Cardiovascular/Pulmonary/Neurologic/Endocrine: Explicitly denies chest pain, shortness of breath, palpitations, dizziness, syncope, orthopnea, paroxysmal nocturnal dyspnea (PND), hypoglycemia symptoms, and other medication adverse effects.' },
+    { label: 'Patient Goals & Motivations', value: 'Highly motivated to preserve kidney function and avoid dialysis, avoid another heart attack / cardiovascular event, maintain physical independence through retirement, and maintain active vigilance over her health.' },
+    { label: 'Lifestyle habits', value: 'Walking 30 to 40 minutes 5 days per week; sodium restriction (<2,000 mg/day); sustained portion control.' },
+    { label: 'Past Medical History (PMH)', value: 'Type 2 diabetes mellitus, essential hypertension, Chronic Kidney Disease Stage 3a (CKD Stage 3a), hyperlipidemia, secondary ASCVD prevention (prior STEMI 3 years ago s/p PCI with DES), Class I obesity, and Gastroesophageal Reflux Disease (GERD, on omeprazole 20 mg daily).' },
+  ],
   INTERVIEW_FIELDS: [
     { key: 'confidence', label: 'Self-Management Confidence', placeholder: 'How does she feel about her regimen now?' },
+    { key: 'understanding', label: 'Disease Understanding & Vigilance', placeholder: 'Understanding of risk reduction vs cure?' },
+    { key: 'lifestyle', label: 'Lifestyle habits', placeholder: 'Walking duration, sodium, diet?' },
+    { key: 'symptoms', label: 'Review of Systems', placeholder: 'Chest pain, SOB, palpitations, orthopnea, PND?' },
+    { key: 'goals', label: 'Motivations', placeholder: 'Dialysis avoidance, MI prevention, independence?' },
   ],
-  GUIDING_QUESTIONS: [
-    'How would you describe this patient\'s overall progress?',
-    'Has this patient\'s risk been eliminated?',
-    'Why should ACE inhibitor and SGLT2 inhibitor therapy be continued?',
-    'Why should high-intensity statin therapy be continued?',
-    'What monitoring should occur moving forward?',
-    'How would you explain residual risk to this patient?',
-    'What evidence suggests the current treatment strategy has been successful?',
-    'What is the most important lesson from this case?'
-  ],
-
   INTERVIEW_KNOWLEDGE: [
     { id: 'linda-thu_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I get a skin rash and hives from Penicillin—I was told I developed a severe rash when given it as a child." },
     { id: 'linda-thu_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take a Calcium 600 mg plus Vitamin D3 supplement every morning for bone health, and occasional Tylenol for headaches." },
@@ -1239,26 +1483,195 @@ const lindaThu = makeCase({
     { id: 'linda-thu_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had high blood pressure and a heart attack at age 62. My mother had type 2 diabetes and chronic kidney disease. My brother had a heart attack at age 58, and my sister has high blood pressure and diabetes." },
     { id: 'linda-thu_surg', topic: 'Surgical history', field: 'surgery', keywords: ['surgery', 'surgeries', 'procedure', 'operation', 'gallbladder', 'cholecystectomy', 'hysterectomy'], response: 'I had my gallbladder removed when I was 49, and then a total abdominal hysterectomy when I was 52.' },
     { id: 'linda-thu_mi', topic: 'Heart Attack / Stent', field: 'pmh', keywords: ['heart attack', 'stemi', 'stent', 'pci', 'catheterization'], response: 'I had a heart attack about 3 years ago. They told me I had a drug-eluting stent placed (PCI).' },
-    { id: 'linda-thu_duration', topic: 'Disease duration', field: 'pmh', keywords: ['how long', 'when were you diagnosed', 'duration', 'years'], response: 'I\'ve had high blood pressure for 18 years and diabetes for 15 years.' },
-    { id: 'linda-thu_social', topic: 'Social / Family', field: 'social', keywords: ['live', 'work', 'family', 'grandchild', 'children', 'retired', 'married'], response: 'I am a retired elementary school teacher. I am married and live with my husband, and I help take care of my grandchildren regularly.' },
+    { id: 'linda-thu_duration', topic: 'Disease duration', field: 'pmh', keywords: ['how long', 'when were you diagnosed', 'duration', 'years'], response: 'I have had high blood pressure for 18 years, diabetes for 15 years, kidney disease Stage 3a, high cholesterol, and GERD on omeprazole.' },
+    { id: 'linda-thu_social', topic: 'Social / Family', field: 'social', keywords: ['live', 'work', 'family', 'grandchild', 'children', 'retired', 'married'], response: 'I am a retired elementary school teacher. I am married and live with my husband, and I help take care of my grandchildren regularly. I have never used recreational drugs.' },
     { id: 'linda-thu_homebp', topic: 'Home BP monitoring', field: 'homeBp', keywords: ['home blood pressure', 'bp at home', 'check your blood pressure', 'monitor', 'log', 'average'], response: 'I check my blood pressure at home regularly — several times a week. My readings are consistently good now, around 123 over 75 on average.' },
     { id: 'linda-thu_homebg', topic: 'Home glucose monitoring', field: 'glucoseMonitoring', keywords: ['blood sugar', 'glucose', 'check your sugar', 'fasting', 'finger stick', 'meter'], response: 'I check my blood sugar regularly. My fasting readings are usually around 120 to 140 now, which is much better than where I started.' },
-    { id: 'linda-thu_lifestyle', topic: 'Lifestyle', field: 'lifestyle', keywords: ['walk', 'exercise', 'diet', 'food', 'sodium', 'salt', 'portion'], response: 'I am walking about 5 days a week for 30-40 minutes. I also really reduced my sodium and I am controlling my portions better.' },
+    { id: 'linda-thu_lifestyle', topic: 'Lifestyle', field: 'lifestyle', keywords: ['walk', 'exercise', 'diet', 'food', 'sodium', 'salt', 'portion'], response: 'I am walking about 5 days a week for 30-40 minutes each time. I also really reduced my sodium and I am controlling my portions better.' },
+    { id: 'linda-thu_ros', topic: 'Review of systems', field: 'symptoms', keywords: ['chest pain', 'short of breath', 'palpitations', 'dizziness', 'syncope', 'orthopnea', 'pnd', 'hypoglycemia', 'side effects'], response: 'I have no chest pain, no shortness of breath, no heart palpitations, no dizziness, no syncope, no orthopnea, and no waking up gasping for air (PND). I have had no low blood sugars and no side effects from my medications.' },
+    { id: 'linda-thu_goals', topic: 'Motivations and long-term vigilance', field: 'goals', keywords: ['dialysis', 'kidney', 'heart attack', 'independence', 'vigilance', 'cure'], response: 'My greatest fears are needing dialysis or having another heart attack like 3 years ago. I want to keep my independence to be with my grandchildren. I know my improved lab numbers do not mean I am cured, and I understand I need to stay vigilant for life.' },
     { id: 'cth_conf', topic: 'Increased Confidence', field: 'confidence', keywords: ['confident', 'handle', 'understand', 'better'],
       response: "I feel so much better now. I finally understand why I'm taking all these pills and what we're trying to prevent." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'cth_maint', title: 'Long-term Maintenance', icon: 'CheckCircle', color: '10b981', questions: [
-      { key: 'cth_q1', q: 'How do you ensure these complex interventions are maintained long-term?' },
-    ] },
+    {
+      id: 'ckd',
+      title: 'Chronic Kidney Disease Stage G3a with persistent albuminuria',
+      icon: 'FlaskConical',
+      color: '0891b2',
+      questions: [
+        {
+          key: 'ckd_eval',
+          q: 'CKD staging, albuminuria reclassification, progression risk, and guidelines:',
+          defaultAnswer: 'Status: Significantly improved but ongoing risk. eGFR 49 mL/min/1.73m² (CKD Stage G3a) and SCr 1.28 mg/dL reflect stable kidney function. Documents substantial albuminuria improvement across three time points: baseline 452 mg/g → 3-month 330 mg/g → 6-month 210 mg/g (53.5% cumulative reduction). Reclassifies albuminuria as Category A2 (moderately increased albuminuria, 30–300 mg/g, no longer A3 / severely increased). Notes meaningful reduction in CKD progression risk. Cites KDIGO 2024 Clinical Practice Guideline and ADA 2026 Standards of Care. Albuminuria reduction is associated with lower CKD progression and reduced cardiovascular event risk. Patient remains at elevated long-term cardiorenal risk due to CKD, diabetes, hypertension, and established ASCVD. Current therapy (lisinopril 40 mg daily + empagliflozin 10 mg daily) is effective and should be continued. Ongoing monitoring of renal function (eGFR, SCr), potassium, and UACR remains essential. Recognizes cumulative therapy optimization drove the albuminuria reduction.'
+        }
+      ]
+    },
+    {
+      id: 't2dm',
+      title: 'Type 2 diabetes mellitus',
+      icon: 'Droplet',
+      color: '0d9488',
+      questions: [
+        {
+          key: 'dm_eval',
+          q: 'Glycemic status, trend, therapy benefits, and goal:',
+          defaultAnswer: 'Status: Near goal and improving. Documents A1C improvement across three time points: baseline 8.2% → 3-month 7.9% → 6-month 7.2%. States A1C goal <7.0% per ADA 2026 Standards of Care. Individualizes goal for a functional, cognitively intact older adult. Notes approaching target with a favorable clinical trajectory. References therapy: metformin XR 1,000 mg twice daily, empagliflozin 10 mg daily, and semaglutide 1 mg subcutaneously weekly. Therapy provides proven cardiovascular and renal protective benefits. Recognizes semaglutide uptitration (0.5 to 1 mg) directly supported glycemic and weight improvement. Current therapy is appropriate given improvement, adherence, and tolerability.'
+        }
+      ]
+    },
+    {
+      id: 'htn',
+      title: 'Essential hypertension',
+      icon: 'HeartPulse',
+      color: '13314f',
+      questions: [
+        {
+          key: 'htn_eval',
+          q: 'Blood pressure control status, office and home measurements, and renoprotection:',
+          defaultAnswer: 'Status: Controlled. Documents office BP at goal (124/76 mmHg, repeat 122/74 mmHg). Home BP log average (~123/75 mmHg) is consistent with office measurements. States patient is meeting the evidence-based BP goal <130/80 mmHg for diabetes, CKD, and ASCVD per ADA 2026, KDIGO 2024, and 2025 ACC/AHA guidelines. BP control contributed substantially to the 53.5% albuminuria reduction and is a key intervention for long-term kidney protection. Current therapy (lisinopril 40 mg daily + metoprolol succinate 50 mg daily) is effective and well tolerated.'
+        }
+      ]
+    },
+    {
+      id: 'ascvd',
+      title: 'Secondary ASCVD prevention & hyperlipidemia',
+      icon: 'ShieldAlert',
+      color: 'd97706',
+      questions: [
+        {
+          key: 'ascvd_eval',
+          q: 'ASCVD risk status, LDL trend, statin intensification, and residual risk:',
+          defaultAnswer: 'Status: Improved but lifelong high risk. Patient has established ASCVD based on STEMI with PCI/DES placement 3 years ago; secondary prevention patient for life. Documents LDL-C improvement across three time points: baseline 92 mg/dL → 3-month 76 mg/dL → 6-month 63 mg/dL. Attributes improvement to lipid-lowering intensification (atorvastatin intensified from 40 mg to 80 mg daily high-intensity, plus ezetimibe 10 mg daily) and improved adherence. LDL-C is now at and below the secondary-prevention goal of <70 mg/dL (or <55 mg/dL per ACC/AHA guidelines). Represents substantial cardiovascular risk reduction, but risk is reduced, not eliminated. Continued elevated lifetime risk drivers include prior MI, diabetes, CKD Stage 3a, obesity, and age. Continue high-intensity statin, ezetimibe, aspirin, BP/glycemic control, and lifestyle.'
+        }
+      ]
+    },
+    {
+      id: 'obesity',
+      title: 'Class I obesity & lifestyle modifications',
+      icon: 'Scale',
+      color: 'ca8a04',
+      questions: [
+        {
+          key: 'obe_eval',
+          q: 'Obesity status, weight loss amount, and chronic disease framing:',
+          defaultAnswer: 'Status: Improving. BMI remains elevated (33.8 kg/m²) but weight decreased meaningfully from 96 kg to 92 kg (−4.0 kg total loss). Manage obesity as a chronic disease per ADA guidelines. Links obesity to cardiovascular disease, CKD progression, hypertension, and insulin resistance. Notes sustainable lifestyle changes and high motivation. Continued gradual weight reduction supported by semaglutide 1 mg weekly improves cardiorenal outcomes and quality of life.'
+        }
+      ]
+    },
+    {
+      id: 'health_literacy',
+      title: 'Health literacy & long-term disease understanding',
+      icon: 'BookOpen',
+      color: '6366f1',
+      questions: [
+        {
+          key: 'lit_eval',
+          q: 'Health literacy trajectory, risk reduction vs cure, and engagement:',
+          defaultAnswer: 'Status: Significantly improved. Substantial improvement in understanding CKD, albuminuria, cardiovascular disease, and risk reduction. Understands that chronic disease management reduces risk rather than cures, requiring lifelong vigilance. Improved health literacy contributed directly to adherence, lifestyle modifications, and active engagement in self-management. Continued education and reinforcement remain appropriate; links health literacy to self-management success.'
+        }
+      ]
+    },
+    {
+      id: 'preventive_care',
+      title: 'Preventive care gap (Tdap overdue)',
+      icon: 'ShieldPlus',
+      color: '8b5cf6',
+      questions: [
+        {
+          key: 'prev_eval',
+          q: 'Immunization gap and recommendation:',
+          defaultAnswer: 'Status: Preventive care gap identified. Identifies Tdap booster as overdue (>10 years since last dose) per CDC Adult Immunization Schedule. Recommend Tdap administration at this encounter.'
+        }
+      ]
+    },
   ],
   PLAN_SECTIONS: [
-    { id: 'cth_p', title: 'Transition Plan', options: [
-      { key: 'cth_o1', label: 'Summarize comprehensive care plan and provide written instructions', correct: true },
-      { key: 'cth_o2', label: 'Coordinate ongoing labs (K, SCr) with PCP', correct: true },
-      { key: 'cth_o3', label: 'Discontinue medications because she is doing well', correct: false },
-    ] },
+    {
+      id: 'ckd_plan',
+      title: 'Cardiorenal protection & CKD optimization plan',
+      options: [
+        { key: 'cp1', label: 'Continue lisinopril 40 mg PO daily for cardiorenal protection and blood pressure maintenance', correct: true },
+        { key: 'cp2', label: 'Continue empagliflozin 10 mg PO daily for kidney and cardiovascular protection', correct: true },
+        { key: 'cp3', label: 'Reinforce importance of long-term kidney protection strategies', correct: true },
+        { key: 'cp4', label: 'Continue integrated blood pressure and diabetes management to reduce CKD progression risk', correct: true },
+      ]
+    },
+    {
+      id: 'dm_plan',
+      title: 'Type 2 diabetes mellitus plan',
+      options: [
+        { key: 'dp1', label: 'Continue metformin XR 1000 mg PO twice daily with meals', correct: true },
+        { key: 'dp2', label: 'Continue empagliflozin 10 mg PO daily', correct: true },
+        { key: 'dp3', label: 'Continue semaglutide 1 mg subcutaneously weekly', correct: true },
+        { key: 'dp4', label: 'Repeat A1C in ~3 months to monitor glycemic trajectory', correct: true },
+        { key: 'dp5', label: 'Continue lifestyle modifications and portion control', correct: true },
+      ]
+    },
+    {
+      id: 'htn_plan',
+      title: 'Essential hypertension plan',
+      options: [
+        { key: 'hp1', label: 'Continue lisinopril 40 mg PO daily', correct: true },
+        { key: 'hp2', label: 'Continue metoprolol succinate 50 mg PO daily', correct: true },
+        { key: 'hp3', label: 'Continue home blood pressure monitoring with written log review', correct: true },
+        { key: 'hp4', label: 'Maintain blood pressure goal <130/80 mmHg for long-term renoprotection', correct: true },
+      ]
+    },
+    {
+      id: 'ascvd_plan',
+      title: 'Secondary ASCVD prevention & lipid management plan',
+      options: [
+        { key: 'ap1', label: 'Continue atorvastatin 80 mg PO daily at bedtime (high-intensity statin)', correct: true },
+        { key: 'ap2', label: 'Continue ezetimibe 10 mg PO daily', correct: true },
+        { key: 'ap3', label: 'Continue aspirin 81 mg PO daily', correct: true },
+        { key: 'ap4', label: 'Reinforce adherence to secondary prevention therapies', correct: true },
+        { key: 'ap5', label: 'Continue comprehensive cardiovascular risk reduction strategies', correct: true },
+        { key: 'ap6', label: 'Maintain LDL-C at secondary-prevention goal (<70 mg/dL or <55 mg/dL)', correct: true },
+      ]
+    },
+    {
+      id: 'life_plan',
+      title: 'Lifestyle modification & obesity plan',
+      options: [
+        { key: 'lp1', label: 'Continue walking program 30–40 minutes 5 days/week', correct: true },
+        { key: 'lp2', label: 'Encourage maintenance of >=150 minutes/week moderate-intensity physical activity', correct: true },
+        { key: 'lp3', label: 'Reinforce dietary modifications, portion control, and sodium restriction (<2,000 mg/day)', correct: true },
+        { key: 'lp4', label: 'Leverage GLP-1 RA therapy (semaglutide 1 mg weekly) for continued weight management and metabolic health', correct: true },
+      ]
+    },
+    {
+      id: 'edu_plan',
+      title: 'Patient education & health literacy plan',
+      options: [
+        { key: 'ep1', label: 'Reinforce concept of residual cardiovascular and renal risk despite improved numbers', correct: true },
+        { key: 'ep2', label: 'Continue patient-centered education regarding long-term disease management versus cure', correct: true },
+        { key: 'ep3', label: 'Encourage ongoing engagement in self-management', correct: true },
+        { key: 'ep4', label: 'Support sustained adherence and durable lifestyle habits', correct: true },
+      ]
+    },
+    {
+      id: 'imm_plan',
+      title: 'Preventive care & immunization plan',
+      options: [
+        { key: 'ip1', label: 'Recommend and administer Tdap booster vaccination today (overdue >10 years per CDC schedule)', correct: true },
+      ]
+    },
+    {
+      id: 'fu_plan',
+      title: 'Follow-up, transition of care, & monitoring timeline',
+      options: [
+        { key: 'fp1', label: 'Schedule follow-up visit in ~3–6 months for ambulatory care transition of care', correct: true },
+        { key: 'fp2', label: 'Repeat A1C prior to next visit', correct: true },
+        { key: 'fp3', label: 'Repeat lipid panel in 6–12 months prior to next visit', correct: true },
+        { key: 'fp4', label: 'Repeat UACR in 6–12 months prior to next visit', correct: true },
+        { key: 'fp5', label: 'Coordinate routine laboratory monitoring (BMP: serum creatinine, eGFR, potassium) with PCP for ongoing CKD progression risk monitoring', correct: true },
+        { key: 'fp6', label: 'Continue secondary ASCVD prevention monitoring and statin follow-up', correct: true },
+        { key: 'fp7', label: 'Reinforce successful lifestyle modifications and medication adherence', correct: true },
+      ]
+    },
   ],
+  PLAN_FREETEXT: [],
   GUIDING_QUESTIONS: [
     'How would you describe this patient\'s overall progress?',
     'Has this patient\'s risk been eliminated?',
