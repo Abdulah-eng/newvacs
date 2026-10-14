@@ -671,7 +671,7 @@ export function MedicationsTab({ c }) {
 
 /* ------------------------------------------------------------------ Allergies */
 export function AllergiesTab({ c }) {
-  const isNKDA = c.ALLERGIES?.some(a => a.substance.includes('NKDA'))
+  const isNKDA = !c.ALLERGIES || c.ALLERGIES.length === 0 || c.ALLERGIES.every(a => a.substance?.toLowerCase().includes('no known') || a.substance?.toUpperCase().includes('NKDA'))
 
   return (
     <div className="space-y-4 pb-8">
@@ -915,22 +915,36 @@ export function ObjectiveTab({ c }) {
         </ul>
       </Card>
 
-      {/* Missing Objective Data */}
+      {/* Additional / Missing Objective Data */}
       {c.OBJECTIVE_EXTRA?.length > 0 && (
         <div className="rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden">
           <div className="flex items-center gap-2 px-4 py-3 border-b border-slate-100 bg-slate-50">
             <span className="grid place-items-center w-7 h-7 rounded-lg text-white bg-purple-600">
               <AlertTriangle size={16} />
             </span>
-            <h3 className="font-head text-[15px] text-slate-800">Additional / missing objective data</h3>
+            <h3 className="font-head text-[15px] text-slate-800">Additional / supplemental objective data</h3>
           </div>
           <div className="p-4 space-y-2">
-            {c.OBJECTIVE_EXTRA.map((o, i) => (
-              <div key={i} className="flex items-start gap-2 rounded-lg border border-dashed border-purple-200 bg-purple-50 px-3 py-2 text-[13px] text-purple-800">
-                <span className="font-bold shrink-0">Missing →</span>
-                <span>{o.label}: {o.value}</span>
-              </div>
-            ))}
+            {c.OBJECTIVE_EXTRA.map((o, i) => {
+              const isMissing = o.flag === 'missing'
+              if (isMissing) {
+                return (
+                  <div key={i} className="flex items-start gap-2 rounded-lg border border-dashed border-amber-300 bg-amber-50 px-3 py-2 text-[13px] text-amber-900">
+                    <span className="font-bold shrink-0 text-amber-700">Missing →</span>
+                    <span>{o.label}: {o.value}</span>
+                  </div>
+                )
+              }
+              return (
+                <div key={i} className="flex items-center justify-between rounded-lg border border-slate-200 bg-slate-50 px-3.5 py-2.5 text-[13px]">
+                  <span className="font-medium text-slate-600">{o.label}</span>
+                  <div className="flex items-center gap-2">
+                    <span className="font-bold text-slate-800">{o.value}</span>
+                    {o.flag && o.flag !== 'normal' && <FlagPill flag={o.flag} />}
+                  </div>
+                </div>
+              )
+            })}
           </div>
         </div>
       )}

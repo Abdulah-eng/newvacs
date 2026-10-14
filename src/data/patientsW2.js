@@ -37,7 +37,7 @@ const michaelTue = makeCase({
     { label: 'LDL-C', value: '132', unit: 'mg/dL', flag: 'high', note: 'Above goal for his risk' },
     { label: 'HDL-C', value: '42', unit: 'mg/dL', flag: 'normal' },
     { label: 'Triglycerides', value: '196', unit: 'mg/dL', flag: 'high' },
-    { label: 'UACR', value: '118', unit: 'mg/g', flag: 'warn', note: 'Moderately increased (A2); prior 105' },
+    { label: 'UACR', value: '118', unit: 'mg/g', flag: 'warn', note: 'Moderately increased (A2); prior 105 mg/g documented 4 months ago' },
   ],
   ALERTS: [
     { level: 'warn', text: 'CKD G2A2 — persistent albuminuria despite a normal eGFR confirms kidney damage.' },
@@ -64,8 +64,8 @@ const michaelTue = makeCase({
   ],
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: 'Referred for persistent LDL-C elevation despite statin therapy and newly identified persistent albuminuria. Feels well; questions why more treatment is needed.' },
-    { label: 'Social history', value: 'Accountant. Former smoker (20 pack-years, quit 6y). Frequent restaurant/processed meals. Largely sedentary.' },
-    { label: 'Family history', value: 'Father MI at 61, HLD, HTN; mother HTN, HLD — strong premature ASCVD history.' },
+    { label: 'Social history', value: 'Warehouse manager (formerly accountant). Former smoker (quit ~5–6 years ago, ~10–20 pack-years). Occasional alcohol (1–2 drinks/month or weekly). Frequent restaurant/processed meals. Largely sedentary.' },
+    { label: 'Family history', value: 'Father MI at 61, HLD, HTN; mother HTN, HLD — positive family history of ASCVD (note: MI at age 61 does not meet criteria for premature ASCVD in a male relative [<55], but remains clinically relevant).' },
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.26 m²', flag: 'normal' },
@@ -98,10 +98,10 @@ const michaelTue = makeCase({
     { id: 'w2-michael-tue_psh', topic: 'Past surgical history', field: 'psh', keywords: ['surgery', 'surgeries', 'operation', 'appendectomy', 'surgical', 'appendix', 'procedure'], response: "I had an appendectomy when I was 27, but no other surgeries." },
     { id: 'w2-michael-tue_hosp', topic: 'Hospitalization / ED visits', field: 'hospitalization', keywords: ['hospital', 'hospitalization', 'admit', 'admission', 'emergency room', 'hospitalized', 'admitted', 'admissions'], response: "No, I haven't had any recent hospitalizations or emergency room visits." },
     { id: 'w2-michael-tue_marital', topic: 'Marital status', field: 'familyHistory', keywords: ['marital', 'married', 'wife', 'spouse'], response: "I am married and live with my wife." },
-    { id: 'w2-michael-tue_occupation', topic: 'Occupation', field: 'exercise', keywords: ['job', 'work', 'occupation', 'manager', 'warehouse'], response: "I work as a warehouse manager." },
+    { id: 'w2-michael-tue_occupation', topic: 'Occupation', field: 'exercise', keywords: ['job', 'work', 'occupation', 'manager', 'warehouse', 'accountant'], response: "I work as a warehouse manager, though my background was in accounting." },
     { id: 'a_nsaid', topic: 'OTC ibuprofen (nephrotoxic)', field: 'otc',
       keywords: ['ibuprofen', 'advil', 'motrin', 'nsaid', 'pain', 'knee', 'arthritis', 'otc', 'over the counter', 'supplement'],
-      response: "Oh — I take ibuprofen for my knees, a few times a week. It's just over-the-counter, so I didn't think it counted as a medication." },
+      response: "Oh — I take ibuprofen for my knees, a few times a week. Usually 1 to 2 over-the-counter tablets (about 200–400 mg) PRN. It's just over-the-counter, so I didn't think it counted as a medication." },
     { id: 'a_adh', topic: 'Statin nonadherence', field: 'adherence',
       keywords: ['miss', 'forget', 'adherence', 'atorvastatin', 'cholesterol medicine', 'every day', 'skip', 'take it'],
       response: "I take the cholesterol one at night… mostly. I probably miss it two or three times a week if I'm honest — I just forget." },
@@ -110,10 +110,10 @@ const michaelTue = makeCase({
       response: "Protein in my urine? I don't really know what that means. My kidney number looked normal, so I figured my kidneys were fine." },
     { id: 'a_wt', topic: 'Weight motivation', field: 'weightGoals',
       keywords: ['weight', 'lose', 'diet', 'exercise', 'lifestyle', 'goal', 'activity'],
-      response: "I'd really like to lose some weight too — that's a big goal for me. I just haven't found a routine that sticks." },
+      response: "I'd really like to lose some weight too — that's a big goal for me. I just haven't found a routine that sticks. I'm largely sedentary right now, maybe walking once a week if the weather is nice." },
     { id: 'a_bp', topic: 'Home BP habits', field: 'homeBp',
-      keywords: ['home', 'check', 'blood pressure at home', 'monitor', 'cuff'],
-      response: "I check my blood pressure once in a while, not on any schedule." },
+      keywords: ['home', 'check', 'blood pressure at home', 'monitor', 'cuff', 'log'],
+      response: "My doctor asked me to log my home readings for 5 days before this visit, so I brought that in—it averaged around 136/83 mmHg. Otherwise, I don't check very consistently on my own." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'a_hld', title: 'Hyperlipidemia / ASCVD risk', icon: 'Droplet', color: '13314f',
@@ -210,7 +210,8 @@ const michaelWed = makeCase({
   SUBJECTIVE_DOCUMENTED: [{ label: 'Interval history', value: 'Tolerating atorvastatin 20 mg without muscle symptoms. Reduced ibuprofen substantially but still uses it ~weekly.' }],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.23 m²', flag: 'normal' },
-    { label: '10-Year ASCVD Risk Score', value: '10.7% — Improved', flag: 'normal' }
+    { label: '10-Year ASCVD Risk Score', value: '10.7% — Improved', flag: 'normal' },
+    { label: 'Home BP log', value: 'No current log available; patient not checking BP at home (continue in-office monitoring and counseling)', flag: 'normal' }
   ],
   INTERVIEW_FIELDS: [
     { key: 'otc', label: 'NSAID use now', placeholder: 'How much ibuprofen remains…' },
@@ -238,6 +239,8 @@ const michaelWed = makeCase({
 
     { id: 'w2-michael-wed_psh', topic: 'Past surgical history', field: 'psh', keywords: ['surgery', 'surgeries', 'operation', 'appendectomy', 'surgical', 'appendix', 'procedure'], response: "I had an appendectomy when I was 27, but no other surgeries." },
     { id: 'w2-michael-wed_hosp', topic: 'Hospitalization / ED visits', field: 'hospitalization', keywords: ['hospital', 'hospitalization', 'admit', 'admission', 'emergency room', 'hospitalized', 'admitted', 'admissions'], response: "No, I haven't had any recent hospitalizations or emergency room visits." },
+    { id: 'w2-michael-wed_homebp', topic: 'Home blood pressure', field: 'homeBp', keywords: ['home bp', 'blood pressure at home', 'cuff', 'log', 'monitor', 'check bp'], response: "I haven't been keeping a home BP log since the last visit; I don't have home readings with me today." },
+    { id: 'w2-michael-wed_diet', topic: 'Diet and physical activity', field: 'exercise', keywords: ['diet', 'food', 'eating', 'exercise', 'walk', 'activity', 'routine', 'lifestyle'], response: "I've been trying to watch what I eat and walk a bit more when I get a chance, but I don't have a structured workout routine yet. Cutting back on ibuprofen was my main focus." },
     { id: 'aw_nsaid', topic: 'Residual NSAID use', field: 'otc', keywords: ['ibuprofen', 'nsaid', 'advil', 'pain', 'knee', 'still'],
       response: "I still take ibuprofen sometimes — maybe once a week now, a lot less than before." },
     { id: 'aw_alb', topic: 'Kidney misconception', field: 'diseaseUnderstanding', keywords: ['kidney', 'egfr', 'normal', 'albumin', 'protein', 'understand', 'healthy'],
@@ -310,7 +313,7 @@ const michaelThu = makeCase({
     { label: 'AST', value: '22', unit: 'U/L', flag: 'normal' },
     { label: 'ALT', value: '23', unit: 'U/L', flag: 'normal' },
     { label: 'Total cholesterol', value: '166', unit: 'mg/dL', flag: 'normal' },
-    { label: 'LDL-C', value: '84', unit: 'mg/dL', flag: 'normal', note: '118→102→98 UACR trend; LDL well-controlled' },
+    { label: 'LDL-C', value: '84', unit: 'mg/dL', flag: 'normal', note: '132 → 96 → 84 mg/dL (well-controlled on Atorvastatin 20 mg)' },
     { label: 'HDL-C', value: '47', unit: 'mg/dL', flag: 'normal' },
     { label: 'Triglycerides', value: '148', unit: 'mg/dL', flag: 'normal' },
     { label: 'UACR', value: '98', unit: 'mg/g', flag: 'warn', note: 'Trend 118 → 102 → 98' },
@@ -326,7 +329,8 @@ const michaelThu = makeCase({
   SUBJECTIVE_DOCUMENTED: [{ label: 'Interval history', value: 'Rare ibuprofen (1–2×/month); much more aware of kidney-affecting meds. Pleased with progress; puzzled the proteinuria has not resolved.' }],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.21 m²', flag: 'normal' },
-    { label: '10-Year ASCVD Risk Score', value: '9.8% — Improved', flag: 'normal' }
+    { label: '10-Year ASCVD Risk Score', value: '9.8% — Improved', flag: 'normal' },
+    { label: 'Home BP log', value: 'No current log available; patient not checking BP at home (continue in-office monitoring and counseling)', flag: 'normal' }
   ],
   INTERVIEW_FIELDS: [
     { key: 'diseaseUnderstanding', label: 'Expectations re: albuminuria', placeholder: 'What he expects proteinuria to do…' },
@@ -343,6 +347,8 @@ const michaelThu = makeCase({
 
     { id: 'w2-michael-thu_psh', topic: 'Past surgical history', field: 'psh', keywords: ['surgery', 'surgeries', 'operation', 'appendectomy', 'surgical', 'appendix', 'procedure'], response: "I had an appendectomy when I was 27, but no other surgeries." },
     { id: 'w2-michael-thu_hosp', topic: 'Hospitalization / ED visits', field: 'hospitalization', keywords: ['hospital', 'hospitalization', 'admit', 'admission', 'emergency room', 'hospitalized', 'admitted', 'admissions'], response: "No, I haven't had any recent hospitalizations or emergency room visits." },
+    { id: 'w2-michael-thu_homebp', topic: 'Home blood pressure', field: 'homeBp', keywords: ['home bp', 'blood pressure at home', 'cuff', 'log', 'monitor', 'check bp'], response: "I haven't been keeping a home BP log. My clinic readings have been around 130/78, so I haven't checked much at home." },
+    { id: 'w2-michael-thu_diet', topic: 'Diet and exercise habits', field: 'exercise', keywords: ['diet', 'food', 'eating', 'exercise', 'walk', 'activity', 'routine', 'restaurant'], response: "I've been cooking at home more and eating out less often. I try to get out and walk a few times a week, though it's still not a strict daily routine." },
     { id: 'at_exp', topic: 'Albuminuria expectations', field: 'diseaseUnderstanding', keywords: ['protein', 'albumin', 'urine', 'gone', 'disappear', 'expect', 'still there', 'why'],
       response: "I figured the protein would be gone by now. It's still showing up — does that mean the treatment isn't working?" },
     { id: 'at_wt', topic: 'Weight goal', field: 'weightGoals', keywords: ['weight', 'lose', 'goal', 'exercise', 'diet'],
@@ -399,7 +405,7 @@ const angelaTue = makeCase({
       'Address clinical inertia by initiating a guideline-directed high-intensity statin',
     ],
   },
-  VITALS: { bp: '138/84', bpRepeat: '136/82', hr: '74', rr: '16', temp: '98.6°F', weight: '96 kg', height: "5'4\"", bmi: '35.9',
+  VITALS: { bp: '138/84', bpRepeat: '136/82', hr: '74', rr: '16', temp: '98.6°F', weight: '96 kg', height: "5'4\"", bmi: '36.3',
     flags: { bp: 'warn', bpRepeat: 'warn', bmi: 'high' } },
   LABS: [
     { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal' },
@@ -412,7 +418,7 @@ const angelaTue = makeCase({
     { label: 'LDL-C', value: '148', unit: 'mg/dL', flag: 'high', note: 'Significantly elevated' },
     { label: 'HDL-C', value: '46', unit: 'mg/dL', flag: 'normal' },
     { label: 'Triglycerides', value: '200', unit: 'mg/dL', flag: 'high' },
-    { label: 'UACR', value: '165', unit: 'mg/g', flag: 'warn', note: 'Moderately increased (A2)' },
+    { label: 'UACR', value: '165', unit: 'mg/g', flag: 'warn', note: 'Moderately increased (A2); prior 152 mg/g documented 5 months ago' },
   ],
   ALERTS: [
     { level: 'warn', text: 'CKD G3aA2 — moderate decrease in GFR (53) and persistent albuminuria (165).' },
@@ -422,13 +428,13 @@ const angelaTue = makeCase({
     { name: 'Hyperlipidemia', detail: 'LDL-C 148 mg/dL, untreated', flag: 'high' },
     { name: 'Chronic kidney disease, G3aA2', detail: 'eGFR 53, UACR 165 (A2)', flag: 'warn' },
     { name: 'Essential hypertension', detail: 'BP mid-130s/80s', flag: 'warn' },
-    { name: 'Obesity', detail: 'BMI 35.9', flag: 'warn' },
+    { name: 'Obesity', detail: 'BMI 36.3', flag: 'warn' },
   ],
   MEDICATIONS: [
     { name: 'Losartan', dose: '50 mg', route: 'PO', freq: 'daily', indication: 'HTN / kidney protection', notes: '' },
     { name: 'Amlodipine', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'HTN', notes: '' },
   ],
-  ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash (childhood)' }],
+  ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash (childhood)', severity: 'Moderate', type: 'Allergy', date: 'Childhood', source: 'Patient reported' }],
   IMMUNIZATIONS: [
     { name: 'Influenza', status: 'Up to date', flag: 'normal' },
     { name: 'COVID-19', status: 'Up to date', flag: 'normal' },
@@ -443,7 +449,9 @@ const angelaTue = makeCase({
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.08 m²', flag: 'normal' },
-    { label: '10-Year ASCVD Risk Score', value: '14.5% — High risk', flag: 'high' },{ label: 'Rosuvastatin fill history', value: 'Prescribed ~6 months ago — no claims on record', flag: 'missing' }],
+    { label: '10-Year ASCVD Risk Score', value: '14.5% — High risk', flag: 'high' },
+    { label: 'Rosuvastatin fill history', value: 'Prescribed ~6 months ago — no claims on record', flag: 'missing' }
+  ],
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Statin history (never started?)', placeholder: 'Prior prescriptions, unfilled meds…' },
     { key: 'cost', label: 'Cost / access barrier', placeholder: 'Affordability, embarrassment, insurance…' },
@@ -460,6 +468,9 @@ const angelaTue = makeCase({
 
   INTERVIEW_KNOWLEDGE: [
     { id: 'w2-angela-tue_allerg', topic: 'Medication allergies', field: 'allergies', keywords: ['allergy', 'allergic', 'allergies', 'penicillin', 'sulfa', 'codeine', 'reaction', 'rash', 'hives'], response: "I get a skin rash from Penicillin—I was told I broke out in a rash when given it as a child." },
+    { id: 'w2-angela-tue_symptoms', topic: 'Symptoms and ROS', field: 'symptoms', keywords: ['symptom', 'symptoms', 'fatigue', 'tired', 'cramp', 'cramps', 'leg', 'pain', 'chest pain', 'shortness of breath'], response: "I feel mostly fine day-to-day. Occasionally I'll notice mild fatigue or some nighttime leg cramping, but no chest pain, shortness of breath, or severe symptoms." },
+    { id: 'w2-angela-tue_durations', topic: 'Condition durations', field: 'durations', keywords: ['how long', 'duration', 'diagnosed', 'years', 'history', 'hypertension', 'cholesterol'], response: "I have had high blood pressure for about 15 years, and high cholesterol for roughly 12 years. The kidney issue was just brought up recently." },
+    { id: 'w2-angela-tue_goals', topic: 'Health goals', field: 'goals', keywords: ['goal', 'goals', 'dialysis', 'kidney', 'protect', 'priority', 'motivation'], response: "My mother had chronic kidney disease and stroke, so my biggest goal is protecting my kidneys and avoiding ever ending up on dialysis, while keeping my heart healthy." },
     { id: 'w2-angela-tue_otc', topic: 'OTC / Supplements', field: 'otc', keywords: ['otc', 'over the counter', 'supplement', 'herb', 'vitamin', 'multivitamin'], response: "I take Calcium 600 mg plus Vitamin D3 daily for bone health, and Tylenol occasionally for mild pain." },
     { id: 'w2-angela-tue_alc', topic: 'Alcohol use', field: 'alcohol', keywords: ['alcohol', 'drink', 'beer', 'wine', 'liquor'], response: "I rarely drink alcohol—maybe a glass of wine on holidays or special occasions." },
     { id: 'w2-angela-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
@@ -570,7 +581,7 @@ const angelaWed = makeCase({
     { name: 'Amlodipine', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'HTN', notes: '' },
     { name: 'Rosuvastatin', dose: '20 mg', route: 'PO', freq: 'daily', indication: 'Hyperlipidemia', notes: 'Started; affordable via plan' },
   ],
-  ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash (childhood)' }],
+  ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash (childhood)', severity: 'Moderate', type: 'Allergy', date: 'Childhood', source: 'Patient reported' }],
   SUBJECTIVE_DOCUMENTED: [{ label: 'Interval history', value: 'Started rosuvastatin, taking it consistently (1–2 missed doses in 3 months). Reassured by affordability and no serious side effects.' }],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.07 m²', flag: 'normal' },
@@ -598,6 +609,8 @@ const angelaWed = makeCase({
     { id: 'w2-angela-wed_psh', topic: 'Past surgical history', field: 'psh', keywords: ['surgery', 'surgeries', 'operation', 'cholecystectomy', 'hysterectomy', 'gallbladder', 'uterus', 'surgical', 'procedure'], response: "I had my gallbladder removed (cholecystectomy) about 10 years ago, and I also had a total abdominal hysterectomy when I was 45." },
     { id: 'w2-angela-wed_hosp', topic: 'Hospitalization / ED visits', field: 'hospitalization', keywords: ['hospital', 'hospitalization', 'admit', 'admission', 'emergency room', 'hospitalized', 'admitted', 'admissions'], response: "No, I have not had any recent hospitalizations or emergency department visits." },
     { id: 'bw_bp', topic: 'Home BP log', field: 'homeBp', keywords: ['home', 'check', 'blood pressure at home', 'monitor', 'log', 'cuff', 'readings', 'average'], response: "I've been checking it at home. My readings average around 136/82 mmHg, usually ranging from 132 to 140 for the top number and 78 to 84 for the bottom number." },
+    { id: 'w2-angela-wed_diet', topic: 'Diet and exercise', field: 'exercise', keywords: ['diet', 'food', 'eating', 'exercise', 'walk', 'activity', 'routine', 'packaged', 'sodium'], response: "I've been cooking more fresh meals at home and cutting down on salty packaged and convenience foods. I'm also walking regularly." },
+    { id: 'w2-angela-wed_goals', topic: 'Dialysis prevention goal', field: 'goals', keywords: ['dialysis', 'kidney', 'protect', 'goal', 'motivation'], response: "Protecting my kidneys and avoiding dialysis like my mother had to deal with is my number one priority." },
     { id: 'bw_start', topic: 'Rosuvastatin started & tolerated', field: 'sideEffects', keywords: ['start', 'rosuvastatin', 'muscle', 'side effect', 'tolerate', 'ache', 'how'],
       response: "Yes — I started it and I've been taking it. I have noticed some occasional mild muscle soreness in both of my legs, especially after I go for my walks. It's not limiting my daily activities, but I'm not sure if it's from the walking or the medication." },
     { id: 'bw_cost', topic: 'Affordability', field: 'cost', keywords: ['cost', 'afford', 'pay', 'cheaper', 'price', 'sustain'],
@@ -677,7 +690,7 @@ const angelaThu = makeCase({
     { name: 'Obesity', detail: 'BMI 35.2', flag: 'warn' },
   ],
   MEDICATIONS: angelaWed.MEDICATIONS,
-  ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash (childhood)' }],
+  ALLERGIES: [{ substance: 'Penicillin', reaction: 'Rash (childhood)', severity: 'Moderate', type: 'Allergy', date: 'Childhood', source: 'Patient reported' }],
   SUBJECTIVE_DOCUMENTED: [{ label: 'Interval history', value: 'Adherent (misses ~1×/month), confident with medications, walking ~4×/week, improved diet and gradual weight loss.' }],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.05 m²', flag: 'normal' },
@@ -715,8 +728,10 @@ const angelaThu = makeCase({
       response: "I am widowed — my husband passed away three years ago. I live independently on my own. Before I retired, I was an elementary school teacher for over 30 years." },
     { id: 'bt_goal', topic: 'Lifestyle goals', field: 'weightGoals', keywords: ['weight', 'walk', 'diet', 'exercise', 'goal', 'lose'],
       response: "I'm walking about four days a week and eating better. I'd still like to lose more weight." },
-    { id: 'bt_social', topic: 'Social history (marital/occupation/living)', field: 'hpiNarrative', keywords: ['married', 'marital', 'widow', 'live', 'alone', 'by yourself', 'partner', 'spouse', 'job', 'work', 'occupation', 'teacher', 'retire', 'did you work', 'what do you do'],
-      response: "I am widowed — my husband passed away three years ago. I live independently on my own. Before I retired, I was an elementary school teacher for over 30 years." },
+    { id: 'bt_diet', topic: 'Dietary habits', field: 'weightGoals', keywords: ['diet', 'eating', 'food', 'processed', 'packaged', 'home cooking', 'salt'],
+      response: "I've maintained my dietary improvements—cooking more meals from scratch at home, choosing fresh produce, and substantially reducing packaged convenience foods." },
+    { id: 'bt_dialysis', topic: 'Dialysis avoidance goal', field: 'goals', keywords: ['dialysis', 'kidney', 'prevent', 'goal', 'motivation'],
+      response: "Staying off dialysis and protecting my kidney health long-term remains my biggest personal motivation." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'bt_a', title: 'Goal attainment & maintenance', icon: 'Droplet', color: '13314f', questions: [
@@ -792,7 +807,7 @@ const davidTue = makeCase({
     { label: 'LDL-C', value: '88', unit: 'mg/dL', flag: 'normal' },
     { label: 'HDL-C', value: '43', unit: 'mg/dL', flag: 'normal' },
     { label: 'Triglycerides', value: '178', unit: 'mg/dL', flag: 'normal' },
-    { label: 'UACR', value: '520', unit: 'mg/g', flag: 'high', note: 'Severely increased (A3)' },
+    { label: 'UACR', value: '520', unit: 'mg/g', flag: 'high', note: 'Severely increased (A3); prior 505 mg/g documented 4 months ago' },
   ],
   ALERTS: [
     { level: 'warn', text: 'CKD G3bA3 — severe cardiorenal and progression risk due to persistent A3 albuminuria.' },
@@ -851,6 +866,7 @@ const davidTue = makeCase({
     { id: 'w2-david-tue_tobacco', topic: 'Tobacco use', field: 'tobacco', keywords: ['tobacco', 'smoke', 'smoking', 'cigarette', 'cigar', 'vape', 'vaping', 'nicotine'], response: "I have never smoked or used tobacco products in my life." },
     { id: 'w2-david-tue_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My father had a heart attack at age 58 and also had type 2 diabetes. My mother has type 2 diabetes and chronic kidney disease. My brother has coronary artery disease and had bypass surgery at age 58." },
     { id: 'w2-david-tue_social', topic: 'Social history', field: 'hpiNarrative', keywords: ['married', 'marital', 'live', 'alone', 'partner', 'spouse', 'job', 'work', 'occupation', 'engineer', 'retire'], response: "I am married and we live together at home. I work as an electrical engineer — I analyze problems for a living, which is probably why I ask so many questions about my health!" },
+    { id: 'w2-david-tue_fatigue', topic: 'Fatigue and systemic symptoms', field: 'symptoms', keywords: ['fatigue', 'tired', 'energy', 'symptom', 'weakness'], response: "I feel mostly fine day-to-day. I might notice a little mild fatigue after a demanding work week, but no severe tiredness, shortness of breath, or weakness." },
     { id: 'w2-david-tue_exer', topic: 'Physical activity', field: 'exercise', keywords: ['exercise', 'walk', 'activity', 'active', 'gym', 'sport', 'run', 'physical', 'routine'], response: "I try to stay active. I typically walk about 3 days a week, sometimes more. I keep it moderate — nothing too intense." },
     { id: 'w2-david-tue_bp', topic: 'Home BP log', field: 'homeBp', keywords: ['home', 'check', 'blood pressure at home', 'monitor', 'log', 'cuff', 'readings', 'average'], response: "I check my blood pressure at home regularly and keep a written log. My home readings usually average around 136/80 mmHg." },
     { id: 'c_fin', topic: 'Declined finerenone', field: 'finerenone',
@@ -860,8 +876,8 @@ const davidTue = makeCase({
       keywords: ['potassium', 'hyperkalem', 'side effect', 'risk', 'electrolyte', 'worried'],
       response: "I remember hearing it could raise potassium, and that worried me. I didn't want to risk it." },
     { id: 'c_burden', topic: 'Pill burden / cost', field: 'finerenone',
-      keywords: ['pill', 'too many', 'burden', 'cost', 'afford', 'another medication', 'expensive'],
-      response: "I'm already on a lot of medications. Adding another — and the cost — made me hesitate." },
+      keywords: ['pill', 'too many', 'burden', 'cost', 'afford', 'another medication', 'expensive', 'copay'],
+      response: "I'm already on several medications, and adding another brand-name drug with a copay made me hesitate along with the potassium risk, especially without understanding the evidence." },
     { id: 'c_why', topic: 'Wants the rationale', field: 'why',
       keywords: ['why', 'evidence', 'rationale', 'understand', 'explain', 'data', 'benefit', 'proof'],
       response: "I'm an engineer — I want to understand the evidence. If you can show me why it helps my kidneys, I'll seriously consider it." },
@@ -882,7 +898,7 @@ const davidTue = makeCase({
     { id: 'c_p_renal', title: 'Cardiorenal plan', options: [
       { key: 'c_o1', label: 'Initiate finerenone for residual albuminuria despite ACEi + SGLT2i (CONFIDENCE-supported)', correct: true },
       { key: 'c_o2', label: 'Counsel the hyperkalemia plan: baseline + scheduled potassium monitoring, dietary guidance', correct: true },
-      { key: 'c_o3', label: 'Continue ACEi, SGLT2i, metformin, statin — do not de-escalate foundational therapy', correct: true },
+      { key: 'c_o3', label: 'Continue foundational ACEi, SGLT2i, statin, and metformin (with eGFR monitoring or renal dose reduction to 1000 mg/day)', correct: true },
       { key: 'c_o4', label: 'Stop the SGLT2i before starting finerenone', correct: false },
     ] },
     { id: 'c_p_edu', title: 'Education / monitoring', options: [
@@ -1091,10 +1107,12 @@ const davidThu = makeCase({
     { id: 'w2-david-thu_social', topic: 'Social history', field: 'hpiNarrative', keywords: ['married', 'marital', 'live', 'alone', 'partner', 'spouse', 'job', 'work', 'occupation', 'engineer', 'retire'], response: "I am married and live at home with my wife. I am an electrical engineer. Honestly, reviewing these lab trends over the past six months has been fascinating from a data standpoint!" },
     { id: 'w2-david-thu_exer', topic: 'Physical activity', field: 'exercise', keywords: ['exercise', 'walk', 'activity', 'active', 'gym', 'sport', 'run', 'physical', 'routine'], response: "Yes, I have kept up my walking — about 4 days a week now. I feel like staying active has helped with my energy levels and my blood pressure control." },
     { id: 'w2-david-thu_bp', topic: 'Home BP log', field: 'homeBp', keywords: ['home', 'check', 'blood pressure at home', 'monitor', 'log', 'cuff', 'readings', 'average'], response: "My home blood pressure readings are stable and well controlled. They average about 127/75 mmHg (ranging from 122–132 SBP / 72–78 DBP)." },
-    { id: 'ct_und', topic: 'Endorses strategy', field: 'understanding', keywords: ['understand', 'makes sense', 'protein', 'kidney', 'why', 'evidence', 'working'],
-      response: "Now that I see the protein dropping from 520 to 290, it makes sense. The data convinced me — I'm committed to staying on it." },
+    { id: 'ct_und', topic: 'Endorses strategy', field: 'understanding', keywords: ['understand', 'makes sense', 'protein', 'kidney', 'why', 'evidence', 'working', 'forever', 'continue', 'stop'],
+      response: "Now that I see the protein dropping from 520 to 290 and potassium staying safe, it makes sense. The data convinced me — I'm committed to staying on it. Seeing everything improve did make me wonder if I'll need all these pills forever, but I understand the lifelong protective benefits." },
     { id: 'ct_bar', topic: 'Barriers', field: 'barriers', keywords: ['cost', 'afford', 'pill', 'burden', 'barrier', 'monitor', 'hard'],
       response: "The cost ended up being manageable, and the monitoring isn't a burden now that I understand its purpose." },
+    { id: 'w2-david-thu_diet', topic: 'Dietary habits', field: 'exercise', keywords: ['diet', 'food', 'eating', 'carb', 'sodium', 'salt', 'diabetic diet'],
+      response: "I've been trying to watch my carbohydrate intake and limit added sodium, though keeping up with a strict diabetic diet is still an ongoing effort." },
   ],
   ASSESSMENT_CARDS: [
     { id: 'ct_a', title: 'Consolidation & monitoring', icon: 'FlaskConical', color: 'dc2626', questions: [
@@ -1104,7 +1122,7 @@ const davidThu = makeCase({
   ],
   PLAN_SECTIONS: [
     { id: 'ct_p', title: 'Plan', options: [
-      { key: 'ct_o1', label: 'Continue finerenone + SGLT2i + ACEi + statin + metformin', correct: true },
+      { key: 'ct_o1', label: 'Continue finerenone + SGLT2i + ACEi + statin + metformin (with renal monitoring / dose adjustment)', correct: true },
       { key: 'ct_o2', label: 'Continue scheduled potassium, eGFR, UACR, and lipid monitoring', correct: true },
       { key: 'ct_o3', label: 'De-escalate cardiorenal therapy now that albuminuria improved', correct: false },
       { key: 'ct_o4', label: 'Reinforce adherence and long-term self-management', correct: true },
