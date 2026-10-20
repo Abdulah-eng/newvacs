@@ -3494,7 +3494,7 @@
       "id": "4H.1",
       "description": "Follow up in 3 months",
       "points": 0.6,
-      "fullCredit": "States 3-month follow-up",
+      "fullCredit": "States ~1-month (4-week) follow-up, 3-month follow-up, or 4-week interim check with 3-month lab review",
       "halfCredit": "States follow-up, no timing",
       "zeroCredit": "Omits"
     },
@@ -3510,7 +3510,7 @@
       "id": "4H.3",
       "description": "Repeat A1C before next visit",
       "points": 0.4,
-      "fullCredit": "States A1C before visit",
+      "fullCredit": "States A1C before next visit or in ~3 months",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -3526,7 +3526,7 @@
       "id": "4H.5",
       "description": "Repeat lipid panel before next visit",
       "points": 0.4,
-      "fullCredit": "States lipid panel before visit",
+      "fullCredit": "States lipid panel before next visit or in 4–12 weeks",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -4438,33 +4438,33 @@
     },
     {
       "id": "2B.4",
-      "description": "Sodium (138 mEq/L)",
+      "description": "Sodium (139 mEq/L)",
       "points": 0.4,
-      "fullCredit": "States 138 mEq/L",
+      "fullCredit": "States 139 mEq/L (or 138)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.5",
-      "description": "Potassium (4.4 mEq/L)",
+      "description": "Potassium (4.3 mEq/L)",
       "points": 0.6,
-      "fullCredit": "States 4.4 mEq/L",
+      "fullCredit": "States 4.3 mEq/L (or 4.4)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.6",
-      "description": "Serum creatinine (0.95 mg/dL)",
+      "description": "Serum creatinine (0.90 mg/dL)",
       "points": 0.7,
-      "fullCredit": "States 0.95 mg/dL",
+      "fullCredit": "States 0.90 mg/dL (or 0.9 / 0.95)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.7",
-      "description": "eGFR (74 mL/min/1.73m2)",
+      "description": "eGFR (82 mL/min/1.73m2)",
       "points": 0.8,
-      "fullCredit": "States 74 mL/min/1.73m2",
+      "fullCredit": "States 82 mL/min/1.73m2 (or 74)",
       "halfCredit": "eGFR stated, value imprecise",
       "zeroCredit": "Omits"
     },
@@ -4478,9 +4478,9 @@
     },
     {
       "id": "2B.9",
-      "description": "Total cholesterol (170 mg/dL)",
+      "description": "Total cholesterol (158 mg/dL)",
       "points": 0.5,
-      "fullCredit": "States 170 mg/dL",
+      "fullCredit": "States 158 mg/dL (or 170)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -4494,17 +4494,17 @@
     },
     {
       "id": "2B.11",
-      "description": "HDL-C (45 mg/dL)",
+      "description": "HDL-C (48 mg/dL)",
       "points": 0.5,
-      "fullCredit": "States 45 mg/dL",
+      "fullCredit": "States 48 mg/dL (or 45)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.12",
-      "description": "Triglycerides (180 mg/dL)",
+      "description": "Triglycerides (160 mg/dL)",
       "points": 0.6,
-      "fullCredit": "States 180 mg/dL",
+      "fullCredit": "States 160 mg/dL (or 180)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -5800,9 +5800,9 @@
     },
     {
       "id": "1C.13",
-      "description": "Family history, father: stroke at age 71",
+      "description": "Family history, father: stroke at age 68-71",
       "points": 0.6,
-      "fullCredit": "States father stroke at 71",
+      "fullCredit": "States father stroke at 68 or 71",
       "halfCredit": "States father stroke, no age",
       "zeroCredit": "Omits"
     },
@@ -6096,9 +6096,9 @@
     },
     {
       "id": "1E.24",
-      "description": "Tdap last documented 12 years ago",
+      "description": "Tdap last documented >10 years ago (or 12 years ago)",
       "points": 0.4,
-      "fullCredit": "States Tdap 12 years ago",
+      "fullCredit": "States Tdap >10 years ago (or 12 years ago) / overdue",
       "halfCredit": "States Tdap, no interval",
       "zeroCredit": "Omits"
     },
@@ -6392,9 +6392,9 @@
     },
     {
       "id": "2C.2",
-      "description": "UACR low/normal and improving (&lt;30 mg/g)",
+      "description": "UACR low/normal, stable, or improving (<30 mg/g)",
       "points": 0.5,
-      "fullCredit": "States UACR low/improving",
+      "fullCredit": "States UACR low/normal, stable, or improving (<30 mg/g)",
       "halfCredit": "States value, no interpretation",
       "zeroCredit": "Omits"
     },
@@ -7658,9 +7658,9 @@
     },
     {
       "id": "1C.13",
-      "description": "Family history, father: stroke at age 71",
+      "description": "Family history, father: stroke at age 68-71",
       "points": 0.6,
-      "fullCredit": "States father stroke at 71",
+      "fullCredit": "States father stroke at 68 or 71",
       "halfCredit": "States father stroke, no age",
       "zeroCredit": "Omits"
     },
@@ -9340,9 +9340,9 @@
     },
     {
       "id": "1B.7",
-      "description": "Estimates missing medications ~once every 1-2 weeks",
+      "description": "Estimates missing medications ~once every 1-2 weeks or excellent adherence",
       "points": 0.4,
-      "fullCredit": "States ~1 every 1-2 weeks",
+      "fullCredit": "States no missed doses / excellent adherence in past 2 weeks (or ~1 every 1-2 weeks)",
       "halfCredit": "States rarely misses, no detail",
       "zeroCredit": "Omits"
     },
@@ -9372,9 +9372,9 @@
     },
     {
       "id": "1B.11",
-      "description": "Reported fasting glucose range (140-160 mg/dL)",
+      "description": "Reported fasting glucose range (140-160 mg/dL or relies on clinic labs)",
       "points": 0.5,
-      "fullCredit": "States 140-160 mg/dL",
+      "fullCredit": "States no home glucose meter / relies on clinic labs (or 140-160 mg/dL)",
       "halfCredit": "Range stated, imprecise",
       "zeroCredit": "Omits"
     },
@@ -9412,9 +9412,9 @@
     },
     {
       "id": "1B.16",
-      "description": "Beginning walking program (~3 days/week, 15-20 min/session)",
+      "description": "Beginning walking program (~3-4 days/week, 15-30 min/session)",
       "points": 0.3,
-      "fullCredit": "States ~3 days/week, 15-20 min",
+      "fullCredit": "States walking 3-4 days/week, 15-30 min (or 20-30 min ~4 days/wk)",
       "halfCredit": "States more active, no detail",
       "zeroCredit": "Omits"
     },
@@ -9516,9 +9516,9 @@
     },
     {
       "id": "1C.13",
-      "description": "Family history, father: stroke at age 71",
+      "description": "Family history, father: stroke at age 68-71",
       "points": 0.6,
-      "fullCredit": "States father stroke at 71",
+      "fullCredit": "States father stroke at 68 or 71",
       "halfCredit": "States father stroke, no age",
       "zeroCredit": "Omits"
     },
@@ -9604,9 +9604,9 @@
     },
     {
       "id": "1D.8",
-      "description": "Physical activity (walking 3 days/week, 15-20 min)",
+      "description": "Physical activity (walking 3-4 days/week, 15-30 min)",
       "points": 0.5,
-      "fullCredit": "States 3 days/week, 15-20 min",
+      "fullCredit": "States walking 3-4 days/week, 15-30 min (or 20-30 min ~4 days/wk)",
       "halfCredit": "States active, no detail",
       "zeroCredit": "Omits"
     },
@@ -9988,9 +9988,9 @@
     },
     {
       "id": "2B.4",
-      "description": "Sodium (138 mEq/L)",
+      "description": "Sodium (139 mEq/L)",
       "points": 0.4,
-      "fullCredit": "States 138 mEq/L",
+      "fullCredit": "States 139 mEq/L (or 138)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -10012,17 +10012,17 @@
     },
     {
       "id": "2B.7",
-      "description": "eGFR (83 mL/min/1.73m2)",
+      "description": "eGFR (84 mL/min/1.73m2)",
       "points": 0.8,
-      "fullCredit": "States 83 mL/min/1.73m2",
+      "fullCredit": "States 84 mL/min/1.73m2 (or 83)",
       "halfCredit": "eGFR stated, value imprecise",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.8",
-      "description": "Total cholesterol (178 mg/dL)",
+      "description": "Total cholesterol (172 mg/dL)",
       "points": 0.4,
-      "fullCredit": "States 178 mg/dL",
+      "fullCredit": "States 172 mg/dL (or 178)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -10036,25 +10036,25 @@
     },
     {
       "id": "2B.10",
-      "description": "HDL-C (43 mg/dL)",
+      "description": "HDL-C (46 mg/dL)",
       "points": 0.4,
-      "fullCredit": "States 43 mg/dL",
+      "fullCredit": "States 46 mg/dL (or 43)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.11",
-      "description": "Triglycerides (200 mg/dL)",
+      "description": "Triglycerides (158 mg/dL)",
       "points": 0.6,
-      "fullCredit": "States 200 mg/dL",
+      "fullCredit": "States 158 mg/dL (or 200)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.12",
-      "description": "UACR (20 mg/g)",
+      "description": "UACR (16 mg/g)",
       "points": 0.9,
-      "fullCredit": "States 20 mg/g",
+      "fullCredit": "States 16 mg/g (or 20)",
       "halfCredit": "Notes UACR, no value",
       "zeroCredit": "Omits"
     },
@@ -13192,9 +13192,9 @@
     },
     {
       "id": "1D.6",
-      "description": "Physical activity (occasional walking, no structured program)",
+      "description": "Physical activity (limited regular exercise / no structured routine or occasional walking)",
       "points": 0.4,
-      "fullCredit": "States occasional walking",
+      "fullCredit": "States limited regular exercise / no structured routine (or occasional walking)",
       "halfCredit": "States active, no detail",
       "zeroCredit": "Omits"
     },
@@ -14754,9 +14754,9 @@
     },
     {
       "id": "1B.4",
-      "description": "Denies missed doses aside from 1-2 isolated occurrences",
+      "description": "Medication adherence (no missed doses or 1-2 isolated occurrences)",
       "points": 0.4,
-      "fullCredit": "States ~1-2 isolated misses",
+      "fullCredit": "States no missed doses / excellent adherence (or ~1-2 isolated misses)",
       "halfCredit": "States adherent, no detail",
       "zeroCredit": "Omits"
     },
@@ -14778,33 +14778,33 @@
     },
     {
       "id": "1B.7",
-      "description": "Blood pressure monitoring frequency (several times weekly)",
+      "description": "Blood pressure monitoring frequency (several times weekly / periodic)",
       "points": 0.3,
-      "fullCredit": "States several times weekly",
+      "fullCredit": "States several times weekly (or notes home BP monitoring)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "1B.8",
-      "description": "Reported home blood pressure range (upper 120s/upper 70s)",
+      "description": "Reported home blood pressure range (upper 120s/upper 70s or ~126/78)",
       "points": 0.5,
-      "fullCredit": "States upper 120s/upper 70s",
+      "fullCredit": "States upper 120s/upper 70s, ~126/78, or ~129/78 mmHg",
       "halfCredit": "States controlled, no range",
       "zeroCredit": "Omits"
     },
     {
       "id": "1B.9",
-      "description": "Glucose monitoring frequency (regularly / pretty regularly or several times weekly)",
+      "description": "Glucose monitoring frequency (regularly / periodic or relies on clinic)",
       "points": 0.3,
-      "fullCredit": "States regularly / pretty regularly (or several times weekly)",
+      "fullCredit": "States regularly / pretty regularly (or notes monitoring/relies on clinic)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "1B.10",
-      "description": "Reported fasting glucose range (130-160 mg/dL)",
+      "description": "Reported fasting glucose range (130-160 mg/dL or clinic glycemic values)",
       "points": 0.5,
-      "fullCredit": "States 130-160 mg/dL",
+      "fullCredit": "States 130-160 mg/dL (or notes clinic glycemic values)",
       "halfCredit": "Range stated, imprecise",
       "zeroCredit": "Omits"
     },
@@ -14826,17 +14826,17 @@
     },
     {
       "id": "1B.13",
-      "description": "Reports occasional mild lower extremity swelling after prolonged standing",
+      "description": "Reports lower extremity swelling status (denies current swelling / resolved)",
       "points": 0.4,
-      "fullCredit": "States positional LE swelling",
+      "fullCredit": "States denies current leg swelling / resolved positional LE swelling (or notes historical positional LE swelling)",
       "halfCredit": "States edema, no context",
       "zeroCredit": "Omits"
     },
     {
       "id": "1B.14",
-      "description": "Reports intermittent fatigue",
+      "description": "Reports fatigue status (denies current fatigue / feeling well)",
       "points": 0.2,
-      "fullCredit": "States intermittent fatigue",
+      "fullCredit": "States denies current fatigue / reports feeling well (or notes historical intermittent fatigue)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -15410,9 +15410,9 @@
     },
     {
       "id": "2A.6",
-      "description": "Home blood pressure log average (~129/78 mmHg)",
+      "description": "Home blood pressure log average (~126–129/78 mmHg)",
       "points": 0.7,
-      "fullCredit": "States ~129/78 mmHg",
+      "fullCredit": "States ~126/78 or ~129/78 mmHg",
       "halfCredit": "Notes home log, no average",
       "zeroCredit": "Omits"
     },
@@ -15506,9 +15506,9 @@
     },
     {
       "id": "2B.12",
-      "description": "LDL-C (86 mg/dL)",
+      "description": "LDL-C (76 mg/dL)",
       "points": 0.8,
-      "fullCredit": "States 86 mg/dL",
+      "fullCredit": "States 76 mg/dL (or 86)",
       "halfCredit": "LDL stated, value imprecise",
       "zeroCredit": "Omits"
     },
@@ -15530,9 +15530,9 @@
     },
     {
       "id": "2B.15",
-      "description": "LDL-C improvement noted (92 to 86 mg/dL)",
+      "description": "LDL-C improvement noted (92 to 76 mg/dL)",
       "points": 0.4,
-      "fullCredit": "States improvement with values",
+      "fullCredit": "States improvement with values (92 to 76 or 86)",
       "halfCredit": "States improved, no values",
       "zeroCredit": "Omits"
     },
@@ -15930,9 +15930,9 @@
     },
     {
       "id": "3D.10",
-      "description": "Identifies lipid optimization as the next highest-yield target",
+      "description": "Identifies lipid optimization or finerenone/renoprotection as next target",
       "points": 0.4,
-      "fullCredit": "States this prioritization",
+      "fullCredit": "States this prioritization (lipid optimization or finerenone for persistent albuminuria with K monitoring)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },

@@ -16,6 +16,7 @@ import { W5_CASES, W5_RUBRICS } from './patientsW5.js'
 export const PATIENT_MASTER = {
   name: 'Maria Gonzalez',
   age: 54,
+  dob: '03/12/1972',
   sex: 'Female',
   ethnicity: 'Hispanic / Latina',
   mrn: 'VACS-100482',

@@ -140,7 +140,7 @@ function SimulationShellInner({ caseData, onExit }) {
                 <div className="flex flex-col">
                   <h1 className="font-serif text-[26px] leading-tight font-medium tracking-wide">{P.name}</h1>
                   <p className="text-[13px] text-slate-300 mt-1.5 font-medium">
-                    {P.age} yo {P.sex} · {P.ethnicity} · MRN {P.mrn} · DOB {P.dob || '03/12/1972'}
+                    {P.age} yo {P.sex} · {P.ethnicity} · MRN {P.mrn} · DOB {P.dob || (P.age ? `03/12/${2026 - P.age}` : '03/12/1972')}
                   </p>
                   <p className="text-[13px] text-slate-300 mt-0.5 font-medium">
                     PCP: {P.pcp || 'Dr. Johnson'} · Pharmacy: {P.pharmacy || 'Walgreens'} · Language: {P.language || 'English'} · Allergies: {formattedAllergies}

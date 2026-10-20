@@ -95,16 +95,15 @@ export async function POST(request) {
       return NextResponse.json({ error: 'The AI grader failed to return a valid response (Unexpected end of JSON input). Please submit again.' }, { status: 500 })
     }
 
-    let maxTotal = 0
-    granularRubric.forEach(item => { maxTotal += item.points })
-    let totalScore = maxTotal
-
+    let totalDeductions = 0
     const missedItems = []
     if (result.itemized_deductions && Array.isArray(result.itemized_deductions)) {
       result.itemized_deductions.forEach(deduction => {
-        const lost = deduction.max_points - deduction.awarded_points
+        const maxPts = Number(deduction.max_points) || 0
+        const awardedPts = Number(deduction.awarded_points) || 0
+        const lost = Math.round((maxPts - awardedPts) * 10) / 10
         if (lost > 0) {
-          totalScore -= lost
+          totalDeductions += lost
           // Map to the frontend's expected missed_items format
           missedItems.push({
             item: `[${deduction.id}] -${lost.toFixed(1)} pts`,
@@ -114,7 +113,8 @@ export async function POST(request) {
       })
     }
     
-    totalScore = Math.max(0, totalScore)
+    const roundedDeductions = Math.round(totalDeductions * 10) / 10
+    const totalScore = Math.max(0, Math.min(100, Math.round((100 - roundedDeductions) * 10) / 10))
 
     // Filter out any erroneous unsafe flags regarding safe guideline-concordant losartan titration (Audit V12)
     const sanitizedUnsafeFlags = (result.unsafe_flags || []).filter(flag => {

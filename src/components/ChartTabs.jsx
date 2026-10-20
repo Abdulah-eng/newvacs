@@ -207,6 +207,27 @@ export function SnapshotTab({ c }) {
   )
 }
 
+function getMostellerBsa(v) {
+  if (v.bsa) return v.bsa;
+  if (!v.height || !v.weight) return '2.04 m²';
+  let cm = null;
+  const cmMatch = String(v.height).match(/(\d+(?:\.\d+)?)\s*cm/i);
+  if (cmMatch) {
+    cm = parseFloat(cmMatch[1]);
+  } else {
+    const ftInMatch = String(v.height).match(/(\d+)'\s*(\d+)/);
+    if (ftInMatch) {
+      const inches = parseInt(ftInMatch[1], 10) * 12 + parseInt(ftInMatch[2], 10);
+      cm = inches * 2.54;
+    }
+  }
+  const wtMatch = String(v.weight).match(/(\d+(?:\.\d+)?)/);
+  const kg = wtMatch ? parseFloat(wtMatch[1]) : null;
+  if (!cm || !kg) return '2.04 m²';
+  const bsa = Math.sqrt((cm * kg) / 3600);
+  return `${bsa.toFixed(2)} m²`;
+}
+
 /* ------------------------------------------------------------------ Vitals */
 export function VitalsTab({ c }) {
   const v = c.VITALS
@@ -220,7 +241,7 @@ export function VitalsTab({ c }) {
     { label: 'Weight', time: '06/23/2026 09:14', value: v.weight, ref: '—', trend: 'down' },
     { label: 'Height', time: '06/23/2026 09:14', value: v.height, ref: '—' },
     { label: 'BMI', time: '06/23/2026 09:14', value: v.bmi, flag: v.flags?.bmi, ref: '18.5–24.9 kg/m²', sub: v.flags?.bmi === 'high' ? 'Obesity' : undefined, icon: v.flags?.bmi === 'high' ? 'H' : undefined },
-    { label: 'BSA (Mosteller)', time: '06/23/2026 09:14', value: '2.04 m²', ref: '—' },
+    { label: 'BSA (Mosteller)', time: '06/23/2026 09:14', value: getMostellerBsa(v), ref: '—' },
   ]
   return (
     <div className="space-y-4 pb-8">

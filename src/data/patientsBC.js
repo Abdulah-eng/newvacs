@@ -7,7 +7,7 @@ import { makeCase } from './caseFactory.js'
 
 const jamesTue = makeCase({
   id: 'james-tue',
-  PATIENT: { name: 'James Wilson', age: 62, sex: 'male', ethnicity: 'White', mrn: 'B-204417' },
+  PATIENT: { name: 'James Wilson', age: 62, dob: '03/12/1964', sex: 'male', ethnicity: 'White', mrn: 'B-204417' },
   ENCOUNTER: {
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Core', difficultyTone: 'teal',
     setting: 'Collaborative Practice Ambulatory Care Pharmacy Clinic',
@@ -66,7 +66,7 @@ const jamesTue = makeCase({
     { label: 'Chief Complaint (CC)', value: 'Reports doctor wanted him to check in about his diabetes and blood pressure.' },
     { label: 'PMH', value: 'Type 2 diabetes mellitus (10 years), essential hypertension (12 years), hyperlipidemia (8 years), Class I obesity, gastroesophageal reflux disease (GERD, on omeprazole 20 mg daily).' },
     { label: 'Past Surgical History (PSH)', value: 'Appendectomy (age 19), right knee arthroscopy (age 51).' },
-    { label: 'Family History', value: 'Father: fatal stroke at age 68, type 2 diabetes, hypertension; Mother: hypertension, deceased at age 74.' },
+    { label: 'Family History', value: 'Father: fatal stroke at age 68-71, type 2 diabetes, hypertension; Mother: hypertension, deceased at age 74.' },
     { label: 'Allergies', value: 'No known drug allergies (NKDA).' },
     { label: 'General wellness & affect', value: 'Patient reports feeling generally well overall but acknowledges intermittent daytime fatigue and reports mild increased thirst (polydipsia) over recent weeks. Expresses frustration and concern regarding persistently elevated blood pressure and blood glucose numbers.' },
     { label: 'Medication adherence & access discrepancy', value: 'Initial self-report indicated regular medication use; however, detailed inquiry revealed true adherence is substantially lower due to financial barriers. Patient admits to medication stretching behavior (taking blood pressure and diabetes medications every other day to make them last longer several times a year near refill dates) and delaying pharmacy refills until pension checks arrive. Cost barrier: empagliflozin 10 mg was prescribed 4 months ago but never filled or initiated due to prohibitive cost (>$500/month copay; non-initiation).' },
@@ -289,9 +289,9 @@ const jamesWed = makeCase({
     { label: 'Chief Complaint (CC)', value: 'Reports feeling much better overall, but expresses lingering worry about ongoing medication affordability.' },
     { label: 'PMH', value: 'Type 2 diabetes mellitus (10 years), essential hypertension (12 years), hyperlipidemia (8 years), Class I obesity, and gastroesophageal reflux disease (GERD, on omeprazole 20 mg daily).' },
     { label: 'Past Surgical History (PSH)', value: 'Appendectomy (age 19), right knee arthroscopy (age 51).' },
-    { label: 'Family History', value: 'Father: fatal stroke at age 68, type 2 diabetes, hypertension; Mother: hypertension, deceased at age 74.' },
+    { label: 'Family History', value: 'Father: fatal stroke at age 68-71, type 2 diabetes, hypertension; Mother: hypertension, deceased at age 74.' },
     { label: 'Allergies', value: 'No known drug allergies (NKDA).' },
-    { label: 'General wellness, symptoms & tolerability', value: 'Patient reports overall improvement and feels he is moving in the right direction; energy has improved. Successfully initiated empagliflozin 10 mg daily approximately 3 months ago after prior affordability barriers were resolved through a patient assistance program / manufacturer copay card. Has taken empagliflozin consistently for ~3 months with no missed doses and no refill delays. Explicitly denies hypoglycemia symptoms (no shakiness, sweating, lightheadedness). Explicitly denies dysuria, urinary frequency/urgency, genital itching/yeast infections, dizziness, or volume depletion related to SGLT2 inhibitor therapy.' },
+    { label: 'General wellness, symptoms & tolerability', value: 'Patient reports overall improvement and feels he is moving in the right direction; energy has improved. Successfully initiated empagliflozin 10 mg daily approximately 3 months ago after prior affordability barriers were resolved through a patient assistance program / manufacturer copay card. Has taken empagliflozin consistently for ~3 months with no missed doses and no refill delays. Explicitly denies hypoglycemia symptoms (no shakiness, sweating, lightheadedness). Notes mild expected daytime urination from SGLT2i mechanism, but explicitly denies dysuria, urgency, genital itching/yeast infections, dizziness, or volume depletion related to SGLT2 inhibitor therapy.' },
     { label: 'Medication adherence & access resolution', value: 'Medication adherence has improved substantially from baseline: medication stretching behavior is completely resolved (no longer takes medications every other day) and pharmacy refill delays have ceased. Has not missed any doses in the past 2 weeks.' },
     { label: 'Disease understanding & health literacy', value: 'Reports increased confidence and significantly improved understanding of diabetes and his medications; understands that A1C represents an average blood glucose over the past 2–3 months rather than a single day\'s reading.' },
     { label: 'Social History', value: 'Occupation: Recently retired truck driver on a fixed pension income. Marital/living: Married, lives with wife. Former smoker: Smoked 1 pack/day for 20 years; quit 10 years ago (20 pack-years). Alcohol use: Uses alcohol (1–2 beers on weekends). Recreational drug use: Explicitly denies recreational or illicit drug use.' },
@@ -324,6 +324,10 @@ const jamesWed = makeCase({
       response: "The copay card helps for now, but I worry about what happens next year or when I transition to Medicare. Money is tight on my pension." },
     { id: 'jw_lifestyle', topic: 'Lifestyle progress', keywords: ['diet', 'walk', 'exercise', 'drink', 'sweet tea'],
       response: "I cut out the sweet tea and sodas, drink mostly water now, and walk 20 to 30 minutes 4 days a week with my wife." },
+    { id: 'jw_homebg', topic: 'Home glucose monitoring', keywords: ['blood sugar', 'glucose', 'fasting', 'meter', 'finger stick'],
+      response: "I check my blood sugar a few times a week with my home meter. My fasting readings have come down to around 140 to 160 now." },
+    { id: 'jw_homebp', topic: 'Home blood pressure monitoring', keywords: ['blood pressure', 'home bp', 'cuff', 'readings', 'log'],
+      response: "I check my blood pressure at home with my cuff. My readings have been averaging around 136 over 84, which matches what you're seeing today." },
   ],
   ASSESSMENT_CARDS: [
     {
@@ -865,7 +869,7 @@ const jamesThu = makeCase({
 
 const lindaTue = makeCase({
   id: 'linda-tue',
-  PATIENT: { name: 'Linda Martinez', age: 68, sex: 'female', ethnicity: 'Hispanic / Latina', mrn: 'C-892110', allergiesSummary: 'Penicillin (Rash and hives)' },
+  PATIENT: { name: 'Linda Martinez', age: 68, dob: '03/12/1958', sex: 'female', ethnicity: 'Hispanic / Latina', mrn: 'C-892110', allergiesSummary: 'Penicillin (Rash and hives)' },
   ENCOUNTER: {
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Advanced', difficultyTone: 'amber',
     setting: 'Collaborative Practice Ambulatory Care Pharmacy Clinic',
@@ -1192,6 +1196,12 @@ const lindaWed = makeCase({
       response: "I've been walking 4 days a week for 20 to 30 minutes, watching my portion sizes, and cutting way back on salt." },
     { id: 'lw_concerns', topic: 'Concerns and fears', keywords: ['dialysis', 'heart attack', 'worry', 'scared', 'afraid'],
       response: "I just don't ever want to go on dialysis. And I never want to experience another heart attack like I did 3 years ago." },
+    { id: 'lw_homebp', topic: 'Home blood pressure monitoring', keywords: ['blood pressure', 'home bp', 'cuff', 'readings', 'log'],
+      response: "I've been checking my blood pressure at home with my cuff. My log has been averaging around 126 over 78, so it's been staying well under 130." },
+    { id: 'lw_homebg', topic: 'Home glucose monitoring', keywords: ['blood sugar', 'glucose', 'fasting', 'meter', 'finger stick'],
+      response: "I check my blood sugar at home periodically with my meter, and my fasting numbers are usually between 130 and 160." },
+    { id: 'lw_symptoms', topic: 'Symptoms and leg swelling', keywords: ['swelling', 'edema', 'legs', 'feet', 'tired', 'fatigue', 'feel'],
+      response: "I'm feeling much better overall. My energy is good, and the swelling in my legs that I used to get after standing has gone away." },
   ],
   ASSESSMENT_CARDS: [
     {
@@ -1799,7 +1809,7 @@ export const BC_RUBRICS = {
     objective: [
       { id: 'cw_o_uacr', label: 'UACR 330 (improved from 452 but still A3)', keywords: ['330', 'uacr', 'still a3', 'improv'], tip: 'UACR improved to 330 but remains in the severely increased (A3) category.' },
       { id: 'cw_o_bp', label: 'BP 128/78 (at goal)', keywords: ['128', '126', 'blood pressure', 'goal'], tip: 'BP now at goal.' },
-      { id: 'cw_o_ldl', label: 'LDL 86 (above secondary prevention target)', keywords: ['86', 'ldl', 'above', 'secondary', 'target'], tip: 'LDL 86 is above the typical secondary prevention target of <70 mg/dL.' },
+      { id: 'cw_o_ldl', label: 'LDL 76 (above secondary prevention target)', keywords: ['76', '86', 'ldl', 'above', 'secondary', 'target'], tip: 'LDL 76 is above the typical secondary prevention target of <70 mg/dL.' },
     ],
     assessment: [
       { id: 'cw_a_residual', label: 'Residual risk remains despite BP improvement', keywords: ['residual', 'risk', 'remain', 'still', 'not resolved'], tip: 'Improvement in one metric does not eliminate overall residual risk.' },
