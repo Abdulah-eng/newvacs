@@ -547,6 +547,7 @@ const caseWed = {
     { label: 'Social History', value: 'Occupation: Elementary school administrative assistant. Marital/living status: Married, lives with husband. Tobacco status: Never smoker (denies any history of tobacco use). Alcohol use status: Uses alcohol (1–2 glasses of wine on weekends). Recreational drug use: Explicitly denies recreational or illicit drug use.' },
     { label: 'Diet, lifestyle & home monitoring', value: 'Walking program increased to 4 days per week for 20 minutes each (~80 minutes/week toward >=150 min/week target). Significantly reduced sugar-sweetened beverages (sweet tea down to ~once weekly). Cooking at home regularly instead of dining out. Intermittent home blood pressure monitoring (3–4 days/week) shows readings running in the 130s/80s (average ~134/82 mmHg) with appropriate measurement technique (resting first, feet flat, uncrossed legs). Home fasting blood glucose monitoring averages 130–150 mg/dL in the mornings.' },
     { label: 'Review of Systems (ROS)', value: 'Cardiovascular/Pulmonary/Neurologic: Explicitly denies chest pain, shortness of breath, palpitations, dizziness, syncope, lower extremity edema, severe headaches, and acute vision changes.' },
+    { label: 'Pain & Over-the-counter medications', value: 'Bilateral knee osteoarthritis managed with acetaminophen 500 mg PO PRN knee pain; confirms ibuprofen was completely discontinued and avoided as instructed to protect kidney function and blood pressure.' },
     { label: 'Patient Goals & Motivators', value: 'Patient acknowledges progress and expresses satisfaction that numbers are improving, but expresses disappointment at not having lost more weight (~5 lbs / 2.5 kg lost); highly motivated for further weight loss. Remains deeply concerned about protecting kidney function linked to mother\'s history of diabetic kidney disease, though acknowledges limited understanding of urine protein / albuminuria. Open to once-weekly injectable therapy (GLP-1 receptor agonist) if beneficial for weight and glycemic control, and open to kidney-protective medications (SGLT2 inhibitor).' },
   ],
 
@@ -625,6 +626,9 @@ const caseWed = {
     { id: 'exercise', topic: 'Physical activity', field: 'exercise',
       keywords: ['exercise', 'activity', 'walk', 'active', 'move', 'workout'],
       response: "I'm walking about four days a week now, around 20 minutes each time." },
+    { id: 'otc_pain', topic: 'Pain / OTC medications', field: 'otc',
+      keywords: ['ibuprofen', 'motrin', 'advil', 'tylenol', 'acetaminophen', 'pain', 'knee', 'nsaid', 'otc', 'arthritis'],
+      response: "I stopped taking the ibuprofen after you told me it could hurt my kidneys and blood pressure. I take acetaminophen 500 mg occasionally as needed now when my knees ache." },
     { id: 'weightGoals', topic: 'Weight goals', field: 'weightGoals',
       keywords: ['weight', 'lose weight', 'losing weight', 'goal'],
       response: "I lost a little — about 5 pounds — but honestly I'm disappointed it's not more. Losing weight is really important to me." },
@@ -674,7 +678,7 @@ const caseWed = {
         {
           key: 'dm_eval',
           q: 'Glycemic status, goal, and contributing factors:',
-          defaultAnswer: 'Status: Improved but above goal (A1C decreased from 8.2% to 7.5%, a 0.7% absolute reduction; home fasting blood glucose improved from 160–180 mg/dL to 130–150 mg/dL). Goal: <7.0% per ADA 2026 Standards of Care. Improvement is directly attributed to metformin XR dose optimization to 2000 mg daily, improved medication adherence, substantial reduction in sugar-sweetened beverages (sweet tea), increased walking, and modest weight loss (2.5 kg). Metformin XR 2000 mg daily is well tolerated with no GI side effects, and renal function is entirely adequate (eGFR 82 mL/min/1.73m²).'
+          defaultAnswer: 'Status: Improved but above goal (A1C decreased from 8.2% to 7.5%, a 0.7% absolute reduction; home fasting blood glucose improved from 160–180 mg/dL to 130–150 mg/dL). Goal: <7.0% per ADA 2026 Standards of Care. Improvement is directly attributed to metformin XR dose optimization to 2000 mg daily, improved medication adherence, substantial reduction in sugar-sweetened beverages (sweet tea), increased walking, and modest weight loss (2.5 kg). Metformin XR 2000 mg daily is well tolerated with no GI side effects, and renal function is entirely adequate (eGFR 82 mL/min/1.73m²). Multiple factors support consideration of future therapy intensification (GLP-1 receptor agonist or SGLT2 inhibitor) if goals remain unmet at next visit: persistent glycemic elevation above target (A1C 7.5% vs <7.0%), Class I obesity (BMI 33.8 kg/m²), newly recognized albuminuria (UACR 45 mg/g), and elevated lifetime cardiovascular risk. Clinician rationale explicitly links GLP-1 RA and SGLT2i to dual cardiorenal and metabolic benefit domains: glycemic reduction, sustainable weight loss, and proven renal and cardiovascular protection.'
         }
       ]
     },
@@ -687,7 +691,7 @@ const caseWed = {
         {
           key: 'kid_eval',
           q: 'UACR interpretation, cardiorenal implications, and therapeutic strategy:',
-          defaultAnswer: 'Status: UACR now resulted and available at 45 mg/g (previously unobtained at intake visit), confirming Category A2 (moderately increased albuminuria, 30–299 mg/g). This finding demonstrates early diabetic kidney involvement despite preserved eGFR (82 mL/min/1.73m²) and normal serum creatinine (0.9 mg/dL). Persistent albuminuria carries substantial long-term risks of chronic kidney disease progression to kidney failure as well as significantly increased cardiovascular event risk. Confirms the essential indication for continuing ACE inhibitor therapy (lisinopril 20 mg daily) for renal and cardiorenal protection. Highlights the increasing importance of strict blood pressure control (<130/80 mmHg) and identifies a clear need for patient education regarding albuminuria, kidney preservation, and avoiding OTC NSAIDs.'
+          defaultAnswer: 'Status: UACR now resulted and available at 45 mg/g (previously unobtained at intake visit), confirming Category A2 (moderately increased albuminuria, 30–299 mg/g). This finding demonstrates early diabetic kidney involvement despite preserved eGFR (82 mL/min/1.73m²) and normal serum creatinine (0.9 mg/dL). Persistent albuminuria carries substantial long-term risks of chronic kidney disease progression to kidney failure as well as significantly increased cardiovascular event risk. Confirms the essential indication for continuing ACE inhibitor therapy (lisinopril 20 mg daily) for renal and cardiorenal protection. Explicitly links the elevated UACR finding to future SGLT2 inhibitor consideration, which provides proven nephroprotective and cardiorenal benefit independent of glycemic control per ADA and KDIGO guidelines. Highlights the increasing importance of strict blood pressure control (<130/80 mmHg) and identifies a clear need for patient education regarding albuminuria, kidney preservation, and avoiding OTC NSAIDs.'
         }
       ]
     },
@@ -766,7 +770,7 @@ const caseWed = {
         { key: 'd1', label: 'Continue metformin XR 2000 mg PO daily with dinner', correct: true },
         { key: 'd2', label: 'Continue self-monitoring of blood glucose (SMBG) 3–4 times weekly fasting', correct: true },
         { key: 'd3', label: 'Repeat A1C in ~3 months to assess trajectory toward <7.0% goal', correct: true },
-        { key: 'd4', label: 'Condition future add-on therapy (GLP-1 RA or SGLT2 inhibitor) on unmet glycemic goals (A1C >7.0% at next visit)', correct: true },
+        { key: 'd4', label: 'Condition future add-on therapy (GLP-1 RA or SGLT2 inhibitor) on unmet glycemic goals (A1C >7.0% at next visit), ongoing Class I obesity (BMI 33.8), and persistent cardiorenal risk', correct: true },
       ]
     },
     {
@@ -776,6 +780,7 @@ const caseWed = {
         { key: 'k1', label: 'Continue lisinopril 20 mg PO daily for renal and cardiorenal protection', correct: true },
         { key: 'k2', label: 'Educate patient regarding albuminuria, early kidney involvement, and the protective role of ACE inhibitors and BP control', correct: true },
         { key: 'k3', label: 'Repeat UACR annually or sooner (in 6–12 months) to confirm and track albuminuria trajectory', correct: true },
+        { key: 'k4', label: 'Consider future initiation of an SGLT2 inhibitor (empagliflozin or dapagliflozin) for kidney and cardiovascular protection if albuminuria persists (UACR >=30 mg/g)', correct: true },
       ]
     },
     {
@@ -1022,10 +1027,11 @@ const caseThu = {
     { label: 'Past Medical History (PMH)', value: 'Hypertension (diagnosed 8 years ago), Type 2 diabetes mellitus (diagnosed 6 years ago), Hyperlipidemia (diagnosed 5 years ago), Class I Obesity (BMI 32.7 kg/m²), Moderately increased albuminuria (Category A2, persistent on UACR), and Bilateral knee osteoarthritis.' },
     { label: 'Social History', value: 'Occupation: Elementary school administrative assistant. Marital/living status: Married, lives with husband. Tobacco status: Never smoker (states never smoked in her life). Alcohol use: 1 to 2 glasses of wine on weekends. Recreational drug use: Explicitly denies recreational or illicit drug use.' },
     { label: 'Review of Systems (ROS)', value: 'Cardiovascular/Pulmonary/Neurologic/GI: Explicitly denies syncope, chest pain, shortness of breath, palpitations, dizziness, severe headaches, visual changes, and lower extremity edema. Explicitly denies gastrointestinal intolerance (no nausea, vomiting, diarrhea, constipation, or abdominal pain). Denies hypoglycemia symptoms. Denies myalgias or muscle weakness on statin therapy.' },
-    { label: 'Patient Sentiment & Misconception', value: 'Patient is pleased with improved numbers but senses she may be "done" or cured; mistakenly believes that her normal kidney blood test (eGFR 76, SCr 0.92) means her kidneys are completely healthy; frightened about kidney disease due to her mother suffering from diabetic kidney disease.' },
+    { label: 'Patient Sentiment & Misconception', value: 'Patient is pleased with improved numbers but senses she may be "done" or cured; mistakenly believes that her normal kidney blood test results mean her kidneys are completely healthy; frightened about kidney disease due to her mother suffering from diabetic kidney disease.' },
     { label: 'Patient Goals & Motivations', value: 'Motivated for further weight loss and explicitly open to once-weekly injection therapy (GLP-1 RA); primary motivation is long-term kidney protection and avoiding dialysis.' },
     { label: 'Lifestyle improvements', value: 'Walking 30 minutes 5 days per week (durable routine); eliminated sweet tea completely; cooking most meals at home with portion control.' },
-    { label: 'Medication Adherence', value: 'Reports excellent adherence with zero missed doses in the past month using her established morning coffee maker placement and evening reminder routine.' },
+    { label: 'Medication Adherence', value: 'Reports excellent adherence with zero missed doses in the past month using her established morning coffee maker placement and evening reminder routine, noting the routine has become much easier to maintain.' },
+    { label: 'Home Blood Glucose Monitoring', value: 'Self-monitored fasting blood glucose readings run between 115 and 135 mg/dL.' },
   ],
 
   OBJECTIVE_EXTRA: [
@@ -1057,7 +1063,10 @@ const caseThu = {
       response: "My numbers are getting better, and I'm really happy about that. I want to know what else I can do to stay healthy for the long run." },
     { id: 'adherence', topic: 'Medication adherence', field: 'adherence',
       keywords: ['miss', 'forget', 'adheren', 'skip', 'take them every', 'remember', 'consistent'],
-      response: "I almost never miss anymore — I've got a really good routine now with zero missed doses in the past month." },
+      response: "I almost never miss anymore — the routine with my coffee maker and evening reminders has become so much easier to maintain, with zero missed doses in the past month." },
+    { id: 'homebg', topic: 'Home glucose monitoring', field: 'glucoseMonitoring',
+      keywords: ['blood sugar', 'glucose', 'check your sugar', 'fasting', 'meter', 'finger stick', 'readings', 'numbers', 'home readings', 'range'],
+      response: "I check my blood sugar a few times a week with my meter. My morning fasting readings have been running between 115 and 135 mg/dL." },
     { id: 'weightGoals', topic: 'Weight goals', field: 'weightGoals',
       keywords: ['weight', 'lose weight', 'losing weight', 'goal'],
       response: "I'm happy with losing 5.5 kg so far, but I'd still like to lose more. I'd really consider a medicine that helps with weight loss." },
@@ -1244,7 +1253,8 @@ const caseThu = {
       options: [
         { key: 'lp1', label: 'Continue current exercise program: walking 30 minutes 5 days/week progressing toward >=150 minutes/week moderate-intensity physical activity', correct: true },
         { key: 'lp2', label: 'Continue dietary improvements: cooking at home, avoiding sweet tea, portion control, and sodium restriction (<2,000 mg/day)', correct: true },
-        { key: 'lp3', label: 'Link sustained weight loss (~5.5 kg to date) directly to cardiometabolic, blood pressure, and renal risk reduction', correct: true },
+        { key: 'lp3', label: 'Encourage progression toward further sustainable weight-loss goals (additional 5–10% weight loss) supported by exercise progression, dietary maintenance, and weight-beneficial pharmacotherapy (GLP-1 RA)', correct: true },
+        { key: 'lp4', label: 'Link sustained weight loss (~5.5 kg to date) directly to cardiometabolic, blood pressure, and renal risk reduction', correct: true },
       ]
     },
     {

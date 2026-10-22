@@ -16,7 +16,7 @@ const subjectiveTab = fs.readFileSync(path.join(__dirname, '../src/components/Su
 const gradeSoapRoute = fs.readFileSync(path.join(__dirname, '../src/app/api/ai/grade-soap/route.js'), 'utf8');
 
 let passed = 0;
-let total = 28;
+let total = 32;
 
 // MG-TUE-01: Follow-up timetable conflicts with grader
 try {
@@ -354,6 +354,69 @@ try {
   console.log('✅ JW-WED-3A2: 3A.2 credits "improving" alongside A1C 7.9% & goal <7.0% without verbatim penalty');
   passed++;
 } catch (e) { console.error('❌ JW-WED-3A2 failed:', e.message); }
+
+// MG-THU-01: Adherence routine easier to maintain (1B.3) and fasting glucose 115-135 mg/dL (1B.6)
+try {
+  const rub = rubrics['Week1_Patient_A_Thursday'];
+  const item1B3 = rub.find(x => x.id === '1B.3');
+  const item1B6 = rub.find(x => x.id === '1B.6');
+  const cThu = cases.CASE_BY_ID['maria-thu'];
+  assert(item1B3.fullCredit.includes('routine easier') || item1B3.fullCredit.includes('coffee maker'));
+  assert(item1B6.fullCredit.includes('115-135 mg/dL'));
+  assert(cThu.INTERVIEW_KNOWLEDGE.some(x => x.id === 'homebg' && x.response.includes('115 and 135')));
+  assert(cThu.INTERVIEW_KNOWLEDGE.find(x => x.id === 'adherence').response.includes('easier to maintain'));
+  assert(prompts.includes('For Maria Gonzalez Thursday:'));
+  console.log('✅ MG-THU-01: 1B.3 (routine easier) and 1B.6 (fasting glucose 115-135 mg/dL) verified in rubrics, interview, & prompts');
+  passed++;
+} catch (e) { console.error('❌ MG-THU-01 failed:', e.message); }
+
+// MG-THU-02: Obesity sustainable goals / pharmacotherapy (4E.2) & Subjective lab partitioning (5A.2)
+try {
+  const rub = rubrics['Week1_Patient_A_Thursday'];
+  const item4E2 = rub.find(x => x.id === '4E.2');
+  const item5A2 = rub.find(x => x.id === '5A.2');
+  const cThu = cases.CASE_BY_ID['maria-thu'];
+  assert(item4E2.fullCredit.includes('sustainable weight-loss goals') || item4E2.fullCredit.includes('pharmacotherapy'));
+  assert(item5A2.fullCredit.includes('contextualize patient perspective') || item5A2.fullCredit.includes('Correctly partitioned'));
+  const lifePlan = cThu.PLAN_SECTIONS.find(x => x.id === 'life_plan');
+  assert(lifePlan.options.some(x => x.label.includes('sustainable weight-loss goals')));
+  assert(!cThu.SUBJECTIVE_DOCUMENTED.find(x => x.label.includes('Misconception')).value.includes('(eGFR 76, SCr 0.92)'));
+  console.log('✅ MG-THU-02: 4E.2 (sustainable weight goals in life plan) & 5A.2 (clean subjective data partitioning) verified');
+  passed++;
+} catch (e) { console.error('❌ MG-THU-02 failed:', e.message); }
+
+// MG-WED-02: Acetaminophen PRN / Ibuprofen discontinued (1E.16, 1E.17)
+try {
+  const rub = rubrics['Week1_Patient_A_Wednesday'];
+  const item1E16 = rub.find(x => x.id === '1E.16');
+  const item1E17 = rub.find(x => x.id === '1E.17');
+  const cWed = cases.CASE_BY_ID['maria-wed'];
+  assert(item1E16.fullCredit.includes('acetaminophen') || item1E16.fullCredit.includes('ibuprofen discontinued'));
+  assert(item1E17.fullCredit.includes('PRN') || item1E17.fullCredit.includes('ibuprofen discontinued'));
+  assert(cWed.INTERVIEW_KNOWLEDGE.some(x => x.id === 'otc_pain'));
+  assert(prompts.includes('Ibuprofen was discontinued at the prior visit'));
+  console.log('✅ MG-WED-02: 1E.16 & 1E.17 credit active Acetaminophen PRN and ibuprofen discontinuation');
+  passed++;
+} catch (e) { console.error('❌ MG-WED-02 failed:', e.message); }
+
+// MG-WED-03: Intensification factors (3B.12), dual benefit domains (3B.14), and UACR-SGLT2 link (3C.8)
+try {
+  const rub = rubrics['Week1_Patient_A_Wednesday'];
+  const item3B12 = rub.find(x => x.id === '3B.12');
+  const item3B14 = rub.find(x => x.id === '3B.14');
+  const item3C8 = rub.find(x => x.id === '3C.8');
+  const cWed = cases.CASE_BY_ID['maria-wed'];
+  assert(item3B12.fullCredit.includes('>=2 factors') || item3B12.fullCredit.includes('&gt;=2 factors'));
+  assert(item3B14.fullCredit.includes('>=2 benefit domains') || item3B14.fullCredit.includes('&gt;=2 benefit domains'));
+  assert(item3C8.fullCredit.includes('SGLT2'));
+  const dmEval = cWed.ASSESSMENT_CARDS.find(x => x.id === 't2dm').questions[0].defaultAnswer;
+  const kidEval = cWed.ASSESSMENT_CARDS.find(x => x.id === 'kidney').questions[0].defaultAnswer;
+  assert(dmEval.includes('Multiple factors support consideration of future therapy intensification') && dmEval.includes('dual cardiorenal'));
+  assert(kidEval.includes('SGLT2 inhibitor consideration'));
+  assert(prompts.includes('For Maria Gonzalez Wednesday:'));
+  console.log('✅ MG-WED-03: 3B.12 (intensification factors), 3B.14 (benefit domains), & 3C.8 (UACR-SGLT2 link) verified');
+  passed++;
+} catch (e) { console.error('❌ MG-WED-03 failed:', e.message); }
 
 console.log('\n================================================================');
 console.log(`  Summary: ${passed} / ${total} tests passed!`);

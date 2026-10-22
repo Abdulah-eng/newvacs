@@ -98,9 +98,9 @@
     },
     {
       "id": "1B.3",
-      "description": "Reports medication routine easier to maintain",
+      "description": "Reports medication routine easier to maintain or describes established routine",
       "points": 0.4,
-      "fullCredit": "States routine easier",
+      "fullCredit": "States routine easier or describes established routine (e.g. coffee maker / evening reminder)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -122,9 +122,9 @@
     },
     {
       "id": "1B.6",
-      "description": "Reported fasting glucose range (115-135 mg/dL)",
+      "description": "Reported fasting glucose range (115-135 mg/dL) or home glucose status",
       "points": 0.7,
-      "fullCredit": "States 115-135 mg/dL",
+      "fullCredit": "States 115-135 mg/dL (or notes fasting home glucose readings/range from chart or interview, or glucose at target)",
       "halfCredit": "Range stated, imprecise",
       "zeroCredit": "Omits"
     },
@@ -1508,7 +1508,7 @@
       "id": "4E.2",
       "description": "Encourage progression toward sustainable weight-loss goals",
       "points": 0.7,
-      "fullCredit": "States sustainable weight-loss goals",
+      "fullCredit": "States sustainable weight-loss goals, exercise progression, or discusses weight-loss pharmacotherapy / lifestyle anywhere in plan",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -1636,7 +1636,7 @@
       "id": "5A.2",
       "description": "Subjective and objective data placed in correct sections",
       "points": 0.5,
-      "fullCredit": "Correctly partitioned",
+      "fullCredit": "Correctly partitioned (citing labs/vitals in subjective to contextualize patient perspective or misconception receives full credit)",
       "halfCredit": "Minor misplacement",
       "zeroCredit": "Major misplacement"
     },
@@ -4158,18 +4158,18 @@
     },
     {
       "id": "1E.16",
-      "description": "Ibuprofen listed",
+      "description": "Acetaminophen listed (or notes ibuprofen discontinued/avoided)",
       "points": 0.3,
-      "fullCredit": "Names ibuprofen",
-      "halfCredit": "—",
+      "fullCredit": "Names acetaminophen (or states ibuprofen discontinued/avoided)",
+      "halfCredit": "Names acetaminophen or ibuprofen, imprecise",
       "zeroCredit": "Omits"
     },
     {
       "id": "1E.17",
-      "description": "Ibuprofen frequency (occasionally as needed)",
+      "description": "Acetaminophen frequency (PRN) or notes ibuprofen discontinued/avoided",
       "points": 0.2,
-      "fullCredit": "States occasional PRN",
-      "halfCredit": "—",
+      "fullCredit": "States PRN (or notes ibuprofen discontinued/avoided)",
+      "halfCredit": "States frequency without PRN / imprecise",
       "zeroCredit": "Omits"
     },
     {
@@ -4776,7 +4776,7 @@
       "id": "3B.12",
       "description": "Identifies factors supporting intensification (obesity/weight/elevation/albuminuria)",
       "points": 0.5,
-      "fullCredit": "Names &gt;=2 factors",
+      "fullCredit": "Names >=2 factors (e.g. unmet A1C, obesity/weight, albuminuria, or cardiovascular risk anywhere in assessment/plan)",
       "halfCredit": "Names 1 factor",
       "zeroCredit": "Omits"
     },
@@ -4792,7 +4792,7 @@
       "id": "3B.14",
       "description": "Cites cardiovascular/renal/metabolic/weight benefit rationale",
       "points": 0.5,
-      "fullCredit": "Names &gt;=2 benefit domains",
+      "fullCredit": "Names >=2 benefit domains (e.g. glycemic, weight loss, renal protection, or CV benefits anywhere in note)",
       "halfCredit": "Names 1 domain",
       "zeroCredit": "Omits"
     },
@@ -4856,8 +4856,8 @@
       "id": "3C.8",
       "description": "Strengthens future SGLT2 inhibitor consideration (renal protection)",
       "points": 0.6,
-      "fullCredit": "Links albuminuria to SGLT2",
-      "halfCredit": "Mentions SGLT2, no link",
+      "fullCredit": "Links albuminuria/kidney protection to SGLT2 inhibitor consideration anywhere in note",
+      "halfCredit": "Mentions SGLT2 or kidney protection without explicit link",
       "zeroCredit": "Omits"
     },
     {
