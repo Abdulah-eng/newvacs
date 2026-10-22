@@ -310,6 +310,7 @@ const caseTue = {
     { id: 'lipid_plan', title: 'Lipid / primary ASCVD prevention plan', options: [
       { key: 'l1', label: 'Initiate statin therapy for primary ASCVD prevention in diabetes: Atorvastatin 20 mg (or 40 mg) PO once daily at bedtime per ADA 2026 guidelines', correct: true },
       { key: 'l_counsel', label: 'Educate patient on potential statin adverse effects (myalgias, muscle soreness) and emphasize cardiovascular risk reduction benefits', correct: true },
+      { key: 'l_monitor_edu', label: 'Educate patient on statin monitoring: inform patient about follow-up lipid panel/safety lab checks in 6–12 weeks and symptom monitoring to report unexplained muscle pain or weakness', correct: true },
       { key: 'l_repeat', label: 'Repeat fasting lipid panel in 6-12 weeks (before next visit) to assess LDL reduction and therapy response', correct: true },
       { key: 'l3', label: 'Defer all lipid therapy until BP is controlled', correct: false },
       { key: 'l4', label: 'Start a fibrate first-line for TG 223', correct: false },
@@ -384,6 +385,11 @@ const caseTue = {
       'A DASH-style plate — more vegetables, fruit, and whole grains, less salt — helps both BP and sugar.',
       'Restaurant food is often very salty; even small swaps help.',
       'Sweet tea has a lot of sugar — cutting back even a little can help your A1C.',
+    ]},
+    { id: 'statin', title: 'Statin therapy & monitoring', body: [
+      'We are starting atorvastatin to lower your cholesterol and protect your heart and blood vessels.',
+      'Most people take it without any trouble, but let us know right away if you notice unusual, unexplained muscle aches or soreness.',
+      'We will check your cholesterol and safety labs again in 6 to 12 weeks to see how well it is working for you.',
     ]},
   ],
 

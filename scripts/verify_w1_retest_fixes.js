@@ -16,7 +16,7 @@ const subjectiveTab = fs.readFileSync(path.join(__dirname, '../src/components/Su
 const gradeSoapRoute = fs.readFileSync(path.join(__dirname, '../src/app/api/ai/grade-soap/route.js'), 'utf8');
 
 let passed = 0;
-let total = 37;
+let total = 38;
 
 // MG-TUE-01: Follow-up timetable conflicts with grader
 try {
@@ -485,6 +485,20 @@ try {
   console.log('✅ JW-THU-3A13: 3A.13 (no pharmacologic intensification required) verified in rubrics, case assessment, & prompts');
   passed++;
 } catch (e) { console.error('❌ JW-THU-3A13 failed:', e.message); }
+
+// MG-TUE-4D5: Statin monitoring education (4D.5)
+try {
+  const rub = rubrics['Week1_Patient_A_Tuesday'];
+  const item4D5 = rub.find(x => x.id === '4D.5');
+  assert(item4D5.fullCredit.includes('monitoring education') || item4D5.fullCredit.includes('symptom monitoring'));
+  const cTue = cases.CASE_BY_ID['maria-tue'];
+  const lipPlan = cTue.PLAN_SECTIONS.find(x => x.id === 'lipid_plan');
+  assert(lipPlan.options.some(x => x.label.includes('statin monitoring')));
+  assert(cTue.COUNSELING.some(x => x.id === 'statin'));
+  assert(prompts.includes('statin monitoring education (4D.5)'));
+  console.log('✅ MG-TUE-4D5: 4D.5 (statin monitoring education) verified in rubrics, case plan, counseling, & prompts');
+  passed++;
+} catch (e) { console.error('❌ MG-TUE-4D5 failed:', e.message); }
 
 console.log('\n================================================================');
 console.log(`  Summary: ${passed} / ${total} tests passed!`);
