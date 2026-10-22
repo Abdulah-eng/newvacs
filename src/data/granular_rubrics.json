@@ -7954,9 +7954,9 @@
     },
     {
       "id": "1E.24",
-      "description": "Tdap last documented 12 years ago",
+      "description": "Tdap last documented >10 years ago (or 12 years ago)",
       "points": 0.3,
-      "fullCredit": "States Tdap 12 years ago",
+      "fullCredit": "States Tdap >10 years ago (as stated in EMR) or 12 years ago / overdue",
       "halfCredit": "States Tdap, no interval",
       "zeroCredit": "Omits"
     },
@@ -9812,9 +9812,9 @@
     },
     {
       "id": "1E.24",
-      "description": "Tdap last documented 12 years ago",
+      "description": "Tdap last documented >10 years ago (or 12 years ago)",
       "points": 0.4,
-      "fullCredit": "States Tdap 12 years ago",
+      "fullCredit": "States Tdap >10 years ago (as stated in EMR) or 12 years ago / overdue",
       "halfCredit": "States Tdap, no interval",
       "zeroCredit": "Omits"
     },

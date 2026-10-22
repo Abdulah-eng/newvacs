@@ -305,7 +305,7 @@ const jamesWed = makeCase({
     { label: 'Home BP corroboration', value: 'Home blood pressure log reviewed: average 136/84 mmHg, corroborating office readings (138/86 mmHg, repeat 136/84 mmHg; improved from initial visit 152/94 mmHg, but remaining slightly above <130/80 mmHg goal).' },
     { label: 'Glycemic & lipid improvement', value: 'Current A1C 7.9%, previous baseline A1C 8.8% (0.9% absolute reduction following empagliflozin 10 mg initiation and metformin adherence; goal <7.0%). Both A1C and LDL-C improved on therapy: LDL-C decreased from baseline 103 mg/dL to 84 mg/dL on consistent atorvastatin 20 mg daily.' },
     { label: 'Renal function & UACR stability', value: 'SCr 1.02 mg/dL (mild expected hemodynamic rise from baseline 0.96 mg/dL following SGLT2 inhibitor initiation; reflects reversible intraglomerular pressure reduction and is clinically stable). eGFR 84 mL/min/1.73m² (preserved and stable, prior 89 mL/min/1.73m²). UACR 16 mg/g (stable and normal, prior 18 mg/g). Serum potassium 4.4 mEq/L (stable and normal on ACE inhibitor plus thiazide).' },
-    { label: 'Immunizations', value: 'COVID-19 and Influenza up to date. Gaps noted: PCV20 (pneumococcal) indicated and due; recombinant zoster vaccine (Shingrix) indicated and due; Tdap booster overdue (>10 years ago).' },
+    { label: 'Immunizations', value: 'COVID-19 and Influenza up to date. Gaps noted: PCV20 (pneumococcal) indicated and due; recombinant zoster vaccine (Shingrix) indicated and due; Tdap booster overdue (>10 years ago, last documented 12 years ago).' },
   ],
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Adherence & stretching', placeholder: 'Has stretching behavior resolved?' },
@@ -433,7 +433,7 @@ const jamesWed = makeCase({
         {
           key: 'prev_eval',
           q: 'Immunization gaps and preventive health maintenance:',
-          defaultAnswer: 'Status: Incomplete immunizations. Pneumococcal conjugate vaccination (PCV20) is indicated for adult with diabetes; recombinant zoster vaccine (Shingrix 2-dose series) is indicated for adult >=50 years; Tdap booster is overdue (>10 years). Preventive interventions remain fully appropriate.'
+          defaultAnswer: 'Status: Incomplete immunizations. Pneumococcal conjugate vaccination (PCV20) is indicated for adult with diabetes; recombinant zoster vaccine (Shingrix 2-dose series) is indicated for adult >=50 years; Tdap booster is overdue (>10 years ago, last received 12 years ago). Preventive interventions remain fully appropriate.'
         }
       ]
     },

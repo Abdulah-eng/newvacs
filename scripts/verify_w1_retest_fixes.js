@@ -16,7 +16,7 @@ const subjectiveTab = fs.readFileSync(path.join(__dirname, '../src/components/Su
 const gradeSoapRoute = fs.readFileSync(path.join(__dirname, '../src/app/api/ai/grade-soap/route.js'), 'utf8');
 
 let passed = 0;
-let total = 39;
+let total = 40;
 
 // MG-TUE-01: Follow-up timetable conflicts with grader
 try {
@@ -512,6 +512,21 @@ try {
   console.log('✅ LM-WED-3E6: 3E.6 (lifestyle modifications & motivation) verified in rubrics, case assessment, & prompts');
   passed++;
 } catch (e) { console.error('❌ LM-WED-3E6 failed:', e.message); }
+
+// JW-WED-1E24: Tdap booster interval (1E.24) accepts >10 years ago (EMR) or 12 years ago
+try {
+  const rub = rubrics['Week1_Patient_B_Wednesday'];
+  const item1E24 = rub.find(x => x.id === '1E.24');
+  assert(item1E24.fullCredit.includes('>10 years') || item1E24.fullCredit.includes('12 years'));
+  const jwWedCase = patientsBC.BC_CASES.find(x => x.id === 'james-wed');
+  const immExtra = jwWedCase.OBJECTIVE_EXTRA.find(x => x.label === 'Immunizations');
+  assert(immExtra.value.includes('>10 years ago') && immExtra.value.includes('12 years ago'));
+  const prevEval = jwWedCase.ASSESSMENT_CARDS.find(x => x.id === 'preventive').questions[0].defaultAnswer;
+  assert(prevEval.includes('>10 years ago') && prevEval.includes('12 years ago'));
+  assert(prompts.includes('For James Wilson Tuesday, Wednesday, and James Wilson Thursday Tdap interval (1E.24)'));
+  console.log('✅ JW-WED-1E24: 1E.24 (Tdap interval) accepts >10 years ago or 12 years ago across rubrics, case, & prompts');
+  passed++;
+} catch (e) { console.error('❌ JW-WED-1E24 failed:', e.message); }
 
 console.log('\n================================================================');
 console.log(`  Summary: ${passed} / ${total} tests passed!`);
