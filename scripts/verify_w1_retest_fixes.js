@@ -16,7 +16,7 @@ const subjectiveTab = fs.readFileSync(path.join(__dirname, '../src/components/Su
 const gradeSoapRoute = fs.readFileSync(path.join(__dirname, '../src/app/api/ai/grade-soap/route.js'), 'utf8');
 
 let passed = 0;
-let total = 35;
+let total = 37;
 
 // MG-TUE-01: Follow-up timetable conflicts with grader
 try {
@@ -459,6 +459,32 @@ try {
   console.log('✅ LM-WED-09: 4D.4 (reinforce CV risk reduction) and 4E.4 (leverage semaglutide for weight) verified');
   passed++;
 } catch (e) { console.error('❌ LM-WED-09 failed:', e.message); }
+
+// JW-TUE-4H1: Verify immunization history (4H.1) accepts verifying records or assessing vaccine gaps
+try {
+  const rub = rubrics['Week1_Patient_B_Tuesday'];
+  const item4H1 = rub.find(x => x.id === '4H.1');
+  assert(item4H1.fullCredit.includes('verify immunizations'));
+  const jwTueCase = patientsBC.BC_CASES.find(x => x.id === 'james-tue');
+  const immPlan = jwTueCase.PLAN_SECTIONS.find(x => x.id === 'b_p_imm');
+  assert(immPlan.options.some(x => x.label.includes('Verify vaccination and immunization history')));
+  assert(prompts.includes('For Tuesday criterion 4H.1'));
+  console.log('✅ JW-TUE-4H1: 4H.1 (verify immunizations) verified in rubrics, case plan, & prompts');
+  passed++;
+} catch (e) { console.error('❌ JW-TUE-4H1 failed:', e.message); }
+
+// JW-THU-3A13: No additional pharmacologic intensification required at this time (3A.13)
+try {
+  const rub = rubrics['Week1_Patient_B_Thursday'];
+  const item3A13 = rub.find(x => x.id === '3A.13');
+  assert(item3A13.fullCredit.includes('no intensification needed'));
+  const jwThuCase = patientsBC.BC_CASES.find(x => x.id === 'james-thu');
+  const dmEval = jwThuCase.ASSESSMENT_CARDS.find(x => x.id === 't2dm').questions[0].defaultAnswer;
+  assert(dmEval.includes('No additional pharmacologic intensification is required'));
+  assert(prompts.includes('For Thursday diabetes assessment (3A.13)'));
+  console.log('✅ JW-THU-3A13: 3A.13 (no pharmacologic intensification required) verified in rubrics, case assessment, & prompts');
+  passed++;
+} catch (e) { console.error('❌ JW-THU-3A13 failed:', e.message); }
 
 console.log('\n================================================================');
 console.log(`  Summary: ${passed} / ${total} tests passed!`);

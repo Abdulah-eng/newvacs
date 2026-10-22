@@ -6530,7 +6530,7 @@
       "id": "3A.13",
       "description": "No additional pharmacologic intensification required at this time",
       "points": 0.5,
-      "fullCredit": "States no intensification needed",
+      "fullCredit": "States no intensification needed (or continues current regimen without dose change / escalation)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -9060,7 +9060,7 @@
       "id": "4H.1",
       "description": "Verify immunization history",
       "points": 0.4,
-      "fullCredit": "States verify immunizations",
+      "fullCredit": "States verify immunizations (or assesses/documents immunization status in chart or plan)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },

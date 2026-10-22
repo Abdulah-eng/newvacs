@@ -193,6 +193,7 @@ const jamesTue = makeCase({
       { key: 'b_edu_insulin', label: 'Reassure patient regarding insulin fears: starting oral SGLT2 inhibitor and consistent adherence will help maintain control and avoid insulin', correct: true },
     ]},
     { id: 'b_p_imm', title: 'Preventive care & immunization plan', options: [
+      { key: 'b_imm_verify', label: 'Verify vaccination and immunization history in state registry or electronic health records', correct: true },
       { key: 'b_imm_pcv', label: 'Recommend Pneumococcal conjugate vaccination (PCV20) if not previously administered (indicated for age 62 with diabetes)', correct: true },
       { key: 'b_imm_shing', label: 'Recommend Recombinant Zoster vaccine (Shingrix) 2-dose series (0 and 2-6 months) for age ≥50', correct: true },
       { key: 'b_imm_tdap', label: 'Recommend Tdap booster today (overdue, 12 years since last booster) per CDC Adult Immunization Schedule', correct: true },
@@ -662,7 +663,7 @@ const jamesThu = makeCase({
         {
           key: 'dm_eval',
           q: 'Glycemic status, trend, contributing factors, and goal:',
-          defaultAnswer: 'Status: Significantly improved, near goal. Documents A1C improvement across three time points: baseline 8.8% → 3-month 7.9% → 6-month 7.1%. Glycemic goal is A1C <7.0% per ADA 2026 Standards of Care. Attributes improvement to resolution of initial access barriers, empagliflozin 10 mg initiation, improved adherence, increased health literacy, and sustained lifestyle modification. Patient is approaching target with a favorable clinical trajectory. Current therapy (Metformin XR 1,000 mg twice daily + Empagliflozin 10 mg daily) is effective and well tolerated without hypoglycemia or adverse effects. Continue adherence, monitoring, and lifestyle reinforcement.'
+          defaultAnswer: 'Status: Significantly improved, near goal. Documents A1C improvement across three time points: baseline 8.8% → 3-month 7.9% → 6-month 7.1%. Glycemic goal is A1C <7.0% per ADA 2026 Standards of Care. Attributes improvement to resolution of initial access barriers, empagliflozin 10 mg initiation, improved adherence, increased health literacy, and sustained lifestyle modification. Patient is approaching target with a favorable clinical trajectory. Current therapy (Metformin XR 1,000 mg twice daily + Empagliflozin 10 mg daily) is effective and well tolerated without hypoglycemia or adverse effects. No additional pharmacologic intensification is required for diabetes management at this time given favorable trajectory toward goal; continue current regimen, adherence, monitoring, and lifestyle reinforcement.'
         }
       ]
     },
