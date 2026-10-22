@@ -16,7 +16,7 @@ const subjectiveTab = fs.readFileSync(path.join(__dirname, '../src/components/Su
 const gradeSoapRoute = fs.readFileSync(path.join(__dirname, '../src/app/api/ai/grade-soap/route.js'), 'utf8');
 
 let passed = 0;
-let total = 25;
+let total = 28;
 
 // MG-TUE-01: Follow-up timetable conflicts with grader
 try {
@@ -313,6 +313,47 @@ try {
   console.log('✅ LM-THU-03: Scoring reconciliation confirmed (100 - 8.9 = 91.1%)');
   passed++;
 } catch (e) { console.error('❌ LM-THU-03 failed:', e.message); }
+
+// JW-FH-01: Mother's hyperlipidemia (1C.15) & Sister's diabetes (1C.16)
+try {
+  const bTue = patientsBC.BC_CASES[0];
+  const bWed = patientsBC.BC_CASES[1];
+  const bThu = patientsBC.BC_CASES[2];
+  [bTue, bWed, bThu].forEach(c => {
+    const fh = c.SUBJECTIVE_DOCUMENTED.find(s => s.label.toLowerCase().includes('family')).value;
+    assert(fh.includes('hyperlipidemia') && fh.includes('Sister: type 2 diabetes'));
+  });
+  ['Week1_Patient_B_Tuesday', 'Week1_Patient_B_Wednesday', 'Week1_Patient_B_Thursday'].forEach(k => {
+    const item15 = rubrics[k].find(x => x.id === '1C.15');
+    assert(item15.fullCredit.includes('hyperlipidemia'));
+    const item16 = rubrics[k].find(x => x.id === '1C.16');
+    assert(item16.fullCredit.includes('sister type 2 diabetes'));
+  });
+  assert(prompts.includes("award FULL CREDIT for mother's history (1C.14, 1C.15)"));
+  assert(prompts.includes("award FULL CREDIT for sister's diabetes (1C.16)"));
+  console.log('✅ JW-FH-01: Mother hyperlipidemia (1C.15) and Sister T2D (1C.16) synchronized in chart, rubrics, & prompt rules');
+  passed++;
+} catch (e) { console.error('❌ JW-FH-01 failed:', e.message); }
+
+// JW-TUE-3D6: Avoidance of premature escalation credited for 3D.6
+try {
+  const rub = rubrics['Week1_Patient_B_Tuesday'];
+  const item3D6 = rub.find(x => x.id === '3D.6');
+  assert(item3D6.fullCredit.includes('avoiding premature') || item3D6.fullCredit.includes('inappropriate medication intensification'));
+  assert(prompts.includes('For James Wilson Tuesday criterion 3D.6'));
+  console.log('✅ JW-TUE-3D6: 3D.6 credits framing avoidance of premature intensification as assessment or plan');
+  passed++;
+} catch (e) { console.error('❌ JW-TUE-3D6 failed:', e.message); }
+
+// JW-WED-3A2: Diabetes status improving with A1C 7.9% and goal <7.0% credited for 3A.2
+try {
+  const rub = rubrics['Week1_Patient_B_Wednesday'];
+  const item3A2 = rub.find(x => x.id === '3A.2');
+  assert(item3A2.fullCredit.includes('A1C 7.9%') || item3A2.fullCredit.includes('above goal'));
+  assert(prompts.includes('For James Wilson Wednesday diabetes assessment (3A.2)'));
+  console.log('✅ JW-WED-3A2: 3A.2 credits "improving" alongside A1C 7.9% & goal <7.0% without verbatim penalty');
+  passed++;
+} catch (e) { console.error('❌ JW-WED-3A2 failed:', e.message); }
 
 console.log('\n================================================================');
 console.log(`  Summary: ${passed} / ${total} tests passed!`);

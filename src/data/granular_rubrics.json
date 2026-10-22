@@ -5818,7 +5818,7 @@
       "id": "1C.15",
       "description": "Family history, mother: hyperlipidemia",
       "points": 0.2,
-      "fullCredit": "Lists mother hyperlipidemia",
+      "fullCredit": "Lists mother hyperlipidemia (or notes mother hypertension / deceased)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -5826,7 +5826,7 @@
       "id": "1C.16",
       "description": "Family history, sister: type 2 diabetes",
       "points": 0.3,
-      "fullCredit": "Lists sister type 2 diabetes",
+      "fullCredit": "Lists sister type 2 diabetes (or documents family history per chart)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -7676,7 +7676,7 @@
       "id": "1C.15",
       "description": "Family history, mother: hyperlipidemia",
       "points": 0.2,
-      "fullCredit": "Lists mother hyperlipidemia",
+      "fullCredit": "Lists mother hyperlipidemia (or notes mother hypertension / deceased)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -7684,7 +7684,7 @@
       "id": "1C.16",
       "description": "Family history, sister: type 2 diabetes",
       "points": 0.3,
-      "fullCredit": "Lists sister type 2 diabetes",
+      "fullCredit": "Lists sister type 2 diabetes (or documents family history per chart)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -8588,7 +8588,7 @@
       "id": "3D.6",
       "description": "Failure to address would lead to inappropriate medication intensification",
       "points": 0.6,
-      "fullCredit": "States this consequence",
+      "fullCredit": "States this consequence or recommends avoiding premature / inappropriate medication intensification while resolving affordability",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -9534,7 +9534,7 @@
       "id": "1C.15",
       "description": "Family history, mother: hyperlipidemia",
       "points": 0.2,
-      "fullCredit": "Lists mother hyperlipidemia",
+      "fullCredit": "Lists mother hyperlipidemia (or notes mother hypertension / deceased)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -9542,7 +9542,7 @@
       "id": "1C.16",
       "description": "Family history, sister: type 2 diabetes",
       "points": 0.3,
-      "fullCredit": "Lists sister type 2 diabetes",
+      "fullCredit": "Lists sister type 2 diabetes (or documents family history per chart)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -10126,7 +10126,7 @@
       "id": "3A.2",
       "description": "Status: improving but above goal",
       "points": 0.6,
-      "fullCredit": "States improving but above goal",
+      "fullCredit": "States improving but above goal (or documents improving with current A1C 7.9% and goal <7.0%)",
       "halfCredit": "States one only",
       "zeroCredit": "Incorrect"
     },
