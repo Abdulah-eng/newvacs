@@ -1268,7 +1268,7 @@ const lindaWed = makeCase({
         {
           key: 'obe_eval',
           q: 'Obesity status and cardiometabolic contribution:',
-          defaultAnswer: 'Status: Improving. Weight decreased from 96 kg to 94.5 kg (-1.5 kg loss; BMI 35.2 to 34.7 kg/m²). Obesity is a chronic, relapsing disease that contributes directly to cardiorenal risk, hypertension, and insulin resistance. Continued lifestyle modifications, portion control, and walking program are reinforced.'
+          defaultAnswer: 'Status: Improving. Weight decreased from 96 kg to 94.5 kg (-1.5 kg loss; BMI 35.2 to 34.7 kg/m²). Obesity is a chronic, relapsing disease that contributes directly to cardiorenal risk, hypertension, and insulin resistance. Continued lifestyle modifications, portion control, and walking program are reinforced, while leveraging GLP-1 RA therapy (semaglutide 0.5 mg SubQ weekly) for ongoing weight management and appetite regulation.'
         }
       ]
     },
@@ -1342,6 +1342,7 @@ const lindaWed = makeCase({
         { key: 'ap3', label: 'Target secondary prevention LDL-C <70 mg/dL (or <55 mg/dL)', correct: true },
         { key: 'ap4', label: 'Consider adding ezetimibe 10 mg PO daily if LDL-C remains above target at next follow-up', correct: true },
         { key: 'ap5', label: 'Repeat lipid panel in 6–12 months', correct: true },
+        { key: 'ap6', label: 'Reinforce cardiovascular risk reduction strategies (blood pressure control, lipid optimization, antiplatelet therapy, and lifestyle)', correct: true },
       ]
     },
     {
@@ -1350,6 +1351,7 @@ const lindaWed = makeCase({
       options: [
         { key: 'lp1', label: 'Continue regular walking program progressing toward >=150 minutes/week moderate activity', correct: true },
         { key: 'lp2', label: 'Reinforce portion control, healthy food choices, and sodium restriction (<2,000 mg/day)', correct: true },
+        { key: 'lp3', label: 'Leverage GLP-1 RA therapy (semaglutide 0.5 mg SubQ weekly) for weight management and appetite regulation', correct: true },
       ]
     },
     {

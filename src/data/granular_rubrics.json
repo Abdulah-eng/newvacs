@@ -15274,10 +15274,10 @@
     },
     {
       "id": "1E.30",
-      "description": "Tdap last received 11 years ago",
+      "description": "Tdap last received 11 years ago (or overdue >10 years)",
       "points": 0.4,
-      "fullCredit": "States Tdap 11 years ago",
-      "halfCredit": "States Tdap, no interval",
+      "fullCredit": "States Tdap 11 years ago or overdue >10 years",
+      "halfCredit": "States Tdap, no interval/status",
       "zeroCredit": "Omits"
     },
     {
@@ -15498,9 +15498,9 @@
     },
     {
       "id": "2B.11",
-      "description": "Total cholesterol (170 mg/dL)",
+      "description": "Total cholesterol (156 or 170 mg/dL)",
       "points": 0.4,
-      "fullCredit": "States 170 mg/dL",
+      "fullCredit": "States 156 mg/dL (or 170 mg/dL)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -15514,17 +15514,17 @@
     },
     {
       "id": "2B.13",
-      "description": "HDL-C (45 mg/dL)",
+      "description": "HDL-C (48 or 45 mg/dL)",
       "points": 0.4,
-      "fullCredit": "States 45 mg/dL",
+      "fullCredit": "States 48 mg/dL (or 45 mg/dL)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.14",
-      "description": "Triglycerides (184 mg/dL)",
+      "description": "Triglycerides (160 or 184 mg/dL)",
       "points": 0.5,
-      "fullCredit": "States 184 mg/dL",
+      "fullCredit": "States 160 mg/dL (or 184 mg/dL)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -16220,7 +16220,7 @@
       "id": "4D.4",
       "description": "Reinforce cardiovascular risk reduction strategies",
       "points": 0.6,
-      "fullCredit": "States CV risk reduction",
+      "fullCredit": "States CV risk reduction (or reinforces secondary prevention across medications and lifestyle)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -16260,7 +16260,7 @@
       "id": "4E.4",
       "description": "Leverage GLP-1 RA therapy for ongoing weight management",
       "points": 0.6,
-      "fullCredit": "States GLP-1 weight role",
+      "fullCredit": "States GLP-1 weight role (or continues semaglutide noting weight/lifestyle role anywhere in plan)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },

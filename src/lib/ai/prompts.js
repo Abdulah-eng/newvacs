@@ -95,6 +95,11 @@ RULES:
 - Diabetes intensification factors (3B.12): Award FULL CREDIT if the student documents >=2 factors supporting consideration of future intensification (e.g., unmet A1C goal, Class I obesity / weight, albuminuria, or cardiovascular risk) anywhere in the assessment or plan.
 - GLP-1 / SGLT2 benefit domains (3B.14): Award FULL CREDIT if the student cites >=2 benefit domains (glycemic control, sustainable weight loss, renal protection, or cardiovascular risk reduction) anywhere in the note (including in assessment rationale or patient preferences).
 - Albuminuria and SGLT2 inhibitor link (3C.8): Award FULL CREDIT if the student links albuminuria, UACR elevation, or kidney protection to future SGLT2 inhibitor consideration anywhere in the assessment or plan.
+30. For Linda Martinez Wednesday:
+- Tdap booster interval (1E.30): Award FULL CREDIT if the student documents that Tdap is overdue >10 years (as stated in the EMR) or was received 11 years ago.
+- Lipid panel values (2B.11, 2B.13, 2B.14): Award FULL CREDIT if the student documents the student-facing EMR values (Total cholesterol 156 mg/dL, HDL-C 48 mg/dL, Triglycerides 160 mg/dL) or reference values (TC 170, HDL-C 45, TG 184).
+- Cardiovascular risk reduction reinforcement (4D.4): Award FULL CREDIT if the student explicitly reinforces cardiovascular risk reduction strategies OR documents comprehensive secondary prevention across medications (aspirin, statin, BP control) and lifestyle.
+- Semaglutide weight management role (4E.4): Award FULL CREDIT if the student documents leveraging semaglutide for weight management under the obesity/lifestyle plan OR lists semaglutide continuation under the diabetes plan noting its weight/appetite benefits.
 
 
 

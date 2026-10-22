@@ -16,7 +16,7 @@ const subjectiveTab = fs.readFileSync(path.join(__dirname, '../src/components/Su
 const gradeSoapRoute = fs.readFileSync(path.join(__dirname, '../src/app/api/ai/grade-soap/route.js'), 'utf8');
 
 let passed = 0;
-let total = 32;
+let total = 35;
 
 // MG-TUE-01: Follow-up timetable conflicts with grader
 try {
@@ -417,6 +417,48 @@ try {
   console.log('✅ MG-WED-03: 3B.12 (intensification factors), 3B.14 (benefit domains), & 3C.8 (UACR-SGLT2 link) verified');
   passed++;
 } catch (e) { console.error('❌ MG-WED-03 failed:', e.message); }
+
+// LM-WED-07: Tdap booster (1E.30) accepts overdue >10 years or 11 years ago
+try {
+  const rub = rubrics['Week1_Patient_C_Wednesday'];
+  const item1E30 = rub.find(x => x.id === '1E.30');
+  assert(item1E30.fullCredit.includes('overdue >10 years') || item1E30.fullCredit.includes('11 years ago'));
+  assert(prompts.includes('Tdap booster interval (1E.30)'));
+  console.log('✅ LM-WED-07: 1E.30 accepts Tdap overdue >10 years or 11 years ago');
+  passed++;
+} catch (e) { console.error('❌ LM-WED-07 failed:', e.message); }
+
+// LM-WED-08: Student-facing lipid panel values TC 156, HDL-C 48, TG 160 (2B.11, 2B.13, 2B.14)
+try {
+  const rub = rubrics['Week1_Patient_C_Wednesday'];
+  const tc = rub.find(x => x.id === '2B.11');
+  const hdl = rub.find(x => x.id === '2B.13');
+  const tg = rub.find(x => x.id === '2B.14');
+  assert(tc.fullCredit.includes('156'));
+  assert(hdl.fullCredit.includes('48'));
+  assert(tg.fullCredit.includes('160'));
+  assert(prompts.includes('Lipid panel values (2B.11, 2B.13, 2B.14)'));
+  console.log('✅ LM-WED-08: 2B.11 (TC 156), 2B.13 (HDL 48), 2B.14 (TG 160) match student-facing EMR');
+  passed++;
+} catch (e) { console.error('❌ LM-WED-08 failed:', e.message); }
+
+// LM-WED-09: CV risk reduction reinforcement (4D.4) & semaglutide weight role (4E.4)
+try {
+  const rub = rubrics['Week1_Patient_C_Wednesday'];
+  const item4D4 = rub.find(x => x.id === '4D.4');
+  const item4E4 = rub.find(x => x.id === '4E.4');
+  assert(item4D4.fullCredit.includes('CV risk reduction') || item4D4.fullCredit.includes('secondary prevention'));
+  assert(item4E4.fullCredit.includes('GLP-1 weight role') || item4E4.fullCredit.includes('semaglutide'));
+  const lmWedCase = patientsBC.BC_CASES.find(x => x.id === 'linda-wed');
+  const ascvdPlan = lmWedCase.PLAN_SECTIONS.find(x => x.id === 'ascvd_plan');
+  const lifePlan = lmWedCase.PLAN_SECTIONS.find(x => x.id === 'life_plan');
+  assert(ascvdPlan.options.some(x => x.label.includes('Reinforce cardiovascular risk reduction')));
+  assert(lifePlan.options.some(x => x.label.includes('semaglutide')));
+  assert(prompts.includes('Cardiovascular risk reduction reinforcement (4D.4)'));
+  assert(prompts.includes('Semaglutide weight management role (4E.4)'));
+  console.log('✅ LM-WED-09: 4D.4 (reinforce CV risk reduction) and 4E.4 (leverage semaglutide for weight) verified');
+  passed++;
+} catch (e) { console.error('❌ LM-WED-09 failed:', e.message); }
 
 console.log('\n================================================================');
 console.log(`  Summary: ${passed} / ${total} tests passed!`);
