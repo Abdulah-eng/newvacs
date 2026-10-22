@@ -100,6 +100,7 @@ RULES:
 - Lipid panel values (2B.11, 2B.13, 2B.14): Award FULL CREDIT if the student documents the student-facing EMR values (Total cholesterol 156 mg/dL, HDL-C 48 mg/dL, Triglycerides 160 mg/dL) or reference values (TC 170, HDL-C 45, TG 184).
 - Cardiovascular risk reduction reinforcement (4D.4): Award FULL CREDIT if the student explicitly reinforces cardiovascular risk reduction strategies OR documents comprehensive secondary prevention across medications (aspirin, statin, BP control) and lifestyle.
 - Semaglutide weight management role (4E.4): Award FULL CREDIT if the student documents leveraging semaglutide for weight management under the obesity/lifestyle plan OR lists semaglutide continuation under the diabetes plan noting its weight/appetite benefits.
+- Lifestyle modifications & motivation (3E.6): Award FULL CREDIT if the student documents meaningful lifestyle modifications (e.g., walking program, portion control) and/or acknowledges the patient's strong motivation/engagement for health, kidney preservation, or weight goals anywhere in the note. Do not penalize if motivation is documented in Subjective rather than repeated verbatim in the Assessment.
 
 
 

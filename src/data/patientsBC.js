@@ -1269,7 +1269,7 @@ const lindaWed = makeCase({
         {
           key: 'obe_eval',
           q: 'Obesity status and cardiometabolic contribution:',
-          defaultAnswer: 'Status: Improving. Weight decreased from 96 kg to 94.5 kg (-1.5 kg loss; BMI 35.2 to 34.7 kg/m²). Obesity is a chronic, relapsing disease that contributes directly to cardiorenal risk, hypertension, and insulin resistance. Continued lifestyle modifications, portion control, and walking program are reinforced, while leveraging GLP-1 RA therapy (semaglutide 0.5 mg SubQ weekly) for ongoing weight management and appetite regulation.'
+          defaultAnswer: 'Status: Improving. Weight decreased from 96 kg to 94.5 kg (-1.5 kg loss; BMI 35.2 to 34.7 kg/m²). Obesity is a chronic, relapsing disease that contributes directly to cardiorenal risk, hypertension, and insulin resistance. Meaningful lifestyle modifications (portion control, walking program) and strong patient motivation for long-term health and weight reduction are reinforced, while leveraging GLP-1 RA therapy (semaglutide 0.5 mg SubQ weekly) for ongoing weight management and appetite regulation.'
         }
       ]
     },

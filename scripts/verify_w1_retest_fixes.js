@@ -16,7 +16,7 @@ const subjectiveTab = fs.readFileSync(path.join(__dirname, '../src/components/Su
 const gradeSoapRoute = fs.readFileSync(path.join(__dirname, '../src/app/api/ai/grade-soap/route.js'), 'utf8');
 
 let passed = 0;
-let total = 38;
+let total = 39;
 
 // MG-TUE-01: Follow-up timetable conflicts with grader
 try {
@@ -499,6 +499,19 @@ try {
   console.log('✅ MG-TUE-4D5: 4D.5 (statin monitoring education) verified in rubrics, case plan, counseling, & prompts');
   passed++;
 } catch (e) { console.error('❌ MG-TUE-4D5 failed:', e.message); }
+
+// LM-WED-3E6: Meaningful lifestyle modifications and strong motivation (3E.6)
+try {
+  const rub = rubrics['Week1_Patient_C_Wednesday'];
+  const item3E6 = rub.find(x => x.id === '3E.6');
+  assert(item3E6.fullCredit.includes('lifestyle modifications') && item3E6.fullCredit.includes('strong motivation'));
+  const lmWedCase = patientsBC.BC_CASES.find(x => x.id === 'linda-wed');
+  const obeEval = lmWedCase.ASSESSMENT_CARDS.find(x => x.id === 'obesity').questions[0].defaultAnswer;
+  assert(obeEval.includes('Meaningful lifestyle modifications') && obeEval.includes('strong patient motivation'));
+  assert(prompts.includes('Lifestyle modifications & motivation (3E.6)'));
+  console.log('✅ LM-WED-3E6: 3E.6 (lifestyle modifications & motivation) verified in rubrics, case assessment, & prompts');
+  passed++;
+} catch (e) { console.error('❌ LM-WED-3E6 failed:', e.message); }
 
 console.log('\n================================================================');
 console.log(`  Summary: ${passed} / ${total} tests passed!`);

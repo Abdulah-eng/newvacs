@@ -12344,8 +12344,8 @@
       "id": "3E.6",
       "description": "Notes sustainable lifestyle changes and high motivation",
       "points": 0.5,
-      "fullCredit": "States both",
-      "halfCredit": "States one",
+      "fullCredit": "States sustainable lifestyle changes (portion control, walking) and/or notes high motivation/engagement for health/weight goals anywhere in note",
+      "halfCredit": "States one, minimal detail",
       "zeroCredit": "Omits"
     },
     {
@@ -15988,8 +15988,8 @@
       "id": "3E.6",
       "description": "Notes meaningful lifestyle modifications and strong motivation",
       "points": 0.5,
-      "fullCredit": "States both",
-      "halfCredit": "States one",
+      "fullCredit": "States meaningful lifestyle modifications (portion control, walking program) and/or notes strong motivation for health/weight goals anywhere in note",
+      "halfCredit": "States one, minimal detail",
       "zeroCredit": "Omits"
     },
     {
