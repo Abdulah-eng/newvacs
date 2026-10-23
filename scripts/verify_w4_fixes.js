@@ -14,7 +14,7 @@ const iconMap = fs.readFileSync(path.join(__dirname, '../src/lib/iconMap.js'), '
 const subjectiveTab = fs.readFileSync(path.join(__dirname, '../src/components/SubjectiveTab.jsx'), 'utf8');
 
 let passed = 0;
-let total = 40;
+let total = 43;
 
 // 1. MT-TUE-01: 2A.5 full credit accepts SpO2 98% with or without room air
 try {
@@ -396,7 +396,7 @@ try {
   const item4C7 = rub.find(x => x.id === '4C.7');
   assert(item3C10.fullCredit.includes('standard AF criteria') || item3C10.fullCredit.includes('CKD Stage 3b'));
   assert(item4C7.fullCredit.includes('standard dose-reduction criteria') || item4C7.fullCredit.includes('CKD Stage 3b'));
-  assert(prompts.includes('Robert Jenkins Wednesday: Award FULL CREDIT for apixaban dosing rationale (3C.10, 4C.7)'));
+  assert(prompts.includes('apixaban dosing rationale (3C.10, 4C.7)'));
   console.log('✅ RJ-WED-02: 3C.10 and 4C.7 credit standard AF dosing criteria (only 1 of 3 met) without forcing eGFR cutoff');
   passed++;
 } catch (e) { console.error('❌ RJ-WED-02 failed:', e.message); }
@@ -440,6 +440,51 @@ try {
   console.log('✅ RJ-THU-03: 4B.8 credits GDMT continuation or complete/well-tolerated characterization');
   passed++;
 } catch (e) { console.error('❌ RJ-THU-03 failed:', e.message); }
+
+// 35b. RJ-TUE-EXT: 3A.9 (fluid overload), 3B.4 (renal acute vs chronic), 4B.6 (CKD contributors), 4E.4 (potassium monitoring)
+try {
+  const rub = rubrics['Week4_Patient_C_Tuesday'];
+  const item3A9 = rub.find(x => x.id === '3A.9');
+  const item3B4 = rub.find(x => x.id === '3B.4');
+  const item4B6 = rub.find(x => x.id === '4B.6');
+  const item4E4 = rub.find(x => x.id === '4E.4');
+  assert(item3A9.fullCredit.includes('absence of peripheral/lower extremity edema'));
+  assert(item3B4.fullCredit.includes('chronic progressive decline'));
+  assert(item4B6.fullCredit.includes('evaluates existing contributors'));
+  assert(item4E4.fullCredit.includes('potassium monitoring in plan/monitoring'));
+  assert(prompts.includes('volume overload / hypervolemia assessment (3A.9)'));
+  assert(prompts.includes('renal trend etiologic assessment (3B.4)'));
+  assert(prompts.includes('CKD progression contributors (4B.6)'));
+  assert(prompts.includes('potassium monitoring (4E.4)'));
+  console.log('✅ RJ-TUE-EXT: 3A.9, 3B.4, 4B.6, 4E.4 credit comprehensive clinical reasoning and plan coverage');
+  passed++;
+} catch (e) { console.error('❌ RJ-TUE-EXT failed:', e.message); }
+
+// 35c. RJ-WED-EXT: 2A.8 (BMI 28.3), 3A.13 (anticoagulation rationale / resumption), 5B.3 (numeric thresholds)
+try {
+  const rub = rubrics['Week4_Patient_C_Wednesday'];
+  const item2A8 = rub.find(x => x.id === '2A.8');
+  const item3A13 = rub.find(x => x.id === '3A.13');
+  const item5B3 = rub.find(x => x.id === '5B.3');
+  assert(item2A8.fullCredit.includes('28.3 kg/m²'));
+  assert(item3A13.fullCredit.includes('apixaban resumption post-procedure'));
+  assert(item5B3.fullCredit.includes('minor omission of single threshold acceptable'));
+  assert(prompts.includes('BMI (2A.8) for documenting BMI 28.3 kg/m²'));
+  assert(prompts.includes('anticoagulation rationale (3A.13)'));
+  assert(prompts.includes('clinical numeric thresholds (5B.3)'));
+  console.log('✅ RJ-WED-EXT: 2A.8 (BMI 28.3), 3A.13 (TE risk / resumption), 5B.3 (numeric thresholds) all credited');
+  passed++;
+} catch (e) { console.error('❌ RJ-WED-EXT failed:', e.message); }
+
+// 35d. RJ-THU-EXT: 2A.8 (BMI 28.1)
+try {
+  const rub = rubrics['Week4_Patient_C_Thursday'];
+  const item2A8 = rub.find(x => x.id === '2A.8');
+  assert(item2A8.fullCredit.includes('28.1 kg/m²'));
+  assert(prompts.includes('BMI (2A.8) for documenting BMI 28.1 kg/m²'));
+  console.log('✅ RJ-THU-EXT: 2A.8 credits mathematically accurate EMR chart BMI 28.1 kg/m²');
+  passed++;
+} catch (e) { console.error('❌ RJ-THU-EXT failed:', e.message); }
 
 // 36. W4-RUBRICS-SUM: All 9 Week 4 rubrics sum to exactly 100.00 points
 try {

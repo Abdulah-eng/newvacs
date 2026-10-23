@@ -56418,9 +56418,9 @@
     },
     {
       "id": "2A.8",
-      "description": "BMI (27.6 kg/m²)",
+      "description": "BMI (28.1 kg/m² or 27.6 kg/m²)",
       "points": 0.3,
-      "fullCredit": "States 27.6 kg/m²",
+      "fullCredit": "States 28.1 kg/m² (or 27.6 kg/m²)",
       "halfCredit": "States BMI, value imprecise",
       "zeroCredit": "Omits"
     },
@@ -58540,10 +58540,10 @@
     },
     {
       "id": "3A.9",
-      "description": "States no evidence of fluid overload",
+      "description": "States no evidence of fluid overload / hypervolemia",
       "points": 0.53,
-      "fullCredit": "States no fluid overload / no LE edema / no orthopnea",
-      "halfCredit": "States no edema without fluid overload framing",
+      "fullCredit": "States no fluid overload / hypervolemia, OR notes absence of peripheral/lower extremity edema, orthopnea, or congestion",
+      "halfCredit": "Vaguely mentions symptoms without assessing volume status or edema",
       "zeroCredit": "Omitted"
     },
     {
@@ -58636,10 +58636,10 @@
     },
     {
       "id": "3B.4",
-      "description": "States no recent illness or volume depletion",
+      "description": "States no recent illness or volume depletion contributing to renal trend",
       "points": 0.57,
-      "fullCredit": "States no recent illness and no volume depletion",
-      "halfCredit": "States one but not both",
+      "fullCredit": "States no acute illness / volume depletion, OR attributes renal trend to chronic progressive decline rather than acute prerenal insult",
+      "halfCredit": "Notes renal decline without evaluating acute vs chronic contributors",
       "zeroCredit": "Omitted"
     },
     {
@@ -59062,8 +59062,8 @@
       "id": "4B.6",
       "description": "States assess for additional contributors to CKD progression",
       "points": 0.55,
-      "fullCredit": "States assess for additional contributors to CKD progression",
-      "halfCredit": "States evaluate causes without CKD-progression framing",
+      "fullCredit": "States assess for additional contributors to CKD progression, OR evaluates existing contributors (HTN, diabetes, HF, vascular disease, avoiding nephrotoxins/NSAIDs)",
+      "halfCredit": "States evaluate causes without specific contributor assessment",
       "zeroCredit": "Omitted"
     },
     {
@@ -59196,10 +59196,10 @@
     },
     {
       "id": "4E.4",
-      "description": "States discuss potassium monitoring with patient",
+      "description": "States potassium monitoring in plan/monitoring or discussed with patient",
       "points": 0.5,
-      "fullCredit": "States discuss potassium monitoring with patient",
-      "halfCredit": "States mention potassium without monitoring discussion",
+      "fullCredit": "States potassium monitoring in plan/monitoring or discusses potassium monitoring/dietary awareness with patient",
+      "halfCredit": "Mentions potassium without monitoring timeframe or plan context",
       "zeroCredit": "Omitted"
     },
     {
@@ -60222,9 +60222,9 @@
     },
     {
       "id": "2A.8",
-      "description": "Body mass index (27.8 kg/m²)",
+      "description": "Body mass index (28.3 kg/m² or 27.8 kg/m²)",
       "points": 0.6,
-      "fullCredit": "States 27.8 kg/m²",
+      "fullCredit": "States 28.3 kg/m² (or 27.8 kg/m²)",
       "halfCredit": "BMI stated, value imprecise",
       "zeroCredit": "Omits"
     },
@@ -60472,7 +60472,7 @@
       "id": "3A.13",
       "description": "Concludes: significant thromboembolic risk supports continued long-term anticoagulation",
       "points": 0.7,
-      "fullCredit": "States significant TE risk supports continued anticoagulation",
+      "fullCredit": "States significant TE risk supports continued anticoagulation (or documents apixaban resumption post-procedure for long-term stroke prevention)",
       "halfCredit": "States continued AC, no TE risk link",
       "zeroCredit": "Omits"
     },
@@ -61320,8 +61320,8 @@
       "id": "5B.3",
       "description": "Clinical targets stated with numeric thresholds where applicable",
       "points": 0.5,
-      "fullCredit": "Numeric thresholds stated where applicable",
-      "halfCredit": "Some numeric targets, others vague",
+      "fullCredit": "Numeric thresholds stated where applicable (e.g. 48h DOAC hold, eGFR, CHA2DS2-VASc, or BP goal <130/80 mmHg; minor omission of single threshold acceptable if overall quantified)",
+      "halfCredit": "Majority of clinical targets vague without numeric thresholds",
       "zeroCredit": "All targets vague"
     },
     {
