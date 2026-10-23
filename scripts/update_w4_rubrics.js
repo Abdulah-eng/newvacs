@@ -43,6 +43,10 @@ updateItem('Week4_Patient_A_Thursday', '3A.6', item => {
   item.description = "Cardiac biomarker improvement documented (NT-proBNP 165 → 92 pg/mL, or baseline BNP 320)";
   item.fullCredit = "States NT-proBNP improved to 92 pg/mL (from 165 pg/mL, or notes overall improvement from baseline BNP 320 pg/mL)";
 });
+updateItem('Week4_Patient_A_Thursday', '3B.7', item => {
+  item.fullCredit = "States BP within acceptable range for current ARNi and beta-blocker dosing (or specifically names sacubitril/valsartan and metoprolol succinate)";
+  item.halfCredit = "Vaguely states BP acceptable for medications without referencing drug classes (ARNi/beta-blocker) or specific agents";
+});
 
 // 3. Week4_Patient_B_Tuesday
 updateItem('Week4_Patient_B_Tuesday', '2A.6', item => {

@@ -14,7 +14,7 @@ const iconMap = fs.readFileSync(path.join(__dirname, '../src/lib/iconMap.js'), '
 const subjectiveTab = fs.readFileSync(path.join(__dirname, '../src/components/SubjectiveTab.jsx'), 'utf8');
 
 let passed = 0;
-let total = 36;
+let total = 37;
 
 // 1. MT-TUE-01: 2A.5 full credit accepts SpO2 98% with or without room air
 try {
@@ -94,6 +94,16 @@ try {
   console.log('✅ MT-THU-03: 3A.6 credits NT-proBNP 165->92 same-assay trend and distinguishes baseline BNP 320');
   passed++;
 } catch (e) { console.error('❌ MT-THU-03 failed:', e.message); }
+
+// 8b. MT-THU-04: 3B.7 accepts ARNi and beta-blocker dosing
+try {
+  const rub = rubrics['Week4_Patient_A_Thursday'];
+  const item3B7 = rub.find(x => x.id === '3B.7');
+  assert(item3B7.fullCredit.includes('ARNi and beta-blocker dosing'));
+  assert(prompts.includes('hypertension medication regimen assessment (3B.7)'));
+  console.log('✅ MT-THU-04: 3B.7 credits ARNi and beta-blocker dosing without forcing chemical names');
+  passed++;
+} catch (e) { console.error('❌ MT-THU-04 failed:', e.message); }
 
 // 9. AB-TUE-01: 2A.6 full credit accepts SpO2 98% with or without room air
 try {

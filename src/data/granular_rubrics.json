@@ -47786,8 +47786,8 @@
       "id": "3B.7",
       "description": "BP within acceptable range for current ARNi and beta-blocker dosing",
       "points": 0.9,
-      "fullCredit": "States BP within acceptable range for current sacubitril/valsartan and metoprolol succinate dosing",
-      "halfCredit": "States BP ok for meds, no specific agents named",
+      "fullCredit": "States BP within acceptable range for current ARNi and beta-blocker dosing (or specifically names sacubitril/valsartan and metoprolol succinate)",
+      "halfCredit": "Vaguely states BP acceptable for medications without referencing drug classes (ARNi/beta-blocker) or specific agents",
       "zeroCredit": "Omits"
     },
     {
