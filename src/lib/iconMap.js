@@ -13,7 +13,9 @@ export function getIcon(name) {
 // Clinical flag -> tailwind-ish color tokens (UI adds '#').
 export const FLAG_STYLES = {
   high:    { hex: 'dc2626', label: 'High',    bg: 'bg-red-50',   text: 'text-red-700',   ring: 'ring-red-200' },
+  low:     { hex: 'dc2626', label: 'Low',     bg: 'bg-red-50',   text: 'text-red-700',   ring: 'ring-red-200' },
   warn:    { hex: 'ca8a04', label: 'Watch',   bg: 'bg-amber-50', text: 'text-amber-700', ring: 'ring-amber-200' },
+  borderline: { hex: 'ca8a04', label: 'Watch', bg: 'bg-amber-50', text: 'text-amber-700', ring: 'ring-amber-200' },
   normal:  { hex: '0d9488', label: 'Normal',  bg: 'bg-teal-50',  text: 'text-teal-700',  ring: 'ring-teal-200' },
   missing: { hex: '7c3aed', label: 'Missing', bg: 'bg-violet-50',text: 'text-violet-700',ring: 'ring-violet-200' },
 }

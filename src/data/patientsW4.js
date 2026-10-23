@@ -224,7 +224,7 @@ const michaelWed = makeCase({
     learningObjectives: ['Manage GDMT side effects (orthostasis)', 'Adjust non-GDMT meds to facilitate GDMT tolerance'],
     visitDate: '09/24/2026',
   },
-  VITALS: { bp: '106/68', bpRepeat: '104/66', hr: '62', rr: '16', temp: '98.6°F', spo2: '97%', weight: '101 kg', height: "5'10\"", bmi: '31.9', vitalsTime: '09/24/2026 09:14', flags: { bp: 'warn' } },
+  VITALS: { bp: '106/68', bpRepeat: '104/66', hr: '62', rr: '16', temp: '98.6°F', spo2: '97%', spo2Qualifier: 'on room air', weight: '101 kg', height: "5'10\"", bmi: '31.9', vitalsTime: '09/24/2026 09:14', flags: { bp: 'warn' } },
   LABS: [
     { label: 'NT-proBNP', value: '165', unit: 'pg/mL', flag: 'high', labDate: '09/24/2026 07:50' },
     { label: 'K', value: '4.5', unit: 'mEq/L', flag: 'normal', labDate: '09/24/2026 07:50' },
@@ -234,7 +234,7 @@ const michaelWed = makeCase({
   ALERTS: [],
   PROBLEMS: [
     { name: 'Orthostatic Hypotension (Primary MTP)', detail: 'Volume depletion from HCTZ + Carvedilol + Sacubitril/Valsartan. Target HCTZ for discontinuation while preserving GDMT.', flag: 'high' },
-    { name: 'HFrEF', detail: 'On 4-pillar GDMT x 3 months. Ankle edema resolved, weight down 2 kg (103 -> 101 kg), NT-proBNP improved (320 -> 165 pg/mL).', flag: 'normal' },
+    { name: 'HFrEF', detail: 'On 4-pillar GDMT x 3 months. Ankle edema resolved, weight down from baseline 102 to 101 kg, NT-proBNP 165 pg/mL (improved from baseline BNP 320 pg/mL).', flag: 'normal' },
     { name: 'Hypertension', detail: 'BP low due to GDMT + HCTZ — discontinue HCTZ to raise BP headroom for GDMT maintenance', flag: 'warn' },
   ],
   MEDICATIONS: [
@@ -254,7 +254,7 @@ const michaelWed = makeCase({
     { label: 'Past Surgical History', value: 'Appendectomy at age 24.' }
   ],
   OBJECTIVE_EXTRA: [
-    { label: 'Objective Trend Analysis', value: 'Weight: 101 kg (2 kg fluid reduction from baseline 103 kg; edema resolved). NT-proBNP: 165 pg/mL (significantly improved from baseline 320 pg/mL). SCr: 1.08 mg/dL / eGFR 80 (stable change from baseline 1.0 / 88). BP: 106/68 mmHg (repeat 104/66 mmHg) — low BP consistent with orthostatic risk.' }
+    { label: 'Objective Trend Analysis', value: 'Weight: 101 kg (fluid reduction from baseline 102 kg to 101 kg; edema resolved). Cardiac biomarkers: NT-proBNP 165 pg/mL (significantly improved clinical trend compared to baseline BNP 320 pg/mL; noting difference in assay from baseline BNP to follow-up NT-proBNP). SCr: 1.08 mg/dL / eGFR 80 (stable change from baseline 1.0 / 88). BP: 106/68 mmHg (repeat 104/66 mmHg) — low BP consistent with orthostatic risk.' }
   ],
   INTERVIEW_FIELDS: [
     { key: 'dizziness', label: 'Dizziness Assessment', placeholder: 'When does he feel dizzy?' },
@@ -393,7 +393,7 @@ const michaelThu = makeCase({
     { label: 'Past Surgical History', value: 'Appendectomy at age 24.' }
   ],
   OBJECTIVE_EXTRA: [
-    { label: 'Objective Trend & Home Vitals', value: 'Repeat Echocardiogram (6-Month): LVEF 45% (significantly improved from baseline LVEF 35%). Mild LV dilation reduced. Echocardiogram interpretation demonstrates improved left ventricular systolic function, consistent with Heart Failure with Improved Ejection Fraction (HFimpEF). NT-proBNP downward trend: baseline 320 pg/mL → previous 165 pg/mL → current 92 pg/mL. Home vital sign measurements corroborate office blood pressure and heart rate values (home BP average: 115/70 mmHg, home HR average: 62 bpm). Weight: 97 kg (BMI 30.7 kg/m²). Serum potassium (4.8 mEq/L) and eGFR (75 mL/min/1.73m²) are acceptable and non-limiting for MRA/ARNi therapy, supporting safety and continuation of the 4-drug GDMT regimen.' }
+    { label: 'Objective Trend & Home Vitals', value: 'Repeat Echocardiogram (6-Month): LVEF 45% (significantly improved from baseline LVEF 35%). Mild LV dilation reduced. Echocardiogram interpretation demonstrates improved left ventricular systolic function, consistent with Heart Failure with Improved Ejection Fraction (HFimpEF). Natriuretic peptide downward trend: baseline BNP 320 pg/mL → previous NT-proBNP 165 pg/mL → current NT-proBNP 92 pg/mL (same-assay NT-proBNP 165 to 92 pg/mL, demonstrating marked biochemical improvement from baseline BNP 320 pg/mL). Home vital sign measurements corroborate office blood pressure and heart rate values (home BP average: 115/70 mmHg, home HR average: 62 bpm). Weight: 97 kg (BMI 30.7 kg/m²). Serum potassium (4.8 mEq/L) and eGFR (75 mL/min/1.73m²) are acceptable and non-limiting for MRA/ARNi therapy, supporting safety and continuation of the 4-drug GDMT regimen.' }
   ],
   INTERVIEW_FIELDS: [
     { key: 'discontinuation', label: 'Medication Education & Discontinuation Query', placeholder: 'Address patient question about stopping medications' },
@@ -557,7 +557,7 @@ const angelaTue = makeCase({
     learningObjectives: ['Calculate CHA2DS2-VASc score', 'Identify cost nonadherence as a barrier to stroke prevention', 'Formulate access and adherence interventions'],
     visitDate: '09/09/2026',
   },
-  VITALS: { bp: '128/78', bpRepeat: '126/76', hr: '88', rr: '16', temp: '98.2°F', spo2: '98%', weight: '84 kg', height: "5'5\"", bmi: '30.8', vitalsTime: '09/09/2026 09:14', flags: { bmi: 'warn' } },
+  VITALS: { bp: '128/78', bpRepeat: '126/76', hr: '88', rr: '16', temp: '98.2°F', spo2: '98%', spo2Qualifier: 'on room air', weight: '84 kg', height: "5'5\"", bmi: '30.8', vitalsTime: '09/09/2026 09:14', flags: { bmi: 'warn' } },
   LABS: [
     { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal', labDate: '09/09/2026 07:50' },
     { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal', labDate: '09/09/2026 07:50' },
@@ -772,7 +772,7 @@ const angelaWed = makeCase({
     learningObjectives: ['Address bleeding fears using shared decision-making', 'Distinguish minor bruising from major bleeding', 'Reinforce guideline-directed DOAC continuation'],
     visitDate: '12/09/2026',
   },
-  VITALS: { bp: '126/76', bpRepeat: '124/74', hr: '84', rr: '16', temp: '98.1°F', spo2: '98%', weight: '84 kg', height: "5'5\"", bmi: '30.8', vitalsTime: '12/09/2026 09:14', flags: {} },
+  VITALS: { bp: '126/76', bpRepeat: '124/74', hr: '84', rr: '16', temp: '98.1°F', spo2: '98%', spo2Qualifier: 'on room air', weight: '84 kg', height: "5'5\"", bmi: '30.8', vitalsTime: '12/09/2026 09:14', flags: {} },
   LABS: [
     { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal', labDate: '12/09/2026 07:50' },
     { label: 'K', value: '4.3', unit: 'mEq/L', flag: 'normal', labDate: '12/09/2026 07:50' },
@@ -822,10 +822,10 @@ const angelaWed = makeCase({
   INTERVIEW_FIELDS: [
     { key: 'fear', label: 'Bruising & Bleeding Fear Assessment', placeholder: 'Assess bleeding symptoms and friend anecdote' },
   ],
-  COUNSELING: [{ id: 'c1', title: 'Apixaban Resumption & Bleeding Education', body: ["Minor bruising is expected with blood thinners and does not mean you are having dangerous bleeding. Your blood count (Hgb 13.0 g/dL) is stable, proving there is no internal bleeding. Because your stroke risk is high (CHA2DS2-VASc = 3), resuming Apixaban 5 mg twice daily is essential. Contact our clinic before ever stopping a medication."] }],
+  COUNSELING: [{ id: 'c1', title: 'Apixaban Resumption & Bleeding Education', body: ["Minor bruising is expected with blood thinners and does not mean you are having dangerous bleeding. Your blood count (Hgb 13.0 g/dL) is reassuringly stable with no significant drop from baseline 13.2 g/dL, and you have had no warning signs of major bleeding. Because your stroke risk is high (CHA2DS2-VASc = 3), resuming Apixaban 5 mg twice daily is essential. Contact our clinic before ever stopping a medication."] }],
   GUIDING_QUESTIONS: [
     'Why is resuming Apixaban 5 mg BID indicated?',
-    'How does stable Hgb 13.0 g/dL rule out major bleeding?',
+    'How does a stable Hgb 13.0 g/dL reassure against major bleeding without definitively ruling out occult bleeding?',
     'Why should DOAC therapy be preferred over Warfarin per guidelines?',
     'How can teach-back and patient-centered counseling build confidence?',
     'Why are vaccine gaps deferred to a future visit?'
@@ -852,7 +852,7 @@ const angelaWed = makeCase({
         { 
           key: 'q1', 
           q: 'What is the stroke risk vs bleeding risk evaluation and anticoagulation recommendation?',
-          defaultAnswer: 'Persistent Nonvalvular Atrial Fibrillation with high thromboembolic risk. CHA2DS2-VASc score = 3 (Heart Failure +1, Hypertension +1, Female sex +1; Age 64 does not meet ≥65 criterion), indicating high stroke risk. Patient independently stopped Apixaban several weeks ago due to minor cutaneous bruising and fear after a friend\'s bleeding anecdote. Given her specific CHA2DS2-VASc score of 3 and low bleeding risk profile (stable Hgb 13.0 g/dL compared to baseline 13.2 g/dL ruling out major bleeding, normal platelet count 236k ruling out thrombocytopenia), stroke-prevention benefits far outweigh minor bleeding risks. Patient denies major bleeding, hemoptysis, hematuria, hematochezia, melena, or hospitalizations. Preserved renal function (eGFR 73 mL/min/1.73m², SCr 1.0 mg/dL) confirms Apixaban dose-reduction criteria are not met, supporting full-dose Apixaban 5 mg PO BID. Per 2023 ACC/AHA AFib guidelines, DOAC therapy is strongly preferred over VKAs (Warfarin), and no switch is warranted. Resuming full-dose Apixaban 5 mg PO BID immediately is indicated; do NOT reduce dose or discontinue anticoagulation.'
+          defaultAnswer: 'Persistent Nonvalvular Atrial Fibrillation with high thromboembolic risk. CHA2DS2-VASc score = 3 (Heart Failure +1, Hypertension +1, Female sex +1; Age 64 does not meet ≥65 criterion), indicating high stroke risk. Patient independently stopped Apixaban several weeks ago due to minor cutaneous bruising and fear after a friend\'s bleeding anecdote. Given her specific CHA2DS2-VASc score of 3 and low bleeding risk profile (stable Hgb 13.0 g/dL compared to baseline 13.2 g/dL reassuring against acute or major bleeding, normal platelet count 236k ruling out thrombocytopenia), stroke-prevention benefits far outweigh minor bleeding risks. Patient denies major bleeding, hemoptysis, hematuria, hematochezia, melena, or hospitalizations. Preserved renal function (eGFR 73 mL/min/1.73m², SCr 1.0 mg/dL) confirms Apixaban dose-reduction criteria are not met, supporting full-dose Apixaban 5 mg PO BID. Per 2023 ACC/AHA AFib guidelines, DOAC therapy is strongly preferred over VKAs (Warfarin), and no switch is warranted. Resuming full-dose Apixaban 5 mg PO BID immediately is indicated; do NOT reduce dose or discontinue anticoagulation.'
         }
       ] 
     },
@@ -961,7 +961,7 @@ const angelaThu = makeCase({
     learningObjectives: ['Confirm longitudinal adherence and therapy maintenance', 'Address patient questions regarding lifelong medication duration', 'Execute preventive care updates'],
     visitDate: '03/09/2027',
   },
-  VITALS: { bp: '124/74', bpRepeat: '122/72', hr: '80', rr: '16', temp: '98.0°F', spo2: '98%', weight: '84 kg', height: "5'5\"", bmi: '30.8', vitalsTime: '03/09/2027 09:14', flags: {} },
+  VITALS: { bp: '124/74', bpRepeat: '122/72', hr: '80', rr: '16', temp: '98.0°F', spo2: '98%', spo2Qualifier: 'on room air', weight: '84 kg', height: "5'5\"", bmi: '30.8', vitalsTime: '03/09/2027 09:14', flags: {} },
   LABS: [
     { label: 'Na', value: '139', unit: 'mEq/L', flag: 'normal', labDate: '03/09/2027 07:50' },
     { label: 'K', value: '4.4', unit: 'mEq/L', flag: 'normal', labDate: '03/09/2027 07:50' },
@@ -1006,7 +1006,7 @@ const angelaThu = makeCase({
     { label: 'Past Surgical History', value: 'Cholecystectomy (prior gallbladder removal).' }
   ],
   OBJECTIVE_EXTRA: [
-    { label: 'Objective Trend & Lab Interpretations', value: 'Physical Exam: Cardiac rhythm is irregularly irregular on exam. Vital signs: BP 124/74 mmHg (repeat 122/72 mmHg, goal <130/80 mmHg), HR 80 bpm, Wt 83 kg, BMI 30.5 kg/m². Laboratory Data: WBC 6.6 x10³/mm³, Hgb 13.1 g/dL, Plt 240 x10³/mm³. SCr 1.0 mg/dL, eGFR 72 mL/min/1.73m², AST 22 U/L, ALT 24 U/L, Na 138 mEq/L, K 4.4 mEq/L. Absence of BNP/NT-proBNP noted as a missing data gap for stability assessment. Routine INR monitoring is unnecessary given DOAC (Apixaban) use. CHA2DS2-VASc score calculated as 3 (Heart Failure +1, HTN +1, Female +1; Age 64 does not meet ≥65 criterion). Apixaban dose-reduction criteria (age ≥80, weight ≤60 kg, SCr ≥1.5 mg/dL) are NOT met (Age 64, Wt 83 kg, SCr 1.0 mg/dL).' }
+    { label: 'Objective Trend & Lab Interpretations', value: 'Physical Exam: Cardiac rhythm is irregularly irregular on exam. Vital signs: BP 124/74 mmHg (repeat 122/72 mmHg, goal <130/80 mmHg), HR 80 bpm, Wt 84 kg, BMI 30.8 kg/m². Laboratory Data: WBC 6.6 x10³/mm³, Hgb 13.1 g/dL, Plt 241 x10³/mm³. SCr 1.0 mg/dL, eGFR 72 mL/min/1.73m², AST 24 U/L, ALT 21 U/L, Na 139 mEq/L, K 4.4 mEq/L. Absence of BNP/NT-proBNP noted as a missing data gap for stability assessment. Routine INR monitoring is unnecessary given DOAC (Apixaban) use. CHA2DS2-VASc score calculated as 3 (Heart Failure +1, HTN +1, Female +1; Age 64 does not meet ≥65 criterion). Apixaban dose-reduction criteria (age ≥80, weight ≤60 kg, SCr ≥1.5 mg/dL) are NOT met (Age 64, Wt 84 kg, SCr 1.0 mg/dL).' }
   ],
   INTERVIEW_FIELDS: [
     { key: 'adherence', label: 'Longitudinal Adherence & Duration Query', placeholder: 'Assess pillbox routine and answer duration questions' },
@@ -1163,12 +1163,12 @@ const robertTue = makeCase({
   ENCOUNTER: { week: "Week 4", 
     day: "Tuesday", type: "Routine Follow-Up Ambulatory Care Cardiology Clinic Visit", difficulty: "Core", difficultyTone: "teal",
     chiefConcern: "I like to review my labs on the portal. My kidney numbers seem worse, and I'm wondering if my medications are causing it or if I need a lower blood thinner dose.",
-    snapshotSummary: "Robert Jenkins is a 76-year-old male with HFrEF (diagnosed 4 years ago, LVEF 30% baseline, 32% current), persistent nonvalvular AFib (CHA2DS2-VASc = 4), CKD Stage 3b (SCr 1.82 mg/dL, eGFR 38 mL/min/1.73m²), T2DM (HbA1c 6.9%), and secondary ASCVD (CAD s/p NSTEMI 3 years ago and PCI with DES). Reviews lab results via patient portal and questions if SCr 1.82 mg/dL warrants Apixaban dose reduction or GDMT discontinuation.",
+    snapshotSummary: "Robert Jenkins is a 76-year-old male with HFrEF (diagnosed 4 years ago, LVEF 30% baseline, 32% current), persistent nonvalvular AFib (CHA2DS2-VASc = 6; Congestive HF +1, HTN +1, Age 76 +2, Diabetes +1, Vascular Disease/CAD +1), CKD Stage 3b (SCr 1.82 mg/dL, eGFR 38 mL/min/1.73m²), T2DM (HbA1c 6.9%), and secondary ASCVD (CAD s/p NSTEMI 3 years ago and PCI with DES). Reviews lab results via patient portal and questions if SCr 1.82 mg/dL warrants Apixaban dose reduction or GDMT discontinuation.",
     diseaseStates: ["HFrEF", "AFib", "CKD", "T2DM", "ASCVD"],
     learningObjectives: ["Apply DOAC dose reduction criteria (Age ≥80, Wt ≤60kg, SCr ≥1.5)", "Maintain 4-pillar GDMT despite mild renal decline", "Manage borderline hyperkalemia"],
     visitDate: "09/09/2026",
   },
-  VITALS: { bp: "112/68 mmHg", bpRepeat: "110/66 mmHg", hr: "72 bpm", rr: "16 breaths/min", temp: "98.1°F", spo2: "98%", spo2Qualifier: "on room air", weight: "82 kg", height: "5 ft 7 in", bmi: "27.8 kg/m²", vitalsTime: "09/09/2026 09:14", flags: {} },
+  VITALS: { bp: "112/68 mmHg", bpRepeat: "110/66 mmHg", hr: "72 bpm", rr: "16 breaths/min", temp: "98.1°F", spo2: "98%", spo2Qualifier: "on room air", weight: "82 kg", height: "5 ft 7 in", bmi: "28.3 kg/m²", vitalsTime: "09/09/2026 09:14", flags: {} },
   LABS: [
     { label: "Na", value: "138", unit: "mEq/L", flag: "normal", labDate: "09/09/2026 07:50" },
     { label: "K", value: "5.0", unit: "mEq/L", flag: "high", labDate: "09/09/2026 07:50" },
@@ -1187,9 +1187,9 @@ const robertTue = makeCase({
   ],
   PROBLEMS: [
     { name: "1. Heart Failure with Reduced Ejection Fraction (HFrEF) — Stable on 4-Pillar GDMT", detail: "Diagnosed 4 years ago. LVEF 32% (slight improvement vs 30% baseline), NYHA Class II. Clinically stable on 4-pillar GDMT.", flag: "normal" },
-    { name: "2. Chronic Kidney Disease Stage 3b (CKD 3b) — Stable Longitudinal Trend", detail: "SCr 1.82 mg/dL, eGFR 38 mL/min/1.73m² (12-mo eGFR 52 / SCr 1.42 -> 6-mo eGFR 46 / SCr 1.58 -> current eGFR 38 / SCr 1.82 over past year). Approaching Stage 4 threshold (<30). Primary goal: avoid progression to dialysis.", flag: "warn" },
+    { name: "2. Chronic Kidney Disease Stage 3b (CKD 3b) — Progressive Longitudinal Decline Over 12 Months", detail: "SCr 1.82 mg/dL, eGFR 38 mL/min/1.73m² (12-mo eGFR 52 / SCr 1.42 -> 6-mo eGFR 46 / SCr 1.58 -> current eGFR 38 / SCr 1.82 over past year). Approaching Stage 4 threshold (<30). Primary goal: avoid progression to dialysis.", flag: "warn" },
     { name: "3. Borderline / Mild Hyperkalemia", detail: "Serum K 5.0 mEq/L. Asymptomatic. Maintain MRA and RAAS inhibition with monitoring.", flag: "warn" },
-    { name: "4. Persistent Nonvalvular Atrial Fibrillation (AFib) — Stable Anticoagulation", detail: "CHA2DS2-VASc = 4. Stable on Apixaban 5 mg BID (meets only 1 of 3 dose reduction criteria).", flag: "normal" },
+    { name: "4. Persistent Nonvalvular Atrial Fibrillation (AFib) — Stable Anticoagulation", detail: "CHA2DS2-VASc = 6 (calculated from HF +1, HTN +1, Age 76 +2, Diabetes +1, CAD/Vascular +1). Stable on Apixaban 5 mg BID (meets only 1 of 3 dose reduction criteria).", flag: "normal" },
     { name: "5. Coronary Artery Disease (CAD) & Secondary ASCVD Prevention — Stable", detail: "s/p NSTEMI 3 years ago and PCI with DES. Stable on Rosuvastatin 40 mg daily.", flag: "normal" },
   ],
   MEDICATIONS: [
@@ -1210,14 +1210,14 @@ const robertTue = makeCase({
   SUBJECTIVE_DOCUMENTED: [
     { label: "HPI", value: "76-year-old male presents for a routine follow-up at the ambulatory care cardiology clinic. Patient is highly engaged in his healthcare and routinely reviews recent laboratory results via the patient portal. Noticed that serum creatinine is 1.82 mg/dL (eGFR 38 mL/min/1.73m²) and questions if progressive kidney function decline over the past year (12-month eGFR 52 / SCr 1.42 → 6-month eGFR 46 / SCr 1.58 → current eGFR 38 / SCr 1.82 mL/min/1.73m²) is caused by his medications or if his Apixaban dose should be reduced. Patient is specifically concerned about sacubitril/valsartan and its renal effects, and specifically concerned about spironolactone and its renal and potassium effects. Patient independently researched medication-related kidney effects online and considered stopping spironolactone, but confirmed he has NOT made any medication changes. Patient's wife (spouse) shares his concern about medications worsening kidney function. Patient's primary goal is avoiding progression to dialysis. Patient explicitly requests provider input and frames his preference as shared decision-making regarding therapy continuation, strongly prefers evidence-based explanations, and requests discussion of a monitoring plan and long-term expectations. Reports excellent medication adherence, taking all prescribed medications (Sacubitril/Valsartan 97/103 mg BID, Metoprolol Succinate 100 mg daily, Spironolactone 25 mg daily, Empagliflozin 10 mg daily, Apixaban 5 mg BID, Rosuvastatin 40 mg daily) exactly as directed without missing doses. Reports performing regular home monitoring of blood pressure (home average BP 110–118/64–70 mmHg), heart rate (home average HR 68–76 bpm), and weight every single day, with stable home readings and stable weight. Patient reports HF symptoms (mild exertional dyspnea, unchanged from prior visits) are stable. Denies chest pain, syncope, significant palpitations, resting dyspnea, orthopnea, paroxysmal nocturnal dyspnea (PND), lower extremity edema, recent hospitalizations, or emergency department visits since last visit." },
     { label: "Review of Systems (ROS)", value: "General/Constitutional: Denies fever, chills, hospitalizations, or emergency department visits. Cardiovascular: Denies chest pain, syncope, significant palpitations, orthopnea, PND, or major bleeding. Respiratory: Reports mild exertional dyspnea as a pertinent positive, unchanged from prior visits; denies resting dyspnea or hemoptysis. Musculoskeletal/Edema: Denies lower extremity edema or recent falls. GI/GU/Renal & Adherence: Patient reports concern regarding progressive SCr 1.82 mg/dL and eGFR 38 mL/min/1.73m²; considered stopping spironolactone but confirmed no medication changes made. Patient and spouse express anxiety over dialysis progression and request an evidence-based monitoring plan." },
-    { label: "Past Medical History", value: "Heart Failure with Reduced Ejection Fraction (HFrEF, diagnosed 4 years ago, LVEF 30% baseline, current LVEF 32%, NYHA Class II, ACC/AHA Stage C), Persistent Nonvalvular Atrial Fibrillation (AFib, CHA2DS2-VASc = 4), Coronary Artery Disease (CAD, prior NSTEMI 3 years ago s/p PCI with drug-eluting stent [DES]), Chronic Kidney Disease Stage 3b (CKD 3b, SCr 1.82 mg/dL, eGFR 38 mL/min/1.73m², approaching Stage 4 threshold <30 mL/min/1.73m²), Type 2 Diabetes Mellitus (T2DM, HbA1c 6.9%), Hypertension (HTN), Hyperlipidemia (HLD)." },
+    { label: "Past Medical History", value: "Heart Failure with Reduced Ejection Fraction (HFrEF, diagnosed 4 years ago, LVEF 30% baseline, current LVEF 32%, NYHA Class II, ACC/AHA Stage C), Persistent Nonvalvular Atrial Fibrillation (AFib, CHA2DS2-VASc = 6 [prior EMR export showed 4]), Coronary Artery Disease (CAD, prior NSTEMI 3 years ago s/p PCI with drug-eluting stent [DES]), Chronic Kidney Disease Stage 3b (CKD 3b, SCr 1.82 mg/dL, eGFR 38 mL/min/1.73m², approaching Stage 4 threshold <30 mL/min/1.73m²), Type 2 Diabetes Mellitus (T2DM, HbA1c 6.9%), Hypertension (HTN), Hyperlipidemia (HLD)." },
     { label: "Social History", value: "Retired engineer. Lives with spouse (wife who assists with health management, medication tracking, and shares kidney concerns). Former smoker (25 pack-year smoking history, quit ~12 years ago). Rarely drinks alcohol (1-2 drinks per month at social gatherings). Denies illicit drug use. Diligent with daily home BP (110–118/64–70 mmHg), HR (68–76 bpm), and weight monitoring." },
     { label: "Family History", value: "Father: myocardial infarction (MI) at age 58. Mother: ischemic stroke at age 72. Brother: coronary artery disease (CAD). Family history explicitly linked to patient's cardiovascular and stroke risk." },
     { label: "OTC & Allergies", value: "Daily multivitamin; explicitly avoids OTC NSAIDs and aspirin unless provider approved. No known drug allergies (NKDA)." },
     { label: "Past Surgical History", value: "PCI with drug-eluting stent (DES) placement 3 years ago following NSTEMI." }
   ],
   OBJECTIVE_EXTRA: [
-    { label: "Objective Trend Analysis & Physical Exam", value: "Physical Exam: Cardiac rhythm is irregularly irregular on exam, clear lungs, no peripheral edema. Vital signs: BP 112/68 mmHg (repeat 110/66 mmHg, goal <130/80 mmHg), HR 72 bpm (controlled on Metoprolol Succinate), RR 16 breaths/min, Temp 98.1°F, SpO2 98% on room air, Wt 82 kg, Ht 5 ft 7 in (67 inches), BMI 27.8 kg/m². Home average BP: 110–118/64–70 mmHg, Home average HR: 68–76 bpm. Laboratory Interpretations: SCr 1.82 mg/dL, eGFR 38 mL/min/1.73m² (CKD Stage 3b; trend 12-month eGFR 52 / SCr 1.42 -> 6-month eGFR 46 / SCr 1.58 -> current eGFR 38 / SCr 1.82 over past year, approaching Stage 4 threshold <30 mL/min/1.73m²). Serum potassium 5.0 mEq/L (borderline/mild hyperkalemia, asymptomatic). Na 138 mEq/L, BUN 34 mg/dL, WBC 6.4 x10³/mm³, Hgb 13.5 g/dL, Plt 228 x10³/mm³, BNP 165 pg/mL (decreased from 210 pg/mL six months ago, indicating therapeutic improvement), HbA1c 6.9% (controlled). Echocardiogram: LVEF 32% (slight improvement / stable compared to 30% baseline). Absent lipid panel flagged as missing expected data in statin-managed patient. Immunizations: Tdap up to date." }
+    { label: "Objective Trend Analysis & Physical Exam", value: "Physical Exam: Cardiac rhythm is irregularly irregular on exam, clear lungs, no peripheral edema. Vital signs: BP 112/68 mmHg (repeat 110/66 mmHg, goal <130/80 mmHg), HR 72 bpm (controlled on Metoprolol Succinate), RR 16 breaths/min, Temp 98.1°F, SpO2 98% on room air, Wt 82 kg, Ht 5 ft 7 in (67 inches), BMI 28.3 kg/m². Home average BP: 110–118/64–70 mmHg, Home average HR: 68–76 bpm. Laboratory Interpretations: SCr 1.82 mg/dL, eGFR 38 mL/min/1.73m² (CKD Stage 3b; trend 12-month eGFR 52 / SCr 1.42 -> 6-month eGFR 46 / SCr 1.58 -> current eGFR 38 / SCr 1.82 over past year, approaching Stage 4 threshold <30 mL/min/1.73m²). Serum potassium 5.0 mEq/L (borderline/mild hyperkalemia, asymptomatic). Na 138 mEq/L, BUN 34 mg/dL, WBC 6.4 x10³/mm³, Hgb 13.5 g/dL, Plt 228 x10³/mm³, BNP 165 pg/mL (decreased from 210 pg/mL six months ago, indicating therapeutic improvement), HbA1c 6.9% (controlled). Echocardiogram: LVEF 32% (slight improvement / stable compared to 30% baseline). Absent lipid panel flagged as missing expected data in statin-managed patient. Immunizations: Tdap up to date." }
   ],
   INTERVIEW_FIELDS: [
     { key: "questions", label: "Patient Questions & Evidence Inquiry", placeholder: "Assess renal concerns and apixaban dosing question" },
@@ -1233,7 +1233,7 @@ const robertTue = makeCase({
   ],
   INTERVIEW_KNOWLEDGE: [
     { id: "w4-robert_j4-tue_allerg", topic: "Medication allergies", field: "allergies", keywords: ["allergy", "allergic", "allergies", "penicillin", "sulfa", "codeine", "reaction", "rash", "hives"], response: "I do not have any known drug or food allergies." },
-    { id: "w4-robert_j4-tue_otc", topic: "OTC / Supplements", field: "otc", keywords: ["otc", "over the counter", "supplement", "herb", "vitamin", "multivitamin"], response: "I take a daily multivitamin. I avoid other over-the-counter pain relievers unless my doctor approves them." },
+    { id: "w4-robert_j4-tue_otc", topic: "OTC / Supplements", field: "otc", keywords: ["otc", "over the counter", "supplement", "herb", "vitamin", "multivitamin"], response: "I take one daily multivitamin tablet every morning with breakfast. I avoid other over-the-counter pain relievers unless my doctor approves them." },
     { id: "w4-robert_j4-tue_alc", topic: "Alcohol use", field: "alcohol", keywords: ["alcohol", "drink", "beer", "wine", "liquor"], response: "I rarely drink alcohol—maybe 1 to 2 drinks per month at social gatherings." },
     { id: "w4-robert_j4-tue_tobacco", topic: "Tobacco use", field: "tobacco", keywords: ["tobacco", "smoke", "smoking", "cigarette", "cigar", "vape", "vaping", "nicotine"], response: "I am a former smoker. I quit about 12 years ago, and I had a 25 pack-year history before that." },
     { id: "w4-robert_j4-tue_fh", topic: "Family history", field: "familyHistory", keywords: ["family history", "father", "mother", "parents", "brother", "sister", "sibling"], response: "My father had a heart attack at age 58. My mother had an ischemic stroke at age 72. My brother has coronary artery disease." },
@@ -1384,7 +1384,7 @@ const robertWed = makeCase({
     learningObjectives: ["Develop periprocedural DOAC interruption plan based on bleeding risk and eGFR", "Recognize that heparin bridging is NOT recommended for DOACs in NVAF", "Provide clear written procedural instructions"],
     visitDate: "12/09/2026",
   },
-  VITALS: { bp: "114/68 mmHg", bpRepeat: "112/66 mmHg", hr: "70 bpm", rr: "16 breaths/min", temp: "98.0°F", spo2: "98%", spo2Qualifier: "on room air", weight: "82 kg", height: "5 ft 7 in", bmi: "27.8 kg/m²", vitalsTime: "12/09/2026 09:14", flags: {} },
+  VITALS: { bp: "114/68 mmHg", bpRepeat: "112/66 mmHg", hr: "70 bpm", rr: "16 breaths/min", temp: "98.0°F", spo2: "98%", spo2Qualifier: "on room air", weight: "82 kg", height: "5 ft 7 in", bmi: "28.3 kg/m²", vitalsTime: "12/09/2026 09:14", flags: {} },
   LABS: [
     { label: "Na", value: "138", unit: "mEq/L", flag: "normal", labDate: "12/09/2026 07:50" },
     { label: "K", value: "4.8", unit: "mEq/L", flag: "normal", labDate: "12/09/2026 07:50" },
@@ -1399,7 +1399,7 @@ const robertWed = makeCase({
     { level: "warn", text: "Pre-procedural planning for elective screening colonoscopy (~3 weeks out). Hold Apixaban 5 mg BID for 48 hours prior to procedure. Do NOT initiate LMWH (heparin) bridging." }
   ],
   PROBLEMS: [
-    { name: "1. Persistent Nonvalvular AFib — Periprocedural Anticoagulation Planning", detail: "CHA2DS2-VASc = 4. Elective colonoscopy (~3 weeks out). Hold Apixaban 48h pre-procedure; NO LMWH bridging.", flag: "warn" },
+    { name: "1. Persistent Nonvalvular Atrial Fibrillation (AFib) — Periprocedural Anticoagulation Planning", detail: "CHA2DS2-VASc = 6 (prior EMR export showed 4). Elective colonoscopy (~3 weeks out). Hold Apixaban 48h pre-procedure; NO LMWH bridging.", flag: "warn" },
     { name: "2. Heart Failure with Reduced Ejection Fraction (HFrEF) — Stable", detail: "Diagnosed 4 years ago, LVEF 30% baseline. Clinically stable on 4-pillar GDMT.", flag: "normal" },
     { name: "3. Chronic Kidney Disease Stage 3b (CKD 3b) — Stable", detail: "SCr 1.79 mg/dL, eGFR 39 mL/min/1.73m² (stable). Supports Apixaban 5 mg BID continuation.", flag: "warn" },
     { name: "4. Coronary Artery Disease (CAD), Type 2 Diabetes & Secondary ASCVD Prevention — Stable", detail: "s/p NSTEMI 3 years ago and PCI with DES. HbA1c 6.9%. Stable on Rosuvastatin 40 mg daily.", flag: "normal" },
@@ -1417,10 +1417,10 @@ const robertWed = makeCase({
     { label: "Past Surgical History", value: "Percutaneous coronary intervention (PCI) with drug-eluting stent (DES) placement 3 years ago following NSTEMI." }
   ],
   OBJECTIVE_EXTRA: [
-    { label: "Objective Trend & Procedural Context", value: "Physical Exam: Irregularly irregular rhythm, clear lungs, no peripheral edema. Vital signs: BP 114/68 mmHg (repeat 112/66 mmHg), HR 70 bpm, RR 16 breaths/min, Temp 98.0°F, SpO2 98% on room air, Wt 82 kg, Ht 5 ft 7 in (67 inches), BMI 27.8 kg/m². Laboratory Data: SCr 1.79 mg/dL, eGFR 39 mL/min/1.73m² (stable CKD Stage 3b), Na 138 mEq/L, K 4.8 mEq/L (linked to spironolactone monitoring relevance), BUN 32 mg/dL, WBC 6.5 x10³/mm³, Hgb 13.4 g/dL (acceptable, no significant anemia), Plt 226 x10³/mm³ (adequate, no thrombocytopenia). Absent labs flagged with rationale: No INR/PT documented (apixaban does not require routine INR monitoring); No anti-Xa level documented (apixaban is fixed-dose and does not require routine monitoring); No HbA1c/glucose result at this visit; No lipid panel at this visit; No BNP/NT-proBNP at this visit. eGFR 39 mL/min/1.73m² supports Apixaban 5 mg BID without dose reduction (per 2023 ACC/AHA AFib guidelines)." }
+    { label: "Objective Trend & Procedural Context", value: "Physical Exam: Irregularly irregular rhythm, clear lungs, no peripheral edema. Vital signs: BP 114/68 mmHg (repeat 112/66 mmHg), HR 70 bpm, RR 16 breaths/min, Temp 98.0°F, SpO2 98% on room air, Wt 82 kg, Ht 5 ft 7 in (67 inches), BMI 28.3 kg/m². Laboratory Data: SCr 1.79 mg/dL, eGFR 39 mL/min/1.73m² (stable CKD Stage 3b), Na 138 mEq/L, K 4.8 mEq/L (linked to spironolactone monitoring relevance), BUN 32 mg/dL, WBC 6.5 x10³/mm³, Hgb 13.4 g/dL (acceptable, no significant anemia), Plt 226 x10³/mm³ (adequate, no thrombocytopenia). Absent labs flagged with rationale: No INR/PT documented (apixaban does not require routine INR monitoring); No anti-Xa level documented (apixaban is fixed-dose and does not require routine monitoring); No HbA1c/glucose result at this visit; No lipid panel at this visit; No BNP/NT-proBNP at this visit. eGFR 39 mL/min/1.73m² supports Apixaban 5 mg BID without dose reduction (per 2023 ACC/AHA AFib guidelines)." }
   ],
   INTERVIEW_FIELDS: [
-    { key: "nosebleeds", label: "Procedural Planning & Bridging Inquiry", placeholder: "Assess colonoscopy timing and bridging questions" },
+    { key: "procedural_planning", label: "Procedural Planning & Bridging Inquiry", placeholder: "Assess colonoscopy timing and bridging questions" },
   ],
   COUNSELING: [{ id: "c1", title: "Periprocedural Anticoagulation Plan & Bridging Rationale", body: ["For your upcoming colonoscopy, you will hold your Apixaban for exactly 48 hours prior to the procedure. Because you take Apixaban for nonvalvular atrial fibrillation, injectable heparin bridging is NOT recommended—studies show bridging significantly increases bleeding risk without reducing stroke risk. You will resume Apixaban after the procedure once hemostasis is confirmed. We will provide a clear written schedule."] }],
   GUIDING_QUESTIONS: [
@@ -1439,7 +1439,8 @@ const robertWed = makeCase({
     { id: "w4-robert_j4-wed_fh", topic: "Family history", field: "familyHistory", keywords: ["family history", "father", "mother", "parents", "brother", "sister", "sibling"], response: "My father had a heart attack at age 58. My mother had an ischemic stroke at age 72. My brother has coronary artery disease." },
     { id: "w4-robert_j4-wed_social", topic: "Social history", field: "socialHistory", keywords: ["live", "marital", "married", "job", "work", "employ", "living", "spouse", "wife", "engineer", "retired"], response: "I am a retired engineer. I live with my wife, she helps me manage everything." },
     { id: "w4-robert_j4-wed_monitor", topic: "Home monitoring", field: "monitoring", keywords: ["monitor", "home", "blood pressure", "bp", "heart rate", "hr", "weight", "scale", "weigh", "daily"], response: "Oh yes, I am very diligent. I check my blood pressure, heart rate, and weight at home every single day." },
-    { id: "w4c2_bleed", topic: "Colonoscopy Planning", field: "nosebleeds", keywords: ["colonoscopy", "polyp", "procedure", "stop", "hold", "bridge", "heparin", "injectable"], response: "I have an elective colonoscopy in 3 weeks. My gastroenterologist said I might need to hold my blood thinner. Do I need injectable heparin shots before the procedure like my friend had to do?" },
+        { id: "w4-robert_j4-wed_bleeding", topic: "Bleeding and epistaxis history", field: "bleeding", keywords: ["bleed", "bleeding", "nosebleed", "epistaxis", "bruise", "bruising", "blood", "stool", "urine", "hematuria"], response: "I haven't had any unusual bleeding, bruising, bloody stools, or bloody urine. I don't have frequent nosebleeds—just occasional minor dryness during winter months years ago, but nothing recent or concerning." },
+    { id: "w4c2_bleed", topic: "Colonoscopy Planning", field: "procedural_planning", keywords: ["colonoscopy", "polyp", "procedure", "stop", "hold", "bridge", "heparin", "injectable"], response: "I have an elective colonoscopy in 3 weeks. My gastroenterologist said I might need to hold my blood thinner. Do I need injectable heparin shots before the procedure like my friend had to do?" },
   ],
   ASSESSMENT_CARDS: [
     { 
@@ -1565,7 +1566,7 @@ const robertThu = makeCase({
     learningObjectives: ["Reevaluate stroke risk vs procedural bleeding risk post-colonoscopy", "Reinforce lifelong anticoagulation indication in persistent NVAF", "Maintain longitudinal 4-pillar GDMT and CKD surveillance"],
     visitDate: "03/09/2027",
   },
-  VITALS: { bp: "112/66 mmHg", bpRepeat: "110/64 mmHg", hr: "72 bpm", rr: "16 breaths/min", temp: "98.0°F", spo2: "98%", spo2Qualifier: "on room air", weight: "81.5 kg", height: "5 ft 7 in", bmi: "27.6 kg/m²", vitalsTime: "03/09/2027 09:14", flags: {} },
+  VITALS: { bp: "112/66 mmHg", bpRepeat: "110/64 mmHg", hr: "72 bpm", rr: "16 breaths/min", temp: "98.0°F", spo2: "98%", spo2Qualifier: "on room air", weight: "81.5 kg", height: "5 ft 7 in", bmi: "28.1 kg/m²", vitalsTime: "03/09/2027 09:14", flags: {} },
   LABS: [
     { label: "Na", value: "139", unit: "mEq/L", flag: "normal", labDate: "03/09/2027 07:50" },
     { label: "K", value: "4.8", unit: "mEq/L", flag: "normal", labDate: "03/09/2027 07:50" },
@@ -1578,7 +1579,7 @@ const robertThu = makeCase({
   ],
   ALERTS: [],
   PROBLEMS: [
-    { name: "1. Persistent Nonvalvular AFib — Long-Term Anticoagulation Reassessment", detail: "CHA2DS2-VASc = 4. Post-colonoscopy follow-up. Successful polyp removal does NOT alter stroke risk. Continue Apixaban 5 mg BID lifelong.", flag: "normal" },
+    { name: "1. Persistent Nonvalvular Atrial Fibrillation (AFib) — Long-Term Anticoagulation Reassessment", detail: "CHA2DS2-VASc = 6 (prior EMR export showed 4). Post-colonoscopy follow-up. Successful polyp removal does NOT alter stroke risk. Continue Apixaban 5 mg BID lifelong.", flag: "normal" },
     { name: "2. Heart Failure with Reduced Ejection Fraction (HFrEF) — Stable", detail: "Diagnosed 4 years ago, LVEF 30% baseline, 32% current. NYHA Class II. Clinically stable on 4-pillar GDMT.", flag: "normal" },
     { name: "3. Chronic Kidney Disease Stage 3b (CKD 3b) — Stable", detail: "SCr 1.76 mg/dL, eGFR 40 mL/min/1.73m² (stable). Supports continued Apixaban and GDMT.", flag: "warn" },
     { name: "4. Coronary Artery Disease (CAD), Diabetes, HTN & Secondary ASCVD Prevention — Stable", detail: "s/p NSTEMI 3 years ago and PCI with DES. Stable on Rosuvastatin 40 mg daily. HbA1c 6.9%, BP 112/66 mmHg.", flag: "normal" },
@@ -1596,7 +1597,7 @@ const robertThu = makeCase({
     { label: "Past Surgical History", value: "PCI with drug-eluting stent (DES) placement 3 years ago following NSTEMI. Elective screening colonoscopy ~10 days ago (2 small tubular adenomas removed)." }
   ],
   OBJECTIVE_EXTRA: [
-    { label: "Gastroenterology Report & Objective Data", value: "Gastroenterology Report (10 days ago): Elective screening colonoscopy performed with successful endoscopic mucosal resection of two small tubular adenomas. No procedural complications, no immediate bleeding, no post-procedural bleeding. Routine endoscopic surveillance recommended by gastroenterology. Physical Exam: Irregularly irregular cardiac rhythm, clear lungs, no peripheral edema. Vital signs: BP 112/66 mmHg (repeat 110/64 mmHg, goal <130/80 mmHg), HR 72 bpm, RR 16 breaths/min, Temp 98.0°F, SpO2 98% on room air, Wt 81.5 kg, Ht 5 ft 7 in (67 inches), BMI 27.6 kg/m². BP 112/66 mmHg is clinically acceptable for continued GDMT (no hypotension concern, supports continuation without dose reduction). Laboratory Interpretations: SCr 1.76 mg/dL, eGFR 40 mL/min/1.73m² (CKD Stage 3b, supports continued DOAC and GDMT use). Na 139 mEq/L, K 4.8 mEq/L (acceptable range despite concurrent spironolactone and RAAS inhibition), BUN 31 mg/dL, WBC 6.3 x10³/mm³, Hgb 13.3 g/dL (current, stable vs previous 13.4 g/dL — no significant decline, well above clinical bleeding threshold), Plt 229 x10³/mm³. Coagulation monitoring labs (INR/anti-Xa) not ordered — appropriate for DOAC (Apixaban) use." }
+    { label: "Gastroenterology Report & Objective Data", value: "Gastroenterology Report (10 days ago): Elective screening colonoscopy performed with successful endoscopic mucosal resection of two small tubular adenomas. No procedural complications, no immediate bleeding, no post-procedural bleeding. Routine endoscopic surveillance recommended by gastroenterology. Physical Exam: Irregularly irregular cardiac rhythm, clear lungs, no peripheral edema. Vital signs: BP 112/66 mmHg (repeat 110/64 mmHg, goal <130/80 mmHg), HR 72 bpm, RR 16 breaths/min, Temp 98.0°F, SpO2 98% on room air, Wt 81.5 kg, Ht 5 ft 7 in (67 inches), BMI 28.1 kg/m². BP 112/66 mmHg is clinically acceptable for continued GDMT (no hypotension concern, supports continuation without dose reduction). Laboratory Interpretations: SCr 1.76 mg/dL, eGFR 40 mL/min/1.73m² (CKD Stage 3b, supports continued DOAC and GDMT use). Na 139 mEq/L, K 4.8 mEq/L (acceptable range despite concurrent spironolactone and RAAS inhibition), BUN 31 mg/dL, WBC 6.3 x10³/mm³, Hgb 13.3 g/dL (current, stable vs previous 13.4 g/dL — no significant decline, well above clinical bleeding threshold), Plt 229 x10³/mm³. Coagulation monitoring labs (INR/anti-Xa) not ordered — appropriate for DOAC (Apixaban) use." }
   ],
   INTERVIEW_FIELDS: [
     { key: "colonoscopy", label: "Post-Procedural Review & Anticoagulation Duration Query", placeholder: "Assess post-colonoscopy recovery and duration questions" },
@@ -1611,7 +1612,7 @@ const robertThu = makeCase({
   ],
   INTERVIEW_KNOWLEDGE: [
     { id: "w4-robert_j4-thu_allerg", topic: "Medication allergies", field: "allergies", keywords: ["allergy", "allergic", "allergies", "penicillin", "sulfa", "codeine", "reaction", "rash", "hives"], response: "I do not have any known drug or food allergies." },
-    { id: "w4-robert_j4-thu_otc", topic: "OTC / Supplements", field: "otc", keywords: ["otc", "over the counter", "supplement", "herb", "vitamin", "multivitamin"], response: "I take a daily multivitamin. I avoid other over-the-counter pain relievers unless my doctor approves them." },
+    { id: "w4-robert_j4-thu_otc", topic: "OTC / Supplements", field: "otc", keywords: ["otc", "over the counter", "supplement", "herb", "vitamin", "multivitamin"], response: "I take one daily multivitamin tablet. I avoid other over-the-counter pain relievers unless my doctor approves them." },
     { id: "w4-robert_j4-thu_alc", topic: "Alcohol use", field: "alcohol", keywords: ["alcohol", "drink", "beer", "wine", "liquor"], response: "I rarely drink alcohol—maybe 1 to 2 drinks per month at social gatherings." },
     { id: "w4-robert_j4-thu_tobacco", topic: "Tobacco use", field: "tobacco", keywords: ["tobacco", "smoke", "smoking", "cigarette", "cigar", "vape", "vaping", "nicotine"], response: "I am a former smoker. I quit about 12 years ago, and I had a 25 pack-year history before that." },
     { id: "w4-robert_j4-thu_fh", topic: "Family history", field: "familyHistory", keywords: ["family history", "father", "mother", "parents", "brother", "sister", "sibling"], response: "My father had a heart attack at age 58. My mother had an ischemic stroke at age 72. My brother has coronary artery disease." },

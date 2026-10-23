@@ -215,10 +215,17 @@ function getMostellerBsa(v) {
   if (cmMatch) {
     cm = parseFloat(cmMatch[1]);
   } else {
-    const ftInMatch = String(v.height).match(/(\d+)'\s*(\d+)/);
+    // Matches 5'10", 5 ft 7 in, 5' 7, 5ft 7in, etc.
+    const ftInMatch = String(v.height).match(/(\d+)\s*(?:'|ft\.?)\s*(\d+)?/i);
     if (ftInMatch) {
-      const inches = parseInt(ftInMatch[1], 10) * 12 + parseInt(ftInMatch[2], 10);
-      cm = inches * 2.54;
+      const feet = parseInt(ftInMatch[1], 10);
+      const inches = ftInMatch[2] ? parseInt(ftInMatch[2], 10) : 0;
+      cm = (feet * 12 + inches) * 2.54;
+    } else {
+      const inMatch = String(v.height).match(/(\d+(?:\.\d+)?)\s*(?:in|inches|")/i);
+      if (inMatch) {
+        cm = parseFloat(inMatch[1]) * 2.54;
+      }
     }
   }
   const wtMatch = String(v.weight).match(/(\d+(?:\.\d+)?)/);
@@ -230,18 +237,20 @@ function getMostellerBsa(v) {
 
 /* ------------------------------------------------------------------ Vitals */
 export function VitalsTab({ c }) {
-  const v = c.VITALS
+  const v = c.VITALS || {}
+  const vTime = v.vitalsTime || (c.ENCOUNTER?.visitDate ? `${c.ENCOUNTER.visitDate} 09:14` : '09/09/2026 09:14')
+  const spo2Val = v.spo2Qualifier ? `${v.spo2} ${v.spo2Qualifier}` : (v.spo2 ? (v.spo2.includes('room air') ? v.spo2 : `${v.spo2} on room air`) : '98% on room air')
   const vitalsList = [
-    { label: 'Office BP', time: '06/23/2026 09:14', value: v.bp, flag: v.flags?.bp, ref: '<130/80 mmHg', trend: 'down', icon: v.flags?.bp === 'high' ? 'H' : undefined },
-    { label: 'Repeat BP', time: '06/23/2026 09:14', value: v.bpRepeat, flag: v.flags?.bpRepeat, ref: '<130/80 mmHg', icon: v.flags?.bpRepeat === 'high' ? 'H' : undefined },
-    { label: 'Heart rate', time: '06/23/2026 09:14', value: `${v.hr}`, ref: '60–100 bpm' },
-    { label: 'Respiratory rate', time: '06/23/2026 09:14', value: v.rr, ref: '12–20 /min' },
-    { label: 'Temperature', time: '06/23/2026 09:14', value: v.temp, ref: '97.0–99.5 °F' },
-    { label: 'SpO₂', time: '06/23/2026 09:14', value: v.spo2 || '97 %', ref: '95–100 %' },
-    { label: 'Weight', time: '06/23/2026 09:14', value: v.weight, ref: '—', trend: 'down' },
-    { label: 'Height', time: '06/23/2026 09:14', value: v.height, ref: '—' },
-    { label: 'BMI', time: '06/23/2026 09:14', value: v.bmi, flag: v.flags?.bmi, ref: '18.5–24.9 kg/m²', sub: v.flags?.bmi === 'high' ? 'Obesity' : undefined, icon: v.flags?.bmi === 'high' ? 'H' : undefined },
-    { label: 'BSA (Mosteller)', time: '06/23/2026 09:14', value: getMostellerBsa(v), ref: '—' },
+    { label: 'Office BP', time: vTime, value: v.bp, flag: v.flags?.bp, ref: '<130/80 mmHg', trend: 'down', icon: v.flags?.bp === 'high' ? 'H' : undefined },
+    { label: 'Repeat BP', time: vTime, value: v.bpRepeat, flag: v.flags?.bpRepeat, ref: '<130/80 mmHg', icon: v.flags?.bpRepeat === 'high' ? 'H' : undefined },
+    { label: 'Heart rate', time: vTime, value: `${v.hr}`, ref: '60–100 bpm' },
+    { label: 'Respiratory rate', time: vTime, value: v.rr, ref: '12–20 /min' },
+    { label: 'Temperature', time: vTime, value: v.temp, ref: '97.0–99.5 °F' },
+    { label: 'SpO₂', time: vTime, value: spo2Val, ref: '95–100 %' },
+    { label: 'Weight', time: vTime, value: v.weight, ref: '—', trend: 'down' },
+    { label: 'Height', time: vTime, value: v.height, ref: '—' },
+    { label: 'BMI', time: vTime, value: v.bmi, flag: v.flags?.bmi, ref: '18.5–24.9 kg/m²', sub: v.flags?.bmi === 'high' ? 'Obesity' : undefined, icon: v.flags?.bmi === 'high' ? 'H' : undefined },
+    { label: 'BSA (Mosteller)', time: vTime, value: getMostellerBsa(v), ref: '—' },
   ]
   return (
     <div className="space-y-4 pb-8">
@@ -321,8 +330,8 @@ function membersOf(c, members) {
 function panelStatus(labs) {
   if (labs.length === 0) return { text: 'Not ordered', flag: 'missing' }
   if (labs.some(l => l.flag === 'missing')) return { text: 'Missing / not obtained', flag: 'missing' }
-  if (labs.some(l => l.flag === 'high')) return { text: 'Abnormal', flag: 'high' }
-  if (labs.some(l => l.flag === 'warn')) return { text: 'Abnormal', flag: 'warn' }
+  if (labs.some(l => l.flag === 'high' || l.flag === 'low')) return { text: 'Abnormal', flag: 'high' }
+  if (labs.some(l => l.flag === 'warn' || l.flag === 'borderline')) return { text: 'Abnormal', flag: 'warn' }
   return { text: 'Within range', flag: 'normal' }
 }
 

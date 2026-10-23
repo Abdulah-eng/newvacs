@@ -46704,9 +46704,9 @@
     },
     {
       "id": "1A.9",
-      "description": "Spironolactone identified as most recent addition since prior visit",
+      "description": "Spironolactone continued (active GDMT pillar)",
       "points": 0.5,
-      "fullCredit": "States spironolactone initiated since prior visit",
+      "fullCredit": "States spironolactone 25 mg daily continued / active GDMT pillar (with or without 'recently added')",
       "halfCredit": "States new medication, no name",
       "zeroCredit": "Omits"
     },
@@ -47354,7 +47354,7 @@
       "id": "2A.5",
       "description": "SpO2: 98% on room air",
       "points": 0.4,
-      "fullCredit": "States 98% on room air",
+      "fullCredit": "States 98% (with or without 'on room air')",
       "halfCredit": "States SpO2 value, omits 'room air' qualifier",
       "zeroCredit": "Omits"
     },
@@ -47608,9 +47608,9 @@
     },
     {
       "id": "3A.6",
-      "description": "BNP improvement documented (baseline 320 → current 92 pg/mL)",
+      "description": "Cardiac biomarker improvement documented (NT-proBNP 165 → 92 pg/mL, or baseline BNP 320)",
       "points": 0.7,
-      "fullCredit": "States BNP improved from 320 pg/mL to 92 pg/mL",
+      "fullCredit": "States NT-proBNP improved to 92 pg/mL (from 165 pg/mL, or notes overall improvement from baseline BNP 320 pg/mL)",
       "halfCredit": "States BNP improved, missing one value",
       "zeroCredit": "Omits"
     },
@@ -47712,9 +47712,9 @@
     },
     {
       "id": "3A.19",
-      "description": "Spironolactone identified as most recently added GDMT agent",
+      "description": "Spironolactone evaluated as active GDMT pillar / MRA therapy",
       "points": 0.4,
-      "fullCredit": "States spironolactone recently initiated since prior visit",
+      "fullCredit": "States spironolactone active/continued as MRA pillar of GDMT (with or without 'recently added')",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -49020,7 +49020,7 @@
       "id": "2A.5",
       "description": "States SpO2 value and qualifier (98% on room air)",
       "points": 0.5,
-      "fullCredit": "States SpO2 98% on room air",
+      "fullCredit": "States SpO2 98% (with or without 'on room air')",
       "halfCredit": "States 98% without room air qualifier",
       "zeroCredit": "Omits SpO2"
     },
@@ -49612,7 +49612,7 @@
       "id": "3D.5",
       "description": "States preventive care optimization remains appropriate",
       "points": 1.5,
-      "fullCredit": "States preventive care optimization remains appropriate",
+      "fullCredit": "States preventive care optimization remains appropriate / indicated / recommended",
       "halfCredit": "States vaccines should be addressed without 'appropriate' qualifier",
       "zeroCredit": "Omits optimization statement"
     },
@@ -50734,7 +50734,7 @@
       "id": "2A.7",
       "description": "SpO₂ (98% on room air)",
       "points": 0.6,
-      "fullCredit": "States 98% on room air",
+      "fullCredit": "States 98% (with or without 'on room air')",
       "halfCredit": "States SpO2, no qualifier",
       "zeroCredit": "Omits"
     },
@@ -51206,7 +51206,7 @@
       "id": "3C.5",
       "description": "Improved access likely contributed to improved adherence",
       "points": 0.45,
-      "fullCredit": "Links improved access to improved adherence",
+      "fullCredit": "Links improved access/copay assistance to restored adherence anywhere in note",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -51294,7 +51294,7 @@
       "id": "3D.6",
       "description": "Improvements likely contributed to improved adherence",
       "points": 0.45,
-      "fullCredit": "Links literacy/confidence improvements to adherence",
+      "fullCredit": "Links education/confidence to restored adherence anywhere in note",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -51340,25 +51340,25 @@
     },
     {
       "id": "3E.3",
-      "description": "Shingrix series initiated but incomplete: dose #1 done, dose #2 pending",
+      "description": "Shingrix series status (dose #2 administered today / series completed, or prior dose #1 done)",
       "points": 0.5,
-      "fullCredit": "States Shingrix dose 1 complete, dose 2 pending",
+      "fullCredit": "States Shingrix dose #2 administered today / completed (or notes prior dose #1 done, dose #2 given today/pending)",
       "halfCredit": "States Shingrix started, no dose detail",
       "zeroCredit": "Omits"
     },
     {
       "id": "3E.4",
-      "description": "Tdap identified as remaining preventive care gap",
+      "description": "Tdap booster status (administered today / prior care gap closed)",
       "points": 0.5,
-      "fullCredit": "States Tdap remains due / is a gap",
+      "fullCredit": "States Tdap booster administered today / gap closed (or identifies Tdap prior gap addressed)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "3E.5",
-      "description": "Tdap to be addressed at a future preventive care visit",
+      "description": "Preventive care / immunization maintenance (Tdap administered today; routine schedule)",
       "points": 0.4,
-      "fullCredit": "States Tdap to be addressed at future visit",
+      "fullCredit": "States Tdap administered today / gaps closed, or plans routine preventive maintenance at future visits",
       "halfCredit": "Mentions Tdap, no timing",
       "zeroCredit": "Omits"
     },
@@ -52632,7 +52632,7 @@
       "id": "2A.6",
       "description": "Oxygen saturation (98% on room air)",
       "points": 0.55,
-      "fullCredit": "States 98% on room air",
+      "fullCredit": "States 98% (with or without 'on room air')",
       "halfCredit": "States SpO2 value, no room air qualifier",
       "zeroCredit": "Omits"
     },
@@ -53104,7 +53104,7 @@
       "id": "3B.13",
       "description": "States adherence improvement and patient education are immediate priorities",
       "points": 0.5,
-      "fullCredit": "States adherence and education as immediate priorities",
+      "fullCredit": "States adherence improvement, access intervention, or patient education as immediate priorities across note",
       "halfCredit": "States one priority only",
       "zeroCredit": "Omits"
     },
@@ -54634,7 +54634,7 @@
       "id": "2A.6",
       "description": "SpO₂ (98% on room air)",
       "points": 0.65,
-      "fullCredit": "States 98% on room air",
+      "fullCredit": "States 98% (with or without 'on room air')",
       "halfCredit": "States 98%, no room-air qualifier",
       "zeroCredit": "Omits"
     },
@@ -54938,7 +54938,7 @@
       "id": "3A.17",
       "description": "No clinical deterioration or decompensated heart failure noted despite missed doses",
       "points": 0.6,
-      "fullCredit": "States no decompensation or clinical deterioration noted despite missed doses",
+      "fullCredit": "States no decompensation or clinical deterioration noted (with or without referencing apixaban hold or missed doses)",
       "halfCredit": "States stable, no link to missed doses",
       "zeroCredit": "Omits"
     },
@@ -55050,7 +55050,7 @@
       "id": "3C.2",
       "description": "Knowledge gap: incomplete understanding of atrial fibrillation",
       "points": 0.5,
-      "fullCredit": "States patient lacks full understanding of atrial fibrillation",
+      "fullCredit": "States patient has knowledge gaps regarding AF stroke risk, anticoagulation, or distinguishing minor bruising from major bleeding",
       "halfCredit": "States limited understanding without AF specificity",
       "zeroCredit": "Omits"
     },
@@ -56586,9 +56586,9 @@
     },
     {
       "id": "2C.6",
-      "description": "Hgb 13.3 g/dL above clinical threshold for bleeding concern at this encounter",
+      "description": "Hgb 13.3 g/dL stable with no significant decline / above bleeding concern",
       "points": 0.5,
-      "fullCredit": "States Hgb 13.3 above threshold for bleeding concern",
+      "fullCredit": "States Hgb 13.3 g/dL is stable (vs 13.4 g/dL), no significant decline, or above clinical bleeding threshold",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -57196,7 +57196,7 @@
       "id": "4B.8",
       "description": "Notes GDMT is complete and well-tolerated",
       "points": 0.55,
-      "fullCredit": "States GDMT complete and well tolerated",
+      "fullCredit": "States GDMT complete / well tolerated, or continues documented 4-pillar GDMT regimen",
       "halfCredit": "States GDMT continued only",
       "zeroCredit": "Omits"
     },
@@ -57716,9 +57716,9 @@
     },
     {
       "id": "1B.13",
-      "description": "Denies lower extremity edema",
+      "description": "Denies lower extremity edema / peripheral edema",
       "points": 0.3,
-      "fullCredit": "Denies lower extremity edema",
+      "fullCredit": "Denies lower extremity edema or peripheral edema",
       "halfCredit": "Denies edema without LE location",
       "zeroCredit": "Omitted"
     },
@@ -57782,7 +57782,7 @@
       "id": "1B.21",
       "description": "States patient's wife shares concern about medications and kidney function",
       "points": 0.3,
-      "fullCredit": "States spouse (wife) shares concern about medications worsening kidney function",
+      "fullCredit": "States spouse (wife) or family shares concern about medications worsening kidney function or dialysis",
       "halfCredit": "States family concern without specifying spouse",
       "zeroCredit": "Omitted"
     },
@@ -59078,7 +59078,7 @@
       "id": "4B.8",
       "description": "States discuss blood pressure control as kidney-protective measure",
       "points": 0.55,
-      "fullCredit": "States discuss BP control as kidney-protective",
+      "fullCredit": "States discuss BP control as kidney-protective anywhere in note",
       "halfCredit": "States BP control without kidney-protective linkage",
       "zeroCredit": "Omitted"
     },
@@ -59086,7 +59086,7 @@
       "id": "4B.9",
       "description": "States discuss diabetes management as kidney-protective measure",
       "points": 0.55,
-      "fullCredit": "States discuss diabetes management as kidney-protective",
+      "fullCredit": "States discuss diabetes management as kidney-protective anywhere in note",
       "halfCredit": "States DM management without kidney-protective linkage",
       "zeroCredit": "Omitted"
     },
@@ -60790,9 +60790,9 @@
     },
     {
       "id": "3C.10",
-      "description": "States CKD Stage 3b does not require apixaban dose adjustment per current criteria (eGFR &gt;25–30 threshold)",
+      "description": "States apixaban does not require dose adjustment per standard AF criteria or supported in CKD 3b",
       "points": 0.8,
-      "fullCredit": "States no dose adjustment needed at eGFR 39",
+      "fullCredit": "States standard apixaban dose (5 mg BID) continues without reduction using standard AF criteria (meets only 1 of 3: SCr) and/or noting CKD Stage 3b does not require dose reduction",
       "halfCredit": "States no dose adjustment, no eGFR threshold rationale",
       "zeroCredit": "Omits"
     },
@@ -60808,7 +60808,7 @@
       "id": "3D.2",
       "description": "States patient actively participates in healthcare decisions",
       "points": 0.5,
-      "fullCredit": "States patient actively participates",
+      "fullCredit": "States patient actively participates / engaged in shared healthcare decisions",
       "halfCredit": "States patient engaged, no active-participation qualifier",
       "zeroCredit": "Omits"
     },
@@ -61118,9 +61118,9 @@
     },
     {
       "id": "4C.7",
-      "description": "States apixaban dose does not require adjustment at current CKD Stage 3b / eGFR 39 (per 2026 AHA/ACC PE/VTE guidelines: DOACs recommended in mild-to-moderate CKD; apixaban supported in Stage 2–3 CKD)",
+      "description": "States apixaban does not require dose adjustment per standard dose-reduction criteria or supported in CKD 3b",
       "points": 0.8,
-      "fullCredit": "States no dose adjustment needed at eGFR 39 with guideline basis",
+      "fullCredit": "States apixaban does not require dose adjustment per standard dose-reduction criteria or supported in CKD 3b",
       "halfCredit": "States no dose adjustment needed, no eGFR or guideline basis",
       "zeroCredit": "Omits"
     },

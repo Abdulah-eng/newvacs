@@ -84,7 +84,7 @@ export function SubjectiveTab({ c, interview, discovered, onField }) {
       <Card title="Documented (from the chart)" icon={FileText} color="13314f">
         <div className="pb-3 mb-3 border-b border-slate-100">
           <p className="text-[10px] text-slate-400">
-            Documented by: {c.DOCUMENTED_META?.by || 'Intake RN'} · {c.DOCUMENTED_META?.when || '06/23/2026 08:50'} · {c.DOCUMENTED_META?.encounter || c.ENCOUNTER?.type || 'Initial Ambulatory Care Pharmacist Visit'}
+            Documented by: {c.DOCUMENTED_META?.by || 'Intake RN'} · {c.DOCUMENTED_META?.when || c.VITALS?.vitalsTime || (c.ENCOUNTER?.visitDate ? `${c.ENCOUNTER.visitDate} 08:50` : '09/09/2026 08:50')} · {c.DOCUMENTED_META?.encounter || c.ENCOUNTER?.type || 'Ambulatory Care Visit'}
           </p>
         </div>
         
