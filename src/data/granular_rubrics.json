@@ -51070,8 +51070,8 @@
       "id": "3B.3",
       "description": "References LVEF 35% as basis for HFrEF classification",
       "points": 0.5,
-      "fullCredit": "States LVEF 35% supports HFrEF diagnosis",
-      "halfCredit": "States LVEF, no link to classification",
+      "fullCredit": "States LVEF 35% in context of / supporting HFrEF diagnosis (e.g. HFrEF with LVEF 35%, or cites LVEF 35% under heart failure assessment)",
+      "halfCredit": "States LVEF 35% without associating with heart failure or HFrEF",
       "zeroCredit": "Omits"
     },
     {
@@ -51214,8 +51214,8 @@
       "id": "3C.6",
       "description": "Periodic reassessment appropriate given fixed income and chronic medication needs",
       "points": 0.55,
-      "fullCredit": "States reassessment appropriate given fixed income/chronic needs",
-      "halfCredit": "States reassessment, no rationale",
+      "fullCredit": "States periodic reassessment / continuous monitoring of financial/affordability barriers is appropriate given fixed income (and/or chronic medication needs)",
+      "halfCredit": "Mentions follow-up without addressing financial, fixed-income, or affordability considerations",
       "zeroCredit": "Omits"
     },
     {
@@ -55402,8 +55402,8 @@
       "id": "4C.3",
       "description": "Educate on when to contact healthcare providers",
       "points": 0.55,
-      "fullCredit": "States educate on when to contact healthcare providers",
-      "halfCredit": "States contact provider without threshold or criteria",
+      "fullCredit": "States educate on when to contact healthcare providers (e.g. for major bleeding warning signs, red flag symptoms, before making medication changes, or prior to procedures)",
+      "halfCredit": "Vaguely instructs to contact provider without symptoms, warning signs, or medication context",
       "zeroCredit": "Omits"
     },
     {

@@ -245,29 +245,32 @@ try {
   passed++;
 } catch (e) { console.error('❌ AB-TUE-EXT failed:', e.message); }
 
-// 21c. AB-WED-EXT: 2C.4 (CMP), 3A.14 (risk-benefit / shared decision), 3C.6 (literacy), 5A.3 (mirroring), 5A.4 (objective context)
+// 21c. AB-WED-EXT: 2C.4 (CMP), 3A.14 (risk-benefit / shared decision), 3C.6 (literacy), 4C.3 (provider contact), 5A.3 (mirroring), 5A.4 (objective context)
 try {
   const rub = rubrics['Week4_Patient_B_Wednesday'];
   const item2C4 = rub.find(x => x.id === '2C.4');
   const item3A14 = rub.find(x => x.id === '3A.14');
   const item3C6 = rub.find(x => x.id === '3C.6');
+  const item4C3 = rub.find(x => x.id === '4C.3');
   const item5A3 = rub.find(x => x.id === '5A.3');
   const item5A4 = rub.find(x => x.id === '5A.4');
   assert(item2C4.fullCredit.includes('individual normal CMP values'));
   assert(item3A14.fullCredit.includes('shared decision-making') || item3A14.fullCredit.includes('confidence-building'));
   assert(item3C6.fullCredit.includes('persisting gaps'));
+  assert(item4C3.fullCredit.includes('major bleeding warning signs'));
   assert(item5A3.fullCredit.includes('standalone monitoring, education, or follow-up sections are acceptable'));
   assert(item5A4.fullCredit.includes('routine coagulation monitoring not indicated'));
   assert(prompts.includes('CMP status (2C.4)'));
   assert(prompts.includes('communication strategy (3A.14)'));
   assert(prompts.includes('health literacy status (3C.6)'));
+  assert(prompts.includes('provider contact education (4C.3)'));
   assert(prompts.includes('plan problem mirroring (5A.3)'));
   assert(prompts.includes('objective data presentation (5A.4)'));
-  console.log('✅ AB-WED-EXT: 2C.4, 3A.14, 3C.6, 5A.3, 5A.4 credit clinically sound documentation across assessment and plan');
+  console.log('✅ AB-WED-EXT: 2C.4, 3A.14, 3C.6, 4C.3, 5A.3, 5A.4 credit clinically sound documentation across assessment and plan');
   passed++;
 } catch (e) { console.error('❌ AB-WED-EXT failed:', e.message); }
 
-// 21d. AB-THU-EXT: 1B.7 (bruising), 2A.8-9/2B.3/2B.5/2B.11-12 (EMR chart values), 2B.4/2B.10/2B.13 (normal labs), 2C.4 (renal/SGLT2i), 5A.4 (plan mapping)
+// 21d. AB-THU-EXT: 1B.7 (bruising), 2A.8-9/2B.3/2B.5/2B.11-12 (EMR chart values), 2B.4/2B.10/2B.13 (normal labs), 2C.4 (renal/SGLT2i), 3B.3 (LVEF 35% HFrEF link), 3C.6 (fixed income reassessment), 5A.4 (plan mapping)
 try {
   const rub = rubrics['Week4_Patient_B_Thursday'];
   const item1B7 = rub.find(x => x.id === '1B.7');
@@ -281,6 +284,8 @@ try {
   const item2B12 = rub.find(x => x.id === '2B.12');
   const item2B13 = rub.find(x => x.id === '2B.13');
   const item2C4 = rub.find(x => x.id === '2C.4');
+  const item3B3 = rub.find(x => x.id === '3B.3');
+  const item3C6 = rub.find(x => x.id === '3C.6');
   const item5A4 = rub.find(x => x.id === '5A.4');
   assert(item1B7.fullCredit.includes('bruising fears resolved'));
   assert(item2A8.fullCredit.includes('84 kg'));
@@ -293,10 +298,14 @@ try {
   assert(item2B12.fullCredit.includes('21 U/L'));
   assert(item2B13.fullCredit.includes('normal AST and ALT values'));
   assert(item2C4.fullCredit.includes('DOAC and/or SGLT2i'));
+  assert(item3B3.fullCredit.includes('context of / supporting HFrEF diagnosis'));
+  assert(item3C6.fullCredit.includes('fixed income'));
   assert(item5A4.fullCredit.includes('care domains'));
   assert(prompts.includes('bruising resolution (1B.7)'));
   assert(prompts.includes('Objective Vitals & Labs (2A.8, 2A.9, 2B.3, 2B.5, 2B.11, 2B.12)'));
-  console.log('✅ AB-THU-EXT: 1B.7, EMR chart labs/vitals (84 kg, BMI 30.8, Plt 241, Na 139, AST 24, ALT 21), lab interpretations, and plan mapping all credited');
+  assert(prompts.includes('heart failure assessment (3B.3)'));
+  assert(prompts.includes('affordability reassessment (3C.6)'));
+  console.log('✅ AB-THU-EXT: 1B.7, EMR chart labs/vitals (84 kg, BMI 30.8, Plt 241, Na 139, AST 24, ALT 21), lab interpretations, 3B.3, 3C.6, and plan mapping all credited');
   passed++;
 } catch (e) { console.error('❌ AB-THU-EXT failed:', e.message); }
 
