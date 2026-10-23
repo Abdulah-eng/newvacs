@@ -14,7 +14,7 @@ const iconMap = fs.readFileSync(path.join(__dirname, '../src/lib/iconMap.js'), '
 const subjectiveTab = fs.readFileSync(path.join(__dirname, '../src/components/SubjectiveTab.jsx'), 'utf8');
 
 let passed = 0;
-let total = 37;
+let total = 40;
 
 // 1. MT-TUE-01: 2A.5 full credit accepts SpO2 98% with or without room air
 try {
@@ -119,7 +119,7 @@ try {
   const rub = rubrics['Week4_Patient_B_Tuesday'];
   const item3B13 = rub.find(x => x.id === '3B.13');
   assert(item3B13.fullCredit.includes('access intervention') || item3B13.fullCredit.includes('across note'));
-  assert(prompts.includes('Angela Brooks Tuesday: Award FULL CREDIT for adherence & education priorities (3B.13)'));
+  assert(prompts.includes('adherence & education priorities (3B.13)'));
   console.log('✅ AB-TUE-02: 3B.13 credits adherence, access, and education priorities across note');
   passed++;
 } catch (e) { console.error('❌ AB-TUE-02 failed:', e.message); }
@@ -138,7 +138,7 @@ try {
   const rub = rubrics['Week4_Patient_B_Wednesday'];
   const item3A17 = rub.find(x => x.id === '3A.17');
   assert(item3A17.fullCredit.includes('with or without referencing'));
-  assert(prompts.includes('Angela Brooks Wednesday: Award FULL CREDIT for HFrEF stability (3A.17)'));
+  assert(prompts.includes('HFrEF stability (3A.17)'));
   console.log('✅ AB-WED-02: 3A.17 credits HFrEF stability on GDMT without requiring causal link to apixaban hold');
   passed++;
 } catch (e) { console.error('❌ AB-WED-02 failed:', e.message); }
@@ -231,6 +231,74 @@ try {
   console.log('✅ AB-THU-EMR: Objective trend weight 84 kg / BMI 30.8 and labs synchronized with structured records');
   passed++;
 } catch (e) { console.error('❌ AB-THU-EMR failed:', e.message); }
+
+// 21b. AB-TUE-EXT: 1B.14 (adherence/evening qualifier) and 2A.11 (rhythm linked to AFib)
+try {
+  const rub = rubrics['Week4_Patient_B_Tuesday'];
+  const item1B14 = rub.find(x => x.id === '1B.14');
+  const item2A11 = rub.find(x => x.id === '2A.11');
+  assert(item1B14.fullCredit.includes('evening') && item1B14.fullCredit.includes('with or without'));
+  assert(item2A11.fullCredit.includes('identifies AFib as known diagnosis in note'));
+  assert(prompts.includes('apixaban nonadherence/rationing (1B.14)'));
+  assert(prompts.includes('cardiac rhythm (2A.11)'));
+  console.log('✅ AB-TUE-EXT: 1B.14 credits missing/rationing without forcing evening qualifier & 2A.11 credits rhythm without forcing in-PE link');
+  passed++;
+} catch (e) { console.error('❌ AB-TUE-EXT failed:', e.message); }
+
+// 21c. AB-WED-EXT: 2C.4 (CMP), 3A.14 (risk-benefit / shared decision), 3C.6 (literacy), 5A.3 (mirroring), 5A.4 (objective context)
+try {
+  const rub = rubrics['Week4_Patient_B_Wednesday'];
+  const item2C4 = rub.find(x => x.id === '2C.4');
+  const item3A14 = rub.find(x => x.id === '3A.14');
+  const item3C6 = rub.find(x => x.id === '3C.6');
+  const item5A3 = rub.find(x => x.id === '5A.3');
+  const item5A4 = rub.find(x => x.id === '5A.4');
+  assert(item2C4.fullCredit.includes('individual normal CMP values'));
+  assert(item3A14.fullCredit.includes('shared decision-making') || item3A14.fullCredit.includes('confidence-building'));
+  assert(item3C6.fullCredit.includes('persisting gaps'));
+  assert(item5A3.fullCredit.includes('standalone monitoring, education, or follow-up sections are acceptable'));
+  assert(item5A4.fullCredit.includes('routine coagulation monitoring not indicated'));
+  assert(prompts.includes('CMP status (2C.4)'));
+  assert(prompts.includes('communication strategy (3A.14)'));
+  assert(prompts.includes('health literacy status (3C.6)'));
+  assert(prompts.includes('plan problem mirroring (5A.3)'));
+  assert(prompts.includes('objective data presentation (5A.4)'));
+  console.log('✅ AB-WED-EXT: 2C.4, 3A.14, 3C.6, 5A.3, 5A.4 credit clinically sound documentation across assessment and plan');
+  passed++;
+} catch (e) { console.error('❌ AB-WED-EXT failed:', e.message); }
+
+// 21d. AB-THU-EXT: 1B.7 (bruising), 2A.8-9/2B.3/2B.5/2B.11-12 (EMR chart values), 2B.4/2B.10/2B.13 (normal labs), 2C.4 (renal/SGLT2i), 5A.4 (plan mapping)
+try {
+  const rub = rubrics['Week4_Patient_B_Thursday'];
+  const item1B7 = rub.find(x => x.id === '1B.7');
+  const item2A8 = rub.find(x => x.id === '2A.8');
+  const item2A9 = rub.find(x => x.id === '2A.9');
+  const item2B3 = rub.find(x => x.id === '2B.3');
+  const item2B4 = rub.find(x => x.id === '2B.4');
+  const item2B5 = rub.find(x => x.id === '2B.5');
+  const item2B10 = rub.find(x => x.id === '2B.10');
+  const item2B11 = rub.find(x => x.id === '2B.11');
+  const item2B12 = rub.find(x => x.id === '2B.12');
+  const item2B13 = rub.find(x => x.id === '2B.13');
+  const item2C4 = rub.find(x => x.id === '2C.4');
+  const item5A4 = rub.find(x => x.id === '5A.4');
+  assert(item1B7.fullCredit.includes('bruising fears resolved'));
+  assert(item2A8.fullCredit.includes('84 kg'));
+  assert(item2A9.fullCredit.includes('30.8 kg/m²'));
+  assert(item2B3.fullCredit.includes('241'));
+  assert(item2B4.fullCredit.includes('normal WBC, Hgb, and Plt values'));
+  assert(item2B5.fullCredit.includes('139 mEq/L'));
+  assert(item2B10.fullCredit.includes('72 mL/min/1.73m²') || item2B10.fullCredit.includes('preserved'));
+  assert(item2B11.fullCredit.includes('24 U/L'));
+  assert(item2B12.fullCredit.includes('21 U/L'));
+  assert(item2B13.fullCredit.includes('normal AST and ALT values'));
+  assert(item2C4.fullCredit.includes('DOAC and/or SGLT2i'));
+  assert(item5A4.fullCredit.includes('care domains'));
+  assert(prompts.includes('bruising resolution (1B.7)'));
+  assert(prompts.includes('Objective Vitals & Labs (2A.8, 2A.9, 2B.3, 2B.5, 2B.11, 2B.12)'));
+  console.log('✅ AB-THU-EXT: 1B.7, EMR chart labs/vitals (84 kg, BMI 30.8, Plt 241, Na 139, AST 24, ALT 21), lab interpretations, and plan mapping all credited');
+  passed++;
+} catch (e) { console.error('❌ AB-THU-EXT failed:', e.message); }
 
 // 22. RJ-TUE-01: 1B.13 accepts denial of lower extremity edema or peripheral edema
 try {

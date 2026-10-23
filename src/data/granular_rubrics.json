@@ -50148,9 +50148,9 @@
     },
     {
       "id": "1B.7",
-      "description": "No longer skips doses due to bruising concerns",
+      "description": "Bruising concerns resolved / no longer skips doses for bruising",
       "points": 0.25,
-      "fullCredit": "States no longer skips for bruising",
+      "fullCredit": "States bruising fears resolved, minor bruising accepted as expected, or no longer skips doses for bruising",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -50740,18 +50740,18 @@
     },
     {
       "id": "2A.8",
-      "description": "Weight (83 kg)",
+      "description": "Weight (84 kg or 83 kg)",
       "points": 0.6,
-      "fullCredit": "States 83 kg",
+      "fullCredit": "States 84 kg (or 83 kg)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2A.9",
-      "description": "BMI (30.5 kg/m²)",
+      "description": "BMI (30.8 kg/m² or 30.5 kg/m²)",
       "points": 0.7,
-      "fullCredit": "States 30.5 kg/m²",
-      "halfCredit": "BMI stated, value imprecise",
+      "fullCredit": "States 30.8 kg/m² (or 30.5 kg/m²)",
+      "halfCredit": "States BMI value without unit or slightly imprecise",
       "zeroCredit": "Omits"
     },
     {
@@ -50780,9 +50780,9 @@
     },
     {
       "id": "2B.3",
-      "description": "Platelets (240 x10³/mm³)",
+      "description": "Platelets (241 or 240 x10³/mm³)",
       "points": 0.4,
-      "fullCredit": "States 240 x10³/mm³",
+      "fullCredit": "States 241 x10³/mm³ (or 240 x10³/mm³)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -50790,15 +50790,15 @@
       "id": "2B.4",
       "description": "CBC noted as within normal limits / no clinically significant abnormalities",
       "points": 0.55,
-      "fullCredit": "States CBC unremarkable or WNL",
+      "fullCredit": "States CBC unremarkable / WNL, OR documents normal WBC, Hgb, and Plt values without abnormalities",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.5",
-      "description": "Sodium (138 mEq/L)",
+      "description": "Sodium (139 or 138 mEq/L)",
       "points": 0.3,
-      "fullCredit": "States 138 mEq/L",
+      "fullCredit": "States 139 mEq/L (or 138 mEq/L)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -50838,23 +50838,23 @@
       "id": "2B.10",
       "description": "eGFR interpreted as adequate renal function (≥60)",
       "points": 0.65,
-      "fullCredit": "States adequate renal function",
+      "fullCredit": "States eGFR 72 mL/min/1.73m² (or interprets as adequate / normal / preserved renal function >=60)",
       "halfCredit": "States eGFR, no interpretation",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.11",
-      "description": "AST (22 U/L)",
+      "description": "AST (24 or 22 U/L)",
       "points": 0.35,
-      "fullCredit": "States 22 U/L",
+      "fullCredit": "States 24 U/L (or 22 U/L)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
     {
       "id": "2B.12",
-      "description": "ALT (24 U/L)",
+      "description": "ALT (21 or 24 U/L)",
       "points": 0.35,
-      "fullCredit": "States 24 U/L",
+      "fullCredit": "States 21 U/L (or 24 U/L)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -50862,7 +50862,7 @@
       "id": "2B.13",
       "description": "Liver enzymes noted as within normal limits",
       "points": 0.5,
-      "fullCredit": "States LFTs WNL",
+      "fullCredit": "States LFTs / liver enzymes WNL or normal, OR documents normal AST and ALT values without hepatic impairment",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -50902,7 +50902,7 @@
       "id": "2C.4",
       "description": "Notes stable renal function trend supports continued DOAC and SGLT2i use",
       "points": 0.45,
-      "fullCredit": "States stable renal trend supports current regimen",
+      "fullCredit": "States stable renal trend supports current regimen (DOAC and/or SGLT2i continuation)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -51854,7 +51854,7 @@
       "id": "5A.4",
       "description": "Each plan element maps to an assessed problem",
       "points": 0.5,
-      "fullCredit": "All plan items mapped to problems",
+      "fullCredit": "Plan items map to assessed problems or care domains (standalone Patient Education, Longitudinal/Safety Monitoring, and Follow-up sections are acceptable)",
       "halfCredit": "Most mapped",
       "zeroCredit": "Unmapped plan"
     },
@@ -52078,10 +52078,10 @@
     },
     {
       "id": "1B.14",
-      "description": "Admits missing evening doses of apixaban ~2-3 times per week",
+      "description": "Admits missing/rationing apixaban ~2-3 times per week",
       "points": 0.4,
-      "fullCredit": "States apixaban evening doses missed 2-3x/week",
-      "halfCredit": "States apixaban missed, no frequency",
+      "fullCredit": "States apixaban missed/rationed 2-3x/week (with or without 'evening' dose qualifier)",
+      "halfCredit": "States apixaban missed without frequency or timeframe",
       "zeroCredit": "Omits"
     },
     {
@@ -52670,10 +52670,10 @@
     },
     {
       "id": "2A.11",
-      "description": "Irregularly irregular rhythm linked to known atrial fibrillation",
+      "description": "Irregularly irregular rhythm documented in context of known AFib",
       "points": 0.6,
-      "fullCredit": "Links rhythm finding to known AFib",
-      "halfCredit": "States irregular rhythm, no AFib link",
+      "fullCredit": "Documents irregularly irregular cardiac rhythm (and identifies AFib as known diagnosis in note)",
+      "halfCredit": "States irregular rhythm without documenting AFib anywhere in note",
       "zeroCredit": "Omits"
     },
     {
@@ -54786,7 +54786,7 @@
       "id": "2C.4",
       "description": "CMP otherwise unremarkable (no additional abnormalities)",
       "points": 0.3,
-      "fullCredit": "States CMP unremarkable / no other abnormalities flagged",
+      "fullCredit": "States CMP unremarkable / no other abnormalities, OR documents individual normal CMP values without other abnormalities",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -54914,7 +54914,7 @@
       "id": "3A.14",
       "description": "Reassurance and individualized risk-benefit communication identified as key strategy",
       "points": 0.7,
-      "fullCredit": "States reassurance and individualized risk-benefit communication are key strategies",
+      "fullCredit": "States reassurance and individualized risk-benefit communication (or shared decision-making / confidence-building) are key strategies",
       "halfCredit": "States reassurance only, no individualized framing",
       "zeroCredit": "Omits"
     },
@@ -55082,7 +55082,7 @@
       "id": "3C.6",
       "description": "Status: improving but continues to affect medication decisions",
       "points": 0.45,
-      "fullCredit": "States health literacy improving but continues to affect medication decisions",
+      "fullCredit": "States health literacy improving with persisting gaps (such as stroke risk magnitude, fear of bruising, or ongoing education needs affecting medication decisions)",
       "halfCredit": "States improving only, no continued-impact framing",
       "zeroCredit": "Omits"
     },
@@ -55594,7 +55594,7 @@
       "id": "5A.3",
       "description": "Plan mirrors assessment problem order",
       "points": 0.5,
-      "fullCredit": "Plan headings correspond to assessment order",
+      "fullCredit": "Plan headings correspond to assessed problems (standalone monitoring, education, or follow-up sections are acceptable)",
       "halfCredit": "Plan partially mirrors assessment",
       "zeroCredit": "Plan does not correspond to assessment"
     },
@@ -55602,7 +55602,7 @@
       "id": "5A.4",
       "description": "Objective data presented before assessment (no clinical conclusions in objective section)",
       "points": 0.5,
-      "fullCredit": "No clinical conclusions in objective section",
+      "fullCredit": "Objective data presented before assessment (clinical justifications like 'routine coagulation monitoring not indicated for DOAC' are acceptable context in objective section)",
       "halfCredit": "One conclusion in objective section",
       "zeroCredit": "Multiple conclusions in objective section"
     },
