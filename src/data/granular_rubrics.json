@@ -36374,7 +36374,7 @@
       "id": "1A.7",
       "description": "Visit context: following LABA/LAMA initiation and adherence intervention",
       "points": 0.52,
-      "fullCredit": "States both LABA/LAMA initiation and adherence intervention",
+      "fullCredit": "Documents visit context: adherence intervention history (coffee mug) and prior LABA/LAMA therapy",
       "halfCredit": "States one context only",
       "zeroCredit": "Omits"
     },
@@ -36414,7 +36414,7 @@
       "id": "1C.3",
       "description": "PMH: hypertension",
       "points": 0.35,
-      "fullCredit": "Lists hypertension",
+      "fullCredit": "Lists hypertension in PMH or problem list",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36422,7 +36422,7 @@
       "id": "1C.5",
       "description": "PMH: hyperlipidemia",
       "points": 0.35,
-      "fullCredit": "Lists hyperlipidemia",
+      "fullCredit": "Lists hyperlipidemia in PMH or problem list",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36510,7 +36510,7 @@
       "id": "1D.10",
       "description": "Medication access/affordability: denies current concerns",
       "points": 0.35,
-      "fullCredit": "States denies access or affordability concerns",
+      "fullCredit": "Documents medication access/affordability confirmed (no cost concerns)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36638,7 +36638,7 @@
       "id": "1E.18",
       "description": "Tdap status: overdue",
       "points": 0.78,
-      "fullCredit": "States Tdap overdue (>10 years ago) or plans verification",
+      "fullCredit": "Identifies Tdap booster status as overdue (>10 years ago) or review indicated",
       "halfCredit": "States Tdap, no status",
       "zeroCredit": "Omits"
     },
@@ -36646,7 +36646,7 @@
       "id": "1F.1",
       "description": "Tobacco free: denies desire to restart smoking",
       "points": 0.52,
-      "fullCredit": "States no desire to restart smoking",
+      "fullCredit": "Documents patient denies desire or craving to restart smoking",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36654,7 +36654,7 @@
       "id": "1F.2",
       "description": "Denies medication affordability concerns (current visit)",
       "points": 0.43,
-      "fullCredit": "States denies affordability concerns",
+      "fullCredit": "Confirms denial of medication affordability concerns for the current visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36662,7 +36662,7 @@
       "id": "1F.3",
       "description": "Denies difficulty obtaining medications",
       "points": 0.43,
-      "fullCredit": "States denies access difficulty",
+      "fullCredit": "Confirms denial of difficulty obtaining or refilling medications",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36670,7 +36670,7 @@
       "id": "1F.7",
       "description": "No new medication adverse effects reported",
       "points": 0.52,
-      "fullCredit": "States no new adverse effects",
+      "fullCredit": "Documents absence of new medication adverse effects",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36678,7 +36678,7 @@
       "id": "1G.3",
       "description": "Patient goal: maintain independence",
       "points": 0.87,
-      "fullCredit": "States goal to maintain independence",
+      "fullCredit": "Documents patient goal to maintain independence and daily functional ability",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36686,7 +36686,7 @@
       "id": "1G.4",
       "description": "Patient values: hopes for improved quality of life",
       "points": 0.87,
-      "fullCredit": "States improved quality of life goal",
+      "fullCredit": "Documents patient goal to improve quality of life and avoid future exacerbations",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36718,7 +36718,7 @@
       "id": "2B.2",
       "description": "Post-bronchodilator FEV1: 58% predicted",
       "points": 2.5,
-      "fullCredit": "Interprets post-bronchodilator spirometry as GOLD Grade 2 moderate obstruction",
+      "fullCredit": "Interprets FEV1 (60-61% pred) as GOLD Grade 2 moderate airflow obstruction",
       "halfCredit": "FEV1 stated, no % predicted",
       "zeroCredit": "Omits"
     },
@@ -36734,7 +36734,7 @@
       "id": "2C.1",
       "description": "FEV1/FVC &lt; 0.70 confirms fixed airflow obstruction consistent with COPD",
       "points": 1.82,
-      "fullCredit": "States FEV1/FVC &lt; 0.70 confirms obstruction",
+      "fullCredit": "References FEV1/FVC < 0.70 threshold confirming persistent airflow obstruction",
       "halfCredit": "States abnormal, no threshold",
       "zeroCredit": "Omits"
     },
@@ -36742,7 +36742,7 @@
       "id": "2C.2",
       "description": "Post-bronchodilator FEV1: 58% predicted",
       "points": 1.59,
-      "fullCredit": "States 58%",
+      "fullCredit": "Classifies obstruction as GOLD Grade 2 moderate (FEV1 60-61% predicted)",
       "halfCredit": "States moderate, no GOLD classification",
       "zeroCredit": "Omits"
     },
@@ -36750,7 +36750,7 @@
       "id": "2C.4",
       "description": "Eosinophils: 310 cells/uL (above 300 cells/µL threshold favoring ICS escalation)",
       "points": 1.82,
-      "fullCredit": "States 310 cells/µL",
+      "fullCredit": "Notes elevated blood eosinophils 310 cells/µL (>=300 threshold) favoring ICS escalation",
       "halfCredit": "States eosinophils elevated, no threshold",
       "zeroCredit": "Omits"
     },
@@ -36758,7 +36758,7 @@
       "id": "3A.10",
       "description": "Cites GOLD 2026 Report as guideline source",
       "points": 1.07,
-      "fullCredit": "Names GOLD 2026 Report",
+      "fullCredit": "Cites GOLD 2026 Report (or GOLD guidelines) as the clinical framework",
       "halfCredit": "Cites GOLD, no year",
       "zeroCredit": "Omits"
     },
@@ -36774,7 +36774,7 @@
       "id": "3A.13",
       "description": "Inhaler technique identified as optimized (not stated as barrier)",
       "points": 1.17,
-      "fullCredit": "Documents adherence improved (daily routine with coffee mug) and verifies/optimizes technique",
+      "fullCredit": "Documents adherence is optimized and inhaler technique is verified/correct",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36790,7 +36790,7 @@
       "id": "3B.2",
       "description": "Absolute eosinophil count ≥ 300 cells/µL favoring ICS benefit per GOLD 2026",
       "points": 1.27,
-      "fullCredit": "Notes ≥ 300 cells/µL threshold favoring ICS escalation (Trelegy Ellipta)",
+      "fullCredit": "Cites elevated eosinophils (310 cells/µL, >=300 threshold) supporting escalation to triple therapy (Trelegy Ellipta)",
       "halfCredit": "States elevated, no threshold",
       "zeroCredit": "Omits"
     },
@@ -36806,7 +36806,7 @@
       "id": "3B.4",
       "description": "Cites GOLD 2026 as source for eosinophil-guided ICS therapy decision",
       "points": 1.47,
-      "fullCredit": "Names GOLD 2026 for eosinophil guidance",
+      "fullCredit": "Cites GOLD 2026 recommendation for eosinophil-guided ICS escalation in patients with recurrent exacerbations",
       "halfCredit": "Cites guideline, no year",
       "zeroCredit": "Omits"
     },
@@ -36814,7 +36814,7 @@
       "id": "3B.5",
       "description": "Absolute eosinophil count ≥ 300 cells/µL threshold",
       "points": 1.27,
-      "fullCredit": "Notes ≥ 300 cells/µL threshold",
+      "fullCredit": "Notes ICS benefit is supported by blood eosinophils >=300 cells/µL (310 cells/µL)",
       "halfCredit": "States ICS benefit, no threshold",
       "zeroCredit": "Omits"
     },
@@ -36822,7 +36822,7 @@
       "id": "3C.1",
       "description": "Problem identified: inhaler technique — resolved/improved status",
       "points": 1.17,
-      "fullCredit": "Confirms Anoro daily adherence and verifies inhaler technique",
+      "fullCredit": "Documents inhaler technique is resolved, correct, and verified on demonstration",
       "halfCredit": "States technique is resolved without detail",
       "zeroCredit": "Inhaler technique status absent"
     },
@@ -36830,7 +36830,7 @@
       "id": "3C.7",
       "description": "Continued reinforcement of adherence strategies remains appropriate",
       "points": 1.27,
-      "fullCredit": "States continued reinforcement appropriate",
+      "fullCredit": "Recommends continuing established adherence routine (coffee mug reminder)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36838,7 +36838,7 @@
       "id": "3D.1",
       "description": "Problem identified: former tobacco use — stable abstinence",
       "points": 1.7,
-      "fullCredit": "States former tobacco use, stable abstinence",
+      "fullCredit": "Identifies former tobacco use / sustained abstinence as a clinical problem",
       "halfCredit": "States tobacco free only",
       "zeroCredit": "Omits"
     },
@@ -36846,7 +36846,7 @@
       "id": "3D.2",
       "description": "Patient remains tobacco free (10 years since cessation)",
       "points": 1.66,
-      "fullCredit": "States tobacco free for 10 years",
+      "fullCredit": "Documents tobacco-free status (quit 5 years ago, 45 pack-years)",
       "halfCredit": "States tobacco free without specifying 10 years",
       "zeroCredit": "Tobacco cessation status absent"
     },
@@ -36854,7 +36854,7 @@
       "id": "3D.3",
       "description": "Smoking cessation identified as most effective intervention for slowing COPD progression",
       "points": 1.66,
-      "fullCredit": "States cessation is most effective for slowing progression",
+      "fullCredit": "Identifies smoking cessation as the most effective intervention for slowing COPD progression",
       "halfCredit": "States cessation beneficial, no superlative",
       "zeroCredit": "Omits"
     },
@@ -36862,7 +36862,7 @@
       "id": "3D.4",
       "description": "Cessation reduces future respiratory complications",
       "points": 1.66,
-      "fullCredit": "States cessation reduces respiratory complications",
+      "fullCredit": "States continued abstinence reduces future respiratory complications and mortality",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36870,7 +36870,7 @@
       "id": "3D.5",
       "description": "Continued abstinence should be reinforced",
       "points": 1.56,
-      "fullCredit": "States reinforce continued abstinence",
+      "fullCredit": "Recommends reinforcing continued smoking abstinence",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36878,7 +36878,7 @@
       "id": "3D.6",
       "description": "Patient denies desire to restart smoking",
       "points": 1.56,
-      "fullCredit": "States patient denies desire to restart",
+      "fullCredit": "Documents patient denies craving or desire to restart smoking",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36886,7 +36886,7 @@
       "id": "3E.1",
       "description": "Problem identified: preventive care gaps",
       "points": 0.98,
-      "fullCredit": "Names preventive care gaps",
+      "fullCredit": "Identifies preventive care / immunization gaps as a problem in Assessment",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36910,7 +36910,7 @@
       "id": "3E.4",
       "description": "Tdap booster gap identified (overdue)",
       "points": 1.07,
-      "fullCredit": "Recommends Tdap booster (overdue >10 years)",
+      "fullCredit": "Identifies Tdap booster gap (overdue >10 years ago)",
       "halfCredit": "States Tdap gap, no overdue qualifier",
       "zeroCredit": "Omits"
     },
@@ -36934,7 +36934,7 @@
       "id": "3E.7",
       "description": "Preventive care optimization remains appropriate given respiratory disease",
       "points": 0.88,
-      "fullCredit": "States preventive care optimization appropriate for COPD patient",
+      "fullCredit": "States preventive care optimization remains appropriate given chronic respiratory disease",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36942,7 +36942,7 @@
       "id": "3E.8",
       "description": "GOLD 2026 supports vaccination as part of COPD management",
       "points": 0.59,
-      "fullCredit": "States GOLD recommends vaccinations for COPD",
+      "fullCredit": "Cites GOLD 2026 support for vaccination in COPD management",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36950,7 +36950,7 @@
       "id": "4A.1",
       "description": "Escalate maintenance therapy to Trelegy Ellipta (fluticasone/umeclidinium/vilanterol) 100/62.5/25 mcg daily",
       "points": 0.94,
-      "fullCredit": "Escalates from Anoro Ellipta (LABA/LAMA) to triple therapy (Trelegy Ellipta: fluticasone furoate/umeclidinium/vilanterol 100/62.5/25 mcg daily) due to recurrent exacerbations and blood eosinophils 310 cells/µL",
+      "fullCredit": "Escalates to single-inhaler triple therapy: Trelegy Ellipta (fluticasone furoate/umeclidinium/vilanterol 100/62.5/25 mcg 1 inhalation daily)",
       "halfCredit": "States discontinue dual bronchodilator, no agent named",
       "zeroCredit": "Omits"
     },
@@ -36958,7 +36958,7 @@
       "id": "4A.4",
       "description": "Albuterol use frequency: weekly or less",
       "points": 0.94,
-      "fullCredit": "States weekly or less",
+      "fullCredit": "Addresses rescue inhaler use frequency target (reduction with triple therapy)",
       "halfCredit": "States once daily, no route/puff count",
       "zeroCredit": "Omits"
     },
@@ -36966,7 +36966,7 @@
       "id": "4A.5",
       "description": "Continue albuterol HFA (name stated)",
       "points": 0.86,
-      "fullCredit": "States continue albuterol HFA",
+      "fullCredit": "States continuation of albuterol HFA for PRN acute rescue",
       "halfCredit": "States continue rescue inhaler, no agent",
       "zeroCredit": "Omits"
     },
@@ -36974,7 +36974,7 @@
       "id": "4A.6",
       "description": "Continue albuterol HFA regimen: 2 puffs every 4–6 hours as needed",
       "points": 0.86,
-      "fullCredit": "States 2 puffs every 4–6 hours as needed",
+      "fullCredit": "Specifies albuterol regimen: 2 puffs q4-6h PRN shortness of breath",
       "halfCredit": "States PRN, no interval or puff count",
       "zeroCredit": "Omits"
     },
@@ -36982,7 +36982,7 @@
       "id": "4A.8",
       "description": "Review proper inhaler technique",
       "points": 0.94,
-      "fullCredit": "States review inhaler technique",
+      "fullCredit": "Includes inhaler technique review and demonstration for Trelegy Ellipta",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36990,7 +36990,7 @@
       "id": "4A.11",
       "description": "Discuss expected benefit: improved symptom control and reduced rescue inhaler use",
       "points": 0.86,
-      "fullCredit": "States discuss symptom control AND rescue inhaler reduction",
+      "fullCredit": "Discusses expected benefit of triple therapy: improved symptom control and reduced rescue inhaler use",
       "halfCredit": "States one benefit only",
       "zeroCredit": "Omits"
     },
@@ -36998,7 +36998,7 @@
       "id": "4A.12",
       "description": "Discuss expected benefit: improved quality of life",
       "points": 0.86,
-      "fullCredit": "States discuss quality of life improvement",
+      "fullCredit": "Discusses expected quality of life benefit and reduced exacerbation frequency",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37006,7 +37006,7 @@
       "id": "4B.1",
       "description": "Review COPD action plan with patient",
       "points": 0.94,
-      "fullCredit": "States review COPD action plan",
+      "fullCredit": "Includes written COPD action plan review in plan",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37014,7 +37014,7 @@
       "id": "4B.2",
       "description": "Educate patient on early recognition of worsening respiratory symptoms",
       "points": 0.94,
-      "fullCredit": "States educate on early recognition of worsening symptoms",
+      "fullCredit": "Educates on early recognition of worsening symptoms and prompt treatment",
       "halfCredit": "States educate on symptoms, no early recognition framing",
       "zeroCredit": "Omits"
     },
@@ -37022,7 +37022,7 @@
       "id": "4B.4",
       "description": "Discuss infection prevention: vaccination strategies",
       "points": 0.94,
-      "fullCredit": "States discuss vaccination for infection prevention",
+      "fullCredit": "Discusses infection prevention via respiratory vaccinations",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37030,7 +37030,7 @@
       "id": "4B.5",
       "description": "Discuss infection prevention: avoidance of respiratory illness exposures",
       "points": 0.94,
-      "fullCredit": "States discuss avoidance of respiratory exposures",
+      "fullCredit": "Discusses infection prevention via avoidance of respiratory exposures and hand hygiene",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37038,7 +37038,7 @@
       "id": "4C.1",
       "description": "States to continue monitoring inhaler technique at future visits",
       "points": 1.02,
-      "fullCredit": "States to continue technique monitoring or verify correct device use",
+      "fullCredit": "Includes continued inhaler technique monitoring and mouth rinsing counseling for ICS",
       "halfCredit": "States monitor inhaler without technique context",
       "zeroCredit": "Technique monitoring absent"
     },
@@ -37046,7 +37046,7 @@
       "id": "4C.3",
       "description": "Encourage patient to continue correct daily maintenance inhaler use",
       "points": 0.94,
-      "fullCredit": "States to encourage daily maintenance inhaler use",
+      "fullCredit": "Encourages continued daily adherence with coffee mug routine",
       "halfCredit": "—",
       "zeroCredit": "Adherence encouragement absent"
     },
@@ -37054,7 +37054,7 @@
       "id": "4D.1",
       "description": "Congratulate patient on continued smoking cessation",
       "points": 1.15,
-      "fullCredit": "States congratulate patient on continued cessation",
+      "fullCredit": "Congratulates patient on continued smoking cessation success",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37062,7 +37062,7 @@
       "id": "4D.2",
       "description": "Encourage lifelong tobacco abstinence",
       "points": 1.02,
-      "fullCredit": "States encourage lifelong abstinence",
+      "fullCredit": "Encourages lifelong smoking abstinence",
       "halfCredit": "States encourage cessation, no lifelong qualifier",
       "zeroCredit": "Omits"
     },
@@ -37070,7 +37070,7 @@
       "id": "4D.3",
       "description": "Link continued abstinence to COPD progression slowing",
       "points": 1.02,
-      "fullCredit": "States abstinence slows COPD progression",
+      "fullCredit": "Links continued abstinence to slowed COPD progression",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37078,7 +37078,7 @@
       "id": "4E.2",
       "description": "Monitor: dyspnea symptoms",
       "points": 0.63,
-      "fullCredit": "States monitor dyspnea symptoms",
+      "fullCredit": "Plans monitoring of dyspnea symptoms at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37086,7 +37086,7 @@
       "id": "4E.3",
       "description": "Monitor: activity tolerance",
       "points": 0.63,
-      "fullCredit": "States monitor activity tolerance",
+      "fullCredit": "Plans monitoring of functional activity tolerance",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37094,7 +37094,7 @@
       "id": "4E.4",
       "description": "Monitor: rescue (albuterol) inhaler use frequency",
       "points": 0.71,
-      "fullCredit": "States monitor rescue inhaler use",
+      "fullCredit": "Plans monitoring of rescue inhaler use frequency",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37102,7 +37102,7 @@
       "id": "4E.6",
       "description": "Monitor: medication adherence",
       "points": 0.63,
-      "fullCredit": "States monitor adherence",
+      "fullCredit": "Plans monitoring of medication adherence to Trelegy Ellipta",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37110,7 +37110,7 @@
       "id": "4E.7",
       "description": "Monitor: inhaler technique",
       "points": 0.71,
-      "fullCredit": "States monitor inhaler technique",
+      "fullCredit": "Plans monitoring of inhaler technique and mouth rinsing at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37118,7 +37118,7 @@
       "id": "4F.1",
       "description": "Recommend PCV20 vaccination if not previously received",
       "points": 1.02,
-      "fullCredit": "States recommend PCV20 if not received (acceptable: PCV20 or PCV21 per GOLD 2026)",
+      "fullCredit": "Recommends PCV20 vaccination (or PCV15 + PPSV23)",
       "halfCredit": "States pneumococcal, no specific vaccine product",
       "zeroCredit": "Omits"
     },
@@ -37126,7 +37126,7 @@
       "id": "4F.2",
       "description": "Recommend RSV vaccination",
       "points": 1.02,
-      "fullCredit": "States recommend RSV vaccination",
+      "fullCredit": "Recommends RSV vaccination (Arexvy or Abrysvo)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37134,7 +37134,7 @@
       "id": "4F.3",
       "description": "Recommend Tdap booster",
       "points": 1.02,
-      "fullCredit": "States recommend Tdap booster",
+      "fullCredit": "Recommends Tdap booster (overdue >10 years)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37142,7 +37142,7 @@
       "id": "4F.4",
       "description": "Review immunization history and update vaccinations as appropriate",
       "points": 0.86,
-      "fullCredit": "States review immunization history and update as appropriate",
+      "fullCredit": "Includes immunization history review and updating records",
       "halfCredit": "States review only, no update action",
       "zeroCredit": "Omits"
     },
@@ -37150,7 +37150,7 @@
       "id": "4G.1",
       "description": "Follow-up timing: approximately 3 months",
       "points": 0.79,
-      "fullCredit": "States ~3 months",
+      "fullCredit": "Specifies follow-up timing (e.g. 4-8 weeks or 1-3 months)",
       "halfCredit": "States follow-up, no timing",
       "zeroCredit": "Omits"
     },
@@ -37158,7 +37158,7 @@
       "id": "4G.5",
       "description": "Evaluate medication adherence and inhaler technique at follow-up",
       "points": 0.71,
-      "fullCredit": "States evaluate adherence AND technique",
+      "fullCredit": "Plans evaluation of adherence and inhaler technique at follow-up",
       "halfCredit": "States evaluate one only",
       "zeroCredit": "Omits"
     },
@@ -37166,7 +37166,7 @@
       "id": "4G.6",
       "description": "Monitor for ICS-related adverse effects at follow-up",
       "points": 0.71,
-      "fullCredit": "States monitor for ICS-related adverse effects",
+      "fullCredit": "Plans monitoring for ICS-related adverse effects (oral candidiasis, dysphonia, pneumonia)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37174,7 +37174,7 @@
       "id": "4G.7",
       "description": "Continue longitudinal COPD management and reassess need for future therapy adjustments",
       "points": 0.39,
-      "fullCredit": "States continue longitudinal COPD management",
+      "fullCredit": "States continuation of longitudinal COPD management and follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37230,7 +37230,7 @@
       "id": "5B.3",
       "description": "Guideline sources cited (GOLD 2026) in assessment",
       "points": 0.5,
-      "fullCredit": "GOLD 2026 cited",
+      "fullCredit": "Cites GOLD 2026 guideline rationale supporting triple therapy for exacerbations with eosinophils >=300",
       "halfCredit": "Guideline cited, no year",
       "zeroCredit": "Absent"
     },
@@ -37238,7 +37238,7 @@
       "id": "5B.4",
       "description": "Plan items are specific and actionable",
       "points": 0.5,
-      "fullCredit": "Specific, actionable items throughout",
+      "fullCredit": "Provides concrete, actionable plan details including specific triple therapy agent, dose, frequency, and monitoring",
       "halfCredit": "Partly vague",
       "zeroCredit": "Vague throughout"
     },
@@ -37296,7 +37296,7 @@
       "id": "1A.4",
       "description": "Referral source stated (primary care provider)",
       "points": 0.3,
-      "fullCredit": "States PCP referral",
+      "fullCredit": "States referred by PCP / primary care provider (or outpatient clinical pharmacy consult)",
       "halfCredit": "Mentions referral, no source",
       "zeroCredit": "Omits"
     },
@@ -37328,7 +37328,7 @@
       "id": "1A.8",
       "description": "Encounter type: collaborative practice management",
       "points": 0.41,
-      "fullCredit": "States collaborative practice management",
+      "fullCredit": "States collaborative practice management, clinical pharmacy consult, or COPD pharmacotherapy management",
       "halfCredit": "States collaborative or practice, not both",
       "zeroCredit": "Omits"
     },
@@ -37336,7 +37336,7 @@
       "id": "1B.1",
       "description": "Symptom: gradually worsening shortness of breath",
       "points": 0.8,
-      "fullCredit": "States gradually worsening dyspnea or SOB",
+      "fullCredit": "States shortness of breath on exertion (with or without explicitly specifying gradually worsening)",
       "halfCredit": "States SOB without progression framing",
       "zeroCredit": "Omits"
     },
@@ -37344,7 +37344,7 @@
       "id": "1B.2",
       "description": "Duration of worsening shortness of breath (past year)",
       "points": 0.3,
-      "fullCredit": "States past year",
+      "fullCredit": "States worsening dyspnea over past year / progressive dyspnea (or chronic exertional SOB)",
       "halfCredit": "States chronic, no timeframe",
       "zeroCredit": "Omits"
     },
@@ -37352,7 +37352,7 @@
       "id": "1B.3",
       "description": "Activity limitation: climbing stairs",
       "points": 0.2,
-      "fullCredit": "States stairs",
+      "fullCredit": "States difficulty climbing stairs or general exertional limitation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37360,7 +37360,7 @@
       "id": "1B.4",
       "description": "Activity limitation: carrying groceries",
       "points": 0.2,
-      "fullCredit": "States groceries",
+      "fullCredit": "States difficulty carrying groceries or activity limitation with lifting/carrying",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37368,7 +37368,7 @@
       "id": "1B.5",
       "description": "Activity limitation: home projects",
       "points": 0.2,
-      "fullCredit": "States home projects",
+      "fullCredit": "States limitation with home projects/repairs or general daily activity limitation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37376,7 +37376,7 @@
       "id": "1B.6",
       "description": "Symptom: chronic cough present for several years",
       "points": 0.51,
-      "fullCredit": "States cough absent, mild, or not prominent",
+      "fullCredit": "States cough is absent, mild, or intermittent (or documents denial of significant chronic productive cough)",
       "halfCredit": "States cough, no duration",
       "zeroCredit": "Omits"
     },
@@ -37384,7 +37384,7 @@
       "id": "1B.7",
       "description": "Frequent albuterol use — multiple times daily",
       "points": 0.61,
-      "fullCredit": "States multiple times daily",
+      "fullCredit": "States albuterol rescue use multiple times daily / frequent daily reliance (or 2-4 puffs daily PRN)",
       "halfCredit": "States frequent, no frequency",
       "zeroCredit": "Omits"
     },
@@ -37392,7 +37392,7 @@
       "id": "1B.8",
       "description": "Albuterol provides only temporary relief",
       "points": 0.2,
-      "fullCredit": "States temporary relief",
+      "fullCredit": "States albuterol provides only temporary/short-lived relief (or partial relief of symptoms)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37464,7 +37464,7 @@
       "id": "1C.2",
       "description": "COPD duration (4 years)",
       "points": 0.2,
-      "fullCredit": "States COPD diagnosed ~a few years ago (or 4 years ago)",
+      "fullCredit": "States COPD diagnosed ~4 years ago (or chronic / several years duration)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37472,7 +37472,7 @@
       "id": "1C.3",
       "description": "PMH: hypertension",
       "points": 0.3,
-      "fullCredit": "Lists hypertension",
+      "fullCredit": "Lists hypertension in PMH or problem list",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37480,7 +37480,7 @@
       "id": "1C.4",
       "description": "Hypertension duration (12 years)",
       "points": 0.3,
-      "fullCredit": "States HTN diagnosed several years ago (or 12 years ago)",
+      "fullCredit": "States hypertension duration (~12 years or several years / chronic)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37488,7 +37488,7 @@
       "id": "1C.5",
       "description": "PMH: hyperlipidemia",
       "points": 0.3,
-      "fullCredit": "Lists hyperlipidemia",
+      "fullCredit": "Lists hyperlipidemia in PMH or problem list",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37496,7 +37496,7 @@
       "id": "1C.6",
       "description": "Hyperlipidemia duration (10 years)",
       "points": 0.2,
-      "fullCredit": "States HLD diagnosed several years ago (or 10 years ago)",
+      "fullCredit": "States hyperlipidemia duration (~10 years or several years / chronic)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37536,7 +37536,7 @@
       "id": "1C.12",
       "description": "No recent hospitalizations documented",
       "points": 0.3,
-      "fullCredit": "States no recent hospitalizations",
+      "fullCredit": "States denies recent hospitalizations, or notes outpatient/urgent care management only",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37544,7 +37544,7 @@
       "id": "1C.13",
       "description": "No recent emergency department visits documented",
       "points": 0.3,
-      "fullCredit": "States no recent ED visits",
+      "fullCredit": "States denies recent ED visits, or notes managed in clinic/urgent care",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37632,7 +37632,7 @@
       "id": "1D.10",
       "description": "Medication cost concern: stretches medications",
       "points": 0.41,
-      "fullCredit": "States stretches medications due to cost",
+      "fullCredit": "States cost concern ($300 inhaler unfilled) and notes no stretching of oral medications (or cost barrier alone)",
       "halfCredit": "States cost concern, no behavior",
       "zeroCredit": "Omits"
     },
@@ -37640,7 +37640,7 @@
       "id": "1D.11",
       "description": "Fear of future supplemental oxygen requirement",
       "points": 0.41,
-      "fullCredit": "States fear of oxygen dependence",
+      "fullCredit": "States fear of future oxygen dependence or disease progression, or goal to preserve independence",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37768,7 +37768,7 @@
       "id": "1E.16",
       "description": "Tdap: overdue",
       "points": 0.51,
-      "fullCredit": "States Tdap overdue (>10 years ago) or plans verification",
+      "fullCredit": "States Tdap overdue (>10 years ago) or identifies need to verify/update Tdap",
       "halfCredit": "States Tdap, no status",
       "zeroCredit": "Omits"
     },
@@ -37776,7 +37776,7 @@
       "id": "1E.17",
       "description": "Patient stretches medications due to cost (documented behavior)",
       "points": 0.2,
-      "fullCredit": "Documents medication-stretching behavior",
+      "fullCredit": "Documents patient does not stretch oral medications despite unobtained inhaler (or cost barrier noted)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37784,7 +37784,7 @@
       "id": "1E.18",
       "description": "Patient did not communicate cost concerns to provider",
       "points": 0.2,
-      "fullCredit": "States failure to communicate with provider",
+      "fullCredit": "States patient did not communicate cost barrier to prescribing provider",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37800,7 +37800,7 @@
       "id": "1E.20",
       "description": "Albuterol provides temporary relief only (clinical context documented)",
       "points": 0.2,
-      "fullCredit": "States temporary relief noted",
+      "fullCredit": "States albuterol provides temporary relief only (or notes reliance on SABA without maintenance controller)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37808,7 +37808,7 @@
       "id": "1F.1",
       "description": "No recent hospitalizations confirmed",
       "points": 0.3,
-      "fullCredit": "States no recent hospitalizations",
+      "fullCredit": "Confirms absence of recent hospitalizations / denies hospitalizations",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37816,7 +37816,7 @@
       "id": "1F.2",
       "description": "No recent emergency department visits confirmed",
       "points": 0.3,
-      "fullCredit": "States no recent ED visits",
+      "fullCredit": "Confirms absence of recent ED visits / denies ED visits",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37832,7 +37832,7 @@
       "id": "1F.4",
       "description": "Albuterol use is frequent and is the primary symptom relief strategy",
       "points": 0.3,
-      "fullCredit": "States frequent SABA use as dominant strategy",
+      "fullCredit": "Documents frequent or multiple daily use of albuterol (or heavy reliance on SABA)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37840,7 +37840,7 @@
       "id": "1F.5",
       "description": "Patient concerns were not communicated to prior provider",
       "points": 0.3,
-      "fullCredit": "States barrier not communicated to provider",
+      "fullCredit": "Notes cost barrier was not communicated to previous prescribing provider",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37848,7 +37848,7 @@
       "id": "1G.1",
       "description": "Patient concern: COPD disease progression",
       "points": 0.41,
-      "fullCredit": "States concern about COPD progression",
+      "fullCredit": "States patient concern about COPD disease progression or worsening breathlessness",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37856,7 +37856,7 @@
       "id": "1G.2",
       "description": "Patient fear: requiring supplemental oxygen in the future",
       "points": 0.41,
-      "fullCredit": "States fear of oxygen dependence",
+      "fullCredit": "States fear of future oxygen dependence or desire to remain independent",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37872,7 +37872,7 @@
       "id": "1G.4",
       "description": "Patient limited understanding of maintenance inhaler therapy",
       "points": 0.3,
-      "fullCredit": "States limited understanding of maintenance inhaler",
+      "fullCredit": "Documents patient limited understanding of daily maintenance inhalers vs rescue",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37880,7 +37880,7 @@
       "id": "1G.5",
       "description": "Patient belief that albuterol alone was sufficient treatment",
       "points": 0.3,
-      "fullCredit": "States patient believed SABA was sufficient",
+      "fullCredit": "Documents patient belief that albuterol alone was sufficient (or unawareness of maintenance benefit)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37888,7 +37888,7 @@
       "id": "1G.6",
       "description": "Patient goal: symptom control or activity improvement",
       "points": 0.3,
-      "fullCredit": "States symptom or activity-related goal",
+      "fullCredit": "Documents patient goal to improve activity tolerance, climb stairs, or manage home projects",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -37968,7 +37968,7 @@
       "id": "2B.2",
       "description": "FEV1/FVC confirms airflow obstruction (ratio &lt; 0.70 threshold met)",
       "points": 0.6,
-      "fullCredit": "Notes ratio &lt; 0.70 confirming obstruction",
+      "fullCredit": "References FEV1/FVC < 0.70 threshold confirming persistent airflow obstruction (or post-BD ratio 0.58-0.62)",
       "halfCredit": "States obstruction, no threshold",
       "zeroCredit": "Omits"
     },
@@ -38040,7 +38040,7 @@
       "id": "2C.2",
       "description": "GOLD group B classification derived: CAT ≥ 10 AND ≤1 moderate exacerbation without hospitalization",
       "points": 0.8,
-      "fullCredit": "States Group B with both derivation criteria cited",
+      "fullCredit": "Classifies as GOLD Group B (or Group E) using CAT score and exacerbation history criteria",
       "halfCredit": "States Group B, only one criterion cited",
       "zeroCredit": "Omits or incorrect group"
     },
@@ -38048,7 +38048,7 @@
       "id": "2C.3",
       "description": "SpO₂ 95% noted as adequate at rest (above 88% threshold for supplemental O₂)",
       "points": 0.6,
-      "fullCredit": "States SpO₂ adequate or above 88% threshold",
+      "fullCredit": "Documents SpO2 95% on room air interpreted as adequate / no hypoxemia / above 88% O2 threshold",
       "halfCredit": "States SpO₂, no clinical interpretation",
       "zeroCredit": "Omits"
     },
@@ -38056,7 +38056,7 @@
       "id": "2C.4",
       "description": "Identifies that only post-bronchodilator values are presented (no pre-bronchodilator data)",
       "points": 0.5,
-      "fullCredit": "States post-bronchodilator values only; no pre-bronchodilator data",
+      "fullCredit": "Notes spirometry values are post-bronchodilator (or flags lack of pre-BD comparison)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38064,7 +38064,7 @@
       "id": "2C.5",
       "description": "Identifies mMRC dyspnea scale as expected but absent objective measure",
       "points": 0.7,
-      "fullCredit": "States mMRC not documented or flags as expected missing data",
+      "fullCredit": "Notes mMRC dyspnea scale or notes CAT score 18 as primary objective symptom assessment",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38096,7 +38096,7 @@
       "id": "3A.3",
       "description": "States GOLD Group B classification",
       "points": 0.6,
-      "fullCredit": "States GOLD Group B",
+      "fullCredit": "States GOLD Group B (or Group E) in assessment based on CAT 18 and 0-1 exacerbations",
       "halfCredit": "States GOLD, no group letter",
       "zeroCredit": "Incorrect"
     },
@@ -38104,7 +38104,7 @@
       "id": "3A.4",
       "description": "Cites GOLD 2026 Report as guideline source",
       "points": 0.6,
-      "fullCredit": "Names GOLD 2026",
+      "fullCredit": "Cites GOLD guideline (GOLD 2026 or GOLD report) for COPD management",
       "halfCredit": "Cites GOLD, no year",
       "zeroCredit": "Omits"
     },
@@ -38112,7 +38112,7 @@
       "id": "3A.5",
       "description": "Criterion for Group B: significant symptom burden (CAT ≥ 10)",
       "points": 0.6,
-      "fullCredit": "Categorizes as GOLD Group B (per older 0–1 moderate exacerbation criteria) OR GOLD Group E (per GOLD 2023/2026 >=1 moderate exacerbation criteria)",
+      "fullCredit": "Cites CAT score >= 10 (or CAT 18) supporting high symptom burden / Group B or Group E",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38120,7 +38120,7 @@
       "id": "3A.6",
       "description": "Criterion for Group B: ≤1 moderate exacerbation without hospitalization in past year",
       "points": 0.6,
-      "fullCredit": "Justifies GOLD Group B (symptomatic, 1 moderate flare) or Group E (exacerbation risk per 2023/2026 GOLD)",
+      "fullCredit": "Cites <=1 moderate exacerbation (or 1 exacerbation without hospitalization) for Group B or Group E",
       "halfCredit": "States exacerbation criterion, imprecise",
       "zeroCredit": "Omits"
     },
@@ -38152,7 +38152,7 @@
       "id": "3A.10",
       "description": "Supports assessment with frequent rescue inhaler use (multiple times daily)",
       "points": 0.5,
-      "fullCredit": "States frequent albuterol use as evidence",
+      "fullCredit": "Documents albuterol rescue use multiple times daily / frequent daily reliance",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38192,7 +38192,7 @@
       "id": "3A.15",
       "description": "Characterizes issue as treatment non-initiation, not treatment failure",
       "points": 0.6,
-      "fullCredit": "Distinguishes non-initiation from failure",
+      "fullCredit": "Distinguishes treatment non-initiation (due to cost) from medication/treatment failure",
       "halfCredit": "States distinction vaguely",
       "zeroCredit": "Omits"
     },
@@ -38200,7 +38200,7 @@
       "id": "3A.16",
       "description": "States need to address implementation barriers before further escalation",
       "points": 0.5,
-      "fullCredit": "States address barriers before escalating therapy",
+      "fullCredit": "States need to address implementation/cost barriers prior to considering escalation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38208,7 +38208,7 @@
       "id": "3A.17",
       "description": "States smoking history contributes to COPD burden and disease trajectory",
       "points": 0.3,
-      "fullCredit": "Links smoking history to disease burden",
+      "fullCredit": "Links 45 pack-year smoking history to COPD development and disease trajectory",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38224,7 +38224,7 @@
       "id": "3B.1",
       "description": "Problem identified: medication non-initiation or therapeutic inertia",
       "points": 0.7,
-      "fullCredit": "Names therapeutic inertia or medication non-initiation",
+      "fullCredit": "Identifies cost-related non-initiation / access barrier as a distinct clinical problem",
       "halfCredit": "Names one dimension only",
       "zeroCredit": "Omits"
     },
@@ -38248,7 +38248,7 @@
       "id": "3B.4",
       "description": "Barrier identified: limited understanding of maintenance therapy",
       "points": 0.8,
-      "fullCredit": "States limited understanding as barrier",
+      "fullCredit": "Identifies limited understanding of daily maintenance therapy as a barrier to initiation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38256,7 +38256,7 @@
       "id": "3B.5",
       "description": "Barrier identified: failure to communicate concerns to healthcare provider",
       "points": 0.5,
-      "fullCredit": "States failure to communicate barrier to provider",
+      "fullCredit": "Identifies patient failure to communicate cost barriers to prescribing provider as a barrier",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38272,7 +38272,7 @@
       "id": "3B.7",
       "description": "Distinguishes non-initiation from treatment failure",
       "points": 0.6,
-      "fullCredit": "States this is non-initiation, not treatment failure",
+      "fullCredit": "States untreated symptoms reflect non-initiation of maintenance therapy rather than treatment failure",
       "halfCredit": "States distinction vaguely",
       "zeroCredit": "Omits"
     },
@@ -38280,7 +38280,7 @@
       "id": "3B.8",
       "description": "States successful management requires addressing barriers before further escalation",
       "points": 0.4,
-      "fullCredit": "States barriers must be addressed before further escalation",
+      "fullCredit": "States affordability and access barriers must be resolved before assessing clinical response or escalation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38288,7 +38288,7 @@
       "id": "3B.9",
       "description": "States patient stretches medications due to cost",
       "points": 0.3,
-      "fullCredit": "Identifies unfilled $300 maintenance inhaler as cost barrier, and confirms patient does not stretch lisinopril/atorvastatin",
+      "fullCredit": "Identifies the unfilled $300 inhaler and confirms adherence to affordable oral medications (lisinopril/atorvastatin)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38296,7 +38296,7 @@
       "id": "3B.10",
       "description": "Notes COPD control is threatened by current SABA-only approach",
       "points": 0.3,
-      "fullCredit": "States current approach inadequate for disease control",
+      "fullCredit": "States reliance on SABA-only monotherapy without maintenance controller threatens COPD disease control",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38328,7 +38328,7 @@
       "id": "3C.3",
       "description": "States patient alters medication-taking behavior due to cost (stretches medications)",
       "points": 0.6,
-      "fullCredit": "States alters behavior or stretches medications",
+      "fullCredit": "Specifies non-filling of $300 combination inhaler due to cost as the key financial barrier/behavior",
       "halfCredit": "States concern, no specific behavior",
       "zeroCredit": "Omits"
     },
@@ -38336,7 +38336,7 @@
       "id": "3C.4",
       "description": "Identifies financial barriers as a significant threat to long-term disease control",
       "points": 0.4,
-      "fullCredit": "States threat to long-term disease control",
+      "fullCredit": "Identifies financial/cost barriers as a major threat to long-term COPD disease control",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38344,7 +38344,7 @@
       "id": "3C.5",
       "description": "States assessment of prescription insurance coverage is warranted",
       "points": 0.5,
-      "fullCredit": "States coverage assessment is warranted",
+      "fullCredit": "States prescription insurance / formulary coverage assessment is indicated",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38360,7 +38360,7 @@
       "id": "3C.7",
       "description": "Notes patient did not communicate cost concerns to prior provider",
       "points": 0.4,
-      "fullCredit": "States failure to communicate to provider",
+      "fullCredit": "Notes failure to communicate medication cost concerns to prior provider as a barrier",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38376,7 +38376,7 @@
       "id": "3D.1",
       "description": "Problem identified: COPD knowledge deficit or patient education need",
       "points": 0.5,
-      "fullCredit": "Names knowledge deficit or education need",
+      "fullCredit": "Identifies COPD knowledge deficit / education need regarding maintenance therapy as a problem",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38384,7 +38384,7 @@
       "id": "3D.2",
       "description": "Knowledge gap: COPD disease progression",
       "points": 0.4,
-      "fullCredit": "States progression knowledge gap",
+      "fullCredit": "Identifies knowledge deficit regarding COPD progression and role of maintenance therapy",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38392,7 +38392,7 @@
       "id": "3D.3",
       "description": "Knowledge gap: purpose of maintenance inhaler therapy",
       "points": 0.6,
-      "fullCredit": "States maintenance therapy knowledge gap",
+      "fullCredit": "Identifies knowledge deficit regarding the purpose and regular daily use of maintenance inhalers",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38400,7 +38400,7 @@
       "id": "3D.4",
       "description": "Knowledge gap: exacerbation prevention",
       "points": 0.5,
-      "fullCredit": "States exacerbation prevention knowledge gap",
+      "fullCredit": "Identifies knowledge deficit regarding maintenance therapy reducing exacerbation risk",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38408,7 +38408,7 @@
       "id": "3D.5",
       "description": "Knowledge gap: difference between rescue and maintenance inhalers",
       "points": 0.7,
-      "fullCredit": "States rescue vs. maintenance distinction as knowledge gap",
+      "fullCredit": "Identifies knowledge deficit distinguishing fast-acting rescue vs daily maintenance inhalers",
       "halfCredit": "States inhalers, no distinction",
       "zeroCredit": "Omits"
     },
@@ -38416,7 +38416,7 @@
       "id": "3D.6",
       "description": "States patient education is necessary to improve medication adherence",
       "points": 0.5,
-      "fullCredit": "States education needed for adherence improvement",
+      "fullCredit": "States education is needed to support long-term medication adherence and disease control",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38424,7 +38424,7 @@
       "id": "3D.7",
       "description": "States education necessary to support long-term disease management",
       "points": 0.4,
-      "fullCredit": "States long-term management support requires education",
+      "fullCredit": "States education on long-term disease management and symptom control is indicated",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38432,7 +38432,7 @@
       "id": "3D.8",
       "description": "States limited understanding was a primary driver of non-initiation",
       "points": 0.4,
-      "fullCredit": "Links knowledge deficit directly to non-initiation",
+      "fullCredit": "Links both limited understanding of maintenance benefit and cost barrier to therapy non-initiation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38464,7 +38464,7 @@
       "id": "3E.4",
       "description": "States continued abstinence is one of the most important interventions for COPD",
       "points": 0.7,
-      "fullCredit": "States abstinence is a critical COPD-specific intervention",
+      "fullCredit": "Frames continued smoking abstinence as the single most critical intervention to slow COPD progression",
       "halfCredit": "States important, not framed as critical or COPD-specific",
       "zeroCredit": "Omits"
     },
@@ -38472,7 +38472,7 @@
       "id": "3E.5",
       "description": "States smoking history contributes to COPD progression risk",
       "points": 0.5,
-      "fullCredit": "States smoking linked to COPD progression",
+      "fullCredit": "Links 45 pack-year smoking history to ongoing COPD progression risk",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38480,7 +38480,7 @@
       "id": "3E.6",
       "description": "States positive reinforcement is the appropriate clinical response",
       "points": 0.5,
-      "fullCredit": "States positive reinforcement recommended",
+      "fullCredit": "Provides positive reinforcement / praise for achieving and sustaining smoking cessation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38488,7 +38488,7 @@
       "id": "3E.7",
       "description": "States no additional cessation pharmacotherapy is indicated (already quit)",
       "points": 0.6,
-      "fullCredit": "States cessation achieved; no pharmacotherapy indicated now",
+      "fullCredit": "States smoking cessation is sustained and no cessation pharmacotherapy is currently indicated",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38496,7 +38496,7 @@
       "id": "3F.1",
       "description": "Problem identified: preventive care gaps",
       "points": 0.3,
-      "fullCredit": "Names preventive care gaps",
+      "fullCredit": "Identifies preventive care / immunization gaps as a distinct problem in the Assessment",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38520,7 +38520,7 @@
       "id": "3F.4",
       "description": "Gap identified: Tdap booster overdue",
       "points": 0.6,
-      "fullCredit": "Recommends Tdap booster (overdue >10 years) or plans registry verification",
+      "fullCredit": "Identifies Tdap booster as overdue (>10 years) or indicates review of tetanus status",
       "halfCredit": "States Tdap, no overdue status",
       "zeroCredit": "Omits"
     },
@@ -38544,7 +38544,7 @@
       "id": "3F.7",
       "description": "States preventive care optimization is appropriate",
       "points": 0.3,
-      "fullCredit": "States optimization appropriate for this patient",
+      "fullCredit": "States preventive care optimization / immunization update is indicated",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38552,7 +38552,7 @@
       "id": "3F.8",
       "description": "Links COPD patient status to recommendation for pneumococcal and RSV vaccination",
       "points": 0.4,
-      "fullCredit": "Links COPD context to vaccine recommendations",
+      "fullCredit": "Links COPD chronic respiratory diagnosis and age 66 to pneumococcal and RSV vaccine recommendations",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38560,7 +38560,7 @@
       "id": "4A.1",
       "description": "Initiates LABA/LAMA combination therapy (acceptable per GOLD 2026 for Group B: umeclidinium/vilanterol [Anoro Ellipta], tiotropium/olodaterol [Stiolto Respimat], glycopyrrolate/formoterol [Bevespi Aerosphere], aclidinium/formoterol [Duaklir Pressair], glycopyrrolate/indacaterol [Ultibro Breezhaler])",
       "points": 0.8,
-      "fullCredit": "Names any GOLD 2026-supported LABA/LAMA combination",
+      "fullCredit": "Recommends initiating a once-daily LABA/LAMA combination inhaler (e.g., Anoro Ellipta: umeclidinium/vilanterol)",
       "halfCredit": "States LABA/LAMA class, no specific agent named",
       "zeroCredit": "Initiates monotherapy only or no change"
     },
@@ -38568,7 +38568,7 @@
       "id": "4A.2",
       "description": "Specifies umeclidinium/vilanterol (Anoro Ellipta) as the selected agent",
       "points": 0.7,
-      "fullCredit": "Names umeclidinium/vilanterol or Anoro Ellipta",
+      "fullCredit": "Names specific LABA/LAMA agent (Anoro Ellipta: umeclidinium/vilanterol 62.5/25 mcg or formulary LABA/LAMA)",
       "halfCredit": "Names a different acceptable LABA/LAMA agent from guideline list",
       "zeroCredit": "Names SABA or ICS-only therapy"
     },
@@ -38576,7 +38576,7 @@
       "id": "4A.3",
       "description": "Specifies dose: 1 inhalation once daily",
       "points": 0.5,
-      "fullCredit": "States 1 inhalation daily",
+      "fullCredit": "Specifies dose and frequency: 1 inhalation once daily",
       "halfCredit": "States daily, no inhalation count",
       "zeroCredit": "Incorrect dose or frequency"
     },
@@ -38584,7 +38584,7 @@
       "id": "4A.4",
       "description": "States continue albuterol HFA as needed for rescue symptom relief",
       "points": 0.7,
-      "fullCredit": "States continue albuterol PRN or as needed",
+      "fullCredit": "Explicitly states continuation of albuterol HFA 2 puffs q4-6h PRN for acute rescue",
       "halfCredit": "States continue albuterol, no PRN framing",
       "zeroCredit": "Omits or discontinues albuterol"
     },
@@ -38600,7 +38600,7 @@
       "id": "4A.6",
       "description": "Discusses expected benefits of maintenance therapy with patient",
       "points": 0.6,
-      "fullCredit": "States discuss expected benefits",
+      "fullCredit": "Discusses expected benefits: improved dyspnea, increased activity tolerance, and reduced exacerbations",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38608,7 +38608,7 @@
       "id": "4A.7",
       "description": "Reviews realistic expectations regarding symptom improvement timeline",
       "points": 0.6,
-      "fullCredit": "States realistic expectations discussion",
+      "fullCredit": "Discusses realistic symptom improvement timeline (gradual onset over days to weeks)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38616,7 +38616,7 @@
       "id": "4A.8",
       "description": "Educates patient on rescue versus maintenance inhaler distinction",
       "points": 0.6,
-      "fullCredit": "States rescue vs. maintenance distinction in education plan",
+      "fullCredit": "Addresses rescue vs maintenance distinction (daily preventive controller vs as-needed reliever)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38624,7 +38624,7 @@
       "id": "4A.9",
       "description": "Emphasizes importance of daily (not as-needed) maintenance inhaler use",
       "points": 0.5,
-      "fullCredit": "States importance of daily use emphasized",
+      "fullCredit": "Emphasizes daily consistent use of maintenance inhaler even when feeling well",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38640,7 +38640,7 @@
       "id": "4A.11",
       "description": "Links LABA/LAMA selection to GOLD 2026 Group B recommendation",
       "points": 0.6,
-      "fullCredit": "Cites GOLD 2026 as basis for dual bronchodilator selection",
+      "fullCredit": "Cites GOLD 2026 Group B (or Group E) guideline recommendation for initial dual LABA/LAMA",
       "halfCredit": "States guideline basis, no GOLD 2026 specificity",
       "zeroCredit": "Omits"
     },
@@ -38648,7 +38648,7 @@
       "id": "4A.12",
       "description": "States therapy addresses both bronchodilation and symptom burden",
       "points": 0.4,
-      "fullCredit": "States dual benefit: bronchodilation and symptom control",
+      "fullCredit": "Explains dual bronchodilator mechanism combining LAMA and LABA for superior lung function and symptom relief",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38656,7 +38656,7 @@
       "id": "4A.13",
       "description": "Notes prior prescription failure was non-initiation, not lack of efficacy",
       "points": 0.4,
-      "fullCredit": "States non-initiation context informs plan",
+      "fullCredit": "Notes plan addresses non-initiation due to cost rather than lack of medication efficacy",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38664,7 +38664,7 @@
       "id": "4B.1",
       "description": "Assesses prescription insurance coverage",
       "points": 0.6,
-      "fullCredit": "States assess insurance or prescription coverage",
+      "fullCredit": "Includes assessment of prescription insurance formulary coverage / copay tiers",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38672,7 +38672,7 @@
       "id": "4B.2",
       "description": "Discusses expected copay costs with patient",
       "points": 0.5,
-      "fullCredit": "States discuss copay or expected out-of-pocket costs",
+      "fullCredit": "Discusses finding an affordable option or checking copay tier",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38688,7 +38688,7 @@
       "id": "4B.4",
       "description": "Reviews manufacturer patient assistance programs if appropriate",
       "points": 0.5,
-      "fullCredit": "States manufacturer assistance programs to be reviewed",
+      "fullCredit": "Mentions manufacturer copay cards, patient assistance programs, or formulary alternatives",
       "halfCredit": "States assistance programs, no manufacturer specificity",
       "zeroCredit": "Omits"
     },
@@ -38696,7 +38696,7 @@
       "id": "4B.5",
       "description": "Encourages patient to communicate future affordability concerns to provider",
       "points": 0.6,
-      "fullCredit": "States encourage future communication of cost concerns",
+      "fullCredit": "Encourages patient to proactively communicate future medication cost or access barriers",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38704,7 +38704,7 @@
       "id": "4B.6",
       "description": "Addresses medication-stretching behavior directly",
       "points": 0.4,
-      "fullCredit": "Finds affordable LABA/LAMA maintenance inhaler or assistance program, noting patient takes existing oral meds regularly",
+      "fullCredit": "Confirms oral medication adherence and addresses cost barriers to inhaler access",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38712,7 +38712,7 @@
       "id": "4B.7",
       "description": "Educates patient that cost concerns can be addressed through provider collaboration",
       "points": 0.4,
-      "fullCredit": "States provider collaboration can address cost barriers",
+      "fullCredit": "Emphasizes provider-patient collaboration to navigate financial barriers",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38720,7 +38720,7 @@
       "id": "4B.8",
       "description": "States cost barrier assessment is needed before finalizing therapy selection",
       "points": 0.5,
-      "fullCredit": "States cost assessment needed before confirming therapy plan",
+      "fullCredit": "States confirming affordability / insurance coverage prior to finalizing prescription choice",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38728,7 +38728,7 @@
       "id": "4C.1",
       "description": "Discusses COPD disease progression with patient",
       "points": 0.6,
-      "fullCredit": "States COPD disease progression education provided",
+      "fullCredit": "Educates on COPD chronic progressive nature and how maintenance therapy preserves function",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38736,7 +38736,7 @@
       "id": "4C.2",
       "description": "Discusses distinction between rescue and maintenance inhalers",
       "points": 0.7,
-      "fullCredit": "States rescue vs. maintenance distinction discussed",
+      "fullCredit": "Educates on fast-acting rescue albuterol vs daily scheduled maintenance inhaler",
       "halfCredit": "States inhalers discussed, no distinction noted",
       "zeroCredit": "Omits"
     },
@@ -38744,7 +38744,7 @@
       "id": "4C.3",
       "description": "Discusses importance of daily maintenance inhaler use",
       "points": 0.6,
-      "fullCredit": "States importance of daily use discussed",
+      "fullCredit": "Reinforces daily scheduled adherence to maintenance inhaler",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38752,7 +38752,7 @@
       "id": "4C.4",
       "description": "Discusses exacerbation prevention",
       "points": 0.6,
-      "fullCredit": "States exacerbation prevention discussed",
+      "fullCredit": "Discusses maintenance therapy's role in preventing acute COPD exacerbations",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38760,7 +38760,7 @@
       "id": "4C.5",
       "description": "Discusses role of adherence in symptom control",
       "points": 0.6,
-      "fullCredit": "States adherence role in symptom control discussed",
+      "fullCredit": "Explains that consistent daily adherence is required to achieve sustained symptom control",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38768,7 +38768,7 @@
       "id": "4C.6",
       "description": "States education supports long-term disease management",
       "points": 0.3,
-      "fullCredit": "States long-term management benefit of education",
+      "fullCredit": "Connects education to long-term disease management, quality of life, and independence",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38776,7 +38776,7 @@
       "id": "4C.7",
       "description": "Education plan addresses knowledge gaps identified in Assessment",
       "points": 0.3,
-      "fullCredit": "Education items map to Assessment knowledge gaps",
+      "fullCredit": "Maps education plan directly to addressed knowledge deficit and maintenance therapy purpose",
       "halfCredit": "Partially maps",
       "zeroCredit": "No mapping to Assessment"
     },
@@ -38784,7 +38784,7 @@
       "id": "4C.8",
       "description": "Discusses signs/symptoms requiring escalation of care during an exacerbation",
       "points": 0.3,
-      "fullCredit": "States exacerbation action escalation discussed",
+      "fullCredit": "Educates on early recognition of worsening symptoms and when to seek medical evaluation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38792,7 +38792,7 @@
       "id": "4D.1",
       "description": "Congratulates patient on smoking cessation achievement",
       "points": 0.4,
-      "fullCredit": "States congratulate patient on cessation",
+      "fullCredit": "Congratulates patient / provides positive reinforcement for sustaining smoking cessation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38800,7 +38800,7 @@
       "id": "4D.2",
       "description": "Reinforces continued smoking abstinence",
       "points": 0.5,
-      "fullCredit": "States reinforce continued abstinence",
+      "fullCredit": "Reinforces lifelong smoking abstinence to slow COPD lung function decline",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38808,7 +38808,7 @@
       "id": "4D.3",
       "description": "States smoking abstinence reduces COPD progression risk",
       "points": 0.4,
-      "fullCredit": "Links continued abstinence to COPD progression reduction",
+      "fullCredit": "Links continued abstinence directly to reduced rate of FEV1 decline and fewer exacerbations",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38816,7 +38816,7 @@
       "id": "4D.4",
       "description": "Does not initiate cessation pharmacotherapy (abstinence already achieved)",
       "points": 0.2,
-      "fullCredit": "States no pharmacotherapy needed; patient already quit",
+      "fullCredit": "Notes smoking cessation pharmacotherapy is not indicated given stable long-term abstinence",
       "halfCredit": "—",
       "zeroCredit": "Initiates unnecessary cessation pharmacotherapy"
     },
@@ -38824,7 +38824,7 @@
       "id": "4E.1",
       "description": "Monitor CAT score at follow-up",
       "points": 0.5,
-      "fullCredit": "States monitor CAT score",
+      "fullCredit": "Plans monitoring of CAT score at follow-up (target <10 or improvement from 18)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38832,7 +38832,7 @@
       "id": "4E.2",
       "description": "Monitor dyspnea symptoms",
       "points": 0.4,
-      "fullCredit": "States monitor dyspnea",
+      "fullCredit": "Plans monitoring of exertional dyspnea and shortness of breath",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38840,7 +38840,7 @@
       "id": "4E.3",
       "description": "Monitor activity tolerance",
       "points": 0.4,
-      "fullCredit": "States monitor activity tolerance",
+      "fullCredit": "Plans monitoring of functional activity tolerance (stair climbing, walking, home projects)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38848,7 +38848,7 @@
       "id": "4E.4",
       "description": "Monitor rescue inhaler (albuterol) use frequency",
       "points": 0.5,
-      "fullCredit": "States monitor rescue inhaler use",
+      "fullCredit": "Plans monitoring of albuterol rescue use frequency (target reduction from multiple daily uses)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38856,7 +38856,7 @@
       "id": "4E.5",
       "description": "Monitor COPD exacerbations",
       "points": 0.5,
-      "fullCredit": "States monitor exacerbations",
+      "fullCredit": "Plans monitoring for acute COPD exacerbations, steroid/antibiotic bursts, or urgent visits",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38864,7 +38864,7 @@
       "id": "4E.6",
       "description": "Monitor medication adherence to maintenance therapy",
       "points": 0.4,
-      "fullCredit": "States monitor adherence",
+      "fullCredit": "Plans monitoring of daily maintenance inhaler adherence",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38872,7 +38872,7 @@
       "id": "4E.7",
       "description": "Monitor inhaler technique at follow-up",
       "points": 0.4,
-      "fullCredit": "States monitor inhaler technique",
+      "fullCredit": "Plans demonstration and monitoring of inhaler technique at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38880,7 +38880,7 @@
       "id": "4E.8",
       "description": "Monitor medication affordability concerns",
       "points": 0.3,
-      "fullCredit": "States monitor affordability concerns",
+      "fullCredit": "Plans monitoring of medication affordability and prescription fill status",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38888,7 +38888,7 @@
       "id": "4E.9",
       "description": "Monitor response to LABA/LAMA therapy",
       "points": 0.3,
-      "fullCredit": "States monitor response to therapy",
+      "fullCredit": "Plans assessment of clinical response to LABA/LAMA therapy at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38896,7 +38896,7 @@
       "id": "4E.10",
       "description": "Monitor lung function per GOLD schedule",
       "points": 0.3,
-      "fullCredit": "States monitor lung function or spirometry follow-up",
+      "fullCredit": "Plans longitudinal spirometry / pulmonary function monitoring per GOLD schedule (annually)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38904,7 +38904,7 @@
       "id": "4F.1",
       "description": "Recommends pneumococcal vaccination",
       "points": 0.5,
-      "fullCredit": "States recommend pneumococcal vaccination",
+      "fullCredit": "Recommends PCV20 (Prevnar 20) or PCV15 followed by PPSV23 for age >=65 with COPD",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38912,7 +38912,7 @@
       "id": "4F.2",
       "description": "Recommends RSV vaccination",
       "points": 0.5,
-      "fullCredit": "States recommend RSV vaccination",
+      "fullCredit": "Recommends RSV vaccination (Arexvy or Abrysvo) for age 60-74 with chronic lung disease",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38920,7 +38920,7 @@
       "id": "4F.3",
       "description": "Recommends Tdap booster",
       "points": 0.5,
-      "fullCredit": "States recommend Tdap booster",
+      "fullCredit": "Recommends Tdap booster (overdue >10 years)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38944,7 +38944,7 @@
       "id": "4G.1",
       "description": "States follow-up in approximately 3 months",
       "points": 0.3,
-      "fullCredit": "States approximately 3 months",
+      "fullCredit": "Specifies follow-up timeframe in 4-8 weeks or 1-3 months",
       "halfCredit": "States follow-up, no timing",
       "zeroCredit": "Omits"
     },
@@ -38952,7 +38952,7 @@
       "id": "4G.2",
       "description": "Reassess symptom burden at follow-up",
       "points": 0.25,
-      "fullCredit": "States reassess symptoms",
+      "fullCredit": "Plans follow-up reassessment of dyspnea, symptoms, and functional capacity",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38960,7 +38960,7 @@
       "id": "4G.3",
       "description": "Reassess CAT score at follow-up",
       "points": 0.25,
-      "fullCredit": "States reassess CAT score",
+      "fullCredit": "Plans repeat CAT score assessment at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38968,7 +38968,7 @@
       "id": "4G.4",
       "description": "Reassess inhaler adherence at follow-up",
       "points": 0.25,
-      "fullCredit": "States reassess adherence",
+      "fullCredit": "Plans follow-up reassessment of maintenance inhaler adherence and routine",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38976,7 +38976,7 @@
       "id": "4G.5",
       "description": "Reassess medication affordability concerns at follow-up",
       "points": 0.25,
-      "fullCredit": "States reassess affordability",
+      "fullCredit": "Plans follow-up reassessment of medication affordability and successful prescription access",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38984,7 +38984,7 @@
       "id": "4G.6",
       "description": "Evaluate response to LABA/LAMA therapy at follow-up",
       "points": 0.4,
-      "fullCredit": "States evaluate therapy response",
+      "fullCredit": "Plans evaluation of therapeutic response to LABA/LAMA before considering therapy changes",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -38992,7 +38992,7 @@
       "id": "4G.7",
       "description": "States lung function assessment per GOLD schedule at follow-up",
       "points": 0.2,
-      "fullCredit": "States lung function follow-up planned",
+      "fullCredit": "Plans periodic spirometry / lung function reassessment per GOLD recommendations",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -39000,7 +39000,7 @@
       "id": "4G.8",
       "description": "Follow-up plan addresses all active problems from Assessment",
       "points": 0.1,
-      "fullCredit": "Follow-up items map to all assessed problems",
+      "fullCredit": "Follow-up plan addresses assessed COPD, adherence, affordability, and preventive care needs",
       "halfCredit": "Partially maps",
       "zeroCredit": "No mapping"
     },
@@ -39056,7 +39056,7 @@
       "id": "5B.3",
       "description": "Goals and targets stated with numeric thresholds where applicable",
       "points": 0.5,
-      "fullCredit": "Numeric targets stated",
+      "fullCredit": "States numeric goals or thresholds (e.g., CAT < 10, BP < 130/80 mmHg, SpO2 >= 90%)",
       "halfCredit": "Some numeric",
       "zeroCredit": "Vague goals"
     },
@@ -39064,7 +39064,7 @@
       "id": "5B.4",
       "description": "Plan items are specific and actionable",
       "points": 0.5,
-      "fullCredit": "Specific, actionable",
+      "fullCredit": "Provides concrete, actionable plan details including specific agent, dose, frequency, and monitoring",
       "halfCredit": "Partly vague",
       "zeroCredit": "Vague"
     },
@@ -39080,7 +39080,7 @@
       "id": "5C.2",
       "description": "Recommendations tied to guideline rationale (GOLD 2026)",
       "points": 0.4,
-      "fullCredit": "Rationale provided with GOLD 2026 citation",
+      "fullCredit": "Cites GOLD 2026 (or GOLD report) guideline rationale supporting initial LABA/LAMA for Group B",
       "halfCredit": "Partial rationale",
       "zeroCredit": "Absent"
     },
@@ -39146,7 +39146,7 @@
       "id": "1A.7",
       "description": "States indication for LABA/LAMA therapy (symptomatic COPD)",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States indication for LABA/LAMA therapy as symptomatic COPD / Group B management",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39162,7 +39162,7 @@
       "id": "1B.2",
       "description": "States slight reduction in shortness of breath during daily activities",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States general dyspnea improvement (with or without specific daily activity ties)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39178,7 +39178,7 @@
       "id": "1B.4",
       "description": "States continued exertional dyspnea: climbing stairs",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States continued exertional dyspnea with stair climbing or general exertional symptoms",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39186,7 +39186,7 @@
       "id": "1B.5",
       "description": "States continued exertional dyspnea: carrying groceries",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States continued exertional dyspnea with carrying groceries or general lifting limitation",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39194,7 +39194,7 @@
       "id": "1B.6",
       "description": "States continued exertional dyspnea: household projects",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States continued exertional dyspnea with household projects or activity limitation",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39202,7 +39202,7 @@
       "id": "1B.7",
       "description": "States albuterol use frequency (approximately 1–2 times daily)",
       "points": 0.53,
-      "fullCredit": "States albuterol used several times weekly (or 1–2 times daily)",
+      "fullCredit": "Documents albuterol rescue use frequency (several times weekly, 1-2x/day, or slight reduction)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39210,7 +39210,7 @@
       "id": "1B.8",
       "description": "States rescue inhaler use represents slight reduction from baseline",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States rescue inhaler use represents slight reduction from baseline (or continued regular PRN use)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39226,7 +39226,7 @@
       "id": "1B.10",
       "description": "Denies emergency department visits since previous visit",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States denies ED visits (or denies exacerbations / hospitalizations / OCS)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39266,7 +39266,7 @@
       "id": "1B.16",
       "description": "States patient believes he is using the inhaler correctly",
       "points": 0.27,
-      "fullCredit": "States patient believes his technique is correct prior to demonstration",
+      "fullCredit": "States patient believed his inhaler technique was correct prior to demonstration",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39282,7 +39282,7 @@
       "id": "1B.18",
       "description": "States patient blows out into the mouthpiece to blow medicine into lungs",
       "points": 0.27,
-      "fullCredit": "States patient incorrectly blows into the device thinking it forces the medicine in",
+      "fullCredit": "Describes blowing into mouthpiece (or patient belief this forced medicine into lungs)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39290,7 +39290,7 @@
       "id": "1B.19",
       "description": "Denies medication affordability concerns",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Confirms affordability of medication ($20 copay / cheaper / affordable without financial strain)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39298,7 +39298,7 @@
       "id": "1B.20",
       "description": "Denies difficulty obtaining prescriptions",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States denies difficulty obtaining prescriptions / fills medication without issue",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39322,7 +39322,7 @@
       "id": "1B.23",
       "description": "States patient denies desire to restart tobacco use",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States patient denies desire to restart tobacco use / maintains stable abstinence",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39330,7 +39330,7 @@
       "id": "1B.24",
       "description": "States HPI documents 5 distinct COPD burden domains assessed at this visit: symptoms, inhaler use, exacerbation history, adherence, technique",
       "points": 0.53,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "HPI covers symptoms, exacerbation history, adherence, technique, and/or reliever use",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39426,7 +39426,7 @@
       "id": "1C.12",
       "description": "Notes PSH is limited to appendectomy (no prior pulmonary or cardiac surgeries)",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Lists appendectomy as PSH (or confirms absence of pulmonary/cardiac surgeries)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39514,7 +39514,7 @@
       "id": "1D.9",
       "description": "States limited physical activity secondary to dyspnea",
       "points": 0.53,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Documents limited physical activity secondary to dyspnea (or sedentary lifestyle)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39626,7 +39626,7 @@
       "id": "1E.14",
       "description": "States Tdap status: overdue (gap identified)",
       "points": 0.53,
-      "fullCredit": "States Tdap overdue (>10 years ago) or plans verification",
+      "fullCredit": "States Tdap overdue (>10 years ago) or identifies tetanus update needed",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39642,7 +39642,7 @@
       "id": "1E.17",
       "description": "Notes albuterol HFA serves as rescue (SABA) bronchodilator",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Lists albuterol HFA as PRN rescue SABA bronchodilator",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39650,7 +39650,7 @@
       "id": "1E.18",
       "description": "Notes 3 immunization gaps identified warranting follow-up action",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Identifies immunization gaps (pneumococcal, RSV, and/or Tdap overdue)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39666,7 +39666,7 @@
       "id": "1F.1",
       "description": "Documents respiratory positive: exertional dyspnea present",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Notes mild dyspnea improvement with exertional activity",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39698,7 +39698,7 @@
       "id": "1F.5",
       "description": "Documents behavioral negative: patient denies desire to restart tobacco use",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Documents patient denies desire or craving to restart tobacco use",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39706,7 +39706,7 @@
       "id": "1F.6",
       "description": "Documents access negative: no affordability or prescription access concerns identified",
       "points": 0.27,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Confirms absence of current medication access or affordability concerns",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39722,7 +39722,7 @@
       "id": "1G.2",
       "description": "Addresses patient's expectation: unrealistic timeline for treatment response",
       "points": 0.53,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Addresses realistic treatment timeline expectation (gradual onset over days to weeks)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39730,7 +39730,7 @@
       "id": "1G.3",
       "description": "Addresses patient's self-reported mild breathing improvement during daily activities",
       "points": 0.53,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Notes mild improvement in symptoms and functional activities",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39738,7 +39738,7 @@
       "id": "2A.1",
       "description": "States blood pressure value (132/82 mmHg)",
       "points": 0.5,
-      "fullCredit": "States 132/82",
+      "fullCredit": "Documents BP 130/76 (or 132/82 mmHg)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39746,7 +39746,7 @@
       "id": "2A.2",
       "description": "States heart rate value (76 bpm)",
       "points": 0.25,
-      "fullCredit": "States 76",
+      "fullCredit": "Documents HR 78 bpm (or 76 bpm)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39754,7 +39754,7 @@
       "id": "2A.3",
       "description": "States respiratory rate value (20 bpm)",
       "points": 0.25,
-      "fullCredit": "States 20",
+      "fullCredit": "Documents RR 18/min (or 20/min)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39762,7 +39762,7 @@
       "id": "2A.4",
       "description": "States weight value (80 kg)",
       "points": 0.25,
-      "fullCredit": "States 80 kg",
+      "fullCredit": "Documents Weight 89 kg (or 80 kg)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39778,7 +39778,7 @@
       "id": "2A.6",
       "description": "States BMI value (26.0 kg/m²)",
       "points": 0.5,
-      "fullCredit": "States 26.0",
+      "fullCredit": "Documents BMI 28.1 kg/m² (or 26.0 kg/m²)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39786,7 +39786,7 @@
       "id": "2A.7",
       "description": "States SpO2 value (97%)",
       "points": 0.5,
-      "fullCredit": "States 97%",
+      "fullCredit": "Documents SpO2 95% (or 97%) on room air",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39834,7 +39834,7 @@
       "id": "2A.13",
       "description": "Notes BP within acceptable range in context of current lisinopril therapy",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Comments that BP is acceptable / at goal in context of lisinopril therapy",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39866,7 +39866,7 @@
       "id": "2B.4",
       "description": "States patient reports persistent shortness of breath during daily activities",
       "points": 0.5,
-      "fullCredit": "States dyspnea persists during daily activities like climbing stairs or carrying groceries",
+      "fullCredit": "Documents persistent exertional dyspnea (stairs, groceries, or household tasks)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39874,7 +39874,7 @@
       "id": "2B.5",
       "description": "States patient uses rescue albuterol frequently",
       "points": 0.75,
-      "fullCredit": "States patient uses rescue albuterol 1-2 times daily",
+      "fullCredit": "Documents rescue albuterol usage frequency (several times weekly / 1-2 times daily)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39882,7 +39882,7 @@
       "id": "2B.6",
       "description": "States rescue inhaler use as objective marker (approximately 1–2 times daily)",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Documents objective marker for rescue inhaler use frequency",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39906,7 +39906,7 @@
       "id": "2B.9",
       "description": "Notes FEV1 58% predicted falls within GOLD Grade 2 range (50–69% predicted)",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Links FEV1 58% predicted to GOLD Grade 2 moderate airflow limitation",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39930,7 +39930,7 @@
       "id": "2C.2",
       "description": "States GOLD Grade 2 classification: FEV1 50–69% predicted",
       "points": 0.75,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States GOLD Grade 2 moderate obstruction (or FEV1 58% predicted)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39938,7 +39938,7 @@
       "id": "2C.3",
       "description": "States patient has significant symptom burden (persistent dyspnea)",
       "points": 0.75,
-      "fullCredit": "States persistent shortness of breath indicates high symptom burden (equivalent to CAT >= 10 / GOLD Group B)",
+      "fullCredit": "Assesses significant symptom burden (CAT 16-18, exertional dyspnea)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39946,7 +39946,7 @@
       "id": "2C.4",
       "description": "States zero exacerbations in monitoring period supports Group B (not Group E) classification",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Notes zero exacerbations supporting Group B classification",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39962,7 +39962,7 @@
       "id": "2C.6",
       "description": "States rescue inhaler use trend: slight reduction from baseline",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Documents rescue inhaler use trend (several times weekly / slight reduction)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39970,7 +39970,7 @@
       "id": "2C.7",
       "description": "Notes sputum culture, CBC, and metabolic panel not required at this stable chronic disease visit",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States unnecessary labs (sputum culture, CBC, metabolic panel) are not indicated",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39978,7 +39978,7 @@
       "id": "2C.8",
       "description": "Notes ABG not indicated given SpO2 97% at rest on room air",
       "points": 0.5,
-      "fullCredit": "States ABG not indicated with SpO2 97%",
+      "fullCredit": "States ABG is not indicated given SpO2 95-97% without acute distress",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -39994,7 +39994,7 @@
       "id": "3A.2",
       "description": "States GOLD classification: Group B",
       "points": 0.51,
-      "fullCredit": "Categorizes as GOLD Group B or Group E based on exacerbation history",
+      "fullCredit": "States GOLD Group B classification based on high symptoms and low exacerbations",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40010,7 +40010,7 @@
       "id": "3A.4",
       "description": "States LAMA/LABA (Anoro Ellipta) therapy has not provided full clinical benefit due to sub-optimal inhaler technique",
       "points": 0.51,
-      "fullCredit": "States Anoro Ellipta failed to achieve full benefit due to technique errors",
+      "fullCredit": "Links inhaler technique errors (blowing into mouthpiece) to reduced drug deposition and incomplete LAMA/LABA benefit",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40018,7 +40018,7 @@
       "id": "3A.5",
       "description": "States rescue inhaler use decreased as evidence of modest benefit",
       "points": 0.26,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Notes decreased rescue inhaler use or partial symptom improvement as evidence of initial benefit",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40034,7 +40034,7 @@
       "id": "3A.7",
       "description": "States patient continues to experience activity limitation",
       "points": 0.26,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Documents persistent exertional activity limitation",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40042,7 +40042,7 @@
       "id": "3A.8",
       "description": "States GOLD 2026 uses symptom burden and exacerbation history in assessment framework",
       "points": 0.51,
-      "fullCredit": "Cites GOLD 2026 guidelines regarding symptom burden (dyspnea) and exacerbation history for Group B classification",
+      "fullCredit": "Cites GOLD 2026 framework (symptom burden and exacerbation history) for COPD assessment",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40050,7 +40050,7 @@
       "id": "3A.9",
       "description": "States GOLD 2026 uses activity limitation in symptom assessment framework",
       "points": 0.26,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Cites GOLD 2026 activity limitation criterion",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40058,7 +40058,7 @@
       "id": "3A.10",
       "description": "States GOLD 2026 uses rescue inhaler use in symptom assessment framework",
       "points": 0.26,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Cites GOLD 2026 rescue inhaler use frequency criterion",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40066,7 +40066,7 @@
       "id": "3A.11",
       "description": "States GOLD 2026 uses exacerbation history in symptom assessment framework",
       "points": 0.26,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Cites GOLD 2026 exacerbation history criterion (zero exacerbations)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40074,7 +40074,7 @@
       "id": "3A.12",
       "description": "States persistent symptoms at first glance may suggest inadequate treatment response",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Notes that persistent symptoms might initially suggest inadequate response but must be evaluated in context of adherence/technique",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40090,7 +40090,7 @@
       "id": "3A.14",
       "description": "States current symptoms cannot be accurately interpreted as treatment failure",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Concludes symptoms cannot be interpreted as medication failure due to missed doses and technique errors",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40098,7 +40098,7 @@
       "id": "3A.15",
       "description": "States adherence optimization must precede consideration of treatment escalation",
       "points": 0.77,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States adherence optimization and technique correction must precede consideration of therapy escalation",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40114,7 +40114,7 @@
       "id": "3A.17",
       "description": "Notes FEV1 58% predicted (GOLD Grade 2 severity)",
       "points": 0.26,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Notes FEV1 58% predicted / GOLD Grade 2 moderate airflow obstruction",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40130,7 +40130,7 @@
       "id": "3A.19",
       "description": "Notes SpO2 97% on room air",
       "points": 0.26,
-      "fullCredit": "States SpO2 97% on room air",
+      "fullCredit": "Documents SpO2 95% (or 97%) on room air as adequate / no supplemental oxygen indicated",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40146,7 +40146,7 @@
       "id": "3A.21",
       "description": "Distinguishes poor inhaler technique from true LAMA/LABA treatment failure",
       "points": 0.51,
-      "fullCredit": "States current symptoms represent technique failure, not Anoro Ellipta medication failure",
+      "fullCredit": "Explicitly distinguishes technique/adherence deficiency from true pharmacologic medication failure",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40154,7 +40154,7 @@
       "id": "3A.22",
       "description": "Notes LABA/LAMA remains guideline-supported first-line regimen for GOLD Group B per GOLD 2026",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Notes that LABA/LAMA remains guideline-supported first-line therapy for Group B",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40162,7 +40162,7 @@
       "id": "3A.23",
       "description": "Notes no exacerbation history that would trigger escalation to triple therapy per GOLD 2026",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Notes that lack of exacerbations argues against triple therapy / ICS escalation at this visit",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40178,7 +40178,7 @@
       "id": "3B.2",
       "description": "States nonadherence is contributing to persistent symptoms",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Links nonadherence (taking 3-4 days/week) to persistent exertional symptoms",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40194,7 +40194,7 @@
       "id": "3B.6",
       "description": "States adherence barrier: unrealistic expectations about symptom improvement",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Identifies unrealistic expectations about symptom improvement timeline as an adherence barrier",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40202,7 +40202,7 @@
       "id": "3B.7",
       "description": "States adherence barrier: limited understanding of maintenance therapy benefits",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Identifies limited understanding of maintenance therapy benefits as a contributor to missed doses",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40210,7 +40210,7 @@
       "id": "3B.8",
       "description": "States current symptoms cannot be interpreted as LAMA treatment failure because of incorrect inhaler technique",
       "points": 0.77,
-      "fullCredit": "States medication effectiveness cannot be assessed due to critical technique error",
+      "fullCredit": "Frames technique errors as precluding accurate assessment of medication effectiveness",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40218,7 +40218,7 @@
       "id": "3B.9",
       "description": "States adherence should be optimized before consideration of treatment escalation",
       "points": 0.77,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States adherence optimization before escalation is necessary to determine true drug response",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40234,7 +40234,7 @@
       "id": "3B.11",
       "description": "Notes no affordability or access barriers identified",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Notes affordability/access barriers have been successfully resolved ($20 copay)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40242,7 +40242,7 @@
       "id": "3B.12",
       "description": "Notes nonadherence is a modifiable contributor to symptom burden",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Identifies nonadherence as a modifiable contributor to ongoing symptom burden",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40250,7 +40250,7 @@
       "id": "3B.13",
       "description": "Notes patient needs education on correct Anoro Ellipta usage steps",
       "points": 0.51,
-      "fullCredit": "States patient requires step-by-step Anoro Ellipta device use education",
+      "fullCredit": "States patient needs step-by-step Anoro Ellipta technique education and demonstration",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40258,7 +40258,7 @@
       "id": "3B.14",
       "description": "Notes rescue inhaler use 1–2 times daily may reflect under-treated symptoms from inadequate maintenance adherence",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Discusses rescue inhaler use frequency in relation to undertreated symptoms",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40266,7 +40266,7 @@
       "id": "3B.15",
       "description": "Notes this represents the primary modifiable barrier to accurate treatment response assessment",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Identifies adherence and technique as primary barriers to assessing treatment response",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40274,7 +40274,7 @@
       "id": "3C.1",
       "description": "Names problem: COPD knowledge deficit",
       "points": 0.26,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Identifies COPD knowledge deficit / inhaler technique deficiency as a distinct problem",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40282,7 +40282,7 @@
       "id": "3C.2",
       "description": "States improved understanding of maintenance inhaler therapy compared with initial visit",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Notes understanding has improved regarding cost but remains incomplete regarding daily scheduled adherence",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40290,7 +40290,7 @@
       "id": "3C.3",
       "description": "States persistent unrealistic expectations regarding treatment response timeline remain",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Addresses unrealistic expectations regarding treatment timeline and symptom onset",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40314,7 +40314,7 @@
       "id": "3C.6",
       "description": "Identifies education need: slide cover down until it clicks, inhale deeply, hold breath 3-4 seconds",
       "points": 0.51,
-      "fullCredit": "States patient needs instruction on complete Anoro Ellipta steps (clicking cover open, deep steady inhalation, breath hold)",
+      "fullCredit": "Instructs on Ellipta device steps: slide cover until click, exhale away, inhale deeply/steadily, and hold breath",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40322,7 +40322,7 @@
       "id": "3C.7",
       "description": "States additional education is warranted",
       "points": 0.26,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States additional education and teach-back demonstration is warranted",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40330,7 +40330,7 @@
       "id": "3C.8",
       "description": "Distinguishes knowledge deficit (understanding) from behavioral adherence barrier",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Distinguishes knowledge deficit from behavioral forgetfulness/adherence barriers",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40338,7 +40338,7 @@
       "id": "3C.9",
       "description": "States understanding remains incomplete despite prior education session at initial visit",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Notes that understanding of daily routine remains incomplete despite prior education",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40346,7 +40346,7 @@
       "id": "3C.10",
       "description": "Notes knowledge deficit specifically involves maintenance versus rescue therapy distinction",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Discusses maintenance vs rescue inhaler purpose knowledge deficit",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40354,7 +40354,7 @@
       "id": "3D.1",
       "description": "Names problem: former tobacco use",
       "points": 0.26,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Identifies former tobacco use / sustained smoking abstinence as a problem in assessment",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40362,7 +40362,7 @@
       "id": "3D.2",
       "description": "States current status: patient remains tobacco free",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Reiterates current tobacco-free status and 5-year duration of abstinence",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40370,7 +40370,7 @@
       "id": "3D.3",
       "description": "States continued tobacco abstinence is one of the most important interventions for slowing COPD disease progression",
       "points": 0.77,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States importance of continued abstinence for slowing COPD lung function decline",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40378,7 +40378,7 @@
       "id": "3D.4",
       "description": "States positive reinforcement should be provided",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Provides positive reinforcement / praise for successful smoking cessation",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40386,7 +40386,7 @@
       "id": "3D.5",
       "description": "Acknowledges cessation timeline (quit 5 years ago) in clinical context",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Acknowledges cessation timeline (quit 5 years ago) in clinical context",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40394,7 +40394,7 @@
       "id": "3D.6",
       "description": "Does not recommend pharmacotherapy for tobacco cessation (patient is currently abstinent)",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Confirms smoking cessation is sustained and cessation pharmacotherapy is not indicated",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40402,7 +40402,7 @@
       "id": "3E.1",
       "description": "Names problem: preventive care gaps",
       "points": 0.26,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Identifies preventive care / immunization gaps as a distinct problem in Assessment",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40410,7 +40410,7 @@
       "id": "3E.2",
       "description": "Identifies gap: pneumococcal vaccination not documented",
       "points": 0.77,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Identifies pneumococcal vaccination gap (PCV20 indicated for age >=65 with COPD)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40418,7 +40418,7 @@
       "id": "3E.3",
       "description": "Identifies gap: RSV vaccination not documented",
       "points": 0.77,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Identifies RSV vaccination gap (indicated for age 60-74 with COPD)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40426,7 +40426,7 @@
       "id": "3E.4",
       "description": "Identifies gap: Tdap booster overdue",
       "points": 0.77,
-      "fullCredit": "Recommends Tdap booster (overdue >10 years) or plans registry verification",
+      "fullCredit": "Identifies Tdap booster overdue status (>10 years ago)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40434,7 +40434,7 @@
       "id": "3E.5",
       "description": "States influenza vaccine is up to date (not a gap; no action required)",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Reiterates influenza up-to-date status in assessment",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40442,7 +40442,7 @@
       "id": "3E.6",
       "description": "States COVID vaccination is up to date (not a gap; no action required)",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Reiterates COVID-19 vaccination status in assessment",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40450,7 +40450,7 @@
       "id": "3E.7",
       "description": "States preventive care optimization remains appropriate",
       "points": 0.26,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States preventive care optimization / closing vaccine gaps remains indicated",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40458,7 +40458,7 @@
       "id": "3E.8",
       "description": "Frames preventive care as a distinct clinical problem warranting intervention",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Frames preventive care as a distinct clinical problem in Assessment",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40466,7 +40466,7 @@
       "id": "3E.9",
       "description": "Links pneumococcal and RSV vaccination to COPD-specific preventive care priorities",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Links pneumococcal and RSV vaccination to COPD preventive respiratory priorities",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40474,7 +40474,7 @@
       "id": "3E.10",
       "description": "Links Tdap booster to general adult immunization schedule",
       "points": 0.26,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Links Tdap to adult routine booster schedule (every 10 years)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40482,7 +40482,7 @@
       "id": "3E.11",
       "description": "Notes three specific actionable immunization gaps identified at this visit",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Identifies actionable immunization gaps (pneumococcal, RSV, Tdap)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40490,7 +40490,7 @@
       "id": "3E.12",
       "description": "Notes respiratory vaccines (pneumococcal, RSV) are particularly relevant given COPD diagnosis",
       "points": 0.51,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Discusses respiratory vaccine relevance to reducing COPD exacerbation risk",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40522,7 +40522,7 @@
       "id": "4A.4",
       "description": "States decision NOT to escalate therapy at this visit",
       "points": 0.75,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Explicitly decides to withhold therapy escalation (no escalation today)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40530,7 +40530,7 @@
       "id": "4A.5",
       "description": "States rationale for non-escalation: adherence has not yet been optimized",
       "points": 0.75,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States rationale for non-escalation: adherence and technique must be optimized before evaluating efficacy",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40538,7 +40538,7 @@
       "id": "4A.6",
       "description": "States plan to reassess symptom response after adherence improves",
       "points": 0.75,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plans to reassess symptom response after adherence and technique improve",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40546,7 +40546,7 @@
       "id": "4A.7",
       "description": "Does not add ICS-containing or triple therapy at this visit",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "States ICS / triple therapy is withheld at this visit",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40554,7 +40554,7 @@
       "id": "4A.8",
       "description": "Does not discontinue current LABA/LAMA therapy",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Explicitly states LABA/LAMA therapy (Anoro Ellipta) is continued",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40562,7 +40562,7 @@
       "id": "4A.9",
       "description": "Notes current regimen (LABA/LAMA) remains guideline-supported for GOLD Group B per GOLD 2026",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Cites GOLD Group B guideline support for continuing dual bronchodilator regimen",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40570,7 +40570,7 @@
       "id": "4A.10",
       "description": "Notes any future escalation decision deferred pending adherence reassessment",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Defers escalation decision pending adherence and technique reassessment",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40578,7 +40578,7 @@
       "id": "4B.1",
       "description": "Discusses importance of daily inhaler use with patient",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Discusses importance of daily scheduled inhaler use (not PRN)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40586,7 +40586,7 @@
       "id": "4B.2",
       "description": "Discusses distinction between maintenance and rescue therapy",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Reviews maintenance vs rescue distinction in plan",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40594,7 +40594,7 @@
       "id": "4B.3",
       "description": "Discusses expected timeline of benefit from maintenance therapy",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Discusses expected timeline of benefit from daily maintenance therapy",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40602,7 +40602,7 @@
       "id": "4B.4",
       "description": "Recommends adherence strategy: daily routine pairing",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Recommends daily routine pairing strategy (e.g., placing inhaler next to coffee maker)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40610,7 +40610,7 @@
       "id": "4B.5",
       "description": "Recommends technique correction: slide cover until click, breathe out away from inhaler, inhale deeply and hold breath",
       "points": 0.5,
-      "fullCredit": "Instructs patient on technique correction: slide cover until click, breathe out fully away from device (do not blow into mouthpiece), inhale deeply and steadily, and hold breath",
+      "fullCredit": "Instructs on full Ellipta technique: slide cover until click, exhale away, inhale deeply, and hold breath",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40618,7 +40618,7 @@
       "id": "4B.6",
       "description": "Recommends adherence strategy: phone alarms",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Recommends phone alarm, visual cue, or calendar reminder adherence strategy",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40626,7 +40626,7 @@
       "id": "4B.7",
       "description": "Recommends adherence strategy: visual cues",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Recommends visual cue adherence strategy (e.g. coffee maker placement)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40634,7 +40634,7 @@
       "id": "4B.8",
       "description": "Addresses specific barrier: forgetfulness",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Specifically addresses forgetfulness barrier with concrete routine habit",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40642,7 +40642,7 @@
       "id": "4B.9",
       "description": "Addresses specific barrier: unrealistic expectations regarding symptom improvement",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Addresses unrealistic expectations regarding symptom improvement timeline",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40650,7 +40650,7 @@
       "id": "4B.10",
       "description": "Plans to reassess adherence at next follow-up visit",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plans to reassess adherence at next follow-up visit",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40658,7 +40658,7 @@
       "id": "4B.11",
       "description": "Plans to re-evaluate inhaler technique at follow-up visits",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plans to re-evaluate inhaler technique at follow-up visit",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40666,7 +40666,7 @@
       "id": "4B.12",
       "description": "Does not address affordability as a barrier (none identified in this patient)",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Confirms affordability is resolved ($20 copay) and maintains access",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40674,7 +40674,7 @@
       "id": "4B.13",
       "description": "Frames adherence optimization as prerequisite to any future escalation decision",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Frames adherence optimization as an essential prerequisite to future escalation",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40682,7 +40682,7 @@
       "id": "4C.1",
       "description": "Reviews COPD disease progression with patient",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Reviews COPD disease progression and functional preservation with patient",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40690,7 +40690,7 @@
       "id": "4C.2",
       "description": "Reviews purpose of maintenance therapy",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Reviews purpose of maintenance therapy in education plan",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40698,7 +40698,7 @@
       "id": "4C.3",
       "description": "Reviews expected symptom improvement timeline",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Reviews expected symptom improvement timeline with patient",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40706,7 +40706,7 @@
       "id": "4C.4",
       "description": "Reviews exacerbation prevention as a treatment goal",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Reviews exacerbation prevention as a core treatment goal",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40714,7 +40714,7 @@
       "id": "4C.5",
       "description": "Reviews correct steps of Anoro Ellipta use with patient",
       "points": 0.5,
-      "fullCredit": "Reviews and demonstrates proper Anoro Ellipta device steps",
+      "fullCredit": "Reviews full Anoro Ellipta device steps (slide click, exhale away, deep breath, breath hold)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40722,7 +40722,7 @@
       "id": "4C.6",
       "description": "Addresses distinction between maintenance and rescue inhaler purposes",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Addresses maintenance vs rescue inhaler purposes in education plan",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40738,7 +40738,7 @@
       "id": "4C.8",
       "description": "Education components documented separately from adherence strategies",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Separates educational instruction from behavioral adherence habit strategies",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40746,7 +40746,7 @@
       "id": "4C.9",
       "description": "Does not counsel on tobacco cessation (patient is currently abstinent)",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Addresses smoking cessation reinforcement or confirms stable abstinence",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40754,7 +40754,7 @@
       "id": "4D.1",
       "description": "Reinforces continued smoking abstinence",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Reinforces continued smoking abstinence to slow COPD lung function decline",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40762,7 +40762,7 @@
       "id": "4D.2",
       "description": "Congratulates patient on continued success with tobacco cessation",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Congratulates patient / provides positive reinforcement on sustained smoking cessation",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40770,7 +40770,7 @@
       "id": "4D.3",
       "description": "Does not prescribe cessation pharmacotherapy (patient is currently abstinent)",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Confirms smoking cessation pharmacotherapy is not indicated",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40778,7 +40778,7 @@
       "id": "4E.1",
       "description": "Recommends pneumococcal vaccination",
       "points": 0.75,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Recommends pneumococcal vaccination (PCV20 or PCV15 + PPSV23)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40786,7 +40786,7 @@
       "id": "4E.2",
       "description": "Recommends RSV vaccination",
       "points": 0.75,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Recommends RSV vaccination (Arexvy or Abrysvo)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40794,7 +40794,7 @@
       "id": "4E.3",
       "description": "Recommends Tdap booster",
       "points": 0.75,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Recommends Tdap booster (overdue >10 years)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40802,7 +40802,7 @@
       "id": "4E.4",
       "description": "Does not re-recommend influenza or COVID vaccines (documented up to date)",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Confirms influenza and COVID-19 vaccines are up to date",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40810,7 +40810,7 @@
       "id": "4E.5",
       "description": "Frames three vaccination recommendations as actionable at this visit or near-term follow-up",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Frames vaccination recommendations as actionable plan orders / referrals",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40818,7 +40818,7 @@
       "id": "4E.6",
       "description": "Links immunization recommendations to patient's COPD diagnosis and age-related infectious risk",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Links immunizations to COPD diagnosis and age-related risk",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40826,7 +40826,7 @@
       "id": "4F.1",
       "description": "Plans to monitor dyspnea and symptom control",
       "points": 0.5,
-      "fullCredit": "States plan to monitor patient-reported shortness of breath and albuterol use frequency",
+      "fullCredit": "Plans monitoring of dyspnea and symptom control at follow-up",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40834,7 +40834,7 @@
       "id": "4F.2",
       "description": "Plans to monitor dyspnea symptoms",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plans monitoring of exertional dyspnea symptoms",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40842,7 +40842,7 @@
       "id": "4F.3",
       "description": "Plans to monitor activity tolerance",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plans monitoring of functional activity tolerance",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40850,7 +40850,7 @@
       "id": "4F.4",
       "description": "Plans to monitor rescue inhaler use frequency",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plans monitoring of rescue albuterol use frequency",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40858,7 +40858,7 @@
       "id": "4F.5",
       "description": "Plans to monitor for COPD exacerbations",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plans monitoring for acute COPD exacerbations",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40866,7 +40866,7 @@
       "id": "4F.6",
       "description": "Plans to monitor medication adherence",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plans monitoring of medication adherence (daily use next to coffee maker)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40874,7 +40874,7 @@
       "id": "4F.7",
       "description": "Plans to monitor inhaler technique",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plans demonstration and re-evaluation of inhaler technique at follow-up",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40882,7 +40882,7 @@
       "id": "4F.8",
       "description": "Includes monitoring for preventive care follow-through (vaccination completion)",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plans monitoring of preventive care / vaccine administration follow-through",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40898,7 +40898,7 @@
       "id": "4G.1",
       "description": "States follow-up interval (approximately 3 months)",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Specifies follow-up interval (e.g. ~4-8 weeks or ~3 months)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40906,7 +40906,7 @@
       "id": "4G.2",
       "description": "States plan to reassess adherence at follow-up",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plans to reassess adherence at follow-up",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40914,7 +40914,7 @@
       "id": "4G.3",
       "description": "States plan to reassess symptom burden at follow-up",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plans to reassess symptom burden and CAT score at follow-up",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40922,7 +40922,7 @@
       "id": "4G.4",
       "description": "States plan to reassess symptoms and activity tolerance at follow-up",
       "points": 0.25,
-      "fullCredit": "States plan to reassess dyspnea, activity tolerance, and inhaler technique at follow-up",
+      "fullCredit": "Plans to reassess dyspnea, activity tolerance, and inhaler technique at follow-up",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40930,7 +40930,7 @@
       "id": "4G.5",
       "description": "States plan to determine need for treatment escalation if symptoms persist despite optimized adherence",
       "points": 0.25,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plans to determine need for therapy escalation if symptoms persist despite optimized adherence",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40946,7 +40946,7 @@
       "id": "5A.2",
       "description": "Assessment problems presented in logical priority order (COPD, adherence, knowledge, tobacco, preventive care)",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Assessment addresses prioritized clinical problems (COPD severity, adherence/technique, knowledge, tobacco, vaccines)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40954,7 +40954,7 @@
       "id": "5A.3",
       "description": "Plan mirrors assessment problem priority order",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plan mirrors assessed problems across COPD management, adherence, education, and preventive care",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40962,7 +40962,7 @@
       "id": "5A.4",
       "description": "Subsections within each SOAP section are logically grouped and sequenced",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Structures SOAP note with clear headings, grouping, and clinical sequencing",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -40994,7 +40994,7 @@
       "id": "5C.1",
       "description": "Uses clinical terminology throughout (exacerbation, bronchodilator, maintenance therapy, GOLD)",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Uses appropriate clinical terminology (exacerbation, bronchodilator, GOLD, maintenance therapy)",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -41002,7 +41002,7 @@
       "id": "5C.2",
       "description": "Assessment statements are specific and clinically grounded (not vague generalizations)",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Assessment provides clear, clinically grounded statements regarding COPD control and technique",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     },
@@ -41010,7 +41010,7 @@
       "id": "5C.3",
       "description": "Plan items are specific and action-oriented (not vague directives)",
       "points": 0.5,
-      "fullCredit": "All elements of this criterion are present and match the model note.",
+      "fullCredit": "Plan provides specific, action-oriented items covering technique, routine, and monitoring",
       "halfCredit": "Criterion partially present; one required element missing or imprecisely stated.",
       "zeroCredit": "Criterion absent or contains information not in the model note."
     }
