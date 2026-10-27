@@ -21,7 +21,7 @@ const sarahTue = makeCase({
       'Recognize ICS nonadherence as a common cause of poor control',
     ],
   },
-  VITALS: { bp: '122/78', bpRepeat: '116/74', hr: '82', rr: '18', temp: '98.2°F', weight: '76 kg', height: "5'5\"", bmi: '27.9', spo2: '98%', flags: {} },
+  VITALS: { bp: '122/78', bpRepeat: '116/74', hr: '82', rr: '18', temp: '98.2°F', weight: '76 kg', height: "5'5\"", bmi: '27.9', spo2: '98%', spo2Qualifier: 'on room air', flags: {} },
   LABS: [
     { label: 'FEV1', value: '2.5', unit: 'L (78% pred)', flag: 'warn', note: 'Reversible post-bronchodilator (+14% / 280 mL; meets GINA criteria >=12% / >=200mL)' },
     { label: 'FEV1/FVC', value: '0.69', flag: 'warn' },
@@ -111,7 +111,7 @@ const sarahWed = makeCase({
     diseaseStates: ['Asthma'],
     learningObjectives: ['Escalate therapy per GINA guidelines (e.g., add LABA or switch to SMART therapy)'],
   },
-  VITALS: { ...sarahTue.VITALS, bp: '120/76', hr: '76', rr: '16', weight: '75 kg', spo2: '99%', bmi: '27.5' },
+  VITALS: { ...sarahTue.VITALS, bp: '120/76', hr: '76', rr: '16', weight: '75 kg', spo2: '99%', spo2Qualifier: 'on room air', bmi: '27.5' },
   LABS: sarahTue.LABS,
   ALERTS: [{ level: 'info', text: 'ACT 21 — Asthma well controlled on SMART therapy. Assess inhaler technique before considering any further escalation.' }],
   PROBLEMS: [{ name: 'Asthma', detail: 'Partly controlled', flag: 'warn' }],
@@ -181,7 +181,7 @@ const sarahThu = makeCase({
     diseaseStates: ['Asthma'],
     learningObjectives: ['Assess asthma control on SMART therapy', 'Reinforce maintenance and reliever concept'],
   },
-  VITALS: { ...sarahTue.VITALS, bp: '120/76', hr: '76', rr: '16', weight: '75 kg', spo2: '99%', bmi: '27.5' },
+  VITALS: { ...sarahTue.VITALS, bp: '120/76', hr: '76', rr: '16', weight: '75 kg', spo2: '99%', spo2Qualifier: 'on room air', bmi: '27.5' },
   LABS: [
     { label: 'FEV1', value: '2.9', unit: 'L (85% pred)', flag: 'normal' },
     { label: 'FEV1/FVC', value: '0.77', flag: 'normal' },
@@ -256,7 +256,7 @@ const bobTue = makeCase({
     diseaseStates: ['COPD', 'Hypertension', 'Hyperlipidemia'],
     learningObjectives: ['Identify missing maintenance therapy in symptomatic COPD', 'Assess cost and technique barriers'],
   },
-  VITALS: { bp: '132/78', bpRepeat: '130/76', hr: '80', rr: '18', temp: '98.4°F', weight: '89 kg', height: "5'10\"", bmi: '28.1', spo2: '95%', flags: {} },
+  VITALS: { bp: '132/78', bpRepeat: '130/76', hr: '80', rr: '18', temp: '98.4°F', weight: '89 kg', height: "5'10\"", bmi: '28.1', bsa: '2.10', spo2: '95%', spo2Qualifier: 'on room air', flags: {} },
   LABS: [
     { label: 'Eosinophils', value: '310', unit: 'cells/µL', flag: 'normal' },
     { label: 'FEV1', value: '1.86', unit: 'L (62% pred)', flag: 'warn' },
@@ -342,7 +342,7 @@ const bobWed = makeCase({
     diseaseStates: ['COPD'],
     learningObjectives: ['Assess inhaler technique as a cause of treatment failure'],
   },
-  VITALS: { bp: '130/76', bpRepeat: '130/76', hr: '78', rr: '18', temp: '98.4°F', weight: '89 kg', height: "5'10\"", bmi: '28.1', spo2: '95%', flags: {} },
+  VITALS: { bp: '130/76', bpRepeat: '130/76', hr: '78', rr: '18', temp: '98.4°F', weight: '89 kg', height: "5'10\"", bmi: '28.1', bsa: '2.10', spo2: '95%', spo2Qualifier: 'on room air', flags: {} },
   LABS: [
     { label: 'Eosinophils', value: '310', unit: 'cells/µL', flag: 'normal' },
     { label: 'FEV1', value: '1.8', unit: 'L (63% pred)', flag: 'warn' },
@@ -410,7 +410,7 @@ const bobThu = makeCase({
     diseaseStates: ['COPD'],
     learningObjectives: ['Recognize indications for escalating to triple therapy (LABA/LAMA/ICS) in COPD', 'Interpret eosinophil count in COPD exacerbation risk'],
   },
-  VITALS: { bp: '128/76', bpRepeat: '128/76', hr: '82', rr: '18', temp: '98.4°F', weight: '89 kg', height: "5'10\"", bmi: '28.1', spo2: '94%', flags: {} },
+  VITALS: { bp: '128/76', bpRepeat: '128/76', hr: '82', rr: '18', temp: '98.4°F', weight: '89 kg', height: "5'10\"", bmi: '28.1', bsa: '2.10', spo2: '94%', spo2Qualifier: 'on room air', flags: {} },
   LABS: [
     { label: 'Eosinophils', value: '310', unit: 'cells/µL', flag: 'warn', note: 'Above 300 cells/µL threshold — favors ICS benefit per GOLD' },
     { label: 'FEV1', value: '1.8', unit: 'L (60% pred)', flag: 'warn' },
@@ -431,9 +431,8 @@ const bobThu = makeCase({
     { label: 'Social history', value: 'Married, lives with spouse. Retired automotive mechanic (occupational exposure). Former smoker (45 pack-years, quit 5 years ago). Denies recreational drug use.' }
   ],
   OBJECTIVE_EXTRA: [
-    { label: 'Spirometry', value: 'FEV1/FVC 0.56, FEV1 61% predicted (post-bronchodilator)', flag: 'warn' },
-    { label: 'ACT Score', value: '17 — Partly controlled asthma component', flag: 'warn' },
-    { label: 'CAT Score', value: '15 — Moderate COPD symptom burden', flag: 'warn' },
+    { label: 'Spirometry', value: 'FEV1/FVC 0.56, FEV1 61% predicted (post-bronchodilator; baseline FEV1 60%)', flag: 'warn' },
+    { label: 'CAT Score', value: '17 — High COPD symptom burden', flag: 'warn' },
   ],
   INTERVIEW_FIELDS: [
     { key: 'symptoms', label: 'Symptom check', placeholder: 'Any exacerbations or rescue use?' },
@@ -462,7 +461,7 @@ const bobThu = makeCase({
     { id: 'w3b3_goals', topic: 'Goals', field: 'goals', keywords: ['goal', 'goals', 'hope', 'want', 'expect'], response: "My main goal right now is just to stop having these exacerbations and stay out of the urgent care." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'w3b3_a1', title: 'Clinical Status', icon: 'CheckCircle', color: '10b981', questions: [{ key: 'q1', q: 'Should therapy be escalated to LABA/LAMA?' }] },
+    { id: 'w3b3_a1', title: 'Triple Therapy Escalation', icon: 'AlertTriangle', color: 'd97706', questions: [{ key: 'q1', q: 'Should therapy be escalated to triple therapy (add ICS to LABA/LAMA)?' }] },
   ],
   PLAN_SECTIONS: [
     { id: 'w3b3_p1', title: 'Plan', options: [
@@ -478,7 +477,7 @@ const bobThu = makeCase({
 
 const mariaTue = makeCase({
   id: 'w3-maria_t-tue',
-  PATIENT: { name: 'Maria Thompson', age: 69, sex: 'female', ethnicity: 'Hispanic', mrn: 'W3-99211', allergiesSummary: 'Sulfonamide antibiotics (Rash)' },
+  PATIENT: { name: 'Maria Thompson', age: 69, sex: 'female', ethnicity: 'Hispanic', mrn: 'W3-99211', allergiesSummary: 'Sulfonamide antibiotics (Rash — Moderate)' },
   ENCOUNTER: { week: 'Week 3', 
     day: 'Tuesday', type: 'Initial Ambulatory Care Visit', difficulty: 'Core', difficultyTone: 'teal',
     chiefConcern: "I keep getting these chest infections and flare-ups.",
@@ -486,7 +485,7 @@ const mariaTue = makeCase({
     diseaseStates: ['Asthma-COPD Overlap', 'Allergic Rhinitis'],
     learningObjectives: ['Recognize ACO phenotype', 'Identify the mandatory role of ICS in patients with an asthma component'],
   },
-  VITALS: { bp: '126/74', bpRepeat: '124/72', hr: '80', rr: '18', temp: '98.6°F', weight: '71 kg', height: "5'4\"", bmi: '26.9', spo2: '95%', flags: {} },
+  VITALS: { bp: '126/74', bpRepeat: '124/72', hr: '80', rr: '18', temp: '98.6°F', weight: '71 kg', height: "5'4\"", bmi: '26.9', bsa: '1.79', spo2: '95%', spo2Qualifier: 'on room air', flags: {} },
   LABS: [
     { label: 'Absolute Eosinophils', value: '420', unit: 'cells/µL', flag: 'high' },
     { label: 'FEV1', value: '1.45', unit: 'L (58% pred)', flag: 'warn', note: 'Post-bronchodilator' },
@@ -552,22 +551,23 @@ const mariaTue = makeCase({
     { id: 'w3c_exac', topic: 'Exacerbations', field: 'exacerbations', keywords: ['flare', 'infection', 'prednisone', 'hospital', 'exacerbation'], response: "I have symptoms on most days. I wake up at night from symptoms about twice a week. I have difficulty climbing stairs, walking uphill, and doing prolonged activities. I\'ve had 2 exacerbations in the past year — both times I was treated with prednisone and antibiotics at the clinic. Neither one required going to the hospital or the emergency room." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'w3c_a1', title: 'ACO Management', icon: 'Lungs', color: '7c3aed', questions: [
-      { key: 'q1', q: 'Based on her frequent exacerbations and elevated eosinophils, what is the best biologic therapy?' },
-      { key: 'q2', q: 'Should Trelegy be continued?' }
+    { id: 'w3c_a1', title: 'ACO Pharmacotherapy Initiation', icon: 'Lungs', color: '7c3aed', questions: [
+      { key: 'q1', q: 'Why is an inhaled corticosteroid (ICS) mandatory in asthma-COPD overlap (ACO)?' },
+      { key: 'q2', q: 'What is the appropriate initial maintenance escalation (initiate Trelegy Ellipta or add ICS/LABA to LAMA)?' }
     ] },
     { id: 'w3c_a2', title: 'Allergic Rhinitis', icon: 'Wind', color: '0d9488', questions: [
       { key: 'q1', q: 'Is her current allergic rhinitis management adequate?' }
     ] },
   ],
   PLAN_SECTIONS: [
-    { id: 'w3c_p1', title: 'Plan', options: [
-      { key: 'o1', label: 'Start mepolizumab (Nucala) injection and continue Trelegy', correct: true },
-      { key: 'o2', label: 'Switch Trelegy to Breztri (budesonide/glycopyrrolate/formoterol)', correct: false },
+    { id: 'w3c_p1', title: 'ACO Inhaled Maintenance Plan', options: [
+      { key: 'o1', label: 'Initiate Trelegy Ellipta (fluticasone/umeclidinium/vilanterol) 100/62.5/25 mcg 1 inhalation daily (or add Symbicort to Spiriva) and demonstrate inhaler technique', correct: true },
+      { key: 'o2', label: 'Continue Spiriva Respimat alone without adding an inhaled corticosteroid', correct: false },
+      { key: 'o3', label: 'Start chronic daily oral prednisone', correct: false },
     ] },
     { id: 'w3c_p2', title: 'Allergic Rhinitis Plan', options: [
-      { key: 'o1', label: 'Continue cetirizine and fluticasone nasal spray', correct: true },
-      { key: 'o2', label: 'Discontinue cetirizine', correct: false },
+      { key: 'o1', label: 'Re-educate on consistent daily fluticasone nasal spray and continue cetirizine PRN', correct: true },
+      { key: 'o2', label: 'Discontinue fluticasone nasal spray and cetirizine', correct: false },
     ] },
   ],
 })
@@ -653,7 +653,7 @@ const mariaThu = makeCase({
     learningObjectives: ['Evaluate persistent exacerbations on ICS/LABA + LAMA', 'Assess biologic therapy candidacy'],
   },
   ALLERGIES: [{ substance: 'Sulfonamide antibiotics', reaction: 'Rash', severity: 'Moderate', type: 'Allergy', date: 'Past', source: 'Patient reported' }],
-  VITALS: { bp: '124/72', bpRepeat: '122/70', hr: '76', rr: '16', temp: '98.6°F', weight: '71 kg', height: "5'4\"", bmi: '26.9', spo2: '96%', flags: {} },
+  VITALS: { bp: '124/72', bpRepeat: '122/70', hr: '76', rr: '16', temp: '98.6°F', weight: '71 kg', height: "5'4\"", bmi: '26.9', bsa: '1.79', spo2: '96%', spo2Qualifier: 'on room air', flags: {} },
   LABS: [
     { label: 'Absolute Eosinophils', value: '380', unit: 'cells/µL', flag: 'high' },
     { label: 'FEV1', value: '1.45', unit: 'L (58% pred)', flag: 'warn', note: 'Post-bronchodilator' },
