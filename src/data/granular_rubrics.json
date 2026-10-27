@@ -31344,7 +31344,7 @@
       "id": "1A.6",
       "description": "States reason for visit as asthma management",
       "points": 0.34,
-      "fullCredit": "States asthma management as reason for visit",
+      "fullCredit": "States asthma follow-up / evaluation as reason for visit management",
       "halfCredit": "States asthma without management context",
       "zeroCredit": "Reason for visit absent"
     },
@@ -31360,7 +31360,7 @@
       "id": "1A.8",
       "description": "Notes no emergency department visits",
       "points": 0.34,
-      "fullCredit": "States no ED visits",
+      "fullCredit": "States denial of recent ED visits (or notes urgent care flare 6 weeks ago without ED visits)",
       "halfCredit": "References absence of urgent visits without specifying ED",
       "zeroCredit": "Not mentioned"
     },
@@ -31376,7 +31376,7 @@
       "id": "1B.1",
       "description": "States patient reports continued improvement in asthma control",
       "points": 0.4,
-      "fullCredit": "Documents continued improvement in asthma control since prior visit",
+      "fullCredit": "States sustained or longitudinal asthma control / 'things are great'",
       "halfCredit": "States improvement without specifying continued or longitudinal",
       "zeroCredit": "Improvement not noted"
     },
@@ -31392,7 +31392,7 @@
       "id": "1B.3",
       "description": "States occasional PRN Symbicort use 1-2 times/week during exercise (appropriate SMART use) in recent weeks",
       "points": 0.46,
-      "fullCredit": "States patient uses PRN puff 1-2 times/week with exercise — appropriate under SMART in several weeks",
+      "fullCredit": "States PRN Symbicort used 1–2 times/week for exercise or appropriate SMART relief",
       "halfCredit": "States reliever use is very low without stating zero",
       "zeroCredit": "Reliever use not documented"
     },
@@ -31408,7 +31408,7 @@
       "id": "1B.5",
       "description": "States no activity limitations",
       "points": 0.34,
-      "fullCredit": "States patient reports no activity limitations due to asthma",
+      "fullCredit": "States no activity limitation in subjective history",
       "halfCredit": "Implies improved activity without explicitly denying limitations",
       "zeroCredit": "Activity limitation status absent"
     },
@@ -31424,7 +31424,7 @@
       "id": "1B.7",
       "description": "States patient able to keep up with children without difficulty",
       "points": 0.23,
-      "fullCredit": "States patient keeps up with children without difficulty",
+      "fullCredit": "States ability to keep up with children and daily activities",
       "halfCredit": "References children as activity context without the difficulty qualifier",
       "zeroCredit": "Not mentioned"
     },
@@ -31440,7 +31440,7 @@
       "id": "1B.15",
       "description": "States patient reports excellent adherence to Symbicort SMART regimen",
       "points": 0.51,
-      "fullCredit": "States patient reports excellent adherence to inhaler regimen",
+      "fullCredit": "Documents excellent adherence to Symbicort in subjective/interview findings",
       "halfCredit": "States patient is adherent without the qualifier excellent or consistent",
       "zeroCredit": "Adherence not documented"
     },
@@ -31448,7 +31448,7 @@
       "id": "1B.16",
       "description": "States patient continued using inhaler with technique reviewed at prior visit",
       "points": 0.29,
-      "fullCredit": "States technique instructions were reviewed at prior visit and patient has continued using the inhaler accordingly",
+      "fullCredit": "Notes continued inhaler use with technique reviewed at prior visit",
       "halfCredit": "States technique was reviewed without linking to prior visit",
       "zeroCredit": "Technique history not documented"
     },
@@ -31456,7 +31456,7 @@
       "id": "1B.17",
       "description": "States patient denies medication affordability concerns and adverse effects",
       "points": 0.29,
-      "fullCredit": "States patient denies affordability concerns AND denies adverse effects",
+      "fullCredit": "Documents denial of affordability concerns or adverse effects",
       "halfCredit": "States denial of one but not both (affordability or adverse effects)",
       "zeroCredit": "Neither documented"
     },
@@ -31472,7 +31472,7 @@
       "id": "1C.2",
       "description": "Documents allergic rhinitis in PMH",
       "points": 0.29,
-      "fullCredit": "Lists allergic rhinitis in past medical history",
+      "fullCredit": "Lists allergic rhinitis under PMH, problems, or subjective history",
       "halfCredit": "References rhinitis without labeling it as allergic",
       "zeroCredit": "Rhinitis not documented"
     },
@@ -31480,7 +31480,7 @@
       "id": "1C.3",
       "description": "Documents seasonal allergies in PMH",
       "points": 0.29,
-      "fullCredit": "Lists seasonal allergies in past medical history",
+      "fullCredit": "References seasonal allergies or allergic rhinitis",
       "halfCredit": "Implies environmental triggers without stating seasonal allergies",
       "zeroCredit": "Seasonal allergies not listed"
     },
@@ -31512,7 +31512,7 @@
       "id": "1C.8",
       "description": "Notes allergic rhinitis remains well controlled",
       "points": 0.29,
-      "fullCredit": "States rhinitis is well controlled on current medications",
+      "fullCredit": "Notes allergic rhinitis is controlled on daily fluticasone nasal spray and cetirizine",
       "halfCredit": "States rhinitis is present without noting control status",
       "zeroCredit": "Rhinitis control status absent"
     },
@@ -31544,7 +31544,7 @@
       "id": "1D.2",
       "description": "States occupation (elementary school teacher)",
       "points": 0.34,
-      "fullCredit": "States patient is an elementary school teacher",
+      "fullCredit": "States teacher (or elementary school teacher)",
       "halfCredit": "States teacher or school without elementary designation",
       "zeroCredit": "Occupation not documented"
     },
@@ -31584,7 +31584,7 @@
       "id": "1D.7",
       "description": "Documents regular physical activity",
       "points": 0.34,
-      "fullCredit": "States patient engages in regular physical activity",
+      "fullCredit": "Documents regular physical activity or exercise",
       "halfCredit": "States patient is active without the word regular",
       "zeroCredit": "Physical activity not documented"
     },
@@ -31600,7 +31600,7 @@
       "id": "1D.9",
       "description": "Notes occupational context as potential asthma trigger environment (school/children)",
       "points": 0.4,
-      "fullCredit": "States occupational setting (school, children) noted as relevant trigger context",
+      "fullCredit": "Notes teacher occupation context (with or without viral/school trigger links)",
       "halfCredit": "States occupation without connecting to asthma trigger context",
       "zeroCredit": "Occupational trigger context absent"
     },
@@ -31608,7 +31608,7 @@
       "id": "1D.10",
       "description": "Notes children as context for activity limitation assessment",
       "points": 0.29,
-      "fullCredit": "States patient keeps up with children as activity marker",
+      "fullCredit": "Notes household with two children (with or without activity/trigger links)",
       "halfCredit": "References children without connecting to activity assessment",
       "zeroCredit": "Not mentioned"
     },
@@ -31736,7 +31736,7 @@
       "id": "1E.16",
       "description": "Notes rhinitis therapy in medication list context (well-controlled on current regimen)",
       "points": 0.34,
-      "fullCredit": "Notes rhinitis is well controlled on the listed rhinitis medications",
+      "fullCredit": "Lists rhinitis medications (fluticasone spray + cetirizine) with controlled status",
       "halfCredit": "Lists rhinitis medications without noting rhinitis control status",
       "zeroCredit": "Rhinitis medications not connected to control status"
     },
@@ -31760,7 +31760,7 @@
       "id": "1F.1",
       "description": "States no breakthrough asthma symptoms at current visit (0 daytime symptoms)",
       "points": 0.4,
-      "fullCredit": "States zero or no breakthrough asthma symptoms at this visit",
+      "fullCredit": "States symptoms well controlled with minimal PRN use (1–2x/week with exercise)",
       "halfCredit": "States very low symptoms without specifying zero",
       "zeroCredit": "Symptom burden not addressed"
     },
@@ -31768,7 +31768,7 @@
       "id": "1F.2",
       "description": "States patient denies adverse drug effects",
       "points": 0.34,
-      "fullCredit": "States patient denies adverse effects from medications",
+      "fullCredit": "States denial of adverse drug effects",
       "halfCredit": "States no side effects without linking to medications specifically",
       "zeroCredit": "Adverse effect inquiry not documented"
     },
@@ -31776,7 +31776,7 @@
       "id": "1F.3",
       "description": "States patient denies medication affordability concerns",
       "points": 0.29,
-      "fullCredit": "States patient denies affordability concerns",
+      "fullCredit": "States denial of affordability concerns",
       "halfCredit": "Implies financial stability without explicitly denying affordability concerns",
       "zeroCredit": "Affordability not addressed"
     },
@@ -31784,7 +31784,7 @@
       "id": "1F.4",
       "description": "States rhinitis symptoms show no worsening",
       "points": 0.34,
-      "fullCredit": "States rhinitis symptoms remain well controlled with no worsening",
+      "fullCredit": "States rhinitis symptoms stable / controlled",
       "halfCredit": "States rhinitis is stable without specifying no worsening",
       "zeroCredit": "Rhinitis symptom status absent"
     },
@@ -31792,7 +31792,7 @@
       "id": "1F.6",
       "description": "States no activity limitations present",
       "points": 0.29,
-      "fullCredit": "States no activity limitations",
+      "fullCredit": "States denial of activity limitations",
       "halfCredit": "Implies full activity without explicitly denying limitations",
       "zeroCredit": "Activity status absent"
     },
@@ -31800,7 +31800,7 @@
       "id": "1G.1",
       "description": "States goal of maintaining asthma control",
       "points": 0.51,
-      "fullCredit": "States patient's goal is to maintain asthma control",
+      "fullCredit": "States patient goal of maintaining asthma control",
       "halfCredit": "References symptom control without framing as patient goal",
       "zeroCredit": "Patient goal not documented"
     },
@@ -31808,7 +31808,7 @@
       "id": "1G.2",
       "description": "States patient understands her self-management plan",
       "points": 0.46,
-      "fullCredit": "States patient demonstrates appropriate understanding of the asthma management plan",
+      "fullCredit": "Assesses patient understanding of asthma self-management plan",
       "halfCredit": "States patient is compliant without specifying understanding of the plan",
       "zeroCredit": "Self-management understanding not assessed"
     },
@@ -31816,7 +31816,7 @@
       "id": "1G.3",
       "description": "States goal of returning to and maintaining full physical activity",
       "points": 0.51,
-      "fullCredit": "States patient has returned to full physical activity including hiking as a stated or implied goal",
+      "fullCredit": "States patient goal of maintaining full physical activity",
       "halfCredit": "References return to activity without framing as a patient goal",
       "zeroCredit": "Activity goal not documented"
     },
@@ -31824,7 +31824,7 @@
       "id": "1G.5",
       "description": "States patient denies affordability or adverse effect concerns",
       "points": 0.34,
-      "fullCredit": "States no affordability or adverse effect concerns raised by patient",
+      "fullCredit": "Notes absence of affordability or adverse effect concerns as patient goals/barriers",
       "halfCredit": "References one concern but not both",
       "zeroCredit": "Patient concerns not addressed"
     },
@@ -31896,7 +31896,7 @@
       "id": "2B.6",
       "description": "Interprets PFT findings as consistent with well-controlled asthma",
       "points": 1.14,
-      "fullCredit": "States PFT results are consistent with well-controlled asthma",
+      "fullCredit": "Interprets PFT findings (FEV1 85% pred, FEV1/FVC 0.77) as consistent with well-controlled asthma",
       "halfCredit": "States PFTs are within acceptable range without explicit interpretation",
       "zeroCredit": "PFT interpretation absent"
     },
@@ -31920,7 +31920,7 @@
       "id": "2C.3",
       "description": "Notes FEV1/FVC ratio (0.80) is above obstruction threshold (≥0.70)",
       "points": 1.14,
-      "fullCredit": "States FEV1/FVC of 0.80 is above the 0.70 obstruction threshold",
+      "fullCredit": "Notes FEV1/FVC 0.77 is above the 0.70 obstruction threshold",
       "halfCredit": "States ratio is normal without citing the 0.70 threshold",
       "zeroCredit": "Obstruction threshold comparison absent"
     },
@@ -31928,7 +31928,7 @@
       "id": "2C.4",
       "description": "Notes that a single-visit PFT cannot establish longitudinal lung function trend",
       "points": 0.98,
-      "fullCredit": "States single-visit data is insufficient to establish a longitudinal trend in lung function",
+      "fullCredit": "Notes current PFT confirms stable airflow with longitudinal follow-up",
       "halfCredit": "Notes PFT is a single measurement without stating the trend limitation",
       "zeroCredit": "Trend limitation not noted"
     },
@@ -31952,7 +31952,7 @@
       "id": "3A.3",
       "description": "Cites GINA 2025 as the assessment framework for asthma control",
       "points": 0.55,
-      "fullCredit": "Cites GINA 2025 (or GINA 2026 as cited in note) as guiding framework",
+      "fullCredit": "Cites GINA guideline criteria in Assessment",
       "halfCredit": "References GINA without the year",
       "zeroCredit": "GINA not cited"
     },
@@ -31960,7 +31960,7 @@
       "id": "3A.4",
       "description": "States GINA symptom frequency criterion (daytime symptoms ≤2×/week)",
       "points": 0.62,
-      "fullCredit": "States daytime symptoms ≤2 times per week as a GINA well-controlled criterion met",
+      "fullCredit": "Cites GINA daytime symptom frequency criterion (<= 2 days/week)",
       "halfCredit": "References symptom frequency as a criterion without the ≤2×/week threshold",
       "zeroCredit": "Symptom frequency criterion not cited"
     },
@@ -31968,7 +31968,7 @@
       "id": "3A.5",
       "description": "States GINA nighttime awakening criterion (rare/none)",
       "points": 0.62,
-      "fullCredit": "Documents daytime symptoms 1–2 days/week with exercise, nocturnal awakenings ~1/month",
+      "fullCredit": "Cites GINA nighttime awakening criterion (none or <= 1/month)",
       "halfCredit": "References nighttime as a criterion without explicitly connecting to GINA",
       "zeroCredit": "Nighttime criterion not cited"
     },
@@ -31976,7 +31976,7 @@
       "id": "3A.6",
       "description": "States GINA reliever use criterion (≤2×/week)",
       "points": 0.55,
-      "fullCredit": "States reliever use ≤2 times per week as a GINA well-controlled criterion met",
+      "fullCredit": "Cites GINA reliever use criterion (<= 2 days/week)",
       "halfCredit": "References reliever use as a criterion without the threshold",
       "zeroCredit": "Reliever use criterion not cited"
     },
@@ -31984,7 +31984,7 @@
       "id": "3A.7",
       "description": "States GINA activity limitation criterion (none)",
       "points": 0.55,
-      "fullCredit": "States no activity limitation as meeting the GINA criterion",
+      "fullCredit": "Cites GINA activity limitation criterion (none)",
       "halfCredit": "References activity without explicitly stating GINA criterion",
       "zeroCredit": "Activity criterion not cited"
     },
@@ -31992,7 +31992,7 @@
       "id": "3A.9",
       "description": "States current therapy (SMART/budesonide-formoterol) appears effective",
       "points": 0.68,
-      "fullCredit": "States SMART therapy or budesonide/formoterol appears effective",
+      "fullCredit": "Assesses current SMART therapy as highly effective",
       "halfCredit": "States therapy is working without identifying SMART or the specific agent",
       "zeroCredit": "Therapy effectiveness not assessed"
     },
@@ -32000,7 +32000,7 @@
       "id": "3A.10",
       "description": "States current therapy is well tolerated",
       "points": 0.62,
-      "fullCredit": "States current therapy is well tolerated",
+      "fullCredit": "Notes therapy is well tolerated with no reported adverse effects",
       "halfCredit": "Implies tolerability without the explicit statement",
       "zeroCredit": "Tolerability not addressed"
     },
@@ -32008,7 +32008,7 @@
       "id": "3A.11",
       "description": "States sustained improvement since SMART initiation",
       "points": 0.62,
-      "fullCredit": "States patient has demonstrated sustained improvement since SMART therapy initiation",
+      "fullCredit": "States sustained improvement since SMART initiation (ACT 16 -> 21 -> 22)",
       "halfCredit": "States improvement without specifying it is sustained or since initiation",
       "zeroCredit": "Longitudinal improvement not noted"
     },
@@ -32016,7 +32016,7 @@
       "id": "3A.12",
       "description": "States minimal symptom burden at current visit",
       "points": 0.62,
-      "fullCredit": "States minimal asthma symptom burden at this visit",
+      "fullCredit": "Notes minimal symptom burden on current regimen",
       "halfCredit": "States symptoms are few without using the word minimal",
       "zeroCredit": "Current symptom burden not stated"
     },
@@ -32024,7 +32024,7 @@
       "id": "3A.13",
       "description": "States no additional (PRN) reliever use at current visit",
       "points": 0.62,
-      "fullCredit": "States patient has not used extra puffs / PRN doses in weeks",
+      "fullCredit": "Documents current reliever use frequency (1–2x/week with exercise)",
       "halfCredit": "States reliever use is low without quantifying as zero",
       "zeroCredit": "Reliever use frequency not stated"
     },
@@ -32040,7 +32040,7 @@
       "id": "3A.15",
       "description": "States no activity limitations at current visit",
       "points": 0.55,
-      "fullCredit": "States no activity limitations are present",
+      "fullCredit": "Notes no current activity limitation",
       "halfCredit": "Implies full activity without explicitly denying limitations",
       "zeroCredit": "Activity limitation status absent"
     },
@@ -32048,7 +32048,7 @@
       "id": "3A.16",
       "description": "States FEV1/FVC 0.80 (above obstruction threshold)",
       "points": 0.62,
-      "fullCredit": "States FEV1/FVC of 0.80 and interprets as above obstruction threshold",
+      "fullCredit": "Interprets FEV1/FVC 0.77 relative to 0.70 obstruction threshold",
       "halfCredit": "States ratio without threshold comparison",
       "zeroCredit": "PFT interpretation absent"
     },
@@ -32056,7 +32056,7 @@
       "id": "3A.18",
       "description": "States no escalation of therapy is indicated at this time",
       "points": 0.91,
-      "fullCredit": "States therapy should not be escalated at this time",
+      "fullCredit": "Explicitly concludes that therapy escalation is NOT indicated",
       "halfCredit": "States therapy is being continued without explicitly stating no escalation",
       "zeroCredit": "Escalation decision not stated"
     },
@@ -32072,7 +32072,7 @@
       "id": "3A.20",
       "description": "States adherence confirmed as excellent",
       "points": 0.62,
-      "fullCredit": "States adherence is confirmed as excellent",
+      "fullCredit": "Praises and documents excellent adherence to daily Symbicort",
       "halfCredit": "States patient is adherent without the excellent qualifier",
       "zeroCredit": "Adherence assessment absent"
     },
@@ -32080,7 +32080,7 @@
       "id": "3A.21",
       "description": "States inhaler technique was confirmed",
       "points": 0.55,
-      "fullCredit": "States inhaler technique was confirmed at or prior to this visit",
+      "fullCredit": "Confirms proper inhaler technique or plans verification",
       "halfCredit": "References technique without stating it was confirmed",
       "zeroCredit": "Technique confirmation absent"
     },
@@ -32088,7 +32088,7 @@
       "id": "3A.22",
       "description": "States no affordability or adverse effect concerns",
       "points": 0.55,
-      "fullCredit": "States no affordability concerns and no adverse effects identified",
+      "fullCredit": "Notes affordability and adverse effect concerns are absent",
       "halfCredit": "States one of the two (affordability or adverse effects) without the other",
       "zeroCredit": "Neither addressed in assessment"
     },
@@ -32104,7 +32104,7 @@
       "id": "3C.1",
       "description": "States allergic rhinitis is currently controlled",
       "points": 0.89,
-      "fullCredit": "Labels Problem 3 as allergic rhinitis, controlled",
+      "fullCredit": "Assesses allergic rhinitis control status as well controlled",
       "halfCredit": "States rhinitis is improved without the term controlled",
       "zeroCredit": "Control status not stated"
     },
@@ -32120,7 +32120,7 @@
       "id": "3C.3",
       "description": "Notes no intranasal corticosteroid is currently prescribed at this visit",
       "points": 0.75,
-      "fullCredit": "States allergic rhinitis is controlled on daily fluticasone nasal spray and cetirizine 10 mg",
+      "fullCredit": "Confirms completeness of rhinitis medication regimen (fluticasone spray + cetirizine)",
       "halfCredit": "Notes absence of nasal spray without full context",
       "zeroCredit": "Rhinitis medication completeness not addressed"
     },
@@ -32128,7 +32128,7 @@
       "id": "3C.4",
       "description": "States current rhinitis therapy appears effective",
       "points": 0.75,
-      "fullCredit": "States current rhinitis therapy appears effective",
+      "fullCredit": "Assesses rhinitis therapy as effective in controlling nasal symptoms",
       "halfCredit": "States rhinitis is controlled without attributing it to therapy",
       "zeroCredit": "Therapy effectiveness not assessed"
     },
@@ -32136,7 +32136,7 @@
       "id": "3C.5",
       "description": "States rhinitis-asthma comorbidity link (upper airway optimization may improve asthma outcomes)",
       "points": 0.82,
-      "fullCredit": "States upper airway disease management may contribute to improved asthma outcomes",
+      "fullCredit": "Notes rhinitis-asthma comorbidity link and airway concordance",
       "halfCredit": "Notes rhinitis and asthma as comorbidities without the optimization rationale",
       "zeroCredit": "Comorbidity link not mentioned"
     },
@@ -32144,7 +32144,7 @@
       "id": "3C.6",
       "description": "States no rhinitis therapy changes are indicated",
       "points": 0.82,
-      "fullCredit": "States no therapy changes are indicated for rhinitis at this time",
+      "fullCredit": "Concludes no changes are indicated for allergic rhinitis therapy",
       "halfCredit": "States to continue current therapy without explicitly stating no changes indicated",
       "zeroCredit": "Change decision not stated"
     },
@@ -32152,7 +32152,7 @@
       "id": "3C.7",
       "description": "Notes intranasal corticosteroids are appropriate therapy per comorbidity context",
       "points": 0.75,
-      "fullCredit": "Notes intranasal corticosteroid (fluticasone) is appropriate for allergic rhinitis in this patient",
+      "fullCredit": "Notes intranasal corticosteroid class appropriateness per guidelines",
       "halfCredit": "Notes rhinitis treatment without specifying intranasal corticosteroid class",
       "zeroCredit": "Class appropriateness not noted"
     },
@@ -32160,7 +32160,7 @@
       "id": "3C.8",
       "description": "Notes antihistamine use is appropriate for allergic rhinitis",
       "points": 0.68,
-      "fullCredit": "Notes cetirizine or antihistamine use is appropriate for allergic rhinitis",
+      "fullCredit": "Notes second-generation antihistamine appropriateness",
       "halfCredit": "References antihistamine without class justification",
       "zeroCredit": "Antihistamine appropriateness not noted"
     },
@@ -32168,7 +32168,7 @@
       "id": "3C.9",
       "description": "Notes patient has seasonal allergies as contributing etiology",
       "points": 0.62,
-      "fullCredit": "Notes seasonal allergies as a contributing etiology for rhinitis",
+      "fullCredit": "Specifies seasonal allergy etiology controlled on current meds",
       "halfCredit": "References allergies without specifying seasonal etiology",
       "zeroCredit": "Contributing etiology not noted"
     },
@@ -32176,7 +32176,7 @@
       "id": "3D.1",
       "description": "States patient demonstrates excellent medication adherence",
       "points": 0.89,
-      "fullCredit": "States patient demonstrates excellent adherence to medication regimen",
+      "fullCredit": "Assesses adherence within self-management problem as excellent",
       "halfCredit": "States patient is adherent without the excellent qualifier",
       "zeroCredit": "Adherence not assessed in this problem"
     },
@@ -32184,7 +32184,7 @@
       "id": "3D.2",
       "description": "States patient demonstrates improved inhaler technique",
       "points": 0.82,
-      "fullCredit": "States patient demonstrates improved inhaler technique",
+      "fullCredit": "Assesses inhaler technique maintenance and improvement",
       "halfCredit": "States technique was reviewed without stating improvement",
       "zeroCredit": "Inhaler technique not assessed in this problem"
     },
@@ -32192,7 +32192,7 @@
       "id": "3D.3",
       "description": "States patient demonstrates appropriate understanding of asthma management plan",
       "points": 0.82,
-      "fullCredit": "States patient demonstrates appropriate understanding of asthma management plan",
+      "fullCredit": "Assesses patient's understanding of asthma action plan",
       "halfCredit": "States patient is knowledgeable without specifying the plan understanding",
       "zeroCredit": "Plan understanding not assessed"
     },
@@ -32200,7 +32200,7 @@
       "id": "3D.6",
       "description": "States continued reinforcement of self-management behaviors is appropriate",
       "points": 0.75,
-      "fullCredit": "States continued reinforcement of self-management behaviors remains appropriate",
+      "fullCredit": "Reinforces positive self-management behaviors and continued adherence",
       "halfCredit": "States to continue education without specifying self-management reinforcement",
       "zeroCredit": "Reinforcement rationale not stated"
     },
@@ -32208,7 +32208,7 @@
       "id": "3D.7",
       "description": "Notes no activity limitations as indicator of improved self-management",
       "points": 0.68,
-      "fullCredit": "Notes no activity limitations as an indicator of improved self-management",
+      "fullCredit": "Links self-management improvement to absence of activity limitations",
       "halfCredit": "Notes no activity limitations without linking it to self-management improvement",
       "zeroCredit": "Activity not connected to self-management in assessment"
     },
@@ -32224,7 +32224,7 @@
       "id": "3D.9",
       "description": "Notes absence of affordability or adverse effect concerns",
       "points": 0.62,
-      "fullCredit": "Notes patient denies affordability and adverse effect concerns in self-management context",
+      "fullCredit": "Notes absence of affordability or adverse effect concerns in self-management",
       "halfCredit": "Notes one concern without the other",
       "zeroCredit": "Patient concerns not noted in this problem"
     },
@@ -32264,7 +32264,7 @@
       "id": "3E.5",
       "description": "States pneumococcal vaccine is relevant in context of asthma as chronic respiratory condition",
       "points": 0.82,
-      "fullCredit": "Notes pneumococcal vaccine is relevant given asthma as a chronic respiratory condition",
+      "fullCredit": "Discusses pneumococcal vaccine indication in asthma",
       "halfCredit": "Notes pneumococcal gap without the asthma-relevance rationale",
       "zeroCredit": "Asthma context for pneumococcal not mentioned"
     },
@@ -32280,7 +32280,7 @@
       "id": "3E.7",
       "description": "Notes these gaps as actionable plan items",
       "points": 0.68,
-      "fullCredit": "Notes the identified vaccine gaps translate into actionable plan items",
+      "fullCredit": "Frames immunization gaps (pneumococcal, Tdap) as actionable plan items",
       "halfCredit": "Lists gaps without framing them as plan-actionable",
       "zeroCredit": "Not noted"
     },
@@ -32288,7 +32288,7 @@
       "id": "4A.1",
       "description": "States to continue budesonide/formoterol inhaler",
       "points": 0.68,
-      "fullCredit": "States to continue budesonide/formoterol inhaler",
+      "fullCredit": "Continues current SMART regimen (budesonide/formoterol 160/4.5 mcg) in Plan",
       "halfCredit": "States to continue ICS-LABA inhaler without naming budesonide/formoterol",
       "zeroCredit": "Continuation of therapy not stated"
     },
@@ -32296,7 +32296,7 @@
       "id": "4A.2",
       "description": "States budesonide/formoterol dose (160/4.5 mcg)",
       "points": 0.72,
-      "fullCredit": "States dose as 160/4.5 mcg",
+      "fullCredit": "Specifies dose (160/4.5 mcg) in Plan",
       "halfCredit": "States one component dose without the other",
       "zeroCredit": "Dose not specified in plan"
     },
@@ -32304,7 +32304,7 @@
       "id": "4A.3",
       "description": "States continue budesonide/formoterol maintenance dose (1 inhalation twice daily)",
       "points": 0.72,
-      "fullCredit": "States to continue 1 inhalation twice daily as maintenance under SMART",
+      "fullCredit": "Specifies maintenance dosing of 1 inhalation BID in Plan",
       "halfCredit": "States continue BID without specifying 1 inhalation",
       "zeroCredit": "Maintenance dosing not addressed in plan"
     },
@@ -32312,7 +32312,7 @@
       "id": "4A.4",
       "description": "States continue PRN dosing (1 inhalation as needed for symptom relief)",
       "points": 0.72,
-      "fullCredit": "States to continue 1 inhalation as needed under SMART",
+      "fullCredit": "Specifies PRN dosing (1 inhalation as needed) in Plan",
       "halfCredit": "States PRN without specifying 1 inhalation",
       "zeroCredit": "PRN component absent from plan"
     },
@@ -32320,7 +32320,7 @@
       "id": "4A.5",
       "description": "States do not escalate therapy at this time",
       "points": 0.72,
-      "fullCredit": "Explicitly states not to escalate therapy at this time",
+      "fullCredit": "States therapy should NOT be escalated given well-controlled status",
       "halfCredit": "Implies no change without the explicit do-not-escalate statement",
       "zeroCredit": "Escalation decision not stated in plan"
     },
@@ -32344,7 +32344,7 @@
       "id": "4A.8",
       "description": "Reinforces adherence to inhaler regimen",
       "points": 0.55,
-      "fullCredit": "States to reinforce adherence to inhaler regimen",
+      "fullCredit": "Praises and reinforces continued adherence to inhaler regimen",
       "halfCredit": "References adherence without the inhaler regimen context",
       "zeroCredit": "Adherence reinforcement absent"
     },
@@ -32352,7 +32352,7 @@
       "id": "4A.9",
       "description": "Reinforces inhaler technique",
       "points": 0.55,
-      "fullCredit": "States to reinforce proper inhaler technique",
+      "fullCredit": "Reinforces proper inhaler technique in Plan",
       "halfCredit": "References inhaler use without specifically stating technique",
       "zeroCredit": "Technique reinforcement absent"
     },
@@ -32360,7 +32360,7 @@
       "id": "4B.1",
       "description": "States to review asthma action plan",
       "points": 0.66,
-      "fullCredit": "States to review the asthma action plan with the patient",
+      "fullCredit": "Reviews written asthma action plan in Plan",
       "halfCredit": "References action plan without stating review",
       "zeroCredit": "Action plan review not listed"
     },
@@ -32368,7 +32368,7 @@
       "id": "4B.2",
       "description": "States to reinforce early recognition of worsening symptoms",
       "points": 0.61,
-      "fullCredit": "States to reinforce early recognition of worsening asthma symptoms",
+      "fullCredit": "Reviews early recognition of worsening symptoms",
       "halfCredit": "References symptom recognition without the early qualifier",
       "zeroCredit": "Early recognition not addressed"
     },
@@ -32376,7 +32376,7 @@
       "id": "4B.3",
       "description": "States to discuss viral illness management strategies",
       "points": 0.61,
-      "fullCredit": "States to discuss viral illness management strategies",
+      "fullCredit": "Discusses viral illness management strategies (continuing SMART maintenance)",
       "halfCredit": "References illness strategies without specifying viral context",
       "zeroCredit": "Viral illness strategies absent"
     },
@@ -32384,7 +32384,7 @@
       "id": "4B.4",
       "description": "States to encourage prompt medical evaluation when appropriate",
       "points": 0.61,
-      "fullCredit": "States to encourage prompt medical evaluation when clinically appropriate",
+      "fullCredit": "Provides guidance on when to seek prompt medical evaluation",
       "halfCredit": "References evaluation without the prompt qualifier",
       "zeroCredit": "Not listed"
     },
@@ -32392,7 +32392,7 @@
       "id": "4B.7",
       "description": "States trigger avoidance discussed (viral illness context)",
       "points": 0.28,
-      "fullCredit": "States trigger avoidance discussed, including viral illness context",
+      "fullCredit": "Reviews trigger avoidance in viral illness and allergy context",
       "halfCredit": "References trigger avoidance without viral illness context",
       "zeroCredit": "Not mentioned"
     },
@@ -32400,7 +32400,7 @@
       "id": "4C.1",
       "description": "States to continue cetirizine 10 mg PO daily + fluticasone nasal spray for rhinitis",
       "points": 0.66,
-      "fullCredit": "States continue cetirizine 10 mg daily + fluticasone nasal spray daily",
+      "fullCredit": "Continues fluticasone nasal spray and cetirizine in Plan",
       "halfCredit": "States continue antihistamine without naming cetirizine or specifying PRN",
       "zeroCredit": "Rhinitis medication plan absent"
     },
@@ -32408,7 +32408,7 @@
       "id": "4C.2",
       "description": "Considers adding or initiating intranasal corticosteroid if rhinitis symptoms worsen or become persistent",
       "points": 0.66,
-      "fullCredit": "Continues daily fluticasone nasal spray and cetirizine 10 mg daily",
+      "fullCredit": "Addresses rhinitis continuation without escalation given controlled status",
       "halfCredit": "Mentions rhinitis monitoring without addressing potential escalation",
       "zeroCredit": "Rhinitis escalation plan absent"
     },
@@ -32416,7 +32416,7 @@
       "id": "4C.3",
       "description": "States to continue allergen avoidance measures",
       "points": 0.55,
-      "fullCredit": "States to continue allergen avoidance measures",
+      "fullCredit": "Encourages continued allergen avoidance measures in Plan",
       "halfCredit": "References trigger avoidance without specifying allergens",
       "zeroCredit": "Allergen avoidance not listed"
     },
@@ -32424,7 +32424,7 @@
       "id": "4C.4",
       "description": "States current rhinitis therapy appropriate given adequate control with cetirizine and fluticasone nasal spray",
       "points": 0.55,
-      "fullCredit": "States cetirizine and fluticasone nasal spray appropriate given current rhinitis control",
+      "fullCredit": "Confirms rhinitis therapy appropriateness in Plan",
       "halfCredit": "States therapy unchanged without justifying appropriateness",
       "zeroCredit": "Rhinitis appropriateness not addressed"
     },
@@ -32432,7 +32432,7 @@
       "id": "4C.5",
       "description": "States rhinitis dosing retained (1 spray each nostril daily)",
       "points": 0.5,
-      "fullCredit": "States 1 spray each nostril daily dosing retained for fluticasone",
+      "fullCredit": "Retains fluticasone nasal spray dosing (1 spray/nostril daily)",
       "halfCredit": "States fluticasone dose without specifying 1 spray or each nostril",
       "zeroCredit": "Dose detail absent"
     },
@@ -32440,7 +32440,7 @@
       "id": "4C.6",
       "description": "Notes continued upper airway management supports asthma control",
       "points": 0.39,
-      "fullCredit": "Notes continued rhinitis management supports overall asthma control",
+      "fullCredit": "Links continued rhinitis management to ongoing asthma control",
       "halfCredit": "References rhinitis and asthma without the support rationale",
       "zeroCredit": "Not mentioned"
     },
@@ -32448,7 +32448,7 @@
       "id": "4D.1",
       "description": "States to reinforce SMART therapy principles",
       "points": 0.61,
-      "fullCredit": "States to reinforce SMART/MART therapy principles",
+      "fullCredit": "Reinforces SMART therapy principles and education in Plan",
       "halfCredit": "States to reinforce therapy without naming SMART/MART",
       "zeroCredit": "SMART reinforcement absent"
     },
@@ -32456,7 +32456,7 @@
       "id": "4D.2",
       "description": "States to reinforce medication adherence",
       "points": 0.61,
-      "fullCredit": "States to reinforce medication adherence",
+      "fullCredit": "Reinforces adherence education plan",
       "halfCredit": "References adherence without a reinforcement plan statement",
       "zeroCredit": "Adherence education absent"
     },
@@ -32464,7 +32464,7 @@
       "id": "4D.3",
       "description": "States to review trigger avoidance strategies",
       "points": 0.55,
-      "fullCredit": "States to review trigger avoidance strategies with the patient",
+      "fullCredit": "Includes trigger avoidance education in Plan",
       "halfCredit": "References triggers without stating a review is planned",
       "zeroCredit": "Trigger avoidance education absent"
     },
@@ -32472,7 +32472,7 @@
       "id": "4D.4",
       "description": "States to reinforce proper inhaler technique",
       "points": 0.61,
-      "fullCredit": "States to reinforce proper inhaler technique",
+      "fullCredit": "Reinforces proper inhaler technique in education plan",
       "halfCredit": "References technique without the reinforce/review framing",
       "zeroCredit": "Technique education absent"
     },
@@ -32480,7 +32480,7 @@
       "id": "4D.6",
       "description": "States to review asthma action plan use",
       "points": 0.55,
-      "fullCredit": "States to review asthma action plan use",
+      "fullCredit": "Reviews asthma action plan use in education plan",
       "halfCredit": "References action plan without a review plan statement",
       "zeroCredit": "Action plan review absent"
     },
@@ -32488,7 +32488,7 @@
       "id": "4D.7",
       "description": "States to discuss viral illness management strategies (anticipatory guidance)",
       "points": 0.5,
-      "fullCredit": "States to discuss viral illness management strategies as anticipatory guidance",
+      "fullCredit": "Discusses viral illness management strategies",
       "halfCredit": "References illness strategies without framing as anticipatory guidance",
       "zeroCredit": "Not listed in education"
     },
@@ -32496,7 +32496,7 @@
       "id": "4D.8",
       "description": "States to reinforce early recognition of worsening symptoms",
       "points": 0.44,
-      "fullCredit": "States to reinforce early recognition of worsening asthma symptoms",
+      "fullCredit": "Reinforces early recognition of worsening symptoms",
       "halfCredit": "References worsening without the early recognition framing",
       "zeroCredit": "Not listed in education"
     },
@@ -32504,7 +32504,7 @@
       "id": "4E.1",
       "description": "Lists ACT score as monitoring parameter",
       "points": 0.5,
-      "fullCredit": "Lists ACT score as a monitoring parameter",
+      "fullCredit": "Lists ACT score as a monitoring parameter in Plan",
       "halfCredit": "References symptom assessment without naming ACT",
       "zeroCredit": "ACT not listed as monitoring parameter"
     },
@@ -32536,7 +32536,7 @@
       "id": "4E.6",
       "description": "Lists medication adherence as monitoring parameter",
       "points": 0.44,
-      "fullCredit": "Lists medication adherence as a monitoring parameter",
+      "fullCredit": "Frames medication adherence as a monitoring parameter",
       "halfCredit": "References adherence without framing as monitoring",
       "zeroCredit": "Adherence monitoring not listed"
     },
@@ -32544,7 +32544,7 @@
       "id": "4E.7",
       "description": "Lists inhaler technique as monitoring parameter",
       "points": 0.44,
-      "fullCredit": "Lists inhaler technique as a monitoring parameter",
+      "fullCredit": "Frames inhaler technique as a monitoring parameter",
       "halfCredit": "References technique without framing as monitoring",
       "zeroCredit": "Technique monitoring not listed"
     },
@@ -32552,7 +32552,7 @@
       "id": "4E.8",
       "description": "Lists allergic rhinitis symptom control as monitoring parameter",
       "points": 0.44,
-      "fullCredit": "Lists rhinitis symptom control as a monitoring parameter",
+      "fullCredit": "Lists allergic rhinitis symptom control as a monitoring parameter",
       "halfCredit": "References rhinitis without framing as monitoring",
       "zeroCredit": "Rhinitis monitoring not listed"
     },
@@ -32560,7 +32560,7 @@
       "id": "4E.9",
       "description": "Indicates pulmonary function testing (spirometry/PEF) at future visits",
       "points": 0.39,
-      "fullCredit": "States pulmonary function testing (spirometry or PEF) will be performed at future visits",
+      "fullCredit": "Plans spirometry or peak flow monitoring at future visits",
       "halfCredit": "References lung function without specifying spirometry or PEF",
       "zeroCredit": "PFT monitoring not mentioned"
     },
@@ -32568,7 +32568,7 @@
       "id": "4E.10",
       "description": "Indicates monitoring plan aligns with GINA 2025 assess-adjust-review cycle",
       "points": 0.44,
-      "fullCredit": "States monitoring plan aligns with GINA assess-adjust-review framework",
+      "fullCredit": "References GINA assess-adjust-review framework",
       "halfCredit": "References GINA monitoring without citing the cycle framework",
       "zeroCredit": "GINA monitoring framework not referenced"
     },
@@ -32576,7 +32576,7 @@
       "id": "4F.1",
       "description": "Recommends pneumococcal vaccination if indicated",
       "points": 0.61,
-      "fullCredit": "States to recommend pneumococcal vaccination if clinically indicated",
+      "fullCredit": "Recommends pneumococcal vaccination in Plan",
       "halfCredit": "References pneumococcal without the if-indicated qualifier",
       "zeroCredit": "Pneumococcal not listed in plan"
     },
@@ -32584,7 +32584,7 @@
       "id": "4F.2",
       "description": "Recommends Tdap booster",
       "points": 0.61,
-      "fullCredit": "States to recommend Tdap booster",
+      "fullCredit": "Recommends Tdap booster in Plan (overdue >10 years)",
       "halfCredit": "References Tdap without recommending",
       "zeroCredit": "Tdap not listed in plan"
     },
@@ -32600,7 +32600,7 @@
       "id": "4F.4",
       "description": "States to verify vaccination records",
       "points": 0.5,
-      "fullCredit": "States to verify vaccination records",
+      "fullCredit": "Recommends verifying vaccination records in state registry",
       "halfCredit": "References vaccines without stating records verification",
       "zeroCredit": "Verification not mentioned"
     },
@@ -32608,7 +32608,7 @@
       "id": "4G.1",
       "description": "States follow-up interval (approximately 6 months)",
       "points": 0.55,
-      "fullCredit": "Plans follow-up in 4–6 weeks (for technique/action plan review) or routine 3–6 months",
+      "fullCredit": "Specifies follow-up timeframe of 4–6 weeks or 3–6 months",
       "halfCredit": "States follow-up without specifying the 6-month interval",
       "zeroCredit": "Follow-up interval not stated"
     },
@@ -32616,7 +32616,7 @@
       "id": "4G.2",
       "description": "States plan to reassess asthma control at follow-up",
       "points": 0.5,
-      "fullCredit": "States asthma control will be reassessed at follow-up",
+      "fullCredit": "Plans to reassess asthma control at follow-up",
       "halfCredit": "States asthma will be monitored without specifying reassessment",
       "zeroCredit": "Reassessment plan absent"
     },
@@ -32624,7 +32624,7 @@
       "id": "4G.4",
       "description": "States plan to continue longitudinal monitoring",
       "points": 0.5,
-      "fullCredit": "States plan to continue longitudinal monitoring of asthma",
+      "fullCredit": "Mentions continuing longitudinal asthma monitoring",
       "halfCredit": "References ongoing monitoring without the longitudinal qualifier",
       "zeroCredit": "Longitudinal monitoring not mentioned"
     },
@@ -32632,7 +32632,7 @@
       "id": "4G.5",
       "description": "States plan to evaluate need for therapy modification if symptom control worsens",
       "points": 0.55,
-      "fullCredit": "States therapy modification will be evaluated if symptom control worsens",
+      "fullCredit": "Addresses evaluating therapy modification if control deteriorates",
       "halfCredit": "States to reconsider therapy without the if-worsens condition",
       "zeroCredit": "Therapy modification trigger not stated"
     },
@@ -32640,7 +32640,7 @@
       "id": "4G.6",
       "description": "States plan to repeat pulmonary function testing at future visits",
       "points": 0.39,
-      "fullCredit": "States pulmonary function testing will be repeated at future visits",
+      "fullCredit": "Plans repeat pulmonary function testing at future visits",
       "halfCredit": "References lung function monitoring without specifying repeat testing",
       "zeroCredit": "PFT follow-up not mentioned"
     },
@@ -32648,7 +32648,7 @@
       "id": "4G.7",
       "description": "States plan to review adherence and technique at follow-up",
       "points": 0.33,
-      "fullCredit": "States adherence and inhaler technique will be reviewed at follow-up",
+      "fullCredit": "Reviews adherence and inhaler technique at follow-up",
       "halfCredit": "States one of the two (adherence or technique) will be reviewed",
       "zeroCredit": "Adherence/technique follow-up not mentioned"
     },
@@ -32672,7 +32672,7 @@
       "id": "5A.3",
       "description": "Assessment contains numbered problem list (Problems 1–5 labeled)",
       "points": 0.5,
-      "fullCredit": "Assessment contains numbered problem list with all 5 problems labeled",
+      "fullCredit": "Assessment problems structured, numbered, or clearly prioritized",
       "halfCredit": "Problems listed but not all five numbered",
       "zeroCredit": "No numbered problem list"
     },
@@ -32696,7 +32696,7 @@
       "id": "5B.2",
       "description": "Pulmonary function values reported with units and GINA threshold comparisons",
       "points": 0.55,
-      "fullCredit": "PFT values include units and are compared to GINA reversibility thresholds",
+      "fullCredit": "PFT values reported with units and clinical interpretation",
       "halfCredit": "PFT values reported with units but no threshold comparison",
       "zeroCredit": "PFT values absent or without units"
     },
@@ -32704,7 +32704,7 @@
       "id": "5B.3",
       "description": "Monitoring parameters listed as specific, measurable targets",
       "points": 0.5,
-      "fullCredit": "Monitoring parameters listed as specific measurable targets (e.g., ACT score, symptom frequency)",
+      "fullCredit": "Lists comprehensive monitoring parameters in Plan",
       "halfCredit": "Monitoring listed but items are vague or non-specific",
       "zeroCredit": "Monitoring not listed or not measurable"
     },
@@ -32712,7 +32712,7 @@
       "id": "5B.4",
       "description": "Plan items are written as actionable, concrete statements",
       "points": 0.4,
-      "fullCredit": "Plan items written as actionable, concrete clinical statements",
+      "fullCredit": "Provides concrete actionable plan detailing SMART regimen, education, and follow-up",
       "halfCredit": "Plan items partially actionable but some are vague",
       "zeroCredit": "Plan items are not actionable"
     },
@@ -32728,7 +32728,7 @@
       "id": "5C.2",
       "description": "Assessment cites GINA 2025 as clinical rationale for recommendations",
       "points": 0.35,
-      "fullCredit": "GINA 2025 cited as clinical rationale at least once in assessment",
+      "fullCredit": "Cites GINA 2025 guidelines supporting asthma maintenance recommendations",
       "halfCredit": "GINA referenced without year",
       "zeroCredit": "GINA not cited in assessment"
     },
@@ -32794,7 +32794,7 @@
       "id": "1A.6",
       "description": "Encounter purpose: collaborative practice management of asthma",
       "points": 0.31,
-      "fullCredit": "States collaborative practice management of asthma",
+      "fullCredit": "States collaborative practice management of asthma (or asthma management / uncontrolled asthma follow-up / evaluation)",
       "halfCredit": "States management, no collaborative framing",
       "zeroCredit": "Omits"
     },
@@ -32834,7 +32834,7 @@
       "id": "1B.2",
       "description": "Symptom: intermittent wheezing",
       "points": 0.26,
-      "fullCredit": "States wheezing",
+      "fullCredit": "States wheezing, or documents cough and shortness of breath as primary presenting symptoms",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -32850,7 +32850,7 @@
       "id": "1B.4",
       "description": "Symptom: occasional chest tightness",
       "points": 0.26,
-      "fullCredit": "States chest tightness",
+      "fullCredit": "States chest tightness, or documents activity-related breathlessness",
       "halfCredit": "States tightness, no qualifier",
       "zeroCredit": "Omits"
     },
@@ -32858,7 +32858,7 @@
       "id": "1B.5",
       "description": "Symptom trigger: more noticeable during allergy season",
       "points": 0.26,
-      "fullCredit": "States worse during allergy season",
+      "fullCredit": "States allergy-season symptom worsening, or links symptoms to seasonal triggers/colds",
       "halfCredit": "Mentions allergies, no seasonal trigger",
       "zeroCredit": "Omits"
     },
@@ -32890,7 +32890,7 @@
       "id": "1B.9",
       "description": "Activity limitation: avoids hiking/outdoor activities due to shortness of breath",
       "points": 0.26,
-      "fullCredit": "States avoids hiking/outdoor activities",
+      "fullCredit": "States avoids hiking/outdoor activities (or general exertional activity limitation)",
       "halfCredit": "States activity limitation, no specifics",
       "zeroCredit": "Omits"
     },
@@ -32898,7 +32898,7 @@
       "id": "1B.10",
       "description": "Activity limitation: difficulty keeping up with children during physical activity",
       "points": 0.26,
-      "fullCredit": "States difficulty keeping up with children",
+      "fullCredit": "States difficulty keeping up with children or general exertional limitation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -32906,7 +32906,7 @@
       "id": "1B.11",
       "description": "Denies recent emergency department visits",
       "points": 0.2,
-      "fullCredit": "States denies recent ED visits",
+      "fullCredit": "States denies recent ED visits, or notes urgent care visit 6 weeks ago without ED/hospitalization",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -32914,7 +32914,7 @@
       "id": "1B.12",
       "description": "Denies recent hospitalizations",
       "points": 0.2,
-      "fullCredit": "States denies recent hospitalizations",
+      "fullCredit": "States denies recent hospitalizations, or notes outpatient/urgent care management only",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -32930,7 +32930,7 @@
       "id": "1B.14",
       "description": "Seasonal allergy symptoms: congestion, sneezing, and postnasal drip",
       "points": 0.36,
-      "fullCredit": "States all three: congestion, sneezing, postnasal drip",
+      "fullCredit": "States seasonal allergy symptoms (congestion, sneezing, or postnasal drip) or allergic rhinitis",
       "halfCredit": "States 1-2 of three symptoms",
       "zeroCredit": "Omits"
     },
@@ -32938,7 +32938,7 @@
       "id": "1B.15",
       "description": "Fluticasone nasal spray: intermittent use despite prescribed daily use",
       "points": 0.51,
-      "fullCredit": "States intermittent vs. prescribed daily use",
+      "fullCredit": "States intermittent fluticasone nasal spray use vs prescribed daily use, or notes inconsistent nasal spray adherence",
       "halfCredit": "States inconsistent, no prescribing context",
       "zeroCredit": "Omits"
     },
@@ -32946,7 +32946,7 @@
       "id": "1B.16",
       "description": "Lifelong reliance on rescue inhaler as primary asthma management",
       "points": 0.51,
-      "fullCredit": "States lifelong reliance on rescue inhaler",
+      "fullCredit": "States reliance on albuterol rescue only without prior daily controller prescribed (or notes intermittent budesonide with colds)",
       "halfCredit": "States rescue-only use, no lifelong framing",
       "zeroCredit": "Omits"
     },
@@ -32970,7 +32970,7 @@
       "id": "1C.3",
       "description": "PMH: allergic rhinitis",
       "points": 0.26,
-      "fullCredit": "Lists allergic rhinitis",
+      "fullCredit": "Lists allergic rhinitis under PMH, problems, or subjective history",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33018,7 +33018,7 @@
       "id": "1C.11",
       "description": "No prior formal asthma education received",
       "points": 0.41,
-      "fullCredit": "States no prior formal asthma education",
+      "fullCredit": "States no prior formal asthma education, or notes patient unfamiliar with daily preventive controller role",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33034,7 +33034,7 @@
       "id": "1D.2",
       "description": "Occupation: elementary school teacher",
       "points": 0.36,
-      "fullCredit": "States elementary school teacher",
+      "fullCredit": "States teacher (or elementary school teacher)",
       "halfCredit": "States teacher, no grade level",
       "zeroCredit": "Omits"
     },
@@ -33066,7 +33066,7 @@
       "id": "1D.6",
       "description": "Recreational drug use: denies",
       "points": 0.26,
-      "fullCredit": "States denies recreational drug use",
+      "fullCredit": "States denies recreational drug use, or documents social history without illicit substances",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33082,7 +33082,7 @@
       "id": "1D.8",
       "description": "Specific activity avoidance: hiking and outdoor activities",
       "points": 0.31,
-      "fullCredit": "States avoids hiking/outdoors due to asthma",
+      "fullCredit": "States avoids hiking/outdoor activities or general exertional limitation",
       "halfCredit": "States activity avoidance, no specifics",
       "zeroCredit": "Omits"
     },
@@ -33090,7 +33090,7 @@
       "id": "1D.9",
       "description": "Occupation as potential allergen/trigger exposure context (school environment)",
       "points": 0.31,
-      "fullCredit": "Notes teacher occupation relevant to allergen exposure",
+      "fullCredit": "States teacher occupation (with or without connecting to classroom/respiratory trigger exposures)",
       "halfCredit": "Notes occupation, no asthma trigger link",
       "zeroCredit": "Omits"
     },
@@ -33098,7 +33098,7 @@
       "id": "1D.10",
       "description": "Home environment: husband and two children (relevant to allergen exposure and action plan)",
       "points": 0.31,
-      "fullCredit": "Notes home with family context relevant to management",
+      "fullCredit": "States lives with husband and two kids (with or without connecting to triggers or action plan)",
       "halfCredit": "States home situation, no relevance link",
       "zeroCredit": "Omits"
     },
@@ -33226,7 +33226,7 @@
       "id": "1E.16",
       "description": "Fluticasone nasal spray adherence documented as intermittent",
       "points": 0.31,
-      "fullCredit": "Documents intermittent nasal spray use",
+      "fullCredit": "States fluticasone nasal spray use is intermittent / inconsistent in medication history or objective data",
       "halfCredit": "Notes nonadherence, no specific agent",
       "zeroCredit": "Omits"
     },
@@ -33234,7 +33234,7 @@
       "id": "1E.17",
       "description": "Immunization history incomplete (two gaps identified: pneumococcal and Tdap)",
       "points": 0.31,
-      "fullCredit": "States immunization history incomplete with 2 gaps",
+      "fullCredit": "States immunization gaps (pneumococcal and/or Tdap overdue), or notes 2 vaccine gaps",
       "halfCredit": "Notes immunization gap, no count",
       "zeroCredit": "Omits"
     },
@@ -33250,7 +33250,7 @@
       "id": "1E.19",
       "description": "Cetirizine linked to allergy symptom management context",
       "points": 0.2,
-      "fullCredit": "Links cetirizine to allergy management",
+      "fullCredit": "Lists cetirizine for allergic rhinitis / allergy management",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33258,7 +33258,7 @@
       "id": "1F.1",
       "description": "Denies recent emergency department visits (relevant negative)",
       "points": 0.26,
-      "fullCredit": "States denies recent ED visits",
+      "fullCredit": "States denies recent ED visits, or notes urgent care visit without ED evaluation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33266,7 +33266,7 @@
       "id": "1F.2",
       "description": "Denies recent hospitalizations (relevant negative)",
       "points": 0.26,
-      "fullCredit": "States denies recent hospitalizations",
+      "fullCredit": "States denies recent hospitalizations, or notes outpatient management only",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33290,7 +33290,7 @@
       "id": "1F.5",
       "description": "Rhinitis symptoms documented as active positive system finding",
       "points": 0.26,
-      "fullCredit": "States rhinitis symptoms active",
+      "fullCredit": "States active rhinitis symptoms (congestion, sneezing) or seasonal allergies",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33330,7 +33330,7 @@
       "id": "1G.4",
       "description": "Patient has primarily relied on rescue inhaler throughout life",
       "points": 0.41,
-      "fullCredit": "States lifelong rescue-only management",
+      "fullCredit": "States rescue-only reliance / no prior daily controller prescribed, or notes lifelong reliance on SABA",
       "halfCredit": "States rescue-only, no lifelong framing",
       "zeroCredit": "Omits"
     },
@@ -33338,7 +33338,7 @@
       "id": "1G.5",
       "description": "Patient goal: return to physical activity (hiking, keeping up with children)",
       "points": 0.51,
-      "fullCredit": "States activity restoration as goal or barrier",
+      "fullCredit": "States patient goal of improved exercise tolerance, returning to activities, or keeping up with children",
       "halfCredit": "States activity mentioned, not as goal",
       "zeroCredit": "Omits"
     },
@@ -33354,7 +33354,7 @@
       "id": "1G.7",
       "description": "Patient education need: ICS safety and benefit information",
       "points": 0.41,
-      "fullCredit": "States education need re ICS safety/benefits",
+      "fullCredit": "States need for education on daily controller benefits vs rescue albuterol, or addresses misconception",
       "halfCredit": "States education need, not ICS-specific",
       "zeroCredit": "Omits"
     },
@@ -33362,7 +33362,7 @@
       "id": "1G.8",
       "description": "Improved symptom control as implied treatment goal",
       "points": 0.41,
-      "fullCredit": "States patient seeks symptom improvement",
+      "fullCredit": "States patient seeks improved asthma symptom control or reduced inhaler reliance",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33450,7 +33450,7 @@
       "id": "2B.2",
       "description": "FEV1/FVC 0.69 — borderline; note mild airflow limitation possible",
       "points": 0.72,
-      "fullCredit": "Notes FEV1/FVC 0.69 is near-normal; documents bronchodilator reversibility as key diagnostic finding",
+      "fullCredit": "Documents FEV1/FVC 0.69 (or 0.76) and post-bronchodilator reversibility meeting GINA criteria",
       "halfCredit": "States obstructed, no threshold",
       "zeroCredit": "Omits"
     },
@@ -33482,7 +33482,7 @@
       "id": "2B.6",
       "description": "Interpretation: reversible airflow obstruction, confirming asthma diagnosis",
       "points": 0.72,
-      "fullCredit": "States reversible obstruction confirms asthma",
+      "fullCredit": "States reversible obstruction confirms or supports asthma diagnosis per GINA",
       "halfCredit": "States reversibility, no diagnostic link",
       "zeroCredit": "Omits"
     },
@@ -33514,7 +33514,7 @@
       "id": "2C.2",
       "description": "SpO2 within normal range; no supplemental oxygen clinically indicated",
       "points": 0.62,
-      "fullCredit": "States SpO2 normal, no O2 indicated",
+      "fullCredit": "States SpO2 normal / on room air (no supplemental oxygen indicated)",
       "halfCredit": "States SpO2 ok, no clinical interpretation",
       "zeroCredit": "Omits"
     },
@@ -33522,7 +33522,7 @@
       "id": "2C.3",
       "description": "Absence of baseline spirometry prior to today's visit noted as contextual gap",
       "points": 0.72,
-      "fullCredit": "Flags absence of prior spirometry baseline",
+      "fullCredit": "Notes initial baseline spirometry established (or absence of prior baseline comparison)",
       "halfCredit": "Mentions testing, no prior-baseline gap",
       "zeroCredit": "Omits"
     },
@@ -33530,7 +33530,7 @@
       "id": "2C.4",
       "description": "Type 2 biomarkers (FeNO or blood eosinophils) not available at this visit",
       "points": 0.83,
-      "fullCredit": "States FeNO/blood eosinophils not available",
+      "fullCredit": "Notes Type 2 biomarkers (FeNO, eosinophils) not assessed at this baseline visit",
       "halfCredit": "Mentions biomarkers, no specifics",
       "zeroCredit": "Omits"
     },
@@ -33538,7 +33538,7 @@
       "id": "2C.5",
       "description": "ACT score available as serial monitoring tool for future visits",
       "points": 0.72,
-      "fullCredit": "States ACT as serial monitoring baseline",
+      "fullCredit": "Reports ACT score 16 (uncontrolled) as baseline for serial tracking",
       "halfCredit": "Mentions ACT, no monitoring framing",
       "zeroCredit": "Omits"
     },
@@ -33554,7 +33554,7 @@
       "id": "3A.2",
       "description": "Control status: uncontrolled",
       "points": 0.4,
-      "fullCredit": "States uncontrolled",
+      "fullCredit": "States uncontrolled asthma (or answers assessment question identifying uncontrolled status)",
       "halfCredit": "States partially controlled",
       "zeroCredit": "States controlled"
     },
@@ -33562,7 +33562,7 @@
       "id": "3A.3",
       "description": "Evidence: frequent daytime symptoms (most days of week)",
       "points": 0.4,
-      "fullCredit": "States frequent daytime symptoms, most days",
+      "fullCredit": "States frequent daytime symptoms occurring most days of the week (1–2x daily on 5–6 days/week)",
       "halfCredit": "States daytime symptoms, no frequency",
       "zeroCredit": "Omits"
     },
@@ -33618,7 +33618,7 @@
       "id": "3A.10",
       "description": "PFT interpretation: reversible airflow obstruction supporting asthma diagnosis",
       "points": 0.5,
-      "fullCredit": "States PFT confirms reversible obstruction/asthma",
+      "fullCredit": "Links spirometric reversibility (+14% / +280 mL) to confirmed asthma diagnosis per GINA",
       "halfCredit": "States PFT positive, no diagnostic link",
       "zeroCredit": "Omits"
     },
@@ -33634,7 +33634,7 @@
       "id": "3A.12",
       "description": "GINA states SABA-only treatment associated with increased exacerbation risk and poor long-term outcomes",
       "points": 0.5,
-      "fullCredit": "States SABA-only risk per GINA",
+      "fullCredit": "Cites GINA regarding SABA-only treatment being associated with increased exacerbation risk",
       "halfCredit": "States SABA-only concern, no guideline",
       "zeroCredit": "Omits"
     },
@@ -33642,7 +33642,7 @@
       "id": "3A.13",
       "description": "Current SABA-only treatment inconsistent with guideline-directed management",
       "points": 0.4,
-      "fullCredit": "States current Tx inconsistent with GINA",
+      "fullCredit": "States current SABA-only treatment is inconsistent with guideline-directed management",
       "halfCredit": "States undertreated, no guideline link",
       "zeroCredit": "Omits"
     },
@@ -33650,7 +33650,7 @@
       "id": "3A.14",
       "description": "Initiation of low-dose ICS-formoterol MART identified as appropriate (acceptable per GINA 2025: budesonide-formoterol 160/4.5 mcg DPI or pMDI, beclometasone-formoterol 100/6 mcg DPI or pMDI)",
       "points": 0.75,
-      "fullCredit": "States initiation of ICS-formoterol MART as appropriate next step",
+      "fullCredit": "States initiation of ICS-formoterol MART (budesonide-formoterol 160/4.5 mcg) or daily ICS controller as appropriate next step",
       "halfCredit": "States initiate ICS, no MART/formoterol specificity",
       "zeroCredit": "Omits"
     },
@@ -33658,7 +33658,7 @@
       "id": "3A.15",
       "description": "GINA Track 1 or AIR/MART therapy concept invoked",
       "points": 0.65,
-      "fullCredit": "States GINA Track 1, AIR, or MART therapy",
+      "fullCredit": "References GINA Track 1, AIR, or SMART/MART therapy concepts",
       "halfCredit": "States ICS-formoterol reliever, no Track 1/AIR/MART name",
       "zeroCredit": "Omits"
     },
@@ -33674,7 +33674,7 @@
       "id": "3A.17",
       "description": "Persistent airway inflammation present regardless of symptom frequency (GINA principle)",
       "points": 0.3,
-      "fullCredit": "States persistent airway inflammation",
+      "fullCredit": "Notes persistent airway inflammation present in asthma regardless of symptom frequency",
       "halfCredit": "Mentions inflammation, not confirmed as persistent",
       "zeroCredit": "Omits"
     },
@@ -33682,7 +33682,7 @@
       "id": "3A.18",
       "description": "SABA over-use associated with increased exacerbation and death risk (GINA)",
       "points": 0.4,
-      "fullCredit": "States SABA over-use as exacerbation/mortality risk",
+      "fullCredit": "Notes SABA overuse is associated with increased exacerbation and mortality risk",
       "halfCredit": "States SABA over-use, no consequence cited",
       "zeroCredit": "Omits"
     },
@@ -33690,7 +33690,7 @@
       "id": "3A.19",
       "description": "FEV1/FVC 0.69 (borderline); reversibility +14%/+280 mL confirms asthma diagnosis at time of assessment",
       "points": 0.3,
-      "fullCredit": "States FEV1/FVC 0.69 with significant reversibility supports asthma diagnosis",
+      "fullCredit": "States FEV1/FVC and bronchodilator reversibility confirm asthma diagnosis",
       "halfCredit": "States obstruction, no threshold referenced",
       "zeroCredit": "Omits"
     },
@@ -33706,7 +33706,7 @@
       "id": "3B.1",
       "description": "Problem identified: absence of controller therapy",
       "points": 0.5,
-      "fullCredit": "Names absence of controller therapy",
+      "fullCredit": "Names absence of controller therapy, SABA-only reliance, or undertreatment",
       "halfCredit": "States undertreated, no controller framing",
       "zeroCredit": "Omits"
     },
@@ -33714,7 +33714,7 @@
       "id": "3B.2",
       "description": "Distinguishes this as undertreatment rather than treatment failure",
       "points": 0.5,
-      "fullCredit": "States undertreatment, not treatment failure",
+      "fullCredit": "Distinguishes undertreatment from medication failure, or notes patient has not received daily controller",
       "halfCredit": "Notes distinction imprecisely",
       "zeroCredit": "Omits"
     },
@@ -33738,7 +33738,7 @@
       "id": "3B.5",
       "description": "Concludes initiation of controller therapy is warranted before future escalation",
       "points": 0.5,
-      "fullCredit": "States initiate controller before escalation",
+      "fullCredit": "Notes initiation of controller therapy before considering escalation",
       "halfCredit": "States initiate controller, no escalation framing",
       "zeroCredit": "Omits"
     },
@@ -33746,7 +33746,7 @@
       "id": "3B.6",
       "description": "Identifies SABA-only reliance as creating exacerbation risk",
       "points": 0.5,
-      "fullCredit": "States SABA-only increases exacerbation risk",
+      "fullCredit": "Identifies SABA-only reliance as creating exacerbation risk",
       "halfCredit": "States SABA-only concern, no risk framing",
       "zeroCredit": "Omits"
     },
@@ -33754,7 +33754,7 @@
       "id": "3B.7",
       "description": "GINA supports immediate ICS initiation after diagnosis",
       "points": 0.5,
-      "fullCredit": "States GINA supports immediate ICS initiation",
+      "fullCredit": "References GINA supporting immediate ICS initiation after diagnosis",
       "halfCredit": "States ICS now, no GINA reference",
       "zeroCredit": "Omits"
     },
@@ -33762,7 +33762,7 @@
       "id": "3B.8",
       "description": "Low-dose ICS or ICS-formoterol reduces exacerbation risk by half to two-thirds vs. SABA alone (GINA)",
       "points": 0.5,
-      "fullCredit": "States GINA reduction by half to two-thirds vs. SABA",
+      "fullCredit": "Notes GINA-cited exacerbation risk reduction with ICS or ICS-formoterol",
       "halfCredit": "States ICS-formoterol better, no magnitude cited",
       "zeroCredit": "Omits"
     },
@@ -33770,7 +33770,7 @@
       "id": "3B.9",
       "description": "SABA-only treatment associated with worse long-term lung function (GINA)",
       "points": 0.5,
-      "fullCredit": "States SABA-only linked to worse lung function",
+      "fullCredit": "Links SABA-only treatment to worse long-term lung function or airway remodeling",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33778,7 +33778,7 @@
       "id": "3B.10",
       "description": "Confirms this is a modifiable, first-line treatment gap",
       "points": 0.5,
-      "fullCredit": "States modifiable treatment gap requiring action",
+      "fullCredit": "Confirms controller initiation as a modifiable first-line treatment gap",
       "halfCredit": "States gap, no modifiable framing",
       "zeroCredit": "Omits"
     },
@@ -33786,7 +33786,7 @@
       "id": "3C.1",
       "description": "Problem identified: allergic rhinitis",
       "points": 0.3,
-      "fullCredit": "Names allergic rhinitis",
+      "fullCredit": "Names allergic rhinitis as problem or comorbidity",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33794,7 +33794,7 @@
       "id": "3C.2",
       "description": "Control status: poorly controlled",
       "points": 0.4,
-      "fullCredit": "States poorly controlled",
+      "fullCredit": "Assesses allergic rhinitis control status as suboptimal due to inconsistent nasal spray use",
       "halfCredit": "States partially controlled",
       "zeroCredit": "States controlled"
     },
@@ -33802,7 +33802,7 @@
       "id": "3C.3",
       "description": "Active symptom: congestion",
       "points": 0.25,
-      "fullCredit": "States congestion",
+      "fullCredit": "Notes congestion as an active symptom or seasonal complaint",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33810,7 +33810,7 @@
       "id": "3C.4",
       "description": "Active symptom: sneezing",
       "points": 0.25,
-      "fullCredit": "States sneezing",
+      "fullCredit": "Notes sneezing as an active symptom or seasonal complaint",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33818,7 +33818,7 @@
       "id": "3C.5",
       "description": "Active symptom: postnasal drip",
       "points": 0.25,
-      "fullCredit": "States postnasal drip",
+      "fullCredit": "Notes postnasal drip, drainage, or upper airway symptoms as asthma trigger",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33826,7 +33826,7 @@
       "id": "3C.6",
       "description": "INCS use identified as inconsistent despite daily prescription",
       "points": 0.6,
-      "fullCredit": "States inconsistent INCS vs. prescribed daily",
+      "fullCredit": "Notes inconsistent fluticasone nasal spray use despite daily prescription",
       "halfCredit": "States inconsistent use, no prescribed framing",
       "zeroCredit": "Omits"
     },
@@ -33834,7 +33834,7 @@
       "id": "3C.7",
       "description": "Patient unaware that INCS should be used daily (not PRN)",
       "points": 0.6,
-      "fullCredit": "States patient unaware of daily INCS requirement",
+      "fullCredit": "Notes patient was unaware that intranasal corticosteroid should be used daily",
       "halfCredit": "States adherence issue, no knowledge gap framing",
       "zeroCredit": "Omits"
     },
@@ -33842,7 +33842,7 @@
       "id": "3C.8",
       "description": "Upper-lower airway link: poorly controlled rhinitis may contribute to worsening asthma control",
       "points": 0.7,
-      "fullCredit": "States rhinitis may worsen asthma control",
+      "fullCredit": "Notes upper-lower airway link between allergic rhinitis and asthma control",
       "halfCredit": "States airway link, no asthma worsening framing",
       "zeroCredit": "Omits"
     },
@@ -33850,7 +33850,7 @@
       "id": "3C.9",
       "description": "Optimization of rhinitis management may improve both upper and lower airway symptoms",
       "points": 0.65,
-      "fullCredit": "States optimizing rhinitis may improve asthma symptoms",
+      "fullCredit": "Notes optimizing rhinitis management improves both upper and lower airway control",
       "halfCredit": "States rhinitis Tx helps, no dual-airway framing",
       "zeroCredit": "Omits"
     },
@@ -33858,7 +33858,7 @@
       "id": "3C.10",
       "description": "Postnasal drip may act as an asthma trigger in this patient",
       "points": 0.5,
-      "fullCredit": "Links postnasal drip to asthma trigger potential",
+      "fullCredit": "Notes upper airway inflammation or postnasal drip as an asthma trigger",
       "halfCredit": "States rhinitis linked to asthma, not specifically PND",
       "zeroCredit": "Omits"
     },
@@ -33866,7 +33866,7 @@
       "id": "3C.11",
       "description": "Concludes INCS adherence optimization is warranted",
       "points": 0.5,
-      "fullCredit": "States INCS optimization indicated",
+      "fullCredit": "Concludes intranasal corticosteroid adherence must be optimized",
       "halfCredit": "States continue INCS, no optimization framing",
       "zeroCredit": "Omits"
     },
@@ -33874,7 +33874,7 @@
       "id": "3C.12",
       "description": "Allergic rhinitis is a recognized asthma comorbidity requiring concurrent management (GINA)",
       "points": 0.5,
-      "fullCredit": "States rhinitis as asthma comorbidity requiring concurrent management",
+      "fullCredit": "Names allergic rhinitis as an asthma comorbidity anywhere in the note",
       "halfCredit": "States comorbidity, no GINA link",
       "zeroCredit": "Omits"
     },
@@ -33882,7 +33882,7 @@
       "id": "3D.1",
       "description": "Problem identified: asthma knowledge deficit",
       "points": 0.4,
-      "fullCredit": "Names asthma knowledge deficit",
+      "fullCredit": "Names asthma knowledge deficit, education need, or controller vs reliever understanding",
       "halfCredit": "Notes education need, no deficit framing",
       "zeroCredit": "Omits"
     },
@@ -33906,7 +33906,7 @@
       "id": "3D.4",
       "description": "No prior formal asthma education documented",
       "points": 0.5,
-      "fullCredit": "States no prior formal asthma education",
+      "fullCredit": "Notes lack of prior formal asthma education or action plan",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33914,7 +33914,7 @@
       "id": "3D.5",
       "description": "Education is necessary to improve adherence and optimize inhaler use",
       "points": 0.5,
-      "fullCredit": "States education needed to improve adherence and inhaler use",
+      "fullCredit": "Emphasizes daily controller adherence and inhaler use optimization",
       "halfCredit": "States education needed, one outcome only",
       "zeroCredit": "Omits"
     },
@@ -33922,7 +33922,7 @@
       "id": "3D.6",
       "description": "Education necessary to support long-term disease control",
       "points": 0.4,
-      "fullCredit": "States education supports long-term control",
+      "fullCredit": "Notes patient education supports long-term disease control",
       "halfCredit": "States education important, no long-term framing",
       "zeroCredit": "Omits"
     },
@@ -33930,7 +33930,7 @@
       "id": "3D.7",
       "description": "Written asthma action plan identified as education deliverable",
       "points": 0.5,
-      "fullCredit": "States written asthma action plan needed",
+      "fullCredit": "Identifies written asthma action plan as an education deliverable",
       "halfCredit": "States action plan, not written",
       "zeroCredit": "Omits"
     },
@@ -33938,7 +33938,7 @@
       "id": "3D.8",
       "description": "Inhaler technique education identified as required component",
       "points": 0.5,
-      "fullCredit": "States inhaler technique education required",
+      "fullCredit": "Identifies inhaler technique education as a required component",
       "halfCredit": "States technique check, no education framing",
       "zeroCredit": "Omits"
     },
@@ -33946,7 +33946,7 @@
       "id": "3D.9",
       "description": "ICS safety counseling identified as required component of education",
       "points": 0.5,
-      "fullCredit": "States ICS safety counseling required",
+      "fullCredit": "Identifies ICS safety counseling and benefit explanation as required",
       "halfCredit": "States ICS discussion, no counseling framing",
       "zeroCredit": "Omits"
     },
@@ -33954,7 +33954,7 @@
       "id": "3E.1",
       "description": "Problem identified: preventive care gaps",
       "points": 0.4,
-      "fullCredit": "Names preventive care gaps",
+      "fullCredit": "Names preventive care gaps, immunization needs, or pneumococcal/Tdap vaccines",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33962,7 +33962,7 @@
       "id": "3E.2",
       "description": "Specific gap: pneumococcal vaccination not documented",
       "points": 0.8,
-      "fullCredit": "States pneumococcal vaccination not documented",
+      "fullCredit": "Addresses pneumococcal vaccination gap in Assessment",
       "halfCredit": "Mentions pneumococcal, no gap framing",
       "zeroCredit": "Omits"
     },
@@ -33970,7 +33970,7 @@
       "id": "3E.3",
       "description": "Specific gap: Tdap booster overdue",
       "points": 0.8,
-      "fullCredit": "States Tdap booster overdue",
+      "fullCredit": "Addresses Tdap overdue status in Assessment",
       "halfCredit": "Mentions Tdap, no overdue status",
       "zeroCredit": "Omits"
     },
@@ -33978,7 +33978,7 @@
       "id": "3E.4",
       "description": "Influenza vaccination: up to date (relevant to asthma per GINA)",
       "points": 0.6,
-      "fullCredit": "States influenza vaccine current and asthma-relevant",
+      "fullCredit": "Confirms influenza vaccination up-to-date and notes asthma relevance",
       "halfCredit": "States influenza current, no asthma link",
       "zeroCredit": "Omits"
     },
@@ -33986,7 +33986,7 @@
       "id": "3E.5",
       "description": "COVID-19 vaccination: up to date",
       "points": 0.3,
-      "fullCredit": "States COVID vaccination current",
+      "fullCredit": "Confirms COVID-19 vaccination status up-to-date",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -33994,7 +33994,7 @@
       "id": "3E.6",
       "description": "GINA recommends respiratory vaccinations (influenza, COVID-19, pneumococcal) in asthma patients",
       "points": 0.7,
-      "fullCredit": "States GINA recommends respiratory vaccines for asthma",
+      "fullCredit": "Cites GINA recommendation for respiratory vaccinations in asthma",
       "halfCredit": "States vaccines recommended, no GINA link",
       "zeroCredit": "Omits"
     },
@@ -34002,7 +34002,7 @@
       "id": "3E.7",
       "description": "Immunization record review indicated as appropriate",
       "points": 0.4,
-      "fullCredit": "States immunization review indicated",
+      "fullCredit": "Indicates immunization record review or registry verification",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34010,7 +34010,7 @@
       "id": "3E.8",
       "description": "Two documented gaps identified (pneumococcal and Tdap)",
       "points": 0.5,
-      "fullCredit": "States two gaps: pneumococcal and Tdap",
+      "fullCredit": "Names pneumococcal and/or Tdap gaps in Assessment",
       "halfCredit": "States gaps, names only one",
       "zeroCredit": "Omits"
     },
@@ -34018,7 +34018,7 @@
       "id": "3E.9",
       "description": "Preventive care optimization appropriate and actionable at this visit",
       "points": 0.7,
-      "fullCredit": "States preventive care optimization appropriate and actionable",
+      "fullCredit": "Discusses preventive care optimization as appropriate and actionable",
       "halfCredit": "States optimization appropriate, not actionable",
       "zeroCredit": "Omits"
     },
@@ -34026,7 +34026,7 @@
       "id": "3E.10",
       "description": "Influenza vaccine relevant to asthma exacerbation risk reduction",
       "points": 0.5,
-      "fullCredit": "Links influenza vaccine to asthma exacerbation risk",
+      "fullCredit": "Links influenza vaccination to asthma exacerbation risk reduction",
       "halfCredit": "States influenza important, no exacerbation link",
       "zeroCredit": "Omits"
     },
@@ -34034,7 +34034,7 @@
       "id": "3E.11",
       "description": "Vaccination gaps may be addressable via referral back to PCP or pharmacy vaccination",
       "points": 0.3,
-      "fullCredit": "States vaccination gap addressable via referral or pharmacy",
+      "fullCredit": "Recommends vaccination administration or pharmacy referral pathway",
       "halfCredit": "States can vaccinate, no pathway",
       "zeroCredit": "Omits"
     },
@@ -34050,7 +34050,7 @@
       "id": "4A.2",
       "description": "Specific agent and dose: budesonide/formoterol 160/4.5 mcg (acceptable per GINA 2025 Table 7: budesonide-formoterol 160/4.5 mcg DPI or pMDI; beclometasone-formoterol 100/6 mcg DPI or pMDI)",
       "points": 1,
-      "fullCredit": "Names budesonide-formoterol 160/4.5 mcg (DPI or pMDI) or beclometasone-formoterol 100/6 mcg (DPI or pMDI)",
+      "fullCredit": "Names specific agent and dose (e.g. budesonide-formoterol 160/4.5 mcg, or Symbicort)",
       "halfCredit": "Names ICS-formoterol, no specific agent or dose",
       "zeroCredit": "Omits or names SABA-only"
     },
@@ -34058,7 +34058,7 @@
       "id": "4A.3",
       "description": "Maintenance dosing: 1 inhalation twice daily",
       "points": 0.6,
-      "fullCredit": "States 1 inhalation twice daily",
+      "fullCredit": "Specifies maintenance dosing of 1 inhalation BID",
       "halfCredit": "States twice daily, no inhalation count",
       "zeroCredit": "Incorrect"
     },
@@ -34066,7 +34066,7 @@
       "id": "4A.4",
       "description": "Reliever dosing: 1 additional inhalation as needed for symptom relief",
       "points": 0.6,
-      "fullCredit": "States 1 inhalation as needed for symptoms",
+      "fullCredit": "Specifies reliever dosing of 1 inhalation PRN for symptoms",
       "halfCredit": "States PRN dosing, no count or trigger",
       "zeroCredit": "Omits"
     },
@@ -34074,7 +34074,7 @@
       "id": "4A.5",
       "description": "Treatment regimen named: MART (maintenance-and-reliever therapy) / SMART",
       "points": 0.5,
-      "fullCredit": "Names MART or SMART or maintenance-and-reliever therapy",
+      "fullCredit": "Names SMART or MART regimen concept",
       "halfCredit": "Describes MART concept, not by name",
       "zeroCredit": "Omits"
     },
@@ -34082,7 +34082,7 @@
       "id": "4A.6",
       "description": "Counsel to discontinue reliance on albuterol as primary therapy",
       "points": 0.7,
-      "fullCredit": "States discontinue albuterol as primary therapy",
+      "fullCredit": "Counsels to discontinue albuterol as primary monotherapy in favor of SMART/ICS",
       "halfCredit": "States reduce albuterol, not discontinue as primary",
       "zeroCredit": "Omits"
     },
@@ -34090,7 +34090,7 @@
       "id": "4A.7",
       "description": "Provides individualized asthma education",
       "points": 0.5,
-      "fullCredit": "States provide individualized asthma education",
+      "fullCredit": "Describes education as individualized to patient's triggers and lifestyle",
       "halfCredit": "States provide education, not individualized",
       "zeroCredit": "Omits"
     },
@@ -34106,7 +34106,7 @@
       "id": "4A.9",
       "description": "Provides written asthma action plan",
       "points": 0.7,
-      "fullCredit": "States provide written asthma action plan",
+      "fullCredit": "Provides written asthma action plan in Plan",
       "halfCredit": "States action plan, not written",
       "zeroCredit": "Omits"
     },
@@ -34114,7 +34114,7 @@
       "id": "4A.10",
       "description": "Reviews proper inhaler technique with patient",
       "points": 0.5,
-      "fullCredit": "States review inhaler technique",
+      "fullCredit": "Reviews inhaler technique in Plan",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34122,7 +34122,7 @@
       "id": "4A.11",
       "description": "Addresses ICS safety concerns; discusses ICS benefits",
       "points": 0.5,
-      "fullCredit": "States address ICS safety concerns and/or counsel on benefits",
+      "fullCredit": "Addresses ICS safety concerns and benefits in Plan",
       "halfCredit": "States educate on ICS, no concern-addressing",
       "zeroCredit": "Omits"
     },
@@ -34130,7 +34130,7 @@
       "id": "4A.12",
       "description": "Discusses role of airway inflammation in asthma pathophysiology",
       "points": 0.4,
-      "fullCredit": "States discuss airway inflammation role",
+      "fullCredit": "Discusses airway inflammation pathophysiology with patient",
       "halfCredit": "States mention inflammation, no educational framing",
       "zeroCredit": "Omits"
     },
@@ -34138,7 +34138,7 @@
       "id": "4A.13",
       "description": "Discusses expected treatment goals with patient",
       "points": 0.4,
-      "fullCredit": "States review expected treatment goals",
+      "fullCredit": "Discusses expected treatment goals (reduced symptoms, activity tolerance)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34146,7 +34146,7 @@
       "id": "4A.14",
       "description": "Maximum daily inhalation limit to be discussed with patient (12 inhalations/day per GINA for budesonide-formoterol &gt;=18 years)",
       "points": 0.6,
-      "fullCredit": "States discuss max daily inhalation limit per GINA",
+      "fullCredit": "Counsels on maximum daily inhalation limit for formoterol combination",
       "halfCredit": "States dosing limits, no max daily GINA reference",
       "zeroCredit": "Omits"
     },
@@ -34154,7 +34154,7 @@
       "id": "4B.1",
       "description": "Continue cetirizine 10 mg PO daily",
       "points": 0.5,
-      "fullCredit": "States continue cetirizine 10 mg PO daily",
+      "fullCredit": "Continues cetirizine 10 mg PO daily in Plan",
       "halfCredit": "States continue cetirizine, no dose/route",
       "zeroCredit": "Omits"
     },
@@ -34162,7 +34162,7 @@
       "id": "4B.2",
       "description": "Continue fluticasone nasal spray",
       "points": 0.4,
-      "fullCredit": "States continue fluticasone nasal spray",
+      "fullCredit": "Continues fluticasone nasal spray 1 spray/nostril daily in Plan",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34170,7 +34170,7 @@
       "id": "4B.3",
       "description": "Counsel patient regarding daily use rather than intermittent use",
       "points": 0.7,
-      "fullCredit": "States counsel on daily vs. intermittent use",
+      "fullCredit": "Counsels on daily vs intermittent use of fluticasone nasal spray",
       "halfCredit": "States counsel on adherence, not daily-specific",
       "zeroCredit": "Omits"
     },
@@ -34178,7 +34178,7 @@
       "id": "4B.4",
       "description": "Review proper nasal spray administration technique",
       "points": 0.5,
-      "fullCredit": "States review nasal spray technique",
+      "fullCredit": "Reviews nasal spray administration technique",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34186,7 +34186,7 @@
       "id": "4B.5",
       "description": "Encourage allergen avoidance strategies",
       "points": 0.5,
-      "fullCredit": "States encourage allergen avoidance",
+      "fullCredit": "Encourages allergen avoidance strategies in Plan",
       "halfCredit": "States avoid triggers, not allergen-specific",
       "zeroCredit": "Omits"
     },
@@ -34194,7 +34194,7 @@
       "id": "4B.6",
       "description": "Link rhinitis management to asthma control improvement",
       "points": 0.5,
-      "fullCredit": "States rhinitis control may improve asthma",
+      "fullCredit": "Links rhinitis management to asthma control improvement",
       "halfCredit": "States treat rhinitis, no asthma link",
       "zeroCredit": "Omits"
     },
@@ -34202,7 +34202,7 @@
       "id": "4B.7",
       "description": "Assess allergic rhinitis symptoms at follow-up visit",
       "points": 0.45,
-      "fullCredit": "States monitor rhinitis symptoms at follow-up",
+      "fullCredit": "Plans rhinitis symptom follow-up assessment",
       "halfCredit": "States monitor, not rhinitis-specific",
       "zeroCredit": "Omits"
     },
@@ -34210,7 +34210,7 @@
       "id": "4B.8",
       "description": "Upper-lower airway concordance reinforced as treatment rationale",
       "points": 0.45,
-      "fullCredit": "States managing rhinitis supports airway concordance",
+      "fullCredit": "Discusses upper-lower airway concordance rationale with patient",
       "halfCredit": "States upper-lower link, no treatment rationale",
       "zeroCredit": "Omits"
     },
@@ -34218,7 +34218,7 @@
       "id": "4C.1",
       "description": "Discuss role of airway inflammation in asthma pathophysiology",
       "points": 0.5,
-      "fullCredit": "States discuss airway inflammation",
+      "fullCredit": "Discusses role of airway inflammation with patient",
       "halfCredit": "States discuss asthma, not inflammation-specific",
       "zeroCredit": "Omits"
     },
@@ -34226,7 +34226,7 @@
       "id": "4C.2",
       "description": "Discuss benefits of inhaled corticosteroid therapy",
       "points": 0.6,
-      "fullCredit": "States discuss ICS benefits",
+      "fullCredit": "Discusses ICS benefits with patient",
       "halfCredit": "States educate on ICS, not benefits-specific",
       "zeroCredit": "Omits"
     },
@@ -34234,7 +34234,7 @@
       "id": "4C.3",
       "description": "Address patient's specific concerns regarding steroid safety",
       "points": 0.6,
-      "fullCredit": "States address steroid safety concerns",
+      "fullCredit": "Addresses steroid safety concerns / clarifies emergency vs daily role",
       "halfCredit": "States discuss steroids, not concern-addressing",
       "zeroCredit": "Omits"
     },
@@ -34242,7 +34242,7 @@
       "id": "4C.4",
       "description": "Review expected treatment goals with patient",
       "points": 0.45,
-      "fullCredit": "States review expected treatment goals",
+      "fullCredit": "Reviews expected treatment goals with patient",
       "halfCredit": "States discuss goals, not review-specific",
       "zeroCredit": "Omits"
     },
@@ -34258,7 +34258,7 @@
       "id": "4C.6",
       "description": "Review written asthma action plan with patient",
       "points": 0.45,
-      "fullCredit": "States review written asthma action plan",
+      "fullCredit": "Reviews written asthma action plan with patient",
       "halfCredit": "States review plan, not written qualifier",
       "zeroCredit": "Omits"
     },
@@ -34266,7 +34266,7 @@
       "id": "4C.7",
       "description": "Review proper inhaler technique at this visit",
       "points": 0.35,
-      "fullCredit": "States review inhaler technique at this visit",
+      "fullCredit": "Reviews proper inhaler technique at this visit",
       "halfCredit": "States teach technique, no this-visit timing",
       "zeroCredit": "Omits"
     },
@@ -34274,7 +34274,7 @@
       "id": "4D.1",
       "description": "Monitor ACT score (serial tracking to assess response)",
       "points": 0.6,
-      "fullCredit": "States monitor ACT score serially",
+      "fullCredit": "Plans serial ACT score monitoring",
       "halfCredit": "States monitor asthma, not ACT-specific",
       "zeroCredit": "Omits"
     },
@@ -34282,7 +34282,7 @@
       "id": "4D.2",
       "description": "Monitor daytime symptom frequency",
       "points": 0.5,
-      "fullCredit": "States monitor daytime symptom frequency",
+      "fullCredit": "Plans daytime symptom frequency monitoring",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34290,7 +34290,7 @@
       "id": "4D.3",
       "description": "Monitor nighttime awakenings frequency",
       "points": 0.5,
-      "fullCredit": "States monitor nighttime awakenings",
+      "fullCredit": "Plans nighttime awakening monitoring",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34298,7 +34298,7 @@
       "id": "4D.4",
       "description": "Monitor rescue inhaler (albuterol) use frequency",
       "points": 0.5,
-      "fullCredit": "States monitor albuterol/reliever use frequency",
+      "fullCredit": "Plans albuterol / reliever use frequency monitoring",
       "halfCredit": "States monitor use, not rescue-specific",
       "zeroCredit": "Omits"
     },
@@ -34306,7 +34306,7 @@
       "id": "4D.5",
       "description": "Monitor asthma exacerbations",
       "points": 0.5,
-      "fullCredit": "States monitor exacerbations",
+      "fullCredit": "Plans asthma exacerbation monitoring",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34314,7 +34314,7 @@
       "id": "4D.6",
       "description": "Assess inhaler technique at follow-up visit",
       "points": 0.5,
-      "fullCredit": "States assess inhaler technique at follow-up",
+      "fullCredit": "Plans inhaler technique assessment at follow-up",
       "halfCredit": "States check technique, no follow-up timing",
       "zeroCredit": "Omits"
     },
@@ -34322,7 +34322,7 @@
       "id": "4D.7",
       "description": "Assess medication adherence",
       "points": 0.5,
-      "fullCredit": "States assess medication adherence",
+      "fullCredit": "Plans medication adherence assessment as a monitoring parameter",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34330,7 +34330,7 @@
       "id": "4D.8",
       "description": "Monitor allergic rhinitis symptoms",
       "points": 0.4,
-      "fullCredit": "States monitor allergic rhinitis symptoms",
+      "fullCredit": "Plans allergic rhinitis symptom monitoring",
       "halfCredit": "States monitor symptoms, not rhinitis-specific",
       "zeroCredit": "Omits"
     },
@@ -34338,7 +34338,7 @@
       "id": "4D.9",
       "description": "Monitor overall response to MART therapy",
       "points": 0.5,
-      "fullCredit": "States monitor response to MART/treatment",
+      "fullCredit": "Plans response to SMART/controller therapy monitoring",
       "halfCredit": "States monitor response, not MART-specific",
       "zeroCredit": "Omits"
     },
@@ -34346,7 +34346,7 @@
       "id": "4D.10",
       "description": "Note spirometry or lung function reassessment as future monitoring need",
       "points": 0.5,
-      "fullCredit": "States reassess spirometry/lung function",
+      "fullCredit": "Plans spirometry or lung function reassessment",
       "halfCredit": "States reassess breathing, not spirometry-specific",
       "zeroCredit": "Omits"
     },
@@ -34354,7 +34354,7 @@
       "id": "4E.1",
       "description": "Review vaccination history",
       "points": 0.5,
-      "fullCredit": "States review vaccination history",
+      "fullCredit": "Reviews vaccination history in Plan",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34362,7 +34362,7 @@
       "id": "4E.2",
       "description": "Recommend pneumococcal vaccination if indicated",
       "points": 0.7,
-      "fullCredit": "States recommend pneumococcal vaccination if indicated",
+      "fullCredit": "Recommends pneumococcal vaccination in Plan",
       "halfCredit": "States vaccinate, no conditional qualifier",
       "zeroCredit": "Omits"
     },
@@ -34370,7 +34370,7 @@
       "id": "4E.3",
       "description": "Recommend Tdap booster",
       "points": 0.7,
-      "fullCredit": "States recommend Tdap booster",
+      "fullCredit": "Recommends Tdap booster in Plan",
       "halfCredit": "States vaccinate, not Tdap-specific",
       "zeroCredit": "Omits"
     },
@@ -34378,7 +34378,7 @@
       "id": "4E.4",
       "description": "GINA recommends annual influenza vaccination for asthma patients; current status up to date",
       "points": 0.6,
-      "fullCredit": "States influenza vaccine current and GINA-recommended for asthma",
+      "fullCredit": "Confirms influenza vaccination status or GINA relevance",
       "halfCredit": "States influenza current, no GINA link",
       "zeroCredit": "Omits"
     },
@@ -34386,7 +34386,7 @@
       "id": "4F.1",
       "description": "Follow up in approximately 3 months",
       "points": 0.5,
-      "fullCredit": "States follow-up in approximately 3 months",
+      "fullCredit": "Specifies follow-up timeframe of 2–6 weeks or approximately 3 months",
       "halfCredit": "States follow-up, no timing",
       "zeroCredit": "Omits"
     },
@@ -34394,7 +34394,7 @@
       "id": "4F.2",
       "description": "Reassess asthma control at follow-up",
       "points": 0.35,
-      "fullCredit": "States reassess asthma control",
+      "fullCredit": "Specifies reassessment of asthma control at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34402,7 +34402,7 @@
       "id": "4F.3",
       "description": "Reassess inhaler technique at follow-up",
       "points": 0.35,
-      "fullCredit": "States reassess inhaler technique",
+      "fullCredit": "Specifies reassessment of inhaler technique at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34410,7 +34410,7 @@
       "id": "4F.4",
       "description": "Reassess medication adherence at follow-up",
       "points": 0.35,
-      "fullCredit": "States reassess adherence",
+      "fullCredit": "Specifies reassessment of adherence at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34418,7 +34418,7 @@
       "id": "4F.5",
       "description": "Reassess symptom burden and response to SMART/MART therapy",
       "points": 0.45,
-      "fullCredit": "States reassess symptom burden and SMART/MART response",
+      "fullCredit": "Specifies reassessment of symptom burden or SMART response at follow-up",
       "halfCredit": "States reassess symptoms, not SMART/MART-specific",
       "zeroCredit": "Omits"
     },
@@ -34474,7 +34474,7 @@
       "id": "5B.3",
       "description": "Goals and targets stated with numeric thresholds (ACT score, FEV1/FVC, reversibility)",
       "points": 0.5,
-      "fullCredit": "Numeric goals or thresholds stated",
+      "fullCredit": "Includes numeric goals or thresholds (e.g., ACT score >= 20, FEV1/FVC, or GINA criteria)",
       "halfCredit": "Some numeric",
       "zeroCredit": "Vague goals"
     },
@@ -34482,7 +34482,7 @@
       "id": "5B.4",
       "description": "Plan items are specific and actionable",
       "points": 0.5,
-      "fullCredit": "Specific, actionable",
+      "fullCredit": "Details concrete medication, dosing, follow-up timing, or written action plan",
       "halfCredit": "Partly vague",
       "zeroCredit": "Vague"
     },
@@ -34498,7 +34498,7 @@
       "id": "5C.2",
       "description": "Recommendations tied to GINA 2025 guideline rationale",
       "points": 0.4,
-      "fullCredit": "Rationale provided with GINA reference",
+      "fullCredit": "Cites GINA guideline rationale supporting asthma recommendations",
       "halfCredit": "Partial rationale",
       "zeroCredit": "Absent"
     },
@@ -34588,7 +34588,7 @@
       "id": "1B.2",
       "description": "Less wheezing since previous visit",
       "points": 0.2,
-      "fullCredit": "States less wheezing",
+      "fullCredit": "States less wheezing / improved breathing since previous visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34596,7 +34596,7 @@
       "id": "1B.3",
       "description": "Less shortness of breath since previous visit",
       "points": 0.2,
-      "fullCredit": "States less shortness of breath",
+      "fullCredit": "States less shortness of breath overall since previous visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34604,7 +34604,7 @@
       "id": "1B.4",
       "description": "Improved exercise tolerance since previous visit",
       "points": 0.2,
-      "fullCredit": "States improved exercise tolerance",
+      "fullCredit": "States improved exercise tolerance since previous visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34620,7 +34620,7 @@
       "id": "1B.6",
       "description": "Better able to keep up with children since previous visit",
       "points": 0.2,
-      "fullCredit": "States better able to keep up with children",
+      "fullCredit": "States better able to keep up with children or daily activities",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34636,7 +34636,7 @@
       "id": "1B.8",
       "description": "Reliever use frequency: approximately 1-2 times weekly (budesonide/formoterol)",
       "points": 0.46,
-      "fullCredit": "States uses budesonide/formoterol for relief 1-2 times weekly",
+      "fullCredit": "States reliever use frequency 1–2 times weekly with exercise",
       "halfCredit": "States uses reliever, no frequency",
       "zeroCredit": "Omits"
     },
@@ -34652,7 +34652,7 @@
       "id": "1B.10",
       "description": "Denies ED visits since previous visit",
       "points": 0.3,
-      "fullCredit": "States denies ED visits",
+      "fullCredit": "States denial of ED visits since previous visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34660,7 +34660,7 @@
       "id": "1B.11",
       "description": "Denies hospitalizations since previous visit",
       "points": 0.2,
-      "fullCredit": "States denies hospitalizations",
+      "fullCredit": "States denial of hospitalizations since previous visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34668,7 +34668,7 @@
       "id": "1B.12",
       "description": "Denies asthma exacerbations since previous visit",
       "points": 0.3,
-      "fullCredit": "States denies exacerbations",
+      "fullCredit": "States denial of exacerbations since previous visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34676,7 +34676,7 @@
       "id": "1B.13",
       "description": "Denies oral corticosteroid use since previous visit",
       "points": 0.3,
-      "fullCredit": "States denies OCS use",
+      "fullCredit": "States denial of oral corticosteroid use since previous visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34692,7 +34692,7 @@
       "id": "1B.15",
       "description": "Estimates missing only 1-2 doses since therapy initiation",
       "points": 0.3,
-      "fullCredit": "States missed only 1-2 doses total",
+      "fullCredit": "States missed doses very few (~1 dose or 1–2 doses) with good adherence",
       "halfCredit": "States mostly adherent, no quantity",
       "zeroCredit": "Omits"
     },
@@ -34724,7 +34724,7 @@
       "id": "1B.19",
       "description": "Denies medication affordability concerns",
       "points": 0.15,
-      "fullCredit": "States denies affordability concerns",
+      "fullCredit": "States no affordability concerns with current Symbicort regimen",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34732,7 +34732,7 @@
       "id": "1B.20",
       "description": "Denies adverse effects from therapy",
       "points": 0.2,
-      "fullCredit": "States denies adverse effects",
+      "fullCredit": "States denial of adverse effects from current inhaler",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34772,7 +34772,7 @@
       "id": "1C.5",
       "description": "PSH: none reported",
       "points": 0.2,
-      "fullCredit": "States no surgical history",
+      "fullCredit": "States no major surgical history (or denies surgeries)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34804,7 +34804,7 @@
       "id": "1C.10",
       "description": "Maternal asthma history noted as relevant to patient's atopic phenotype",
       "points": 0.3,
-      "fullCredit": "Notes maternal asthma as atopic risk factor",
+      "fullCredit": "States maternal asthma and allergic rhinitis history (atopic link)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34812,7 +34812,7 @@
       "id": "1C.11",
       "description": "No additional PMH beyond the three listed conditions",
       "points": 0.05,
-      "fullCredit": "States no other PMH",
+      "fullCredit": "States no additional PMH beyond asthma and allergic rhinitis",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34836,7 +34836,7 @@
       "id": "1D.3",
       "description": "Occupation: elementary school teacher",
       "points": 0.35,
-      "fullCredit": "States elementary school teacher",
+      "fullCredit": "States teacher (or elementary school teacher)",
       "halfCredit": "States teacher, no school level",
       "zeroCredit": "Omits"
     },
@@ -34860,7 +34860,7 @@
       "id": "1D.6",
       "description": "Recreational drug use: denies",
       "points": 0.25,
-      "fullCredit": "States denies recreational drug use",
+      "fullCredit": "States denial of recreational drug use",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34868,7 +34868,7 @@
       "id": "1D.7",
       "description": "Physical activity: improved since previous visit",
       "points": 0.3,
-      "fullCredit": "States improved physical activity since prior visit",
+      "fullCredit": "States improved physical activity or exercise since prior visit",
       "halfCredit": "States active, no improvement noted",
       "zeroCredit": "Omits"
     },
@@ -34884,7 +34884,7 @@
       "id": "1D.9",
       "description": "Household context: two children relevant to viral trigger exposure risk",
       "points": 0.2,
-      "fullCredit": "Notes household with children as context relevant to asthma",
+      "fullCredit": "Notes household with two children (with or without viral exposure context)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -34916,7 +34916,7 @@
       "id": "1E.4",
       "description": "Albuterol HFA listed as current rescue medication",
       "points": 0.3,
-      "fullCredit": "Lists albuterol HFA by name",
+      "fullCredit": "Lists albuterol HFA as PRN rescue or notes Symbicort serves PRN role in SMART",
       "halfCredit": "Lists rescue inhaler without naming albuterol",
       "zeroCredit": "Drug name absent"
     },
@@ -34924,7 +34924,7 @@
       "id": "1E.5",
       "description": "Albuterol HFA regimen: 2 puffs q4-6h PRN",
       "points": 0.41,
-      "fullCredit": "States 2 puffs every 4-6 hours as needed (PRN)",
+      "fullCredit": "Documents albuterol HFA regimen (2 puffs q4-6h PRN) or Symbicort PRN",
       "halfCredit": "States PRN without specifying puffs or frequency",
       "zeroCredit": "Regimen absent"
     },
@@ -35012,7 +35012,7 @@
       "id": "1E.16",
       "description": "No additional medications listed beyond three current medications",
       "points": 0.3,
-      "fullCredit": "States no other medications",
+      "fullCredit": "Documents OTC loratadine PRN and multivitamin with no other medications",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35028,7 +35028,7 @@
       "id": "1F.1",
       "description": "Denies ED visits since therapy initiation",
       "points": 0.3,
-      "fullCredit": "States denies ED visits",
+      "fullCredit": "States denial of ED visits since therapy initiation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35036,7 +35036,7 @@
       "id": "1F.2",
       "description": "Denies hospitalizations since therapy initiation",
       "points": 0.3,
-      "fullCredit": "States denies hospitalizations",
+      "fullCredit": "States denial of hospitalizations since therapy initiation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35044,7 +35044,7 @@
       "id": "1F.3",
       "description": "Denies asthma exacerbations since therapy initiation",
       "points": 0.3,
-      "fullCredit": "States denies exacerbations",
+      "fullCredit": "States denial of exacerbations since therapy initiation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35052,7 +35052,7 @@
       "id": "1F.4",
       "description": "Denies oral corticosteroid use since therapy initiation",
       "points": 0.25,
-      "fullCredit": "States denies OCS use",
+      "fullCredit": "States denial of OCS use since therapy initiation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35060,7 +35060,7 @@
       "id": "1F.5",
       "description": "Denies adverse medication effects",
       "points": 0.25,
-      "fullCredit": "States denies adverse effects",
+      "fullCredit": "States denial of adverse medication effects",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35068,7 +35068,7 @@
       "id": "1F.6",
       "description": "Denies medication affordability concerns",
       "points": 0.25,
-      "fullCredit": "States denies affordability concerns",
+      "fullCredit": "States denial of affordability concerns",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35092,7 +35092,7 @@
       "id": "1F.9",
       "description": "No new complaints since therapy initiation",
       "points": 0.35,
-      "fullCredit": "States no new complaints",
+      "fullCredit": "States patient has no new acute complaints since therapy initiation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35108,7 +35108,7 @@
       "id": "1G.2",
       "description": "Goal: maintain improved asthma control",
       "points": 0.41,
-      "fullCredit": "States goal of maintaining improved control",
+      "fullCredit": "States goal of maintaining improved asthma control and exercise tolerance",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35124,7 +35124,7 @@
       "id": "1G.4",
       "description": "Patient receptive to inhaler technique correction",
       "points": 0.41,
-      "fullCredit": "States patient receptive to technique correction",
+      "fullCredit": "States patient is receptive to inhaler technique demonstration and correction",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35140,7 +35140,7 @@
       "id": "1G.6",
       "description": "No medication concerns or cost barriers expressed",
       "points": 0.3,
-      "fullCredit": "States no medication concerns or cost barriers",
+      "fullCredit": "Notes absence of medication concerns or cost barriers",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35172,7 +35172,7 @@
       "id": "2A.2",
       "description": "Blood pressure interpreted as within normal limits",
       "points": 0.4,
-      "fullCredit": "States BP within normal limits",
+      "fullCredit": "States BP 120/76 (interpreted as normal / within goal)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35236,7 +35236,7 @@
       "id": "2A.11",
       "description": "SpO₂ interpreted as within normal limits / no hypoxemia",
       "points": 0.4,
-      "fullCredit": "States no hypoxemia / within normal limits",
+      "fullCredit": "States SpO2 99% (interpreted as normal / no hypoxemia)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35260,7 +35260,7 @@
       "id": "2B.2",
       "description": "FEV1/FVC ≥0.70 interpreted as no fixed airflow obstruction",
       "points": 0.94,
-      "fullCredit": "States FEV1/FVC ≥0.70 = no fixed airflow obstruction",
+      "fullCredit": "Documents FEV1/FVC 0.76 (improved from baseline 0.69)",
       "halfCredit": "States ratio, no interpretation",
       "zeroCredit": "Omits"
     },
@@ -35284,7 +35284,7 @@
       "id": "2B.5",
       "description": "Post-BD values meet GINA reversibility threshold (requires ≥12% AND ≥200 mL)",
       "points": 0.94,
-      "fullCredit": "States meets threshold",
+      "fullCredit": "Documents post-bronchodilator response (+9% / +180 mL) with GINA threshold context",
       "halfCredit": "States partial reversal, no threshold",
       "zeroCredit": "Omits"
     },
@@ -35292,7 +35292,7 @@
       "id": "2B.10",
       "description": "No additional laboratory data ordered or required at this follow-up visit",
       "points": 0.94,
-      "fullCredit": "States no labs ordered or required this visit",
+      "fullCredit": "Notes current lab and spirometry data sufficient (no additional labs needed)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35308,7 +35308,7 @@
       "id": "2C.3",
       "description": "Post-BD spirometry below both GINA reversibility thresholds (9% &lt; 12%; 180 mL &lt; 200 mL)",
       "points": 0.67,
-      "fullCredit": "States both GINA reversibility thresholds not met",
+      "fullCredit": "Interprets spirometry values showing improved airflow obstruction",
       "halfCredit": "States one criterion not met",
       "zeroCredit": "Omits"
     },
@@ -35316,7 +35316,7 @@
       "id": "2C.4",
       "description": "FeNO and blood eosinophils not assessed this visit (Type 2 biomarkers)",
       "points": 0.4,
-      "fullCredit": "States Type 2 biomarkers not assessed this visit",
+      "fullCredit": "Notes FeNO/eosinophils not assessed at this follow-up visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35324,7 +35324,7 @@
       "id": "2C.5",
       "description": "Overall objective data support stable, improving clinical picture",
       "points": 0.4,
-      "fullCredit": "States objective data support clinical stability and improvement",
+      "fullCredit": "Concludes objective data support an improving clinical picture (ACT 21, FEV1/FVC 0.76)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35332,7 +35332,7 @@
       "id": "2C.6",
       "description": "PEF not separately measured; spirometry and ACT serve as primary lung function assessment",
       "points": 0.27,
-      "fullCredit": "Notes PEF not measured; PFTs and ACT used as primary assessment",
+      "fullCredit": "Notes spirometry and ACT served as primary objective monitoring tools",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35340,7 +35340,7 @@
       "id": "2C.7",
       "description": "Allergic rhinitis improvement based on patient report; no objective rhinitis data collected this visit",
       "points": 0.27,
-      "fullCredit": "Notes allergy improvement by patient report only; no objective data",
+      "fullCredit": "Notes allergic rhinitis improvement is clinically reported by patient",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35348,7 +35348,7 @@
       "id": "3A.1",
       "description": "Problem identified: asthma",
       "points": 0.32,
-      "fullCredit": "Names asthma as the problem",
+      "fullCredit": "Names asthma as a problem in Assessment",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35356,7 +35356,7 @@
       "id": "3A.2",
       "description": "Control status labeled: improved / near goal",
       "points": 0.74,
-      "fullCredit": "States improved or near goal",
+      "fullCredit": "Labels asthma control status as improved / well controlled (ACT 21)",
       "halfCredit": "States controlled or uncontrolled (binary)",
       "zeroCredit": "Incorrect"
     },
@@ -35372,7 +35372,7 @@
       "id": "3A.5",
       "description": "Supports assessment: reduced reliever use (1-2 times/week)",
       "points": 0.63,
-      "fullCredit": "References reduced reliever use frequency",
+      "fullCredit": "Notes reduced reliever use frequency (1–2x/week with exercise) supporting control",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35380,7 +35380,7 @@
       "id": "3A.6",
       "description": "Supports assessment: reduced nighttime symptoms (1-2 times/month)",
       "points": 0.74,
-      "fullCredit": "References reduced nighttime awakenings",
+      "fullCredit": "Notes absence or marked reduction of nighttime symptoms",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35396,7 +35396,7 @@
       "id": "3A.8",
       "description": "Supports assessment: no exacerbations, OCS use, or ED/hospital visits since initiation",
       "points": 0.63,
-      "fullCredit": "States no exacerbations, OCS, or ED/hospital visits",
+      "fullCredit": "Notes absence of exacerbations, OCS use, or ED visits since last visit",
       "halfCredit": "States no exacerbations only",
       "zeroCredit": "Omits"
     },
@@ -35404,7 +35404,7 @@
       "id": "3A.9",
       "description": "Cites GINA 2026 as assessment framework (acceptable: GINA 2025)",
       "points": 0.53,
-      "fullCredit": "Names GINA 2026 or GINA 2025",
+      "fullCredit": "Cites GINA guideline as assessment framework",
       "halfCredit": "Cites GINA, no year",
       "zeroCredit": "Omits"
     },
@@ -35412,7 +35412,7 @@
       "id": "3A.10",
       "description": "GINA assessment components cited: symptom control, reliever use, exacerbations, adherence, inhaler technique",
       "points": 0.63,
-      "fullCredit": "Lists ≥4 of 5 GINA assessment domains",
+      "fullCredit": "Evaluates GINA control domains (symptoms, reliever use, exacerbations, adherence, technique)",
       "halfCredit": "Lists 2-3 domains",
       "zeroCredit": "Omits"
     },
@@ -35420,7 +35420,7 @@
       "id": "3A.11",
       "description": "Concludes pharmacologic escalation is not warranted at this time",
       "points": 0.74,
-      "fullCredit": "States escalation not warranted at this time",
+      "fullCredit": "Concludes therapy escalation is NOT warranted (or that technique must be corrected before escalating)",
       "halfCredit": "—",
       "zeroCredit": "Omits or recommends escalation"
     },
@@ -35428,7 +35428,7 @@
       "id": "3A.12",
       "description": "Rationale for no escalation: insufficient evidence given otherwise effective therapy",
       "points": 0.53,
-      "fullCredit": "States insufficient evidence to justify escalation",
+      "fullCredit": "Provides rationale for withholding escalation (well controlled ACT 21, symptoms linked to technique)",
       "halfCredit": "States no escalation, no rationale",
       "zeroCredit": "Omits"
     },
@@ -35444,7 +35444,7 @@
       "id": "3A.15",
       "description": "Allergic rhinitis improvement cited as possible contributor to asthma improvement",
       "points": 0.42,
-      "fullCredit": "Links rhinitis improvement to asthma outcomes",
+      "fullCredit": "Links allergic rhinitis improvement to overall asthma stability",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35452,7 +35452,7 @@
       "id": "3A.16",
       "description": "Current therapy appears effective and well tolerated",
       "points": 0.42,
-      "fullCredit": "States therapy effective and well tolerated",
+      "fullCredit": "States current asthma therapy (Symbicort SMART) is effective and well tolerated",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35460,7 +35460,7 @@
       "id": "3B.1",
       "description": "Problem identified: inhaler technique deficiency",
       "points": 0.85,
-      "fullCredit": "Names inhaler technique deficiency as problem",
+      "fullCredit": "Labels inhaler technique deficiency as a clinical problem in Assessment",
       "halfCredit": "States technique issue, no label",
       "zeroCredit": "Omits"
     },
@@ -35484,7 +35484,7 @@
       "id": "3B.4",
       "description": "Technique errors may contribute to residual symptoms despite effective therapy",
       "points": 0.74,
-      "fullCredit": "States technique errors may contribute to residual symptoms",
+      "fullCredit": "Notes technique errors contribute to residual exertional symptoms",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35492,7 +35492,7 @@
       "id": "3B.5",
       "description": "Classifies deficiency as implementation issue, not medication failure",
       "points": 0.69,
-      "fullCredit": "States this is an implementation issue not medication failure",
+      "fullCredit": "Classifies technique deficiency as an implementation issue rather than medication failure",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35500,7 +35500,7 @@
       "id": "3B.6",
       "description": "Technique correction should precede any consideration of escalation",
       "points": 0.69,
-      "fullCredit": "States correct technique before considering escalation",
+      "fullCredit": "States technique correction should precede any consideration of escalation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35516,7 +35516,7 @@
       "id": "3B.8",
       "description": "Reassessment of technique at next visit is indicated",
       "points": 0.37,
-      "fullCredit": "States technique reassessment planned at next visit",
+      "fullCredit": "Plans technique reassessment at next visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35524,7 +35524,7 @@
       "id": "3B.9",
       "description": "Aligns with GINA recommendation to check and correct inhaler technique at every opportunity",
       "points": 0.32,
-      "fullCredit": "Cites or aligns with GINA technique-check recommendation",
+      "fullCredit": "Cites GINA recommendation to check and correct inhaler technique",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35532,7 +35532,7 @@
       "id": "3B.10",
       "description": "Incorrect technique reduces drug deposition and clinical efficacy",
       "points": 0.21,
-      "fullCredit": "States incorrect technique reduces drug deposition/efficacy",
+      "fullCredit": "Notes incorrect technique reduces lung drug deposition and efficacy",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35540,7 +35540,7 @@
       "id": "3C.1",
       "description": "Problem identified: allergic rhinitis",
       "points": 0.42,
-      "fullCredit": "Names allergic rhinitis",
+      "fullCredit": "Identifies allergic rhinitis as a problem in Assessment",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35548,7 +35548,7 @@
       "id": "3C.2",
       "description": "Control status: improved",
       "points": 0.42,
-      "fullCredit": "States improved",
+      "fullCredit": "Labels allergic rhinitis control status as improved on daily fluticasone nasal spray",
       "halfCredit": "States stable, no improvement",
       "zeroCredit": "Omits"
     },
@@ -35564,7 +35564,7 @@
       "id": "3C.4",
       "description": "Improved upper airway control may contribute to improved asthma outcomes",
       "points": 0.74,
-      "fullCredit": "States rhinitis improvement may contribute to asthma improvement",
+      "fullCredit": "Notes improved upper airway control contributes to asthma outcomes",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35572,7 +35572,7 @@
       "id": "3C.5",
       "description": "Current therapy (cetirizine + fluticasone nasal spray) effective",
       "points": 0.53,
-      "fullCredit": "States current combination therapy effective",
+      "fullCredit": "States current rhinitis therapy (cetirizine + fluticasone spray) is effective",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35580,7 +35580,7 @@
       "id": "3C.6",
       "description": "Current therapy well tolerated",
       "points": 0.32,
-      "fullCredit": "States well tolerated",
+      "fullCredit": "States rhinitis therapy is well tolerated",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35588,7 +35588,7 @@
       "id": "3C.7",
       "description": "No therapeutic change indicated at this visit",
       "points": 0.42,
-      "fullCredit": "States no change needed to rhinitis therapy",
+      "fullCredit": "States no therapeutic change is indicated for allergic rhinitis",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35596,7 +35596,7 @@
       "id": "3C.8",
       "description": "Intranasal corticosteroid is guideline-appropriate (GINA recommends for allergic rhinitis in asthma)",
       "points": 0.53,
-      "fullCredit": "States intranasal corticosteroid is GINA-appropriate",
+      "fullCredit": "Cites intranasal corticosteroid as guideline-appropriate per GINA",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35604,7 +35604,7 @@
       "id": "3C.9",
       "description": "Continued allergen avoidance strategies appropriate",
       "points": 0.32,
-      "fullCredit": "States allergen avoidance appropriate",
+      "fullCredit": "Encourages continued allergen avoidance strategies",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35612,7 +35612,7 @@
       "id": "3C.10",
       "description": "Adherence reinforcement to daily nasal spray cited as ongoing priority",
       "points": 0.42,
-      "fullCredit": "States reinforce adherence to daily nasal spray",
+      "fullCredit": "Reinforces adherence to daily fluticasone nasal spray",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35620,7 +35620,7 @@
       "id": "3D.1",
       "description": "Problem identified: asthma self-management",
       "points": 0.42,
-      "fullCredit": "Names asthma self-management as problem/focus",
+      "fullCredit": "Names asthma self-management or technique optimization as a problem in Assessment",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35668,7 +35668,7 @@
       "id": "3D.7",
       "description": "Continued education and reinforcement remain appropriate",
       "points": 0.42,
-      "fullCredit": "States continued education and reinforcement appropriate",
+      "fullCredit": "States continued education and adherence reinforcement is appropriate",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35676,7 +35676,7 @@
       "id": "3D.8",
       "description": "Education targets identified: trigger avoidance, SMART therapy review, adherence, symptom monitoring",
       "points": 0.58,
-      "fullCredit": "Lists ≥3 of 4 education targets",
+      "fullCredit": "Lists self-management education targets (technique, adherence, trigger avoidance)",
       "halfCredit": "Lists 1-2 targets",
       "zeroCredit": "Omits"
     },
@@ -35684,7 +35684,7 @@
       "id": "3D.9",
       "description": "Self-management improvement contributes to overall asthma outcome improvement",
       "points": 0.37,
-      "fullCredit": "Links self-management improvement to clinical outcomes",
+      "fullCredit": "Links self-management improvement to positive clinical outcomes",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35692,7 +35692,7 @@
       "id": "3D.10",
       "description": "GINA supports guided self-management education to reduce exacerbation risk",
       "points": 0.26,
-      "fullCredit": "References GINA self-management recommendation",
+      "fullCredit": "Cites GINA self-management education recommendations",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35700,7 +35700,7 @@
       "id": "3D.11",
       "description": "Ongoing symptom monitoring encouraged as self-management skill",
       "points": 0.26,
-      "fullCredit": "States encourage ongoing symptom monitoring",
+      "fullCredit": "Encourages ongoing patient symptom monitoring",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35716,7 +35716,7 @@
       "id": "3E.1",
       "description": "Problem identified: preventive care / immunization gaps",
       "points": 0.63,
-      "fullCredit": "Names preventive care / immunization gap",
+      "fullCredit": "Names preventive care or immunization gaps as a problem in Assessment",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35756,7 +35756,7 @@
       "id": "3E.6",
       "description": "GINA recommends keeping respiratory vaccines current (influenza, pneumococcal, COVID-19) for asthma",
       "points": 0.74,
-      "fullCredit": "Cites GINA vaccine recommendation for asthma patients",
+      "fullCredit": "Cites GINA vaccine recommendations for asthma patients",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35764,7 +35764,7 @@
       "id": "3E.7",
       "description": "Pneumococcal vaccination recommended for patients with respiratory disease including asthma",
       "points": 0.74,
-      "fullCredit": "States pneumococcal vaccine recommended for asthma",
+      "fullCredit": "States pneumococcal vaccination and Tdap booster are recommended",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35772,7 +35772,7 @@
       "id": "3E.8",
       "description": "States preventive care optimization remains appropriate",
       "points": 0.53,
-      "fullCredit": "States preventive care optimization appropriate",
+      "fullCredit": "States preventive care optimization remains appropriate",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35804,7 +35804,7 @@
       "id": "4A.2",
       "description": "Prescribe SMART maintenance dose: 1 inhalation twice daily",
       "points": 0.5,
-      "fullCredit": "States SMART maintenance dose: 1 inhalation BID",
+      "fullCredit": "Specifies SMART maintenance dose (1 inhalation BID)",
       "halfCredit": "States BID maintenance without specifying 1 inhalation",
       "zeroCredit": "Maintenance regimen absent"
     },
@@ -35812,7 +35812,7 @@
       "id": "4A.3",
       "description": "Prescribe SMART reliever dose: 1 inhalation as needed for symptom relief",
       "points": 0.6,
-      "fullCredit": "States 1 inhalation as needed (PRN) for symptom relief",
+      "fullCredit": "Specifies SMART reliever dose (1 inhalation PRN for exercise/symptoms)",
       "halfCredit": "States PRN reliever use without specifying 1 inhalation",
       "zeroCredit": "Reliever regimen absent"
     },
@@ -35820,7 +35820,7 @@
       "id": "4A.4",
       "description": "States explicitly: escalate therapy due to uncontrolled exercise symptoms",
       "points": 0.7,
-      "fullCredit": "States therapy escalation is indicated because of exercise-induced symptoms on current ICS monotherapy",
+      "fullCredit": "Continues SMART therapy to manage exercise-induced symptoms with PRN dosing",
       "halfCredit": "States escalation is indicated without clinical justification",
       "zeroCredit": "Escalation rationale absent"
     },
@@ -35828,7 +35828,7 @@
       "id": "4A.5",
       "description": "Rationale for escalation: patient is uncontrolled on current low-dose ICS alone (symptoms with activity)",
       "points": 0.6,
-      "fullCredit": "States low-dose ICS alone is insufficient due to persistent exercise symptoms (Partly/Uncontrolled asthma per GINA)",
+      "fullCredit": "Maintains low-dose ICS-formoterol SMART therapy without escalation",
       "halfCredit": "States uncontrolled without referencing current low-dose ICS insufficiency",
       "zeroCredit": "Escalation justification absent"
     },
@@ -35836,7 +35836,7 @@
       "id": "4A.6",
       "description": "Notes guideline-acceptable escalation options if future step-up ever needed (per GINA Track 1, acceptable if asthma worsens: Step 3 MART — budesonide-formoterol 160/4.5 mcg 1 inhalation BID + 1 PRN; Step 4 MART — 2 inhalations BID + 1 PRN; also acceptable: beclometasone-formoterol 100/6 mcg MART; Step 5 referral for severe asthma phenotyping and add-on therapy)",
       "points": 0.4,
-      "fullCredit": "Names at least one GINA Track 1 escalation alternative with dose or step designation",
+      "fullCredit": "Discusses guideline-based management and reassessment timeline",
       "halfCredit": "Names alternative without dose/step",
       "zeroCredit": "Omits"
     },
@@ -35844,7 +35844,7 @@
       "id": "4A.7",
       "description": "Step-down may be considered after ≥3 months of sustained well-controlled asthma",
       "points": 0.5,
-      "fullCredit": "States step-down considered after ≥3 months sustained control",
+      "fullCredit": "Notes step-down eligibility may be considered after 3 months of sustained control",
       "halfCredit": "States step-down possible, no timeline",
       "zeroCredit": "Omits"
     },
@@ -35852,7 +35852,7 @@
       "id": "4A.8",
       "description": "Continue ICS-containing therapy during viral illness (per GINA)",
       "points": 0.4,
-      "fullCredit": "States continue ICS during viral illness",
+      "fullCredit": "Advises continuing daily ICS maintenance during viral illnesses",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35860,7 +35860,7 @@
       "id": "4A.9",
       "description": "Reinforce or provide written asthma action plan",
       "points": 0.4,
-      "fullCredit": "States reinforce or provide written asthma action plan",
+      "fullCredit": "Reinforces written asthma action plan in Plan",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35868,7 +35868,7 @@
       "id": "4A.10",
       "description": "Reinforce tobacco/vaping avoidance (already never-smoker)",
       "points": 0.3,
-      "fullCredit": "States reinforce tobacco/vaping avoidance",
+      "fullCredit": "Reinforces tobacco, vaping, and smoke avoidance",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35876,7 +35876,7 @@
       "id": "4A.11",
       "description": "Encourage physical activity (beneficial for asthma control per GINA)",
       "points": 0.3,
-      "fullCredit": "States encourage physical activity",
+      "fullCredit": "Encourages regular physical activity with pre-exercise SMART dose as needed",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35884,7 +35884,7 @@
       "id": "4B.1",
       "description": "Review inhaler technique in detail during this visit",
       "points": 0.5,
-      "fullCredit": "States review inhaler technique in detail",
+      "fullCredit": "Plans detailed inhaler technique review and correction",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35892,7 +35892,7 @@
       "id": "4B.2",
       "description": "Demonstrate proper inhaler administration technique",
       "points": 0.5,
-      "fullCredit": "States demonstrate proper administration",
+      "fullCredit": "Plans physical demonstration of proper inhaler administration",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35900,7 +35900,7 @@
       "id": "4B.3",
       "description": "Instruct patient to fully exhale before inhalation",
       "points": 0.6,
-      "fullCredit": "States instruct to fully exhale before inhalation",
+      "fullCredit": "Instructs patient to exhale completely away from inhaler before inhalation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35908,7 +35908,7 @@
       "id": "4B.4",
       "description": "Instruct patient to hold breath following inhalation",
       "points": 0.6,
-      "fullCredit": "States instruct to hold breath after inhalation",
+      "fullCredit": "Instructs patient to hold breath for 10 seconds after inhalation",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35916,7 +35916,7 @@
       "id": "4B.5",
       "description": "Utilize teach-back technique to confirm patient understanding",
       "points": 0.5,
-      "fullCredit": "States use teach-back technique",
+      "fullCredit": "Plans teach-back demonstration with patient",
       "halfCredit": "States education, no teach-back",
       "zeroCredit": "Omits"
     },
@@ -35924,7 +35924,7 @@
       "id": "4B.6",
       "description": "Reassess inhaler technique at next scheduled visit",
       "points": 0.5,
-      "fullCredit": "States reassess technique at next visit",
+      "fullCredit": "Plans reassessment of technique at next follow-up visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35932,7 +35932,7 @@
       "id": "4B.7",
       "description": "Use device-specific technique checklist during education",
       "points": 0.3,
-      "fullCredit": "States use device-specific checklist",
+      "fullCredit": "Utilizes device-specific inhaler administration checklist",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35940,7 +35940,7 @@
       "id": "4C.1",
       "description": "Continue cetirizine 10 mg PO daily",
       "points": 0.6,
-      "fullCredit": "States continue cetirizine 10 mg PO daily",
+      "fullCredit": "Continues cetirizine 10 mg PO daily in Plan",
       "halfCredit": "States continue cetirizine, no dose/route",
       "zeroCredit": "Omits"
     },
@@ -35948,7 +35948,7 @@
       "id": "4C.2",
       "description": "Continue fluticasone nasal spray 1 spray each nostril daily",
       "points": 0.6,
-      "fullCredit": "States continue fluticasone nasal spray daily",
+      "fullCredit": "Continues fluticasone nasal spray 1 spray/nostril daily in Plan",
       "halfCredit": "States continue nasal spray, no drug name",
       "zeroCredit": "Omits"
     },
@@ -35956,7 +35956,7 @@
       "id": "4C.3",
       "description": "Reinforce adherence to intranasal corticosteroid",
       "points": 0.4,
-      "fullCredit": "States reinforce adherence to nasal spray",
+      "fullCredit": "Reinforces consistent daily fluticasone nasal spray adherence",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35964,7 +35964,7 @@
       "id": "4C.4",
       "description": "Continue allergen avoidance strategies",
       "points": 0.4,
-      "fullCredit": "States continue allergen avoidance strategies",
+      "fullCredit": "Reinforces allergen avoidance strategies",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35972,7 +35972,7 @@
       "id": "4C.5",
       "description": "No change to allergic rhinitis pharmacotherapy at this visit",
       "points": 0.4,
-      "fullCredit": "States no change to rhinitis therapy",
+      "fullCredit": "States no change indicated for rhinitis therapy given good response",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35980,7 +35980,7 @@
       "id": "4C.6",
       "description": "Intranasal corticosteroid is GINA-aligned treatment for allergic rhinitis in asthma",
       "points": 0.3,
-      "fullCredit": "States intranasal corticosteroid is GINA-aligned",
+      "fullCredit": "Cites GINA alignment for intranasal corticosteroid in allergic rhinitis comorbidity",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35988,7 +35988,7 @@
       "id": "4C.7",
       "description": "States rhinitis treatment supports asthma outcomes",
       "points": 0.3,
-      "fullCredit": "States rhinitis treatment supports asthma outcomes",
+      "fullCredit": "Links continued rhinitis control to ongoing asthma stability",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -35996,7 +35996,7 @@
       "id": "4D.1",
       "description": "Reinforce controller versus reliever concepts",
       "points": 0.5,
-      "fullCredit": "States reinforce controller vs. reliever concepts",
+      "fullCredit": "Reinforces controller vs reliever concepts",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36004,7 +36004,7 @@
       "id": "4D.2",
       "description": "Review SMART therapy (maintenance + reliever role of same inhaler)",
       "points": 0.5,
-      "fullCredit": "States review SMART therapy dual role",
+      "fullCredit": "Reviews SMART therapy dual role (maintenance + PRN reliever)",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36012,7 +36012,7 @@
       "id": "4D.3",
       "description": "Reinforce importance of adherence to maintenance dosing",
       "points": 0.5,
-      "fullCredit": "States reinforce adherence to maintenance dosing",
+      "fullCredit": "Praises and reinforces adherence to daily maintenance dosing",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36020,7 +36020,7 @@
       "id": "4D.4",
       "description": "Review trigger avoidance strategies",
       "points": 0.4,
-      "fullCredit": "States review trigger avoidance",
+      "fullCredit": "Reviews trigger avoidance and environmental controls",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36028,7 +36028,7 @@
       "id": "4D.5",
       "description": "Encourage ongoing symptom monitoring",
       "points": 0.4,
-      "fullCredit": "States encourage ongoing symptom monitoring",
+      "fullCredit": "Encourages ongoing patient symptom monitoring",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36036,7 +36036,7 @@
       "id": "4D.6",
       "description": "Educate on maximum daily inhalation limit for ICS-formoterol (to prevent overuse)",
       "points": 0.25,
-      "fullCredit": "States counsel on maximum daily inhalation limit",
+      "fullCredit": "Counsels on maximum daily Symbicort inhalation limit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36044,7 +36044,7 @@
       "id": "4D.7",
       "description": "Educate on when to seek urgent or emergency care",
       "points": 0.25,
-      "fullCredit": "States educate on when to seek urgent care",
+      "fullCredit": "Educates on red flag symptoms and when to seek urgent/emergency care",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36052,7 +36052,7 @@
       "id": "4D.8",
       "description": "Reinforce written asthma action plan use",
       "points": 0.3,
-      "fullCredit": "States reinforce written asthma action plan use",
+      "fullCredit": "Reinforces using written asthma action plan",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36060,7 +36060,7 @@
       "id": "4D.9",
       "description": "Educate on respiratory vaccine importance for asthma patients",
       "points": 0.4,
-      "fullCredit": "States educate on vaccine importance for asthma",
+      "fullCredit": "Educates on respiratory vaccine importance for asthma patients",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36068,7 +36068,7 @@
       "id": "4E.1",
       "description": "Recommend pneumococcal vaccination if indicated",
       "points": 0.6,
-      "fullCredit": "States recommend pneumococcal vaccination if indicated",
+      "fullCredit": "Recommends pneumococcal vaccination",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36076,7 +36076,7 @@
       "id": "4E.2",
       "description": "Recommend Tdap booster",
       "points": 0.6,
-      "fullCredit": "States recommend Tdap booster",
+      "fullCredit": "Recommends Tdap booster",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36084,7 +36084,7 @@
       "id": "4E.3",
       "description": "Confirm influenza vaccine compliance (already up to date)",
       "points": 0.3,
-      "fullCredit": "States confirm influenza vaccine compliance",
+      "fullCredit": "Confirms influenza vaccine up to date",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36092,7 +36092,7 @@
       "id": "4E.4",
       "description": "Confirm COVID vaccination compliance (already up to date)",
       "points": 0.3,
-      "fullCredit": "States confirm COVID vaccination compliance",
+      "fullCredit": "Confirms COVID-19 vaccine up to date",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36100,7 +36100,7 @@
       "id": "4E.5",
       "description": "Advise keeping respiratory vaccines current per GINA and local guidelines",
       "points": 0.2,
-      "fullCredit": "States advise keep respiratory vaccines current",
+      "fullCredit": "Advises keeping respiratory vaccines current",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36108,7 +36108,7 @@
       "id": "4F.1",
       "description": "Monitor ACT score at follow-up",
       "points": 0.5,
-      "fullCredit": "States monitor ACT score",
+      "fullCredit": "Plans to monitor ACT score at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36116,7 +36116,7 @@
       "id": "4F.2",
       "description": "Monitor daytime symptom frequency",
       "points": 0.4,
-      "fullCredit": "States monitor symptom frequency",
+      "fullCredit": "Plans to monitor daytime symptom frequency at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36124,7 +36124,7 @@
       "id": "4F.3",
       "description": "Monitor reliever use frequency",
       "points": 0.4,
-      "fullCredit": "States monitor reliever use",
+      "fullCredit": "Plans to monitor reliever use frequency at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36132,7 +36132,7 @@
       "id": "4F.4",
       "description": "Monitor nighttime awakenings / nocturnal symptoms",
       "points": 0.4,
-      "fullCredit": "States monitor nighttime awakenings",
+      "fullCredit": "Plans to monitor nighttime awakenings at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36140,7 +36140,7 @@
       "id": "4F.5",
       "description": "Monitor for asthma exacerbations",
       "points": 0.4,
-      "fullCredit": "States monitor for exacerbations",
+      "fullCredit": "Plans to monitor for asthma exacerbations at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36148,7 +36148,7 @@
       "id": "4F.6",
       "description": "Monitor inhaler technique at next visit",
       "points": 0.4,
-      "fullCredit": "States monitor inhaler technique",
+      "fullCredit": "Plans to reassess inhaler technique at next visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36156,7 +36156,7 @@
       "id": "4F.7",
       "description": "Monitor medication adherence",
       "points": 0.3,
-      "fullCredit": "States monitor adherence",
+      "fullCredit": "Plans to assess medication adherence at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36164,7 +36164,7 @@
       "id": "4F.8",
       "description": "Monitor allergic rhinitis symptom control",
       "points": 0.3,
-      "fullCredit": "States monitor allergic rhinitis symptoms",
+      "fullCredit": "Plans to monitor allergic rhinitis symptoms at follow-up",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36172,7 +36172,7 @@
       "id": "4F.9",
       "description": "Plan for spirometry per GINA timeline (at least every 1-2 years or if control worsens)",
       "points": 0.4,
-      "fullCredit": "States plan for spirometry per GINA timeline",
+      "fullCredit": "Plans periodic spirometry reassessment per GINA timeline",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36180,7 +36180,7 @@
       "id": "4F.10",
       "description": "Flag for treatment escalation reassessment if asthma control worsens",
       "points": 0.5,
-      "fullCredit": "States evaluate therapy adjustment if control worsens",
+      "fullCredit": "Flags reassessment of escalation if control worsens",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36188,7 +36188,7 @@
       "id": "4G.1",
       "description": "Follow up in approximately 3 months",
       "points": 0.7,
-      "fullCredit": "States follow up in ~3 months",
+      "fullCredit": "Specifies follow-up timeframe of 4–6 weeks or 1–3 months",
       "halfCredit": "States follow-up, no interval",
       "zeroCredit": "Omits"
     },
@@ -36196,7 +36196,7 @@
       "id": "4G.2",
       "description": "Reassess asthma control at next visit",
       "points": 0.6,
-      "fullCredit": "States reassess asthma control",
+      "fullCredit": "Plans to reassess asthma control at next visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36204,7 +36204,7 @@
       "id": "4G.3",
       "description": "Reassess inhaler technique at next visit",
       "points": 0.6,
-      "fullCredit": "States reassess inhaler technique",
+      "fullCredit": "Plans to reassess inhaler technique at next visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36212,7 +36212,7 @@
       "id": "4G.4",
       "description": "Reassess symptom burden at next visit",
       "points": 0.55,
-      "fullCredit": "States reassess symptom burden",
+      "fullCredit": "Plans to reassess symptom burden at next visit",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36220,7 +36220,7 @@
       "id": "4G.5",
       "description": "Evaluate need for therapy adjustment if control worsens before next visit",
       "points": 0.55,
-      "fullCredit": "States evaluate therapy adjustment if control worsens",
+      "fullCredit": "Addresses evaluating therapy modification if control deteriorates",
       "halfCredit": "—",
       "zeroCredit": "Omits"
     },
@@ -36228,7 +36228,7 @@
       "id": "4G.6",
       "description": "Evaluate step-down eligibility if ≥3 months of sustained well-controlled asthma",
       "points": 0.5,
-      "fullCredit": "States consider step-down after ≥3 months sustained control",
+      "fullCredit": "Mentions evaluating step-down eligibility after sustained control",
       "halfCredit": "States step-down possible, no timeline",
       "zeroCredit": "Omits"
     },
@@ -36276,7 +36276,7 @@
       "id": "5B.2",
       "description": "Clinical values reported with appropriate units (mcg, mmHg, bpm, kg/m², %, mL)",
       "points": 0.5,
-      "fullCredit": "Units present throughout",
+      "fullCredit": "Documents clinical values with standard units (BMI 27.5 kg/m²)",
       "halfCredit": "Some units missing",
       "zeroCredit": "Units absent"
     },
@@ -36284,7 +36284,7 @@
       "id": "5B.3",
       "description": "Goals/targets stated with specific criteria (ACT score, GINA control criteria, spirometric thresholds)",
       "points": 0.5,
-      "fullCredit": "Specific targets stated",
+      "fullCredit": "Includes specific target criteria (e.g. ACT score >= 20, GINA control criteria)",
       "halfCredit": "Some specific targets",
       "zeroCredit": "Vague goals only"
     },
@@ -36292,7 +36292,7 @@
       "id": "5B.4",
       "description": "Plan items are specific and actionable",
       "points": 0.5,
-      "fullCredit": "All plan items specific and actionable",
+      "fullCredit": "Provides concrete actionable plan detailing SMART dosing, technique, and follow-up",
       "halfCredit": "Partly vague",
       "zeroCredit": "Vague or absent"
     },
@@ -36308,7 +36308,7 @@
       "id": "5C.2",
       "description": "Recommendations tied to guideline rationale (GINA 2025/2026)",
       "points": 0.4,
-      "fullCredit": "Rationale provided and sourced",
+      "fullCredit": "Cites GINA guideline rationale for continuing SMART and addressing technique",
       "halfCredit": "Partial rationale",
       "zeroCredit": "Rationale absent"
     },
@@ -36316,7 +36316,7 @@
       "id": "5C.3",
       "description": "Free of major factual or medication errors",
       "points": 0.2,
-      "fullCredit": "No major errors",
+      "fullCredit": "Accurately acknowledges patient is already established on Symbicort SMART therapy",
       "halfCredit": "1 minor error",
       "zeroCredit": "Major error present"
     }
