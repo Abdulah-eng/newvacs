@@ -103,6 +103,9 @@ const checks = [
   { key: 'Week3_Patient_B_Wednesday', id: '3A.11', test: it => it.zeroCredit === '—', desc: 'Bob Wed: 3A.11 zeroCredit neutralized' },
   { key: 'Week3_Patient_B_Wednesday', id: '4B.4', test: it => it.zeroCredit === '—' && it.fullCredit.includes('coffee'), desc: 'Bob Wed: 4B.4 coffee routine pairing' },
   { key: 'Week3_Patient_B_Wednesday', id: '4B.5', test: it => it.zeroCredit === '—' && it.fullCredit.includes('blow into'), desc: 'Bob Wed: 4B.5 technique education full credit' },
+  { key: 'Week3_Patient_B_Wednesday', id: '4E.6', test: it => it.zeroCredit === '—' && it.fullCredit.includes('exacerbation'), desc: 'Bob Wed: 4E.6 vaccine exacerbation risk link' },
+  { key: 'Week3_Patient_B_Wednesday', id: '4F.5', test: it => it.zeroCredit === '—' && it.fullCredit.includes('exacerbation'), desc: 'Bob Wed: 4F.5 monitoring exacerbation frequency' },
+  { key: 'Week3_Patient_B_Wednesday', id: '4F.8', test: it => it.zeroCredit === '—' && it.fullCredit.includes('preventive'), desc: 'Bob Wed: 4F.8 monitoring vaccine completion' },
   { key: 'Week3_Patient_B_Wednesday', id: '4G.2', test: it => it.zeroCredit === '—', desc: 'Bob Wed: 4G.2 follow-up timing' },
 
   // Bob Thursday
@@ -111,6 +114,7 @@ const checks = [
   { key: 'Week3_Patient_B_Thursday', id: '3A.12', test: it => it.zeroCredit === '—', desc: 'Bob Thu: 3A.12 adherence verified' },
   { key: 'Week3_Patient_B_Thursday', id: '4C.1', test: it => it.zeroCredit === '—' && it.fullCredit.includes('rinse'), desc: 'Bob Thu: 4C.1 mouth rinsing instructions' },
   { key: 'Week3_Patient_B_Thursday', id: '4G.1', test: it => it.zeroCredit === '—', desc: 'Bob Thu: 4G.1 longitudinal monitoring' },
+  { key: 'Week3_Patient_B_Thursday', id: '5A.3', test: it => it.zeroCredit === '—', desc: 'Bob Thu: 5A.3 Problem list structure neutralized' },
 
   // Sarah Thompson
   { key: 'Week3_Patient_A_Tuesday', id: '1B.13', test: it => it.fullCredit.includes('5-day prednisone course 6 weeks ago'), desc: 'Sarah Tue: Accepts 5-day prednisone burst 6 weeks ago' },
@@ -152,6 +156,15 @@ if (!patientsW3Code.includes("Cholecystectomy (laparoscopic gallbladder removal 
   console.log("  PASS: Maria Wed and Thu include explicit PSH (cholecystectomy)");
 }
 
+if (!patientsW3Code.includes("title: 'COPD Exacerbation Risk & Triple Therapy Escalation'") ||
+    !patientsW3Code.includes("title: 'Tobacco Cessation Maintenance & Comorbidity Stability'") ||
+    !patientsW3Code.includes("title: 'Preventive Care Gaps & Vaccine Optimization'")) {
+  console.error("FAIL: Bob Thu missing 3 prioritized assessment cards");
+  failed = true;
+} else {
+  console.log("  PASS: Bob Thu includes 3 prioritized assessment cards mapped to Plan sections");
+}
+
 // Check Bob Thu specifically for ACT score removal
 const bobThuObj = patientsW3Code.slice(patientsW3Code.indexOf("const bobThu ="), patientsW3Code.indexOf("const mariaTue ="));
 if (bobThuObj.includes("ACT Score")) {
@@ -173,11 +186,11 @@ if (!promptsCode.includes("32. For Week 3 encounters (Sarah Thompson, Bob Jenkin
   console.log("  PASS: prompts.js contains comprehensive Rule 32 for Week 3");
 }
 
-if (!promptsCode.includes("Maria Thompson Wednesday:") || !promptsCode.includes("Maria Thompson Thursday:")) {
-  console.error("FAIL: prompts.js missing Maria Thompson sections");
+if (!promptsCode.includes("Bob Jenkins Tuesday:") || !promptsCode.includes("Bob Jenkins Wednesday:") || !promptsCode.includes("Bob Jenkins Thursday:")) {
+  console.error("FAIL: prompts.js missing Bob Jenkins sections");
   failed = true;
 } else {
-  console.log("  PASS: prompts.js contains Maria Thompson Wednesday and Thursday guidelines");
+  console.log("  PASS: prompts.js contains Bob Jenkins Tuesday, Wednesday, and Thursday guidelines");
 }
 
 console.log('\n==================================================');

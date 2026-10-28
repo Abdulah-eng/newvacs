@@ -443,7 +443,7 @@ const bobWed = makeCase({
       { key: 'o3', label: 'Establish behavioral adherence routine: pair daily morning inhaler with morning coffee maker, phone alarms, and visual cues; educate on realistic treatment timeline (gradual benefit over days to weeks); reinforce continued smoking abstinence', correct: true },
     ] },
     { id: 'w3b2_p3', title: 'Preventive Care, Monitoring & Follow-Up', options: [
-      { key: 'o4', label: 'Recommend PCV20, RSV, and Tdap booster vaccinations to reduce respiratory infection risk; follow-up in 4–8 weeks (~3 months) to reassess dyspnea, activity tolerance, CAT score, rescue albuterol use, adherence, and inhaler technique; consider therapy adjustment only if symptoms persist despite verified technique and daily adherence', correct: true },
+      { key: 'o4', label: 'Recommend PCV20, RSV, and Tdap booster vaccinations explicitly to reduce COPD exacerbation risk and provide age-related infectious protection per ACIP and GOLD guidelines; follow-up in 4–8 weeks (~3 months) to reassess dyspnea, activity tolerance, CAT score, rescue albuterol use, adherence, inhaler technique, and future COPD exacerbations; confirm completion and documentation of recommended vaccinations/preventive care at follow-up; consider therapy adjustment only if symptoms persist despite verified technique and daily adherence', correct: true },
     ] },
   ],
 })
@@ -514,13 +514,31 @@ const bobThu = makeCase({
   ASSESSMENT_CARDS: [
     { 
       id: 'w3b3_a1', 
-      title: 'COPD Triple Therapy Escalation Assessment', 
+      title: 'COPD Exacerbation Risk & Triple Therapy Escalation', 
       icon: 'AlertTriangle', 
       color: 'd97706', 
       questions: [
-        { key: 'q1', q: 'Should therapy be escalated to triple therapy (add ICS to LABA/LAMA)?', defaultAnswer: 'Bob has COPD with frequent exacerbations (2 in past 3 months, 3 in past 12 months) and high symptom burden (CAT 17, FEV1 60%) despite verified daily adherence (coffee mug routine) and correct inhaler technique on Anoro Ellipta. Blood eosinophils are 310 cells/µL, exceeding the GOLD threshold (≥300 cells/µL) that strongly predicts ICS benefit. Escalation to single-inhaler triple therapy (Trelegy Ellipta: fluticasone furoate/umeclidinium/vilanterol 100/62.5/25 mcg 1 inh daily) is indicated per GOLD 2026 guidelines. Reinforce sustained 5-year smoking cessation (slows disease progression) and update overdue immunizations.' }
+        { key: 'q1', q: 'Should therapy be escalated to triple therapy (add ICS to LABA/LAMA)?', defaultAnswer: 'Bob has COPD with frequent exacerbations (2 in past 3 months, 3 in past 12 months) and high symptom burden (CAT 17, FEV1 60%) despite verified daily adherence (coffee mug routine) and correct inhaler technique on Anoro Ellipta. Blood eosinophils are 310 cells/µL, exceeding the GOLD threshold (≥300 cells/µL) that strongly predicts ICS benefit. Escalation to single-inhaler triple therapy (Trelegy Ellipta: fluticasone furoate/umeclidinium/vilanterol 100/62.5/25 mcg 1 inh daily) is indicated per GOLD 2026 guidelines.' }
       ] 
     },
+    {
+      id: 'w3b3_a2',
+      title: 'Tobacco Cessation Maintenance & Comorbidity Stability',
+      icon: 'CheckCircle',
+      color: '059669',
+      questions: [
+        { key: 'q2', q: 'How should smoking cessation and cardiovascular comorbidities be managed?', defaultAnswer: 'Sustained 5-year smoking cessation milestone (45 pack-year history, quit 5 years ago) significantly slows lung function decline and reduces mortality; praise continued abstinence and confirm pharmacotherapy is not indicated given stable abstinence. Hypertension is well controlled on lisinopril 20 mg daily (BP 124/72 at goal <130/80), and hyperlipidemia is stable on atorvastatin 40 mg daily for ASCVD risk reduction.' }
+      ]
+    },
+    {
+      id: 'w3b3_a3',
+      title: 'Preventive Care Gaps & Vaccine Optimization',
+      icon: 'ShieldCheck',
+      color: '2563eb',
+      questions: [
+        { key: 'q3', q: 'What preventive care and immunization recommendations are indicated?', defaultAnswer: 'Immunization gaps identified in chronic lung disease: recommend PCV20 (pneumococcal conjugate vaccine) and RSV vaccination, and administer Tdap booster (overdue >10 years) to prevent infectious COPD exacerbations. Confirm influenza and COVID-19 vaccinations remain up to date.' }
+      ]
+    }
   ],
   PLAN_SECTIONS: [
     { id: 'w3b3_p1', title: 'Triple Inhaled Pharmacotherapy Plan', options: [

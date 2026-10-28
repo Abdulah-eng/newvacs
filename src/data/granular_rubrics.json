@@ -37198,9 +37198,9 @@
       "id": "5A.3",
       "description": "Assessment presents a prioritized, numbered problem list",
       "points": 0.5,
-      "fullCredit": "Numbered, prioritized list",
+      "fullCredit": "Structures Assessment as a prioritized, numbered problem list (award full credit whether formatted as multiple numbered problems or unified assessment)",
       "halfCredit": "—",
-      "zeroCredit": "Absent"
+      "zeroCredit": "—"
     },
     {
       "id": "5A.4",
@@ -40818,7 +40818,7 @@
       "id": "4E.6",
       "description": "Links immunization recommendations to patient's COPD diagnosis and age-related infectious risk",
       "points": 0.5,
-      "fullCredit": "Links immunizations to COPD exacerbation risk or age-related infectious protection",
+      "fullCredit": "Links immunizations explicitly to COPD exacerbation risk reduction or age-related infectious protection per ACIP/GOLD guidelines",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -40858,7 +40858,7 @@
       "id": "4F.5",
       "description": "Plans to monitor for COPD exacerbations",
       "points": 0.5,
-      "fullCredit": "Plans monitoring for COPD exacerbations at follow-up",
+      "fullCredit": "Plans monitoring for future COPD exacerbations at follow-up (award full credit even if part of general monitoring plan)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -40882,7 +40882,7 @@
       "id": "4F.8",
       "description": "Includes monitoring for preventive care follow-through (vaccination completion)",
       "points": 0.25,
-      "fullCredit": "Plans monitoring of preventive care or vaccine completion",
+      "fullCredit": "Plans monitoring of preventive care follow-through or vaccine completion at follow-up",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
