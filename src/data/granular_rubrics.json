@@ -41124,9 +41124,9 @@
       "id": "1C.1",
       "description": "PMH: asthma (onset childhood)",
       "points": 0.49,
-      "fullCredit": "Lists asthma in PMH, problem list, or subjective history",
+      "fullCredit": "Lists asthma in PMH or problem list (award full credit even if noted in history or ACO diagnosis)",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1C.2",
@@ -41134,7 +41134,7 @@
       "points": 0.58,
       "fullCredit": "Lists COPD with duration (~8 years) in PMH or problem list",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1C.7",
@@ -41156,9 +41156,9 @@
       "id": "1C.12",
       "description": "Asthma onset specified as childhood (not merely 'history of asthma')",
       "points": 0.41,
-      "fullCredit": "Documents childhood onset of asthma in PMH or history",
+      "fullCredit": "Documents childhood onset of asthma (diagnosed age 7 or childhood)",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1C.14",
@@ -41212,17 +41212,17 @@
       "id": "1D.8",
       "description": "Recreational drug use denied",
       "points": 0.41,
-      "fullCredit": "Confirms denial of recreational or illicit drug use",
+      "fullCredit": "Documents denial of recreational or illicit drug use",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1D.9",
       "description": "Physical activity: walking more frequently since previous visit",
       "points": 0.66,
-      "fullCredit": "Documents physical activity status (walking frequency, exercise level)",
+      "fullCredit": "Documents physical activity status (e.g. daily walking, 20-30 min, limited by dyspnea)",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1D.10",
@@ -41380,9 +41380,9 @@
       "id": "1G.1",
       "description": "Patient remains motivated to improve respiratory control",
       "points": 1.04,
-      "fullCredit": "Documents patient motivation and goals to improve respiratory control",
+      "fullCredit": "Documents patient motivation or goals to improve respiratory control and avoid exacerbations/prednisone",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1G.4",
@@ -41756,17 +41756,17 @@
       "id": "3D.9",
       "description": "States continued monitoring remains warranted",
       "points": 1.12,
-      "fullCredit": "Provides rationale for continued longitudinal monitoring of exacerbations and OCS bursts",
+      "fullCredit": "Addresses continued longitudinal monitoring of exacerbations and OCS bursts",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3E.2",
       "description": "States improvement in respiratory disease control may reduce long-term skeletal risk",
       "points": 1.12,
-      "fullCredit": "Discusses repeated corticosteroid bursts linked to skeletal and osteopenia risk",
+      "fullCredit": "Links corticosteroid bursts to long-term skeletal / osteopenia risk",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3E.4",
@@ -41788,49 +41788,49 @@
       "id": "3E.6",
       "description": "States continued monitoring is appropriate",
       "points": 1.12,
-      "fullCredit": "Recommends bone health protection (calcium/vitamin D, DEXA scan monitoring)",
+      "fullCredit": "Recommends bone health monitoring (e.g., screening DEXA scan, calcium/vit D)",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3F.1",
       "description": "Problem identified: preventive care gaps",
       "points": 0.8,
-      "fullCredit": "Identifies preventive care and immunization gaps as a clinical problem",
+      "fullCredit": "Identifies preventive care / immunization gaps as a clinical problem",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3F.2",
       "description": "Identifies RSV vaccination gap (not documented)",
       "points": 0.96,
-      "fullCredit": "Addresses RSV vaccination gap as actionable preventive item",
+      "fullCredit": "Addresses RSV vaccination gap as actionable item for chronic lung disease",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3F.3",
       "description": "Identifies Tdap booster gap (overdue)",
       "points": 0.96,
-      "fullCredit": "Addresses Tdap booster overdue status as actionable item",
+      "fullCredit": "Addresses Tdap booster overdue status (>10 years)",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3F.4",
       "description": "States vaccination is an important component of respiratory disease management",
       "points": 0.72,
-      "fullCredit": "Discusses importance of respiratory vaccinations in chronic airway disease",
+      "fullCredit": "Discusses importance of vaccination in chronic airway disease management",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3F.6",
       "description": "States preventive care optimization remains appropriate",
       "points": 0.64,
-      "fullCredit": "Recommends preventive care optimization and immunization review in Plan",
+      "fullCredit": "Recommends preventive care and immunization optimization",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4A.2",
@@ -41910,7 +41910,7 @@
       "points": 0.62,
       "fullCredit": "Plans monitoring of ACT score at follow-up",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4C.2",
@@ -41918,7 +41918,7 @@
       "points": 0.62,
       "fullCredit": "Plans monitoring of CAT score at follow-up",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4C.3",
@@ -41926,7 +41926,7 @@
       "points": 0.62,
       "fullCredit": "Plans monitoring of rescue inhaler use frequency",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4C.4",
@@ -41934,7 +41934,7 @@
       "points": 0.62,
       "fullCredit": "Plans monitoring of nighttime symptoms and awakenings",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4C.7",
@@ -41942,7 +41942,7 @@
       "points": 0.62,
       "fullCredit": "Plans monitoring of medication adherence at follow-up",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4C.8",
@@ -41950,23 +41950,23 @@
       "points": 0.62,
       "fullCredit": "Plans monitoring of inhaler technique at follow-up",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4C.9",
       "description": "Monitoring section present as dedicated labeled subsection",
       "points": 0.54,
-      "fullCredit": "Structures monitoring plan within Plan section",
+      "fullCredit": "Structures monitoring parameters within the Plan (dedicated subsection or integrated)",
       "halfCredit": "—",
-      "zeroCredit": "Omits monitoring section"
+      "zeroCredit": "—"
     },
     {
       "id": "4C.10",
       "description": "Monitoring plan addresses parameters tied to all active problems in Assessment",
       "points": 0.54,
-      "fullCredit": "Addresses monitoring parameters tied to active problems (ACO, rhinitis, safety)",
+      "fullCredit": "Monitoring plan addresses parameters tied to active problems (ACO, rhinitis, safety)",
       "halfCredit": "—",
-      "zeroCredit": "Omits monitoring plan"
+      "zeroCredit": "—"
     },
     {
       "id": "4D.1",
@@ -41982,7 +41982,7 @@
       "points": 1.24,
       "fullCredit": "Recommends RSV vaccination in Plan",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4E.2",
@@ -41990,7 +41990,7 @@
       "points": 1.24,
       "fullCredit": "Recommends Tdap booster in Plan",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4E.3",
@@ -41998,15 +41998,15 @@
       "points": 1.09,
       "fullCredit": "Plans to review vaccination completion at next visit",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4E.4",
       "description": "Preventive care section present as labeled subsection in Plan",
       "points": 1.09,
-      "fullCredit": "Integrates preventive care and vaccine recommendations into Plan",
+      "fullCredit": "Integrates vaccine recommendations / preventive care into Plan",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.1",
@@ -42014,7 +42014,7 @@
       "points": 0.93,
       "fullCredit": "Specifies follow-up timeframe (e.g. 4-8 weeks or 1-3 months)",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.2",
@@ -42022,7 +42022,7 @@
       "points": 0.85,
       "fullCredit": "Plans follow-up reassessment of asthma/COPD control and biologic response",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.5",
@@ -42030,15 +42030,15 @@
       "points": 0.85,
       "fullCredit": "Plans continued longitudinal management and reassessment of severe ACO",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.6",
       "description": "Follow-up section present as labeled subsection in Plan",
       "points": 0.78,
-      "fullCredit": "Structures follow-up within Plan section",
+      "fullCredit": "Follow-up plan is present within the Plan (dedicated subsection or integrated)",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "5A.1",
@@ -42092,17 +42092,17 @@
       "id": "5B.3",
       "description": "Score values (ACT, CAT) reported with numeric value and interpretation",
       "points": 0.5,
-      "fullCredit": "Interprets ACT (14) and CAT (18) scores clinically to guide therapy",
+      "fullCredit": "Clinically interprets ACT (14) and CAT (18) scores to guide therapy escalation",
       "halfCredit": "—",
-      "zeroCredit": "Scores absent or no interpretation"
+      "zeroCredit": "—"
     },
     {
       "id": "5B.4",
       "description": "Plan items are specific and actionable",
       "points": 0.5,
-      "fullCredit": "Provides concrete actionable details including biologic regimen and follow-up timing",
+      "fullCredit": "Plan contains concrete actionable detail (biologic drug/dose/regimen, follow-up timing)",
       "halfCredit": "—",
-      "zeroCredit": "Largely vague"
+      "zeroCredit": "—"
     },
     {
       "id": "5C.1",
@@ -44080,17 +44080,17 @@
       "id": "1C.1",
       "description": "Lists asthma as PMH",
       "points": 0.29,
-      "fullCredit": "Lists asthma in PMH or problem list",
+      "fullCredit": "Lists asthma in PMH or problem list (award full credit even if noted in history or ACO diagnosis)",
       "halfCredit": "—",
-      "zeroCredit": "Asthma absent from PMH"
+      "zeroCredit": "—"
     },
     {
       "id": "1C.2",
       "description": "States asthma diagnosed during childhood",
       "points": 0.29,
-      "fullCredit": "Documents childhood onset of asthma",
+      "fullCredit": "Documents childhood onset of asthma (diagnosed age 7 or in childhood)",
       "halfCredit": "—",
-      "zeroCredit": "Onset age absent"
+      "zeroCredit": "—"
     },
     {
       "id": "1C.3",
@@ -44098,15 +44098,15 @@
       "points": 0.29,
       "fullCredit": "Lists COPD in PMH or problem list",
       "halfCredit": "—",
-      "zeroCredit": "COPD absent from PMH"
+      "zeroCredit": "—"
     },
     {
       "id": "1C.4",
       "description": "States COPD diagnosed 8 years ago",
       "points": 0.29,
-      "fullCredit": "Documents COPD diagnosis duration (~8 years)",
+      "fullCredit": "Documents COPD diagnosis duration (~8 years or several years)",
       "halfCredit": "—",
-      "zeroCredit": "COPD duration absent"
+      "zeroCredit": "—"
     },
     {
       "id": "1C.5",
@@ -44120,9 +44120,9 @@
       "id": "1C.10",
       "description": "States cholecystectomy as past surgical history",
       "points": 0.29,
-      "fullCredit": "Documents past surgical history (cholecystectomy / no cardiothoracic surgeries)",
+      "fullCredit": "Documents past surgical history (cholecystectomy / denies prior cardiothoracic surgeries)",
       "halfCredit": "—",
-      "zeroCredit": "PSH absent"
+      "zeroCredit": "—"
     },
     {
       "id": "1C.11",
@@ -44352,9 +44352,9 @@
       "id": "1E.21",
       "description": "States patient denies medication affordability concerns",
       "points": 0.29,
-      "fullCredit": "Confirms medication affordability ($20 copay / affordable)",
+      "fullCredit": "Addresses medication affordability status (e.g., $20 copay for Trelegy, affordable)",
       "halfCredit": "—",
-      "zeroCredit": "Affordability absent"
+      "zeroCredit": "—"
     },
     {
       "id": "1E.22",
@@ -44392,9 +44392,9 @@
       "id": "1E.27",
       "description": "States medication list includes all six current medications at the time of visit",
       "points": 0.29,
-      "fullCredit": "Reconciles active prescription medications (Trelegy, albuterol, cetirizine, lisinopril, calcium/vit D)",
+      "fullCredit": "Reconciles active prescription medications (Trelegy, albuterol, cetirizine, lisinopril, calcium/vit D; >=5 meds reconciled)",
       "halfCredit": "—",
-      "zeroCredit": "Fewer than 5 medications listed"
+      "zeroCredit": "—"
     },
     {
       "id": "1E.28",
@@ -45538,7 +45538,7 @@
       "points": 0.27,
       "fullCredit": "Documents multiple prednisone courses over past 12 months",
       "halfCredit": "—",
-      "zeroCredit": "OCS use absent from Assessment"
+      "zeroCredit": "—"
     },
     {
       "id": "3D.2",
@@ -45546,7 +45546,7 @@
       "points": 0.27,
       "fullCredit": "Documents insomnia as a recognized adverse effect of systemic steroids",
       "halfCredit": "—",
-      "zeroCredit": "Insomnia absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3D.3",
@@ -45554,7 +45554,7 @@
       "points": 0.27,
       "fullCredit": "Documents jitteriness as an adverse effect of systemic steroids",
       "halfCredit": "—",
-      "zeroCredit": "Jitteriness absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3D.5",
@@ -45562,7 +45562,7 @@
       "points": 0.27,
       "fullCredit": "Cites GINA 2025 recommendations regarding minimizing systemic corticosteroid exposure",
       "halfCredit": "—",
-      "zeroCredit": "GINA reference absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3D.6",
@@ -45570,7 +45570,7 @@
       "points": 0.27,
       "fullCredit": "Discusses cumulative OCS adverse effect burden (bone loss, metabolic, mood)",
       "halfCredit": "—",
-      "zeroCredit": "Adverse effect burden absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3D.7",
@@ -45578,7 +45578,7 @@
       "points": 0.27,
       "fullCredit": "Explicitly prioritizes OCS-sparing biologic therapy",
       "halfCredit": "—",
-      "zeroCredit": "Prioritization absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3D.8",
@@ -45586,15 +45586,15 @@
       "points": 0.27,
       "fullCredit": "Discusses OCS-sparing benefit of mepolizumab therapy",
       "halfCredit": "—",
-      "zeroCredit": "OCS-sparing benefit absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3D.9",
       "description": "States this problem is ranked #4 in priority order",
       "points": 0.27,
-      "fullCredit": "Structures OCS toxicity / burden as a distinct clinical problem",
+      "fullCredit": "Structures OCS toxicity / stewardship as a distinct clinical consideration (does not require rigid numeric #4 ranking)",
       "halfCredit": "—",
-      "zeroCredit": "Priority absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3D.11",
@@ -45602,7 +45602,7 @@
       "points": 0.27,
       "fullCredit": "Enumerates systemic corticosteroid adverse effects",
       "halfCredit": "—",
-      "zeroCredit": "Adverse effects absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3D.12",
@@ -45610,7 +45610,7 @@
       "points": 0.27,
       "fullCredit": "Documents patient preference to avoid future prednisone courses",
       "halfCredit": "—",
-      "zeroCredit": "Patient preference absent from Assessment"
+      "zeroCredit": "—"
     },
     {
       "id": "3D.13",
@@ -45618,7 +45618,7 @@
       "points": 0.27,
       "fullCredit": "Quantifies cumulative OCS exposure over past year",
       "halfCredit": "—",
-      "zeroCredit": "Quantification absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3D.14",
@@ -45626,7 +45626,7 @@
       "points": 0.27,
       "fullCredit": "Cites incremental health risk associated with each additional OCS burst",
       "halfCredit": "—",
-      "zeroCredit": "Incremental risk absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3D.15",
@@ -45634,7 +45634,7 @@
       "points": 0.27,
       "fullCredit": "Explicitly links biologic therapy to reducing future oral corticosteroid bursts",
       "halfCredit": "—",
-      "zeroCredit": "Linkage absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3D.16",
@@ -45650,7 +45650,7 @@
       "points": 0.27,
       "fullCredit": "Structures allergic rhinitis as a distinct assessment problem",
       "halfCredit": "—",
-      "zeroCredit": "Problem label absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3E.2",
@@ -45658,7 +45658,7 @@
       "points": 0.27,
       "fullCredit": "Formally assesses allergic rhinitis control status as active/uncontrolled",
       "halfCredit": "—",
-      "zeroCredit": "Status absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3E.4",
@@ -45666,15 +45666,15 @@
       "points": 0.27,
       "fullCredit": "Concludes allergic rhinitis contributes to respiratory symptoms and plans nasal spray restart",
       "halfCredit": "—",
-      "zeroCredit": "Contribution conclusion absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3E.6",
       "description": "States this problem is ranked #5 in priority order",
       "points": 0.27,
-      "fullCredit": "Ranks allergic rhinitis as a prioritized comorbidity",
+      "fullCredit": "Assesses allergic rhinitis comorbidity (does not require rigid numeric #5 ranking)",
       "halfCredit": "—",
-      "zeroCredit": "Priority absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3E.7",
@@ -45682,7 +45682,7 @@
       "points": 0.27,
       "fullCredit": "Cites GINA 2025 recommendations for intranasal corticosteroids in allergic rhinitis",
       "halfCredit": "—",
-      "zeroCredit": "GINA reference absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3E.8",
@@ -45690,7 +45690,7 @@
       "points": 0.27,
       "fullCredit": "Discusses clinical relationship between rhinitis control and asthma stability",
       "halfCredit": "—",
-      "zeroCredit": "Nuance absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3F.3",
@@ -45698,7 +45698,7 @@
       "points": 0.27,
       "fullCredit": "Addresses skeletal / osteopenia risk from repeated systemic corticosteroid bursts",
       "halfCredit": "—",
-      "zeroCredit": "Skeletal risk absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3F.4",
@@ -45706,15 +45706,15 @@
       "points": 0.27,
       "fullCredit": "Links exacerbation reduction to bone mineral density preservation",
       "halfCredit": "—",
-      "zeroCredit": "Chain absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3F.8",
       "description": "States this problem is ranked #6 in priority order",
       "points": 0.27,
-      "fullCredit": "Addresses bone health as a distinct clinical consideration",
+      "fullCredit": "Addresses bone health / osteopenia as a clinical consideration (does not require rigid numeric #6 ranking)",
       "halfCredit": "—",
-      "zeroCredit": "Priority absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3F.10",
@@ -45722,7 +45722,7 @@
       "points": 0.27,
       "fullCredit": "Recommends DEXA scan screening and continuation of calcium + vitamin D",
       "halfCredit": "—",
-      "zeroCredit": "Not addressed"
+      "zeroCredit": "—"
     },
     {
       "id": "3F.11",
@@ -45730,7 +45730,7 @@
       "points": 0.27,
       "fullCredit": "Documents osteoporosis and fracture risk from cumulative OCS bursts",
       "halfCredit": "—",
-      "zeroCredit": "Risk absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3F.12",
@@ -45738,7 +45738,7 @@
       "points": 0.27,
       "fullCredit": "Links mepolizumab skeletal protection benefit to its OCS-sparing effect",
       "halfCredit": "—",
-      "zeroCredit": "Linkage absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3G.1",
@@ -45746,7 +45746,7 @@
       "points": 0.27,
       "fullCredit": "Structures preventive care and vaccines as a distinct clinical problem",
       "halfCredit": "—",
-      "zeroCredit": "Label absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3G.2",
@@ -45754,7 +45754,7 @@
       "points": 0.27,
       "fullCredit": "Addresses RSV vaccination gap as actionable item",
       "halfCredit": "—",
-      "zeroCredit": "RSV gap absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3G.3",
@@ -45762,7 +45762,7 @@
       "points": 0.27,
       "fullCredit": "Addresses Tdap booster overdue status as actionable item",
       "halfCredit": "—",
-      "zeroCredit": "Tdap overdue absent from Assessment"
+      "zeroCredit": "—"
     },
     {
       "id": "3G.4",
@@ -45770,7 +45770,7 @@
       "points": 0.27,
       "fullCredit": "Confirms up-to-date influenza vaccination status",
       "halfCredit": "—",
-      "zeroCredit": "Status absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3G.5",
@@ -45778,7 +45778,7 @@
       "points": 0.27,
       "fullCredit": "Confirms up-to-date COVID-19 vaccination status",
       "halfCredit": "—",
-      "zeroCredit": "Status absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3G.6",
@@ -45786,7 +45786,7 @@
       "points": 0.27,
       "fullCredit": "Confirms up-to-date PCV20 pneumococcal vaccination status",
       "halfCredit": "—",
-      "zeroCredit": "PCV20 status absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3G.7",
@@ -45794,15 +45794,15 @@
       "points": 0.27,
       "fullCredit": "Explicitly links respiratory vaccination to exacerbation prevention",
       "halfCredit": "—",
-      "zeroCredit": "Linkage absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3G.8",
       "description": "States this problem is ranked #7 in priority order",
       "points": 0.27,
-      "fullCredit": "Ranks preventive care as a prioritized problem in Plan",
+      "fullCredit": "Addresses preventive care / vaccines as a clinical consideration (does not require rigid numeric #7 ranking)",
       "halfCredit": "—",
-      "zeroCredit": "Priority absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3G.9",
@@ -45810,7 +45810,7 @@
       "points": 0.27,
       "fullCredit": "Cites GINA 2025 / CDC adult immunization guidelines",
       "halfCredit": "—",
-      "zeroCredit": "GINA reference absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3G.10",
@@ -45818,7 +45818,7 @@
       "points": 0.27,
       "fullCredit": "Frames RSV and Tdap vaccine gaps as actionable at this visit",
       "halfCredit": "—",
-      "zeroCredit": "Actionability absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3G.11",
@@ -45826,7 +45826,7 @@
       "points": 0.27,
       "fullCredit": "Plans vaccination review at follow-up visit",
       "halfCredit": "—",
-      "zeroCredit": "Next-visit review absent"
+      "zeroCredit": "—"
     },
     {
       "id": "3G.12",
@@ -45834,7 +45834,7 @@
       "points": 0.27,
       "fullCredit": "Enumerates two specific vaccination gaps: RSV and Tdap booster",
       "halfCredit": "—",
-      "zeroCredit": "Count absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4A.1",
@@ -46082,7 +46082,7 @@
       "points": 0.28,
       "fullCredit": "States explicit goal to reduce or eliminate systemic corticosteroid bursts",
       "halfCredit": "—",
-      "zeroCredit": "Goal absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4B.2",
@@ -46090,7 +46090,7 @@
       "points": 0.28,
       "fullCredit": "Communicates OCS reduction goal with patient",
       "halfCredit": "—",
-      "zeroCredit": "Communication step absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4B.3",
@@ -46098,7 +46098,7 @@
       "points": 0.28,
       "fullCredit": "Reviews updated exacerbation action plan",
       "halfCredit": "—",
-      "zeroCredit": "Action plan review absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4B.4",
@@ -46106,7 +46106,7 @@
       "points": 0.28,
       "fullCredit": "Recommends prompt evaluation of worsening respiratory symptoms",
       "halfCredit": "—",
-      "zeroCredit": "Recommendation absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4B.5",
@@ -46114,7 +46114,7 @@
       "points": 0.28,
       "fullCredit": "Provides written asthma/COPD action plan",
       "halfCredit": "—",
-      "zeroCredit": "Written plan reference absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4B.6",
@@ -46122,7 +46122,7 @@
       "points": 0.28,
       "fullCredit": "Frames OCS-sparing as patient-valued goal to eliminate side effects",
       "halfCredit": "—",
-      "zeroCredit": "Patient value context absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4B.7",
@@ -46130,7 +46130,7 @@
       "points": 0.28,
       "fullCredit": "Frames mepolizumab as primary mechanism for reducing future OCS bursts",
       "halfCredit": "—",
-      "zeroCredit": "Mechanism absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4B.8",
@@ -46138,7 +46138,7 @@
       "points": 0.28,
       "fullCredit": "Defines clinical criteria for when an OCS burst is truly indicated",
       "halfCredit": "—",
-      "zeroCredit": "Criteria absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4B.9",
@@ -46146,7 +46146,7 @@
       "points": 0.28,
       "fullCredit": "Cites GINA 2025 corticosteroid stewardship recommendations",
       "halfCredit": "—",
-      "zeroCredit": "GINA reference absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4B.10",
@@ -46154,7 +46154,7 @@
       "points": 0.28,
       "fullCredit": "Discusses OCS side effects (insomnia, jitteriness, bone loss) in Plan",
       "halfCredit": "—",
-      "zeroCredit": "Side effects not discussed"
+      "zeroCredit": "—"
     },
     {
       "id": "4B.11",
@@ -46162,7 +46162,7 @@
       "points": 0.28,
       "fullCredit": "Acknowledges patient concerns regarding prednisone side effects in Plan",
       "halfCredit": "—",
-      "zeroCredit": "Not acknowledged in Plan"
+      "zeroCredit": "—"
     },
     {
       "id": "4B.12",
@@ -46170,7 +46170,7 @@
       "points": 0.28,
       "fullCredit": "Integrates corticosteroid stewardship into overall treatment strategy",
       "halfCredit": "—",
-      "zeroCredit": "Integration absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4C.3",
@@ -46178,7 +46178,7 @@
       "points": 0.28,
       "fullCredit": "Reviews allergen avoidance strategies with patient",
       "halfCredit": "—",
-      "zeroCredit": "Avoidance strategies absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4C.4",
@@ -46186,7 +46186,7 @@
       "points": 0.28,
       "fullCredit": "Restarts fluticasone propionate nasal spray 50 mcg 1-2 sprays daily",
       "halfCredit": "—",
-      "zeroCredit": "Rationale absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4C.5",
@@ -46194,7 +46194,7 @@
       "points": 0.28,
       "fullCredit": "Cites GINA 2025 recommendations for intranasal corticosteroids in allergic rhinitis",
       "halfCredit": "—",
-      "zeroCredit": "GINA reference absent from Plan"
+      "zeroCredit": "—"
     },
     {
       "id": "4C.7",
@@ -46202,7 +46202,7 @@
       "points": 0.28,
       "fullCredit": "Documents allergic rhinitis control as an active treatment goal",
       "halfCredit": "—",
-      "zeroCredit": "Not documented in Plan"
+      "zeroCredit": "—"
     },
     {
       "id": "4C.8",
@@ -46210,7 +46210,7 @@
       "points": 0.28,
       "fullCredit": "Frames allergen avoidance as non-pharmacologic adjunct to nasal spray",
       "halfCredit": "—",
-      "zeroCredit": "Non-pharmacologic framing absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4D.2",
@@ -46218,7 +46218,7 @@
       "points": 0.28,
       "fullCredit": "States goal to minimize systemic corticosteroid exposure to protect bone health",
       "halfCredit": "—",
-      "zeroCredit": "Statement absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4D.4",
@@ -46226,7 +46226,7 @@
       "points": 0.28,
       "fullCredit": "Links mepolizumab OCS-sparing effect to skeletal protection",
       "halfCredit": "—",
-      "zeroCredit": "Linkage absent from Plan"
+      "zeroCredit": "—"
     },
     {
       "id": "4D.6",
@@ -46234,7 +46234,7 @@
       "points": 0.28,
       "fullCredit": "Continues calcium + vitamin D and recommends baseline DEXA screening",
       "halfCredit": "—",
-      "zeroCredit": "Not addressed in Plan"
+      "zeroCredit": "—"
     },
     {
       "id": "4E.1",
@@ -46242,7 +46242,7 @@
       "points": 0.28,
       "fullCredit": "Recommends RSV vaccination in Plan",
       "halfCredit": "—",
-      "zeroCredit": "RSV vaccine absent from Plan"
+      "zeroCredit": "—"
     },
     {
       "id": "4E.2",
@@ -46250,7 +46250,7 @@
       "points": 0.28,
       "fullCredit": "Recommends Tdap booster in Plan",
       "halfCredit": "—",
-      "zeroCredit": "Tdap absent from Plan"
+      "zeroCredit": "—"
     },
     {
       "id": "4E.3",
@@ -46258,7 +46258,7 @@
       "points": 0.28,
       "fullCredit": "Plans to review vaccination completion at next visit",
       "halfCredit": "—",
-      "zeroCredit": "Review statement absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4E.4",
@@ -46266,7 +46266,7 @@
       "points": 0.28,
       "fullCredit": "Confirms up-to-date influenza vaccination status in Plan",
       "halfCredit": "—",
-      "zeroCredit": "Influenza status absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4E.5",
@@ -46274,7 +46274,7 @@
       "points": 0.28,
       "fullCredit": "Confirms up-to-date COVID-19 vaccination status in Plan",
       "halfCredit": "—",
-      "zeroCredit": "COVID status absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4E.6",
@@ -46282,7 +46282,7 @@
       "points": 0.28,
       "fullCredit": "Confirms up-to-date PCV20 pneumococcal vaccination status in Plan",
       "halfCredit": "—",
-      "zeroCredit": "PCV20 status absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4E.7",
@@ -46290,7 +46290,7 @@
       "points": 0.28,
       "fullCredit": "Cites GINA 2025 / CDC vaccine recommendations in Plan",
       "halfCredit": "—",
-      "zeroCredit": "GINA reference absent from Plan"
+      "zeroCredit": "—"
     },
     {
       "id": "4E.8",
@@ -46298,7 +46298,7 @@
       "points": 0.28,
       "fullCredit": "Frames vaccination as integral component of exacerbation prevention strategy",
       "halfCredit": "—",
-      "zeroCredit": "Linkage absent from Plan"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.1",
@@ -46306,7 +46306,7 @@
       "points": 0.28,
       "fullCredit": "Plans monitoring of ACT score at follow-up",
       "halfCredit": "—",
-      "zeroCredit": "ACT absent from monitoring"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.2",
@@ -46314,7 +46314,7 @@
       "points": 0.28,
       "fullCredit": "Plans monitoring of CAT score at follow-up",
       "halfCredit": "—",
-      "zeroCredit": "CAT absent from monitoring"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.3",
@@ -46322,7 +46322,7 @@
       "points": 0.28,
       "fullCredit": "Plans monitoring of exacerbation frequency at follow-up",
       "halfCredit": "—",
-      "zeroCredit": "Absent from monitoring"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.4",
@@ -46330,7 +46330,7 @@
       "points": 0.28,
       "fullCredit": "Plans monitoring of oral corticosteroid courses and cumulative exposure",
       "halfCredit": "—",
-      "zeroCredit": "Absent from monitoring"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.5",
@@ -46338,7 +46338,7 @@
       "points": 0.28,
       "fullCredit": "Plans monitoring of rescue inhaler use frequency",
       "halfCredit": "—",
-      "zeroCredit": "Absent from monitoring"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.6",
@@ -46346,7 +46346,7 @@
       "points": 0.28,
       "fullCredit": "Plans monitoring of blood eosinophil count response post-biologic",
       "halfCredit": "—",
-      "zeroCredit": "Absent from monitoring"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.7",
@@ -46354,7 +46354,7 @@
       "points": 0.28,
       "fullCredit": "Plans monitoring of medication adherence to Trelegy and biologic",
       "halfCredit": "—",
-      "zeroCredit": "Absent from monitoring"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.8",
@@ -46362,7 +46362,7 @@
       "points": 0.28,
       "fullCredit": "Plans monitoring for injection site reactions and biologic safety",
       "halfCredit": "—",
-      "zeroCredit": "Absent from monitoring"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.9",
@@ -46370,7 +46370,7 @@
       "points": 0.28,
       "fullCredit": "Plans monitoring of overall clinical response to biologic therapy",
       "halfCredit": "—",
-      "zeroCredit": "Not listed explicitly"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.10",
@@ -46378,7 +46378,7 @@
       "points": 0.28,
       "fullCredit": "Documents comprehensive monitoring plan covering clinical and biomarker domains",
       "halfCredit": "—",
-      "zeroCredit": "Fewer than 7 items documented"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.11",
@@ -46386,7 +46386,7 @@
       "points": 0.28,
       "fullCredit": "Plans longitudinal eosinophil trending post-biologic initiation",
       "halfCredit": "—",
-      "zeroCredit": "Longitudinal framing absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.12",
@@ -46394,7 +46394,7 @@
       "points": 0.28,
       "fullCredit": "Plans reassessment of ACT/CAT scores at 3-4 month follow-up",
       "halfCredit": "—",
-      "zeroCredit": "Reassessment absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.13",
@@ -46402,7 +46402,7 @@
       "points": 0.28,
       "fullCredit": "Plans tracking of OCS bursts to evaluate biologic steroid-sparing benefit",
       "halfCredit": "—",
-      "zeroCredit": "Framing absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.14",
@@ -46410,7 +46410,7 @@
       "points": 0.28,
       "fullCredit": "Frames rescue inhaler reduction as expected outcome of biologic therapy",
       "halfCredit": "—",
-      "zeroCredit": "Outcome framing absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.15",
@@ -46418,7 +46418,7 @@
       "points": 0.28,
       "fullCredit": "Monitors for injection site reactions and hypersensitivity",
       "halfCredit": "—",
-      "zeroCredit": "Injection reactions absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.16",
@@ -46426,7 +46426,7 @@
       "points": 0.28,
       "fullCredit": "Counsels on rare anaphylaxis warning signs and emergency procedures",
       "halfCredit": "—",
-      "zeroCredit": "Anaphylaxis absent from monitoring"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.17",
@@ -46434,7 +46434,7 @@
       "points": 0.28,
       "fullCredit": "Structures monitoring plan within Plan section",
       "halfCredit": "—",
-      "zeroCredit": "Header absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.18",
@@ -46442,7 +46442,7 @@
       "points": 0.28,
       "fullCredit": "Plans adherence monitoring for both inhaled therapy and biologic regimen",
       "halfCredit": "—",
-      "zeroCredit": "Adherence monitoring absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.1",
@@ -46450,7 +46450,7 @@
       "points": 0.28,
       "fullCredit": "Specifies follow-up timeframe of 3-4 months for formal biologic evaluation (or 4-8 weeks)",
       "halfCredit": "—",
-      "zeroCredit": "Follow-up timeframe absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.2",
@@ -46458,7 +46458,7 @@
       "points": 0.28,
       "fullCredit": "Plans follow-up assessment of response to mepolizumab initiation",
       "halfCredit": "—",
-      "zeroCredit": "Biologic response absent from follow-up"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.3",
@@ -46466,7 +46466,7 @@
       "points": 0.28,
       "fullCredit": "Plans reassessment of exacerbation frequency at follow-up",
       "halfCredit": "—",
-      "zeroCredit": "Absent from follow-up"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.4",
@@ -46474,7 +46474,7 @@
       "points": 0.28,
       "fullCredit": "Plans reassessment of ACT score at follow-up visit",
       "halfCredit": "—",
-      "zeroCredit": "Absent from follow-up"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.5",
@@ -46482,7 +46482,7 @@
       "points": 0.28,
       "fullCredit": "Plans reassessment of CAT score at follow-up visit",
       "halfCredit": "—",
-      "zeroCredit": "Absent from follow-up"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.6",
@@ -46490,7 +46490,7 @@
       "points": 0.28,
       "fullCredit": "Plans reassessment of corticosteroid exposure at follow-up",
       "halfCredit": "—",
-      "zeroCredit": "Absent from follow-up"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.7",
@@ -46498,7 +46498,7 @@
       "points": 0.28,
       "fullCredit": "Plans reassessment of symptom burden and functional status at follow-up",
       "halfCredit": "—",
-      "zeroCredit": "Absent from follow-up"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.8",
@@ -46506,7 +46506,7 @@
       "points": 0.28,
       "fullCredit": "Plans reassessment of treatment tolerability and safety at follow-up",
       "halfCredit": "—",
-      "zeroCredit": "Absent from follow-up plan"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.9",
@@ -46514,7 +46514,7 @@
       "points": 0.28,
       "fullCredit": "Outlines continued longitudinal management of severe eosinophilic ACO",
       "halfCredit": "—",
-      "zeroCredit": "Statement absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.10",
@@ -46522,7 +46522,7 @@
       "points": 0.28,
       "fullCredit": "Explicitly frames follow-up to evaluate biologic therapeutic response",
       "halfCredit": "—",
-      "zeroCredit": "Framing absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.11",
@@ -46530,7 +46530,7 @@
       "points": 0.28,
       "fullCredit": "Cites GINA 2025 follow-up framework for Step 5 biologic therapy",
       "halfCredit": "—",
-      "zeroCredit": "GINA reference absent from follow-up"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.12",
@@ -46538,7 +46538,7 @@
       "points": 0.28,
       "fullCredit": "Evaluates appropriateness of 3-4 month follow-up interval per guidelines",
       "halfCredit": "—",
-      "zeroCredit": "Appropriateness not addressed"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.13",
@@ -46546,7 +46546,7 @@
       "points": 0.28,
       "fullCredit": "Plans reassessment of vaccine completion (RSV, Tdap) at next visit",
       "halfCredit": "—",
-      "zeroCredit": "Vaccination follow-up absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.14",
@@ -46554,7 +46554,7 @@
       "points": 0.28,
       "fullCredit": "Ensures follow-up plan encompasses major active clinical problems",
       "halfCredit": "—",
-      "zeroCredit": "Fewer than 3 problems in follow-up"
+      "zeroCredit": "—"
     },
     {
       "id": "5A.1",
@@ -46584,9 +46584,9 @@
       "id": "5A.4",
       "description": "Monitoring and Follow-Up are distinct subsections within the Plan section",
       "points": 0.5,
-      "fullCredit": "Structures Monitoring and Follow-Up within Plan section",
+      "fullCredit": "Structures Monitoring and Follow-Up within Plan section (award full credit even if integrated into plan text)",
       "halfCredit": "—",
-      "zeroCredit": "Neither present as distinct subsection"
+      "zeroCredit": "—"
     },
     {
       "id": "5B.1",

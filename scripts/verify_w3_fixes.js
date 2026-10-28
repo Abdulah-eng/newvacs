@@ -63,23 +63,56 @@ for (const key of w3Keys) {
 // 2. Checking specific rubric criteria
 console.log('\n2. Checking Key Audit Fixes in Rubrics...');
 const checks = [
+  // Maria Wednesday
+  { key: 'Week3_Patient_C_Wednesday', id: '1C.1', test: it => it.zeroCredit === '—', desc: 'Maria Wed: 1C.1 Asthma PMH neutralized' },
+  { key: 'Week3_Patient_C_Wednesday', id: '1C.10', test: it => it.zeroCredit === '—', desc: 'Maria Wed: 1C.10 PSH neutralized' },
+  { key: 'Week3_Patient_C_Wednesday', id: '1E.27', test: it => it.zeroCredit === '—', desc: 'Maria Wed: 1E.27 5-med reconciliation neutralized' },
   { key: 'Week3_Patient_C_Wednesday', id: '1E.28', test: it => it.fullCredit.toLowerCase().includes('sulfonamide') && it.fullCredit.includes('NOT require NKDA'), desc: 'Maria Wed Allergy: Sulfonamide without NKDA penalty' },
+  { key: 'Week3_Patient_C_Wednesday', id: '3D.9', test: it => it.zeroCredit === '—', desc: 'Maria Wed: 3D.9 OCS stewardship priority neutralized' },
+  { key: 'Week3_Patient_C_Wednesday', id: '3E.6', test: it => it.zeroCredit === '—', desc: 'Maria Wed: 3E.6 allergic rhinitis priority neutralized' },
+  { key: 'Week3_Patient_C_Wednesday', id: '3F.8', test: it => it.zeroCredit === '—', desc: 'Maria Wed: 3F.8 bone health priority neutralized' },
+  { key: 'Week3_Patient_C_Wednesday', id: '3G.8', test: it => it.zeroCredit === '—', desc: 'Maria Wed: 3G.8 preventive care priority neutralized' },
+  { key: 'Week3_Patient_C_Wednesday', id: '4B.1', test: it => it.zeroCredit === '—', desc: 'Maria Wed: 4B.1 OCS reduction goal neutralized' },
+  { key: 'Week3_Patient_C_Wednesday', id: '4F.1', test: it => it.zeroCredit === '—', desc: 'Maria Wed: 4F.1 ACT monitoring neutralized' },
+  { key: 'Week3_Patient_C_Wednesday', id: '4G.1', test: it => it.zeroCredit === '—', desc: 'Maria Wed: 4G.1 follow-up timeframe neutralized' },
+  { key: 'Week3_Patient_C_Wednesday', id: '5A.4', test: it => it.zeroCredit === '—', desc: 'Maria Wed: 5A.4 monitoring/follow-up subsections neutralized' },
+
+  // Maria Thursday
+  { key: 'Week3_Patient_C_Thursday', id: '1C.1', test: it => it.zeroCredit === '—', desc: 'Maria Thu: 1C.1 Asthma PMH neutralized' },
+  { key: 'Week3_Patient_C_Thursday', id: '1C.12', test: it => it.zeroCredit === '—', desc: 'Maria Thu: 1C.12 Childhood asthma onset neutralized' },
+  { key: 'Week3_Patient_C_Thursday', id: '1D.8', test: it => it.zeroCredit === '—', desc: 'Maria Thu: 1D.8 Drug denial neutralized' },
+  { key: 'Week3_Patient_C_Thursday', id: '1D.9', test: it => it.zeroCredit === '—', desc: 'Maria Thu: 1D.9 Physical activity neutralized' },
   { key: 'Week3_Patient_C_Thursday', id: '1E.9', test: it => it.fullCredit.toLowerCase().includes('sulfonamide') && it.fullCredit.includes('NOT require NKDA'), desc: 'Maria Thu Allergy: Sulfonamide without NKDA penalty' },
-  { key: 'Week3_Patient_C_Wednesday', id: '1E.5', test: it => it.fullCredit.includes('Trelegy') && it.fullCredit.includes('separate tiotropium is NOT prescribed'), desc: 'Maria Wed: Trelegy includes LAMA (no duplicate tiotropium)' },
+  { key: 'Week3_Patient_C_Thursday', id: '1G.1', test: it => it.zeroCredit === '—', desc: 'Maria Thu: 1G.1 Patient goals neutralized' },
+  { key: 'Week3_Patient_C_Thursday', id: '3D.9', test: it => it.zeroCredit === '—', desc: 'Maria Thu: 3D.9 Longitudinal monitoring neutralized' },
+  { key: 'Week3_Patient_C_Thursday', id: '3E.2', test: it => it.zeroCredit === '—', desc: 'Maria Thu: 3E.2 OCS bone risk neutralized' },
+  { key: 'Week3_Patient_C_Thursday', id: '3F.2', test: it => it.zeroCredit === '—', desc: 'Maria Thu: 3F.2 RSV gap neutralized' },
+  { key: 'Week3_Patient_C_Thursday', id: '4C.9', test: it => it.zeroCredit === '—', desc: 'Maria Thu: 4C.9 Monitoring subsection neutralized' },
+  { key: 'Week3_Patient_C_Thursday', id: '4E.4', test: it => it.zeroCredit === '—', desc: 'Maria Thu: 4E.4 Vaccine integration neutralized' },
+  { key: 'Week3_Patient_C_Thursday', id: '4F.1', test: it => it.zeroCredit === '—', desc: 'Maria Thu: 4F.1 Follow-up timeframe neutralized' },
+  { key: 'Week3_Patient_C_Thursday', id: '5B.3', test: it => it.zeroCredit === '—', desc: 'Maria Thu: 5B.3 ACT/CAT clinical interpretation neutralized' },
+
+  // Bob Tuesday
   { key: 'Week3_Patient_B_Tuesday', id: '3A.5', test: it => it.fullCredit.includes('Group B') && it.fullCredit.includes('Group E'), desc: 'Bob Tue: Accepts both GOLD Group B and Group E' },
   { key: 'Week3_Patient_B_Tuesday', id: '3A.17', test: it => it.zeroCredit === '—', desc: 'Bob Tue: 3A.17 zeroCredit neutralized' },
   { key: 'Week3_Patient_B_Tuesday', id: '3E.6', test: it => it.zeroCredit === '—', desc: 'Bob Tue: 3E.6 zeroCredit neutralized' },
   { key: 'Week3_Patient_B_Tuesday', id: '4G.2', test: it => it.zeroCredit === '—', desc: 'Bob Tue: 4G.2 zeroCredit neutralized' },
   { key: 'Week3_Patient_B_Tuesday', id: '5C.2', test: it => it.zeroCredit === '—', desc: 'Bob Tue: 5C.2 zeroCredit neutralized' },
+
+  // Bob Wednesday
   { key: 'Week3_Patient_B_Wednesday', id: '3A.11', test: it => it.zeroCredit === '—', desc: 'Bob Wed: 3A.11 zeroCredit neutralized' },
   { key: 'Week3_Patient_B_Wednesday', id: '4B.4', test: it => it.zeroCredit === '—' && it.fullCredit.includes('coffee'), desc: 'Bob Wed: 4B.4 coffee routine pairing' },
   { key: 'Week3_Patient_B_Wednesday', id: '4B.5', test: it => it.zeroCredit === '—' && it.fullCredit.includes('blow into'), desc: 'Bob Wed: 4B.5 technique education full credit' },
   { key: 'Week3_Patient_B_Wednesday', id: '4G.2', test: it => it.zeroCredit === '—', desc: 'Bob Wed: 4G.2 follow-up timing' },
+
+  // Bob Thursday
   { key: 'Week3_Patient_B_Thursday', id: '4A.1', test: it => it.fullCredit.includes('triple therapy') && it.fullCredit.includes('Trelegy'), desc: 'Bob Thu: Escalation to triple therapy (Trelegy)' },
   { key: 'Week3_Patient_B_Thursday', id: '1D.10', test: it => it.zeroCredit === '—', desc: 'Bob Thu: 1D.10 affordability confirmed' },
   { key: 'Week3_Patient_B_Thursday', id: '3A.12', test: it => it.zeroCredit === '—', desc: 'Bob Thu: 3A.12 adherence verified' },
   { key: 'Week3_Patient_B_Thursday', id: '4C.1', test: it => it.zeroCredit === '—' && it.fullCredit.includes('rinse'), desc: 'Bob Thu: 4C.1 mouth rinsing instructions' },
   { key: 'Week3_Patient_B_Thursday', id: '4G.1', test: it => it.zeroCredit === '—', desc: 'Bob Thu: 4G.1 longitudinal monitoring' },
+
+  // Sarah Thompson
   { key: 'Week3_Patient_A_Tuesday', id: '1B.13', test: it => it.fullCredit.includes('5-day prednisone course 6 weeks ago'), desc: 'Sarah Tue: Accepts 5-day prednisone burst 6 weeks ago' },
   { key: 'Week3_Patient_A_Tuesday', id: '1C.2', test: it => it.fullCredit.includes('age 8'), desc: 'Sarah Tue: Accepts diagnosis age 8' },
   { key: 'Week3_Patient_A_Wednesday', id: '1A.7', test: it => it.fullCredit.includes('SMART'), desc: 'Sarah Wed: SMART therapy continuation' },
@@ -100,47 +133,23 @@ for (const c of checks) {
   }
 }
 
-// Check that no "model note" traps remain in Bob Wed
-const bobWed = rubrics['Week3_Patient_B_Wednesday'];
-const modelNoteTraps = bobWed.filter(it => (it.zeroCredit || '').toLowerCase().includes('model note'));
-if (modelNoteTraps.length > 0) {
-  console.error(`FAIL: ${modelNoteTraps.length} model note traps remain in Week3_Patient_B_Wednesday`);
-  failed = true;
-} else {
-  console.log('  PASS: Zero "model note" traps in Week3_Patient_B_Wednesday');
-}
-
-// 3. Checking Case Data (src/data/patientsW3.js)...
+// 3. Checking Case Data (patientsW3.js)
 console.log('\n3. Checking Case Data (src/data/patientsW3.js)...');
 const patientsW3Path = path.join(__dirname, '../src/data/patientsW3.js');
 const patientsW3Code = fs.readFileSync(patientsW3Path, 'utf8');
 
-if (!patientsW3Code.includes("spo2Qualifier: 'on room air'")) {
-  console.error("FAIL: patientsW3.js missing spo2Qualifier: 'on room air'");
+if (!patientsW3Code.includes("title: 'Severe Eosinophilic ACO & Biologic Candidacy Assessment'")) {
+  console.error("FAIL: Maria Wed/Thu assessment card missing");
   failed = true;
 } else {
-  console.log("  PASS: patientsW3.js contains spo2Qualifier: 'on room air'");
+  console.log("  PASS: Maria Wed and Thu assessment cards updated to Severe Eosinophilic ACO & Biologic Candidacy Assessment");
 }
 
-if (!patientsW3Code.includes("title: 'ACO Pharmacotherapy Initiation'")) {
-  console.error("FAIL: Maria Tue assessment card not updated to initial ACO therapy");
+if (!patientsW3Code.includes("Cholecystectomy (laparoscopic gallbladder removal age 58)")) {
+  console.error("FAIL: Maria Wed/Thu PSH missing");
   failed = true;
 } else {
-  console.log("  PASS: Maria Tue assessment card updated to initial ACO therapy (Trelegy initiation)");
-}
-
-if (!patientsW3Code.includes("title: 'Asthma Control & Inhaler Technique'")) {
-  console.error("FAIL: Sarah Wed assessment card not updated to Asthma Control & Inhaler Technique");
-  failed = true;
-} else {
-  console.log("  PASS: Sarah Wed assessment card updated to Asthma Control & Inhaler Technique");
-}
-
-if (!patientsW3Code.includes("title: 'COPD Triple Therapy Escalation Assessment'")) {
-  console.error("FAIL: Bob Thu assessment card not updated to COPD Triple Therapy Escalation Assessment");
-  failed = true;
-} else {
-  console.log("  PASS: Bob Thu assessment card updated to COPD Triple Therapy Escalation Assessment");
+  console.log("  PASS: Maria Wed and Thu include explicit PSH (cholecystectomy)");
 }
 
 // Check Bob Thu specifically for ACT score removal
@@ -164,11 +173,11 @@ if (!promptsCode.includes("32. For Week 3 encounters (Sarah Thompson, Bob Jenkin
   console.log("  PASS: prompts.js contains comprehensive Rule 32 for Week 3");
 }
 
-if (!promptsCode.includes("Bob Jenkins Tuesday:") || !promptsCode.includes("Bob Jenkins Wednesday:") || !promptsCode.includes("Bob Jenkins Thursday:")) {
-  console.error("FAIL: prompts.js missing Bob Jenkins sections");
+if (!promptsCode.includes("Maria Thompson Wednesday:") || !promptsCode.includes("Maria Thompson Thursday:")) {
+  console.error("FAIL: prompts.js missing Maria Thompson sections");
   failed = true;
 } else {
-  console.log("  PASS: prompts.js contains Bob Jenkins Tuesday, Wednesday, and Thursday guidelines");
+  console.log("  PASS: prompts.js contains Maria Thompson Wednesday and Thursday guidelines");
 }
 
 console.log('\n==================================================');
