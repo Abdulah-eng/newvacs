@@ -295,7 +295,11 @@ const bobTue = makeCase({
     { name: 'Pneumococcal', status: 'Not documented', flag: 'warn' },
     { name: 'RSV', status: 'Not documented', flag: 'warn' },
   ],
-  SUBJECTIVE_DOCUMENTED: [{ label: 'HPI', value: 'Complains of shortness of breath on exertion. History of 1 moderate COPD exacerbation in the past 12 months, treated with oral corticosteroids and antibiotics without hospitalization. No maintenance bronchodilator therapy has been started despite ongoing symptoms.' }, { label: 'Social', value: 'Married, lives with spouse. Retired automotive mechanic. Former smoker (45 pack-years, quit 5 years ago). Denies recreational drug use.' }],
+  SUBJECTIVE_DOCUMENTED: [
+    { label: 'HPI', value: 'Complains of shortness of breath on exertion (winded walking to mailbox). History of 1 moderate COPD exacerbation in the past 12 months, treated with oral corticosteroids and antibiotics without hospitalization. No maintenance bronchodilator therapy has been started due to $300 cost barrier; patient relies on albuterol PRN. Denies recent hospitalizations or emergency department visits.' },
+    { label: 'Past Medical History', value: 'COPD (~4 years), Hypertension (~12 years, on lisinopril), Hyperlipidemia (~10 years, on atorvastatin). Past surgical history: appendectomy.' },
+    { label: 'Social history', value: 'Married, lives with spouse. Retired automotive mechanic (occupational dust/fume exposure). Former smoker (45 pack-years, sustained cessation for 5 years; denies cravings; no cessation pharmacotherapy needed). Denies recreational drug use.' }
+  ],
   OBJECTIVE_EXTRA: [
     { label: 'Spirometry', value: 'FEV1/FVC 0.58, FEV1 62% predicted (GOLD Grade 2 — Moderate)', flag: 'warn' },
     { label: 'CAT Score', value: '18 — High symptom burden', flag: 'warn' },
@@ -330,19 +334,31 @@ const bobTue = makeCase({
     { id: 'w3b_cost', topic: 'Cost barrier', field: 'cost', keywords: ['cost', 'afford', 'expensive', 'money', 'pay'], response: "Yeah, I can't afford hundreds of dollars for an inhaler on a fixed income. The albuterol is cheap, so I stick with that." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'w3b_a1', title: 'COPD Maintenance', icon: 'Lungs', color: '13314f', questions: [{ key: 'q1', q: 'What is the appropriate initial therapy for this highly symptomatic patient per GOLD?' }, { key: 'q2', q: 'How does cost affect the plan?' }] },
-    { id: 'w3b_a2', title: 'Hypertension', icon: 'HeartPulse', color: 'dc2626', questions: [{ key: 'q3', q: 'Is his blood pressure currently at goal?' }] },
-    { id: 'w3b_a3', title: 'Hyperlipidemia', icon: 'Activity', color: 'f59e0b', questions: [{ key: 'q4', q: 'Is he on appropriate statin therapy?' }] },
+    { 
+      id: 'w3b_a1', 
+      title: 'COPD Maintenance & Cost Navigation', 
+      icon: 'Lungs', 
+      color: '13314f', 
+      questions: [
+        { key: 'q1', q: 'What is the appropriate initial therapy for this highly symptomatic patient per GOLD?', defaultAnswer: 'Bob has symptomatic moderate COPD (GOLD Grade 2, Group B: FEV1 62% pred, FEV1/FVC 0.58, CAT 18, 1 moderate exacerbation without hospitalization) secondary to a 45 pack-year smoking history (sustained 5-year cessation; congratulate patient; no cessation pharmacotherapy indicated). The clinical priority is addressing non-initiation due to a $300 cost barrier rather than treatment failure. Initial maintenance therapy with a dual bronchodilator (LABA/LAMA) is indicated per GOLD 2026 guidelines.' },
+        { key: 'q2', q: 'How does cost affect the plan?', defaultAnswer: 'Evaluate formulary coverage and copay assistance programs to prescribe an affordable LABA/LAMA combination (target copay ≤$20) and provide inhaler technique instruction.' }
+      ] 
+    },
+    { id: 'w3b_a2', title: 'Hypertension', icon: 'HeartPulse', color: 'dc2626', questions: [{ key: 'q3', q: 'Is his blood pressure currently at goal?', defaultAnswer: 'BP is 132/78 mmHg (repeat 130/76), well-controlled on lisinopril 20 mg daily with goal <130/80 mmHg.' }] },
+    { id: 'w3b_a3', title: 'Hyperlipidemia', icon: 'Activity', color: 'f59e0b', questions: [{ key: 'q4', q: 'Is he on appropriate statin therapy?', defaultAnswer: 'Atorvastatin 20 mg daily is appropriate for primary ASCVD prevention; lipid profile stable.' }] },
   ],
   PLAN_SECTIONS: [
-    { id: 'w3b_p1', title: 'Therapy Plan', options: [
-      { key: 'o1', label: 'Find an affordable LABA/LAMA combination or single agent and teach proper inhaler technique', correct: true },
+    { id: 'w3b_p1', title: 'COPD Pharmacotherapy & Technique Plan', options: [
+      { key: 'o1', label: 'Initiate affordable LABA/LAMA combination (e.g., umeclidinium/vilanterol Anoro Ellipta 62.5/25 mcg 1 inh daily or formulary alternative with copay assistance) and demonstrate proper inhaler technique; continue albuterol HFA 2 puffs q4-6h PRN for rescue', correct: true },
       { key: 'o2', label: 'Prescribe triple therapy (LABA/LAMA/ICS)', correct: false },
       { key: 'o3', label: 'Prescribe daily oral prednisone', correct: false },
     ] },
-    { id: 'w3b_p2', title: 'Hypertension & Hyperlipidemia', options: [
-      { key: 'o4', label: 'Continue current Lisinopril and Atorvastatin', correct: true },
+    { id: 'w3b_p2', title: 'Comorbidity Management & Tobacco Cessation', options: [
+      { key: 'o4', label: 'Continue current Lisinopril 20 mg PO daily (BP goal <130/80 mmHg) and Atorvastatin 20 mg PO daily; congratulate patient on sustained 5-year smoking cessation and reinforce lifelong abstinence to slow lung decline (no cessation pharmacotherapy needed)', correct: true },
       { key: 'o5', label: 'Increase dose of Atorvastatin', correct: false },
+    ] },
+    { id: 'w3b_p3', title: 'Preventive Care, Monitoring & Follow-Up', options: [
+      { key: 'o6', label: 'Recommend PCV20 and RSV vaccinations (due/not documented per GOLD); schedule follow-up in 4–8 weeks to reassess dyspnea, CAT score (goal <10), inhaler adherence, affordability/fill confirmation, and clinical response before considering changes; monitor periodic spirometry per GOLD schedule', correct: true },
     ] },
   ],
 })
@@ -403,14 +419,31 @@ const bobWed = makeCase({
     { id: 'w3-bob_j-wed_fh', topic: 'Family history', field: 'familyHistory', keywords: ['family history', 'father', 'mother', 'parents', 'brother', 'sister', 'sibling'], response: "My brother has COPD. My father had both COPD and coronary artery disease (CAD). My mother had high blood pressure." },
     { id: 'w3b2_adh', topic: 'Adherence', field: 'adherence', keywords: ['take', 'every day', 'daily', 'miss', 'forget', 'reminder', 'routine'], response: "I try to take it every day, but honestly I forget sometimes. I\'d say I probably take it about 3 or 4 days a week. I don\'t have a good reminder system set up yet." },
     { id: 'w3b2_tech', topic: 'Inhaler technique', field: 'technique', keywords: ['show', 'demonstrate', 'how', 'use', 'technique', 'capsule', 'ellipta'], response: "I slide the cover down until it clicks. Then I breathe out really hard, blowing the air right into the mouthpiece, and then I take a breath in." },
+    { id: 'w3b2_cravings', topic: 'Tobacco cravings', field: 'cravings', keywords: ['craving', 'cravings', 'smoke', 'desire', 'restart'], response: "I have no cravings or desire to start smoking again. I've been smoke-free for 5 years." },
+    { id: 'w3b2_exertion', topic: 'Exertional dyspnea & activities', field: 'exertion', keywords: ['stairs', 'groceries', 'household', 'activity', 'walk', 'projects'], response: "I still get short of breath climbing stairs, carrying heavy grocery bags, or working on household projects. I've had to slow down and avoid strenuous tasks." },
+    { id: 'w3b2_rescue_trend', topic: 'Rescue inhaler use', field: 'rescue_trend', keywords: ['rescue', 'albuterol', 'trend', 'frequency'], response: "I still use the albuterol PRN, maybe once a day or a few times a week, which is a bit less than before." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'w3b2_a1', title: 'Technique Assessment', icon: 'AlertTriangle', color: 'd97706', questions: [{ key: 'q1', q: 'What is wrong with his inhaler technique?' }] },
+    { 
+      id: 'w3b2_a1', 
+      title: 'COPD Control, Technique & Adherence Assessment', 
+      icon: 'AlertTriangle', 
+      color: 'd97706', 
+      questions: [
+        { key: 'q1', q: 'How should his persistent symptoms be evaluated within the GOLD framework, and what is the primary clinical problem?', defaultAnswer: 'Bob has COPD (GOLD Grade 2, Group B: FEV1 63%, CAT 16, 0 exacerbations). Suboptimal symptom response is explained by implementation barriers: inhaler technique error (blowing into mouthpiece rather than inhaling deeply) and subtherapeutic adherence (taking Anoro 3–4 days/week due to forgetfulness). These implementation barriers preclude interpreting symptoms as true pharmacologic treatment failure; zero exacerbations argue against escalation to triple therapy. Defer therapy escalation per GOLD 2026; optimize technique and daily adherence first before reassessing drug efficacy.' }
+      ] 
+    },
   ],
   PLAN_SECTIONS: [
-    { id: 'w3b2_p1', title: 'Plan', options: [
-      { key: 'o1', label: 'Correct technique: breathe IN deeply and steadily, do not blow into the device', correct: true },
-      { key: 'o2', label: 'Switch to a different inhaler immediately', correct: false },
+    { id: 'w3b2_p1', title: 'COPD Maintenance & Inhaler Technique Plan', options: [
+      { key: 'o1', label: 'Continue Anoro Ellipta (umeclidinium/vilanterol 62.5/25 mcg 1 inh daily) without escalation per GOLD Group B guidelines; correct inhaler technique with teach-back: breathe IN deeply and steadily, do not blow into the device; review daily maintenance vs PRN rescue albuterol purpose', correct: true },
+      { key: 'o2', label: 'Switch to a different inhaler or escalate to triple therapy immediately', correct: false },
+    ] },
+    { id: 'w3b2_p2', title: 'Adherence Optimization & Education Plan', options: [
+      { key: 'o3', label: 'Establish behavioral adherence routine: pair daily morning inhaler with morning coffee maker, phone alarms, and visual cues; educate on realistic treatment timeline (gradual benefit over days to weeks); reinforce continued smoking abstinence', correct: true },
+    ] },
+    { id: 'w3b2_p3', title: 'Preventive Care, Monitoring & Follow-Up', options: [
+      { key: 'o4', label: 'Recommend PCV20, RSV, and Tdap booster vaccinations to reduce respiratory infection risk; follow-up in 4–8 weeks (~3 months) to reassess dyspnea, activity tolerance, CAT score, rescue albuterol use, adherence, and inhaler technique; consider therapy adjustment only if symptoms persist despite verified technique and daily adherence', correct: true },
     ] },
   ],
 })
@@ -474,14 +507,31 @@ const bobThu = makeCase({
     { id: 'w3b3_sym', topic: 'Symptoms', field: 'symptoms', keywords: ['exacerbation', 'rescue', 'albuterol', 'feel', 'breathing'], response: "I still use my albuterol almost every day, and I've had a couple of flare-ups recently. I'm really starting to get worried that my lung function is dropping and my COPD is getting worse." },
     { id: 'w3b3_adherence', topic: 'Adherence', field: 'adherence', keywords: ['adherence', 'take', 'taking', 'miss', 'forget', 'every day', 'routine', 'reminder'], response: "I take the Anoro inhaler every single morning. I know I used to miss my old inhaler, only taking it 3 or 4 days a week, but now my wife puts it right next to my coffee mug as a reminder so I never forget." },
     { id: 'w3b3_goals', topic: 'Goals', field: 'goals', keywords: ['goal', 'goals', 'hope', 'want', 'expect'], response: "My main goal right now is just to stop having these exacerbations and stay out of the urgent care." },
+    { id: 'w3b3_affordability', topic: 'Affordability & access', field: 'affordability', keywords: ['afford', 'cost', 'copay', 'refill', 'access', 'expensive'], response: "Medication affordability is fine now, $20 copay, and I have no trouble picking up or refilling my prescriptions." },
+    { id: 'w3b3_adverse', topic: 'Medication adverse effects', field: 'adverse', keywords: ['side effect', 'side effects', 'adverse', 'tolerance'], response: "I haven't noticed any new side effects or problems from the inhaler." },
+    { id: 'w3b3_cravings', topic: 'Tobacco cravings', field: 'cravings', keywords: ['craving', 'cravings', 'smoke', 'desire', 'restart'], response: "I have no desire or cravings to start smoking again." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'w3b3_a1', title: 'Triple Therapy Escalation', icon: 'AlertTriangle', color: 'd97706', questions: [{ key: 'q1', q: 'Should therapy be escalated to triple therapy (add ICS to LABA/LAMA)?' }] },
+    { 
+      id: 'w3b3_a1', 
+      title: 'COPD Triple Therapy Escalation Assessment', 
+      icon: 'AlertTriangle', 
+      color: 'd97706', 
+      questions: [
+        { key: 'q1', q: 'Should therapy be escalated to triple therapy (add ICS to LABA/LAMA)?', defaultAnswer: 'Bob has COPD with frequent exacerbations (2 in past 3 months, 3 in past 12 months) and high symptom burden (CAT 17, FEV1 60%) despite verified daily adherence (coffee mug routine) and correct inhaler technique on Anoro Ellipta. Blood eosinophils are 310 cells/µL, exceeding the GOLD threshold (≥300 cells/µL) that strongly predicts ICS benefit. Escalation to single-inhaler triple therapy (Trelegy Ellipta: fluticasone furoate/umeclidinium/vilanterol 100/62.5/25 mcg 1 inh daily) is indicated per GOLD 2026 guidelines. Reinforce sustained 5-year smoking cessation (slows disease progression) and update overdue immunizations.' }
+      ] 
+    },
   ],
   PLAN_SECTIONS: [
-    { id: 'w3b3_p1', title: 'Plan', options: [
-      { key: 'o1', label: 'Escalate to triple therapy (add ICS) due to recurrent exacerbations and elevated eosinophils', correct: true },
-      { key: 'o2', label: 'Escalate to LABA/LAMA', correct: false },
+    { id: 'w3b3_p1', title: 'Triple Inhaled Pharmacotherapy Plan', options: [
+      { key: 'o1', label: 'Escalate to single-inhaler triple therapy: Trelegy Ellipta (fluticasone furoate/umeclidinium/vilanterol) 100/62.5/25 mcg 1 inhalation daily; continue albuterol HFA 2 puffs q4-6h PRN for rescue (target reduced rescue reliance); instruct patient to rinse mouth with water and spit after each inhalation to prevent oral candidiasis; continue established coffee-mug daily adherence routine', correct: true },
+      { key: 'o2', label: 'Continue Anoro Ellipta dual therapy unchanged', correct: false },
+    ] },
+    { id: 'w3b3_p2', title: 'Action Plan, Tobacco Cessation & Preventive Care', options: [
+      { key: 'o3', label: 'Review written COPD action plan and early recognition of worsening symptoms/infection avoidance; congratulate on 5-year sustained smoking cessation and encourage lifelong abstinence to slow decline; recommend PCV20, RSV, and Tdap booster vaccinations to reduce respiratory infection risk', correct: true },
+    ] },
+    { id: 'w3b3_p3', title: 'Monitoring & Longitudinal Follow-Up', options: [
+      { key: 'o4', label: 'Schedule follow-up in 4–8 weeks (~3 months) to monitor dyspnea, activity tolerance, rescue albuterol frequency, medication adherence, inhaler technique, and screen for ICS-related adverse effects (oral thrush, dysphonia, pneumonia); continue longitudinal COPD management', correct: true },
     ] },
   ],
 })

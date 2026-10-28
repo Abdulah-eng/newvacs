@@ -67,7 +67,19 @@ const checks = [
   { key: 'Week3_Patient_C_Thursday', id: '1E.9', test: it => it.fullCredit.toLowerCase().includes('sulfonamide') && it.fullCredit.includes('NOT require NKDA'), desc: 'Maria Thu Allergy: Sulfonamide without NKDA penalty' },
   { key: 'Week3_Patient_C_Wednesday', id: '1E.5', test: it => it.fullCredit.includes('Trelegy') && it.fullCredit.includes('separate tiotropium is NOT prescribed'), desc: 'Maria Wed: Trelegy includes LAMA (no duplicate tiotropium)' },
   { key: 'Week3_Patient_B_Tuesday', id: '3A.5', test: it => it.fullCredit.includes('Group B') && it.fullCredit.includes('Group E'), desc: 'Bob Tue: Accepts both GOLD Group B and Group E' },
+  { key: 'Week3_Patient_B_Tuesday', id: '3A.17', test: it => it.zeroCredit === '—', desc: 'Bob Tue: 3A.17 zeroCredit neutralized' },
+  { key: 'Week3_Patient_B_Tuesday', id: '3E.6', test: it => it.zeroCredit === '—', desc: 'Bob Tue: 3E.6 zeroCredit neutralized' },
+  { key: 'Week3_Patient_B_Tuesday', id: '4G.2', test: it => it.zeroCredit === '—', desc: 'Bob Tue: 4G.2 zeroCredit neutralized' },
+  { key: 'Week3_Patient_B_Tuesday', id: '5C.2', test: it => it.zeroCredit === '—', desc: 'Bob Tue: 5C.2 zeroCredit neutralized' },
+  { key: 'Week3_Patient_B_Wednesday', id: '3A.11', test: it => it.zeroCredit === '—', desc: 'Bob Wed: 3A.11 zeroCredit neutralized' },
+  { key: 'Week3_Patient_B_Wednesday', id: '4B.4', test: it => it.zeroCredit === '—' && it.fullCredit.includes('coffee'), desc: 'Bob Wed: 4B.4 coffee routine pairing' },
+  { key: 'Week3_Patient_B_Wednesday', id: '4B.5', test: it => it.zeroCredit === '—' && it.fullCredit.includes('blow into'), desc: 'Bob Wed: 4B.5 technique education full credit' },
+  { key: 'Week3_Patient_B_Wednesday', id: '4G.2', test: it => it.zeroCredit === '—', desc: 'Bob Wed: 4G.2 follow-up timing' },
   { key: 'Week3_Patient_B_Thursday', id: '4A.1', test: it => it.fullCredit.includes('triple therapy') && it.fullCredit.includes('Trelegy'), desc: 'Bob Thu: Escalation to triple therapy (Trelegy)' },
+  { key: 'Week3_Patient_B_Thursday', id: '1D.10', test: it => it.zeroCredit === '—', desc: 'Bob Thu: 1D.10 affordability confirmed' },
+  { key: 'Week3_Patient_B_Thursday', id: '3A.12', test: it => it.zeroCredit === '—', desc: 'Bob Thu: 3A.12 adherence verified' },
+  { key: 'Week3_Patient_B_Thursday', id: '4C.1', test: it => it.zeroCredit === '—' && it.fullCredit.includes('rinse'), desc: 'Bob Thu: 4C.1 mouth rinsing instructions' },
+  { key: 'Week3_Patient_B_Thursday', id: '4G.1', test: it => it.zeroCredit === '—', desc: 'Bob Thu: 4G.1 longitudinal monitoring' },
   { key: 'Week3_Patient_A_Tuesday', id: '1B.13', test: it => it.fullCredit.includes('5-day prednisone course 6 weeks ago'), desc: 'Sarah Tue: Accepts 5-day prednisone burst 6 weeks ago' },
   { key: 'Week3_Patient_A_Tuesday', id: '1C.2', test: it => it.fullCredit.includes('age 8'), desc: 'Sarah Tue: Accepts diagnosis age 8' },
   { key: 'Week3_Patient_A_Wednesday', id: '1A.7', test: it => it.fullCredit.includes('SMART'), desc: 'Sarah Wed: SMART therapy continuation' },
@@ -88,7 +100,17 @@ for (const c of checks) {
   }
 }
 
-// 3. Checking Case Data (patientsW3.js)
+// Check that no "model note" traps remain in Bob Wed
+const bobWed = rubrics['Week3_Patient_B_Wednesday'];
+const modelNoteTraps = bobWed.filter(it => (it.zeroCredit || '').toLowerCase().includes('model note'));
+if (modelNoteTraps.length > 0) {
+  console.error(`FAIL: ${modelNoteTraps.length} model note traps remain in Week3_Patient_B_Wednesday`);
+  failed = true;
+} else {
+  console.log('  PASS: Zero "model note" traps in Week3_Patient_B_Wednesday');
+}
+
+// 3. Checking Case Data (src/data/patientsW3.js)...
 console.log('\n3. Checking Case Data (src/data/patientsW3.js)...');
 const patientsW3Path = path.join(__dirname, '../src/data/patientsW3.js');
 const patientsW3Code = fs.readFileSync(patientsW3Path, 'utf8');
@@ -114,11 +136,11 @@ if (!patientsW3Code.includes("title: 'Asthma Control & Inhaler Technique'")) {
   console.log("  PASS: Sarah Wed assessment card updated to Asthma Control & Inhaler Technique");
 }
 
-if (!patientsW3Code.includes("title: 'Triple Therapy Escalation'")) {
-  console.error("FAIL: Bob Thu assessment card not updated to triple therapy");
+if (!patientsW3Code.includes("title: 'COPD Triple Therapy Escalation Assessment'")) {
+  console.error("FAIL: Bob Thu assessment card not updated to COPD Triple Therapy Escalation Assessment");
   failed = true;
 } else {
-  console.log("  PASS: Bob Thu assessment card updated to triple therapy escalation");
+  console.log("  PASS: Bob Thu assessment card updated to COPD Triple Therapy Escalation Assessment");
 }
 
 // Check Bob Thu specifically for ACT score removal
@@ -140,6 +162,13 @@ if (!promptsCode.includes("32. For Week 3 encounters (Sarah Thompson, Bob Jenkin
   failed = true;
 } else {
   console.log("  PASS: prompts.js contains comprehensive Rule 32 for Week 3");
+}
+
+if (!promptsCode.includes("Bob Jenkins Tuesday:") || !promptsCode.includes("Bob Jenkins Wednesday:") || !promptsCode.includes("Bob Jenkins Thursday:")) {
+  console.error("FAIL: prompts.js missing Bob Jenkins sections");
+  failed = true;
+} else {
+  console.log("  PASS: prompts.js contains Bob Jenkins Tuesday, Wednesday, and Thursday guidelines");
 }
 
 console.log('\n==================================================');
