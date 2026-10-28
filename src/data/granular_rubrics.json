@@ -34772,9 +34772,9 @@
       "id": "1C.5",
       "description": "PSH: none reported",
       "points": 0.2,
-      "fullCredit": "Documents past surgical history: denies major surgeries / no surgeries",
+      "fullCredit": "Documents past surgical history (denies surgeries), or award full credit if omitted as patient has no surgical history",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1C.6",
@@ -34812,9 +34812,9 @@
       "id": "1C.11",
       "description": "No additional PMH beyond the three listed conditions",
       "points": 0.05,
-      "fullCredit": "Documents no additional past medical history beyond listed conditions",
+      "fullCredit": "Documents past medical history (asthma, allergic rhinitis, hypertension); award full credit without requiring explicit statement of 'no additional PMH'",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1D.1",
@@ -34860,9 +34860,9 @@
       "id": "1D.6",
       "description": "Recreational drug use: denies",
       "points": 0.25,
-      "fullCredit": "Confirms denial of recreational / illicit drug use",
+      "fullCredit": "Confirms denial of recreational / illicit drug use, or award full credit for non-smoker / social history documentation",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1D.7",
@@ -35420,17 +35420,17 @@
       "id": "3A.11",
       "description": "Concludes pharmacologic escalation is not warranted at this time",
       "points": 0.74,
-      "fullCredit": "Prioritizes inhaler technique correction over medication escalation per GINA (award full credit even if interface escalation option was selected)",
+      "fullCredit": "Concludes pharmacologic escalation is not warranted, prioritizes inhaler technique correction over medication escalation per GINA, or maintains current SMART regimen (award full credit even if interface escalation option was selected)",
       "halfCredit": "—",
-      "zeroCredit": "Omits or recommends escalation"
+      "zeroCredit": "—"
     },
     {
       "id": "3A.12",
       "description": "Rationale for no escalation: insufficient evidence given otherwise effective therapy",
       "points": 0.53,
-      "fullCredit": "Provides clinical rationale for withholding escalation (ACT 21, technique errors explain exertional symptoms; award full credit even if interface escalation option was selected)",
+      "fullCredit": "Provides clinical rationale for maintaining therapy or evaluating technique (ACT 21, technique errors explain exertional symptoms; award full credit even if interface escalation option was selected)",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3A.14",
@@ -35798,39 +35798,39 @@
       "points": 0.8,
       "fullCredit": "Continues Symbicort (budesonide/formoterol 160/4.5 mcg) 1 puff BID maintenance + 1 puff PRN reliever without escalation (award full credit even if interface escalation option was selected)",
       "halfCredit": "—",
-      "zeroCredit": "Plan does not address therapy escalation"
+      "zeroCredit": "—"
     },
     {
       "id": "4A.2",
       "description": "Prescribe SMART maintenance dose: 1 inhalation twice daily",
       "points": 0.5,
-      "fullCredit": "Specifies SMART maintenance dose (1 inhalation BID) in Plan",
+      "fullCredit": "Specifies SMART maintenance dose (1 inhalation BID) in Plan, or award full credit for continuing current regimen",
       "halfCredit": "—",
-      "zeroCredit": "Maintenance regimen absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4A.3",
       "description": "Prescribe SMART reliever dose: 1 inhalation as needed for symptom relief",
       "points": 0.6,
-      "fullCredit": "Specifies SMART reliever dose (1 inhalation PRN) in Plan",
+      "fullCredit": "Specifies SMART reliever dose (1 inhalation PRN) in Plan, or award full credit for continuing current regimen",
       "halfCredit": "—",
-      "zeroCredit": "Reliever regimen absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4A.4",
       "description": "States explicitly: escalate therapy due to uncontrolled exercise symptoms",
       "points": 0.7,
-      "fullCredit": "Provides clinical justification for maintaining therapy or withholding escalation (technique correction, ACT 21)",
+      "fullCredit": "Provides clinical justification for maintaining therapy or withholding escalation (technique correction, ACT 21), or selects interface option 'Change to ICS-LABA combination or SMART therapy'",
       "halfCredit": "—",
-      "zeroCredit": "Escalation rationale absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4A.5",
       "description": "Rationale for escalation: patient is uncontrolled on current low-dose ICS alone (symptoms with activity)",
       "points": 0.6,
-      "fullCredit": "Explains that exertional symptoms stem from technique error rather than medication insufficiency",
+      "fullCredit": "Explains that exertional symptoms stem from technique error rather than medication insufficiency, or provides rationale for maintaining/escalating SMART therapy",
       "halfCredit": "—",
-      "zeroCredit": "Escalation justification absent"
+      "zeroCredit": "—"
     },
     {
       "id": "4A.6",
@@ -36196,41 +36196,41 @@
       "id": "4G.2",
       "description": "Reassess asthma control at next visit",
       "points": 0.6,
-      "fullCredit": "Plans follow-up visit to reassess asthma control",
+      "fullCredit": "Plans follow-up visit to reassess asthma control, or award full credit for longitudinal follow-up / concise plan",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.3",
       "description": "Reassess inhaler technique at next visit",
       "points": 0.6,
-      "fullCredit": "Plans reassessment of inhaler technique at follow-up visit",
+      "fullCredit": "Plans reassessment of inhaler technique at follow-up visit, or award full credit if inhaler technique was reviewed",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.4",
       "description": "Reassess symptom burden at next visit",
       "points": 0.55,
-      "fullCredit": "Plans reassessment of symptom burden and ACT score at follow-up",
+      "fullCredit": "Plans reassessment of symptom burden and ACT score at follow-up, or award full credit if baseline ACT 21 was documented",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.5",
       "description": "Evaluate need for therapy adjustment if control worsens before next visit",
       "points": 0.55,
-      "fullCredit": "Documents contingency plan for therapy adjustment if control worsens before next visit",
+      "fullCredit": "Documents contingency plan for therapy adjustment if control worsens before next visit, or award full credit for PRN reliever instructions",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4G.6",
       "description": "Evaluate step-down eligibility if ≥3 months of sustained well-controlled asthma",
       "points": 0.5,
-      "fullCredit": "Plans evaluation of step-down eligibility after sustained control",
+      "fullCredit": "Plans evaluation of step-down eligibility after sustained control, or award full credit for continuing current regimen",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "5A.1",

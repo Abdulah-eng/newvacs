@@ -71,6 +71,9 @@ const checks = [
   { key: 'Week3_Patient_A_Tuesday', id: '1B.13', test: it => it.fullCredit.includes('5-day prednisone course 6 weeks ago'), desc: 'Sarah Tue: Accepts 5-day prednisone burst 6 weeks ago' },
   { key: 'Week3_Patient_A_Tuesday', id: '1C.2', test: it => it.fullCredit.includes('age 8'), desc: 'Sarah Tue: Accepts diagnosis age 8' },
   { key: 'Week3_Patient_A_Wednesday', id: '1A.7', test: it => it.fullCredit.includes('SMART'), desc: 'Sarah Wed: SMART therapy continuation' },
+  { key: 'Week3_Patient_A_Wednesday', id: '3A.11', test: it => it.fullCredit.includes('escalation') && it.zeroCredit === '—', desc: 'Sarah Wed: No escalation penalty for 3A.11' },
+  { key: 'Week3_Patient_A_Wednesday', id: '1C.5', test: it => it.fullCredit.includes('surgeries') && it.zeroCredit === '—', desc: 'Sarah Wed: No surgery penalty for 1C.5' },
+  { key: 'Week3_Patient_A_Wednesday', id: '4G.2', test: it => it.fullCredit.includes('reassess') && it.zeroCredit === '—', desc: 'Sarah Wed: Follow-up plan 4G.2' },
   { key: 'Week3_Patient_A_Thursday', id: '3A.1', test: it => it.fullCredit.includes('ACT 22'), desc: 'Sarah Thu: Well-controlled ACT 22' },
 ];
 
@@ -102,6 +105,13 @@ if (!patientsW3Code.includes("title: 'ACO Pharmacotherapy Initiation'")) {
   failed = true;
 } else {
   console.log("  PASS: Maria Tue assessment card updated to initial ACO therapy (Trelegy initiation)");
+}
+
+if (!patientsW3Code.includes("title: 'Asthma Control & Inhaler Technique'")) {
+  console.error("FAIL: Sarah Wed assessment card not updated to Asthma Control & Inhaler Technique");
+  failed = true;
+} else {
+  console.log("  PASS: Sarah Wed assessment card updated to Asthma Control & Inhaler Technique");
 }
 
 if (!patientsW3Code.includes("title: 'Triple Therapy Escalation'")) {
