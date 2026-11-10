@@ -102,7 +102,7 @@ const caseTue = {
     { name: 'Lisinopril', dose: '10 mg', route: 'PO', freq: 'Take 1 tablet by mouth once daily', indication: 'Hypertension', notes: '', start: '03/10/2016', prescriber: 'Dr. A. Whitfield', lastFilled: '05/20/2026', refills: '2' },
     { name: 'Hydrochlorothiazide', dose: '12.5 mg', route: 'PO', freq: 'Take 1 tablet by mouth once daily', indication: 'Hypertension', notes: '', start: '03/10/2016', prescriber: 'Dr. A. Whitfield', lastFilled: '05/20/2026', refills: '2' },
     { name: 'Acetaminophen', dose: '500 mg', route: 'PO', freq: 'Take 1 tablet by mouth every 6 hours as needed for pain', indication: 'Knee osteoarthritis', notes: 'As needed', start: '11/05/2020', prescriber: 'Dr. A. Whitfield', lastFilled: '04/10/2026', refills: '1' },
-    { name: 'Ibuprofen (OTC)', dose: '200 mg', route: 'PO', freq: 'Take 2 tablets by mouth occasionally for pain', patientReported: true, source: 'Patient Interview' },
+    { name: 'Ibuprofen (OTC)', dose: '400–600 mg (2–3 tablets of 200 mg)', route: 'PO', freq: 'Take 2–3 tablets (400–600 mg) by mouth occasionally as needed for knee stiffness and mild joint pain', patientReported: true, source: 'Patient Interview' },
     { name: 'Multivitamin (OTC)', dose: '1 tablet', route: 'PO', freq: 'Take 1 tablet by mouth daily', patientReported: true, source: 'Patient Interview' }
   ],
 
@@ -121,7 +121,7 @@ const caseTue = {
     { label: 'Past Surgical History (PSH)', value: 'Cholecystectomy (gallbladder removal at age 41). No other surgical history.' },
     { label: 'Family History', value: 'Father: hypertension, type 2 diabetes, myocardial infarction (MI) at age 62; Mother: hypertension, type 2 diabetes, diabetic kidney disease (DKD); Brother: type 2 diabetes.' },
     { label: 'Allergies', value: 'No known drug allergies (NKDA).' },
-    { label: 'General wellness & symptoms', value: 'Patient reports feeling generally well overall aside from chronic conditions and knee stiffness; no acute complaints documented at intake.' },
+    { label: 'General wellness & symptoms', value: 'Patient reports feeling generally well overall aside from chronic conditions, knee stiffness, and mild joint pain from bilateral knee osteoarthritis; no acute complaints documented at intake.' },
     { label: 'Medication adherence & monitoring', value: 'Patient misses morning doses 2–3 times per week due to chaotic mornings and busy schedule/forgetfulness; explicitly denies intentional nonadherence (never intentionally skips or stops pills). Tolerating current regimen well; prior metformin GI intolerance (nausea and diarrhea upon initiation years ago) is now completely resolved. Intermittent home blood pressure monitoring (1–2 times per week) reveals readings typically in the 140s/90s range (average ~144/90 mmHg) with improper measurement technique (crossing legs, checking right after moving around, unverified cuff placement).' },
     { label: 'Social History', value: 'Occupation: Elementary school administrative assistant. Marital/living status: Married, lives with husband. Tobacco status: Never smoker (denies tobacco use). Alcohol use status: Uses alcohol (1–2 glasses of wine on weekends). Recreational drug use: Explicitly denies recreational or illicit drug use.' },
     { label: 'Review of Systems (ROS)', value: 'Cardiovascular/Pulmonary/Neurologic: Explicitly denies chest pain, shortness of breath, palpitations, dizziness, syncope, severe headaches, lower extremity edema, and acute vision changes.' },

@@ -16,7 +16,7 @@ const subjectiveTab = fs.readFileSync(path.join(__dirname, '../src/components/Su
 const gradeSoapRoute = fs.readFileSync(path.join(__dirname, '../src/app/api/ai/grade-soap/route.js'), 'utf8');
 
 let passed = 0;
-let total = 40;
+let total = 45;
 
 // MG-TUE-01: Follow-up timetable conflicts with grader
 try {
@@ -527,6 +527,69 @@ try {
   console.log('✅ JW-WED-1E24: 1E.24 (Tdap interval) accepts >10 years ago or 12 years ago across rubrics, case, & prompts');
   passed++;
 } catch (e) { console.error('❌ JW-WED-1E24 failed:', e.message); }
+
+
+// LM-TUE-3A13: Cardiorenal optimization as highest-impact opportunity (3A.13)
+try {
+  const rub = rubrics['Week1_Patient_C_Tuesday'];
+  const item3A13 = rub.find(x => x.id === '3A.13');
+  assert(item3A13.fullCredit.includes('cardiorenal optimization') || item3A13.fullCredit.includes('highest-impact'));
+  assert.strictEqual(item3A13.zeroCredit, '—');
+  const lmTueCase = patientsBC.BC_CASES.find(x => x.id === 'linda-tue');
+  const ckdRisk = lmTueCase.ASSESSMENT_CARDS.find(x => x.id === 'c_ckd').questions.find(q => q.key === 'c_ckd_risk').defaultAnswer;
+  assert(ckdRisk.includes('Combined cardiorenal optimization') && ckdRisk.includes('highest-impact therapeutic opportunity'));
+  assert(prompts.includes('For Linda Martinez Tuesday cardiorenal priority (3A.13)'));
+  console.log('✅ LM-TUE-3A13: 3A.13 (cardiorenal optimization highest-impact opportunity) verified in rubric, case, & prompts');
+  passed++;
+} catch (e) { console.error('❌ LM-TUE-3A13 failed:', e.message); }
+
+// JW-WED-3F4: Weight loss attributed to activity and diet (3F.4)
+try {
+  const rub = rubrics['Week1_Patient_B_Wednesday'];
+  const item3F4 = rub.find(x => x.id === '3F.4');
+  assert(item3F4.fullCredit.includes('walking') && item3F4.fullCredit.includes('dietary'));
+  assert.strictEqual(item3F4.zeroCredit, '—');
+  const jwWedCase = patientsBC.BC_CASES.find(x => x.id === 'james-wed');
+  const obeEval = jwWedCase.ASSESSMENT_CARDS.find(x => x.id === 'obesity').questions.find(q => q.key === 'obe_eval').defaultAnswer;
+  assert(obeEval.includes('increased physical activity') && obeEval.includes('dietary improvements'));
+  assert(prompts.includes('For James Wilson Wednesday obesity assessment (3F.4)'));
+  console.log('✅ JW-WED-3F4: 3F.4 (weight loss attributed to activity & diet) verified in rubric, case, & prompts');
+  passed++;
+} catch (e) { console.error('❌ JW-WED-3F4 failed:', e.message); }
+
+// LM-WED-4F3: Persistent residual risk reinforcement (4F.3)
+try {
+  const rub = rubrics['Week1_Patient_C_Wednesday'];
+  const item4F3 = rub.find(x => x.id === '4F.3');
+  assert(item4F3.fullCredit.includes('residual-risk reinforcement') || item4F3.fullCredit.includes('residual risk'));
+  assert.strictEqual(item4F3.zeroCredit, '—');
+  const lmWedCase = patientsBC.BC_CASES.find(x => x.id === 'linda-wed');
+  const eduPlan = lmWedCase.PLAN_SECTIONS.find(x => x.id === 'edu_plan');
+  assert(eduPlan.options.some(x => x.label.includes('residual cardiorenal risk despite improvement')));
+  assert(prompts.includes('Patient education & residual risk reinforcement (4F.3)'));
+  console.log('✅ LM-WED-4F3: 4F.3 (persistent residual risk reinforcement) verified in rubric, case, & prompts');
+  passed++;
+} catch (e) { console.error('❌ LM-WED-4F3 failed:', e.message); }
+
+// JW-TUE-EMPAG: Empagliflozin unstarted due to cost barrier reconciled without conflict
+try {
+  const soapGen = fs.readFileSync(path.join(__dirname, '../src/lib/soapGenerator.js'), 'utf8');
+  assert(soapGen.includes("m.notes.toLowerCase().includes('unstarted')"));
+  assert(prompts.includes('listing empagliflozin 10 mg on the chart medication list and documenting that it was unstarted'));
+  console.log('✅ JW-TUE-EMPAG: Empagliflozin unstarted status reconciled in soapGenerator & prompts without conflict');
+  passed++;
+} catch (e) { console.error('❌ JW-TUE-EMPAG failed:', e.message); }
+
+// MG-TUE-IBU: Ibuprofen dose 400-600 mg & knee stiffness/pain reconciled
+try {
+  const cTue = cases.CASE_BY_ID['maria-tue'];
+  const ibu = cTue.MEDICATIONS.find(m => m.name.includes('Ibuprofen'));
+  assert(ibu.dose.includes('400–600 mg'));
+  assert(cTue.SUBJECTIVE_DOCUMENTED.find(s => s.label.includes('General wellness')).value.includes('knee stiffness, and mild joint pain'));
+  assert(prompts.includes('ibuprofen 200 mg, 400 mg, or 400–600 mg PRN for knee stiffness and/or mild joint pain'));
+  console.log('✅ MG-TUE-IBU: Ibuprofen dose (400–600 mg) and knee stiffness/pain reconciled in case & prompts');
+  passed++;
+} catch (e) { console.error('❌ MG-TUE-IBU failed:', e.message); }
 
 console.log('\n================================================================');
 console.log(`  Summary: ${passed} / ${total} tests passed!`);

@@ -407,7 +407,7 @@ const jamesWed = makeCase({
         {
           key: 'obe_eval',
           q: 'Weight trajectory and ongoing cardiometabolic risk:',
-          defaultAnswer: 'Status: Improving. Weight reduced by 2.5 kg (from 101 kg to 98.5 kg; BMI 31.9 to 31.1 kg/m²). Weight loss directly contributes to observed improvements in glycemic and blood pressure control. However, obesity continues to confer ongoing cardiovascular and metabolic risk; continued lifestyle intervention is strongly recommended.'
+          defaultAnswer: 'Status: Improving. Weight reduced by 2.5 kg (from 101 kg to 98.5 kg; BMI 31.9 to 31.1 kg/m²), successfully attributed to both increased physical activity (regular walking 3–4 days/week) and dietary improvements (eliminating sugary sodas, portion control). Weight loss directly contributes to observed improvements in glycemic and blood pressure control. However, Class I obesity continues to confer ongoing cardiovascular and metabolic risk; continued lifestyle intervention is strongly recommended.'
         }
       ]
     },
@@ -1001,9 +1001,9 @@ const lindaTue = makeCase({
     { id: 'c_overwhelmed', topic: 'Feeling Overwhelmed', field: 'priorities', keywords: ['priority', 'focus', 'overwhelm', 'doctors'], response: "Sometimes I feel like every doctor tells me something different and I don't know what I should focus on first." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'c_ckd', title: 'Chronic Kidney Disease Stage G3a, Category A3 — Severely Increased Albuminuria (Highest Priority)', icon: 'AlertTriangle', color: 'f59e0b', questions: [
+    { id: 'c_ckd', title: 'Cardiorenal Optimization & Chronic Kidney Disease Stage G3a, Category A3 — Severely Increased Albuminuria (Highest Priority)', icon: 'AlertTriangle', color: 'f59e0b', questions: [
       { key: 'c_ckd_stage', q: 'How is her kidney disease staged and classified?', defaultAnswer: 'Problem identified: Chronic Kidney Disease Stage 3a with severely increased albuminuria, identified as the highest-priority problem. Baseline eGFR 52 mL/min/1.73m² corresponds to CKD Stage G3a. Current UACR 452 mg/g (worsening from prior 410 mg/g) corresponds to Category A3 (severely increased albuminuria, >300 mg/g). KDIGO classification is Stage G3a, Category A3 (G3aA3), placing patient in the KDIGO "Very High Risk" category.' },
-      { key: 'c_ckd_risk', q: 'What is her clinical risk trajectory and guideline targets?', defaultAnswer: 'Patient exhibits persistent severe albuminuria despite baseline dual therapy with an ACE inhibitor (lisinopril 20 mg daily) and an SGLT2 inhibitor (empagliflozin 10 mg daily). She is at very high risk for CKD progression, very high risk for cardiovascular events, and very high risk for future kidney failure. Per ADA 2026 Standards of Care and KDIGO guidelines, albuminuria reduction and kidney preservation are paramount therapeutic priorities. Baseline serum potassium of 4.7 mEq/L (upper-normal) is acceptable for continued RAAS therapy and requires close monitoring upon escalation or MRA initiation.' },
+      { key: 'c_ckd_risk', q: 'What is her clinical risk trajectory and guideline targets?', defaultAnswer: 'Patient exhibits persistent severe albuminuria despite baseline dual therapy with an ACE inhibitor (lisinopril 20 mg daily) and an SGLT2 inhibitor (empagliflozin 10 mg daily). She is at very high risk for CKD progression, very high risk for cardiovascular events, and very high risk for future kidney failure. Combined cardiorenal optimization (kidney and cardiovascular risk reduction) represents the highest-impact therapeutic opportunity for this patient with CKD, diabetes, and established ASCVD. Per ADA 2026 Standards of Care and KDIGO guidelines, albuminuria reduction and kidney preservation are paramount therapeutic priorities. Baseline serum potassium of 4.7 mEq/L (upper-normal) is acceptable for continued RAAS therapy and requires close monitoring upon escalation or MRA initiation.' },
     ]},
     { id: 'c_ascvd', title: 'Secondary ASCVD Prevention (Status Post STEMI with PCI/DES) (High Priority)', icon: 'Activity', color: 'dc2626', questions: [
       { key: 'c_ascvd_stat', q: 'What is her cardiovascular status and treatment target?', defaultAnswer: 'Problem identified: Secondary ASCVD prevention, representing a major therapeutic priority. Status: Above goal. Patient has established ASCVD status post STEMI 3 years ago with PCI and drug-eluting stent (DES) placement. Current LDL-C remains elevated at 92 mg/dL on Atorvastatin 40 mg daily, which is above the secondary prevention LDL goal threshold (<70 mg/dL or <55 mg/dL for very high risk). Established ASCVD warrants intensive lipid-lowering therapy per ADA 2026 and ACC/AHA lipid guidelines. Patient possesses substantial residual cardiovascular risk from prior MI, diabetes, CKD, and elevated LDL.' },
@@ -1362,6 +1362,7 @@ const lindaWed = makeCase({
         { key: 'ep1', label: 'Continue chronic kidney disease education', correct: true },
         { key: 'ep2', label: 'Continue counseling regarding albuminuria and cardiovascular risk relationship', correct: true },
         { key: 'ep3', label: 'Engage in shared decision-making with patient on therapy prioritization', correct: true },
+        { key: 'ep4', label: 'Reinforce significance of persistent residual cardiorenal risk despite improvement (educate patient that high kidney and cardiovascular risk persists despite recent laboratory gains, requiring ongoing vigilance, medication adherence, and monitoring)', correct: true },
       ]
     },
     {

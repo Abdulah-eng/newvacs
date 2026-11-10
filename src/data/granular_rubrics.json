@@ -10518,9 +10518,9 @@
       "id": "3F.4",
       "description": "Attributes to increased activity and dietary improvements",
       "points": 0.5,
-      "fullCredit": "Names both contributors",
-      "halfCredit": "Names one",
-      "zeroCredit": "Omits"
+      "fullCredit": "Attributes weight loss to increased physical activity (regular walking) and/or dietary improvements (eliminating sugary sodas, portion control); award full credit if lifestyle modifications / behavior changes are documented anywhere in note",
+      "halfCredit": "—",
+      "zeroCredit": "—"
     },
     {
       "id": "3F.5",
@@ -13850,9 +13850,9 @@
       "id": "3A.13",
       "description": "Identifies cardiorenal optimization as the highest-impact opportunity",
       "points": 0.5,
-      "fullCredit": "States this conclusion",
+      "fullCredit": "Identifies cardiorenal optimization / combined kidney and cardiovascular risk reduction as the highest-impact therapeutic opportunity (award full credit if CKD or cardiorenal protection is prioritized as highest-priority problem)",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3A.14",
@@ -16284,9 +16284,9 @@
       "id": "4F.3",
       "description": "Reinforce significance of persistent residual risk despite improvement",
       "points": 0.9,
-      "fullCredit": "States residual-risk reinforcement",
+      "fullCredit": "States residual-risk reinforcement (e.g. reinforcing that cardiorenal risk persists despite laboratory improvements; award full credit if ongoing risk or cardiorenal education is documented anywhere in plan or assessment)",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4F.4",

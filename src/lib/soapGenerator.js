@@ -140,7 +140,13 @@ export function generateSoapDraft(caseData, state = {}) {
   }
 
   if (Array.isArray(caseData.MEDICATIONS) && caseData.MEDICATIONS.length > 0) {
-    objLines.push('Current Medications: ' + caseData.MEDICATIONS.map(m => `${m.name} ${m.dose} ${m.route} ${m.freq}`).join('; ') + '.')
+    objLines.push('Current Medications: ' + caseData.MEDICATIONS.map(m => {
+      let str = `${m.name} ${m.dose} ${m.route} ${m.freq}`
+      if (m.notes && m.notes.toLowerCase().includes('unstarted')) {
+        str += ` (${m.notes})`
+      }
+      return str
+    }).join('; ') + '.')
   }
 
   if (Array.isArray(caseData.ALLERGIES)) {
