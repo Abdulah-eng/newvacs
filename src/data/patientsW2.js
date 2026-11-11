@@ -150,7 +150,7 @@ const michaelTue = makeCase({
         { 
           key: 'a_hld_eval', 
           q: 'Evaluation of lipid control, cardiovascular risk, and statin intensity:', 
-          defaultAnswer: 'Control status: Suboptimal control. Current LDL-C is 132 mg/dL on atorvastatin 10 mg PO daily, which remains elevated above the treatment threshold. Calculated 10-year ASCVD risk score is 11.8%, placing him at elevated/intermediate-to-high cardiovascular risk. In addition, the patient exhibits multiple key ASCVD risk-enhancing conditions: chronic kidney disease (CKD G2A2 is an established risk enhancer per 2026 AHA/ACC Cholesterol Guidelines), essential hypertension, Class I obesity (BMI 32.6 kg/m²), former tobacco use (10 pack-years, quit 5 years ago), and positive family history of cardiovascular disease (father had MI at age 61). Medication nonadherence contributes to elevated LDL-C (misses evening doses 2–3 times weekly due to forgetting), but current statin intensity (atorvastatin 10 mg, low-to-moderate intensity) is inadequate for his risk profile. Indicated for statin intensification to high-intensity therapy (atorvastatin 40 mg PO daily, or titrating 20–40 mg daily) with adherence counseling and routine support to achieve goal LDL-C <70 mg/dL (or ≥50% reduction) per 2026 AHA/ACC Cholesterol Guidelines.' 
+          defaultAnswer: 'Control status: Suboptimal control. Current LDL-C is 132 mg/dL on atorvastatin 10 mg PO daily, which remains elevated above the treatment threshold. Calculated 10-year ASCVD risk score is 11.8%, placing him at elevated/intermediate-to-high cardiovascular risk. In addition, the patient exhibits multiple key ASCVD risk-enhancing conditions: chronic kidney disease (CKD G2A2 is an established risk enhancer per 2026 AHA/ACC Cholesterol Guidelines), essential hypertension, Class I obesity (BMI 32.6 kg/m²), former tobacco use (10 pack-years, quit 5 years ago), and positive family history of cardiovascular disease (father had MI at age 61). Medication nonadherence contributes to elevated LDL-C (misses evening doses 2–3 times weekly due to forgetting), but current statin intensity (atorvastatin 10 mg, low-to-moderate intensity) is inadequate for his risk profile. Baseline hepatic function is intact (AST 24 U/L, ALT 27 U/L within normal limits), providing an acceptable baseline for statin intensification. Indicated for statin intensification to high-intensity therapy (atorvastatin 40 mg PO daily, or titrating 20–40 mg daily) with adherence counseling and routine support to achieve goal LDL-C <70 mg/dL (or ≥50% reduction) per 2026 AHA/ACC Cholesterol Guidelines.' 
         }
       ] 
     },
@@ -176,7 +176,7 @@ const michaelTue = makeCase({
         { 
           key: 'a_htn_eval', 
           q: 'Evaluation of blood pressure control, target, and management strategy:', 
-          defaultAnswer: 'Status: Essential hypertension, near goal but above treatment target. Office BP is 136/84 mmHg (repeat 134/82 mmHg); 5-day home BP log average of 136/83 mmHg is consistent with and corroborates office measurements. Blood pressure treatment target is <130/80 mmHg per 2025 AHA/ACC Hypertension Guidelines in CKD (with systolic <120 mmHg considered when standardized office measurement is well-tolerated per KDIGO 2024). Sustained BP elevation accelerates albuminuria, renal decline, and ASCVD risk. Current 2-drug antihypertensive regimen (lisinopril 20 mg PO daily and hydrochlorothiazide 25 mg PO daily) is well-tolerated with stable renal function (SCr 1.08 mg/dL, eGFR 79) and normal potassium (4.5 mEq/L). Immediate pharmacologic BP intensification is deferred today; priority is placed on stopping nephrotoxic NSAIDs, reinforcing medication adherence, and dietary sodium restriction, reassessing BP at next visit.' 
+          defaultAnswer: 'Status: Essential hypertension, near goal but above treatment target. Office BP is 136/84 mmHg (repeat 134/82 mmHg); 5-day home BP log average of 136/83 mmHg is consistent with and corroborates office measurements. Blood pressure treatment target is <130/80 mmHg per 2025 AHA/ACC Hypertension Guidelines in CKD (with systolic <120 mmHg considered when standardized office measurement is well-tolerated per KDIGO 2024). Per KDIGO 2024 guidelines, strict blood pressure control slows CKD progression and reduces cardiovascular complications, whereas sustained BP elevation accelerates albuminuria, renal decline, and ASCVD risk. Current 2-drug antihypertensive regimen (lisinopril 20 mg PO daily and hydrochlorothiazide 25 mg PO daily) is well-tolerated with stable renal function (SCr 1.08 mg/dL, eGFR 79) and normal potassium (4.5 mEq/L). Immediate pharmacologic BP intensification is deferred today; priority is placed on stopping nephrotoxic NSAIDs, reinforcing medication adherence, and dietary sodium restriction, reassessing BP at next visit.' 
         }
       ] 
     },
@@ -363,7 +363,7 @@ const michaelWed = makeCase({
     },
     {
       label: 'Medication adherence & routine',
-      value: 'Medication adherence has improved substantially: established an effective behavioral reminder routine by placing evening pills in a visible location on the bedside counter. Quantified adherence: now takes ~6 of 7 doses weekly (~85-90% adherence, missing only ~1 dose/week versus missing 2–3 times weekly previously). Denies intentional skipping.'
+      value: 'Medication adherence has improved substantially: established an effective behavioral reminder routine by placing evening pills in a visible location on the bedside counter. Quantified adherence: now takes ~6 of 7 doses weekly (~85-90% adherence, missing only ~1 dose every 2 weeks [or ~1 dose/week] versus missing 2–3 times weekly previously). Denies intentional skipping.'
     },
     {
       label: 'Dietary & lifestyle modifications',
@@ -512,7 +512,7 @@ const michaelWed = makeCase({
         {
           key: 'aw_edu_eval',
           q: 'Addressing patient misconception regarding normal eGFR vs albuminuria:',
-          defaultAnswer: 'Status: Disease understanding deficit identified: patient erroneously believes that his normal kidney blood test (eGFR 78 mL/min/1.73m²) means his kidneys are completely healthy, indicating limited understanding persists despite prior counseling. Per KDIGO 2024 CKD Guidelines, albuminuria signals kidney damage even when filtration rate is preserved; persistent A2 albuminuria confers elevated risk for progressive renal decline and cardiovascular disease. Continued patient-centered education is necessary to sustain engagement, medication adherence, and self-management.'
+          defaultAnswer: 'Status: Disease understanding deficit identified: patient erroneously believes that his normal kidney blood test (eGFR 78 mL/min/1.73m²) means his kidneys are completely healthy, indicating limited understanding persists despite prior counseling. Per KDIGO 2024 CKD Guidelines, albuminuria signals kidney damage even when filtration rate is preserved; persistent A2 albuminuria confers elevated risk for progressive renal decline and cardiovascular disease. Correcting this albuminuria misconception represents the primary educational need for this visit to sustain engagement, medication adherence, and self-management.'
         }
       ]
     },
@@ -693,7 +693,7 @@ const michaelThu = makeCase({
     },
     {
       label: 'Medication adherence & routine',
-      value: 'Medication adherence remains high (>95% adherence) utilizing visible bedside placement reminder routine; misses fewer than 1 dose per month. Denies intentional nonadherence.'
+      value: 'Medication adherence remains high (>95% adherence) utilizing visible bedside placement reminder routine, which the patient reports is easy to maintain; misses fewer than 1 dose per month. Denies intentional nonadherence.'
     },
     {
       label: 'Dietary & lifestyle modifications',
@@ -701,11 +701,15 @@ const michaelThu = makeCase({
     },
     {
       label: 'OTC NSAID avoidance & pain management',
-      value: 'Completely discontinued regular OTC ibuprofen following previous counseling; uses acetaminophen 500–650 mg PO PRN rare knee stiffness (only 1–2 times per month).'
+      value: 'Completely discontinued regular OTC ibuprofen following previous counseling, now clearly understanding the potential adverse impact of NSAIDs on kidney health and renal hemodynamics; previously took ibuprofen several times weekly, but has now adopted safer practices, successfully discontinuing regular NSAIDs and using acetaminophen 500–650 mg PO PRN rare knee stiffness only 1–2 times per month (PRN ~1–2 times monthly).'
     },
     {
       label: 'Past Medical History (PMH)',
       value: 'Essential hypertension (diagnosed 8 years ago), hyperlipidemia (diagnosed 5 years ago), chronic kidney disease Stage G2A2 (confirmed 10 months ago), and Class I Obesity (BMI 31.3 kg/m²).'
+    },
+    {
+      label: 'Family History',
+      value: 'Father had myocardial infarction (MI) at age 61 (non-premature for male relative [threshold <55]); mother had hypertension and hyperlipidemia; brother healthy. Denies any known family history of kidney disease, chronic kidney disease (CKD), end-stage kidney disease (ESKD), or dialysis.'
     },
     {
       label: 'Social History',
@@ -717,7 +721,7 @@ const michaelThu = makeCase({
     },
     {
       label: 'Patient Expectations & Albuminuria Misconception',
-      value: 'Patient is puzzled that protein is still present in his urine (UACR 98 mg/g); expected it to be completely gone and wondered if treatment is failing. Needs counseling that reducing albuminuria—not eliminating it—is the realistic, protective goal.'
+      value: 'Patient demonstrates significantly improved CKD understanding overall, recognizing that proteinuria reflects ongoing kidney stress rather than acute organ failure; however, patient remains puzzled that protein is still present in his urine (UACR 98 mg/g) and asks questions regarding long-term prognosis and expectations. Needs counseling that reducing albuminuria—not eliminating it—is the realistic, protective goal.'
     },
     {
       label: 'Patient Goals & Motivations',
@@ -773,7 +777,7 @@ const michaelThu = makeCase({
         {
           key: 'at_hld_eval',
           q: 'Evaluation of durable lipid control, statin response, and ASCVD risk:',
-          defaultAnswer: 'Status: Hyperlipidemia, durable control at goal on atorvastatin 20 mg PO daily. Fasting lipid panel demonstrates LDL-C 84 mg/dL, reflecting a ~36% longitudinal reduction from baseline (132 to 96 to 84 mg/dL). Calculated 10-year ASCVD risk improved from baseline 11.8% to 9.8%. Per 2026 AHA/ACC Cholesterol Guidelines, statin therapy is the cornerstone of primary ASCVD prevention; residual cardiovascular risk factors remain present (CKD Stage G2A2 is an established ASCVD risk-enhancing condition, along with essential hypertension, Class I obesity, former smoking, and family history of cardiovascular disease [father MI at 61]). Durable LDL control and good tolerability confirm continuation of atorvastatin 20 mg PO daily as lifelong primary prevention; do not de-escalate therapy.'
+          defaultAnswer: 'Status: Hyperlipidemia, durable control at goal on atorvastatin 20 mg PO daily. Fasting lipid panel demonstrates LDL-C 84 mg/dL, reflecting a ~36% longitudinal reduction from baseline (132 to 96 to 84 mg/dL). Calculated 10-year ASCVD risk improved from baseline 11.8% to 9.8%. Per 2026 AHA/ACC Cholesterol Guidelines, statin therapy is the cornerstone of primary ASCVD prevention; residual cardiovascular risk factors remain present (CKD Stage G2A2 is an established ASCVD risk-enhancing condition, along with essential hypertension, Class I obesity, former smoking, and family history of cardiovascular disease [father MI at 61]). Improvement is attributed to both statin intensification and sustained high medication adherence alongside lifestyle gains (multiple drivers). Durable LDL control and good tolerability confirm continuation of atorvastatin 20 mg PO daily as lifelong primary prevention; do not de-escalate therapy. Further statin intensification is not indicated at this time given sustained response at goal.'
         }
       ]
     },
@@ -786,7 +790,7 @@ const michaelThu = makeCase({
         {
           key: 'at_ckd_eval',
           q: 'Evaluation of CKD staging, longitudinal trend, and managing albuminuria expectations:',
-          defaultAnswer: 'Status: CKD Stage G2A2, stable filtration with longitudinal albuminuria reduction. Dual-axis classification: eGFR 77 mL/min/1.73m² (baseline 79, 3-month 78) confirms stable preserved Stage G2 filtration; spot UACR is 98 mg/g (down from baseline 118 and 3-month 102 mg/g, reflecting a ~17% cumulative reduction), but remains classified as persistent Category A2 moderately increased albuminuria. Cites KDIGO 2024 CKD Guideline: dual-axis staging confirms ongoing microvascular risk despite normal filtration. Crucial clinical communication: educate patient that reducing albuminuria—not eliminating it completely—is the realistic, protective therapeutic goal. Complete normalization of albuminuria is often not achievable and not required for durable kidney and cardiovascular protection; persisting protein does NOT mean treatment failure. Continue lisinopril 20 mg PO daily.'
+          defaultAnswer: 'Status: CKD Stage G2A2, stable filtration with longitudinal albuminuria reduction. Dual-axis classification: eGFR 77 mL/min/1.73m² (baseline 79, 3-month 78) confirms stable preserved Stage G2 filtration; spot UACR is 98 mg/g (down from baseline 118 and 3-month 102 mg/g, reflecting a ~17% cumulative reduction), but remains classified as persistent Category A2 moderately increased albuminuria. This improving albuminuria trend suggests successful kidney-protective interventions (specifically ACE inhibitor therapy with lisinopril combined with nephrotoxin avoidance and adherence). Cites KDIGO 2024 CKD Guideline: dual-axis staging confirms ongoing microvascular risk despite normal filtration. Crucial clinical communication: educate patient that reducing albuminuria—not eliminating it completely—is the realistic, protective therapeutic goal. Complete normalization of albuminuria is often not achievable and not required for durable kidney and cardiovascular protection; persisting protein does NOT mean treatment failure. Continue lisinopril 20 mg PO daily.'
         }
       ]
     },
@@ -799,7 +803,7 @@ const michaelThu = makeCase({
         {
           key: 'at_htn_eval',
           q: 'Evaluation of blood pressure status, longitudinal control, and therapeutic efficacy:',
-          defaultAnswer: 'Status: Essential hypertension, well-controlled at target. Office BP is 130/78 mmHg (repeat 128/78 mmHg), demonstrating sustained longitudinal control (baseline 136/84, 3-month 132/80 mmHg). Blood pressure meets guideline target (<130/80 mmHg per 2025 AHA/ACC Hypertension Guidelines in CKD). Current 2-drug antihypertensive therapy (lisinopril 20 mg PO daily and hydrochlorothiazide 25 mg PO daily) is effective, well-tolerated, and provides synergistic intraglomerular pressure reduction. Continue current regimen.'
+          defaultAnswer: 'Status: Essential hypertension, well-controlled at target. Office BP is 130/78 mmHg (repeat 128/78 mmHg), demonstrating sustained longitudinal control (baseline 136/84, 3-month 132/80 mmHg). Office readings demonstrate consistent blood pressure control; absence of home monitoring logs was previously noted with ongoing clinic-based monitoring. Blood pressure meets guideline target (<130/80 mmHg per 2025 AHA/ACC Hypertension Guidelines in CKD). Per KDIGO 2024 guidelines, strict blood pressure control slows CKD progression and reduces cardiovascular complications. Current 2-drug antihypertensive therapy (lisinopril 20 mg PO daily and hydrochlorothiazide 25 mg PO daily) is effective, well-tolerated, and provides synergistic intraglomerular pressure reduction. Continue current regimen.'
         }
       ]
     },
@@ -812,7 +816,7 @@ const michaelThu = makeCase({
         {
           key: 'at_adh_eval',
           q: 'Evaluation of durable adherence and complete NSAID avoidance:',
-          defaultAnswer: 'Status: Durable medication adherence maintained (>95% adherence via bedtime routine, missing <1 dose/month). Patient has successfully eliminated regular OTC ibuprofen use, transitioning safely to occasional acetaminophen PRN for knee stiffness. Per KDIGO 2024, durable nephrotoxin avoidance is critical to preventing acute kidney injury and preserving residual nephron mass. Praise patient for sustained behavioral modifications.'
+          defaultAnswer: 'Status: Durable medication adherence maintained (>95% adherence via bedtime routine, missing <1 dose/month), which the patient reports is easy to maintain. Sustained high medication adherence has contributed directly to significant lipid (LDL-C) improvement and durable blood pressure control with reduced cardiovascular risk. Furthermore, the patient now demonstrates a clear understanding of the nephrotoxic mechanism of NSAIDs on renal hemodynamics and has adopted safer practices, successfully reducing ibuprofen from several times weekly down to rare occasional use (PRN ~1-2 times monthly) and transitioning safely to occasional acetaminophen PRN for knee stiffness. Per KDIGO 2024, durable nephrotoxin avoidance is critical to preventing acute kidney injury and preserving residual nephron mass. Praise patient for sustained behavioral modifications.'
         }
       ]
     },
@@ -990,7 +994,7 @@ const angelaTue = makeCase({
     { name: 'Tdap', status: 'Overdue (last documented 12 years ago)', flag: 'warn' }
   ],
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: '64-year-old female referred by her primary care provider (PCP) for initial collaborative practice management of uncontrolled hyperlipidemia (LDL-C 148 mg/dL), essential hypertension, and chronic kidney disease Stage G3aA2. Reports taking active blood pressure medications (losartan 50 mg, amlodipine 10 mg) faithfully as prescribed with no skipped or stretched doses. Rosuvastatin 20 mg PO daily was prescribed 6 months ago but never initiated due to out-of-pocket cost concerns on a fixed income, embarrassment discussing affordability with her doctor, and fear of statin-associated muscle aches.' },
+    { label: 'HPI', value: '66-year-old female referred by her primary care provider (PCP) for initial collaborative practice management of uncontrolled hyperlipidemia (LDL-C 148 mg/dL), essential hypertension, and chronic kidney disease Stage G3aA2. Reports taking active blood pressure medications (losartan 50 mg, amlodipine 10 mg) faithfully as prescribed with no skipped or stretched doses. Rosuvastatin 20 mg PO daily was prescribed 6 months ago but never initiated due to out-of-pocket cost concerns on a fixed income, embarrassment discussing affordability with her doctor, and fear of statin-associated muscle aches (from stories heard from friends).' },
     { label: 'Past Medical & Surgical History', value: 'Essential hypertension (diagnosed 15 years ago), hyperlipidemia (diagnosed 12 years ago), and chronic kidney disease Stage G3aA2 (newly identified). Surgical history: cholecystectomy (~10 years ago) and total abdominal hysterectomy at age 45.' },
     { label: 'Review of Systems', value: 'Denies chest pain, shortness of breath, palpitations, syncope, lower extremity edema, gross hematuria, or urinary complaints. Reports occasional mild fatigue and occasional nighttime leg cramping.' },
     { label: 'Social history', value: 'Retired elementary school teacher, widowed, lives independently in her own home. Never smoker. Rare alcohol use (holiday wine). Denies recreational drug use. Diet consists of frequent convenience/packaged foods with elevated sodium; sedentary lifestyle.' },
@@ -1043,7 +1047,7 @@ const angelaTue = makeCase({
       response: "Honestly, I was worried about the cost. Some of these medications get pretty expensive, and I'm on a fixed income." },
     { id: 'b_fear', topic: 'Statin fear', field: 'concerns',
       keywords: ['side effect', 'muscle', 'safe', 'afraid', 'worried', 'concern', 'risk', 'stories'],
-      response: "I also hear a lot of stories about people having muscle problems from those medications, so I was a little nervous." },
+      response: "I also hear a lot of stories from my friends about people having muscle aches and problems from those medications, so I was a little nervous." },
     { id: 'w2-angela-tue_marital', topic: 'Marital status', field: 'familyHistory', keywords: ['marital', 'married', 'husband', 'widow', 'spouse'], response: "I am widowed. My husband passed away a few years ago." },
     { id: 'w2-angela-tue_occupation', topic: 'Occupation', field: 'exercise', keywords: ['job', 'work', 'occupation', 'teacher', 'school'], response: "I'm a retired elementary school teacher." },
     { id: 'b_bp', topic: 'Home BP habits', field: 'homeBp',
@@ -1060,7 +1064,7 @@ const angelaTue = makeCase({
         { 
           key: 'b_hld_eval', 
           q: 'Evaluation of untreated hyperlipidemia, ASCVD risk, and non-initiation barriers:', 
-          defaultAnswer: 'Status: Untreated severe hyperlipidemia with markedly elevated LDL-C of 148 mg/dL (Total Chol 234–238 mg/dL, Triglycerides 185–200 mg/dL, HDL-C 41–46 mg/dL). Baseline 10-year ASCVD risk is high at 14.5%–17.4%. Key ASCVD risk-enhancing conditions include CKD G3aA2, essential hypertension, Class II obesity (BMI 36.3 kg/m²), and advanced age (64 years). Absent statin therapy is clearly inadequate for this high-risk patient. Crucially, this reflects therapeutic inertia secondary to patient non-initiation rather than inappropriate prescribing or pharmacologic failure: rosuvastatin 20 mg PO daily was prescribed 6 months ago but never initiated due to unaddressed patient barriers (financial anxiety on fixed retirement income and fear of statin-associated muscle symptoms). Cost-related non-initiation represents a major threat to long-term cardiovascular and renal disease control. Clinical strategy must resolve these barriers through reassuring adverse effect counseling (actual low incidence of severe myopathy, protocol for managing aches), identifying affordable generic pharmacy options ($4–$10/month), and shared decision-making to successfully initiate guideline-directed high-intensity statin therapy (rosuvastatin 20 mg PO daily) targeting LDL-C <70–100 mg/dL (or ≥50% reduction) per 2026 AHA/ACC Cholesterol Guidelines.' 
+          defaultAnswer: 'Status: Untreated severe hyperlipidemia with markedly elevated LDL-C of 148 mg/dL (Total Chol 234–238 mg/dL, Triglycerides 185–200 mg/dL, HDL-C 41–46 mg/dL). Baseline 10-year ASCVD risk is high at 14.5%–17.4%. Key ASCVD risk-enhancing conditions include CKD G3aA2, essential hypertension, Class II obesity (BMI 36.3 kg/m²), and advanced age (66 years). Absent statin therapy is clearly inadequate for this high-risk patient. Crucially, this reflects therapeutic inertia secondary to patient non-initiation rather than inappropriate prescribing or pharmacologic failure: rosuvastatin 20 mg PO daily was prescribed 6 months ago but never initiated due to unaddressed patient barriers (financial anxiety on fixed retirement income and fear of statin-associated muscle symptoms). Cost-related non-initiation represents a major threat to long-term cardiovascular and renal disease control. Clinical strategy must resolve these barriers through reassuring adverse effect counseling (actual low incidence of severe myopathy, protocol for managing aches), identifying affordable generic pharmacy options ($4–$10/month), and shared decision-making to successfully initiate guideline-directed high-intensity statin therapy (rosuvastatin 20 mg PO daily) targeting LDL-C <70–100 mg/dL (or ≥50% reduction) per 2026 AHA/ACC Cholesterol Guidelines.' 
         }
       ] 
     },
@@ -1086,7 +1090,7 @@ const angelaTue = makeCase({
         { 
           key: 'b_htn_eval', 
           q: 'Evaluation of blood pressure control, target, and management strategy:', 
-          defaultAnswer: 'Status: Essential hypertension, above treatment goal. Office BP is 138/84 mmHg (repeat 136/82 mmHg; ref 142/86, 140/84 mmHg); occasional home BP readings (~140/85 mmHg) corroborate in-office elevation. Blood pressure target is <130/80 mmHg per 2025 AHA/ACC Hypertension Guidelines in CKD (with KDIGO systolic target <120 mmHg when standardized measurement is tolerated). Contributing factors include high-sodium convenience food intake and lack of regular physical activity. Active regimen (losartan 50 mg PO daily and amlodipine 10 mg PO daily) is well-tolerated. Defer immediate pharmacologic intensification today to prevent polypharmacy and avoid confusing side-effect profiles while initiating rosuvastatin; prioritize establishing regular home BP monitoring, sodium restriction, and adherence assessment, reassessing BP for potential losartan titration to 100 mg at follow-up.' 
+          defaultAnswer: 'Status: Essential hypertension, above treatment goal. Office BP is 138/84 mmHg (repeat 136/82 mmHg; ref 142/86, 140/84 mmHg); occasional home BP readings (~140/85 mmHg) corroborate in-office elevation. Blood pressure target is <130/80 mmHg per 2025 AHA/ACC Hypertension Guidelines in CKD (with KDIGO systolic target <120 mmHg when standardized measurement is tolerated). Per KDIGO 2024 guidelines, blood pressure control slows CKD progression and reduces cardiovascular complications. Contributing factors include high-sodium convenience food intake and lack of regular physical activity. Active regimen (losartan 50 mg PO daily and amlodipine 10 mg PO daily) is well-tolerated. Defer immediate pharmacologic intensification today to prevent polypharmacy and avoid confusing side-effect profiles while initiating rosuvastatin; prioritize establishing regular home BP monitoring, sodium restriction, and adherence assessment, reassessing BP for potential losartan titration to 100 mg at follow-up.' 
         }
       ] 
     },
@@ -1134,7 +1138,7 @@ const angelaTue = makeCase({
       id: 'b_p_access', 
       title: 'Affordability & access plan', 
       options: [
-        { key: 'b_acc_o1', label: 'Identify affordable pharmacy options: navigate Medicare Part D low-cost generic copays ($4-$10/month) or $4 retail generic formularies', correct: true },
+        { key: 'b_acc_o1', label: 'Identify affordable pharmacy options and patient assistance resources: navigate Medicare Part D low-cost generic copays ($4–$10/month), $4 retail generic formularies, GoodRx discount cards, or patient assistance programs', correct: true },
         { key: 'b_acc_o2', label: 'Encourage open, regular communication about prescription affordability concerns to prevent cost-related non-initiation', correct: true },
       ] 
     },
@@ -1254,7 +1258,7 @@ const angelaWed = makeCase({
     },
     {
       label: 'Interval history & general wellbeing',
-      value: 'Patient reports doing well overall since previous visit. Successfully initiated rosuvastatin 20 mg PO daily and taking it consistently (missed only 1–2 doses in 3 months). Reassured by affordability ($4 generic retail copay) and reports great peace of mind.'
+      value: 'Patient reports doing well overall since previous visit. Successfully initiated rosuvastatin 20 mg PO daily and taking it consistently (missed only 1–2 doses in 3 months). Reassured by affordability ($4 generic retail copay) and reports great peace of mind, expressing significantly reduced statin concerns after experiencing no serious adverse effects or disabling muscle problems on therapy.'
     },
     {
       label: 'Statin tolerability & muscle symptoms',
@@ -1270,7 +1274,7 @@ const angelaWed = makeCase({
     },
     {
       label: 'Social History',
-      value: 'Occupation: Retired elementary school teacher. Marital/living status: Widowed, lives independently. Tobacco status: Never smoker (denies any tobacco history). Alcohol use: Rarely drinks alcohol (glass of wine on special occasions only). Recreational drugs: Explicitly denies any illicit or recreational drug use. Physical activity: Walking 3–4 days/week for 20–30 minutes. Diet: Cooking more fresh meals from scratch at home and cutting down on salty packaged/convenience foods.'
+      value: 'Occupation: Retired elementary school teacher. Marital/living status: Widowed, lives independently. Tobacco status: Never smoker (denies any tobacco history). Alcohol use: Rarely drinks alcohol (glass of wine on special occasions only). Recreational drugs: Explicitly denies any illicit or recreational drug use. Physical activity: Increasing physical activity by establishing a regular walking routine, now walking 3–4 days/week for 20–30 minutes (increased from previously sedentary baseline). Diet: Cooking more fresh meals from scratch at home and cutting down on salty packaged/convenience foods.'
     },
     {
       label: 'Review of Systems (ROS)',
@@ -1344,7 +1348,7 @@ const angelaWed = makeCase({
         {
           key: 'bw_inertia_eval',
           q: 'Clinical insight into implementation barriers and resolved affordability:',
-          defaultAnswer: 'Status: Resolution of therapeutic inertia and prescription access barrier. This encounter demonstrates the critical clinical insight that prior treatment \'failure\' was due to prescription non-initiation resulting from cost barriers ($180/month brand quote), rather than biologic drug resistance. Identifying and resolving implementation barriers by identifying a $4 generic retail copay resulted in successful rosuvastatin initiation, high adherence, and substantial LDL-C lowering. Affordability has been resolved as an active barrier, but access and out-of-pocket costs must continue to be assessed at future visits to reinforce open communication and sustain long-term adherence.'
+          defaultAnswer: 'Status: Resolution of therapeutic inertia and implementation barriers. This encounter demonstrates the critical clinical insight that prior treatment non-initiation was driven by two interrelated patient barriers: prescription cost anxiety ($180/month brand quote on fixed income) and fear of statin-associated muscle adverse effects, rather than true biologic drug resistance or inappropriate prescribing. Identifying an affordable $4 generic retail copay and providing reassuring counseling on adverse effect management successfully resolved both barriers, leading to consistent rosuvastatin initiation, high adherence, and substantial LDL-C lowering. Affordability has been resolved as an active barrier, but access and out-of-pocket costs must continue to be assessed at future visits to reinforce open communication and sustain long-term adherence.'
         }
       ]
     },
@@ -1422,7 +1426,8 @@ const angelaWed = makeCase({
         { key: 'bw_hld_o1', label: 'Continue rosuvastatin 20 mg PO once daily at bedtime', correct: true },
         { key: 'bw_hld_o2', label: 'Treatment target: LDL-C <70-100 mg/dL (or >=50% reduction from baseline)', correct: true },
         { key: 'bw_hld_o3', label: 'Utilize shared decision-making: maintain rosuvastatin 20 mg daily without immediate intensification given favorable LDL response (89 mg/dL)', correct: true },
-        { key: 'bw_hld_o4', label: 'Recheck fasting lipid panel in ~3 months before next visit', correct: true }
+        { key: 'bw_hld_o4', label: 'Recheck fasting lipid panel in ~3 months before next visit', correct: true },
+        { key: 'bw_hld_o5', label: 'Reinforce high medication adherence to rosuvastatin given consistent daily use and excellent LDL-C response', correct: true }
       ]
     },
     {
@@ -1557,7 +1562,7 @@ const angelaThu = makeCase({
     },
     {
       label: 'Interval history & general wellbeing',
-      value: 'Patient reports feeling well and confident with her medications. Rosuvastatin 20 mg PO daily is well-tolerated; prior mild leg soreness reported at 3 months has completely resolved. Explicitly denies current muscle aches, weakness, or stiffness.'
+      value: 'Patient reports feeling well and confident with her medications ("I feel good about my medicines now"), but wonders whether long-term therapy is still needed given improved lab results, and specifically asks what else she should be doing to prevent worsening kidney disease. Rosuvastatin 20 mg PO daily is well-tolerated; prior mild leg soreness reported at 3 months has completely resolved. Explicitly denies current muscle aches, weakness, or stiffness.'
     },
     {
       label: 'Medication adherence & affordability',
@@ -1589,7 +1594,7 @@ const angelaThu = makeCase({
     },
     {
       label: 'Home Blood Pressure Monitoring',
-      value: 'Home BP log shows 7-day average of ~131/79 mmHg (range 126–136/76–82 mmHg), consistent with office BP readings.'
+      value: 'Home BP log shows 7-day average of ~131/79 mmHg (range 126–136/76–82 mmHg), consistent with office BP readings. Home readings corroborate office control, running slightly above the ideal KDIGO CKD target (<120 mmHg systolic).'
     }
   ],
   OBJECTIVE_EXTRA: [
@@ -1645,7 +1650,7 @@ const angelaThu = makeCase({
         {
           key: 'bt_hld_eval',
           q: 'Evaluation of durable lipid control, nonstatin decision, and ASCVD risk:',
-          defaultAnswer: 'Status: Hyperlipidemia, durable and approaching goal on rosuvastatin 20 mg PO daily. Fasting lipid panel demonstrates LDL-C 78 mg/dL, reflecting a ~47% reduction from baseline (148 to 89 to 78 mg/dL). Calculated 10-year ASCVD risk improved from baseline 17.4% (or 14.5%) to 13.2%. Per 2026 AHA/ACC Cholesterol Guidelines, statin therapy is the cornerstone of primary ASCVD prevention; residual cardiovascular risk factors remain present (CKD Stage G3aA2 is an established ASCVD risk-enhancing condition, along with essential hypertension, Class II obesity, age 66, and family history of premature CV disease and stroke [father MI at 63, mother stroke at 72]). Rosuvastatin is well-tolerated with complete resolution of prior mild exertional soreness. Shared decision-making regarding nonstatin therapy: continuing rosuvastatin 20 mg PO daily as monotherapy is fully appropriate, as LDL-C (78 mg/dL) approaches 50% reduction and is well within acceptable primary prevention thresholds; adding ezetimibe 10 mg daily is an acceptable optional consideration if an intensive target (<70 mg/dL) is desired, but not strictly required. Avoid statin de-escalation.'
+          defaultAnswer: 'Status: Hyperlipidemia, durable and approaching goal on rosuvastatin 20 mg PO daily. Fasting lipid panel demonstrates LDL-C 78 mg/dL, reflecting a ~47% reduction from baseline (148 to 89 to 78 mg/dL). Calculated 10-year ASCVD risk improved from baseline 17.4% (or 14.5%) to 13.2%. LDL reduction is directly attributed to successful initiation and ongoing maintenance of rosuvastatin 20 mg daily with continued adherence support. Per 2026 AHA/ACC Cholesterol Guidelines, statin therapy is the cornerstone of primary ASCVD prevention; residual cardiovascular risk factors remain present (CKD Stage G3aA2 is an established ASCVD risk-enhancing condition, along with essential hypertension, Class II obesity, age 66, and family history of premature CV disease and stroke [father MI at 63, mother stroke at 72]). Rosuvastatin is well-tolerated with complete resolution of prior mild exertional soreness. Shared decision-making regarding nonstatin therapy: continuing rosuvastatin 20 mg PO daily as monotherapy is fully appropriate, as LDL-C (78 mg/dL) approaches 50% reduction and is well within acceptable primary prevention thresholds; adding ezetimibe 10 mg daily is an acceptable optional consideration if an intensive target (<70 mg/dL) is desired, but not strictly required. Avoid statin de-escalation.'
         }
       ]
     },
@@ -1658,7 +1663,7 @@ const angelaThu = makeCase({
         {
           key: 'bt_ckd_eval',
           q: 'Evaluation of CKD staging, longitudinal trend, and renal stability:',
-          defaultAnswer: 'Status: CKD Stage G3aA2, stable filtration with persistent albuminuria. Dual-axis classification: eGFR 54 mL/min/1.73m² (baseline 53, 3-month 53) confirms stable Stage G3a moderate filtration reduction; spot UACR is 155 mg/g (longitudinal trend: 165 to 160 to 155 mg/g). Note clinical interpretation: the minor downward trend represents stable persistent Category A2 moderately increased albuminuria (small ~6% decline within A2 range), rather than a marked resolution. Cites KDIGO 2024 CKD Guideline: persistent CKD Stage G3aA2 independently contributes to elevated cardiovascular and renal risk. Stable kidney function supports continuing current renoprotective therapy with losartan 50 mg PO daily.'
+          defaultAnswer: 'Status: CKD Stage G3aA2, stable filtration with persistent albuminuria. Dual-axis classification: eGFR 54 mL/min/1.73m² (baseline 53, 3-month 53) confirms stable Stage G3a moderate filtration reduction; spot UACR is 155 mg/g (longitudinal trend: 165 to 160 to 155 mg/g). Note clinical interpretation: the minor downward trend represents stable persistent Category A2 moderately increased albuminuria (small ~6% decline within A2 range), rather than a marked resolution. Cites KDIGO 2024 CKD Guideline: persistent albuminuria indicates ongoing kidney damage and independently contributes to elevated long-term cardiovascular and renal risk. Stable kidney function supports continuing current renoprotective therapy with losartan 50 mg PO daily.'
         }
       ]
     },
@@ -1671,7 +1676,7 @@ const angelaThu = makeCase({
         {
           key: 'bt_htn_eval',
           q: 'Evaluation of blood pressure status, home/office consistency, and control targets:',
-          defaultAnswer: 'Status: Essential hypertension, controlled at target. Office BP is 132/80 mmHg (repeat 130/78 mmHg), improved from baseline (138/84 mmHg). Home BP log (average 131/79 mmHg, range 126-136/76-82 mmHg) corroborates office readings. Cites KDIGO 2024 / 2025 AHA/ACC Hypertension Guidelines: blood pressure target in CKD is <130/80 mmHg (KDIGO systolic <120 mmHg when tolerated). Current 2-drug antihypertensive therapy (losartan 50 mg PO daily and amlodipine 10 mg PO daily) is effective, well-tolerated, and without side effects; continue current regimen.'
+          defaultAnswer: 'Status: Essential hypertension, improved but slightly above ideal target. Office BP is 132/80 mmHg (repeat 130/78 mmHg); home BP log (average 131/79 mmHg, range 126-136/76-82 mmHg) corroborates office readings, with systolic BP running slightly above the ideal KDIGO target (<120 mmHg). Cites KDIGO 2024 / 2025 AHA/ACC Hypertension Guidelines: blood pressure optimization (<130/80 mmHg, KDIGO <120 SBP) slows CKD progression and reduces cardiovascular complications, directly linking BP control to albuminuria reduction and kidney protection. Current 2-drug antihypertensive therapy (losartan 50 mg PO daily and amlodipine 10 mg PO daily) has produced clear improvement and is well-tolerated; defers immediate intensification today, but future ARB optimization (titrating losartan to 100 mg daily) remains a reasonable conditional option if BP or albuminuria remain persistently elevated.'
         }
       ]
     },
@@ -1684,7 +1689,7 @@ const angelaThu = makeCase({
         {
           key: 'bt_acc_eval',
           q: 'Evaluation of durable adherence, resolved affordability, and symptom resolution:',
-          defaultAnswer: 'Status: Durable adherence (>95% adherence) and permanently resolved affordability barrier ($4 generic copay). Patient reports excellent confidence in her medication regimen. Prior mild lower-extremity muscle soreness reported at 3 months has completely resolved, confirming exertional etiology rather than drug-induced myopathy. Normal transaminases (AST 21, ALT 22 U/L) confirm hepatic safety.'
+          defaultAnswer: 'Status: Durable adherence (>95% adherence) and resolved affordability barrier ($4 generic copay). Continued reinforcement of successful medication-taking behaviors is appropriate, as sustained adherence is directly linked to improved clinical outcomes. Affordability resolution contributed substantially to improved implementation and clinical success; however, periodic reassessment of affordability concerns remains appropriate as financial concerns may recur over time. Prior mild lower-extremity muscle soreness reported at 3 months has completely resolved, confirming exertional etiology rather than drug-induced myopathy. Normal transaminases (AST 21, ALT 22 U/L) confirm hepatic safety.'
         }
       ]
     },
@@ -1698,6 +1703,19 @@ const angelaThu = makeCase({
           key: 'bt_ob_eval',
           q: 'Evaluation of weight status, dietary improvements, and activity maintenance:',
           defaultAnswer: 'Status: Class II Obesity (BMI 35.2 kg/m²), weight 93 kg (cumulative 3 kg / 6.6 lbs weight loss from baseline 96 kg). Weight change is driven by consistent walking 4 days/week for 20-30 minutes and sustained home cooking with sodium restriction. Cites KDIGO 2024 and 2026 AHA/ACC lifestyle guidelines: lifestyle modification provides essential foundational cardiorenal benefits in reducing blood pressure, intraglomerular pressure, and improving lipids. Reinforce successful behavioral modifications.'
+        }
+      ]
+    },
+    {
+      id: 'aw_thu_edu_know',
+      title: 'Disease Understanding & Long-Term Therapy Commitment',
+      icon: 'BookOpen',
+      color: '2563eb',
+      questions: [
+        {
+          key: 'bth_edu_q',
+          q: 'Assess patient understanding and long-term therapy commitment:',
+          defaultAnswer: 'Status: Knowledge deficit regarding chronic disease management identified and addressed. The patient demonstrates improved understanding of hyperlipidemia and CKD, but asks whether improved numbers mean medications can be discontinued. Addressed misconception: Per 2026 AHA/ACC Cholesterol Guidelines, LDL-C reduction reflects treatment success rather than disease resolution; lipid-lowering therapy must be continued lifelong for sustained cardiovascular protection. Similarly, per KDIGO 2024 CKD Guidelines, persistent A2 albuminuria requires ongoing risk reduction, blood pressure control, and monitoring even when kidney function is stable. Provided comprehensive counseling regarding the chronic, lifelong nature of cardiorenal disease, answering her proactive question about preventing kidney disease worsening.'
         }
       ]
     },
@@ -1724,7 +1742,17 @@ const angelaThu = makeCase({
         { key: 'bt_hld_o2', label: 'Treatment target: LDL-C <70-100 mg/dL (or >=50% reduction from baseline; current LDL 78 mg/dL is approaching goal)', correct: true },
         { key: 'bt_hld_o3', label: 'Shared decision-making regarding nonstatin therapy: continue rosuvastatin monotherapy given favorable response; consider ezetimibe 10 mg daily only if more intensive LDL lowering (<70 mg/dL) is desired', correct: true },
         { key: 'bt_hld_o4', label: 'Order repeat fasting lipid panel in 6-12 months', correct: true },
+        { key: 'bth_hld_o5', label: 'Continue adherence support and reinforce the long-term importance of lifelong statin therapy for cardiovascular protection', correct: true },
         { key: 'bt_hld_o5', label: 'Discontinue statin therapy because patient feels well and cholesterol is improved', correct: false }
+      ]
+    },
+    {
+      id: 'bth_p_adh_access',
+      title: 'Medication Access, Adherence & Affordability Plan',
+      options: [
+        { key: 'bth_adh_o1', label: 'Reinforce successful medication-taking behaviors and acknowledge sustained adherence success', correct: true },
+        { key: 'bth_adh_o2', label: 'Encourage continued open communication regarding prescription affordability concerns at future visits', correct: true },
+        { key: 'bth_adh_o3', label: 'Continue adherence support through regular routines, pharmacy refills, and patient reassurance', correct: true }
       ]
     },
     {
@@ -1868,7 +1896,7 @@ const davidTue = makeCase({
     { name: 'Tdap', status: 'Overdue (last documented >10 years ago)', flag: 'warn' }
   ],
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: '62-year-old male referred by his primary care provider (PCP) for initial collaborative practice management of Type 2 diabetes with chronic kidney disease Stage G3bA3 and elevated cardiovascular risk, specifically addressing persistent severe albuminuria (UACR 520 mg/g) and progression risk despite dual foundational therapy (ACE inhibitor + SGLT2 inhibitor). Highly analytical, follows lab trends in patient portal, and researches medical literature online. Excellent adherence to current medications; denies hypoglycemia. Previously declined finerenone recommendation due to hyperkalemia concerns, pill burden, and wanting clear clinical trial evidence.' },
+    { label: 'HPI', value: '62-year-old male referred by his primary care provider (PCP) for initial collaborative practice management of Type 2 diabetes with chronic kidney disease Stage G3bA3 and elevated cardiovascular risk, specifically addressing persistent severe albuminuria (UACR 520 mg/g) and progression risk despite dual foundational therapy (ACE inhibitor + SGLT2 inhibitor). Highly analytical, follows lab trends in patient portal, and researches medical literature online. Understands his kidney function has declined over time, but expresses uncertainty about why his cardiorenal progression risk remains elevated despite taking dual foundational therapy (lisinopril and empagliflozin). Excellent adherence to current medications; denies hypoglycemia. Previously declined finerenone recommendation due to hyperkalemia concerns, pill burden, and wanting clear clinical trial evidence.' },
     { label: 'Past Medical & Surgical History', value: 'Type 2 diabetes mellitus (12 years), essential hypertension (10 years), hyperlipidemia (8 years), and chronic kidney disease Stage G3bA3 (3 years). Surgical history is completely negative (denies prior surgeries). Denies recent hospitalizations or emergency department visits.' },
     { label: 'Review of Systems', value: 'Denies chest pain, palpitations, syncope, lower extremity edema, gross hematuria, or voiding complaints/dysuria. Notes occasional nocturia (1-2x/night) and mild occasional fatigue after demanding work weeks.' },
     { label: 'Social history', value: 'Electrical engineer, married, lives with wife. Never smoker. Moderate alcohol (1-2 glasses red wine per week). Denies recreational drug use. Walks ~3 days/week. Attempts diabetic diet with occasional dietary lapses when working late.' },
@@ -1989,7 +2017,7 @@ const davidTue = makeCase({
         { 
           key: 'c_htn_eval', 
           q: 'Evaluation of blood pressure control, target, and management strategy:', 
-          defaultAnswer: 'Status: Essential hypertension, above treatment target. Office BP is 138/82 mmHg (repeat 136/80 mmHg); 7-day home BP log average of 136/80 mmHg corroborates office readings. Blood pressure target is <130/80 mmHg per 2025 AHA/ACC Hypertension Guidelines in CKD (with KDIGO systolic target <120 mmHg when standardized measurement is tolerated). Active regimen includes lisinopril 20 mg PO daily and amlodipine 5 mg PO daily. Defer immediate third antihypertensive escalation today while introducing finerenone, which provides modest complementary blood pressure reduction (2–4 mmHg systolic) alongside its antiproteinuric benefits; re-evaluate BP at follow-up.' 
+          defaultAnswer: 'Status: Essential hypertension, above treatment target. Office BP is 138/82 mmHg (repeat 136/80 mmHg); 7-day home BP log average of 136/80 mmHg corroborates office readings. Blood pressure target is <130/80 mmHg per 2025 AHA/ACC Hypertension Guidelines in CKD (with KDIGO systolic target <120 mmHg when standardized measurement is tolerated). Per KDIGO 2024 guidelines, blood pressure control slows CKD progression and reduces cardiovascular complications. Active regimen includes lisinopril 20 mg PO daily and amlodipine 5 mg PO daily. Defer immediate third antihypertensive escalation today while introducing finerenone, which provides modest complementary blood pressure reduction (2–4 mmHg systolic) alongside its antiproteinuric benefits; re-evaluate BP at follow-up.' 
         }
       ] 
     },
@@ -2189,7 +2217,7 @@ const davidWed = makeCase({
     },
     {
       label: 'Therapy comfort & lab interpretation questions',
-      value: 'Patient feels more comfortable with finerenone after understanding its renal benefits, but noticed the small eGFR decrease (from 42 to 40 mL/min) and potassium increase (from 4.8 to 5.1 mEq/L); asks whether this indicates disease worsening or an expected medication effect. Noticed the substantial drop in urine protein / albuminuria on lab results.'
+      value: 'Patient feels more comfortable with finerenone after understanding its renal benefits, but noticed the small eGFR decrease (from 42 to 40 mL/min) and potassium increase (from 4.8 to 5.1 mEq/L); asks whether this indicates disease worsening or an expected medication effect. Also noticed the substantial drop in urine protein / albuminuria (UACR from 520 to 390 mg/g) and specifically requests clinical clarification on the long-term clinical significance of this albuminuria reduction.'
     },
     {
       label: 'Past Medical History (PMH)',
@@ -2201,7 +2229,7 @@ const davidWed = makeCase({
     },
     {
       label: 'Social History',
-      value: 'Occupation: Structural engineer at consulting firm. Marital status: Married, lives with wife. Tobacco history: Former smoker (quit 8 years ago, 12 pack-year history). Alcohol use: Occasional alcohol (1–2 beers on weekends). Recreational drugs: Explicitly denies any illicit or recreational drug use. Continues diabetic diet, watching carbohydrates and sodium.'
+      value: 'Occupation: Structural engineer at consulting firm. Marital status: Married, lives with wife. Tobacco history: Never smoker (denies any tobacco or nicotine use). Alcohol use: Occasional alcohol (1–2 beers on weekends). Recreational drugs: Explicitly denies any illicit or recreational drug use. Continues diabetic diet, watching carbohydrates and sodium.'
     },
     {
       label: 'Review of Systems (ROS)',
@@ -2486,7 +2514,7 @@ const davidThu = makeCase({
     { label: 'AST', value: '21', unit: 'U/L', flag: 'normal' },
     { label: 'ALT', value: '20', unit: 'U/L', flag: 'normal' },
     { label: 'Total cholesterol', value: '160', unit: 'mg/dL', flag: 'normal' },
-    { label: 'LDL-C', value: '74', unit: 'mg/dL', flag: 'normal', note: 'Well-controlled on Rosuvastatin 20 mg PO daily; target <70 mg/dL' },
+    { label: 'LDL-C', value: '74', unit: 'mg/dL', flag: 'normal', note: 'Longitudinal trend: 88 → 78 → 74 mg/dL; durable control at goal on Rosuvastatin 20 mg PO daily (baseline 88 mg/dL; target <70 mg/dL)' },
     { label: 'HDL-C', value: '46', unit: 'mg/dL', flag: 'normal' },
     { label: 'Triglycerides', value: '154', unit: 'mg/dL', flag: 'normal' },
     { label: 'A1C', value: '6.9', unit: '%', flag: 'normal', note: 'Improved from baseline 7.2% and 3-month 7.0%' },
@@ -2536,7 +2564,7 @@ const davidThu = makeCase({
     },
     {
       label: 'Social History',
-      value: 'Occupation: Structural engineer at consulting firm. Marital status: Married, lives with wife. Tobacco history: Former smoker (quit 8 years ago, 12 pack-year history). Alcohol use: Occasional alcohol (1–2 red wines per week with dinner). Recreational drugs: Explicitly denies any illicit or recreational drug use.'
+      value: 'Occupation: Structural engineer at consulting firm. Marital status: Married, lives with wife. Tobacco history: Never smoker (denies any tobacco or nicotine use). Alcohol use: Occasional alcohol (1–2 red wines per week with dinner). Recreational drugs: Explicitly denies any illicit or recreational drug use.'
     },
     {
       label: 'Review of Systems (ROS)',
@@ -2596,7 +2624,7 @@ const davidThu = makeCase({
         {
           key: 'ct_ckd_eval',
           q: 'Evaluation of CKD staging, longitudinal albuminuria reduction, and therapy consolidation:',
-          defaultAnswer: 'Status: CKD Stage G3bA3, substantial longitudinal improvement on foundational cardiorenal therapy. Dual-axis classification: eGFR 41 mL/min/1.73m² (baseline 42, 3-month 40, SCr 1.85 mg/dL) confirms stable Stage G3b filtration showing complete stabilization and resolution of the initial hemodynamic dip; spot UACR decreased from baseline 520 mg/g to 390 mg/g at 3 months, and now to 290 mg/g at 6 months (~44% cumulative longitudinal reduction, transitioning from A3 toward the A2 boundary). Improvement is directly attributed to combination cardiorenal therapy (lisinopril + empagliflozin + finerenone). Cites KDIGO 2024 / ADA 2026 guidelines: combination therapy with SGLT2i + nsMRA + RAASi provides additive cardiorenal benefits, significantly slowing CKD progression, reducing ESKD risk, and lowering cardiovascular mortality. Crucial clinical communication: educate patient that improving numbers reflect successful treatment rather than disease resolution; full quadruple therapy must be maintained long-term without de-escalation.'
+          defaultAnswer: 'Status: CKD Stage G3bA3, substantial longitudinal improvement on foundational cardiorenal therapy. Dual-axis classification: eGFR 41 mL/min/1.73m² (baseline 42, 3-month 40, SCr 1.85 mg/dL) confirms stable Stage G3b filtration showing complete stabilization and resolution of the initial hemodynamic dip; spot UACR decreased from baseline 520 mg/g to 390 mg/g at 3 months, and now to 290 mg/g at 6 months (~44% cumulative longitudinal reduction, transitioning toward the A2 boundary); crucially, UACR 290 mg/g confirms persistent albuminuria requiring ongoing disease management. Improvement is directly attributed to combination cardiorenal therapy (lisinopril + empagliflozin + finerenone). Cites KDIGO 2024 / ADA 2026 guidelines: combination therapy with SGLT2i + nsMRA + RAASi provides additive cardiorenal benefits, significantly slowing CKD progression, reducing ESKD risk, and lowering cardiovascular mortality. Crucial clinical communication: educate patient that improving numbers reflect successful treatment rather than disease resolution; full quadruple therapy must be maintained long-term without de-escalation.'
         }
       ]
     },
@@ -2635,7 +2663,7 @@ const davidThu = makeCase({
         {
           key: 'ct_hld_eval',
           q: 'Evaluation of lipid control, statin therapy, and cardiovascular risk enhancers:',
-          defaultAnswer: 'Status: Hyperlipidemia, durable control at goal on rosuvastatin 20 mg PO daily. Fasting lipid panel demonstrates LDL-C 74 mg/dL. Calculated 10-year ASCVD risk improved from baseline 20.5% to 18.7%. Cites 2026 AHA/ACC Cholesterol Guidelines: CKD and diabetes are major ASCVD risk-enhancing conditions. Residual risk-enhancing factors include CKD Stage G3bA3, type 2 diabetes, essential hypertension, Class I obesity, and positive family history of premature ASCVD (father MI at 58, brother CAD at 58). Continue rosuvastatin 20 mg PO daily as cornerstone therapy for cardiovascular risk reduction; treatment target is LDL-C <70 mg/dL.'
+          defaultAnswer: 'Status: Hyperlipidemia, durable control at goal on rosuvastatin 20 mg PO daily. Fasting lipid panel demonstrates LDL-C 74 mg/dL, reflecting sustained improvement from baseline (88 to 78 to 74 mg/dL). Calculated 10-year ASCVD risk improved from baseline 20.5% to 18.7%. Cites 2026 AHA/ACC Cholesterol Guidelines: CKD and diabetes are major ASCVD risk-enhancing conditions. Residual risk-enhancing factors include CKD Stage G3bA3, type 2 diabetes, essential hypertension, Class I obesity, and positive family history of premature ASCVD (father MI at 58, brother CAD at 58). Continue rosuvastatin 20 mg PO daily as cornerstone therapy for cardiovascular risk reduction; treatment target is LDL-C <70 mg/dL.'
         }
       ]
     },
@@ -2661,7 +2689,7 @@ const davidThu = makeCase({
         {
           key: 'ct_under_eval',
           q: 'Long-term counseling on sustained therapy and addressing pill burden:',
-          defaultAnswer: 'Status: Excellent disease understanding achieved. The analytical patient is convinced by objective lab trends (protein down 44%, potassium normal) and now fully endorses the cardiorenal strategy. Addressed patient question regarding lifelong therapy: reinforced that medications manage and protect against underlying chronic microvascular disease, explaining why ongoing lifelong therapy remains essential even when numbers improve.'
+          defaultAnswer: 'Status: Excellent disease understanding and therapy commitment achieved. Cites KDIGO 2024 CKD and 2026 AHA/ACC Cholesterol Guidelines: improving laboratory markers (albuminuria down 44%, LDL-C 74 mg/dL) reflect successful treatment response rather than disease resolution. The patient is convinced by objective lab trends and fully committed to combination cardiorenal therapy. Addressed patient question regarding lifelong therapy: reinforced that medications actively protect against progressive microvascular and cardiovascular damage, explaining why lifelong therapy remains necessary. Additional ongoing patient counseling regarding long-term cardiorenal disease management is indicated.'
         }
       ]
     },
@@ -2742,6 +2770,15 @@ const davidThu = makeCase({
         { key: 'ct_htn_o2', label: 'Continue amlodipine 5 mg PO once daily', correct: true },
         { key: 'ct_htn_o3', label: 'Blood pressure treatment target: <130/80 mmHg per 2025 AHA/ACC Guidelines (KDIGO <120 SBP when tolerated)', correct: true },
         { key: 'ct_htn_o4', label: 'Continue structured home blood pressure monitoring (HBPM) 1-2 days/week and maintain a written log', correct: true }
+      ]
+    },
+    {
+      id: 'dt_p_edu_risk',
+      title: 'Disease Understanding, Residual Cardiorenal Risk & Long-Term Adherence Plan',
+      options: [
+        { key: 'dt_edu_o1', label: 'Discuss residual cardiorenal risk: counsel patient that despite marked laboratory improvements, significant residual kidney and cardiovascular risk persists, requiring lifelong adherence to quadruple cardiorenal therapy', correct: true },
+        { key: 'dt_edu_o2', label: 'Provide additional education regarding chronic disease management: reinforce that improved numbers reflect treatment success rather than cure or disease resolution per KDIGO 2024 and 2026 cholesterol guidelines', correct: true },
+        { key: 'dt_edu_o3', label: 'Reinforce long-term medication adherence and self-management behaviors to maintain organ protection', correct: true }
       ]
     },
     {

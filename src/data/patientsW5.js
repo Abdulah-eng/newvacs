@@ -228,7 +228,7 @@ export const W5_CASES = [
     "SUBJECTIVE_DOCUMENTED": [
       {
         "label": "HPI",
-        "value": "54-year-old female full-time elementary school teacher referred by her Primary Care Physician (PCP) for an initial evaluation at the ambulatory behavioral health clinic regarding worsening symptoms over the past 4 to 5 months. Patient attributes initial symptom onset to work stress and burnout. Reports persistent low mood occurring most days, emotional exhaustion, profound fatigue, anhedonia (reduced interest and pleasure in previously enjoyed activities, specifically stopping her regular reading and weekend hiking), and reduced motivation for hobbies and social activities. Reports restless, insufficient sleep (5 to 6 hours per night), unable to get restful or adequate sleep despite feeling exhausted, with difficulty turning off thoughts after work. Reports difficulty concentrating at work (struggling to complete lesson plans, taking significantly longer to grade papers), and noticeable occupational functioning impairment (feeling overwhelmed by daily teaching duties). Reports persistent anxiety, difficulty controlling anxious thoughts, racing thoughts after work, with anxiety linked specifically to work performance and meeting expectations. Reports interpersonal relationship impact (feeling distant from her husband, who encouraged today's evaluation). Confirms treatment-naÃ¯ve status for psychiatric pharmacotherapy (no prior antidepressant use) and treatment-naÃ¯ve status for psychotherapy (no prior counseling)."
+        "value": "54-year-old female full-time elementary school teacher referred by her Primary Care Physician (PCP) for an initial evaluation at the ambulatory behavioral health clinic regarding worsening symptoms with gradual onset over the past 4 to 5 months. Patient attributes initial symptom onset to work stress and burnout. Reports persistent low mood occurring most days, emotional exhaustion, profound fatigue that increases throughout the day, anhedonia (reduced interest and pleasure in previously enjoyed activities, specifically stopping her regular reading and weekend hiking), and reduced motivation for hobbies and social activities. Reports restless, non-restorative insufficient sleep (5 to 6 hours per night), unable to get restful or adequate sleep despite feeling exhausted, with difficulty turning off thoughts after work. Reports difficulty concentrating at work (struggling to complete lesson plans, rereading emails or lesson plans multiple times, taking significantly longer to grade papers), and noticeable occupational functioning impairment (feeling overwhelmed by daily teaching duties). Reports persistent anxiety, difficulty controlling anxious thoughts, racing thoughts after work, with anxiety linked specifically to work performance and meeting expectations. Reports interpersonal relationship impact (feeling distant from her husband, who encouraged today's evaluation). Confirms treatment-naïve status for psychiatric pharmacotherapy (no prior antidepressant use) and treatment-naïve status for psychotherapy (no prior counseling)."
       },
       {
         "label": "Review of Systems (ROS) & Safety Assessment",
@@ -244,7 +244,7 @@ export const W5_CASES = [
       },
       {
         "label": "Social History",
-        "value": "Full-time elementary school teacher. Marital status & living situation: single (lives alone in suburban house; maintains supportive relationship with husband who encouraged evaluation). Current smoker (5 cigarettes per day for 8 years = 2 pack-year smoking history), citing stress management as the primary reason for smoking. Reports no previous tobacco quit attempts and no prior periods of tobacco abstinence. Contemplative stage of change regarding tobacco cessation: willing to quit eventually but not ready to set a quit date today. Drinks alcohol: 1-2 beverages weekly (1 glass of wine 1-2 times per week). Denies illicit drug use. Exercises: occasional walking, reduced secondary to fatigue and motivation."
+        "value": "Full-time elementary school teacher. Marital status & living situation: Married, lives with husband in suburban home. Current smoker (5 cigarettes per day for 8 years = 2 pack-year smoking history), citing stress management as the primary reason for smoking. Reports no previous tobacco quit attempts and no prior periods of tobacco abstinence. Contemplative stage of change regarding tobacco cessation: willing to quit eventually but not ready to set a quit date today. Drinks alcohol: 1-2 beverages weekly (1 glass of wine 1-2 times per week). Denies illicit drug use. Exercises: occasional walking, reduced secondary to fatigue and motivation."
       },
       {
         "label": "Family History",
@@ -590,7 +590,7 @@ export const W5_CASES = [
           },
           {
             "key": "o16",
-            "label": "Assess need for dose adjustment at follow-up based on symptom response; monitor suicidal ideation, mood, anxiety, sleep quality, occupational functioning, interpersonal functioning, and tobacco cessation readiness",
+            "label": "Assess need for dose adjustment at follow-up based on symptom response; systematically monitor medication adherence and assess ongoing medication adverse effects at follow-up; monitor suicidal ideation, mood, anxiety, sleep quality, occupational functioning, interpersonal functioning, and tobacco cessation readiness",
             "correct": true
           },
           {
@@ -840,7 +840,7 @@ export const W5_CASES = [
       },
       {
         "label": "Social History",
-        "value": "Full-time elementary school teacher. Marital status & living situation: single (lives alone in suburban house; maintains supportive relationship with husband who notes positive mood changes). Reduced tobacco use from 5 to 2 cigarettes per day (previously 5 cigs/day), attributed to stress reduction and CBT coping skills. Contemplative stage of change; not yet ready to set a quit date today. Drinks alcohol: 1-2 alcoholic beverages weekly. Denies illicit drug use. Exercises: walking several times weekly and resumed occasional hiking."
+        "value": "Full-time elementary school teacher. Marital status & living situation: Married, lives with husband in suburban home; maintains supportive relationship with husband who notes positive mood changes). Reduced tobacco use from 5 to 2 cigarettes per day (previously 5 cigs/day), attributed to stress reduction and CBT coping skills. Contemplative stage of change; not yet ready to set a quit date today. Drinks alcohol: 1-2 alcoholic beverages weekly. Denies illicit drug use. Exercises: walking several times weekly and resumed occasional hiking."
       },
       {
         "label": "Family History",
@@ -948,7 +948,7 @@ export const W5_CASES = [
           "alone",
           "house"
         ],
-        "response": "I'm working as an elementary school teacher. Marital status: single (lives alone in suburban house; maintains supportive relationship with my husband). We went hiking last weekend."
+        "response": "I'm working as an elementary school teacher. Marital status: Married, lives with husband in suburban home. We went hiking last weekend."
       },
       {
         "id": "w5-sarah_m-wed_cbt",
@@ -1390,7 +1390,7 @@ export const W5_CASES = [
       },
       {
         "label": "Social History",
-        "value": "Full-time elementary school teacher. Marital status & living situation: single (lives alone in suburban house; hiking with spouse/husband). Tobacco Use Disorder in Early Remission: quit smoking 6 weeks ago, tobacco-free for 6 weeks, occasional stress cravings managed with CBT skills, zero relapse. Alcohol: 1-2 alcoholic beverages weekly (1 glass of wine weekly). Denies illicit drug use. Exercises regularly: walking and weekly hiking with husband."
+        "value": "Full-time elementary school teacher. Marital status & living situation: Married, lives with husband in suburban home; enjoys weekend hiking with husband. Tobacco Use Disorder in Early Remission: quit smoking 6 weeks ago, tobacco-free for 6 weeks, occasional stress cravings managed with CBT skills, zero relapse. Alcohol: 1-2 alcoholic beverages weekly (1 glass of wine weekly). Denies illicit drug use. Exercises regularly: walking and weekly hiking with husband."
       },
       {
         "label": "Family History",
@@ -1498,7 +1498,7 @@ export const W5_CASES = [
           "alone",
           "house"
         ],
-        "response": "I'm teaching full-time, feeling great at work and not overwhelmed. Marital status: single (lives alone in suburban house; hiking with my spouse/husband). My husband and I go hiking every weekend and I'm reading regularly again."
+        "response": "I'm teaching full-time, feeling great at work and not overwhelmed. Marital status: Married, lives with husband in suburban home; enjoys hiking with husband. My husband and I go hiking every weekend and I'm reading regularly again."
       },
       {
         "id": "w5-sarah_m-thu_cbt",
@@ -1766,7 +1766,7 @@ export const W5_CASES = [
       "week": "Week 5",
       "type": "Initial Visit - Ambulatory Behavioral Health Clinic",
       "chiefConcern": "I've been feeling so down and overwhelmed. My PCP prescribed Zoloft 100 mg 6 weeks ago for my depression and anxiety, but the copay was $45 at the pharmacy and I couldn't afford it every month, so I only take it once or twice a week when things get really bad.",
-      "snapshotSummary": "Jessica is a 42-year-old female medical receptionist (divorced, lives with 2 children) with MDD (PHQ-9 = 16) and GAD (GAD-7 = 14) referred by PCP. Reports pseudo-treatment failure due to non-adherence driven by financial barrier ($45 copay) and unrealistic response expectations. Prescribed Sertraline 100 mg daily and Hydroxyzine 25 mg PO q8h PRN anxiety. Requires switching to $4 generic program, pill alarm adherence support, and tobacco cessation counseling.",
+      "snapshotSummary": "Jessica is a 42-year-old female medical receptionist referred by her PCP for persistent MDD (PHQ-9 = 16) and GAD (GAD-7 = 14) symptoms despite being prescribed Sertraline 100 mg daily 6 weeks ago. Careful evaluation reveals this is a pseudo-treatment failure caused by a financial barrier ($45 copay) and expectation of immediate response, leading her to take medication only 1-2 times/week or self-discontinue for 2-week periods. Needs transition to a $4 generic program for Sertraline 100 mg daily, daily adherence routine paired with breakfast/alarms, continuation of Hydroxyzine 25 mg PRN for anxiety, and virtual CBT referral.",
       "difficulty": "Intermediate",
       "difficultyTone": "blue",
       "diseaseStates": [
@@ -1902,7 +1902,7 @@ export const W5_CASES = [
     "ALERTS": [
       {
         "level": "high",
-        "text": "Pseudo-treatment failure: Patient has not been taking Sertraline 50 mg daily consistently due to a $45/month copay ($4 generic available). PHQ-9 = 16 (Moderate-Severe), GAD-7 = 14 (Moderate)."
+        "text": "Patient has not been taking prescribed Sertraline 100 mg daily consistently due to a $45/month copay barrier and misunderstanding of onset timeline (takes only 1-2 days/week). Pseudo-treatment failure — do not switch antidepressants; continue Sertraline 100 mg daily via a $4 generic program and address adherence barriers."
       },
       {
         "level": "info",
@@ -1912,7 +1912,7 @@ export const W5_CASES = [
     "PROBLEMS": [
       {
         "name": "1. Major Depressive Disorder (MDD) â€” Moderate-Severe, Non-adherent",
-        "detail": "PHQ-9 = 16. Symptom duration 6 months. Pseudo-treatment failure driven by financial non-adherence ($45 copay, takes 1-2 doses/week).",
+        "detail": "Takes prescribed Sertraline 100 mg only 1-2 times per week due to $45/month copay barrier and misunderstanding of onset timeline; pseudo-treatment failure secondary to subtherapeutic exposure",
         "flag": "high"
       },
       {
@@ -1922,7 +1922,7 @@ export const W5_CASES = [
       },
       {
         "name": "3. Non-adherence (Financial Barrier) â€” Active",
-        "detail": "Takes Sertraline 50 mg only 1-2 times per week due to $45/month copay at retail pharmacy.",
+        "detail": "Takes Sertraline 100 mg only 1-2 times per week due to $45/month copay at retail pharmacy.",
         "flag": "warn"
       },
       {
@@ -2123,7 +2123,7 @@ export const W5_CASES = [
           {
             "key": "q1",
             "q": "What is the assessment of MDD/GAD status and non-adherence?",
-            "defaultAnswer": "MDD (PHQ-9 = 16, Moderate-Severe) and GAD (GAD-7 = 14, Moderate) showing lack of response. However, this is a pseudo-treatment failure driven by financial non-adherence ($45 copay, taking sertraline 50 mg only 1-2 times/week). True efficacy cannot be evaluated without 4-6 weeks of consistent daily adherence."
+            "defaultAnswer": "Major Depressive Disorder (PHQ-9 = 16, Moderately Severe) and Generalized Anxiety Disorder (GAD-7 = 14, Moderate) showing lack of symptom control. However, this presentation represents a pseudo-treatment failure driven by financial nonadherence ($45 copay, taking sertraline 100 mg only 1-2 times/week with repeated self-discontinuations for ~2-week periods) and unrealistic expectations regarding immediate onset of benefit. Available evidence does not support true antidepressant failure because adequate therapeutic exposure has not been established. Per ACP and VA/DoD guidelines, addressing adherence and cost barriers is the highest priority intervention; do not switch antidepressants or alter dosing at this time. Transition patient to generic Sertraline 100 mg PO daily available on $4 generic prescription program (e.g. Target/Walmart), continue Hydroxyzine 25 mg PO q8h PRN for acute anxiety spikes, pair morning doses with daily breakfast and phone alarms, and refer for virtual CBT to overcome childcare and scheduling barriers."
           }
         ]
       },
@@ -2148,12 +2148,12 @@ export const W5_CASES = [
         "options": [
           {
             "key": "o1",
-            "label": "Transition patient to generic Sertraline 50 mg PO daily available on $4 generic prescription program to resolve financial barrier",
+            "label": "Continue generic Sertraline 100 mg PO daily available on $4 generic prescription program to resolve financial barrier; do not switch antidepressants or change dose at this time; establish daily morning adherence routine paired with breakfast and phone alarm",
             "correct": true
           },
           {
             "key": "o2",
-            "label": "Counsel patient on necessity of strict daily adherence (takes 4-6 weeks of uninterrupted daily use for full antidepressant/anxiolytic effect)",
+            "label": "Continue Hydroxyzine 25 mg PO every 8 hours PRN for acute anxiety spikes; counsel on PRN indication and non-habit forming nature; evaluate clinical response to 100% adherent Sertraline 100 mg daily over 4 to 6 weeks",
             "correct": true
           },
           {
@@ -2185,7 +2185,7 @@ export const W5_CASES = [
         "options": [
           {
             "key": "o6",
-            "label": "Schedule follow-up visit in 6 weeks to evaluate clinical response to 100% adherent Sertraline 50 mg daily",
+            "label": "Schedule follow-up visit in 6 weeks to evaluate clinical response to 100% adherent Sertraline 100 mg daily",
             "correct": true
           }
         ]
@@ -2206,7 +2206,7 @@ export const W5_CASES = [
     "GUIDING_QUESTIONS": [],
     "COUNSELING": [
       "Counsel on daily adherence importance for SSRI therapeutic efficacy (takes 4-6 weeks of consistent daily use).",
-      "Transition to $4 generic sertraline 50 mg daily at target pharmacy.",
+      "Transition to $4 generic sertraline 100 mg daily at target pharmacy.",
       "Recommend setting a daily phone alarm or pill organizer to maintain 100% adherence.",
       "Motivational interviewing for tobacco cessation (contemplative stage)."
     ],
@@ -2343,7 +2343,7 @@ export const W5_CASES = [
     "ALERTS": [
       {
         "level": "warn",
-        "text": "Partial response to Sertraline 50 mg daily with 100% adherence over 6 weeks: PHQ-9 = 10 (down from 16), GAD-7 = 8 (down from 14). Guideline-recommended action: Titrate Sertraline to 100 mg daily."
+        "text": "Partial response to generic Sertraline 100 mg daily with 100% adherence over 6 weeks: PHQ-9 = 9 (down from 16), GAD-7 = 7 (down from 14). Guideline-recommended action: Continue generic Sertraline 100 mg daily to allow adequate exposure toward full remission per ACP and VA/DoD guidelines; continue virtual CBT; advance tobacco cessation."
       },
       {
         "level": "info",
@@ -2479,7 +2479,7 @@ export const W5_CASES = [
           "dose",
           "regularly"
         ],
-        "response": "I haven't missed a single dose of Sertraline 50 mg since we switched to the $4 program 6 weeks ago."
+        "response": "I haven't missed a single dose of Sertraline 100 mg since we switched to the $4 program 6 weeks ago."
       },
       {
         "id": "w5-jessica_r-wed_ik_side_effects",
@@ -2538,7 +2538,7 @@ export const W5_CASES = [
           {
             "key": "q1",
             "q": "What is the assessment of treatment response and titration strategy?",
-            "defaultAnswer": "MDD (PHQ-9 = 10) and GAD (GAD-7 = 8) show partial response to 6 weeks of 100% adherent Sertraline 50 mg daily. Per ACP and VA/DoD guidelines, partial response with good tolerability warrants dose titration to Sertraline 100 mg daily to achieve full clinical remission."
+            "defaultAnswer": "Major Depressive Disorder (PHQ-9 = 9, mild, down from 16) and Generalized Anxiety Disorder (GAD-7 = 7, mild, down from 14) demonstrate clinically meaningful partial response to 6 weeks of 100% adherent generic Sertraline 100 mg daily ($4 generic program paired with breakfast routine). Per ACP and VA/DoD clinical practice guidelines, when meaningful improvement is achieved and tolerability is excellent, continue generic Sertraline 100 mg daily to allow adequate exposure toward full remission (target PHQ-9 <5, GAD-7 <5). Current evidence does not support antidepressant failure or medication changes. Continue virtual CBT (USPSTF/ACP evidence for combined therapy), continue Hydroxyzine 25 mg PRN for anxiety, and advance tobacco cessation counseling (Preparation stage, set quit date within 2–4 weeks)."
           }
         ]
       },
@@ -2559,16 +2559,16 @@ export const W5_CASES = [
     "PLAN_SECTIONS": [
       {
         "id": "w5b_wed_p1",
-        "title": "1. Sertraline Dose Titration Plan",
+        "title": "1. Sertraline Continuation & Maintenance Plan",
         "options": [
           {
             "key": "o1",
-            "label": "Increase Sertraline from 50 mg PO daily to target dose of 100 mg PO daily to target full remission of MDD and GAD",
+            "label": "Continue generic Sertraline 100 mg PO daily to target full remission of MDD and GAD per ACP and VA/DoD guidelines (do not change or switch medication; adequate exposure recently established with 100% adherence)",
             "correct": true
           },
           {
             "key": "o2",
-            "label": "Counsel patient on expected 2-4 week timeline for onset of additional therapeutic response from dose increase",
+            "label": "Counsel patient on expected 2 to 4 week timeline for continued therapeutic improvement toward remission on Sertraline 100 mg daily; reinforce difference between response and remission; continue daily breakfast adherence routine",
             "correct": true
           }
         ]
@@ -2620,7 +2620,7 @@ export const W5_CASES = [
     ],
     "GUIDING_QUESTIONS": [],
     "COUNSELING": [
-      "Educate on rationale for titrating Sertraline 50 mg â†’ 100 mg daily to achieve full remission.",
+      "Educate on rationale for continuing Sertraline 100 mg daily to achieve full remission.",
       "Counsel on maintaining 100% adherence and monitoring for transient GI side effects.",
       "Confirm tobacco quit date (2 weeks out) and discuss behavioral coping strategies & NRT options."
     ],
@@ -2974,7 +2974,7 @@ export const W5_CASES = [
         "options": [
           {
             "key": "o1",
-            "label": "CONTINUE Sertraline 100 mg PO daily for maintenance therapy for a minimum of 6 to 12 months post-remission per ACP/VA-DoD guidelines",
+            "label": "Continue generic Sertraline 100 mg PO daily (dose unchanged at 100 mg; remission achieved: PHQ-9 = 3, GAD-7 = 2) for continuation and maintenance phases per ACP and VA/DoD guidelines to prevent depressive and anxiety relapse (recommended duration >=6 to 12 months post-remission)",
             "correct": true
           },
           {
@@ -3282,7 +3282,7 @@ export const W5_CASES = [
     "SUBJECTIVE_DOCUMENTED": [
       {
         "label": "HPI",
-        "value": "51-year-old male IT manager (separated, living alone) presenting for collaborative practice pharmacist-led evaluation in ambulatory behavioral health clinic for severe recurrent MDD (~1 year progressive worsening) and severe GAD despite multiple antidepressant trials: Escitalopram 20 mg (16 wks, partial response), Sertraline 150 mg (6 mos, minimal response / GI distress), Duloxetine 60 mg (10 wks, no response), and current Venlafaxine XR 150 mg daily (12 wks, mild anxiety benefit but persistent severe depression). Reports persistent profound sadness, total anhedonia, severe fatigue, hopelessness, emotional exhaustion, difficulty concentrating, sleep disturbance, social withdrawal, loss of interest in hobbies (fishing, working on his truck, watching sports), and excessive worry impairing work performance (needs more time to complete tasks). Reports marital separation with emotional isolation. Reports passive SI ('wake up wishing I didn't face another day'). Explicitly denies active intent, plan, or desire to die ('I don't want to die, I'm just tired of feeling this way'). Lethal means safety assessment: owns two hunting rifles stored in home safe; agreed to have brother take rifles and keep them locked at his house today. Provided 988 Suicide & Crisis Lifeline."
+        "value": "48-year-old male construction site supervisor presenting for initial ambulatory behavioral health evaluation for severe Treatment-Resistant Depression (TRD, recurrent MDD severe) and Generalized Anxiety Disorder (GAD-7 = 18, severe). Describes persistent severe low mood, profound anhedonia, emotional exhaustion, severe insomnia (3-4 hours restless sleep), and low motivation. Failed adequate trials of escitalopram 20 mg daily x 8 weeks (no response), bupropion XL 300 mg daily x 8 weeks (irritability, no response), and currently on venlafaxine XR 225 mg daily x 12 weeks with only minimal partial response. Endorses passive suicidal ideation without intent or plan: quotes 'not waking up wouldn't be the worst thing' and 'sometimes I wish I could just go to sleep and not wake up.' Explicitly denies active suicidal plan, denies suicidal intent, denies preparatory behaviors, denies self-harm history. Identifies strong protective factors: love for his wife and desire to reconcile marital separation, strong will and desire to feel like himself again, future orientation, and desire to return to his cherished woodworking hobby and truck restoration. Agrees fully to lethal means safety: his brother has removed and secured all firearms from his home. Agrees to 988 Suicide & Crisis Lifeline plan."
       },
       {
         "label": "Review of Systems (ROS) & Safety Assessment",
@@ -3423,34 +3423,47 @@ export const W5_CASES = [
         "questions": [
           {
             "key": "q1",
-            "q": "What is the evaluation of TRD and justification for SGA augmentation?",
-            "defaultAnswer": "Major Depressive Disorder, Severe (PHQ-9 = 21) meeting criteria for Treatment-Resistant Depression (TRD) following failure of â‰¥2 adequate antidepressant trials from different classes (Sertraline [SSRI], Duloxetine [SNRI], and partial/non-response to Venlafaxine XR 150 mg daily [SNRI] x 8 weeks). Per APA, VA/DoD, and CANMAT guidelines, augmentation with a second-generation antipsychotic (Aripiprazole 2 mg PO daily) is a first-line evidence-based strategy to enhance response without switching agents."
+            "q": "What is the assessment of depression treatment resistance and augmentation strategy?",
+            "defaultAnswer": "Severe Treatment-Resistant Depression (TRD, recurrent MDD severe, PHQ-9 = 21): failed adequate trials of escitalopram 20 mg x 8 weeks and bupropion XL 300 mg x 8 weeks, with inadequate partial response to venlafaxine XR 225 mg x 12 weeks. Meets consensus criteria for TRD (failure of >=2 adequate antidepressant trials from different classes). Per APA, CANMAT, and VA/DoD guidelines, initiate atypical antipsychotic augmentation with Aripiprazole 2.5–5 mg PO daily to venlafaxine XR 225 mg daily to enhance dopaminergic and serotonergic transmission and target remission."
           }
         ]
       },
       {
         "id": "w5c_tue_a2",
         "title": "2. Comprehensive Suicide Risk Assessment & Safety Plan",
-        "icon": "ShieldAlert",
-        "color": "13314f",
+        "icon": "AlertTriangle",
+        "color": "dc2626",
         "questions": [
           {
             "key": "q2",
-            "q": "What is the suicide risk level and safety management plan?",
-            "defaultAnswer": "Passive suicidal ideation present ('family better off without me') without active plan or intent; overall suicide risk assessed as LOW to MODERATE. Requires immediate safety planning: (1) lethal means restriction (moving firearms offsite), (2) providing 988 Suicide & Crisis Lifeline, and (3) establishing emergency contact protocols."
+            "q": "What is the suicide risk stratification and safety plan?",
+            "defaultAnswer": "Suicide Risk Assessment: Chronic passive suicidal ideation without active suicidal intent, plan, means, or preparatory behaviors (moderate risk). Clear protective factors documented: desire to improve and feel like himself again, spousal relationship and desire for marital reconciliation, woodworking hobby, and future orientation. Lethal means safety established: firearm removed and secured by brother. Crisis safety plan established including 988 Lifeline, emergency contacts, and close clinical follow-up."
           }
         ]
       },
       {
         "id": "w5c_tue_a3",
-        "title": "3. Tobacco Use Disorder (Contemplative Stage)",
+        "title": "3. Generalized Anxiety Disorder (GAD-7 = 18, Severe Anxiety)",
+        "icon": "ShieldAlert",
+        "color": "d97706",
+        "questions": [
+          {
+            "key": "q3",
+            "q": "How should comorbid severe Generalized Anxiety Disorder be assessed and managed?",
+            "defaultAnswer": "Generalized Anxiety Disorder (GAD) with GAD-7 score of 18 indicating severe anxiety. Symptoms include constant excessive worry, restlessness, muscle tension, emotional overwhelm, and severe occupational and social distress. Aripiprazole augmentation to venlafaxine XR provides dual efficacy for depression and comorbid GAD per JAMA 2026 Anxiety Review and CANMAT guidelines. Continue Hydroxyzine 25 mg PO q8h PRN for acute anxiety spikes; continue individual Cognitive Behavioral Therapy (CBT)."
+          }
+        ]
+      },
+      {
+        "id": "w5c_tue_a4",
+        "title": "4. Tobacco Use Disorder (Contemplative Stage)",
         "icon": "Cigarette",
         "color": "13314f",
         "questions": [
           {
-            "key": "q3",
-            "q": "What is the tobacco cessation plan?",
-            "defaultAnswer": "Active Tobacco Use Disorder (15 cigs/day, 15 pack-years), contemplative stage. Motivational interviewing recommended."
+            "key": "q4",
+            "q": "What is the tobacco status and intervention strategy?",
+            "defaultAnswer": "Active Tobacco Use Disorder (15 cigarettes/day, 25 pack-years), currently in Contemplative stage of change. Uses smoking for stress coping. Provide 5 A's brief counseling and motivational interviewing; connect future cessation to physical health and cardiorespiratory fitness; reassess readiness at next visit."
           }
         ]
       }
@@ -3462,17 +3475,17 @@ export const W5_CASES = [
         "options": [
           {
             "key": "o1",
-            "label": "Initiate Aripiprazole 2 mg PO daily as low-dose SGA augmentation to current Venlafaxine XR 150 mg PO daily for Treatment-Resistant Depression",
+            "label": "Continue Venlafaxine XR 225 mg PO daily and initiate Aripiprazole 2.5 mg PO daily for 14 days, then increase to 5 mg PO daily as evidence-based augmentation for TRD per APA and VA/DoD guidelines",
             "correct": true
           },
           {
             "key": "o2",
-            "label": "Continue Venlafaxine XR 150 mg PO daily (do not discontinue or switch SNRI while initiating augmentation)",
+            "label": "Educate patient on aripiprazole mechanism (partial D2 agonist / 5-HT1A agonist / 5-HT2A antagonist), expected 1-2 week onset for early improvement, and counsel on adverse effects (akathisia, restlessness, headache, insomnia, sedation)",
             "correct": true
           },
           {
             "key": "o3",
-            "label": "Monitor for Aripiprazole side effects, specifically akathisia (motor restlessness), extrapyramidal symptoms (EPS), weight gain, and metabolic changes (baseline lipids/glucose on file)",
+            "label": "Establish baseline metabolic monitoring for aripiprazole: baseline weight, BMI, blood pressure, fasting lipid panel, and fasting blood glucose / HbA1c per APA/ADA metabolic monitoring consensus",
             "correct": true
           }
         ]
@@ -3483,39 +3496,50 @@ export const W5_CASES = [
         "options": [
           {
             "key": "o4",
-            "label": "Formulate comprehensive written Suicide Safety Plan: identify personal warning signs, internal coping strategies, family support contacts, and emergency resources",
+            "label": "Implement comprehensive suicide safety plan: confirm lethal means safety with all firearms removed from home and secured by family/brother; provide 988 Suicide & Crisis Lifeline (call/text 24/7); identify internal coping strategies, social distractions, and professional emergency contacts",
             "correct": true
           },
           {
             "key": "o5",
-            "label": "Provide 988 Suicide & Crisis Lifeline contact information and clinic emergency contact number",
-            "correct": true
-          },
-          {
-            "key": "o6",
-            "label": "Enforce lethal means safety: counsel and confirm transfer of all household firearms and ammunition locked offsite to brother's residence",
+            "label": "Reinforce documented protective factors: desire to feel like himself again, commitment to spousal reconciliation, woodworking and outdoor hobbies, and future-oriented goals",
             "correct": true
           }
         ]
       },
       {
         "id": "w5c_tue_p3",
-        "title": "3. Tobacco Cessation Counseling Plan",
+        "title": "3. Generalized Anxiety Disorder & Psychotherapy Plan",
         "options": [
           {
+            "key": "o6",
+            "label": "Continue Hydroxyzine 25 mg PO every 8 hours PRN for acute severe anxiety spikes; counsel on PRN indication, non-addictive profile, and avoidance of daytime sedation",
+            "correct": true
+          },
+          {
             "key": "o7",
-            "label": "Provide motivational interviewing for tobacco cessation (contemplative stage); reassess readiness at next visit",
+            "label": "Continue individual Cognitive Behavioral Therapy (CBT) weekly to target cognitive distortions, catastrophizing, worry reduction, and behavioral activation",
             "correct": true
           }
         ]
       },
       {
         "id": "w5c_tue_p4",
-        "title": "4. Follow-Up Plan",
+        "title": "4. Tobacco Cessation Counseling Plan",
         "options": [
           {
             "key": "o8",
-            "label": "Schedule close follow-up visit in 6 weeks (with telephone safety check-in at 1-2 weeks) to monitor SI, mood response, and aripiprazole tolerability",
+            "label": "Provide tobacco cessation counseling using motivational interviewing (5 A's framework) for Contemplative stage; explore ambivalence, discuss smoking triggers and stress connection, and offer future pharmacotherapy options (NRT patch/gum, varenicline)",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "id": "w5c_tue_p5",
+        "title": "5. Monitoring & Follow-Up Plan",
+        "options": [
+          {
+            "key": "o9",
+            "label": "Schedule follow-up visit in 2 to 4 weeks (with 1-week phone contact for suicide safety check and akathisia monitoring); repeat PHQ-9 and GAD-7 scales; assess suicidal ideation, medication tolerability, akathisia, metabolic parameters, occupational functioning, and psychotherapy progress",
             "correct": true
           }
         ]
@@ -3778,7 +3802,7 @@ export const W5_CASES = [
     "SUBJECTIVE_DOCUMENTED": [
       {
         "label": "HPI",
-        "value": "51-year-old male IT manager (separated, living alone) presenting for 6-week follow-up after adding Aripiprazole 2 mg daily to Venlafaxine XR 150 mg daily. Reports marked improvement in mood, energy, sleep, concentration, and motivation. Resumed fishing, working on his truck, and watching sports for first time in months. Expresses feeling hopeful for first time in years ('I don't feel trapped anymore'). Suicidal ideation completely resolved. Denies restlessness, akathisia, muscle stiffness, or sedation."
+        "value": "48-year-old male presenting for scheduled follow-up evaluation at behavioral health clinic 3 months post-initial evaluation (6 weeks on stable Venlafaxine XR 225 mg daily + Aripiprazole 5 mg daily augmentation). Reports significant clinical improvement: 'I don't feel trapped anymore,' 'things are moving in the right direction,' and feels 'the best he has felt in years.' Depressive symptoms substantially improved (PHQ-9 reduced from 21 to 12, moderate). Anxiety symptoms significantly reduced (GAD-7 reduced from 18 to 9, mild). Suicidal ideation completely resolved: denies suicidal ideation, denies plan, denies intent, denies desire to die. Work productivity and concentration significantly improved; completing tasks more efficiently. Resumed valued hobbies including woodworking, truck restoration, and fishing. Attends CBT biweekly with excellent engagement. Tolerating medications well with no akathisia, tremors, sedation, or EPS. Reduced smoking from 15 to 8 cigarettes/day."
       },
       {
         "label": "Review of Systems (ROS) & Safety Assessment",
@@ -3886,27 +3910,53 @@ export const W5_CASES = [
     "ASSESSMENT_CARDS": [
       {
         "id": "w5c_wed_a1",
-        "title": "1. TRD Response Assessment & Combination Therapy Rationale",
+        "title": "1. TRD Robust Partial Response Evaluation",
         "icon": "Brain",
         "color": "13314f",
         "questions": [
           {
             "key": "q1",
-            "q": "What is the assessment of SGA augmentation efficacy and ongoing plan?",
-            "defaultAnswer": "MDD (PHQ-9 = 12, 9-point reduction) and GAD (GAD-7 = 9, 9-point reduction) show robust clinical response to 6 weeks of Aripiprazole 2 mg daily augmentation with Venlafaxine XR 150 mg daily. Suicidal ideation is fully resolved (Item 9 = 0). Given significant response and excellent tolerability (no akathisia/EPS), current combination therapy should be maintained without dose adjustment."
+            "q": "What is the assessment of treatment response on combination therapy?",
+            "defaultAnswer": "Severe TRD demonstrating robust partial response to Venlafaxine XR 225 mg daily + Aripiprazole 5 mg daily augmentation (PHQ-9 improved from 21 baseline to 12 today, representing a 43% reduction toward remission). Per APA, CANMAT, and VA/DoD guidelines, continue current combination pharmacotherapy without alteration to allow full therapeutic consolidation toward complete remission (target PHQ-9 <5)."
           }
         ]
       },
       {
         "id": "w5c_wed_a2",
-        "title": "2. Suicide Safety Maintenance",
+        "title": "2. Generalized Anxiety Disorder Clinically Meaningful Improvement",
         "icon": "ShieldAlert",
-        "color": "13314f",
+        "color": "d97706",
         "questions": [
           {
             "key": "q2",
-            "q": "What is the ongoing safety status?",
-            "defaultAnswer": "Suicidal ideation resolved. Safety plan remains active; firearms remain stored offsite."
+            "q": "How should anxiety response and psychotherapy be evaluated?",
+            "defaultAnswer": "Generalized Anxiety Disorder showing marked improvement with GAD-7 score reduced from 18 (severe) to 9 (mild), representing a 50% symptom reduction. Meaningful functional recovery noted with resumption of hobbies (woodworking, truck repair) and improved work efficiency. Hydroxyzine 25 mg PRN used only rarely (1x/week). Continue current dual-action pharmacotherapy, PRN hydroxyzine, and biweekly CBT."
+          }
+        ]
+      },
+      {
+        "id": "w5c_wed_a3",
+        "title": "3. Suicide Safety Maintenance & Remission of Ideation",
+        "icon": "CheckCircle",
+        "color": "059669",
+        "questions": [
+          {
+            "key": "q3",
+            "q": "What is the updated suicide safety status?",
+            "defaultAnswer": "Complete remission of suicidal ideation (denies active and passive SI, denies plan, denies intent, denies preparatory behaviors). Protective factors strongly reinforced by restored emotional presence, hope, marital communication, and resumed hobbies. Firearms remain securely removed from home. Maintain 988 Lifeline and crisis contacts."
+          }
+        ]
+      },
+      {
+        "id": "w5c_wed_a4",
+        "title": "4. Tobacco Reduction & Cessation Progress",
+        "icon": "Cigarette",
+        "color": "13314f",
+        "questions": [
+          {
+            "key": "q4",
+            "q": "What is the tobacco status and counseling plan?",
+            "defaultAnswer": "Tobacco Use Disorder in active reduction (cut down from 15 to 8 cigarettes/day). Patient expresses growing confidence in eventual complete cessation. Reinforce progress using motivational interviewing and offer NRT options when ready to set a definitive quit date."
           }
         ]
       }
@@ -4229,7 +4279,7 @@ export const W5_CASES = [
     "SUBJECTIVE_DOCUMENTED": [
       {
         "label": "HPI",
-        "value": "51-year-old male IT manager (separated, living alone) presenting for 12-week follow-up (6 weeks on stable combination Venlafaxine XR 150 mg daily + Aripiprazole 2 mg daily). Reports sustained full remission of depressive and anxiety symptoms. Sleeping 7-8 hours per night, energy excellent, fully functioning at work with high productivity. Resumed fishing, working on his truck, and watching sports. SI remains completely absent. Attends CBT regularly. Tolerating combo therapy with zero side effects."
+        "value": "48-year-old male presenting for scheduled 6-month follow-up evaluation at behavioral health clinic on stable maintenance therapy (Venlafaxine XR 225 mg daily + Aripiprazole 5 mg daily). Full clinical remission achieved for both MDD (PHQ-9 = 3 today, down from 21 baseline) and GAD (GAD-7 = 2 today, down from 18 baseline). Symptoms no longer cause distress or impairment. Restored mood, energy, motivation, concentration, and emotional presence. Complete functional recovery: high work productivity, successful marital reconciliation, and fully active in woodworking, fishing, and weekend hiking. Suicidal ideation completely absent with maintained safety. Excellent medication tolerability; metabolic parameters stable. Tobacco use reduced to 2-3 cigarettes/day with plan for complete cessation."
       },
       {
         "label": "Review of Systems (ROS) & Safety Assessment",
@@ -4341,26 +4391,52 @@ export const W5_CASES = [
       {
         "id": "w5c_thu_a1",
         "title": "1. TRD Full Remission & Long-Term Maintenance Rationale",
-        "icon": "Brain",
-        "color": "13314f",
+        "icon": "CheckCircle",
+        "color": "059669",
         "questions": [
           {
             "key": "q1",
-            "q": "What is the assessment of remission and maintenance therapy duration for TRD?",
-            "defaultAnswer": "MDD (PHQ-9 = 3) and GAD (GAD-7 = 4) are in full clinical remission on combination Venlafaxine XR 150 mg daily + Aripiprazole 2 mg daily. Because the patient has Treatment-Resistant Depression (failed â‰¥2 prior trials), clinical guidelines (APA, VA/DoD, CANMAT) recommend continuing successful augmentation maintenance therapy for a minimum of 12 to 24 months (or indefinitely) post-remission to prevent high-risk depressive relapse."
+            "q": "What is the assessment of remission and maintenance therapy duration?",
+            "defaultAnswer": "Severe Treatment-Resistant Depression in complete clinical remission (PHQ-9 = 3 today; trajectory: 21 baseline → 12 at 3 months → 3 today). Full restoration of mood, energy, motivation, and occupational/interpersonal functioning. Per APA, CANMAT, and VA/DoD TRD guidelines, patients with severe TRD who achieve remission on atypical antipsychotic augmentation should continue combination maintenance pharmacotherapy (Venlafaxine XR 225 mg + Aripiprazole 5 mg daily) for at least 1 to 2 years (or indefinitely) to prevent depressive recurrence and preserve functional recovery. Do not taper or discontinue medications."
           }
         ]
       },
       {
         "id": "w5c_thu_a2",
-        "title": "2. Suicide Risk & Relapse Prevention Monitoring",
-        "icon": "ShieldAlert",
-        "color": "13314f",
+        "title": "2. Generalized Anxiety Disorder Full Remission",
+        "icon": "ShieldCheck",
+        "color": "10b981",
         "questions": [
           {
             "key": "q2",
-            "q": "What is the long-term safety and monitoring plan?",
-            "defaultAnswer": "Suicidal ideation remains fully resolved (Item 9 = 0). Continue routine safety monitoring and periodic metabolic laboratory evaluation (fasting lipids/glucose)."
+            "q": "What is the anxiety remission status and coping maintenance?",
+            "defaultAnswer": "Generalized Anxiety Disorder in complete clinical remission (GAD-7 = 2 today; trajectory: 18 baseline → 9 at 3 months → 2 today). Residual occasional situational stress related to work and family is normal and well-managed with healthy coping mechanisms developed in CBT. No need for scheduled or PRN anxiolytics; continue current maintenance combination."
+          }
+        ]
+      },
+      {
+        "id": "w5c_thu_a3",
+        "title": "3. Suicide Risk Remission & Relapse Prevention Monitoring",
+        "icon": "Heart",
+        "color": "059669",
+        "questions": [
+          {
+            "key": "q3",
+            "q": "What is the safety and relapse prevention plan?",
+            "defaultAnswer": "Sustained complete remission of suicidal ideation (denies all suicidal ideation, plan, intent, desire to die, or self-harm). Robust protective factors: restored marital partnership, fulfillment in woodworking and outdoor activities, and high occupational satisfaction. Relapse prevention plan reviewed: educate on early warning signs of recurrence (insomnia, fatigue, social withdrawal) and maintain 988 Lifeline access."
+          }
+        ]
+      },
+      {
+        "id": "w5c_thu_a4",
+        "title": "4. Tobacco Cessation Progress (Preparation Stage)",
+        "icon": "Cigarette",
+        "color": "13314f",
+        "questions": [
+          {
+            "key": "q4",
+            "q": "What is the tobacco cessation status and intervention?",
+            "defaultAnswer": "Tobacco Use Disorder significantly improved (down to 2-3 cigarettes/day). Patient is motivated and ready to achieve complete abstinence. Provide behavioral reinforcement and offer OTC NRT patch or gum for target quit date."
           }
         ]
       }

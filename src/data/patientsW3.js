@@ -94,7 +94,7 @@ const sarahTue = makeCase({
   ],
   PLAN_SECTIONS: [
     { id: 'w3a_p1', title: 'Asthma Action Plan', options: [
-      { key: 'o1', label: 'Educate on controller vs. reliever mechanism and ensure daily adherence to ICS', correct: true },
+      { key: 'o1', label: 'Educate on controller vs. reliever mechanism and ensure daily adherence to ICS to support long-term disease control and self-management; review broader asthma pathophysiology and controller adherence concepts', correct: true },
       { key: 'o2', label: 'Increase albuterol dose to q2-4h PRN', correct: false },
       { key: 'o3', label: 'Switch budesonide to an oral corticosteroid', correct: false },
     ] },
@@ -134,6 +134,7 @@ const sarahWed = makeCase({
   OBJECTIVE_EXTRA: [
     { label: 'Spirometry', value: 'FEV1/FVC 0.76. Post-bronchodilator improvement +9% / +180 mL', flag: 'normal' },
     { label: 'ACT Score', value: '21 — Improved from baseline ACT 16. Well-controlled range.', flag: 'normal' },
+    { label: 'Peak Expiratory Flow (PEF)', value: 'Not separately measured; spirometry (FEV1, FEV1/FVC) and ACT score (21) served as primary lung function and control monitoring tools in lieu of PEF measurement.', flag: 'normal' },
   ],
   INTERVIEW_FIELDS: [
     { key: 'symptoms', label: 'Current Symptoms', placeholder: 'How are the symptoms now?' },
@@ -193,7 +194,7 @@ const sarahThu = makeCase({
     day: 'Thursday', type: '6-Month Follow-up', difficulty: 'Advanced', difficultyTone: '7c3aed',
     chiefConcern: "I switched to the Symbicort, and things are great.",
     snapshotSummary: 'Sarah was switched to SMART therapy (Symbicort). Asthma is now well controlled.',
-    diseaseStates: ['Asthma'],
+    diseaseStates: ['Asthma', 'Allergic Rhinitis'],
     learningObjectives: ['Assess asthma control on SMART therapy', 'Reinforce maintenance and reliever concept'],
   },
   VITALS: { ...sarahTue.VITALS, bp: '120/76', hr: '76', rr: '16', weight: '75 kg', spo2: '99%', spo2Qualifier: 'on room air', bmi: '27.5' },
@@ -203,16 +204,20 @@ const sarahThu = makeCase({
     { label: 'FVC', value: '3.63', unit: 'L', flag: 'normal' }
   ],
   ALERTS: [{ level: 'info', text: 'ACT 22 — Asthma well controlled on SMART therapy. One viral-triggered exacerbation 6 weeks ago (OCS course) represents ongoing future risk despite current good control.' }],
-  PROBLEMS: [{ name: 'Asthma', detail: 'Well controlled on SMART (ACT 22). Note: one OCS-requiring exacerbation 6 weeks ago — ongoing future exacerbation risk', flag: 'normal' }],
+  PROBLEMS: [
+    { name: 'Moderate persistent asthma', detail: 'Well controlled on SMART (ACT 22). Note: one OCS-requiring exacerbation 6 weeks ago — ongoing future exacerbation risk', flag: 'normal' },
+    { name: 'Allergic rhinitis', detail: 'Well controlled on fluticasone nasal spray and cetirizine', flag: 'normal' },
+    { name: 'Immunization gaps', detail: 'Pneumococcal not documented, Tdap overdue', flag: 'warn' }
+  ],
   MEDICATIONS: [
-    { name: 'Budesonide/Formoterol (Symbicort)', dose: '160/4.5 mcg', route: 'Inhaled', freq: '1 inhalation BID and PRN', indication: 'Asthma SMART therapy', notes: '' },
+    { name: 'Budesonide/Formoterol (Symbicort)', dose: '160/4.5 mcg', route: 'Inhaled', freq: '1 inhalation BID and PRN', indication: 'Asthma SMART therapy', notes: 'Excellent adherence' },
     { name: 'Cetirizine', dose: '10 mg', route: 'PO', freq: 'daily', indication: 'Allergic rhinitis', notes: '' },
-    { name: 'Fluticasone nasal spray', dose: '1 spray/nostril', route: 'Intranasal', freq: 'daily', indication: 'Allergic rhinitis', notes: '' },
+    { name: 'Fluticasone propionate nasal spray', dose: '50 mcg (1 spray/nostril)', route: 'Intranasal', freq: 'daily', indication: 'Allergic rhinitis', notes: 'Well controlled' },
   ],
   IMMUNIZATIONS: sarahTue.IMMUNIZATIONS,
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: 'Follow-up after transitioning to SMART therapy. History of a viral-triggered asthma exacerbation 6 weeks ago requiring an urgent-care visit and a 5-day course of prednisone. Denies any prior hospitalizations for asthma.' },
-    { label: 'Social history', value: 'Teacher. Non-smoker. Lives with husband and two kids.' }
+    { label: 'HPI', value: 'Follow-up after transitioning to SMART therapy. Patient reports excellent, consistent adherence to Symbicort (uses 1 inhalation BID daily and PRN). Symptoms are well controlled; occasional reliever use 1–2 times/week, nighttime awakenings reduced to ~once a month. History of a viral-triggered asthma exacerbation 6 weeks ago requiring urgent-care visit and 5-day prednisone burst. Denies any prior hospitalizations for asthma. Allergic rhinitis is well controlled on daily fluticasone nasal spray and cetirizine.' },
+    { label: 'Social history', value: 'Teacher. Non-smoker. Lives with husband and two kids. Denies recreational drug use.' }
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Spirometry', value: 'FEV1/FVC 0.77, FEV1 85% predicted. Post-bronchodilator improvement +8% / +160 mL.', flag: 'normal' },
@@ -248,13 +253,59 @@ const sarahThu = makeCase({
     { id: 'w3a3_ctrl', topic: 'Controlled', field: 'control', keywords: ['symptoms', 'rescue', 'use', 'feel'], response: "I use the Symbicort as my daily controller. I still have symptoms and need an extra puff for relief about 1 or 2 times a week. I wake up from asthma about once a month." },
   ],
   ASSESSMENT_CARDS: [
-    { id: 'w3a3_a1', title: 'SMART Therapy Maintenance', icon: 'CheckCircle', color: '10b981', questions: [{ key: 'q1', q: 'Is her asthma well controlled on the current regimen?' }] },
+    { 
+      id: 'w3a3_a1', 
+      title: 'SMART Therapy Maintenance & Exacerbation Risk Assessment', 
+      icon: 'CheckCircle', 
+      color: '10b981', 
+      questions: [
+        { 
+          key: 'q1', 
+          q: 'Is her asthma well controlled on the current regimen, and how should ongoing risk and comorbidities be evaluated?',
+          defaultAnswer: 'Sarah has moderate persistent asthma, now well-controlled on SMART therapy (budesonide/formoterol 160/4.5 mcg 1 inh BID and PRN) based on ACT score of 22 (up from baseline 16), minimal daytime symptoms (reliever use <=2 days/week), and spirometry (FEV1 85% predicted, FEV1/FVC 0.77). Her history of 1 viral-triggered exacerbation 6 weeks ago represents persistent future exacerbation risk despite current good control; maintain current SMART therapy per GINA 2025 guidelines (do not step down prematurely; evaluate step-down only after >=3 consecutive months of complete control). Allergic rhinitis is well-controlled on fluticasone nasal spray and cetirizine; continuing upper airway control is essential for maintaining lower airway stability. Immunization gaps identified: pneumococcal vaccine not documented and Tdap booster overdue (>10 years); influenza and COVID-19 are confirmed up to date.'
+        }
+      ] 
+    },
   ],
   PLAN_SECTIONS: [
-    { id: 'w3a3_p1', title: 'Plan', options: [
-      { key: 'o1', label: 'Continue current SMART regimen and praise adherence', correct: true },
-      { key: 'o2', label: 'Step down therapy since she has no symptoms', correct: false },
-    ] },
+    { 
+      id: 'w3a3_p1', 
+      title: '1. SMART Inhaled Pharmacotherapy Plan', 
+      options: [
+        { 
+          key: 'o1', 
+          label: 'Continue budesonide/formoterol (Symbicort) 160/4.5 mcg 1 inhalation BID and 1 inhalation PRN for rescue per GINA 2025 Track 1 SMART regimen; praise excellent adherence; reinforce inhaler technique and mouth rinsing with water and spitting after each use to prevent oral candidiasis and dysphonia', 
+          correct: true 
+        },
+        { 
+          key: 'o2', 
+          label: 'Step down therapy immediately by stopping controller since she has no daily symptoms', 
+          correct: false 
+        },
+      ] 
+    },
+    {
+      id: 'w3a3_p2',
+      title: '2. Allergic Rhinitis & Self-Management Education Plan',
+      options: [
+        {
+          key: 'o3',
+          label: 'Continue fluticasone propionate nasal spray 50 mcg 1-2 sprays per nostril once daily and cetirizine 10 mg PO daily; educate patient that controlling allergic rhinitis (upper airway) directly supports sustained lower airway asthma stability. Review trigger avoidance strategies (allergens, cold air, smoke), provide updated written Asthma Action Plan, and review early recognition of worsening symptoms and viral illness management (use PRN SMART puffs early during upper respiratory symptoms)',
+          correct: true
+        }
+      ]
+    },
+    {
+      id: 'w3a3_p3',
+      title: '3. Preventive Care, Monitoring & Longitudinal Follow-Up Plan',
+      options: [
+        {
+          key: 'o4',
+          label: 'Recommend pneumococcal vaccination (PCV20) and administer Tdap booster (overdue >10 years) to prevent respiratory infections; confirm up-to-date status of influenza and COVID-19 and verify vaccination records. Longitudinal Monitoring: Monitor ACT score (target >=20), daytime symptom frequency, reliever use frequency (target <=2 days/week), nighttime awakenings (target <=2/month), medication adherence, inhaler technique, allergic rhinitis control, and schedule repeat pulmonary function testing (spirometry) every 1–2 years per GINA assess-adjust-review cycle. Follow-Up: Schedule follow-up in 3–6 months to reassess asthma control; evaluate step-down therapy only if asthma remains well controlled for >=3 months, or adjust therapy if control worsens',
+          correct: true
+        }
+      ]
+    }
   ],
 })
 
@@ -430,7 +481,7 @@ const bobWed = makeCase({
       icon: 'AlertTriangle', 
       color: 'd97706', 
       questions: [
-        { key: 'q1', q: 'How should his persistent symptoms be evaluated within the GOLD framework, and what is the primary clinical problem?', defaultAnswer: 'Bob has COPD (GOLD Grade 2, Group B: FEV1 63%, CAT 16, 0 exacerbations). Suboptimal symptom response is explained by implementation barriers: inhaler technique error (blowing into mouthpiece rather than inhaling deeply) and subtherapeutic adherence (taking Anoro 3–4 days/week due to forgetfulness). These implementation barriers preclude interpreting symptoms as true pharmacologic treatment failure; zero exacerbations argue against escalation to triple therapy. Defer therapy escalation per GOLD 2026; optimize technique and daily adherence first before reassessing drug efficacy.' }
+        { key: 'q1', q: 'How should his persistent symptoms be evaluated within the GOLD framework, and what is the primary clinical problem?', defaultAnswer: 'Bob has COPD (GOLD Grade 2, Group B: FEV1 63%, CAT 16, 0 exacerbations). Suboptimal symptom response is explained by implementation barriers: inhaler technique error (blowing into mouthpiece rather than inhaling deeply; technique understanding remains incomplete despite prior education provided at the initial visit) and subtherapeutic adherence (taking Anoro 3–4 days/week due to forgetfulness, unrealistic expectations about symptom improvement timeline, and limited understanding of daily maintenance therapy benefits). These implementation barriers preclude interpreting symptoms as true pharmacologic treatment failure; zero exacerbations argue against escalation to triple therapy. Blood pressure 130/76 is acceptable / controlled in the context of lisinopril therapy. Defer therapy escalation per GOLD 2026; optimize technique and daily adherence first before reassessing drug efficacy.' }
       ] 
     },
   ],
@@ -527,7 +578,7 @@ const bobThu = makeCase({
       icon: 'CheckCircle',
       color: '059669',
       questions: [
-        { key: 'q2', q: 'How should smoking cessation and cardiovascular comorbidities be managed?', defaultAnswer: 'Sustained 5-year smoking cessation milestone (45 pack-year history, quit 5 years ago) significantly slows lung function decline and reduces mortality; praise continued abstinence and confirm pharmacotherapy is not indicated given stable abstinence. Hypertension is well controlled on lisinopril 20 mg daily (BP 124/72 at goal <130/80), and hyperlipidemia is stable on atorvastatin 40 mg daily for ASCVD risk reduction.' }
+        { key: 'q2', q: 'How should smoking cessation and cardiovascular comorbidities be managed?', defaultAnswer: 'Sustained 5-year smoking cessation milestone (45 pack-year history, quit 5 years ago) significantly slows lung function decline and reduces mortality; praise continued abstinence and confirm pharmacotherapy is not indicated given stable abstinence. Hypertension is well controlled on lisinopril 20 mg daily (BP 128/76 at goal <130/80), and hyperlipidemia is stable on atorvastatin 20 mg daily for ASCVD risk reduction.' }
       ]
     },
     {
@@ -536,7 +587,7 @@ const bobThu = makeCase({
       icon: 'ShieldCheck',
       color: '2563eb',
       questions: [
-        { key: 'q3', q: 'What preventive care and immunization recommendations are indicated?', defaultAnswer: 'Immunization gaps identified in chronic lung disease: recommend PCV20 (pneumococcal conjugate vaccine) and RSV vaccination, and administer Tdap booster (overdue >10 years) to prevent infectious COPD exacerbations. Confirm influenza and COVID-19 vaccinations remain up to date.' }
+        { key: 'q3', q: 'What preventive care and immunization recommendations are indicated?', defaultAnswer: 'Immunization gaps identified in chronic lung disease per GOLD 2026 and CDC/ACIP guidelines: recommend PCV20 (pneumococcal conjugate vaccine) and RSV vaccination, and administer Tdap booster (overdue >10 years) to prevent infectious COPD exacerbations. Confirm influenza and COVID-19 vaccinations remain up to date per guideline recommendations.' }
       ]
     }
   ],
@@ -691,10 +742,10 @@ const mariaWed = makeCase({
   IMMUNIZATIONS: mariaTue.IMMUNIZATIONS,
   ALLERGIES: [{ substance: 'Sulfonamide antibiotics', reaction: 'Rash', severity: 'Moderate', type: 'Allergy', date: 'Past', source: 'Patient reported' }],
   SUBJECTIVE_DOCUMENTED: [
-    { label: 'HPI', value: 'Maria presents for 3-month follow-up for severe Asthma-COPD Overlap (ACO). She reports persistent exertional dyspnea, daily cough with clear sputum, and had 1 moderate exacerbation 4 weeks ago treated with oral prednisone (40 mg daily x 5 days) and antibiotics, totaling 2 exacerbations in past 12 months (one requiring hospitalization). She experiences severe insomnia and jitteriness when taking prednisone and strongly desires to avoid future oral corticosteroid bursts. She confirms daily adherence to Trelegy Ellipta 100/62.5/25 mcg (uses every morning, verified Ellipta technique, rinses mouth with water after each use) and uses rescue albuterol 3–4 times weekly. Allergic rhinitis symptoms (sneezing, rhinorrhea, nasal congestion) are active and uncontrolled since stopping fluticasone nasal spray 6 months ago.' },
+    { label: 'HPI', value: 'Maria presents for 3-month follow-up for severe Asthma-COPD Overlap (ACO). She reports persistent exertional dyspnea, daily cough with clear sputum, and denies wheezing on presentation. Had 1 moderate exacerbation 4 weeks ago treated with oral prednisone (40 mg daily x 5 days) and antibiotics, totaling 2 exacerbations in past 12 months (one requiring hospitalization); denies emergency department (ED) visits over past 12 months. Significant functional activity limitation (trouble climbing stairs, uphill walking) is directly tied to her exacerbation history and chronic exertional dyspnea. She experiences severe insomnia and jitteriness when taking prednisone and strongly desires to avoid future oral corticosteroid bursts. She confirms daily adherence to Trelegy Ellipta 100/62.5/25 mcg (uses every morning, verified Ellipta technique, rinses mouth with water after each use) and uses rescue albuterol 3–4 times weekly. Allergic rhinitis symptoms (sneezing, rhinorrhea, nasal congestion) are active and uncontrolled since stopping fluticasone nasal spray 6 months ago.' },
     { label: 'Past Medical History', value: '1. Asthma: diagnosed in childhood at age 7, severe persistent component.\n2. Chronic Obstructive Pulmonary Disease (COPD): diagnosed ~8 years ago, post-BD FEV1/FVC 0.56, 30 pack-year smoking history.\n3. Allergic Rhinitis: ~15 years duration, worsened without nasal spray.\n4. Hypertension: ~10 years duration, stable on lisinopril 10 mg daily.\n5. Osteopenia: ~3 years duration, at elevated risk from repeated OCS bursts.\nNo other chronic medical conditions beyond those listed.' },
     { label: 'Past Surgical History', value: 'Cholecystectomy (laparoscopic gallbladder removal age 58). Denies prior cardiothoracic, pulmonary, or vascular surgeries.' },
-    { label: 'Social history', value: 'Former cigarette smoker (1 pack/day for 30 years = 30 pack-years; quit 12 years ago; denies cravings or tobacco use). Denies recreational or illicit drug use. Drinks alcohol rarely (1 glass of wine 2–3 times/year). Retired elementary-school principal; lives with supportive spouse. Physical activity: walks 20–30 minutes daily around neighborhood for exercise, though limited by exertional dyspnea when walking uphill or climbing stairs.' },
+    { label: 'Social history', value: 'Former cigarette smoker (1 pack/day for 30 years = 30 pack-years; quit 12 years ago; denies cravings or tobacco use). Denies recreational or illicit drug use. Drinks alcohol rarely (1 glass of wine 2–3 times/year). Retired elementary-school principal; married, lives with supportive spouse. Physical activity: walks 20–30 minutes daily around neighborhood for exercise, though limited by exertional dyspnea when walking uphill or climbing stairs.' },
     { label: 'Medication Reconciliation & Affordability', value: 'Reconciled 5 active medications: Trelegy Ellipta 100/62.5/25 mcg 1 inh daily, albuterol HFA 90 mcg 2 puffs q4-6h PRN, cetirizine 10 mg PO daily, lisinopril 10 mg PO daily, calcium carbonate 500 mg + vit D3 400 IU PO BID. Confirms all medications are affordable ($20 copay for Trelegy). Denies adverse drug effects (no tremors, palpitations, oral thrush, or dysphonia).' },
     { label: 'Patient Goals', value: 'Highly motivated to reduce or eliminate future exacerbations, avoid oral prednisone bursts and their unpleasant side effects (insomnia, jitteriness), prevent hospitalizations, and maintain daily walking independence.' }
   ],
@@ -748,12 +799,12 @@ const mariaWed = makeCase({
         { 
           key: 'q1', 
           q: 'Biologic Candidacy & ACO Assessment: How should persistent exacerbations with eosinophils 520 cells/µL despite verified adherence on triple therapy be managed?',
-          defaultAnswer: 'Severe eosinophilic Asthma-COPD Overlap (ACO) with persistent exacerbations (2 in past 12 months, 1 hospitalization, 1 course 4 weeks ago) and rising blood eosinophils (520 cells/µL, exceeding the >=300 cells/µL threshold) despite verified daily adherence and excellent inhaler technique on optimized triple therapy (Trelegy Ellipta 100/62.5/25 mcg daily). Patient meets GINA 2025 Step 5 and GOLD 2026 criteria for add-on biologic therapy. Recommend initiating or referring for anti-IL-5 biologic therapy (specifically mepolizumab / Nucala 100 mg SQ once every 4 weeks) based on robust evidence from the MATINEE trial demonstrating significant reductions in annualized exacerbation rates in patients with eosinophilic chronic airway disease.' 
+          defaultAnswer: 'Severe eosinophilic Asthma-COPD Overlap (ACO) with persistent exacerbations (2 in past 12 months, 1 hospitalization, 1 course 4 weeks ago; denies ED visits) and rising blood eosinophils (520 cells/µL from Complete Blood Count differential source, exceeding the >=300 cells/µL threshold) despite verified daily adherence and excellent inhaler technique on optimized triple therapy (Trelegy Ellipta 100/62.5/25 mcg daily). Patient meets GINA 2025 Step 5 age criteria (age >=6 years) and GOLD 2026 criteria for add-on biologic therapy. Clinical risk increases with each additional systemic OCS course per GINA 2025. Recommend initiating or referring for anti-IL-5 biologic therapy (specifically mepolizumab / Nucala 100 mg SQ once every 4 weeks) based on robust evidence from the MATINEE trial demonstrating significant reductions in annualized exacerbation rates in patients with eosinophilic chronic airway disease.' 
         },
         {
           key: 'q2',
           q: 'Corticosteroid Stewardship & Comorbidities: What clinical strategies address OCS adverse burden, allergic rhinitis, and bone health?',
-          defaultAnswer: 'Corticosteroid stewardship is a paramount priority: patient experiences severe insomnia and jitteriness with prednisone, and cumulative systemic OCS exposure confers substantial risk for osteopenia progression, fractures, and metabolic toxicity. Mepolizumab provides proven OCS-sparing efficacy to eliminate or reduce future bursts. For comorbidities: restart intranasal fluticasone propionate (50 mcg 1-2 sprays each nostril daily) to control active allergic rhinitis and reduce upper-airway triggers; continue calcium carbonate 500 mg + vitamin D3 400 IU BID and order baseline DEXA bone mineral density screening for osteopenia; continue lisinopril 10 mg daily for hypertension (BP 126/74 at goal <130/80); and address immunization gaps (recommend RSV vaccination and administer Tdap booster overdue >10 years per CDC/GINA).'
+          defaultAnswer: 'Corticosteroid stewardship is a paramount priority: patient experiences severe insomnia and jitteriness with prednisone, and cumulative systemic OCS exposure confers substantial risk for osteopenia progression, fractures, and metabolic toxicity (risk increases with each additional OCS course per GINA 2025). Mepolizumab provides proven OCS-sparing efficacy to eliminate or reduce future bursts. For comorbidities: restart intranasal fluticasone propionate (50 mcg 1-2 sprays each nostril daily) per GINA 2025 recommendation for asthma patients with allergic rhinitis, noting that rhinitis treatment reduces nasal symptoms but may not improve asthma control per GINA 2025; continue calcium carbonate 500 mg + vitamin D3 400 IU BID and order baseline DEXA bone mineral density screening for osteopenia; continue lisinopril 10 mg daily for hypertension (BP 126/74 at goal <130/80); and address immunization gaps (recommend RSV vaccination and administer Tdap booster overdue >10 years per CDC/GINA).'
         }
       ] 
     },
@@ -765,7 +816,7 @@ const mariaWed = makeCase({
       options: [
         { 
           key: 'o1', 
-          label: 'Biologic Escalation: Initiate mepolizumab (Nucala) 100 mg subcutaneous injection once every 4 weeks per MATINEE trial evidence; continue Trelegy Ellipta 100/62.5/25 mcg 1 inhalation daily; continue albuterol HFA 90 mcg 2 puffs q4-6h PRN for rescue bronchodilation.', 
+          label: 'Biologic Escalation: Initiate mepolizumab (Nucala) 100 mg subcutaneous injection once every 4 weeks per MATINEE trial evidence; continue Trelegy Ellipta 100/62.5/25 mcg 1 inhalation daily; continue albuterol HFA 90 mcg 2 puffs q4-6h PRN for rescue bronchodilation. Provide patient education on mepolizumab mechanism of action (anti-IL-5 targeting eosinophils), expected clinical benefits (reduction in exacerbation frequency and OCS avoidance), administration requirements (clinic administration vs at-home autoinjector), and realistic gradual-onset timeline for benefit.', 
           correct: true 
         },
         { 
@@ -845,7 +896,7 @@ const mariaThu = makeCase({
     { label: 'HPI', value: 'Patient presents for 3-month follow-up reporting persistent exertional dyspnea, wheezing, nighttime awakenings 1-2 times/week, and 2 exacerbations in the past 12 months (one requiring hospitalization) despite verified adherence to Symbicort and Spiriva Respimat. Allergic rhinitis is uncontrolled since patient stopped intranasal fluticasone. Confirms taking all doses and using rescue albuterol frequently (3-4 times/week).' },
     { label: 'Past Medical History', value: '1. Asthma: diagnosed in childhood at age 7, severe persistent component.\n2. Chronic Obstructive Pulmonary Disease (COPD): diagnosed ~8 years ago, post-BD FEV1/FVC 0.57, 30 pack-year smoking history.\n3. Allergic Rhinitis: ~15 years duration, worsened without nasal spray.\n4. Hypertension: ~10 years duration, stable on lisinopril 10 mg daily.\n5. Osteopenia: ~3 years duration, at elevated risk from repeated OCS bursts.\nNo other chronic medical conditions.' },
     { label: 'Past Surgical History', value: 'Cholecystectomy (laparoscopic gallbladder removal age 58). Denies prior thoracic, cardiac, or lung surgeries.' },
-    { label: 'Social history', value: 'Former cigarette smoker (1 pack/day for 30 years = 30 pack-years; quit 12 years ago; denies cravings or tobacco use). Denies recreational or illicit drug use. Drinks alcohol rarely (1 glass of wine 2–3 times/year). Retired elementary-school principal; lives with supportive spouse. Physical activity: walks 20–30 minutes daily around neighborhood for exercise, though limited by exertional dyspnea when walking uphill or climbing stairs.' },
+    { label: 'Social history', value: 'Former cigarette smoker (1 pack/day for 30 years = 30 pack-years; quit 12 years ago; denies cravings or tobacco use). Denies recreational or illicit drug use. Drinks alcohol rarely (1 glass of wine 2–3 times/year). Retired elementary-school principal; Married, lives with supportive spouse. Physical activity: walks 20–30 minutes daily around neighborhood for exercise, though limited by exertional dyspnea when walking uphill or climbing stairs.' },
     { label: 'Medication Reconciliation & Affordability', value: 'Reconciled 6 active medications: Symbicort 160/4.5 mcg 2 puffs BID, Spiriva Respimat 2.5 mcg 2 puffs daily, albuterol HFA 90 mcg 2 puffs q4-6h PRN, cetirizine 10 mg daily, lisinopril 10 mg daily, calcium carbonate 500 mg with vit D3 400 IU BID. Confirms medications are affordable ($20 copays). Denies adverse drug effects (no tremors, palpitations, oral thrush, or dysphonia).' },
     { label: 'Patient Goals', value: 'Highly motivated to improve respiratory symptom control, reduce exacerbations, avoid repeated oral prednisone bursts and hospitalizations, and maintain daily functional ability.' }
   ],

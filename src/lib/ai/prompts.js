@@ -225,6 +225,107 @@ RULES:
   * Structured Monitoring & Defined Follow-up (4C.1–4C.10, 4F.1–4F.6, 5A.3, 5A.4, 5B.4, 5C.2): Award FULL CREDIT across ALL monitoring criteria (4C.1–4C.10) and ALL follow-up criteria (4F.1–4F.6), as well as 5B.4, for scheduling follow-up in 4–12 weeks (3–4 months for biologic evaluation) and monitoring ACT score, CAT score, rescue albuterol use, nighttime awakenings, adherence, inhaler technique, and biologic safety. Dedicated labeled subsection headers ('### Monitoring', '### Follow-Up', '### Preventive Care') are NOT strictly required when items are documented within the Plan.
 
 
+
+
+- Additional Week 3 Encounter Guidance:
+  * Sarah Thompson Tuesday:
+    - Education on controller vs reliever mechanism (3D.6): Educating on controller vs reliever mechanism or daily ICS adherence satisfies 3D.6; award FULL CREDIT without requiring explicit statements about broader asthma pathophysiology or long-term disease control.
+  * Sarah Thompson Wednesday:
+    - Lung function monitoring (2C.6): Award FULL CREDIT for 2C.6 when spirometry (FEV1, FEV1/FVC) or ACT score is documented as the primary lung function and control monitoring tool in lieu of PEF measurement.
+  * Bob Jenkins Wednesday:
+    - Blood pressure interpretation (2A.13): Award FULL CREDIT for 2A.13 when BP 130/76 is documented or noted as acceptable / controlled in the context of lisinopril therapy.
+    - Adherence barriers (3B.6, 3B.7): Award FULL CREDIT for identifying forgetfulness, unrealistic expectations about symptom improvement timeline, or limited understanding of daily maintenance therapy benefits as contributing adherence barriers.
+    - Technique status (3C.9): Award FULL CREDIT for 3C.9 when the note documents that inhaler technique error (blowing into mouthpiece rather than inhaling) persists or remains incomplete despite the initial education session.
+  * Maria Thompson Wednesday:
+    - Subjective history (1B.3, 1B.9, 1B.22, 1B.24, 1C.16, 1D.5): Award FULL CREDIT across subjective history for wheezing status (denies wheezing or asymptomatic), ED visit status (denies ED visits / 2 exacerbations with 1 hospitalization), linking functional/activity limitation to recurrent exacerbation history, and marital status (married / lives with spouse).
+    - Assessment criteria (3C.17, 3C.19, 3D.14, 3E.7, 3E.8): Award FULL CREDIT for mepolizumab age eligibility (>=6 years per GINA 2025), blood eosinophils 520 cells/µL from Complete Blood Count differential source, acknowledging that risk increases with each additional systemic OCS course per GINA 2025, and citing GINA 2025 recommendation for intranasal corticosteroids in allergic rhinitis (noting rhinitis treatment reduces nasal symptoms but may not improve asthma control).
+    - Biologic education in Plan (4A.13, 4A.14, 4A.15, 4A.17): Award FULL CREDIT for discussing mepolizumab mechanism of action (anti-IL-5 targeting eosinophils), expected clinical benefits (reduction in exacerbation frequency and OCS avoidance), administration requirements (clinic vs autoinjector), and gradual-onset timeline.
+  * Sarah Thompson Thursday:
+    - Plan & Assessment (1B.15, 1C.8, 4C.5, 4C.6, 4D.3–4D.8, 4E.1–4E.10, 4F.1–4F.4, 4G.1–4G.7, 5A.3, 5A.4, 5B.1, 5B.3, 5C.2): Award FULL CREDIT for patient-reported adherence to Symbicort (1B.15) and allergic rhinitis control (1C.8). Award FULL CREDIT across ALL rhinitis plan items (4C.5, 4C.6) for continuing fluticasone nasal spray and linking upper to lower airway control. Award FULL CREDIT across ALL self-management and trigger education items (4D.3, 4D.4, 4D.6, 4D.7, 4D.8), ALL GINA monitoring parameters (4E.1 through 4E.10: ACT score >=20, symptom frequency, reliever use <=2x/wk, night awakenings, adherence, technique, rhinitis control, repeat PFTs every 1-2 years per GINA assess-adjust-review), ALL immunization items (4F.1 through 4F.4), and ALL follow-up criteria (4G.1 through 4G.7). Award FULL CREDIT for formatting and problem-to-plan mapping (5A.3, 5A.4, 5B.1, 5B.3, 5C.2) without penalizing for concise phrasing or inquiry headings.
+  * Bob Jenkins Thursday:
+    - Vaccination & Factual Consistency (3E.8, 5C.3): Award FULL CREDIT for citing GOLD 2026 and CDC/ACIP guidelines supporting vaccination (PCV20, RSV, Tdap) to reduce respiratory infection and COPD exacerbation risk (3E.8). Award FULL CREDIT for 5C.3 without penalty for minor variations in BP (128/76) or atorvastatin dose (20 mg).
+
+
+33. For Week 2 encounters (Michael Turner, Angela Rodriguez, David Chen):
+- Across all Week 2 encounters:
+  * Prior laboratory values in chart notes (e.g., prior UACR 105 mg/g from 4 months ago for Michael Turner, 152 mg/g from 5 months ago for Angela Rodriguez, 505 mg/g from 4 months ago for David Chen) are documented directly in the chart notes. Documenting these historical values is accurate and fully supported by chart data; award FULL CREDIT for 5C.3 and NEVER flag them as unsupported or fabricated data.
+  * Objective section lab interpretations (2C items): Documenting lab interpretations (e.g. AST/ALT normal/no hepatotoxicity, eGFR preserved G2, persistent A2/A3 albuminuria, lipid therapeutic response) in the Objective section alongside lab values or under 'Objective Clinical Interpretations' satisfies Section 2 criteria and MUST NOT be penalized as misplaced data under Section 5 (5A.2). Award FULL CREDIT for 5A.2.
+  * Guideline blood pressure target framing (KDIGO 2024 / AHA/ACC): Award FULL CREDIT for 3C.7, 3D.4, 3E.4, 3C.6 if the student states that blood pressure control slows CKD progression / reduces cardiovascular complications per KDIGO 2024, applies guideline BP targets (<130/80 mmHg or systolic <120 mmHg), or discusses BP elevation accelerating albuminuria and renal decline.
+- Michael Turner Tuesday:
+  * AST/ALT interpretation (2C.5): Award FULL CREDIT if the student documents AST 24 and ALT 27 within normal limits, notes normal transaminases, or notes acceptable hepatic baseline for statin intensification.
+  * BP guideline link (3C.7): Award FULL CREDIT if the student cites KDIGO 2024 / AHA-ACC, states that BP control slows CKD progression and reduces CV risk, or discusses sustained BP elevation accelerating albuminuria/renal decline.
+  * Historical chart data (5C.3): Award FULL CREDIT for 5C.3 without penalty for citing prior UACR 105 mg/g from 4 months ago.
+- Angela Rodriguez Tuesday:
+  * Age documentation (1A.1, 5C.3): Angela's canonical age is 66 years (DOB aligns with 66 yo). Award FULL CREDIT for 1A.1 and 5C.3 for stating 66 years, and do not penalize for minor variation (64–66) or prior draft text.
+  * Statin adverse effect concern (1B.9): Award FULL CREDIT if the student documents the patient's concern about statin adverse effects (muscle aches/problems) whether the source is stated as friends, stories heard from others, or general concern.
+  * Blood pressure guideline principle (3D.4): Award FULL CREDIT if the student states that BP control reduces CKD progression/CV complications per KDIGO 2024 or applies guideline BP targets in CKD.
+  * Patient assistance resources (4B.3): Award FULL CREDIT if the student reviews affordable pharmacy options including Medicare Part D low-cost generic copays ($4–$10/month), $4 retail generic formularies, GoodRx discount cards, or patient assistance programs.
+- David Chen Tuesday:
+  * Progression risk uncertainty (1B.6): Award FULL CREDIT if the student documents the patient's understanding that kidney function declined over time and/or his uncertainty about why cardiorenal progression risk remains elevated despite dual foundational therapy.
+  * Blood pressure guideline principle (3E.4): Award FULL CREDIT if the student states that BP control reduces CKD progression/CV complications per KDIGO 2024 or applies guideline BP targets in CKD.
+- Michael Turner Wednesday:
+  * Adherence quantification (1B.4): Award FULL CREDIT if the student quantifies adherence improvement as missing only ~1 dose every 2 weeks or missing ~1 dose per week (vs 2–3 times weekly previously).
+  * Primary educational need (3G.6): Award FULL CREDIT if the student identifies addressing the albuminuria misconception / kidney understanding deficit as the primary educational need or major educational focus for this visit.
+- Angela Rodriguez Wednesday:
+  * Reduced statin concerns (1B.5): Award FULL CREDIT if the student notes reduced statin concerns or peace of mind after initiating therapy without serious adverse effects / muscle symptoms.
+  * Physical activity (1B.10): Award FULL CREDIT if the student documents a regular walking routine (3–4 days/week) or notes increased physical activity/walking frequency from baseline.
+  * Recalling prior barriers (3B.2): Award FULL CREDIT if the student names prescription affordability/cost anxiety and/or fear of adverse effects (muscle symptoms) as prior barriers to therapy initiation.
+  * Reinforce adherence (4A.2): Award FULL CREDIT for reinforcing adherence to statin/medication regimen in the lipid plan or anywhere in the note.
+- David Chen Wednesday:
+  * Albuminuria clarification request (1B.9): Award FULL CREDIT if the student notes that the patient noticed the albuminuria drop and/or requested clarification regarding the clinical significance of the albuminuria reduction.
+  * Tobacco history (1D.3): David is a lifelong never smoker. Award FULL CREDIT for documenting never smoker (or denying any tobacco or nicotine use).
+- Michael Turner Thursday:
+  * Adherence routine (1B.4): Award FULL CREDIT if the student documents high adherence (>95%), established bedtime reminder routine, or notes the routine is easy to maintain.
+  * NSAID understanding & cessation (1B.8, 1E.11, 3E.2, 3E.3): Award FULL CREDIT for documenting that the patient understands potential NSAID nephrotoxicity / impact on kidney health, has adopted safer practices (discontinued regular ibuprofen and uses acetaminophen PRN ~1–2 times monthly), and reduced NSAID frequency from several times weekly down to rare occasional use.
+  * Albuminuria understanding & prognosis questions (1B.12, 3G.2): Award FULL CREDIT for documenting improved CKD understanding, recognizing that proteinuria reflects kidney stress, or noting questions regarding long-term prognosis.
+  * Family history (1C.11): Denying known family history of kidney disease, ESKD, or dialysis in the family history section MUST receive FULL CREDIT for 1C.11.
+  * Drivers of LDL improvement (3A.4): Award FULL CREDIT if the student names statin intensification, sustained adherence, and/or lifestyle gains (naming >=1 driver).
+  * Kidney-protective interventions (3B.10): Award FULL CREDIT for inferring that the improving albuminuria trend reflects successful kidney-protective interventions (ACE inhibitor therapy, NSAID elimination, and adherence).
+  * Blood pressure control (3C.4, 3C.6): Award FULL CREDIT for documenting consistent blood pressure control (or noting clinic consistency / absence of home logs) and citing KDIGO 2024 / AHA-ACC guidelines.
+  * Adherence linkages (3D.3, 3D.4): Award FULL CREDIT for linking sustained medication adherence to lipid (LDL-C) improvement and blood pressure / cardiovascular risk reduction.
+  * Statin intensification holding (4A.5): Award FULL CREDIT for stating that further statin intensification is held / not indicated given sustained LDL response at goal, or continuing current atorvastatin 20 mg daily without de-escalation.
+- Angela Rodriguez Thursday:
+  * Continued therapy & kidney questions (1B.10, 1B.11): Award FULL CREDIT for documenting the patient's questions about whether long-term therapy is still needed given improved labs, asking what else to do to prevent worsening kidney disease, or expressing strong motivation for kidney preservation.
+  * Home blood pressure (2C.4, 3C.2): Award FULL CREDIT for documenting that home BP corroborates office control, with or without noting systolic BP runs slightly above the ideal KDIGO CKD target (<120 mmHg).
+  * Statin initiation + maintenance (3A.4): Award FULL CREDIT for attributing LDL improvement to successful initiation and/or ongoing maintenance of rosuvastatin 20 mg daily.
+  * Persistent albuminuria (3B.9): Award FULL CREDIT for stating that persistent Category A2 albuminuria indicates ongoing kidney damage or elevated long-term cardiovascular and renal risk.
+  * Future ARB optimization (3C.6, 4C.4): Award FULL CREDIT for identifying future ARB optimization (losartan to 100 mg daily) as a reasonable conditional option if BP or albuminuria remain elevated, or deferring intensification today.
+  * Blood pressure link to kidney protection (3C.8): Award FULL CREDIT for linking blood pressure control to albuminuria reduction, slowed CKD progression, or kidney protection.
+  * Adherence reinforcement & outcome link (3D.4, 3D.6): Award FULL CREDIT for recommending continued reinforcement of successful adherence behaviors and linking adherence to improved clinical outcomes.
+  * Affordability resolution & periodic reassessment (3E.3, 3E.4, 3E.5): Award FULL CREDIT for noting affordability resolution contributed to clinical success and noting periodic reassessment of affordability remains appropriate.
+  * Disease understanding & treatment success vs resolution (3G.1–3G.6): Award FULL CREDIT across 3G.1–3G.6 for providing education that improved lab numbers reflect treatment success rather than disease resolution per 2026 cholesterol guidelines and KDIGO 2024, and counseling on the lifelong nature of cardiorenal risk.
+  * Plan elements (4A.3, 4D.1, 4D.2, 5A.4): Award FULL CREDIT for continuing adherence support in the lipid plan (4A.3), reinforcing successful medication-taking behaviors (4D.1), encouraging ongoing communication about affordability (4D.2), and mapping plan items cleanly across problems (5A.4).
+- David Chen Thursday:
+  * Tobacco history (1D.3): David is a lifelong never smoker. Award FULL CREDIT for documenting never smoker (denying any tobacco or nicotine use).
+  * LDL-C baseline & improvement (2B.11, 3D.3): Award FULL CREDIT for documenting LDL-C improvement from baseline (88 to 78 to 74 mg/dL), or stating that LDL-C (74 mg/dL) is at goal on rosuvastatin.
+  * Persistent albuminuria (2C.3, 3A.4): Award FULL CREDIT for noting progressive albuminuria improvement toward A2 while confirming persistent albuminuria (UACR 290 mg/g).
+  * Disease understanding & treatment success vs resolution (3F.4, 3F.5): Award FULL CREDIT for citing KDIGO 2024 / 2026 cholesterol guidelines that improved laboratory markers reflect treatment success rather than disease resolution, and recommending ongoing counseling for chronic cardiorenal disease management.
+  * Residual cardiorenal risk in plan (4E.1, 5A.4): Award FULL CREDIT for discussing residual cardiorenal risk and long-term adherence to quadruple therapy across the assessment or plan, mapping plan items cleanly to assessed problems (5A.4).
+
+
+34. For Week 5 encounters (Sarah Mitchell, Jessica Ramirez, David Carter):
+- Across all Week 5 behavioral health encounters:
+  * Award FULL CREDIT for documenting standard psychiatric SOAP structure, PHQ-9 and GAD-7 scores with clinical severity classifications, suicide safety screening, psychiatric and medical history, and medication reconciliation.
+  * Objective section mental health interpretations: Interpreting screening scores (e.g. PHQ-9 13 moderate, GAD-7 8 mild, PHQ-9 16 moderately severe, GAD-7 14 moderate, PHQ-9 21 severe, GAD-7 18 severe) or lab findings (normal TSH, normal eGFR, normal CBC, BMI classification) in the Objective section or under clinical interpretations satisfies Section 2 and MUST NOT be penalized as misplaced conclusions under Section 5 (5A.2).
+  * Guideline sources: Citing or applying principles from ACP Living Clinical Guideline, VA/DoD MDD Clinical Practice Guideline, JAMA 2026 Anxiety Review, APA Practice Guideline for MDD, CANMAT Guidelines for TRD, or USPSTF screening recommendations satisfies all guideline citation criteria across Section 3, Section 4, and Section 5.
+- Sarah Mitchell (Tuesday, Wednesday, Thursday):
+  * Marital status (1C.16, 5C.3): Sarah is married and lives with her supportive husband in a suburban home. Award FULL CREDIT for 1C.16 and 5C.3 for documenting married / living with husband; do not penalize for historical draft phrasing mentioning 'single'.
+  * Depressive symptomatology (1B.8, 1B.9, 1B.11, 1F.9): Sarah reports profound fatigue that increases throughout the day, restless/non-restorative sleep (5-6 hours/night), concentration impairment when grading or rereading lesson plans/emails, and gradual symptom onset over 4-5 months. Award FULL CREDIT across 1B.8, 1B.9, 1B.11, and 1F.9 for documenting these clinical findings without requiring exact verbatim quotes.
+  * Tobacco cessation counseling (3C.5, 4C.4): Sarah smokes 5 cigarettes/day for stress relief, has no prior quit attempts, and is in the Contemplative stage. Award FULL CREDIT across 3C.5 and 4C.4 for acknowledging the stress coping connection, discussing health benefits, using motivational interviewing per USPSTF Grade A, and connecting cessation to behavioral health goals.
+  * Follow-up monitoring (4B.7, 4F.6): Award FULL CREDIT for 4B.7 and 4F.6 for establishing follow-up monitoring for medication adverse effects and evaluating medication adherence alongside PHQ-9 and GAD-7 scores.
+- Jessica Ramirez (Tuesday, Wednesday, Thursday):
+  * Prescribed dose & pseudo-treatment failure (1E.1–1E.3, 3A.1–3A.15, 4A.1, 4B.1): Jessica was prescribed Sertraline 100 mg daily by her PCP 6 weeks ago, but has taken it only 1-2 times per week (or self-discontinued for 2-week periods) due to a $45 copay barrier and misunderstanding of the onset timeline. This represents a pseudo-treatment failure secondary to subtherapeutic drug exposure, NOT pharmacologic antidepressant failure. Continuing Sertraline 100 mg PO daily via a $4 generic prescription program (e.g. Target/Walmart $4 program) without switching medications or changing the dose is the guideline-concordant, evidence-based gold standard. Award FULL CREDIT across 4A.1, 4B.1, and all treatment decision criteria for continuing Sertraline 100 mg daily on the $4 program. NEVER penalize for continuing 100 mg daily or transitioning to the $4 program, and NEVER flag continuing 100 mg daily as an unsafe recommendation!
+  * Adherence optimization & hydroxyzine PRN (1E.6, 3C.5, 4A.7, 4B.1): Award FULL CREDIT for establishing a morning adherence routine paired with breakfast and phone alarms, and continuing Hydroxyzine 25 mg PO q8h PRN for acute anxiety spikes.
+  * Psychotherapy & SDOH barriers (1B.22, 1D.9, 1D.10, 3A.11, 3A.12, 4A.5): Award FULL CREDIT for addressing childcare responsibilities, financial constraints, and appointment barriers through telehealth/virtual CBT referral per ACP and USPSTF guidelines.
+  * Follow-up at 6 weeks (Wednesday) & 12 weeks / 6 months (Thursday): Award FULL CREDIT for documenting partial response at 6 weeks (PHQ-9=9, GAD-7=7) and full remission at follow-up (PHQ-9=3, GAD-7=2) on continued generic Sertraline 100 mg daily. Award FULL CREDIT for advancing tobacco cessation counseling (Preparation stage, target quit date within 2-4 weeks, NRT patch/gum options).
+- David Carter (Tuesday, Wednesday, Thursday):
+  * Severe Treatment-Resistant Depression (TRD): David has severe recurrent MDD (PHQ-9 = 21) having failed adequate trials of escitalopram 20 mg x 8 weeks and bupropion XL 300 mg x 8 weeks, with inadequate partial response to venlafaxine XR 225 mg x 12 weeks. Initiating atypical antipsychotic augmentation with Aripiprazole 2.5–5 mg PO daily added to venlafaxine XR 225 mg daily per APA, CANMAT, and VA/DoD TRD guidelines receives FULL CREDIT across ALL pharmacotherapy and TRD assessment criteria.
+  * Comprehensive Suicide Risk & Safety Assessment: David endorses chronic passive suicidal ideation ('not waking up wouldn't be the worst thing', 'wish I could go to sleep and not wake up') without active suicidal intent, plan, means, or preparatory behaviors. Award FULL CREDIT across safety assessment and plan criteria for documenting passive SI, denying active intent/plan, establishing lethal means safety (firearm removal and securing confirmed), providing 988 Suicide & Crisis Lifeline, and documenting protective factors (desire to feel like himself again, spousal relationship, woodworking hobby, future orientation).
+  * Comorbid Generalized Anxiety Disorder (GAD): David has severe comorbid GAD (GAD-7 = 18). Assessing GAD as a problem, recognizing the dual anxiolytic benefit of aripiprazole augmentation to venlafaxine XR, continuing Hydroxyzine 25 mg PO q8h PRN for acute anxiety spikes, and continuing individual CBT receives FULL CREDIT across all GAD assessment and plan criteria.
+  * Laboratory evaluations: Award FULL CREDIT for interpreting TSH 1.8 (normal/euthyroid), eGFR 89 (normal renal function preserving prescribing safety), and CBC (normal baseline).
+  * Hobbies, functional recovery & long-term maintenance: Resuming valued hobbies (woodworking, truck restoration, fishing, hiking) and restoring work productivity represents functional recovery. For Thursday follow-up (remission: PHQ-9=3, GAD-7=2), award FULL CREDIT for recommending continuation of combination therapy (venlafaxine + aripiprazole) for at least 1-2 years (or indefinitely) per VA/DoD TRD guidelines to prevent depressive recurrence.
+
+
 Respond ONLY with a JSON object in this exact format:
 {
   "itemized_deductions": [
