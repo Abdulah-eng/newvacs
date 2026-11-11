@@ -44,7 +44,7 @@ export function generateSoapDraft(caseData, state = {}) {
     caseData.SUBJECTIVE_DOCUMENTED.forEach(s => subLines.push(`- ${s.label}: ${s.value}`))
   }
 
-  // Compile all interview fields (student documented or from INTERVIEW_KNOWLEDGE)
+  // Compile student-documented interview fields from state.interview
   const interviewLines = []
   const outputtedKeys = new Set()
 
@@ -52,7 +52,7 @@ export function generateSoapDraft(caseData, state = {}) {
   if (caseData.INTERVIEW_FIELDS) {
     caseData.INTERVIEW_FIELDS.forEach(f => {
       const val = interview[f.key]
-      if (val && val.trim().length > 0) {
+      if (val && typeof val === 'string' && val.trim().length > 0) {
         interviewLines.push(`- ${f.label}: ${val.trim()}`)
         outputtedKeys.add(f.key)
       }
@@ -63,7 +63,7 @@ export function generateSoapDraft(caseData, state = {}) {
   Object.entries(FIELD_LABELS).forEach(([key, label]) => {
     if (outputtedKeys.has(key)) return
     const val = interview[key]
-    if (val && val.trim().length > 0) {
+    if (val && typeof val === 'string' && val.trim().length > 0) {
       interviewLines.push(`- ${label}: ${val.trim()}`)
       outputtedKeys.add(key)
     }
@@ -72,24 +72,11 @@ export function generateSoapDraft(caseData, state = {}) {
   // Catch-all for any other custom keys in state.interview
   Object.entries(interview).forEach(([key, val]) => {
     if (outputtedKeys.has(key)) return
-    if (val && val.trim().length > 0) {
+    if (val && typeof val === 'string' && val.trim().length > 0) {
       interviewLines.push(`- ${prettyKey(key)}: ${val.trim()}`)
       outputtedKeys.add(key)
     }
   })
-
-  // Automatically include INTERVIEW_KNOWLEDGE items if not already present
-  if (Array.isArray(caseData.INTERVIEW_KNOWLEDGE)) {
-    caseData.INTERVIEW_KNOWLEDGE.forEach(ik => {
-      if (ik.topic && ik.response) {
-        const topicLower = ik.topic.toLowerCase()
-        const existingStr = (subLines.join(' ') + ' ' + interviewLines.join(' ')).toLowerCase()
-        if (!existingStr.includes(topicLower) && !existingStr.includes(ik.response.toLowerCase().slice(0, 20))) {
-          interviewLines.push(`- ${ik.topic}: ${ik.response}`)
-        }
-      }
-    })
-  }
 
   if (interviewLines.length) {
     subLines.push('Interview findings:')
@@ -165,26 +152,30 @@ export function generateSoapDraft(caseData, state = {}) {
   if (Array.isArray(caseData.ASSESSMENT_CARDS)) {
     caseData.ASSESSMENT_CARDS.forEach((card, idx) => {
       const titleClean = card.title.replace(/^\d+[\.\)]\s*/, '')
-      aLines.push(`# ${idx + 1}. ${titleClean}`)
       const questions = card.questions || []
+      const cardAnswers = []
       questions.forEach(qq => {
         const studentVal = (assess[qq.key] || '').trim()
         if (studentVal) {
-          aLines.push(`- ${studentVal}`)
-        } else if (qq.defaultAnswer) {
-          aLines.push(`- ${qq.defaultAnswer}`)
-        } else {
-          aLines.push(`- ${qq.q}`)
+          cardAnswers.push(`- ${studentVal}`)
         }
       })
+      if (cardAnswers.length > 0) {
+        aLines.push(`# ${idx + 1}. ${titleClean}`)
+        cardAnswers.forEach(ans => aLines.push(ans))
+      }
     })
+  }
+  if (aLines.length === 0) {
+    aLines.push('[No assessment documented]')
   }
 
   // ---------- Plan ----------
   const pLines = []
   if (Array.isArray(caseData.PLAN_SECTIONS)) {
     caseData.PLAN_SECTIONS.forEach((sec, idx) => {
-      const chosen = (sec.options || []).filter(o => planSel[o.key] || o.correct)
+      // ONLY include options that student actually selected in planSelections
+      const chosen = (sec.options || []).filter(o => !!planSel[o.key])
       if (chosen.length) {
         const titleClean = sec.title.replace(/^\d+[\.\)]\s*/, '')
         pLines.push(`# ${idx + 1}. ${titleClean}`)
@@ -195,6 +186,9 @@ export function generateSoapDraft(caseData, state = {}) {
   Object.entries(planText).forEach(([k, val]) => {
     if ((val || '').trim()) pLines.push(`# ${prettyKey(k)}\n${val.trim()}`)
   })
+  if (pLines.length === 0) {
+    pLines.push('[No plan documented]')
+  }
 
   return {
     subjective: subLines.join('\n'),
@@ -207,4 +201,3 @@ export function generateSoapDraft(caseData, state = {}) {
 function prettyKey(k) {
   return k.replace(/([A-Z])/g, ' $1').replace(/^./, c => c.toUpperCase())
 }
-

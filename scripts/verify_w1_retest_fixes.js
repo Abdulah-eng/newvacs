@@ -16,7 +16,7 @@ const subjectiveTab = fs.readFileSync(path.join(__dirname, '../src/components/Su
 const gradeSoapRoute = fs.readFileSync(path.join(__dirname, '../src/app/api/ai/grade-soap/route.js'), 'utf8');
 
 let passed = 0;
-let total = 45;
+let total = 50;
 
 // MG-TUE-01: Follow-up timetable conflicts with grader
 try {
@@ -590,6 +590,70 @@ try {
   console.log('✅ MG-TUE-IBU: Ibuprofen dose (400–600 mg) and knee stiffness/pain reconciled in case & prompts');
   passed++;
 } catch (e) { console.error('❌ MG-TUE-IBU failed:', e.message); }
+
+// W1-GEN-EMPTY: Empty state generates no auto-filled answers or 100% note
+try {
+  const { generateSoapDraft } = require('../src/lib/soapGenerator.js');
+  const cTue = cases.CASE_BY_ID['maria-tue'];
+  const emptyDraft = generateSoapDraft(cTue, {});
+  assert.strictEqual(emptyDraft.assessment, '[No assessment documented]');
+  assert.strictEqual(emptyDraft.plan, '[No plan documented]');
+  assert(!emptyDraft.subjective.includes('Interview findings:'));
+  assert(!emptyDraft.subjective.includes('crosses legs'));
+  console.log('✅ W1-GEN-EMPTY: Generate draft with empty state generates clean empty assessment, plan, and interview');
+  passed++;
+} catch (e) { console.error('❌ W1-GEN-EMPTY failed:', e.message); }
+
+// W1-GEN-STUDENT: Populated student state correctly compiles student inputs
+try {
+  const { generateSoapDraft } = require('../src/lib/soapGenerator.js');
+  const cTue = cases.CASE_BY_ID['maria-tue'];
+  const studentDraft = generateSoapDraft(cTue, {
+    interview: { adherence: 'Misses 2-3 morning doses/week' },
+    assessment: { htn_class: 'Stage 2 HTN' },
+    planSelections: { h_cont: true }
+  });
+  assert(studentDraft.subjective.includes('Misses 2-3 morning doses/week'));
+  assert(studentDraft.assessment.includes('Stage 2 HTN'));
+  assert(studentDraft.plan.includes('Continue hydrochlorothiazide 12.5 mg'));
+  console.log('✅ W1-GEN-STUDENT: Populated state correctly compiles actual student inputs');
+  passed++;
+} catch (e) { console.error('❌ W1-GEN-STUDENT failed:', e.message); }
+
+// W1-SUBJ-MARIA: Maria cases do not leak hidden interview findings in chart
+try {
+  ['maria-tue', 'maria-wed', 'maria-thu'].forEach(id => {
+    const c = cases.CASE_BY_ID[id];
+    const subjStr = JSON.stringify(c.SUBJECTIVE_DOCUMENTED).toLowerCase();
+    assert(!subjStr.includes('cross'), `${id} leaked crossed legs BP technique in chart`);
+    assert(!subjStr.includes('fear of insulin'), `${id} leaked fear of insulin in chart`);
+  });
+  console.log('✅ W1-SUBJ-MARIA: Maria Tuesday/Wednesday/Thursday chart does not leak hidden interview findings');
+  passed++;
+} catch (e) { console.error('❌ W1-SUBJ-MARIA failed:', e.message); }
+
+// W1-SUBJ-JAMES: James Wilson cases do not leak hidden interview findings in chart
+try {
+  ['james-tue', 'james-wed', 'james-thu'].forEach(id => {
+    const c = cases.CASE_BY_ID[id];
+    const subjStr = JSON.stringify(c.SUBJECTIVE_DOCUMENTED).toLowerCase();
+    assert(!subjStr.includes('stretching'), `${id} leaked stretching in chart`);
+    assert(!subjStr.includes('500/month'), `${id} leaked $500 copay in chart`);
+  });
+  console.log('✅ W1-SUBJ-JAMES: James Wilson Tuesday/Wednesday/Thursday chart does not leak hidden interview findings');
+  passed++;
+} catch (e) { console.error('❌ W1-SUBJ-JAMES failed:', e.message); }
+
+// W1-SUBJ-LINDA: Linda Martinez cases do not leak hidden interview findings in chart
+try {
+  ['linda-tue', 'linda-wed', 'linda-thu'].forEach(id => {
+    const c = cases.CASE_BY_ID[id];
+    const subjStr = JSON.stringify(c.SUBJECTIVE_DOCUMENTED).toLowerCase();
+    assert(!subjStr.includes('dialysis is greatest fear'), `${id} leaked dialysis fear in chart`);
+  });
+  console.log('✅ W1-SUBJ-LINDA: Linda Martinez Tuesday/Wednesday/Thursday chart does not leak hidden interview findings');
+  passed++;
+} catch (e) { console.error('❌ W1-SUBJ-LINDA failed:', e.message); }
 
 console.log('\n================================================================');
 console.log(`  Summary: ${passed} / ${total} tests passed!`);
