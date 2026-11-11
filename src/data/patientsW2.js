@@ -74,10 +74,8 @@ const michaelTue = makeCase({
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: '58-year-old male referred by his primary care provider (PCP) for initial collaborative practice management of persistent LDL-C elevation (132 mg/dL) despite statin therapy, essential hypertension, and newly identified persistent albuminuria (UACR 118 mg/g). Reports feeling generally well overall aside from mild occasional fatigue after long warehouse shifts and chronic, intermittent bilateral knee pain and stiffness.' },
     { label: 'Past Medical History', value: 'Essential hypertension (diagnosed 8 years ago), hyperlipidemia (diagnosed 5 years ago), and chronic kidney disease Stage G2A2 (identified ~4 months ago).' },
-    { label: 'Review of Systems', value: 'Denies chest pain, shortness of breath, palpitations, dizziness, syncope, lower extremity edema, gross hematuria, or changes in urinary frequency.' },
     { label: 'Social history', value: 'Warehouse manager (formerly accountant). Former smoker (quit 5 years ago, ~10 pack-year history). Occasional alcohol (1–2 drinks per month). Denies recreational drug use. Largely sedentary (walks 0–1x/week). Diet includes frequent restaurant and processed meals (3–4x/week); does not monitor sodium or read nutrition labels.' },
     { label: 'Family history', value: 'Father had MI at age 61, hypertension, and hyperlipidemia (positive family history of ASCVD; does not meet criteria for premature ASCVD in a male relative [<55]). Mother has hypertension and hyperlipidemia. Brother has type 2 diabetes. Denies family history of ESKD, dialysis, or chronic kidney disease.' },
-    { label: 'Patient Goals & Concerns', value: 'Very concerned about future kidney failure after seeing a close friend require hemodialysis. Strongly motivated to reduce cardiovascular risk, prevent CKD progression, and achieve gradual weight loss.' },
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.26 m²', flag: 'normal' },
@@ -366,36 +364,12 @@ const michaelWed = makeCase({
       value: 'Medication adherence has improved substantially: established an effective behavioral reminder routine by placing evening pills in a visible location on the bedside counter. Quantified adherence: now takes ~6 of 7 doses weekly (~85-90% adherence, missing only ~1 dose every 2 weeks [or ~1 dose/week] versus missing 2–3 times weekly previously). Denies intentional skipping.'
     },
     {
-      label: 'Dietary & lifestyle modifications',
-      value: 'Has significantly reduced restaurant and takeout meals (cut from 3–4 times weekly down to ≤once weekly); now preparing and increasing home-cooked meals with portion control and lower sodium. Initiated walking 2–3 days per week toward a goal of ≥150 minutes/week. Weight reduced by ~2 kg (103 kg down to 101 kg).'
-    },
-    {
-      label: 'OTC NSAID use & knee symptoms',
-      value: 'Substantially reduced OTC ibuprofen use from several times weekly down to only ~once weekly for knee stiffness following previous kidney counseling; motivated to transition to acetaminophen.'
-    },
-    {
       label: 'Past Medical History (PMH)',
       value: 'Essential hypertension (diagnosed 8 years ago), hyperlipidemia (diagnosed 5 years ago), chronic kidney disease Stage G2A2 (confirmed on repeat UACR 7 months ago), and Class I Obesity (BMI 31.9 kg/m²).'
     },
     {
       label: 'Social History',
       value: 'Occupation: Warehouse manager (formerly accountant). Marital status: Married, lives with wife. Tobacco history: Former smoker (quit 5 years ago, ~10 pack-year history). Alcohol use: Occasional alcohol (1–2 drinks per month at family dinners). Recreational drug use: Explicitly denies illicit drug use.'
-    },
-    {
-      label: 'Review of Systems (ROS)',
-      value: 'Cardiovascular/Pulmonary/Neurologic/Renal: Explicitly denies chest pain, shortness of breath, palpitations, dizziness, syncope, and lower extremity edema. Explicitly denies gross hematuria or changes in urinary frequency or output.'
-    },
-    {
-      label: 'Patient Goals & Motivations',
-      value: 'Patient expresses high motivation to avoid kidney failure and avoid dialysis after witnessing a close friend on hemodialysis. Strongly motivated to prevent cardiovascular disease and heart attacks. Committed to gradual weight loss.'
-    },
-    {
-      label: 'Patient Misconception & Disease Understanding',
-      value: 'Patient demonstrates an active misconception: erroneously believes that his normal kidney blood test (eGFR 78 mL/min/1.73m²) means his kidneys are completely healthy, not recognizing that persistent A2 albuminuria indicates ongoing microvascular kidney damage.'
-    },
-    {
-      label: 'Home Blood Pressure Monitoring',
-      value: 'Patient acknowledges he has not been checking BP at home and does not currently have a written home BP log; agrees to resume home blood pressure monitoring and bring a log to the next visit.'
     }
   ],
   OBJECTIVE_EXTRA: [
@@ -696,10 +670,6 @@ const michaelThu = makeCase({
       value: 'Medication adherence remains high (>95% adherence) utilizing visible bedside placement reminder routine, which the patient reports is easy to maintain; misses fewer than 1 dose per month. Denies intentional nonadherence.'
     },
     {
-      label: 'Dietary & lifestyle modifications',
-      value: 'Sustained reduction in restaurant/takeout meals (<=once weekly) with increased home-cooked meals emphasizing portion control and lower sodium. Maintains regular walking 3–4 days/week for 30 minutes. Weight reduced from baseline 103 kg to 99 kg (~4 kg / 8.8 lbs total loss).'
-    },
-    {
       label: 'OTC NSAID avoidance & pain management',
       value: 'Completely discontinued regular OTC ibuprofen following previous counseling, now clearly understanding the potential adverse impact of NSAIDs on kidney health and renal hemodynamics; previously took ibuprofen several times weekly, but has now adopted safer practices, successfully discontinuing regular NSAIDs and using acetaminophen 500–650 mg PO PRN rare knee stiffness only 1–2 times per month (PRN ~1–2 times monthly).'
     },
@@ -715,22 +685,6 @@ const michaelThu = makeCase({
       label: 'Social History',
       value: 'Occupation: Warehouse manager (formerly accountant). Marital status: Married, lives with wife. Tobacco history: Former smoker (quit 5 years ago, ~10 pack-year history). Alcohol use: Occasional alcohol (1–2 drinks per month at family dinners). Recreational drug use: Explicitly denies illicit drug use.'
     },
-    {
-      label: 'Review of Systems (ROS)',
-      value: 'Cardiovascular/Pulmonary/Neurologic/Renal: Explicitly denies chest pain, shortness of breath, palpitations, dizziness, syncope, and lower extremity edema. Explicitly denies gross hematuria or changes in urinary habits.'
-    },
-    {
-      label: 'Patient Expectations & Albuminuria Misconception',
-      value: 'Patient demonstrates significantly improved CKD understanding overall, recognizing that proteinuria reflects ongoing kidney stress rather than acute organ failure; however, patient remains puzzled that protein is still present in his urine (UACR 98 mg/g) and asks questions regarding long-term prognosis and expectations. Needs counseling that reducing albuminuria—not eliminating it—is the realistic, protective goal.'
-    },
-    {
-      label: 'Patient Goals & Motivations',
-      value: 'Highly motivated to prevent kidney failure and avoid dialysis (motivated by witnessing friend on dialysis). Strongly committed to preventing cardiovascular disease and continuing gradual weight loss.'
-    },
-    {
-      label: 'Home Blood Pressure Monitoring',
-      value: 'Patient acknowledges he has not maintained a home BP log since clinic readings have been well controlled; agrees to resume home blood pressure checks before next routine visit.'
-    }
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.21 m²', flag: 'normal' },
@@ -996,10 +950,8 @@ const angelaTue = makeCase({
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: '66-year-old female referred by her primary care provider (PCP) for initial collaborative practice management of uncontrolled hyperlipidemia (LDL-C 148 mg/dL), essential hypertension, and chronic kidney disease Stage G3aA2. Reports taking active blood pressure medications (losartan 50 mg, amlodipine 10 mg) faithfully as prescribed with no skipped or stretched doses. Rosuvastatin 20 mg PO daily was prescribed 6 months ago but never initiated due to out-of-pocket cost concerns on a fixed income, embarrassment discussing affordability with her doctor, and fear of statin-associated muscle aches (from stories heard from friends).' },
     { label: 'Past Medical & Surgical History', value: 'Essential hypertension (diagnosed 15 years ago), hyperlipidemia (diagnosed 12 years ago), and chronic kidney disease Stage G3aA2 (newly identified). Surgical history: cholecystectomy (~10 years ago) and total abdominal hysterectomy at age 45.' },
-    { label: 'Review of Systems', value: 'Denies chest pain, shortness of breath, palpitations, syncope, lower extremity edema, gross hematuria, or urinary complaints. Reports occasional mild fatigue and occasional nighttime leg cramping.' },
     { label: 'Social history', value: 'Retired elementary school teacher, widowed, lives independently in her own home. Never smoker. Rare alcohol use (holiday wine). Denies recreational drug use. Diet consists of frequent convenience/packaged foods with elevated sodium; sedentary lifestyle.' },
     { label: 'Family history', value: 'Father had hypertension, hyperlipidemia, and myocardial infarction at age 63. Mother had hypertension, chronic kidney disease, and stroke at age 72. Sister has hypertension and hyperlipidemia.' },
-    { label: 'Patient Goals & Values', value: 'Deeply values maintaining independent living in her home. Primary health goals are avoiding future dialysis and protecting her kidneys and cardiovascular health.' },
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.08 m²', flag: 'normal' },
@@ -1276,18 +1228,6 @@ const angelaWed = makeCase({
       label: 'Social History',
       value: 'Occupation: Retired elementary school teacher. Marital/living status: Widowed, lives independently. Tobacco status: Never smoker (denies any tobacco history). Alcohol use: Rarely drinks alcohol (glass of wine on special occasions only). Recreational drugs: Explicitly denies any illicit or recreational drug use. Physical activity: Increasing physical activity by establishing a regular walking routine, now walking 3–4 days/week for 20–30 minutes (increased from previously sedentary baseline). Diet: Cooking more fresh meals from scratch at home and cutting down on salty packaged/convenience foods.'
     },
-    {
-      label: 'Review of Systems (ROS)',
-      value: 'Cardiovascular/Pulmonary/Neurologic/Renal: Explicitly denies chest pain, shortness of breath, palpitations, syncope, dizziness, and lower extremity edema. Explicitly denies gross hematuria or urinary complaints.'
-    },
-    {
-      label: 'Patient Goals & Motivations',
-      value: 'Top personal goal is maintaining independent living and avoiding dialysis (motivated by mother suffering from severe CKD and stroke). Strongly committed to continuing cardiorenal therapy.'
-    },
-    {
-      label: 'Home Blood Pressure Monitoring',
-      value: 'Home BP log shows 7-day average of ~136/82 mmHg (range 130–140/78–84 mmHg), consistent with office BP readings.'
-    }
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.07 m²', flag: 'normal' },
@@ -1569,10 +1509,6 @@ const angelaThu = makeCase({
       value: 'Medication adherence remains high (misses <1 dose per month). $4 generic copay remains affordable and sustainable. Patient expresses peace of mind regarding treatment plan.'
     },
     {
-      label: 'Dietary & physical activity modifications',
-      value: 'Walking 4 days/week for 20-30 minutes. Cooking from scratch at home, avoiding processed convenience foods, and restricting dietary sodium. Weight reduced to 93 kg (~3 kg / 6.6 lbs total loss).'
-    },
-    {
       label: 'Past Medical History (PMH)',
       value: 'Essential hypertension (diagnosed 15 years ago), hyperlipidemia (diagnosed 12 years ago), chronic kidney disease Stage G3aA2 (identified ~9 months ago), and Class II Obesity (BMI 35.2 kg/m²).'
     },
@@ -1583,14 +1519,6 @@ const angelaThu = makeCase({
     {
       label: 'Social History',
       value: 'Occupation: Retired elementary school teacher. Marital/living status: Widowed (husband passed away 3 years ago), lives independently. Tobacco status: Never smoker (denies any tobacco history). Alcohol use: Rarely drinks alcohol (glass of wine on special occasions only). Recreational drugs: Explicitly denies any illicit or recreational drug use.'
-    },
-    {
-      label: 'Review of Systems (ROS)',
-      value: 'Cardiovascular/Pulmonary/Neurologic/Renal: Explicitly denies chest pain, shortness of breath, palpitations, syncope, dizziness, and lower extremity edema. Explicitly denies gross hematuria or urinary complaints.'
-    },
-    {
-      label: 'Patient Goals & Motivations',
-      value: 'Top personal goal is maintaining independent living and avoiding dialysis (motivated by mother suffering from severe CKD and stroke). Strongly committed to continuing cardiorenal therapy.'
     },
     {
       label: 'Home Blood Pressure Monitoring',
@@ -1898,10 +1826,8 @@ const davidTue = makeCase({
   SUBJECTIVE_DOCUMENTED: [
     { label: 'HPI', value: '62-year-old male referred by his primary care provider (PCP) for initial collaborative practice management of Type 2 diabetes with chronic kidney disease Stage G3bA3 and elevated cardiovascular risk, specifically addressing persistent severe albuminuria (UACR 520 mg/g) and progression risk despite dual foundational therapy (ACE inhibitor + SGLT2 inhibitor). Highly analytical, follows lab trends in patient portal, and researches medical literature online. Understands his kidney function has declined over time, but expresses uncertainty about why his cardiorenal progression risk remains elevated despite taking dual foundational therapy (lisinopril and empagliflozin). Excellent adherence to current medications; denies hypoglycemia. Previously declined finerenone recommendation due to hyperkalemia concerns, pill burden, and wanting clear clinical trial evidence.' },
     { label: 'Past Medical & Surgical History', value: 'Type 2 diabetes mellitus (12 years), essential hypertension (10 years), hyperlipidemia (8 years), and chronic kidney disease Stage G3bA3 (3 years). Surgical history is completely negative (denies prior surgeries). Denies recent hospitalizations or emergency department visits.' },
-    { label: 'Review of Systems', value: 'Denies chest pain, palpitations, syncope, lower extremity edema, gross hematuria, or voiding complaints/dysuria. Notes occasional nocturia (1-2x/night) and mild occasional fatigue after demanding work weeks.' },
     { label: 'Social history', value: 'Electrical engineer, married, lives with wife. Never smoker. Moderate alcohol (1-2 glasses red wine per week). Denies recreational drug use. Walks ~3 days/week. Attempts diabetic diet with occasional dietary lapses when working late.' },
     { label: 'Family history', value: 'Father had MI at age 58 and type 2 diabetes. Mother has type 2 diabetes and chronic kidney disease. Brother has coronary artery disease (coronary bypass surgery at age 58).' },
-    { label: 'Patient Goals & Concerns', value: 'Deeply concerned about chronic kidney disease progression; identifies progression to end-stage kidney disease requiring hemodialysis as his greatest health-related fear. Highly motivated to preserve kidney function with evidence-based therapy.' },
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.24 m²', flag: 'normal' },
@@ -2231,18 +2157,6 @@ const davidWed = makeCase({
       label: 'Social History',
       value: 'Occupation: Structural engineer at consulting firm. Marital status: Married, lives with wife. Tobacco history: Never smoker (denies any tobacco or nicotine use). Alcohol use: Occasional alcohol (1–2 beers on weekends). Recreational drugs: Explicitly denies any illicit or recreational drug use. Continues diabetic diet, watching carbohydrates and sodium.'
     },
-    {
-      label: 'Review of Systems (ROS)',
-      value: 'Cardiovascular/Pulmonary/Neurologic/Renal: Explicitly denies chest pain, shortness of breath, palpitations, dizziness, syncope, and lower extremity edema. Denies gross hematuria, dysuria, or urinary complaints.'
-    },
-    {
-      label: 'Patient Goals & Motivators',
-      value: 'Deeply motivated to avoid dialysis and prevent end-stage kidney disease (motivated by mother suffering from diabetic kidney disease). Highly committed to preserving long-term kidney function and avoiding cardiovascular complications.'
-    },
-    {
-      label: 'Home Blood Pressure Monitoring',
-      value: 'Home BP log shows 7-day average of ~131/77 mmHg (range 126–136/74–80 mmHg), consistent with office BP readings.'
-    }
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.23 m²', flag: 'normal' },
@@ -2551,10 +2465,6 @@ const davidThu = makeCase({
       value: 'Adherence remains excellent across the full regimen (<1 missed dose per month). Denies intentional nonadherence; committed to lifelong therapy.'
     },
     {
-      label: 'Dietary & physical activity modifications',
-      value: 'Walking 4 days/week with improved energy levels. Watching carbohydrate intake and dietary sodium. Weight reduced to 99 kg (~3 kg / 6.6 lbs total loss from baseline 102 kg).'
-    },
-    {
       label: 'Past Medical History (PMH)',
       value: 'Type 2 diabetes mellitus (diagnosed 10 years ago), chronic kidney disease Stage G3bA3 (severe albuminuria, diagnosed 3.5 years ago), essential hypertension (12 years), hyperlipidemia (8 years), and Class I Obesity (BMI 31.3 kg/m²).'
     },
@@ -2566,18 +2476,6 @@ const davidThu = makeCase({
       label: 'Social History',
       value: 'Occupation: Structural engineer at consulting firm. Marital status: Married, lives with wife. Tobacco history: Never smoker (denies any tobacco or nicotine use). Alcohol use: Occasional alcohol (1–2 red wines per week with dinner). Recreational drugs: Explicitly denies any illicit or recreational drug use.'
     },
-    {
-      label: 'Review of Systems (ROS)',
-      value: 'Cardiovascular/Pulmonary/Neurologic/Renal: Explicitly denies chest pain, shortness of breath, palpitations, dizziness, syncope, and lower extremity edema. Denies gross hematuria, dysuria, hypoglycemia symptoms, or muscle weakness/cramps.'
-    },
-    {
-      label: 'Patient Goals & Motivators',
-      value: 'Deeply motivated to preserve kidney function and avoid dialysis (motivated by mother suffering from diabetic kidney disease). Committed to lifelong therapy and preventing cardiovascular disease.'
-    },
-    {
-      label: 'Home Blood Pressure Monitoring',
-      value: 'Home BP log shows 7-day average of ~127/75 mmHg (range 122–132/72–78 mmHg), consistent with office BP readings.'
-    }
   ],
   OBJECTIVE_EXTRA: [
     { label: 'Body Surface Area (Mosteller)', value: '2.21 m²', flag: 'normal' },

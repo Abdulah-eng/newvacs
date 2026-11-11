@@ -231,14 +231,6 @@ export const W5_CASES = [
         "value": "54-year-old female full-time elementary school teacher referred by her Primary Care Physician (PCP) for an initial evaluation at the ambulatory behavioral health clinic regarding worsening symptoms with gradual onset over the past 4 to 5 months. Patient attributes initial symptom onset to work stress and burnout. Reports persistent low mood occurring most days, emotional exhaustion, profound fatigue that increases throughout the day, anhedonia (reduced interest and pleasure in previously enjoyed activities, specifically stopping her regular reading and weekend hiking), and reduced motivation for hobbies and social activities. Reports restless, non-restorative insufficient sleep (5 to 6 hours per night), unable to get restful or adequate sleep despite feeling exhausted, with difficulty turning off thoughts after work. Reports difficulty concentrating at work (struggling to complete lesson plans, rereading emails or lesson plans multiple times, taking significantly longer to grade papers), and noticeable occupational functioning impairment (feeling overwhelmed by daily teaching duties). Reports persistent anxiety, difficulty controlling anxious thoughts, racing thoughts after work, with anxiety linked specifically to work performance and meeting expectations. Reports interpersonal relationship impact (feeling distant from her husband, who encouraged today's evaluation). Confirms treatment-naïve status for psychiatric pharmacotherapy (no prior antidepressant use) and treatment-naïve status for psychotherapy (no prior counseling)."
       },
       {
-        "label": "Review of Systems (ROS) & Safety Assessment",
-        "value": "Psychiatric ROS & Safety: Patient explicitly denies suicidal ideation (SI), denies suicide plan, and denies prior suicide attempts. Overall suicide risk assessed as low. Patient explicitly denies homicidal ideation (HI), denies self-harm behaviors, denies panic attacks, denies mania or hypomania, denies hallucinations, and denies delusions. Denies prior psychiatric hospitalizations."
-      },
-      {
-        "label": "Scores & Screening Tools",
-        "value": "PHQ-9 score: 13, interpreted as Moderate Depression. GAD-7 score: 8, interpreted as Mild Anxiety."
-      },
-      {
         "label": "Past Medical History",
         "value": "Major Depressive Disorder (MDD, newly diagnosed), Generalized Anxiety Disorder (GAD, newly diagnosed), Tobacco Use Disorder (active). Confirms no past surgical history (denies prior surgeries). Denies prior psychiatric hospitalizations, prior antidepressant use, or prior psychotherapy."
       },
@@ -253,10 +245,6 @@ export const W5_CASES = [
       {
         "label": "OTC & Allergies",
         "value": "Daily multivitamin 1 tab PO daily. Ibuprofen 200 mg PO PRN (takes 1â€“2 tablets PRN for occasional tension headaches). Confirms absence of any prescription medications. No known drug allergies (NKDA)."
-      },
-      {
-        "label": "Patient Concerns & Education Needs",
-        "value": "Patient expresses specific psychosocial concerns regarding antidepressant therapy: fears potential weight gain, fears personality changes, and fears medication dependence. Patient explicitly states she is open to treatment once expectations and clinical rationale are explained."
       }
     ],
     "OBJECTIVE_EXTRA": [
@@ -827,14 +815,6 @@ export const W5_CASES = [
         "value": "54-year-old female presents for a 4-week follow-up visit at the ambulatory behavioral health clinic to evaluate treatment response following initiation of Sertraline (titrated from 25 mg daily to 50 mg daily) and CBT referral. Patient attributes overall symptom improvement directly to the combination of Sertraline therapy and CBT attendance together, noting 'more good days than bad days.' Reports improved energy, improved concentration, improved sleep (falling asleep more easily, sleeping 6 to 7 hours per night), and improved enjoyment of activities (resumed regular reading, went hiking once with her husband). Attended 4 CBT sessions and reports CBT has been extremely beneficial for learning to challenge negative thoughts and manage stress. However, patient reports residual depressive symptoms: persistent occasional fatigue, low motivation, incomplete return to baseline functioning, and intermittent work-related stress. Reports anxiety symptoms are significantly improved: less worrying, no longer feeling overwhelmed by worry, and fewer racing thoughts. Reports excellent adherence (missed one dose in past month). Sertraline has been well tolerated; initial mild nausea completely resolved after the first week. Reduced tobacco consumption from 5 to 2 cigarettes per day, attributing reduction directly to decreased stress and improved coping strategies learned in CBT."
       },
       {
-        "label": "Review of Systems (ROS) & Safety Assessment",
-        "value": "Psychiatric ROS & Safety: Patient explicitly denies suicidal ideation (SI), denies suicide plan, denies prior suicide attempts, and denies self-harm behaviors. Overall suicide risk assessed as low. Explicitly denies homicidal ideation (HI), panic attacks, mania, hypomania, hallucinations, and delusions."
-      },
-      {
-        "label": "Scores & Screening Trends",
-        "value": "Initial PHQ-9: 13 (Moderate). Current PHQ-9: 8 (Mild), representing a 5-point drop and ~38.5% reduction (clinically meaningful partial response, but NOT in remission; remission threshold PHQ-9 <=4 / <5). Initial GAD-7: 8 (Mild). Current GAD-7: 5 (Mild), threshold for mild anxiety maintained."
-      },
-      {
         "label": "Past Medical History",
         "value": "Major Depressive Disorder (MDD, improved, partial response), Generalized Anxiety Disorder (GAD, significantly improved, near remission), Tobacco Use Disorder (improving, reduced 5 to 2 cigs/day). Confirms no past surgical history. Denies prior psychiatric hospitalizations."
       },
@@ -849,10 +829,6 @@ export const W5_CASES = [
       {
         "label": "OTC & Allergies",
         "value": "Daily multivitamin 1 tab PO daily. Ibuprofen 200 mg PO PRN for occasional headaches. NKDA."
-      },
-      {
-        "label": "Patient Education & Goals",
-        "value": "Patient verbalizes treatment as a process and acknowledges symptom progress. Expresses goal of continued mood and symptom improvement toward full remission, continued anxiety reduction, ongoing CBT participation, and eventual tobacco cessation."
       }
     ],
     "OBJECTIVE_EXTRA": [
@@ -1377,14 +1353,6 @@ export const W5_CASES = [
         "value": "54-year-old female presents for a 12-week follow-up visit (post-initiation and optimization of treatment) at the ambulatory behavioral health clinic. Patient reports feeling 'fantastic' with a complete return of mood to baseline. Denies feelings of sadness, overwhelm, or exhaustion. Attributes improvement directly to Sertraline dose increase to 100 mg daily combined with CBT completion. Reports normal energy levels, improved concentration, good motivation, and full restoration of enjoyment in activities (reading regularly, hiking weekly with her husband). Reports feeling productive and able to concentrate throughout the day. Reports improved social engagement and excellent work performance as an elementary school teacher, denying feeling overwhelmed. Reports significant anxiety improvement, denying excessive worry, racing thoughts, or persistent anxiety, noting only occasional normal work stress. Reports excellent sleep quality (7 to 8 hours per night) and denies insomnia. Reports 100% medication adherence (zero missed doses) and denies any medication adverse effects. Completed 8 CBT sessions with major benefit in stress management, relaxation techniques, and cognitive restructuring. Successfully quit smoking approximately 6 weeks ago (tobacco-free for 6 weeks, occasional cravings during stress managed with CBT deep breathing exercises; explicitly denies any smoking relapse). Patient expresses gratitude for treatment success, but explicitly asks whether ongoing medication and ongoing therapy/CBT remain necessary now that she feels completely well, expressing concern about potential future depression recurrence."
       },
       {
-        "label": "Review of Systems (ROS) & Safety Assessment",
-        "value": "Psychiatric ROS & Safety Assessment: Patient explicitly denies suicidal ideation (SI), denies suicide plan, denies prior suicide attempts, and denies self-harm behaviors. Safety assessment: low overall risk, no plan, no prior attempts. Explicitly denies homicidal ideation (HI), panic attacks, mania, hypomania, hallucinations, delusions, and medication intolerance."
-      },
-      {
-        "label": "Scores & Longitudinal Screening Trends",
-        "value": "Initial PHQ-9: 13 (Moderate) -> 4-week PHQ-9: 8 (Mild) -> Current PHQ-9: 2 (Minimal/No Depression), confirming progressive improvement trend across all three visits and full clinical remission. Initial GAD-7: 8 (Mild) -> 4-week GAD-7: 5 (Mild) -> Current GAD-7: 1 (Minimal/No Anxiety), confirming minimal anxiety symptoms and full remission."
-      },
-      {
         "label": "Past Medical History",
         "value": "Major Depressive Disorder (MDD, in full remission, stable on maintenance therapy), Generalized Anxiety Disorder (GAD, in full remission / minimal symptoms, well controlled), Tobacco Use Disorder (in early remission, 6 weeks tobacco-free). Confirms no past surgical history (none). Denies prior psychiatric hospitalizations."
       },
@@ -1399,10 +1367,6 @@ export const W5_CASES = [
       {
         "label": "OTC & Allergies",
         "value": "Daily multivitamin 1 tab PO daily. Ibuprofen 200 mg PO PRN for occasional headaches. Confirms no additional prescription medications used. NKDA."
-      },
-      {
-        "label": "Patient Questions & Knowledge Deficit",
-        "value": "Patient expresses gratitude for recovery, but asks if ongoing medication and ongoing therapy/CBT remain necessary now that she feels well. Expresses concern about future depression recurrence. Represents a knowledge deficit regarding maintenance therapy and relapse prevention."
       }
     ],
     "OBJECTIVE_EXTRA": [
@@ -1986,14 +1950,6 @@ export const W5_CASES = [
         "value": "42-year-old female medical receptionist (divorced, living with 2 teenage children) presenting for initial evaluation in behavioral health clinic upon PCP referral for ongoing MDD and GAD symptoms (~2 years duration, gradual course) despite sertraline 100 mg daily prescribed 6 weeks ago. Reports persistent low mood, anhedonia, fatigue, poor motivation, irritability, difficulty concentrating, difficulty relaxing, and persistent worry. States symptoms impair work focus and engagement with children. Reveals she only takes Sertraline 100 mg 1-2 times per week because the monthly copay was $45, which she could not afford, and she expected rapid results. Denies side effects when taking medication. Denies prior history of mania, hypomania, psychosis, or panic attacks."
       },
       {
-        "label": "Review of Systems (ROS) & Safety Assessment",
-        "value": "Psychiatric ROS & Safety: Explicitly denies suicidal ideation (SI), denies plan, denies intent, denies suicide attempts (low risk). Denies homicidal ideation (HI), denies self-harm. Denies hallucinations, delusions, mania, hypomania, panic attacks. Denies prior psychiatric hospitalizations."
-      },
-      {
-        "label": "Scores & Screening Tools",
-        "value": "PHQ-9 score: 16 (Moderate-Severe Depression). GAD-7 score: 14 (Moderate Anxiety)."
-      },
-      {
         "label": "Past Medical History & Surgeries",
         "value": "PMH: MDD, GAD, Tobacco Use Disorder. PSH: Denies prior surgeries."
       },
@@ -2006,9 +1962,16 @@ export const W5_CASES = [
         "value": "Mother: MDD (responded well to sertraline). Father: Alcohol Use Disorder. Sister: Generalized Anxiety Disorder."
       }
     ],
-    "OBJECTIVE_EXTRA": {
-      "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'anxious and down'. Affect: mood-congruent, constricted. Speech: normal rate and volume. Thought process: goal-directed, logical. Thought content: no SI/HI, no delusions. Perceptions: no hallucinations. Cognition: intact. Insight/Judgment: good."
-    },
+    "OBJECTIVE_EXTRA": [
+      {
+        "label": "Scores & Screening Tools",
+        "value": "PHQ-9 score: 16 (Moderate-Severe Depression). GAD-7 score: 14 (Moderate Anxiety)."
+      },
+      {
+        "label": "Mental Status Exam (MSE)",
+        "value": "Alert, oriented x4. Mood: 'anxious and down'. Affect: mood-congruent, constricted. Speech: normal rate and volume. Thought process: goal-directed, logical. Thought content: no SI/HI, no delusions. Perceptions: no hallucinations. Cognition: intact. Insight/Judgment: good."
+      }
+    ],
     "INTERVIEW_FIELDS": [
       {
         "field": "financial",
@@ -2422,14 +2385,6 @@ export const W5_CASES = [
         "value": "42-year-old female medical receptionist (divorced, 2 children) presenting for 6-week follow-up after switching to generic Sertraline 100 mg daily ($4 program). Confirms 100% daily adherence taking medication with breakfast and phone alarm. Reports significant reduction in worry, improved sleep, improved patience with children, and better work focus. Residual symptoms include mild fatigue and occasional low motivation. Hydroxyzine 25 mg PRN helps with occasional anxiety. Participates in virtual CBT sessions. Tolerating medication well with no side effects."
       },
       {
-        "label": "Review of Systems (ROS) & Safety Assessment",
-        "value": "Psychiatric ROS: Explicitly denies SI, denies plan, denies intent (low risk). Denies HI, denies self-harm, denies mania, hypomania, panic attacks, hallucinations, or delusions."
-      },
-      {
-        "label": "Scores & Screening Tools",
-        "value": "PHQ-9 score: 9 (Mild Depression, down from 16). GAD-7 score: 7 (Mild Anxiety, down from 14)."
-      },
-      {
         "label": "Past Medical History & Surgeries",
         "value": "PMH: MDD, GAD, Tobacco Use Disorder. PSH: Denies prior surgeries."
       },
@@ -2442,9 +2397,16 @@ export const W5_CASES = [
         "value": "Mother: MDD. Father: Alcohol Use Disorder. Sister: GAD."
       }
     ],
-    "OBJECTIVE_EXTRA": {
-      "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'improving, brighter'. Affect: full range, congruent. Speech: normal. Thought process: logical, goal-directed. Cognition: intact."
-    },
+    "OBJECTIVE_EXTRA": [
+      {
+        "label": "Scores & Screening Tools",
+        "value": "PHQ-9 score: 9 (Mild Depression, down from 16). GAD-7 score: 7 (Mild Anxiety, down from 14)."
+      },
+      {
+        "label": "Mental Status Exam (MSE)",
+        "value": "Alert, oriented x4. Mood: 'improving, brighter'. Affect: full range, congruent. Speech: normal. Thought process: logical, goal-directed. Cognition: intact."
+      }
+    ],
     "INTERVIEW_FIELDS": [
       {
         "field": "adherence_confirm",
@@ -2835,14 +2797,6 @@ export const W5_CASES = [
         "value": "42-year-old female medical receptionist (divorced, 2 children) presenting for 12-week follow-up (6 weeks on established Sertraline 100 mg daily). Reports sustained resolution of depressive and anxiety symptoms. Energy, concentration, motivation, sleep, and work performance returned to baseline. Denies any medication side effects. Attends virtual CBT regularly. Reduced tobacco to 1-2 cigarettes/week, using deep breathing and walking during stress."
       },
       {
-        "label": "Review of Systems (ROS) & Safety Assessment",
-        "value": "Psychiatric ROS: Explicitly denies SI, denies plan, denies intent, denies suicide attempts (low risk). Denies HI, denies self-harm, denies mania, hypomania, panic attacks, hallucinations, or delusions."
-      },
-      {
-        "label": "Scores & Screening Tools",
-        "value": "PHQ-9 score: 3 (Minimal depressive symptoms / Remission, down from 16 initial and 9 at 3-mo). GAD-7 score: 2 (Minimal anxiety symptoms / Remission, down from 14 initial and 7 at 3-mo)."
-      },
-      {
         "label": "Past Medical History & Surgeries",
         "value": "PMH: MDD, GAD, Tobacco Use Disorder. PSH: Denies prior surgeries."
       },
@@ -2855,9 +2809,16 @@ export const W5_CASES = [
         "value": "Mother: MDD. Father: Alcohol Use Disorder. Sister: GAD."
       }
     ],
-    "OBJECTIVE_EXTRA": {
-      "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'euthymic, great'. Affect: bright, full range. Speech: normal. Thought process: logical. Cognition: intact."
-    },
+    "OBJECTIVE_EXTRA": [
+      {
+        "label": "Scores & Screening Tools",
+        "value": "PHQ-9 score: 3 (Minimal depressive symptoms / Remission, down from 16 initial and 9 at 3-mo). GAD-7 score: 2 (Minimal anxiety symptoms / Remission, down from 14 initial and 7 at 3-mo)."
+      },
+      {
+        "label": "Mental Status Exam (MSE)",
+        "value": "Alert, oriented x4. Mood: 'euthymic, great'. Affect: bright, full range. Speech: normal. Thought process: logical. Cognition: intact."
+      }
+    ],
     "INTERVIEW_FIELDS": [
       {
         "field": "remission_status",
@@ -3285,14 +3246,6 @@ export const W5_CASES = [
         "value": "48-year-old male construction site supervisor presenting for initial ambulatory behavioral health evaluation for severe Treatment-Resistant Depression (TRD, recurrent MDD severe) and Generalized Anxiety Disorder (GAD-7 = 18, severe). Describes persistent severe low mood, profound anhedonia, emotional exhaustion, severe insomnia (3-4 hours restless sleep), and low motivation. Failed adequate trials of escitalopram 20 mg daily x 8 weeks (no response), bupropion XL 300 mg daily x 8 weeks (irritability, no response), and currently on venlafaxine XR 225 mg daily x 12 weeks with only minimal partial response. Endorses passive suicidal ideation without intent or plan: quotes 'not waking up wouldn't be the worst thing' and 'sometimes I wish I could just go to sleep and not wake up.' Explicitly denies active suicidal plan, denies suicidal intent, denies preparatory behaviors, denies self-harm history. Identifies strong protective factors: love for his wife and desire to reconcile marital separation, strong will and desire to feel like himself again, future orientation, and desire to return to his cherished woodworking hobby and truck restoration. Agrees fully to lethal means safety: his brother has removed and secured all firearms from his home. Agrees to 988 Suicide & Crisis Lifeline plan."
       },
       {
-        "label": "Review of Systems (ROS) & Safety Assessment",
-        "value": "Psychiatric ROS & Safety: Explicitly denies active suicidal intent, denies active plan, denies suicide attempts, denies preparatory behaviors, denies self-harm (low imminent risk; does not meet criteria for emergency hospitalization). Denies homicidal ideation (HI). Denies mania, hypomania, psychosis, panic attacks."
-      },
-      {
-        "label": "Scores & Screening Tools",
-        "value": "PHQ-9 score: 21 (Severe Depression). GAD-7 score: 18 (Severe Anxiety). Item 9 (SI): 1 (Passive ideation)."
-      },
-      {
         "label": "Past Medical History & Surgeries",
         "value": "PMH: Recurrent MDD (TRD), GAD, Hypertension, Obstructive Sleep Apnea (OSA on CPAP), Tobacco Use Disorder. PSH: Cholecystectomy (prior gallbladder surgery)."
       },
@@ -3305,9 +3258,16 @@ export const W5_CASES = [
         "value": "Mother: MDD. Father: Alcohol Use Disorder. Brother: MDD (familial pattern of major depressive disorder)."
       }
     ],
-    "OBJECTIVE_EXTRA": {
-      "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'depressed, overwhelmed'. Affect: blunted, tearful at times. Speech: slowed rate, low tone. Thought process: goal-directed, delayed latency. Thought content: passive SI present, worthlessness, no active plan/intent, no HI. Cognition: intact but slow processing."
-    },
+    "OBJECTIVE_EXTRA": [
+      {
+        "label": "Scores & Screening Tools",
+        "value": "PHQ-9 score: 21 (Severe Depression). GAD-7 score: 18 (Severe Anxiety). Item 9 (SI): 1 (Passive ideation)."
+      },
+      {
+        "label": "Mental Status Exam (MSE)",
+        "value": "Alert, oriented x4. Mood: 'depressed, overwhelmed'. Affect: blunted, tearful at times. Speech: slowed rate, low tone. Thought process: goal-directed, delayed latency. Thought content: passive SI present, worthlessness, no active plan/intent, no HI. Cognition: intact but slow processing."
+      }
+    ],
     "INTERVIEW_FIELDS": [
       {
         "field": "passive_si",
@@ -3805,14 +3765,6 @@ export const W5_CASES = [
         "value": "48-year-old male presenting for scheduled follow-up evaluation at behavioral health clinic 3 months post-initial evaluation (6 weeks on stable Venlafaxine XR 225 mg daily + Aripiprazole 5 mg daily augmentation). Reports significant clinical improvement: 'I don't feel trapped anymore,' 'things are moving in the right direction,' and feels 'the best he has felt in years.' Depressive symptoms substantially improved (PHQ-9 reduced from 21 to 12, moderate). Anxiety symptoms significantly reduced (GAD-7 reduced from 18 to 9, mild). Suicidal ideation completely resolved: denies suicidal ideation, denies plan, denies intent, denies desire to die. Work productivity and concentration significantly improved; completing tasks more efficiently. Resumed valued hobbies including woodworking, truck restoration, and fishing. Attends CBT biweekly with excellent engagement. Tolerating medications well with no akathisia, tremors, sedation, or EPS. Reduced smoking from 15 to 8 cigarettes/day."
       },
       {
-        "label": "Review of Systems (ROS) & Safety Assessment",
-        "value": "Psychiatric ROS: Explicitly denies active or passive suicidal ideation (SI = 0), denies plan, denies intent, denies desire to die, denies preparatory behaviors (low risk). Denies HI, denies self-harm, denies mania, hypomania, psychosis, panic attacks."
-      },
-      {
-        "label": "Scores & Screening Tools",
-        "value": "PHQ-9 score: 12 (Moderate Depression, down from 21). GAD-7 score: 9 (Mild-Moderate Anxiety, down from 18). Item 9 (SI): 0."
-      },
-      {
         "label": "Past Medical History & Surgeries",
         "value": "PMH: Recurrent MDD (TRD), GAD, Hypertension, OSA on CPAP, Tobacco Use Disorder. PSH: Cholecystectomy."
       },
@@ -3825,9 +3777,16 @@ export const W5_CASES = [
         "value": "Mother: MDD. Father: AUD. Brother: MDD (familial MDD pattern)."
       }
     ],
-    "OBJECTIVE_EXTRA": {
-      "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'much better, hopeful'. Affect: full range, congruent. Speech: normal rate and volume. Motor: no akathisia, no tremor, no rigidity, normal gait. Cognition: intact."
-    },
+    "OBJECTIVE_EXTRA": [
+      {
+        "label": "Scores & Screening Tools",
+        "value": "PHQ-9 score: 12 (Moderate Depression, down from 21). GAD-7 score: 9 (Mild-Moderate Anxiety, down from 18). Item 9 (SI): 0."
+      },
+      {
+        "label": "Mental Status Exam (MSE)",
+        "value": "Alert, oriented x4. Mood: 'much better, hopeful'. Affect: full range, congruent. Speech: normal rate and volume. Motor: no akathisia, no tremor, no rigidity, normal gait. Cognition: intact."
+      }
+    ],
     "INTERVIEW_FIELDS": [
       {
         "field": "response_confirm",
@@ -4282,14 +4241,6 @@ export const W5_CASES = [
         "value": "48-year-old male presenting for scheduled 6-month follow-up evaluation at behavioral health clinic on stable maintenance therapy (Venlafaxine XR 225 mg daily + Aripiprazole 5 mg daily). Full clinical remission achieved for both MDD (PHQ-9 = 3 today, down from 21 baseline) and GAD (GAD-7 = 2 today, down from 18 baseline). Symptoms no longer cause distress or impairment. Restored mood, energy, motivation, concentration, and emotional presence. Complete functional recovery: high work productivity, successful marital reconciliation, and fully active in woodworking, fishing, and weekend hiking. Suicidal ideation completely absent with maintained safety. Excellent medication tolerability; metabolic parameters stable. Tobacco use reduced to 2-3 cigarettes/day with plan for complete cessation."
       },
       {
-        "label": "Review of Systems (ROS) & Safety Assessment",
-        "value": "Psychiatric ROS: Explicitly denies suicidal ideation (SI = 0), denies plan, denies intent, denies desire to die, denies self-harm, denies panic attacks, mania, or psychosis."
-      },
-      {
-        "label": "Scores & Screening Tools",
-        "value": "PHQ-9 score: 3 (Minimal depressive symptoms / Remission, down from 21 initial and 12 at 3-mo). GAD-7 score: 4 (Minimal anxiety symptoms / Remission, down from 18 initial and 9 at 3-mo). Item 9 (SI): 0."
-      },
-      {
         "label": "Past Medical History & Surgeries",
         "value": "PMH: Recurrent MDD (TRD, Full Remission), GAD (Full Remission), Hypertension, OSA on CPAP, Tobacco Use Disorder. PSH: Cholecystectomy."
       },
@@ -4302,9 +4253,16 @@ export const W5_CASES = [
         "value": "Mother: MDD. Father: AUD. Brother: MDD (familial MDD pattern)."
       }
     ],
-    "OBJECTIVE_EXTRA": {
-      "Mental Status Exam (MSE)": "Alert, oriented x4. Mood: 'euthymic, optimistic'. Affect: bright, full range. Speech: normal. Motor: normal, no EPS/akathisia. Cognition: intact."
-    },
+    "OBJECTIVE_EXTRA": [
+      {
+        "label": "Scores & Screening Tools",
+        "value": "PHQ-9 score: 3 (Minimal depressive symptoms / Remission, down from 21 initial and 12 at 3-mo). GAD-7 score: 4 (Minimal anxiety symptoms / Remission, down from 18 initial and 9 at 3-mo). Item 9 (SI): 0."
+      },
+      {
+        "label": "Mental Status Exam (MSE)",
+        "value": "Alert, oriented x4. Mood: 'euthymic, optimistic'. Affect: bright, full range. Speech: normal. Motor: normal, no EPS/akathisia. Cognition: intact."
+      }
+    ],
     "INTERVIEW_FIELDS": [
       {
         "field": "trd_remission",
