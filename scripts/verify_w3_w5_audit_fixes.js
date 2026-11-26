@@ -237,7 +237,98 @@ test('David Carter Tuesday includes passive SI quotes, denial of active intent/p
   assert(patientsW5Str.includes("988 Suicide & Crisis Lifeline"));
 });
 
-// 4. Verify prompts.js
+// Additional Week 5 Audit Validations
+test('patientsW5.js has zero mojibake byte patterns', () => {
+  const mojibakePatterns = ['â€”', 'â€“', 'Â°F', 'kg/mÂ²', 'x10Â³/Î¼L', '1â€“2', 'â€™', 'â€œ'];
+  mojibakePatterns.forEach(pat => {
+    assert(!patientsW5Str.includes(pat), `Found mojibake pattern ${pat}`);
+  });
+});
+
+test('patientsW5.js has structured COUNSELING in all 9 cases and SpO2 98% on room air', () => {
+  const w5Cases = JSON.parse(patientsW5Str.substring(patientsW5Str.indexOf('['), patientsW5Str.lastIndexOf(']') + 1));
+  assert.strictEqual(w5Cases.length, 9);
+  w5Cases.forEach((c, idx) => {
+    assert(c.VITALS.spo2 && c.VITALS.spo2.includes('98% on room air'), `Case ${idx} SpO2 is ${c.VITALS.spo2}`);
+    assert(Array.isArray(c.COUNSELING), `Case ${idx} COUNSELING is array`);
+    assert(c.COUNSELING.length > 0, `Case ${idx} has counseling items`);
+    c.COUNSELING.forEach(item => {
+      assert(typeof item === 'object' && item.id && item.title && Array.isArray(item.body), `Case ${idx} item is structured`);
+    });
+  });
+});
+
+test('David Carter has zero occurrences of discordant 225 mg or 5 mg aripiprazole across all cases', () => {
+  const w5Cases = JSON.parse(patientsW5Str.substring(patientsW5Str.indexOf('['), patientsW5Str.lastIndexOf(']') + 1));
+  [6, 7, 8].forEach(idx => {
+    const caseStr = JSON.stringify(w5Cases[idx]);
+    assert(!caseStr.includes('225 mg'), `Case ${idx} contains 225 mg`);
+    assert(!caseStr.includes('5 mg PO daily') && !caseStr.includes('5 mg daily'), `Case ${idx} contains 5 mg`);
+  });
+});
+
+test('David Carter Tuesday has unified trial history, 150 mg venlafaxine, and offsite firearm safe', () => {
+  const w5Cases = JSON.parse(patientsW5Str.substring(patientsW5Str.indexOf('['), patientsW5Str.lastIndexOf(']') + 1));
+  const c6 = w5Cases[6];
+  const c6Str = JSON.stringify(c6);
+  assert(c6Str.includes('Escitalopram 20 mg') && c6Str.includes('Sertraline 150 mg') && c6Str.includes('Venlafaxine XR 150 mg'));
+  assert(c6Str.includes('offsite locked safe'));
+  assert(c6Str.includes('Aripiprazole 2 mg'));
+});
+
+test('David Carter Wednesday and Thursday maintain 150 mg venlafaxine + 2 mg aripiprazole', () => {
+  const w5Cases = JSON.parse(patientsW5Str.substring(patientsW5Str.indexOf('['), patientsW5Str.lastIndexOf(']') + 1));
+  const c7 = w5Cases[7];
+  const c8 = w5Cases[8];
+  assert(c7.MEDICATIONS.some(m => m.name === 'Venlafaxine XR' && m.dose === '150 mg'));
+  assert(c7.MEDICATIONS.some(m => m.name === 'Aripiprazole' && m.dose === '2 mg'));
+  assert(c8.MEDICATIONS.some(m => m.name === 'Venlafaxine XR' && m.dose === '150 mg'));
+  assert(c8.MEDICATIONS.some(m => m.name === 'Aripiprazole' && m.dose === '2 mg'));
+  const c8Scores = c8.OBJECTIVE_EXTRA.find(o => o.label.includes('Scores')).value;
+  assert(c8Scores.includes('GAD-7 score: 4'), `Expected GAD-7 score: 4, got: ${c8Scores}`);
+});
+
+test('Jessica Ramirez Wednesday has live AST 21, ALT 22, PHQ-9 8, GAD-7 7, and Preparation stage', () => {
+  const w5Cases = JSON.parse(patientsW5Str.substring(patientsW5Str.indexOf('['), patientsW5Str.lastIndexOf(']') + 1));
+  const c4 = w5Cases[4];
+  assert.strictEqual(c4.LABS.find(l => l.label === 'AST').value, '21');
+  assert.strictEqual(c4.LABS.find(l => l.label === 'ALT').value, '22');
+  const c4Scores = c4.OBJECTIVE_EXTRA.find(o => o.label.includes('Scores')).value;
+  assert(c4Scores.includes('PHQ-9 score: 8'), `Expected PHQ-9 score: 8, got: ${c4Scores}`);
+  assert(c4Scores.includes('GAD-7 score: 7'), `Expected GAD-7 score: 7, got: ${c4Scores}`);
+  assert(c4.PROBLEMS.some(p => p.name.includes('Preparation Stage')));
+});
+
+test('Jessica Ramirez Thursday has GAD-7 2, 4 weeks tobacco-free, and resolved financial barrier', () => {
+  const w5Cases = JSON.parse(patientsW5Str.substring(patientsW5Str.indexOf('['), patientsW5Str.lastIndexOf(']') + 1));
+  const c5 = w5Cases[5];
+  const c5Scores = c5.OBJECTIVE_EXTRA.find(o => o.label.includes('Scores')).value;
+  assert(c5Scores.includes('GAD-7 score: 2'), `Expected GAD-7 score: 2, got: ${c5Scores}`);
+  assert(c5.PROBLEMS.some(p => p.name.includes('4 Weeks Abstinent')));
+});
+
+// 4. Verify UI components and iconMap
+const iconMapStr = fs.readFileSync(path.join(__dirname, '../src/lib/iconMap.js'), 'utf8');
+const extraTabsStr = fs.readFileSync(path.join(__dirname, '../src/components/ExtraTabs.jsx'), 'utf8');
+const chartTabsStr = fs.readFileSync(path.join(__dirname, '../src/components/ChartTabs.jsx'), 'utf8');
+
+test('iconMap.js defines overweight and obese FLAG_STYLES', () => {
+  assert(iconMapStr.includes('overweight:'), 'FLAG_STYLES defines overweight');
+  assert(iconMapStr.includes('obese:'), 'FLAG_STYLES defines obese');
+});
+
+test('ExtraTabs.jsx CounselingTab safely handles string or structured module types without crashing', () => {
+  assert(extraTabsStr.includes("typeof mod === 'string'"));
+  assert(extraTabsStr.includes("Array.isArray(mod.body)"));
+});
+
+test('ChartTabs.jsx getMostellerBsa converts lbs to kg and normalizes HR/SpO2', () => {
+  assert(chartTabsStr.includes('0.45359237'));
+  assert(chartTabsStr.includes('replace(/\\s*bpm$/i'));
+  assert(chartTabsStr.includes('formatSpo2'));
+});
+
+// 5. Verify prompts.js
 const promptsStr = fs.readFileSync(path.join(__dirname, '../src/lib/ai/prompts.js'), 'utf8');
 
 test('prompts.js buildPatientInterviewPrompt does NOT contain Rule 33', () => {
@@ -252,6 +343,9 @@ test('prompts.js buildSoapGradingPrompt contains Rule 32 enhancements, Rule 33, 
   assert(soapSection.includes('Additional Week 3 Encounter Guidance'), 'Soap prompt contains Rule 32 enhancements');
   assert(soapSection.includes('33. For Week 2 encounters'), 'Soap prompt contains Rule 33');
   assert(soapSection.includes('34. For Week 5 encounters'), 'Soap prompt contains Rule 34');
+  assert(soapSection.includes('Escitalopram 20 mg') && soapSection.includes('Aripiprazole 2 mg PO daily'));
+  assert(soapSection.includes('recent cessation / 6 weeks abstinent'));
+  assert(soapSection.includes('$4 generic prescription program'));
 });
 
 console.log(`\n=== SUMMARY: ${passCount} / ${totalTests} TESTS PASSED ===\n`);

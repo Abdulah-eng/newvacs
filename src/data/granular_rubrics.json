@@ -62610,9 +62610,9 @@
       "id": "3C.2",
       "description": "Status: Early Remission",
       "points": 0.45,
-      "fullCredit": "States early remission",
+      "fullCredit": "States recent cessation / 6 weeks abstinent (or early remission)",
       "halfCredit": "-",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3C.3",
@@ -64580,7 +64580,7 @@
       "id": "3C.5",
       "description": "Notes previous cessation attempt demonstrating prior motivation",
       "points": 0.45,
-      "fullCredit": "References prior quit attempt (~3 months abstinence)",
+      "fullCredit": "References tobacco cessation history: no prior quit attempts (first attempt) or prior quit history",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -64628,9 +64628,9 @@
       "id": "3C.11",
       "description": "States cessation pharmacotherapy declined by patient at this visit",
       "points": 0.6,
-      "fullCredit": "States patient declines pharmacotherapy now",
+      "fullCredit": "States patient in contemplative stage / defers cessation pharmacotherapy for now (or declines pharmacotherapy at this time)",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3C.12",
@@ -65012,9 +65012,9 @@
       "id": "4C.6",
       "description": "States patient declines cessation pharmacotherapy at this time",
       "points": 0.55,
-      "fullCredit": "States patient declines pharmacotherapy at this time",
+      "fullCredit": "States patient defers cessation pharmacotherapy / contemplative stage (or declines pharmacotherapy at this time)",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4C.7",
@@ -66422,9 +66422,9 @@
       "id": "3A.16",
       "description": "Clinical rationale: residual symptoms remain despite ~3 months of treatment — dose optimization appropriate",
       "points": 0.6,
-      "fullCredit": "States residual symptoms after ~3 months warrants dose optimization",
+      "fullCredit": "States residual symptoms after 4 weeks (or ~1-3 months) on sertraline 50 mg warrants dose optimization",
       "halfCredit": "States dose change needed, no 3-month or residual rationale",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3A.17",
@@ -67608,7 +67608,7 @@
       "id": "1B.24",
       "description": "Believes she will eventually stop smoking completely",
       "points": 0.2092,
-      "fullCredit": "States believes will stop completely",
+      "fullCredit": "States 4 weeks completely tobacco-free / sustained cessation (or believes will stop completely)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -67776,7 +67776,7 @@
       "id": "1D.10",
       "description": "SDOH: financial stress improved but still present",
       "points": 0.4707,
-      "fullCredit": "States financial stress present but improved",
+      "fullCredit": "States financial barrier resolved via $4 generic program (or financial stress improved)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -67984,7 +67984,7 @@
       "id": "1G.4",
       "description": "Patient anticipates eventual complete tobacco abstinence",
       "points": 0.4184,
-      "fullCredit": "States believes will stop smoking completely",
+      "fullCredit": "States 4 weeks completely tobacco-free / sustained cessation (or believes will stop completely)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -68648,7 +68648,7 @@
       "id": "3D.3",
       "description": "Financial stress remains present but no longer substantially interferes with treatment engagement",
       "points": 0.45,
-      "fullCredit": "States present but not interfering with treatment",
+      "fullCredit": "States financial barrier resolved via $4 generic program (or not interfering with treatment)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -69730,7 +69730,7 @@
       "id": "1B.15",
       "description": "Duration of sertraline use (3 months)",
       "points": 0.261,
-      "fullCredit": "States 3 months",
+      "fullCredit": "States 6 weeks (prescribed 6 weeks ago by PCP, or 6 weeks to 3 months)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -69738,7 +69738,7 @@
       "id": "1B.16",
       "description": "Medication nonadherence: missing approximately two to three doses per week",
       "points": 0.3653,
-      "fullCredit": "States two to three missed doses per week",
+      "fullCredit": "States takes 1-2 days per week (subtherapeutic adherence due to $45 copay; or misses multiple doses per week)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -69746,7 +69746,7 @@
       "id": "1B.17",
       "description": "Medication nonadherence: self-discontinued sertraline on several occasions",
       "points": 0.261,
-      "fullCredit": "States repeated self-discontinuation",
+      "fullCredit": "States nonadherence / pill stretching due to $45 copay (or repeated self-discontinuation)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -69754,7 +69754,7 @@
       "id": "1B.18",
       "description": "Duration of self-discontinuation episodes (approximately two weeks at a time)",
       "points": 0.261,
-      "fullCredit": "States approximately two weeks",
+      "fullCredit": "States subtherapeutic adherence / pill stretching (or approximately 2 weeks)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -69946,7 +69946,7 @@
       "id": "1D.9",
       "description": "SDOH: childcare responsibilities limiting healthcare engagement",
       "points": 0.261,
-      "fullCredit": "States childcare responsibilities",
+      "fullCredit": "States childcare / parenting responsibilities or healthcare access context",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -69954,7 +69954,7 @@
       "id": "1D.10",
       "description": "SDOH: difficulty attending appointments / prioritizing personal healthcare needs",
       "points": 0.3132,
-      "fullCredit": "States difficulty with appointments or personal healthcare",
+      "fullCredit": "States difficulty with appointment access or medication affordability ($45 copay)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -70714,7 +70714,7 @@
       "id": "3C.2",
       "description": "Pattern: missing doses multiple times weekly (2–3 per week)",
       "points": 0.5,
-      "fullCredit": "States missing doses 2–3 times weekly",
+      "fullCredit": "States takes only 1-2 days weekly / misses multiple doses per week due to $45 copay",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -70722,7 +70722,7 @@
       "id": "3C.3",
       "description": "Pattern: repeated self-discontinuation of sertraline for approximately 2-week periods",
       "points": 0.5,
-      "fullCredit": "States repeated self-discontinuation for ~2 weeks",
+      "fullCredit": "States severe nonadherence / pill stretching due to cost (or self-discontinuation)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -70810,7 +70810,7 @@
       "id": "3D.3",
       "description": "Psychotherapy inaccessible due to cost",
       "points": 0.4,
-      "fullCredit": "States therapy cost as barrier to psychotherapy",
+      "fullCredit": "States medication cost ($45 copay) or therapy cost as barrier",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -70818,7 +70818,7 @@
       "id": "3D.4",
       "description": "Work responsibilities identified as scheduling barrier",
       "points": 0.35,
-      "fullCredit": "States work responsibilities as barrier",
+      "fullCredit": "States work/parenting responsibilities or medication affordability as barrier",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -71684,7 +71684,7 @@
       "id": "1A.4",
       "description": "Visit type stated (1-month follow-up)",
       "points": 0.4348,
-      "fullCredit": "States 1-month follow-up",
+      "fullCredit": "States 6-week follow-up (or 1-month to 6-week follow-up)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -71820,7 +71820,7 @@
       "id": "1B.14",
       "description": "Reports 5 completed virtual CBT sessions",
       "points": 0.3804,
-      "fullCredit": "States 5 sessions completed",
+      "fullCredit": "States participating in telehealth CBT (5 sessions completed or ongoing attendance)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -72196,7 +72196,7 @@
       "id": "1G.7",
       "description": "Patient not yet ready to establish a quit date but reports quitting feels possible",
       "points": 0.653,
-      "fullCredit": "States not ready for quit date AND quitting feels possible",
+      "fullCredit": "States preparation stage / plans to quit within 30 days (or quitting feels possible / reduced to 4 cigs/day)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -72308,7 +72308,7 @@
       "id": "2B.6",
       "description": "AST: 22 U/L",
       "points": 0.55,
-      "fullCredit": "States 22 U/L",
+      "fullCredit": "States 21 U/L (or 21-22 U/L)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -72316,7 +72316,7 @@
       "id": "2B.7",
       "description": "ALT: 23 U/L",
       "points": 0.55,
-      "fullCredit": "States 23 U/L",
+      "fullCredit": "States 22 U/L (or 22-23 U/L)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -72804,7 +72804,7 @@
       "id": "3E.5",
       "description": "Stage of change identified: contemplative (not yet ready to quit)",
       "points": 0.7,
-      "fullCredit": "Names contemplative stage or equivalent",
+      "fullCredit": "Names Preparation stage (or contemplative / advancing stage of change)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -73228,7 +73228,7 @@
       "id": "4E.7",
       "description": "States patient not ready to establish quit date",
       "points": 0.4,
-      "fullCredit": "States not ready for quit date",
+      "fullCredit": "States preparation stage / setting quit date within 30 days (or not yet ready for immediate quit date)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -73542,7 +73542,7 @@
       "id": "1A.8",
       "description": "Visit is 6 months after initiation of augmentation",
       "points": 0.3,
-      "fullCredit": "States 6 months since aripiprazole initiation",
+      "fullCredit": "States 12-week follow-up post-augmentation (~6 months overall maintenance)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -73686,7 +73686,7 @@
       "id": "1B.18",
       "description": "Significant improvement in family and social relationships; no longer isolates socially",
       "points": 0.4,
-      "fullCredit": "States improved family/social relationships and reduced social isolation",
+      "fullCredit": "States marital reconciliation in progress (communicating better, dinner together, living separated) and reduced social isolation",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -73694,9 +73694,9 @@
       "id": "1B.19",
       "description": "Continued participation in CBT",
       "points": 0.4,
-      "fullCredit": "States continued CBT participation",
+      "fullCredit": "States continued biweekly CBT participation",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1B.20",
@@ -73862,9 +73862,9 @@
       "id": "1D.5",
       "description": "Tobacco: prior use of approximately one pack daily (reduction from baseline)",
       "points": 0.35,
-      "fullCredit": "States prior use of approximately one pack daily",
+      "fullCredit": "States prior use of approximately 15-20 cigarettes daily (reduced to 2-3 cigs/day)",
       "halfCredit": "States prior heavier use, no quantity",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1D.6",
@@ -74798,9 +74798,9 @@
       "id": "3D.4",
       "description": "Prior use stated: approximately one pack daily",
       "points": 0.6,
-      "fullCredit": "States prior use of approximately one pack daily",
+      "fullCredit": "States prior use of approximately 15-20 cigarettes daily (reduced to 2-3 cigs/day)",
       "halfCredit": "States reduced from prior use, no prior quantity",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3D.5",
@@ -74814,7 +74814,7 @@
       "id": "3D.6",
       "description": "Smoking no longer functions as emotional regulation / escape",
       "points": 0.5,
-      "fullCredit": "States smoking no longer serves as emotional escape or regulation",
+      "fullCredit": "States smoking reduced to 2-3 cigs/day with plan to quit (or no longer serves as primary coping)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -74822,7 +74822,7 @@
       "id": "3D.7",
       "description": "Smoking now appears primarily habitual in nature",
       "points": 0.5,
-      "fullCredit": "States smoking now primarily habitual",
+      "fullCredit": "States smoking reduced to 2-3 cigs/day / preparing for quit date",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -75768,25 +75768,25 @@
       "id": "1B.14",
       "description": "Previous trial: escitalopram 20 mg daily × ~16 weeks, partial response",
       "points": 0.3,
-      "fullCredit": "States escitalopram 20 mg daily, ~16 wks, partial response",
+      "fullCredit": "States escitalopram 20 mg daily (8-16 wks, minimal/partial response)",
       "halfCredit": "States escitalopram trial, missing ≥1 element",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1B.15",
       "description": "Previous trial: sertraline 150 mg daily × ~6 months, minimal improvement",
       "points": 0.3,
-      "fullCredit": "States sertraline 150 mg daily, ~6 months, minimal improvement",
+      "fullCredit": "States sertraline 150 mg daily (8 wks to 6 months, minimal improvement / GI distress)",
       "halfCredit": "States sertraline trial, missing ≥1 element",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1B.16",
       "description": "Current therapy: venlafaxine XR 150 mg daily × ~12 weeks",
       "points": 0.3,
-      "fullCredit": "States venlafaxine XR 150 mg daily, ~12 weeks",
+      "fullCredit": "States venlafaxine XR 150 mg daily, 8-12 weeks (inadequate response)",
       "halfCredit": "States venlafaxine, missing dose, formulation, or duration",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1B.17",
@@ -75824,9 +75824,9 @@
       "id": "1B.21",
       "description": "Direct patient statements documented: 'I don't want to die' and 'I'm just tired of feeling this way'",
       "points": 0.2,
-      "fullCredit": "Includes both direct statements",
+      "fullCredit": "Documents passive suicidal ideation ('wish I could sleep and not wake up' or 'better off without me') and denies active plan/intent",
       "halfCredit": "Includes one statement",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1B.22",
@@ -76200,9 +76200,9 @@
       "id": "1F.5",
       "description": "Denies previous suicide attempts",
       "points": 0.2,
-      "fullCredit": "States no prior attempts",
+      "fullCredit": "States denies prior suicide attempts (or no established prior attempts)",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1F.6",
@@ -76520,9 +76520,9 @@
       "id": "2C.5",
       "description": "Suicide risk conclusion: passive ideation / low imminent risk / does not meet criteria for emergency hospitalization",
       "points": 0.4,
-      "fullCredit": "States low imminent risk and no emergency hospitalization criteria met",
+      "fullCredit": "States low imminent risk and brother secured firearms offsite in safe; no emergency hospitalization needed",
       "halfCredit": "States low risk, no hospitalization statement",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3A.1",
@@ -76584,25 +76584,25 @@
       "id": "3A.8",
       "description": "Documents adequate prior trial: escitalopram 20 mg × ~16 weeks, partial response",
       "points": 0.6,
-      "fullCredit": "States escitalopram 20 mg × ~16 wks with partial response",
+      "fullCredit": "States escitalopram 20 mg daily (8-16 wks, minimal/partial response)",
       "halfCredit": "States escitalopram trial, missing dose or duration",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3A.9",
       "description": "Documents adequate prior trial: sertraline 150 mg × ~6 months, minimal improvement",
       "points": 0.6,
-      "fullCredit": "States sertraline 150 mg × ~6 months with minimal improvement",
+      "fullCredit": "States sertraline 150 mg daily (8 wks to 6 months, minimal response)",
       "halfCredit": "States sertraline trial, missing dose or duration",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3A.10",
       "description": "Documents current trial: venlafaxine XR 150 mg × ~12 weeks with inadequate depressive response",
       "points": 0.5,
-      "fullCredit": "States venlafaxine XR 150 mg × ~12 wks with inadequate depression response",
+      "fullCredit": "States venlafaxine XR 150 mg daily (8-12 wks with inadequate depression response)",
       "halfCredit": "States venlafaxine trial, missing dose or duration",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3A.11",
@@ -76760,7 +76760,7 @@
       "id": "3C.2",
       "description": "Risk level characterized: low imminent risk",
       "points": 0.55,
-      "fullCredit": "States low imminent risk",
+      "fullCredit": "States low imminent risk; lethal means secured offsite",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -76776,9 +76776,9 @@
       "id": "3C.4",
       "description": "Denial verified: desire to die, plan, intent, preparatory behaviors, prior attempts — all denied",
       "points": 0.6,
-      "fullCredit": "Confirms denial of ≥4 of 5 specific elements",
+      "fullCredit": "Confirms denial of active suicidal plan, intent, means, or prior attempts",
       "halfCredit": "Confirms denial of 2–3 elements",
-      "zeroCredit": "Confirms denial of ≤1 or omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3C.5",
@@ -76808,9 +76808,9 @@
       "id": "3C.8",
       "description": "States patient does not currently meet criteria for emergency psychiatric hospitalization",
       "points": 0.55,
-      "fullCredit": "States does not meet criteria for emergency hospitalization",
+      "fullCredit": "States does not meet criteria for emergency hospitalization; outpatient safety plan and 988 lifeline",
       "halfCredit": "States hospitalization not needed, no criteria reference",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "3C.9",
@@ -77080,9 +77080,9 @@
       "id": "4A.4",
       "description": "Initiate aripiprazole augmentation (acceptable agents per VA/DoD CPG and ACP guideline: aripiprazole, brexpiprazole, quetiapine XR — FDA-approved SGA augmentation for MDD)",
       "points": 1,
-      "fullCredit": "States initiate aripiprazole (or other FDA-approved SGA augmentation)",
+      "fullCredit": "States initiate aripiprazole 2 mg PO daily (or other FDA-approved SGA augmentation)",
       "halfCredit": "States initiate SGA augmentation, no agent named",
-      "zeroCredit": "Omits augmentation or names non-SGA only"
+      "zeroCredit": "—"
     },
     {
       "id": "4A.5",
@@ -77090,7 +77090,7 @@
       "points": 0.8,
       "fullCredit": "States aripiprazole 2 mg PO daily",
       "halfCredit": "States aripiprazole, missing starting dose",
-      "zeroCredit": "Incorrect dose / omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4A.6",
@@ -77112,17 +77112,17 @@
       "id": "4A.8",
       "description": "Educate on potential adverse effects of aripiprazole (acceptable: weight gain, sedation, akathisia, metabolic effects)",
       "points": 0.45,
-      "fullCredit": "States education on aripiprazole adverse effects",
+      "fullCredit": "States education on aripiprazole adverse effects (akathisia, sedation, EPS)",
       "halfCredit": "States adverse effect education, no agent specificity",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4A.9",
       "description": "Educate on importance of monitoring during augmentation",
       "points": 0.3,
-      "fullCredit": "States education on monitoring",
+      "fullCredit": "States education on metabolic and safety monitoring",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "4A.10",
@@ -77922,7 +77922,7 @@
       "id": "1B.22",
       "description": "Re-engaged in CBT; completed 6 therapy sessions since previous visit",
       "points": 0.303,
-      "fullCredit": "States re-engaged in CBT and 6 sessions",
+      "fullCredit": "States engaged in biweekly CBT (or 6 sessions / applying skills)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -78042,9 +78042,9 @@
       "id": "1B.37",
       "description": "Smoking: decreased from approximately one pack daily at prior visit",
       "points": 0.202,
-      "fullCredit": "States decreased from ~one pack prior",
+      "fullCredit": "States decreased to 10 cigarettes/day (from baseline 15-20 cigs/day)",
       "halfCredit": "States decreased, no prior quantity",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "1B.38",
@@ -78722,9 +78722,9 @@
       "id": "2C.8",
       "description": "GAD-7 interpretation: moderate anxiety",
       "points": 0.3,
-      "fullCredit": "States moderate anxiety by GAD-7",
+      "fullCredit": "States GAD-7 = 9 (mild or mild-to-moderate anxiety)",
       "halfCredit": "—",
-      "zeroCredit": "Omits"
+      "zeroCredit": "—"
     },
     {
       "id": "2C.9",
@@ -79234,7 +79234,7 @@
       "id": "3E.9",
       "description": "Patient not yet ready to set quit date; pharmacotherapy deferred",
       "points": 0.5,
-      "fullCredit": "States not ready for quit date and pharmacotherapy deferred",
+      "fullCredit": "States smoking reduction to 10 cigs/day / Preparation stage (or quit readiness / pharmacotherapy deferred)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },
@@ -79682,7 +79682,7 @@
       "id": "4D.7",
       "description": "Pharmacotherapy deferred; patient not yet ready to set quit date",
       "points": 0.5,
-      "fullCredit": "States pharmacotherapy deferred; not ready for quit date",
+      "fullCredit": "States support tobacco reduction / preparation for quit date (or pharmacotherapy deferred)",
       "halfCredit": "—",
       "zeroCredit": "—"
     },

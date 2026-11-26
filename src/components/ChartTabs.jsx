@@ -7,20 +7,23 @@ import {
 } from 'lucide-react'
 
 /* ------------------------------------------------------------------ Snapshot */
+const formatHr = (hr) => hr ? `${String(hr).replace(/\s*bpm$/i, '').trim()} bpm` : '—'
+const formatSpo2 = (v = {}) => v.spo2Qualifier ? `${v.spo2} ${v.spo2Qualifier}` : (v.spo2 ? (v.spo2.includes('room air') ? v.spo2 : `${v.spo2} on room air`) : '98% on room air')
+
 export function SnapshotTab({ c }) {
   const v = c.VITALS
   const KEY_LAB_ORDER = ['A1C', 'eGFR', 'SCr', 'LDL-C', 'UACR', 'FEV1', 'FVC', 'FEV1/FVC', 'Eosinophils', 'Absolute Eosinophils', 'NT-proBNP', 'BNP']
   const keyLabs = c.LABS
     .filter(l => KEY_LAB_ORDER.includes(l.label))
     .sort((a, b) => KEY_LAB_ORDER.indexOf(a.label) - KEY_LAB_ORDER.indexOf(b.label))
-  
+
   const vitalsList = [
     { label: 'Office BP', value: v.bp, flag: v.flags?.bp, trend: 'down' },
     { label: 'Repeat BP', value: v.bpRepeat, flag: v.flags?.bpRepeat },
-    { label: 'HR', value: `${v.hr} bpm`, flag: v.flags?.hr },
+    { label: 'HR', value: formatHr(v.hr), flag: v.flags?.hr },
     { label: 'Temp', value: v.temp, flag: v.flags?.temp },
     { label: 'RR', value: v.rr, flag: v.flags?.rr },
-    { label: 'SpO₂', value: v.spo2 || '97 %', flag: v.flags?.spo2 },
+    { label: 'SpO₂', value: formatSpo2(v), flag: v.flags?.spo2 },
     { label: 'Weight', value: v.weight, flag: v.flags?.weight, trend: 'down' },
     { label: 'Height', value: v.height, flag: v.flags?.height },
     { label: 'Pain', value: v.pain || '0/10', flag: v.flags?.pain },
@@ -86,7 +89,7 @@ export function SnapshotTab({ c }) {
                 <div className="flex items-center gap-4">
                   {vItem.trend === 'down' && (
                     <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 2L12 10L24 10" stroke="#0d9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M0 2L12 10L24 10" stroke="#0d9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                       <polygon points="12,0 16,5 8,5" fill="#1e293b" transform="translate(4.5, 4.5) scale(0.6) rotate(180 12 2.5)" />
                     </svg>
                   )}
@@ -126,9 +129,9 @@ export function SnapshotTab({ c }) {
       </div>
 
       {/* Medications */}
-      <Card 
-        title="Current medications" 
-        icon={Pill} 
+      <Card
+        title="Current medications"
+        icon={Pill}
         color="0d9488"
         right={
           <div className="text-right">
@@ -171,7 +174,7 @@ export function SnapshotTab({ c }) {
               </table>
             </div>
           </div>
-          
+
           {reportedMeds.length > 0 && (
             <div>
               <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3">Reported by patient — not on active med list</p>
@@ -228,8 +231,22 @@ function getMostellerBsa(v) {
       }
     }
   }
-  const wtMatch = String(v.weight).match(/(\d+(?:\.\d+)?)/);
-  const kg = wtMatch ? parseFloat(wtMatch[1]) : null;
+  const wtStr = String(v.weight);
+  let kg = null;
+  const kgMatch = wtStr.match(/(\d+(?:\.\d+)?)\s*kg/i);
+  if (kgMatch) {
+    kg = parseFloat(kgMatch[1]);
+  } else {
+    const lbMatch = wtStr.match(/(\d+(?:\.\d+)?)\s*(?:lbs?|pounds?)/i);
+    if (lbMatch) {
+      kg = parseFloat(lbMatch[1]) * 0.45359237;
+    } else {
+      const wtMatch = wtStr.match(/(\d+(?:\.\d+)?)/);
+      if (wtMatch) {
+        kg = parseFloat(wtMatch[1]);
+      }
+    }
+  }
   if (!cm || !kg) return '2.04 m²';
   const bsa = Math.sqrt((cm * kg) / 3600);
   return `${bsa.toFixed(2)} m²`;
@@ -239,17 +256,17 @@ function getMostellerBsa(v) {
 export function VitalsTab({ c }) {
   const v = c.VITALS || {}
   const vTime = v.vitalsTime || (c.ENCOUNTER?.visitDate ? `${c.ENCOUNTER.visitDate} 09:14` : '09/09/2026 09:14')
-  const spo2Val = v.spo2Qualifier ? `${v.spo2} ${v.spo2Qualifier}` : (v.spo2 ? (v.spo2.includes('room air') ? v.spo2 : `${v.spo2} on room air`) : '98% on room air')
+  const spo2Val = formatSpo2(v)
   const vitalsList = [
     { label: 'Office BP', time: vTime, value: v.bp, flag: v.flags?.bp, ref: '<130/80 mmHg', trend: 'down', icon: v.flags?.bp === 'high' ? 'H' : undefined },
     { label: 'Repeat BP', time: vTime, value: v.bpRepeat, flag: v.flags?.bpRepeat, ref: '<130/80 mmHg', icon: v.flags?.bpRepeat === 'high' ? 'H' : undefined },
-    { label: 'Heart rate', time: vTime, value: `${v.hr}`, ref: '60–100 bpm' },
+    { label: 'Heart rate', time: vTime, value: formatHr(v.hr), ref: '60–100 bpm' },
     { label: 'Respiratory rate', time: vTime, value: v.rr, ref: '12–20 /min' },
     { label: 'Temperature', time: vTime, value: v.temp, ref: '97.0–99.5 °F' },
     { label: 'SpO₂', time: vTime, value: spo2Val, ref: '95–100 %' },
     { label: 'Weight', time: vTime, value: v.weight, ref: '—', trend: 'down' },
     { label: 'Height', time: vTime, value: v.height, ref: '—' },
-    { label: 'BMI', time: vTime, value: v.bmi, flag: v.flags?.bmi, ref: '18.5–24.9 kg/m²', sub: v.flags?.bmi === 'high' ? 'Obesity' : undefined, icon: v.flags?.bmi === 'high' ? 'H' : undefined },
+    { label: 'BMI', time: vTime, value: v.bmi, flag: v.flags?.bmi, ref: '18.5–24.9 kg/m²', sub: (v.flags?.bmi === 'high' || v.flags?.bmi === 'obese') ? 'Obesity' : ((v.flags?.bmi === 'overweight' || v.flags?.bmi === 'warn') ? 'Overweight' : undefined), icon: (v.flags?.bmi === 'high' || v.flags?.bmi === 'obese') ? 'H' : ((v.flags?.bmi === 'overweight' || v.flags?.bmi === 'warn') ? 'W' : undefined) },
     { label: 'BSA (Mosteller)', time: vTime, value: getMostellerBsa(v), ref: '—' },
   ]
   return (
@@ -284,7 +301,7 @@ export function VitalsTab({ c }) {
                   {vItem.trend === 'down' ? (
                     <div className="flex items-center gap-1.5 text-teal-700">
                       <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 2L12 10L24 10" stroke="#0d9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M0 2L12 10L24 10" stroke="#0d9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         <polygon points="12,0 16,5 8,5" fill="#1e293b" transform="translate(4.5, 4.5) scale(0.6) rotate(180 12 2.5)" />
                       </svg>
                     </div>
@@ -294,11 +311,11 @@ export function VitalsTab({ c }) {
                 </td>
                 <td className="py-3.5 px-4">
                   {vItem.icon ? (
-                    <span className="inline-flex items-center justify-center rounded-full border border-red-200 bg-red-50 text-red-600 px-2 py-0.5 text-[11px] font-bold">
-                      <span className="w-1.5 h-1.5 bg-red-500 rounded-full mr-1.5" />{vItem.icon}
-                    </span>
+                      <span className={`inline-flex items-center justify-center rounded-full border px-2 py-0.5 text-[11px] font-bold ${vItem.icon === 'H' ? 'border-red-200 bg-red-50 text-red-600' : 'border-amber-200 bg-amber-50 text-amber-700'}`}>
+                        <span className={`w-1.5 h-1.5 rounded-full mr-1.5 ${vItem.icon === 'H' ? 'bg-red-500' : 'bg-amber-500'}`} />{vItem.icon}
+                      </span>
                   ) : null}
-                </td>
+                    </td>
               </tr>
             ))}
           </tbody>
@@ -441,9 +458,9 @@ export function LabsTab({ c }) {
     const collectionTime = activeLabs.find(l => l.drawn)?.drawn || c.ENCOUNTER?.labsTime || '06/09/2026 07:50'
 
     return (
-      <Card 
-        title={title} 
-        icon={FlaskConical} 
+      <Card
+        title={title}
+        icon={FlaskConical}
         color="0891b2"
         right={activeLabs.length > 0 && <span className="text-[11px] font-medium text-slate-400">Collected: {collectionTime}</span>}
       >
@@ -475,7 +492,7 @@ export function LabsTab({ c }) {
 /* ------------------------------------------------------------------ Medications */
 export function MedicationsTab({ c }) {
   const [tab, setTab] = useState('current')
-  
+
   const allMeds = c.MEDICATIONS || []
   const currentMeds = allMeds.filter(m => m.status !== 'Discontinued')
   const discontinuedMeds = allMeds.filter(m => m.status === 'Discontinued')
@@ -697,8 +714,8 @@ export function MedicationsTab({ c }) {
             'Ask about any side effects or new symptoms',
             'Ask about missed doses and the reasons behind them',
             'Ask about cost or refill barriers'].map(t => (
-            <li key={t} className="flex gap-2"><span className="text-violet-500 font-bold mt-0.5">•</span><span>{t}</span></li>
-          ))}
+              <li key={t} className="flex gap-2"><span className="text-violet-500 font-bold mt-0.5">•</span><span>{t}</span></li>
+            ))}
         </ul>
         <div className="flex items-start gap-2 rounded-lg border border-dashed border-purple-200 bg-purple-50 px-3 py-2 text-[13px] text-purple-800">
           <span className="font-bold shrink-0">Missing →</span>
@@ -716,7 +733,7 @@ export function AllergiesTab({ c }) {
   return (
     <div className="space-y-4 pb-8">
       <SectionTitle sub="Documented allergies and reactions">Allergies</SectionTitle>
-      
+
       {isNKDA && (
         <Card className="mb-4 bg-white">
           <div className="flex items-center gap-3 py-1 px-2">
@@ -821,14 +838,14 @@ export function ProblemListTab({ c }) {
 
 /* ------------------------------------------------------------------ Objective */
 export function ObjectiveTab({ c }) {
-  const v = c.VITALS
+  const v = c.VITALS || {}
   const vitalsList = [
     { label: 'BP', value: v.bp, flag: v.flags?.bp, ref: '<130/80 mmHg', trend: 'down' },
     { label: 'Repeat BP', value: v.bpRepeat, flag: v.flags?.bpRepeat, ref: '<130/80 mmHg' },
-    { label: 'HR', value: `${v.hr} bpm`, flag: v.flags?.hr, ref: '60–100 bpm' },
+    { label: 'HR', value: formatHr(v.hr), flag: v.flags?.hr, ref: '60–100 bpm' },
     { label: 'Temp', value: v.temp, flag: v.flags?.temp, ref: '97.0–99.5 °F' },
     { label: 'RR', value: v.rr, flag: v.flags?.rr, ref: '12–20 /min' },
-    { label: 'SpO₂', value: v.spo2 || '97 %', flag: v.flags?.spo2, ref: '95–100 %' },
+    { label: 'SpO₂', value: formatSpo2(v), flag: v.flags?.spo2, ref: '95–100 %' },
     { label: 'Weight', value: v.weight, flag: v.flags?.weight, trend: 'down', ref: '—' },
     { label: 'Height', value: v.height, flag: v.flags?.height, ref: '—' },
     { label: 'Pain', value: v.pain || '0/10', flag: v.flags?.pain, ref: '0/10' },
@@ -866,7 +883,7 @@ export function ObjectiveTab({ c }) {
                 <div className="flex items-center gap-4">
                   {vItem.trend === 'down' && (
                     <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 2L12 10L24 10" stroke="#0d9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M0 2L12 10L24 10" stroke="#0d9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                       <polygon points="12,0 16,5 8,5" fill="#1e293b" transform="translate(4.5, 4.5) scale(0.6) rotate(180 12 2.5)" />
                     </svg>
                   )}

@@ -27,17 +27,29 @@ export function CounselingTab({ c, onView }) {
     <div>
       <SectionTitle sub="Plain-language scripts you can adapt when counseling the patient">Counseling</SectionTitle>
       <div className="grid md:grid-cols-2 gap-4">
-        {c.COUNSELING.map(mod => (
-          <Card key={mod.id} title={mod.title} icon={MessageCircle} color="0d9488">
-            <ul className="space-y-2">
-              {mod.body.map((line, i) => (
-                <li key={i} className="flex gap-2 text-[13px] text-slate-600 leading-relaxed">
-                  <span className="text-teal mt-0.5">“</span><span>{line}</span><span className="text-teal mt-0.5">”</span>
-                </li>
-              ))}
-            </ul>
-          </Card>
-        ))}
+        {(c.COUNSELING || []).map((mod, idx) => {
+          if (typeof mod === 'string') {
+            return (
+              <Card key={idx} title={`Counseling Point ${idx + 1}`} icon={MessageCircle} color="0d9488">
+                <p className="text-[13px] text-slate-600 leading-relaxed flex gap-2">
+                  <span className="text-teal mt-0.5">“</span><span>{mod}</span><span className="text-teal mt-0.5">”</span>
+                </p>
+              </Card>
+            )
+          }
+          const bodyLines = Array.isArray(mod.body) ? mod.body : (mod.body ? [mod.body] : (mod.text ? [mod.text] : []))
+          return (
+            <Card key={mod.id || idx} title={mod.title || `Counseling Point ${idx + 1}`} icon={MessageCircle} color="0d9488">
+              <ul className="space-y-2">
+                {bodyLines.map((line, i) => (
+                  <li key={i} className="flex gap-2 text-[13px] text-slate-600 leading-relaxed">
+                    <span className="text-teal mt-0.5">“</span><span>{line}</span><span className="text-teal mt-0.5">”</span>
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          )
+        })}
       </div>
     </div>
   )
